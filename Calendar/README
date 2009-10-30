@@ -1,0 +1,20 @@
+Calendar, a calendar applet for Cairo-Dock
+Author : Royohboy, who mainly just modified Nochka85's clever demo script
+         Updated by matttbe.
+Rev : 09/10/16
+
+SUMMARY:
+--------
+This is a calendar applet for cairo-dock. In Cairo-Dock, be it as an icon in the dock, or as a desklet, it will display the current date in the form of a tear-off calendar. It will also act as a launcher for your favourite calendar application. You can specify a command to run when dropping a file onto the icon/desklet; this is useful if your calendar-programme supports importing tasks or assignments via command-line switches.
+
+INSTALLATION:
+-------------
+Unpack the archive to ~/.config/cairo-dock/third-party (so that all the files are in ~/.config/cairo-dock/third-party/Calendar). Go to the configuration-screen of your Cairo-Dock and configure the Calendar-applet to suit your needs; you'll find it under "Accessories".
+
+RECOMMENDATIONS:
+----------------
+If you need recommendations for a nice little calendar-programme: My personal favourite is Dates from the Pimlico suite (http://www.pimlico-project.org/), which will let you display your Google-calendars on the desktop. Unfortunately, it doesn't support importing calendar-events on the command-line. I haven't tried KDE's various PIMs, or Evolution, but they don't seem to be as light-weight as Dates.
+
+CONTACT:
+--------
+For suggestions or criticism contact: werbungfuerroy@googlemail.com
