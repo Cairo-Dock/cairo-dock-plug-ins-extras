@@ -40,6 +40,7 @@ Scroll Up displays the calendar of the next month
 Scroll Down displays the events of the day
 Dropping a file on the icon launches the calendar application and import it."
 AUTHOR="Royohboy & Matttbe, borrowing most heavily from Nochka85"
+VERSION="0.0.1"
 CATEGORY="2"
 APP_FOLDER=$(pwd)
 
@@ -49,7 +50,7 @@ APP_FOLDER=$(pwd)
 
 #############################################################################################################
 register_the_applet() {
-dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.RegisterNewModule string:"$APP_NAME" string:"$DESCRIPTION" string:"$AUTHOR" int32:$CATEGORY string:"$APP_FOLDER"
+dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.RegisterNewModule string:"$APP_NAME" string:"$DESCRIPTION" string:"$AUTHOR" string:"$VERSION" int32:$CATEGORY string:"$APP_FOLDER"
 exit
 }
 
