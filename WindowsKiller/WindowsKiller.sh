@@ -30,6 +30,7 @@ ACTION=$1
 DROP_DATA=$2
 MENU_SELECT=$2
 SCROLL_UP=$2
+APPLET_RP="$HOME/.config/cairo-dock/current_theme/plug-ins/$APP_NAME"
 CONF_FILE="$HOME/.config/cairo-dock/current_theme/plug-ins/$APP_NAME/$APP_NAME.conf"
 
 
@@ -65,13 +66,13 @@ get_ALL_conf_params() {
 action_on_click() {
 	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"Select a window in order to kill it.
 	Select the dock in order to cancel." int32:5
-	xprop > .xprop # we have to export it into a file to keep all lines...
-	if [ `cat .xprop | grep -c 'cairo-dock'` -ge 1 ]; then
+	xprop > $APPLET_RP/.xprop # we have to export it into a file to keep all lines...
+	if [ `cat $APPLET_RP/.xprop | grep -c 'cairo-dock'` -ge 1 ]; then
 		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:" ** Cancelled ** " int32:2
 	else
-		kill `cat .xprop | grep ^_NET_WM_PID | cut -d= -f2`
+		kill `cat $APPLET_RP/.xprop | grep ^_NET_WM_PID | cut -d= -f2`
 	fi
-	rm -f .xprop
+	rm -f $APPLET_RP/.xprop
 	exit
 }
 
@@ -79,11 +80,11 @@ action_on_click() {
 action_on_middle_click() {
 	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"Select a window in order to show some informations" int32:3
 	sleep 0.5 # to not have "xprop: error: Can't grab the mouse"
-	xprop > .xprop
-	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"$(ps -p `cat .xprop | grep _NET_WM_PID | cut -d= -f2`)
-Window name : `cat .xprop | grep ^WM_NAME | cut -d= -f2`
-Window class : `cat .xprop | grep ^WM_CLASS | cut -d= -f2`" int32:10
-	rm -f .xprop
+	xprop > $APPLET_RP/.xprop
+	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"$(ps -p `cat $APPLET_RP/.xprop | grep _NET_WM_PID | cut -d= -f2`)
+Window name : `cat $APPLET_RP/.xprop | grep ^WM_NAME | cut -d= -f2`
+Window class : `cat $APPLET_RP/.xprop | grep ^WM_CLASS | cut -d= -f2`" int32:10
+	rm -f $APPLET_RP/.xprop
 	exit
 }
 
@@ -95,7 +96,7 @@ action_on_init() {
 #############################################################################################################
 action_on_stop() {
 	echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> Stop"
-	rm -f .xprop
+	rm -f $APPLET_RP/.xprop
 	exit
 }
 
