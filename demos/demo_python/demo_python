@@ -34,7 +34,7 @@ dock.RegisterNewModule(applet_name,
 	"This is a distant applet\nIt simulates a counter:\n Scroll up/down to increase/decrease the counter,\n Click/middle-click to increase/decrease the counter by 10\n Drop some text to set it as the label.", # description
 	"Fabounet", # author
 	"0.0.1", # version of the applet
-	3, # category "accessories"
+	2, # 2 = category "accessories"
 	applet_share_data_dir) # folder containing the data of the applet (script, icon, preview, etc)
 print ">>> applet registered."
 

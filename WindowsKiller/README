@@ -1,0 +1,20 @@
+WindowsKiller, an applet for Cairo-Dock in order to kill problematic windows easily.
+Author : Matttbe helped by Nochka85's demo script
+Rev : 09/11/09
+
+ICON:
+-----
+Made by max-peine from tux.crystalxp.net
+
+SUMMARY:
+--------
+WindowsKiller, an applet for Cairo-Dock in order to kill problematic windows easily.
+Simply do a right click on it and select a window that you want to kill
+
+INSTALLATION:
+-------------
+Copy all this repertory to ~/.config/cairo-dock/third-party (so that all the files are in ~/.config/cairo-dock/third-party/WindowsKiller). Go to the configuration-screen of your Cairo-Dock and configure the WindowsKiller-applet to suit your needs; you'll find it under "Accessories".
+
+CONTACT:
+--------
+For suggestions or criticism contact: matttbe@gmail.com
