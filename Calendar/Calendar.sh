@@ -89,7 +89,7 @@ get_conf_param "time_dialog_cal_today"
 time_dialog_cal_today="$PARAM"
 which cal > /dev/null
 if [ $? -eq 0 ]; then
-	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`cal -m`" int32:$time_dialog_cal_today
+	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`cal`" int32:$time_dialog_cal_today
 else
 	echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
 	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"ERROR: 'cal' isn't installed" int32:5
@@ -156,7 +156,7 @@ if [ $SCROLL_UP -eq "0" ]; then
 			echo $YEAR_NEXT > .wait_year
 		fi
 		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:" Next month :
-`cal -m $MONTH_NEXT $YEAR_NEXT`" int32:$time_dialog_cal_next
+`cal $MONTH_NEXT $YEAR_NEXT`" int32:$time_dialog_cal_next
 		echo $date_TD > .wait
 	else
 		echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
@@ -180,7 +180,7 @@ else
 		date_WAIT=`head -n 1 .wait1`
 		if [ $date_TD -ge $(($date_WAIT+3)) ];then
 			# we wait for 3 sec
-			dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`calendar`" int32:$time_dialog_ev
+			dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`calendar -f /usr/share/calendar/calendar.all`" int32:$time_dialog_ev
 		else
 			exit
 		fi
