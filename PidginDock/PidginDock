@@ -365,26 +365,18 @@ except dbus.DBusException:
 dock = dbus.Interface(dock_object, "org.cairodock.CairoDock")
 
 
-
-### let's register our applet ! ###
-applet_name=os.path.basename(os.path.abspath("."))
-applet_share_data_dir=os.path.abspath(".")
-print ">>> registering our applet..."
-dock.RegisterNewModule(applet_name, "This is Adium - feel & like applet to control Pidgin",
-                "nbdarvin@gmail.com",
-                "0.0.1",
-                2, # category "accessories"
-                applet_share_data_dir)
-print ">>> applet registered."
-
-### get our applet ! (if it doesn't exist, it means the user does not want to use it, so we quit) ###
+## Connection to the bus
+applet_name = os.path.basename(os.path.abspath("."))  # the name of the applet must the same as the folder.
+applet_path = "/org/cairodock/CairoDock/"+applet_name  # path where our object is stored on the bus.
+DBusGMainLoop(set_as_default=True)
+bus = dbus.SessionBus()
 try:
-        applet_object = bus.get_object("org.cairodock.CairoDock",
-                        "/org/cairodock/CairoDock/"+applet_name)
+	applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
 except dbus.DBusException:
-        print ">>> the '"+applet_name+"' module has not been started"
-        sys.exit(2)
+	print ">>> module '"+applet_name+"' can't be found on the bus, exit."
+	sys.exit(2)
 myIcon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
+
 
 
 ### main ###

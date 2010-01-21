@@ -33,23 +33,6 @@ SCROLL_UP=$2
 APPLET_RP="$HOME/.config/cairo-dock/current_theme/plug-ins/$APP_NAME"
 CONF_FILE="$HOME/.config/cairo-dock/current_theme/plug-ins/$APP_NAME/$APP_NAME.conf"
 
-
-DESCRIPTION="WindowsKiller is able to kill problematic windows easily.
-Left Click on its icon and simply select window that cause trouble to kill it.
- (select the dock in order to cancel)
-Middle Click will give you some informations like the pid,
- the command to launch this application, the uptime and the class(es) of this window."
-AUTHOR="Matttbe"
-VERSION="0.0.1"
-CATEGORY="2"
-APP_FOLDER=$(pwd)
-
-#############################################################################################################
-register_the_applet() {
-	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.RegisterNewModule string:"$APP_NAME" string:"$DESCRIPTION" string:"$AUTHOR" string:"$VERSION" int32:$CATEGORY string:"$APP_FOLDER"
-	exit
-}
-
 #############################################################################################################
 get_conf_param() {
 	LIGNE=`cat $CONF_FILE | grep "$1"`

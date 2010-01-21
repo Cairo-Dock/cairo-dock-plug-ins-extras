@@ -18,7 +18,7 @@
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
 
-## Rev : 09/10/18
+## Rev : 21/01/2010
 
 DBUS_NAME="org.cairodock.CairoDock"
 DBUS_PATH="/org/cairodock/CairoDock"
@@ -31,28 +31,6 @@ DROP_DATA=$2
 MENU_SELECT=$2
 SCROLL_UP=$2
 CONF_FILE="/home/$USER/.config/cairo-dock/current_theme/plug-ins/$APP_NAME/$APP_NAME.conf"
-
-
-DESCRIPTION="This applet will display the current date.
-Left Click displays the calendar
-Middle Click launches a calendar application of your choice
-Scroll Up displays the calendar of the next month
-Scroll Down displays the events of the day
-Dropping a file on the icon launches the calendar application and import it."
-AUTHOR="Royohboy & Matttbe, borrowing most heavily from Nochka85"
-VERSION="0.0.1"
-CATEGORY="2"
-APP_FOLDER=$(pwd)
-
-#############################################################################################################
-# Generate fresh calendar icon
-#./icon.sh # the icon is made at startup (action_on_init())
-
-#############################################################################################################
-register_the_applet() {
-dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.RegisterNewModule string:"$APP_NAME" string:"$DESCRIPTION" string:"$AUTHOR" string:"$VERSION" int32:$CATEGORY string:"$APP_FOLDER"
-exit
-}
 
 #############################################################################################################
 get_conf_param() {
@@ -180,6 +158,7 @@ else
 		date_WAIT=`head -n 1 .wait1`
 		if [ $date_TD -ge $(($date_WAIT+3)) ];then
 			# we wait for 3 sec
+			calendar -f /usr/share/calendar/calendar.all > /dev/null # The loading takes some time :-/
 			dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`calendar -f /usr/share/calendar/calendar.all`" int32:$time_dialog_ev
 		else
 			exit
@@ -231,23 +210,12 @@ action_on_stop() {
 echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> Stop"
 rm -f .wait .wait1 .wait_month .wait_year .day
 killall update_calendar.sh
-exit
 }
 
 #############################################################################################################
 action_on_reload() {
-# Generate fresh calendar icon
-# ./icon.sh # the icon is made at startup (action_on_init())
 get_ALL_conf_params
-
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The calendar_command in config is : $calendar_command"
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The import_command in config is : $import_command"
-
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> Our module is reloaded"
 rm -f .wait .wait1 .wait_month .wait_year
-#if [ "$reload_message" != "" ]; then 	# display reload-message unless it's an empty sring
-#    dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"$reload_message" int32:2
-#fi
 exit
 }
 
