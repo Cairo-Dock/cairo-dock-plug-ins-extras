@@ -159,6 +159,7 @@ else
 		if [ $date_TD -ge $(($date_WAIT+3)) ];then
 			# we wait for 3 sec
 			calendar -f /usr/share/calendar/calendar.all > /dev/null # The loading takes some time :-/
+			sleep 0.5
 			dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`calendar -f /usr/share/calendar/calendar.all`" int32:$time_dialog_ev
 		else
 			exit

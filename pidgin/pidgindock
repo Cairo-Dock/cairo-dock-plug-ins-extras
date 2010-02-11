@@ -1,0 +1,387 @@
+#!/usr/bin/python
+
+
+
+
+### import ###
+import sys
+import gobject
+import glib
+import gtk
+import dbus
+import os.path, itertools
+from dbus.mainloop.glib import DBusGMainLoop
+
+
+import pidgindbus#, threadtimer
+
+
+
+
+
+### init ###
+def init():
+        # register to the notifications on our applet
+        print ">>> INIT"
+        myIcon.connect_to_signal("on_click", action_on_click)
+        myIcon.connect_to_signal("on_middle_click", action_on_middle_click)
+        myIcon.connect_to_signal("on_build_menu", action_on_build_menu)
+        myIcon.connect_to_signal("on_menu_select", action_on_menu_select)
+        myIcon.connect_to_signal("on_drop_data", action_on_drop_data)
+        myIcon.connect_to_signal("on_init_module", action_on_init)
+        myIcon.connect_to_signal("on_stop_module", action_on_stop)
+        myIcon.connect_to_signal("on_reload_module", action_on_reload)
+
+### stop ###
+def stop():
+        print ">>> STOP"
+        #dock.UnregisterModule(applet_name)
+        # clean up memory
+        #del dock_object
+        #del dock
+        #del applet_object
+        #del myIcon
+
+
+
+
+
+### hanlers ###
+def action_on_click(iState):
+        print ">>> clic !"
+
+def action_on_middle_click():
+        print ">>> middle clic !"
+
+def action_on_build_menu():
+        print ">>> build menu !"
+        myIcon.PopulateMenu(["one", "two", "three"])
+
+def action_on_menu_select(iNumEntry):
+        print ">>> choice",iNumEntry,"has been selected !"
+        if iNumEntry == 0:
+                pass
+        elif iNumEntry == 1:
+                pauss
+        elif iNumEntry == 2:
+                pass
+
+
+def action_on_drop_data(cReceivedData):
+        print ">>> received",cReceivedData
+        myIcon.SetLabel(cReceivedData)
+
+
+def action_on_init():
+        print ">>> our module is started"
+        #myIcon.ShowDialog("I'm connected to Cairo-Dock !", 4)
+        appleticon.RefreshIcon()
+
+
+def action_on_stop():
+        print ">>> our module is stopped"
+        stop()
+        gtk.main_quit()
+
+def action_on_reload(bConfigHasChanged):
+        print ">>> our module is reloaded"
+        if bConfigHasChanged:
+            appleticon.LoadConfig()
+            appleticon.RefreshIcon()
+            appleticon.subdock.Refresh()
+
+###Sub-handlers###
+
+def MessageRecieve(**args):
+    print args
+    print ">>>>>>message from %s, '%s', total unread messages: %d" %(args['sender'], args['message'], \
+                                args['unread'][0])
+    appleticon.RefreshIcon(args)
+
+def StatusChanged(**args):
+    print ">>status changed"
+    print args
+
+    appleticon.RefreshIcon()
+    #SetCurrentStatusIcon(alarm=False)
+
+def MessageReaded(**args):
+    print ">>message readed, refresh"
+    appleticon.RefreshIcon()
+
+
+def Connecting(**args):
+    print ">>connecting"
+    if not appleticon.IsConnecting:
+        appleticon.IsConnecting = True
+        appleticon.SetIcon('Connecting')
+
+
+
+class SubDock(object):
+    def __init__(self, applet_icon):
+        self.__applet_icon = applet_icon
+        sub_icons_object = bus.get_object("org.cairodock.CairoDock",
+                "/org/cairodock/CairoDock/"+applet_name+"/sub_icons")
+        self.__subicons = dbus.Interface(sub_icons_object, "org.cairodock.CairoDock.subapplet")
+        self.Refresh()
+        self.__subicons.connect_to_signal("on_click_sub_icon", self.on_click_sub_icon)
+
+    def on_click_sub_icon(self, iState, cIconID):
+        print "Setting pidgin status to"+cIconID
+        self.__applet_icon.pidgin.SetStatus(cIconID)
+
+    def Refresh(self):
+        #first, clear old icons
+        self.__subicons.RemoveSubIcon('any')
+        self.__applet_icon.config['HideFromSubdock'].append('__not connected to Pidgin__')
+        for iconname in self.__applet_icon.STATUS_TYPES:
+            if not (iconname[0] in self.__applet_icon.config['HideFromSubdock']):
+                self.__subicons.AddSubIcons([iconname[0],iconname[0],iconname[0]])
+                self.SetIcon(iconname[0], iconname[1])
+
+
+    def SetIcon(self, icon, statusname):
+
+        ###first, animated
+        if self.__applet_icon.theme['State'][statusname]['Animated']:
+            self.__subicons.SetIcon(self.__applet_icon.GetThemeDir()+\
+                self.__applet_icon.theme['State'][statusname]['Images'][0], icon) #we set first image
+        ###second, overlay on base images
+        elif self.__applet_icon.theme['State'][statusname]['Overlay']:
+            self.__subicons.SetIcon( \
+                self.__applet_icon.CheckOverlayImage(
+                    self.__applet_icon.theme['State'][statusname]['Image'], statusname), icon)
+            pass
+
+        ###thrird, simple images
+        else:
+            self.__subicons.SetIcon(self.__applet_icon.GetThemeDir()+\
+                self.__applet_icon.theme['State'][statusname]['Image'], icon)
+
+
+
+class AppletIcon(object):
+
+    STATUS_TYPES =(             ('__not connected to Pidgin__', 'ApplicationIcon', 'Alert'), \
+                                ('offline', 'Base', 'Alert'), \
+                                ('online', 'Online', 'Alert'), \
+                                ('unavailable', 'Idle', 'Alert'), \
+                                ('invisible', 'Invisible', 'InvisibleAlert'), \
+                                ('away', 'Away', 'Alert'), \
+                                ('extended away', 'Away', 'Alert'), \
+                                ('mobile', 'Online', 'Alert'), \
+                                ('tune', 'Online', 'Alert') )
+
+
+    def __init__(self, pidgin_object, icon_object, dock_object):
+        self.config = {}
+        self.theme = {}
+        self.pidgin = pidgin_object
+        self.__dock = dock_object
+        self.__myIcon = icon_object
+        self.__current_status_num = 0
+        self.__current_status = self.STATUS_TYPES[self.__current_status_num]
+        self.LoadConfig()
+        self.RefreshIcon()
+        self.subdock = SubDock(self)
+        
+
+
+    def GetAppletDir(self):
+        #return os.path.abspath(".")+"/"
+        return os.path.expanduser("~/.config/cairo-dock/third-party/"+applet_name+"/")
+
+
+    def GetThemeDir(self):
+        #return os.path.abspath(".")+"/Themes/"+self.config['Theme']+"/"
+        return self.GetAppletDir()+"Themes/"+self.config['Theme']+"/"
+
+
+    def GetConfigPath(self):
+        return os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/"+applet_name+"/"+applet_name+".conf")
+
+
+
+    def LoadConfig(self):
+        import ConfigParser
+        print ">>>  loadconfig"
+        ini = ConfigParser.ConfigParser()
+        #####!!!!!!!!!!bad hack :(((
+        print self.GetAppletDir()+"../../current_theme/plug-ins/"+applet_name+"/"+\
+                                                applet_name+".conf"
+        ini.read(self.GetConfigPath())
+
+        ###!!!!!dirty hack, may be better
+        #themenum = ini.getint("Configuration", "Theme")
+        #themename = {0:'Black',1:'Blue',2:'Green',3:'Purple',4:'Red',5:'Yellow'}[themenum]
+        self.config['Theme'] = ini.get("Configuration", "Theme") #themename
+        self.LoadTheme()
+
+        self.config['ShowDock'] = ini.getboolean("Configuration", "ShowDock")
+        self.config['ShowNumberUnread'] = ini.getboolean("Configuration", "ShowNumberUnread")
+        self.config['ShowMessageLabel'] = ini.getboolean("Configuration", "ShowMessageLabel")
+        self.config['Animation'] = ini.getboolean("Configuration", "Animation")
+        self.config['AnimationType'] = ini.get("Configuration", "AnimationType")
+        self.config['AnimationRate'] = ini.getint("Configuration", "AnimationRate")
+        ###bad dirty temp hack
+        self.config['HideFromSubdock'] = ['mobile', 'tune', 'extended away']
+        print self.config
+
+
+    def LoadTheme(self):
+        ###will read great plist massive to self.theme
+        import plistlib
+        self.theme = plistlib.readPlist(self.GetThemeDir()+"IconPack.plist")
+        print self.theme
+    def AnimatePlay(self, delay, images, overlay, statusname):
+        print ">>playing animation -------"
+        print ">intarg"
+        print delay, images, overlay
+        image = images.next()
+        if overlay:
+            self.__myIcon.SetIcon(\
+                                self.CheckOverlayImage(
+                                        image, "%s-%s" % (statusname, os.path.basename(image)) ))
+        else:
+            self.__myIcon.SetIcon(self.GetThemeDir()+image)
+        print image
+        return not self.AnimateStop
+    def SetCurrentStatusIcon(self, alarm=False):
+        if alarm:
+            num = 2
+        else:
+            num = 1
+        self.__current_status_num = self.pidgin.GetStatus()
+        self.__current_status = self.STATUS_TYPES[self.__current_status_num]
+        self.SetIcon(self.__current_status[num])
+        print "setting current status icon:" + self.__current_status[num]
+
+
+    def CheckOverlayImage(self, imagename, statusname):
+        filename = self.GetThemeDir()+"PidginDockIcon-"+statusname+".png"
+        if not os.path.isfile(filename):
+            import Image
+            ###online or Base?..
+            base = Image.open(self.GetThemeDir()+self.theme['State']['Online']['Image']).convert('RGBA')
+            overlay = Image.open(self.GetThemeDir()+imagename).convert('RGBA')
+            resultimage = Image.composite(overlay, base, overlay)
+            resultimage.save(filename)
+            print "#####Saving new image!!!!!!!!!!!!!-------------------"
+        return filename
+
+
+
+    def SetIcon(self, statusname):
+        print "-------------------reset icon--------------------"
+        self.IsConnecting = False
+        ###great work!!!
+        #gobject.timeout_remove(self.AnimateTimeout)
+        self.AnimateStop = True
+
+        try:
+            gobject.source_remove(self.AnimateTimeout)
+        except:
+            print "XXX - cant remove gobject timeout :("
+
+        ###first, animated
+        if self.theme['State'][statusname]['Animated']:
+            self.AnimateStop = False
+            self.AnimateTimeout = gobject.timeout_add(\
+                    int(self.theme['State'][statusname]['Delay']*1000) \
+                    ,self.AnimatePlay, \
+                    self.theme['State'][statusname]['Delay'],\
+                    itertools.cycle(self.theme['State'][statusname]['Images']),\
+                    self.theme['State'][statusname]['Overlay'],\
+                    statusname)
+        ###second, overlay on base images
+        elif self.theme['State'][statusname]['Overlay']:
+            self.__myIcon.SetIcon(\
+                self.CheckOverlayImage(
+                    self.theme['State'][statusname]['Image'], statusname))
+
+        ###thrird, simple images
+        else:
+            self.__myIcon.SetIcon(self.GetThemeDir()+\
+                self.theme['State'][statusname]['Image'])
+
+
+    def RefreshIcon(self, message=None):
+        """Refresh applet's icon"""
+        number_unread = self.pidgin.GetUnreadMessagesNum()
+        if number_unread > 0:
+            if self.config['ShowNumberUnread']:
+                self.__myIcon.SetQuickInfo(format(number_unread, "d"))
+            self.SetCurrentStatusIcon(alarm=True)
+        else:
+            ###not work!!!!!!!!!
+            if self.config['ShowNumberUnread']:
+                self.__myIcon.SetQuickInfo('')
+            self.SetCurrentStatusIcon(alarm=False)
+
+        self.__current_status_num = self.pidgin.GetStatus()
+        self.__current_status = self.STATUS_TYPES[self.__current_status_num]
+
+        if not (number_unread > 0):
+            self.__myIcon.SetLabel(self.__current_status[0])
+
+        if message != None:
+            if self.config['ShowMessageLabel']:
+                self.__myIcon.SetLabel('message from '+message['sender'])
+            if self.config['ShowDock']:
+                self.__dock.ShowDock(True)
+            if self.config['Animation']:
+                self.__myIcon.Animate(self.config['AnimationType'], \
+                        self.config['AnimationRate'])
+            ### on send message
+
+
+
+### let's connect to the dock. ###
+DBusGMainLoop(set_as_default=True)
+bus = dbus.SessionBus()
+try:
+        dock_object = bus.get_object("org.cairodock.CairoDock",
+                        "/org/cairodock/CairoDock")
+except dbus.DBusException:
+        print "Cairo-Dock not found on bus (did you activate its 'DBus' plug-in ?)"
+        sys.exit(1)
+dock = dbus.Interface(dock_object, "org.cairodock.CairoDock")
+
+
+
+### let's register our applet ! ###
+applet_name=os.path.basename(os.path.abspath("."))
+applet_share_data_dir=os.path.abspath(".")
+print ">>> registering our applet..."
+dock.RegisterNewModule(applet_name, "This is Adium - feel & like applet to control Pidgin", \
+                "nbdarvin@gmail.com", \
+                3, # category "accessories"
+                applet_share_data_dir)
+print ">>> applet registered."
+
+### get our applet ! (if it doesn't exist, it means the user does not want to use it, so we quit) ###
+try:
+        applet_object = bus.get_object("org.cairodock.CairoDock",
+                        "/org/cairodock/CairoDock/"+applet_name)
+except dbus.DBusException:
+        print ">>> the '"+applet_name+"' module has not been started"
+        sys.exit(2)
+myIcon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
+
+
+### main ###
+if __name__ == '__main__':
+
+
+
+    pidgin = pidgindbus.Pidgin(MessageRecieve, StatusChanged,\
+                MessageReaded, Connecting, StatusChanged)
+    init()
+    appleticon = AppletIcon(pidgin_object=pidgin, icon_object=myIcon, dock_object=dock_object)
+    gtk.main()
+    stop()
+    print ">>> bye"
+    sys.exit(0)
+
+

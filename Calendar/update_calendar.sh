@@ -16,7 +16,7 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
-
+./icon.sh
 ARG=$1
 
 # sometime there is a bug with: 10-02

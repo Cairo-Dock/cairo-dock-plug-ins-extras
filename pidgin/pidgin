@@ -1,0 +1,439 @@
+#!/usr/bin/python
+
+# This is a part of the external demo applet for Cairo-Dock
+#
+# Copyright : (C) 2010 by Fabounet & nbdarvin
+# E-mail : fabounet@users.berlios.de / nbdarvin@gmail.com
+# unread messages method taken from Sadrul <sadrul@pidgin.im>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+####################
+### dependancies ###
+####################
+import sys
+import os.path
+import ConfigParser
+import gobject
+import glib
+import subprocess
+import dbus
+from dbus.mainloop.glib import DBusGMainLoop
+
+applet_name = os.path.basename(os.path.abspath("."))  # the name of the applet must the same as the folder.
+DBusGMainLoop(set_as_default=True)
+STATUS=['Not_connected', 'Offline', 'Online', 'Unavailable', 'Invisible', 'Away', 'Extended_away', 'Mobile', 'Tune']
+
+##################################
+### callbacks on the main icon ###
+##################################
+def _try_connect():
+	myApplet.connect_to_pidgin()
+	if myApplet.purple == None:  # toujours pas connecte.
+		myApplet.iNbTries += 1
+		if myApplet.iNbTries == 5:  # au bout de 5 essais on abandonne.
+			myApplet.icon.ShowDialog("Couldn't connect to pidgin :-(",4)
+			myApplet.iSidConnect = 0
+			return False
+		return True
+	else:  # connexion etablie.
+		myApplet.iSidConnect = 0
+		return False
+def action_on_click(iState):
+	print ">>> clic !"
+	Xid = myApplet.icon.Get("Xid")
+	if Xid != 0:
+		bHasFocus = myApplet.icon.Get("has_focus")
+		#myApplet.icon.ShowWindow(!bHasFocus)
+	else:
+		subprocess.Popen("pidgin")
+	if myApplet.purple == None:  # pas connecte
+		if myApplet.iSidConnect == 0:  # et pas en train de le faire
+			myApplet.iNbTries = 0
+			myApplet.iSidConnect = gobject.timeout_add(1000,_try_connect)
+	
+def action_on_middle_click():
+	print ">>> middle clic !"
+	if myApplet.purple == None:
+		return
+	if myApplet.iCurrentConv == 0:
+		myApplet.icon.ShowDialog("No current conversation defined.\nPlease select a conversation with right-click.", 5)
+		return
+	conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
+	myApplet.icon.AskText("Send a message to "+conv_name, "");
+
+def action_on_build_menu():
+	print ">>> build menu !"
+	if myApplet.purple == None:
+		return
+	convs = myApplet.list_convs()
+	myApplet.icon.PopulateMenu(convs)
+	
+def action_on_menu_select(iNumEntry):
+	print ">>> choice",iNumEntry,"has been selected !"
+	convs = myApplet.purple.PurpleGetConversations()
+	myApplet.iCurrentConv = convs[iNumEntry]
+	
+def action_on_scroll(bScrollUp):
+	print ">>> scroll !"
+	if myApplet.iNbMsg != 0 :
+		if bScrollUp:
+			myApplet.iCurrentMsg += 1
+		else:
+			myApplet.iCurrentMsg -= 1
+		if myApplet.iCurrentMsg >= myApplet.iNbMsg:
+			myApplet.iCurrentMsg = myApplet.iNbMsg - 1
+		elif myApplet.iCurrentMsg < -1:
+			myApplet.iCurrentMsg = -1
+		if myApplet.iCurrentMsg >= 0:
+			myApplet.icon.ShowDialog(myApplet.pMsgList[myApplet.iCurrentMsg], 10)
+	
+def action_on_answer(answer):
+	print ">>> answer :",answer
+	if myApplet.iCurrentConv == 0:
+		return
+	type = myApplet.purple.PurpleConversationGetType(myApplet.iCurrentConv)
+	if not type or type == 0:
+		return
+	if type == 1:  # PURPLE_CONV_TYPE_IM
+		im = myApplet.purple.PurpleConvIm(myApplet.iCurrentConv)
+		myApplet.purple.PurpleConvImSend(im,answer)
+	else:  # PURPLE_CONV_TYPE_CHAT
+		chat = myApplet.purple.PurpleConvChat(myApplet.iCurrentConv)
+		myApplet.purple.PurpleConvChatSend(chat,answer)
+	
+##################################
+### callbacks on the sub-icons ###
+##################################
+def on_click_sub_icon(iState, cIconID):
+	print ">>> clic on the buddy "+myApplet.purple.PurpleBuddyGetName(cIconID)
+	buddy_name = myApplet.purple.PurpleBuddyGetName(cIconID)
+	account = myApplet.purple.PurpleBuddyGetAccount(cIconID)
+	
+	conv = myApplet.purple.PurpleFindConversationWithAccount(1, buddy_name, account)  # 1 <=> PURPLE_CONV_TYPE_IM
+	if conv == 0:
+		myApplet.purple.PurpleConversationNew(1, account, buddy_name)  # 1 <=> PURPLE_CONV_TYPE_IM
+	else:
+		myApplet.purple.PurpleConversationPresent(conv)
+
+###############################
+### callbacks on the applet ###
+###############################
+def action_on_stop():
+	print ">>> our module is stopped"
+	myApplet.end()
+	loop.quit()
+
+def action_on_reload(bConfigHasChanged):
+	print ">>> our module is reloaded"
+	if bConfigHasChanged:
+		print ">>>  and our config has changed"
+		myApplet.get_config()
+		myApplet.set_status_icon()
+
+#####################
+### Pidgin Events ###
+#####################
+def on_status_changed(new_status, old_status):
+	print ">>> status changed : "+old_status+" -> "+new_status
+	myApplet.cStatus = myApplet.purple.PurpleSavedstatusGetType(new_status)
+	myApplet.set_status_icon()
+	
+
+def on_received_im_msg(account, sender, message, conv, flag):
+	print ">>> im msg received",flag
+	if flag == 0 or flag == 2 or flag == 3 or flag == 8:  # Outgoing message, Auto response, System message, Error
+		return
+	bHasFocus = myApplet.putple.PurpleConversationHasFocus(conv)
+	if not bHasFocus:  # si l'utilisateur n'est pas devant la conversation, on le notifie du message.
+		if myApplet.config['im message']:
+			msg = message
+			if myApplet.iCurrentMsg != -1:
+				msg = myApplet.pMsgList[myApplet.iCurrentMsg]+"\n------------------------------------------\n"+msg
+			myApplet.icon.ShowDialog(msg,max(1,len(msg)/myApplet.config['duration']))
+		if myApplet.config['msg animation'] != '':
+			myApplet.icon.Animate(myApplet.config['msg animation'],10000)
+	
+	if myApplet.config['history'] != 0:  # on insere le message dans l'historique.
+		myApplet.pMsgList.insert(0,message)
+		myApplet.iNbMsg += 1
+		if myApplet.iNbMsg > myApplet.config['history'] :
+			del myApplet.pMsgList[myApplet.config['history']]
+			myApplet.iNbMsg -= 1
+		if myApplet.iCurrentMsg != -1:
+			myApplet.iCurrentMsg = min(myApplet.iNbMsg-1, myApplet.iCurrentMsg+1)  # on l'insere au debut donc ca decale le message courant.
+	
+	myApplet.update_nb_unread_msg()
+
+def on_received_chat_msg(account, sender, message, conv, flag):
+	print ">>> chat msg received",flag
+	if flag == 0 or flag == 2 or flag == 3 or flag == 8:  # Outgoing message, Auto response, System message, Error
+		return
+	bHasFocus = myApplet.putple.PurpleConversationHasFocus(conv)
+	if not bHasFocus:  # si l'utilisateur n'est pas devant la conversation, on le notifie du message.
+		if myApplet.config['chat message']:
+			msg = message
+			if myApplet.iCurrentMsg != -1:
+				msg = myApplet.pMsgList[myApplet.iCurrentMsg]+"\n------------------------------------------\n"+msg
+			myApplet.icon.ShowDialog(msg,max(1,len(msg)/myApplet.config['duration']))
+		if myApplet.config['msg animation'] != '':
+			myApplet.icon.Animate(myApplet.config['msg animation'],10000)
+	
+	if myApplet.config['history'] != 0:  # on insere le message dans l'historique.
+		myApplet.pMsgList.insert(0,message)
+		myApplet.iNbMsg += 1
+		if myApplet.iNbMsg > myApplet.config['history'] :
+			del myApplet.pMsgList[myApplet.config['history']]
+			myApplet.iNbMsg -= 1
+		if myApplet.iCurrentMsg != -1:
+			myApplet.iCurrentMsg = min(myApplet.iNbMsg-1, myApplet.iCurrentMsg+1)  # on l'insere au debut donc ca decale le message courant.
+	
+	myApplet.update_nb_unread_msg()
+
+def on_conversation_updated(conv, update_type):
+	print ">>> conv updated",conv,update_type
+	if update_type == 4:  # PURPLE_CONV_UPDATE_UNSEEN
+		myApplet.update_nb_unread_msg()
+
+def on_conversation_created(conv):
+	print ">>> conv created",conv
+	myApplet.update_nb_unread_msg()
+
+def on_conversation_deleted(conv):
+	print ">>> conv deleted",conv
+	n = myApplet.get_nb_unread_msg(conv)
+	myApplet.set_nb_unread_msg(n)
+	if myApplet.iCurrentConv == conv:
+		myApplet.iCurrentConv = 0
+
+def on_buddy_typing(name):
+	print ">>> buddy typing",name
+	myApplet.icon.SetEmblem(myApplet.share_data_dir+"typing.png")
+
+def on_buddy_typing_stopped(name):
+	print ">>> buddy stopped typing : ",name
+	myApplet.set_status_icon()
+
+def on_buddy_icon_changed(name):
+	print ">>> buddy icon changed : ",name
+	icon = myApplet.purple.PurpleBuddyGetIcon(name)
+	myApplet.sub_icons.SetIcon(myApplet.purple.PurpleBuddyGetIconPath(icon))
+	
+def on_buddy_status_changed(name, old_status, new_status):
+	print ">>> buddy status changed (",name,") : ",old_status," -> ",new_status
+	status_type = myApplet.purple.PurpleSavedstatusGetType(new_status)
+	### ajouter un embleme ou une quick-info...
+	
+def on_buddy_idle_changed(name, old_idle, new_idle):
+	print ">>> buddy idle changed (",name,") : ",old_idle," -> ",new_idle
+	### ajouter un embleme...
+	
+def on_buddy_signed_on(name):
+	print ">>> buddy signed on (",name,")"
+	### ajouter une sous-icone...
+	
+def on_buddy_signed_off(name):
+	print ">>> buddy signed off (",name,")"
+	### retirer la sous-icone...
+	
+def on_signing_on(conn):
+	print ">>> signing on..."
+	myApplet.iNbSiging += 1
+	myApplet.icon.Animate('pulse',60)
+	
+def on_signed_on(conn):
+	print ">>> signed on"
+	myApplet.iNbSiging -= 1
+	if myApplet.iNbSiging == 0:
+		myApplet.icon.Animate('',0)
+	
+def on_quit_pidgin():
+	print ">>> Quit"
+	del myApplet.purple
+	myApplet.purple = None
+	myApplet.cStatus = STATUS[1]
+	myApplet.set_status_icon()
+
+####################
+### Applet class ###
+####################
+class Applet:
+	def __init__(self):
+		self.icon = None
+		self.sub_icons = None
+		self.purple = None
+		self.config = {}
+		self.conf_file = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/"+applet_name+"/"+applet_name+".conf")  # path to the conf file of our applet.
+		self.share_data_dir = os.path.abspath(".")+"/"
+		self.themes_dir = self.share_data_dir+'themes/'
+		self.iSidConnect = 0
+		self.iNbTries = 0
+		self.iNbMsg = 0
+		self.pMsgList = []
+		self.iCurrentMsg = -1
+		self.iNbUnread = 0
+		self.bHasFocus = False
+		self.cStatus = ''
+		self.iCurrentConv = 0
+		self.iNbSiging = 0
+		
+	def get_config(self):
+		keyfile = ConfigParser.RawConfigParser()
+		keyfile.read(self.conf_file)
+		self.config['cTheme'] = keyfile.get('Configuration', 'theme')
+		self.config['im message'] = keyfile.getboolean('Configuration', 'im message')
+		self.config['chat message'] = keyfile.getboolean('Configuration', 'chat message')
+		self.config['msg animation'] = keyfile.get('Configuration', 'msg animation')
+		duration = keyfile.getint('Configuration', 'duration')
+		if duration == 0:
+				self.config['duration'] = 20
+		elif duration == 1:
+			self.config['duration'] = 10
+		else:
+			self.config['duration'] = 5
+		self.config['history'] = keyfile.getint('Configuration', 'history')
+		
+	def begin(self):
+		self.connect_to_dock()
+		self.connect_to_pidgin()
+		self.icon.ControlAppli("pidgin")
+		Xids = []
+		#Xids = self.icon.Get("Xids")
+		#print ">>> Xids : ",Xids[0]
+		
+	def end(self):
+		pass
+	
+	def connect_to_dock(self):
+		# get our applet on the bus.
+		applet_path = "/org/cairodock/CairoDock/"+applet_name  # path where our object is stored on the bus.
+		bus = dbus.SessionBus()
+		applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
+		self.icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
+		# we'll have a sub-dock, so we also get the sub-icons object
+		sub_icons_object = bus.get_object("org.cairodock.CairoDock", applet_path+"/sub_icons")
+		self.sub_icons = dbus.Interface(sub_icons_object, "org.cairodock.CairoDock.subapplet")
+		# connect to signals.
+		self.icon.connect_to_signal("on_click", action_on_click)
+		self.icon.connect_to_signal("on_middle_click", action_on_middle_click)
+		self.icon.connect_to_signal("on_build_menu", action_on_build_menu)
+		self.icon.connect_to_signal("on_menu_select", action_on_menu_select)
+		self.icon.connect_to_signal("on_scroll", action_on_scroll)
+		self.icon.connect_to_signal("on_answer", action_on_answer)
+		self.icon.connect_to_signal("on_stop_module", action_on_stop)
+		self.icon.connect_to_signal("on_reload_module", action_on_reload)
+		self.sub_icons.connect_to_signal("on_click_sub_icon", on_click_sub_icon)
+	
+	def connect_to_pidgin(self):
+		bus = dbus.SessionBus()
+		try:
+			obj = bus.get_object("im.pidgin.purple.PurpleService", "/im/pidgin/purple/PurpleObject")
+		except dbus.DBusException:
+			print ">>> pidgin not available on the bus"
+			self.cStatus = STATUS[1]
+			self.set_status_icon()
+			return
+		self.purple = dbus.Interface(obj, "im.pidgin.purple.PurpleInterface")
+		self.purple.connect_to_signal("SavedstatusChanged", on_status_changed)
+		self.purple.connect_to_signal("ReceivedImMsg", on_received_im_msg)
+		self.purple.connect_to_signal("ReceivedChatMsg", on_received_chat_msg)
+		self.purple.connect_to_signal("ConversationUpdated", on_conversation_updated)
+		self.purple.connect_to_signal("ConversationCreated", on_conversation_created)
+		self.purple.connect_to_signal("DeletingConversation", on_conversation_deleted)
+		self.purple.connect_to_signal("BuddyTyping", on_buddy_typing)
+		self.purple.connect_to_signal("BuddyTypingStopped", on_buddy_typing_stopped)
+		self.purple.connect_to_signal("BuddyIconChanged", on_buddy_icon_changed)
+		self.purple.connect_to_signal("BuddyStatusChanged", on_buddy_status_changed)
+		self.purple.connect_to_signal("BuddyIdleChanged", on_buddy_idle_changed)
+		self.purple.connect_to_signal("BuddySignedOn", on_buddy_signed_on)
+		self.purple.connect_to_signal("BuddySignedOff", on_buddy_signed_off)
+		self.purple.connect_to_signal("Quitting", on_quit_pidgin)
+		self.purple.connect_to_signal("SigningOn", on_signing_on)
+		self.purple.connect_to_signal("SignedOn", on_signed_on)
+		status_type = self.purple.PurpleSavedstatusGetType(self.purple.PurpleSavedstatusGetCurrent())  # GetCurrent(int), GetType(int), GetTitle(string), GetMessage(string)
+		self.cStatus = STATUS[status_type]
+		print ">>> current status : "+self.cStatus
+		self.set_status_icon()
+		self.update_nb_unread_msg()
+		#buddies_icons = self.list_buddies()
+		#myApplet.sub_icons.AddSubIcons(buddies_icons)
+		
+	### Methods ###
+	def get_nb_unread_msg(self,exception=0):
+		if self.purple == None:
+			return 0
+		n = 0
+		convs = self.purple.PurpleGetConversations()  # PurpleGetIms, PurpleGetChats
+		for conv in convs:
+			if conv != exception:
+				count = self.purple.PurpleConversationGetData(conv, "unseen-count")
+				if count and count > 0:
+					n += count
+		return n
+	
+	def set_nb_unread_msg(self,n):
+		if n == self.iNbUnread:
+			return
+		self.iNbUnread = n
+		if n > 0:
+			self.icon.SetQuickInfo(format(n,"d"))
+		else:
+			self.icon.SetQuickInfo('')
+	
+	def update_nb_unread_msg(self):
+		if self.purple == None:
+			return
+		n = self.get_nb_unread_msg()
+		self.set_nb_unread_msg(n)
+	
+	def set_status_icon(self):
+		icon_path = self.themes_dir+self.config['cTheme']+"/"+self.cStatus+'.png'
+		if not os.path.isfile(icon_path):
+			print ">>> "+icon_path+" does'nt existe"
+			icon_path = self.themes_dir+'Green/'+self.cStatus+'.png'
+		self.icon.SetIcon(icon_path)
+	
+	def list_convs(self):
+		tab_conv=[]
+		convs = self.purple.PurpleGetConversations()
+		for conv in convs:
+			conv_name = self.purple.PurpleConversationGetName(conv)
+			tab_conv.append(conv_name)
+		return tab_conv
+	
+	def list_buddies(self):
+		if self.purple == None:
+			return
+		tab_buddies = []
+		accounts = self.purple.PurpleAccountsGetAllActive()
+		for account in accounts:
+			print ">>> account "+self.purple.PurpleAccountGetUsername(account)
+			buddies = self.purple.PurpleFindBuddies(account,'')
+			for buddy in buddies:
+				print ">>>   + "+self.purple.PurpleBuddyGetName(buddy)
+				icon = self.purple.PurpleBuddyGetIcon(buddy)
+				tab_buddies.append(self.purple.PurpleBuddyGetName(buddy))
+				tab_buddies.append(self.purple.PurpleBuddyIconGetFullPath(icon))
+				tab_buddies.append(str(buddy))
+		return tab_buddies
+
+############
+### main ###
+############
+if __name__ == '__main__':
+	myApplet = Applet()
+	myApplet.get_config()
+	myApplet.begin()
+	loop = gobject.MainLoop()
+	loop.run()
+	print ">>> bye"
+	sys.exit(0)
