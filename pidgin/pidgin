@@ -52,8 +52,10 @@ def action_on_click(iState):
 	print ">>> clic !"
 	Xid = myApplet.icon.Get("Xid")
 	if Xid != 0:
-		bHasFocus = myApplet.icon.Get("has_focus")
-		#myApplet.icon.ShowWindow(!bHasFocus)
+		conv = myApplet.get_current_conv()
+		print ">>> current conv:",conv
+		if conv != 0:
+			myApplet.purple.PurpleConversationPresent(conv)
 	else:
 		subprocess.Popen("pidgin")
 	if myApplet.purple == None:  # pas connecte
@@ -82,6 +84,8 @@ def action_on_menu_select(iNumEntry):
 	print ">>> choice",iNumEntry,"has been selected !"
 	convs = myApplet.purple.PurpleGetConversations()
 	myApplet.iCurrentConv = convs[iNumEntry]
+	conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
+	myApplet.icon.SetLabel(conv_name)
 	
 def action_on_scroll(bScrollUp):
 	print ">>> scroll !"
@@ -144,21 +148,24 @@ def action_on_reload(bConfigHasChanged):
 ### Pidgin Events ###
 #####################
 def on_status_changed(new_status, old_status):
-	print ">>> status changed : "+old_status+" -> "+new_status
-	myApplet.cStatus = myApplet.purple.PurpleSavedstatusGetType(new_status)
+	print ">>> status changed : ",old_status," -> ",new_status
+	myApplet.cStatus = STATUS[myApplet.purple.PurpleSavedstatusGetType(new_status)]
 	myApplet.set_status_icon()
 	
-
 def on_received_im_msg(account, sender, message, conv, flag):
+	flag -= 1
 	print ">>> im msg received",flag
 	if flag == 0 or flag == 2 or flag == 3 or flag == 8:  # Outgoing message, Auto response, System message, Error
 		return
-	bHasFocus = myApplet.putple.PurpleConversationHasFocus(conv)
+	message = '['+sender+'] '+message
+	bHasFocus = myApplet.purple.PurpleConversationHasFocus(conv)
 	if not bHasFocus:  # si l'utilisateur n'est pas devant la conversation, on le notifie du message.
 		if myApplet.config['im message']:
-			msg = message
+			msg = '['+sender+'] '+message
 			if myApplet.iCurrentMsg != -1:
 				msg = myApplet.pMsgList[myApplet.iCurrentMsg]+"\n------------------------------------------\n"+msg
+			else:
+				msg = message
 			myApplet.icon.ShowDialog(msg,max(1,len(msg)/myApplet.config['duration']))
 		if myApplet.config['msg animation'] != '':
 			myApplet.icon.Animate(myApplet.config['msg animation'],10000)
@@ -171,38 +178,40 @@ def on_received_im_msg(account, sender, message, conv, flag):
 			myApplet.iNbMsg -= 1
 		if myApplet.iCurrentMsg != -1:
 			myApplet.iCurrentMsg = min(myApplet.iNbMsg-1, myApplet.iCurrentMsg+1)  # on l'insere au debut donc ca decale le message courant.
-	
-	myApplet.update_nb_unread_msg()
 
 def on_received_chat_msg(account, sender, message, conv, flag):
+	flag -= 1
 	print ">>> chat msg received",flag
 	if flag == 0 or flag == 2 or flag == 3 or flag == 8:  # Outgoing message, Auto response, System message, Error
 		return
-	bHasFocus = myApplet.putple.PurpleConversationHasFocus(conv)
+	message = '['+sender+'] '+message
+	bHasFocus = myApplet.purple.PurpleConversationHasFocus(conv)
 	if not bHasFocus:  # si l'utilisateur n'est pas devant la conversation, on le notifie du message.
 		if myApplet.config['chat message']:
-			msg = message
 			if myApplet.iCurrentMsg != -1:
 				msg = myApplet.pMsgList[myApplet.iCurrentMsg]+"\n------------------------------------------\n"+msg
+			else:
+				msg = message
 			myApplet.icon.ShowDialog(msg,max(1,len(msg)/myApplet.config['duration']))
 		if myApplet.config['msg animation'] != '':
 			myApplet.icon.Animate(myApplet.config['msg animation'],10000)
 	
 	if myApplet.config['history'] != 0:  # on insere le message dans l'historique.
 		myApplet.pMsgList.insert(0,message)
+		print ">>> history += "+message
 		myApplet.iNbMsg += 1
 		if myApplet.iNbMsg > myApplet.config['history'] :
 			del myApplet.pMsgList[myApplet.config['history']]
 			myApplet.iNbMsg -= 1
 		if myApplet.iCurrentMsg != -1:
 			myApplet.iCurrentMsg = min(myApplet.iNbMsg-1, myApplet.iCurrentMsg+1)  # on l'insere au debut donc ca decale le message courant.
-	
-	myApplet.update_nb_unread_msg()
 
 def on_conversation_updated(conv, update_type):
 	print ">>> conv updated",conv,update_type
 	if update_type == 4:  # PURPLE_CONV_UPDATE_UNSEEN
 		myApplet.update_nb_unread_msg()
+		if myApplet.iNbUnread == 0:
+			myApplet.icon.Animate('',0)
 
 def on_conversation_created(conv):
 	print ">>> conv created",conv
@@ -214,6 +223,7 @@ def on_conversation_deleted(conv):
 	myApplet.set_nb_unread_msg(n)
 	if myApplet.iCurrentConv == conv:
 		myApplet.iCurrentConv = 0
+		myApplet.icon.SetLabel(self.config['cOriginalName'])
 
 def on_buddy_typing(name):
 	print ">>> buddy typing",name
@@ -301,6 +311,7 @@ class Applet:
 		else:
 			self.config['duration'] = 5
 		self.config['history'] = keyfile.getint('Configuration', 'history')
+		self.config['cOriginalName'] = keyfile.get('Icon', 'name')
 		
 	def begin(self):
 		self.connect_to_dock()
@@ -398,7 +409,7 @@ class Applet:
 	def set_status_icon(self):
 		icon_path = self.themes_dir+self.config['cTheme']+"/"+self.cStatus+'.png'
 		if not os.path.isfile(icon_path):
-			print ">>> "+icon_path+" does'nt existe"
+			print ">>> "+icon_path+" doesn't existe"
 			icon_path = self.themes_dir+'Green/'+self.cStatus+'.png'
 		self.icon.SetIcon(icon_path)
 	
@@ -425,6 +436,13 @@ class Applet:
 				tab_buddies.append(self.purple.PurpleBuddyIconGetFullPath(icon))
 				tab_buddies.append(str(buddy))
 		return tab_buddies
+	
+	def get_current_conv(self):
+		convs = self.purple.PurpleGetConversations()
+		for conv in convs:
+			if self.purple.PurpleConversationHasFocus(conv):
+				return conv
+		return 0
 
 ############
 ### main ###
