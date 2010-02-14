@@ -176,7 +176,7 @@ def _on_received_msg(account, sender, message, conv, is_im):
 				msg = myApplet.pMsgList[myApplet.iCurrentMsg]+"\n------------------------------------------\n"+msg
 			else:
 				msg = message
-			myApplet.icon.ShowDialog(msg,max(1,len(msg)/myApplet.config['duration']))
+			myApplet.icon.ShowDialog(msg,max(2,len(msg)/myApplet.config['duration']))
 		if myApplet.config['msg animation'] != '':
 			myApplet.icon.Animate(myApplet.config['msg animation'],10000)
 	

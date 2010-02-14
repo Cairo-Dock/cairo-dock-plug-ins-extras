@@ -56,7 +56,10 @@ def _try_connect():
 def action_on_click(iState):
 	if myApplet.xchat == None:  # pas connecte
 		if myApplet.iSidConnect == 0:  # et pas en train de le faire
-			subprocess.Popen("xchat")
+			try:
+				subprocess.Popen("xchat")
+			except OSError:
+				subprocess.Popen("gnome-xchat")
 			myApplet.iNbTries = 0
 			myApplet.iSidConnect = gobject.timeout_add(1000,_try_connect)
 		else:  # en cours de connexion
