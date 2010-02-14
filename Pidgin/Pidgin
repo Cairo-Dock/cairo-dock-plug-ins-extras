@@ -27,7 +27,7 @@ import gobject
 import glib
 import subprocess
 import dbus
-import urllib
+import htmllib
 import re
 from dbus.mainloop.glib import DBusGMainLoop
 
@@ -152,13 +152,22 @@ def on_status_changed(new_status, old_status):
 	myApplet.cStatus = STATUS[myApplet.purple.PurpleSavedstatusGetType(new_status)]
 	myApplet.set_status_icon()
 
+def _unescape(s):
+	s = s.replace("&lt;", "<")
+	s = s.replace("&gt;", ">")
+	s = s.replace("&apos;", "'")
+	s = s.replace("&quot;", "'")
+	s = s.replace("&amp;", "&")  # a faire en dernier.
+	return s
+
 def _on_received_msg(account, sender, message, conv, is_im):
 	buddy = myApplet.purple.PurpleFindBuddy(account,sender)
 	if buddy != 0:
 		sender = myApplet.purple.PurpleBuddyGetAlias(buddy)
 	message = re.sub('<font.*?>','',message)
 	message = message.replace('</font>','')
-	message = '['+sender+'] '+urllib.unquote(message)
+	message = '['+sender+'] '+_unescape(message)
+	print ">>> message : "+message
 	bHasFocus = myApplet.purple.PurpleConversationHasFocus(conv)
 	if not bHasFocus:  # si l'utilisateur n'est pas devant la conversation, on le notifie du message.
 		if (is_im and myApplet.config['im message']) or (not is_im and myApplet.config['chat message']):
