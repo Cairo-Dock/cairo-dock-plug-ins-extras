@@ -165,7 +165,13 @@ def _on_received_msg(account, sender, message, conv, is_im):
 	if buddy != 0:
 		sender = myApplet.purple.PurpleBuddyGetAlias(buddy)
 	message = re.sub('<font.*?>','',message)
+	message = re.sub('<body.*?>','',message)
+	message = re.sub('<span.*?>','',message)
+	message = re.sub('<html.*?>','',message)
 	message = message.replace('</font>','')
+	message = message.replace('</body>','')
+	message = message.replace('</span>','')
+	message = message.replace('</html>','')
 	message = '['+sender+'] '+_unescape(message)
 	print ">>> message : "+message
 	bHasFocus = myApplet.purple.PurpleConversationHasFocus(conv)
@@ -206,8 +212,9 @@ def on_received_chat_msg(account, sender, message, conv, flag):
 def on_conversation_updated(conv, update_type):
 	print ">>> conv updated",conv,update_type
 	if update_type == 4:  # PURPLE_CONV_UPDATE_UNSEEN
+		iNbUnread = myApplet.iNbUnread
 		myApplet.update_nb_unread_msg()
-		if myApplet.iNbUnread == 0:
+		if iNbUnread != 0 and myApplet.iNbUnread == 0 and myApplet.config['msg animation'] != '':
 			myApplet.icon.Animate('',0)
 			myApplet.iCurrentMsg = -1
 	if myApplet.iCurrentGuiConv == 0:
