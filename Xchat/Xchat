@@ -239,12 +239,12 @@ class Applet:
 	def begin(self):
 		self.connect_to_dock()
 		self.connect_to_xchat()
-		path = os.popen("which xchat").read().rstrip()
-		print ">>> path to the appli : "+path
+		path = os.popen("which xchat-gnome").read().rstrip()
+		print ">>> path to xchat-gnome : "+path
 		if path == '':
-			self.cClass = 'gnome-xchat'
-		else:
 			self.cClass = 'xchat'
+		else:
+			self.cClass = 'xchat-gnome'
 		print ">>> class of the appli : "+self.cClass
 		self.icon.ControlAppli(self.cClass)
 	

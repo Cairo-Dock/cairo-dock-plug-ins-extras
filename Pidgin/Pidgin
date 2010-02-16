@@ -54,7 +54,8 @@ def action_on_click(iState):
 	print ">>> clic !"
 	Xid = myApplet.icon.Get("Xid")
 	if Xid != 0:
-		myApplet.purple.PurpleConversationPresent(myApplet.iCurrentGuiConv)  # on ne peut pas recuperer la conversation courante de l'IHM en regardant laquelle a le focus, car elles ne l'ont que lorsque la fenetre a le focus.
+		if myApplet.iCurrentGuiConv != 0:
+			myApplet.purple.PurpleConversationPresent(myApplet.iCurrentGuiConv)  # on ne peut pas recuperer la conversation courante de l'IHM en regardant laquelle a le focus, car elles ne l'ont que lorsque la fenetre a le focus.
 	else:
 		subprocess.Popen("pidgin")
 	if myApplet.purple == None:  # pas connecte
@@ -241,6 +242,8 @@ def on_conversation_deleted(conv):
 	if myApplet.iCurrentConv == conv:
 		myApplet.iCurrentConv = 0
 		myApplet.icon.SetLabel(myApplet.config['cOriginalName'])
+	if myApplet.iCurrentGuiConv == conv:
+		myApplet.iCurrentGuiConv = 0
 
 def on_buddy_typing(account,name):
 	print ">>> buddy typing",name
