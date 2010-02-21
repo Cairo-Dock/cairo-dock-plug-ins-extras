@@ -66,19 +66,22 @@ def action_on_click(iState):
 		else:  # en cours de connexion
 			myApplet.icon.ShowDialog("Connecting to xchat, please wait ...",4)
 	else:  # on montre la fenetre.
-		try:
-			myApplet.xchat.Command("GUI SHOW")
-		except dbus.DBusException:  # cas ou xchat a quitte sans nous le dire.
-			print "xhat has quitted without telling us !"
-			myApplet.xchat = None
-			myApplet.connect_to_xchat()
-			if myApplet.xchat == None:  # pas sur le bus, il y'a de fortes chances qu'il ne soit pas lance.
-				print "seems xchat is not running"
-				subprocess.Popen("xchat")
-				myApplet.iNbTries = 0
-				myApplet.iSidConnect = gobject.timeout_add(1000,_try_connect)
-			else:
-				myApplet.xchat.Command("GUI SHOW")
+		if myApplet.bHasFocus:  # la fenetre existe et a le focus.
+			myApplet.icon.ShowAppli(false)  # on minimise la fenetre.
+		else:  # soit la fenetre n'existe pas, soit elle n'a pas le focus.
+			try:
+				myApplet.xchat.Command("GUI SHOW")  # on n'utilise pas ShowAppli pour pouvoir detecter si xchat a quitte inopinement. En effet il ne nous notifie pas lorsqu'il s'arrete.
+			except dbus.DBusException:  # cas ou xchat a quitte sans nous le dire.
+				print "xhat has quitted without telling us !"
+				myApplet.xchat = None
+				myApplet.connect_to_xchat()
+				if myApplet.xchat == None:  # pas sur le bus, il y'a de fortes chances qu'il ne soit pas lance.
+					print "seems xchat is not running"
+					subprocess.Popen("xchat")
+					myApplet.iNbTries = 0
+					myApplet.iSidConnect = gobject.timeout_add(1000,_try_connect)
+				else:
+					myApplet.xchat.Command("GUI SHOW")
 
 def action_on_middle_click():
 	if myApplet.xchat == None:

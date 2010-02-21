@@ -434,12 +434,10 @@ class Applet:
 		icon_path = self.themes_dir+self.config['cTheme']+"/"+self.cStatus+'.png'
 		emblem = None
 		if not os.path.isfile(icon_path):  # pas d'icone specifique pour ce statut.
+			icon_path = self.themes_dir+self.config['cTheme']+'/Online.png'  # on aplique l'embleme sur l'icone Online.
 			emblem = self.share_data_dir+'Emblems/'+self.cStatus+'.png'
-			if not os.path.isfile(emblem):  # pas d'embleme, on se rabat sur le theme par defaut qui a une icone pour chaque statut.
-				icon_path = self.themes_dir+'Green/'+self.cStatus+'.png'
-				emblem = None
-			else:  # on aplique l'embleme sur l'icone Online.
-				icon_path = self.themes_dir+self.config['cTheme']+'/Online.png'
+			if not os.path.isfile(emblem):  # pas d'embleme, on se rabat sur les emblemes de Pidgin.
+				emblem = '/usr/share/pixmaps/pidgin/status/48/'+self.cStatus.lower()+'.png'
 		print ">>> new status icon : "+icon_path
 		self.icon.SetIcon(icon_path)
 		if emblem != None:
