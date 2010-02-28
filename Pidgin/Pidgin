@@ -78,15 +78,33 @@ def action_on_build_menu():
 	if myApplet.purple == None:
 		return
 	convs = myApplet.list_convs()
+	convs.append('')
+	status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
+	for i in range(0, 7):
+		if status != i:
+			convs.append(STATUS[i])
+	
 	myApplet.icon.PopulateMenu(convs)
 	
 def action_on_menu_select(iNumEntry):
 	print ">>> choice",iNumEntry,"has been selected !"
+	iNumEntry -= 1
 	convs = myApplet.purple.PurpleGetConversations()
-	myApplet.iCurrentConv = convs[iNumEntry]
-	conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
-	myApplet.icon.SetLabel(conv_name)
-	myApplet.purple.PurpleConversationPresent(myApplet.iCurrentConv)
+	nb_conv = len(convs)
+	if iNumEntry < nb_conv:
+		myApplet.iCurrentConv = convs[iNumEntry]
+		conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
+		myApplet.icon.SetLabel(conv_name)
+		myApplet.purple.PurpleConversationPresent(myApplet.iCurrentConv)
+	else:
+		iNumEntry -= nb_conv
+		current_status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
+		if iNumEntry >= current_status:
+			iNumEntry += 1
+		print ">>> status :",STATUS[iNumEntry]
+		new_status = myApplet.purple.PurpleSavedstatusNew("", iNumEntry)
+		#myApplet.purple.PurpleSavedstatusSetMessage(new_status, "pouic")
+		myApplet.purple.PurpleSavedstatusActivate(new_status)
 	
 def action_on_scroll(bScrollUp):
 	print ">>> scroll !"
