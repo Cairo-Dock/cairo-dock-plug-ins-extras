@@ -67,7 +67,7 @@ def action_on_click(iState):
 			myApplet.icon.ShowDialog("Connecting to xchat, please wait ...",4)
 	else:  # on montre la fenetre.
 		if myApplet.bHasFocus:  # la fenetre existe et a le focus.
-			myApplet.icon.ShowAppli(false)  # on minimise la fenetre.
+			myApplet.icon.ShowAppli(False)  # on minimise la fenetre.
 		else:  # soit la fenetre n'existe pas, soit elle n'a pas le focus.
 			try:
 				myApplet.xchat.Command("GUI SHOW")  # on n'utilise pas ShowAppli pour pouvoir detecter si xchat a quitte inopinement. En effet il ne nous notifie pas lorsqu'il s'arrete.
