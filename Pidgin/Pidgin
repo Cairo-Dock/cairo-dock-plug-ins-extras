@@ -88,7 +88,6 @@ def action_on_build_menu():
 	
 def action_on_menu_select(iNumEntry):
 	print ">>> choice",iNumEntry,"has been selected !"
-	iNumEntry -= 1
 	convs = myApplet.purple.PurpleGetConversations()
 	nb_conv = len(convs)
 	if iNumEntry < nb_conv:
@@ -97,7 +96,7 @@ def action_on_menu_select(iNumEntry):
 		myApplet.icon.SetLabel(conv_name)
 		myApplet.purple.PurpleConversationPresent(myApplet.iCurrentConv)
 	else:
-		iNumEntry -= nb_conv
+		iNumEntry -= nb_conv-1
 		current_status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
 		if iNumEntry >= current_status:
 			iNumEntry += 1
