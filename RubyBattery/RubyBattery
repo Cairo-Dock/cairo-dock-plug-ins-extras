@@ -56,7 +56,7 @@ class Applet
 	MenuShowCharge 	= 1
 	MenuShowAlert 	= 2
 
-	DialogActiveTime = 5
+	DialogActiveTime = 5																# dialog windows will keep opened this value in seconds
 
 	def initialize (applet, conf)
 		@icon = applet
@@ -83,6 +83,7 @@ class Applet
 
 	def set_initial_graphic_configurations
 		@icon.SetLabel(@conf.params['Icon']['name'])
+		p "GAUGE #{@conf.params['Configuration']['theme']}"
 		@icon.AddDataRenderer("gauge", 1, @conf.params['Configuration']['theme'])		# o padrao é Ruby-Battery
 	end
 
@@ -159,12 +160,12 @@ class Applet
 	def retrieve_battery_information
 		raw_info = ""
 		raw_temperature = ""
-		IO.popen("acpi -t") { |f|
+		IO.popen("acpi -b") { |f|														# charge and status in its raw form
 			raw_info = f.first.chomp.strip.split(':').last.strip.split(',')
+		}
+		IO.popen("acpi -t") {|f|														# temperature in its raw form
 			raw_temperature = f.readlines.last.chomp.strip.split(',').last.strip
 		}
-		# o raw_info tem [status, carga] quando a bateria esta ligada e [status, carga, mensagem] quando desligada "Discharging"
-		# remove-se o valor "mensagem" e mantem-se pegando o primeiro e o ultimo elemento
 		if raw_info.first == "Discharging" || raw_info.first == "Charging"
 			raw_info.delete raw_info.last
 		end
