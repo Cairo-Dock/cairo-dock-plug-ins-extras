@@ -1,0 +1,189 @@
+#!/usr/bin/ruby
+
+# This is a part of the external Ruby Battery applet for Cairo-Dock
+#
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+
+# This applet monitors the battery through acpi. It is possbile to show the status by left-clicking
+#    over the icon. Set the icon's label, show the % of carge as quick info, and activate an alert 
+#    message to be shown when the charge is critically low.
+
+require 'rubygems'
+require 'rbus'
+require 'parseconfig'
+
+applet_name = File.basename(Dir.getwd)						 							# nome do applet, neste caso é demo_ruby
+applet_path = "/org/cairodock/CairoDock/#{applet_name}"  	 							# path where our object is stored on the bus
+
+bus = RBus.session_bus
+applet_object = bus.get_object('org.cairodock.CairoDock', applet_path)
+applet_object.interface!('org.cairodock.CairoDock.applet')
+
+conf_file = "#{Dir.getwd}/#{applet_name}.conf"											# configuration file does not need to be verified
+conf = ParseConfig.new(conf_file)														# verification came for free from the Cairo-Dock
+
+class Alert																				# usar no futuro
+	attr_accessor :is_on
+	def initialize
+		self.is_on = false
+	end
+end
+
+class CriticalChargeAlert < Alert
+	attr_accessor :threshold
+	def initialize
+		super
+		self.threshold = 0
+	end
+end
+
+class Applet
+
+	attr_accessor :charge, :status, :temperature
+
+	MenuSetLabel	= 0
+	MenuShowCharge 	= 1
+	MenuShowAlert 	= 2
+
+	DialogActiveTime = 5
+
+	def initialize (applet, conf)
+		@icon = applet
+		@conf = conf
+		@alert_critical_charge = CriticalChargeAlert.new
+		# TODO: Encapsular a variavel abaixo classe como é a do alert, pensar em como fundir as duas numa coisa mais generica
+		@display_charge_on = false														# controls the click over the "Show charge" menu
+	end
+
+	def start
+		set_initial_graphic_configurations
+		threads =[]		
+		threads << Thread.new {															# flow that keeps retrieving information from acpi
+			while true
+				refresh_battery_information
+				sleep 1																	# TODO: definir a variaval interval que vira do conf
+			end
+		}
+		threads << Thread.new {															# creates another flow to receive signals
+			verify_action
+		}
+		threads.each {|t| t.join}
+	end
+
+	def set_initial_graphic_configurations
+		@icon.SetLabel(@conf.params['Icon']['name'])
+		@icon.AddDataRenderer("gauge", 1, @conf.params['Configuration']['theme'])		# o padrao é Ruby-Battery
+	end
+
+	def verify_action
+		@icon.connect!(:on_click) do |param|
+			action_on_click
+		end
+		@icon.connect!(:on_build_menu) do |param|										# right click signal
+			action_on_build_menu
+		end
+		@icon.connect!(:on_menu_select) do |param|
+			action_on_select_menu_set_label if param == MenuSetLabel
+			action_on_select_menu_show_charge if param == MenuShowCharge
+			action_on_select_menu_show_alert_critical_charge if param == MenuShowAlert
+		end
+		@icon.connect!(:on_answer) do |param|
+			p "on_answer signal received (#{param})"
+			action_on_answer param														# "param" is the answer itself
+		end
+	end
+
+	def action_on_select_menu_set_label
+		@icon.AskText("Type de new icon's label", @conf.params['Icon']['name']) 		# the user input goes to "on_answer" signal
+	end
+
+	# Define a flag que vai dizer se o quantidade de carga deve ser mostrada
+	def action_on_select_menu_show_charge
+		if @display_charge_on
+			@display_charge_on = false
+		else
+			@display_charge_on = true
+		end
+	end
+
+	def action_on_select_menu_show_alert_critical_charge
+		p "action_on_select_menu_show_alert_critical_charge"
+		# TODO: Receber do usuario o threshold, mas saber como diferenciar uma resposta específica de uma das chamadas Ask*
+		# Ideia para solucionar: setar uma flag com o valor do ultimo menu acionado. Assim, espera-se que a resposta
+		# que chegar venha da pergunta feita por este menu
+		@alert_critical_charge.threshold = 10
+		if @alert_critical_charge.is_on
+			@alert_critical_charge.is_on = false
+		else
+			@alert_critical_charge.is_on = true
+		end
+	end
+
+	# Trata a resposta do usuario ao nome dado para o 
+	def action_on_answer answer
+		@icon.SetLabel(answer)
+	end
+	
+	# Metodo invocado constantemente por uma thread para ficar atualizando a informacao de carga,
+	# o icone do ruby (gauge) e, caso o usuário tenha definido, a informacao da porcentagem de carga e
+	# uma caixa de diálogo quando a carga estiver em nivel critico
+	def refresh_battery_information
+		self.status, self.charge, self.temperature = retrieve_battery_information
+		@icon.RenderValues([self.charge.to_f/100.to_f])									# Entre 0 e 1 que define a % do icone (ruby) a ser renderizada
+		if @display_charge_on
+			@icon.SetQuickInfo("#{self.charge} %")
+		else
+			@icon.SetQuickInfo("")
+		end
+		if @alert_critical_charge.is_on && self.charge < @alert_critical_charge.threshold
+			@icon.ShowDialog("The battery charge is under #{self.charge} %", DialogActiveTime)
+			@alert_critical_charge.is_on = false
+		end
+	end
+
+	def action_on_click
+		@icon.ShowDialog("Laptop battery is #{self.status.downcase}\nand its temperature is #{self.temperature} C", DialogActiveTime)
+	end
+
+	def retrieve_battery_information
+		raw_info = ""
+		raw_temperature = ""
+		IO.popen("acpi -t") { |f|
+			raw_info = f.first.chomp.strip.split(':').last.strip.split(',')
+			raw_temperature = f.readlines.last.chomp.strip.split(',').last.strip
+		}
+		# o raw_info tem [status, carga] quando a bateria esta ligada e [status, carga, mensagem] quando desligada "Discharging"
+		# remove-se o valor "mensagem" e mantem-se pegando o primeiro e o ultimo elemento
+		if raw_info.first == "Discharging" || raw_info.first == "Charging"
+			raw_info.delete raw_info.last
+		end
+		temperature = raw_temperature.split.first
+		status = raw_info.first
+		charge = raw_info.last.strip.delete("%").to_i
+		return status, charge, temperature
+	end
+	
+	def action_on_build_menu
+		# TODO: Compor um array com os labels do menu verificando as variaves display, alert, etc.
+		if @display_charge_on
+			@icon.PopulateMenu(["Set label", "Hide charge", "Active critical charge alert"])
+		else
+			@icon.PopulateMenu(["Set label", "Show charge", "Active critical charge alert"])
+		end
+	end
+end
+
+applet = Applet.new applet_object, conf
+applet.start
+RBus.mainloop
