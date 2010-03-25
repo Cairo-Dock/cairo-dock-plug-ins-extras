@@ -2,7 +2,7 @@ In order to use this applet, it is necessary to install Ruby, Rubygems and the g
 
 # Installation process (Debian/Ubuntu)
 
-* Ruby: (sudo) apt-get install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 rubygems1.8
+* Ruby: (sudo) apt-get install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 rubygems1.8 acpi
 * Gem Rbus: (sudo) gem install rbus
 * Gem parseconfig: (sudo) gem install parseconfig
 (if you don't have Rubygems: Instructions are neatly described in http://rubygems.org/pages/download)
