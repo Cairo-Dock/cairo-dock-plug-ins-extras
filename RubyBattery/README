@@ -1,0 +1,27 @@
+In order to use this applet, it is necessary to install Ruby, Rubygems and the gems rbus and parseconfig.
+
+# Installation process (Debian/Ubuntu)
+
+* Ruby: (sudo) apt-get install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 rubygems1.8
+* Gem Rbus: (sudo) gem install rbus
+* Gem parseconfig: (sudo) gem install parseconfig
+(if you don't have Rubygems: Instructions are neatly described in http://rubygems.org/pages/download)
+
+# Tips
+
+When running Cairo-Dock through terminal, for example, cairo-dock -c, check if any message regarding execution permission is being shown. If so, set execution permission to the applet, chmod a+x 755 RubyBatter
+
+# Gauge
+
+By default, the gauge being used is the Battery one. Anyway, I made a gauge specifically to this applet. It is a cute ruby being filled as the battery charge increases and emptied as the battery charge decreases. :-)
+
+In order to use it, just do the following:
+* 1 - Copy the Ruby-Battery folder to ~/.config/cairo-dock/extras/gauges/
+* 2 - Open the config panel of the applet and change the gauge theme by "Ruby-Battery"
+
+# Contact me
+
+Any doubt, suggestion or anything else, except asking for some money, I would be pleased to received a message from you.
+
+Author: Eduardo Mucelli Rezende Oliveira
+E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br

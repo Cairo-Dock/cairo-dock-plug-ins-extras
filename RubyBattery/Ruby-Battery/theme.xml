@@ -1,0 +1,17 @@
+<gauge>
+	<name>Ruby-Battery</name>
+	<author>Eduardo Mucelli Rezende Oliveira</author>
+	<file key="background">ruby-battery0.svg</file>
+	<indicator>
+		<file key="image">ruby-battery1.svg</file>
+		<file key="image">ruby-battery2.svg</file>
+		<file key="image">ruby-battery3.svg</file>
+		<file key="image">ruby-battery4.svg</file>
+		<file key="image">ruby-battery5.svg</file>
+		<file key="image">ruby-battery6.svg</file>
+		<file key="image">ruby-battery7.svg</file>
+		<file key="image">ruby-battery8.svg</file>
+		<file key="image">ruby-battery9.svg</file>
+		<file key="image">ruby-battery10.svg</file>
+	</indicator>
+</gauge>
