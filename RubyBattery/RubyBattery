@@ -30,9 +30,6 @@ bus = RBus.session_bus
 applet_object = bus.get_object('org.cairodock.CairoDock', applet_path)
 applet_object.interface!('org.cairodock.CairoDock.applet')
 
-conf_file = "#{Dir.getwd}/#{applet_name}.conf"											# configuration file does not need to be verified
-conf = ParseConfig.new(conf_file)														# verification came for free from the Cairo-Dock
-
 class Alert																				# usar no futuro
 	attr_accessor :is_on
 	def initialize
@@ -50,20 +47,29 @@ end
 
 class Applet
 
-	attr_accessor :charge, :status, :temperature
+	attr_accessor :charge, :status, :temperature, :file_name, :configuration
 
 	MenuSetLabel	= 0
 	MenuShowCharge 	= 1
 	MenuShowAlert 	= 2
-
 	DialogActiveTime = 5																# dialog windows will keep opened this value in seconds
 
-	def initialize (applet, conf)
+	def initialize applet, file_name
+		self.file_name = file_name
+		self.configuration = get_configuration_parameters
 		@icon = applet
-		@conf = conf
 		@alert_critical_charge = CriticalChargeAlert.new
 		# TODO: Encapsular a variavel abaixo classe como é a do alert, pensar em como fundir as duas numa coisa mais generica
 		@display_charge_on = false														# controls the click over the "Show charge" menu
+	end
+	
+	def get_configuration_parameters
+		conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{self.file_name}/#{self.file_name}.conf"))
+		c = {}
+		c['theme'] = conf.params['Configuration']['theme']
+		c['refresh'] = conf.params['Configuration']['refresh']
+		c['name'] = conf.params['Icon']['name']
+		c
 	end
 
 	def start
@@ -72,19 +78,18 @@ class Applet
 		threads << Thread.new {															# flow that keeps retrieving information from acpi
 			while true
 				refresh_battery_information
-				sleep 1																	# TODO: definir a variaval interval que vira do conf
+				sleep self.configuration['refresh'].to_i								# TODO: definir a variaval interval que vira do conf | DONE by matttbe : it's maybe not a good idea to check the battery state too often.
 			end
 		}
-		threads << Thread.new {															# creates another flow to receive signals
-			verify_action
+		threads << Thread.new {
+			verify_action																# creates another flow to receive signals
 		}
 		threads.each {|t| t.join}
 	end
-
+	
 	def set_initial_graphic_configurations
-		@icon.SetLabel(@conf.params['Icon']['name'])
-		p "GAUGE #{@conf.params['Configuration']['theme']}"
-		@icon.AddDataRenderer("gauge", 1, @conf.params['Configuration']['theme'])		# o padrao é Ruby-Battery
+		@icon.SetLabel(self.configuration['name'])
+		@icon.AddDataRenderer("gauge", 1, self.configuration['theme'])					# o padrao é Battery
 	end
 
 	def verify_action
@@ -100,17 +105,31 @@ class Applet
 			action_on_select_menu_show_alert_critical_charge if param == MenuShowAlert
 		end
 		@icon.connect!(:on_answer) do |param|
-			p "on_answer signal received (#{param})"
 			action_on_answer param														# "param" is the answer itself
+		end
+		@icon.connect!(:on_reload_module) do |config_has_changed|
+			action_on_reload_module config_has_changed
+		end
+	end
+
+	def action_on_click
+		@icon.ShowDialog("Laptop battery is #{self.status.downcase}\nand its temperature is #{self.temperature} C", DialogActiveTime)
+	end
+
+	def action_on_build_menu
+		# TODO: Compor um array com os labels do menu verificando as variaves display, alert, etc.
+		if @display_charge_on
+			@icon.PopulateMenu(["Set label", "Hide charge", "Active critical charge alert"])
+		else
+			@icon.PopulateMenu(["Set label", "Show charge", "Active critical charge alert"])
 		end
 	end
 
 	def action_on_select_menu_set_label
-		@icon.AskText("Type de new icon's label", @conf.params['Icon']['name']) 		# the user input goes to "on_answer" signal
+		@icon.AskText("Type de new icon's label", self.configuration['name']) 			# the user input goes to "on_answer" signal
 	end
 
-	# Define a flag que vai dizer se o quantidade de carga deve ser mostrada
-	def action_on_select_menu_show_charge
+	def action_on_select_menu_show_charge												# define se a quantidade de carga deve ser mostrada
 		if @display_charge_on
 			@display_charge_on = false
 		else
@@ -131,11 +150,23 @@ class Applet
 		end
 	end
 
-	# Trata a resposta do usuario ao nome dado para o 
-	def action_on_answer answer
+	def action_on_answer answer															# trata a respostas dos metodos Ask*
 		@icon.SetLabel(answer)
 	end
-	
+
+	def action_on_reload_module config_has_changed
+		p "[+] our module was reloaded, welcome back!"
+		if config_has_changed
+			p "[+] and our config has been changed"
+			self.configuration = get_configuration_parameters
+			p "[+] theme #{self.configuration['theme']} name #{self.configuration['name']}"
+			@icon.SetLabel(self.configuration['name'])
+			@icon.AddDataRenderer("gauge", 1, self.configuration['theme'])		# o padrao é Ruby-Battery
+		else
+			p "[-] but the config is the same"
+		end
+	end
+
 	# Metodo invocado constantemente por uma thread para ficar atualizando a informacao de carga,
 	# o icone do ruby (gauge) e, caso o usuário tenha definido, a informacao da porcentagem de carga e
 	# uma caixa de diálogo quando a carga estiver em nivel critico
@@ -153,10 +184,6 @@ class Applet
 		end
 	end
 
-	def action_on_click
-		@icon.ShowDialog("Laptop battery is #{self.status.downcase}\nand its temperature is #{self.temperature} C", DialogActiveTime)
-	end
-
 	def retrieve_battery_information
 		raw_info = ""
 		raw_temperature = ""
@@ -167,24 +194,20 @@ class Applet
 			raw_temperature = f.readlines.last.chomp.strip.split(',').last.strip
 		}
 		if raw_info.first == "Discharging" || raw_info.first == "Charging"
+			# Battery 0: Charging, 98%, 00:04:42 until charged
+			# => the output : 42 until charged 
+			#  00:04:42 until charged => acpi -b | cut -d, -f3
 			raw_info.delete raw_info.last
 		end
 		temperature = raw_temperature.split.first
+		# Battery 0: Full, 100%
+		#  100% => acpi -b | cut -d, -f2
 		status = raw_info.first
 		charge = raw_info.last.strip.delete("%").to_i
 		return status, charge, temperature
 	end
-	
-	def action_on_build_menu
-		# TODO: Compor um array com os labels do menu verificando as variaves display, alert, etc.
-		if @display_charge_on
-			@icon.PopulateMenu(["Set label", "Hide charge", "Active critical charge alert"])
-		else
-			@icon.PopulateMenu(["Set label", "Show charge", "Active critical charge alert"])
-		end
-	end
 end
 
-applet = Applet.new applet_object, conf
+applet = Applet.new applet_object, applet_name
 applet.start
 RBus.mainloop

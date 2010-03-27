@@ -37,8 +37,8 @@ applet_object.interface!('org.cairodock.CairoDock.applet')								# get the serv
 applet_sub_icons_object = bus.get_object("org.cairodock.CairoDock", "#{applet_path}/sub_icons")
 applet_sub_icons_object.interface!("org.cairodock.CairoDock.subapplet")  				# list of icons contained in our sub-dock, or in our desklet
 
-conf_file = "#{Dir.getwd}/#{applet_name}.conf"											# configuration file does not need to be verified
-conf = ParseConfig.new(conf_file)
+
+conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{applet_name}/#{applet_name}.conf"))
 
 class String
 	def to_b																			# string to boolean
