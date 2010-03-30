@@ -71,26 +71,14 @@ class Applet
 			end
 		}
 		threads << Thread.new {
-			while true
-				set_graphic_configurations												# it's necessary to render it as soon as possible in the icon
-				sleep 1																	# label, gauge, etc must be shown as soon as the user changes
-			end
-		}
-		threads << Thread.new {
 			verify_action																# creates another flow to receive signals
 		}
 		threads.each {|t| t.join}
 	end
 	
 	def set_graphic_configurations
-		@icon.SetLabel(self.configuration['name'])
-		@icon.AddDataRenderer("gauge", 1, self.configuration['theme'])					# the default one is Battery
-		@icon.RenderValues([self.charge.to_f/100])										# between 0 and 1 defines the % of the battery to be rendered
-		if self.configuration['show_charge']
-			@icon.SetQuickInfo("#{self.charge}%")
-		else
-			@icon.SetQuickInfo("")
-		end
+		@icon.SetLabel(self.configuration['name'])										# does not need to be refreshed with charge changing
+		refresh_graphic_configurations
 	end
 
 	def verify_action
@@ -114,18 +102,32 @@ class Applet
 		if config_has_changed
 			p "[+] and our config has been changed"
 			self.configuration = get_configuration_parameters							# refresh the config parameters
-			set_graphic_configurations													# and set their modifications
 			p "[+] Configuration theme [#{self.configuration['theme']}] name [#{self.configuration['name']}] refresh [#{self.configuration['refresh']}] threshold [#{self.configuration['threshold']}] critical alert [#{self.configuration['critical_alert']}] show charge [#{self.configuration['show_charge']}]"
+			set_graphic_configurations													# and set their modifications
 		else
 			p "[-] but the config is the same"
 		end
 	end
 
 	def refresh_battery_information																		
-		self.status, self.charge, self.temperature = retrieve_battery_information						
-		check_critical_charge
+		self.status, charge, self.temperature = retrieve_battery_information
+		if charge != self.charge														# charge has been changed in the last check
+			self.charge = charge														# refresh it
+			refresh_graphic_configurations												# refresh what is rendered about the charge
+			check_critical_charge														# check if the charge did reach the threshold
+		end
 	end
 
+	def refresh_graphic_configurations													# the graphical part that needs to change when charge does
+		@icon.AddDataRenderer("gauge", 1, self.configuration['theme'])
+		@icon.RenderValues([self.charge.to_f/100])										# between 0 and 1 defines the % of the battery to be rendered
+		if self.configuration['show_charge']
+			@icon.SetQuickInfo("#{self.charge} %")
+		else
+			@icon.SetQuickInfo("")
+		end
+	end
+	
 	def check_critical_charge
 		if self.charge < self.configuration['threshold']												# Charge is under the defined threshold and
 			if self.configuration['critical_alert'] 													# the user want to be alerted,
