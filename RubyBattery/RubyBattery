@@ -58,7 +58,7 @@ class Applet
 		c['refresh'] = conf.params['Configuration']['refresh'].to_i
 		c['threshold'] = conf.params['Configuration']['threshold'].to_i
 		c['critical_alert'] = conf.params['Configuration']['critical alert'].to_b
-		c['show_charge'] = conf.params['Icon']['show charge'].to_b
+		c['show_charge'] = conf.params['Configuration']['show charge'].to_b
 		c
 	end
 
@@ -87,7 +87,7 @@ class Applet
 		@icon.AddDataRenderer("gauge", 1, self.configuration['theme'])					# the default one is Battery
 		@icon.RenderValues([self.charge.to_f/100])										# between 0 and 1 defines the % of the battery to be rendered
 		if self.configuration['show_charge']
-			@icon.SetQuickInfo("#{self.charge} %")
+			@icon.SetQuickInfo("#{self.charge}%")
 		else
 			@icon.SetQuickInfo("")
 		end
