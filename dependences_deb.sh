@@ -10,12 +10,13 @@ ROUGE="\\033[1;31m"
 LOG_CD=../log.txt
 
 install_pkg() {
-	for tested in $NEEDED_EXTRAS; do
-		dpkg -s $tested |grep installed |grep "install ok" > /dev/null
-		if [ $? -eq 1 ]; then
-			sudo apt-get install -qq $tested  >> $LOG_CD
-		fi
-	done
+#	for tested in $NEEDED_EXTRAS; do
+#		dpkg -s $tested |grep installed |grep "install ok" > /dev/null
+#		if [ $? -eq 1 ]; then
+#			sudo apt-get install -qq $tested  >> $LOG_CD
+#		fi
+#	done
+	sudo apt-get install -qq -y --force-yes $NEEDED_EXTRAS  >> $LOG_CD
 }
 
 install_pkg >> $LOG_CD
