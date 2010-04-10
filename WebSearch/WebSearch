@@ -1,0 +1,227 @@
+#!/usr/bin/ruby
+
+# This is a part of the external WebSearch applet for Cairo-Dock
+#
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+
+# This applet provides an interface to Google search engine.
+#    In order to use it, right-click on the icon -> WebSearch -> Search.
+#    Type your query and validate. Each result will be shown as an sub-icon.
+#	 Left-click to open the the result in the default web browser
+# 	 Middle-click on the sub-icon of any result to show its description
+#    Scroll up to fetch the next results
+#	 Scroll down to fetch the previous results
+
+require 'rubygems'
+require 'open-uri'
+require 'nokogiri'
+require 'rbus'
+require 'parseconfig'
+require 'launchy'
+
+applet_name = File.basename(Dir.getwd)						 								# nome do applet, neste caso é demo_ruby
+applet_path = "/org/cairodock/CairoDock/#{applet_name}"  	 								# path where our object is stored on the bus
+
+bus = RBus.session_bus
+applet_object = bus.get_object('org.cairodock.CairoDock', applet_path)
+applet_object.interface!('org.cairodock.CairoDock.applet')
+
+applet_sub_icons_object = bus.get_object("org.cairodock.CairoDock", "#{applet_path}/sub_icons")
+applet_sub_icons_object.interface!("org.cairodock.CairoDock.subapplet")  					# list of icons contained in our sub-dock, or in our desklet
+
+class Link
+	attr_accessor :url, :description, :id, :icon, :shortened_url
+	@@next_id = 0																			# sequential id "static"
+
+	# TODO: Keep in the applet's directory the icons of the most of known web browsers and a generic one.
+	# 		Get from Launchy the name of the default browser and show the respective icon as sub-icon.
+	# 		If the browser is unknown, show the generic icon
+	def initialize(url = "", description = "", icon = File.expand_path("./icon"))
+		self.url = url
+		self.description = description
+		self.id = @@next_id += 1
+		self.icon = icon
+		self.shortened_url = shorten self.url
+		p "creating link (#{self.id}) #{self.url}"
+	end
+
+	def reset_next_id																		# necessary for every new search
+		@@next_id = 0
+	end
+
+	def shorten (string, count = 35)														# TODO: count as a parameter in .conf file
+		if string.length > count
+			string += "..." if string.slice!(count .. -1)
+		else
+			string
+		end
+	end
+end
+
+# TODO: Include another search engines, Yahoo!, Bing ...
+
+class Applet
+	
+	attr_accessor :links, :query, :number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links, :file_name
+
+	GoogleSearch = "http://www.google.com/search?q="
+	MenuSearch = 0
+	DialogActiveTime = 5
+
+	def initialize applet, sub_icons, file_name
+		self.links =[]
+		self.file_name = file_name
+		self.number_of_fetched_links = 100													# TODO: as a parameter in .conf file {10,20,30,50, and 100}
+		self.page_of_displayed_links = 0													# the current pagination of displayed links
+		get_configuration_parameters														# setting the self.configuration content
+		@icon = applet
+		@sub_icons = sub_icons
+	end
+
+	def get_configuration_parameters
+		conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{self.file_name}/#{self.file_name}.conf"))
+		self.number_of_displayed_links = conf.params['Configuration']['number of displayed links'].to_i # number of sub-icons to be shown
+	end
+	
+	def start
+		verify_user_action
+	end
+
+	def verify_user_action
+		@icon.connect!(:on_build_menu) do |param|											# right click signal
+			action_on_build_menu
+		end
+		@icon.connect!(:on_menu_select) do |selected_menu|
+			if selected_menu == MenuSearch
+				action_on_select_search_menu
+			end
+		end
+		@icon.connect!(:on_answer) do |answer|
+			action_on_answer answer
+		end
+		@icon.connect!(:on_scroll) do |scroll_up|											# when the user scroll the mouse up or down on the icon
+			if self.query.empty?
+				@icon.ShowDialog("Ops, the query is empty.\nRight-click -> WebSearch -> Search", DialogActiveTime)
+			else
+				action_on_scroll scroll_up													# scroll down param = false, scroll up param = true
+			end
+		end
+		@icon.connect!(:on_reload_module) do |config_has_changed|
+			action_on_reload_module config_has_changed
+		end
+		@sub_icons.connect!(:on_click_sub_icon) do |param, sub_icon_id|
+			action_on_click_sub_icon sub_icon_id
+		end
+		@sub_icons.connect!(:on_middle_click_sub_icon) do |sub_icon_id|
+			action_on_middle_click_sub_icon sub_icon_id
+		end
+	end
+
+	def action_on_build_menu
+		@icon.PopulateMenu(["Search"])
+	end
+
+	def action_on_select_search_menu
+		@icon.AskText("Search for:", "")
+	end
+
+	def action_on_answer answer
+		if answer.empty?
+			@icon.ShowDialog("Ops, try something other than an empty query", DialogActiveTime)
+		 else																				# clear the things to a new search
+		    self.query = answer
+		    self.links.clear
+		    self.page_of_displayed_links = 0
+		    Link.new.reset_next_id
+		    @sub_icons.RemoveSubIcon("any")
+			fetch_next_resulting_page
+		end
+	end
+
+	def action_on_click_sub_icon sub_icon_id
+		Launchy.open self.links.at(sub_icon_id.to_i-1).url
+	end
+
+	def action_on_middle_click_sub_icon sub_icon_id
+		@icon.ShowDialog(self.links.at(sub_icon_id.to_i-1).description, DialogActiveTime)
+	end
+
+	def action_on_reload_module config_has_changed
+		get_configuration_parameters
+	end
+
+	def action_on_scroll scroll_up
+		if scroll_up
+			fetch_next_resulting_page
+		else
+			fetch_previous_resulting_page
+		end
+	end
+
+	def fetch_next_resulting_page
+		list_of_menus =[]
+		offset = self.page_of_displayed_links * self.number_of_displayed_links				# the position of the first link in the self.links array
+		if self.links.size <= offset                                                        # user already scrolled by the fetched links, fetch more 100
+			retrieve_links_from_google(self.query, offset)
+        end
+		self.page_of_displayed_links += 1													# sequential page identification, lets go to the next
+
+		self.links[offset, self.number_of_displayed_links].each do |link|
+			list_of_menus << link.shortened_url												# show only the shortened version of the url
+			list_of_menus << link.icon														# the icon
+			list_of_menus << link.id.to_s													# the sequential id
+		end
+
+		@sub_icons.RemoveSubIcon("any")
+		@sub_icons.AddSubIcons(list_of_menus)
+	end
+	
+	# Since the previous results are already stored in self.links, it is necessary just to 
+	# select the its interval that starts with the first link of the previous page.
+	# An easier approach would be query google again with page-1 but it would result
+	# more queries to the page, consequently it has some drawbacks such as increasing the 
+	# probability of Google block the mechanized access, more bandwith, etc.
+	def fetch_previous_resulting_page
+		if self.page_of_displayed_links > 1
+			list_of_menus =[]
+			self.page_of_displayed_links -= 1												# one page back
+			inicio = (self.page_of_displayed_links-1) * self.number_of_displayed_links		# the first position of the link in the previous page
+
+			self.links[inicio, self.number_of_displayed_links].each do |link|
+				list_of_menus << link.shortened_url											# show only the shortened version of the url
+				list_of_menus << link.icon													# the icon
+				list_of_menus << link.id.to_s												# the sequential id
+			end
+
+			@sub_icons.RemoveSubIcon("any")
+			@sub_icons.AddSubIcons(list_of_menus)
+		end
+	end
+
+    # Fetch 100 links from google with just one query. The parameter offset is the index of the first link.
+    # This amount of links is fetched in order to minimize the number of queries to be sent to google.
+	def retrieve_links_from_google(query, offset = 0)
+		p "[+] retrieving links with query #{query} and offset #{offset}"
+		host = Nokogiri::HTML(open("#{GoogleSearch}#{query}&start=#{offset}&num=100"))
+		(host/"h3[@class='r']").search("a[@href]").each do |raw_link|
+			unless raw_link.to_s.include? "http://images.google.com/images?q=#{query}" or raw_link.to_s.include? "/search?q=#{query}"
+				self.links << Link.new(raw_link['href'], raw_link.inner_text)				# url, description
+			end
+		end
+	end
+end
+
+applet = Applet.new applet_object, applet_sub_icons_object, applet_name
+applet.start
+RBus.mainloop

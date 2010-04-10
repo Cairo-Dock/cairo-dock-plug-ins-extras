@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEEDED_EXTRAS="ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 rubygems1.8 acpi python"
+NEEDED_EXTRAS="ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 rubygems1.8 acpi python libxslt-dev libxml2-dev"
 
 NORMAL="\\033[0;39m"
 BLEU="\\033[1;34m"
@@ -26,4 +26,9 @@ if ! test -e '../.gem'; then
 	sudo gem install rbus
 	sudo gem install parseconfig
 	touch '../.gem'
+fi
+if ! test -e '../.gem2'; then
+	sudo gem install nokogiri
+	sudo gem install launchy
+	touch '../.gem2'
 fi
