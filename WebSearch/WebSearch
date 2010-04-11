@@ -15,8 +15,11 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 
-# This applet provides an interface to Google search engine.
-#    In order to use it, right-click on the icon -> WebSearch -> Search or middle-click on the icon.
+# This applet provides an interface to some search engines.
+#    You can search in three ways
+#		(1) Middle-click on the main icon
+#		(2) Right-click on the main icon -> WebSearch -> Search
+#		(3) Left-click on main icon (applicable only for the first search)
 #    Type your query and validate. Each result will be shown as an sub-icon.
 #	 Left-click to open the the result in the default web browser
 # 	 Middle-click on the sub-icon of any result to show its description
@@ -73,31 +76,34 @@ class Link
 	end
 end
 
-# TODO: Include another search engines, Yahoo!, Bing ...
+# TODO: Include Yahoo! search option
 
 class Applet
 	
-	attr_accessor 	:links, :query, :stats,
-					:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links,
+	attr_accessor 	:engine, :links, :query, :stats,
+					:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links, # prefetch works only for google
 					:show_current_page,
 					:file_name
 
 	Google = "http://www.google.com/search?q="
+	Bing = "http://www.bing.com/search?q="
 	MenuSearch = 0
 	DialogActiveTime = 5
 
 	def initialize applet, sub_icons, file_name
 		self.links =[]
+		self.stats = ""
 		self.file_name = file_name
 		self.page_of_displayed_links = 0													# the current pagination of displayed links
-		get_configuration_parameters														# setting the self.configuration content
+		set_configuration_parameters														# setting the self.configuration content
 		@icon = applet
 		@sub_icons = sub_icons
 	end
 
-	def get_configuration_parameters
+	def set_configuration_parameters
 		conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{self.file_name}/#{self.file_name}.conf"))
 		# for list parameters, its value is just the position in the options list, not the value by itself
+		self.engine = [Google, Bing].at(conf.params['Configuration']['engine'].to_i)
 		self.number_of_fetched_links = [10, 20, 30, 50, 100].at(conf.params['Configuration']['number of fetched links'].to_i)
 		self.number_of_displayed_links = conf.params['Configuration']['number of displayed links'].to_i # number of sub-icons to be shown
 		self.show_current_page = conf.params['Configuration']['show current page'].to_b
@@ -113,21 +119,21 @@ class Applet
 		end
 		@icon.connect!(:on_menu_select) do |selected_menu|
 			if selected_menu == MenuSearch
-				action_on_select_search_menu
+				ask_for_search_query
 			end
 		end
 		@icon.connect!(:on_answer) do |answer|
 			action_on_answer answer
 		end
 		@icon.connect!(:on_scroll) do |scroll_up|											# when the user scroll the mouse up or down on the icon
-			if self.query.empty?
-				@icon.ShowDialog("Ops, the query is empty.\nRight-click -> WebSearch -> Search", DialogActiveTime)
+			if self.query.empty?															# Happens in the first search
+				@icon.ShowDialog("Ops, the query is empty.\nMiddle-click or Right-click -> WebSearch -> Search", DialogActiveTime)
 			else
 				action_on_scroll scroll_up													# scroll down param = false, scroll up param = true
 			end
 		end
 		@icon.connect!(:on_middle_click) do |param|
-			action_on_select_search_menu
+			ask_for_search_query
 		end
 		@icon.connect!(:on_click) do |param|
 			action_on_click
@@ -147,7 +153,7 @@ class Applet
 		@icon.PopulateMenu(["Search"])
 	end
 
-	def action_on_select_search_menu
+	def ask_for_search_query
 		@icon.AskText("Search for:", "")
 	end
 
@@ -157,6 +163,7 @@ class Applet
 		 else																				# clear the things to a new search
 		    self.query = answer
 		    self.links.clear
+			self.stats = ""
 		    self.page_of_displayed_links = 0
 		    Link.new.reset_next_id
 		    @sub_icons.RemoveSubIcon("any")
@@ -173,11 +180,15 @@ class Applet
 	end
 
 	def action_on_click
-		@icon.ShowDialog(self.stats, DialogActiveTime) unless self.stats.empty?
+		if self.stats.empty?
+			ask_for_search_query
+		else
+			@icon.ShowDialog(self.stats, DialogActiveTime) 
+		end
 	end
 
 	def action_on_reload_module config_has_changed
-		get_configuration_parameters if config_has_changed
+		set_configuration_parameters if config_has_changed
 	end
 
 	def action_on_scroll scroll_up
@@ -191,7 +202,12 @@ class Applet
 	def fetch_next_resulting_page
 		offset = self.page_of_displayed_links * self.number_of_displayed_links				# the position of the first link in the self.links array
 		if self.links.size <= offset                                                        # user already scrolled by the fetched links, fetch more 100
-			retrieve_links_from_google(self.query, offset)
+			inform_start_of_fetching_process
+			case self.engine
+				when Google; retrieve_links_from_google(self.query, offset)
+				when Bing; 	 retrieve_links_from_bing(self.query, offset)
+			end
+			inform_end_of_fetching_process
         end
 		self.page_of_displayed_links += 1													# sequential page identification, lets go to the next
 		sub_icon_list = construct_sub_icon_list(offset)
@@ -230,10 +246,9 @@ class Applet
 		@sub_icons.AddSubIcons(sub_icon_list)
 	end
 
-    # Fetch links from google with just one query. The parameter offset is the index of the first link.
-    # It is better to fetch a higher amount of links in order to minimize the number of queries to be sent to google.
+    # Fetch a user-defined number links from Google with just one query. The parameter offset is the index of the first link.
+    # It is better to fetch a higher amount of links in order to minimize the number of queries to be sent to google
 	def retrieve_links_from_google(query, offset = 0)
-		inform_start_of_fetching_process
 		google = Nokogiri::HTML(open("#{Google}#{query}&start=#{offset}&num=#{self.number_of_fetched_links}"))
 		self.stats = retrieve_google_result_stats (google)
 		(google/"h3[@class='r']").search("a[@href]").each do |raw_link|
@@ -242,9 +257,8 @@ class Applet
 				self.links << Link.new(raw_link['href'], raw_link.inner_text)				# url, description
 			end
 		end
-		inform_end_of_fetching_process
 	end
-
+	
 	# Retrieve informations from google search stats
 	# The stats array positions "Resultados first - second de aproximadamente third para fourth (fifth segundos)"
 	def retrieve_google_result_stats google
@@ -252,6 +266,15 @@ class Applet
 		total = stats.third.inner_text
 		time = stats.last.inner_text
 		"Search for #{self.query} returned #{total} results in #{time} seconds"
+	end
+
+	# Fetch links from Bing. Since Bing does not provide an in-url way to fetch more links than the 10
+	# as Google does (&num=amount_to_fetch), this method will be called every time that 10 new results need to be shown
+	def retrieve_links_from_bing(query, offset = 1)
+		bing = Nokogiri::HTML(open("#{Bing}#{query}&first=#{offset}"))
+		(bing/"h3").search("a[@onmousedown]").each do |raw_link|
+			self.links << Link.new(raw_link['href'], raw_link.inner_text)					# url, description
+		end
 	end
 
 	def inform_start_of_fetching_process
