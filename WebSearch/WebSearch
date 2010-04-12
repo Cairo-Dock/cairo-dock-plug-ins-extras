@@ -15,7 +15,7 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 
-# This applet provides an interface to some search engines.
+# This applet provides an interface to some search engines such as Google, Bing, and Yahoo!.
 #    You can search in three ways
 #		(1) Middle-click on the main icon
 #		(2) Right-click on the main icon -> WebSearch -> Search
@@ -76,8 +76,6 @@ class Link
 	end
 end
 
-# TODO: Include Yahoo! search option
-
 class Applet
 	
 	attr_accessor 	:engine, :links, :query, :stats,
@@ -87,6 +85,7 @@ class Applet
 
 	Google = "http://www.google.com/search?q="
 	Bing = "http://www.bing.com/search?q="
+	Yahoo = "http://search.yahoo.com/search?p="
 	MenuSearch = 0
 	DialogActiveTime = 5
 
@@ -103,7 +102,7 @@ class Applet
 	def set_configuration_parameters
 		conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{self.file_name}/#{self.file_name}.conf"))
 		# for list parameters, its value is just the position in the options list, not the value by itself
-		self.engine = [Google, Bing].at(conf.params['Configuration']['engine'].to_i)
+		self.engine = [Google, Bing, Yahoo].at(conf.params['Configuration']['engine'].to_i)
 		self.number_of_fetched_links = [10, 20, 30, 50, 100].at(conf.params['Configuration']['number of fetched links'].to_i)
 		self.number_of_displayed_links = conf.params['Configuration']['number of displayed links'].to_i # number of sub-icons to be shown
 		self.show_current_page = conf.params['Configuration']['show current page'].to_b
@@ -154,13 +153,11 @@ class Applet
 	end
 
 	def ask_for_search_query
-		@icon.AskText("Search for:", "")
+		@icon.AskText("Search for:", "#{self.query}")
 	end
 
 	def action_on_answer answer
-		if answer.empty?
-			@icon.ShowDialog("Ops, try something other than an empty query", DialogActiveTime)
-		 else																				# clear the things to a new search
+		unless answer.empty?																# clear the things to a new search
 		    self.query = answer
 		    self.links.clear
 			self.stats = ""
@@ -206,6 +203,7 @@ class Applet
 			case self.engine
 				when Google; retrieve_links_from_google(self.query, offset)
 				when Bing; 	 retrieve_links_from_bing(self.query, offset)
+				when Yahoo;  retrieve_links_from_yahoo(self.query, offset)
 			end
 			inform_end_of_fetching_process
         end
@@ -250,7 +248,7 @@ class Applet
     # It is better to fetch a higher amount of links in order to minimize the number of queries to be sent to google
 	def retrieve_links_from_google(query, offset = 0)
 		google = Nokogiri::HTML(open("#{Google}#{query}&start=#{offset}&num=#{self.number_of_fetched_links}"))
-		self.stats = retrieve_google_result_stats (google)
+		self.stats = retrieve_google_result_stats(google)
 		(google/"h3[@class='r']").search("a[@href]").each do |raw_link|
 			# Google "injects" its images results in the backlink-based results, desconsidering it
 			unless raw_link.to_s.include? "http://images.google.com/images?q=#{query}" or raw_link.to_s.include? "/search?q=#{query}"
@@ -274,6 +272,17 @@ class Applet
 		bing = Nokogiri::HTML(open("#{Bing}#{query}&first=#{offset}"))
 		(bing/"h3").search("a[@onmousedown]").each do |raw_link|
 			self.links << Link.new(raw_link['href'], raw_link.inner_text)					# url, description
+		end
+	end
+
+	# Fetch links from Yahoo!. Since Yahoo! does not provide an in-url way to fetch more links than the 10
+	# as Google does (&num=amount_to_fetch), this method will be called every time that 10 new results need to be shown
+	def retrieve_links_from_yahoo(query, offset = 1)
+		yahoo = Nokogiri::HTML(open("#{Yahoo}#{query}&b=#{offset}"))
+		(yahoo/"div[@class~='res']").each do |res|					# divs are usually from 'res' class but some sub-results are 'res_indent' class
+			url = (res/"span[@class='url']").inner_text
+			description = (res/"h3/a").inner_text
+			self.links << Link.new(url, description)
 		end
 	end
 
