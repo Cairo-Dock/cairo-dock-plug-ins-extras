@@ -1,0 +1,7 @@
+0.1.9 (April/17/2010): WebSearch now fetch results from Teoma (Ask.com) too. The engines can be accessed by context menu using right-click -> WebSearch -> (...). Now the current search engine will be shown as in bottom of the icon.
+0.1.8 (April/12/2010): WebSearch now fetch results from Yahoo! too. Adding the result stats of Bing and Yahoo!.
+0.1.5 (April/11/2010): WebSearch now fetch results from Bing too. New way to access the search dialog using left click (if the applet has still not been used).
+0.1.2 (April/10/2010): Changing the number of displayed results between 5 and 10 to avoid incompatibilities with the usual minimum number of results provided by the search engines, 10. Some basic code refactoring.
+0.0.7 (April/10/2010): Adding the possibility to choose how many prefetched links will be taken. It works only for Google.
+0.0.6 (April/10/2010): Fixing a bug that mades the opened URL be the shortened one.
+0.0.5 (April/10/2010): The first release fetching Google results.
