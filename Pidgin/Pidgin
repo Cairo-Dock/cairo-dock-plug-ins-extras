@@ -75,14 +75,16 @@ def action_on_middle_click():
 		myApplet.icon.ShowDialog("No current conversation defined.\nPlease select a conversation with right-click.", 5)
 		return
 	conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
-	myApplet.icon.AskText("Send a message to "+conv_name, "");
+	myApplet.iAskingSomething = 1
+	myApplet.icon.AskText("Send a message to "+conv_name, "")
+	myApplet.iAskingSomething = 1
 
 def action_on_build_menu():
 	# print ">>> build menu !"
 	if myApplet.purple == None:
 		return
 	
-	if myApplet.add_menu_items_available:
+	if myApplet.bAddMenuItemsAvailable:
 		items=[{"type" : 1,
 			"label": "Conversations",
 			"icon" : "gtk-jump-to",
@@ -110,6 +112,13 @@ def action_on_build_menu():
 				"icon" : '/usr/share/pixmaps/pidgin/status/16/'+STATUS_ICO[i]+'.png',
 				"menu" : 2,
 				"id"   : 200+i})
+		items.append({"type" : 2,
+			"menu" : 2})
+		items.append({"type" : 0,
+			"label": "Set your status message",
+			"icon" : "gtk-dialog-info",
+			"menu" : 2,
+			"id"   : 299})
 		items.append({"type" : 3,
 			"label": "Silent mode",
 			"menu" : 0,
@@ -121,9 +130,9 @@ def action_on_build_menu():
 			myApplet.icon.AddMenuItems(items)
 		except TypeError:
 			# print ">>>>> Cairo-Dock's DBus API doesn't contain the AddMenuItems() method, switch to the old method."
-			myApplet.add_menu_items_available = False
+			myApplet.bAddMenuItemsAvailable = False
 	
-	if not myApplet.add_menu_items_available:
+	if not myApplet.bAddMenuItemsAvailable:
 		convs = myApplet.list_convs()
 		convs.append('')
 		status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
@@ -135,13 +144,17 @@ def action_on_build_menu():
 def action_on_menu_select(iNumEntry):
 	# print ">>> choice",iNumEntry,"has been selected !"
 	
-	if myApplet.add_menu_items_available:
+	if myApplet.bAddMenuItemsAvailable:
 		if iNumEntry > 200:
 			iNumEntry -= 200
-			current_status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
-			# print ">>> status :",STATUS[iNumEntry],iNumEntry
-			new_status = myApplet.purple.PurpleSavedstatusNew("", iNumEntry)
-			myApplet.purple.PurpleSavedstatusActivate(new_status)
+			if iNumEntry == 99:
+				myApplet.icon.AskText("Enter your new status message :", "")
+				myApplet.iAskingSomething = 2
+			else:
+				current_status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
+				# print ">>> status :",STATUS[iNumEntry],iNumEntry
+				new_status = myApplet.purple.PurpleSavedstatusNew("", iNumEntry)
+				myApplet.purple.PurpleSavedstatusActivate(new_status)
 		elif iNumEntry > 100:
 			iNumEntry -= 101
 			convs = myApplet.purple.PurpleGetConversations()
@@ -186,17 +199,21 @@ def action_on_scroll(bScrollUp):
 	
 def action_on_answer(answer):
 	# print ">>> answer :",answer
-	if myApplet.iCurrentConv == 0:
-		return
-	type = myApplet.purple.PurpleConversationGetType(myApplet.iCurrentConv)
-	if not type or type == 0:
-		return
-	if type == 1:  # PURPLE_CONV_TYPE_IM
-		im = myApplet.purple.PurpleConvIm(myApplet.iCurrentConv)
-		myApplet.purple.PurpleConvImSend(im,answer)
-	else:  # PURPLE_CONV_TYPE_CHAT
-		chat = myApplet.purple.PurpleConvChat(myApplet.iCurrentConv)
-		myApplet.purple.PurpleConvChatSend(chat,answer)
+	if myApplet.iAskingSomething == 1 :
+		if myApplet.iCurrentConv == 0:
+			return
+		type = myApplet.purple.PurpleConversationGetType(myApplet.iCurrentConv)
+		if not type or type == 0:
+			return
+		if type == 1:  # PURPLE_CONV_TYPE_IM
+			im = myApplet.purple.PurpleConvIm(myApplet.iCurrentConv)
+			myApplet.purple.PurpleConvImSend(im,answer)
+		else:  # PURPLE_CONV_TYPE_CHAT
+			chat = myApplet.purple.PurpleConvChat(myApplet.iCurrentConv)
+			myApplet.purple.PurpleConvChatSend(chat,answer)
+	elif myApplet.iAskingSomething == 2 :
+		myApplet.iAskingSomething = 0
+		myApplet.set_status_message (answer)
 	
 ##################################
 ### callbacks on the sub-icons ###
@@ -279,7 +296,12 @@ def _on_received_msg(account, sender, message, conv, is_im):
 				msg = message
 			myApplet.icon.ShowDialog(msg,max(2,len(msg)/myApplet.config['duration']))
 		if myApplet.config['msg animation'] != '':
-			myApplet.icon.Animate(myApplet.config['msg animation'],10000)
+			try:
+				myApplet.icon.DemandsAttention(True, myApplet.config['msg animation'])
+			except dbus.DBusException:
+				myApplet.bDemandsAttentionAvailable = False
+			if not myApplet.bDemandsAttentionAvailable:
+				myApplet.icon.Animate(myApplet.config['msg animation'], 1e6)
 	
 	if myApplet.config['history'] != 0:  # on insere le message dans l'historique.
 		myApplet.pMsgList.insert(0,message)
@@ -310,7 +332,12 @@ def on_conversation_updated(conv, update_type):
 		iNbUnread = myApplet.iNbUnread
 		myApplet.update_nb_unread_msg()
 		if iNbUnread != 0 and myApplet.iNbUnread == 0 and myApplet.config['msg animation'] != '':
-			myApplet.icon.Animate('',0)
+			try:
+				myApplet.icon.DemandsAttention(False,'')
+			except dbus.DBusException:
+				myApplet.bDemandsAttentionAvailable = False
+			if not myApplet.bDemandsAttentionAvailable:
+				myApplet.icon.Animate('', 0)
 			myApplet.iCurrentMsg = -1
 	if myApplet.iCurrentGuiConv == 0:
 		myApplet.iCurrentGuiConv = conv
@@ -404,8 +431,10 @@ class Applet:
 		self.iCurrentConv = 0
 		self.iNbSiging = 0
 		self.iCurrentGuiConv = 0
-		self.add_menu_items_available = True
+		self.bAddMenuItemsAvailable = True
+		self.bDemandsAttentionAvailable = True
 		self.bSilentMode = False
+		self.iAskingSomething = 0  # what kind of info we're asking the user.
 		
 	def get_config(self):
 		keyfile = ConfigParser.RawConfigParser()
@@ -529,6 +558,12 @@ class Applet:
 		if emblem != None:
 			# print ">>> emblem : "+emblem
 			self.icon.SetEmblem(emblem, 1)  # lower right
+	
+	def set_status_message(self,message):
+		current = self.purple.PurpleSavedstatusGetType(self.purple.PurpleSavedstatusGetCurrent())  # on ne changera pas le statut courant.
+		status = self.purple.PurpleSavedstatusNew("", current)  # Create new transient status and activate it
+		self.purple.PurpleSavedstatusSetMessage(status, message)
+		self.purple.PurpleSavedstatusActivate(status)
 	
 	def list_convs(self):
 		tab_conv=[]
