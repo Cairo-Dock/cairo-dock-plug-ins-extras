@@ -32,3 +32,14 @@ if ! test -e '../.gem2'; then
 	sudo gem install launchy
 	touch '../.gem2'
 fi
+if ! test -e '../.rubydbus'; then
+	wget http://github.com/downloads/mvidner/ruby-dbus/ruby-dbus-0.3.0.tgz
+	tar -xzf ruby-dbus-0.3.0.tgz
+	cd ruby-dbus-0.3.0/
+	ruby setup.rb config
+	ruby setup.rb setup
+	sudo ruby setup.rb install
+	cd ..
+	sudo rm -rf ruby-dbus-0.3.0/
+	touch '../.rubydbus'
+fi

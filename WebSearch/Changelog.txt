@@ -1,3 +1,5 @@
+0.2.1 (April/19/2010): Porting the code from Rbus to Ruby-Dbus preparing for the new AddMenuItems method. Thanks to Kristoffer Lundén and his awesome Rbus project but it is a pity that the project was discontinued.
+0.2.0 (April/18/2010): User can choose to show the description of the result instead of its URL in the sub-icons.
 0.1.9 (April/17/2010): WebSearch now fetch results from Teoma (Ask.com) too. The engines can be accessed by context menu using right-click -> WebSearch -> (...). Now the current search engine will be shown as in bottom of the icon.
 0.1.8 (April/12/2010): WebSearch now fetch results from Yahoo! too. Adding the result stats of Bing and Yahoo!.
 0.1.5 (April/11/2010): WebSearch now fetch results from Bing too. New way to access the search dialog using left click (if the applet has still not been used).

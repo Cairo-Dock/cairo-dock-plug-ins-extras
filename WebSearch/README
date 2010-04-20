@@ -1,20 +1,27 @@
-In order to use this applet, it is necessary to install Ruby, Rubygems and some gems.
+In order to use WebSearch applet it is necessary to install Ruby, Rubygems and some gems.
 
 # Installing requirements
 
-* Ruby: sudo apt-get install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8
-* Rubygems: Instructions are neatly described in http://rubygems.org/pages/download
-* Gem Rbus: (sudo) gem install rbus
-* Gem parseconfig: (sudo) gem install parseconfig
-* Lib XSLT e XML required by Nokogiri Gem: (sudo) apt-get install libxslt-dev libxml2-dev
-* Gem Nokogiri: (sudo) gem install nokogiri
-* Gem Launchy: (sudo) gem install launchy
+[+] Ruby 1.8: sudo apt-get install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8
+[+] Rubygems: Instructions are neatly described in http://rubygems.org/pages/download
+[+] Gem parseconfig: (sudo) gem install parseconfig
+[+] Lib XSLT e XML required by Nokogiri Gem: (sudo) apt-get install libxslt-dev libxml2-dev
+[+] Gem Nokogiri: (sudo) gem install nokogiri
+[+] Gem Launchy: (sudo) gem install launchy
+
+[+] Ruby-Dbus
+  [+] Download [http://github.com/downloads/mvidner/ruby-dbus/ruby-dbus-0.3.0.tgz] and decompress the tarball
+  [+] Enter in the generated directory use the following commands:
+      $ ruby setup.rb config
+      $ ruby setup.rb setup
+     ($ sudo)
+      # ruby setup.rb install
 
 # WebSearch installation process
 
-* Extract the .tar.gz and copy WebSearch folder. Paste it in ~/.config/cairo-dock/third-party/
-* Restart Cairo-Dock
-* Right-click on Cairo-Dock -> Configure -> Add-ons and mark WebSearch
+[+] Extract the .tar.gz and copy WebSearch folder. Paste it in ~/.config/cairo-dock/third-party/
+[+] Restart Cairo-Dock
+[+] Right-click on Cairo-Dock -> Configure -> Add-ons and mark WebSearch
 
 # Tips
 

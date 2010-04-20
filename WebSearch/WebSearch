@@ -15,7 +15,10 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 
-# This applet provides an interface to some search engines such as Google, Bing, and Yahoo!.
+# This applet provides an interface to some search engines such as Google, Bing, Teoma, and Yahoo!.
+#	 To choose the search engine you can
+#		(1) Right-click -> Configure this applet -> Configuration (tab) -> Search engine
+#		(2) Scroll up or down over the icon (applicable only for the first search)
 #    You can search in three ways
 #		(1) Middle-click on the main icon
 #		(2) Right-click on the main icon -> WebSearch -> (Choose the engine)
@@ -27,29 +30,26 @@
 #	 Scroll down to fetch the previous results
 #	 Left-click on the main icon to show search stats
 
-require 'rubygems'
-require 'open-uri'
-require 'nokogiri'
-require 'rbus'
-require 'parseconfig'
-require 'launchy'
+%w{rubygems open-uri nokogiri dbus parseconfig launchy}.each { |x| require x }			# requirements
 
-applet_name = File.basename(Dir.getwd)						 								# nome do applet, neste caso é demo_ruby
-applet_path = "/org/cairodock/CairoDock/#{applet_name}"  	 								# path where our object is stored on the bus
+bus = DBus::SessionBus.instance
+applet_service = bus.service("org.cairodock.CairoDock")
+applet_name = File.basename(Dir.getwd)													# nome do applet, neste caso é demo_ruby
+applet_path = "/org/cairodock/CairoDock/#{applet_name}"									# caminho onde o objeto está guardado no bus
+applet_object = applet_service.object(applet_path)
+applet_object.introspect
+applet_object.default_iface = 'org.cairodock.CairoDock.applet'							# list of icons contained in our sub-dock, or in our desklet
 
-bus = RBus.session_bus
-applet_object = bus.get_object('org.cairodock.CairoDock', applet_path)
-applet_object.interface!('org.cairodock.CairoDock.applet')
+applet_sub_icons_object = applet_service.object("#{applet_path}/sub_icons")
+applet_sub_icons_object.introspect
+applet_sub_icons_object.default_iface = "org.cairodock.CairoDock.subapplet" 			# list of icons contained in our sub-dock, or in our desklet
 
-applet_sub_icons_object = bus.get_object("org.cairodock.CairoDock", "#{applet_path}/sub_icons")
-applet_sub_icons_object.interface!("org.cairodock.CairoDock.subapplet")  					# list of icons contained in our sub-dock, or in our desklet
-
-class Array; def third; self[2];end; end													# defining the method "third" just for code readability
-class String; def to_b;	["true", "1", "T", "t"].include?(self.downcase); end; end			# string to boolean
+class Array; def third; self[2];end; end												# defining the method "third" just for code readability
+class String; def to_b;	["true", "1", "T", "t"].include?(self.downcase); end; end		# string to boolean
 
 class Link
 	attr_accessor :url, :description, :id, :icon, :shortened_url
-	@@next_id = 0																			# sequential id "static"
+	@@next_id = 0																		# sequential id "static"
 
 	# TODO: Keep in the applet's directory the icons of the most of known web browsers and a generic one.
 	# 		Get from Launchy the name of the default browser and show the respective icon as sub-icon.
@@ -62,11 +62,11 @@ class Link
 		self.shortened_url = shorten url
 	end
 
-	def reset_next_id																		# necessary for every new search
+	def reset_next_id																	# necessary for every new search
 		@@next_id = 0
 	end
 
-	def shorten (string, count = 35)														# TODO: count as a parameter in .conf file
+	def shorten (string, count = 45)													# TODO: count as a parameter in .conf file
 		if string.length > count
 			shortened = string.slice(0 .. count-1)
 			shortened + "..." if shortened
@@ -80,7 +80,7 @@ class Applet
 	
 	attr_accessor 	:engine, :links, :query, :stats,
 					:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links, # prefetch works only for google
-					:show_current_page,
+					:show_current_page, :show_description_inspite_url, :scroll_engine_index,
 					:file_name
 
 	Google = "http://www.google.com/search?q="
@@ -94,20 +94,22 @@ class Applet
 		self.links =[]
 		self.stats = self.query = ""
 		self.file_name = file_name
-		self.page_of_displayed_links = 0													# the current pagination of displayed links
-		set_configuration_parameters														# setting the self.configuration content
+		self.scroll_engine_index = 0													# current index when scrolling through search engines
+		self.page_of_displayed_links = 0												# current pagination of displayed links
 		@icon = applet
 		@sub_icons = sub_icons
-		inform_current_search_engine														# inform in bottom of the icon what is the new engine
+		set_configuration_parameters													# setting the self.configuration content
+		inform_current_search_engine													# inform in bottom of the icon what is the new engine
 	end
 
 	def set_configuration_parameters
 		conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{self.file_name}/#{self.file_name}.conf"))
-		# for list parameters, its value is just the position in the options list, not the value by itself
+		# for parameters in a list, its value is just the position in the options list, not the value by itself
 		self.engine = [Google, Bing, Yahoo, Teoma].at(conf.params['Configuration']['engine'].to_i)
 		self.number_of_fetched_links = [10, 20, 30, 50, 100].at(conf.params['Configuration']['number of fetched links'].to_i)
 		self.number_of_displayed_links = conf.params['Configuration']['number of displayed links'].to_i # number of sub-icons to be shown
 		self.show_current_page = conf.params['Configuration']['show current page'].to_b
+		self.show_description_inspite_url = conf.params['Configuration']['show description inspite url'].to_b
 	end
 	
 	def start
@@ -115,36 +117,39 @@ class Applet
 	end
 
 	def verify_user_action
-		@icon.connect!(:on_build_menu) do |param|											# right click signal
+		@icon.on_signal("on_build_menu") do |param|										# right click signal
 			action_on_build_menu
 		end
-		@icon.connect!(:on_menu_select) do |selected_menu|
+		@icon.on_signal("on_menu_select") do |selected_menu|
 			action_on_menu_select selected_menu
 		end
-		@icon.connect!(:on_answer) do |answer|
+		@icon.on_signal("on_answer") do |answer|
 			action_on_answer answer
 		end
-		@icon.connect!(:on_scroll) do |scroll_up|											# when the user scroll the mouse up or down on the icon
-			unless self.query.empty?
-				action_on_scroll scroll_up													# scroll down param = false, scroll up param = true
-			end
+		@icon.on_signal("on_scroll") do |scroll_up|										# when the user scroll the mouse up or down on the icon
+			action_on_scroll scroll_up													# scroll down param = false, scroll up param = true
 		end
-		@icon.connect!(:on_middle_click) do |param|
+		@icon.on_signal("on_middle_click") do |param|
 			ask_for_search_query
 		end
 		def action_on_build_menu
+			#if @icon.add_menu_items_available											# Cairo-Dock > 2.1.4-0beta0
+			# items = [{:type => 1, :label => 'Google', :menu => 0, :id => 1, :icon => './images/google.png', :tooltip => 'Google'}]
+				# @icon.AddMenuItems(items)
+			#else
 			@icon.PopulateMenu(["Google", "Bing", "Yahoo!", "Teoma"])
+			#end
 		end
-		@icon.connect!(:on_click) do |param|
+		@icon.on_signal("on_click") do |param|
 			action_on_click
 		end
-		@icon.connect!(:on_reload_module) do |config_has_changed|
+		@icon.on_signal("on_reload_module") do |config_has_changed|
 			action_on_reload_module config_has_changed
 		end
-		@sub_icons.connect!(:on_click_sub_icon) do |param, sub_icon_id|
+		@sub_icons.on_signal("on_click_sub_icon") do |param, sub_icon_id|
 			action_on_click_sub_icon sub_icon_id
 		end
-		@sub_icons.connect!(:on_middle_click_sub_icon) do |sub_icon_id|
+		@sub_icons.on_signal("on_middle_click_sub_icon") do |sub_icon_id|
 			action_on_middle_click_sub_icon sub_icon_id
 		end
 	end
@@ -158,7 +163,7 @@ class Applet
 	end
 
 	def action_on_answer answer
-		unless answer.empty?																# clear the things to a new search
+		unless answer.empty?															# clear the things to a new search
 		    self.query = answer
 			reset_search_settings
 			fetch_next_resulting_page
@@ -178,7 +183,13 @@ class Applet
 	end
 
 	def action_on_middle_click_sub_icon sub_icon_id
-		@icon.ShowDialog(self.links.at(sub_icon_id.to_i-1).description, DialogActiveTime)
+		text = ""
+		if self.show_description_inspite_url										# sub-icons are showing description ...
+			text = self.links.at(sub_icon_id.to_i-1).url							# so URL will be shown in dialog
+		else																		# sub-icons are showing url ...
+			text = self.links.at(sub_icon_id.to_i-1).description					# so description will be shown in dialog
+		end					
+		@icon.ShowDialog(text, DialogActiveTime)
 	end
 
 	def action_on_click
@@ -191,9 +202,7 @@ class Applet
 
 	# Changing the search engine by context menu
 	def action_on_menu_select param
-		self.engine = [Google, Bing, Yahoo, Teoma].at(param)
-		# reset_search_settings															# clean the previous search when choosing a new one
-		inform_current_search_engine													# inform in bottom of the icon what is the new engine
+		switch_search_engine param
 	end
 
 	def action_on_reload_module config_has_changed
@@ -201,16 +210,38 @@ class Applet
 	end
 
 	def action_on_scroll scroll_up
-		if scroll_up
-			fetch_next_resulting_page
-		else
-			fetch_previous_resulting_page
+		if self.query.empty?															# before the first query it is possible scroll through engines
+			if scroll_up																# TODO better solution with generic switch_search_engine method
+				# scroll_engine_index must be controlled with the method switch_search_engine return.
+				# In other way the user could, for example, scroll a lot far from the engines array range.
+				# Mimic a passing by reference using Todd Benson suggestion at
+				# http://groups.google.com/group/ruby-talk-google/browse_thread/thread/8e9b34bc0182df75
+				self.scroll_engine_index = switch_search_engine self.scroll_engine_index +=1
+			else
+				self.scroll_engine_index = switch_search_engine self.scroll_engine_index -=1
+			end
+		else																			# later the first query scroll through the result pages
+			if scroll_up
+				fetch_next_resulting_page
+			else
+				fetch_previous_resulting_page
+			end
 		end
 	end
 
+	def switch_search_engine index
+		engines = [Google, Bing, Yahoo, Teoma]
+		index = 0 if index < 0
+		index = engines.length - 1 if index > engines.length - 1
+		self.engine = engines.at index
+		# reset_search_settings															# clean the previous search when choosing a new one
+		inform_current_search_engine													# inform in bottom of the icon what is the new engine
+		index
+	end
+
 	def fetch_next_resulting_page
-		offset = self.page_of_displayed_links * self.number_of_displayed_links	           # the position of the first link in the self.links array
-		if self.links.size <= offset                                                       # user already scrolled by the fetched links, fetch more 100
+		offset = self.page_of_displayed_links * self.number_of_displayed_links			# the position of the first link in the self.links array
+		if self.links.size <= offset													# user already scrolled by the fetched links, fetch more 100
 			inform_start_of_fetching_process
 			case self.engine
 				when Google; retrieve_links_from_google(self.query, offset)
@@ -220,7 +251,7 @@ class Applet
 			end
 			inform_end_of_fetching_process
         end
-		self.page_of_displayed_links += 1													# sequential page identification, lets go to the next
+		self.page_of_displayed_links += 1												# sequential page identification, lets go to the next
 		sub_icon_list = construct_sub_icon_list(offset)
 		refresh_sub_icon_list (sub_icon_list)
 		inform_current_page
@@ -232,9 +263,9 @@ class Applet
 	# more queries to the page, consequently it has some drawbacks such as increasing the 
 	# probability of Google block the mechanized access, more bandwith, etc.
 	def fetch_previous_resulting_page
-		if self.page_of_displayed_links > 1													# there is no previous page from the first one
-			self.page_of_displayed_links -= 1												# one page back
-			inicio = (self.page_of_displayed_links-1) * self.number_of_displayed_links		# the first position of the link in the previous page
+		if self.page_of_displayed_links > 1												# there is no previous page from the first one
+			self.page_of_displayed_links -= 1											# one page back
+			inicio = (self.page_of_displayed_links-1) * self.number_of_displayed_links	# the first position of the link in the previous page
 			sub_icon_list = construct_sub_icon_list(inicio)
 			refresh_sub_icon_list (sub_icon_list)
 		end
@@ -245,15 +276,19 @@ class Applet
 	def construct_sub_icon_list inicio
 		sub_icon_list =[]
 		self.links[inicio, self.number_of_displayed_links].each do |link|
-			sub_icon_list << link.shortened_url												# show only the shortened version of the url
-			sub_icon_list << link.icon														# the icon
-			sub_icon_list << link.id.to_s													# the sequential id
+			if self.show_description_inspite_url
+				sub_icon_list << link.description										# user prefer see description with the sub-icon
+			else
+				sub_icon_list << link.shortened_url										# user prefer see shortened url with the sub-icon
+			end
+			sub_icon_list << link.icon													# the icon
+			sub_icon_list << link.id.to_s												# the sequential id
 		end
 		sub_icon_list
 	end
 	
 	def refresh_sub_icon_list sub_icon_list
-		@sub_icons.RemoveSubIcon("any")														# remove all rendered sub-icons
+		@sub_icons.RemoveSubIcon("any")													# remove all rendered sub-icons
 		@sub_icons.AddSubIcons(sub_icon_list)
 	end
 
@@ -265,7 +300,7 @@ class Applet
 		(google/"h3[@class='r']").search("a[@href]").each do |raw_link|
 			# Google "injects" its images results in the backlink-based results, desconsidering it
 			unless raw_link.to_s.include? "http://images.google.com/images?q=#{query}" or raw_link.to_s.include? "/search?q=#{query}"
-				self.links << Link.new(raw_link['href'], raw_link.inner_text)				# url, description
+				self.links << Link.new(raw_link['href'], raw_link.inner_text)			# url, description
 			end
 		end
 	end
@@ -285,7 +320,7 @@ class Applet
 		bing = Nokogiri::HTML(open("#{Bing}#{query}&first=#{offset}"))
 		self.stats = retrieve_bing_result_stats(bing)
 		(bing/"h3").search("a[@onmousedown]").each do |raw_link|
-			self.links << Link.new(raw_link['href'], raw_link.inner_text)					# url, description
+			self.links << Link.new(raw_link['href'], raw_link.inner_text)				# url, description
 		end
 	end
 
@@ -322,7 +357,7 @@ class Applet
 	def retrieve_links_from_teoma(query, offset = 1)
 		teoma = Nokogiri::HTML(open("#{Teoma}#{query}&page=#{offset}"))
 		self.stats = retrieve_teoma_result_stats teoma
-		(teoma/"a[@id$='_t']").each do |res|						# any a tag with an id that ends with _t
+		(teoma/"a[@id$='_t']").each do |res|											# any a tag with an id that ends with _t
 			url = res['href']
 			description = res.inner_text
 			self.links << Link.new(url, description)
@@ -361,4 +396,6 @@ end
 
 applet = Applet.new applet_object, applet_sub_icons_object, applet_name
 applet.start
-RBus.mainloop
+loop = DBus::Main.new
+loop << bus
+loop.run
