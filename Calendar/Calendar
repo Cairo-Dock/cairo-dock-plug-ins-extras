@@ -111,5 +111,5 @@ def init():
 if __name__ == '__main__':
 	init()
 	gtk.main()
-	stop()
+#	stop()
 	sys.exit(0)
