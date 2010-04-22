@@ -40,6 +40,6 @@ if ! test -e '../.rubydbus'; then
 	ruby setup.rb setup
 	sudo ruby setup.rb install
 	cd ..
-	sudo rm -rf ruby-dbus-0.3.0/
+	sudo rm -rf ruby-dbus-0.3.0/ ruby-dbus-0.3.0.tgz
 	touch '../.rubydbus'
 fi

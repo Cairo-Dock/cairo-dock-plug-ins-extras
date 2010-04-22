@@ -15,7 +15,7 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 
-# This applet provides an interface to some search engines such as Google, Bing, Teoma, and Yahoo!.
+# This applet provides an interface to some search engines such as Google, Bing, Teoma, Yahoo!, and Youtube.
 #	 To choose the search engine you can
 #		(1) Right-click -> Configure this applet -> Configuration (tab) -> Search engine
 #		(2) Scroll up or down over the icon (applicable only for the first search)
@@ -45,7 +45,7 @@ applet_sub_icons_object.introspect
 applet_sub_icons_object.default_iface = "org.cairodock.CairoDock.subapplet" 			# list of icons contained in our sub-dock, or in our desklet
 
 class Array; def third; self[2];end; end												# defining the method "third" just for code readability
-class String; def to_b;	["true", "1", "T", "t"].include?(self.downcase); end; end		# string to boolean
+class String; def to_b;	["true"].include?(self.downcase); end; end						# string to boolean
 
 class Link
 	attr_accessor :url, :description, :id, :icon, :shortened_url
@@ -54,7 +54,7 @@ class Link
 	# TODO: Keep in the applet's directory the icons of the most of known web browsers and a generic one.
 	# 		Get from Launchy the name of the default browser and show the respective icon as sub-icon.
 	# 		If the browser is unknown, show the generic icon
-	def initialize(url = "", description = "", icon = File.expand_path("./icon"))
+	def initialize (url = "", description = "", icon = File.expand_path("./icon"))
 		self.url = url
 		self.description = description
 		self.id = @@next_id += 1
@@ -76,17 +76,38 @@ class Link
 	end
 end
 
+class YoutubeLink < Link
+	attr_accessor :video_id, :image_id; :icon
+	@@next_image_id = 0
+	
+	Youtube = "http://www.youtube.com"
+
+	def initialize(url, description, video_id)
+		self.video_id = video_id
+		self.image_id = @@next_image_id += 1
+		self.icon = ""
+		super("#{Youtube}#{url}", description, self.icon)
+	end
+	def download_video_thumbnail
+		system("cd './images/youtube/';
+				wget -O #{self.image_id}.jpg http://i4.ytimg.com/vi/#{self.video_id}/default.jpg")	# download the thumb and name it '#{image_id}.jpg'
+		self.icon = File.expand_path("./images/youtube/#{self.image_id}.jpg")
+	end
+end
+
 class Applet
 	
 	attr_accessor 	:engine, :links, :query, :stats,
 					:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links, # prefetch works only for google
-					:show_current_page, :show_description_inspite_url, :scroll_engine_index,
+					:show_current_page, :show_description_inspite_url, :show_youtube_video_preview,
+					:scroll_engine_index,
 					:file_name
 
 	Google = "http://www.google.com/search?q="
 	Bing = "http://www.bing.com/search?q="
 	Yahoo = "http://search.yahoo.com/search?p="
 	Teoma = "http://www.teoma.com/web?q="
+	Youtube = "http://www.youtube.com/results?search_query="
 
 	DialogActiveTime = 5
 
@@ -99,17 +120,18 @@ class Applet
 		@icon = applet
 		@sub_icons = sub_icons
 		set_configuration_parameters													# setting the self.configuration content
-		inform_current_search_engine													# inform in bottom of the icon what is the new engine
 	end
 
 	def set_configuration_parameters
 		conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{self.file_name}/#{self.file_name}.conf"))
 		# for parameters in a list, its value is just the position in the options list, not the value by itself
-		self.engine = [Google, Bing, Yahoo, Teoma].at(conf.params['Configuration']['engine'].to_i)
+		self.engine = [Google, Bing, Yahoo, Teoma, Youtube].at(conf.params['Configuration']['engine'].to_i)
+		inform_current_search_engine													# inform in bottom of the icon what is the new engine
 		self.number_of_fetched_links = [10, 20, 30, 50, 100].at(conf.params['Configuration']['number of fetched links'].to_i)
 		self.number_of_displayed_links = conf.params['Configuration']['number of displayed links'].to_i # number of sub-icons to be shown
 		self.show_current_page = conf.params['Configuration']['show current page'].to_b
 		self.show_description_inspite_url = conf.params['Configuration']['show description inspite url'].to_b
+		self.show_youtube_video_preview = conf.params['Configuration']['show youtube video preview'].to_b
 	end
 	
 	def start
@@ -137,7 +159,7 @@ class Applet
 			# items = [{:type => 1, :label => 'Google', :menu => 0, :id => 1, :icon => './images/google.png', :tooltip => 'Google'}]
 				# @icon.AddMenuItems(items)
 			#else
-			@icon.PopulateMenu(["Google", "Bing", "Yahoo!", "Teoma"])
+			@icon.PopulateMenu(["Google", "Bing", "Yahoo!", "Teoma", "Youtube"])
 			#end
 		end
 		@icon.on_signal("on_click") do |param|
@@ -184,10 +206,10 @@ class Applet
 
 	def action_on_middle_click_sub_icon sub_icon_id
 		text = ""
-		if self.show_description_inspite_url										# sub-icons are showing description ...
-			text = self.links.at(sub_icon_id.to_i-1).url							# so URL will be shown in dialog
-		else																		# sub-icons are showing url ...
-			text = self.links.at(sub_icon_id.to_i-1).description					# so description will be shown in dialog
+		if self.show_description_inspite_url											# sub-icons are showing description ...
+			text = self.links.at(sub_icon_id.to_i-1).url								# so URL will be shown in dialog
+		else																			# sub-icons are showing url ...
+			text = self.links.at(sub_icon_id.to_i-1).description						# so description will be shown in dialog
 		end					
 		@icon.ShowDialog(text, DialogActiveTime)
 	end
@@ -220,7 +242,7 @@ class Applet
 			else
 				self.scroll_engine_index = switch_search_engine self.scroll_engine_index -=1
 			end
-		else																			# later the first query scroll through the result pages
+		else																			# later the first query scroll through the resulting pages
 			if scroll_up
 				fetch_next_resulting_page
 			else
@@ -230,7 +252,7 @@ class Applet
 	end
 
 	def switch_search_engine index
-		engines = [Google, Bing, Yahoo, Teoma]
+		engines = [Google, Bing, Yahoo, Teoma, Youtube]
 		index = 0 if index < 0
 		index = engines.length - 1 if index > engines.length - 1
 		self.engine = engines.at index
@@ -247,7 +269,8 @@ class Applet
 				when Google; retrieve_links_from_google(self.query, offset)
 				when Bing; 	 retrieve_links_from_bing(self.query, offset)
 				when Yahoo;  retrieve_links_from_yahoo(self.query, offset)
-				when Teoma;  retrieve_links_from_teoma(self.query, self.page_of_displayed_links)
+				when Teoma;  retrieve_links_from_teoma(self.query, self.page_of_displayed_links + 1)	 # first Teoma page is 1
+				when Youtube;  retrieve_links_from_youtube(self.query, self.page_of_displayed_links + 1) # first Youtube page is 1
 			end
 			inform_end_of_fetching_process
         end
@@ -284,6 +307,7 @@ class Applet
 			sub_icon_list << link.icon													# the icon
 			sub_icon_list << link.id.to_s												# the sequential id
 		end
+		p sub_icon_list.inspect
 		sub_icon_list
 	end
 	
@@ -351,11 +375,11 @@ class Applet
 	end
 	
 	# Inspite of the offset (the index of the first link),
-	# Teoma receives the offset with the page value
+	# Teoma receives the offset with the *page* value
 	# Teoma (Ask.com) results are placed in an <a> tag with id='r(digit)_t'. 
 	# The href paremeter brings the URL and the tag's content brings the description.
-	def retrieve_links_from_teoma(query, offset = 1)
-		teoma = Nokogiri::HTML(open("#{Teoma}#{query}&page=#{offset}"))
+	def retrieve_links_from_teoma(query, page = 1)
+		teoma = Nokogiri::HTML(open("#{Teoma}#{query}&page=#{page}"))
 		self.stats = retrieve_teoma_result_stats teoma
 		(teoma/"a[@id$='_t']").each do |res|											# any a tag with an id that ends with _t
 			url = res['href']
@@ -367,6 +391,20 @@ class Applet
 	def retrieve_teoma_result_stats teoma
 		total = teoma.at("//span[@id='indexLast']").next.next.inner_text
 		"Search for #{self.query} returned #{total} results"
+	end
+
+	def retrieve_links_from_youtube(query, page = 1)
+		youtube = Nokogiri::HTML(open("#{Youtube}#{query}&page=#{page}"))
+		(youtube/"a[@id^='video-long-title-']").each do |res|						# <a> tag has id that begins with 'video-long-title-#{video_id}'
+			url = res['href']
+			description = res.inner_text
+			video_id = url.split('=').last											# /watch?v=WwojCsQ3Fa8 => WwojCsQ3Fa8 => video_id
+			link = YoutubeLink.new(url, description, video_id)
+			if self.show_youtube_video_preview
+				link.download_video_thumbnail
+			end
+			self.links << link 
+		end
 	end
 
 	def inform_start_of_fetching_process
@@ -386,10 +424,11 @@ class Applet
 	end
 	def inform_current_search_engine
 		case self.engine
-			when Google; @icon.SetQuickInfo("Google")
-			when Bing; @icon.SetQuickInfo("Bing")
-			when Yahoo; @icon.SetQuickInfo("Yahoo!")
-			when Teoma; @icon.SetQuickInfo("Teoma")
+			when Google; 	@icon.SetQuickInfo("Google")
+			when Bing; 		@icon.SetQuickInfo("Bing")
+			when Yahoo; 	@icon.SetQuickInfo("Yahoo!")
+			when Teoma; 	@icon.SetQuickInfo("Teoma")
+			when Youtube; 	@icon.SetQuickInfo("Youtube")
 		end
 	end
 end
