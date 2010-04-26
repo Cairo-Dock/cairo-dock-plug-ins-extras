@@ -192,6 +192,7 @@ exit
 #############################################################################################################
 action_on_init() {
 # Generate fresh calendar icon
+echo "$APP_NAME applet -> init"
 ./icon.sh
 rm -f .wait .wait1 .wait_month .wait_year
 get_ALL_conf_params

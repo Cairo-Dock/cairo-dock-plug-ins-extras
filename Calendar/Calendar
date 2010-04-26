@@ -109,6 +109,7 @@ def init():
 
 ### main ###
 if __name__ == '__main__':
+	action_on_init()
 	init()
 	gtk.main()
 #	stop()
