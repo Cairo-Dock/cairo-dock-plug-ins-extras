@@ -15,7 +15,7 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 
-# This applet provides an interface to some search engines such as Google, Bing, Teoma, Yahoo!, and Youtube.
+# This applet provides an interface to some search engines such as Google, Bing, Teoma, Yahoo!, Youtube, and Webshots.
 #	 To choose the search engine you can
 #		(1) Right-click -> Configure this applet -> Configuration (tab) -> Search engine
 #		(2) Scroll up or down over the icon (applicable only for the first search)
@@ -32,7 +32,7 @@
 
 %w{rubygems open-uri nokogiri dbus parseconfig launchy}.each { |x| require x }			# requirements
 
-bus = DBus::SessionBus.instance
+bus = DBus::SessionBus.instance															# TODO a module to encapsulate DBus-Dock connection
 applet_service = bus.service("org.cairodock.CairoDock")
 applet_name = File.basename(Dir.getwd)													# nome do applet, neste caso é demo_ruby
 applet_path = "/org/cairodock/CairoDock/#{applet_name}"									# caminho onde o objeto está guardado no bus
@@ -62,10 +62,6 @@ class Link
 		self.shortened_url = shorten url
 	end
 
-	def reset_next_id																	# necessary for every new search
-		@@next_id = 0
-	end
-
 	def shorten (string, count = 45)													# TODO: count as a parameter in .conf file
 		if string.length > count
 			shortened = string.slice(0 .. count-1)
@@ -74,24 +70,37 @@ class Link
 			string
 		end
 	end
+
+	def self.reset_next_id
+		class_variable_set(:@@next_id, 0)												# metaprogramming to reset the instance counter
+	end
 end
 
-class YoutubeLink < Link
-	attr_accessor :video_id, :image_id; :icon
+class ThumbnailedLink < Link															# a nice refactoring with the old YoutubeLink class
+	attr_accessor :image_id, :thumb_url, :engine_name, :downloaded_thumb
 	@@next_image_id = 0
-	
-	Youtube = "http://www.youtube.com"
 
-	def initialize(url, description, video_id)
-		self.video_id = video_id
+	def initialize(url = "", description = "", thumb_url = "", engine_name = "")
+		self.thumb_url = thumb_url
 		self.image_id = @@next_image_id += 1
-		self.icon = ""
-		super("#{Youtube}#{url}", description, self.icon)
+		self.engine_name = engine_name
+		self.downloaded_thumb = false
+		super(url, description)
 	end
-	def download_video_thumbnail
-		system("cd './images/youtube/';
-				wget -O #{self.image_id}.jpg http://i4.ytimg.com/vi/#{self.video_id}/default.jpg")	# download the thumb and name it '#{image_id}.jpg'
-		self.icon = File.expand_path("./images/youtube/#{self.image_id}.jpg")
+
+	def download_thumbnail
+		system("cd './images/#{self.engine_name}/';
+				wget -O #{self.image_id}.jpg #{self.thumb_url}")						# download the thumb and name it '#{image_id}.jpg'
+		self.downloaded_thumb = true
+		self.icon = File.expand_path("./images/#{self.engine_name}/#{self.image_id}.jpg")
+	end
+
+	def downloaded_thumb?
+		self.downloaded_thumb
+	end
+
+	def self.reset_next_image_id
+		class_variable_set(:@@next_image_id, 0)											# metaprogramming to reset the instance counter
 	end
 end
 
@@ -99,15 +108,16 @@ class Applet
 	
 	attr_accessor 	:engine, :links, :query, :stats,
 					:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links, # prefetch works only for google
-					:show_current_page, :show_description_inspite_url, :show_youtube_video_preview,
+					:show_current_page, :show_description_inspite_url, :show_thumbnail_preview,
 					:scroll_engine_index,
 					:file_name
 
-	Google = "http://www.google.com/search?q="
-	Bing = "http://www.bing.com/search?q="
-	Yahoo = "http://search.yahoo.com/search?p="
-	Teoma = "http://www.teoma.com/web?q="
-	Youtube = "http://www.youtube.com/results?search_query="
+	Google = "http://www.google.com/search?q="											# 100 results per page
+	Bing = "http://www.bing.com/search?q="												# 10 results per page
+	Yahoo = "http://search.yahoo.com/search?p="											# 10 results per page
+	Teoma = "http://www.teoma.com/web?q="												# 10 results per page
+	Youtube = "http://www.youtube.com/results?search_query="							# 20 results per page
+	Webshots = "http://www.webshots.com/search?query="									# 72 results per page
 
 	DialogActiveTime = 5
 
@@ -125,13 +135,13 @@ class Applet
 	def set_configuration_parameters
 		conf = ParseConfig.new(File.expand_path("~/.config/cairo-dock/current_theme/plug-ins/#{self.file_name}/#{self.file_name}.conf"))
 		# for parameters in a list, its value is just the position in the options list, not the value by itself
-		self.engine = [Google, Bing, Yahoo, Teoma, Youtube].at(conf.params['Configuration']['engine'].to_i)
+		self.engine = [Google, Bing, Yahoo, Teoma, Youtube, Webshots].at(conf.params['Configuration']['engine'].to_i)
 		inform_current_search_engine													# inform in bottom of the icon what is the new engine
 		self.number_of_fetched_links = [10, 20, 30, 50, 100].at(conf.params['Configuration']['number of fetched links'].to_i)
 		self.number_of_displayed_links = conf.params['Configuration']['number of displayed links'].to_i # number of sub-icons to be shown
 		self.show_current_page = conf.params['Configuration']['show current page'].to_b
 		self.show_description_inspite_url = conf.params['Configuration']['show description inspite url'].to_b
-		self.show_youtube_video_preview = conf.params['Configuration']['show youtube video preview'].to_b
+		self.show_thumbnail_preview = conf.params['Configuration']['show thumbnail preview'].to_b
 	end
 	
 	def start
@@ -159,7 +169,7 @@ class Applet
 			# items = [{:type => 1, :label => 'Google', :menu => 0, :id => 1, :icon => './images/google.png', :tooltip => 'Google'}]
 				# @icon.AddMenuItems(items)
 			#else
-			@icon.PopulateMenu(["Google", "Bing", "Yahoo!", "Teoma", "Youtube"])
+			@icon.PopulateMenu(["Google", "Bing", "Yahoo!", "Teoma", "Youtube", "Webshots"])
 			#end
 		end
 		@icon.on_signal("on_click") do |param|
@@ -185,9 +195,9 @@ class Applet
 	end
 
 	def action_on_answer answer
-		unless answer.empty?															# clear the things to a new search
+		unless answer.empty?
+			reset_search_settings unless self.query.empty?
 		    self.query = answer
-			reset_search_settings
 			fetch_next_resulting_page
 		end
 	end
@@ -196,7 +206,8 @@ class Applet
 	    self.links.clear
 		self.stats = ""
 	    self.page_of_displayed_links = 0
-	    Link.new.reset_next_id
+		Link.reset_next_id
+	    ThumbnailedLink.reset_next_image_id
 	    @sub_icons.RemoveSubIcon("any")
 	end
 
@@ -252,11 +263,11 @@ class Applet
 	end
 
 	def switch_search_engine index
-		engines = [Google, Bing, Yahoo, Teoma, Youtube]
+		engines = [Google, Bing, Yahoo, Teoma, Youtube, Webshots]
 		index = 0 if index < 0
 		index = engines.length - 1 if index > engines.length - 1
 		self.engine = engines.at index
-		# reset_search_settings															# clean the previous search when choosing a new one
+		reset_search_settings															# clean the previous search when choosing a new one
 		inform_current_search_engine													# inform in bottom of the icon what is the new engine
 		index
 	end
@@ -264,22 +275,23 @@ class Applet
 	def fetch_next_resulting_page
 		offset = self.page_of_displayed_links * self.number_of_displayed_links			# the position of the first link in the self.links array
 		if self.links.size <= offset													# user already scrolled by the fetched links, fetch more 100
-			inform_start_of_fetching_process
+			inform_start_of_waiting_process
 			case self.engine
 				when Google; retrieve_links_from_google(self.query, offset)
 				when Bing; 	 retrieve_links_from_bing(self.query, offset)
 				when Yahoo;  retrieve_links_from_yahoo(self.query, offset)
 				when Teoma;  retrieve_links_from_teoma(self.query, self.page_of_displayed_links + 1)	 # first Teoma page is 1
 				when Youtube;  retrieve_links_from_youtube(self.query, self.page_of_displayed_links + 1) # first Youtube page is 1
+				when Webshots;  retrieve_links_from_webshots(self.query, offset)
 			end
-			inform_end_of_fetching_process
+			inform_end_of_waiting_process
         end
 		self.page_of_displayed_links += 1												# sequential page identification, lets go to the next
 		sub_icon_list = construct_sub_icon_list(offset)
 		refresh_sub_icon_list (sub_icon_list)
 		inform_current_page
 	end
-	
+
 	# Since the previous results are already stored in self.links, it is necessary just to 
 	# select the its interval that starts with the first link of the previous page.
 	# An easier approach would be query google again with page-1 but it would result
@@ -298,19 +310,26 @@ class Applet
 	# Get links limited by the first link plus the number of links to be displayed
 	def construct_sub_icon_list inicio
 		sub_icon_list =[]
+		inform_start_of_waiting_process
 		self.links[inicio, self.number_of_displayed_links].each do |link|
 			if self.show_description_inspite_url
 				sub_icon_list << link.description										# user prefer see description with the sub-icon
 			else
 				sub_icon_list << link.shortened_url										# user prefer see shortened url with the sub-icon
 			end
+			if link.instance_of?(ThumbnailedLink) and not link.downloaded_thumb?		# class that provides thumbs and a not yet downloaded thumb
+				if self.show_thumbnail_preview 											# user want to see thumbs, so let's do it
+					link.download_thumbnail
+				end
+			end
 			sub_icon_list << link.icon													# the icon
 			sub_icon_list << link.id.to_s												# the sequential id
 		end
+		inform_end_of_waiting_process
 		p sub_icon_list.inspect
 		sub_icon_list
 	end
-	
+
 	def refresh_sub_icon_list sub_icon_list
 		@sub_icons.RemoveSubIcon("any")													# remove all rendered sub-icons
 		@sub_icons.AddSubIcons(sub_icon_list)
@@ -328,7 +347,7 @@ class Applet
 			end
 		end
 	end
-	
+
 	# Retrieve informations from Google search stats
 	# The stats array positions "Resultados first - second de aproximadamente third para fourth (fifth segundos)"
 	def retrieve_google_result_stats google
@@ -399,19 +418,31 @@ class Applet
 			url = res['href']
 			description = res.inner_text
 			video_id = url.split('=').last											# /watch?v=WwojCsQ3Fa8 => WwojCsQ3Fa8 => video_id
-			link = YoutubeLink.new(url, description, video_id)
-			if self.show_youtube_video_preview
-				link.download_video_thumbnail
-			end
-			self.links << link 
+			thumb_url = "http://i4.ytimg.com/vi/#{video_id}/default.jpg"
+			self.links << ThumbnailedLink.new("http://www.youtube.com#{url}", description, thumb_url, "youtube") # TODO a better approach in here
 		end
 	end
 
-	def inform_start_of_fetching_process
-		@icon.SetQuickInfo("Fetching ...")
+	def retrieve_links_from_webshots(query, offset = 0)
+		webshots = Nokogiri::HTML(open("#{Webshots}#{query}&start=#{offset}"))
+		(webshots/"li[@onmouseover^='wsPopup']").each do |res|
+			url = thumb_url = description = ""
+			(res/"div[@class='photo']/a/img").each do |raw_thumb|
+				thumb_url = raw_thumb['src']
+			end
+			(res/"div[@class='title']/p/a").each do |raw_link|
+				url = raw_link['href']
+				description = raw_link.inner_text
+			end
+			self.links << ThumbnailedLink.new(url, description, thumb_url, "webshots")
+		end
 	end
 
-	def inform_end_of_fetching_process
+	def inform_start_of_waiting_process
+		@icon.SetQuickInfo("...")
+	end
+
+	def inform_end_of_waiting_process
 		@icon.SetQuickInfo("")
 	end
 
@@ -429,6 +460,7 @@ class Applet
 			when Yahoo; 	@icon.SetQuickInfo("Yahoo!")
 			when Teoma; 	@icon.SetQuickInfo("Teoma")
 			when Youtube; 	@icon.SetQuickInfo("Youtube")
+			when Webshots; 	@icon.SetQuickInfo("Webshots")
 		end
 	end
 end
