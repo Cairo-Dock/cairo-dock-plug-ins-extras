@@ -15,7 +15,7 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 
-# This applet provides an interface to some search engines such as Google, Bing, Teoma, Yahoo!, Youtube, Webshots, and Flickr.
+# This applet provides an interface to some search engines such as Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, and Wikipedia.
 #	 To choose the search engine you can
 #		(1) Right-click -> Configure this applet -> Configuration (tab) -> Search engine
 #		(2) Scroll up or down over the icon (applicable only for the first search)
@@ -44,7 +44,7 @@ class String
 	end
 end
 
-bus = DBus::SessionBus.instance															# TODO a module to encapsulate DBus-Dock connection
+bus = DBus::SessionBus.instance															# TODO: a module to encapsulate DBus-Dock connection
 applet_service = bus.service("org.cairodock.CairoDock")
 applet_name = File.basename(Dir.getwd)													# nome do applet, neste caso é demo_ruby
 applet_path = "/org/cairodock/CairoDock/#{applet_name}"									# caminho onde o objeto está guardado no bus
@@ -83,22 +83,34 @@ class Link
 end
 
 class ThumbnailedLink < Link															# a nice refactoring with the old YoutubeLink class
-	attr_accessor :image_id, :thumb_url, :engine_name, :downloaded_thumb
+	attr_accessor :image_id, :thumb_url, :thumb_path, :downloaded_thumb
 	@@next_image_id = 0
 
-	def initialize(url = "", description = "", thumb_url = "", engine_name = "")
+	def initialize(url = "", description = "", thumb_url = "")
 		self.thumb_url = thumb_url
 		self.image_id = @@next_image_id += 1
-		self.engine_name = engine_name
+		self.thumb_path = define_thumbnail_path
 		self.downloaded_thumb = false
 		super(url, description)
 	end
 
 	def download_thumbnail
-		system("cd './images/#{self.engine_name}/';
-				wget -qO #{self.image_id}.jpg #{self.thumb_url}")						# download thumb quietly (q) and name it (O) '#{image_id}.jpg'
+		# download thumb quietly (q), name it (O) '#{image_id}.jpg' and take it to the directory named as engine
+		system("wget -q #{self.thumb_url} -O #{self.thumb_path}") 
 		self.downloaded_thumb = true
-		self.icon = File.expand_path("./images/#{self.engine_name}/#{self.image_id}.jpg")
+		self.icon = File.expand_path(self.thumb_path)
+	end
+
+	# Thumbnail path composed by the search engine and image id
+	def define_thumbnail_path
+		directory = extract_directory_from_url
+		"./images/#{directory}/#{self.image_id}.jpg"
+	end	
+
+	# Extract from the thumb_url the what is the search engine using the the core of the url
+	def extract_directory_from_url
+		directories = %w(youtube webshots flickr)										# directories names like engines names
+		found = directories.detect {|d| self.thumb_url.include?(d)}						# search for engines names in thumb_url
 	end
 
 	def downloaded_thumb?
@@ -114,23 +126,28 @@ class Applet
 
 	attr_accessor 	:engine, :links, :query, :stats, :engines, :file_name,
 					:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links, # prefetch works only for google
-					:show_current_page, :show_description_inspite_url, :show_thumbnail_preview,
+					:show_current_page, :show_description_instead_url, :show_thumbnail_preview,
 					:scroll_engine_index
 
-	Google = "http://www.google.com/search?q="											# 100 results per page
+	Google = "http://www.google.com/search?q="											# (10,20,30,50,100) results per page
 	Bing = "http://www.bing.com/search?q="												# 10 results per page
 	Yahoo = "http://search.yahoo.com/search?p="											# 10 results per page
 	Teoma = "http://www.teoma.com/web?q="												# 10 results per page
-	Youtube = "http://www.youtube.com/results?search_query="							# 20 results per page
+	Youtube = "http://www.youtube.com"
+	YoutubeQ = "#{Youtube}/results?search_query="										# 20 results per page
 	Webshots = "http://www.webshots.com/search?query="									# 72 results per page
-	Flickr = "http://www.flickr.com/search/?q="											# 28 results per page
+	Flickr = "http://www.flickr.com"
+	FlickrQ = "#{Flickr}/search/?q="													# 28 results per page
+	Wikipedia = "http://en.wikipedia.org"
+	WikipediaQ = "#{Wikipedia}/w/index.php?title=Special:Search&search="				# parameter "limit" results per page 
 
-	DialogActiveTime = 5																# how many seconds the dialog window will be active
+	DialogActiveTime = 5																# time in seconds the dialog window will be active
 
 	def initialize applet, sub_icons, file_name
 		self.query = ""
 		self.file_name = file_name
-		self.engines = [Google, Bing, Yahoo, Teoma, Youtube, Webshots, Flickr]
+		self.engines = [Google, Bing, Yahoo, Teoma, YoutubeQ, Webshots, FlickrQ, WikipediaQ]
+		self.scroll_engine_index = 0													# current index when scrolling through search engines
 		@icon = applet
 		@sub_icons = sub_icons
 		reset_search_settings
@@ -145,7 +162,7 @@ class Applet
 		self.number_of_fetched_links = [10, 20, 30, 50, 100].at(conf.params['Configuration']['number of fetched links'].to_i)
 		self.number_of_displayed_links = conf.params['Configuration']['number of displayed links'].to_i # number of sub-icons to be shown
 		self.show_current_page = conf.params['Configuration']['show current page'].to_b
-		self.show_description_inspite_url = conf.params['Configuration']['show description inspite url'].to_b
+		self.show_description_instead_url = conf.params['Configuration']['show description instead url'].to_b
 		self.show_thumbnail_preview = conf.params['Configuration']['show thumbnail preview'].to_b
 	end
 	
@@ -188,7 +205,7 @@ class Applet
 		# items = [{:type => 1, :label => 'Google', :menu => 0, :id => 1, :icon => './images/google.png', :tooltip => 'Google'}]
 			# @icon.AddMenuItems(items)
 		#else
-		@icon.PopulateMenu(["Google", "Bing", "Yahoo!", "Teoma", "Youtube", "Webshots", "Flickr"])
+		@icon.PopulateMenu(["Google", "Bing", "Yahoo!", "Teoma", "Youtube", "Webshots", "Flickr", "Wikipedia"])
 		#end
 	end
 
@@ -207,7 +224,6 @@ class Applet
 	def reset_search_settings
 	    self.links = []
 		self.stats = ""
-		self.scroll_engine_index = 0													# current index when scrolling through search engines
 		self.page_of_displayed_links = 0												# current pagination of displayed links
 		Link.reset_next_id
 	    ThumbnailedLink.reset_next_image_id
@@ -220,9 +236,9 @@ class Applet
 
 	def action_on_middle_click_sub_icon sub_icon_id
 		text = ""
-		if self.show_description_inspite_url											# sub-icons are showing description ...
+		if self.show_description_instead_url											# sub-icons are entitled by description ...
 			text = self.links.at(sub_icon_id.to_i-1).url								# so URL will be shown in dialog
-		else																			# sub-icons are showing url ...
+		else																			# sub-icons are entitled by url ...
 			text = self.links.at(sub_icon_id.to_i-1).description						# so description will be shown in dialog
 		end					
 		@icon.ShowDialog(text, DialogActiveTime)
@@ -245,16 +261,13 @@ class Applet
 		set_configuration_parameters if config_has_changed
 	end
 
+	# Scrolling behavior can be switch the search engine, or fetch another resulting page
 	def action_on_scroll scroll_up
 		if self.query.empty?															# before the first query it is possible scroll through engines
-			if scroll_up																# TODO better solution with generic switch_search_engine method
-				# scroll_engine_index must be controlled with the method switch_search_engine return.
-				# In other way the user could, for example, scroll a lot far from the engines array range.
-				# Mimic a passing by reference using Todd Benson suggestion at
-				# http://groups.google.com/group/ruby-talk-google/browse_thread/thread/8e9b34bc0182df75
-				self.scroll_engine_index = switch_search_engine self.scroll_engine_index +=1
-			else
-				self.scroll_engine_index = switch_search_engine self.scroll_engine_index -=1
+			if scroll_up
+				switch_search_engine self.scroll_engine_index +=1						# drawback: user scrolls a lot for up/down and this variable
+			else																		# gets a value far from (0..self.engines.length-1) limits.
+				switch_search_engine self.scroll_engine_index -=1						# user need to scroll back a lot to get in these limits again
 			end
 		else																			# later the first query scroll through the resulting pages
 			if scroll_up
@@ -270,8 +283,7 @@ class Applet
 		index = self.engines.length - 1 if index > self.engines.length - 1				# keep the upper limit
 		self.engine = self.engines.at index
 		reset_search_settings															# clean the previous search when choosing a new one
-		inform_current_search_engine													# inform in bottom of the icon what is the new engine
-		index
+		inform_current_search_engine													# inform in the bottom of the icon what is the new engine
 	end
 
 	def fetch_next_resulting_page
@@ -283,9 +295,10 @@ class Applet
 				when Bing; 	 retrieve_links_from_bing(self.query, offset)
 				when Yahoo;  retrieve_links_from_yahoo(self.query, offset)
 				when Teoma;  retrieve_links_from_teoma(self.query, self.page_of_displayed_links + 1)	 	# first Teoma page is 1
-				when Youtube;  retrieve_links_from_youtube(self.query, self.page_of_displayed_links + 1) 	# first Youtube page is 1
+				when YoutubeQ;  retrieve_links_from_youtube(self.query, self.page_of_displayed_links + 1) 	# first Youtube page is 1
 				when Webshots;  retrieve_links_from_webshots(self.query, offset)
-				when Flickr;  retrieve_links_from_flickr(self.query, self.page_of_displayed_links + 1)		# first Flickr page is 1
+				when FlickrQ;  retrieve_links_from_flickr(self.query, self.page_of_displayed_links + 1)		# first Flickr page is 1
+				when WikipediaQ;  retrieve_links_from_wikipedia(self.query, offset)
 			end
 			inform_end_of_waiting_process
         end
@@ -327,7 +340,7 @@ class Applet
 		end
 		threads.each { |t| t.join }
 		self.links[inicio, self.number_of_displayed_links].each do |link|				# later, get the rest of sub-icons data
-			if self.show_description_inspite_url
+			if self.show_description_instead_url
 				sub_icon_list << link.description										# user prefer see description with the sub-icon
 			else
 				sub_icon_list << link.shortened_url										# user prefer see shortened url with the sub-icon
@@ -381,7 +394,7 @@ class Applet
 	end
 
 	# Retrieve informations from Bing search stats	
-	# The stats array postions "first-second de third resultados"
+	# The stats array postions "first-second 'of' third 'results'"
 	def retrieve_bing_result_stats bing
 		stats = (bing/"span[@id='count']").inner_text
 		total = stats.split.third
@@ -406,10 +419,9 @@ class Applet
 		"Search for #{self.query} returned #{total} results"
 	end
 	
-	# Inspite of the offset (the index of the first link),
-	# Teoma receives the offset with the *page* value
-	# Teoma (Ask.com) results are placed in an <a> tag with id='r(digit)_t'. 
-	# The href paremeter brings the URL and the tag's content brings the description.
+	# Instead of the offset (the index of the first link), Teoma (ask.com) receives the offset with the *page* value
+	# The href paremeter has the URL and the tag's content has the description.
+	# Teoma results are placed in an <a> tag with id='r(digit)_t'.
 	def retrieve_links_from_teoma(query, page = 1)
 		teoma = Nokogiri::HTML(open("#{Teoma}#{query}&page=#{page}"))
 		self.stats = retrieve_teoma_result_stats teoma
@@ -425,15 +437,33 @@ class Applet
 		"Search for #{self.query} returned #{total} results"
 	end
 
+	# Fetch links from english Wikipedia. It is necessary to set user agent, or the connection is Forbidden (403)
+	def retrieve_links_from_wikipedia(query, offset = 0)
+		wikipedia = Nokogiri::HTML(open("#{WikipediaQ}#{query}&offset=#{offset}&limit=#{self.number_of_fetched_links}", 'User-Agent' => 'ruby'))
+		self.stats = retrieve_webshots_result_wikipedia wikipedia
+		(wikipedia/"ul[@class='mw-search-results']/li/a").each do |res|
+			url = res['href']
+			description = res['title']
+			self.links << Link.new("#{Wikipedia}#{url}", description)
+		end
+	end
+
+	def retrieve_webshots_result_wikipedia wikipedia
+		total = wikipedia.at("div[@class='results-info']/ul/li/b").next.next.inner_text
+		"Search for #{self.query} returned #{total} results"
+	end
+
+	# url, e.g, /watch?v=WwojCsQ3Fa8
+	# thumb_url, e.g, "http://i4.ytimg.com/vi/WwojCsQ3Fa8/default.jpg"
 	def retrieve_links_from_youtube(query, page = 1)
-		youtube = Nokogiri::HTML(open("#{Youtube}#{query}&page=#{page}"))
+		youtube = Nokogiri::HTML(open("#{YoutubeQ}#{query}&page=#{page}"))
 		self.stats = retrieve_youtube_result_stats youtube
 		(youtube/"a[@id^='video-long-title-']").each do |res|							# 'a' tag has id which starts with "video-long-title-"
 			url = res['href']
 			description = res.inner_text
 			video_id = url.split('=').last												# /watch?v=WwojCsQ3Fa8 => WwojCsQ3Fa8 => video_id
 			thumb_url = "http://i4.ytimg.com/vi/#{video_id}/default.jpg"
-			self.links << ThumbnailedLink.new("http://www.youtube.com#{url}", description, thumb_url, "youtube") # TODO a better approach in here
+			self.links << ThumbnailedLink.new("#{Youtube}#{url}", description, thumb_url)
 		end
 	end
 
@@ -442,6 +472,8 @@ class Applet
 		"Search for #{self.query} returned #{total} results"
 	end
 
+	# url, e.g, http://good-times.webshots.com/photo/2500137270102572130
+	# thumb_url, e.g, http://thumb10.webshots.net/t/24/665/1/37/27/2500137270102572130SmNoHt_th.jpg"
 	def retrieve_links_from_webshots(query, offset = 0)
 		webshots = Nokogiri::HTML(open("#{Webshots}#{query}&start=#{offset}"))
 		self.stats = retrieve_webshots_result_stats webshots
@@ -454,7 +486,7 @@ class Applet
 				url = raw_link['href']
 				description = raw_link.inner_text
 			end
-			self.links << ThumbnailedLink.new(url, description, thumb_url, "webshots")
+			self.links << ThumbnailedLink.new(url, description, thumb_url)
 		end
 	end
 
@@ -463,13 +495,15 @@ class Applet
 		"Search for #{self.query} returned #{total} results"
 	end
 
+	# url, e.g., /photos/21078069@N03/2780732654/
+	# thumb_url, e.g., http://farm4.static.flickr.com/3255/2780732654_b7cbb2fb98_t.jpg"
 	def retrieve_links_from_flickr(query, page = 1)
-		flickr = Nokogiri::HTML(open("#{Flickr}#{query}#page=#{page}"))
+		flickr = Nokogiri::HTML(open("#{FlickrQ}#{query}#page=#{page}"))
 		(flickr/"span[@class='photo_container pc_t']/a").each do |res|
 			url = res['href']
 			description = res['title']
 			thumb_url = res.at("img")['src']
-			self.links << ThumbnailedLink.new("http://www.flickr.com#{url}", description, thumb_url, "flickr")
+			self.links << ThumbnailedLink.new("#{Flickr}#{url}", description, thumb_url)
 		end
 	end
 
@@ -488,16 +522,20 @@ class Applet
 			@icon.SetQuickInfo("")
 		end
 	end
+	
+	# Inform in the bottom of the icon what is new search engine
 	def inform_current_search_engine
-		case self.engine
-			when Google; 	@icon.SetQuickInfo("Google")
-			when Bing; 		@icon.SetQuickInfo("Bing")
-			when Yahoo; 	@icon.SetQuickInfo("Yahoo!")
-			when Teoma; 	@icon.SetQuickInfo("Teoma")
-			when Youtube; 	@icon.SetQuickInfo("Youtube")
-			when Webshots; 	@icon.SetQuickInfo("Webshots")
-			when Flickr; 	@icon.SetQuickInfo("Flickr")
+		current = case self.engine
+			when Google; "Google"
+			when Bing; "Bing"
+			when Yahoo; "Yahoo!"
+			when Teoma; "Teoma"
+			when YoutubeQ; "Youtube"
+			when Webshots; "Webshots"
+			when FlickrQ; "Flickr"
+			when WikipediaQ; "Wikipedia"
 		end
+ 		@icon.SetQuickInfo(current)
 	end
 end
 
