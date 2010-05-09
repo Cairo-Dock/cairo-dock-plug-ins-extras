@@ -486,13 +486,16 @@ class Applet:
 	
 	def list_tasks(self):
 		list_task=[]
+		subtask_parents={}
 		try: #first assume that it is GTG version 0.3.x
 			for t in self.gtg.get_tasks_filtered(['active', 'workable']):
-				task_content = t["status"],t["startdate"],t["donedate"],t["tags"],t["text"],t["title"],t["id"],t["subtask"],t["duedate"] 
+				task_content = t["id"],t["status"],t["title"],t["duedate"],t["startdate"],t["donedate"],t["tags"],t["text"],t["subtask"],t["parents"]
 				list_task.append(task_content)
 		except: #if not then it might be 0.2.x
 			for t in self.gtg.get_tasks():
-				task_content = t["status"],t["startdate"],t["donedate"],t["tags"],t["text"],t["title"],t["id"],t["subtask"],t["duedate"] 
+				task_content = t["id"],t["status"],t["title"],t["duedate"],t["startdate"],t["donedate"],t["tags"],t["text"],t["subtask"],subtask_parents.get(t["id"],[])
+				for subtask in t["subtasks"]:
+					subtask_parents[subtask]=[t["id"]]
 				list_task.append(task_content)
 		return list_task	
 	
