@@ -144,7 +144,7 @@ class TransparentPostIt(gtk.Window):
 
 	# This is called when we need to draw the windows contents
 	def textview_expose(self, widget, event):
-		print "-- GTG applet -- textview_expose called --"
+		# print "-- GTG applet -- textview_expose called --"
 		self.textview_window_text = self.textview.get_window(gtk.TEXT_WINDOW_TEXT)
 		cr = self.textview_window_text.cairo_create()
 
@@ -502,7 +502,7 @@ class Applet:
 			subtask_parents={}
 			for t in self.gtg.get_tasks():
 				task_content = t["id"],t["status"],t["title"],t["duedate"],t["startdate"],t["donedate"],t["tags"],t["text"],t["subtask"],subtask_parents.get(t["id"],[])
-				for subtask in t["subtasks"]:
+				for subtask in t["subtask"]:
 					subtask_parents[subtask]=[t["id"]]
 				list_task.append(task_content)
 		return list_task	
