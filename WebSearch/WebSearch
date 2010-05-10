@@ -33,14 +33,13 @@
 %w{rubygems open-uri nokogiri dbus parseconfig launchy}.each { |x| require x }			# requirements
 
 class Array
-	def third
-		self[2]																			# defining the method "third" just for code readability
-	end
+	def third;self[2];end																# defining the method "third" just for code readability
+	def fifth;self[4];end
 end
 
 class String
 	def to_b
-		["true"].include?(self.downcase)												# string to boolean
+		"true" == downcase																# string to boolean
 	end
 end
 
@@ -48,6 +47,7 @@ bus = DBus::SessionBus.instance															# TODO: a module to encapsulate DB
 applet_service = bus.service("org.cairodock.CairoDock")
 applet_name = File.basename(Dir.getwd)													# nome do applet, neste caso é demo_ruby
 applet_path = "/org/cairodock/CairoDock/#{applet_name}"									# caminho onde o objeto está guardado no bus
+
 applet_object = applet_service.object(applet_path)
 applet_object.introspect
 applet_object.default_iface = 'org.cairodock.CairoDock.applet'							# list of icons contained in our sub-dock, or in our desklet
@@ -96,7 +96,7 @@ class ThumbnailedLink < Link															# a nice refactoring with the old You
 
 	def download_thumbnail
 		# download thumb quietly (q), name it (O) '#{image_id}.jpg' and take it to the directory named as engine
-		system("wget -q #{self.thumb_url} -O #{self.thumb_path}") 
+		IO.popen("wget -q #{self.thumb_url} -O #{self.thumb_path}") 
 		self.downloaded_thumb = true
 		self.icon = File.expand_path(self.thumb_path)
 	end
@@ -245,7 +245,7 @@ class Applet
 	end
 
 	def action_on_click
-		if self.query.empty?
+		if self.stats.empty?
 			ask_for_search_query
 		else
 			@icon.ShowDialog(self.stats, DialogActiveTime) 
@@ -332,9 +332,10 @@ class Applet
 		self.links[inicio, self.number_of_displayed_links].each do |link|				# first let's download the thumbs if necessary
 			if link.instance_of?(ThumbnailedLink) and not link.downloaded_thumb?		# class that provides thumbs and a not yet downloaded thumb
 				if self.show_thumbnail_preview 											# user want to see thumbs, so let's get it
-					threads << Thread.new(link) do |l|									# parallelizing thumb download with multi-threading
-						l.download_thumbnail
-					end
+#					threads << Thread.new(link) do |l|									# parallelizing thumb download with multi-threading
+#						l.download_thumbnail
+#					end
+					p link.download_thumbnail
 				end
 			end
 		end
@@ -375,9 +376,9 @@ class Applet
 	# Retrieve informations from Google search stats
 	# The stats array positions "Resultados first - second de aproximadamente third para fourth (fifth segundos)"
 	def retrieve_google_result_stats google
-		stats = (google/"p[@id='resultStats']/b").to_a
-		total = stats.third.inner_text
-		time = stats.last.inner_text
+		stats = (google/"div[@id='resultStats']")
+		/^About ([\S]+) results \s\(([\S]+) seconds\)/.match(stats.inner_text)
+		total, time = $1, $2
 		"Search for #{self.query} returned #{total} results in #{time} seconds"
 	end
 
@@ -397,7 +398,7 @@ class Applet
 	# The stats array postions "first-second 'of' third 'results'"
 	def retrieve_bing_result_stats bing
 		stats = (bing/"span[@id='count']").inner_text
-		total = stats.split.third
+		total = stats.split.fifth
 		"Search for #{self.query} returned #{total} results"
 	end
 
