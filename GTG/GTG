@@ -105,41 +105,13 @@ class TransparentPostIt(gtk.Window):
 		cr = widget.window.cairo_create()
 
 		if self.supports_alpha == True:
-				cr.set_source_rgba(1.0, 1.0, 1.0, 0.0) # Transparent
+				cr.set_source_rgba(1.0, 1.0, 0.0, 0.2) # Transparent
 		else:
 				cr.set_source_rgb(1.0, 1.0, 0.0) # Opaque yellow
 
 		# Draw the background
 		cr.set_operator(cairo.OPERATOR_SOURCE)
 		cr.paint()
-		
-		# draw rounded rect
-		width, height = self.allocation[2], self.allocation[3]
-
-		#/* a custom shape, that could be wrapped in a function */
-		x0 = 0	 #/*< parameters like cairo_rectangle */
-		y0 = 0
-
-		radius = min(15, width/2, height/2)	#/*< and an approximate curvature radius */
-
-		x1 = x0 + width
-		y1 = y0 + height
-
-		cr.move_to	(x0, y0 + radius)
-		cr.arc (x0 + radius, y0 + radius, radius, 3.14, 1.5 * 3.14)
-		cr.line_to (x1 - radius, y0)
-		cr.arc (x1 - radius, y0 + radius, radius, 1.5 * 3.14, 0.0)
-		cr.line_to (x1 , y1 - radius)
-		cr.arc (x1 - radius, y1 - radius, radius, 0.0, 0.5 * 3.14)
-		cr.line_to (x0 + radius, y1)
-		cr.arc (x0 + radius, y1 - radius, radius, 0.5 * 3.14, 3.14)
-
-		cr.close_path ()
-
-		cr.set_source_rgba (1.0, 1.0, 0.0, 0.5)
-		cr.fill_preserve ()
-		# cr.set_source_rgba (0.5, 0.5, 1.0, 0.8)
-		# cr.stroke ()
 
 		return False
 
