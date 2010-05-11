@@ -2,8 +2,8 @@
 
 # This is a part of the third-party applets for Cairo-Dock
 #
-# Copyright : (C) 2010 by ppmt
-# E-mail : ppmt@glx-dock.org
+# Copyright : (C) 2010 by ppmt and Tofe
+# E-mail : ppmt@glx-dock.org and chris.chapuis@gmail.com
 #
 #
 # This program is free software; you can redistribute it and/or
@@ -48,6 +48,7 @@ class TransparentPostIt(gtk.Window):
 		super(TransparentPostIt, self).__init__()
 
 		self.set_title('Alpha PostIt')
+		self.resize(200, 100)
 		# Tell GTK+ that we want to draw the windows background ourself.
 		# If we don't do this then GTK+ will clear the window to the
 		# opaque theme default color, which isn't what we want.
@@ -255,7 +256,7 @@ def action_on_build_menu():
 	for task_item in task_list:
 		id,status,title,duedate,startdate,donedate,tags,text,subtask,parents=task_item
 		menu_ids[id]=current_menu_id
-		print id, title
+		#print id, title
 		if (len(subtask) > 0):
 			menu_item_type=1
 		else:
@@ -423,6 +424,8 @@ class Applet:
 		self.config['remind message'] = keyfile.getboolean('Configuration', 'remind message')
 		self.config['msg animation'] = keyfile.get('Configuration', 'msg animation')
 		duration = keyfile.getint('Configuration', 'duration')
+		# ce serait sympa d'avoir la taille du postit, mais je sais pas comment forcer la mise a jour du .conf de l'utilisateur...
+		# self.config['postit size'] = keyfile.get('Configuration', 'postit size')
 		if duration == 0:
 			self.config['duration'] = 16
 		elif duration == 1:
