@@ -38,7 +38,8 @@ class ThumbnailedLink < Link															# a nice refactoring with the old You
 
 	def download_thumbnail																# remember that is being threaded outside
 		# download thumb quietly (q), name it (O) '#{image_id}.jpg' and take it to the directory named as engine
-		IO.popen("wget -q #{self.thumb_url} -O #{self.thumb_path}") do |io|				# open the pipe
+		WebSearch.log "wget #{self.thumb_url} -O #{self.thumb_path}"
+		IO.popen("wget '#{self.thumb_url}' -O #{self.thumb_path}") do |io|				# important enclose url in single quotes cuz there is '&'
 			IO.select([io], nil, nil, 0.5)												# non-blocking download through the pipe
 		end
 		self.downloaded_thumb = true
@@ -48,7 +49,7 @@ class ThumbnailedLink < Link															# a nice refactoring with the old You
 	# Thumbnail path composed by the search engine and image id
 	# Extract from the thumb_url the what is the search engine using the the core of the url
 	def define_thumbnail_path
-		directories = %w(youtube webshots flickr)										# directories names like engines names
+		directories = %w(youtube webshots flickr imageshack)							# search engine name == directory name
 		directory = directories.detect {|d| self.url.include?(d)}						# search for engines names in url
 		"./images/#{directory}/#{self.image_id}.jpg"
 	end	
