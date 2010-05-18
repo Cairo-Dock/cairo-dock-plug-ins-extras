@@ -32,6 +32,6 @@ class Google < Engine
 		stats = (google/"div[@id='resultStats']")
 		/^About ([\S]+) results \s\(([\S]+) seconds\)/.match(stats.inner_text)
 		total, time = $1, $2
-		"Search for #{query} returned #{total} results in #{time} seconds"
+		"Search for #{query} using #{Engine.name} returned #{total} results in #{time} seconds"
 	end
 end

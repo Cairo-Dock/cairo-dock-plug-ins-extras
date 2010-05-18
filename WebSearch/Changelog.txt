@@ -1,3 +1,4 @@
+1.1.0: (May/17/2010): WebSearch now fetch results from ImageShack. Sub-menu is using icons to a better engine indication.
 1.0.0: (May/12/2010): A heavy code refactoring, each search engine has its own module. Webshots has changed its HTML the whole fetching was recoded. Removing user-defined option for a pre-fetching limit. Finally a totally functional parallelized thumbnail download.
 0.7.3: (May/10/2010): Fixing the Google search since the engine changed the result stats HTML. Fixing the Bing result stats. Fixing the stats showing.
 0.7.0: (May/3/2010): WebSearch now fetch results from Wikipedia. Some code improvements. A new icon has been drawn, and a new preview also, both using Gimp. 

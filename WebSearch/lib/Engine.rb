@@ -6,6 +6,7 @@ class Engine 																			# Factory + Inheritance
 
 	def initialize
 		self.links =[]
+		self.stats = ""
 	end
 
 	def connect
@@ -19,6 +20,7 @@ class Engine 																			# Factory + Inheritance
 			when "Youtube"; require './lib/Youtube.rb'; Youtube.new
 			when "Webshots"; require './lib/Webshots.rb'; Webshots.new
 			when "Flickr"; require './lib/Flickr.rb'; Flickr.new
+			when "ImageShack"; require './lib/ImageShack.rb'; ImageShack.new
 		end
 	end
 

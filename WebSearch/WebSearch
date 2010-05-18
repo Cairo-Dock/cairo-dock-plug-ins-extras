@@ -15,7 +15,8 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 
-# This applet provides an interface to some search engines such as Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, and Wikipedia.
+# This applet provides an interface to some search engines such as
+# Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, and ImageShack.
 #	 To choose the search engine you can
 #		(1) Right-click -> Configure this applet -> Configuration (tab) -> Search engine
 #		(2) Scroll up or down over the icon (applicable only for the first search)
@@ -77,13 +78,13 @@ module WebSearch
 		attr_accessor 	:engine, :query, :engines,
 						:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links,
 						:show_current_page, :show_description_instead_url, :show_thumbnail_preview,
-						:scroll_engine_index
+						:scroll_engine_index, :add_menu_items_available
 
 		DialogActiveTime = 5															# time in seconds the dialog window will be active
 
 		def initialize applet, sub_icons
 			self.query = ""
-			self.engines = %w(Google Bing Yahoo! Teoma Wikipedia Youtube Webshots Flickr)
+			self.engines = %w(Google Bing Yahoo! Teoma Wikipedia Youtube Webshots Flickr ImageShack)
 			self.engine = Engine.new
 			self.scroll_engine_index = 0												# current index when scrolling through search engines
 			@icon = applet
@@ -139,12 +140,23 @@ module WebSearch
 		end
 
 		def action_on_build_menu
-			#if @icon.add_menu_items_available											# Cairo-Dock > 2.1.4-0beta0
-			# items = [{:type => 1, :label => 'Google', :menu => 0, :id => 1, :icon => './images/google.png', :tooltip => 'Google'}]
-				# @icon.AddMenuItems(items)
-			#else
-			@icon.PopulateMenu(self.engines)
-			#end
+			item = {}
+			items = []
+			self.engines.each_with_index do |engine, i|									# each property must do be string and never use Symbol
+				item['type'] = 0
+				item['label'] = engine
+				item['menu'] = 1
+				item['id'] = i
+				item['icon'] = File.expand_path("./images/data/#{engine}.png")
+				items.push item
+				item = {}
+			end	
+			begin
+				@icon.AddMenuItems(items)
+			rescue NoMethodError														# Cairo-Dock < 2.1.4-0beta0
+				WebSearch.log "AddMenuItems method is not available"
+				@icon.PopulateMenu(self.engines)
+			end
 		end
 
 		def ask_for_search_query
