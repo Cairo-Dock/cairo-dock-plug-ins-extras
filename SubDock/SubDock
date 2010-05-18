@@ -41,7 +41,7 @@ myIcon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet") # this 
 
 
 #On cree un dossier temporaire dans lequel on va mettre les icones Attention si on #crash le dock cette applet ne marchera pas car ce dossier existe..
-os.mkdir("/tmp/Subdock/")
+
 #this a try to put my icons in a 
 #remote_object = bus.get_object("org.cairodock.CairoDock",
 #                "/org/cairodock/CairoDock")
@@ -50,6 +50,14 @@ os.mkdir("/tmp/Subdock/")
 ### we'll have a sub-dock, so we also get the sub-icons object ###
 sub_icons_object = bus.get_object("org.cairodock.CairoDock", applet_path+"/sub_icons")
 mySubIcons = dbus.Interface(sub_icons_object, "org.cairodock.CairoDock.subapplet") # this object represents the list of icons contained in our sub-dock, or in our desklet. We'll add them one by one later, giving them a unique ID, which will be used to identify each of them.
+
+if os.path.isdir("/tmp/Subdock/") == False :
+	os.mkdir("/tmp/Subdock/")
+	print "Pas de dossier, dossier cree..."
+elif os.path.isdir("/tmp/Subdock/") == True :
+	print "Yeah un dossier! On a du surement crashe le dock... ^^"
+
+
 
 ##################################
 ### callbacks on the main icon ###
