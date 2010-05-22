@@ -3,6 +3,7 @@ class Wikipedia < Engine
 	attr_accessor :number_of_fetched_links
 
 	def initialize
+		self.name = self.class.to_s
 		self.number_of_fetched_links = 100
 		self.base_url = "http://en.wikipedia.org"
 		self.query_url = "#{self.base_url}/w/index.php?title=Special:Search&search="				# parameter "limit" results per page

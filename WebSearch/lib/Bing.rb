@@ -1,6 +1,7 @@
 class Bing < Engine
 
 	def initialize
+		self.name = self.class.to_s
 		self.base_url = "http://www.bing.com"
 		self.query_url = "#{self.base_url}/search?q="											# 10 results per page
 		super

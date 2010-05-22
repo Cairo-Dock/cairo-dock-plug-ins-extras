@@ -1,6 +1,7 @@
 class Flickr < Engine
 	
 	def initialize
+		self.name = self.class.to_s
 		self.base_url = "http://www.flickr.com"
 		self.query_url = "#{self.base_url}/search/?q="								# 28 results per page
 		super
