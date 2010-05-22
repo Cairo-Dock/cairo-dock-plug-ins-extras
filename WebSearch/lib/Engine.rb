@@ -1,8 +1,10 @@
 class Engine 																			# Factory + Inheritance
 
 	require './lib/Link.rb'
+	require './lib/Exceptions.rb'
+	require './lib/Engines.rb'
 
-	attr_accessor :name, :stats, :links, :base_url, :query_url, :engine
+	attr_accessor :name, :stats, :links, :base_url, :query_url
 
 	def initialize
 		self.links =[]
@@ -10,17 +12,13 @@ class Engine 																			# Factory + Inheritance
 	end
 
 	def connect
-		WebSearch.log "connecting to #{self.name}"
-		self.engine = case self.name
-			when "Google"; require './lib/Google.rb'; Google.new						# lazy loading applied to engines libraries
-			when "Bing"; require './lib/Bing.rb'; Bing.new
-			when "Yahoo!"; require './lib/Yahoo.rb'; Yahoo.new
-			when "Teoma"; require './lib/Teoma.rb'; Teoma.new
-			when "Wikipedia"; require './lib/Wikipedia.rb'; Wikipedia.new
-			when "Youtube"; require './lib/Youtube.rb'; Youtube.new
-			when "Webshots"; require './lib/Webshots.rb'; Webshots.new
-			when "Flickr"; require './lib/Flickr.rb'; Flickr.new
-			when "ImageShack"; require './lib/ImageShack.rb'; ImageShack.new
+		WebSearch.log "trying to connect to #{self.name} lib"
+		# lazy loading, e.g, when "Google"; require "./lib/Google.rb"; Google.new
+		# The Yahoo! "!" signal was removed
+		if Engines.exists? self.name
+			require "./lib/#{self.name}.rb"; Kernel.const_get(self.name).new
+		else
+			raise Exceptions::UnknownEngineException.new(self.name)
 		end
 	end
 

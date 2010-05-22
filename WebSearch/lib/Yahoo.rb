@@ -1,6 +1,7 @@
 class Yahoo < Engine
 
 	def initialize
+		self.name = self.class.to_s
 		self.base_url = "http://search.yahoo.com"
 		self.query_url = "#{self.base_url}/search?p="											# 10 results per page
 		super

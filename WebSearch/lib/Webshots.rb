@@ -1,6 +1,7 @@
 class Webshots < Engine
 	
 	def initialize
+		self.name = self.class.to_s
 		self.base_url = "http://www.webshots.com"
 		self.query_url = "#{self.base_url}/search?querySource=community&query="								# 36 results per page
 		super

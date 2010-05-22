@@ -4,13 +4,13 @@ class Link
 
 	def initialize (url = "", description = "", icon = File.expand_path("./icon"))
 		self.url = url
-		self.description = description
+		self.description = shorten description											# description shortened by default
 		self.id = @@next_id += 1
 		self.icon = icon
 		self.shortened_url = shorten url
 	end
 
-	def shorten (string, count = 45)													# TODO: count as a parameter in .conf file
+	def shorten (string, count = 75)													# TODO: count as a parameter in .conf file
 		if string.length > count
 			shortened = string.slice(0 .. count-1)
 			shortened + "..." if shortened
@@ -38,8 +38,7 @@ class ThumbnailedLink < Link															# a nice refactoring with the old You
 
 	def download_thumbnail																# remember that is being threaded outside
 		# download thumb quietly (q), name it (O) '#{image_id}.jpg' and take it to the directory named as engine
-		WebSearch.log "wget #{self.thumb_url} -O #{self.thumb_path}"
-		IO.popen("wget '#{self.thumb_url}' -O #{self.thumb_path}") do |io|				# important enclose url in single quotes cuz there is '&'
+		IO.popen("wget -q '#{self.thumb_url}' -O #{self.thumb_path}") do |io|			# important enclose url in single quotes cuz there is '&'
 			IO.select([io], nil, nil, 0.5)												# non-blocking download through the pipe
 		end
 		self.downloaded_thumb = true
@@ -49,7 +48,7 @@ class ThumbnailedLink < Link															# a nice refactoring with the old You
 	# Thumbnail path composed by the search engine and image id
 	# Extract from the thumb_url the what is the search engine using the the core of the url
 	def define_thumbnail_path
-		directories = %w(youtube webshots flickr imageshack)							# search engine name == directory name
+		directories = %w(youtube webshots flickr imageshack twitter)					# search engine name == directory name
 		directory = directories.detect {|d| self.url.include?(d)}						# search for engines names in url
 		"./images/#{directory}/#{self.image_id}.jpg"
 	end	

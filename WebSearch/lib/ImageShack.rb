@@ -1,6 +1,7 @@
 class ImageShack < Engine
 
 	def initialize
+		self.name = self.class.to_s
 		self.base_url = "http://imageshack.us"
 		self.query_url = "#{self.base_url}/new_search.php?q="								# 49 results per page
 		super

@@ -4,6 +4,7 @@ class Google < Engine
 	attr_accessor :number_of_fetched_links
 
 	def initialize
+		self.name = self.class.to_s
 		self.number_of_fetched_links = 100
 		self.base_url = "http://www.google.com"
 		self.query_url = "#{self.base_url}/search?q="											# (10,20,30,50,100) results per page"
@@ -32,6 +33,6 @@ class Google < Engine
 		stats = (google/"div[@id='resultStats']")
 		/^About ([\S]+) results \s\(([\S]+) seconds\)/.match(stats.inner_text)
 		total, time = $1, $2
-		"Search for #{query} using #{Engine.name} returned #{total} results in #{time} seconds"
+		"Search for #{query} returned #{total} results in #{time} seconds"
 	end
 end

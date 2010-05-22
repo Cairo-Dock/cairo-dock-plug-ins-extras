@@ -1,6 +1,7 @@
 class Teoma < Engine
 
 	def initialize
+		self.name = self.class.to_s
 		self.base_url = "http://www.teoma.com"
 		self.query_url = "#{self.base_url}/web?q="										# 10 results per page
 		super

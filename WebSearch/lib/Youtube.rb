@@ -1,6 +1,7 @@
 class Youtube < Engine
 	
 	def initialize
+		self.name = self.class.to_s
 		self.base_url = "http://www.youtube.com"
 		self.query_url = "#{self.base_url}/results?search_query="						# 20 results per page
 		super
