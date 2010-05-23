@@ -1,22 +1,40 @@
+class String
+
+	require 'iconv'
+
+	def shorten (count = 70)															# TODO: count as a parameter in .conf 
+		if length > count
+			shortened = slice(0 .. count-1)
+			shortened + "..." if shortened
+		else
+			self
+		end
+	end
+
+	def to_utf8
+		# Strings like "OpenSUSE のインス" generate encoding "OpenSUSE \343\201\256\343\202\244\343\203"
+		# If this is passed to ruby-dbus as a string parameter of any method, the error described bellow occurs
+		# Martin Vidner was contacted by me about it
+		# --
+		#/usr/local/lib/site_ruby/1.8/dbus/bus.rb:432:in `read_nonblock': end of file reached (EOFError)
+		#	from /usr/local/lib/site_ruby/1.8/dbus/bus.rb:432:in `update_buffer'
+		#	from /usr/local/lib/site_ruby/1.8/dbus/bus.rb:478:in `wait_for_message'
+		#	from /usr/local/lib/site_ruby/1.8/dbus/bus.rb:492:in `send_sync'
+		#	from (eval):22:in `AddSubIcons'
+		Iconv.iconv('ascii//ignore//translit', 'utf-8', self).to_s
+	end
+end
+
 class Link
 	attr_accessor :url, :description, :id, :icon, :shortened_url
 	@@next_id = 0																		# sequential id "static"
 
 	def initialize (url = "", description = "", icon = File.expand_path("./icon"))
 		self.url = url
-		self.description = shorten description											# description shortened by default
+		self.description = description.shorten.to_utf8									# description shortened by default
 		self.id = @@next_id += 1
 		self.icon = icon
-		self.shortened_url = shorten url
-	end
-
-	def shorten (string, count = 75)													# TODO: count as a parameter in .conf file
-		if string.length > count
-			shortened = string.slice(0 .. count-1)
-			shortened + "..." if shortened
-		else
-			string
-		end
+		self.shortened_url = url.shorten
 	end
 
 	def self.reset_next_id
@@ -33,7 +51,7 @@ class ThumbnailedLink < Link															# a nice refactoring with the old You
 		self.thumb_url = thumb_url
 		self.image_id = @@next_image_id += 1
 		self.thumb_path = define_thumbnail_path
-		self.downloaded_thumb = false
+		self.downloaded_thumb = false													# keep track of which thumbs were downloaded
 	end
 
 	def download_thumbnail																# remember that is being threaded outside

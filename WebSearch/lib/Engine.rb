@@ -13,10 +13,9 @@ class Engine 																			# Factory + Inheritance
 
 	def connect
 		WebSearch.log "trying to connect to #{self.name} lib"
-		# lazy loading, e.g, when "Google"; require "./lib/Google.rb"; Google.new
 		# The Yahoo! "!" signal was removed
 		if Engines.exists? self.name
-			require "./lib/#{self.name}.rb"; Kernel.const_get(self.name).new
+			require "./lib/#{self.name}.rb"; Kernel.const_get(self.name).new			# lazy loading, e.g, require "./lib/Google.rb"; Google.new
 		else
 			raise Exceptions::UnknownEngineException.new(self.name)
 		end
