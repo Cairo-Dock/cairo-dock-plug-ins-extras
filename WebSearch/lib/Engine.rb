@@ -1,8 +1,8 @@
 class Engine 																			# Factory + Inheritance
 
+	require './lib/Engines.rb'
 	require './lib/Link.rb'
 	require './lib/Exceptions.rb'
-	require './lib/Engines.rb'
 
 	attr_accessor :name, :stats, :links, :base_url, :query_url
 

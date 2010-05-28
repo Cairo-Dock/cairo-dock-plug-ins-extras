@@ -15,7 +15,7 @@ class Flickr < Engine
 			url = res['href']
 			description = res['title']
 			thumb_url = res.at("img")['src']
-			self.links << ThumbnailedLink.new("#{self.base_url}#{url}", description, thumb_url)
+			self.links << ThumbnailedLink.new("#{self.base_url}#{url}", description, thumb_url, self.name)
 		end
 		self.links
 	end

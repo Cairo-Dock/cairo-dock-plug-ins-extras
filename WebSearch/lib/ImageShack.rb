@@ -7,12 +7,13 @@ class ImageShack < Engine
 		super
 	end
 
+    # ImageShack does not provide image description
 	def retrieve_links(query, page = 1)
 		imageshack = Nokogiri::HTML.parse(open("#{self.query_url}#{query}&page=#{page}"))
 		(imageshack/"a[@class='search_result']").each do |res|
 			url = res['href']
 			thumb_url = res.at("img")['src']
-			self.links << ThumbnailedLink.new(url, "", thumb_url)
+			self.links << ThumbnailedLink.new(url, "", thumb_url, self.name)
 		end
 		self.links
 	end

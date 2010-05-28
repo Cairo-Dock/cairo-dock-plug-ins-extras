@@ -16,7 +16,7 @@ class Webshots < Engine
 			url = res['href']
 			description = res['title']
 			thumb_url = res.at("img[@class='searchListItemImg']")['src']
-			self.links << ThumbnailedLink.new(url, description, thumb_url)
+			self.links << ThumbnailedLink.new(url, description, thumb_url, self.name)
 		end
 		self.links
 	end
