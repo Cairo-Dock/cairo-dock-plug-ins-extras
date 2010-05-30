@@ -244,12 +244,13 @@ module WebSearch
 			offset = self.page_of_displayed_links * self.number_of_displayed_links		# the position of the first link in the self.engine.links array
 			if self.engine.links.size <= offset											# user already scrolled by the fetched links, fetch more
 				inform_start_of_waiting_process
-				self.engine.links = case self.engine.name								# receive the fetched links
-					# some engines use the concept of offset which is the first index of an interval of links/images to be shown
-					# but there is those that use a sequential page (1,2,3, ...) which has an amount of links/images, etc
-					when "Google", "Bing", "Yahoo", "Webshots", "Wikipedia"; self.engine.retrieve_links(self.query, offset)
-					when "Teoma","Youtube","Flickr","ImageShack","Twitter"; self.engine.retrieve_links(self.query, self.page_of_displayed_links + 1)
-				end
+                # some engines use the concept of offset which is the first index of an interval of links/images to be shown
+				# but there is those that use a sequential page (1,2,3, ...) which has an amount of links/images, etc
+                if Engines.paginated_by_page?(self.engine.name)                         # see ./lib/Engines.rb
+                    self.engine.links = self.engine.retrieve_links(self.query, self.page_of_displayed_links + 1)
+                else																	# paginated by offset
+                    self.engine.links = self.engine.retrieve_links(self.query, offset)
+                end
 				inform_end_of_waiting_process
 		    end
 			self.page_of_displayed_links += 1											# sequential page identification, lets go to the next

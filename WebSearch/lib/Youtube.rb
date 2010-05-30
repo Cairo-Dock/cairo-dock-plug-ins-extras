@@ -17,7 +17,7 @@ class Youtube < Engine
 			description = res.inner_text
 			video_id = url.split('=').last												# /watch?v=WwojCsQ3Fa8 => WwojCsQ3Fa8 => video_id
 			thumb_url = "http://i4.ytimg.com/vi/#{video_id}/default.jpg"
-			self.links << ThumbnailedLink.new("#{self.base_url}#{url}", description, thumb_url)
+			self.links << ThumbnailedLink.new("#{self.base_url}#{url}", description, thumb_url, self.name)
 		end
 		self.links
 	end
