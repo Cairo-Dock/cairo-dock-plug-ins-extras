@@ -10,7 +10,7 @@ class Flickr < Engine
 	# url, e.g., /photos/21078069@N03/2780732654/
 	# thumb_url, e.g., http://farm4.static.flickr.com/3255/2780732654_b7cbb2fb98_t.jpg"
 	def retrieve_links(query, page = 1)
-		flickr = Nokogiri::HTML(open("#{self.query_url}#{query}#page=#{page}"))
+		flickr = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}#page=#{page}")))
 		(flickr/"span[@class='photo_container pc_t']/a").each do |res|
 			url = res['href']
 			description = res['title']

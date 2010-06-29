@@ -10,7 +10,7 @@ class Teoma < Engine
 	# The href paremeter has the URL and the tag's content has the description.
 	# Teoma results are placed in an <a> tag with id='r(digit)_t'.
 	def retrieve_links(query, page = 1)
-		teoma = Nokogiri::HTML(open("#{self.query_url}#{query}&page=#{page}"))
+		teoma = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&page=#{page}")))
 		self.stats = retrieve_teoma_result_stats(teoma, query)
 		(teoma/"a[@id$='_t']").each do |res|											# any a tag with an id that ends with _t
 			url = res['href']

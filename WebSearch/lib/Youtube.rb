@@ -10,7 +10,7 @@ class Youtube < Engine
 	# url, e.g, /watch?v=WwojCsQ3Fa8
 	# thumb_url, e.g, "http://i4.ytimg.com/vi/WwojCsQ3Fa8/default.jpg"
 	def retrieve_links(query, page = 1)
-		youtube = Nokogiri::HTML(open("#{self.query_url}#{query}&page=#{page}"))
+		youtube = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&page=#{page}")))
 		self.stats = retrieve_youtube_result_stats(youtube, query)
 		(youtube/"a[@id^='video-long-title-']").each do |res|							# 'a' tag has id which starts with "video-long-title-"
 			url = res['href']

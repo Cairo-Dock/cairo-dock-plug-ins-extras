@@ -11,7 +11,8 @@ class Digg < Engine
     # thumb_url, e.g, http://digg.com/linux_unix/Cairo_Dock_Desktop_dock_for_openSUSE_Linux/s.png
     # description, e.g, Cairo-Dock - Desktop dock for openSUSE Linux
 	def retrieve_links(query, page = 1)
-		digg = Nokogiri::HTML.parse(open("#{self.query_url}#{query}&page=#{page}", 'User-Agent' => 'ruby')) # if User-Agent is not defined open hangs
+        # if User-Agent is not defined, the open process hangs
+		digg = Nokogiri::HTML.parse(open(URI.encode("#{self.query_url}#{query}&page=#{page}", 'User-Agent' => 'ruby')))
 		(digg/"div[@id^='enclosure']").each do |res|
 			description = res.at("h3[@id^='title']/a").inner_text										# always present
 			url = res.at("h3[@id^='title']/a")['href']													# always present
