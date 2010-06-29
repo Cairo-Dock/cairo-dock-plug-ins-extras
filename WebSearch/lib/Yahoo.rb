@@ -9,7 +9,7 @@ class Yahoo < Engine
 	# Fetch links from Yahoo!. Since Yahoo! does not provide an in-url way to fetch more links than the 10
 	# as Google does (&num=amount_to_fetch), this method will be called every time that 10 new results need to be shown
 	def retrieve_links(query, offset = 1)
-		yahoo = Nokogiri::HTML(open("#{self.query_url}#{query}&b=#{offset}"))
+		yahoo = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&b=#{offset}")))
 		self.stats = retrieve_yahoo_result_stats(yahoo, query)
 		(yahoo/"div[@class~='res']").each do |res|					# divs are usually from 'res' class but some sub-results are 'res_indent' class
 			url = (res/"span[@class='url']").inner_text

@@ -10,7 +10,7 @@ class Webshots < Engine
 	# url, e.g, http://good-times.webshots.com/photo/2500137270102572130
 	# thumb_url, e.g, http://thumb10.webshots.net/t/24/665/1/37/27/2500137270102572130SmNoHt_th.jpg"
 	def retrieve_links(query, offset = 0)
-		webshots = Nokogiri::HTML(open("#{self.query_url}#{query}&start=#{offset}"))
+		webshots = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&start=#{offset}")))
 		self.stats = retrieve_webshots_result_stats(webshots, query)
 		(webshots/"a[@class='searchListItemLink']").each do |res|
 			url = res['href']
