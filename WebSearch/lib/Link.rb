@@ -1,3 +1,11 @@
+# This is a part of the external WebSearch applet for Cairo-Dock
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This module makes the Link abstraction with two classes,
+# I - Link, links that does not have related thumb image
+# II - ThumnailedLink, links from sites which have thumbnail also deals with thumb download 
+
 class String
 
 	require 'iconv'

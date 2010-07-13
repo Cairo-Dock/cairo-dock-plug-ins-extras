@@ -1,3 +1,9 @@
+# This is a part of the external WebSearch applet for Cairo-Dock
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This module fetch results from Wikipedia - en.wikipedia.org
+
 class Wikipedia < Engine
 
 	attr_accessor :number_of_fetched_links

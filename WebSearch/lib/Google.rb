@@ -1,3 +1,8 @@
+# This is a part of the external WebSearch applet for Cairo-Dock
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This module fetch results from Google - www.google.com
 class Google < Engine
 
 	#attr_accessor :name, :stats, :links, :base_url, :query_url, :number_of_fetched_links
