@@ -71,8 +71,9 @@ module WebSearch
 	class Applet
 
 		require './lib/Engine.rb'
+		require './lib/History.rb'
 
-		attr_accessor 	:engine, :engines, :query,
+		attr_accessor 	:engine, :engines, :query, :history,
 						:number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links,
 						:show_current_page, :show_description_instead_url, :show_thumbnail_preview,
 						:scroll_engine_index
@@ -81,7 +82,8 @@ module WebSearch
 
 		def initialize applet, sub_icons
 			self.query = ""
-			self.engines = Engines::List												# ./lib/Engines.rb
+			self.engines = Engines.list												    # ./lib/Engines.rb
+            self.history = History.entries                                              # ./lib/History.rb
 			self.engine = Engine.new
 			self.scroll_engine_index = 0												# current index when scrolling through search engines
 			@icon = applet
@@ -136,34 +138,61 @@ module WebSearch
 				action_on_middle_click_sub_icon sub_icon_id
 			end
 		end
-
+        
+        # Building context menu
 		def action_on_build_menu
-			item = {}
-			items = []
-			self.engines.each_with_index do |engine, i|									# each property must do be string and never use Symbol
-				item['type'] = 0
-				item['label'] = engine
-				item['menu'] = 1
-				item['id'] = i
-				item['icon'] = File.expand_path("./images/data/#{engine}.png")
-				items.push item
-				item = {}
-			end	
 			begin
-				@icon.AddMenuItems(items)
+				@icon.AddMenuItems(build_menu_for_engines)
+                @icon.AddMenuItems(build_menu_for_history)
 			rescue NoMethodError														# Cairo-Dock < 2.1.4-0beta0
 				WebSearch.log "AddMenuItems method is not available"
 				@icon.PopulateMenu(self.engines)
 			end
 		end
 
+        def build_menu_for_engines
+            items = []
+			self.engines.each_with_index do |engine, i|									# each property must do be string and never use Symbol
+			    item = {}
+				item['type'] = 0
+				item['label'] = engine
+				item['menu'] = 1
+				item['id'] = i
+				item['icon'] = File.expand_path("./images/data/#{engine}.png")
+				items.push item
+			end
+            items
+        end
+
+        def build_menu_for_history
+            # The engines' index (id) of the WebSearch sub-menu ranges from 0 to self.engines.size-1 consequently, the first id of
+            # the history menu is the self.engines.size. Even if the number of engines change, the self.engine size will keep track of it
+            history_sub_menu_index = self.engines.size
+            history_sub_menu_icon = File.expand_path("./images/data/history.png")
+            history_sub_menu = [{'type' => 1, 'label' => 'History', 'menu' => 0, 'id' => history_sub_menu_index, 'icon' => history_sub_menu_icon}]
+            history_sub_menu_entry_index = history_sub_menu_index                       # subsequent indexes are used in the history entries
+            self.history.each do |entry|                                                # construct the history sub-menu entries
+                item = {}
+                item['type'] = 0
+				item['label'] = entry.chop
+				item['menu'] = history_sub_menu_index
+                history_sub_menu_entry_index += 1
+				item['id'] = history_sub_menu_entry_index
+                item['icon'] = history_sub_menu_icon
+				history_sub_menu.push item
+            end
+            history_sub_menu
+        end
+
 		def ask_for_search_query
-			@icon.AskText("Search for:", "#{self.query}")
+			@icon.AskText("Search for:", "#{self.query}")                               # the value in the text field is the previous used term
 		end
 
 		def action_on_answer answer
 			unless answer.empty?
 				reset_search_settings unless self.query.empty?
+                History.save_new_entry answer                                           # append (if necessary) the query term in the history file
+                self.history = History.entries                                          # refresh local entries of the historyu
 				self.query = answer
 				begin
 					self.engine = self.engine.connect									# only when the fetch is imminent the engine connection occurs
@@ -206,9 +235,20 @@ module WebSearch
 			end
 		end
 
-		# Changing the search engine by context menu
-		def action_on_menu_select param
-			switch_search_engine param
+        # There is a sequential index in the context menu and it is divided in two sections
+        #   Section I - Indexes for search engines ranging from 0 to self.engines.size - 1
+        #   Section II - Indexes for history terms' entries ranging from self.engines.size + 1 to max number of entries in the history (NumberOfEntries see ./lib/History.rb)
+        #   Note - The index self.engines.size is the one used to place the "History" label actually creating the sub-menu. See first lines in  build_menu_for_history method
+        # This method treats both the selection of search engine, as trigger a search with a term coming from the history
+		def action_on_menu_select selected_menu_index
+            # an index that came from a click in one of the engines from WebSearch sub-menu
+            if selected_menu_index < self.engines.size
+    			switch_search_engine selected_menu_index
+            else    # user can be only clicked on the History sub-menu
+                # shift the history menu ids to make them range from 0 to self.history-1 (History.entries from ./lib/History.rb)
+                history_entry_term = self.history[selected_menu_index - self.engines.size - 1]
+                action_on_answer history_entry_term
+            end
 		end
 
 		def action_on_reload_module config_has_changed
@@ -220,7 +260,7 @@ module WebSearch
 			if self.query.empty?														# before the first query it is possible scroll through engines
 				if scroll_up
 					switch_search_engine self.scroll_engine_index +=1					# drawback: user scrolls a lot for up/down and this variable
-				else																	# gets a value far from (0..self.engines.length-1) limits.
+				else																	# gets a value far from (0..self.engines.size-1) limits.
 					switch_search_engine self.scroll_engine_index -=1					# user need to scroll back a lot to get in these limits again
 				end
 			else																		# later the first query scroll through the resulting pages
@@ -234,7 +274,7 @@ module WebSearch
 
 		def switch_search_engine index
 			index = 0 if index < 0														# keep the lower limit
-			index = self.engines.length - 1 if index > self.engines.length - 1			# keep the upper limit
+			index = self.engines.size - 1 if index > self.engines.size - 1			# keep the upper limit
 			self.engine.name = self.engines.at(index)
 			reset_search_settings														# clean the previous search when choosing a new one
 			inform_current_search_engine												# inform in the bottom of the icon what is the new engine

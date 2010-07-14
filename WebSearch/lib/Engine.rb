@@ -1,4 +1,11 @@
-class Engine 																			# Factory + Inheritance
+# This is a part of the external WebSearch applet for Cairo-Dock
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This module acts as a Factory + Inheritance
+# It connects the WebSearch to the right search engine module
+
+class Engine
 
 	require './lib/Engines.rb'
 	require './lib/Link.rb'
