@@ -1,0 +1,182 @@
+#!/usr/bin/python
+
+# This is a part of the external doCkranslator applet for Cairo-Dock
+#
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+
+# This applet provides a translator tool using the Google Translator service
+#    At this point, the doCkranslator translates from English to lots of languages
+#    Scroll up/down over the icon to choose the source language
+#    Left-click on the icon
+#    Type your text and validate
+#    Translated text will be shown and be available in the clipboard, just press Ctrl+v to have it
+
+import gobject
+import glib
+import dbus
+import os.path
+from dbus.mainloop.glib import DBusGMainLoop
+from sgmllib import SGMLParser
+import urllib
+from urllib import FancyURLopener
+import csv
+import pygtk
+pygtk.require('2.0')
+import gtk
+
+DBusGMainLoop(set_as_default=True)
+
+class AgentOpener(FancyURLopener):
+    """Masked user-agent otherwise the access would be forbidden"""
+    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+
+class TranslatorParser(SGMLParser):
+    def reset(self):                              
+        SGMLParser.reset(self)
+        self.translated_content = ""
+        self.inside_a_element = 0
+
+    def start_span(self, attrs):                  
+        for name, value in attrs:
+            if name == "id" and value == "result_box":
+                self.inside_a_element = 1
+    
+    def end_span(self):
+        self.inside_a_element = 0
+
+    def handle_data(self, text):
+        if self.inside_a_element:
+            self.translated_content = text
+
+    def parse(self, page):
+        self.feed(page)
+        self.close()
+
+class Interface:
+    """ Create a interface between the Applet and Parser
+        This module receives, from the Applet's user, the text to be translated and
+        access the parser to get the context of the Google Translator for this text"""
+    def __init__(self, text_to_be_translated):
+        self.text_to_be_translated = text_to_be_translated
+        
+    def translate_it(self, source, destiny):
+        parser = TranslatorParser()                                                     # create the parser
+        opener = AgentOpener()                                                          # opens the web connection with masked user-agent
+        url = "http://translate.google.com/?hl=en&layout=1&eotf=0&sl=%s&tl=%s&q=%s" % (source, destiny, urllib.quote(self.text_to_be_translated))
+        page = opener.open(url)                                                         # get the HTML
+        parser.parse(page.read())                                                       # feed the parser to get the specific content: translated text
+        page.close()                                                                    # lets close the page connection
+        self.text_to_be_translated = parser.translated_content                          # from the parser, we get the translated content
+        return self.text_to_be_translated
+
+class Language:
+    def __init__(self, name, abbrv):
+        self.name = name
+        self.abbrv = abbrv
+
+class Applet:
+
+    def __init__(self):
+        self.icon = None
+        self.translated_text = ""
+        self.destinies = []
+        self.source = Language('English', 'en')                                         # default source language
+        self.destiny = Language('Portuguese', 'pt')                                     # default destiny language
+        self.scroll_destiny_language = 0
+        self.dialog_active_time = 5                                                     # time in seconds that the dialog window will be active
+
+    def inform_current_destiny_language(self, current):
+        self.icon.SetQuickInfo(current)
+
+    def read_languages_file(self):
+        """Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
+        f = open('.languages', "rb")
+        for line in f:
+            splited = line.split()                                                      # split the line by space token
+            self.destinies.append(Language(splited[0], splited[1]))                     # e.g, Language("Portuguese", "pt")
+
+    def start(self):
+        self.read_languages_file()
+        self.connect_to_dock()
+        self.inform_current_destiny_language(self.destiny.name)                         # necessary to connect to the dock first!
+
+    def set_to_clipboard(self, sentence):
+        clipboard = gtk.clipboard_get()                                                 # get the clipboard
+        clipboard.set_text(sentence)                                                    # set the clipboard the translated text
+
+    def translate(self, sentence, source, destiny):
+        print "sentence: %s (from: %s to: %s)" % (sentence, source, destiny)
+        interface = Interface(sentence)
+        translated = interface.translate_it(source, destiny)
+        self.icon.ShowDialog(translated, self.dialog_active_time)
+        self.set_to_clipboard(translated)
+        print "translated: " + translated
+
+    def switch_destiny_language(self, index):
+        max_index = len(self.destinies) - 1
+        if index < 0:
+            index = 0									            					# keep the lower limit
+        if index > max_index:
+    		index = max_index - 1
+        self.destiny = self.destinies[index]
+        self.inform_current_destiny_language(self.destiny.name)
+
+    def action_on_answer(self, answer):
+    	self.translate(answer, self.source.abbrv, self.destiny.abbrv)                   # what to be translated, the source and destination languages
+
+    def action_on_click(self, param):
+        self.icon.AskText("Translate:", "")                                             # heya user, tell me what do you wanna translate
+
+    def action_on_scroll(self, scroll_up):
+        if scroll_up:
+            self.scroll_destiny_language -= 1
+            self.switch_destiny_language (self.scroll_destiny_language)
+        else:
+            self.scroll_destiny_language += 1
+            self.switch_destiny_language (self.scroll_destiny_language)
+	    
+    def action_on_build_menu(self):
+        items = []
+        index = 0
+        for language in self.destinies:
+            item = {}
+            item['type'] = 0
+            item['label'] = language.name
+            item['menu'] = 1
+            item['id'] = index
+            index += 1
+            items.append(item)
+        try:
+            self.icon.AddMenuItems(items)
+        except TypeError:
+            print "AddMenuItems method is not available"
+
+    def connect_to_dock(self):
+        applet_name = os.path.basename(os.path.abspath("."))                            # name of the applet must the same as the folder
+        applet_path = "/org/cairodock/CairoDock/%s" % applet_name                       # path where our object is stored on the bus
+        bus = dbus.SessionBus()
+        applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
+        self.icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")     # representes the applet, icon inside the dock or a desklet
+
+        self.icon.connect_to_signal("on_click", self.action_on_click)
+        self.icon.connect_to_signal("on_answer", self.action_on_answer)
+        self.icon.connect_to_signal("on_build_menu", self.action_on_build_menu)
+        self.icon.connect_to_signal("on_scroll", self.action_on_scroll)
+
+if __name__ == '__main__':
+    Applet().start()
+    loop = gobject.MainLoop()
+    loop.run()
+    print "doCkranslator is ending"
+    sys.exit(0)

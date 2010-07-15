@@ -1,0 +1,1 @@
+0.0.1: (July/14/2010: doCkranslator has begun here. It translates from English to a lot of languages.
