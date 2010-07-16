@@ -17,23 +17,17 @@
 
 # This applet provides a translator tool using the Google Translator service
 #    At this point, the doCkranslator translates from English to lots of languages
-#    Scroll up/down over the icon to choose the source language
-#    Left-click on the icon
-#    Type your text and validate
-#    Translated text will be shown and be available in the clipboard, just press Ctrl+v to have it
+#    Scroll up/down over the icon to choose the resulting language
+#    To enter the text to be translated there is two ways
+#    (I) Left-click on the icon; type your text and validate
+#    (II) Middle click on the icon, the text contained in the clipboard will be automatically copied to input dialog; validate
+#    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import gobject
-import glib
-import dbus
-import os.path
+import gobject, glib, dbus, os.path, urllib, pygtk, gtk
 from dbus.mainloop.glib import DBusGMainLoop
 from sgmllib import SGMLParser
-import urllib
 from urllib import FancyURLopener
-import csv
-import pygtk
 pygtk.require('2.0')
-import gtk
 
 DBusGMainLoop(set_as_default=True)
 
@@ -73,7 +67,7 @@ class Interface:
     def translate_it(self, source, destiny):
         parser = TranslatorParser()                                                     # create the parser
         opener = AgentOpener()                                                          # opens the web connection with masked user-agent
-        url = "http://translate.google.com/?hl=en&layout=1&eotf=0&sl=%s&tl=%s&q=%s" % (source, destiny, urllib.quote(self.text_to_be_translated))
+        url = "http://translate.google.com/?sl=%s&tl=%s&q=%s" % (source, destiny, self.text_to_be_translated.replace(' ', '%20').encode('utf-8'))
         page = opener.open(url)                                                         # get the HTML
         parser.parse(page.read())                                                       # feed the parser to get the specific content: translated text
         page.close()                                                                    # lets close the page connection
@@ -96,8 +90,14 @@ class Applet:
         self.scroll_destiny_language = 0
         self.dialog_active_time = 5                                                     # time in seconds that the dialog window will be active
 
-    def inform_current_destiny_language(self, current):
-        self.icon.SetQuickInfo(current)
+    def inform_start_of_waiting_process(self):
+        self.icon.SetQuickInfo("...")
+
+    def inform_end_of_waiting_process(self):
+        self.icon.SetQuickInfo("")
+
+    def inform_current_destiny_language(self):
+        self.icon.SetQuickInfo(self.destiny.name)
 
     def read_languages_file(self):
         """Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
@@ -109,19 +109,28 @@ class Applet:
     def start(self):
         self.read_languages_file()
         self.connect_to_dock()
-        self.inform_current_destiny_language(self.destiny.name)                         # necessary to connect to the dock first!
+        self.inform_current_destiny_language()                                          # necessary to connect to the dock first!
 
     def set_to_clipboard(self, sentence):
         clipboard = gtk.clipboard_get()                                                 # get the clipboard
         clipboard.set_text(sentence)                                                    # set the clipboard the translated text
 
+    def get_from_clipboard(self):
+        clipboard = gtk.clipboard_get()
+        return clipboard.wait_for_text()
+
     def translate(self, sentence, source, destiny):
         print "sentence: %s (from: %s to: %s)" % (sentence, source, destiny)
+        self.inform_start_of_waiting_process()
+
         interface = Interface(sentence)
         translated = interface.translate_it(source, destiny)
         self.icon.ShowDialog(translated, self.dialog_active_time)
         self.set_to_clipboard(translated)
-        print "translated: " + translated
+
+        self.inform_end_of_waiting_process()
+        self.inform_current_destiny_language()
+        print "translated: %s" % translated
 
     def switch_destiny_language(self, index):
         max_index = len(self.destinies) - 1
@@ -130,13 +139,26 @@ class Applet:
         if index > max_index:
     		index = max_index - 1
         self.destiny = self.destinies[index]
-        self.inform_current_destiny_language(self.destiny.name)
+
+        self.inform_current_destiny_language()
+
+    def ask_text(self, default=""):
+        self.icon.AskText("Translate:", default)                                        # heya user, tell me what do you wanna translate
 
     def action_on_answer(self, answer):
-    	self.translate(answer, self.source.abbrv, self.destiny.abbrv)                   # what to be translated, the source and destination languages
+        if answer:
+        	self.translate(answer, self.source.abbrv, self.destiny.abbrv)               # what to be translated, the source and destination languages
+
+    def action_on_middle_click(self):
+        content = self.get_from_clipboard()
+        if content:
+            self.ask_text(content)
 
     def action_on_click(self, param):
-        self.icon.AskText("Translate:", "")                                             # heya user, tell me what do you wanna translate
+        self.ask_text()
+
+    def action_on_menu_select(self, selected_menu):
+        self.switch_destiny_language(selected_menu)
 
     def action_on_scroll(self, scroll_up):
         if scroll_up:
@@ -145,20 +167,22 @@ class Applet:
         else:
             self.scroll_destiny_language += 1
             self.switch_destiny_language (self.scroll_destiny_language)
-	    
+
     def action_on_build_menu(self):
-        items = []
+        destiny_sub_menu_icon = os.path.abspath("./data/to.png")
+        destiny_sub_menu = [{'type':1, 'label':'To', 'menu':0, 'id':1, 'icon':destiny_sub_menu_icon}]
         index = 0
         for language in self.destinies:
             item = {}
             item['type'] = 0
             item['label'] = language.name
-            item['menu'] = 1
+            item['menu'] = 1                                                            # belongs to sub-menu "To"
             item['id'] = index
+            item['icon'] = destiny_sub_menu_icon
             index += 1
-            items.append(item)
+            destiny_sub_menu.append(item)
         try:
-            self.icon.AddMenuItems(items)
+            self.icon.AddMenuItems(destiny_sub_menu)
         except TypeError:
             print "AddMenuItems method is not available"
 
@@ -173,6 +197,8 @@ class Applet:
         self.icon.connect_to_signal("on_answer", self.action_on_answer)
         self.icon.connect_to_signal("on_build_menu", self.action_on_build_menu)
         self.icon.connect_to_signal("on_scroll", self.action_on_scroll)
+        self.icon.connect_to_signal("on_menu_select", self.action_on_menu_select)
+        self.icon.connect_to_signal("on_middle_click", self.action_on_middle_click)
 
 if __name__ == '__main__':
     Applet().start()

@@ -1,1 +1,2 @@
-0.0.1: (July/14/2010: doCkranslator has begun here. It translates from English to a lot of languages.
+0.0.2: (July/15/2010): Fixing a lack of UTF-8 URL encoding, and the space encoding. Creating the "To" sub-menu instead of using the default one to place the target languages. Middle-click now fills the input dialog with the clipboard content resulting in a faster way to use the applet, thanks SQP for this suggestion.
+0.0.1: (July/14/2010): doCkranslator has begun here. It translates from English to a lot of languages.
