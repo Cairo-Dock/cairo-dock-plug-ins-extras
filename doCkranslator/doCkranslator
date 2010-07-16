@@ -16,20 +16,39 @@
 #    GNU General Public License for more details.
 
 # This applet provides a translator tool using the Google Translator service
-#    At this point, the doCkranslator translates from English to lots of languages
-#    Scroll up/down over the icon to choose the resulting language
-#    To enter the text to be translated there is two ways
+#    doCkranslator translates from lots of languages to lots of languages
+#    To choose the source language Right-click on the icon -> doCkranslator -> Configuration
+#    To choose the destination language:
+#    (I) Scroll up/down over the icon
+#    (II) Right-click on the icon -> To -> Choose the destination language
+#    To translate:
 #    (I) Left-click on the icon; type your text and validate
-#    (II) Middle click on the icon, the text contained in the clipboard will be automatically copied to input dialog; validate
+#    (II) Copy the text, middle click on the icon, the text contained in the clipboard will be automatically copied into input dialog; validate
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import gobject, glib, dbus, os.path, urllib, pygtk, gtk
+import gobject, glib, dbus, os.path, urllib, pygtk, gtk, ConfigParser
 from dbus.mainloop.glib import DBusGMainLoop
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
 pygtk.require('2.0')
 
 DBusGMainLoop(set_as_default=True)
+
+class doCkranslator:
+    def start(self):
+        bus = dbus.SessionBus()
+        applet_name = os.path.basename(os.path.abspath("."))                            # name of the applet must the same as the folder
+        applet_path = "/org/cairodock/CairoDock/%s" % applet_name                       # path where our object is stored on the bus
+        applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
+        icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
+        configuration = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/%s/%s.conf") % (applet_name, applet_name)
+        
+        applet = Applet(icon, configuration)
+        applet.start()
+
+        loop = gobject.MainLoop()
+        loop.run()
+        sys.exit(0)
 
 class AgentOpener(FancyURLopener):
     """Masked user-agent otherwise the access would be forbidden"""
@@ -81,43 +100,48 @@ class Language:
 
 class Applet:
 
-    def __init__(self):
-        self.icon = None
+    def __init__(self, icon, configuration):
+        self.icon = icon
+        self.configuration = configuration                                              # configuration file
         self.translated_text = ""
-        self.destinies = []
-        self.source = Language('English', 'en')                                         # default source language
-        self.destiny = Language('Portuguese', 'pt')                                     # default destiny language
+        self.source = None                                                              # get it from configuration file
+        self.sources = []                                                               # list of possible source languages
+        self.destiny = None                                                             # get it from configuration file
+        self.destinies = []                                                             # list of possible resulting languages
         self.scroll_destiny_language = 0
         self.dialog_active_time = 5                                                     # time in seconds that the dialog window will be active
 
-    def inform_start_of_waiting_process(self):
-        self.icon.SetQuickInfo("...")
+    def start(self):
+        self.read_languages_file()
+        self.set_configuration_parameters()
+        self.connect_to_callbacks()
 
-    def inform_end_of_waiting_process(self):
-        self.icon.SetQuickInfo("")
+    def connect_to_callbacks(self):
+        self.icon.connect_to_signal("on_click", self.action_on_click)
+        self.icon.connect_to_signal("on_answer", self.action_on_answer)
+        self.icon.connect_to_signal("on_build_menu", self.action_on_build_menu)
+        self.icon.connect_to_signal("on_scroll", self.action_on_scroll)
+        self.icon.connect_to_signal("on_menu_select", self.action_on_menu_select)
+        self.icon.connect_to_signal("on_middle_click", self.action_on_middle_click)
+        self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
 
-    def inform_current_destiny_language(self):
-        self.icon.SetQuickInfo(self.destiny.name)
+    def set_configuration_parameters(self):
+        reader = ConfigParser.RawConfigParser()
+        reader.read(self.configuration)
+        slang = reader.getint('Configuration', 'source')                                 # get the source language position in the list
+        dlang = reader.getint('Configuration', 'destiny')                                # get the destination language position in the list
+        self.source = self.sources[slang]
+        self.destiny = self.destinies[dlang]                                             # first set the destination language ...
+        self.inform_current_destiny_language()                                           # ... and show it
 
     def read_languages_file(self):
         """Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
         f = open('.languages', "rb")
         for line in f:
             splited = line.split()                                                      # split the line by space token
-            self.destinies.append(Language(splited[0], splited[1]))                     # e.g, Language("Portuguese", "pt")
-
-    def start(self):
-        self.read_languages_file()
-        self.connect_to_dock()
-        self.inform_current_destiny_language()                                          # necessary to connect to the dock first!
-
-    def set_to_clipboard(self, sentence):
-        clipboard = gtk.clipboard_get()                                                 # get the clipboard
-        clipboard.set_text(sentence)                                                    # set the clipboard the translated text
-
-    def get_from_clipboard(self):
-        clipboard = gtk.clipboard_get()
-        return clipboard.wait_for_text()
+            name, abbrv = splited[0], splited[1]
+            self.sources.append(Language(name, abbrv))                                  # e.g, Language("English", "en")
+            self.destinies.append(Language(name, abbrv))                                # e.g, Language("Portuguese", "pt")
 
     def translate(self, sentence, source, destiny):
         print "sentence: %s (from: %s to: %s)" % (sentence, source, destiny)
@@ -143,7 +167,8 @@ class Applet:
         self.inform_current_destiny_language()
 
     def ask_text(self, default=""):
-        self.icon.AskText("Translate:", default)                                        # heya user, tell me what do you wanna translate
+        label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
+        self.icon.AskText(label, default)                                               # heya user, tell me what do you wanna translate
 
     def action_on_answer(self, answer):
         if answer:
@@ -186,23 +211,26 @@ class Applet:
         except TypeError:
             print "AddMenuItems method is not available"
 
-    def connect_to_dock(self):
-        applet_name = os.path.basename(os.path.abspath("."))                            # name of the applet must the same as the folder
-        applet_path = "/org/cairodock/CairoDock/%s" % applet_name                       # path where our object is stored on the bus
-        bus = dbus.SessionBus()
-        applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
-        self.icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")     # representes the applet, icon inside the dock or a desklet
+    def action_on_reload(self, config_has_changed):
+	    if config_has_changed:
+		    self.set_configuration_parameters()
 
-        self.icon.connect_to_signal("on_click", self.action_on_click)
-        self.icon.connect_to_signal("on_answer", self.action_on_answer)
-        self.icon.connect_to_signal("on_build_menu", self.action_on_build_menu)
-        self.icon.connect_to_signal("on_scroll", self.action_on_scroll)
-        self.icon.connect_to_signal("on_menu_select", self.action_on_menu_select)
-        self.icon.connect_to_signal("on_middle_click", self.action_on_middle_click)
+    def set_to_clipboard(self, sentence):
+        clipboard = gtk.clipboard_get()                                                 # get the clipboard
+        clipboard.set_text(sentence)                                                    # set the clipboard the translated text
+
+    def get_from_clipboard(self):
+        clipboard = gtk.clipboard_get()
+        return clipboard.wait_for_text()
+
+    def inform_start_of_waiting_process(self):
+        self.icon.SetQuickInfo("...")
+
+    def inform_end_of_waiting_process(self):
+        self.icon.SetQuickInfo("")
+
+    def inform_current_destiny_language(self):
+        self.icon.SetQuickInfo(self.destiny.name)
 
 if __name__ == '__main__':
-    Applet().start()
-    loop = gobject.MainLoop()
-    loop.run()
-    print "doCkranslator is ending"
-    sys.exit(0)
+    doCkranslator().start()
