@@ -17,20 +17,19 @@
 
 # This applet provides a translator tool using the Google Translator service
 #    doCkranslator translates from lots of languages to lots of languages
-#    To choose the source language Right-click on the icon -> doCkranslator -> Configuration
-#    To choose the destination language:
-#    (I) Scroll up/down over the icon
-#    (II) Right-click on the icon -> To -> Choose the destination language
+#    To choose the source and destination languages:
+#        (I)  Right-click on the icon -> To/From -> Choose the destination language
+#        (II) Right-click on the icon -> doCkranslator -> Configuration
+#    Anyway, the easier way to choose the destination language is scroll up/down over the icon
 #    To translate:
-#    (I) Left-click on the icon; type your text and validate
-#    (II) Copy the text, middle click on the icon, the text contained in the clipboard will be automatically copied into input dialog; validate
+#        (I) Left-click on the icon; type your text and validate
+#        (II) Select any text in any place, and middle click on the icon
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import gobject, glib, dbus, os.path, urllib, pygtk, gtk, ConfigParser
+import gobject, glib, dbus, os.path, urllib, gtk, ConfigParser
 from dbus.mainloop.glib import DBusGMainLoop
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
-pygtk.require('2.0')
 
 DBusGMainLoop(set_as_default=True)
 
@@ -58,23 +57,23 @@ class TranslatorParser(SGMLParser):
     def reset(self):                              
         SGMLParser.reset(self)
         self.translated_content = ""
-        self.inside_a_element = 0
+        self.inside_a_element = 0                                                       # indicates if the parser is between <span></span> tag
 
-    def start_span(self, attrs):                  
+    def start_span(self, attrs):
         for name, value in attrs:
-            if name == "id" and value == "result_box":
+            if name == "id" and value == "result_box":                                  # <span id="result_box">translated text</span>
                 self.inside_a_element = 1
     
     def end_span(self):
         self.inside_a_element = 0
 
     def handle_data(self, text):
-        if self.inside_a_element:
-            self.translated_content = text
+        if self.inside_a_element:                                                       # we're inside the tag ...
+            self.translated_content = text                                              # ... grab the text!
 
     def parse(self, page):
-        self.feed(page)
-        self.close()
+        self.feed(page)                                                                 # feed the parser with the page's html
+        self.close()                                                                    # cya soon!
 
 class Interface:
     """ Create a interface between the Applet and Parser
@@ -116,8 +115,8 @@ class Applet:
         self.set_configuration_parameters()
         self.connect_to_callbacks()
 
-    def connect_to_callbacks(self):
-        self.icon.connect_to_signal("on_click", self.action_on_click)
+    def connect_to_callbacks(self):                                                     # when reiceves the signal named as 1st parameter ...
+        self.icon.connect_to_signal("on_click", self.action_on_click)                   # ... calls the second-parameter function
         self.icon.connect_to_signal("on_answer", self.action_on_answer)
         self.icon.connect_to_signal("on_build_menu", self.action_on_build_menu)
         self.icon.connect_to_signal("on_scroll", self.action_on_scroll)
@@ -156,16 +155,6 @@ class Applet:
         self.inform_current_destiny_language()
         print "translated: %s" % translated
 
-    def switch_destiny_language(self, index):
-        max_index = len(self.destinies) - 1
-        if index < 0:
-            index = 0									            					# keep the lower limit
-        if index > max_index:
-    		index = max_index - 1
-        self.destiny = self.destinies[index]
-
-        self.inform_current_destiny_language()
-
     def ask_text(self, default=""):
         label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
         self.icon.AskText(label, default)                                               # heya user, tell me what do you wanna translate
@@ -175,15 +164,20 @@ class Applet:
         	self.translate(answer, self.source.abbrv, self.destiny.abbrv)               # what to be translated, the source and destination languages
 
     def action_on_middle_click(self):
+        """When middle-clicked the applet get the clipboard 
+           (primary or clipboard buffer content) and translates it """
         content = self.get_from_clipboard()
         if content:
-            self.ask_text(content)
+            self.translate(content, self.source.abbrv, self.destiny.abbrv)              # what to be translated, the source and destination languages
 
     def action_on_click(self, param):
         self.ask_text()
 
     def action_on_menu_select(self, selected_menu):
-        self.switch_destiny_language(selected_menu)
+        if selected_menu < len(self.destinies):
+            self.switch_destiny_language(selected_menu)
+        else:
+            self.switch_source_language(selected_menu)
 
     def action_on_scroll(self, scroll_up):
         if scroll_up:
@@ -193,7 +187,29 @@ class Applet:
             self.scroll_destiny_language += 1
             self.switch_destiny_language (self.scroll_destiny_language)
 
+    def switch_destiny_language(self, index):
+        max_index = len(self.destinies) - 1
+        if index < 0:
+            index = 0									            					# keep the lower limit
+        if index > max_index:
+    		index = max_index - 1
+        self.destiny = self.destinies[index]
+        print "Switched destiny from menu: %s" % self.destiny.name
+        self.inform_current_destiny_language()
+
+    def switch_source_language(self, index):
+        shifted_position = index - len(self.destinies)
+        self.source = self.sources[shifted_position]
+        print "Switched source from menu: %s" % self.source.name
+
     def action_on_build_menu(self):
+        try:
+            self.icon.AddMenuItems(self.build_menu_for_source_languages())
+            self.icon.AddMenuItems(self.build_menu_for_destiny_languages())
+        except TypeError:
+            print "AddMenuItems method is not available"
+
+    def build_menu_for_destiny_languages(self):
         destiny_sub_menu_icon = os.path.abspath("./data/to.png")
         destiny_sub_menu = [{'type':1, 'label':'To', 'menu':0, 'id':1, 'icon':destiny_sub_menu_icon}]
         index = 0
@@ -206,10 +222,26 @@ class Applet:
             item['icon'] = destiny_sub_menu_icon
             index += 1
             destiny_sub_menu.append(item)
-        try:
-            self.icon.AddMenuItems(destiny_sub_menu)
-        except TypeError:
-            print "AddMenuItems method is not available"
+        return destiny_sub_menu
+
+    def build_menu_for_source_languages(self):
+        """destinies sub-menu (above) has, for each one of its entries, ids that ranges from 0 to len(self.destinies)-1
+           consequently, the first id of the sources menu is the len(self.destinies). It is just necessary to shift the 
+           id by this first index to get a index that ranges from 0 to len(self.sources). See switch_source_language()"""
+        source_sub_menu_icon = os.path.abspath("./data/from.png")
+        source_sub_menu_index = len(self.destinies)
+        source_sub_menu = [{'type':1, 'label':'From', 'menu':0, 'id':source_sub_menu_index, 'icon':source_sub_menu_icon}]
+        source_sub_menu_entry_index = source_sub_menu_index
+        for language in self.sources:
+            item = {}
+            item['type'] = 0
+            item['label'] = language.name
+            item['menu'] = source_sub_menu_index                                         # belongs to sub-menu "From"
+            item['id'] = source_sub_menu_entry_index
+            item['icon'] = source_sub_menu_icon
+            source_sub_menu_entry_index += 1
+            source_sub_menu.append(item)
+        return source_sub_menu
 
     def action_on_reload(self, config_has_changed):
 	    if config_has_changed:
@@ -220,7 +252,9 @@ class Applet:
         clipboard.set_text(sentence)                                                    # set the clipboard the translated text
 
     def get_from_clipboard(self):
-        clipboard = gtk.clipboard_get()
+        clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)                        # eh o que foi selecionado pelo mouse
+        if not clipboard:                                                               # se nada foi selecionado pelo mouse
+            clipboard = gtk.clipboard_get()                                             # verifica por algo copiado para o clipboard
         return clipboard.wait_for_text()
 
     def inform_start_of_waiting_process(self):
