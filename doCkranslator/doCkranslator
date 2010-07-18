@@ -22,19 +22,43 @@
 #        (II) Right-click on the icon -> doCkranslator -> Configuration
 #    Anyway, the easier way to choose the destination language is scroll up/down over the icon
 #    To translate:
-#        (I) Left-click on the icon; type your text and validate
-#        (II) Select any text in any place, and middle click on the icon
+#        (I) Press Ctrl + F8, type the text, and press Enter (requires Python-Xlib)
+#        (II) Left-click on the icon; type your text and press Enter
+#        (III) Select any text in any place, and middle click on the icon
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
 import gobject, glib, dbus, os.path, urllib, gtk, ConfigParser
 from dbus.mainloop.glib import DBusGMainLoop
+from dbus import glib
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
+
+# Mesmo que o usuario nao tenha a Python-Xlib instalada, o applet ira funcionar,
+# pois esta biblioteca eh usada apenas para fazer a linkagem entre Ctrl+F8 e
+# a abertura da caixa de dialogo para a insercao do texto a ser traduzido
+# Obs.: As bibliotecas thread e timer tambem nao precisam ser carregadas
+#       uma vez que elas sao uteis apenas quando a Xlib esta presente
+try:                                                                                    # ve se o usuario tem a Python-Xlib instalada
+    from Xlib.display import Display                                                    # lidar com o pressionamento do atalho no X
+    from Xlib import X, XK
+    
+    import thread                                                                       # abrir um fluxo alternativo com a classe KeyHandler
+    import time
+except ImportError:                                                                     # Nao tem a Python-Xlib instalada, msg nele
+    print "Ctrl + F8 shortcut won't work, install Python-Xlib library"
+    shortcut_available = False
+else:
+    print "Ctrl + F8 shortcut gonna work, Python-Xlib library is up and running"
+    shortcut_available = True
 
 DBusGMainLoop(set_as_default=True)
 
 class doCkranslator:
     def start(self):
+
+        gobject.threads_init()                                                          # caramba, esta abertura de threads da gbobject ...
+        dbus.glib.init_threads()                                                        # ... e glib fizeram a coisa funcionar para o KeyHandler
+        
         bus = dbus.SessionBus()
         applet_name = os.path.basename(os.path.abspath("."))                            # name of the applet must the same as the folder
         applet_path = "/org/cairodock/CairoDock/%s" % applet_name                       # path where our object is stored on the bus
@@ -45,9 +69,53 @@ class doCkranslator:
         applet = Applet(icon, configuration)
         applet.start()
 
+        if shortcut_available:                                                          # Python-Xlib installed so lets make Ctrl+F8 shortcut available
+            thread.start_new_thread(KeyHandler(applet).start, ("handler", 1))           # (funcao callback, (nome da thread, tempo de dormencia))
+        
         loop = gobject.MainLoop()
         loop.run()
         sys.exit(0)
+
+class KeyHandler:
+    """Class que registra o evento de pressionamento do atalho Ctrl + F8 e abre a caixa de dialogo no applet"""   
+    """O registro do evento comeca ao fazer o grab_key da combinacao de teclas; se o X identificar o pressionamento
+       de alguma tecla com o Control (X.ControlMask), chama o handle_event que verifica se a tecla eh o F8; caso positivo,
+       chama o metodo ask_text para abrir a caixa de dialogo no applet """
+
+    def __init__(self, applet):
+        self.applet = applet
+        self.keypress_binding()
+        self.running = 1
+
+    def keypress_binding(self):
+        self.disp = Display()
+        self.root = self.disp.screen().root
+        self.root.change_attributes(event_mask = X.KeyPressMask)
+        self.f8_keycode = self.disp.keysym_to_keycode(XK.string_to_keysym('F8'))
+        self.root.grab_key(self.f8_keycode, X.ControlMask, 1, X.GrabModeAsync, X.GrabModeAsync)     # Pega do X quando pressionar Ctrl + F8
+        print "DEBUG: %s %s" % (self.root, self.f8_keycode)
+        # self.root.grab_key(self.f8_keycode, X.AnyModifier, 1, X.GrabModeAsync, X.GrabModeAsync)   # Pega do X quando pressionar F8
+        self.disp.set_error_handler(self.disp_error_handler)
+    
+    def disp_error_handler(self, error, request):
+        print "Error %s" % error
+        self.root.ungrab_key(self.f8_keycode, X.ControlMask)
+        self.root.ungrab_key(self.f8_keycode, X.AnyModifier)
+        self.running = 0
+
+    def handle_event(self, aEvent):
+        keycode = aEvent.detail
+        if aEvent.type == X.KeyPress:
+            if keycode == self.f8_keycode:
+                print "Ok, 'Ctrl + F8' pressed"
+                self.applet.ask_text()                                                  # Abrir o caixa de dialogo para o texto a ser traduzido
+
+    def start(self, name, sleeptime):
+        print "KeyHandler start"
+        while self.running:                                                             # Faz o polling ateh que o evento seja recebido
+            event = self.root.display.next_event()                                      # busca o evento que tiver
+            self.handle_event(event)                                                    # lanca o metodo de tratamento do evento
+            time.sleep(sleeptime)                                                       # thread espera um tempo
 
 class AgentOpener(FancyURLopener):
     """Masked user-agent otherwise the access would be forbidden"""
@@ -111,6 +179,7 @@ class Applet:
         self.dialog_active_time = 5                                                     # time in seconds that the dialog window will be active
 
     def start(self):
+        print "Applet start"
         self.read_languages_file()
         self.set_configuration_parameters()
         self.connect_to_callbacks()

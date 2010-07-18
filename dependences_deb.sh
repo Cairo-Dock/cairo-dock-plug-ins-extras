@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEEDED_EXTRAS="ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 rubygems1.8 acpi python libxslt-dev libxml2-dev ruby"
+NEEDED_EXTRAS="ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 rubygems1.8 acpi python libxslt-dev libxml2-dev ruby python-xlib"
 
 NORMAL="\\033[0;39m"
 BLEU="\\033[1;34m"
