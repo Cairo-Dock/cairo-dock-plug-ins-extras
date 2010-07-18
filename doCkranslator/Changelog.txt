@@ -1,3 +1,4 @@
+0.1.0:(July/18/2010): doCkranslator now has another fast-as-hell way to translate. Press Ctrl + F8 to open the input dialog, paste some text, and press Enter. The shortcut capability requires Python-Xlib, but even if the user has not it, the applet works without this capability.
 0.0.5:(July/16/2010): Source language now can be defined by context menu. doCkranslator now has a fast way to translate, select any text and middle-click on the icon, just it.
 0.0.4:(July/16/2010): doCkranslator now translates from lots of languages, and it can be defined by the configuration file. Input box now shows a label with source and destination languages.
 0.0.3:(July/16/2010): Refactoring the code a lil bit. The user can define the resulting language by configuration file, so it won't change every time the plug-in reloads.
