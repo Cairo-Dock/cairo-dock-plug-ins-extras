@@ -32,6 +32,7 @@ from dbus.mainloop.glib import DBusGMainLoop
 from dbus import glib
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
+from util import log
 
 # Mesmo que o usuario nao tenha a Python-Xlib instalada, o applet ira funcionar,
 # pois esta biblioteca eh usada apenas para fazer a linkagem entre Ctrl+F8 e
@@ -45,10 +46,10 @@ try:                                                                            
     import thread                                                                       # abrir um fluxo alternativo com a classe KeyHandler
     import time
 except ImportError:                                                                     # Nao tem a Python-Xlib instalada, msg nele
-    print "Ctrl + F8 shortcut won't work, install Python-Xlib library"
+    log ("Ctrl + F8 shortcut won't work, install Python-Xlib library")
     shortcut_available = False
 else:
-    print "Ctrl + F8 shortcut gonna work, Python-Xlib library is up and running"
+    log ("Ctrl + F8 shortcut gonna work, Python-Xlib library is up and running")
     shortcut_available = True
 
 DBusGMainLoop(set_as_default=True)
@@ -92,26 +93,31 @@ class KeyHandler:
         self.root = self.disp.screen().root
         self.root.change_attributes(event_mask = X.KeyPressMask)
         self.f8_keycode = self.disp.keysym_to_keycode(XK.string_to_keysym('F8'))
-        self.root.grab_key(self.f8_keycode, X.ControlMask, 1, X.GrabModeAsync, X.GrabModeAsync)     # Pega do X quando pressionar Ctrl + F8
-        print "DEBUG: %s %s" % (self.root, self.f8_keycode)
-        # self.root.grab_key(self.f8_keycode, X.AnyModifier, 1, X.GrabModeAsync, X.GrabModeAsync)   # Pega do X quando pressionar F8
+        self.root.grab_key(self.f8_keycode, X.ControlMask, True, X.GrabModeAsync, X.GrabModeAsync)     # Pega do X quando pressionar Ctrl + F8
+        # self.root.grab_key(self.f8_keycode, X.AnyModifier, True, X.GrabModeAsync, X.GrabModeAsync)   # Pega do X quando pressionar F8
         self.disp.set_error_handler(self.disp_error_handler)
     
     def disp_error_handler(self, error, request):
-        print "Error %s" % error
-        self.root.ungrab_key(self.f8_keycode, X.ControlMask)
+        log ("Error %s" % error)
         self.root.ungrab_key(self.f8_keycode, X.AnyModifier)
         self.running = 0
 
+    def lookup_keysym(self, keysym):
+        for name in dir(XK):
+            if name.startswith("XK_") and getattr(XK, name) == keysym:
+                return name.lstrip("XK_")
+        return "[%d]" % keysym
+
     def handle_event(self, aEvent):
         keycode = aEvent.detail
+        log ("Pressed key %s" % self.lookup_keysym(self.disp.keycode_to_keysym(keycode,0)))
         if aEvent.type == X.KeyPress:
             if keycode == self.f8_keycode:
                 print "Ok, 'Ctrl + F8' pressed"
                 self.applet.ask_text()                                                  # Abrir o caixa de dialogo para o texto a ser traduzido
 
     def start(self, name, sleeptime):
-        print "KeyHandler start"
+        log ("KeyHandler start")
         while self.running:                                                             # Faz o polling ateh que o evento seja recebido
             event = self.root.display.next_event()                                      # busca o evento que tiver
             self.handle_event(event)                                                    # lanca o metodo de tratamento do evento
@@ -179,7 +185,7 @@ class Applet:
         self.dialog_active_time = 5                                                     # time in seconds that the dialog window will be active
 
     def start(self):
-        print "Applet start"
+        log ("Applet start")
         self.read_languages_file()
         self.set_configuration_parameters()
         self.connect_to_callbacks()
@@ -212,7 +218,7 @@ class Applet:
             self.destinies.append(Language(name, abbrv))                                # e.g, Language("Portuguese", "pt")
 
     def translate(self, sentence, source, destiny):
-        print "sentence: %s (from: %s to: %s)" % (sentence, source, destiny)
+        log ("sentence: %s (from: %s to: %s)" % (sentence, source, destiny))
         self.inform_start_of_waiting_process()
 
         interface = Interface(sentence)
@@ -222,7 +228,7 @@ class Applet:
 
         self.inform_end_of_waiting_process()
         self.inform_current_destiny_language()
-        print "translated: %s" % translated
+        log ("translated: %s" % translated)
 
     def ask_text(self, default=""):
         label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
@@ -246,7 +252,10 @@ class Applet:
         if selected_menu < len(self.destinies):
             self.switch_destiny_language(selected_menu)
         else:
-            self.switch_source_language(selected_menu)
+            if selected_menu < len(self.destinies) + len(self.sources):
+                self.switch_source_language(selected_menu)
+            else:
+                self.switch_languages()
 
     def action_on_scroll(self, scroll_up):
         if scroll_up:
@@ -263,20 +272,26 @@ class Applet:
         if index > max_index:
     		index = max_index - 1
         self.destiny = self.destinies[index]
-        print "Switched destiny from menu: %s" % self.destiny.name
+        log ("Switched destiny from menu: %s" % self.destiny.name)
+        self.inform_current_destiny_language()
+
+    def switch_languages(self):
+        self.source, self.destiny = self.destiny, self.source
+        log ("Switched languages from self.source.namemenu: source [%s] destiny [%s]" % (self.source.name, self.destiny.name))
         self.inform_current_destiny_language()
 
     def switch_source_language(self, index):
         shifted_position = index - len(self.destinies)
         self.source = self.sources[shifted_position]
-        print "Switched source from menu: %s" % self.source.name
+        log ("Switched source from menu: %s" % self.source.name)
 
     def action_on_build_menu(self):
         try:
             self.icon.AddMenuItems(self.build_menu_for_source_languages())
             self.icon.AddMenuItems(self.build_menu_for_destiny_languages())
+            self.icon.AddMenuItems(self.build_menu_for_switch_languages())
         except TypeError:
-            print "AddMenuItems method is not available"
+            log ("AddMenuItems method is not available")
 
     def build_menu_for_destiny_languages(self):
         destiny_sub_menu_icon = os.path.abspath("./data/to.png")
@@ -311,6 +326,12 @@ class Applet:
             source_sub_menu_entry_index += 1
             source_sub_menu.append(item)
         return source_sub_menu
+
+    def build_menu_for_switch_languages(self):
+        index = len(self.sources) + len(self.destinies)
+        switch_menu_icon = os.path.abspath("./data/switch.png")
+        tooltip = "%s to %s" % (self.destiny.name, self.source.name)
+        return [{'type':0, 'label':'Switch languages', 'menu':0, 'id':index, 'icon':switch_menu_icon, 'tooltip':tooltip}]
 
     def action_on_reload(self, config_has_changed):
 	    if config_has_changed:
