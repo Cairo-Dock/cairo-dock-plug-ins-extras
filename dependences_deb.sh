@@ -44,6 +44,6 @@ if ! test -e '../.rubydbus'; then
 	touch '../.rubydbus'
 fi
 if ! test -e '../.cpan'; then
-	sudo cpan -i LWP Clipboard
+	xterm -e "sh -c 'echo Installation of two CPan modules for ShortURL applet, please write your password and answer «yes» if it is asked && sudo cpan -i LWP Clipboard'"
 	touch '../.cpan'
 fi
