@@ -94,7 +94,12 @@ def action_on_build_menu():
 	if myApplet.xchat == None:
 		return
 	chans = myApplet.list_channels()
-	myApplet.icon.PopulateMenu(chans)
+	items=[]
+	i=0
+	for c in chans:
+		items.append({"label": c, "id" : i})
+		i += 1
+	myApplet.icon.AddMenuItems(items)
 
 def action_on_menu_select(iNumEntry):
 	chans = myApplet.list_channels()

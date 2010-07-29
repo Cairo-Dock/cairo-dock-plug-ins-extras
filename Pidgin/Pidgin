@@ -84,104 +84,71 @@ def action_on_build_menu():
 	if myApplet.purple == None:
 		return
 	
-	if myApplet.bAddMenuItemsAvailable:
-		items=[{"type" : 1,
-			"label": "Conversations",
-			"icon" : "gtk-jump-to",
-			"menu" : 0,
-			"id"   : 1,
-			"tooltip" : "Switch the conversation you'll send message to with the middle-click."}]
-		convs = myApplet.list_convs()
-		i = 1
-		for conv in convs:
-			items.append({"type" : 0,
-				"label": conv,
-				"menu" : 1,
-				"id"   : 100+i})
-			i += 1
-		items.append({"type" : 1,
-			"label": "Change your status",
-			"icon" : "gtk-convert",
-			"menu" : 0,
-			"id"   : 2})
-		status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
-		for i in range(1, 6):
-			if status != i:
-				items.append({"type" : 0,
-				"label": STATUS[i],
-				"icon" : '/usr/share/pixmaps/pidgin/status/16/'+STATUS_ICO[i]+'.png',
-				"menu" : 2,
-				"id"   : 200+i})
-		items.append({"type" : 2,
-			"menu" : 2})
+	items=[{"type" : 1,  # 1 = sub-menu
+		"label": "Conversations",
+		"icon" : "gtk-jump-to",
+		"menu" : 0,
+		"id"   : 1,
+		"tooltip" : "Switch the conversation you'll send message to with the middle-click."}]
+	convs = myApplet.list_convs()
+	i = 1
+	for conv in convs:
 		items.append({"type" : 0,
-			"label": "Set your status message",
-			"icon" : "gtk-dialog-info",
+			"label": conv,
+			"menu" : 1,
+			"id"   : 100+i})
+		i += 1
+	items.append({"type" : 1,
+		"label": "Change your status",
+		"icon" : "gtk-convert",
+		"menu" : 0,
+		"id"   : 2})
+	status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
+	for i in range(1, 6):
+		if status != i:
+			items.append({"type" : 0,
+			"label": STATUS[i],
+			"icon" : '/usr/share/pixmaps/pidgin/status/16/'+STATUS_ICO[i]+'.png',
 			"menu" : 2,
-			"id"   : 299})
-		items.append({"type" : 3,
-			"label": "Silent mode",
-			"menu" : 0,
-			"id"   : 3,
-			"state": myApplet.bSilentMode,
-			"tooltip" : "Switch the applet to silent mode (no pop-up on new message)."})
-		
-		try:
-			myApplet.icon.AddMenuItems(items)
-		except TypeError:
-			# print ">>>>> Cairo-Dock's DBus API doesn't contain the AddMenuItems() method, switch to the old method."
-			myApplet.bAddMenuItemsAvailable = False
+			"id"   : 200+i})
+	items.append({"type" : 2,  # 2 = separator
+		"menu" : 2})
+	items.append({"type" : 0,
+		"label": "Set your status message",
+		"icon" : "gtk-dialog-info",
+		"menu" : 2,
+		"id"   : 299})
+	items.append({"type" : 3,  # 3 = check-box
+		"label": "Silent mode",
+		"menu" : 0,
+		"id"   : 3,
+		"state": myApplet.bSilentMode,
+		"tooltip" : "Switch the applet to silent mode (no pop-up on new message)."})
 	
-	if not myApplet.bAddMenuItemsAvailable:
-		convs = myApplet.list_convs()
-		convs.append('')
-		status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
-		for i in range(0, 5):
-			if status != i:
-				convs.append(STATUS[i])
-		myApplet.icon.PopulateMenu(convs)
+	myApplet.icon.AddMenuItems(items)
 	
 def action_on_menu_select(iNumEntry):
 	# print ">>> choice",iNumEntry,"has been selected !"
-	
-	if myApplet.bAddMenuItemsAvailable:
-		if iNumEntry > 200:
-			iNumEntry -= 200
-			if iNumEntry == 99:
-				myApplet.icon.AskText("Enter your new status message :", "")
-				myApplet.iAskingSomething = 2
-			else:
-				current_status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
-				# print ">>> status :",STATUS[iNumEntry],iNumEntry
-				new_status = myApplet.purple.PurpleSavedstatusNew("", iNumEntry)
-				myApplet.purple.PurpleSavedstatusActivate(new_status)
-		elif iNumEntry > 100:
-			iNumEntry -= 101
-			convs = myApplet.purple.PurpleGetConversations()
-			myApplet.iCurrentConv = convs[iNumEntry]
-			conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
-			# print ">>> selected conv ",conv_name
-			myApplet.icon.SetLabel(conv_name)
-			myApplet.purple.PurpleConversationPresent(myApplet.iCurrentConv)
-		elif iNumEntry == 3:
-			myApplet.bSilentMode = not myApplet.bSilentMode
-	else:  # ancienne methode.
-		convs = myApplet.purple.PurpleGetConversations()
-		nb_conv = len(convs)
-		if iNumEntry < nb_conv:
-			myApplet.iCurrentConv = convs[iNumEntry]
-			conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
-			myApplet.icon.SetLabel(conv_name)
-			myApplet.purple.PurpleConversationPresent(myApplet.iCurrentConv)
+	if iNumEntry > 200:
+		iNumEntry -= 200
+		if iNumEntry == 99:
+			myApplet.icon.AskText("Enter your new status message :", "")
+			myApplet.iAskingSomething = 2
 		else:
-			iNumEntry -= nb_conv-1
 			current_status = myApplet.purple.PurpleSavedstatusGetType(myApplet.purple.PurpleSavedstatusGetCurrent())
-			if iNumEntry >= current_status:
-				iNumEntry += 1
-			# print ">>> status :",STATUS[iNumEntry]
+			# print ">>> status :",STATUS[iNumEntry],iNumEntry
 			new_status = myApplet.purple.PurpleSavedstatusNew("", iNumEntry)
-			#myApplet.purple.PurpleSavedstatusSetMessage(new_status, "pouic")
 			myApplet.purple.PurpleSavedstatusActivate(new_status)
+	elif iNumEntry > 100:
+		iNumEntry -= 101
+		convs = myApplet.purple.PurpleGetConversations()
+		myApplet.iCurrentConv = convs[iNumEntry]
+		conv_name = myApplet.purple.PurpleConversationGetName(myApplet.iCurrentConv)
+		# print ">>> selected conv ",conv_name
+		myApplet.icon.SetLabel(conv_name)
+		myApplet.purple.PurpleConversationPresent(myApplet.iCurrentConv)
+	elif iNumEntry == 3:
+		myApplet.bSilentMode = not myApplet.bSilentMode
 	
 def action_on_scroll(bScrollUp):
 	# print ">>> scroll !"
@@ -431,7 +398,6 @@ class Applet:
 		self.iCurrentConv = 0
 		self.iNbSiging = 0
 		self.iCurrentGuiConv = 0
-		self.bAddMenuItemsAvailable = True
 		self.bDemandsAttentionAvailable = True
 		self.bSilentMode = False
 		self.iAskingSomething = 0  # what kind of info we're asking the user.

@@ -82,11 +82,21 @@ def action_on_click(iState):
 	appleticon.click()
 
 def action_on_build_menu():
-	myIcon.PopulateMenu([_("Preferences"), _("About"), _("Edit Menus")])
+	items=[{"label": _("Preferences"),
+		"icon" : "gtk-preferences",
+		"id"   : 0,
+		"tooltip" : "Configure GnoMenu."},
+		{"label": _("About"),
+		"icon" : "gtk-about",
+		"id"   : 1},
+		{"label": _("Edit Menus"),
+		"icon" : "gtk-edit",
+		"id"   : 2}]
+	myIcon.AddMenuItems(items)
 
 def action_on_menu_select(iNumEntry):
 	if iNumEntry == 0:
-		os.system("/bin/sh -c '"+ INSTALL_PREFIX +"/lib/gnomenu/GnoMenu-Settings.py' &")  ## question : shouldn't it be in /usr/bin ?
+		os.system("/bin/sh -c '"+ INSTALL_PREFIX +"/lib/gnomenu/GnoMenu-Settings.py' &")  ## should probably be in /usr/bin...
 	elif iNumEntry == 1:
 		os.system("/bin/sh -c '" + INSTALL_PREFIX +"/lib/gnomenu/GnoMenu-Settings.py --about' &")
 	elif iNumEntry == 2:
