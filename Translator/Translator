@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# This is a part of the external doCkranslator applet for Cairo-Dock
+# This is a part of the external Translator (formally doCkranslator) applet for Cairo-Dock
 #
 # Author: Eduardo Mucelli Rezende Oliveira
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
@@ -12,14 +12,14 @@
 
 # This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #    GNU General Public License for more details.
 
 # This applet provides a translator tool using the Google Translator service
-#    doCkranslator translates from lots of languages to lots of languages
+#    Translator (formally doCkranslator) translates from lots of languages to lots of languages
 #    To choose the source and destination languages:
 #        (I)  Right-click on the icon -> To/From -> Choose the destination language
-#        (II) Right-click on the icon -> doCkranslator -> Configuration
+#        (II) Right-click on the icon -> Translator -> Configuration
 #    Anyway, the easier way to choose the destination language is scroll up/down over the icon
 #    To translate:
 #        (I) Press Ctrl + F8, type the text, and press Enter (requires Python-Xlib)
@@ -113,7 +113,7 @@ class KeyHandler:
         log ("Pressed key %s" % self.lookup_keysym(self.disp.keycode_to_keysym(keycode,0)))
         if aEvent.type == X.KeyPress:
             if keycode == self.f8_keycode:
-                print "Ok, 'Ctrl + F8' pressed"
+                log ("Ok, 'Ctrl + F8' pressed")
                 self.applet.ask_text()                                                  # Abrir o caixa de dialogo para o texto a ser traduzido
 
     def start(self, name, sleeptime):

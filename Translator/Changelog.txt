@@ -1,3 +1,4 @@
+0.1.2:(August/8/2010): Formally known as doCkranslator, the applet was renamed to Translator.
 0.1.1:(July/18/2010): Switch languages menu added, thanks to Matttbe for this suggestion. util module added.
 0.1.0:(July/18/2010): doCkranslator now has another fast-as-hell way to translate. Press Ctrl + F8 to open the input dialog, paste some text, and press Enter. The shortcut capability requires Python-Xlib, but even if the user has not it, the applet works without this capability.
 0.0.5:(July/16/2010): Source language now can be defined by context menu. doCkranslator now has a fast way to translate, select any text and middle-click on the icon, just it.
