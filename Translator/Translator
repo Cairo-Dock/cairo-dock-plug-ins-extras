@@ -23,19 +23,28 @@
 #    Anyway, the easier way to choose the destination language is scroll up/down over the icon
 #    To translate:
 #        (I) Press Ctrl + F8, type the text, and press Enter (requires Python-Xlib)
-#        (II) Left-click on the icon; type your text and press Enter
-#        (III) Select any text in any place, and middle click on the icon
+#        (II) Press Ctrl + F9, type the text, and press Enter (requires Cairo-dock 2.2.0 or higher)
+#        (III) Left-click on the icon; type your text and press Enter
+#        (IV) Select any text in any place, and middle click on the icon
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import gobject, glib, dbus, os.path, urllib, gtk, ConfigParser
+import gobject, dbus, os.path, urllib, gtk, ConfigParser
 from dbus.mainloop.glib import DBusGMainLoop
 from dbus import glib
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
 
+# Este applet tenta obter dois niveis de atalho, o nivel mais baixo diretamente
+# do X Server atraves do Ctrl + F8, e o mais alto pelo Cairo-dock com Ctrl + F9.
+# Ver os metodos low_level_keypress_binding() e dock_level_keypress_binding
+
+# This applet tries to get two shortcut levels, the lower one from X Server
+# through Ctrl + F8, and the higher one from Cairo-dock with Ctrl + F9.
+# Check the low_level_keypress_binding and dock_level_keypress_binding methods out.
+
 # Mesmo que o usuario nao tenha a Python-Xlib instalada, o applet ira funcionar,
-# pois esta biblioteca eh usada apenas para fazer a linkagem entre Ctrl+F8 e
+# pois esta biblioteca eh usada apenas para fazer a linkagem entre Ctrl + F8 e
 # a abertura da caixa de dialogo para a insercao do texto a ser traduzido
 # Obs.: As bibliotecas thread e timer tambem nao precisam ser carregadas
 #       uma vez que elas sao uteis apenas quando a Xlib esta presente
@@ -47,10 +56,10 @@ try:                                                                            
     import time
 except ImportError:                                                                     # Nao tem a Python-Xlib instalada, msg nele
     log ("Ctrl + F8 shortcut won't work, install Python-Xlib library")
-    shortcut_available = False
+    low_level_shortcut_available = False
 else:
     log ("Ctrl + F8 shortcut gonna work, Python-Xlib library is up and running")
-    shortcut_available = True
+    low_level_shortcut_available = True
 
 DBusGMainLoop(set_as_default=True)
 
@@ -70,7 +79,7 @@ class doCkranslator:
         applet = Applet(icon, configuration)
         applet.start()
 
-        if shortcut_available:                                                          # Python-Xlib installed so lets make Ctrl+F8 shortcut available
+        if low_level_shortcut_available:                                                          # Python-Xlib installed so lets make Ctrl+F8 shortcut available
             thread.start_new_thread(KeyHandler(applet).start, ("handler", 1))           # (funcao callback, (nome da thread, tempo de dormencia))
         
         loop = gobject.MainLoop()
@@ -85,10 +94,10 @@ class KeyHandler:
 
     def __init__(self, applet):
         self.applet = applet
-        self.keypress_binding()
+        self.low_level_keypress_binding()
         self.running = 1
 
-    def keypress_binding(self):
+    def low_level_keypress_binding(self):
         self.disp = Display()
         self.root = self.disp.screen().root
         self.root.change_attributes(event_mask = X.KeyPressMask)
@@ -182,13 +191,14 @@ class Applet:
         self.destiny = None                                                             # get it from configuration file
         self.destinies = []                                                             # list of possible resulting languages
         self.scroll_destiny_language = 0
-        self.dialog_active_time = 5                                                     # time in seconds that the dialog window will be active
+        self.dialog_active_time = 10                                                    # time in seconds that the dialog window will be active
 
     def start(self):
         log ("Applet start")
         self.read_languages_file()
         self.set_configuration_parameters()
         self.connect_to_callbacks()
+        self.dock_level_keypress_binding()
 
     def connect_to_callbacks(self):                                                     # when reiceves the signal named as 1st parameter ...
         self.icon.connect_to_signal("on_click", self.action_on_click)                   # ... calls the second-parameter function
@@ -198,6 +208,7 @@ class Applet:
         self.icon.connect_to_signal("on_menu_select", self.action_on_menu_select)
         self.icon.connect_to_signal("on_middle_click", self.action_on_middle_click)
         self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
+        self.icon.connect_to_signal("on_shortkey", self.action_on_dock_level_shortkey)
 
     def set_configuration_parameters(self):
         reader = ConfigParser.RawConfigParser()
@@ -216,15 +227,31 @@ class Applet:
             name, abbrv = splited[0], splited[1]
             self.sources.append(Language(name, abbrv))                                  # e.g, Language("English", "en")
             self.destinies.append(Language(name, abbrv))                                # e.g, Language("Portuguese", "pt")
+    
+    def dock_level_keypress_binding(self):
+        try:
+            self.icon.BindShortkey(["<Control>F9"])
+        except dbus.DBusException:
+            log ("Ctrl + F9 shortcut won't work, update Cairo-dock to 2.2.0 or higher")
+        else:
+            log ("Ctrl + F9 shortcut gonna work, Cairo-dock 2.2.0 or higher is up and running")
 
     def translate(self, sentence, source, destiny):
         log ("sentence: %s (from: %s to: %s)" % (sentence, source, destiny))
         self.inform_start_of_waiting_process()
 
-        interface = Interface(sentence)
-        translated = interface.translate_it(source, destiny)
-        self.icon.ShowDialog(translated, self.dialog_active_time)
-        self.set_to_clipboard(translated)
+        interface = Interface(sentence)                                                 # alimenta o tradutor com o sentence a ser traduzida
+        translated = interface.translate_it(source, destiny)                            # o resultado, que eh texto traduzido
+
+        try:                                                                            # Cairo dock 2.2.0 or higher
+            self.icon.PopupDialog({'message':'Translated text', 'time-length':self.dialog_active_time}, {'widget-type':'text-entry', 'initial-value':translated})
+        except Exception:                                                               # Weirdly dbus.DBusException is not being thrown in CD < 2.2.0
+            log ("PopupDialog won't be shown, ShowDialog was used instead, update Cairo-dock to 2.2.0 or higher")
+            self.icon.ShowDialog(translated, self.dialog_active_time)
+        else:
+            log ("PopupDialog succesfully shown, Cairo-dock 2.2.0 or higher is up and running")
+
+        self.set_to_clipboard(translated)                                               # coloca o resultado na area de transferencia
 
         self.inform_end_of_waiting_process()
         self.inform_current_destiny_language()
@@ -233,6 +260,9 @@ class Applet:
     def ask_text(self, default=""):
         label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
         self.icon.AskText(label, default)                                               # heya user, tell me what do you wanna translate
+
+    def action_on_dock_level_shortkey(self, key):
+        self.ask_text()
 
     def action_on_answer(self, answer):
         if answer:
@@ -291,7 +321,7 @@ class Applet:
             self.icon.AddMenuItems(self.build_menu_for_destiny_languages())
             self.icon.AddMenuItems(self.build_menu_for_switch_languages())
         except TypeError:
-            log ("AddMenuItems method is not available")
+            log ("AddMenuItems method is not available, update Cairo-dock to 2.1.4 or higher2.1.4-0beta0")
 
     def build_menu_for_destiny_languages(self):
         destiny_sub_menu_icon = os.path.abspath("./data/to.png")
