@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEEDED_EXTRAS="ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 libruby1.8 rubygems1.8 acpi python libxslt-dev libxml2-dev ruby python-xlib xclip"
+NEEDED_EXTRAS="ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 libruby1.8 rubygems1.8 acpi python libxslt-dev libxml2-dev ruby xclip"
 
 NORMAL="\\033[0;39m"
 BLEU="\\033[1;34m"
@@ -43,7 +43,7 @@ if ! test -e '../.rubydbus'; then
 	sudo rm -rf ruby-dbus-0.3.0/ ruby-dbus-0.3.0.tgz
 	touch '../.rubydbus'
 fi
-if ! test -e '../.cpan'; then
-	xterm -e "sh -c 'echo Installation of two CPan modules for ShortURL applet, please write your password and answer «yes» if it is asked && sudo cpan -i LWP Clipboard'"
-	touch '../.cpan'
-fi
+#if ! test -e '../.cpan'; then
+#	xterm -e "sh -c 'echo Installation of two CPan modules for ShortURL applet, please write your password and answer «yes» if it is asked && sudo cpan -i LWP Clipboard'"
+#	touch '../.cpan'
+#fi
