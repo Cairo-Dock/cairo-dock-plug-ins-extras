@@ -1,3 +1,4 @@
+0.1.4:(August/24/2010): For Cairo-dock 2.2.0 or higher, the user can move from the translation result to a new translation, or edit the recently translated text.
 0.1.3: (August/23/2010): Adding the dock-level shortcut Ctrl + F9, requires Cairo-Dock 2.2.0 or higher. Removing glib import since it was redundant and causing problems in Debian Lenny.
 0.1.2:(August/8/2010): Formally known as doCkranslator, the applet was renamed to Translator.
 0.1.1:(July/18/2010): Switch languages menu added, thanks to Matttbe for this suggestion. util module added.
