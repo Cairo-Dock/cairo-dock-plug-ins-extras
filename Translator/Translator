@@ -186,12 +186,15 @@ class Applet:
         self.icon = icon
         self.configuration = configuration                                              # configuration file
         self.translated_text = ""
+        self.text_to_be_translated = ""
         self.source = None                                                              # get it from configuration file
         self.sources = []                                                               # list of possible source languages
         self.destiny = None                                                             # get it from configuration file
         self.destinies = []                                                             # list of possible resulting languages
         self.scroll_destiny_language = 0
         self.dialog_active_time = 10                                                    # time in seconds that the dialog window will be active
+        self.new_translation_key = 1                                                    # there are 3 buttons, cancel = 0, new = 1 ...
+        self.edit_translation_key = 2                                                   # ... and edit
 
     def start(self):
         log ("Applet start")
@@ -209,6 +212,7 @@ class Applet:
         self.icon.connect_to_signal("on_middle_click", self.action_on_middle_click)
         self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
         self.icon.connect_to_signal("on_shortkey", self.action_on_dock_level_shortkey)
+        self.icon.connect_to_signal("on_answer_dialog", self.action_on_answer_dialog)
 
     def set_configuration_parameters(self):
         reader = ConfigParser.RawConfigParser()
@@ -242,15 +246,13 @@ class Applet:
 
         interface = Interface(sentence)                                                 # alimenta o tradutor com o sentence a ser traduzida
         translated = interface.translate_it(source, destiny)                            # o resultado, que eh texto traduzido
-
-        try:                                                                            # Cairo dock 2.2.0 or higher
-            self.icon.PopupDialog({'message':'Translated text', 'time-length':self.dialog_active_time}, {'widget-type':'text-entry', 'initial-value':translated})
-        except Exception:                                                               # Weirdly dbus.DBusException is not being thrown in CD < 2.2.0
-            log ("PopupDialog won't be shown, ShowDialog was used instead, update Cairo-dock to 2.2.0 or higher")
+        try:
+            self.icon.PopupDialog({'message':translated, "buttons":"cancel;stock_new;stock_edit"}, {})
+        except Exception:
+            log("Error caused PopupDialog not be shown, ShowDialog was used instead")
             self.icon.ShowDialog(translated, self.dialog_active_time)
         else:
-            log ("PopupDialog succesfully shown, Cairo-dock 2.2.0 or higher is up and running")
-
+            log("PopupDialog succesfully shown")
         self.set_to_clipboard(translated)                                               # coloca o resultado na area de transferencia
 
         self.inform_end_of_waiting_process()
@@ -266,7 +268,19 @@ class Applet:
 
     def action_on_answer(self, answer):
         if answer:
-        	self.translate(answer, self.source.abbrv, self.destiny.abbrv)               # what to be translated, the source and destination languages
+            self.text_to_be_translated = answer
+            self.translate(answer, self.source.abbrv, self.destiny.abbrv)               # what to be translated, the source and destination languages
+
+    # Caso eu tivesse usado o widget-type = 'text-entry', o valor do 'content' seria o
+    # conteudo string do campo de texto, mas como resultados com strings grandes tem
+    # pouca legibilidade na caixa de texto do 'text-entry', deixei o PopupDialog
+    # apenas funcionar como ShowDialog (exibindo mensagem). Portanto, o 'content' vem com 
+    # o valor igual ao do 'key' e nao como a string contida no campo de texto
+    def action_on_answer_dialog(self, key, content):
+        if (key == self.new_translation_key):                                            # cancel button = 0, and new = 1
+            self.ask_text()                                                              # abre a entrada para nova traducao
+        elif (key == self.edit_translation_key):
+            self.ask_text(self.text_to_be_translated)                                    # traducao com o valor anterior a ser editado 
 
     def action_on_middle_click(self):
         """When middle-clicked the applet get the clipboard 
