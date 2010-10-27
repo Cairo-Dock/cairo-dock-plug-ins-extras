@@ -17,34 +17,37 @@
 
 # This applet provides a translator tool using the Google Translator service
 #    Translator (formally doCkranslator) translates from lots of languages to lots of languages
-#    To choose the source and destination languages:
-#        (I)  Right-click on the icon -> To/From -> Choose the destination language
-#        (II) Right-click on the icon -> Translator -> Configuration
-#    Anyway, the easier way to choose the destination language is scroll up/down over the icon
-#    To translate:
-#        (I) Press Ctrl + F8, type the text, and press Enter (requires Python-Xlib)
-#        (II) Press Ctrl + F9, type the text, and press Enter (requires Cairo-dock 2.2.0 or higher)
-#        (III) Left-click on the icon; type your text and press Enter
-#        (IV) Select any text in any place, and middle click on the icon
+#    First it is necessary to choose the languages using one of the following ways:
+#        (I) Scroll up/down over the icon to choose the destination language
+#        (II) Right-click on the icon -> "To", or "From"
+#        (III) Right-click on the icon -> Translator -> Configuration
+#    To translate you can do it using one of the following ways:
+#        (I) Left-click on the icon; type your text and press Enter
+#        (II) Select any text in any place, and middle click on the icon
+#    The plugin also provides useful keyboard shortcuts (requires Python-Xlib, or Cairo-dock 2.2.0)
+#        If you want to translate something you are reading in the foreign language you chose "From":
+#        * Press Ctrl + Alt + R, type the text, and press Enter 
+#        If you are writing something in your native language you chose "To":
+#        * Press Ctrl + Alt + W, type the text, and press Enter
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import gobject, dbus, os.path, urllib, gtk, ConfigParser
+import gobject, dbus, os, urllib, gtk, ConfigParser
 from dbus.mainloop.glib import DBusGMainLoop
 from dbus import glib
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
 
-# Este applet tenta obter dois niveis de atalho, o nivel mais baixo diretamente
-# do X Server atraves do Ctrl + F8, e o mais alto pelo Cairo-dock com Ctrl + F9.
-# Ver os metodos low_level_keypress_binding() e dock_level_keypress_binding
+# Este applet tenta obter o atalho Ctrl + Alt + [R|W] em dois niveis, o nivel mais
+# baixo diretamente do X Server e o mais alto pelo Cairo-dock.
+# Ver os metodos low_level_keypress_binding e dock_level_keypress_binding
 
-# This applet tries to get two shortcut levels, the lower one from X Server
-# through Ctrl + F8, and the higher one from Cairo-dock with Ctrl + F9.
+# This applet tries to get the Ctrl + Alt + [R|W] shortcut in two levels, the lower
+# one from X Server, and the highergher one from Cairo-dock.
 # Check the low_level_keypress_binding and dock_level_keypress_binding methods out.
 
 # Mesmo que o usuario nao tenha a Python-Xlib instalada, o applet ira funcionar,
-# pois esta biblioteca eh usada apenas para fazer a linkagem entre Ctrl + F8 e
+# pois esta biblioteca eh usada apenas para fazer a linkagem entre Ctrl + Alt + [R|W] e
 # a abertura da caixa de dialogo para a insercao do texto a ser traduzido
 # Obs.: As bibliotecas thread e timer tambem nao precisam ser carregadas
 #       uma vez que elas sao uteis apenas quando a Xlib esta presente
@@ -55,10 +58,10 @@ try:                                                                            
     import thread                                                                       # abrir um fluxo alternativo com a classe KeyHandler
     import time
 except ImportError:                                                                     # Nao tem a Python-Xlib instalada, msg nele
-    log ("Ctrl + F8 shortcut won't work, install Python-Xlib library")
+    log ("Ctrl + Alt + [R|W] shortcut won't work, install Python-Xlib library")
     low_level_shortcut_available = False
 else:
-    log ("Ctrl + F8 shortcut gonna work, Python-Xlib library is up and running")
+    log ("Ctrl + Alt + [R|W] shortcut gonna work, Python-Xlib library is up and running")
     low_level_shortcut_available = True
 
 DBusGMainLoop(set_as_default=True)
@@ -79,7 +82,7 @@ class doCkranslator:
         applet = Applet(icon, configuration)
         applet.start()
 
-        if low_level_shortcut_available:                                                          # Python-Xlib installed so lets make Ctrl+F8 shortcut available
+        if low_level_shortcut_available:                                                # Python-Xlib installed, grab the Ctrl+Alt+[R|W] shortcut!
             thread.start_new_thread(KeyHandler(applet).start, ("handler", 1))           # (funcao callback, (nome da thread, tempo de dormencia))
         
         loop = gobject.MainLoop()
@@ -87,9 +90,9 @@ class doCkranslator:
         sys.exit(0)
 
 class KeyHandler:
-    """Class que registra o evento de pressionamento do atalho Ctrl + F8 e abre a caixa de dialogo no applet"""   
+    """Class que registra o evento de pressionamento do atalho Ctrl + Alt + [R|W] e abre a caixa de dialogo no applet"""   
     """O registro do evento comeca ao fazer o grab_key da combinacao de teclas; se o X identificar o pressionamento
-       de alguma tecla com o Control (X.ControlMask), chama o handle_event que verifica se a tecla eh o F8; caso positivo,
+       de alguma tecla com o Control + Alt (X.ControlMask | X.Mod1Mask), chama o handle_event que verifica se a tecla eh o [R|W]; caso positivo,
        chama o metodo ask_text para abrir a caixa de dialogo no applet """
 
     def __init__(self, applet):
@@ -101,14 +104,18 @@ class KeyHandler:
         self.disp = Display()
         self.root = self.disp.screen().root
         self.root.change_attributes(event_mask = X.KeyPressMask)
-        self.f8_keycode = self.disp.keysym_to_keycode(XK.string_to_keysym('F8'))
-        self.root.grab_key(self.f8_keycode, X.ControlMask, True, X.GrabModeAsync, X.GrabModeAsync)     # Pega do X quando pressionar Ctrl + F8
-        # self.root.grab_key(self.f8_keycode, X.AnyModifier, True, X.GrabModeAsync, X.GrabModeAsync)   # Pega do X quando pressionar F8
+        self.r_keycode = self.disp.keysym_to_keycode(XK.string_to_keysym('R'))
+        self.w_keycode = self.disp.keysym_to_keycode(XK.string_to_keysym('W'))
+        # Pega do X quando pressionar Ctrl + Alt + R
+        self.root.grab_key(self.r_keycode, (X.ControlMask | X.Mod1Mask), True, X.GrabModeAsync, X.GrabModeAsync)
+        # Pega do X quando pressionar Ctrl + Alt + W
+        self.root.grab_key(self.w_keycode, (X.ControlMask | X.Mod1Mask), True, X.GrabModeAsync, X.GrabModeAsync)
         self.disp.set_error_handler(self.disp_error_handler)
     
     def disp_error_handler(self, error, request):
-        log ("Error %s" % error)
-        self.root.ungrab_key(self.f8_keycode, X.AnyModifier)
+        log ("Key handler error %s" % error)
+        self.root.ungrab_key(self.r_keycode, X.AnyModifier)
+        self.root.ungrab_key(self.w_keycode, X.AnyModifier)
         self.running = 0
 
     def lookup_keysym(self, keysym):
@@ -121,12 +128,17 @@ class KeyHandler:
         keycode = aEvent.detail
         log ("Pressed key %s" % self.lookup_keysym(self.disp.keycode_to_keysym(keycode,0)))
         if aEvent.type == X.KeyPress:
-            if keycode == self.f8_keycode:
-                log ("Ok, 'Ctrl + F8' pressed")
+            if keycode == self.r_keycode:
+                log ("Ok, 'Ctrl + Alt + R' pressed")
+                self.applet.set_read_mode()
+                self.applet.ask_text()                                                  # Abrir o caixa de dialogo para o texto a ser traduzido
+            elif keycode == self.w_keycode:
+                log ("Ok, 'Ctrl + Alt + W' pressed")
+                self.applet.set_write_mode()
                 self.applet.ask_text()                                                  # Abrir o caixa de dialogo para o texto a ser traduzido
 
     def start(self, name, sleeptime):
-        log ("KeyHandler start")
+        log ("Low level key handler started")
         while self.running:                                                             # Faz o polling ateh que o evento seja recebido
             event = self.root.display.next_event()                                      # busca o evento que tiver
             self.handle_event(event)                                                    # lanca o metodo de tratamento do evento
@@ -168,11 +180,22 @@ class Interface:
     def translate_it(self, source, destiny):
         parser = TranslatorParser()                                                     # create the parser
         opener = AgentOpener()                                                          # opens the web connection with masked user-agent
-        url = "http://translate.google.com/?sl=%s&tl=%s&q=%s" % (source, destiny, self.text_to_be_translated.replace(' ', '%20').encode('utf-8'))
-        page = opener.open(url)                                                         # get the HTML
-        parser.parse(page.read())                                                       # feed the parser to get the specific content: translated text
-        page.close()                                                                    # lets close the page connection
-        self.text_to_be_translated = parser.translated_content                          # from the parser, we get the translated content
+        url = "http://translate.google.com/?sl=%s&tl=%s&q=%s" % (source, destiny, self.adjust(self.text_to_be_translated))
+        try:
+            page = opener.open(url)                                                     # get the HTML
+        except IOError:
+            log ("Problem to open the remote translator, check the text to be translated")
+        else:
+            parser.parse(page.read())                                                   # feed the parser to get the specific content: translated text
+            page.close()                                                                # lets close the page connection
+            self.text_to_be_translated = parser.translated_content                      # from the parser, we get the translated content
+        return self.text_to_be_translated
+
+    def adjust(self, text):
+        """Ajusta o texto removendo espacos, quebras de linha, codifica tudo em utf-8"""
+        log ("Text to be translated before adjust: %s" % (self.text_to_be_translated))
+        self.text_to_be_translated = self.text_to_be_translated.strip().replace(os.linesep, ' ').replace(' ', '%20').encode('utf-8')
+        log ("Text to be translated later adjust: %s" % (self.text_to_be_translated))
         return self.text_to_be_translated
 
 class Language:
@@ -191,15 +214,16 @@ class Applet:
         self.sources = []                                                               # list of possible source languages
         self.destiny = None                                                             # get it from configuration file
         self.destinies = []                                                             # list of possible resulting languages
+        # self.favorites = []                                                             # TODO lista de linguas favoritas
         self.scroll_destiny_language = 0
         self.dialog_active_time = 10                                                    # time in seconds that the dialog window will be active
         self.new_translation_key = 1                                                    # there are 3 buttons, cancel = 0, new = 1 ...
         self.edit_translation_key = 2                                                   # ... and edit
 
     def start(self):
-        log ("Applet start")
+        log ("Applet started")
         self.read_languages_file()
-        self.set_configuration_parameters()
+        self.read_configuration_parameters()
         self.connect_to_callbacks()
         self.dock_level_keypress_binding()
 
@@ -214,14 +238,23 @@ class Applet:
         self.icon.connect_to_signal("on_shortkey", self.action_on_dock_level_shortkey)
         self.icon.connect_to_signal("on_answer_dialog", self.action_on_answer_dialog)
 
-    def set_configuration_parameters(self):
+    def read_configuration_parameters(self):
+        self.source = self.get_source_language_from_configuration()
+        self.destiny = self.get_destiny_language_from_configuration()                   # first set the destination language ...
+        log ("From %s to %s read from configuration file" % (self.source.name, self.destiny.name))
+        self.inform_current_destiny_language()                                           # ... and show it
+
+    def get_source_language_from_configuration(self):
         reader = ConfigParser.RawConfigParser()
         reader.read(self.configuration)
-        slang = reader.getint('Configuration', 'source')                                 # get the source language position in the list
-        dlang = reader.getint('Configuration', 'destiny')                                # get the destination language position in the list
-        self.source = self.sources[slang]
-        self.destiny = self.destinies[dlang]                                             # first set the destination language ...
-        self.inform_current_destiny_language()                                           # ... and show it
+        slang = reader.getint('Configuration', 'source')                                # get the source language index
+        return self.sources[slang]                                                      # retorna a instancia de Language referente ao indice
+
+    def get_destiny_language_from_configuration(self):
+        reader = ConfigParser.RawConfigParser()
+        reader.read(self.configuration)
+        dlang = reader.getint('Configuration', 'destiny')                               # get the destination language index
+        return self.destinies[dlang]                                                    # retorna a instancia de Language referente ao indice        
 
     def read_languages_file(self):
         """Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
@@ -231,17 +264,17 @@ class Applet:
             name, abbrv = splited[0], splited[1]
             self.sources.append(Language(name, abbrv))                                  # e.g, Language("English", "en")
             self.destinies.append(Language(name, abbrv))                                # e.g, Language("Portuguese", "pt")
-    
+
     def dock_level_keypress_binding(self):
         try:
-            self.icon.BindShortkey(["<Control>F9"])
+            self.icon.BindShortkey(["<Control><Alt>R"])                                 # for reading moments
+            self.icon.BindShortkey(["<Control><Alt>W"])                                 # for writing moments
         except dbus.DBusException:
-            log ("Ctrl + F9 shortcut won't work, update Cairo-dock to 2.2.0 or higher")
+            log ("Ctrl + Alt + [R|W] shortcut won't work, update Cairo-dock to 2.2.0 or higher")
         else:
-            log ("Ctrl + F9 shortcut gonna work, Cairo-dock 2.2.0 or higher is up and running")
+            log ("Ctrl + Alt + [R|W] shortcut gonna work, Cairo-dock 2.2.0 or higher is up and running")
 
     def translate(self, sentence, source, destiny):
-        log ("sentence: %s (from: %s to: %s)" % (sentence, source, destiny))
         self.inform_start_of_waiting_process()
 
         interface = Interface(sentence)                                                 # alimenta o tradutor com o sentence a ser traduzida
@@ -257,14 +290,26 @@ class Applet:
 
         self.inform_end_of_waiting_process()
         self.inform_current_destiny_language()
-        log ("translated: %s" % translated)
+        log ("Translated: %s" % translated)
 
     def ask_text(self, default=""):
         label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
-        self.icon.AskText(label, default)                                               # heya user, tell me what do you wanna translate
+        self.icon.AskText(label, default)                                               # heya user, tell me what do you wanna and I will translate
 
     def action_on_dock_level_shortkey(self, key):
+        if (key == "<Control><Alt>R"):          # Usuario esta lendo a lingua desconhecida (Ingles) e quer traduzir para a linguage destino (Portugues)
+            self.set_read_mode()
+        elif (key == "<Control><Alt>W"):        # Usuario esta escrevendo em sua lingua (Portugues) e quer traduzir para a linguage destino (Ingles)
+            self.set_write_mode()
         self.ask_text()
+
+    def set_read_mode(self):
+        self.source = self.get_source_language_from_configuration()
+        self.destiny = self.get_destiny_language_from_configuration()
+
+    def set_write_mode(self):
+        self.source = self.get_destiny_language_from_configuration()                   # trocada em relacao ao de cima
+        self.destiny = self.get_source_language_from_configuration()
 
     def action_on_answer(self, answer):
         if answer:
@@ -321,7 +366,7 @@ class Applet:
 
     def switch_languages(self):
         self.source, self.destiny = self.destiny, self.source
-        log ("Switched languages from self.source.namemenu: source [%s] destiny [%s]" % (self.source.name, self.destiny.name))
+        log ("Switched languages, lets translate from %s to %s" % (self.source.name, self.destiny.name))
         self.inform_current_destiny_language()
 
     def switch_source_language(self, index):
@@ -335,7 +380,7 @@ class Applet:
             self.icon.AddMenuItems(self.build_menu_for_destiny_languages())
             self.icon.AddMenuItems(self.build_menu_for_switch_languages())
         except TypeError:
-            log ("AddMenuItems method is not available, update Cairo-dock to 2.1.4 or higher2.1.4-0beta0")
+            log ("AddMenuItems method is not available, update Cairo-dock to 2.1.4 or higher")
 
     def build_menu_for_destiny_languages(self):
         destiny_sub_menu_icon = os.path.abspath("./data/to.png")
@@ -353,9 +398,14 @@ class Applet:
         return destiny_sub_menu
 
     def build_menu_for_source_languages(self):
+        """o sub-menu destinos (acima) tem, para cada uma de suas entradas, ids que variam de 0 ao len(self.destinies)-1
+           consequentemente, o primeiro id do menu de origem (este aqui) eh len(self.destinies). Eh necessario apenas deslocar
+           o id por este primeiro indice para ter um indice que varia de len(self.destinies)+1 ao len(self.sources). 
+           Ver switch_source_language()"""
         """destinies sub-menu (above) has, for each one of its entries, ids that ranges from 0 to len(self.destinies)-1
            consequently, the first id of the sources menu is the len(self.destinies). It is just necessary to shift the 
-           id by this first index to get a index that ranges from 0 to len(self.sources). See switch_source_language()"""
+           id by this first index to get a index that ranges from len(self.destinies)+1 to len(self.sources).
+           See switch_source_language()"""
         source_sub_menu_icon = os.path.abspath("./data/from.png")
         source_sub_menu_index = len(self.destinies)
         source_sub_menu = [{'type':1, 'label':'From', 'menu':0, 'id':source_sub_menu_index, 'icon':source_sub_menu_icon}]
@@ -379,7 +429,7 @@ class Applet:
 
     def action_on_reload(self, config_has_changed):
 	    if config_has_changed:
-		    self.set_configuration_parameters()
+		    self.read_configuration_parameters()
 
     def set_to_clipboard(self, sentence):
         clipboard = gtk.clipboard_get()                                                 # get the clipboard

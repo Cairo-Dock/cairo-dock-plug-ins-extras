@@ -1,4 +1,4 @@
-To use the Ctrl + F8 shortcut, in order to open the dialog box, it is necessary to install the Python-Xlib.
+To use the Ctrl + Alt[W|R] shortcut, in order to open the dialog box, it is necessary to install the Python-Xlib, or at least Cairo-Dock 2.2.0.
 
 # Contact me
 
