@@ -16,7 +16,7 @@
 #    GNU General Public License for more details.
 
 # This applet provides a "Quote of the day" feature from some internet sources
-# such as Quotationspage.com, Bash.org, Xkcdb.com, and Qdb.us
+# such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, and Danstonchat.fr
 
 import gobject, dbus, os, urllib, gtk, ConfigParser, itertools
 from dbus.mainloop.glib import DBusGMainLoop
@@ -25,153 +25,19 @@ from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
 
+from BashParser import BashParser                                                   # Bash.org
+from QdbParser import QdbParser                                                     # Qdb.us
+from XkcdbParser import XkcdbParser                                                 # Xkcdb.com
+from QuotationspageParser import QuotationspageParser                               # Quotationspage.com
+from DanstonchatParser import DanstonchatParser                                     # Danstonchat.fr
+
 DBusGMainLoop(set_as_default=True)
 
-quotationspage, bash, xkcdb, qdb = range(4)                                         # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3
+quotationspage, bash, xkcdb, qdb, danstonchat = range(5)                            # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4
 
 class AgentOpener(FancyURLopener):
     """Masked user-agent otherwise the access would be forbidden"""
     version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
-
-class BashParser(SGMLParser):
-
-    def reset(self):                              
-        SGMLParser.reset(self)
-        self.quote = []
-        self.inside_p_element = False                                               # indica se o parser esta dentro de <p></p> tag
-        self.current_quote = ""
-
-    def start_p(self, attrs):
-        for name, value in attrs:
-            if name == "class" and value == "qt":                                   # <p class="qt">...</p>
-                self.inside_p_element = True
-    
-    def end_p(self):
-        self.inside_p_element = False
-        self.quote.append(self.current_quote)                                       # adiciona o conteudo completo da tag
-        self.current_quote = ""                                                     # reinicia o armazenador do conteudo
-
-    def handle_data(self, text):
-        if self.inside_p_element:                                                   # estamos dentro de <p>...</p>
-            text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
-            text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
-            self.current_quote += text                                              # concatena tudo que tiver dentro da tag
-
-    def parse(self, page):
-        self.feed(page)                                                             # feed the parser with the page's html
-        self.close()
-
-class QdbParser(SGMLParser):
-
-    def reset(self):                              
-        SGMLParser.reset(self)
-        self.quote = []
-        self.inside_span_element = False                                            # indica se o parser esta dentro de <span></span> tag
-        self.current_quote = ""
-
-    def start_span(self, attrs):
-        for name, value in attrs:
-            if name == "class" and value == "qt":                                   # <span class="qt">...</span>
-                self.inside_span_element = True
-    
-    def end_span(self):
-        self.inside_span_element = False
-        self.quote.append(self.current_quote)                                       # adiciona o conteudo completo da tag
-        self.current_quote = ""                                                     # reinicia o armazenador do conteudo
-
-    def handle_data(self, text):
-        if self.inside_span_element:                                                # estamos dentro de <span>...</span>
-            text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
-            text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
-            self.current_quote += text                                              # concatena tudo que tiver dentro da tag
-
-    def parse(self, page):
-        self.feed(page)                                                             # feed the parser with the page's html
-        self.close()
-
-class XkcdbParser(SGMLParser):
-
-    def reset(self):                              
-        SGMLParser.reset(self)
-        self.quote = []
-        self.inside_span_element = False                                               # indica se o parser esta dentro de <p></p> tag
-        self.current_quote = ""
-
-    def start_span(self, attrs):
-        for name, value in attrs:
-            if name == "class" and value == "quote":                                   # <p class="qt">...</p>
-                self.inside_span_element = True
-    
-    def end_span(self):
-        self.inside_span_element = False
-        self.quote.append(self.current_quote)                                       # adiciona o conteudo completo da tag
-        self.current_quote = ""                                                     # reinicia o armazenador do conteudo
-
-    def handle_data(self, text):
-        if self.inside_span_element:                                                   # estamos dentro de <dt><a>...</a></dt>
-            text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
-            text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
-            self.current_quote += text                                              # concatena tudo que tiver dentro da tag
-
-    def parse(self, page):
-        self.feed(page)                                                             # feed the parser with the page's html
-        self.close() 
-
-class QuotationspageParser(SGMLParser):
-
-    def reset(self):                              
-        SGMLParser.reset(self)
-        self.quote = []
-        self.author = []
-        self.inside_dt_a_element = False                                            # indica se o parser esta dentro de <dt><a></a></dt> tag
-        self.inside_dt_element = False                                              # indica se o parser esta dentro de <dt></dt> tag
-
-        self.inside_dd_element = False                                              # indica se o parser esta dentro de <dd></dd> tag
-        self.inside_dd_b_element = False                                            # indica se o parser esta dentro de <dt><b><b></dt> tag
-        self.inside_dd_b_a_element = False                                          # indica se o parser esta dentro de <dt><b><a><a><b></dt> tag
-
-    def start_dt(self, attrs):
-        for name, value in attrs:
-            if name == "class" and value == "quote":                                # <dt class="quote">...</dt>
-                self.inside_dt_element = True
-    
-    def end_dt(self):
-        self.inside_dt_element = False
-
-    def start_dd(self, attrs):
-        for name, value in attrs:
-            if name == "class" and value == "author":                               # <dd class="author">...</dd>
-                self.inside_dd_element = True
-
-    def end_dd(self):
-        self.inside_dd_element = False
-
-    def start_b(self, attrs):
-        if self.inside_dd_element:
-            self.inside_dd_b_element = True
-
-    def end_b(self):
-        self.inside_dd_b_element = False
-
-    def start_a(self, attrs):
-        if self.inside_dt_element:
-            self.inside_dt_a_element = True                                        # <dt class="quote"><a>Quote</a></dt>
-        if self.inside_dd_b_element:
-            self.inside_dd_b_a_element = True                                      # <dd class="author"><b><a>Quote</a></b></dd>
-
-    def end_a(self):
-        self.inside_dt_a_element = False
-        self.inside_dd_b_a_element = False
-
-    def handle_data(self, text):
-        if self.inside_dt_a_element:                                                # estamos dentro de <dt><a>...</a></dt>
-            self.quote.append(text)
-        if self.inside_dd_b_a_element:                                              # estamos dentro de <dd><b><a>...</a></b></dd>
-            self.author.append(text)        
-
-    def parse(self, page):
-        self.feed(page)                                                             # feed the parser with the page's html
-        self.close()   
 
 class Interface:
 
@@ -182,31 +48,29 @@ class Interface:
 
     def fetch(self):
         if (self.source == quotationspage):
-            parser = QuotationspageParser()                                         # create the parser
-            url = "http://www.quotationspage.com/qotd.html"
+            parser = QuotationspageParser()                                         # QuotationspageParser.py
         elif (self.source == bash):
-            parser = BashParser()                                                   # create the parser
-            url = "http://bash.org/?random"
+            parser = BashParser()                                                   # BashParser.py
         elif (self.source == xkcdb):
-            parser = XkcdbParser()
-            url = "http://www.xkcdb.com/?random"
+            parser = XkcdbParser()                                                  # XkcdbParser.py
+        elif (self.source == qdb):
+            parser = QdbParser()                                                    # QdbParser.py
         else:
-            parser = QdbParser()                                                    # create the parser
-            url = "http://www.qdb.us/random"            
+            parser = DanstonchatParser()                                            # DanstonchatParser.py
 
         opener = AgentOpener()                                                      # opens the web connection with masked user-agent
         
         try:
-            page = opener.open(url)                                                 # get the HTML
+            page = opener.open(parser.url)                                          # get the HTML
         except IOError:
-            print ("Problem to open %s" % (url))
+            print ("Problem to open %s" % (parser.url))
         else:
             parser.parse(page.read())                                               # feed the parser to get the specific content: translated text
             page.close()                                                            # lets close the page connection
             if (self.source == quotationspage):  
                 self.quote = parser.quote
                 self.author = parser.author
-            elif (self.source == bash or self.source == xkcdb or self.source == qdb):
+            elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
                 self.quote = parser.quote
                 self.quote = filter(None, self.quote)                               # retira os '' do array
         return self.quote, self.author
@@ -283,7 +147,7 @@ class Applet:
     def show_quote(self):
         if (self.source == quotationspage):
             self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # N-esima quote refere-se ao N-esimo autor."quote[x]~author[x]"
-        elif (self.source == bash or self.source == xkcdb or self.source == qdb):
+        elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
             self.quotation = "%s" % self.quotes.next()
         try:
             self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;cancel"}, {})
