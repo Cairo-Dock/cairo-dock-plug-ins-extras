@@ -237,7 +237,7 @@ class Applet:
         self.quotes = None
         self.quotation = ""
         self.dialog_active_time = 30                                                # time in seconds that the dialog window will be active
-        self.copy_current_quote_key = 1
+        self.copy_current_quote_key = 0
         self.source = quotationspage
         
     def start(self):
@@ -265,7 +265,7 @@ class Applet:
             self.get_quotes_from_web()                                              # refresh the quotations
 
     def action_on_answer_dialog(self, key, content):
-        if (key == self.copy_current_quote_key):                                    # cancel button = 0, and copy_current_quote_key = 1
+        if (key == self.copy_current_quote_key):                                    # cancel button = 1, and copy_current_quote_key = 0
             self.set_to_clipboard(self.quotation)                                   # copia para a area de transferencia a quotation atual
 
     def set_to_clipboard(self, sentence):
@@ -286,7 +286,7 @@ class Applet:
         elif (self.source == bash or self.source == xkcdb or self.source == qdb):
             self.quotation = "%s" % self.quotes.next()
         try:
-            self.icon.PopupDialog({'message':self.quotation, "buttons":"cancel;stock_copy"}, {})
+            self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;cancel"}, {})
         except Exception:
             log("Error caused PopupDialog not be shown, ShowDialog was used instead")   # back-compatibility with CD < 2.2.0
             self.icon.ShowDialog(self.quotation, self.dialog_active_time)
