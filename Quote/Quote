@@ -16,9 +16,9 @@
 #    GNU General Public License for more details.
 
 # This applet provides a "Quote of the day" feature from some internet sources
-# such as Quotationspage.com, Bash.org, and Xkcdb.com
+# such as Quotationspage.com, Bash.org, Xkcdb.com, and Qdb.us
 
-import gobject, dbus, os, urllib, ConfigParser, itertools
+import gobject, dbus, os, urllib, gtk, ConfigParser, itertools
 from dbus.mainloop.glib import DBusGMainLoop
 from dbus import glib
 from sgmllib import SGMLParser
@@ -27,7 +27,7 @@ from util import log
 
 DBusGMainLoop(set_as_default=True)
 
-quotationspage, bash, xkcdb = range(3)                                                     # quotationspage = 0, bash = 1, xkcdb = 2
+quotationspage, bash, xkcdb, qdb = range(4)                                         # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3
 
 class AgentOpener(FancyURLopener):
     """Masked user-agent otherwise the access would be forbidden"""
@@ -52,7 +52,35 @@ class BashParser(SGMLParser):
         self.current_quote = ""                                                     # reinicia o armazenador do conteudo
 
     def handle_data(self, text):
-        if self.inside_p_element:                                                   # estamos dentro de <dt><a>...</a></dt>
+        if self.inside_p_element:                                                   # estamos dentro de <p>...</p>
+            text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
+            text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
+            self.current_quote += text                                              # concatena tudo que tiver dentro da tag
+
+    def parse(self, page):
+        self.feed(page)                                                             # feed the parser with the page's html
+        self.close()
+
+class QdbParser(SGMLParser):
+
+    def reset(self):                              
+        SGMLParser.reset(self)
+        self.quote = []
+        self.inside_span_element = False                                            # indica se o parser esta dentro de <span></span> tag
+        self.current_quote = ""
+
+    def start_span(self, attrs):
+        for name, value in attrs:
+            if name == "class" and value == "qt":                                   # <span class="qt">...</span>
+                self.inside_span_element = True
+    
+    def end_span(self):
+        self.inside_span_element = False
+        self.quote.append(self.current_quote)                                       # adiciona o conteudo completo da tag
+        self.current_quote = ""                                                     # reinicia o armazenador do conteudo
+
+    def handle_data(self, text):
+        if self.inside_span_element:                                                # estamos dentro de <span>...</span>
             text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
             text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
             self.current_quote += text                                              # concatena tudo que tiver dentro da tag
@@ -159,9 +187,12 @@ class Interface:
         elif (self.source == bash):
             parser = BashParser()                                                   # create the parser
             url = "http://bash.org/?random"
-        else:
+        elif (self.source == xkcdb):
             parser = XkcdbParser()
             url = "http://www.xkcdb.com/?random"
+        else:
+            parser = QdbParser()                                                    # create the parser
+            url = "http://www.qdb.us/random"            
 
         opener = AgentOpener()                                                      # opens the web connection with masked user-agent
         
@@ -175,7 +206,7 @@ class Interface:
             if (self.source == quotationspage):  
                 self.quote = parser.quote
                 self.author = parser.author
-            elif (self.source == bash or self.source == xkcdb):
+            elif (self.source == bash or self.source == xkcdb or self.source == qdb):
                 self.quote = parser.quote
                 self.quote = filter(None, self.quote)                               # retira os '' do array
         return self.quote, self.author
@@ -204,7 +235,9 @@ class Applet:
         self.configuration = configuration                                          # configuration file
         self.authors = None
         self.quotes = None
+        self.quotation = ""
         self.dialog_active_time = 30                                                # time in seconds that the dialog window will be active
+        self.copy_current_quote_key = 1
         self.source = quotationspage
         
     def start(self):
@@ -216,6 +249,7 @@ class Applet:
     def connect_to_callbacks(self):                                                 # when reiceves the signal named as 1st parameter ...
         self.icon.connect_to_signal("on_click", self.action_on_click)               # ... chama a funcao callback que eh o segundo parametro
         self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
+        self.icon.connect_to_signal("on_answer_dialog", self.action_on_answer_dialog)
 
     def read_configuration_parameters(self):
         reader = ConfigParser.RawConfigParser()
@@ -230,18 +264,38 @@ class Applet:
 		    self.read_configuration_parameters()                                    # refresh the source of quotations
             self.get_quotes_from_web()                                              # refresh the quotations
 
+    def action_on_answer_dialog(self, key, content):
+        if (key == self.copy_current_quote_key):                                    # cancel button = 0, and copy_current_quote_key = 1
+            self.set_to_clipboard(self.quotation)                                   # copia para a area de transferencia a quotation atual
+
+    def set_to_clipboard(self, sentence):
+        clipboard = gtk.clipboard_get()                                             # get the clipboard
+        clipboard.set_text(sentence)                                                # set the clipboard the current quote
+
     def get_quotes_from_web(self):
+        self.inform_start_of_waiting_process()                                      # ...
         interface = Interface(self.source)
-        quote, author = interface.fetch()                                           # N-esima quote refere-se ao N-esimo autor. "quote[x] ~ author[x]"
+        quote, author = interface.fetch()
         self.quotes = itertools.cycle(quote)
         self.authors = itertools.cycle(author)
+        self.inform_end_of_waiting_process()                                        # done
 
     def show_quote(self):
         if (self.source == quotationspage):
-            quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next())
-        else:
-            quotation = "%s" % self.quotes.next()
-        self.icon.ShowDialog(quotation, self.dialog_active_time)
+            self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # N-esima quote refere-se ao N-esimo autor."quote[x]~author[x]"
+        elif (self.source == bash or self.source == xkcdb or self.source == qdb):
+            self.quotation = "%s" % self.quotes.next()
+        try:
+            self.icon.PopupDialog({'message':self.quotation, "buttons":"cancel;stock_copy"}, {})
+        except Exception:
+            log("Error caused PopupDialog not be shown, ShowDialog was used instead")   # back-compatibility with CD < 2.2.0
+            self.icon.ShowDialog(self.quotation, self.dialog_active_time)
+
+    def inform_start_of_waiting_process(self):
+        self.icon.SetQuickInfo("...")
+
+    def inform_end_of_waiting_process(self):
+        self.icon.SetQuickInfo("")
 
 if __name__ == '__main__':
     Quote().start()
