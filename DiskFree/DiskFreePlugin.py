@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
 
-# DiskFree, plugin pour Cairo-Dock.
+# DiskFree, plugin for Cairo-Dock. View the available disk space.
 # Copyright 2010 Xavier Nayrac
 #
-# Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le
-# modifier suivant les termes de la “GNU General Public License” telle que
-# publiée par la Free Software Foundation : soit la version 3 de cette
-# licence, soit (à votre gré) toute version ultérieure.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-# Ce programme est distribué dans l’espoir qu’il vous sera utile, mais SANS
-# AUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉ
-# ni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence Générale
-# Publique GNU pour plus de détails.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# Vous devriez avoir reçu une copie de la Licence Générale Publique GNU avec
-# ce programme ; si ce n’est pas le cas, consultez :
-# <http://www.gnu.org/licenses/>.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from CairoDockPlugin import CairoDockPlugin
 import os
@@ -24,28 +23,27 @@ from Configuration import Configuration
 
 class DiskFreePlugin(CairoDockPlugin):
 	"""
-	J'affiche l'espace disque disponible au dessus de mon icône. Vous pouvez
-	choisir de voir le résultat en giga-octets ou en méga-octets. Vous pouvez
-	aussi définir l'intervalle, en minutes, entre deux sondages du disque.
+	I print the available file system's space on my label.
+	You can choose to view the result in Go or Mo. You can set the ellapsed
+	time between two checks.
 	"""
 	def __init__(self):
 		super(DiskFreePlugin, self).__init__()
-		self.__interval = 60000 # 1 minute (en millisecondes)
-		self.__isGiga = True # sinon mega-octet
+		self.__interval = 60000 # 1 minute (in millisecondes)
+		self.__isGiga = True # else mega-octet
 		self.__config = Configuration(self.name())
 		self.__timerId = None
 	
 	def getFreeSpace(self):
 		"""
-		Je retourne l'espace disque disponible (le nombre d'octets) à la 
-		racine du système de fichier. 
+		I return the available space (in octet) at the root of the file system's.
 		"""
 		stats = os.statvfs('/')
 		return stats.f_bsize * stats.f_bavail
 		
 	def onClick(self, iState):
 		"""
-		Je modifie mon label pour qu'il reflète l'espace disque disponible.
+		I set my label to the available space.
 		"""
 		super(DiskFreePlugin, self).onClick(iState)
 		if self.__isGiga:
@@ -67,32 +65,32 @@ class DiskFreePlugin(CairoDockPlugin):
 		
 	def __setConfiguration(self):
 		"""
-		Je recharge la configuration.
+		I relaod the configuration.
 		"""
 		self.__config.refresh()
-		interval = int(self.__config.get('Configuration', 'intervalle'))
-		self.__interval = interval * 60000 # obtenir en millisecondes.
+		interval = int(self.__config.get('Configuration', 'interval'))
+		self.__interval = interval * 60000 # convert in millisecondes.
 		self.__setTimer()
-		self.__isGiga = self.__config.getboolean('Configuration', 'vueEnGiga')
+		self.__isGiga = self.__config.getboolean('Configuration', 'gigaView')
 		self.setLabel(self.__config.get('Icon', 'name'))
 	
 	def __setTimer(self):
 		"""
-		Je programme l'intervalle entre deux sondages du disque.
+		I set the time between two checks.
 		"""
 		self.__removeTimer()
 		self.__timerId = gobject.timeout_add(self.__interval, self.onClick, 0)
 		
 	def __removeTimer(self):
 		"""
-		J'enlève proprement le timer.
+		I properly remove the timer.
 		"""
 		if self.__timerId != None:
 			gobject.source_remove(self.__timerId)
 
 	def run(self):
 		"""
-		On m'appelle pour 'lancer' le plugin.
+		Call me when you are ready 'to launch' the plugin's loop.
 		"""
 		self.__setConfiguration()
 		self.onClick(0)

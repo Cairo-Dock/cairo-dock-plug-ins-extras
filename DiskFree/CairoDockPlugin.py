@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
 
-# DiskFree, plugin pour Cairo-Dock.
+# DiskFree, plugin for Cairo-Dock. View the available disk space.
 # Copyright 2010 Xavier Nayrac
 #
-# Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le
-# modifier suivant les termes de la “GNU General Public License” telle que
-# publiée par la Free Software Foundation : soit la version 3 de cette
-# licence, soit (à votre gré) toute version ultérieure.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-# Ce programme est distribué dans l’espoir qu’il vous sera utile, mais SANS
-# AUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉ
-# ni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence Générale
-# Publique GNU pour plus de détails.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# Vous devriez avoir reçu une copie de la Licence Générale Publique GNU avec
-# ce programme ; si ce n’est pas le cas, consultez :
-# <http://www.gnu.org/licenses/>.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os.path
 import dbus
@@ -29,8 +28,8 @@ CAIRO_PATH = '/org/cairodock/CairoDock/'
 
 class CairoDockPlugin(object):
 	"""
-	Je suis un plugin basique pour Cairo-Dock.
-	Je m'occupe principalement de la connexion avec D-bus.
+	I'm a basic Cairo-Dock plugin.
+	I mainly set the D-bus stuff.
 	"""
 	def __init__(self):
 		self.__debugMode = False
@@ -68,35 +67,35 @@ class CairoDockPlugin(object):
 		
 	def run(self):
 		"""
-		Je me connecte à la boucle de programme de Cairo-Dock. Appelez moi une fois
-		les initialisations faites, pour 'lancer' le plugin.
+		I'm connecting to the Cairo-Dock's program loop. 
+		To 'run' the plugin, call me when all initializations are done.
 		"""
 		self.__messageDebug('run')
 		self.__programLoop.run()
 
 	def debug(self):
 		"""
-		Appelez une fois au début de votre programme. Si vous avez lancé Cairo-Dock 
-		depuis une console, vous saurez quelles actions j'effectue.
+		Call me one time in the beginning of your script. If you are running Cairo-Dock
+		from a console window, you'll be able to see what I'm doing.
 		"""
 		self.__debugMode = True
 	
 	def onClick(self, iState):
 		"""
-		Je réagis au clic gauche de la souris sur mon icône.
+		I react to left click on my icon.
 		"""
 		self.__messageDebug('left clic %d' % iState)
 		
 	def onStop(self):
 		"""
-		Je réagis quand on met fin à mon execution.
+		Time to quit.
 		"""
 		self.__messageDebug('stop')
 		self.__programLoop.quit()
 	
 	def onReload(self, bConfigHasChanged):
 		"""
-		J'ai été rechargé, peut-être à cause d'une nouvelle configuration.
+		I just was reloaded. Check for a new configuration.
 		"""
 		self.__messageDebug('reloaded')
 		if bConfigHasChanged:
@@ -104,13 +103,13 @@ class CairoDockPlugin(object):
 
 	def __messageDebug(self, message):
 		"""
-		J'écris le message sur la console, si j'ai la permission.
+		I write message to console if I have permission to do this.
 		"""
 		if self.__debugMode:
 			print '<%s : %s>' % (self.__name, message)
 
 	def setLabel(self, label):
 		"""
-		Je met à jour le label de mon icône.
+		I update my icon's label.
 		"""
 		self.__plugin.SetLabel(label)

@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
 
-# DiskFree, plugin pour Cairo-Dock.
+# DiskFree, plugin for Cairo-Dock. View the available disk space.
 # Copyright 2010 Xavier Nayrac
 #
-# Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le
-# modifier suivant les termes de la “GNU General Public License” telle que
-# publiée par la Free Software Foundation : soit la version 3 de cette
-# licence, soit (à votre gré) toute version ultérieure.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-# Ce programme est distribué dans l’espoir qu’il vous sera utile, mais SANS
-# AUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉ
-# ni d’ADÉQUATION À UN OBJECTIF PARTICULIER. Consultez la Licence Générale
-# Publique GNU pour plus de détails.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# Vous devriez avoir reçu une copie de la Licence Générale Publique GNU avec
-# ce programme ; si ce n’est pas le cas, consultez :
-# <http://www.gnu.org/licenses/>.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from ConfigParser import RawConfigParser
 from os.path import isfile
@@ -26,7 +25,7 @@ CAIRO_CONF_PATH = "~/.config/cairo-dock/current_theme/plug-ins"
 
 class Configuration(RawConfigParser):
 	"""
-	Je gère le fichier de configuration d'un plugin Cairo-Dock.
+	I manage the configuration's file of a Cairo-Dock plugin.
 	"""
 	def __init__(self, nameOfPlugin):
 		RawConfigParser.__init__(self)
@@ -35,8 +34,8 @@ class Configuration(RawConfigParser):
 
 	def __setFile(self, nameOfPlugin):
 		"""
-		Je trouve le nom du fichier de configuration grâce au nom du plugin,
-		puis je lis la configuration.
+		I set the name of the configuration's file, with the help of plugin's name.
+		Then I read the configuration.
 		"""
 		nameOfPlugin = "%s/%s/%s.conf" % (CAIRO_CONF_PATH, nameOfPlugin, nameOfPlugin)
 		nameOfPlugin = expanduser(nameOfPlugin)
@@ -49,6 +48,6 @@ class Configuration(RawConfigParser):
 	
 	def refresh(self):
 		"""
-		Je lis le fichier de configuration.
+		I read the configuration's file.
 		"""
 		self.readfp(open(self.nameOfPlugin))
