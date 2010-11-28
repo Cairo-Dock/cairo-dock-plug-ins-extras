@@ -52,7 +52,7 @@ class DiskFreePlugin(CairoDockPlugin):
 		else:
 			megaOctets = self.getFreeSpace() / (1024 * 1024)
 			label = "%d Mo" % (megaOctets)
-		self.setLabel(label)
+		self.setQuickInfo(label)
 		return True
 	
 	def onReload(self, bConfigHasChanged):
@@ -65,14 +65,14 @@ class DiskFreePlugin(CairoDockPlugin):
 		
 	def __setConfiguration(self):
 		"""
-		I relaod the configuration.
+		I reload the configuration.
 		"""
 		self.__config.refresh()
 		interval = int(self.__config.get('Configuration', 'interval'))
 		self.__interval = interval * 60000 # convert in millisecondes.
 		self.__setTimer()
 		self.__isGiga = self.__config.getboolean('Configuration', 'gigaView')
-		self.setLabel(self.__config.get('Icon', 'name'))
+		self.setQuickInfo(self.__config.get('Icon', 'name'))
 	
 	def __setTimer(self):
 		"""

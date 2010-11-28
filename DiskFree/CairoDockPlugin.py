@@ -113,3 +113,9 @@ class CairoDockPlugin(object):
 		I update my icon's label.
 		"""
 		self.__plugin.SetLabel(label)
+
+	def setQuickInfo(self, info):
+		"""
+		I update my icon's QuickInfo.
+		"""
+		self.__plugin.SetQuickInfo(info)
