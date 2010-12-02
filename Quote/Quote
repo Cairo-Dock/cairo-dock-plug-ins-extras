@@ -16,7 +16,8 @@
 #    GNU General Public License for more details.
 
 # This applet provides a "Quote of the day" feature from some internet sources
-# such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, and Danstonchat.fr
+# such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr, and
+# Jokes2go.com
 
 import gobject, dbus, os, urllib, gtk, ConfigParser, itertools
 from dbus.mainloop.glib import DBusGMainLoop
@@ -30,10 +31,11 @@ from QdbParser import QdbParser                                                 
 from XkcdbParser import XkcdbParser                                                 # Xkcdb.com
 from QuotationspageParser import QuotationspageParser                               # Quotationspage.com
 from DanstonchatParser import DanstonchatParser                                     # Danstonchat.fr
+from JokestogoParser import JokestogoParser                                         # Jokes2go.com
 
 DBusGMainLoop(set_as_default=True)
 
-quotationspage, bash, xkcdb, qdb, danstonchat = range(5)                            # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4
+quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo = range(6)                 # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5
 
 class AgentOpener(FancyURLopener):
     """Masked user-agent otherwise the access would be forbidden"""
@@ -55,15 +57,17 @@ class Interface:
             parser = XkcdbParser()                                                  # XkcdbParser.py
         elif (self.source == qdb):
             parser = QdbParser()                                                    # QdbParser.py
-        else:
+        elif (self.source == danstonchat):
             parser = DanstonchatParser()                                            # DanstonchatParser.py
+        else:
+            parser = JokestogoParser()
 
         opener = AgentOpener()                                                      # opens the web connection with masked user-agent
-        
+
         try:
             page = opener.open(parser.url)                                          # get the HTML
         except IOError:
-            print ("Problem to open %s" % (parser.url))
+            log ("Problem to open %s" % (parser.url))
         else:
             parser.parse(page.read())                                               # feed the parser to get the specific content: translated text
             page.close()                                                            # lets close the page connection
@@ -71,9 +75,13 @@ class Interface:
                 self.quote = parser.quote
                 self.author = parser.author
             elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
-                self.quote = parser.quote
-                self.quote = filter(None, self.quote)                               # retira os '' do array
+                self.quote = filter(None, parser.quote)                             # retira os '' do array
+            else:                                                                   # jokestogo
+                self.quote = filter(self.breakline, parser.quote)
         return self.quote, self.author
+
+    def breakline(self, item):
+        return not item == '\n'
 
 class Quote:
 
@@ -101,7 +109,7 @@ class Applet:
         self.quotes = None
         self.quotation = ""
         self.dialog_active_time = 30                                                # time in seconds that the dialog window will be active
-        self.copy_current_quote_key = 0
+        self.copy_current_quote_key = 1
         self.source = quotationspage
         
     def start(self):
@@ -129,7 +137,7 @@ class Applet:
             self.get_quotes_from_web()                                              # refresh the quotations
 
     def action_on_answer_dialog(self, key, content):
-        if (key == self.copy_current_quote_key):                                    # cancel button = 1, and copy_current_quote_key = 0
+        if (key == self.copy_current_quote_key):                                    # cancel button = 0, and copy_current_quote_key = 1
             self.set_to_clipboard(self.quotation)                                   # copia para a area de transferencia a quotation atual
 
     def set_to_clipboard(self, sentence):
@@ -149,8 +157,11 @@ class Applet:
             self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # N-esima quote refere-se ao N-esimo autor."quote[x]~author[x]"
         elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
             self.quotation = "%s" % self.quotes.next()
+        else:                                                                       # jokestogo provides only one quote per request ...
+            self.quotation = "%s" % self.quotes.next().rstrip()                                 
+            self.get_quotes_from_web()                                              # ... so it is necessary to request it again    
         try:
-            self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;cancel"}, {})
+            self.icon.PopupDialog({'message':self.quotation, "buttons":"cancel;stock_copy"}, {})
         except Exception:
             log("Error caused PopupDialog not be shown, ShowDialog was used instead")   # back-compatibility with CD < 2.2.0
             self.icon.ShowDialog(self.quotation, self.dialog_active_time)
