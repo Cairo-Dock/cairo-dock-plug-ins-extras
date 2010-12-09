@@ -1,0 +1,202 @@
+#!/usr/bin/python
+
+# This is a part of the external Google applet for Cairo-Dock
+#
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#    GNU General Public License for more details.
+
+# This applet provides an interface to Google search engine.
+# Left click on the main icon to open the search dialog.
+# Each result will be shown as a sub-icon.
+# Left-click to open the result in the default Web Browser.
+
+import gobject, dbus, os, urllib, gtk, ConfigParser, webbrowser
+from dbus.mainloop.glib import DBusGMainLoop
+from dbus import glib
+from sgmllib import SGMLParser
+from urllib import FancyURLopener
+from util import log
+
+from GoogleParser import GoogleParser
+
+DBusGMainLoop(set_as_default=True)
+
+class AgentOpener(FancyURLopener):
+    """Masked user-agent otherwise the access would be forbidden"""
+    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+
+class Link:
+    identification = 0
+    def __init__(self, url, description):
+        self.url = url
+        self.description = description
+        self.identification = Link.identification
+        Link.identification += 1
+
+class Interface:
+
+    def __init__(self, query, offset):
+        self.query = query
+        self.links = []
+        self.offset = offset
+
+    def fetch(self):
+        parser = GoogleParser()
+        opener = AgentOpener()                                                      # opens the web connection with masked user-agent
+
+        # http://www.google.com/search?q={self.query}&start={self.offset}
+        search = "%s%s&start=%s" % (parser.url, self.adjust(self.query), str(self.offset))
+
+        try:
+            page = opener.open(search)                                              # get the HTML
+        except IOError:
+            log ("Problem to open %s" % (parser.url))
+        else:
+            parser.parse(page.read())                                               # feed the parser to get the specific content: translated text
+            page.close()                                                            # lets close the page connection
+        for (url, description) in zip(parser.urls, parser.descriptions):
+            link = Link(url, description)
+            self.links.append(link)
+        return self.links
+
+    # Google uses plus character instead of space in the search URL
+    def adjust(self, text):
+        return text.replace(' ', '+').encode('utf-8')
+
+class Google:
+
+    def start(self):
+        bus = dbus.SessionBus()
+        applet_name = os.path.basename(os.path.abspath("."))                        # name of the applet must the same as the folder
+        applet_path = "/org/cairodock/CairoDock/%s" % applet_name                   # path where our object is stored on the bus
+
+        applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
+        icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
+
+        applet_sub_icons_object = bus.get_object("org.cairodock.CairoDock", applet_path+"/sub_icons")
+        sub_icons = dbus.Interface(applet_sub_icons_object, "org.cairodock.CairoDock.subapplet")  # the list of icons contained in 
+
+        configuration = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/%s/%s.conf") % (applet_name, applet_name)
+
+        applet = Applet(icon, sub_icons, configuration)
+        applet.start()
+        
+        loop = gobject.MainLoop()
+        loop.run()
+        sys.exit(0)
+
+class Applet:
+
+    def __init__(self, icon, sub_icons, configuration):
+        self.icon = icon
+        self.sub_icons = sub_icons
+        self.configuration = configuration                                          # configuration file
+        self.query = ""
+        self.reset_search_settings()
+        self.number_of_displayed_links = 10
+        
+    def start(self):
+        log ("Applet started")
+        self.connect_to_callbacks()
+
+    def connect_to_callbacks(self):                                                 # when reiceves the signal named as 1st parameter ...
+        self.icon.connect_to_signal("on_click", self.action_on_click)               # ... chama a funcao callback que eh o segundo parametro
+        self.icon.connect_to_signal("on_answer", self.action_on_answer)
+        self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
+        self.sub_icons.connect_to_signal("on_click_sub_icon", self.action_on_click_sub_icon)
+        self.icon.connect_to_signal("on_scroll", self.action_on_scroll)
+
+    def action_on_click(self, param):
+        if self.query == "":                                                        # first query
+            self.ask_for_search_query()
+        else:                                                                       # already searched before
+            self.reset_search_settings()                                            # clean all the stuff
+            self.ask_for_search_query(self.query)                                   # open the search dialog with the query of the previous search
+
+    def ask_for_search_query(self, query=""):
+        self.icon.AskText("Search for", query)                                      # heya user, tell me what do you wanna and I will translate
+
+    def action_on_reload(self, config_has_changed):
+	    if config_has_changed:
+		    self.read_configuration_parameters()
+
+    def action_on_answer(self, answer):
+        if not answer == self.query:
+            self.query = answer
+            self.fetch_next_resulting_page()
+
+    def action_on_scroll(self, scroll_up):
+        if scroll_up:
+           self.fetch_next_resulting_page()
+        else:
+           self.fetch_previous_resulting_page()
+
+    def action_on_click_sub_icon(self, param, sub_icon_id):
+        webbrowser.open(self.links[int(sub_icon_id)].url)
+
+    def inform_start_of_waiting_process(self):
+        self.icon.SetQuickInfo("...")
+
+    def inform_end_of_waiting_process(self):
+        self.icon.SetQuickInfo("")
+
+    def inform_current_page(self):
+       	self.icon.SetQuickInfo(str(self.page_of_displayed_links))
+
+    # Since the previous results are already stored in self.links, it is necessary just to 
+	# select its correct interval that starts with the first link of the previous page.
+	# An easier approach would be to query the engine again with page-1 but it would result
+	# more queries to the page, consequently it has some drawbacks such as increasing the 
+	# probability of forbidden mechanized access, more bandwith, etc.
+    def fetch_previous_resulting_page(self):
+        if self.page_of_displayed_links > 1:											# there is no previous page from the first one
+            self.page_of_displayed_links -= 1										    # one page back
+            inicio = (self.page_of_displayed_links-1) * self.number_of_displayed_links	# the first position of the link in the previous page
+            sub_icon_list = self.construct_sub_icon_list(inicio)
+            self.refresh_sub_icon_list (sub_icon_list)
+            self.inform_current_page()
+
+    def fetch_next_resulting_page(self):
+        self.inform_start_of_waiting_process()
+
+        offset = self.page_of_displayed_links * self.number_of_displayed_links      # the position of the first link in the self.links array
+        links = Interface(self.query, offset).fetch()
+        self.links.extend(links)                                                    # concatena um array em outro, nao usar append como em Ruby
+        self.page_of_displayed_links += 1                                           # sequential page identification, lets go to the next
+
+        sub_icon_list = self.construct_sub_icon_list(offset)
+        self.refresh_sub_icon_list(sub_icon_list)
+
+        self.inform_end_of_waiting_process()
+        self.inform_current_page()
+
+    def construct_sub_icon_list(self, inicio):
+        sub_icon_list = []
+        for link in self.links[inicio:(inicio + self.number_of_displayed_links)]:
+            sub_icon_list.append(link.description)                                  # title
+            sub_icon_list.append(os.path.abspath(".") + '/icon')                    # icon
+            sub_icon_list.append(str(link.identification))                          # id
+        return sub_icon_list
+
+    def refresh_sub_icon_list(self, sub_icon_list):
+        self.sub_icons.RemoveSubIcon("any")
+        self.sub_icons.AddSubIcons(sub_icon_list)
+
+    def reset_search_settings(self):
+        self.links =[]
+        self.page_of_displayed_links = 0									        # current pagination of displayed links
+        Link.identification = 0
+        self.sub_icons.RemoveSubIcon("any")
+
+if __name__ == '__main__':
+    Google().start()
