@@ -1,3 +1,4 @@
+0.0.6:(December/22/2010): Automatic fetch more quotes when all of them were already showed to the user, except for Quotationspage.com.
 0.0.5:(December/2/2010): Added Jokes2go.com.
 0.0.4:(November/23/2010): Added Danstonchat.com. Changed the icon, now the lamp was turned on :¬) Huge code modularization.
 0.0.3:(November/23/2010): It is possible now copy the quote to the clipboard. Added quotes from Qdb.us.

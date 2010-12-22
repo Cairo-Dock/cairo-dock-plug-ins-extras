@@ -148,15 +148,24 @@ class Applet:
         self.inform_start_of_waiting_process()                                      # ...
         interface = Interface(self.source)
         quote, author = interface.fetch()
-        self.quotes = itertools.cycle(quote)
-        self.authors = itertools.cycle(author)
+        if (self.source == quotationspage):                                         # quotationspage nao da quotes diferentes por acesso ...
+            self.quotes = itertools.cycle(quote)
+            self.authors = itertools.cycle(author)
+        else:                                                                       # ... os outros dao quotes diferentes por acesso entao
+            self.quotes = iter(quote)                                               # nao precisa usar iterador circular, pois depois de mostrar
+            self.authors = iter(author)                                             # todas, busca-se novas quotes com mais uma chamada deste metodo
         self.inform_end_of_waiting_process()                                        # done
 
     def show_quote(self):
         if (self.source == quotationspage):
             self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # N-esima quote refere-se ao N-esimo autor."quote[x]~author[x]"
         elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
-            self.quotation = "%s" % self.quotes.next()
+            try:                                                                    # ve a possibilidade de mostrar quotes ja armazenadas
+                current = self.quotes.next()
+            except StopIteration:                                                   # todas ja foram mostradas
+                self.get_quotes_from_web()                                          # buscar mais
+                current = self.quotes.next()                                        # posicionar na primeira para mostra-la
+            self.quotation = "%s" % current
         else:                                                                       # jokestogo provides only one quote per request ...
             self.quotation = "%s" % self.quotes.next().rstrip()                                 
             self.get_quotes_from_web()                                              # ... so it is necessary to request it again    
