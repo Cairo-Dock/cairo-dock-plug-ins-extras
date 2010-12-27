@@ -1,0 +1,154 @@
+#!/usr/bin/python
+
+# This is a part of the external demo applet for Cairo-Dock
+# Copyright : (C) 2010 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+####################
+### dependancies ###
+####################
+# we need to do several hacks here, because the mintMenu class is soooo messy with the paths
+# (it changes the current path, and it has a horrible mix of hard-coded paths and run-time paths).
+import os
+my_applet_name = os.path.basename(os.path.abspath("."))
+import sys
+sys.argv[0] = "/usr/lib/linuxmint/mintMenu/mintMenu.py"
+import gtk
+import gnomeapplet
+import subprocess
+from CDApplet import CDApplet
+sys.path.append("/usr/lib/linuxmint/mintMenu")
+sys.path.append("/usr/lib/linuxmint/mintMenu/plugins")
+from mintMenu import MenuWin
+
+# this hack is here because MintMenu directly accesses the window of the gnome-applet, rather than using  the high-level applet interface only.
+##################
+### Gtk Window ###
+##################
+class FakeWindow(gtk.gdk.Window):
+	def __init__(self,cdapplet):
+		self.cdapplet = cdapplet
+		gtk.gdk.Window.__init__(self, parent=None, width=1, height=1, window_type=gtk.gdk.WINDOW_TYPE_HINT_DOCK, event_mask=0, wclass=gtk.gdk.INPUT_OUTPUT)
+	
+	def get_origin(self):
+		props = self.cdapplet.icon.GetAll()
+		x = props["x"]
+		y = props["y"]
+		w = props["width"]
+		h = props["height"]
+		orientation = props["orientation"]
+		icon_x = 0
+		icon_y = 0
+		if orientation == 0:  # bottom
+			icon_x = x - w/2
+			icon_y = y - h/2
+		elif orientation == 1:  # top
+			icon_x = x - w/2
+			icon_y = y + h/2
+		else:  # vertical
+			if (y < gtk.gdk.screen_height() / 2):
+				icon_y = y - h/2
+			else:
+				icon_y = y + h/2
+			if orientation == 2:  # right
+				icon_x = x - w/2 - 48
+			elif orientation == 3:  # left
+				icon_x = x + w/2
+		return (icon_x, icon_y)
+	
+# here we define a custom version of gnome-applet so that we can pretend to be one, since MintMenu is so much gnome-centric...
+####################
+### Gnome Applet ###
+####################
+class GApplet(gnomeapplet.Applet):
+	def __init__(self):
+		gnomeapplet.Applet.__init__(self)
+		self.cdapplet = Applet(self)
+		self.window = FakeWindow(self.cdapplet)
+		self.cdapplet.run()
+	
+	# here is the only useful method
+	def get_allocation(self):
+		w = self.cdapplet.icon.Get("width")
+		h = self.cdapplet.icon.Get("height")
+		return gtk.gdk.Rectangle(0, 0, w, h)
+	
+	# now skip the crap which only concerns a gnome-applet.
+	def set_size_request(self, width, height):
+		pass
+	
+	def add(self, widget):
+		pass
+	
+	def set_applet_flags(self, flags):
+		pass
+	
+	# yet another hack: MintMenu thinks it's clever to set the state of the widget itself, rather than letting Gtk do it on the Menu's window. however it seemes that 'state' is read-only, so let's just skip this horror.
+	def set_state(self, state): 
+		pass
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self,gapplet):
+		self.mintmenu = None
+		self.gapplet = gapplet
+		sys.stdout.flush()
+		CDApplet.__init__(self,my_applet_name)
+		
+	##### private methods #####
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+	
+	def begin(self):
+		# build the menu in the background, since it's soooo long to start.
+		self.mintmenu = MenuWin(self.gapplet,None)
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	def end(self):
+		# destroy the main window to quit, although it's probably not that useful.
+		self.mintmenu.mainwin.window.destroy()
+		self.mintmenu.mainwin = None
+	
+	def reload(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		# emitting a "button-press-event" doesn't seem to work, so let's just cut through and use the showMenu() method.
+		self.mintmenu.toggleMenu()  # showMenu
+		
+	def on_build_menu(self):
+		items = [ { "label": "Edit Menus",
+				"icon" : "gtk-preferences",
+				"id"   : 1 } ]
+		self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if iNumEntry == 1:
+			self.mintmenu.showMenuEditor(None,None)  # basically, subprocess.Popen("alacarte")
+	
+	def on_shortkey(self,key):
+		sself.mintmenu.toggleMenu()
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	GApplet()

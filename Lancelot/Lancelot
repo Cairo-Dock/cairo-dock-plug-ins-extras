@@ -1,0 +1,133 @@
+#!/usr/bin/python
+
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2010 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+####################
+### dependancies ###
+####################
+import sys
+import gtk
+import subprocess
+sys.path.append("/usr/share/pyshared")
+from CDApplet import *
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		self.bus_name    = 'org.kde.lancelot'
+		self.object_path = '/MainApplication'
+		self.iface_name  = 'org.kde.lancelot.App'
+		self.bus         = None
+		self.lancelot    = None
+		self.id = 0
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+	
+	def on_name_owner_changed(self,connection_name):
+		print "on_name_owner_changed:"+connection_name
+		if len(connection_name) == 0:
+			self.lancelot = None
+			self.id = 0
+		else:
+			bus_object = self.bus.get_object(connection_name, self.object_path)
+			self.lancelot = dbus.Interface(bus_object, self.iface_name)
+			self.id = self.lancelot.addClient()
+	
+	def show_menu(self):
+		props = self.icon.GetAll()
+		x = props["x"]
+		y = props["y"]
+		w = props["width"]
+		h = props["height"]
+		orientation = props["orientation"]
+		wby = 10  # Lancelot window border
+		wbx = 60
+		icon_x = 0
+		icon_y = 0
+		if orientation == 0:  # bottom
+			icon_x = x - w/2
+			icon_y = y - h/2
+		elif orientation == 1:  # top
+			icon_x = x - w/2
+			icon_y = y + h/2
+		else:  # vertical
+			if (y < gtk.gdk.screen_height() / 2):
+				icon_y = y - h/2 - wby
+			else:
+				icon_y = y + h/2 + wby
+			if orientation == 2:  # right
+				icon_x = x - w/2 - wbx
+			elif orientation == 3:  # left
+				icon_x = x + w/2 + wbx
+		self.lancelot.show(icon_x,icon_y)
+	
+	def hide_menu(self):
+		self.lancelot.hide()  # what does the "immediate" parameter stand for ?
+	
+	def toggle_menu(self):
+		if self.lancelot is None:
+			return
+		# the method isShowing doesn't work ! it is overloaded by a isShowing(section), which is useless. so we just show the Menu whenever.
+		self.show_menu ()
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+	
+	def end(self):
+		if self.lancelot is not None:
+			self.lancelot.removeClient(self.id)
+	
+	def begin(self):
+		self.bus = dbus.SessionBus()
+		self.bus.watch_name_owner(self.bus_name, self.on_name_owner_changed)
+		subprocess.Popen("lancelot")  ### check if it is created invisible or not...
+		
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	def reload(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		self.toggle_menu()
+	
+	def on_build_menu(self):
+		items = [ { "label": "Edit Menus",
+				"icon" : "gtk-preferences",
+				"id"   : 1 } ]
+		self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if self.lancelot is None:
+			return
+		if iNumEntry == 1:
+			self.lancelot.showMenuEditor()
+	
+	def on_shortkey(self,key):
+		self.toggle_menu()
+	
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()

@@ -1,0 +1,108 @@
+#!/usr/bin/python
+
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2010 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+####################
+### dependancies ###
+####################
+import sys
+sys.path.append("/usr/share/pyshared")
+import gtk
+from CDApplet import *
+sys.path.append("/usr/lib/cardapio")
+from cardapio import *
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		self.cardapiomenu = None
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+	
+	def show_menu(self):
+		props = self.icon.GetAll()
+		x = props["x"]
+		y = props["y"]
+		w = props["width"]
+		h = props["height"]
+		orientation = props["orientation"]
+		right = False
+		bottom = False
+		icon_x = 0
+		icon_y = 0
+		if orientation == 0:
+			icon_x = x - w/2
+			icon_y = y - h/2
+			bottom = True
+		elif orientation == 1:
+			icon_x = x - w/2
+			icon_y = y + h/2
+		else:
+			if (y < gtk.gdk.screen_height() / 2):
+				icon_y = y - h/2
+			else:
+				icon_y = y + h/2
+			if orientation == 2:
+				icon_x = x - w/2
+				right = True
+			elif orientation == 3:
+				icon_x = x + w/2
+		self.cardapiomenu.show_hide_near_point(x=icon_x, y=icon_y, force_anchor_right=right, force_anchor_bottom=bottom)  # we could use the Dbus method, but since we already need the menu instance to unset the window decorations (silly), why bother ?
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+	
+	def end(self):
+		self.cardapiomenu.save_and_quit()
+	
+	def begin(self):
+		self.cardapiomenu = Cardapio(show = Cardapio.DONT_SHOW)  # launch in the background
+		self.cardapiomenu.window.set_decorated(False)
+		
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	def reload(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		self.show_menu()
+	
+	def on_build_menu(self):
+		items = [ { "label": "Edit Menus",
+				"icon" : "gtk-preferences",
+				"id"   : 1 } ]
+		self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if iNumEntry == 1:
+			subprocess.Popen("alacarte")
+	
+	def on_shortkey(self,key):
+		self.show_menu()
+	
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()
