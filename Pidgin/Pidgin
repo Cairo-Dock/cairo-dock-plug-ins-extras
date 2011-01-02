@@ -385,8 +385,13 @@ class Applet(CDApplet):
 			self.icon.ShowDialog("No current conversation defined.\nPlease select a conversation with right-click.", 5)
 			return
 		conv_name = self.purple.PurpleConversationGetName(self.iCurrentConv)
-		self.iAskingSomething = 1
-		self.icon.AskText("Send a message to "+conv_name, "")
+		dialog_attributes = {
+			"icon" : "gtk-italic",
+			"message" : "Send a message to "+conv_name,
+			"buttons" : "ok;cancel"}
+		widget_attributes = {
+			"widget-type" : "text-entry"}
+		self.icon.PopupDialog (dialog_attributes, widget_attributes)
 		self.iAskingSomething = 1
 	
 	def on_build_menu(self):
@@ -442,7 +447,13 @@ class Applet(CDApplet):
 		if iNumEntry > 200:
 			iNumEntry -= 200
 			if iNumEntry == 99:
-				self.icon.AskText("Enter your new status message :", "")
+				dialog_attributes = {
+					"icon" : "gtk-info",
+					"message" : "Enter your new status message:",
+					"buttons" : "ok;cancel"}
+				widget_attributes = {
+					"widget-type" : "text-entry"}
+				self.icon.PopupDialog (dialog_attributes, widget_attributes)
 				self.iAskingSomething = 2
 			else:
 				current_status = self.purple.PurpleSavedstatusGetType(self.purple.PurpleSavedstatusGetCurrent())
@@ -474,23 +485,23 @@ class Applet(CDApplet):
 			if self.iCurrentMsg >= 0:
 				self.icon.ShowDialog(self.pMsgList[self.iCurrentMsg], 10)
 		
-	def on_answer(self,answer):
-		# print ">>> answer :",answer
-		if self.iAskingSomething == 1 :
-			if self.iCurrentConv == 0:
-				return
-			type = self.purple.PurpleConversationGetType(self.iCurrentConv)
-			if not type or type == 0:
-				return
-			if type == 1:  # PURPLE_CONV_TYPE_IM
-				im = self.purple.PurpleConvIm(self.iCurrentConv)
-				self.purple.PurpleConvImSend(im,answer)
-			else:  # PURPLE_CONV_TYPE_CHAT
-				chat = self.purple.PurpleConvChat(self.iCurrentConv)
-				self.purple.PurpleConvChatSend(chat,answer)
-		elif self.iAskingSomething == 2 :
-			self.iAskingSomething = 0
-			self.set_status_message (answer)
+	def on_answer_dialog(self,button,answer):
+		if button == 0 or button == -1:  # ok or Enter
+			if self.iAskingSomething == 1 :
+				if self.iCurrentConv == 0:
+					return
+				type = self.purple.PurpleConversationGetType(self.iCurrentConv)
+				if not type or type == 0:
+					return
+				if type == 1:  # PURPLE_CONV_TYPE_IM
+					im = self.purple.PurpleConvIm(self.iCurrentConv)
+					self.purple.PurpleConvImSend(im,answer)
+				else:  # PURPLE_CONV_TYPE_CHAT
+					chat = self.purple.PurpleConvChat(self.iCurrentConv)
+					self.purple.PurpleConvChatSend(chat,answer)
+			elif self.iAskingSomething == 2 :
+				self.iAskingSomething = 0
+				self.set_status_message (answer)
 	
 	#def on_click_sub_icon(iState, cIconID):
 		## print ">>> clic on the buddy "+self.purple.PurpleBuddyGetName(cIconID)
