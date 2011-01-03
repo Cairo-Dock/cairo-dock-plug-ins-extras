@@ -5,7 +5,6 @@
 # Copyright : (C) 2010 by Fabounet
 # E-mail : fabounet@users.berlios.de
 #
-#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
 # as published by the Free Software Foundation; either version 2
@@ -129,6 +128,8 @@ class Applet(CDApplet):
 	def on_server_event(self, words, words_eol, hook_id, ctx_id):
 		if self.HookServerId != hook_id:
 			return
+		if self.bSilentMode:
+			return
 		msg = words_eol[1]
 		print ">>> EVENT :" + msg
 		if self.config['channel message']:
@@ -141,17 +142,16 @@ class Applet(CDApplet):
 			return
 		if len(words) < 2:
 			return
-		if self.bSilentMode:
-			return
 		msg = words[1]
 		print ">>> PRINT :" + msg
 		if not self.bHasFocus:  # si l'utilisateur n'est pas devant xchat, on le notifie du message.
-			if self.config['channel message']:
-				if self.iCurrentMsg != -1:
-					msg = self.pMsgList[self.iCurrentMsg]+"\n------------------------------------------\n"+msg
-				self.icon.ShowDialog(msg,max(2,len(msg)/self.config['duration']))
-			if self.config['msg animation'] != '':
-				self.icon.Animate(self.config['msg animation'],10000)
+			if not self.bSilentMode:
+				if self.config['channel message']:
+					if self.iCurrentMsg != -1:
+						msg = self.pMsgList[self.iCurrentMsg]+"\n------------------------------------------\n"+msg
+					self.icon.ShowDialog(msg,max(2,len(msg)/self.config['duration']))
+				if self.config['msg animation'] != '':
+					self.icon.Animate(self.config['msg animation'],10000)
 			self.set_nb_unread_msg(self.iNbUnread+1)
 		
 		if self.config['history'] != 0:  # on insere le message dans l'historique.
