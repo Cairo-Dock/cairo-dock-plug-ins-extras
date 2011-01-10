@@ -1,0 +1,285 @@
+#!/usr/bin/python
+
+# This is a part of the external demo applet for Cairo-Dock
+# Copyright : (C) 2010 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+####################
+### dependancies ###
+####################
+try:
+	from twisted.internet import glib2reactor
+	glib2reactor.install()
+	# Import the client module
+	from deluge.ui.client import client
+	# Import the reactor module from Twisted - this is for our mainloop
+	from twisted.internet import reactor
+	# Set up the logger to print out errors
+	from deluge.log import setupLogger
+	import deluge.component
+	setupLogger()
+except ImportError, e:
+	print e
+	print "This applet is designed to be used with Deluge 1.2 or later, make sure it is installed."
+	exit()
+
+import subprocess
+from math import sqrt
+from gobject import timeout_add
+from CDApplet import CDApplet
+
+def format_bytes(x):
+	unit=''
+	if x < 1e3:
+		unit = 'B'
+		y = x
+	elif x < 1e6:
+		unit = 'K'
+		y = x / 1e3
+	elif x < 1e9:
+		unit = 'M'
+		y = x / 1e6
+	else:
+		unit = 'G'
+		y = x / 1e9
+	return y,unit
+	
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		# define internal variables
+		self.d = None
+		self.cClass = 'deluge'
+		self.bHasFocus = False
+		self.iSidGetData = 0
+		self.iSidTryConnect = 0
+		
+		self.server = '127.0.0.1'
+		self.port = 58846
+		self.username = ""
+		self.password = ""
+		self.bConnected = False
+		self.bExit = False
+		
+		# call high-level init
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+	
+	# Connection
+	
+	def try_connect(self):
+		#print "try connect..."
+		if self.bConnected:
+			self.iSidTryConnect = 0
+			return False
+		else:
+			self.connnect_to_daemon()
+			return True
+	
+	def connnect_to_daemon(self):
+		self.d = client.connect(self.config['server'], self.config['port'], self.config['user'], self.config['password'])
+		self.d.addCallback(self.on_connect_success)
+		self.d.addErrback(self.on_connect_fail)
+	
+	def on_connect_fail(self,reason):
+		#print "Connection failed!"
+		#print "reason:", reason
+		self.bConnected = False
+		self.icon.SetQuickInfo("")
+		
+		if self.iSidTryConnect == 0:
+			self.iSidTryConnect = timeout_add(2000,self.try_connect)
+	
+	def on_connect_success(self,result):
+		print "connected to Deluge!"
+		self.bConnected = True
+		if self.iSidGetData == 0:
+			self.iSidGetData = timeout_add (2000, self.update_data)
+	
+	def daemon_disconnect_callback(self):
+		print "Disconnected from deluge daemon"
+		self.bConnected = False
+		self.icon.SetQuickInfo("")
+		if not self.bExit:  # we didn't get disconnected because the applet was stopped -> try to reconnect
+			if self.iSidTryConnect == 0:
+				self.iSidTryConnect = timeout_add(2000,self.try_connect)
+	
+	# Global data
+	
+	def update_data(self):
+		if not self.bConnected:
+			self.iSidGetData = 0
+			return False
+		
+		client.core.get_session_status(["payload_download_rate"]).addCallback(self.on_got_data,'payload_download_rate')
+		
+		return True
+	
+	def on_got_data(self,value,key):
+		rate=value[key]
+		unit=''
+		#print "key "+key+" -> "+str(rate)
+		if rate < 100:
+			rate = 0
+		rate,unit = format_bytes(rate)
+		
+		form = ''
+		if rate == 0:
+			form = ".0f"
+		elif rate < 10:
+			form = ".2f"
+		elif rate < 100:
+			form = ".1f"
+		else:
+			form = ".0f"
+			
+		self.icon.SetQuickInfo(format(rate,form)+unit)
+		
+	# Torrents info
+	
+	def show_torrents_info(self):
+		client.core.get_torrents_status({},['name','paused','ratio','progress']).addCallback(self.on_got_torrents_status)
+	
+	def on_got_torrents_status(self,status):
+		s = ""
+		n = 0
+		for id, value in status.items():
+			print "======"+str(id)+"======="
+			print value
+			s += "<b>"+value['name']+"</b>:\n"
+			s += "  progress: "+format(value['progress'],".1f")+'%'
+			if value['paused']:
+				s += " <i>(paused)</i>"
+			s += '\n'
+			s += "  ratio:"+format(value['ratio'],".2f")+'\n'
+			n += 1
+		if n == 0:
+			s += "no torrent in the list\n"
+		
+		client.core.get_session_status(["total_payload_download","total_payload_upload"]).addCallback(self.on_got_total_amount,s)
+	
+	def on_got_total_amount(self,values,s):
+		s += "<b>total amount of data:</b>\n"
+		
+		dl = values["total_payload_download"]
+		if dl < 100:
+			form = ".0f"
+		else:
+			form = ".1f"
+		dl,unit = format_bytes(dl)
+		s += "received: "+format(dl,form)+unit+"\n"
+		
+		ul = values["total_payload_upload"]
+		if ul < 100:
+			form = ".0f"
+		else:
+			form = ".1f"
+		ul,unit = format_bytes(ul)
+		s += "sent: "+format(ul,form)+unit+"\n"
+		
+		dialog_attributes = {
+			"icon" : "deluge",
+			"message" : s,
+			"use-markup" : True,
+			"time-length" : 4+len(s)/40 }
+		widget_attributes = {}
+		self.icon.PopupDialog (dialog_attributes, widget_attributes)
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['server'] 		= keyfile.get('Configuration', 'server')
+		self.config['port'] 		= keyfile.getint('Configuration', 'port')
+		self.config['user'] 		= keyfile.get('Configuration', 'user')
+		self.config['password'] 	= keyfile.get('Configuration', 'password')
+		
+	def end(self):
+		print "*** end of Deluge applet"
+		self.bExit = True
+		client.disconnect()
+		reactor.stop()
+	
+	def begin(self):
+		self.icon.BindShortkey(["<Control>F9"])  # bind to ctrl+F9
+		
+		self.icon.ControlAppli(self.cClass)
+		
+		client.set_disconnect_callback(self.daemon_disconnect_callback)
+		
+		self.connnect_to_daemon()
+		
+		reactor.run()
+	
+	def reload(self):
+		print "*** reload"
+		
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		print "*** click"
+		if self.bConnected:
+			print "show window..."
+			if self.bHasFocus:  # la fenetre existe et a le focus.
+				self.icon.ShowAppli(False)  # on minimise la fenetre.
+			else:  # soit la fenetre n'existe pas, soit elle n'a pas le focus.
+				self.icon.ShowAppli(True)
+		else:
+			print "launch Deluge..."
+			subprocess.Popen(self.cClass)
+	
+	def on_middle_click(self):
+		self.show_torrents_info()
+	
+	def on_build_menu(self):
+		print "*** build menu"
+		### get the state of each torrent and store them to restore them later...
+		### if each of them is paused, allow to restart torrents...
+		items = [ {
+				"label": "pause all torrents",
+				"icon" : "gtk-media-pause",
+				"id"   : 1
+			}, {
+				"label": "resume all torrents",
+				"icon" : "gtk-media-play",
+				"id"   : 2
+			} ]
+		self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		print "*** choice",iNumEntry,"has been selected !"
+		if iNumEntry == 1:
+			print "pause all torrents"
+			client.core.pause_all_torrents()
+		elif iNumEntry == 2:
+			client.core.resume_all_torrents()
+		
+	def on_drop_data(self,cReceivedData):
+		print "*** received: "+cReceivedData
+		client.core.add_torrent_url(str(cReceivedData),None)
+	
+	def on_shortkey(self,key):
+		print "*** display torrents info"
+		self.show_torrents_info()
+		
+	def on_change_focus(self,has_focus):
+		self.bHasFocus = has_focus
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()
