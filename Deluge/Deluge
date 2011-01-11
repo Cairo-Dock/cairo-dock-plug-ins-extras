@@ -19,6 +19,7 @@
 ### dependancies ###
 ####################
 try:
+	# Merge GLib's main loop with Twister's one
 	from twisted.internet import glib2reactor
 	glib2reactor.install()
 	# Import the client module
@@ -33,7 +34,6 @@ except ImportError, e:
 	print e
 	print "This applet is designed to be used with Deluge 1.2 or later, make sure it is installed."
 	exit()
-
 import subprocess
 from math import sqrt
 from gobject import timeout_add
@@ -67,10 +67,6 @@ class Applet(CDApplet):
 		self.iSidGetData = 0
 		self.iSidTryConnect = 0
 		
-		self.server = '127.0.0.1'
-		self.port = 58846
-		self.username = ""
-		self.password = ""
 		self.bConnected = False
 		self.bExit = False
 		
@@ -82,7 +78,6 @@ class Applet(CDApplet):
 	# Connection
 	
 	def try_connect(self):
-		#print "try connect..."
 		if self.bConnected:
 			self.iSidTryConnect = 0
 			return False
@@ -105,13 +100,13 @@ class Applet(CDApplet):
 			self.iSidTryConnect = timeout_add(2000,self.try_connect)
 	
 	def on_connect_success(self,result):
-		print "connected to Deluge!"
+		print "*** connected to Deluge!"
 		self.bConnected = True
 		if self.iSidGetData == 0:
 			self.iSidGetData = timeout_add (2000, self.update_data)
 	
 	def daemon_disconnect_callback(self):
-		print "Disconnected from deluge daemon"
+		print "*** Disconnected from deluge daemon"
 		self.bConnected = False
 		self.icon.SetQuickInfo("")
 		if not self.bExit:  # we didn't get disconnected because the applet was stopped -> try to reconnect
@@ -132,7 +127,6 @@ class Applet(CDApplet):
 	def on_got_data(self,value,key):
 		rate=value[key]
 		unit=''
-		#print "key "+key+" -> "+str(rate)
 		if rate < 100:
 			rate = 0
 		rate,unit = format_bytes(rate)
@@ -152,28 +146,54 @@ class Applet(CDApplet):
 	# Torrents info
 	
 	def show_torrents_info(self):
-		client.core.get_torrents_status({},['name','paused','ratio','progress']).addCallback(self.on_got_torrents_status)
+		if self.bConnected:
+			client.core.get_torrents_status({},['name','progress','eta','paused','ratio','num_peers','num_seeds']).addCallback(self.on_got_torrents_status)
+		else:
+			self.icon.ShowDialog("Deluge is not running, or is not responding to us.", 4)
 	
 	def on_got_torrents_status(self,status):
-		s = ""
+		info = ""
 		n = 0
 		for id, value in status.items():
-			print "======"+str(id)+"======="
-			print value
-			s += "<b>"+value['name']+"</b>:\n"
-			s += "  progress: "+format(value['progress'],".1f")+'%'
+			info += "<b>"+value['name']+"</b>:\n"
+			info += "  progress: "+format(value['progress'],".1f")+'%'
 			if value['paused']:
-				s += " <i>(paused)</i>"
-			s += '\n'
-			s += "  ratio:"+format(value['ratio'],".2f")+'\n'
+				info += " <i>(paused)</i>\n"
+			else:  # active torrent
+				t = value['eta']
+				if t > 0:
+					info += " <i>(time remaining: "
+					d=h=m=s=0
+					if t > 86400:
+						d = int(t) / 86400
+						h = int(t - d*86400) / 3600
+						if d > 0:
+							info += str(d)+"days"
+						if d > 0 or h > 0:
+							info += str(h)+"h"
+					else:
+						h = int(t) / 3600
+						m = int(t - h*3600) / 60
+						s = int(t - h*3600 - m*60)
+						if h > 0:
+							info += str(h)+"h"
+						if h > 0 or m > 0:
+							info += str(m)+"mn"
+						info += str(s)+"s)"
+					info += "</i>\n"
+				else:
+					info += " <i>(finished)</i>\n"
+				info += "  nb peers: "+str(value['num_peers'])+", nb seeds: "+str(value['num_seeds'])+"\n"
+			
+			info += "  ratio: "+format(value['ratio'],".2f")+'\n'
 			n += 1
 		if n == 0:
-			s += "no torrent in the list\n"
+			info += "<i>no torrent in the list</i>\n"
 		
-		client.core.get_session_status(["total_payload_download","total_payload_upload"]).addCallback(self.on_got_total_amount,s)
+		client.core.get_session_status(["total_payload_download","total_payload_upload"]).addCallback(self.on_got_total_amount,info)
 	
-	def on_got_total_amount(self,values,s):
-		s += "<b>total amount of data:</b>\n"
+	def on_got_total_amount(self,values,info):
+		info += "\n<b>total amount of data:</b>\n"
 		
 		dl = values["total_payload_download"]
 		if dl < 100:
@@ -181,7 +201,7 @@ class Applet(CDApplet):
 		else:
 			form = ".1f"
 		dl,unit = format_bytes(dl)
-		s += "received: "+format(dl,form)+unit+"\n"
+		info += "  received: "+format(dl,form)+unit+"\n"
 		
 		ul = values["total_payload_upload"]
 		if ul < 100:
@@ -189,13 +209,13 @@ class Applet(CDApplet):
 		else:
 			form = ".1f"
 		ul,unit = format_bytes(ul)
-		s += "sent: "+format(ul,form)+unit+"\n"
+		info += "  sent: "+format(ul,form)+unit
 		
 		dialog_attributes = {
 			"icon" : "deluge",
-			"message" : s,
+			"message" : info,
 			"use-markup" : True,
-			"time-length" : 4+len(s)/40 }
+			"time-length" : 4+len(info)/40 }
 		widget_attributes = {}
 		self.icon.PopupDialog (dialog_attributes, widget_attributes)
 	
@@ -206,6 +226,7 @@ class Applet(CDApplet):
 		self.config['port'] 		= keyfile.getint('Configuration', 'port')
 		self.config['user'] 		= keyfile.get('Configuration', 'user')
 		self.config['password'] 	= keyfile.get('Configuration', 'password')
+		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
 		
 	def end(self):
 		print "*** end of Deluge applet"
@@ -214,23 +235,19 @@ class Applet(CDApplet):
 		reactor.stop()
 	
 	def begin(self):
-		self.icon.BindShortkey(["<Control>F9"])  # bind to ctrl+F9
-		
+		self.icon.BindShortkey([self.config['shortkey']])
 		self.icon.ControlAppli(self.cClass)
 		
 		client.set_disconnect_callback(self.daemon_disconnect_callback)
-		
 		self.connnect_to_daemon()
-		
 		reactor.run()
 	
 	def reload(self):
-		print "*** reload"
+		self.icon.BindShortkey([self.config['shortkey']])
 		
 	##### callbacks #####
 	
 	def on_click(self,iState):
-		print "*** click"
 		if self.bConnected:
 			print "show window..."
 			if self.bHasFocus:  # la fenetre existe et a le focus.
@@ -245,34 +262,38 @@ class Applet(CDApplet):
 		self.show_torrents_info()
 	
 	def on_build_menu(self):
-		print "*** build menu"
-		### get the state of each torrent and store them to restore them later...
-		### if each of them is paused, allow to restart torrents...
-		items = [ {
-				"label": "pause all torrents",
-				"icon" : "gtk-media-pause",
-				"id"   : 1
-			}, {
-				"label": "resume all torrents",
-				"icon" : "gtk-media-play",
-				"id"   : 2
-			} ]
-		self.icon.AddMenuItems(items)
+		if self.bConnected:
+			items = [ {
+					"label": "pause all torrents",
+					"icon" : "gtk-media-pause",
+					"menu" : 0,
+					"id"   : 1
+				}, {
+					"label": "resume all torrents",
+					"icon" : "gtk-media-play",
+					"menu" : 0,
+					"id"   : 2
+				}, {
+					"label": "Torrents info (middle-click)",
+					"icon" : "gtk-info",
+					"menu" : 0,
+					"id"   : 3
+				} ]
+			self.icon.AddMenuItems(items)
 		
 	def on_menu_select(self,iNumEntry):
-		print "*** choice",iNumEntry,"has been selected !"
 		if iNumEntry == 1:
-			print "pause all torrents"
 			client.core.pause_all_torrents()
 		elif iNumEntry == 2:
 			client.core.resume_all_torrents()
+		elif iNumEntry == 3:
+			self.show_torrents_info()
 		
 	def on_drop_data(self,cReceivedData):
 		print "*** received: "+cReceivedData
 		client.core.add_torrent_url(str(cReceivedData),None)
 	
 	def on_shortkey(self,key):
-		print "*** display torrents info"
 		self.show_torrents_info()
 		
 	def on_change_focus(self,has_focus):
