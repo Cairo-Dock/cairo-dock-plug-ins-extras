@@ -1,0 +1,377 @@
+#!/usr/bin/python
+
+# This is a part of the external demo applet for Cairo-Dock
+# Copyright : (C) 2010 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+#
+# The RTC part is adapted from 'transmissionrpc' (Erik Svensson <erik.public@gmail.com>)
+
+####################
+### dependancies ###
+####################
+import httplib, urllib2
+try:
+    import json
+except ImportError:
+    import simplejson as json
+import subprocess
+from gobject import timeout_add
+from CDApplet import CDApplet
+
+TR_STATUS_CHECK_WAIT   = (1<<0)
+TR_STATUS_CHECK        = (1<<1)
+TR_STATUS_DOWNLOAD     = (1<<2)
+TR_STATUS_SEED         = (1<<3)
+TR_STATUS_STOPPED      = (1<<4)
+
+def format_bytes(x):
+	unit=''
+	if x < 1e3:
+		unit = 'B'
+		y = x
+	elif x < 1e6:
+		unit = 'K'
+		y = x / 1e3
+	elif x < 1e9:
+		unit = 'M'
+		y = x / 1e6
+	else:
+		unit = 'G'
+		y = x / 1e9
+	return y,unit
+
+html_escape_table = {
+	"&": "&amp;",
+	'"': "&quot;",
+	"'": "&apos;",
+	">": "&gt;",
+	"<": "&lt;",
+	}
+
+def html_escape(text):
+	"""Produce entities within text."""
+	return "".join(html_escape_table.get(c,c) for c in text)
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		# define internal variables
+		self.cClass = 'transmission'
+		self.bHasFocus = False
+		self.iSidGetData = 0
+		self.iSidTryConnect = 0
+		self.iSessionID = 0
+		self.url = ''
+		
+		# call high-level init
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+		
+	# Try to make a connection with no arguments, so we get the 409 error code.
+	# The headers will contain our session ID.
+	def get_session_id(self):
+		query = json.dumps({'method': 'session-get', 'arguments': {}})
+		request = urllib2.Request(self.url, query, {})
+		try:
+			response = urllib2.urlopen(request, timeout=20)
+		except urllib2.HTTPError, error:
+			#~ aerror_data = error.read()
+			if error.code == 409:
+				self.iSessionID = error.headers['X-Transmission-Session-Id']
+				print "*** iSessionID:",self.iSessionID
+		except :
+			return
+		
+	def update_data(self):
+		# if connection closed, start trying
+		if self.iSessionID == 0: # if connection closed
+			if self.iSidTryConnect == 0: # start trying to connect.
+				self.iSidTryConnect = timeout_add(2000,self.try_connect)
+			self.iSidGetData = 0  # and stop listening for sessions's data
+			self.icon.SetQuickInfo('')
+			return False
+		
+		# get sessions's data
+		data = self._request ("session-stats", {} )  # Request arguments: none
+		
+		# if no result, start trying to reconnect.
+		if data == None or data['result'] != 'success':  # no data from transmission
+			print "no data from Transmission, it may have shut down."
+			if self.iSidTryConnect == 0: # start trying to connect.
+				self.iSidTryConnect = timeout_add(2000,self.try_connect)
+			self.iSidGetData = 0  # and stop listening for sessions's data
+			self.icon.SetQuickInfo('')
+			return False
+		
+		# display the new data
+		rate = data['arguments']['downloadSpeed']
+		unit=''
+		if rate < 100:
+			rate = 0
+		rate,unit = format_bytes(rate)
+		
+		form = ''
+		if rate == 0:
+			form = ".0f"
+		elif rate < 10:
+			form = ".2f"
+		elif rate < 100:
+			form = ".1f"
+		else:
+			form = ".0f"
+			
+		self.icon.SetQuickInfo(format(rate,form)+unit)
+		return True
+		
+	def try_connect(self):
+		# try to grab the session
+		if self.iSessionID == 0:
+			self.get_session_id()
+		
+		# start listening for session's data or keep trying to connect.
+		if self.iSessionID != 0:  # if session is ok
+			if self.iSidGetData == 0:  # start listening for session's data
+				self.iSidGetData = timeout_add(2000,self.update_data)
+			self.iSidTryConnect = 0  # and stop connecting
+			return False
+		else:  # else, keep trying to connect
+			return True
+	
+	def _http_query(self, query):
+		headers = {'x-transmission-session-id': self.iSessionID}
+		try:
+			request = urllib2.Request(self.url, query, headers)
+			response = urllib2.urlopen(request, timeout=20)
+			return response.read()
+		except:
+			print "query error:"
+			return None
+	
+	def _request(self, method, arguments={}):
+		query = json.dumps({'method': method, 'arguments': arguments})
+		http_data = self._http_query(query)
+		try:
+			return json.loads(http_data)
+		except :
+			#~ print('Error: ' + str(e))
+			self.iSessionID = 0
+			if self.iSidTryConnect == 0:
+				self.iSidTryConnect = timeout_add(2000,self.try_connect)
+			return None
+	
+	def show_torrents_info(self):
+		if self.iSessionID == 0:
+			self.icon.ShowDialog("Transmission is not running, or is not responding to us.", 4)
+			return
+		
+		# get torrents data
+		data = self._request ("torrent-get", { "fields": [
+			"name", "percentDone", "eta", "status", "uploadRatio", "peersConnected", "peersSendingToUs", "webseedsSendingToUs" ] } )
+		if data == None or data['result'] != 'success':
+			self.icon.ShowDialog("Couldn't get data from Transmission. You need Transmission 1.9 or above.", 4)
+			return
+		info = ""
+		n = 0
+		for value in data['arguments']['torrents']:
+			info += "<b>"+html_escape(value['name'])+"</b>:\n"
+			info += "  progress: "+format(value['percentDone']*100,".1f")+'%'
+			state = value['status']
+			if state == TR_STATUS_STOPPED:
+				info += " <i>(paused)</i>\n"
+			elif state == TR_STATUS_CHECK:
+				info += " <i>(checking)</i>\n"
+			elif state == TR_STATUS_CHECK_WAIT:
+				info += " <i>(waiting for check)</i>\n"
+			elif state == TR_STATUS_SEED:
+				info += " <i>(seeding)</i>\n"
+			elif state == TR_STATUS_DOWNLOAD:  # active torrent
+				t = value['eta']
+				if t > 0:
+					info += " <i>(time remaining: "
+					d=h=m=s=0
+					if t > 86400:
+						d = int(t) / 86400
+						h = int(t - d*86400) / 3600
+						if d > 0:
+							info += str(d)+"days"
+						if d > 0 or h > 0:
+							info += str(h)+"h"
+					else:
+						h = int(t) / 3600
+						m = int(t - h*3600) / 60
+						s = int(t - h*3600 - m*60)
+						if h > 0:
+							info += str(h)+"h"
+						if h > 0 or m > 0:
+							info += str(m)+"mn"
+						info += str(s)+"s"
+					info += ")</i>\n"
+				elif t < 0:
+					info += " <i>(time remaining: unknown)</i>\n"
+				else:
+					info += " <i>(finished)</i>\n"
+			else:
+				info += "\n"
+			
+			info += "  nb peers: "+str(value['peersSendingToUs'])+", nb seeds: "+str(value['webseedsSendingToUs'])+"\n"
+			ratio = value['uploadRatio']
+			if ratio >= 0:
+				info += "  ratio: "+format(ratio,".2f")+'\n'
+			n += 1
+		
+		if n == 0:
+			info += "<i>no torrent in the list</i>\n"
+		
+		# get session data
+		data = self._request ("session-stats", {} )  # Request arguments: none
+		if data != None and data['result'] == 'success':
+			info += "\n<b>total amount of data:</b>\n"
+			stats = data['arguments']['current-stats']
+			
+			dl = stats['downloadedBytes'] * 100
+			if dl < 100:
+				form = ".0f"
+			else:
+				form = ".1f"
+			dl,unit = format_bytes(dl)
+			info += " - received: "+format(dl,form)+unit+"\n"
+			
+			ul = stats['uploadedBytes']
+			if ul < 100:
+				form = ".0f"
+			else:
+				form = ".1f"
+			ul,unit = format_bytes(ul)
+			info += " - sent: "+format(ul,form)+unit
+		
+		# pop up dialog
+		dialog_attributes = {
+			"icon" : "transmission",
+			"message" : info,
+			"use-markup" : True,
+			"time-length" : 4+len(info)/40 }
+		widget_attributes = {}
+		self.icon.PopupDialog (dialog_attributes, widget_attributes)
+		
+	def pause_all_torrents(self):
+		self._request('torrent-stop', {})  # 'All torrents are used if the "ids" argument is omitted.'
+	
+	def resume_all_torrents(self):
+		self._request('torrent-start', {})  # same as above
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['server'] 		= keyfile.get('Configuration', 'server')
+		self.config['port'] 		= keyfile.getint('Configuration', 'port')
+		self.config['user'] 		= keyfile.get('Configuration', 'user')
+		self.config['password'] 	= keyfile.get('Configuration', 'password')
+		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+		
+		if self.config['server'] == '':
+			self.config['server'] = '127.0.0.1'
+		if self.config['port'] == 0:
+			self.config['port'] = 9091
+	
+	def end(self):
+		print "*** end of transmission applet"
+	
+	def begin(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+		self.icon.ControlAppli(self.cClass)
+		
+		# get the URL to contact transmission.
+		base_url = 'http://' + self.config['server'] + ':' + str(self.config['port'])
+		self.url = base_url + '/transmission/rpc'
+		
+		# set authentication
+		if self.config['user'] and self.config['password']:
+			print "using user "+self.config['user']+" and pass "+self.config['password']
+			password_manager = urllib2.HTTPPasswordMgrWithDefaultRealm()
+			password_manager.add_password(realm=None, uri=self.url, user=self.config['user'], passwd=self.config['password'])
+			opener = urllib2.build_opener(
+				urllib2.HTTPBasicAuthHandler(password_manager),
+				urllib2.HTTPDigestAuthHandler(password_manager) )
+			urllib2.install_opener(opener)
+		
+		# start the connection timer.
+		if self.iSidTryConnect == 0:
+			self.iSidTryConnect = timeout_add(2000,self.try_connect)
+	
+	def reload(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		print "*** click"
+		if self.iSessionID != 0:
+			print "show window..."
+			if self.bHasFocus:  # la fenetre existe et a le focus.
+				self.icon.ShowAppli(False)  # on minimise la fenetre.
+			else:  # soit la fenetre n'existe pas, soit elle n'a pas le focus.
+				self.icon.ShowAppli(True)
+		else:
+			print "launch Transmission..."
+			subprocess.Popen(self.cClass)
+	
+	def on_middle_click(self):
+		self.show_torrents_info()
+	
+	def on_build_menu(self):
+		if self.iSessionID != 0:
+			items = [ {
+					"label": "pause all torrents",
+					"icon" : "gtk-media-pause",
+					"menu" : 0,
+					"id"   : 1
+				}, {
+					"label": "resume all torrents",
+					"icon" : "gtk-media-play",
+					"menu" : 0,
+					"id"   : 2
+				}, {
+					"label": "Torrents info (middle-click)",
+					"icon" : "gtk-info",
+					"menu" : 0,
+					"id"   : 3
+				} ]
+			self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if iNumEntry == 1:
+			client.core.pause_all_torrents()
+		elif iNumEntry == 2:
+			client.core.resume_all_torrents()
+		elif iNumEntry == 3:
+			self.show_torrents_info()
+	
+	def on_drop_data(self,cReceivedData):
+		print "*** received",cReceivedData
+		self._request('torrent-add', {'filename':cReceivedData,})
+	
+	def on_shortkey(self,key):
+		self.show_torrents_info()
+		
+	def on_change_focus(self,has_focus):
+		self.bHasFocus = has_focus
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()

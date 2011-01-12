@@ -55,6 +55,18 @@ def format_bytes(x):
 		y = x / 1e9
 	return y,unit
 	
+html_escape_table = {
+	"&": "&amp;",
+	'"': "&quot;",
+	"'": "&apos;",
+	">": "&gt;",
+	"<": "&lt;",
+	}
+
+def html_escape(text):
+	"""Produce entities within text."""
+	return "".join(html_escape_table.get(c,c) for c in text)
+
 ####################
 ### Applet class ###
 ####################
@@ -78,6 +90,7 @@ class Applet(CDApplet):
 	# Connection
 	
 	def try_connect(self):
+		print "try_connect..."
 		if self.bConnected:
 			self.iSidTryConnect = 0
 			return False
@@ -91,8 +104,8 @@ class Applet(CDApplet):
 		self.d.addErrback(self.on_connect_fail)
 	
 	def on_connect_fail(self,reason):
-		#print "Connection failed!"
-		#print "reason:", reason
+		print "Connection failed!"
+		print "reason:", reason
 		self.bConnected = False
 		self.icon.SetQuickInfo("")
 		
@@ -155,7 +168,7 @@ class Applet(CDApplet):
 		info = ""
 		n = 0
 		for id, value in status.items():
-			info += "<b>"+value['name']+"</b>:\n"
+			info += "<b>"+html_escape(value['name'])+"</b>:\n"
 			info += "  progress: "+format(value['progress'],".1f")+'%'
 			if value['paused']:
 				info += " <i>(paused)</i>\n"
@@ -201,7 +214,7 @@ class Applet(CDApplet):
 		else:
 			form = ".1f"
 		dl,unit = format_bytes(dl)
-		info += "  received: "+format(dl,form)+unit+"\n"
+		info += " - received: "+format(dl,form)+unit+"\n"
 		
 		ul = values["total_payload_upload"]
 		if ul < 100:
@@ -209,7 +222,7 @@ class Applet(CDApplet):
 		else:
 			form = ".1f"
 		ul,unit = format_bytes(ul)
-		info += "  sent: "+format(ul,form)+unit
+		info += " - sent: "+format(ul,form)+unit
 		
 		dialog_attributes = {
 			"icon" : "deluge",
@@ -227,6 +240,10 @@ class Applet(CDApplet):
 		self.config['user'] 		= keyfile.get('Configuration', 'user')
 		self.config['password'] 	= keyfile.get('Configuration', 'password')
 		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+		if self.config['server'] == '':
+			self.config['server'] = '127.0.0.1'
+		if self.config['port'] == 0:
+			self.config['port'] = 58846
 		
 	def end(self):
 		print "*** end of Deluge applet"
@@ -250,12 +267,16 @@ class Applet(CDApplet):
 	def on_click(self,iState):
 		if self.bConnected:
 			print "show window..."
-			if self.bHasFocus:  # la fenetre existe et a le focus.
-				self.icon.ShowAppli(False)  # on minimise la fenetre.
-			else:  # soit la fenetre n'existe pas, soit elle n'a pas le focus.
-				self.icon.ShowAppli(True)
+			if self.icon.Get('Xid') != 0:  # the GUI is not necessarily running (systray or daemon only).
+				if self.bHasFocus:
+					self.icon.ShowAppli(False)  # minimise window
+				else:
+					self.icon.ShowAppli(True)  # present window
+			else:  # try opening the GUI.
+				subprocess.Popen(self.cClass)
 		else:
 			print "launch Deluge..."
+			subprocess.Popen('deluged')
 			subprocess.Popen(self.cClass)
 	
 	def on_middle_click(self):
