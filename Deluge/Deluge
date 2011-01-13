@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-# This is a part of the external demo applet for Cairo-Dock
-# Copyright : (C) 2010 by Fabounet
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2011 by Fabounet
 # E-mail : fabounet@glx-dock.org
 #
 # This program is free software; you can redistribute it and/or
@@ -41,18 +41,18 @@ from CDApplet import CDApplet
 
 def format_bytes(x):
 	unit=''
-	if x < 1e3:
+	if x < 1024:
 		unit = 'B'
 		y = x
-	elif x < 1e6:
+	elif x < 1048576:
 		unit = 'K'
-		y = x / 1e3
-	elif x < 1e9:
+		y = (x >> 10)
+	elif x < 1073741824:
 		unit = 'M'
-		y = x / 1e6
+		y = (x >> 20)
 	else:
 		unit = 'G'
-		y = x / 1e9
+		y = (x >> 30)
 	return y,unit
 	
 html_escape_table = {
@@ -247,7 +247,7 @@ class Applet(CDApplet):
 		
 	def end(self):
 		print "*** end of Deluge applet"
-		self.bExit = True
+		self.bExit = True  # to not try to reconnect when we get the 'disconnected' signal
 		client.disconnect()
 		reactor.stop()
 	
@@ -265,18 +265,16 @@ class Applet(CDApplet):
 	##### callbacks #####
 	
 	def on_click(self,iState):
-		if self.bConnected:
-			print "show window..."
-			if self.icon.Get('Xid') != 0:  # the GUI is not necessarily running (systray or daemon only).
-				if self.bHasFocus:
-					self.icon.ShowAppli(False)  # minimise window
-				else:
-					self.icon.ShowAppli(True)  # present window
-			else:  # try opening the GUI.
-				subprocess.Popen(self.cClass)
-		else:
+		Xid = self.icon.Get("Xid")
+		if Xid != 0:
+			if self.bHasFocus:
+				self.icon.ShowAppli(False)
+			else:
+				self.icon.ShowAppli(True)
+		else:  # Deluge not started, or in the systray.
 			print "launch Deluge..."
-			subprocess.Popen('deluged')
+			if not self.bConnected:
+				subprocess.Popen('deluged')
 			subprocess.Popen(self.cClass)
 	
 	def on_middle_click(self):
@@ -285,12 +283,12 @@ class Applet(CDApplet):
 	def on_build_menu(self):
 		if self.bConnected:
 			items = [ {
-					"label": "pause all torrents",
+					"label": "Pause all torrents",
 					"icon" : "gtk-media-pause",
 					"menu" : 0,
 					"id"   : 1
 				}, {
-					"label": "resume all torrents",
+					"label": "Resume all torrents",
 					"icon" : "gtk-media-play",
 					"menu" : 0,
 					"id"   : 2
@@ -316,7 +314,7 @@ class Applet(CDApplet):
 	
 	def on_shortkey(self,key):
 		self.show_torrents_info()
-		
+	
 	def on_change_focus(self,has_focus):
 		self.bHasFocus = has_focus
 	

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-# This is a part of the external demo applet for Cairo-Dock
-# Copyright : (C) 2010 by Fabounet
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2011 by Fabounet
 # E-mail : fabounet@glx-dock.org
 #
 # This program is free software; you can redistribute it and/or
@@ -37,18 +37,18 @@ TR_STATUS_STOPPED      = (1<<4)
 
 def format_bytes(x):
 	unit=''
-	if x < 1e3:
+	if x < 1024:
 		unit = 'B'
 		y = x
-	elif x < 1e6:
+	elif x < 1048576:
 		unit = 'K'
-		y = x / 1e3
-	elif x < 1e9:
+		y = (x >> 10)
+	elif x < 1073741824:
 		unit = 'M'
-		y = x / 1e6
+		y = (x >> 20)
 	else:
 		unit = 'G'
-		y = x / 1e9
+		y = (x >> 30)
 	return y,unit
 
 html_escape_table = {
@@ -80,7 +80,7 @@ class Applet(CDApplet):
 		CDApplet.__init__(self)
 	
 	##### private methods #####
-		
+	
 	# Try to make a connection with no arguments, so we get the 409 error code.
 	# The headers will contain our session ID.
 	def get_session_id(self):
@@ -319,13 +319,14 @@ class Applet(CDApplet):
 	
 	def on_click(self,iState):
 		print "*** click"
-		if self.iSessionID != 0:
+		Xid = self.icon.Get("Xid")
+		if Xid != 0:
 			print "show window..."
-			if self.bHasFocus:  # la fenetre existe et a le focus.
-				self.icon.ShowAppli(False)  # on minimise la fenetre.
-			else:  # soit la fenetre n'existe pas, soit elle n'a pas le focus.
+			if self.bHasFocus:
+				self.icon.ShowAppli(False)
+			else:
 				self.icon.ShowAppli(True)
-		else:
+		else:  # Transmission not started, or in the systray.
 			print "launch Transmission..."
 			subprocess.Popen(self.cClass)
 	
@@ -335,12 +336,12 @@ class Applet(CDApplet):
 	def on_build_menu(self):
 		if self.iSessionID != 0:
 			items = [ {
-					"label": "pause all torrents",
+					"label": "Pause all torrents",
 					"icon" : "gtk-media-pause",
 					"menu" : 0,
 					"id"   : 1
 				}, {
-					"label": "resume all torrents",
+					"label": "Resume all torrents",
 					"icon" : "gtk-media-play",
 					"menu" : 0,
 					"id"   : 2

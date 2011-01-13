@@ -1,0 +1,352 @@
+#!/usr/bin/python
+
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2011 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+####################
+### dependancies ###
+####################
+from CDApplet import CDApplet
+from gobject import timeout_add
+import subprocess
+import dbus
+import re
+
+# a simple decoder for BitTorrent’s torrent encoding format, bencode.
+# taken from http://effbot.org/zone/bencode.htm
+# from Fredrik Lundh
+def tokenize(text, match=re.compile("([idel])|(\d+):|(-?\d+)").match):
+    i = 0
+    while i < len(text):
+        m = match(text, i)
+        s = m.group(m.lastindex)
+        i = m.end()
+        if m.lastindex == 2:
+            yield "s"
+            yield text[i:i+int(s)]
+            i = i + int(s)
+        else:
+            yield s
+
+def decode_item(next, token):
+    if token == "i":
+        # integer: "i" value "e"
+        data = int(next())
+        if next() != "e":
+            raise ValueError
+    elif token == "s":
+        # string: "s" value (virtual tokens)
+        data = next()
+    elif token == "l" or token == "d":
+        # container: "l" (or "d") values "e"
+        data = []
+        tok = next()
+        while tok != "e":
+            data.append(decode_item(next, tok))
+            tok = next()
+        if token == "d":
+            data = dict(zip(data[0::2], data[1::2]))
+    else:
+        raise ValueError
+    return data
+
+def decode(text):
+    try:
+        src = tokenize(text)
+        data = decode_item(src.next, src.next())
+        for token in src: # look for more tokens
+            raise SyntaxError("trailing junk")
+    except (AttributeError, ValueError, StopIteration):
+        raise SyntaxError("syntax error")
+    return data
+
+
+def format_bytes(x):
+	unit=''
+	if x < 1024:
+		unit = 'B'
+		y = x
+	elif x < 1048576:
+		unit = 'K'
+		y = (x >> 10)
+	elif x < 1073741824:
+		unit = 'M'
+		y = (x >> 20)
+	else:
+		unit = 'G'
+		y = (x >> 30)
+	return y,unit
+
+html_escape_table = {
+	"&": "&amp;",
+	'"': "&quot;",
+	"'": "&apos;",
+	">": "&gt;",
+	"<": "&lt;",
+	}
+
+def html_escape(text):
+	"""Produce entities within text."""
+	return "".join(html_escape_table.get(c,c) for c in text)
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		# define internal variables
+		self.bus_name    = 'org.ktorrent.ktorrent'
+		self.object_path = '/core'
+		self.iface_name  = 'org.ktorrent.core'
+		self.cClass = 'ktorrent'
+		self.bHasFocus = False
+		self.bus = None
+		self.ktorrent = None
+		self.tors = {}
+		self.iSidGetData = 0
+		
+		# call high-level init
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+	
+	def _add_torrent(self, tor):
+		path = '/torrent/'+tor
+		bus_object = self.bus.get_object(self.bus_name, path)
+		iface = dbus.Interface(bus_object, 'org.ktorrent.torrent')
+		self.tors[tor] = iface
+	
+	def on_torrent_added(self, tor):
+		print '*** torrent added:',tor
+		self._add_torrent(tor)
+		self.update_data()
+	
+	def on_torrent_removed(self, tor):
+		print '*** torrent removed:',tor
+		del self.tors[tor]
+		self.update_data()
+	
+	def get_torrents(self):
+		self.tors.clear()
+		torrents_list = self.ktorrent.torrents()
+		for tor in torrents_list:
+			print ' + ',tor
+			self._add_torrent(tor)
+	
+	def on_name_owner_changed(self,connection_name):
+		print "on_name_owner_changed:",connection_name
+		if len(connection_name) == 0:
+			self.ktorrent = None  # the update_data loop will stop by itself then.
+			self.tors.clear()
+			self.icon.SetQuickInfo('')
+		else:
+			# get the object on the bus
+			bus_object = self.bus.get_object(connection_name, self.object_path)
+			self.ktorrent = dbus.Interface(bus_object, self.iface_name)
+			# connect to signals
+			self.ktorrent.connect_to_signal("torrentAdded", self.on_torrent_added)
+			self.ktorrent.connect_to_signal("torrentRemoved", self.on_torrent_removed)
+			# get the list of torrents
+			self.get_torrents()
+			# get the current data once and then every 2s.
+			self.update_data()
+			if self.iSidGetData == 0:  # start listening for session's data
+				self.iSidGetData = timeout_add(2000,self.update_data)
+	
+	def update_data(self):
+		if self.ktorrent == None:
+			self.iSidGetData = 0
+			return False
+		
+		# iterate through torrents to get the total dl rate.
+		rate = 0
+		for tor in self.tors.itervalues():
+			rate += tor.downloadSpeed()  ### or is it a property ?...
+		print 'total dl rate: ',rate
+		
+		# display the rate.
+		unit=''
+		if rate < 100:
+			rate = 0
+		rate,unit = format_bytes(rate)
+		
+		form = ''
+		if rate == 0:
+			form = ".0f"
+		elif rate < 10:
+			form = ".2f"
+		elif rate < 100:
+			form = ".1f"
+		else:
+			form = ".0f"
+		
+		self.icon.SetQuickInfo(format(rate,form)+unit)
+		return True
+	
+	def show_torrents_info(self):
+		print "show torrents info..."
+		# iterate through torrents.
+		info = ""
+		n = 0
+		for tor in self.tors.itervalues():
+			info += "<b>"+html_escape(tor.name())+"</b>:\n"
+			stats = tor.stats()
+			s = "".join(chr(b) for b in stats)
+			stats = decode(s)
+			
+			size = stats['total_bytes']  # tor.totalSize()
+			dl = stats['bytes_downloaded']  # tor.bytesDownloaded()
+			percent = 100. * float(dl) / float(size)  # tor.filePercentage()
+			info += "  progress: "+format(percent,".1f")+'%'
+			
+			state = stats['status']
+			print 'state:',state
+			info += " <i>('+state+')</i>\n"
+			
+			speed = stats['download_rate']  # tor.downloadSpeed()
+			if speed != 0:
+				t = float(size - dl) / speed
+			else:
+				if size == dl:
+					t = 0
+				else:
+					t = -1
+			if t > 0:
+				info += " <i>(time remaining: "
+				d=h=m=s=0
+				if t > 86400:
+					d = int(t) / 86400
+					h = int(t - d*86400) / 3600
+					if d > 0:
+						info += str(d)+"days"
+					if d > 0 or h > 0:
+						info += str(h)+"h"
+				else:
+					h = int(t) / 3600
+					m = int(t - h*3600) / 60
+					s = int(t - h*3600 - m*60)
+					if h > 0:
+						info += str(h)+"h"
+					if h > 0 or m > 0:
+						info += str(m)+"mn"
+					info += str(s)+"s"
+				info += ")</i>\n"
+			elif t < 0:
+				info += " <i>(time remaining: unknown)</i>\n"
+			else:
+				info += " <i>(finished)</i>\n"
+			
+			print 'num_peers:',stats['num_peers']
+			info += "  nb peers: "+str(stats['leechers_connected_to'])+", nb seeds: "+str(stats['seeders_connected_to'])+"\n"
+			
+			print 'ratio:',tor.shareRatio()
+			ul = stats['bytes_uploaded']
+			if dl != 0:
+				ratio = float(ul) / float(dl)
+			else:
+				ratio = -1
+			if ratio >= 0:
+				info += "  ratio: "+format(ratio,".2f")+'\n'
+			
+			n += 1
+		
+		if n == 0:
+			info += "<i>no torrent in the list</i>\n"
+		
+		# pop up dialog
+		dialog_attributes = {
+			"icon" : "ktorrent",
+			"message" : info,
+			"use-markup" : True,
+			"time-length" : 4+len(info)/40 }
+		widget_attributes = {}
+		self.icon.PopupDialog (dialog_attributes, widget_attributes)
+		
+	
+	def suspend_torrents(self):
+		cur_state = self.ktorrent.suspended()
+		self.ktorrent.setSuspended(not cur_state)
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['shortkey'] = keyfile.get('Configuration', 'shortkey')
+	
+	def end(self):
+		print "*** end of KTorrent"
+	
+	def begin(self):
+		self.bus = dbus.SessionBus()
+		self.bus.watch_name_owner(self.bus_name, self.on_name_owner_changed)
+		
+		self.icon.BindShortkey([self.config['shortkey']])
+		self.icon.ControlAppli(self.cClass)
+	
+	def reload(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+	
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		Xid = self.icon.Get("Xid")
+		if Xid != 0:
+			if self.bHasFocus:
+				self.icon.ShowAppli(False)
+			else:
+				self.icon.ShowAppli(True)
+		else:  # KTorrent not started, or in the systray.
+			subprocess.Popen("ktorrent")
+	
+	def on_middle_click(self):
+		self.show_torrents_info()
+	
+	def on_build_menu(self):
+		if self.ktorrent != None:
+			cur_state = self.ktorrent.suspended()
+			items = [ {
+					"type" : 3,  # 3 = check-box
+					"label": "Suspend all torrents",
+					"state": cur_state,
+					"menu" : 0,
+					"id"   : 1
+				}, {
+					"label": "Torrents info (middle-click)",
+					"icon" : "gtk-info",
+					"menu" : 0,
+					"id"   : 2
+				} ]
+			self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if iNumEntry == 1:
+			self.suspend_torrents()  # or use startAll/stopAll ?...
+		elif iNumEntry == 2:
+			self.show_torrents_info()
+	
+	def on_drop_data(self,cReceivedData):
+		print "*** received",cReceivedData
+		self.ktorrent.load(cReceivedData,'')
+	
+	def on_shortkey(self,key):
+		self.show_torrents_info()
+		
+	def on_change_focus(self,has_focus):
+		self.bHasFocus = has_focus
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()
