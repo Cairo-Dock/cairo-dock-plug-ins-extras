@@ -321,12 +321,12 @@ class Applet:
         if len(sentence.split()) == 1:                                                  # Just one word, dictionary was returned
             message = ""
             for category, words in dictionary.iteritems():
-                message += "%s\n\n" % category 
+                message += "<i>%s</i>\n\n" % category 
                 message += "%s\n\n" % "\n".join(words[1:])                              # array of words com with the category name in first position
         else:                                                                           # Sentence, only the translation was returned
             message = translated
         try:
-            self.icon.PopupDialog({'message':message, "buttons":"cancel;stock_new;stock_edit"}, {})
+            self.icon.PopupDialog({'message':message, "use-markup":True, "buttons":"cancel;stock_new;stock_edit"}, {})
         except Exception:
             log("Error caused PopupDialog not be shown, ShowDialog was used instead")
             self.icon.ShowDialog(message, self.dialog_active_time)
