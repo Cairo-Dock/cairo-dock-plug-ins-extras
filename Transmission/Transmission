@@ -42,13 +42,13 @@ def format_bytes(x):
 		y = x
 	elif x < 1048576:
 		unit = 'K'
-		y = (x >> 10)
+		y = float(x) / 1024
 	elif x < 1073741824:
 		unit = 'M'
-		y = (x >> 20)
+		y = float(x) / 1048576
 	else:
 		unit = 'G'
-		y = (x >> 30)
+		y = float(x) / 1073741824
 	return y,unit
 
 html_escape_table = {

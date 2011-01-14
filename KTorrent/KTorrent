@@ -24,7 +24,7 @@ import subprocess
 import dbus
 import re
 
-# a simple decoder for BitTorrent’s torrent encoding format, bencode.
+# a simple decoder for BitTorrent's torrent encoding format, bencode.
 # taken from http://effbot.org/zone/bencode.htm
 # from Fredrik Lundh
 def tokenize(text, match=re.compile("([idel])|(\d+):|(-?\d+)").match):
@@ -80,13 +80,13 @@ def format_bytes(x):
 		y = x
 	elif x < 1048576:
 		unit = 'K'
-		y = (x >> 10)
+		y = float(x) / 1024
 	elif x < 1073741824:
 		unit = 'M'
-		y = (x >> 20)
+		y = float(x) / 1048576
 	else:
 		unit = 'G'
-		y = (x >> 30)
+		y = float(x) / 1073741824
 	return y,unit
 
 html_escape_table = {
@@ -191,6 +191,7 @@ class Applet(CDApplet):
 			form = ".1f"
 		else:
 			form = ".0f"
+		print "rate: ",rate
 		
 		self.icon.SetQuickInfo(format(rate,form)+unit)
 		return True
