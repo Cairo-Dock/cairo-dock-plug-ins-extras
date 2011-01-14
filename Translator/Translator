@@ -151,9 +151,17 @@ class AgentOpener(FancyURLopener):
 class TranslatorParser(SGMLParser):
     def reset(self):                              
         SGMLParser.reset(self)
+    
+        # sentences
         self.translated_content = ""
         self.inside_a_element = 0                                                       # indicates if the parser is between <span></span> tag
+       
+        # dictionary
+        self.dictionary = {}
+        self.inside_div = 0
+        self.current_type = ""
 
+    # sentences
     def start_span(self, attrs):
         for name, value in attrs:
             if name == "id" and value == "result_box":                                  # <span id="result_box">translated text</span>
@@ -162,9 +170,37 @@ class TranslatorParser(SGMLParser):
     def end_span(self):
         self.inside_a_element = 0
 
+    # dictionary
+    def start_div(self, attrs):
+        for name, value in attrs:
+            if name == "id" and value == "gt-res-dict":                             # <div id="gt-res-dict">translated text</span>
+                self.inside_div = 1
+
+    def end_div(self):
+        self.inside_div = 0
+
     def handle_data(self, text):
+        # sentences
         if self.inside_a_element:                                                       # we're inside the tag ...
             self.translated_content = text                                              # ... grab the text!
+
+        # dictionary
+        if self.inside_div:
+            if text == 'noun':                                                          # set, and start in dictionary the category that is being read
+                self.current_type = 'noun'
+                self.dictionary[self.current_type] = []
+            elif text == 'verb':
+                self.current_type = 'verb'
+                self.dictionary[self.current_type] = []
+            elif text == 'adjective':
+                self.current_type = 'adjective'
+                self.dictionary[self.current_type] = []
+            elif text == 'interjection':
+                self.current_type = 'interjection'
+                self.dictionary[self.current_type] = []
+
+            if self.current_type:                                                       # any category found, append in the dictionary
+                self.dictionary[self.current_type].append(text)
 
     def parse(self, page):
         self.feed(page)                                                                 # feed the parser with the page's html
@@ -176,6 +212,8 @@ class Interface:
         access the parser to get the context of the Google Translator for this text"""
     def __init__(self, text_to_be_translated):
         self.text_to_be_translated = text_to_be_translated
+        self.dictionary = {}
+        self.interjections = []
         
     def translate_it(self, source, destiny):
         parser = TranslatorParser()                                                     # create the parser
@@ -188,8 +226,8 @@ class Interface:
         else:
             parser.parse(page.read())                                                   # feed the parser to get the specific content: translated text
             page.close()                                                                # lets close the page connection
-            self.text_to_be_translated = parser.translated_content                      # from the parser, we get the translated content
-        return self.text_to_be_translated
+            self.text_to_be_translated, self.dictionary = parser.translated_content, parser.dictionary  # from the parser, we get the translated content
+        return self.text_to_be_translated, self.dictionary
 
     def adjust(self, text):
         """Ajusta o texto removendo espacos, quebras de linha, codifica tudo em utf-8"""
@@ -214,7 +252,7 @@ class Applet:
         self.sources = []                                                               # list of possible source languages
         self.destiny = None                                                             # get it from configuration file
         self.destinies = []                                                             # list of possible resulting languages
-        # self.favorites = []                                                             # TODO lista de linguas favoritas
+        # self.favorites = []                                                           # TODO lista de linguas favoritas
         self.scroll_destiny_language = 0
         self.dialog_active_time = 10                                                    # time in seconds that the dialog window will be active
         self.new_translation_key = 1                                                    # there are 3 buttons, cancel = 0, new = 1 ...
@@ -278,19 +316,27 @@ class Applet:
         self.inform_start_of_waiting_process()
 
         interface = Interface(sentence)                                                 # alimenta o tradutor com o sentence a ser traduzida
-        translated = interface.translate_it(source, destiny)                            # o resultado, que eh texto traduzido
+        translated, dictionary = interface.translate_it(source, destiny)                # texto traduzido e o resultado do dicionario
+
+        if len(sentence.split()) == 1:                                                  # Just one word, dictionary was returned
+            message = ""
+            for category, words in dictionary.iteritems():
+                message += "%s\n\n" % category 
+                message += "%s\n\n" % "\n".join(words[1:])                              # array of words com with the category name in first position
+        else:                                                                           # Sentence, only the translation was returned
+            message = translated
         try:
-            self.icon.PopupDialog({'message':translated, "buttons":"cancel;stock_new;stock_edit"}, {})
+            self.icon.PopupDialog({'message':message, "buttons":"cancel;stock_new;stock_edit"}, {})
         except Exception:
             log("Error caused PopupDialog not be shown, ShowDialog was used instead")
-            self.icon.ShowDialog(translated, self.dialog_active_time)
+            self.icon.ShowDialog(message, self.dialog_active_time)
         else:
             log("PopupDialog succesfully shown")
         self.set_to_clipboard(translated)                                               # coloca o resultado na area de transferencia
-
+                                                                                        # apenas a primeira palavra no caso do dicionario
         self.inform_end_of_waiting_process()
         self.inform_current_destiny_language()
-        log ("Translated: %s" % translated)
+        log ("Translated: %s" % message)
 
     def ask_text(self, default=""):
         label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
