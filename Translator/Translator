@@ -326,7 +326,7 @@ class Applet:
         else:                                                                           # Sentence, only the translation was returned
             message = translated
         try:
-            self.icon.PopupDialog({'message':message, "use-markup":True, "buttons":"cancel;stock_new;stock_edit"}, {})
+            self.icon.PopupDialog({'message':message, "use-markup":True, "buttons":"cancel;stock_refresh;stock_edit"}, {})
         except Exception:
             log("Error caused PopupDialog not be shown, ShowDialog was used instead")
             self.icon.ShowDialog(message, self.dialog_active_time)
