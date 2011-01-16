@@ -26,6 +26,7 @@ try:
 except ImportError:
     import simplejson as json
 import subprocess
+import os.path
 from gobject import timeout_add
 from CDApplet import CDApplet
 
@@ -69,7 +70,7 @@ def html_escape(text):
 class Applet(CDApplet):
 	def __init__(self):
 		# define internal variables
-		self.cClass = 'transmission'
+		self.cClass = ''
 		self.bHasFocus = False
 		self.iSidGetData = 0
 		self.iSidTryConnect = 0
@@ -276,31 +277,79 @@ class Applet(CDApplet):
 	##### applet definition #####
 	
 	def get_config(self,keyfile):
-		self.config['server'] 		= keyfile.get('Configuration', 'server')
-		self.config['port'] 		= keyfile.getint('Configuration', 'port')
-		self.config['user'] 		= keyfile.get('Configuration', 'user')
-		self.config['password'] 	= keyfile.get('Configuration', 'password')
+		def _get_user_config(self):
+			self.config['rpc-enabled'] 	= true
+			self.config['server'] 		= keyfile.get('Configuration', 'server')
+			self.config['port'] 		= keyfile.getint('Configuration', 'port')
+			self.config['user'] 		= keyfile.get('Configuration', 'user')
+			self.config['password'] 	= keyfile.get('Configuration', 'password')
+		
 		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+		
+		bLocal = keyfile.getboolean('Configuration', 'local')
+		if bLocal:
+			settings = json.loads(open(os.path.expanduser("~/.config/transmission/settings.json")).read())
+			if settings != None:
+				self.config['rpc-enabled'] 	= settings['rpc-enabled']
+				self.config['port'] 		= settings['rpc-port']
+				self.config['server'] 		= '127.0.0.1'
+				if settings['rpc-authentication-required']:
+					self.config['user'] 	= settings['rpc-username']
+					self.config['password'] = settings['rpc-password']
+				else:
+					self.config['user'] 	= ''
+					self.config['password'] = ''
+			else:
+				print "Transmission: couldn't read settings"
+				self._get_user_config()
+		else:
+			self._get_user_config()
 		
 		if self.config['server'] == '':
 			self.config['server'] = '127.0.0.1'
 		if self.config['port'] == 0:
 			self.config['port'] = 9091
-	
+		
 	def end(self):
 		print "*** end of transmission applet"
 	
 	def begin(self):
 		self.icon.BindShortkey([self.config['shortkey']])
+		
+		# control the appli
+		process = os.popen("pgrep transmission-gtk").read().rstrip()
+		if process != '':
+			print "transmission-gtk is already running"
+			self.cClass = 'transmission-gtk'
+		else:
+			process = os.popen("pgrep transmission-qt").read().rstrip()
+			if process != '':
+				print "transmission-qt is already running"
+				self.cClass = 'transmission-qt'
+			else:
+				path = os.popen("which transmission-gtk").read().rstrip()
+				print ">>> path to transmission-gtk : "+path
+				if path != '':
+					self.cClass = 'transmission-gtk'
+				else:
+					path = os.popen("which transmission-qt").read().rstrip()
+					print ">>> path to transmission-qt : "+path
+					if path != '':
+						self.cClass = 'transmission-qt'
+					else:
+						self.cClass = 'transmission'
+		print ">>> class of the appli : "+self.cClass
 		self.icon.ControlAppli(self.cClass)
 		
 		# get the URL to contact transmission.
+		if not self.config['rpc-enabled']:
+			self.icon.ShowDialog("You have to enable the Web client in the Transmisison's preferences.",8)
+		
 		base_url = 'http://' + self.config['server'] + ':' + str(self.config['port'])
 		self.url = base_url + '/transmission/rpc'
 		
 		# set authentication
 		if self.config['user'] and self.config['password']:
-			print "using user "+self.config['user']+" and pass "+self.config['password']
 			password_manager = urllib2.HTTPPasswordMgrWithDefaultRealm()
 			password_manager.add_password(realm=None, uri=self.url, user=self.config['user'], passwd=self.config['password'])
 			opener = urllib2.build_opener(

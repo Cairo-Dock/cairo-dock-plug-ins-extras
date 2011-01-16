@@ -118,7 +118,7 @@ class Applet(CDApplet):
 		self.icon.BindShortkey([self.config['shortkey']])
 	
 	def reload(self):
-		appleticon.get_geometry()  # icon's size can change even when the config has not changed (resize by the user)
+		self.get_geometry()  # icon's size can change even when the config has not changed (resize by the user)
 		self.icon.BindShortkey([self.config['shortkey']])
 	
 	##### callbacks #####

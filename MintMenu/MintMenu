@@ -20,8 +20,8 @@
 ####################
 # we need to do several hacks here, because the mintMenu class is soooo messy with the paths
 # (it changes the current path, and it has a horrible mix of hard-coded paths and run-time paths).
-import os
-my_applet_name = os.path.basename(os.path.abspath("."))
+#~ import os
+#~ my_applet_name = os.path.basename(os.path.abspath("."))
 import sys
 sys.argv[0] = "/usr/lib/linuxmint/mintMenu/mintMenu.py"
 import gtk
@@ -73,9 +73,12 @@ class FakeWindow(gtk.gdk.Window):
 ####################
 class GApplet(gnomeapplet.Applet):
 	def __init__(self):
+		print "init gnome  applet..."
 		gnomeapplet.Applet.__init__(self)
+		print "make CD applet..."
 		self.cdapplet = Applet(self)
 		self.window = FakeWindow(self.cdapplet)
+		print "now run..."
 		self.cdapplet.run()
 	
 	# here is the only useful method
@@ -106,7 +109,7 @@ class Applet(CDApplet):
 		self.mintmenu = None
 		self.gapplet = gapplet
 		sys.stdout.flush()
-		CDApplet.__init__(self,my_applet_name)
+		CDApplet.__init__(self)
 		
 	##### private methods #####
 	
@@ -117,7 +120,9 @@ class Applet(CDApplet):
 	
 	def begin(self):
 		# build the menu in the background, since it's soooo long to start.
+		print "build menu..."
 		self.mintmenu = MenuWin(self.gapplet,None)
+		print "ok."
 		self.icon.BindShortkey([self.config['shortkey']])
 	
 	def end(self):
