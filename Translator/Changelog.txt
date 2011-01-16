@@ -1,3 +1,4 @@
+0.1.7:(January/16/2011): Added the Web Page translation. Entering a URL, the translated page is loaded in the current web browser.
 0.1.6:(January/14/2011): Added the dictionary functionality. If there is only one word to be translated, show the dictionary with the possible translations in categories.
 0.1.5:(October/27/2010): Added a string pre-processing to remove the possible line breaks in the text to be translated. Changed the shortcuts, both the X-server, and the Dock one were set to Ctrl+Alt[W|R]
 0.1.4:(August/24/2010): For Cairo-dock 2.2.0 or higher, the user can move from the translation result to a new translation, or edit the recently translated text.

@@ -31,7 +31,7 @@
 #        * Press Ctrl + Alt + W, type the text, and press Enter
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import gobject, dbus, os, urllib, gtk, ConfigParser
+import gobject, dbus, os, urllib, gtk, ConfigParser, webbrowser
 from dbus.mainloop.glib import DBusGMainLoop
 from dbus import glib
 from sgmllib import SGMLParser
@@ -315,28 +315,34 @@ class Applet:
     def translate(self, sentence, source, destiny):
         self.inform_start_of_waiting_process()
 
-        interface = Interface(sentence)                                                 # alimenta o tradutor com o sentence a ser traduzida
-        translated, dictionary = interface.translate_it(source, destiny)                # texto traduzido e o resultado do dicionario
-
-        if len(sentence.split()) == 1:                                                  # Just one word, dictionary was returned
-            message = ""
-            for category, words in dictionary.iteritems():
-                message += "<i>%s</i>\n\n" % category 
-                message += "%s\n\n" % "\n".join(words[1:])                              # array of words com with the category name in first position
-        else:                                                                           # Sentence, only the translation was returned
-            message = translated
-        try:
-            self.icon.PopupDialog({'message':message, "use-markup":True, "buttons":"cancel;stock_refresh;stock_edit"}, {})
-        except Exception:
-            log("Error caused PopupDialog not be shown, ShowDialog was used instead")
-            self.icon.ShowDialog(message, self.dialog_active_time)
+        # Translate URL
+        if sentence.startswith(("http://", "https://", "www.")):                        # barely checking if user is trying to translate a web page
+            url = "http://translate.google.com/translate?sl=%s&tl=%s&u=%s" % (source, destiny, sentence)
+            webbrowser.open(url)
+            log("Translated URL %s" % sentence)
         else:
-            log("PopupDialog succesfully shown")
-        self.set_to_clipboard(translated)                                               # coloca o resultado na area de transferencia
+            # Translate one word, or sentence
+            interface = Interface(sentence)                                             # alimenta o tradutor com o sentence a ser traduzida
+            translated, dictionary = interface.translate_it(source, destiny)            # texto traduzido e o resultado do dicionario
+            if len(sentence.split()) == 1:                                              # just one word, dictionary was returned
+                message = ""
+                for category, words in dictionary.iteritems():
+                    message += "<i>%s</i>\n\n" % category 
+                    message += "%s\n\n" % "\n".join(words[1:])                          # array of words with categoy name as the first position, chop
+                log("Translated with dictionary %s" % message)
+            else:                                                                       # sentence, only the translation was returned
+                message = translated
+                log ("Translated sentence %s" % message)
+
+            try:
+                self.icon.PopupDialog({'message':message, "use-markup":True, "buttons":"cancel;stock_refresh;stock_edit"}, {})
+            except Exception:
+                self.icon.ShowDialog(message, self.dialog_active_time)                  # PopupDialog could not be shown, ShowDialog was used instead
+
+            self.set_to_clipboard(translated)                                           # coloca o resultado na area de transferencia
                                                                                         # apenas a primeira palavra no caso do dicionario
         self.inform_end_of_waiting_process()
         self.inform_current_destiny_language()
-        log ("Translated: %s" % message)
 
     def ask_text(self, default=""):
         label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
