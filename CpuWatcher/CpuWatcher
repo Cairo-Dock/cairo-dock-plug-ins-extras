@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # CpuWatcher, plugin for Cairo-Dock.
-# Copyright 2010 Nochka85
-# Based on demo_bash, from Nochka85, modified by matttbe, based on 
-# demo.py by Fabounet.
+# Copyright 2011 Yann Dulieu (Nochka85)
+# Based on demo_python by Fabounet.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,40 +18,20 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
-import os.path
-import ConfigParser
 import gobject
 import os
-import dbus
 from copy import deepcopy
-from dbus.mainloop.glib import DBusGMainLoop
+from CDApplet import CDApplet
 
 applet_name = os.path.basename(os.path.abspath("."))
 
-CAIRO_SERVICE = 'org.cairodock.CairoDock'
-CAIRO_APPLET = 'org.cairodock.CairoDock.applet'
-CAIRO_SUBAPPLET = 'org.cairodock.CairoDock.subapplet'
-CAIRO_PATH = '/org/cairodock/CairoDock/'
-CAIRO_CONF_PATH = "~/.config/cairo-dock/current_theme/plug-ins"
 
 ####################
 ### Applet class ###
 ####################
-class Applet:
-	"""
-	I print the available file system's space on my label.
-	You can choose to view the result in Go or Mo. You can set the ellapsed
-	time between two checks.
-	"""
-
+class Applet(CDApplet):
 	def __init__(self):
-		self.__path = CAIRO_PATH + applet_name
 		self.conf_file = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/"+applet_name+"/"+applet_name+".conf")  # path to the conf file of our applet.
-		self.config = {}
-		self.__plugin = None # Je sers d'interface avec D-bus.
-		self.__sub_icons = None
-		self.__programLoop = None
 		self.__timerId = None
 		self.__strDisplayValue = '0.0'
 		self.__firstList = []
@@ -64,55 +43,54 @@ class Applet:
 		self.__iNbCores = 0
 		self.__iTotalAverageTime = 0
 		self.__fTotalAverageCpu = .0
-		self.initDbus()
-		self.initCallbacks()
-		self.initLoop()
+		CDApplet.__init__(self)
 
-	def run(self):
+
+
+	##### Applet definition #####
+	
+	def get_config(self, keyfile):
+		self.config['refresh'] 		= keyfile.getint('Configuration', 'refresh') # in milliseconds.
+		self.config['myLabel']	= keyfile.get('Icon', 'name')
+		self.setTimer() # I (re)start the timer each times the config has been retrieved
+		print applet_name + " : Config retrieved + Timer started"
+
+
+	def begin(self):
 		"""
-		Call me when you are ready 'to launch' the plugin's loop.
+		Note : This is launched after get_config()
 		"""
-		print applet_name + " : Started..."
-		self.get_config()
-		#~ self.__plugin.ShowDialog("I'm connected to Cairo-Dock !", 4)
-		self.__programLoop.run()
+		print applet_name + " has been started."
+
+
+	def reload(self):
+		print applet_name + " reloaded."
+
+
+	def end(self):
 		self.removeTimer()
+		print applet_name + " : Bye bye."
 
-	def initDbus(self):
-		DBusGMainLoop(set_as_default = True)
-		bus = dbus.SessionBus()
-		try:
-			applet_object = bus.get_object(CAIRO_SERVICE, self.__path)
-			sub_icons_object = bus.get_object(CAIRO_SERVICE, self.__path + "/sub_icons")
-		except dbus.DBusException:
-			print "<%s can't be found on the bus, exit>" % (applet_name)
-			sys.exit(1)
-		self.__plugin = dbus.Interface(applet_object, CAIRO_APPLET)
-		self.__sub_icons = dbus.Interface(sub_icons_object, CAIRO_SUBAPPLET)
 
-	def initLoop(self):
-		self.__programLoop = gobject.MainLoop()
 
+	##### Private methods #####
+	
 	def setTimer(self):
-		"""
-		I set the time between two checks.
-		"""
 		self.removeTimer()
 		self.__timerId = gobject.timeout_add(self.config['refresh'], self.action_on_loop)
-		
+
+	
 	def removeTimer(self):
-		"""
-		I properly remove the timer.
-		"""
 		if self.__timerId != None:
 			gobject.source_remove(self.__timerId)
+
 
 	def add_sub_icons(self, cpuPct):
 		if len(cpuPct) == 1:
 			self.__iNbCores = 1
 		else:
 			self.__iNbCores = len(cpuPct) - 1
-		print 'Nombre de cores : ' + str(self.__iNbCores)
+		print 'Number of cores : ' + str(self.__iNbCores)
 		if self.__iNbCores != 1 :
 			i = 1
 			lSubIcons = []
@@ -121,17 +99,8 @@ class Applet:
 				lSubIcons.append('~/.config/cairo-dock/third-party/'+applet_name+'/icon')
 				lSubIcons.append('core' + str(i))
 				i += 1
-			self.__sub_icons.AddSubIcons(lSubIcons)
+			self.sub_icons.AddSubIcons(lSubIcons)
 
-	def get_config(self):
-		"""
-		I reload the configuration.
-		"""
-		keyfile = ConfigParser.RawConfigParser()
-		keyfile.read(self.conf_file)
-		self.config['refresh'] 		= keyfile.getint('Configuration', 'refresh') # in milliseconds.
-		self.config['myLabel']	= keyfile.get('Icon', 'name')
-		self.setTimer()
 
 	def action_on_loop(self) :
 		if self.__bIsFirstStat:			
@@ -150,7 +119,6 @@ class Applet:
 					cpuPct.append(100 - (deltaTimes[i][len(deltaTimes[i]) - 1] * 100.00 / sum(deltaTimes[i])))
 				else:
 					cpuPct.append(0)
-			
 			if self.__bSubDone == False:
 				self.add_sub_icons(cpuPct)
 				self.__bSubDone = True
@@ -159,11 +127,10 @@ class Applet:
 				i = 1
 				lSubIcons = []
 				while i < (self.__iNbCores + 1):
-					self.__sub_icons.SetQuickInfo(str('%.1f' %cpuPct[i]) + '%', 'core' + str(i))
+					self.sub_icons.SetQuickInfo(str('%.1f' %cpuPct[i]) + '%', 'core' + str(i))
 					i += 1
 			
-			# Pour l'instant, on force l'affichage du CPU 0 uniquement :
-			self.__strDisplayValue = str('%.1f' %cpuPct[0])
+			self.__strDisplayValue = str('%.1f' %cpuPct[0]) # Pour l'instant, on force l'affichage du CPU 0 uniquement
 			
 			self.__firstList = self.__secondList
 			self.__bIsFirstStat = False
@@ -172,17 +139,16 @@ class Applet:
 				self.__bClearLabel = True
 				self.__iTotalAverageTime += 1
 				self.__fTotalAverageCpu += float(self.__strDisplayValue)
-				print 'Total time : ' + str(self.__iTotalAverageTime * self.config['refresh']/1000) + '  -  Average :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%'
-				self.__plugin.SetLabel(\
+				print applet_name + ' Total time : ' + str(self.__iTotalAverageTime * self.config['refresh']/1000) + '  -  Average :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%'
+				self.icon.SetLabel(\
 				'Average Result :\n' + \
 				'Global Cpu :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%  (' + \
 				'Total time : ' + str(self.__iTotalAverageTime * self.config['refresh']/1000) + 's)')
 			else:
 				if self.__bClearLabel:
-					self.__plugin.SetLabel(self.config['myLabel'])
+					self.icon.SetLabel(self.config['myLabel'])
 					self.__bClearLabel = False
-			
-		self.__plugin.SetQuickInfo(self.__strDisplayValue + '%')
+		self.icon.SetQuickInfo(self.__strDisplayValue + '%')
 		return True
 
 
@@ -218,48 +184,35 @@ class Applet:
 		return lStats
 
 
-	def action_on_reload(self, bConfigHasChanged):
-		"""
-		I just was reloaded. Check for a new configuration.
-		"""		
-		if bConfigHasChanged:
-			self.get_config()
 
-	def action_on_stop(self):
-		"""
-		Time to quit.
-		"""
-		self.removeTimer()
-		self.__programLoop.quit()
-		print applet_name + " : Bye bye."
+	##### Callbacks #####
 
-	def initCallbacks(self):
-		self.__plugin.connect_to_signal("on_stop_module", self.action_on_stop)
-		self.__plugin.connect_to_signal("on_reload_module", self.action_on_reload)
-		self.__plugin.connect_to_signal("on_click", self.action_on_click)
-		self.__plugin.connect_to_signal("on_middle_click", self.action_on_middle_click)
-
-	##################################
-	### Callbacks on the main icon ###
-	##################################
-	def action_on_click(self, iState):
+	def on_click(self,iState):
 		print applet_name + "  >>> left clic"
 
-	def action_on_middle_click(self):
+
+	def on_middle_click(self):
 		if self.__bAverageMode:
 			print applet_name + "  >>> middle clic > Stop average mode"
 			self.__bAverageMode = False
 			self.__iTotalAverageTime = 0
 			self.__fTotalAverageCpu = .0
 			# Swap the icons
-			self.__plugin.SetIcon("~/.config/cairo-dock/third-party/"+applet_name+"/icon")
+			self.icon.SetIcon("~/.config/cairo-dock/third-party/"+applet_name+"/icon")
 		else:
 			print applet_name + "  >>> middle clic > Start average mode"
 			self.__bAverageMode = True
 			self.__iTotalAverageTime = 1
 			self.__fTotalAverageCpu = float(self.__strDisplayValue)
 			# Swap the icons
-			self.__plugin.SetIcon("~/.config/cairo-dock/third-party/"+applet_name+"/icon_Average.png")
+			self.icon.SetIcon("~/.config/cairo-dock/third-party/"+applet_name+"/icon_Average.png")
+
+	
+	def on_scroll(self,bScrollUp):
+		if bScrollUp:
+			print applet_name + " scroll up !"
+		else:
+			print applet_name + " scroll down !"
 
 ############
 ### Main ###
