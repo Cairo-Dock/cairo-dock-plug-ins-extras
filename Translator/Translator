@@ -275,6 +275,7 @@ class Applet:
         self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
         self.icon.connect_to_signal("on_shortkey", self.action_on_dock_level_shortkey)
         self.icon.connect_to_signal("on_answer_dialog", self.action_on_answer_dialog)
+        self.icon.connect_to_signal("on_drop_data", self.action_on_drop_data)
 
     def read_configuration_parameters(self):
         self.source = self.get_source_language_from_configuration()
@@ -492,6 +493,9 @@ class Applet:
         if not clipboard:                                                               # se nada foi selecionado pelo mouse
             clipboard = gtk.clipboard_get()                                             # verifica por algo copiado para o clipboard
         return clipboard.wait_for_text()
+
+    def action_on_drop_data(self, text):
+        self.translate(text, self.source.abbrv, self.destiny.abbrv)
 
     def inform_start_of_waiting_process(self):
         self.icon.SetQuickInfo("...")
