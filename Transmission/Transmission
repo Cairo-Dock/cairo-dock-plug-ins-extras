@@ -25,6 +25,7 @@ try:
     import json
 except ImportError:
     import simplejson as json
+from os import popen
 import subprocess
 import os.path
 from gobject import timeout_add
@@ -88,7 +89,7 @@ class Applet(CDApplet):
 		query = json.dumps({'method': 'session-get', 'arguments': {}})
 		request = urllib2.Request(self.url, query, {})
 		try:
-			response = urllib2.urlopen(request, timeout=20)
+			response = urllib2.urlopen(request, timeout=30)
 		except urllib2.HTTPError, error:
 			#~ aerror_data = error.read()
 			if error.code == 409:
@@ -158,8 +159,14 @@ class Applet(CDApplet):
 			request = urllib2.Request(self.url, query, headers)
 			response = urllib2.urlopen(request, timeout=20)
 			return response.read()
+		except urllib2.HTTPError, error:
+			print "HTTP error:",error.filename, error.code, error.msg
+		except urllib2.URLError, error:
+			print "URL error:",error.reason
+		except httplib.BadStatusLine, error:
+				print "bad status error:",error.line
 		except:
-			print "query error:"
+			print "query error"
 			return None
 	
 	def _request(self, method, arguments={}):
@@ -412,7 +419,11 @@ class Applet(CDApplet):
 	
 	def on_drop_data(self,cReceivedData):
 		print "*** received",cReceivedData
-		self._request('torrent-add', {'filename':cReceivedData,})
+		# Transmission is quite buggy here: sometimes it doesn't take the request into account (timeout in the http query); when launching transmission with an URL, it adds the URL after 1 minute.
+		if self.iSessionID != 0:
+			self._request('torrent-add', {'filename':cReceivedData})
+		else:
+			popen(self.cClass+" "+cReceivedData+"&")
 	
 	def on_shortkey(self,key):
 		self.show_torrents_info()

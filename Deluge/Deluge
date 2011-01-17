@@ -35,6 +35,7 @@ except ImportError, e:
 	print "This applet is designed to be used with Deluge 1.2 or later, make sure it is installed."
 	exit()
 import subprocess
+from os import popen
 from math import sqrt
 from gobject import timeout_add
 from CDApplet import CDApplet
@@ -90,7 +91,7 @@ class Applet(CDApplet):
 	# Connection
 	
 	def try_connect(self):
-		print "try_connect..."
+		#print "try_connect..."
 		if self.bConnected:
 			self.iSidTryConnect = 0
 			return False
@@ -104,8 +105,8 @@ class Applet(CDApplet):
 		self.d.addErrback(self.on_connect_fail)
 	
 	def on_connect_fail(self,reason):
-		print "Connection failed!"
-		print "reason:", reason
+		#print "Connection failed!"
+		#print "reason:", reason
 		self.bConnected = False
 		self.icon.SetQuickInfo("")
 		
@@ -310,7 +311,11 @@ class Applet(CDApplet):
 		
 	def on_drop_data(self,cReceivedData):
 		print "*** received: "+cReceivedData
-		client.core.add_torrent_url(str(cReceivedData),None)
+		if self.bConnected:
+			client.core.add_torrent_url(str(cReceivedData),None)
+		else:
+			subprocess.Popen('deluged')
+			popen(self.cClass+" "+cReceivedData+"&")
 	
 	def on_shortkey(self,key):
 		self.show_torrents_info()
