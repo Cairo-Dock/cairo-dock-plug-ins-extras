@@ -1,0 +1,10 @@
+Our demos are available on the cairo-dock-plug-ins project.
+
+You can download the latest version with bzr:
+	$ bzr checkout --lightweight lp:cairo-dock-plug-ins
+Then, have a look into this diretory: cairo-dock-plug-ins/Dbus/demos/
+
+Or you can open your browser and go there:
+	http://bazaar.launchpad.net/~cairo-dock-team/cairo-dock-plug-ins/plug-ins/files/head:/Dbus/demos/
+
+Thank you!
