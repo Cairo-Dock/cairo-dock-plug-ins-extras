@@ -16,8 +16,8 @@
 #    GNU General Public License for more details.
 
 # This applet provides a "Quote of the day" feature from some internet sources
-# such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr, and
-# Jokes2go.com
+# such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr,
+# Jokes2go.com, and Vidademerda.com.br
 
 import gobject, dbus, os, urllib, gtk, ConfigParser, itertools
 from dbus.mainloop.glib import DBusGMainLoop
@@ -32,10 +32,11 @@ from XkcdbParser import XkcdbParser                                             
 from QuotationspageParser import QuotationspageParser                               # Quotationspage.com
 from DanstonchatParser import DanstonchatParser                                     # Danstonchat.fr
 from JokestogoParser import JokestogoParser                                         # Jokes2go.com
+from VidademerdaParser import VidademerdaParser                                     # Vidademerda.com.br
 
 DBusGMainLoop(set_as_default=True)
 
-quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo = range(6)                 # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5
+quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda = range(7)    # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6
 
 class AgentOpener(FancyURLopener):
     """Masked user-agent otherwise the access would be forbidden"""
@@ -59,8 +60,10 @@ class Interface:
             parser = QdbParser()                                                    # QdbParser.py
         elif (self.source == danstonchat):
             parser = DanstonchatParser()                                            # DanstonchatParser.py
-        else:
+        elif (self.source == jokestogo):
             parser = JokestogoParser()
+        else:
+            parser = VidademerdaParser()
 
         opener = AgentOpener()                                                      # opens the web connection with masked user-agent
 
@@ -76,8 +79,11 @@ class Interface:
                 self.author = parser.author
             elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
                 self.quote = filter(None, parser.quote)                             # retira os '' do array
-            else:                                                                   # jokestogo
+            elif self.source == jokestogo:                                          # jokestogo
                 self.quote = filter(self.breakline, parser.quote)
+            else:                                                                   # vidademerda
+                self.quote = [''.join(parser.quote)]
+                self.author = parser.author
         return self.quote, self.author
 
     def breakline(self, item):
@@ -110,6 +116,7 @@ class Applet:
         self.quotation = ""
         self.dialog_active_time = 30                                                # time in seconds that the dialog window will be active
         self.copy_current_quote_key = 0
+        self.go_next_quote_key = 1
         self.source = quotationspage
         
     def start(self):
@@ -139,6 +146,8 @@ class Applet:
     def action_on_answer_dialog(self, key, content):
         if (key == self.copy_current_quote_key):                                    # cancel button = 1, and copy_current_quote_key = 0
             self.set_to_clipboard(self.quotation)                                   # copia para a area de transferencia a quotation atual
+        elif (key == self.go_next_quote_key):
+            self.show_quote()
 
     def set_to_clipboard(self, sentence):
         clipboard = gtk.clipboard_get()                                             # get the clipboard
@@ -166,13 +175,15 @@ class Applet:
                 self.get_quotes_from_web()                                          # buscar mais
                 current = self.quotes.next()                                        # posicionar na primeira para mostra-la
             self.quotation = "%s" % current
-        else:                                                                       # jokestogo provides only one quote per request ...
+        elif (self.source == jokestogo):                                            # jokestogo provides only one quote per request ...
             self.quotation = "%s" % self.quotes.next().rstrip()                                 
-            self.get_quotes_from_web()                                              # ... so it is necessary to request it again    
+            self.get_quotes_from_web()                                              # ... so it is necessary to request it again
+        else:                                                                       
+            self.quotation = "%s ~ %s" % (self.quotes.next(), self.authors.next())  # vidademerda  provides only one quote per request ...
+            self.get_quotes_from_web()                                              # ... so it is necessary to request it again
         try:
-            self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;cancel"}, {})
-        except Exception:
-            log("Error caused PopupDialog not be shown, ShowDialog was used instead")   # back-compatibility with CD < 2.2.0
+            self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;go-next;cancel"}, {})
+        except Exception:                                                           # back-compatibility with CD < 2.2.0
             self.icon.ShowDialog(self.quotation, self.dialog_active_time)
 
     def inform_start_of_waiting_process(self):
