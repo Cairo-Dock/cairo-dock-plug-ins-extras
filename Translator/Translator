@@ -38,473 +38,404 @@ from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
 
-# Este applet tenta obter o atalho Ctrl + Alt + [R|W] em dois niveis, o nivel mais
-# baixo diretamente do X Server e o mais alto pelo Cairo-dock.
-# Ver os metodos low_level_keypress_binding e dock_level_keypress_binding
-
-# This applet tries to get the Ctrl + Alt + [R|W] shortcut in two levels, the lower
-# one from X Server, and the highergher one from Cairo-dock.
-# Check the low_level_keypress_binding and dock_level_keypress_binding methods out.
-
-# Mesmo que o usuario nao tenha a Python-Xlib instalada, o applet ira funcionar,
-# pois esta biblioteca eh usada apenas para fazer a linkagem entre Ctrl + Alt + [R|W] e
-# a abertura da caixa de dialogo para a insercao do texto a ser traduzido
-# Obs.: As bibliotecas thread e timer tambem nao precisam ser carregadas
-#       uma vez que elas sao uteis apenas quando a Xlib esta presente
-try:                                                                                    # ve se o usuario tem a Python-Xlib instalada
-    from Xlib.display import Display                                                    # lidar com o pressionamento do atalho no X
-    from Xlib import X, XK
-    
-    import thread                                                                       # abrir um fluxo alternativo com a classe KeyHandler
-    import time
-except ImportError:                                                                     # Nao tem a Python-Xlib instalada, msg nele
-    log ("Ctrl + Alt + [R|W] shortcut won't work, install Python-Xlib library")
-    low_level_shortcut_available = False
-else:
-    log ("Ctrl + Alt + [R|W] shortcut gonna work, Python-Xlib library is up and running")
-    low_level_shortcut_available = True
-
-DBusGMainLoop(set_as_default=True)
-
-class doCkranslator:
-    def start(self):
-
-        gobject.threads_init()                                                          # caramba, esta abertura de threads da gbobject ...
-        dbus.glib.init_threads()                                                        # ... e glib fizeram a coisa funcionar para o KeyHandler
-        
-        bus = dbus.SessionBus()
-        applet_name = os.path.basename(os.path.abspath("."))                            # name of the applet must the same as the folder
-        applet_path = "/org/cairodock/CairoDock/%s" % applet_name                       # path where our object is stored on the bus
-        applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
-        icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
-        configuration = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/%s/%s.conf") % (applet_name, applet_name)
-        
-        applet = Applet(icon, configuration)
-        applet.start()
-
-        if low_level_shortcut_available:                                                # Python-Xlib installed, grab the Ctrl+Alt+[R|W] shortcut!
-            thread.start_new_thread(KeyHandler(applet).start, ("handler", 1))           # (funcao callback, (nome da thread, tempo de dormencia))
-        
-        loop = gobject.MainLoop()
-        loop.run()
-        sys.exit(0)
-
-class KeyHandler:
-    """Class que registra o evento de pressionamento do atalho Ctrl + Alt + [R|W] e abre a caixa de dialogo no applet"""   
-    """O registro do evento comeca ao fazer o grab_key da combinacao de teclas; se o X identificar o pressionamento
-       de alguma tecla com o Control + Alt (X.ControlMask | X.Mod1Mask), chama o handle_event que verifica se a tecla eh o [R|W]; caso positivo,
-       chama o metodo ask_text para abrir a caixa de dialogo no applet """
-
-    def __init__(self, applet):
-        self.applet = applet
-        self.low_level_keypress_binding()
-        self.running = 1
-
-    def low_level_keypress_binding(self):
-        self.disp = Display()
-        self.root = self.disp.screen().root
-        self.root.change_attributes(event_mask = X.KeyPressMask)
-        self.r_keycode = self.disp.keysym_to_keycode(XK.string_to_keysym('R'))
-        self.w_keycode = self.disp.keysym_to_keycode(XK.string_to_keysym('W'))
-        # Pega do X quando pressionar Ctrl + Alt + R
-        self.root.grab_key(self.r_keycode, (X.ControlMask | X.Mod1Mask), True, X.GrabModeAsync, X.GrabModeAsync)
-        # Pega do X quando pressionar Ctrl + Alt + W
-        self.root.grab_key(self.w_keycode, (X.ControlMask | X.Mod1Mask), True, X.GrabModeAsync, X.GrabModeAsync)
-        self.disp.set_error_handler(self.disp_error_handler)
-    
-    def disp_error_handler(self, error, request):
-        log ("Key handler error %s" % error)
-        self.root.ungrab_key(self.r_keycode, X.AnyModifier)
-        self.root.ungrab_key(self.w_keycode, X.AnyModifier)
-        self.running = 0
-
-    def lookup_keysym(self, keysym):
-        for name in dir(XK):
-            if name.startswith("XK_") and getattr(XK, name) == keysym:
-                return name.lstrip("XK_")
-        return "[%d]" % keysym
-
-    def handle_event(self, aEvent):
-        keycode = aEvent.detail
-        log ("Pressed key %s" % self.lookup_keysym(self.disp.keycode_to_keysym(keycode,0)))
-        if aEvent.type == X.KeyPress:
-            if keycode == self.r_keycode:
-                log ("Ok, 'Ctrl + Alt + R' pressed")
-                self.applet.set_read_mode()
-                self.applet.ask_text()                                                  # Abrir o caixa de dialogo para o texto a ser traduzido
-            elif keycode == self.w_keycode:
-                log ("Ok, 'Ctrl + Alt + W' pressed")
-                self.applet.set_write_mode()
-                self.applet.ask_text()                                                  # Abrir o caixa de dialogo para o texto a ser traduzido
-
-    def start(self, name, sleeptime):
-        log ("Low level key handler started")
-        while self.running:                                                             # Faz o polling ateh que o evento seja recebido
-            event = self.root.display.next_event()                                      # busca o evento que tiver
-            self.handle_event(event)                                                    # lanca o metodo de tratamento do evento
-            time.sleep(sleeptime)                                                       # thread espera um tempo
+from CDApplet import CDApplet
 
 class AgentOpener(FancyURLopener):
-    """Masked user-agent otherwise the access would be forbidden"""
-    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+	"""Masked user-agent otherwise the access would be forbidden"""
+	version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
 
 class TranslatorParser(SGMLParser):
-    def reset(self):                              
-        SGMLParser.reset(self)
-    
-        # sentences
-        self.translated_content = ""
-        self.inside_a_element = 0                                                       # indicates if the parser is between <span></span> tag
-       
-        # dictionary
-        self.dictionary = {}
-        self.inside_div = 0
-        self.current_type = ""
+	def reset(self):                              
+		SGMLParser.reset(self)
+	
+		# sentences
+		self.translated_content = ""
+		self.inside_a_element = 0                                                    # indicates if the parser is between <span></span> tag
+	   
+		# dictionary
+		self.dictionary = {}
+		self.inside_div = 0
+		self.current_type = ""
 
-    # sentences
-    def start_span(self, attrs):
-        for name, value in attrs:
-            if name == "id" and value == "result_box":                                  # <span id="result_box">translated text</span>
-                self.inside_a_element = 1
-    
-    def end_span(self):
-        self.inside_a_element = 0
+	# sentences
+	def start_span(self, attrs):
+		for name, value in attrs:
+			if name == "id" and value == "result_box":                               # <span id="result_box">translated text</span>
+				self.inside_a_element = 1
+	
+	def end_span(self):
+		self.inside_a_element = 0
 
-    # dictionary
-    def start_div(self, attrs):
-        for name, value in attrs:
-            if name == "id" and value == "gt-res-dict":                             # <div id="gt-res-dict">translated text</span>
-                self.inside_div = 1
+	# dictionary
+	def start_div(self, attrs):
+		for name, value in attrs:
+			if name == "id" and value == "gt-res-dict":                              # <div id="gt-res-dict">translated text</div>
+				self.inside_div = 1
 
-    def end_div(self):
-        self.inside_div = 0
+	def end_div(self):
+		self.inside_div = 0
 
-    def handle_data(self, text):
-        # sentences
-        if self.inside_a_element:                                                       # we're inside the tag ...
-            self.translated_content = text                                              # ... grab the text!
+	def handle_data(self, text):
+		# sentences
+		if self.inside_a_element:                                                    # we're inside the tag ...
+			self.translated_content = text                                           # ... grab the text!
 
-        # dictionary
-        if self.inside_div:
-            if text == 'noun':                                                          # set, and start in dictionary the category that is being read
-                self.current_type = 'noun'
-                self.dictionary[self.current_type] = []
-            elif text == 'verb':
-                self.current_type = 'verb'
-                self.dictionary[self.current_type] = []
-            elif text == 'adjective':
-                self.current_type = 'adjective'
-                self.dictionary[self.current_type] = []
-            elif text == 'interjection':
-                self.current_type = 'interjection'
-                self.dictionary[self.current_type] = []
+		# dictionary
+		if self.inside_div:
+			if text == 'noun':                                                       # set, and start in dictionary the category that is being read
+				self.current_type = 'noun'
+				self.dictionary[self.current_type] = []
+			elif text == 'verb':
+				self.current_type = 'verb'
+				self.dictionary[self.current_type] = []
+			elif text == 'adjective':
+				self.current_type = 'adjective'
+				self.dictionary[self.current_type] = []
+			elif text == 'interjection':
+				self.current_type = 'interjection'
+				self.dictionary[self.current_type] = []
 
-            if self.current_type:                                                       # any category found, append in the dictionary
-                self.dictionary[self.current_type].append(text)
+			if self.current_type:                                                       # any category found, append in the dictionary
+				self.dictionary[self.current_type].append(text)
 
-    def parse(self, page):
-        self.feed(page)                                                                 # feed the parser with the page's html
-        self.close()                                                                    # cya soon!
+	def parse(self, page):
+		self.feed(page)                                                                 # feed the parser with the page's html
+		self.close()                                                                    # cya soon!
 
 class Interface:
-    """ Create a interface between the Applet and Parser
-        This module receives, from the Applet's user, the text to be translated and
-        access the parser to get the context of the Google Translator for this text"""
-    def __init__(self, text_to_be_translated):
-        self.text_to_be_translated = text_to_be_translated
-        self.dictionary = {}
-        self.interjections = []
-        
-    def translate_it(self, source, destiny):
-        parser = TranslatorParser()                                                     # create the parser
-        opener = AgentOpener()                                                          # opens the web connection with masked user-agent
-        url = "http://translate.google.com/?sl=%s&tl=%s&q=%s" % (source, destiny, self.adjust(self.text_to_be_translated))
-        try:
-            page = opener.open(url)                                                     # get the HTML
-        except IOError:
-            log ("Problem to open the remote translator, check the text to be translated")
-        else:
-            parser.parse(page.read())                                                   # feed the parser to get the specific content: translated text
-            page.close()                                                                # lets close the page connection
-            self.text_to_be_translated, self.dictionary = parser.translated_content, parser.dictionary  # from the parser, we get the translated content
-        return self.text_to_be_translated, self.dictionary
+	""" Create a interface between the Applet and Parser
+		This module receives, from the Applet's user, the text to be translated and
+		access the parser to get the context of the Google Translator for this text"""
+	def __init__(self, text_to_be_translated):
+		self.text_to_be_translated = text_to_be_translated
+		self.dictionary = {}
+		self.interjections = []
+		
+	def translate_it(self, source, destination):
+		parser = TranslatorParser()                                                     # create the parser
+		opener = AgentOpener()                                                          # opens the web connection with masked user-agent
+		url = "http://translate.google.com/?sl=%s&tl=%s&q=%s" % (source, destination, self.adjust(self.text_to_be_translated))
+		try:
+			page = opener.open(url)                                                     # get the HTML
+		except IOError:
+			log ("Problem to open the remote translator, check the text to be translated")
+		else:
+			parser.parse(page.read())                                                   # feed the parser to get the specific content: translated text
+			page.close()                                                                # lets close the page connection
+			self.text_to_be_translated, self.dictionary = parser.translated_content, parser.dictionary  # from the parser, we get the translated content
+		return self.text_to_be_translated, self.dictionary
 
-    def adjust(self, text):
-        """Ajusta o texto removendo espacos, quebras de linha, codifica tudo em utf-8"""
-        log ("Text to be translated before adjust: %s" % (self.text_to_be_translated))
-        self.text_to_be_translated = self.text_to_be_translated.strip().replace(os.linesep, ' ').replace(' ', '%20').encode('utf-8')
-        log ("Text to be translated later adjust: %s" % (self.text_to_be_translated))
-        return self.text_to_be_translated
+	def adjust(self, text):
+		"""Ajusta o texto removendo espacos, quebras de linha, codifica tudo em utf-8"""
+		log ("Text to be translated before adjust: %s" % (self.text_to_be_translated))
+		self.text_to_be_translated = self.text_to_be_translated.strip().replace(os.linesep, ' ').replace(' ', '%20').encode('utf-8')
+		log ("Text to be translated after adjust: %s" % (self.text_to_be_translated))
+		return self.text_to_be_translated
 
 class Language:
-    def __init__(self, name, abbrv):
-        self.name = name
-        self.abbrv = abbrv
+	def __init__(self, name, abbrv):
+		self.name = name
+		self.abbrv = abbrv
 
-class Applet:
+# indexes for the menu
+DESTINATION_INDEX = 1
+SOURCE_INDEX = 1000
+SWITCH_INDEX = 2000
+CLIPBOARD_INDEX = 3000
 
-    def __init__(self, icon, configuration):
-        self.icon = icon
-        self.configuration = configuration                                              # configuration file
-        self.translated_text = ""
-        self.text_to_be_translated = ""
-        self.source = None                                                              # get it from configuration file
-        self.sources = []                                                               # list of possible source languages
-        self.destiny = None                                                             # get it from configuration file
-        self.destinies = []                                                             # list of possible resulting languages
-        # self.favorites = []                                                           # TODO lista de linguas favoritas
-        self.scroll_destiny_language = 0
-        self.dialog_active_time = 10                                                    # time in seconds that the dialog window will be active
-        self.new_translation_key = 1                                                    # there are 3 buttons, cancel = 0, new = 1 ...
-        self.edit_translation_key = 2                                                   # ... and edit
+class Applet(CDApplet):
 
-    def start(self):
-        log ("Applet started")
-        self.read_languages_file()
-        self.read_configuration_parameters()
-        self.connect_to_callbacks()
-        self.dock_level_keypress_binding()
+	def __init__(self):
+	  # define internal variables
+		self.translated_text = ""
+		self.text_to_be_translated = ""
+		self.source = None                                                              # get it from configuration file
+		self.sources = []                                                               # list of possible source languages
+		self.destination = None                                                         # get it from configuration file
+		self.destinations = []                                                          # list of possible resulting languages
+		# self.favorites = []                                                           # TODO lista de linguas favoritas
+		self.scroll_destination_language = 0
+		self.dialog_active_time = 10                                                    # time in seconds that the dialog window will be active
+		self.new_translation_key = 1                                                    # there are 3 buttons, cancel = 0, new = 1 ...
+		self.edit_translation_key = 2                                                   # ... and edit
+		self.dialog_type = 0	                                                          # dialog we are displaying to the user
+		
+		# call high-level init
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+	
+	# languages
+	def read_languages_file(self):
+		"""Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
+		f = open('.languages', "rb")
+		for line in f:
+			splited = line.split()                                                      # split the line by space token
+			name, abbrv = splited[0], splited[1]
+			self.sources.append(Language(name, abbrv))                                  # e.g, Language("English", "en")
+			self.destinations.append(Language(name, abbrv))                                # e.g, Language("Portuguese", "pt")
 
-    def connect_to_callbacks(self):                                                     # when reiceves the signal named as 1st parameter ...
-        self.icon.connect_to_signal("on_click", self.action_on_click)                   # ... calls the second-parameter function
-        self.icon.connect_to_signal("on_answer", self.action_on_answer)
-        self.icon.connect_to_signal("on_build_menu", self.action_on_build_menu)
-        self.icon.connect_to_signal("on_scroll", self.action_on_scroll)
-        self.icon.connect_to_signal("on_menu_select", self.action_on_menu_select)
-        self.icon.connect_to_signal("on_middle_click", self.action_on_middle_click)
-        self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
-        self.icon.connect_to_signal("on_shortkey", self.action_on_dock_level_shortkey)
-        self.icon.connect_to_signal("on_answer_dialog", self.action_on_answer_dialog)
-        self.icon.connect_to_signal("on_drop_data", self.action_on_drop_data)
+	# user input/output
+	def ask_text(self, default=""):
+		label = "Translate from <b>%s</b> to <b>%s</b>:" % (self.source.name, self.destination.name)
+		dialog_attributes = {
+			'message'    : label,
+			'use-markup' : True,
+			'buttons'    : 'ok;cancel'}
+		widget_attributes = {'widget-type'   : 'text-entry',
+							 'initial-value' : default,
+							 #'multi-lines'   : True
+							 }
+		self.icon.PopupDialog (dialog_attributes, widget_attributes)
+		self.dialog_type = 0
 
-    def read_configuration_parameters(self):
-        self.source = self.get_source_language_from_configuration()
-        self.destiny = self.get_destiny_language_from_configuration()                   # first set the destination language ...
-        log ("From %s to %s read from configuration file" % (self.source.name, self.destiny.name))
-        self.inform_current_destiny_language()                                           # ... and show it
+	# Clipboard operations
+	def set_to_clipboard(self, sentence):
+		clipboard = gtk.clipboard_get()                                                 # get the clipboard
+		clipboard.set_text(sentence)                                                    # set the clipboard the translated text
 
-    def get_source_language_from_configuration(self):
-        reader = ConfigParser.RawConfigParser()
-        reader.read(self.configuration)
-        slang = reader.getint('Configuration', 'source')                                # get the source language index
-        return self.sources[slang]                                                      # retorna a instancia de Language referente ao indice
+	def get_from_clipboard(self):
+		clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)                        # eh o que foi selecionado pelo mouse
+		if not clipboard:                                                               # se nada foi selecionado pelo mouse
+			clipboard = gtk.clipboard_get()                                             # verifica por algo copiado para o clipboard
+		return clipboard.wait_for_text()
 
-    def get_destiny_language_from_configuration(self):
-        reader = ConfigParser.RawConfigParser()
-        reader.read(self.configuration)
-        dlang = reader.getint('Configuration', 'destiny')                               # get the destination language index
-        return self.destinies[dlang]                                                    # retorna a instancia de Language referente ao indice        
+	# Icon information
+	def inform_start_of_waiting_process(self):
+		self.icon.SetQuickInfo("...")  # TODO: what about an emblem or an animation ?...
 
-    def read_languages_file(self):
-        """Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
-        f = open('.languages', "rb")
-        for line in f:
-            splited = line.split()                                                      # split the line by space token
-            name, abbrv = splited[0], splited[1]
-            self.sources.append(Language(name, abbrv))                                  # e.g, Language("English", "en")
-            self.destinies.append(Language(name, abbrv))                                # e.g, Language("Portuguese", "pt")
+	def inform_end_of_waiting_process(self):
+		self.icon.SetQuickInfo(self.destination.abbrv)  # set back the usual quick-info
 
-    def dock_level_keypress_binding(self):
-        try:
-            self.icon.BindShortkey(["<Control><Alt>R"])                                 # for reading moments
-            self.icon.BindShortkey(["<Control><Alt>W"])                                 # for writing moments
-        except dbus.DBusException:
-            log ("Ctrl + Alt + [R|W] shortcut won't work, update Cairo-dock to 2.2.0 or higher")
-        else:
-            log ("Ctrl + Alt + [R|W] shortcut gonna work, Cairo-dock 2.2.0 or higher is up and running")
+	def inform_current_destination_language(self):
+		self.icon.SetQuickInfo(self.destination.abbrv)  # TODO: name is too long for a quick-info, maybe as a label if none is defined in the conf file?...
 
-    def translate(self, sentence, source, destiny):
-        self.inform_start_of_waiting_process()
+	# Translation
+	def translate(self, sentence, source, destination):
+		self.inform_start_of_waiting_process()
 
-        # Translate URL
-        if sentence.startswith(("http://", "https://", "www.")):                        # barely checking if user is trying to translate a web page
-            url = "http://translate.google.com/translate?sl=%s&tl=%s&u=%s" % (source, destiny, sentence)
-            webbrowser.open(url)
-            log("Translated URL %s" % sentence)
-        else:
-            # Translate one word, or sentence
-            interface = Interface(sentence)                                             # alimenta o tradutor com o sentence a ser traduzida
-            translated, dictionary = interface.translate_it(source, destiny)            # texto traduzido e o resultado do dicionario
-            if len(sentence.split()) == 1:                                              # just one word, dictionary was returned
-                message = ""
-                for category, words in dictionary.iteritems():
-                    message += "<i>%s</i>\n\n" % category 
-                    message += "%s\n\n" % "\n".join(words[1:])                          # array of words with categoy name as the first position, chop
-                log("Translated with dictionary %s" % message)
-            else:                                                                       # sentence, only the translation was returned
-                message = translated
-                log ("Translated sentence %s" % message)
+		# Translate URL
+		if sentence.startswith(("http://", "https://", "www.")):                        # barely checking if user is trying to translate a web page
+			url = "http://translate.google.com/translate?sl=%s&tl=%s&u=%s" % (source, destination, sentence)
+			webbrowser.open(url)
+			log("Translated URL %s" % sentence)
+		else:
+			# Translate one word, or sentence
+			interface = Interface(sentence)                                             # alimenta o tradutor com o sentence a ser traduzida
+			translated, dictionary = interface.translate_it(source, destination)        # texto traduzido e o resultado do dicionario
+			if len(sentence.split()) == 1:                                              # just one word, dictionary was returned
+				message = ""
+				for category, words in dictionary.iteritems():
+					message += "<i><u>%s</u></i>\n" % category 
+					message += "%s\n\n" % "\n".join(words[1:])                          # array of words with categoy name as the first position, chop
+				log("Translated with dictionary %s" % message)
+			else:                                                                       # sentence, only the translation was returned
+				message = translated
+				log ("Translated sentence %s" % message)
 
-            try:
-                self.icon.PopupDialog({'message':message, "use-markup":True, "buttons":"cancel;stock_refresh;stock_edit"}, {})
-            except Exception:
-                self.icon.ShowDialog(message, self.dialog_active_time)                  # PopupDialog could not be shown, ShowDialog was used instead
+			self.icon.PopupDialog( {'message'    : message,
+									'use-markup' : True,
+									'buttons'    : 'cancel;gtk-clear;stock_refresh',
+									'time-length': self.dialog_active_time + len(message) / 20},
+									{} )
+			self.dialog_type = 1
+			
+			self.set_to_clipboard(translated)                                           # coloca o resultado na area de transferencia
+																						# apenas a primeira palavra no caso do dicionario
+			self.inform_end_of_waiting_process()
 
-            self.set_to_clipboard(translated)                                           # coloca o resultado na area de transferencia
-                                                                                        # apenas a primeira palavra no caso do dicionario
-        self.inform_end_of_waiting_process()
-        self.inform_current_destiny_language()
+	def set_read_mode(self):
+		self.source = self.sources[self.config['slang']]
+		self.destination = self.sources[self.config['dlang']]
 
-    def ask_text(self, default=""):
-        label = "Translate from %s to %s:" % (self.source.name, self.destiny.name)
-        self.icon.AskText(label, default)                                               # heya user, tell me what do you wanna and I will translate
+	def set_write_mode(self):
+		self.source = self.sources[self.config['dlang']]
+		self.destination = self.sources[self.config['slang']]
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['slang']			= keyfile.getint('Configuration', 'source')         # get the source language index
+		self.config['dlang'] 			= keyfile.getint('Configuration', 'destiny')        # get the destination language index
+		self.config['shortkey_from'] 	= keyfile.get('Configuration', 'shortkey_from')     # read
+		self.config['shortkey_to'] 		= keyfile.get('Configuration', 'shortkey_to')       # write
 
-    def action_on_dock_level_shortkey(self, key):
-        if (key == "<Control><Alt>R"):          # Usuario esta lendo a lingua desconhecida (Ingles) e quer traduzir para a linguage destino (Portugues)
-            self.set_read_mode()
-        elif (key == "<Control><Alt>W"):        # Usuario esta escrevendo em sua lingua (Portugues) e quer traduzir para a linguage destino (Ingles)
-            self.set_write_mode()
-        self.ask_text()
+	def begin(self):
+		# parse the .languages file to get the available languages (in self.sources)
+		self.read_languages_file()
+		
+		# set the initial source and destination.
+		self.source = self.sources[self.config['slang']]
+		self.destination = self.destinations[self.config['dlang']]                        # first set the destination language ...
+		self.inform_current_destination_language()                                        # ... and show it
 
-    def set_read_mode(self):
-        self.source = self.get_source_language_from_configuration()
-        self.destiny = self.get_destiny_language_from_configuration()
+		# bind the shortkeys.
+		self.icon.BindShortkey([self.config['shortkey_from'], self.config['shortkey_to']])  # reading/writing
+		
+	def reload(self):
+		# update the current source and destination
+		self.source = self.sources[self.config['slang']]
+		self.destination = self.destinations[self.config['dlang']]                        # first set the destination language ...
+		
+		self.inform_current_destination_language()                                        # ... and show it
+		
+		# re-bind the shortkeys with their new values.
+		self.icon.BindShortkey([self.config['shortkey_from'], self.config['shortkey_to']])  # reading/writing
+	
+	##### callbacks #####
+	
+	def on_click(self, param):
+	  # on click, popup a dialog with an empty text-entry, and let the user fill it and press ok/Enter.
+		self.ask_text()
 
-    def set_write_mode(self):
-        self.source = self.get_destiny_language_from_configuration()                   # trocada em relacao ao de cima
-        self.destiny = self.get_source_language_from_configuration()
+	def on_middle_click(self):
+		"""When middle-clicked the applet get the clipboard 
+		   (primary or clipboard buffer content) and translates it """
+		content = self.get_from_clipboard()
+		if content:
+			self.translate(content, self.source.abbrv, self.destination.abbrv)           # what to be translated, the source and destination languages
+	
+	# Caso eu tivesse usado o widget-type = 'text-entry', o valor do 'content' seria o
+	# conteudo string do campo de texto, mas como resultados com strings grandes tem
+	# pouca legibilidade na caixa de texto do 'text-entry', deixei o PopupDialog
+	# apenas funcionar como ShowDialog (exibindo mensagem). Portanto, o 'content' vem com 
+	# o valor igual ao do 'key' e nao como a string contida no campo de texto
+	def on_answer_dialog(self, key, content):
+		if self.dialog_type == 0:  # dialog popped by the user, he just entered the text and pressed Enter/Escape
+			if (key == 0 or key == -1) and content:  # ok or Enter
+				self.text_to_be_translated = content
+				self.translate(content, self.source.abbrv, self.destination.abbrv)               # what to be translated, the source and destination languages
+		else:  # dialog poped by the applet as the result of a translation
+			if (key == self.new_translation_key):                                            # cancel button = 0, and new = 1
+				self.ask_text()                                                              # abre a entrada para nova traducao
+			elif (key == self.edit_translation_key):
+				self.ask_text(self.text_to_be_translated)                                    # traducao com o valor anterior a ser editado 
+	
+	def _update_conf_file(self):
+		print "update "+self.cConfFile
+		keyfile = ConfigParser.RawConfigParser()
+		keyfile.read(self.cConfFile)
+		keyfile.set('Configuration', 'source', self.config['slang'])
+		keyfile.set('Configuration', 'destination', self.config['dlang'])
+		## the following will not work, because it will compeltely mess the config file (comments and param order).
+		#keyfile.write(open(self.cConfFile, 'wb'))
 
-    def action_on_answer(self, answer):
-        if answer:
-            self.text_to_be_translated = answer
-            self.translate(answer, self.source.abbrv, self.destiny.abbrv)               # what to be translated, the source and destination languages
+	def _switch_destination_language(self, index):
+		self.config['dlang'] = index
+		self.destination = self.destinations[index]
+		log ("Switched destination from menu: %s" % self.destination.name)
+		self._update_conf_file()
+		self.inform_current_destination_language()
 
-    # Caso eu tivesse usado o widget-type = 'text-entry', o valor do 'content' seria o
-    # conteudo string do campo de texto, mas como resultados com strings grandes tem
-    # pouca legibilidade na caixa de texto do 'text-entry', deixei o PopupDialog
-    # apenas funcionar como ShowDialog (exibindo mensagem). Portanto, o 'content' vem com 
-    # o valor igual ao do 'key' e nao como a string contida no campo de texto
-    def action_on_answer_dialog(self, key, content):
-        if (key == self.new_translation_key):                                            # cancel button = 0, and new = 1
-            self.ask_text()                                                              # abre a entrada para nova traducao
-        elif (key == self.edit_translation_key):
-            self.ask_text(self.text_to_be_translated)                                    # traducao com o valor anterior a ser editado 
+	def _switch_source_language(self, index):
+		self.config['slang'] = index
+		self.source = self.sources[index]
+		log ("Switched source from menu: %s" % self.source.name)
+		self._update_conf_file()
 
-    def action_on_middle_click(self):
-        """When middle-clicked the applet get the clipboard 
-           (primary or clipboard buffer content) and translates it """
-        content = self.get_from_clipboard()
-        if content:
-            self.translate(content, self.source.abbrv, self.destiny.abbrv)              # what to be translated, the source and destination languages
+	def _switch_languages(self):
+		self.config['slang'],self.config['dlang'] = self.config['dlang'],self.config['slang']
+		self.source, self.destination = self.destination, self.source
+		log ("Switched languages, lets translate from %s to %s" % (self.source.name, self.destination.name))
+		self._update_conf_file()
+		self.inform_current_destination_language()
+	
+	def on_menu_select(self, selected_menu):
+		if selected_menu == CLIPBOARD_INDEX:
+			content = self.get_from_clipboard()
+			if content:
+				self.translate(content, self.source.abbrv, self.destination.abbrv)           # what to be translated, the source and destination languages
+		elif selected_menu == SWITCH_INDEX:
+			self._switch_languages()
+		elif selected_menu > SOURCE_INDEX:
+			self._switch_source_language(selected_menu - SOURCE_INDEX - 1)
+		else:
+			self._switch_destination_language(selected_menu - DESTINATION_INDEX - 1)
 
-    def action_on_click(self, param):
-        self.ask_text()
+	def on_scroll(self, scroll_up):
+		max_index = len(self.destinations) - 1
+		if scroll_up:
+			self.scroll_destination_language -= 1
+		if self.scroll_destination_language < 0:
+			self.scroll_destination_language = max_index							# roll to the end of the list
+		else:
+			self.scroll_destination_language += 1
+		if self.scroll_destination_language > max_index:
+			self.scroll_destination_language = 0								# roll to the beginning of the list
+		self._switch_destination_language (self.scroll_destination_language)
 
-    def action_on_menu_select(self, selected_menu):
-        if selected_menu < len(self.destinies):
-            self.switch_destiny_language(selected_menu)
-        else:
-            if selected_menu < len(self.destinies) + len(self.sources):
-                self.switch_source_language(selected_menu)
-            else:
-                self.switch_languages()
+	def _build_menu_for_destination_languages(self):
+		sub_menu_icon = os.path.abspath("./data/to.png")
+		sub_menu_id = DESTINATION_INDEX
+		destination_sub_menu = [{'type'  : CDApplet.MENU_SUB_MENU,  # sub-menu
+								 'label' : 'To',
+								 'menu'  : 0,  # belongs to the main menu
+								 'id'    : sub_menu_id,
+								 'icon'  : sub_menu_icon }]
+		index = sub_menu_id + 1
+		for language in self.destinations:
+			destination_sub_menu.append({
+				'type'  : CDApplet.MENU_ENTRY,  # normal entry
+				'label' : language.name,
+				'menu'  : sub_menu_id,  # belongs to sub-menu "To"
+				'id'    : index,
+				'icon'  : sub_menu_icon if language is self.destination else '' })
+			index += 1
+		return destination_sub_menu
 
-    def action_on_scroll(self, scroll_up):
-        if scroll_up:
-            self.scroll_destiny_language -= 1
-            self.switch_destiny_language (self.scroll_destiny_language)
-        else:
-            self.scroll_destiny_language += 1
-            self.switch_destiny_language (self.scroll_destiny_language)
+	def _build_menu_for_source_languages(self):
+		sub_menu_icon = os.path.abspath("./data/from.png")
+		sub_menu_id = SOURCE_INDEX
+		source_sub_menu = [{'type'  : CDApplet.MENU_SUB_MENU,  # sub-menu
+							'label' : 'From',
+							'menu'  : 0,  # belongs to the main menu
+							'id'    : sub_menu_id,
+							'icon'  : sub_menu_icon }]
+		index = sub_menu_id + 1
+		for language in self.sources:
+			source_sub_menu.append({
+				'type'  : CDApplet.MENU_ENTRY,  # normal entry
+				'label' : language.name,
+				'menu'  : sub_menu_id,  # belongs to sub-menu "From"
+				'id'    : index,
+				'icon'  : sub_menu_icon if language is self.source else '' })
+			index += 1
+		return source_sub_menu
 
-    def switch_destiny_language(self, index):
-        max_index = len(self.destinies) - 1
-        if index < 0:
-            index = 0									            					# keep the lower limit
-        if index > max_index:
-    		index = max_index - 1
-        self.destiny = self.destinies[index]
-        log ("Switched destiny from menu: %s" % self.destiny.name)
-        self.inform_current_destiny_language()
+	def _build_menu_for_switch_languages(self):
+		menu_icon = os.path.abspath("./data/switch.png")
+		index = SWITCH_INDEX
+		tooltip = "%s to %s" % (self.destination.name, self.source.name)
+		return [{'type'   : CDApplet.MENU_ENTRY,  # normal entry
+				 'label'  : 'Switch languages',
+				 'menu'   : 0,  # belongs to the main menu
+				 'id'     : index,
+				 'icon'   : menu_icon,
+				 'tooltip': tooltip }]
 
-    def switch_languages(self):
-        self.source, self.destiny = self.destiny, self.source
-        log ("Switched languages, lets translate from %s to %s" % (self.source.name, self.destiny.name))
-        self.inform_current_destiny_language()
+	def on_build_menu(self):
+		items = []
+		items += self._build_menu_for_source_languages()
+		items += self._build_menu_for_destination_languages()
+		items += self._build_menu_for_switch_languages()
+		items.append({ 'type'  : CDApplet.MENU_SEPARATOR,  # separator
+					   'menu'  : 0 })  # belongs to the main menu
+		items.append({ 'type'  : CDApplet.MENU_ENTRY,  # normal entry
+					   'label' : 'Translate from clipboard (middle-click)',
+					   'menu'  : 0,  # belongs to the main menu
+					   'id'    : CLIPBOARD_INDEX,
+					   'icon'  : 'stock_paste' })
+		self.icon.AddMenuItems(items)
 
-    def switch_source_language(self, index):
-        shifted_position = index - len(self.destinies)
-        self.source = self.sources[shifted_position]
-        log ("Switched source from menu: %s" % self.source.name)
+	def on_shortkey(self, key):
+		if (key == self.config['shortkey_from']):          # Usuario esta lendo a lingua desconhecida (Ingles) e quer traduzir para a linguage destino (Portugues)
+			self.set_read_mode()
+		elif (key == self.config['shortkey_to']):        # Usuario esta escrevendo em sua lingua (Portugues) e quer traduzir para a linguage destino (Ingles)
+			self.set_write_mode()
+		self.ask_text()
 
-    def action_on_build_menu(self):
-        try:
-            self.icon.AddMenuItems(self.build_menu_for_source_languages())
-            self.icon.AddMenuItems(self.build_menu_for_destiny_languages())
-            self.icon.AddMenuItems(self.build_menu_for_switch_languages())
-        except TypeError:
-            log ("AddMenuItems method is not available, update Cairo-dock to 2.1.4 or higher")
-
-    def build_menu_for_destiny_languages(self):
-        destiny_sub_menu_icon = os.path.abspath("./data/to.png")
-        destiny_sub_menu = [{'type':1, 'label':'To', 'menu':0, 'id':1, 'icon':destiny_sub_menu_icon}]
-        index = 0
-        for language in self.destinies:
-            item = {}
-            item['type'] = 0
-            item['label'] = language.name
-            item['menu'] = 1                                                            # belongs to sub-menu "To"
-            item['id'] = index
-            item['icon'] = destiny_sub_menu_icon
-            index += 1
-            destiny_sub_menu.append(item)
-        return destiny_sub_menu
-
-    def build_menu_for_source_languages(self):
-        """o sub-menu destinos (acima) tem, para cada uma de suas entradas, ids que variam de 0 ao len(self.destinies)-1
-           consequentemente, o primeiro id do menu de origem (este aqui) eh len(self.destinies). Eh necessario apenas deslocar
-           o id por este primeiro indice para ter um indice que varia de len(self.destinies)+1 ao len(self.sources). 
-           Ver switch_source_language()"""
-        """destinies sub-menu (above) has, for each one of its entries, ids that ranges from 0 to len(self.destinies)-1
-           consequently, the first id of the sources menu is the len(self.destinies). It is just necessary to shift the 
-           id by this first index to get a index that ranges from len(self.destinies)+1 to len(self.sources).
-           See switch_source_language()"""
-        source_sub_menu_icon = os.path.abspath("./data/from.png")
-        source_sub_menu_index = len(self.destinies)
-        source_sub_menu = [{'type':1, 'label':'From', 'menu':0, 'id':source_sub_menu_index, 'icon':source_sub_menu_icon}]
-        source_sub_menu_entry_index = source_sub_menu_index
-        for language in self.sources:
-            item = {}
-            item['type'] = 0
-            item['label'] = language.name
-            item['menu'] = source_sub_menu_index                                         # belongs to sub-menu "From"
-            item['id'] = source_sub_menu_entry_index
-            item['icon'] = source_sub_menu_icon
-            source_sub_menu_entry_index += 1
-            source_sub_menu.append(item)
-        return source_sub_menu
-
-    def build_menu_for_switch_languages(self):
-        index = len(self.sources) + len(self.destinies)
-        switch_menu_icon = os.path.abspath("./data/switch.png")
-        tooltip = "%s to %s" % (self.destiny.name, self.source.name)
-        return [{'type':0, 'label':'Switch languages', 'menu':0, 'id':index, 'icon':switch_menu_icon, 'tooltip':tooltip}]
-
-    def action_on_reload(self, config_has_changed):
-	    if config_has_changed:
-		    self.read_configuration_parameters()
-
-    def set_to_clipboard(self, sentence):
-        clipboard = gtk.clipboard_get()                                                 # get the clipboard
-        clipboard.set_text(sentence)                                                    # set the clipboard the translated text
-
-    def get_from_clipboard(self):
-        clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)                        # eh o que foi selecionado pelo mouse
-        if not clipboard:                                                               # se nada foi selecionado pelo mouse
-            clipboard = gtk.clipboard_get()                                             # verifica por algo copiado para o clipboard
-        return clipboard.wait_for_text()
-
-    def action_on_drop_data(self, text):
-        self.translate(text, self.source.abbrv, self.destiny.abbrv)
-
-    def inform_start_of_waiting_process(self):
-        self.icon.SetQuickInfo("...")
-
-    def inform_end_of_waiting_process(self):
-        self.icon.SetQuickInfo("")
-
-    def inform_current_destiny_language(self):
-        self.icon.SetQuickInfo(self.destiny.name)
+	def on_drop_data(self, text):
+		self.translate(text, self.source.abbrv, self.destination.abbrv)
 
 if __name__ == '__main__':
-    doCkranslator().start()
+	Applet().run()

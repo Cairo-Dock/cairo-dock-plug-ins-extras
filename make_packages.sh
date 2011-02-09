@@ -9,7 +9,7 @@ else
 		echo "make $f"
 		rm -f "$f/*.pyc" "$f/*~"
 		mkdir "FTP/$f"
-		tar cfz "$f.tar.gz" "$f"
+		tar cfz --exclude=last-modif "$f.tar.gz" "$f"
 		mv "$f.tar.gz" "FTP/$f"
 	done;
 fi
