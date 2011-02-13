@@ -154,7 +154,6 @@ class Applet(CDApplet):
 		self.destination = None                                        # get it from configuration file
 		self.destinations = []                                         # list of possible resulting languages
 		# self.favorites = []                                          # TODO lista de linguas favoritas
-		self.scroll_destination_language = 0
 		self.new_translation_key = 1                                   # there are 3 buttons, cancel = 0, new = 1 ...
 		self.edit_translation_key = 2                                  # ... and edit
 		self.dialog_type = 0	                                       # dialog we are displaying to the user
@@ -208,18 +207,23 @@ class Applet(CDApplet):
 
 	def inform_current_destination_language(self):
 		self.icon.SetQuickInfo(self.destination.abbrv)  # TODO: name is too long for a quick-info, maybe as a label if none is defined in the conf file?...
+		if self.config['default title'] == "":
+			self.icon.SetLabel(self.source.name+' -> '+self.destination.name)
+	
+	def inform_current_source_language(self):
+		if self.config['default title'] == "":
+			self.icon.SetLabel(self.source.name+' -> '+self.destination.name)
 
 	# Translation
 	def translate(self, sentence, source, destination):
-		self.inform_start_of_waiting_process()
-
 		# Translate URL
 		if sentence.startswith(("http://", "https://", "www.")):                        # barely checking if user is trying to translate a web page
 			url = "http://translate.google.com/translate?sl=%s&tl=%s&u=%s" % (source, destination, sentence)
 			webbrowser.open(url)
 			log("Translated URL %s" % sentence)
-		else:
-			# Translate one word, or sentence
+		else:  # Translate one word, or sentence
+			self.inform_start_of_waiting_process()
+			
 			interface = Interface(sentence)                                             # alimenta o tradutor com o sentence a ser traduzida
 			translated, dictionary = interface.translate_it(source, destination)        # texto traduzido e o resultado do dicionario
 			if len(sentence.split()) == 1:                                              # just one word, dictionary was returned
@@ -270,9 +274,9 @@ class Applet(CDApplet):
 		self.config['dlang'] 			= keyfile.getint('Configuration', 'destiny')        # get the destination language index
 		self.config['shortkey_from'] 	= keyfile.get('Configuration', 'shortkey_from')     # read
 		self.config['shortkey_to'] 		= keyfile.get('Configuration', 'shortkey_to')       # write
-		self.config['dialog time'] 		= keyfile.getint('Configuration', 'dialog time')       # minimum time in seconds that the dialog window will be active
-		self.config['dialog editable'] 	= keyfile.getboolean('Configuration', 'dialog editable')   # whether the user can edit the result
-		
+		self.config['dialog time'] 		= keyfile.getint('Configuration', 'dialog time')    # minimum time in seconds that the dialog window will be active
+		self.config['dialog editable'] 	= keyfile.getboolean('Configuration', 'dialog editable')  # whether the user can edit the result
+		self.config['default title'] 	= keyfile.get('Icon', 'name')  # icon's label set by the user.
 
 	def begin(self):
 		# parse the .languages file to get the available languages (in self.sources)
@@ -326,7 +330,7 @@ class Applet(CDApplet):
 				self.ask_text(self.text_to_be_translated)  # popup the dialog again with the latest text entered by the user.
 	
 	def _update_conf_file(self):
-		print "update "+self.cConfFile
+		log ("update "+self.cConfFile)
 		keyfile = ConfigParser.RawConfigParser()
 		keyfile.read(self.cConfFile)
 		keyfile.set('Configuration', 'source', self.config['slang'])
@@ -346,6 +350,7 @@ class Applet(CDApplet):
 		self.source = self.sources[index]
 		log ("Switched source from menu: %s" % self.source.name)
 		self._update_conf_file()
+		self.inform_current_source_language()
 
 	def _switch_languages(self):
 		self.config['slang'],self.config['dlang'] = self.config['dlang'],self.config['slang']
@@ -368,15 +373,16 @@ class Applet(CDApplet):
 
 	def on_scroll(self, scroll_up):
 		max_index = len(self.destinations) - 1
+		scroll_destination_language = self.config['dlang']
 		if scroll_up:
-			self.scroll_destination_language -= 1
-		if self.scroll_destination_language < 0:
-			self.scroll_destination_language = max_index							# roll to the end of the list
+			scroll_destination_language -= 1
+			if scroll_destination_language < 0:
+				scroll_destination_language = max_index							# roll to the end of the list
 		else:
-			self.scroll_destination_language += 1
-		if self.scroll_destination_language > max_index:
-			self.scroll_destination_language = 0								# roll to the beginning of the list
-		self._switch_destination_language (self.scroll_destination_language)
+			scroll_destination_language += 1
+			if scroll_destination_language > max_index:
+				scroll_destination_language = 0								# roll to the beginning of the list
+		self._switch_destination_language (scroll_destination_language)
 
 	def _build_menu_for_destination_languages(self):
 		sub_menu_icon = os.path.abspath("./data/to.png")

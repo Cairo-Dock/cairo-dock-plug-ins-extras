@@ -6,4 +6,5 @@
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
 
 def log (string):
-    print "[+] doCkranslator: %s" % string
+	pass
+    #print "[+] doCkranslator: %s" % string
