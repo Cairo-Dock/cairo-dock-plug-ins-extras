@@ -149,16 +149,15 @@ class Applet(CDApplet):
 	  # define internal variables
 		self.translated_text = ""
 		self.text_to_be_translated = ""
-		self.source = None                                                              # get it from configuration file
-		self.sources = []                                                               # list of possible source languages
-		self.destination = None                                                         # get it from configuration file
-		self.destinations = []                                                          # list of possible resulting languages
-		# self.favorites = []                                                           # TODO lista de linguas favoritas
+		self.source = None                                             # get it from configuration file
+		self.sources = []                                              # list of possible source languages
+		self.destination = None                                        # get it from configuration file
+		self.destinations = []                                         # list of possible resulting languages
+		# self.favorites = []                                          # TODO lista de linguas favoritas
 		self.scroll_destination_language = 0
-		self.dialog_active_time = 10                                                    # time in seconds that the dialog window will be active
-		self.new_translation_key = 1                                                    # there are 3 buttons, cancel = 0, new = 1 ...
-		self.edit_translation_key = 2                                                   # ... and edit
-		self.dialog_type = 0	                                                          # dialog we are displaying to the user
+		self.new_translation_key = 1                                   # there are 3 buttons, cancel = 0, new = 1 ...
+		self.edit_translation_key = 2                                  # ... and edit
+		self.dialog_type = 0	                                       # dialog we are displaying to the user
 		
 		# call high-level init
 		CDApplet.__init__(self)
@@ -170,10 +169,10 @@ class Applet(CDApplet):
 		"""Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
 		f = open('.languages', "rb")
 		for line in f:
-			splited = line.split()                                                      # split the line by space token
+			splited = line.split()                                      # split the line by space token
 			name, abbrv = splited[0], splited[1]
-			self.sources.append(Language(name, abbrv))                                  # e.g, Language("English", "en")
-			self.destinations.append(Language(name, abbrv))                                # e.g, Language("Portuguese", "pt")
+			self.sources.append(Language(name, abbrv))                  # e.g, Language("English", "en")
+			self.destinations.append(Language(name, abbrv))             # e.g, Language("Portuguese", "pt")
 
 	# user input/output
 	def ask_text(self, default=""):
@@ -181,23 +180,23 @@ class Applet(CDApplet):
 		dialog_attributes = {
 			'message'    : label,
 			'use-markup' : True,
-			'buttons'    : 'ok;cancel'}
-		widget_attributes = {'widget-type'   : 'text-entry',
-							 'initial-value' : default,
-							 #'multi-lines'   : True
-							 }
+			'buttons'    : 'ok;cancel' }
+		widget_attributes = {
+			'widget-type'   : 'text-entry',
+			'initial-value' : default,
+			'multi-lines'   : self.config['dialog editable'] }
 		self.icon.PopupDialog (dialog_attributes, widget_attributes)
 		self.dialog_type = 0
 
 	# Clipboard operations
 	def set_to_clipboard(self, sentence):
-		clipboard = gtk.clipboard_get()                                                 # get the clipboard
-		clipboard.set_text(sentence)                                                    # set the clipboard the translated text
+		clipboard = gtk.clipboard_get()                                  # get the clipboard
+		clipboard.set_text(sentence)                                     # set the clipboard the translated text
 
 	def get_from_clipboard(self):
-		clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)                        # eh o que foi selecionado pelo mouse
-		if not clipboard:                                                               # se nada foi selecionado pelo mouse
-			clipboard = gtk.clipboard_get()                                             # verifica por algo copiado para o clipboard
+		clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)         # eh o que foi selecionado pelo mouse
+		if not clipboard:                                                # se nada foi selecionado pelo mouse
+			clipboard = gtk.clipboard_get()                              # verifica por algo copiado para o clipboard
 		return clipboard.wait_for_text()
 
 	# Icon information
@@ -226,18 +225,30 @@ class Applet(CDApplet):
 			if len(sentence.split()) == 1:                                              # just one word, dictionary was returned
 				message = ""
 				for category, words in dictionary.iteritems():
-					message += "<i><u>%s</u></i>\n" % category 
+					if self.config['dialog editable']:
+						message += "%s\n----------------------------\n" % category 
+					else:
+						message += "<i><u>%s</u></i>\n" % category 
 					message += "%s\n\n" % "\n".join(words[1:])                          # array of words with categoy name as the first position, chop
 				log("Translated with dictionary %s" % message)
 			else:                                                                       # sentence, only the translation was returned
 				message = translated
 				log ("Translated sentence %s" % message)
-
-			self.icon.PopupDialog( {'message'    : message,
-									'use-markup' : True,
-									'buttons'    : 'cancel;gtk-clear;stock_refresh',
-									'time-length': self.dialog_active_time + len(message) / 20},
-									{} )
+			
+			dialog_attributes = {
+				'use-markup' : True,
+				'buttons'    : 'cancel;gtk-clear;stock_refresh',
+				'time-length': self.config['dialog time'] + len(message) / 20 }
+			if self.config['dialog editable']:
+				dialog_attributes['message'] = "Translated from <b>%s</b> to <b>%s</b>:" % (self.source.name, self.destination.name)
+				widget_attributes = {
+					'widget-type'   : 'text-entry',
+					'initial-value' : message,
+					'multi-lines'   : True }
+			else:
+				dialog_attributes['message'] = message
+				widget_attributes = {}
+			self.icon.PopupDialog (dialog_attributes, widget_attributes )
 			self.dialog_type = 1
 			
 			self.set_to_clipboard(translated)                                           # coloca o resultado na area de transferencia
@@ -259,6 +270,9 @@ class Applet(CDApplet):
 		self.config['dlang'] 			= keyfile.getint('Configuration', 'destiny')        # get the destination language index
 		self.config['shortkey_from'] 	= keyfile.get('Configuration', 'shortkey_from')     # read
 		self.config['shortkey_to'] 		= keyfile.get('Configuration', 'shortkey_to')       # write
+		self.config['dialog time'] 		= keyfile.getint('Configuration', 'dialog time')       # minimum time in seconds that the dialog window will be active
+		self.config['dialog editable'] 	= keyfile.getboolean('Configuration', 'dialog editable')   # whether the user can edit the result
+		
 
 	def begin(self):
 		# parse the .languages file to get the available languages (in self.sources)
@@ -304,12 +318,12 @@ class Applet(CDApplet):
 		if self.dialog_type == 0:  # dialog popped by the user, he just entered the text and pressed Enter/Escape
 			if (key == 0 or key == -1) and content:  # ok or Enter
 				self.text_to_be_translated = content
-				self.translate(content, self.source.abbrv, self.destination.abbrv)               # what to be translated, the source and destination languages
+				self.translate(content, self.source.abbrv, self.destination.abbrv)  # what to be translated, the source and destination languages
 		else:  # dialog poped by the applet as the result of a translation
-			if (key == self.new_translation_key):                                            # cancel button = 0, and new = 1
-				self.ask_text()                                                              # abre a entrada para nova traducao
-			elif (key == self.edit_translation_key):
-				self.ask_text(self.text_to_be_translated)                                    # traducao com o valor anterior a ser editado 
+			if (key == self.new_translation_key):  # new translation on button 1 (Enter and Escape are ignored and therefore close the dialog).
+				self.ask_text()  # popup the empty dialog again
+			elif (key == self.edit_translation_key):  # refresh on button 2
+				self.ask_text(self.text_to_be_translated)  # popup the dialog again with the latest text entered by the user.
 	
 	def _update_conf_file(self):
 		print "update "+self.cConfFile
