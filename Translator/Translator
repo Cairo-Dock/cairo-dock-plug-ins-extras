@@ -31,9 +31,7 @@
 #        * Press Ctrl + Alt + W, type the text, and press Enter
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import gobject, dbus, os, urllib, gtk, ConfigParser, webbrowser
-from dbus.mainloop.glib import DBusGMainLoop
-from dbus import glib
+import os, urllib, gtk, webbrowser
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
@@ -56,6 +54,7 @@ class TranslatorParser(SGMLParser):
 		self.dictionary = {}
 		self.inside_div = 0
 		self.current_type = ""
+		self.merge = False
 
 	# sentences
 	def start_span(self, attrs):
@@ -82,21 +81,20 @@ class TranslatorParser(SGMLParser):
 
 		# dictionary
 		if self.inside_div:
-			if text == 'noun':                                                       # set, and start in dictionary the category that is being read
-				self.current_type = 'noun'
+			if text in ('noun','verb','adverb','adjective','interjection'):
+				self.current_type = text
 				self.dictionary[self.current_type] = []
-			elif text == 'verb':
-				self.current_type = 'verb'
-				self.dictionary[self.current_type] = []
-			elif text == 'adjective':
-				self.current_type = 'adjective'
-				self.dictionary[self.current_type] = []
-			elif text == 'interjection':
-				self.current_type = 'interjection'
-				self.dictionary[self.current_type] = []
-
+			
 			if self.current_type:                                                       # any category found, append in the dictionary
-				self.dictionary[self.current_type].append(text)
+				if text == "'":  # the parser separates a word that has a "'" inside. This is bad, so we'll merge the different parts of such words.
+					self.merge = True
+				else:
+					if self.merge:  # merge this piece of text with the previous one.
+						prev_text = self.dictionary[self.current_type].pop()  # removes and returns the last item in the list
+						self.dictionary[self.current_type].append(prev_text+"'"+text)  # merge the new text with the previous one and the "'".
+						self.merge = False
+					else:  # just append the word to the list of translations.
+						self.dictionary[self.current_type].append(text)
 
 	def parse(self, page):
 		self.feed(page)                                                                 # feed the parser with the page's html
@@ -146,7 +144,7 @@ CLIPBOARD_INDEX = 3000
 class Applet(CDApplet):
 
 	def __init__(self):
-	  # define internal variables
+		# define internal variables
 		self.translated_text = ""
 		self.text_to_be_translated = ""
 		self.source = None                                             # get it from configuration file
@@ -233,7 +231,7 @@ class Applet(CDApplet):
 						message += "%s\n----------------------------\n" % category 
 					else:
 						message += "<i><u>%s</u></i>\n" % category 
-					message += "%s\n\n" % "\n".join(words[1:])                          # array of words with categoy name as the first position, chop
+					message += "%s\n\n" % "\n".join(words[1:])                          # array of words with category name as the first position, chop
 				log("Translated with dictionary %s" % message)
 			else:                                                                       # sentence, only the translation was returned
 				message = translated
@@ -302,7 +300,7 @@ class Applet(CDApplet):
 	
 	##### callbacks #####
 	
-	def on_click(self, param):
+	def on_click(self, key):
 	  # on click, popup a dialog with an empty text-entry, and let the user fill it and press ok/Enter.
 		self.ask_text()
 
@@ -320,13 +318,13 @@ class Applet(CDApplet):
 	# o valor igual ao do 'key' e nao como a string contida no campo de texto
 	def on_answer_dialog(self, key, content):
 		if self.dialog_type == 0:  # dialog popped by the user, he just entered the text and pressed Enter/Escape
-			if (key == 0 or key == -1) and content:  # ok or Enter
+			if (key == 0 or key == CDApplet.DIALOG_KEY_ENTER) and content:  # ok or Enter
 				self.text_to_be_translated = content
 				self.translate(content, self.source.abbrv, self.destination.abbrv)  # what to be translated, the source and destination languages
 		else:  # dialog poped by the applet as the result of a translation
-			if (key == self.new_translation_key):  # new translation on button 1 (Enter and Escape are ignored and therefore close the dialog).
+			if (key == self.new_translation_key):  # new translation on button 1
 				self.ask_text()  # popup the empty dialog again
-			elif (key == self.edit_translation_key):  # refresh on button 2
+			elif (key == self.edit_translation_key or key == CDApplet.DIALOG_KEY_ENTER):  # refresh on button 2 (or Enter; Escape is ignored and therefore closes the dialog).
 				self.ask_text(self.text_to_be_translated)  # popup the dialog again with the latest text entered by the user.
 	
 	def _update_conf_file(self):
