@@ -19,12 +19,12 @@
 # such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr,
 # Jokes2go.com, and Vidademerda.com.br
 
-import gobject, dbus, os, urllib, gtk, ConfigParser, itertools
-from dbus.mainloop.glib import DBusGMainLoop
-from dbus import glib
+import gobject, gtk, urllib, itertools
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
+
+from CDApplet import CDApplet
 
 from BashParser import BashParser                                                   # Bash.org
 from QdbParser import QdbParser                                                     # Qdb.us
@@ -33,8 +33,6 @@ from QuotationspageParser import QuotationspageParser                           
 from DanstonchatParser import DanstonchatParser                                     # Danstonchat.fr
 from JokestogoParser import JokestogoParser                                         # Jokes2go.com
 from VidademerdaParser import VidademerdaParser                                     # Vidademerda.com.br
-
-DBusGMainLoop(set_as_default=True)
 
 quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda = range(7)    # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6
 
@@ -89,108 +87,94 @@ class Interface:
     def breakline(self, item):
         return not item == '\n'
 
-class Quote:
+class Applet(CDApplet):
 
-    def start(self):
-        bus = dbus.SessionBus()
-        applet_name = os.path.basename(os.path.abspath("."))                        # name of the applet must the same as the folder
-        applet_path = "/org/cairodock/CairoDock/%s" % applet_name                   # path where our object is stored on the bus
-        applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
-        icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
-        configuration = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/%s/%s.conf") % (applet_name, applet_name)
+	def __init__(self):
+		# define internal variables
+		self.authors = None
+		self.quotes = None
+		self.quotation = ""
+		self.dialog_active_time = 30                                                # time in seconds that the dialog window will be active
+		self.copy_current_quote_key = 0
+		self.go_next_quote_key = 1
+		self.source = quotationspage
+		
+		# call high-level init
+		CDApplet.__init__(self)
+		
+	##### private methods #####
+	
+	# Clipboard operations
+	def set_to_clipboard(self, sentence):
+		clipboard = gtk.clipboard_get()                                             # get the clipboard
+		clipboard.set_text(sentence)                                                # set the clipboard the current quote
 
-        applet = Applet(icon, configuration)
-        applet.start()
-        
-        loop = gobject.MainLoop()
-        loop.run()
-        sys.exit(0)
+	# Quotes
+	def get_quotes_from_web(self):
+		print "get_quotes_from_web()"
+		self.inform_start_of_waiting_process()                                      # ...
+		interface = Interface(self.source)
+		quote, author = interface.fetch()
+		if (self.source == quotationspage):                                         # quotationspage nao da quotes diferentes por acesso ...
+			self.quotes = itertools.cycle(quote)
+			self.authors = itertools.cycle(author)
+		else:                                                                       # ... os outros dao quotes diferentes por acesso entao
+			self.quotes = iter(quote)                                               # nao precisa usar iterador circular, pois depois de mostrar
+			self.authors = iter(author)                                             # todas, busca-se novas quotes com mais uma chamada deste metodo
+		self.inform_end_of_waiting_process()                                        # done
 
-class Applet:
+	def show_quote(self):
+		if (self.source == quotationspage):
+			self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # N-esima quote refere-se ao N-esimo autor."quote[x]~author[x]"
+		elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
+			if self.quotes != None:
+				try:                                                                    # ve a possibilidade de mostrar quotes ja armazenadas
+					current = self.quotes.next()
+				except StopIteration:                                                   # todas ja foram mostradas
+					print "iteration over, get fro mweb..."
+					self.get_quotes_from_web()                                          # buscar mais
+					current = self.quotes.next()                                        # posicionar na primeira para mostra-la
+			else:
+				self.get_quotes_from_web()                                          # buscar mais
+				current = self.quotes.next()                                        # posicionar na primeira para mostra-la
+			self.quotation = "%s" % current
+		elif (self.source == jokestogo):                                            # jokestogo provides only one quote per request ...
+			self.quotation = "%s" % self.quotes.next().rstrip()                                 
+			self.get_quotes_from_web()                                              # ... so it is necessary to request it again
+		else:                                                                       
+			self.quotation = "%s ~ %s" % (self.quotes.next(), self.authors.next())  # vidademerda  provides only one quote per request ...
+			self.get_quotes_from_web()                                              # ... so it is necessary to request it again
+		self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;go-next;cancel"}, {})
 
-    def __init__(self, icon, configuration):
-        self.icon = icon
-        self.configuration = configuration                                          # configuration file
-        self.authors = None
-        self.quotes = None
-        self.quotation = ""
-        self.dialog_active_time = 30                                                # time in seconds that the dialog window will be active
-        self.copy_current_quote_key = 0
-        self.go_next_quote_key = 1
-        self.source = quotationspage
-        
-    def start(self):
-        log ("Applet started")
-        self.connect_to_callbacks()
-        self.read_configuration_parameters()
-        self.get_quotes_from_web()
+	# Icon information
+	def inform_start_of_waiting_process(self):
+		self.icon.SetQuickInfo("...")
 
-    def connect_to_callbacks(self):                                                 # when reiceves the signal named as 1st parameter ...
-        self.icon.connect_to_signal("on_click", self.action_on_click)               # ... chama a funcao callback que eh o segundo parametro
-        self.icon.connect_to_signal("on_reload_module", self.action_on_reload)
-        self.icon.connect_to_signal("on_answer_dialog", self.action_on_answer_dialog)
+	def inform_end_of_waiting_process(self):
+		self.icon.SetQuickInfo("")
+	
+	
+	##### applet definition #####
+	
+	def begin(self):
+		self.get_quotes_from_web()
 
-    def read_configuration_parameters(self):
-        reader = ConfigParser.RawConfigParser()
-        reader.read(self.configuration)
-        self.source = reader.getint('Configuration', 'source')                      # get the source of quotations
+	def get_config(self, keyfile):
+		self.source = keyfile.getint('Configuration', 'source')                      # get the source of quotations
 
-    def action_on_click(self, param):
-        self.show_quote()
+	def on_reload(self):
+		self.get_quotes_from_web()                                              # refresh the quotations
 
-    def action_on_reload(self, config_has_changed):
-	    if config_has_changed:
-		    self.read_configuration_parameters()                                    # refresh the source of quotations
-            self.get_quotes_from_web()                                              # refresh the quotations
+	##### callbacks #####
+	
+	def on_click(self, key):
+		self.show_quote()
 
-    def action_on_answer_dialog(self, key, content):
-        if (key == self.copy_current_quote_key):                                    # cancel button = 1, and copy_current_quote_key = 0
-            self.set_to_clipboard(self.quotation)                                   # copia para a area de transferencia a quotation atual
-        elif (key == self.go_next_quote_key):
-            self.show_quote()
-
-    def set_to_clipboard(self, sentence):
-        clipboard = gtk.clipboard_get()                                             # get the clipboard
-        clipboard.set_text(sentence)                                                # set the clipboard the current quote
-
-    def get_quotes_from_web(self):
-        self.inform_start_of_waiting_process()                                      # ...
-        interface = Interface(self.source)
-        quote, author = interface.fetch()
-        if (self.source == quotationspage):                                         # quotationspage nao da quotes diferentes por acesso ...
-            self.quotes = itertools.cycle(quote)
-            self.authors = itertools.cycle(author)
-        else:                                                                       # ... os outros dao quotes diferentes por acesso entao
-            self.quotes = iter(quote)                                               # nao precisa usar iterador circular, pois depois de mostrar
-            self.authors = iter(author)                                             # todas, busca-se novas quotes com mais uma chamada deste metodo
-        self.inform_end_of_waiting_process()                                        # done
-
-    def show_quote(self):
-        if (self.source == quotationspage):
-            self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # N-esima quote refere-se ao N-esimo autor."quote[x]~author[x]"
-        elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
-            try:                                                                    # ve a possibilidade de mostrar quotes ja armazenadas
-                current = self.quotes.next()
-            except StopIteration:                                                   # todas ja foram mostradas
-                self.get_quotes_from_web()                                          # buscar mais
-                current = self.quotes.next()                                        # posicionar na primeira para mostra-la
-            self.quotation = "%s" % current
-        elif (self.source == jokestogo):                                            # jokestogo provides only one quote per request ...
-            self.quotation = "%s" % self.quotes.next().rstrip()                                 
-            self.get_quotes_from_web()                                              # ... so it is necessary to request it again
-        else:                                                                       
-            self.quotation = "%s ~ %s" % (self.quotes.next(), self.authors.next())  # vidademerda  provides only one quote per request ...
-            self.get_quotes_from_web()                                              # ... so it is necessary to request it again
-        try:
-            self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;go-next;cancel"}, {})
-        except Exception:                                                           # back-compatibility with CD < 2.2.0
-            self.icon.ShowDialog(self.quotation, self.dialog_active_time)
-
-    def inform_start_of_waiting_process(self):
-        self.icon.SetQuickInfo("...")
-
-    def inform_end_of_waiting_process(self):
-        self.icon.SetQuickInfo("")
+	def on_answer_dialog(self, key, content):
+		if (key == self.copy_current_quote_key):                                    # cancel button = 1, and copy_current_quote_key = 0
+			self.set_to_clipboard(self.quotation)                                   # copia para a area de transferencia a quotation atual
+		elif (key == self.go_next_quote_key or key == CDApplet.DIALOG_KEY_ENTER):
+			self.show_quote()
 
 if __name__ == '__main__':
-    Quote().start()
+    Applet().run()
