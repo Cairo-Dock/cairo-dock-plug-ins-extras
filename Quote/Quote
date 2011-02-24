@@ -6,14 +6,14 @@
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
 #
 # This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
 
 # This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-#    GNU General Public License for more details.
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#	GNU General Public License for more details.
 
 # This applet provides a "Quote of the day" feature from some internet sources
 # such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr,
@@ -26,155 +26,141 @@ from util import log
 
 from CDApplet import CDApplet
 
-from BashParser import BashParser                                                   # Bash.org
-from QdbParser import QdbParser                                                     # Qdb.us
-from XkcdbParser import XkcdbParser                                                 # Xkcdb.com
-from QuotationspageParser import QuotationspageParser                               # Quotationspage.com
-from DanstonchatParser import DanstonchatParser                                     # Danstonchat.fr
-from JokestogoParser import JokestogoParser                                         # Jokes2go.com
-from VidademerdaParser import VidademerdaParser                                     # Vidademerda.com.br
+from BashParser import BashParser												   	# Bash.org
+from QdbParser import QdbParser													 	# Qdb.us
+from XkcdbParser import XkcdbParser												 	# Xkcdb.com
+from QuotationspageParser import QuotationspageParser							   	# Quotationspage.com
+from DanstonchatParser import DanstonchatParser									 	# Danstonchat.fr
+from JokestogoParser import JokestogoParser										 	# Jokes2go.com
+from VidademerdaParser import VidademerdaParser									 	# Vidademerda.com.br
 
-quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda = range(7)    # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6
+quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda = range(7)	# quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6
 
 class AgentOpener(FancyURLopener):
-    """Masked user-agent otherwise the access would be forbidden"""
-    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+	"""Masked user-agent otherwise the access would be forbidden"""
+	version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
 
 class Interface:
 
-    def __init__(self, source):
-        self.source = source
-        self.author = []
-        self.quote = []
+	def __init__(self, source):
+		self.source = source
+		self.author = []
+		self.quote = []
 
-    def fetch(self):
-        if (self.source == quotationspage):
-            parser = QuotationspageParser()                                         # QuotationspageParser.py
-        elif (self.source == bash):
-            parser = BashParser()                                                   # BashParser.py
-        elif (self.source == xkcdb):
-            parser = XkcdbParser()                                                  # XkcdbParser.py
-        elif (self.source == qdb):
-            parser = QdbParser()                                                    # QdbParser.py
-        elif (self.source == danstonchat):
-            parser = DanstonchatParser()                                            # DanstonchatParser.py
-        elif (self.source == jokestogo):
-            parser = JokestogoParser()
-        else:
-            parser = VidademerdaParser()
+	def fetch(self):
+		if (self.source == quotationspage):
+			parser = QuotationspageParser()										 	# QuotationspageParser.py
+		elif (self.source == bash):
+			parser = BashParser()												   	# BashParser.py
+		elif (self.source == xkcdb):
+			parser = XkcdbParser()												  	# XkcdbParser.py
+		elif (self.source == qdb):
+			parser = QdbParser()													# QdbParser.py
+		elif (self.source == danstonchat):
+			parser = DanstonchatParser()											# DanstonchatParser.py
+		elif (self.source == jokestogo):
+			parser = JokestogoParser()
+		else:
+			parser = VidademerdaParser()
 
-        opener = AgentOpener()                                                      # opens the web connection with masked user-agent
+		opener = AgentOpener()													  	# opens the web connection with masked user-agent
 
-        try:
-            page = opener.open(parser.url)                                          # get the HTML
-        except IOError:
-            log ("Problem to open %s" % (parser.url))
-        else:
-            parser.parse(page.read())                                               # feed the parser to get the specific content: translated text
-            page.close()                                                            # lets close the page connection
-            if (self.source == quotationspage):  
-                self.quote = parser.quote
-                self.author = parser.author
-            elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
-                self.quote = filter(None, parser.quote)                             # retira os '' do array
-            elif self.source == jokestogo:                                          # jokestogo
-                self.quote = filter(self.breakline, parser.quote)
-            else:                                                                   # vidademerda
-                self.quote = [''.join(parser.quote)]
-                self.author = parser.author
-        return self.quote, self.author
+		try:
+			page = opener.open(parser.url)										  	# get the HTML
+		except IOError:
+			log ("Problem to open %s" % (parser.url))
+		else:
+			parser.parse(page.read())											   	# feed the parser to get the specific content: translated text
+			page.close()															# lets close the page connection
+			if (self.source == quotationspage):  
+				self.quote = parser.quote
+				self.author = parser.author
+			elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
+				self.quote = filter(None, parser.quote)							 	# retira os '' do array
+			elif self.source == jokestogo:										  	# jokestogo
+				self.quote = filter(self.breakline, parser.quote)
+			else:																   	# vidademerda
+				self.quote = [''.join(parser.quote)]
+				self.author = parser.author
+		return self.quote, self.author
 
-    def breakline(self, item):
-        return not item == '\n'
+	def breakline(self, item):
+		return not item == '\n'
 
 class Applet(CDApplet):
 
 	def __init__(self):
-		# define internal variables
 		self.authors = None
 		self.quotes = None
 		self.quotation = ""
-		self.dialog_active_time = 30                                                # time in seconds that the dialog window will be active
+		self.dialog_active_time = 30												# time in seconds that the dialog window will be active
 		self.copy_current_quote_key = 0
 		self.go_next_quote_key = 1
 		self.source = quotationspage
 		
-		# call high-level init
-		CDApplet.__init__(self)
-		
-	##### private methods #####
+		CDApplet.__init__(self)														# call high-level init
 	
 	# Clipboard operations
 	def set_to_clipboard(self, sentence):
-		clipboard = gtk.clipboard_get()                                             # get the clipboard
-		clipboard.set_text(sentence)                                                # set the clipboard the current quote
+		clipboard = gtk.clipboard_get()											 	# get the clipboard
+		clipboard.set_text(sentence)												# set the clipboard the current quote
 
 	# Quotes
 	def get_quotes_from_web(self):
-		print "get_quotes_from_web()"
-		self.inform_start_of_waiting_process()                                      # ...
+		self.inform_start_of_waiting_process()									  	# ...
 		interface = Interface(self.source)
 		quote, author = interface.fetch()
-		if (self.source == quotationspage):                                         # quotationspage nao da quotes diferentes por acesso ...
+		if (self.source == quotationspage):										 	# quotationspage nao da quotes diferentes por acesso ...
 			self.quotes = itertools.cycle(quote)
 			self.authors = itertools.cycle(author)
-		else:                                                                       # ... os outros dao quotes diferentes por acesso entao
-			self.quotes = iter(quote)                                               # nao precisa usar iterador circular, pois depois de mostrar
-			self.authors = iter(author)                                             # todas, busca-se novas quotes com mais uma chamada deste metodo
-		self.inform_end_of_waiting_process()                                        # done
+		else:																	   	# ... os outros dao quotes diferentes por acesso entao
+			self.quotes = iter(quote)											   	# nao precisa usar iterador circular, pois depois de mostrar
+			self.authors = iter(author)											 	# todas, busca-se novas quotes com mais uma chamada deste metodo
+		self.inform_end_of_waiting_process()										# done
 
 	def show_quote(self):
 		if (self.source == quotationspage):
 			self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # N-esima quote refere-se ao N-esimo autor."quote[x]~author[x]"
 		elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat):
-			if self.quotes != None:
-				try:                                                                    # ve a possibilidade de mostrar quotes ja armazenadas
-					current = self.quotes.next()
-				except StopIteration:                                                   # todas ja foram mostradas
-					print "iteration over, get fro mweb..."
-					self.get_quotes_from_web()                                          # buscar mais
-					current = self.quotes.next()                                        # posicionar na primeira para mostra-la
-			else:
-				self.get_quotes_from_web()                                          # buscar mais
-				current = self.quotes.next()                                        # posicionar na primeira para mostra-la
+			try:																	# ve a possibilidade de mostrar quotes ja armazenadas
+				current = self.quotes.next()
+			except StopIteration:												   	# todas ja foram mostradas
+				self.get_quotes_from_web()										  	# buscar mais
+				current = self.quotes.next()										# posicionar na primeira para mostra-la
 			self.quotation = "%s" % current
-		elif (self.source == jokestogo):                                            # jokestogo provides only one quote per request ...
-			self.quotation = "%s" % self.quotes.next().rstrip()                                 
-			self.get_quotes_from_web()                                              # ... so it is necessary to request it again
-		else:                                                                       
+		elif (self.source == jokestogo):											# jokestogo provides only one quote per request ...
+			self.quotation = "%s" % self.quotes.next().rstrip()								 
+			self.get_quotes_from_web()											  	# ... so it is necessary to request it again
+		else:																	   
 			self.quotation = "%s ~ %s" % (self.quotes.next(), self.authors.next())  # vidademerda  provides only one quote per request ...
-			self.get_quotes_from_web()                                              # ... so it is necessary to request it again
+			self.get_quotes_from_web()											 	# ... so it is necessary to request it again
 		self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;go-next;cancel"}, {})
 
-	# Icon information
 	def inform_start_of_waiting_process(self):
 		self.icon.SetQuickInfo("...")
 
 	def inform_end_of_waiting_process(self):
 		self.icon.SetQuickInfo("")
 	
-	
-	##### applet definition #####
-	
+	# Inherited methods from CDApplet
 	def begin(self):
 		self.get_quotes_from_web()
 
 	def get_config(self, keyfile):
-		self.source = keyfile.getint('Configuration', 'source')                      # get the source of quotations
+		self.source = keyfile.getint('Configuration', 'source')					  	# get the source of quotations
 
-	def on_reload(self):
-		self.get_quotes_from_web()                                              # refresh the quotations
+	def reload(self):
+		self.get_quotes_from_web()											  		# refresh the quotations
 
-	##### callbacks #####
-	
+	# Callbacks
 	def on_click(self, key):
 		self.show_quote()
 
 	def on_answer_dialog(self, key, content):
-		if (key == self.copy_current_quote_key):                                    # cancel button = 1, and copy_current_quote_key = 0
-			self.set_to_clipboard(self.quotation)                                   # copia para a area de transferencia a quotation atual
+		if (key == self.copy_current_quote_key):									# cancel button = 1, and copy_current_quote_key = 0
+			self.set_to_clipboard(self.quotation)								   	# copia para a area de transferencia a quotation atual
 		elif (key == self.go_next_quote_key or key == CDApplet.DIALOG_KEY_ENTER):
 			self.show_quote()
 
 if __name__ == '__main__':
-    Applet().run()
+	Applet().run()
