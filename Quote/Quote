@@ -97,6 +97,7 @@ class Applet(CDApplet):
 		self.copy_current_quote_key = 0
 		self.go_next_quote_key = 1
 		self.source = quotationspage
+		self.cSiteNames = ['Quotationspage.com','Bash.org','Xkcdb.com','Qdb.us','Danstonchat.com','Jokes2go.com','Vidademerda.com.br']
 		
 		CDApplet.__init__(self)														# call high-level init
 	
@@ -142,15 +143,22 @@ class Applet(CDApplet):
 	def inform_end_of_waiting_process(self):
 		self.icon.SetQuickInfo("")
 	
+	def _display_site_name(self):
+		if self.config['default title'] == "":
+			self.icon.SetLabel(self.cSiteNames[self.source])
+	
 	# Inherited methods from CDApplet
 	def begin(self):
 		self.get_quotes_from_web()
+		self._display_site_name()
 
 	def get_config(self, keyfile):
 		self.source = keyfile.getint('Configuration', 'source')					  	# get the source of quotations
+		self.config['default title'] 	= keyfile.get('Icon', 'name')  # icon's label set by the user.
 
 	def reload(self):
 		self.get_quotes_from_web()											  		# refresh the quotations
+		self._display_site_name()
 
 	# Callbacks
 	def on_click(self, key):

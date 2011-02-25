@@ -263,12 +263,20 @@ class Applet(CDApplet):
 			translated, dictionary = interface.translate_it(source, destination)        # texto traduzido e o resultado do dicionario
 			if len(sentence.split()) == 1:                                              # just one word, dictionary was returned
 				message = ""
+				
 				for category, words in dictionary.iteritems():
-					if self.config['dialog editable']:
-						message += "%s\n----------------------------\n" % category 
-					else:
-						message += "<i><u>%s</u></i>\n" % category 
-					message += "%s\n\n" % "\n".join(words[1:])                          # array of words with category name as the first position, chop
+					if category == 'result':  # we write this category first.
+						message = "%s\n\n" % "\n".join(words[1:]) + message
+						if self.config['dialog editable']:
+							message = ("[%s]\n" % category) + message
+						else:
+							message = ("<i><u>%s</u></i>\n" % category) + message
+					else:  # the other categories can be displayed in any order.
+						if self.config['dialog editable']:
+							message += "[%s]\n" % category 
+						else:
+							message += "<i><u>%s</u></i>\n" % category 
+						message += "%s\n\n" % "\n".join(words[1:])                          # array of words with category name as the first position, chop
 				log("Translated with dictionary %s" % message)
 			else:                                                                       # sentence, only the translation was returned
 				message = translated
