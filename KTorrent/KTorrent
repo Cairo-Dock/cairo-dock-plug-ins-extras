@@ -175,7 +175,7 @@ class Applet(CDApplet):
 		rate = 0
 		for tor in self.tors.itervalues():
 			rate += tor.downloadSpeed()  ### or is it a property ?...
-		print 'total dl rate: ',rate
+		#print 'total dl rate: ',rate
 		
 		# display the rate.
 		unit=''
@@ -192,7 +192,7 @@ class Applet(CDApplet):
 			form = ".1f"
 		else:
 			form = ".0f"
-		print "rate: ",rate
+		#print "rate: ",rate
 		
 		self.icon.SetQuickInfo(format(rate,form)+unit)
 		return True
@@ -215,40 +215,41 @@ class Applet(CDApplet):
 			
 			state = stats['status']
 			print 'state:',state
-			info += " <i>('+state+')</i>\n"
+			info += ' <i>('+state+')</i>\n'
 			
-			speed = stats['download_rate']  # tor.downloadSpeed()
-			if speed != 0:
-				t = float(size - dl) / speed
-			else:
-				if size == dl:
-					t = 0
+			if state != 'Paused' and state != 'Stopped':
+				speed = stats['download_rate']  # tor.downloadSpeed()
+				if speed != 0:
+					t = float(size - dl) / speed
 				else:
-					t = -1
-			if t > 0:
-				info += " <i>(time remaining: "
-				d=h=m=s=0
-				if t > 86400:
-					d = int(t) / 86400
-					h = int(t - d*86400) / 3600
-					if d > 0:
-						info += str(d)+"days"
-					if d > 0 or h > 0:
-						info += str(h)+"h"
+					if size == dl:
+						t = 0
+					else:
+						t = -1
+				if t > 0:
+					info += " <i>(time remaining: "
+					d=h=m=s=0
+					if t > 86400:
+						d = int(t) / 86400
+						h = int(t - d*86400) / 3600
+						if d > 0:
+							info += str(d)+"days"
+						if d > 0 or h > 0:
+							info += str(h)+"h"
+					else:
+						h = int(t) / 3600
+						m = int(t - h*3600) / 60
+						s = int(t - h*3600 - m*60)
+						if h > 0:
+							info += str(h)+"h"
+						if h > 0 or m > 0:
+							info += str(m)+"mn"
+						info += str(s)+"s"
+					info += ")</i>\n"
+				elif t < 0:
+					info += " <i>(time remaining: unknown)</i>\n"
 				else:
-					h = int(t) / 3600
-					m = int(t - h*3600) / 60
-					s = int(t - h*3600 - m*60)
-					if h > 0:
-						info += str(h)+"h"
-					if h > 0 or m > 0:
-						info += str(m)+"mn"
-					info += str(s)+"s"
-				info += ")</i>\n"
-			elif t < 0:
-				info += " <i>(time remaining: unknown)</i>\n"
-			else:
-				info += " <i>(finished)</i>\n"
+					info += " <i>(finished)</i>\n"
 			
 			print 'num_peers:',stats['num_peers']
 			info += "  nb peers: "+str(stats['leechers_connected_to'])+", nb seeds: "+str(stats['seeders_connected_to'])+"\n"
@@ -318,15 +319,15 @@ class Applet(CDApplet):
 		if self.ktorrent != None:
 			cur_state = self.ktorrent.suspended()
 			items = [ {
-					"type" : 3,  # 3 = check-box
+					"type" : CDApplet.MENU_CHECKBOX,
 					"label": "Suspend all torrents",
 					"state": cur_state,
-					"menu" : 0,
+					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 1
 				}, {
 					"label": "Torrents info (middle-click)",
 					"icon" : "gtk-info",
-					"menu" : 0,
+					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 2
 				} ]
 			self.icon.AddMenuItems(items)
