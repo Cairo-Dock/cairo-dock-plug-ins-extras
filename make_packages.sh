@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # grab the list of applets to package from the list.conf.
-list=`sed -n "/\[.*\]/p" list.conf | tr -d "[]"`
+list=`sed -n "/^\[.*\]/p" list.conf | tr -d "[]"`
 
 if test -d FTP; then
 	echo "You have to remove FTP directory"
