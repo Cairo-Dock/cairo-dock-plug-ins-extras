@@ -47,8 +47,8 @@ calendar_command="$PARAM"
 get_conf_param "import_command"
 import_command="$PARAM"
 
-#get_conf_param "reload_message"
-#reload_message="$PARAM"
+get_conf_param "icon_script"
+icon_command="$PARAM"
 
 get_conf_param "time_dialog_cal_today"
 time_dialog_cal="$PARAM"
@@ -193,7 +193,11 @@ exit
 action_on_init() {
 # Generate fresh calendar icon
 echo "$APP_NAME applet -> init"
-./icon.sh
+if test "$icon_command" = "" -o "$icon_command" = " "; then
+	bash icon.sh
+else
+	bash "$icon_command"
+fi
 rm -f .wait .wait1 .wait_month .wait_year
 get_ALL_conf_params
 
@@ -217,7 +221,9 @@ killall update_calendar.sh
 #############################################################################################################
 action_on_reload() {
 get_ALL_conf_params
-rm -f .wait .wait1 .wait_month .wait_year
+rm -f .wait .wait1 .wait_month .wait_year .day
+killall update_calendar.sh
+(./update_calendar.sh &)
 exit
 }
 

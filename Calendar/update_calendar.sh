@@ -16,7 +16,12 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
-./icon.sh
+
+if test "$icon_command" = "" -o "$icon_command" = " "; then
+	bash icon.sh
+else
+	bash "$icon_command"
+fi
 ARG=$1
 
 # sometime there is a bug with: 10-02
@@ -92,7 +97,11 @@ echo "We wait for $ARG sec."
 
 sleep $ARG
 rm .day # force the reload
-./icon.sh
+if test "$icon_command" = "" -o "$icon_command" = " "; then
+	bash icon.sh
+else
+	bash "$icon_command"
+fi
 
 # updated 24h later
 ./update_calendar.sh 86400
