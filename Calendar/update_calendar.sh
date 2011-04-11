@@ -17,6 +17,12 @@
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
 
+APP_NAME="Calendar"
+CONF_FILE="/home/$USER/.config/cairo-dock/current_theme/plug-ins/$APP_NAME/$APP_NAME.conf"
+LIGNE=`cat $CONF_FILE | grep "icon_script"`
+icon_command="`echo $LIGNE | cut -f2 -d '=' `"
+
+rm -rf .day
 if test "$icon_command" = "" -o "$icon_command" = " "; then
 	bash icon.sh
 else
@@ -104,4 +110,4 @@ else
 fi
 
 # updated 24h later
-./update_calendar.sh 86400
+sh update_calendar.sh 86400
