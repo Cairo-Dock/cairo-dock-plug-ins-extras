@@ -32,7 +32,7 @@ import glib
 import gtk
 import dbus
 import os.path
-import subprocess
+#import subprocess
 from dbus.mainloop.glib import DBusGMainLoop
 
 # get our applet on the bus
@@ -107,7 +107,7 @@ def init():
 	myIcon.connect_to_signal("on_build_menu", action_on_build_menu)
 	myIcon.connect_to_signal("on_menu_select", action_on_menu_select)
 	#os.spawnl(os.P_NOWAIT,'./update_calendar.sh') # FOR CALENDAR ONLY !
-	subprocess.Popen("./update_calendar.sh")
+	#subprocess.Popen("./update_calendar.sh")
 
 ### main ###
 if __name__ == '__main__':

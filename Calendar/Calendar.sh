@@ -47,8 +47,8 @@ calendar_command="$PARAM"
 get_conf_param "import_command"
 import_command="$PARAM"
 
-#get_conf_param "reload_message"
-#reload_message="$PARAM"
+get_conf_param "icon_script"
+icon_command="$PARAM"
 
 get_conf_param "time_dialog_cal_today"
 time_dialog_cal="$PARAM"
@@ -178,7 +178,6 @@ exit
 action_on_drop_data() {
 get_conf_param "import_command"
 import_command="$PARAM"
-echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> $DROP_DATA has been dropped on applet !"
 
 if [ "`echo $DROP_DATA |grep 'file://'`" != "" ]; then 	# It's a file !
 	DROP_DATA="`echo $DROP_DATA | cut -c 8-`"  # we remove 'file://' before the location
@@ -192,10 +191,18 @@ exit
 #############################################################################################################
 action_on_init() {
 # Generate fresh calendar icon
-echo "$APP_NAME applet -> init"
-./icon.sh
-rm -f .wait .wait1 .wait_month .wait_year
 get_ALL_conf_params
+rm -f .wait .wait1 .wait_month .wait_year .day
+if test `ps aux | grep -c "update_calendar"` -gt 1; then
+	killall update_calendar.sh
+fi
+(sh update_calendar.sh &)
+
+if test "$icon_command" = "" -o "$icon_command" = " "; then
+	bash icon.sh
+else
+	bash "$icon_command"
+fi
 
 #echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The calendar_command in config is : $calendar_command"
 #echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The import_command in config is : $import_command"
@@ -209,15 +216,20 @@ exit
 
 #############################################################################################################
 action_on_stop() {
-echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> Stop"
 rm -f .wait .wait1 .wait_month .wait_year .day
-killall update_calendar.sh
+if test `ps aux | grep -c "update_calendar"` -gt 1; then
+	killall update_calendar.sh
+fi
 }
 
 #############################################################################################################
 action_on_reload() {
 get_ALL_conf_params
-rm -f .wait .wait1 .wait_month .wait_year
+rm -f .wait .wait1 .wait_month .wait_year .day
+if test `ps aux | grep -c "update_calendar"` -gt 1; then
+	killall update_calendar.sh
+fi
+(sh update_calendar.sh &)
 exit
 }
 
