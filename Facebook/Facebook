@@ -1,0 +1,500 @@
+#!/usr/bin/python
+
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2011 by Benjamin
+# E-mail : jesuisbenjamin@gmail.com
+# Thanks to Matttbe, Fabounet and Eduardo for their help on this. 
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+#
+# This program depends on FBCMD, a command line interface (CLI) for Facebook.
+# http://fbcmd.dtompkins.com/ 
+
+####################
+### dependancies ###
+####################
+
+from CDApplet import CDApplet
+import glib
+import gtk
+import os
+import subprocess
+from subprocess import PIPE
+import sys
+import time
+
+class FaceBook(CDApplet):
+	def __init__(self):
+		# in fbconfig is stored configuration information
+		self.fbconfig = {}
+		# in fb is stored data from Facebook
+		self.fb = {}
+		# recurence is the interval between updates in milliseconds
+		self.recurence = int
+		# in self.appconfig is the alarm configuration information
+		self.appconfig = {}
+		# self.counter hold the nubner of notifications
+		self.counter = 0
+		# log file where self.fbcmd and self.fbcmd values are recorded
+		self.logfile = 'fbcmd'
+		# whether fbcmd is installed
+		self.fbcmd = bool
+		# message in case fbcmd is not installed:
+		self.needfbcmd = "It seems FBCMD is not installed on your computer. You need to install FBCMD for this applet to function: do you agree?"
+		# whether fbcmd is authorised on Facebook
+		self.fbcmdpass = bool
+		# message in case fbcmd is not authorised on Facebook
+		self.needpass = "It seems FBCMD has no access to Facebook. Click OK to grant FBCMD access to your account."
+		self.needauth = "Now you need to get your get your authorisation code from another page (click OK) and type it in the next dialogue."
+		self.needcode = "Did you get your access code? Then in the field below. Otherwise close this dialogue and try again :)"
+		# type of dialog poping up "default", "install", "pass", "auth", "code"
+		self.dialog_type = 0
+		# how should info be displayed on the icon (quickinfo or emblem)
+		self.info = "emblem"
+		# data for svg emblem
+		self.svg_data = str
+		# commandline on click
+		self.click = "x-www-browser 'http://www.facebook.com/'"
+		# name of user fetched from Facebook
+		self.fbusername = str
+		CDApplet.__init__(self)
+		
+	def find_fbcmd(self):
+		# this method will check whether FBCMD is already installed on the computer
+		fbcmd = os.popen("ls /usr/local/bin/ | grep fbcmd").readlines()
+		if fbcmd[0] == 'fbcmd\n':
+			return True
+		else:
+			return False
+		
+	def install_failed(self):
+		# this method calls a dialog in case installation fails
+		self.icon.ShowDialog("Installation of FBCMD failed. Please proceed manually (http://fbcmd.dtompkins.com)",8)
+		sys.exit()
+		
+	def install_fbcmd(self):
+		# this method installs fbcmd
+		# first it retrieves the installation file
+		retreive = subprocess.call(["curl -O https://github.com/dtompkins/fbcmd/raw/master/fbcmd_update.php"], shell=True)
+		# if the download went well it carries on
+		if retreive == 0:
+			self.icon.ShowDialog("FBCMD update completed, please wait while installing...",3)
+			time.sleep(3)
+		else:
+			self.install_failed()
+		# then it grants permission to the file to operate
+		update = subprocess.call(["gksudo php fbcmd_update.php sudo"], shell=True)
+		# if successful, it continues
+		if update == 0:
+			self.icon.ShowDialog("Please wait while FBCMD is installing...",5)
+		else:
+			self.install_failed()
+		# finally it installs fbcmd
+		installed = subprocess.call(["gksudo php fbcmd_update.php install"], shell=True)
+		# if successful it can return
+		if installed == 0:
+			self.icon.ShowDialog("Hurray! FBCMD's installed!",3)
+			self.fbcmd == True
+			# dialog_type == will tell fbcmd_steps() it can proceed
+			self.dialog_type = 2
+		else:
+			self.install_failed()
+			
+	def access_failed(self):
+		# in case the procedure of granting fbcmd access to Facebook fails
+		# a dialog pops up and the applet quits
+		self.icon.ShowDialog("Failed to get access to Facebook. Please proceed manually from command line 'fbcmd auth ******'",8)
+		sys.exit()
+		
+	def access_fbcmd(self, code):
+		# this method is taking care of validating the Facebook authorisation code
+		# so that fbcmd can work offline
+		access = subprocess.call(["fbcmd auth %s" % code])
+		if access == 0:
+			# double checking:
+			self.fbcmdpass = self.check_access() 
+			if self.fbcmdpass == True:
+				greeting = "Alright", fbusername, "we're connected to Facebook. Let's rock! :)"
+				self.icon.ShowDialog(greeting, 3)
+				#WRITE FBCMDPASS=true in .conf file!!
+				# self.dialog_type = 5 tells fbcmd_steps() it can proceed
+				self.dialog_type = 5
+			else:
+				self.access_failed()
+		else:
+			self.access_failed()
+			
+	def fbcmd_steps(self):
+		# this method acts as a semaphore to throw dialogs according
+		# to the steps achieved in the process of granting access to
+		# fbcmd on Facebook. It is initated by self.check_again() which
+		# will repeat fbcmd_steps() every two seconds as long the
+		# self.dialog_type == 0 and until it reaches the value of 5.
+		if self.dialog_type == 1:
+			self.icon.PopupDialog({"message" : self.needfbcmd, "buttons" : "ok;cancel"},{})
+			self.dialog_type = 11
+			return True
+		if self.dialog_type == 2:
+			self.icon.PopupDialog({"message" : self.needpass, "buttons" : "ok;cancel"},{})
+			self.dialog_type = 22
+			return True
+		elif self.dialog_type == 3:
+			self.icon.PopupDialog({"message" : self.needauth, "buttons" : "ok;cancel"},{})
+			self.dialog_type = 33
+			return True
+		elif self.dialog_type == 4:
+			time.sleep(6)
+			self.icon.PopupDialog({"message" : self.needcode, "buttons" : "ok;cancel"},
+			{"widget-type" : "text-entry", "initial value" : "Enter Authorisation Code"})
+			self.dialog_type = 44
+			return True
+		elif self.dialog_type == 5:
+			# step 5 consists in recording a log of installation and access
+			# then it can start running the applet and repeat
+			self.writetolog()
+			# Now it can do it's business
+			self.update()
+			self.repeat()
+			# we need to end check_again()
+			return False
+		else:
+			return True
+		
+	def check_access(self):
+		# this method checks if fbcmd has access to facebook
+		# it's done by checking the facebook username
+		# an opportunity to use it too :)
+		data = subprocess.Popen(['fbcmd', 'whoami'], stdout=PIPE).stdout
+		data = data.read()
+		if len(data) > 0:
+			data = data.split()
+			self.fbusername  = data[1]
+			return True
+		else:
+			return False
+		
+	def writetolog(self):
+		# in case the app has to look for installation and authorisation
+		# this method records it in a log file so it doesn't have to look
+		# for it again in the future
+		loglist = ['FBCMD', str(self.fbcmd), 'FBCMDPASS', str(self.fbcmdpass)]
+		logstring = ' '.join(loglist)
+		destination = open(self.logfile, 'w')
+		destination.write(logstring)
+		destination.close()
+		
+	def str2bool(self, string):
+		# method to convert string to boolean
+		return string in ('True')
+		
+	def get_config(self, keyfile):
+		# this is a function inherited from the CDApplet class
+		# it will run automatically as the CDApplet instance is initated
+		# the keyfiles is the .conf file in the applet's folder
+		# check whether the applet has ever seen fbcmd installed
+		# and whether it had access to Facebook
+		try:
+			# this checks whether there is any info in the log file
+			log = open(self.logfile, 'r')
+			loglist = log.read().split()
+			self.fbcmd = self.str2bool(loglist[1])
+			self.fbcmdpass = self.str2bool(loglist[-1])
+		except:
+			#otherwise we set the values to False
+			self.fbcmd = False
+			self.fbcmdpass = False
+		# it checks which notifications the user wants
+		# and it appends them to the self.fbconfig dictionary
+		self.fbconfig['MESSAGES_UNREAD'] 	= keyfile.getboolean('Configuration', 'MESSAGES_UNREAD')
+		self.fbconfig['POKES'] 				= keyfile.getboolean('Configuration', 'POKES')
+		self.fbconfig['SHARES_UNREAD'] 		= keyfile.getboolean('Configuration', 'SHARES_UNREAD')
+		self.fbconfig['FRIEND_REQUESTS'] 	= keyfile.getboolean('Configuration', 'FRIEND_REQUESTS')
+		self.fbconfig['GROUP_INVITES'] 		= keyfile.getboolean('Configuration', 'GROUP_INVITES')
+		self.fbconfig['EVENT_INVITES'] 		= keyfile.getboolean('Configuration', 'EVENT_INVITES')
+		self.fbconfig['NOTICES_UNREAD']		= keyfile.getboolean('Configuration', 'NOTICES_UNREAD')
+		# then it checks when and how the user wants to be informed
+		# and it appends that to the self.appconfig dictionary
+		self.appconfig['ATTENTION_WHEN']		= keyfile.get('Configuration', 'ATTENTION_WHEN')
+		self.appconfig['ATTENTION_HOW']			= keyfile.get('Configuration', 'ATTENTION_HOW')
+		self.appconfig['ATTENTION_DIA']			= keyfile.getboolean('Configuration', 'ATTENTION_DIA')
+		self.appconfig['ATTENTION_SOUND']		= keyfile.getboolean('Configuration', 'ATTENTION_SOUND')
+		# then it fetches the update interval requested by user in minutes
+		# converts it in milliseconds as self.recurence
+		r = keyfile.getint('Configuration', 'UPDATE')
+		# interval must be at least a minute
+		if r < 1:
+			self.recurence = 60000
+		else:
+			self.recurence = r * 60000
+		# finally it checks the user's choice in appearance: emblem or quickinfo
+		self.info = keyfile.get('Configuration', 'INFO')
+		
+	def set_quick_info(self):
+		# this method places a quick info displaying the counter
+		# if the counter is different from 0
+		# depending on the configuration, it displays either a quickinfo or an svg emblem
+		if self.info == "quickinfo":
+			if self.counter == 0:
+				self.icon.SetQuickInfo(format(""))
+			else:
+				self.icon.SetQuickInfo(format(self.counter))
+		else:
+			if self.counter == 0:
+				# rest icon
+				self.icon.SetIcon("~/.config/cairo-dock/third-party/Facebook/icon")
+				pass
+			else:
+				# write svg emblem
+				# data for svg emblem
+				self.svg_data = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!-- Created with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc="http://purl.org/dc/elements/1.1/"\n   xmlns:cc="http://creativecommons.org/ns#"\n   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"\n   xmlns:svg="http://www.w3.org/2000/svg"\n   xmlns="http://www.w3.org/2000/svg"\n   xmlns:xlink="http://www.w3.org/1999/xlink"\n   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"\n   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"\n   version="1.0"\n   width="96"\n   height="96"\n   id="svg2408"\n   inkscape:version="0.48.0 r9654"\n   sodipodi:docname="emblem.svg"\n   style="display:inline">\n  <sodipodi:namedview\n     pagecolor="#ffffff"\n     bordercolor="#666666"\n     borderopacity="1"\n     objecttolerance="10"\n     gridtolerance="10"\n     guidetolerance="10"\n     inkscape:pageopacity="0"\n     inkscape:pageshadow="2"\n     inkscape:window-width="1280"\n     inkscape:window-height="752"\n     id="namedview61"\n     showgrid="false"\n     inkscape:zoom="4.5759369"\n     inkscape:cx="-11.865888"\n     inkscape:cy="32.705608"\n     inkscape:window-x="0"\n     inkscape:window-y="25"\n     inkscape:window-maximized="1"\n     inkscape:current-layer="layer9" />\n  <defs\n     id="defs2410">\n    <linearGradient\n       id="linearGradient4085">\n      <stop\n         id="stop4087"\n         style="stop-color:#782121;stop-opacity:1"\n         offset="0" />\n      <stop\n         id="stop4089"\n         style="stop-color:#782121;stop-opacity:0"\n         offset="1" />\n    </linearGradient>\n    <linearGradient\n       id="linearGradient3694">\n      <stop\n         id="stop3696"\n         style="stop-color:#e6e6e6;stop-opacity:1"\n         offset="0" />\n      <stop\n         id="stop3698"\n         style="stop-color:#f5f5f5;stop-opacity:1"\n         offset="1" />\n    </linearGradient>\n    <linearGradient\n       id="linearGradient3688">\n      <stop\n         id="stop3690"\n         style="stop-color:#ad0d0d;stop-opacity:1"\n         offset="0" />\n      <stop\n         id="stop3692"\n         style="stop-color:#e02f11;stop-opacity:1"\n         offset="1" />\n    </linearGradient>\n    <linearGradient\n       x1="45.447727"\n       y1="92.539597"\n       x2="45.447727"\n       y2="7.0165396"\n       id="ButtonShadow"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="scale(1.0058652,0.994169)">\n      <stop\n         id="stop3750"\n         style="stop-color:#000000;stop-opacity:1"\n         offset="0" />\n      <stop\n         id="stop3752"\n         style="stop-color:#000000;stop-opacity:0.58823532"\n         offset="1" />\n    </linearGradient>\n    <linearGradient\n       id="linearGradient3737">\n      <stop\n         id="stop3739"\n         style="stop-color:#ffffff;stop-opacity:1"\n         offset="0" />\n      <stop\n         id="stop3741"\n         style="stop-color:#ffffff;stop-opacity:0"\n         offset="1" />\n    </linearGradient>\n    <filter\n       color-interpolation-filters="sRGB"\n       id="filter3174">\n      <feGaussianBlur\n         id="feGaussianBlur3176"\n         stdDeviation="1.71" />\n    </filter>\n    <linearGradient\n       x1="36.357143"\n       y1="6"\n       x2="36.357143"\n       y2="63.893143"\n       id="linearGradient3188"\n       xlink:href="#linearGradient3737"\n       gradientUnits="userSpaceOnUse" />\n    <filter\n       x="-0.192"\n       y="-0.192"\n       width="1.3839999"\n       height="1.3839999"\n       color-interpolation-filters="sRGB"\n       id="filter3794">\n      <feGaussianBlur\n         id="feGaussianBlur3796"\n         stdDeviation="5.28" />\n    </filter>\n    <linearGradient\n       x1="48"\n       y1="20.220806"\n       x2="48"\n       y2="138.66119"\n       id="linearGradient3613"\n       xlink:href="#linearGradient3737"\n       gradientUnits="userSpaceOnUse" />\n    <radialGradient\n       cx="48"\n       cy="90.171875"\n       r="42"\n       fx="48"\n       fy="90.171875"\n       id="radialGradient3619"\n       xlink:href="#linearGradient3737"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(1.1573129,0,0,0.99590774,-7.5510206,0.19713193)" />\n    <clipPath\n       id="clipPath3613">\n      <rect\n         width="84"\n         height="84"\n         rx="6"\n         ry="6"\n         x="6"\n         y="6"\n         id="rect3615"\n         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />\n    </clipPath>\n    <linearGradient\n       x1="48"\n       y1="90"\n       x2="48"\n       y2="5.9877172"\n       id="linearGradient3617"\n       xlink:href="#linearGradient3688"\n       gradientUnits="userSpaceOnUse" />\n    <linearGradient\n       x1="45.447727"\n       y1="92.539597"\n       x2="45.447727"\n       y2="7.0165396"\n       id="ButtonShadow-0"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(1.0058652,0,0,0.994169,100,0)">\n      <stop\n         id="stop3750-8"\n         style="stop-color:#000000;stop-opacity:1"\n         offset="0" />\n      <stop\n         id="stop3752-5"\n         style="stop-color:#000000;stop-opacity:0.58823532"\n         offset="1" />\n    </linearGradient>\n    <linearGradient\n       x1="32.251034"\n       y1="6.1317081"\n       x2="32.251034"\n       y2="90.238609"\n       id="linearGradient3780"\n       xlink:href="#ButtonShadow-0"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(1.0238095,0,0,1.0119048,-1.1428571,-98.071429)" />\n    <linearGradient\n       x1="32.251034"\n       y1="6.1317081"\n       x2="32.251034"\n       y2="90.238609"\n       id="linearGradient3772"\n       xlink:href="#ButtonShadow-0"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(1.0238095,0,0,1.0119048,-1.1428571,-98.071429)" />\n    <linearGradient\n       x1="32.251034"\n       y1="6.1317081"\n       x2="32.251034"\n       y2="90.238609"\n       id="linearGradient3725"\n       xlink:href="#ButtonShadow-0"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(1.0238095,0,0,1.0119048,-1.1428571,-98.071429)" />\n    <linearGradient\n       x1="32.251034"\n       y1="6.1317081"\n       x2="32.251034"\n       y2="90.238609"\n       id="linearGradient3721"\n       xlink:href="#ButtonShadow-0"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="translate(0,-97)" />\n    <linearGradient\n       x1="32.251034"\n       y1="6.1317081"\n       x2="32.251034"\n       y2="90.238609"\n       id="linearGradient3026"\n       xlink:href="#ButtonShadow-0"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(1.0238095,0,0,1.0119048,-1.1428571,-98.071429)" />\n    <linearGradient\n       x1="-73.494293"\n       y1="72.699486"\n       x2="-50.243786"\n       y2="159.47563"\n       id="linearGradient4018"\n       xlink:href="#linearGradient3694"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(0.59136097,-0.15844727,-0.15844727,-0.59136097,103.35407,108.29989)" />\n    <linearGradient\n       x1="-73.494293"\n       y1="72.699486"\n       x2="-50.243786"\n       y2="159.47563"\n       id="linearGradient4071"\n       xlink:href="#linearGradient3694"\n       gradientUnits="userSpaceOnUse"\n       gradientTransform="matrix(0.59136097,-0.15844727,-0.15844727,-0.59136097,103.35407,109.29989)" />\n    <linearGradient\n       x1="58"\n       y1="19"\n       x2="58"\n       y2="120"\n       id="linearGradient4091"\n       xlink:href="#linearGradient4085"\n       gradientUnits="userSpaceOnUse" />\n  </defs>\n  <metadata\n     id="metadata2413">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about="">\n        <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />\n        <dc:title />\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n  <g\n     id="layer2"\n     style="display:none">\n    <rect\n       width="86"\n       height="85"\n       rx="6"\n       ry="6"\n       x="5"\n       y="7"\n       id="rect3745"\n       style="opacity:0.9;fill:url(#ButtonShadow);fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter3174)" />\n  </g>\n  <g\n     inkscape:groupmode="layer"\n     id="layer9"\n     inkscape:label="Top">\n    <path\n       sodipodi:type="inkscape:offset"\n       inkscape:radius="1.4007009"\n       inkscape:original="M 58.8125 6.6875 C 51.859555 6.6875 46.28125 11.236342 46.28125 16.90625 L 46.28125 53.25 C 46.28125 58.919908 51.859555 63.5 58.8125 63.5 L 76.40625 63.5 C 83.359195 63.5 88.96875 58.919908 88.96875 53.25 L 88.96875 16.90625 C 88.96875 11.236342 83.359195 6.6875 76.40625 6.6875 L 58.8125 6.6875 z "\n       style="opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"\n       id="path3804"\n       d="m 58.8125,5.28125 c -7.563868,0 -13.9375,5.036378 -13.9375,11.625 l 0,36.34375 c 0,6.588622 6.369435,11.65625 13.9375,11.65625 l 17.59375,0 c 7.568065,0 13.96875,-5.062481 13.96875,-11.65625 l 0,-36.34375 c 0,-6.593769 -6.404882,-11.625 -13.96875,-11.625 l -17.59375,0 z"\n       transform="matrix(0.90874384,0,0,1,4.0951201,0)" />\n    <rect\n       rx="11.405137"\n       ry="10.23449"\n       y="6.6752324"\n       x="46.141087"\n       height="56.811188"\n       width="38.79649"\n       id="rect3834"\n       style="opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />\n    <rect\n       style="fill:#e80000;fill-opacity:1;fill-rule:nonzero;stroke:none"\n       id="rect3806"\n       width="38.79649"\n       height="56.811188"\n       x="46.141087"\n       y="6.6752324"\n       ry="10.23449"\n       rx="11.405137" />\n    <text\n       xml:space="preserve"\n       style="font-size:9.53280544px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"\n       x="50%"\n       y="50%"\n       id="text3028"\n       sodipodi:linespacing="125%"\n       transform="scale(0.95328057,1.0490091)"><tspan\n         sodipodi:role="line"\n         id="tspan3030"\n         x="50%"\n         y="50%"\n         style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Sans;-inkscape-font-specification:Sans">'+str('%02d' % self.counter)+'</tspan></text>\n    <path\n       style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"\n       d="m 57.540617,6.6875 c -6.318446,0 -11.387696,4.548842 -11.387696,10.21875 l 0,1 c 0,-5.669908 5.06925,-10.21875 11.387696,-10.21875 l 15.988212,0 c 6.318446,0 11.416095,4.548842 11.416095,10.21875 l 0,-1 c 0,-5.669908 -5.097649,-10.21875 -11.416095,-10.21875 l -15.988212,0 z"\n       id="rect3808"\n       inkscape:connector-curvature="0" />\n  </g>\n</svg>\n'
+				svg = open('emblem.svg', 'w')                    
+				svg.write(self.svg_data)                    
+				svg.close()
+				# rest icon
+				self.icon.SetIcon("~/.config/cairo-dock/third-party/Facebook/icon")
+				# put svg emblem on icon
+				self.icon.SetEmblem("~/.config/cairo-dock/third-party/Facebook/emblem.svg", CDApplet.UPPER_RIGHT) 
+	
+	def check_when(self, diff):
+		# this method checks whether the user needs attention or not
+		att = self.appconfig["ATTENTION_WHEN"]
+		if att == "always" and self.counter != 0:
+			return True 
+		elif att == "different" and diff != 0:
+			return True
+		elif att == "superior" and diff < 0:
+			return True
+		else:
+			return False
+			
+	def attention(self):
+		# this method fetches user options from appconfig dictionary
+		how = self.appconfig["ATTENTION_HOW"]
+		dia = self.appconfig["ATTENTION_DIA"]
+		sound = self.appconfig["ATTENTION_SOUND"]
+		# then it acts accordingly
+		if how == "none":
+			pass
+		else:
+			# self.icon.DemandsAttention(True, how) ## NEED TO FIND OUT HOW TO STOP THIS NEATLY
+			self.icon.DemandsAttention(True, how)
+		if dia == True:
+			# checking our grammar ;)
+			if self.counter > 1:
+				s = 's'
+			else:
+				s = ''
+			self.icon.ShowDialog("You have "+str(self.counter)+" notification%s on your Facebook Account" % s,3)
+		else:
+			pass
+		if sound == True:
+			os.popen('aplay ~/.config/cairo-dock/third-party/Facebook/alarm.wav')
+		else:
+			pass
+		self.icon.DemandsAttention(False, 'how')
+		
+	def consider(self):
+		# this method will check whether the user should be alarmed
+		new_counter = 0
+		# it finds out what notifications the user wants ...
+		for i in self.fbconfig:
+			# ... by omitting those with a value = False
+			if self.fbconfig[i] == False:
+				pass
+			else:
+				# then we count the values of each desired nofitication
+				# since fbconfig and fb cleverly have the same keys [i] it's a piece of cake!
+				new_counter += self.fb[i]
+		# it records difference between the current and the prior counter
+		diff = self.counter - new_counter
+		# it updates the applet's counter
+		self.counter = new_counter
+		# it requests the quickinfo on the icon:
+		self.set_quick_info()
+		# it checks whether the user wants to be informed about the new counter value
+		need = self.check_when(diff)
+		# if indeed the user wants to be informed, the method requests this signal
+		if need == True:
+			self.attention()
+		else:
+			pass
+		# that's it: now the applet waits for the next update :) 
+		
+	def read_fb(self):
+		# this method fetches information from FaceBook with fbcmd
+		# it runs the "fbcmd NOTIFY" command, returns and parses results in a "fblist" list
+		fblist = os.popen("fbcmd NOTIFY").readlines()
+		# then it omits friend request details and feeds the result into a the "self.fb" dictionary
+		for i in fblist:
+			ii = i.split()
+			try:
+				# the required lines end with an integer, but readlines() returns them as strings
+				# by attempting to convert the last item of the line into an integer
+				# we aslo sort out the junk (i.e. friend request details)
+				number = int(ii[-1])
+				self.fb[ii[0]] = number
+			except:
+				pass
+		# next the method runs "fbcmd NOTICES unread", returns and parse results in self.fb
+		# first fetch the data
+		ls = os.popen('fbcmd NOTICES unread').readlines()
+		# remove the header if any
+		try:
+			del ls[0]
+			# then count the lines that start with "["
+			count = 0
+			for i in ls:
+				if i[0] == '[':
+					count += 1
+				else:
+					pass
+			# finally bring the result in self.fb
+			self.fb['NOTICES_UNREAD'] = count
+		except:
+			self.fb['NOTICES_UNREAD'] = 0
+			
+	def update(self):
+		# this method updates the information from Facebook
+		# but first it needs to know whether the cairo-dock process still exists
+		master = self.findcairo()
+		# test log
+		print "...updating Facebook Applet"
+		# now the process can fetch information from Facebook
+		# since the findcairo() method should have terminated the program
+		# in case cairo-dock does not exist, there is no need to check again
+		# the update method continues asking read_fb() to fetch data from Facebook
+		self.read_fb()
+		# then it checks whether there is any need to alarm the user
+		self.consider()
+		# returning master=True will tell the repeat method to continue
+		return master
+		
+	def check_again(self):
+		# this method will check the steps of installation till fbcmd_steps()
+		# returns False
+		glib.timeout_add(3000, self.fbcmd_steps)
+		
+	def begin(self):
+		# this is a function inherited from the CDApplet class
+		# it will run automatically as the CDApplet instance is initated
+		# after the get_config() method:
+		
+		# check if fbcmd is installed:
+		# the log file should already have provided info, otherwise:
+		if self.fbcmd == False:
+			# it checks if fbcmd's installed
+			self.fbcmd = self.find_fbcmd()
+			# if it doesn't suceed:
+			if self.fbcmd == False:
+				# it guides the user through installation
+				self.dialog_type = 1
+				self.check_again()
+			else:
+				pass
+		# check if fbcmd has access to Facebook
+		# the log file should already have provided info, otherwise:
+		if self.fbcmdpass == False:
+			# it checks whether fbcmd can get access to Facebook
+			self.fbcmdpass = self.check_access()
+			# if there seems to be no access:
+			if self.fbcmdpass == False:
+				# it guides the user through authorisation
+				self.dialog_type = 2
+				self.check_again()
+			else:
+				pass
+			self.writetolog()
+		# if there is both FBCMD and Access
+		# and if we haven't gone through the installation steps before
+		if self.fbcmd == True and self.fbcmdpass == True and self.dialog_type != 5:
+			self.update()
+			self.repeat()
+		else:
+			# if the two conditions are not True, then the steps start all over again
+			# hopefully we don't need that since it should have been caught before :)
+			self.dialog_type == 1
+			self.check_again()
+		
+	def findcairo(self):
+		# this method looks for an existing instance of the cairo-dock process
+		# it will return True if the process exists
+		# it will shut down the session if it cannot find cairo-dock
+		try:
+			net = os.popen("ps -C cairo-dock | grep cairo-dock").readlines()[0].split()
+			return True
+		except:
+			# test log
+			print "...Facebook Applet can't find cairo-dock...byebye!"
+			sys.exit()
+	
+	def repeat(self):
+		# this method repeats a callback (here the self.update method)
+		# it will keep on repeating as long as the callback returns True
+		glib.timeout_add(self.recurence, self.update)
+
+# CALLBACKS #
+
+	def on_click(self, iState):
+		# when the user clicks on the icon, it opens the facebook page
+		# more actions will be available in future versions
+		subprocess.call([self.click], shell=True)
+		
+	def on_answer_dialog(self, key, content):
+		# this listener works as a counterpart of fbcmd_steps()
+		# waiting for user response to change the semaphore
+		# response to dialogue 4 asking for authorisation code
+		if self.dialog_type == 44:
+			# if user cancelled operation
+			if key == 1:
+				# another chance is given to the user to type the access code
+				self.dialog_type = 3
+			else:
+				self.access_fbcmd(content)
+				# keeping the dialog_type == 44 will tell fbcmd_steps()
+				# to continue iterating till the access is granted
+		# response to dialogue 3 asking for fetch access code
+		elif self.dialog_type == 33:
+			## if user cancelled operation
+			if key == 1:
+				self.access_failed()
+			else:
+				subprocess.call(["x-www-browser 'http://www.facebook.com/code_gen.php?v=1.0&api_key=42463270450'"], shell=True)
+				# dialog_type = 4 will send fbcmd_steps() method to next step
+				self.dialog_type = 4
+		# response to dialogue 2 asking for grant authorisation to applet
+		elif self.dialog_type == 22:
+			## if user cancelled operation
+			if key == 1:
+				self.access_failed()
+			else:
+				subprocess.call(["x-www-browser 'https://www.facebook.com/dialog/oauth?client_id=42463270450&redirect_uri=http://www.facebook.com/connect/login_success.html'"], shell=True)
+				# dialog_type = 3 will send fbcmd_steps() method to next step
+				self.dialog_type = 3
+		# response to dialgoue 1 requesting installation
+		elif self.dialog_type == 11:
+			if key == 0:
+				print "answer is yes"
+				# the dialog_type is not reset till installation is complete
+				# to prevent other dialogues to stand in the way
+				# while type == 11, fbcmd_steps() will keep iterating
+				self.install_fbcmd()
+			else:
+				self.install_failed()
+		else:
+			#no need to respond to notifications
+			pass
+
+if __name__ == '__main__':
+	facebook = FaceBook()
+	facebook.begin()
+	gtk.main()
+
