@@ -329,10 +329,29 @@ class FaceBook(CDApplet):
 			pass
 		# that's it: now the applet waits for the next update :) 
 		
+	def error(self):
+		#signal the applet is in difficulty by adding a [!] emblem to the icon:
+		# reset icon:
+		self.icon.SetIcon("~/.config/cairo-dock/third-party/Facebook/icon")
+		# put warning svg emblem on icon
+		self.icon.SetEmblem("~/.config/cairo-dock/third-party/Facebook/warning.svg", CDApplet.UPPER_RIGHT)
+		
 	def read_fb(self):
+		# reset fblist
+		print "reading facebook"
+		fblist = []
 		# this method fetches information from FaceBook with fbcmd
 		# it runs the "fbcmd NOTIFY" command, returns and parses results in a "fblist" list
-		fblist = os.popen("fbcmd NOTIFY").readlines()
+		result = subprocess.Popen(['fbcmd', 'NOTIFY'], stdout=PIPE).stdout
+		fblist = result.readlines()
+		print fblist
+		# if there is no internet connection, the list will be empty
+		if fblist != []:
+			pass
+		else:
+			print '...Facebook Applet could not connect to the Internet. Trying later.'
+			self.error()
+			return False
 		# then it omits friend request details and feeds the result into a the "self.fb" dictionary
 		for i in fblist:
 			ii = i.split()
@@ -346,7 +365,8 @@ class FaceBook(CDApplet):
 				pass
 		# next the method runs "fbcmd NOTICES unread", returns and parse results in self.fb
 		# first fetch the data
-		ls = os.popen('fbcmd NOTICES unread').readlines()
+		result = subprocess.Popen(['fbcmd', 'NOTICES', 'unread'], stdout=PIPE).stdout
+		ls = result.readlines()
 		# remove the header if any
 		try:
 			del ls[0]
@@ -361,7 +381,8 @@ class FaceBook(CDApplet):
 			self.fb['NOTICES_UNREAD'] = count
 		except:
 			self.fb['NOTICES_UNREAD'] = 0
-			
+		return True
+		
 	def update(self):
 		# this method updates the information from Facebook
 		# but first it needs to know whether the cairo-dock process still exists
@@ -372,9 +393,13 @@ class FaceBook(CDApplet):
 		# since the findcairo() method should have terminated the program
 		# in case cairo-dock does not exist, there is no need to check again
 		# the update method continues asking read_fb() to fetch data from Facebook
-		self.read_fb()
-		# then it checks whether there is any need to alarm the user
-		self.consider()
+		try_read = self.read_fb()
+		if try_read == True:
+			print try_read
+			# then it checks whether there is any need to alarm the user
+			self.consider()
+		else:
+			pass
 		# returning master=True will tell the repeat method to continue
 		return master
 		
