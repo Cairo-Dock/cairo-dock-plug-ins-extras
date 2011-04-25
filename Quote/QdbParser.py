@@ -12,6 +12,7 @@ class QdbParser(SGMLParser):
         self.url = "http://www.qdb.us/random"
         self.quote = []
         self.inside_span_element = False                                            # indica se o parser esta dentro de <span></span> tag
+        self.inside_nickname = False                                                # <p>"<nickname>phrase"</p>
         self.current_quote = ""
 
     def start_span(self, attrs):
@@ -26,9 +27,16 @@ class QdbParser(SGMLParser):
 
     def handle_data(self, text):
         if self.inside_span_element:                                                # estamos dentro de <span>...</span>
-            text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
-            text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
-            self.current_quote += text                                              # concatena tudo que tiver dentro da tag
+            if not self.inside_nickname:                                            # <nickname> quote
+                if text == '<':                                                     # entered the "nickname area"
+                    self.inside_nickname = True
+                    self.current_quote += '\n<'                                     # linebreak
+                else:
+                    self.current_quote += text                                      # concatena tudo que tiver dentro da tag
+            else:                                                                   
+                self.current_quote += text                                          # concatenate all the nickname
+                if text == '>':                                                     # nickname is over
+                    self.inside_nickname = False                                    # set it
 
     def parse(self, page):
         self.feed(page)                                                             # feed the parser with the page's html

@@ -12,6 +12,7 @@ class BashParser(SGMLParser):
         self.url = "http://bash.org/?random"
         self.quote = []
         self.inside_p_element = False                                               # indica se o parser esta dentro de <p></p> tag
+        self.inside_nickname = False                                                # <p>"<nickname>phrase"</p>
         self.current_quote = ""
 
     def start_p(self, attrs):
@@ -20,15 +21,23 @@ class BashParser(SGMLParser):
                 self.inside_p_element = True
     
     def end_p(self):
-        self.inside_p_element = False
-        self.quote.append(self.current_quote)                                       # adiciona o conteudo completo da tag
-        self.current_quote = ""                                                     # reinicia o armazenador do conteudo
+        if self.inside_p_element:
+            self.quote.append(self.current_quote)                                   # adiciona o conteudo completo da tag
+            self.current_quote = ""                                                 # reinicia o armazenador do conteudo
+            self.inside_p_element = False
 
     def handle_data(self, text):
         if self.inside_p_element:                                                   # estamos dentro de <p>...</p>
-            text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
-            text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
-            self.current_quote += text                                              # concatena tudo que tiver dentro da tag
+            if not self.inside_nickname:                                            # <nickname> quote
+                if text == '<':                                                     # entered the "nickname area"
+                    self.inside_nickname = True
+                    self.current_quote += '\n<'                                     # linebreak
+                else:
+                    self.current_quote += text                                      # concatena tudo que tiver dentro da tag
+            else:                                                                   
+                self.current_quote += text                                          # concatenate all the nickname
+                if text == '>':                                                     # nickname is over
+                    self.inside_nickname = False                                    # set it
 
     def parse(self, page):
         self.feed(page)                                                             # feed the parser with the page's html
