@@ -58,7 +58,7 @@ class FakeWindow(gtk.gdk.Window):
 			icon_y = y + h/2
 		else:  # vertical
 			if (y < gtk.gdk.screen_height() / 2):
-				icon_y = y - h/2
+				icon_y = y - 3*h/2
 			else:
 				icon_y = y + h/2
 			if orientation == 2:  # right
