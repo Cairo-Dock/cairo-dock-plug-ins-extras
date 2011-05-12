@@ -1,0 +1,104 @@
+#!/usr/bin/python
+
+# This is a part of the external Moon applet for Cairo-Dock
+#
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#    GNU General Public License for more details.
+
+# This applet displays the moon phases as its own icon, 
+# and some informations about the current moon
+
+import urllib, urllib2, datetime, os, re
+from sgmllib import SGMLParser
+from urllib import FancyURLopener
+
+from util import log
+from CDApplet import CDApplet
+
+from MoonCalendarParser import MoonCalendarParser
+
+class AgentOpener(FancyURLopener):
+    """Masked user-agent otherwise the access would be forbidden"""
+    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+
+class Interface:
+
+    def __init__(self, year, month, day):
+        self.year, self.month, self.day = year, month, day
+        self.information = ""
+        self.moon_image = ""
+
+    def fetch(self):
+        parser = MoonCalendarParser()
+        opener = AgentOpener()                                                      # opens the web connection with masked user-agent
+        params = urllib.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
+
+        try:
+            page = urllib2.urlopen(parser.url, params)                              # get the HTML
+        except IOError:
+            log ("Problem to open %s" % (parser.url))
+        else:
+            parser.parse(page.read())                                               # feed the parser to get the specific content: translated text
+            page.close()                                                            # lets close the page connection
+            self.information = parser.information
+            self.moon_image = parser.moon_image
+        return self.moon_image, self.information
+
+# TODO: Use this struct to build the week structure in order to
+# maintain the information about the moon for the next seven days
+#class Data:
+#    def __init__(self, **kwds):
+#        self.__dict__.update(kwds)
+
+class Applet(CDApplet):
+
+    def inform_start_of_waiting_process(self):
+        self.icon.SetQuickInfo("...")
+
+    def inform_end_of_waiting_process(self):
+        self.icon.SetQuickInfo("")
+
+    def get_moon_from_web(self):
+        self.inform_start_of_waiting_process()
+
+        interface = Interface(self.year, self.month, self.day)
+        image, information = interface.fetch()
+        self.information = re.sub("\s+\n\s+" , " \n", information)                                 # " ".join(information.split())
+        # os.popen("wget -N -q http://www.briancasey.org/artifacts/astro/image/%s -O %s" % (image, os.path.abspath("./data/%s" % (image))))
+        self.icon.SetIcon(os.path.abspath("./data/%s" % image))
+
+        self.inform_end_of_waiting_process()
+
+    def __init__(self):
+
+        self.year, self.month, self.day = datetime.date.today().timetuple()[:3]
+        self.information = ""
+        self.moon_image = ""
+        self.week = []
+        self.dialog_active_time = 30                                                    # time in seconds that the dialog window will be active
+
+        CDApplet.__init__(self)                                                         # call high-level init
+
+    # Inherited methods from CDApplet
+    def begin(self):
+        self.get_moon_from_web()
+
+    def reload(self):
+        self.get_moon_from_web()                                                        # refresh the moon informations
+
+    # Callbacks
+    def on_click(self, key):
+        self.icon.PopupDialog({'message':self.information, 'time-length':self.dialog_active_time},{})
+
+if __name__ == '__main__':
+	Applet().run()
