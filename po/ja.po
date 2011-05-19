@@ -1,0 +1,6182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2007 Cairo-Dock project
+# This file is distributed under the same license as the Cairo-Dock package.
+# Fabrice Rey <fabounet@glx-dock.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"PO-Revision-Date: 2011-04-19 12:53+0100\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-16 05:14+0000\n"
+"X-Generator: Launchpad (build 12735)\n"
+
+#: ../GnoMenu/GnoMenu:130
+msgid "Preferences"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:134
+msgid "About"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:137
+msgid "Edit Menus"
+msgstr ""
+
+#: ../Calendar/messages:1 ../Cardapio/messages:1 ../CpuWatcher/messages:1
+#: ../Deluge/messages:1 ../DiskFree/messages:1 ../Facebook/messages:1
+#: ../GTG/messages:1 ../GnoMenu/messages:1 ../Google/messages:1
+#: ../KTorrent/messages:1 ../Lancelot/messages:1 ../Liferea/messages:1
+#: ../MintMenu/messages:1 ../Pidgin/messages:1 ../Quote/messages:1
+#: ../RubyBattery/messages:1 ../ShortUrl/messages:1 ../SubDock/messages:1
+#: ../Translator/messages:1 ../Transmission/messages:1 ../WebSearch/messages:1
+#: ../WindowsKiller/messages:1 ../Xchat/messages:1
+msgid "Icon"
+msgstr "アイコン"
+
+#: ../Calendar/messages:3 ../Cardapio/messages:3 ../CpuWatcher/messages:3
+#: ../Deluge/messages:3 ../DiskFree/messages:3 ../Facebook/messages:3
+#: ../GTG/messages:3 ../GnoMenu/messages:3 ../Google/messages:3
+#: ../KTorrent/messages:3 ../Lancelot/messages:3 ../Liferea/messages:3
+#: ../MintMenu/messages:3 ../Pidgin/messages:3 ../Quote/messages:3
+#: ../RubyBattery/messages:3 ../ShortUrl/messages:3 ../Translator/messages:3
+#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
+msgid "Applet"
+msgstr ""
+
+#: ../Calendar/messages:5 ../Cardapio/messages:5 ../CpuWatcher/messages:5
+#: ../Deluge/messages:5 ../DiskFree/messages:5 ../Facebook/messages:5
+#: ../GTG/messages:5 ../GnoMenu/messages:5 ../Google/messages:5
+#: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
+#: ../MintMenu/messages:5 ../Pidgin/messages:5 ../Quote/messages:5
+#: ../RubyBattery/messages:5 ../ShortUrl/messages:5 ../SubDock/messages:13
+#: ../Translator/messages:5 ../Transmission/messages:5 ../WebSearch/messages:3
+#: ../WindowsKiller/messages:5 ../Xchat/messages:5
+msgid "Name of the dock it belongs to:"
+msgstr "帰属先ドックの名前 :"
+
+#: ../Calendar/messages:7 ../Cardapio/messages:7 ../CpuWatcher/messages:7
+#: ../Deluge/messages:7 ../DiskFree/messages:7 ../Facebook/messages:7
+#: ../GTG/messages:7 ../GnoMenu/messages:7 ../Google/messages:7
+#: ../KTorrent/messages:7 ../Lancelot/messages:7 ../MintMenu/messages:7
+#: ../Pidgin/messages:7 ../Quote/messages:9 ../RubyBattery/messages:7
+#: ../ShortUrl/messages:7 ../SubDock/messages:7 ../Transmission/messages:7
+#: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
+msgid "Name of the icon as it will appear in its label in the dock :"
+msgstr "ドックのラベル上に表示するアイコンの名前 :"
+
+#: ../Calendar/messages:9 ../Cardapio/messages:9 ../CpuWatcher/messages:9
+#: ../Deluge/messages:9 ../DiskFree/messages:9 ../Facebook/messages:9
+#: ../GTG/messages:9 ../GnoMenu/messages:9 ../Google/messages:9
+#: ../KTorrent/messages:9 ../Lancelot/messages:9 ../Liferea/messages:9
+#: ../MintMenu/messages:9 ../Pidgin/messages:9 ../Quote/messages:11
+#: ../RubyBattery/messages:9 ../ShortUrl/messages:9 ../Translator/messages:11
+#: ../Transmission/messages:9 ../WebSearch/messages:7
+#: ../WindowsKiller/messages:9 ../Xchat/messages:9
+msgid "Display"
+msgstr "表示"
+
+#: ../Calendar/messages:11 ../Cardapio/messages:11 ../CpuWatcher/messages:11
+#: ../Deluge/messages:11 ../DiskFree/messages:11 ../Facebook/messages:11
+#: ../GTG/messages:11 ../GnoMenu/messages:11 ../Google/messages:11
+#: ../KTorrent/messages:11 ../Lancelot/messages:11 ../Liferea/messages:11
+#: ../MintMenu/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
+#: ../RubyBattery/messages:11 ../ShortUrl/messages:11 ../SubDock/messages:9
+#: ../Transmission/messages:11 ../WebSearch/messages:9
+#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+msgid "Let empty to use the default one."
+msgstr "デフォルトのものを使用するには空欄のままに。"
+
+#: ../Calendar/messages:13 ../Cardapio/messages:13 ../CpuWatcher/messages:13
+#: ../Deluge/messages:13 ../DiskFree/messages:13 ../Facebook/messages:13
+#: ../GTG/messages:13 ../GnoMenu/messages:13 ../Google/messages:13
+#: ../KTorrent/messages:13 ../Lancelot/messages:13 ../Liferea/messages:13
+#: ../MintMenu/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
+#: ../RubyBattery/messages:13 ../ShortUrl/messages:13 ../SubDock/messages:11
+#: ../Transmission/messages:13 ../WebSearch/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
+msgid "Image's filename :"
+msgstr "画像のファイル名 :"
+
+#: ../Calendar/messages:15 ../Cardapio/messages:15 ../CpuWatcher/messages:15
+#: ../Deluge/messages:15 ../DiskFree/messages:15 ../Facebook/messages:15
+#: ../GTG/messages:15 ../GnoMenu/messages:15 ../Google/messages:15
+#: ../KTorrent/messages:15 ../Lancelot/messages:15 ../Liferea/messages:15
+#: ../MintMenu/messages:15 ../Pidgin/messages:15 ../Quote/messages:17
+#: ../RubyBattery/messages:15 ../ShortUrl/messages:15 ../SubDock/messages:3
+#: ../Translator/messages:17 ../Transmission/messages:15
+#: ../WebSearch/messages:13 ../WindowsKiller/messages:15 ../Xchat/messages:15
+msgid "Set to 0 to use the default applet size"
+msgstr "デフォルトのアプレット・サイズを使用するには 0 に設定してください。"
+
+#: ../Calendar/messages:17 ../Cardapio/messages:17 ../CpuWatcher/messages:17
+#: ../Deluge/messages:17 ../DiskFree/messages:17 ../Facebook/messages:17
+#: ../GTG/messages:17 ../GnoMenu/messages:17 ../Google/messages:17
+#: ../KTorrent/messages:17 ../Lancelot/messages:17 ../Liferea/messages:17
+#: ../MintMenu/messages:17 ../Pidgin/messages:17 ../Quote/messages:19
+#: ../RubyBattery/messages:17 ../ShortUrl/messages:17 ../SubDock/messages:5
+#: ../Translator/messages:19 ../Transmission/messages:17
+#: ../WebSearch/messages:15 ../WindowsKiller/messages:17 ../Xchat/messages:17
+msgid "Desired icon size for this applet"
+msgstr "このアプレットのアイコンの大きさ"
+
+#: ../Calendar/messages:19 ../Cardapio/messages:19 ../CpuWatcher/messages:19
+#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Facebook/messages:19
+#: ../GTG/messages:19 ../GnoMenu/messages:19 ../Google/messages:19
+#: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
+#: ../MintMenu/messages:19 ../Pidgin/messages:19 ../Quote/messages:21
+#: ../RubyBattery/messages:19 ../ShortUrl/messages:19
+#: ../Translator/messages:21 ../Transmission/messages:19
+#: ../WebSearch/messages:17 ../Xchat/messages:19
+msgid "Applet's Handbook"
+msgstr "アプレットの手引き"
+
+#: ../Calendar/messages:21 ../Cardapio/messages:21 ../CpuWatcher/messages:21
+#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Facebook/messages:21
+#: ../GTG/messages:21 ../GnoMenu/messages:21 ../Google/messages:21
+#: ../KTorrent/messages:21 ../Lancelot/messages:21 ../Liferea/messages:21
+#: ../MintMenu/messages:21 ../Pidgin/messages:21 ../Quote/messages:23
+#: ../RubyBattery/messages:21 ../ShortUrl/messages:21 ../SubDock/messages:15
+#: ../Translator/messages:23 ../Transmission/messages:21
+#: ../WebSearch/messages:19 ../WindowsKiller/messages:19 ../Xchat/messages:21
+msgid "Desklet"
+msgstr "デスクレット"
+
+#: ../Calendar/messages:23 ../Cardapio/messages:23 ../CpuWatcher/messages:23
+#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Facebook/messages:23
+#: ../GTG/messages:23 ../GnoMenu/messages:23 ../Google/messages:23
+#: ../KTorrent/messages:23 ../Lancelot/messages:23 ../Liferea/messages:23
+#: ../MintMenu/messages:23 ../Pidgin/messages:23 ../Quote/messages:25
+#: ../RubyBattery/messages:23 ../ShortUrl/messages:23 ../SubDock/messages:17
+#: ../Translator/messages:25 ../Transmission/messages:23
+#: ../WebSearch/messages:21 ../WindowsKiller/messages:21 ../Xchat/messages:23
+msgid "Position"
+msgstr "位置"
+
+#: ../Calendar/messages:25 ../Cardapio/messages:25 ../CpuWatcher/messages:25
+#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Facebook/messages:25
+#: ../GTG/messages:25 ../GnoMenu/messages:25 ../Google/messages:25
+#: ../KTorrent/messages:25 ../Lancelot/messages:25 ../Liferea/messages:25
+#: ../MintMenu/messages:25 ../Pidgin/messages:25 ../Quote/messages:27
+#: ../RubyBattery/messages:25 ../ShortUrl/messages:25 ../SubDock/messages:19
+#: ../Translator/messages:27 ../Transmission/messages:25
+#: ../WebSearch/messages:23 ../WindowsKiller/messages:23 ../Xchat/messages:25
+msgid ""
+"If locked, the desklet cannot be moved by simply dragging it with the left "
+"mouse button. It can still be moved with ALT + left-click."
+msgstr ""
+"固定した場合、デスクレットはマウスの左ボタンだけを押しながらのドラッグでは移"
+"動出来なくなりますが、その場合でも ALT + 左クリックを使用すれば移動は可能で"
+"す。"
+
+#: ../Calendar/messages:27 ../Cardapio/messages:27 ../CpuWatcher/messages:27
+#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Facebook/messages:27
+#: ../GTG/messages:27 ../GnoMenu/messages:27 ../Google/messages:27
+#: ../KTorrent/messages:27 ../Lancelot/messages:27 ../Liferea/messages:27
+#: ../MintMenu/messages:27 ../Pidgin/messages:27 ../Quote/messages:29
+#: ../RubyBattery/messages:27 ../ShortUrl/messages:27 ../SubDock/messages:21
+#: ../Translator/messages:29 ../Transmission/messages:27
+#: ../WebSearch/messages:25 ../WindowsKiller/messages:25 ../Xchat/messages:27
+msgid "Lock position?"
+msgstr "位置を固定？"
+
+#: ../Calendar/messages:29 ../Cardapio/messages:29 ../CpuWatcher/messages:29
+#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Facebook/messages:29
+#: ../GTG/messages:29 ../GnoMenu/messages:29 ../Google/messages:29
+#: ../KTorrent/messages:29 ../Lancelot/messages:29 ../Liferea/messages:29
+#: ../MintMenu/messages:29 ../Pidgin/messages:29 ../Quote/messages:31
+#: ../RubyBattery/messages:29 ../ShortUrl/messages:29 ../SubDock/messages:23
+#: ../Translator/messages:31 ../Transmission/messages:29
+#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
+msgid ""
+"Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+"使用中のウィンドウ・マネージャによって異なりますが、例えば ALT + 中クリック、"
+"または ALT + 左クリックでサイズ変更できます。"
+
+#: ../Calendar/messages:31 ../Cardapio/messages:31 ../CpuWatcher/messages:31
+#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Facebook/messages:31
+#: ../GTG/messages:31 ../GnoMenu/messages:31 ../Google/messages:31
+#: ../KTorrent/messages:31 ../Lancelot/messages:31 ../Liferea/messages:31
+#: ../MintMenu/messages:31 ../Pidgin/messages:31 ../Quote/messages:33
+#: ../RubyBattery/messages:31 ../ShortUrl/messages:31 ../SubDock/messages:25
+#: ../Translator/messages:33 ../Transmission/messages:31
+#: ../WebSearch/messages:29 ../WindowsKiller/messages:29 ../Xchat/messages:31
+msgid "Desklet dimensions (width x height):"
+msgstr "デスクレットの寸法（幅×高さ） :"
+
+#: ../Calendar/messages:33 ../Cardapio/messages:33 ../CpuWatcher/messages:33
+#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Facebook/messages:33
+#: ../GTG/messages:33 ../GnoMenu/messages:33 ../Google/messages:33
+#: ../KTorrent/messages:33 ../Lancelot/messages:33 ../Liferea/messages:33
+#: ../MintMenu/messages:33 ../Pidgin/messages:33 ../Quote/messages:35
+#: ../RubyBattery/messages:33 ../ShortUrl/messages:33 ../SubDock/messages:27
+#: ../Translator/messages:35 ../Transmission/messages:33
+#: ../WebSearch/messages:31 ../WindowsKiller/messages:31 ../Xchat/messages:33
+msgid ""
+"Depending on your WindowManager, you may be able to move this with ALT + "
+"left-click.. Negative values are counted from the right/bottom of the screen"
+msgstr ""
+"使用中のウィンドウ・マネージャによって異なりますが、例えば ALT + 左クリックで"
+"移動させることができます... 負の値は画面の右下から数えられます。"
+
+#: ../Calendar/messages:35 ../Cardapio/messages:35 ../CpuWatcher/messages:35
+#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Facebook/messages:35
+#: ../GTG/messages:35 ../GnoMenu/messages:35 ../Google/messages:35
+#: ../KTorrent/messages:35 ../Lancelot/messages:35 ../Liferea/messages:35
+#: ../MintMenu/messages:35 ../Pidgin/messages:35 ../Quote/messages:37
+#: ../RubyBattery/messages:35 ../ShortUrl/messages:35 ../SubDock/messages:29
+#: ../Translator/messages:37 ../Transmission/messages:35
+#: ../WebSearch/messages:33 ../WindowsKiller/messages:33 ../Xchat/messages:35
+msgid "Desklet position (x, y):"
+msgstr "デスクレットの位置（X ; Y） :"
+
+#: ../Calendar/messages:37 ../Cardapio/messages:37 ../CpuWatcher/messages:37
+#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Facebook/messages:37
+#: ../GTG/messages:37 ../GnoMenu/messages:37 ../Google/messages:37
+#: ../KTorrent/messages:37 ../Lancelot/messages:37 ../Liferea/messages:37
+#: ../MintMenu/messages:37 ../Pidgin/messages:37 ../Quote/messages:39
+#: ../RubyBattery/messages:37 ../ShortUrl/messages:37 ../SubDock/messages:31
+#: ../Translator/messages:39 ../Transmission/messages:37
+#: ../WebSearch/messages:35 ../WindowsKiller/messages:35 ../Xchat/messages:37
+msgid ""
+"You can quickly rotate the desklet with the mouse, by dragging the little "
+"buttons on its left and top sides."
+msgstr ""
+"デスクレットの左側や上側にある小さなボタンをマウスでドラッグして、デスクレッ"
+"トを素早く回転させることができます。"
+
+#: ../Calendar/messages:39 ../Cardapio/messages:39 ../CpuWatcher/messages:39
+#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Facebook/messages:39
+#: ../GTG/messages:39 ../GnoMenu/messages:39 ../Google/messages:39
+#: ../KTorrent/messages:39 ../Lancelot/messages:39 ../Liferea/messages:39
+#: ../MintMenu/messages:39 ../Pidgin/messages:39 ../Quote/messages:41
+#: ../RubyBattery/messages:39 ../ShortUrl/messages:39 ../SubDock/messages:33
+#: ../Translator/messages:41 ../Transmission/messages:39
+#: ../WebSearch/messages:37 ../WindowsKiller/messages:37 ../Xchat/messages:39
+msgid "Rotation:"
+msgstr "回転 :"
+
+#: ../Calendar/messages:41 ../Cardapio/messages:41 ../CpuWatcher/messages:41
+#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Facebook/messages:41
+#: ../GTG/messages:41 ../GnoMenu/messages:41 ../Google/messages:41
+#: ../KTorrent/messages:41 ../Lancelot/messages:41 ../Liferea/messages:41
+#: ../MintMenu/messages:41 ../Pidgin/messages:41 ../Quote/messages:43
+#: ../RubyBattery/messages:41 ../ShortUrl/messages:41 ../SubDock/messages:35
+#: ../Translator/messages:43 ../Transmission/messages:41
+#: ../WebSearch/messages:39 ../WindowsKiller/messages:39 ../Xchat/messages:41
+msgid "Visibility"
+msgstr "表示"
+
+#: ../Calendar/messages:43 ../Cardapio/messages:43 ../CpuWatcher/messages:43
+#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Facebook/messages:43
+#: ../GTG/messages:43 ../GnoMenu/messages:43 ../Google/messages:43
+#: ../KTorrent/messages:43 ../Lancelot/messages:43 ../Liferea/messages:43
+#: ../MintMenu/messages:43 ../Pidgin/messages:43 ../Quote/messages:45
+#: ../RubyBattery/messages:43 ../ShortUrl/messages:43 ../SubDock/messages:37
+#: ../Translator/messages:45 ../Transmission/messages:43
+#: ../WebSearch/messages:41 ../WindowsKiller/messages:41 ../Xchat/messages:43
+msgid "Is detached from the dock"
+msgstr "ドックから分離？"
+
+#: ../Calendar/messages:45 ../Cardapio/messages:45 ../CpuWatcher/messages:45
+#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Facebook/messages:45
+#: ../GTG/messages:45 ../GnoMenu/messages:45 ../Google/messages:45
+#: ../KTorrent/messages:45 ../Lancelot/messages:45 ../Liferea/messages:45
+#: ../MintMenu/messages:45 ../Pidgin/messages:45 ../Quote/messages:47
+#: ../RubyBattery/messages:45 ../ShortUrl/messages:45 ../SubDock/messages:39
+#: ../Translator/messages:47 ../Transmission/messages:45
+#: ../WebSearch/messages:43 ../WindowsKiller/messages:43 ../Xchat/messages:45
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=utility)"
+msgstr ""
+"CompizFusion の \"ウィジェット・レイヤ\" プラグインのための、Compiz における"
+"動作設定での指定法 : (Class=Cairo-dock & type=utility)"
+
+#: ../Calendar/messages:47 ../Cardapio/messages:47 ../CpuWatcher/messages:47
+#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Facebook/messages:47
+#: ../GTG/messages:47 ../GnoMenu/messages:47 ../Google/messages:47
+#: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
+#: ../MintMenu/messages:47 ../Pidgin/messages:47 ../Quote/messages:49
+#: ../RubyBattery/messages:47 ../ShortUrl/messages:47 ../SubDock/messages:41
+#: ../Translator/messages:49 ../Transmission/messages:47
+#: ../WebSearch/messages:45 ../WindowsKiller/messages:45 ../Xchat/messages:47
+msgid "Visibility:"
+msgstr "表示 :"
+
+#: ../Calendar/messages:49 ../Cardapio/messages:49 ../CpuWatcher/messages:49
+#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Facebook/messages:49
+#: ../GTG/messages:49 ../GnoMenu/messages:49 ../Google/messages:49
+#: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
+#: ../MintMenu/messages:49 ../Pidgin/messages:49 ../Quote/messages:51
+#: ../RubyBattery/messages:49 ../ShortUrl/messages:49 ../SubDock/messages:43
+#: ../Translator/messages:51 ../Transmission/messages:49
+#: ../WebSearch/messages:47 ../WindowsKiller/messages:47 ../Xchat/messages:49
+msgid "Normal"
+msgstr "通常"
+
+#: ../Calendar/messages:51 ../Cardapio/messages:51 ../CpuWatcher/messages:51
+#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Facebook/messages:51
+#: ../GTG/messages:51 ../GnoMenu/messages:51 ../Google/messages:51
+#: ../KTorrent/messages:51 ../Lancelot/messages:51 ../Liferea/messages:51
+#: ../MintMenu/messages:51 ../Pidgin/messages:51 ../Quote/messages:53
+#: ../RubyBattery/messages:51 ../ShortUrl/messages:51 ../SubDock/messages:45
+#: ../Translator/messages:53 ../Transmission/messages:51
+#: ../WebSearch/messages:49 ../WindowsKiller/messages:49 ../Xchat/messages:51
+msgid "Keep above"
+msgstr "最前面表示"
+
+#: ../Calendar/messages:53 ../Cardapio/messages:53 ../CpuWatcher/messages:53
+#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Facebook/messages:53
+#: ../GTG/messages:53 ../GnoMenu/messages:53 ../Google/messages:53
+#: ../KTorrent/messages:53 ../Lancelot/messages:53 ../Liferea/messages:53
+#: ../MintMenu/messages:53 ../Pidgin/messages:53 ../Quote/messages:55
+#: ../RubyBattery/messages:53 ../ShortUrl/messages:53 ../SubDock/messages:47
+#: ../Translator/messages:55 ../Transmission/messages:53
+#: ../WebSearch/messages:51 ../WindowsKiller/messages:51 ../Xchat/messages:53
+msgid "Keep below"
+msgstr "最後面表示"
+
+#: ../Calendar/messages:55 ../Cardapio/messages:55 ../CpuWatcher/messages:55
+#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Facebook/messages:55
+#: ../GTG/messages:55 ../GnoMenu/messages:55 ../Google/messages:55
+#: ../KTorrent/messages:55 ../Lancelot/messages:55 ../Liferea/messages:55
+#: ../MintMenu/messages:55 ../Pidgin/messages:55 ../Quote/messages:57
+#: ../RubyBattery/messages:55 ../ShortUrl/messages:55 ../SubDock/messages:49
+#: ../Translator/messages:57 ../Transmission/messages:55
+#: ../WebSearch/messages:53 ../WindowsKiller/messages:53 ../Xchat/messages:55
+msgid "Keep on widget layer"
+msgstr "ウィジェット・レイヤ上"
+
+#: ../Calendar/messages:57 ../Cardapio/messages:57 ../CpuWatcher/messages:57
+#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Facebook/messages:57
+#: ../GTG/messages:57 ../GnoMenu/messages:57 ../Google/messages:57
+#: ../KTorrent/messages:57 ../Lancelot/messages:57 ../Liferea/messages:57
+#: ../MintMenu/messages:57 ../Pidgin/messages:57 ../Quote/messages:59
+#: ../RubyBattery/messages:57 ../ShortUrl/messages:57 ../SubDock/messages:51
+#: ../Translator/messages:59 ../Transmission/messages:57
+#: ../WebSearch/messages:55 ../WindowsKiller/messages:55 ../Xchat/messages:57
+msgid "Reserve space"
+msgstr "空間確保"
+
+#: ../Calendar/messages:59 ../Cardapio/messages:59 ../CpuWatcher/messages:59
+#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Facebook/messages:59
+#: ../GTG/messages:59 ../GnoMenu/messages:59 ../Google/messages:59
+#: ../KTorrent/messages:59 ../Lancelot/messages:59 ../Liferea/messages:59
+#: ../MintMenu/messages:59 ../Pidgin/messages:59 ../Quote/messages:61
+#: ../RubyBattery/messages:59 ../ShortUrl/messages:59 ../SubDock/messages:53
+#: ../Translator/messages:61 ../Transmission/messages:59
+#: ../WebSearch/messages:57 ../WindowsKiller/messages:57 ../Xchat/messages:59
+msgid "Should be visible on all desktops?"
+msgstr "全てのデスクトップで表示する？"
+
+#: ../Calendar/messages:61 ../Cardapio/messages:61 ../CpuWatcher/messages:61
+#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Facebook/messages:61
+#: ../GTG/messages:61 ../GnoMenu/messages:61 ../Google/messages:61
+#: ../KTorrent/messages:61 ../Lancelot/messages:61 ../Liferea/messages:61
+#: ../MintMenu/messages:61 ../Pidgin/messages:61 ../Quote/messages:63
+#: ../RubyBattery/messages:61 ../ShortUrl/messages:61 ../SubDock/messages:55
+#: ../Translator/messages:63 ../Transmission/messages:61
+#: ../WebSearch/messages:59 ../WindowsKiller/messages:59 ../Xchat/messages:61
+msgid "Decorations"
+msgstr "装飾"
+
+#: ../Calendar/messages:63 ../Cardapio/messages:63 ../CpuWatcher/messages:63
+#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Facebook/messages:63
+#: ../GTG/messages:63 ../GnoMenu/messages:63 ../Google/messages:63
+#: ../KTorrent/messages:63 ../Lancelot/messages:63 ../Liferea/messages:63
+#: ../MintMenu/messages:63 ../Pidgin/messages:63 ../Quote/messages:65
+#: ../RubyBattery/messages:63 ../ShortUrl/messages:63 ../SubDock/messages:57
+#: ../Translator/messages:65 ../Transmission/messages:63
+#: ../WebSearch/messages:61 ../WindowsKiller/messages:61 ../Xchat/messages:63
+msgid "Choose 'Custom decorations' to define your own decorations below."
+msgstr ""
+"自分の装飾を定義するには以下で 'Custom decorations' を選択してください。"
+
+#: ../Calendar/messages:65 ../Cardapio/messages:65 ../CpuWatcher/messages:65
+#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Facebook/messages:65
+#: ../GTG/messages:65 ../GnoMenu/messages:65 ../Google/messages:65
+#: ../KTorrent/messages:65 ../Lancelot/messages:65 ../Liferea/messages:65
+#: ../MintMenu/messages:65 ../Pidgin/messages:65 ../Quote/messages:67
+#: ../RubyBattery/messages:65 ../ShortUrl/messages:65 ../SubDock/messages:59
+#: ../Translator/messages:67 ../Transmission/messages:65
+#: ../WebSearch/messages:63 ../WindowsKiller/messages:63 ../Xchat/messages:65
+msgid "Choose a decoration theme for this desklet:"
+msgstr "このデスクレットの装飾テーマの選択 :"
+
+#: ../Calendar/messages:67 ../Cardapio/messages:67 ../CpuWatcher/messages:67
+#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Facebook/messages:67
+#: ../GTG/messages:67 ../GnoMenu/messages:67 ../Google/messages:67
+#: ../KTorrent/messages:67 ../Lancelot/messages:67 ../Liferea/messages:67
+#: ../MintMenu/messages:67 ../Pidgin/messages:67 ../Quote/messages:69
+#: ../RubyBattery/messages:67 ../ShortUrl/messages:67 ../SubDock/messages:61
+#: ../Translator/messages:69 ../Transmission/messages:67
+#: ../WebSearch/messages:65 ../WindowsKiller/messages:65 ../Xchat/messages:67
+msgid ""
+"Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
+msgstr ""
+"例えば外枠のように、描画物の背後に表示する画像です。画像を使用しない場合は空"
+"欄のままにしてください。"
+
+#: ../Calendar/messages:69 ../Cardapio/messages:69 ../CpuWatcher/messages:69
+#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Facebook/messages:69
+#: ../GTG/messages:69 ../GnoMenu/messages:69 ../Google/messages:69
+#: ../KTorrent/messages:69 ../Lancelot/messages:69 ../Liferea/messages:69
+#: ../MintMenu/messages:69 ../Pidgin/messages:69 ../Quote/messages:71
+#: ../RubyBattery/messages:69 ../ShortUrl/messages:69 ../SubDock/messages:63
+#: ../Translator/messages:71 ../Transmission/messages:69
+#: ../WebSearch/messages:67 ../WindowsKiller/messages:67 ../Xchat/messages:69
+msgid "Background image:"
+msgstr "背景画像 :"
+
+#: ../Calendar/messages:71 ../Cardapio/messages:71 ../CpuWatcher/messages:71
+#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Facebook/messages:71
+#: ../GTG/messages:71 ../GnoMenu/messages:71 ../Google/messages:71
+#: ../KTorrent/messages:71 ../Lancelot/messages:71 ../Liferea/messages:71
+#: ../MintMenu/messages:71 ../Pidgin/messages:71 ../Quote/messages:73
+#: ../RubyBattery/messages:71 ../ShortUrl/messages:71 ../SubDock/messages:65
+#: ../Translator/messages:73 ../Transmission/messages:71
+#: ../WebSearch/messages:69 ../WindowsKiller/messages:69 ../Xchat/messages:71
+msgid "Background transparency:"
+msgstr "背景の透明度 :"
+
+#: ../Calendar/messages:73 ../Cardapio/messages:73 ../CpuWatcher/messages:73
+#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Facebook/messages:73
+#: ../GTG/messages:73 ../GnoMenu/messages:73 ../Google/messages:73
+#: ../KTorrent/messages:73 ../Lancelot/messages:73 ../Liferea/messages:73
+#: ../MintMenu/messages:73 ../Pidgin/messages:73 ../Quote/messages:75
+#: ../RubyBattery/messages:73 ../ShortUrl/messages:73 ../SubDock/messages:67
+#: ../Translator/messages:75 ../Transmission/messages:73
+#: ../WebSearch/messages:71 ../WindowsKiller/messages:71 ../Xchat/messages:73
+msgid "in pixels. Use this to adjust the left position of drawings."
+msgstr "ピクセル単位。描画内容の左方向位置の調整に使用してください。"
+
+#: ../Calendar/messages:75 ../Cardapio/messages:75 ../CpuWatcher/messages:75
+#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Facebook/messages:75
+#: ../GTG/messages:75 ../GnoMenu/messages:75 ../Google/messages:75
+#: ../KTorrent/messages:75 ../Lancelot/messages:75 ../Liferea/messages:75
+#: ../MintMenu/messages:75 ../Pidgin/messages:75 ../Quote/messages:77
+#: ../RubyBattery/messages:75 ../ShortUrl/messages:75 ../SubDock/messages:69
+#: ../Translator/messages:77 ../Transmission/messages:75
+#: ../WebSearch/messages:73 ../WindowsKiller/messages:73 ../Xchat/messages:75
+msgid "Left offset:"
+msgstr "左方向のオフセット :"
+
+#: ../Calendar/messages:77 ../Cardapio/messages:77 ../CpuWatcher/messages:77
+#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Facebook/messages:77
+#: ../GTG/messages:77 ../GnoMenu/messages:77 ../Google/messages:77
+#: ../KTorrent/messages:77 ../Lancelot/messages:77 ../Liferea/messages:77
+#: ../MintMenu/messages:77 ../Pidgin/messages:77 ../Quote/messages:79
+#: ../RubyBattery/messages:77 ../ShortUrl/messages:77 ../SubDock/messages:71
+#: ../Translator/messages:79 ../Transmission/messages:77
+#: ../WebSearch/messages:75 ../WindowsKiller/messages:75 ../Xchat/messages:77
+msgid "in pixels. Use this to adjust the top position of drawings."
+msgstr "ピクセル単位。描画内容の上方向位置の調整に使用してください。"
+
+#: ../Calendar/messages:79 ../Cardapio/messages:79 ../CpuWatcher/messages:79
+#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Facebook/messages:79
+#: ../GTG/messages:79 ../GnoMenu/messages:79 ../Google/messages:79
+#: ../KTorrent/messages:79 ../Lancelot/messages:79 ../Liferea/messages:79
+#: ../MintMenu/messages:79 ../Pidgin/messages:79 ../Quote/messages:81
+#: ../RubyBattery/messages:79 ../ShortUrl/messages:79 ../SubDock/messages:73
+#: ../Translator/messages:81 ../Transmission/messages:79
+#: ../WebSearch/messages:77 ../WindowsKiller/messages:77 ../Xchat/messages:79
+msgid "Top offset:"
+msgstr "上方向のオフセット :"
+
+#: ../Calendar/messages:81 ../Cardapio/messages:81 ../CpuWatcher/messages:81
+#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Facebook/messages:81
+#: ../GTG/messages:81 ../GnoMenu/messages:81 ../Google/messages:81
+#: ../KTorrent/messages:81 ../Lancelot/messages:81 ../Liferea/messages:81
+#: ../MintMenu/messages:81 ../Pidgin/messages:81 ../Quote/messages:83
+#: ../RubyBattery/messages:81 ../ShortUrl/messages:81 ../SubDock/messages:75
+#: ../Translator/messages:83 ../Transmission/messages:81
+#: ../WebSearch/messages:79 ../WindowsKiller/messages:79 ../Xchat/messages:81
+msgid "in pixels. Use this to adjust the right position of drawings."
+msgstr "ピクセル単位。描画内容の右位置の調整に使用してください。"
+
+#: ../Calendar/messages:83 ../Cardapio/messages:83 ../CpuWatcher/messages:83
+#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Facebook/messages:83
+#: ../GTG/messages:83 ../GnoMenu/messages:83 ../Google/messages:83
+#: ../KTorrent/messages:83 ../Lancelot/messages:83 ../Liferea/messages:83
+#: ../MintMenu/messages:83 ../Pidgin/messages:83 ../Quote/messages:85
+#: ../RubyBattery/messages:83 ../ShortUrl/messages:83 ../SubDock/messages:77
+#: ../Translator/messages:85 ../Transmission/messages:83
+#: ../WebSearch/messages:81 ../WindowsKiller/messages:81 ../Xchat/messages:83
+msgid "Right offset:"
+msgstr "右方向のオフセット :"
+
+#: ../Calendar/messages:85 ../Cardapio/messages:85 ../CpuWatcher/messages:85
+#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Facebook/messages:85
+#: ../GTG/messages:85 ../GnoMenu/messages:85 ../Google/messages:85
+#: ../KTorrent/messages:85 ../Lancelot/messages:85 ../Liferea/messages:85
+#: ../MintMenu/messages:85 ../Pidgin/messages:85 ../Quote/messages:87
+#: ../RubyBattery/messages:85 ../ShortUrl/messages:85 ../SubDock/messages:79
+#: ../Translator/messages:87 ../Transmission/messages:85
+#: ../WebSearch/messages:83 ../WindowsKiller/messages:83 ../Xchat/messages:85
+msgid "in pixels. Use this to adjust the bottom position of drawings."
+msgstr "ピクセル単位。描画内容の下方向位置の調整に使用してください。"
+
+#: ../Calendar/messages:87 ../Cardapio/messages:87 ../CpuWatcher/messages:87
+#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Facebook/messages:87
+#: ../GTG/messages:87 ../GnoMenu/messages:87 ../Google/messages:87
+#: ../KTorrent/messages:87 ../Lancelot/messages:87 ../Liferea/messages:87
+#: ../MintMenu/messages:87 ../Pidgin/messages:87 ../Quote/messages:89
+#: ../RubyBattery/messages:87 ../ShortUrl/messages:87 ../SubDock/messages:81
+#: ../Translator/messages:89 ../Transmission/messages:87
+#: ../WebSearch/messages:85 ../WindowsKiller/messages:85 ../Xchat/messages:87
+msgid "Bottom offset:"
+msgstr "下方向のオフセット :"
+
+#: ../Calendar/messages:89 ../Cardapio/messages:89 ../CpuWatcher/messages:89
+#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Facebook/messages:89
+#: ../GTG/messages:89 ../GnoMenu/messages:89 ../Google/messages:89
+#: ../KTorrent/messages:89 ../Lancelot/messages:89 ../Liferea/messages:89
+#: ../MintMenu/messages:89 ../Pidgin/messages:89 ../Quote/messages:91
+#: ../RubyBattery/messages:89 ../ShortUrl/messages:89 ../SubDock/messages:83
+#: ../Translator/messages:91 ../Transmission/messages:89
+#: ../WebSearch/messages:87 ../WindowsKiller/messages:87 ../Xchat/messages:89
+msgid ""
+"Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
+"no image."
+msgstr ""
+"例えばテカリ表現のように、描画物の手前に表示する画像です。画像を使用しない場"
+"合は空欄のままにしてください。"
+
+#: ../Calendar/messages:91 ../Cardapio/messages:91 ../CpuWatcher/messages:91
+#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Facebook/messages:91
+#: ../GTG/messages:91 ../GnoMenu/messages:91 ../Google/messages:91
+#: ../KTorrent/messages:91 ../Lancelot/messages:91 ../Liferea/messages:91
+#: ../MintMenu/messages:91 ../Pidgin/messages:91 ../Quote/messages:93
+#: ../RubyBattery/messages:91 ../ShortUrl/messages:91 ../SubDock/messages:85
+#: ../Translator/messages:93 ../Transmission/messages:91
+#: ../WebSearch/messages:89 ../WindowsKiller/messages:89 ../Xchat/messages:91
+msgid "Foreground image:"
+msgstr "前景画像 :"
+
+#: ../Calendar/messages:93 ../Cardapio/messages:93 ../CpuWatcher/messages:93
+#: ../Deluge/messages:93 ../DiskFree/messages:93 ../Facebook/messages:93
+#: ../GTG/messages:93 ../GnoMenu/messages:93 ../Google/messages:93
+#: ../KTorrent/messages:93 ../Lancelot/messages:93 ../Liferea/messages:93
+#: ../MintMenu/messages:93 ../Pidgin/messages:93 ../Quote/messages:95
+#: ../RubyBattery/messages:93 ../ShortUrl/messages:93 ../SubDock/messages:87
+#: ../Translator/messages:95 ../Transmission/messages:93
+#: ../WebSearch/messages:91 ../WindowsKiller/messages:91 ../Xchat/messages:93
+msgid "Foreground tansparency:"
+msgstr "前景の透明度 :"
+
+#: ../Calendar/messages:95 ../Cardapio/messages:95 ../CpuWatcher/messages:95
+#: ../Deluge/messages:95 ../DiskFree/messages:95 ../Facebook/messages:95
+#: ../GTG/messages:95 ../GnoMenu/messages:95 ../KTorrent/messages:95
+#: ../Lancelot/messages:95 ../Liferea/messages:95 ../MintMenu/messages:95
+#: ../Pidgin/messages:95 ../Quote/messages:97 ../RubyBattery/messages:95
+#: ../ShortUrl/messages:95 ../SubDock/messages:89 ../Translator/messages:97
+#: ../Transmission/messages:95 ../WebSearch/messages:93 ../Xchat/messages:95
+msgid "Configuration"
+msgstr "設定"
+
+#: ../Calendar/messages:97
+#, fuzzy
+msgid "Applications"
+msgstr "アプリケーション・メニュー"
+
+#: ../Calendar/messages:99
+msgid "Command to launch your favourite calendar application (middle click):"
+msgstr ""
+
+#: ../Calendar/messages:101
+msgid "Command to execute on dropping a file onto the calendar-icon:"
+msgstr ""
+
+#: ../Calendar/messages:103 ../Facebook/messages:117
+msgid "Behaviour"
+msgstr "動作"
+
+#: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
+#, fuzzy
+msgid "in s."
+msgstr "秒単位"
+
+#: ../Calendar/messages:107
+msgid "Time length of dialogues for the calendar :"
+msgstr ""
+
+#: ../Calendar/messages:111
+msgid "Time length of dialogues for events of the day :"
+msgstr ""
+
+#: ../Calendar/messages:115
+msgid "Time length of dialogues for calendar of next month :"
+msgstr ""
+
+#: ../Calendar/messages:117
+#, fuzzy
+msgid ""
+"The path to a script to generate an icon. Leave it empty to use the default "
+"one."
+msgstr ""
+"アイコン上にファイル等をドロップしようとする際に表示されるエンブレムです。デ"
+"フォルトのものを使用するには空欄のままに。"
+
+#: ../Calendar/messages:119
+msgid "Icon custom script:"
+msgstr ""
+
+#: ../Cardapio/messages:97 ../GnoMenu/messages:97 ../Lancelot/messages:97
+#: ../MintMenu/messages:97
+#, fuzzy
+msgid "Shortkey to pop up the menu:"
+msgstr "アイテム・メニュー表示のショートカット :"
+
+#: ../CpuWatcher/messages:97
+#, fuzzy
+msgid "in ms"
+msgstr "ミリ秒単位"
+
+#: ../CpuWatcher/messages:99
+#, fuzzy
+msgid "Refresh time :"
+msgstr "更新時間 :"
+
+#: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
+#, fuzzy
+msgid "Shortkey to pop up the torrents info:"
+msgstr "アイテム・メニュー表示のショートカット :"
+
+#: ../DiskFree/messages:97
+msgid ""
+"View available file system's space as Giga (checked) or Mega (unchecked) :"
+msgstr ""
+
+#: ../DiskFree/messages:99
+#, fuzzy
+msgid "in minutes"
+msgstr "分単位。"
+
+#: ../DiskFree/messages:101
+#, fuzzy
+msgid "Time between two file system's checking :"
+msgstr "ページの更新の間隔時間"
+
+#: ../Facebook/messages:97
+#, fuzzy
+msgid "Notifications"
+msgstr "アラート"
+
+#: ../Facebook/messages:99
+#, fuzzy
+msgid "Notifications for new messages?"
+msgstr "バッテリー低残量時に通知？"
+
+#: ../Facebook/messages:101
+msgid ""
+"Notifications will keep recurring so long requests have not been either "
+"accepted or rejected."
+msgstr ""
+
+#: ../Facebook/messages:103
+msgid "Notifications for pending friend requests?"
+msgstr ""
+
+#: ../Facebook/messages:105
+msgid "likes, comments, tags, etc."
+msgstr ""
+
+#: ../Facebook/messages:107
+msgid "Notifications for unread notices?"
+msgstr ""
+
+#: ../Facebook/messages:109
+#, fuzzy
+msgid "Notifications for pokes?"
+msgstr "通知方法 :"
+
+#: ../Facebook/messages:111
+#, fuzzy
+msgid "Notifications for group invites?"
+msgstr "バッテリー低残量時に通知？"
+
+#: ../Facebook/messages:113
+#, fuzzy
+msgid "Notifications for event invites?"
+msgstr "バッテリー低残量時に通知？"
+
+#: ../Facebook/messages:115
+msgid "Notifications for unread shares (deprecated)?"
+msgstr ""
+
+#: ../Facebook/messages:119
+msgid ""
+"\"always\" will notify you whenever the number of notifications is not 0; "
+"\"different\" will do so whenever the number of notifications changes; "
+"\"superior\" will notify you whenever it increases (default), \"never\"--"
+"obviously--will prevent the applet from bothering you. The applet will "
+"always set an emblem on the icon however."
+msgstr ""
+
+#: ../Facebook/messages:121
+msgid "Under what condition do you want the applet to notify you?:"
+msgstr ""
+
+#: ../Facebook/messages:123
+msgid "superior"
+msgstr ""
+
+#: ../Facebook/messages:125
+msgid "always"
+msgstr ""
+
+#: ../Facebook/messages:127
+msgid "different"
+msgstr ""
+
+#: ../Facebook/messages:129
+#, fuzzy
+msgid "never"
+msgstr "しない"
+
+#: ../Facebook/messages:131
+msgid "Effect is \"bounce\" by default."
+msgstr ""
+
+#: ../Facebook/messages:133
+msgid ""
+"Do you want the applet to apply any effect on the icon during the "
+"notification?"
+msgstr ""
+
+#: ../Facebook/messages:135
+#, fuzzy
+msgid "bounce"
+msgstr "バウンド"
+
+#: ../Facebook/messages:137
+#, fuzzy
+msgid "blink"
+msgstr "点滅"
+
+#: ../Facebook/messages:139
+#, fuzzy
+msgid "pulse"
+msgstr "パルス"
+
+#: ../Facebook/messages:141
+#, fuzzy
+msgid "rotate"
+msgstr "回転"
+
+#: ../Facebook/messages:143
+msgid "spot"
+msgstr ""
+
+#: ../Facebook/messages:145
+msgid "wave"
+msgstr ""
+
+#: ../Facebook/messages:147
+#, fuzzy
+msgid "wobbly"
+msgstr "伸び縮み"
+
+#: ../Facebook/messages:149 ../GTG/messages:113 ../Pidgin/messages:121
+#: ../Xchat/messages:113
+msgid "none"
+msgstr "なし"
+
+#: ../Facebook/messages:151
+msgid "True by default."
+msgstr ""
+
+#: ../Facebook/messages:153
+msgid "Do you want the applet to show a dialogue during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:155
+msgid "ATTENTION_SOUND is true by default."
+msgstr ""
+
+#: ../Facebook/messages:157
+msgid "Do you want the applet to play a sound during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:159
+#, fuzzy
+msgid "Time in minutes."
+msgstr "分単位。"
+
+#: ../Facebook/messages:161
+msgid ""
+"How often do you want the applet to check your Facebook account? (in "
+"minutes):"
+msgstr ""
+
+#: ../Facebook/messages:163
+msgid "Appearance"
+msgstr "外観"
+
+#: ../Facebook/messages:165
+msgid "How do you want to represent the counter on the icon?"
+msgstr ""
+
+#: ../Facebook/messages:167
+msgid "emblem"
+msgstr ""
+
+#: ../Facebook/messages:169
+msgid "quickinfo"
+msgstr ""
+
+#: ../GTG/messages:97 ../Xchat/messages:99
+#, fuzzy
+msgid "Bubbles duration :"
+msgstr "パルスの持続時間 :"
+
+#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
+msgid "Short"
+msgstr ""
+
+#: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
+#, fuzzy
+msgid "Medium"
+msgstr "中"
+
+#: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
+msgid "Long"
+msgstr ""
+
+#: ../GTG/messages:105 ../Xchat/messages:107
+#, fuzzy
+msgid "Animation of the icon on receiving channel messages :"
+msgstr "アップロード中のアイコンのアニメーション :"
+
+#: ../GTG/messages:107 ../Xchat/messages:97
+msgid "Display channel messages in a bubble :"
+msgstr ""
+
+#: ../GTG/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the "
+"icon.}\n"
+"history = 50\n"
+"j+[48;512] Post-it's initial dimension (width x height) :\n"
+"{Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+
+#: ../GTG/messages:111 ../Pidgin/messages:119 ../Xchat/messages:111
+#, fuzzy
+msgid "Size of the history :"
+msgstr "内側の線のサイズ :"
+
+#: ../GTG/messages:115 ../Pidgin/messages:123 ../Xchat/messages:115
+msgid "big"
+msgstr "大きい"
+
+#: ../Liferea/messages:7 ../Translator/messages:9
+msgid "Name of the icon as it will appear in its caption in the dock:"
+msgstr "ドックのラベル上に表示するアイコンの名前 :"
+
+#: ../Liferea/messages:97
+#, fuzzy
+msgid "Show in the icon:"
+msgstr "ウィンドウを表示"
+
+#: ../Liferea/messages:99
+#, fuzzy
+msgid "Number of unread messages"
+msgstr "秒当りの回転数"
+
+#: ../Liferea/messages:101
+#, fuzzy
+msgid " Number of new messages"
+msgstr "新着メッセージの最大表示数？"
+
+#: ../Pidgin/messages:97 ../Pidgin/messages:101
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: ../Pidgin/messages:99
+#, fuzzy
+msgid "Choose a theme :"
+msgstr "3D テーマを使用？"
+
+#: ../Pidgin/messages:103
+msgid "Display conversation messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:105
+#, fuzzy
+msgid "Display chat messages in a bubble?"
+msgstr "ディスク使用量をバーで表示？"
+
+#: ../Pidgin/messages:107
+#, fuzzy
+msgid "Bubbles duration:"
+msgstr "パルスの持続時間 :"
+
+#: ../Pidgin/messages:115
+#, fuzzy
+msgid "Animation of the icon on receiving a message:"
+msgstr "アップロード中のアイコンのアニメーション :"
+
+#: ../Pidgin/messages:117 ../Xchat/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the icon."
+msgstr ""
+
+#: ../Quote/messages:7
+#, fuzzy
+msgid "Let empty to display the current site's name."
+msgstr "接続の名前を使用するには空欄のままに。"
+
+#: ../Quote/messages:99
+#, fuzzy
+msgid "Quote source:"
+msgstr "源泉の数 :"
+
+#: ../Quote/messages:101
+msgid "Quotationspage.com"
+msgstr ""
+
+#: ../Quote/messages:103
+msgid "Bash.org"
+msgstr ""
+
+#: ../Quote/messages:105
+msgid "Xkcdb.com"
+msgstr ""
+
+#: ../Quote/messages:107
+msgid "Qdb.us"
+msgstr ""
+
+#: ../Quote/messages:109
+msgid "Danstonchat.com"
+msgstr ""
+
+#: ../Quote/messages:111
+msgid "Jokes2go.com"
+msgstr ""
+
+#: ../Quote/messages:113
+msgid "Vidademerda.com.br"
+msgstr ""
+
+#: ../Quote/messages:115
+msgid "Grouphug.us"
+msgstr ""
+
+#: ../RubyBattery/messages:97
+msgid "Choose one of the available themes:"
+msgstr "利用可能なテーマから1つ選択 :"
+
+#: ../RubyBattery/messages:99
+msgid "in seconds."
+msgstr "秒単位"
+
+#: ../RubyBattery/messages:101
+#, fuzzy
+msgid "Interval of time between 2 checks:"
+msgstr "信号チェックの間隔時間 :"
+
+#: ../RubyBattery/messages:103
+msgid "Activate alert of critical charge?"
+msgstr ""
+
+#: ../RubyBattery/messages:105
+#, fuzzy
+msgid "of % battery charge."
+msgstr "バッテリー充電完了時に通知？"
+
+#: ../RubyBattery/messages:107
+msgid "Threshold for the critical charge alert:"
+msgstr ""
+
+#: ../RubyBattery/messages:109
+#, fuzzy
+msgid "Display a label with the charge?"
+msgstr "ディスク使用量をバーで表示？"
+
+#: ../ShortUrl/messages:97
+msgid ""
+"Cela vous permet de choisir de quel site vous souhaitez avoir l url "
+"raccourcie."
+msgstr ""
+
+#: ../ShortUrl/messages:99
+msgid "Choisissez votre site d url raccourcie :"
+msgstr ""
+
+#: ../ShortUrl/messages:101
+msgid "tinyurl.com"
+msgstr ""
+
+#: ../ShortUrl/messages:103
+#, fuzzy
+msgid "shorterlink.org"
+msgstr "Shorter-Link"
+
+#: ../ShortUrl/messages:105
+msgid "Cela vous permet de choisir l action a faire au clic gauche."
+msgstr ""
+
+#: ../ShortUrl/messages:107
+msgid "Action au clic gauche sur l icone :"
+msgstr ""
+
+#: ../ShortUrl/messages:109 ../ShortUrl/messages:117
+msgid "raccourcir le dernier lien de dnd2share"
+msgstr ""
+
+#: ../ShortUrl/messages:111 ../ShortUrl/messages:119
+msgid "ouvrir un dialogue pour raccourcir un lien"
+msgstr ""
+
+#: ../ShortUrl/messages:113
+msgid "Cela vous permet de choisir l action a faire au clic milieu."
+msgstr ""
+
+#: ../ShortUrl/messages:115
+#, fuzzy
+msgid "Action au clic milieu sur l icone :"
+msgstr "クリック時と中クリック時のアクション :"
+
+#: ../SubDock/messages:91
+#, fuzzy
+msgid "Choose one of the available themes :"
+msgstr "利用可能なテーマから1つ選択 :"
+
+#: ../SubDock/messages:93
+#, fuzzy
+msgid "Max value :"
+msgstr "値の表示 :"
+
+#: ../SubDock/messages:95
+msgid "Yes / No ?"
+msgstr ""
+
+#: ../Translator/messages:7
+msgid "Let empty to display the current source and destination languages."
+msgstr ""
+
+#: ../Translator/messages:13
+msgid "Leave empty to use the default one."
+msgstr "デフォルトのものを使用するには空欄のままに。"
+
+#: ../Translator/messages:15
+msgid "Image filename:"
+msgstr "画像のファイル名 :"
+
+#: ../Translator/messages:99
+msgid "Languages"
+msgstr ""
+
+#: ../Translator/messages:101
+msgid "Translate from:"
+msgstr ""
+
+#: ../Translator/messages:103 ../Translator/messages:219
+msgid "Afrikaans"
+msgstr ""
+
+#: ../Translator/messages:105 ../Translator/messages:221
+msgid "Albanian"
+msgstr ""
+
+#: ../Translator/messages:107 ../Translator/messages:223
+msgid "Arabic"
+msgstr ""
+
+#: ../Translator/messages:109 ../Translator/messages:225
+msgid "Armenian"
+msgstr ""
+
+#: ../Translator/messages:111 ../Translator/messages:227
+msgid "Azerbaijani"
+msgstr ""
+
+#: ../Translator/messages:113 ../Translator/messages:229
+msgid "Basque"
+msgstr ""
+
+#: ../Translator/messages:115 ../Translator/messages:231
+msgid "Belarusian"
+msgstr ""
+
+#: ../Translator/messages:117 ../Translator/messages:233
+msgid "Bulgarian"
+msgstr ""
+
+#: ../Translator/messages:119 ../Translator/messages:235
+msgid "Catalan"
+msgstr ""
+
+#: ../Translator/messages:121 ../Translator/messages:237
+msgid "Chinese"
+msgstr ""
+
+#: ../Translator/messages:123 ../Translator/messages:239
+msgid "Croatian"
+msgstr ""
+
+#: ../Translator/messages:125 ../Translator/messages:241
+msgid "Czech"
+msgstr ""
+
+#: ../Translator/messages:127 ../Translator/messages:243
+msgid "Danish"
+msgstr ""
+
+#: ../Translator/messages:129 ../Translator/messages:245
+msgid "Dutch"
+msgstr ""
+
+#: ../Translator/messages:131 ../Translator/messages:247
+msgid "English"
+msgstr ""
+
+#: ../Translator/messages:133 ../Translator/messages:249
+msgid "Estonian"
+msgstr ""
+
+#: ../Translator/messages:135 ../Translator/messages:251
+msgid "Filipino"
+msgstr ""
+
+#: ../Translator/messages:137 ../Translator/messages:253
+msgid "Finnish"
+msgstr ""
+
+#: ../Translator/messages:139 ../Translator/messages:255
+msgid "French"
+msgstr ""
+
+#: ../Translator/messages:141 ../Translator/messages:257
+msgid "Galician"
+msgstr ""
+
+#: ../Translator/messages:143 ../Translator/messages:259
+msgid "Georgian"
+msgstr ""
+
+#: ../Translator/messages:145 ../Translator/messages:261
+msgid "German"
+msgstr ""
+
+#: ../Translator/messages:147 ../Translator/messages:263
+msgid "Greek"
+msgstr ""
+
+#: ../Translator/messages:149 ../Translator/messages:265
+msgid "Haitian"
+msgstr ""
+
+#: ../Translator/messages:151 ../Translator/messages:267
+msgid "Hebrew"
+msgstr ""
+
+#: ../Translator/messages:153 ../Translator/messages:269
+msgid "Hindi"
+msgstr ""
+
+#: ../Translator/messages:155 ../Translator/messages:271
+msgid "Hungarian"
+msgstr ""
+
+#: ../Translator/messages:157 ../Translator/messages:273
+msgid "Icelandic"
+msgstr ""
+
+#: ../Translator/messages:159 ../Translator/messages:275
+msgid "Indonesian"
+msgstr ""
+
+#: ../Translator/messages:161 ../Translator/messages:277
+msgid "Irish"
+msgstr ""
+
+#: ../Translator/messages:163 ../Translator/messages:279
+msgid "Italian"
+msgstr ""
+
+#: ../Translator/messages:165 ../Translator/messages:281
+msgid "Japanese"
+msgstr ""
+
+#: ../Translator/messages:167 ../Translator/messages:283
+msgid "Korean"
+msgstr ""
+
+#: ../Translator/messages:169 ../Translator/messages:285
+msgid "Latvian"
+msgstr ""
+
+#: ../Translator/messages:171 ../Translator/messages:287
+msgid "Lithuanian"
+msgstr ""
+
+#: ../Translator/messages:173 ../Translator/messages:289
+msgid "Macedonian"
+msgstr ""
+
+#: ../Translator/messages:175 ../Translator/messages:291
+msgid "Malay"
+msgstr ""
+
+#: ../Translator/messages:177 ../Translator/messages:293
+msgid "Maltese"
+msgstr ""
+
+#: ../Translator/messages:179 ../Translator/messages:295
+msgid "Norwegian"
+msgstr ""
+
+#: ../Translator/messages:181 ../Translator/messages:297
+msgid "Persian"
+msgstr ""
+
+#: ../Translator/messages:183 ../Translator/messages:299
+msgid "Polish"
+msgstr ""
+
+#: ../Translator/messages:185 ../Translator/messages:301
+msgid "Portuguese"
+msgstr ""
+
+#: ../Translator/messages:187 ../Translator/messages:303
+msgid "Romanian"
+msgstr ""
+
+#: ../Translator/messages:189 ../Translator/messages:305
+msgid "Russian"
+msgstr ""
+
+#: ../Translator/messages:191 ../Translator/messages:307
+msgid "Serbian"
+msgstr ""
+
+#: ../Translator/messages:193 ../Translator/messages:309
+msgid "Slovak"
+msgstr ""
+
+#: ../Translator/messages:195 ../Translator/messages:311
+msgid "Slovenian"
+msgstr ""
+
+#: ../Translator/messages:197 ../Translator/messages:313
+msgid "Spanish"
+msgstr ""
+
+#: ../Translator/messages:199 ../Translator/messages:315
+msgid "Swahili"
+msgstr ""
+
+#: ../Translator/messages:201 ../Translator/messages:317
+msgid "Swedish"
+msgstr ""
+
+#: ../Translator/messages:203 ../Translator/messages:319
+msgid "Thai"
+msgstr ""
+
+#: ../Translator/messages:205 ../Translator/messages:321
+msgid "Turkish"
+msgstr ""
+
+#: ../Translator/messages:207 ../Translator/messages:323
+msgid "Ukrainian"
+msgstr ""
+
+#: ../Translator/messages:209 ../Translator/messages:325
+msgid "Urdu"
+msgstr ""
+
+#: ../Translator/messages:211 ../Translator/messages:327
+msgid "Vietnamese"
+msgstr ""
+
+#: ../Translator/messages:213 ../Translator/messages:329
+msgid "Welsh"
+msgstr ""
+
+#: ../Translator/messages:215 ../Translator/messages:331
+msgid "Yiddish"
+msgstr ""
+
+#: ../Translator/messages:217
+#, fuzzy
+msgid "Translate to:"
+msgstr "新しい名前 :"
+
+#: ../Translator/messages:333
+msgid "Shortkeys"
+msgstr ""
+
+#: ../Translator/messages:335
+msgid "Shortkey to start translating from (read):"
+msgstr ""
+
+#: ../Translator/messages:337
+msgid "Shortkey to start translating to (write):"
+msgstr ""
+
+#: ../Translator/messages:339
+#, fuzzy
+msgid "Dialog"
+msgstr "ダイアログの吹き出し"
+
+#: ../Translator/messages:341
+#, fuzzy
+msgid "In s. Set 0 for an unlimited time."
+msgstr "ミリ秒単位。0 に設定すると効果は使用されません。"
+
+#: ../Translator/messages:343
+#, fuzzy
+msgid "Time-length of the result dialog:"
+msgstr "吹き出しの表示継続時間 :"
+
+#: ../Translator/messages:345
+msgid "Editable text widget?"
+msgstr ""
+
+#: ../WebSearch/messages:95
+#, fuzzy
+msgid "Search engine :"
+msgstr "検索中…"
+
+#: ../WebSearch/messages:97
+msgid "Google"
+msgstr "Google"
+
+#: ../WebSearch/messages:99
+msgid "Bing"
+msgstr ""
+
+#: ../WebSearch/messages:101
+msgid "Yahoo!"
+msgstr "Yahoo!"
+
+#: ../WebSearch/messages:103
+msgid "Teoma"
+msgstr ""
+
+#: ../WebSearch/messages:105
+msgid "Youtube"
+msgstr ""
+
+#: ../WebSearch/messages:107
+msgid "Webshots"
+msgstr ""
+
+#: ../WebSearch/messages:109
+msgid "Flickr"
+msgstr ""
+
+#: ../WebSearch/messages:111
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+#: ../WebSearch/messages:113
+#, fuzzy
+msgid "ImageShack"
+msgstr "ImageShack.us"
+
+#: ../WebSearch/messages:115
+msgid "Twitter"
+msgstr ""
+
+#: ../WebSearch/messages:117
+msgid "Digg"
+msgstr ""
+
+#: ../WebSearch/messages:119
+#, fuzzy
+msgid "in sub-icons."
+msgstr "秒単位"
+
+#: ../WebSearch/messages:121
+#, fuzzy
+msgid "Maximum number of results shown :"
+msgstr "検索結果の最大数 :"
+
+#: ../WebSearch/messages:123
+msgid "Show the current page as the icon label ?"
+msgstr ""
+
+#: ../WebSearch/messages:125
+msgid ""
+"Show the description of the result instead of its URL in the sub-icons ?"
+msgstr ""
+
+#: ../WebSearch/messages:127
+msgid ""
+"for slow connections, disable will result in significantly faster fetching."
+msgstr ""
+
+#: ../WebSearch/messages:129
+msgid ""
+"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
+"and Digg searches ?"
+msgstr ""
+
+#~ msgid "Animated icons"
+#~ msgstr "動画アイコン"
+
+#~ msgid "This plug-in provides many different animations for your icons."
+#~ msgstr "アイコンの多様なアニメーションを提供するプラグイン"
+
+#~ msgid "Wave"
+#~ msgstr "ウェーブ"
+
+#~ msgid "Spot"
+#~ msgstr "スポット"
+
+#~ msgid ""
+#~ "Add a lively Penguin in your dock !\n"
+#~ "Left click to change the animation,\n"
+#~ "Middle-click to disturb him ^_^\n"
+#~ "Tux images are taken from Pingus, some other characters are available or "
+#~ "can be added easily."
+#~ msgstr ""
+#~ "ドックに動くペンギンを追加！\n"
+#~ "左クリックでアニメーションの変更。\n"
+#~ "中クリックでペンギンにちょっかい。^_^\n"
+#~ "Tux 画像は Pingus から取得したもの。他のキャラクタを使用したり、簡単に追加"
+#~ "することも可能です。"
+
+#~ msgid "Cairo-Penguin"
+#~ msgstr "Cairo ペンギン"
+
+#~ msgid "Hey, I'm here!"
+#~ msgstr "ヘイ、おいらはここだよ！"
+
+#~ msgid "Sorry but I'm busy right now."
+#~ msgstr "申し訳ないが今ちょうど忙しいんで。"
+
+#~ msgid ""
+#~ "I don't have time to play with you, I have to dig and mine all these "
+#~ "icons."
+#~ msgstr ""
+#~ "君に付き合ってる暇なんかないよ。ここいらのアイコンを全部掘ったり埋めたりし"
+#~ "なきゃいかんから。"
+
+#~ msgid "Your dock is so messy! Let me clean it."
+#~ msgstr "君のドックは散らかりすぎだぞ！私に片付けさせなさい。"
+
+#~ msgid "Admit my superiority on you as a penguin!"
+#~ msgstr "君より私の方がペンギンとして優れていることを認めなさい！"
+
+#~ msgid "Wait, do you want to kill me?!"
+#~ msgstr "待った、おいらを殺す気 ?!"
+
+#~ msgid "Do you know how painful it is to be clicked on??"
+#~ msgstr "クリックされるのがどれだけ痛いかわかってんの？？"
+
+#~ msgid "It's my dock now, mwahahaha!"
+#~ msgstr "ドックは今や私のものだ。わっはっはっは！"
+
+#~ msgid "I want to be a pirate!"
+#~ msgstr "おいら海賊になりたい！"
+
+#~ msgid "You shall not pass!"
+#~ msgstr "貴様だけは、決して通さぬ！"
+
+#~ msgid "I'm your father!"
+#~ msgstr "私がお前の父親なのだ！"
+
+#~ msgid ""
+#~ "- Gee, Brain, what do you want to do tonight?\n"
+#~ "- The same thing we do every night, Pinky : try to take over the Dock!"
+#~ msgstr ""
+#~ "- ねぇ、ブレイン。今夜は何するの？\n"
+#~ "- いつもと同じさ、ピンキー。ドック征服を狙うのさ！"
+
+#~ msgid "For Aiur!"
+#~ msgstr "アイアーのために！"
+
+#~ msgid "Wake up"
+#~ msgstr "起こす"
+
+#~ msgid "Keep quiet"
+#~ msgstr "大人しくさせる"
+
+#~ msgid "Start XPenguins"
+#~ msgstr "XPenguins 開始"
+
+#~ msgid "Stop XPenguins"
+#~ msgstr "XPenguins 停止"
+
+#~ msgid "Zzzzz"
+#~ msgstr "Zzzzz"
+
+#~ msgid "No items yet."
+#~ msgstr "アイテムはまだ有りません。"
+
+#~ msgid ""
+#~ "This applet keeps a trace of the clipboard and mouse selection,\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know "
+#~ "Klipper.\n"
+#~ "It supports clipboard and mouse selection, predefined actions, and "
+#~ "persistent items.\n"
+#~ "Left-click to popup the clipboard and mouse selection history,\n"
+#~ "Drop text on the icon to create persistent items, and middle-clck to "
+#~ "recall them."
+#~ msgstr ""
+#~ "クリップボードとマウスによる選択を監視して、\n"
+#~ "それらを素早く呼び出せるようにするアプレット。有名な Klipper のクローンで"
+#~ "す。\n"
+#~ "クリップボードやマウス・セレクション、既定のアクション、定形文アイテムに対"
+#~ "応しています。\n"
+#~ "左クリックでクリップボードとマウス・セレクション履歴のポップアップ、\n"
+#~ "テキストをアイコンにドロップすると定形文アイテムを作成、中クリックでそれら"
+#~ "を呼び出します。"
+
+#~ msgid "Clipboard history"
+#~ msgstr "クリップボードの履歴"
+
+#~ msgid ""
+#~ "No persistent items.\n"
+#~ "You can add some by drag and dropping some text on the icon."
+#~ msgstr ""
+#~ "定形文の登録アイテムは有りません。\n"
+#~ "テキストをアイコン上にドラッグ＆ドロップして追加することが可能です。"
+
+#~ msgid ""
+#~ "This plug-in lets extern applications interact on the dock.\n"
+#~ "The communication between both sides is based on Dbus"
+#~ msgstr ""
+#~ "外部アプリケーションからドックとやり取りできるようにするためのプラグイ"
+#~ "ン。\n"
+#~ "両者の間の通信は Dbus に基づきます。"
+
+#~ msgid "Sorry, this module couldn't be added."
+#~ msgstr "このモジュールは追加できませんでした。"
+
+#~ msgid "The module has been added, but couldn't be launched."
+#~ msgstr "モジュールを追加しましたが、起動できません。"
+
+#~ msgid ""
+#~ "The applet '%s' has been succefully updated and automatically reloaded"
+#~ msgstr ""
+#~ "アプレット '%s' は問題なくアップデートされ自動的に再読込されました。"
+
+#~ msgid ""
+#~ "The applet '%s' has been succefully installed and automatically launched"
+#~ msgstr "アプレット '%s' は問題なくインストールされ自動的に起動されました。"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgid "System Monitor"
+#~ msgstr "システム・モニタ"
+
+#~ msgid "day(s)"
+#~ msgstr "日"
+
+#~ msgid ""
+#~ "This applet allows you to write texts and monitor your system\n"
+#~ "with a \"text style desklet\".\n"
+#~ "USAGE:\n"
+#~ "  - NEED TO BE DETACHED FROM THE DOCK TO WORK !\n"
+#~ "  - Middle-clic to reload values"
+#~ msgstr ""
+#~ "「テキストスタイルのデスクレット」により、テキストの表示やシステムの監視が"
+#~ "可能なアプレット。\n"
+#~ "使用方法:\n"
+#~ " - 動作させるには、ドックから分離させる必要があります！\n"
+#~ " - 中クリックで値の再読み込み"
+
+#~ msgid "Folders"
+#~ msgstr "フォルダ"
+
+#~ msgid ""
+#~ "This applet imports folders inside the Dock\n"
+#~ "You can have as many instances of this applet as you want, each one with "
+#~ "a different folder.\n"
+#~ "To add a folder in your dock:\n"
+#~ " - activate the applet, open its configuration panel, and select a "
+#~ "folder\n"
+#~ " - or just drop a folder into the dock\n"
+#~ "Middle-click on the main icon opens the folder.\n"
+#~ msgstr ""
+#~ "ドック内にフォルダをインポートするアプレット。\n"
+#~ "このアプレットは、任意の数だけ同時に起動させて、各アプレットに異なるフォル"
+#~ "ダを割り当てられます。\n"
+#~ "ドックへのフォルダ追加方法：\n"
+#~ " - アプレットを起動させ、設定パネルを開き、フォルダを選択\n"
+#~ " - または、フォルダをドックへドロップするだけ\n"
+#~ "アプレットのメインのアイコンを中クリックすると、対象のフォルダを開きま"
+#~ "す。\n"
+
+#~ msgid "Open the configuration of the applet to choose a folder to import."
+#~ msgstr ""
+#~ "インポートするフォルダを選択するには、このアプレットの設定画面を開いてくだ"
+#~ "さい。"
+
+#~ msgid "Empty or unreadable folder."
+#~ msgstr "空または読み出し不可能なフォルダです。"
+
+#~ msgid ""
+#~ "You're about deleting this file\n"
+#~ "  (%s)\n"
+#~ "from your hard-disk. Sure ?"
+#~ msgstr ""
+#~ "ファイル (%s)\n"
+#~ "をハードディスクから削除しようとしています。\n"
+#~ "本当に削除しますか？"
+
+#~ msgid ""
+#~ "Warning: could not delete this file.\n"
+#~ "Please check file permissions."
+#~ msgstr ""
+#~ "注意 : このファイルを削除できませんでした。\n"
+#~ "ファイルに対する書き込み権限の有るか確認してください。"
+
+#~ msgid ""
+#~ "Warning: could not rename %s.\n"
+#~ "Check file permissions \n"
+#~ "and that the new name does not already exist."
+#~ msgstr ""
+#~ "注意 : %s をリネームできませんでした。\n"
+#~ "書き込み権限が有るか、指定した新しい名前が\n"
+#~ "すでに存在していないかどうか確認してください。"
+
+#~ msgid "Enter a file name:"
+#~ msgstr "ファイル名の入力："
+
+#~ msgid ""
+#~ "Warning: could not create %s.\n"
+#~ "Check file permissions \n"
+#~ "and that the new name does not already exist."
+#~ msgstr ""
+#~ "警告： %s の作成ができませんでした。\n"
+#~ "ファイルの権限と新しく付けた名前がすでに存在していないかどうかの\n"
+#~ "確認をしてください。"
+
+#~ msgid "Rename this file"
+#~ msgstr "このファイルをリネーム"
+
+#~ msgid "Delete this file"
+#~ msgstr "このファイルを削除"
+
+#~ msgid "Move this file"
+#~ msgstr "このファイルを移動"
+
+#~ msgid "Open with"
+#~ msgstr "指定アプリで開く"
+
+#~ msgid "Properties"
+#~ msgstr "プロパティ"
+
+#~ msgid "Create a new file"
+#~ msgstr "新しいファイルを作成"
+
+#~ msgid ""
+#~ "Displays the common Applications menu and the Recently used files.\n"
+#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set "
+#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
+#~ msgstr ""
+#~ "一般的なアプリケーションメニューと最近使用したファイルを表示します。\n"
+#~ "XDG に準拠したメニュー (Gnome, XFCE, KDE, ...) と互換性があります。\n"
+#~ "中クリックすると、コマンドを素早く実行するためのダイアログを開きます（ALT"
+#~ "+F2 のようなショートキーも設定可能）。\n"
+#~ "メニューをポップアップさせるショートキー（ALT+F1 のような)を設定することが"
+#~ "できます。"
+
+#~ msgid "Quick launch"
+#~ msgstr "クイック起動"
+
+#~ msgid "Configure menu"
+#~ msgstr "メニューの設定"
+
+#~ msgid "Clear recent"
+#~ msgstr "履歴の消去"
+
+#~ msgid "Recent Documents"
+#~ msgstr "最近開いたドキュメント"
+
+#~ msgid "Clear the list of the recently used documents?"
+#~ msgstr "最近開いたドキュメントのリストを消去しますか？"
+
+#~ msgid "Enter a command to launch:"
+#~ msgstr "起動コマンドを入力 :"
+
+#~ msgid "Me Menu"
+#~ msgstr "Me Menu"
+
+#~ msgid ""
+#~ "A menu that lets you access quickly to your information, your online "
+#~ "status, your friends."
+#~ msgstr ""
+#~ "自分の個人情報やオンライン・ステータス、友人への素早いアクセスを可能にする"
+#~ "メニュー"
+
+#~ msgid "It seems that the Me-Menu is not installed on your system"
+#~ msgstr "Me-Menu がコンピュータにインストールされていないようです"
+
+#~ msgid "Messaging Menu"
+#~ msgstr "Messaging Menu"
+
+#~ msgid ""
+#~ "A menu that notices you about new messages from Mail or Chat "
+#~ "applications.\n"
+#~ "It handles Evolution, Pidgin, Empathy, etc"
+#~ msgstr ""
+#~ "メールやチャット・アプリケーションからの新着メッセージを知らせるメ"
+#~ "ニュー。\n"
+#~ "Evolution, Pidgin, Empathy 等を取扱います。"
+
+#~ msgid "It seems that the Messaging-Menu is not installed on your system"
+#~ msgstr "Messaging-Menu がコンピュータにインストールされていないようです"
+
+#~ msgid "Network connection state changed to inactive."
+#~ msgstr "ネットワーク接続が無効になりました。"
+
+#~ msgid "Connecting..."
+#~ msgstr "接続中..."
+
+#~ msgid "Network connection is established."
+#~ msgstr "ネットワーク接続が確立しました。"
+
+#~ msgid "Network connection state changed to disconnected."
+#~ msgstr "ネットワークが切断されました。"
+
+#~ msgid "A cable has been plugged"
+#~ msgstr "ケーブルが接続されました。"
+
+#~ msgid "A cable has been unplugged"
+#~ msgstr "ケーブルが抜かれました。"
+
+#~ msgid "None"
+#~ msgstr "なし"
+
+#~ msgid "Very Low"
+#~ msgstr "非常に弱い"
+
+#~ msgid "Low"
+#~ msgstr "弱い"
+
+#~ msgid "Middle"
+#~ msgstr "中程度"
+
+#~ msgid "Good"
+#~ msgstr "良好"
+
+#~ msgid "Excellent"
+#~ msgstr "最高"
+
+#~ msgid "Not connected"
+#~ msgstr "未接続"
+
+#~ msgid "Wired connection"
+#~ msgstr "有線接続回線"
+
+#~ msgid ""
+#~ "Checking connection...\n"
+#~ "Please retry in a few seconds"
+#~ msgstr ""
+#~ "接続をチェックしています…\n"
+#~ "数秒後に再試行してください。"
+
+#~ msgid "Wired Connection."
+#~ msgstr "有線接続"
+
+#~ msgid "Interface"
+#~ msgstr "インターフェイス"
+
+#~ msgid "Speed"
+#~ msgstr "速度"
+
+#~ msgid "Wifi enabled."
+#~ msgstr "WiFi 有効"
+
+#~ msgid "Network ID"
+#~ msgstr "ネットワーク ID"
+
+#~ msgid "Unknown"
+#~ msgstr "不明"
+
+#~ msgid "Access point"
+#~ msgstr "アクセス・ポイント"
+
+#~ msgid "Signal Quality"
+#~ msgstr "信号の強さ"
+
+#~ msgid "Network-Monitor"
+#~ msgstr "ネットワーク・モニタ"
+
+#~ msgid ""
+#~ "This applet allows you to monitor your network connection(s).\n"
+#~ "It can display the download/upload speeds and the wifi signal quality.\n"
+#~ "If you have network-manager running, it can also let you choose the "
+#~ "current wifi network.\n"
+#~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
+#~ "between net speed and wifi."
+#~ msgstr ""
+#~ "ネットワーク接続を監視するためのアプレット。\n"
+#~ "ダウンロード/アップロード速度や WiFi 信号の強さを表示できます。\n"
+#~ "ネットワーク・マネージャを現在稼働させている場合は、WiFi ネットワークの接"
+#~ "続先の選択も可能です。\n"
+#~ "アイコン上での左クリックで詳細情報のポップアップ、スクロールでネット速度"
+#~ "と WiFi との表示の切り替えを行います。"
+
+#~ msgid "Loading"
+#~ msgstr "読み込み中"
+
+#~ msgid "Check for Wireless Extension"
+#~ msgstr "Wireless Extension のチェック"
+
+#~ msgid "Network Administration"
+#~ msgstr "ネットワーク管理"
+
+#~ msgid "Activate network"
+#~ msgstr "ネットワーク有効化"
+
+#~ msgid "Deactivate network"
+#~ msgstr "ネットワーク無効化"
+
+#~ msgid "Deactivate wifi"
+#~ msgstr "WiFi 無効化"
+
+#~ msgid "Activate wifi"
+#~ msgstr "WiFi 有効化"
+
+#~ msgid "RSSreader"
+#~ msgstr "RSS リーダー"
+
+#~ msgid ""
+#~ "This applet is an RSS/Atom feed reader.\n"
+#~ "You can instanciate it as many times as you want.\n"
+#~ "USAGE:\n"
+#~ " - Left-click : display the complete feed lines in a dialog.\n"
+#~ " - Middle-click : refresh the feed.\n"
+#~ " - Scroll on the desklet : make the feed lines scroll.\n"
+#~ " - Drag and drop a valid URL on the icon to use it,\n"
+#~ "    or copy it and use \"Paste a new RSS Url\" in the menu.\n"
+#~ "    or edit the Configuration Panel."
+#~ msgstr ""
+#~ "RSS/Atom フィード・リーダー機能を提供するアプレット。\n"
+#~ "任意の数だけアプレットを同時起動させることができます。\n"
+#~ "利用法:\n"
+#~ " - 左クリック : ダイアログに全てのフィード・ラインを表示。\n"
+#~ " - 中クリック : フィードの更新。\n"
+#~ " - デスクレット上でのスクロール : フィード・ラインをスクロール。\n"
+#~ "  - URL を使用するにはアイコン上にドラッグ＆ドロップするか、\n"
+#~ "    コピーしてメニューにある「新しい RSS URL を貼り付け」を使用したり、\n"
+#~ "    設定パネルで編集します。"
+
+#~ msgid "Retrieving data..."
+#~ msgstr "データ取得中…"
+
+#~ msgid "It doesn't seem to be a valid URL."
+#~ msgstr "有効な URL ではないようです。"
+
+#~ msgid "Paste a new RSS Url (drag and drop)"
+#~ msgstr "新しいRSS URLを貼り付け（ドラッグ&ドロップ）"
+
+#~ msgid "Open with your web browser"
+#~ msgstr "ウェブ・ブラウザで開く"
+
+#~ msgid "Refresh"
+#~ msgstr "更新"
+
+#~ msgid "Warning: couldn't retrieve data last time we tried."
+#~ msgstr "警告 : データの取得が最終試行時にできませんした。"
+
+#~ msgid "No URL is defined."
+#~ msgstr "URL が指定されていません。"
+
+#~ msgid "No data (no connection?)"
+#~ msgstr "データなし（未接続？）"
+
+#~ msgid "Invalid data (invalid RSS/Atom feed?)"
+#~ msgstr "無効なデータ（無効な RSS/Atom フィード？）"
+
+#~ msgid "No data"
+#~ msgstr "データなし"
+
+#~ msgid "No modification"
+#~ msgstr "更新なし"
+
+#~ msgid "This RSS feed has been modified..."
+#~ msgstr "この RSS フィードは更新されています…"
+
+#~ msgid ""
+#~ "No URL is defined\n"
+#~ "You can define one by copying the URL in the clipboard,\n"
+#~ " and selecting \"Paste the URL\" in the menu."
+#~ msgstr ""
+#~ "URL が指定されていません。\n"
+#~ "URL をクリップボードにコピーして、\n"
+#~ "メニューにある「URL を貼り付け」を選択することで指定できます。"
+
+#~ msgid ""
+#~ "No data\n"
+#~ "Did you set a valid RSS feed?\n"
+#~ "Is your connection alive?"
+#~ msgstr ""
+#~ "データなし\n"
+#~ "有効な RSS フィードを設定しましたか？\n"
+#~ "回線に接続していますか？"
+
+#~ msgid "Recent files"
+#~ msgstr "最近開いたファイル"
+
+#~ msgid "The value %s has been copied into the clipboard."
+#~ msgstr "%s 値はクリップボードにコピーされました。"
+
+#~ msgid "Execute"
+#~ msgstr "実行"
+
+#~ msgid "Open a terminal here"
+#~ msgstr "端末をここに開く"
+
+#~ msgid "Zip folder"
+#~ msgstr "フォルダを書庫に圧縮"
+
+#~ msgid "Move to"
+#~ msgstr "指定先に移動"
+
+#~ msgid "Copy URL"
+#~ msgstr "URL をコピー"
+
+#~ msgid "Open location"
+#~ msgstr "場所を開く"
+
+#~ msgid "Zip file"
+#~ msgstr "ファイルを書庫に圧縮"
+
+#~ msgid "Mail file"
+#~ msgstr "ファイルをメール"
+
+#~ msgid "Pick up a directory"
+#~ msgstr "ディレクトリの選択"
+
+#~ msgid "Files"
+#~ msgstr "ファイル"
+
+#~ msgid "Open"
+#~ msgstr "開く"
+
+#~ msgid "Open in new window"
+#~ msgstr "新しいウィンドウで開く"
+
+#~ msgid "Open file"
+#~ msgstr "ファイルを開く"
+
+#~ msgid "Firefox bookmarks"
+#~ msgstr "Firefox ブックマーク"
+
+#~ msgid "Search on the web"
+#~ msgstr "ウェブで検索"
+
+#~ msgid "Mediadico"
+#~ msgstr "Mediadico"
+
+#~ msgid "Amazon"
+#~ msgstr "Amazon"
+
+#~ msgid "(F1) Match case"
+#~ msgstr "(F1) 大/小文字区別"
+
+#~ msgid "(F2) Music"
+#~ msgstr "(F2) 音楽"
+
+#~ msgid "(F3) Image"
+#~ msgstr "(F3) 画像"
+
+#~ msgid "(F4) Video"
+#~ msgstr "(F4) 動画"
+
+#~ msgid "(F5) Text"
+#~ msgstr "(F5) テキスト"
+
+#~ msgid "(F6) Html"
+#~ msgstr "(F6) Html"
+
+#~ msgid "(F7) Sources"
+#~ msgstr "(F7) ソース"
+
+#~ msgid "No result"
+#~ msgstr "検索結果なし"
+
+#~ msgid "results"
+#~ msgstr "検索結果"
+
+#~ msgid "result"
+#~ msgstr "検索結果"
+
+#~ msgid "Enter your search"
+#~ msgstr "検索入力"
+
+#~ msgid "Uptime"
+#~ msgstr "稼働時間"
+
+#~ msgid "Activity time"
+#~ msgstr "動作時間"
+
+#~ msgid "CPU model"
+#~ msgstr "CPUモデル"
+
+#~ msgid "Frequency"
+#~ msgstr "周波数"
+
+#~ msgid "core(s)"
+#~ msgstr "コア"
+
+#~ msgid ""
+#~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
+#~ "etc.\n"
+#~ "Middle click on the icon to get some valuable info.\n"
+#~ "Left click on the icon to get a list of the most ressources using "
+#~ "programs.\n"
+#~ "You can instanciate this applet several times to show different values "
+#~ "each time."
+#~ msgstr ""
+#~ "CPU の負荷や RAM 使用率、グラフィックカードの温度などを表示するアプレッ"
+#~ "ト。\n"
+#~ "アイコンの中クリックで情報表示、\n"
+#~ "アイコンの左クリックでリソースを最も使用しているプログラムのリストを表示し"
+#~ "ます。\n"
+#~ "アプレットを複数起動させて、モニター対象をそれぞれ別にした表示をさせること"
+#~ "もできます。"
+
+#~ msgid ""
+#~ "The acquisition of one or more data has failed.\n"
+#~ "You should remove the data that couldn't be fetched."
+#~ msgstr ""
+#~ "１個以上のデータの取得に失敗しました。\n"
+#~ "取得できなかったデータを削除する必要があります。"
+
+#~ msgid "GPU model"
+#~ msgstr "GPUモデル"
+
+#~ msgid "Video Ram"
+#~ msgstr "ビデオRAM"
+
+#~ msgid "Mb"
+#~ msgstr "Mb"
+
+#~ msgid "Driver Version"
+#~ msgstr "ドライバ・バージョン"
+
+#~ msgid "Core Temperature"
+#~ msgstr "コアの温度"
+
+#~ msgid "Alert! Graphic Card core temperature has reached %d°C"
+#~ msgstr "警告！グラフィックカードのコアの温度が %d°C に達しました。"
+
+#~ msgid "Gb"
+#~ msgstr "Gb"
+
+#~ msgid "Memory"
+#~ msgstr "メモリ"
+
+#~ msgid "Available"
+#~ msgstr "利用可能"
+
+#~ msgid "Cached"
+#~ msgstr "キャッシュ"
+
+#~ msgid "Buffers"
+#~ msgstr "バッファ"
+
+#~ msgid "Toons"
+#~ msgstr "トゥーン"
+
+#~ msgid "This applet displays a toon that will look at your mouse."
+#~ msgstr "マウスを見続ける漫画絵を表示するアプレット"
+
+#~ msgid ""
+#~ "Setup the luminosity of your screen directly from your dock.\n"
+#~ "Scroll up/down to increase/decrease the luminosity\n"
+#~ "Left-click to open a dialog to setup the luminosity\n"
+#~ "Middle-click to set it up for each color.\n"
+#~ "You can also define a luminosity value that will be applied automatically "
+#~ "on startup."
+#~ msgstr ""
+#~ "ドックから画面の輝度を直接設定。\n"
+#~ "上下のスクロールで輝度の上げ下げ、\n"
+#~ "左クリックで輝度を設定するダイアログを開き、\n"
+#~ "中クリックで各色ごとの設定を行います。\n"
+#~ "スタートアップ時に自動的に適用する輝度値を設定することも可能です。"
+
+#~ msgid "Screen Luminosity"
+#~ msgstr "画面の輝度"
+
+#~ msgid "Apply current luminosity on startup"
+#~ msgstr "現在の輝度をスタートアップ時に適用"
+
+#~ msgid "Set up gamma:"
+#~ msgstr "ガンマ値設定 :"
+
+#~ msgid ""
+#~ "This applet lets you control the sound volume from the dock.\n"
+#~ "Scroll up/down on the icon to increase/decrease the volume.\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard "
+#~ "shortcut for it)\n"
+#~ "You can also hide the dialog by clicking on it.\n"
+#~ "Middle-click to set or unset to mute, double-click to raise the channels "
+#~ "mixer.\n"
+#~ "This applet works with the Alsa sound driver."
+#~ msgstr ""
+#~ "ドックから音量制御を行うためのアプレット。\n"
+#~ "アイコン上での上下スクロールで音量の上げ下げ、\n"
+#~ "アイコンのクリックで、音量コントロールを表示/隠す（キーボードショートカッ"
+#~ "トの割り当て可能）、\n"
+#~ "ダイアログを隠すには当該ダイアログをクリックします。\n"
+#~ "中クリックでミュートとその解除、ダブルクリックでチャンネルミキサーを呼び出"
+#~ "します。\n"
+#~ "このアプレットは、Alsa サウンド・ドライバに対して働きます。"
+
+#~ msgid "Sound Control"
+#~ msgstr "サウンド制御"
+
+#~ msgid "I couldn't open card '%s'"
+#~ msgstr "カード '%s' が開けません"
+
+#~ msgid "Card '%s' opened but I couldn't get any info"
+#~ msgstr "カード '%s' は開かれましたが、情報を取得できません"
+
+#~ msgid "I couldn't open the mixer"
+#~ msgstr "ミキサーが開けません"
+
+#~ msgid "I couldn't attach the mixer to the card"
+#~ msgstr "カードにミキサーを接続できません"
+
+#~ msgid "I couldn't register options"
+#~ msgstr "オプションを登録できません"
+
+#~ msgid "I couldn't load the mixer"
+#~ msgstr "ミキサーを読み込めません"
+
+#~ msgid "Set up volume:"
+#~ msgstr "ボリューム設定 :"
+
+#~ msgid "Adjust channels"
+#~ msgstr "チャンネル調整"
+
+#~ msgid "No title"
+#~ msgstr "タイトルなし"
+
+#~ msgid "years"
+#~ msgstr "年"
+
+#~ msgid "Calendar and tasks"
+#~ msgstr "カレンダーとタスク"
+
+#~ msgid "Alarm"
+#~ msgstr "アラーム"
+
+#~ msgid "Time you want to be notified:"
+#~ msgstr "通知させる時間："
+
+#~ msgid "In the form xx:xx. E.g.: 20:35 for 8:35pm"
+#~ msgstr "xx:xx 形式で指定します。例： 8:35pm の場合は 20:35"
+
+#~ msgid "Day"
+#~ msgstr "日"
+
+#~ msgid "Monday"
+#~ msgstr "月曜日"
+
+#~ msgid "Tuesday"
+#~ msgstr "火曜日"
+
+#~ msgid "Wednesday"
+#~ msgstr "水曜日"
+
+#~ msgid "Thursday"
+#~ msgstr "木曜日"
+
+#~ msgid "Friday"
+#~ msgstr "金曜日"
+
+#~ msgid "Saturday"
+#~ msgstr "土曜日"
+
+#~ msgid "Sunday"
+#~ msgstr "日曜日"
+
+#~ msgid "Week Day"
+#~ msgstr "週日"
+
+#~ msgid "Week End"
+#~ msgstr "週末"
+
+#~ msgid "Month"
+#~ msgstr "月"
+
+#~ msgid "Repeat every:"
+#~ msgstr "リピート毎："
+
+#~ msgid "If every month, which day of the month?"
+#~ msgstr "毎月に設定した場合、月のどの日？"
+
+#~ msgid "Message you want to use to be notified:"
+#~ msgstr "通知に使用するメッセージ："
+
+#~ msgid "Tea Time!"
+#~ msgstr "お茶の時間です！"
+
+#~ msgid "Command to launch:"
+#~ msgstr "実行するコマンド："
+
+#~ msgid "Search for your location :"
+#~ msgstr "現在地の検索"
+
+#~ msgid "clock"
+#~ msgstr "時計"
+
+#~ msgid ""
+#~ "This applet displays time, date and a calandar.\n"
+#~ "2 view are available : <b>numeric</b> and <b>analogic</b>.\n"
+#~ " Analogic view is compatible with the Cairo-Clock's themes, and you can "
+#~ "detach the applet to be a perfect clone of Cairo-Clock.\n"
+#~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
+#~ "tasks</b>.\n"
+#~ "It also supports alarms, and allows you to setup time and date.\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a "
+#~ "notification,\n"
+#~ "Double-click on a day to edit the tasks for this day."
+#~ msgstr ""
+#~ "時刻や日付、カレンダーを表示するアプレット。\n"
+#~ "利用可能な2種類の表示 : <b>デジタル</b> と <b>アナログ</b>。\n"
+#~ "アナログ表示は Cairo-Clock のテーマと互換性があり、アプレットをドックから"
+#~ "分離させれば Cairo-Clock の完全なクローンにできます。\n"
+#~ "左クリックで<b>カレンダー</b>を表示し、<b>タスク管理</b>が行えます。\n"
+#~ "アプレットはアラームにも対応していて、日付や時刻の設定もできます。\n"
+#~ "左クリックでカレンダーを表示/隠す、中クリックで通知を停止します。\n"
+#~ "カレンダーの日付をダブルクリックして、その日のタスクを編集します。"
+
+#~ msgid ""
+#~ "No task is sheduled for today.\n"
+#~ "\n"
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
+#~ msgstr ""
+#~ "今日に予定されているタスクはありません。\n"
+#~ "\n"
+#~ "タスクを追加するには、アプレットをクリックしてカレンダーを開き、日付をダブ"
+#~ "ルクリックします。"
+
+#~ msgid ""
+#~ "No task is sheduled for the next 7 days.\n"
+#~ "\n"
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
+#~ msgstr ""
+#~ "今後７日間に予定されているタスクはありません。\n"
+#~ "\n"
+#~ "タスクを追加するには、アプレットをクリックしてカレンダーを開き、日付をダブ"
+#~ "ルクリックします。"
+
+#~ msgid "Show today's tasks"
+#~ msgstr "今日のタスクを表示"
+
+#~ msgid "Show this week's tasks"
+#~ msgstr "今週のタスクを表示"
+
+#~ msgid "Set up time and date"
+#~ msgstr "時刻と日付の設定"
+
+#~ msgid "Add a new task"
+#~ msgstr "新しいタスクを追加"
+
+#~ msgid "Delete this task"
+#~ msgstr "このタスクを削除"
+
+#~ msgid "Don't repeat"
+#~ msgstr "リピートしない"
+
+#~ msgid "Each month"
+#~ msgstr "毎月"
+
+#~ msgid "Each year"
+#~ msgstr "毎年"
+
+#~ msgid "each month"
+#~ msgstr "毎月"
+
+#~ msgid "each year"
+#~ msgstr "毎年"
+
+#~ msgid "Right-click to add a new task."
+#~ msgstr "新しいタスクを追加するには右クリックします。"
+
+#~ msgid "Title"
+#~ msgstr "タイトル"
+
+#~ msgid "Text"
+#~ msgstr "テキスト"
+
+#~ msgid "Time"
+#~ msgstr "時刻"
+
+#~ msgid "Freq."
+#~ msgstr "リピート"
+
+#~ msgid "Tags"
+#~ msgstr "タグ"
+
+#~ msgid "1mn"
+#~ msgstr "１分毎"
+
+#~ msgid "1h"
+#~ msgstr "１時間毎"
+
+#~ msgid "The following task was scheduled at"
+#~ msgstr "以下のタスクが予定されていた時刻"
+
+#~ msgid "Repeat this message every:"
+#~ msgstr "このメッセージをリピート :"
+
+#~ msgid "It's time for the following task:"
+#~ msgstr "以下のタスクの時間になりました :"
+
+#~ msgid "This task will begin in 15 minutes:"
+#~ msgstr "このタスクが15分以内に開始となります :"
+
+#~ msgid "Today is the following anniversary:"
+#~ msgstr "今日は以下の記念日です :"
+
+#~ msgid "Tomorrow is the following anniversary:"
+#~ msgstr "明日は以下の記念日です :"
+
+#~ msgid "compiz-icon"
+#~ msgstr "Compiz アイコン"
+
+#~ msgid ""
+#~ "This applet allows you to manage compiz and other windows manager\n"
+#~ "The sub-dock gives you to acces to CCSM, Emerald and some basic Compiz "
+#~ "actions.\n"
+#~ "You can bind one of these actions with the middle-click.\n"
+#~ "The configuration panel gives you some options to launch Compiz."
+#~ msgstr ""
+#~ "Compiz とその他のウィンドウ・マネージャを管理するアプレット。\n"
+#~ "サブ・ドックから CCSM や Emerald、Compiz の基本アクションにアクセス。\n"
+#~ "それらのアクションをメイン・アイコンの中クリックに割り当てることもできま"
+#~ "す。\n"
+#~ "設定パネルには Compiz を起動させるオプションもあります。"
+
+#~ msgid "Configure Compiz"
+#~ msgstr "Compiz の設定"
+
+#~ msgid "Emerald Manager"
+#~ msgstr "Emerald マネージャ"
+
+#~ msgid "Reload WM"
+#~ msgstr "WM の再読み込み"
+
+#~ msgid "Exposition"
+#~ msgstr "展開"
+
+#~ msgid "Widget Layer"
+#~ msgstr "ウィジェット・レイヤ"
+
+#~ msgid ""
+#~ "To configure Compiz, you need to install CCSM\n"
+#~ " through your package manager (Synaptic, YasT, etc)"
+#~ msgstr ""
+#~ "Compiz の設定を行うには、パッケージマネージャ（Synaptic や YasT 等）を通じ"
+#~ "て\n"
+#~ "CCSM をインストールする必要があります。"
+
+#~ msgid "Reload Emerald"
+#~ msgstr "Emerald の再読み込み"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "ウィンドウ・マネージャの切り替え"
+
+#~ msgid "Switch Windows Decorator"
+#~ msgstr "ウィンドウ・デコレータの切り替え"
+
+#~ msgid "Toggle Exposition Mode"
+#~ msgstr "展開モードのオンオフ"
+
+#~ msgid "Toggle Widget Layer"
+#~ msgstr "ウィジェット・レイヤのオンオフ"
+
+#~ msgid "Toggle Show Desktop"
+#~ msgstr "デスクトップの表示のオンオフ"
+
+#~ msgid "frame&reflects"
+#~ msgstr "外枠と反射"
+
+#~ msgid "scotch sellotape"
+#~ msgstr "セロテープ"
+
+#~ msgid "frame with sellotape"
+#~ msgstr "外枠とセロテープ"
+
+#~ msgid "CD box"
+#~ msgstr "CD ボックス"
+
+#~ msgid "dark"
+#~ msgstr "ダーク"
+
+#~ msgid "clear"
+#~ msgstr "クリア"
+
+#~ msgid "futuristic"
+#~ msgstr "フューチャリスティック"
+
+#~ msgid "board"
+#~ msgstr "ボード"
+
+#~ msgid "desklet rendering"
+#~ msgstr "デスクレット描画"
+
+#~ msgid "This module provides different views for your desklets."
+#~ msgstr "デスクレットに様々な種類の外観を提供するモジュール。"
+
+#~ msgid "3Dplane"
+#~ msgstr "3Dプレーン"
+
+#~ msgid "comics"
+#~ msgstr "コミック"
+
+#~ msgid "curly"
+#~ msgstr "カーリー"
+
+#~ msgid "modern"
+#~ msgstr "モダン"
+
+#~ msgid "tooltip"
+#~ msgstr "ツールチップ"
+
+#~ msgid "dialog rendering"
+#~ msgstr "ダイアログ描画"
+
+#~ msgid "This plug-in provides some decorators for dialog bubbles."
+#~ msgstr "吹き出し状のダイアログの装飾を提供するプラグイン"
+
+#~ msgid ""
+#~ "Couldn't upload the file, check that your internet connection is active."
+#~ msgstr ""
+#~ "ファイルのアップロードができませんでした。インターネット回線が機能している"
+#~ "か確かめてください。"
+
+#~ msgid ""
+#~ "File has been uploaded.\n"
+#~ "Just press CTRL+v to paste its URL anywhere."
+#~ msgstr ""
+#~ "ファイルがアップロードされました。\n"
+#~ "CTRL+v を押すと、このファイルの URL を任意の場所に貼り付けられます。"
+
+#~ msgid ""
+#~ "Please wait for the current upload to finish before starting a new one."
+#~ msgstr ""
+#~ "新しいアップロードの開始は、現在のアップロードが完了するまでお待ちくださ"
+#~ "い。"
+
+#~ msgid "Tiny URL"
+#~ msgstr "Tiny URL"
+
+#~ msgid "Drop to share"
+#~ msgstr "ドロップde共有"
+
+#~ msgid "Clear the list of the recently uploaded files?"
+#~ msgstr "最近アップロードしたファイルのリストを消去しますか？"
+
+#~ msgid ""
+#~ "The text has been pasted in the clipboard.\n"
+#~ "You can retrieve it with CTRL+v."
+#~ msgstr ""
+#~ "テキストがクリップボードに貼り付けられました。\n"
+#~ "CTRL+v でそれを取得できます。"
+
+#~ msgid "Sorry, couldn't find the original file nor a preview of it."
+#~ msgstr "残念ですが、元のファイルやそのプレビューを見つけられませんでした。"
+
+#~ msgid ""
+#~ "The URL has been stored in the clipboard.\n"
+#~ "Just use 'CTRL+v' to paste it anywhere."
+#~ msgstr ""
+#~ "URL がクリップボードに保存されました。\n"
+#~ "それを任意の場所に貼り付けるには 'CTRL+v' を使用します。"
+
+#~ msgid ""
+#~ "No uploaded file available\n"
+#~ ".Just drag'n drop a file on the icon to upload it"
+#~ msgstr ""
+#~ "利用可能なアップロード済みファイルはありません。\n"
+#~ "ファイルをアイコン上にドラッグ＆ドロップするだけでアップロードできます。"
+
+#~ msgid ""
+#~ "No uploaded file available.\n"
+#~ "Consider activating the history if you want the applet to remember "
+#~ "previous uploads."
+#~ msgstr ""
+#~ "利用可能なアップロード済みファイルはありません。\n"
+#~ "以前のアップロードをアプレットに記憶させたい場合は、履歴の有効化を検討して"
+#~ "ください。"
+
+#~ msgid ""
+#~ "The current URL has been stored in the clipboard.\n"
+#~ "Just use 'CTRL+v' to paste it anywhere."
+#~ msgstr ""
+#~ "現在の URL はクリップボードに保存されています。\n"
+#~ "'CTRL+v' を使用するだけで任意の場所に貼り付けられます。"
+
+#~ msgid ""
+#~ "The current URL has been stored into the selection.\n"
+#~ "Just middle-click to paste it anywhere."
+#~ msgstr ""
+#~ "現在の URL はセレクションに保存されています。\n"
+#~ "中クリックするだけで任意の場所に貼り付けられます。"
+
+#~ msgid "File"
+#~ msgstr "ファイル"
+
+#~ msgid "Click on the icon to copy the URL into the clipboard."
+#~ msgstr "URL をクリップボードにコピーするには、アイコンをクリックします。"
+
+#~ msgid "Send the clipboard's content"
+#~ msgstr "クリップボードの内容を送信"
+
+#~ msgid "Remove from history"
+#~ msgstr "履歴から削除"
+
+#~ msgid "Clear History"
+#~ msgstr "履歴を消去"
+
+#~ msgid "Caroussel"
+#~ msgstr "回転台"
+
+#~ msgid "3D plane"
+#~ msgstr "3Dプレーン"
+
+#~ msgid "Parabolic"
+#~ msgstr "パラボラ"
+
+#~ msgid "Rainbow"
+#~ msgstr "レインボー"
+
+#~ msgid "Slide"
+#~ msgstr "スライド"
+
+#~ msgid "Curve"
+#~ msgstr "カーブ"
+
+#~ msgid "Panel"
+#~ msgstr "パネル"
+
+#~ msgid ""
+#~ "This module adds different views to your dock.\n"
+#~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
+#~ "views are provided."
+#~ msgstr ""
+#~ "このモジュールは、ドックに様々なビュー形式を追加します。\n"
+#~ "あらゆるドックやサブ・ドックを選択したビュー形式で表示させることが可能で"
+#~ "す。\n"
+#~ "現在のところ、3D-plane, Caroussel, Parabolic, Rainbow, Slide, Curve 形式が"
+#~ "提供されています。"
+
+#~ msgid "drop indicator"
+#~ msgstr "ドロップ標示"
+
+#~ msgid ""
+#~ "This plug-in displays an animated indicator when you drop something into "
+#~ "the dock."
+#~ msgstr ""
+#~ "ドックにドラッグしてドロップするときに動画の目印を表示するプラグイン"
+
+#~ msgid "dustbin"
+#~ msgstr "ゴミ箱"
+
+#~ msgid ""
+#~ "This applet manages the dustbin\n"
+#~ "You can threw files and unmount disks by drag-and-dropping them on the "
+#~ "icon.\n"
+#~ "Middle-click on the icon will empty the dustbin."
+#~ msgstr ""
+#~ "ゴミ箱を管理するアプレット。\n"
+#~ "アイコンへドラッグ＆ドロップして、ファイルをゴミ箱に入れたり、ディスクをア"
+#~ "ンマウントできます。\n"
+#~ "アイコンを中クリックすると、ゴミ箱を空にします。"
+
+#~ msgid "You're about to delete all files in all dustbins. Sure ?"
+#~ msgstr "全ゴミ箱の全ファイルを削除しようとしています。よろしいですか？"
+
+#~ msgid "The trash contains"
+#~ msgstr "ゴミ箱の内容"
+
+#~ msgid "files"
+#~ msgstr "ファイル"
+
+#~ msgid "Mo"
+#~ msgstr "Mo"
+
+#~ msgid "Ko"
+#~ msgstr "Ko"
+
+#~ msgid "Show Trash (click)"
+#~ msgstr "ゴミ箱を表示する（クリック）"
+
+#~ msgid "Empty Trash"
+#~ msgstr "中身を削除"
+
+#~ msgid "Display dustbins information"
+#~ msgstr "ゴミ箱の情報を表示する"
+
+#~ msgid "%s successfully unmounted"
+#~ msgstr "%s は現在アンマウントされています"
+
+#~ msgid "failed to unmount %s"
+#~ msgstr "%s のアンマウントに失敗"
+
+#~ msgid "Unmouting this volume ..."
+#~ msgstr "このボリュームをアンマウントしています..."
+
+#~ msgid " trashe(s)"
+#~ msgstr " ゴミ"
+
+#~ msgid " file(s)"
+#~ msgstr " ファイル"
+
+#~ msgid "calculating"
+#~ msgstr "計算中"
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a GNOME "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for old Gnome version (prior to 2.22)."
+#~ msgstr ""
+#~ "Gnome 環境とのより良い統合のための機能を提供するアプレット。\n"
+#~ "必要な場合に自動的に有効になるので、手動で有効にする必要はありません。\n"
+#~ "これは、Gnome の古いバージョン（2.22 よりも前）向けにデザインされたもので"
+#~ "す。"
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a GNOME "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for the a GNOME version >= 2.22"
+#~ msgstr ""
+#~ "Gnome 環境へのより良い統合のための機能を提供するアプレット。\n"
+#~ "必要な場合に自動的に有効になるので、手動で有効にする必要はありません。\n"
+#~ "これは、Gnome 2.22.以上のバージョン向けにデザインされたものです。"
+
+#~ msgid "icon effects"
+#~ msgstr "アイコン効果"
+
+#~ msgid "This plugin adds many special effects to your icons."
+#~ msgstr "アイコンに多様な特殊効果を追加するプラグイン"
+
+#~ msgid "Fire"
+#~ msgstr "炎"
+
+#~ msgid "Stars"
+#~ msgstr "星"
+
+#~ msgid "Rain"
+#~ msgstr "雨"
+
+#~ msgid "Snow"
+#~ msgstr "雪"
+
+#~ msgid "Storm"
+#~ msgstr "嵐"
+
+#~ msgid "Firework"
+#~ msgstr "花火"
+
+#~ msgid "illusion"
+#~ msgstr "イリュージョン"
+
+#~ msgid ""
+#~ "This plugin provides animations for appearance & disappearance of icons."
+#~ msgstr "アイコンの出現と消失のアニメーションを提供するプラグイン"
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a KDE "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for KDE4"
+#~ msgstr ""
+#~ "KDE 環境との統合のための機能を提供するアプレット。\n"
+#~ "このアプレットは必要に応じて自動的に有効になるので、手動で有効にする必要は"
+#~ "ありません。これは KDE4 用にデザインされています。"
+
+#~ msgid "keyboard indicator"
+#~ msgstr "キーボード・インジケータ"
+
+#~ msgid ""
+#~ "This applet lets you control the keyboard layout.\n"
+#~ "\tIt can also display the current num and caps lock.\n"
+#~ "\tLeft-click to switch to the next layout\n"
+#~ "\tScroll up/down to select the previous/next layout\n"
+#~ "\tRight-click gives you access to the list of available layouts."
+#~ msgstr ""
+#~ "キーボードのレイアウトを制御するアプレット。\n"
+#~ "\t現在の Num Lock と Caps Lock の表示もできます。\n"
+#~ "\t左クリックで次のレイアウトに切り替え、\n"
+#~ "\tスクロールの上下で前/次のレイアウトの選択、\n"
+#~ "\t右クリックで利用可能なレイアウトのリストにアクセスします。"
+
+#~ msgid "logout"
+#~ msgstr "ログアウト"
+
+#~ msgid ""
+#~ "A very simple applet that adds an icon to log out from your session\n"
+#~ "Left click to log out or change the user, middle click to shutdown or "
+#~ "restart\n"
+#~ "  (you can invert the buttons if you prefer to shutdown on left-click)."
+#~ msgstr ""
+#~ "セッションからのログアウト用のアイコンを追加するアプレット。\n"
+#~ "左クリックでログアウトまたはユーザー切り替え、中クリックでシャットダウンま"
+#~ "たは再起動\n"
+#~ "（左クリックでシャットダウンさせたいならば、マウスボタンの設定を逆にできま"
+#~ "す）。"
+
+#~ msgid "Choose in how many minutes your PC will stop:"
+#~ msgstr "何分後に PC を止めるかの選択 :"
+
+#~ msgid "Lock screen"
+#~ msgstr "画面のロック"
+
+#~ msgid "Program an automatic shut-down"
+#~ msgstr "自動シャットダウンの実行設定"
+
+#~ msgid "Your computer will shut-down in 1 minute."
+#~ msgstr "コンピュータは１分後にシャットダウンします。"
+
+#~ msgid "Server address:"
+#~ msgstr "サーバのアドレス："
+
+#~ msgid "Username:"
+#~ msgstr "ユーザー名："
+
+#~ msgid "Password:"
+#~ msgstr "パスワード："
+
+#~ msgid "The password will be crypted."
+#~ msgstr "パスワードは暗号化されます。"
+
+#~ msgid "Port:"
+#~ msgstr "ポート："
+
+#~ msgid ""
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
+#~ "and 995 for POP3S."
+#~ msgstr ""
+#~ "デフォルトのポートを使用するには 0 を入力します。POP3 または APOP は 110、"
+#~ "POP3S は 995 がデフォルトのポートです。"
+
+#~ msgid "Use a secure connection (SSL)"
+#~ msgstr "安全な接続(SSL)を使用する"
+
+#~ msgid "Specific mail application"
+#~ msgstr "メール・アプリケーションの指定"
+
+#~ msgid "Leave empty to use the default mail application."
+#~ msgstr ""
+#~ "デフォルトのメール・アプリケーションを使用するには空欄のままにしてくださ"
+#~ "い。"
+
+#~ msgid "Directory on server:"
+#~ msgstr "サーバ上のディレクトリ："
+
+#~ msgid "Path of mbox file:"
+#~ msgstr "mboxファイルのパス："
+
+#~ msgid "Path to Mail directory:"
+#~ msgstr "Mailディレクトリのパス："
+
+#~ msgid "Address of feed:"
+#~ msgstr "フィードのアドレス："
+
+#~ msgid "Please choose an account type."
+#~ msgstr "アカウントの種類を選択してください。"
+
+#~ msgid "New account's name"
+#~ msgstr "新しいアカウントの名前 :"
+
+#~ msgid "Please enter a name for this account."
+#~ msgstr "このアカウントの名前を入力してください。"
+
+#~ msgid ""
+#~ "This account already exists.\n"
+#~ "Please choose another name for the new account."
+#~ msgstr ""
+#~ "このアカウントはすでに存在します。\n"
+#~ "新しいアカウント用の別の名前を選択してください。"
+
+#~ msgid "Enter a name for this account. You can give it any name you want."
+#~ msgstr ""
+#~ "このアカウントの名前を入力してください。任意の名前を付けることができます。"
+
+#~ msgid "Remove Account"
+#~ msgstr "アカウントの削除"
+
+#~ msgid "unknown"
+#~ msgstr "不明"
+
+#~ msgid "no subject"
+#~ msgstr "件名なし"
+
+#~ msgid "No unread mail in your mailboxes"
+#~ msgstr "メールボックスに未読メールはありません。"
+
+#~ msgid "You have %d new mails:"
+#~ msgstr "新着メールが %d 通あります :"
+
+#~ msgid "You have a new mail:"
+#~ msgstr "新着メールが 1 通あります :"
+
+#~ msgid "mail"
+#~ msgstr "メール"
+
+#~ msgid ""
+#~ "This applet is very useful to warn you when you get new e-mails\n"
+#~ "It can check in any kind of mailbox (yahoo, gmail, etc)\n"
+#~ "Left-click to launch the prefered mail application,\n"
+#~ "Middle-click to refresh all the mailboxes."
+#~ msgstr ""
+#~ "電子メール新着時の通知に非常に役立つアプレット。\n"
+#~ "様々な種類のメールボックス（yahoo, gmail, etc）をチェックできます。\n"
+#~ "左クリックで任意のメール・アプリケーションの起動、\n"
+#~ "中クリックで全てのメールボックスについて更新を行います。"
+
+#~ msgid ""
+#~ "A problem occured\n"
+#~ "If '%s' is not your usual mail application,\n"
+#~ "you can change it in the configuration panel of this module"
+#~ msgstr ""
+#~ "問題が発生しました。\n"
+#~ "'%s' が普段使用している標準のメーラーでない場合は、\n"
+#~ "このモジュールの設定パネルで変更可能です。"
+
+#~ msgid "Refresh a mail account"
+#~ msgstr "アカウントの更新"
+
+#~ msgid "Mark all emails as read"
+#~ msgstr "メールを全て既読にする"
+
+#~ msgid "Launch %s"
+#~ msgstr "%s を起動"
+
+#~ msgid "Mail"
+#~ msgstr "メール"
+
+#~ msgid "motion blur"
+#~ msgstr "モーションブラー"
+
+#~ msgid "This plugin adds a motion blur effect to docks."
+#~ msgstr "ドックにモーションブラー効果を追加するプラグイン"
+
+#~ msgid "Unknown artist"
+#~ msgstr "アーティスト不明"
+
+#~ msgid "Unknown title"
+#~ msgstr "タイトル不明"
+
+#~ msgid "Track"
+#~ msgstr "トラック"
+
+#~ msgid "Current song"
+#~ msgstr "現在の曲"
+
+#~ msgid "Artist"
+#~ msgstr "アーティスト"
+
+#~ msgid "Album"
+#~ msgstr "アルバム"
+
+#~ msgid "Length"
+#~ msgstr "演奏時間"
+
+#~ msgid "Track n°"
+#~ msgstr "トラック番号"
+
+#~ msgid "Song n°"
+#~ msgstr "曲番号"
+
+#~ msgid "There is no media playing."
+#~ msgstr "再生中のメディアはありません。"
+
+#~ msgid "musicPlayer"
+#~ msgstr "音楽プレイヤー"
+
+#~ msgid ""
+#~ "This applet lets you control any music player.\n"
+#~ "Left click to Play/Pause, middle-click to play Next song.\n"
+#~ "Scroll up/down to play previous/next song.\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends "
+#~ "on Player),\n"
+#~ " and jpeg image to use as cover.\n"
+#~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
+#~ "       For SongBird, you have to install its dbus add-on.\n"
+#~ "       For Exaile 0.3, you have to activate its MPRIS plug-in"
+#~ msgstr ""
+#~ "あらゆる音楽プレイヤーを制御するアプレット。\n"
+#~ "左クリックで再生/一時停止、中クリックで次の曲の再生、\n"
+#~ "上下のスクロールで前/次の曲を再生します。\n"
+#~ "アイコンに曲をドラッグ＆ドロップしてキューに入れたり（プレイヤーに依"
+#~ "存）、\n"
+#~ "jpeg 画像をドロップしてカバー画像に使用することができます。\n"
+#~ "注意：XMMS には、'xmms-infopipe' プラグイン、\n"
+#~ "        Songbird には、その DBus アドオン、\n"
+#~ "        Exaile 0.3 には、その MPRIS プラグインをインストールする必要があり"
+#~ "ます。"
+
+#~ msgid ""
+#~ "Sorry, I couldn't detect any player.\n"
+#~ "If it is running, it is maybe because its version is too old and does not "
+#~ "offer such service."
+#~ msgstr ""
+#~ "残念ながらプレイヤーを検出できませんでした。\n"
+#~ "実際に現在プレイヤーを実行中の場合、バージョンが古いためサービス未提供なこ"
+#~ "とが原因かもしれません。"
+
+#~ msgid "Find opened player"
+#~ msgstr "実行中のプレイヤーの検出"
+
+#~ msgid "Previous"
+#~ msgstr "前へ"
+
+#~ msgid "Stop"
+#~ msgstr "停止"
+
+#~ msgid "Information"
+#~ msgstr "情報"
+
+#~ msgid "Show JumpBox"
+#~ msgstr "ジャンプ先の指定"
+
+#~ msgid "Toggle Shuffle"
+#~ msgstr "シャッフルのオンオフ"
+
+#~ msgid "Toggle Repeat"
+#~ msgstr "リピートのオンオフ"
+
+#~ msgid "Rate this song"
+#~ msgstr "この曲の評価付け"
+
+#~ msgid "netspeed"
+#~ msgstr "ネット速度"
+
+#~ msgid ""
+#~ "This applet shows you the bit rate of your internet connection and some "
+#~ "stats about it.\n"
+#~ "Left-click on the icon to have the total amount of data transfered\n"
+#~ "Middle-click to (de)activate the network (needs NetworManager)"
+#~ msgstr ""
+#~ "インターネット接続のビットレートや統計を表示するアプレット。\n"
+#~ "アイコンの左クリックで転送データの総量の表示、\n"
+#~ "中クリックでネットワーク（要 ネットワーク・マネージャ）の有効化/無効化。"
+
+#~ msgid "Total amount of data"
+#~ msgstr "データ総量"
+
+#~ msgid "downloaded"
+#~ msgstr "ダウンロード"
+
+#~ msgid "uploaded"
+#~ msgstr "アップロード"
+
+#~ msgid ""
+#~ "Interface '%s' doesn't seem to exist or is not readable.\n"
+#~ " You may have to set up the interface you wish to monitor.\n"
+#~ " Do you want to do it now?"
+#~ msgstr ""
+#~ "インターフェイス '%s' は存在しないか、読み込みことができません。\n"
+#~ "監視したいインターフェイスのセットアップが必要な可能性があります。\n"
+#~ "直ちに行いますか？"
+
+#~ msgid "Re-check interface"
+#~ msgstr "インターフェイスの再チェック"
+
+#~ msgid ""
+#~ "Laptop on Battery.\n"
+#~ " Battery charged at:"
+#~ msgstr ""
+#~ "ラップトップはバッテリー放電中。\n"
+#~ "バッテリー充電量:"
+
+#~ msgid "Estimated time with charge:"
+#~ msgstr "およその充電残量時間:"
+
+#~ msgid ""
+#~ "Laptop on Charge.\n"
+#~ " Battery charged at:"
+#~ msgstr ""
+#~ "ラップトップはバッテリー充電中。\n"
+#~ "バッテリー充電量:"
+
+#~ msgid "Estimated charge time:"
+#~ msgstr "およその充電所要時間"
+
+#~ msgid "No battery found."
+#~ msgstr "バッテリーが見つかりません。"
+
+#~ msgid ""
+#~ "PowerManager.\n"
+#~ "Battery charge seems to be low"
+#~ msgstr ""
+#~ "PowerManager.\n"
+#~ "バッテリーの充電量が少ないようです。"
+
+#~ msgid "Please put your laptop on charge."
+#~ msgstr "ラップトップを充電してください。"
+
+#~ msgid ""
+#~ "PowerManager.\n"
+#~ "Your battery is now charged"
+#~ msgstr ""
+#~ "PowerManager.\n"
+#~ "バッテリーの充電が完了しました。"
+
+#~ msgid "PowerManager"
+#~ msgstr "電源管理"
+
+#~ msgid "A power manager for laptop batteries. Works with ACPI and DBus."
+#~ msgstr "ラップトップのバッテリー用の電源管理。ACPI と DBus とともに動作。"
+
+#~ msgid "Set up power management"
+#~ msgstr "電源管理の設定"
+
+#~ msgid "Halt"
+#~ msgstr "終了"
+
+#~ msgid "Hibernate"
+#~ msgstr "ハイバネート"
+
+#~ msgid "Suspend"
+#~ msgstr "サスペンド"
+
+#~ msgid "Reboot"
+#~ msgstr "再起動"
+
+#~ msgid "Quick Browser"
+#~ msgstr "クイック・ブラウザ"
+
+#~ msgid ""
+#~ "This applet lets you browse a folder and its sub-folders very quickly.\n"
+#~ "You can set up a shortkey to pop up the menu.\n"
+#~ "Midlle-click will open the main folder.\n"
+#~ "This applet can be instanciated several times, if you want to browse "
+#~ "different folders."
+#~ msgstr ""
+#~ "フォルダとそのサブ・フォルダを素早く参照するためのアプレット。\n"
+#~ "メニューをポップアップ表示させるショートキーを設定することが可能です。\n"
+#~ "中クリックでメイン・フォルダを開きます。\n"
+#~ "別フォルダを参照したい場合は、このアプレットを複数起動させることもできま"
+#~ "す。"
+
+#~ msgid "Open this folder"
+#~ msgstr "このフォルダを開く"
+
+#~ msgid "Open folder"
+#~ msgstr "フォルダを開く"
+
+#~ msgid "Unmounted"
+#~ msgstr "アンマウント済み"
+
+#~ msgid "%s is now mounted"
+#~ msgstr "%s がマウントされました"
+
+#~ msgid "%s has been connected"
+#~ msgstr "%s は接続されました"
+
+#~ msgid "%s is now unmounted"
+#~ msgstr "%s は現在アンマウントされています"
+
+#~ msgid "shortcuts"
+#~ msgstr "ショートカット"
+
+#~ msgid ""
+#~ "An applet that let you access quickly to all of your shortcuts.\n"
+#~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
+#~ "don't have Nautilus).\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
+#~ "bookmark.\n"
+#~ "Middle-click on the main icon to show your home folder.\n"
+#~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
+#~ "The applet can also display valuable information about your disks, like "
+#~ "free space, type, etc."
+#~ msgstr ""
+#~ "あらゆるショートカットに素早くアクセスできるアプレット。\n"
+#~ "ディスクやネットワークポイント、Nautilusブックッマーク（Nautilusは必須では"
+#~ "ありません）を管理できます。\n"
+#~ "ブックマークを追加するには、メインのアイコンまたはサブ・ドックにフォルダを"
+#~ "ドラッグ&ドロップします。\n"
+#~ "メイン・アイコンを中クリックすると、ホームフォルダが表示されます。\n"
+#~ "マウントポイント・アイコンの中クリックで、（アン）マウントを素早く。\n"
+#~ "アプレットは、空き容量や種類などの有益なディスク情報を表示することもできま"
+#~ "す。"
+
+#~ msgid "failed to mount %s"
+#~ msgstr "%s のマウントに失敗"
+
+#~ msgid "Failed to unmount %s"
+#~ msgstr "%s のアンマウントに失敗"
+
+#~ msgid "Sorry, this applet is not yet available for KDE."
+#~ msgstr "申し訳ありませんが、KDEではこのアプレットをまだ利用できません。"
+
+#~ msgid "No disks or bookmarks were found."
+#~ msgstr "ディスクまたはブックマークが見つかりませんでした。"
+
+#~ msgid "Enter a name for this bookmark:"
+#~ msgstr "このブックマークに付ける名前の入力："
+
+#~ msgid "Rename this bookmark"
+#~ msgstr "このブックマークをリネーム"
+
+#~ msgid "Remove this bookmark"
+#~ msgstr "このブックマークを削除"
+
+#~ msgid "Eject"
+#~ msgstr "取り外す"
+
+#~ msgid "Get disk info"
+#~ msgstr "ディスク情報取得"
+
+#~ msgid "Only folders can be bookmarked."
+#~ msgstr "フォルダのみブックマーク可能です。"
+
+#~ msgid "show mouse"
+#~ msgstr "マウス表示"
+
+#~ msgid ""
+#~ "This plugin draws some animations around the cursor when it's inside a "
+#~ "dock/desklet."
+#~ msgstr ""
+#~ "マウスカーソルがドックやデスクレット内にあるとき、カーソルの周囲にアニメー"
+#~ "ションを描画するプラグイン"
+
+#~ msgid "showDesktop"
+#~ msgstr "デスクトップ表示"
+
+#~ msgid ""
+#~ "This applet adds an icon to show your desktop,\n"
+#~ " and also : the desklets, the Widget Layer, or all the desktops at once.\n"
+#~ "It can also be used to quickly change the screen's resolution from the "
+#~ "right-click menu.\n"
+#~ "Left-click to show/hide the desktop,\n"
+#~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
+#~ "Layer, or all the desktops at once."
+#~ msgstr ""
+#~ "デスクトップを表示するためのアイコンを追加するアプレット。\n"
+#~ "デスクレットやウィジェット・レイヤを表示したり、デスクトップを展開させるこ"
+#~ "とも可能です。\n"
+#~ "右クリック・メニューから画面の解像度を素早く変更するためにも利用できま"
+#~ "す。\n"
+#~ "左クリックでデスクトップを表示/隠す、\n"
+#~ "中クリックでデスクトップやデスクレット、ウィジェット・レイヤを表示/隠す、"
+#~ "またはデスクトップを展開します。"
+
+#~ msgid "Show the desktop"
+#~ msgstr "デスクトップの表示"
+
+#~ msgid "Show the Widget Layer (Compiz)"
+#~ msgstr "ウィジェット・レイヤの表示（Compiz）"
+
+#~ msgid "Change screen resolution"
+#~ msgstr "画面の解像度を変更"
+
+#~ msgid "Move to the Desktop"
+#~ msgstr "デスクトップに移動"
+
+#~ msgid "Copy to the Desktop"
+#~ msgstr "デスクトップにコピー"
+
+#~ msgid "Link to the Desktop"
+#~ msgstr "デスクトップへのリンク"
+
+#~ msgid "Download onto the Desktop"
+#~ msgstr "デスクトップ上にダウンロード"
+
+#~ msgid "slider"
+#~ msgstr "スライダー"
+
+#~ msgid ""
+#~ "This applet is a basic image slider\n"
+#~ " You just have to select a directory and a display effect and you're "
+#~ "done\n"
+#~ "Click to play/pause or to edit the current image.\n"
+#~ "Middle-click to open the images folder."
+#~ msgstr ""
+#~ "画像をスライド表示するシンプルなアプレット。\n"
+#~ "ディレクトリを指定して、表示に関する視覚効果を選択します。\n"
+#~ "クリックで再生/一時停止、または現在の画像の編集、\n"
+#~ "中クリックで画像フォルダを開きます。"
+
+#~ msgid "Play"
+#~ msgstr "再生"
+
+#~ msgid "Pause"
+#~ msgstr "停止"
+
+#~ msgid "Open current image"
+#~ msgstr "現在の画像を開く"
+
+#~ msgid "Browse images folder"
+#~ msgstr "画像フォルダを参照"
+
+#~ msgid "stack"
+#~ msgstr "スタック"
+
+#~ msgid ""
+#~ "This applet allows you to build a stack of files, just like the Stacks "
+#~ "applet of MacOS X.\n"
+#~ "To add file into your stacks, you just have to drag and drop it on the "
+#~ "Stacks icon and you're done.\n"
+#~ "You can drop any file, or web URL, or even some piece of text\n"
+#~ "You can quickly copy the path/url/text to the clipboard, or open it."
+#~ msgstr ""
+#~ "MacOS X のスタック・アプレット風にファイルのスタックの構築を行うためのアプ"
+#~ "レット。\n"
+#~ "スタックにファイルを追加するには、スタック・アイコンにドラッグ＆ドロップす"
+#~ "るだけです。\n"
+#~ "ファイル全般や、Web URL、さらにはテキストの一部をドロップすることも可能で"
+#~ "す。\n"
+#~ "従って、パス/URL/テキストを素早くクリップボードにコピーしたり、開くことが"
+#~ "できます。"
+
+#~ msgid ""
+#~ "No items in the stack.\n"
+#~ "You can add files, URL, and even a piece of text by dragging them onto "
+#~ "the icon."
+#~ msgstr ""
+#~ "スタックにアイテムは有りません。\n"
+#~ "ファイルや URL、テキストをアイコン上にドラッグして追加することが可能です。"
+
+#~ msgid "Clear the stack?"
+#~ msgstr "スタックを消去？"
+
+#~ msgid "Set new name for this item:"
+#~ msgstr "このアイテムに新しい名前を設定 :"
+
+#~ msgid "Paste (drag'n'drop)"
+#~ msgstr "貼り付け（ドラッグ＆ドロップ）"
+
+#~ msgid "Clear the stack"
+#~ msgstr "スタックをクリア"
+
+#~ msgid "Open (click)"
+#~ msgstr "開く（クリック）"
+
+#~ msgid "Copy"
+#~ msgstr "コピー"
+
+#~ msgid "Cut"
+#~ msgstr "切り取り"
+
+#~ msgid "Rename this item"
+#~ msgstr "このアイテムをリネーム"
+
+#~ msgid "Remove this item"
+#~ msgstr "このアイテムを削除"
+
+#~ msgid "Current"
+#~ msgstr "現在"
+
+#~ msgid "Desktop"
+#~ msgstr "デスクトップ"
+
+#~ msgid "switcher"
+#~ msgstr "スイッチャー"
+
+#~ msgid ""
+#~ "This applet allows you to interact with your workspaces :\n"
+#~ " - switch between your workspaces (scroll up/down with the mouse),\n"
+#~ " - name them (in the config),\n"
+#~ " - quickly add/remove a workspace (in the menu),\n"
+#~ " - show the desktop (middle-click or in the menu),\n"
+#~ " - list all windows on each workspace ((middle-click or in the menu)\n"
+#~ "It has 2 modes : compact (on 1 icon) and expanded (with a sub-dock)."
+#~ msgstr ""
+#~ "ワークスペースに関する操作のためのアプレット :\n"
+#~ " - ワークスペースの切り替え（マウスの上/下スクロール）\n"
+#~ " - ワークスペース名の登録（設定画面から）\n"
+#~ " - ワークスペースの素早い追加や削除（メニューから）\n"
+#~ " - デスクトップの表示（中クリックまたはメニューから）\n"
+#~ " - 各ワークスペースの全ウィンドウの一覧（中クリックまたはメニューから）\n"
+#~ "アプレットには、コンパクト（アイコン１つ）と拡張（サブ・ドックあり）の２"
+#~ "モードがあります。"
+
+#~ msgid "Rename this workspace"
+#~ msgstr "このワークスペースの名前変更"
+
+#~ msgid "Add a workspace"
+#~ msgstr "デスクトップを追加"
+
+#~ msgid "Remove last workspace"
+#~ msgstr "最後のデスクトップを削除"
+
+#~ msgid "Move current workspace to this workspace"
+#~ msgstr "現在のデスクトップからこのデスクトップへ移動"
+
+#~ msgid ""
+#~ "This will move all windows from the current desktop to the one you "
+#~ "clicked on."
+#~ msgstr ""
+#~ "全てのウィンドウを現在のデスクトップからクリックしたデスクトップへ移動させ"
+#~ "ます。"
+
+#~ msgid "Windows List"
+#~ msgstr "ウィンドウ・リスト"
+
+#~ msgid ""
+#~ "Another systray is already running (probably on your panel)\n"
+#~ "Since there can only be one systray at once, you should remove it to "
+#~ "avoid any conflict."
+#~ msgstr ""
+#~ "別のシストレイが（おそらくパネル上で）すでに実行中です。\n"
+#~ "シストレイが存在できるのは1度に1つだけなので、衝突回避のために取り除く必要"
+#~ "があります。"
+
+#~ msgid ""
+#~ "Useful description\n"
+#~ "and manual"
+#~ msgstr ""
+#~ "有用な説明と\n"
+#~ "マニュアル"
+
+#~ msgid "terminal"
+#~ msgstr "端末"
+
+#~ msgid "New Tab"
+#~ msgstr "新しいタブ"
+
+#~ msgid "Rename current Tab"
+#~ msgstr "現在のタブの名前変更"
+
+#~ msgid "Close current Tab"
+#~ msgstr "現在のタブを閉じる"
+
+#~ msgid "Terminal"
+#~ msgstr "端末"
+
+#~ msgid "Set title for this tab:"
+#~ msgstr "このタブのタイトルを設定 :"
+
+#~ msgid "Select a color"
+#~ msgstr "色の選択"
+
+#~ msgid "You can recall the Terminal desklet by typing %s"
+#~ msgstr "%s をタイプ入力すると、端末デスクレットを呼び戻すことができます。"
+
+#~ msgid "Paste"
+#~ msgstr "貼り付け"
+
+#~ msgid "Rename this Tab"
+#~ msgstr "このタブの名前変更"
+
+#~ msgid "Change this Tab's colour"
+#~ msgstr "このタブの色を変更"
+
+#~ msgid "Close this Tab"
+#~ msgstr "このタブを閉じる"
+
+#~ msgid "Note-Taking"
+#~ msgstr "ノート取り"
+
+#~ msgid ""
+#~ "Control your Gnote or TomBoy's notes directly in the dock !\n"
+#~ "Click on a note to open it, Escape to close it.\n"
+#~ "Middle-click to instantly create a new note.\n"
+#~ "You can search inside notes and display their content on the icons."
+#~ msgstr ""
+#~ "Gnote あるいは TomBoy のノートをドックから直接操作！\n"
+#~ "ノートをクリックして開き、Escape で閉じる。\n"
+#~ "新しいノートを素早く作成するには中クリック。\n"
+#~ "ノート内の検索をしたり、アイコンにノート内容を表示することもできます。"
+
+#~ msgid "Note name : "
+#~ msgstr "ノートの名前 : "
+
+#~ msgid "Delete this note?"
+#~ msgstr "このノートを削除？"
+
+#~ msgid "Search for:"
+#~ msgstr "検索 :"
+
+#~ msgid "Search for tag:"
+#~ msgstr "タグ検索 :"
+
+#~ msgid "Add a note"
+#~ msgstr "ノートを追加"
+
+#~ msgid "Delete this note"
+#~ msgstr "このノートを削除"
+
+#~ msgid "Reload notes"
+#~ msgstr "ノートを再読み込み"
+
+#~ msgid "Search"
+#~ msgstr "検索"
+
+#~ msgid "Search for tag"
+#~ msgstr "タグ検索"
+
+#~ msgid "Search for today's note"
+#~ msgstr "今日のノートの検索"
+
+#~ msgid "Search for this week's note"
+#~ msgstr "今週のノートの検索"
+
+#~ msgid "Search for next week's note"
+#~ msgstr "次週のノートの検索"
+
+#~ msgid "Reset marks"
+#~ msgstr "マークを消去"
+
+#~ msgid ""
+#~ "I couldn't get the info\n"
+#~ " Is connexion alive ?"
+#~ msgstr ""
+#~ "情報の取得が出来ませんでした。\n"
+#~ "回線接続に問題はありませんか？"
+
+#~ msgid "I couldn't find this location"
+#~ msgstr "この場所を見つけることはできませんでした。"
+
+#~ msgid ""
+#~ "Enter the name of your location and press Enter to choose amongst results."
+#~ msgstr "現在地の名前を入力して、検索結果の中から Enter を押して選択します。"
+
+#~ msgid "weather"
+#~ msgstr "天気予報"
+
+#~ msgid ""
+#~ "This applet displays weather into your dock.\n"
+#~ "Data are provided by www.weather.com, you can find your location in the "
+#~ "config panel.\n"
+#~ "It can detach itself to be a totally eye-candy 3D deskelt.\n"
+#~ "Middle-click on the main icon to have current conditions information, "
+#~ "left-click on a sub-icon to have forcast information.\n"
+#~ msgstr ""
+#~ "ドックに天気を表示するアプレット。\n"
+#~ "データは www.weather.com から提供されていて、設定パネルから現在地の検索を"
+#~ "行うことができます。\n"
+#~ "目を楽しませる 3D デスクレットとしてドックから分離させることが可能です。\n"
+#~ "メインのアイコンを中クリックすると現在の気象情報が、サブのアイコンを左ク"
+#~ "リックすると予報が表示されます。\n"
+
+#~ msgid "Jan"
+#~ msgstr "1月"
+
+#~ msgid "Feb"
+#~ msgstr "2月"
+
+#~ msgid "Mar"
+#~ msgstr "3月"
+
+#~ msgid "Apr"
+#~ msgstr "4月"
+
+#~ msgid "May"
+#~ msgstr "5月"
+
+#~ msgid "Jun"
+#~ msgstr "6月"
+
+#~ msgid "Jui"
+#~ msgstr "7月"
+
+#~ msgid "Aug"
+#~ msgstr "8月"
+
+#~ msgid "Sep"
+#~ msgstr "9月"
+
+#~ msgid "Oct"
+#~ msgstr "10月"
+
+#~ msgid "Nov"
+#~ msgstr "11月"
+
+#~ msgid "Dec"
+#~ msgstr "12月"
+
+#~ msgid "Data are being retrieved, please wait a moment."
+#~ msgstr "データを取得しています。少々お待ちください。"
+
+#~ msgid "Reload now"
+#~ msgstr "直ちに再読み込み"
+
+#~ msgid ""
+#~ "No data available\n"
+#~ " is your connection alive?"
+#~ msgstr ""
+#~ "データの取得が出来ませんでした。\n"
+#~ "回線接続に問題はありませんか？"
+
+#~ msgid "Temperature"
+#~ msgstr "気温"
+
+#~ msgid "Precipitation probability"
+#~ msgstr "降水確率"
+
+#~ msgid "Wind"
+#~ msgstr "風速"
+
+#~ msgid "Humidity"
+#~ msgstr "湿度"
+
+#~ msgid "Sunrise"
+#~ msgstr "日の出"
+
+#~ msgid "Sunset"
+#~ msgstr "日の入り"
+
+#~ msgid "Data are being fetched, please re-try in a few seconds."
+#~ msgstr "データを取得しています。数秒後に再度試してください。"
+
+#~ msgid ""
+#~ "No data available\n"
+#~ "Retrying now..."
+#~ msgstr ""
+#~ "データが取得できませんでした。\n"
+#~ "現在再試行中です…"
+
+#~ msgid "Feels like"
+#~ msgstr "体感温度"
+
+#~ msgid "Pressure"
+#~ msgstr "気圧"
+
+#~ msgid "weblets"
+#~ msgstr "ウェブレット"
+
+#~ msgid ""
+#~ "The weblets applet allows you to show an interactive web page on your "
+#~ "desktop.\n"
+#~ "You can select your web page, set the desired scrolling,\n"
+#~ "and hide the scrollbars to get a real 'crop' of the page."
+#~ msgstr ""
+#~ "デスクトップにインタラクティブなウェブページを表示できるウェブレット・アプ"
+#~ "レット。\n"
+#~ "任意のウェブページを選択して、好みのスクロール位置を設定したり、\n"
+#~ "スクロールバーを隠してページの本当の”切り抜き”にすることができます。"
+
+#~ msgid "Weblets"
+#~ msgstr "ウェブレット"
+
+#~ msgid "WiFi disabled."
+#~ msgstr "WiFi は無効です。"
+
+#~ msgid "wifi"
+#~ msgstr "wifi"
+
+#~ msgid ""
+#~ "This applet shows you the signal strength of the first active wifi "
+#~ "connection\n"
+#~ "Left-click to pop-up some info,Middle-click to re-check immediately."
+#~ msgstr ""
+#~ "最初にアクティブとなった WiFi 接続の信号の強さを表示するアプレット。\n"
+#~ "左クリックで情報を表示、中クリックで直ちに再チェックを行います。"
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a XFCE "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it."
+#~ msgstr ""
+#~ "XFCE 環境との統合のための機能を提供するアプレット。\n"
+#~ "このアプレットは必要に応じて自動的に有効になるので、手動で有効にする必要は"
+#~ "ありません。"
+
+#~ msgid "Global"
+#~ msgstr "全般"
+
+#~ msgid "Animations are triggered when hovering an icon only in OpenGL mode."
+#~ msgstr ""
+#~ "アイコンにカーソルを置いたときアニメーションが開始されるのは、OpenGLモード"
+#~ "の場合のみです。"
+
+#~ msgid "when hovering over an icon"
+#~ msgstr "アイコン上にマウスを置いたとき"
+
+#~ msgid "Effects used:"
+#~ msgstr "使用する効果 :"
+
+#~ msgid "when clicking on an launcher"
+#~ msgstr "ランチャーをクリックしたとき"
+
+#~ msgid "Effects used on launcher:"
+#~ msgstr "ランチャーに使用する効果 :"
+
+#~ msgid "Number of times the animation will play:"
+#~ msgstr "アニメーション再生回数"
+
+#~ msgid "when clicking on an application"
+#~ msgstr "アプリケーションをクリックしたとき"
+
+#~ msgid "Effects used on applications:"
+#~ msgstr "アプリに使用する効果 :"
+
+#~ msgid "when clicking on an applet"
+#~ msgstr "アプレットをクリックしたとき"
+
+#~ msgid "Effects used on applets:"
+#~ msgstr "アプレットに使用する効果 :"
+
+#~ msgid "Rotation"
+#~ msgstr "回転"
+
+#~ msgid "Duration of the animation:"
+#~ msgstr "アニメーションの持続時間 :"
+
+#~ msgid "Repeat while icon is pointed to?"
+#~ msgstr "アイコンがポイントされている間は繰り返し再生？"
+
+#~ msgid "Type of mesh:"
+#~ msgstr "メッシュの種類 :"
+
+#~ msgid "Cube"
+#~ msgstr "キューブ"
+
+#~ msgid "Capsule"
+#~ msgstr "カプセル"
+
+#~ msgid "Colour of the sheen:"
+#~ msgstr "光沢の色 :"
+
+#~ msgid "Image for the spotlight:"
+#~ msgstr "スポットの画像 :"
+
+#~ msgid "Image for the front spotlight:"
+#~ msgstr "フロント・スポットの画像 :"
+
+#~ msgid "Spot colour:"
+#~ msgstr "スポットの色 :"
+
+#~ msgid "Halo colour:"
+#~ msgstr "光の輪の色 :"
+
+#~ msgid "Rays"
+#~ msgstr "光線"
+
+#~ msgid "1st color of gradation :"
+#~ msgstr "グラデーションの１番色 :"
+
+#~ msgid "2nd color of gradation :"
+#~ msgstr "グラデーションの２番色 :"
+
+#~ msgid "Random colours?"
+#~ msgstr "ランダムな色？"
+
+#~ msgid "Number of rays:"
+#~ msgstr "光線の数 :"
+
+#~ msgid "Ray size:"
+#~ msgstr "光線の大きさ :"
+
+#~ msgid "Ray speed:"
+#~ msgstr "光線の速度 :"
+
+#~ msgid "Initial stretch:"
+#~ msgstr "最初の引き伸ばし方向 :"
+
+#~ msgid "Horizontal stretch"
+#~ msgstr "水平方向の引き伸ばし"
+
+#~ msgid "Vertical stretch"
+#~ msgstr "垂直方向の引き伸ばし"
+
+#~ msgid "Corner stretch"
+#~ msgstr "角方向の引き伸ばし"
+
+#~ msgid "Spring constant:"
+#~ msgstr "バネ定数 :"
+
+#~ msgid "Friction:"
+#~ msgstr "摩擦 :"
+
+#~ msgid "Number of points on the grid in each direction:"
+#~ msgstr "１方向におけるグリッド上のポイント数 :"
+
+#~ msgid "Wave width:"
+#~ msgstr "ウェーブの幅 :"
+
+#~ msgid "Wave amplitude:"
+#~ msgstr "ウェーブの振幅 :"
+
+#~ msgid "Pulse max zoom:"
+#~ msgstr "パルスの最大ズーム率 :"
+
+#~ msgid "Pulse follows icon shape?"
+#~ msgstr "パルスをアイコンの形に従わせる？"
+
+#~ msgid "Bounce duration:"
+#~ msgstr "バウンドの持続時間 :"
+
+#~ msgid "When bouncing, resize the icon by:"
+#~ msgstr "跳ね上がっている時のアイコンのサイズ変更割合 :"
+
+#~ msgid "the lower the value, the more it will flatten."
+#~ msgstr "小さい数値ほど、平らになります。"
+
+#~ msgid "How much the icon will flatten when hitting the ground:"
+#~ msgstr "跳ねる直前にアイコンが平らに縮む割合 :"
+
+#~ msgid "Blink duration:"
+#~ msgstr "点滅の持続時間 :"
+
+#~ msgid "Icon size for busy penguin:"
+#~ msgstr "ペンギンが徘徊状態ではないときのアイコンの大きさ :"
+
+#~ msgid "Delay between animation changes :"
+#~ msgstr "アニメーションの切り替わりの遅延時間 :"
+
+#~ msgid "Penguin transparency:"
+#~ msgstr "ペンギンの透明度 :"
+
+#~ msgid "Let the penguin wander everywhere in the dock?"
+#~ msgstr "ペンギンにドックの至る所を徘徊させる？"
+
+#~ msgid "in pixels."
+#~ msgstr "ピクセル単位"
+
+#~ msgid "Ground offset:"
+#~ msgstr "地面のオフセット :"
+
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+#~ msgstr ""
+#~ "使用中のウィンドウ・マネージャによって異なりますが、ALT + 左クリックで移動"
+#~ "させることができます。"
+
+#~ msgid "Items"
+#~ msgstr "アイテム"
+
+#~ msgid ""
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
+#~ "you get by selecting some text with the mouse."
+#~ msgstr ""
+#~ "クリップボード・アイテムは、CTRL+c で取得するアイテムです。セレクション・"
+#~ "アイテムは、マウスでテキストを選択することで取得するアイテムです。"
+
+#~ msgid "Which items should be remembered?"
+#~ msgstr "どちらのアイテムを記録？"
+
+#~ msgid "Clipboard"
+#~ msgstr "クリップボード"
+
+#~ msgid "Selection"
+#~ msgstr "セレクション"
+
+#~ msgid "Both"
+#~ msgstr "両方"
+
+#~ msgid "Number of items:"
+#~ msgstr "アイテム数 :"
+
+#~ msgid "Remember items between 2 sessions ?"
+#~ msgstr "２セッションにまたがってアイテムを記憶？"
+
+#~ msgid ""
+#~ "It is especially useful if you often select text with the mouse and don't "
+#~ "want to loose your clipboard items due to too many items in the selection."
+#~ msgstr ""
+#~ "マウスでテキストを頻繁に選択していて、その大量の選択アイテムによってクリッ"
+#~ "プボード・アイテムが失われてしまうことがないようにしたい場合に特に有用で"
+#~ "す。"
+
+#~ msgid "Separate clipboard and selection?"
+#~ msgstr "クリップボードとセレクションを分離？"
+
+#~ msgid "If so, number of selection items:"
+#~ msgstr "分離させる場合のセレクション・アイテム数 :"
+
+#~ msgid ""
+#~ "When you click on an item, its content will become accessible with CTRL+v"
+#~ msgstr ""
+#~ "アイテムをクリックしたときに、それが CTRL+v でアクセスできる状態になりま"
+#~ "す。"
+
+#~ msgid "Paste into Clipboard?"
+#~ msgstr "クリップボードに貼り付け？"
+
+#~ msgid ""
+#~ "When you click on an item, its content will become accessible with the "
+#~ "middle-click"
+#~ msgstr ""
+#~ "アイテムをクリックしたときに、それが中クリックでアクセスできる状態になりま"
+#~ "す。"
+
+#~ msgid "Paste into Selection?"
+#~ msgstr "セレクションに貼り付け？"
+
+#~ msgid "Pop-up menus at mouse position?"
+#~ msgstr "マウス位置にポップアップ表示？"
+
+#~ msgid "Actions"
+#~ msgstr "アクション"
+
+#~ msgid ""
+#~ "If some actions are associated with an item, they will be proposed when "
+#~ "the item is created."
+#~ msgstr ""
+#~ "アイテムにアクションが関連付けられている場合、アイテムが作成された時点でそ"
+#~ "のアクションを提示します。"
+
+#~ msgid "Enable actions?"
+#~ msgstr "アクションを有効化？"
+
+#~ msgid "Display actions when selecting an item in the history."
+#~ msgstr "履歴にあるアイテムを選択したときにアクションを表示します。"
+
+#~ msgid "Replay actions?"
+#~ msgstr "アクションを再提示？"
+
+#~ msgid "Duration of the action menu:"
+#~ msgstr "アクション・メニューの継続時間 :"
+
+#~ msgid "Persistent items"
+#~ msgstr "定形文登録アイテム"
+
+#~ msgid "A list of persistent items which can be accessed with middle-click:"
+#~ msgstr "中クリックでアクセス可能な定形文として登録されたアイテムのリスト :"
+
+#~ msgid "Let external applications pop up dialogs in the dock?"
+#~ msgstr ""
+#~ "外部アプリケーションからドック上にダイアログをポップアップできるようにす"
+#~ "る？"
+
+#~ msgid "Let external applications reboot the dock?"
+#~ msgstr "外部アプリケーションからドックを再起動できるようにする？"
+
+#~ msgid "Let external applications quit the dock?"
+#~ msgstr "外部アプリケーションからドックを終了できるようにする？"
+
+#~ msgid "Let external applications show/hide desklets?"
+#~ msgstr "外部アプリケーションからデスクレットを表示/非表示できるようにする？"
+
+#~ msgid "Let external applications reload applets?"
+#~ msgstr "外部アプリケーションからアプレットを再読み込みできるようにする？"
+
+#~ msgid "Let external applications show/hide docks?"
+#~ msgstr "外部アプリケーションからドックを表示/非表示できるようにする？"
+
+#~ msgid "Let extern applications add launchers to the docks?"
+#~ msgstr "外部アプリケーションからドックにランチャーを追加できるようにする？"
+
+#~ msgid "Let external applications modify the labels of icons?"
+#~ msgstr "外部アプリケーションからアイコンのラベルを変更できるようにする？"
+
+#~ msgid "Let extern applications modify the quick-infos on icons?"
+#~ msgstr ""
+#~ "外部アプリケーションからアイコン上のクイック情報を変更できるようにする？"
+
+#~ msgid "Let extern applications modify the icons' image?"
+#~ msgstr "外部アプリケーションからアイコンの画像を変更できるようにする？"
+
+#~ msgid "Let extern applications animate icons?"
+#~ msgstr ""
+#~ "外部アプリケーションからアイコンをアニメーション表示できるようにする？"
+
+#~ msgid "Choose the style of the display: "
+#~ msgstr "表示スタイルの選択 : "
+
+#~ msgid "Gauge"
+#~ msgstr "ゲージ"
+
+#~ msgid "Graph"
+#~ msgstr "グラフ"
+
+#~ msgid "Type of graphic :"
+#~ msgstr "グラフの種類 :"
+
+#~ msgid "Line"
+#~ msgstr "線"
+
+#~ msgid "Plain"
+#~ msgstr "面"
+
+#~ msgid "Bar"
+#~ msgstr "棒"
+
+#~ msgid "Circle"
+#~ msgstr "円（線）"
+
+#~ msgid "Plain Circle"
+#~ msgstr "円（面）"
+
+#~ msgid "It's the colour of the graphic for high rate values."
+#~ msgstr "高負荷値のグラフの色"
+
+#~ msgid "High value's colour :"
+#~ msgstr "高値の色 :"
+
+#~ msgid "Graph colour for low rate vaues:"
+#~ msgstr "低負荷値のグラフの色"
+
+#~ msgid "Low value's colour :"
+#~ msgstr "弱値の色 :"
+
+#~ msgid "Background colour of the graphic :"
+#~ msgstr "グラフの背景色 :"
+
+#~ msgid "Show all values on same graph?"
+#~ msgstr "全ての値を同じグラフに表示？"
+
+#~ msgid "No"
+#~ msgstr "なし"
+
+#~ msgid "On icon"
+#~ msgstr "アイコン上"
+
+#~ msgid "On label"
+#~ msgstr "ラベル上"
+
+#~ msgid ""
+#~ "You need OpenGL for this option. Set it to 0 to disable it, 1 means the "
+#~ "transition is continue."
+#~ msgstr ""
+#~ "このオプションには OpenGL が必要です。0 に設定するとオプション不使用にな"
+#~ "り、1 に設定すると継続動作になります。"
+
+#~ msgid "Leave empty to use the default."
+#~ msgstr "デフォルトのコマンドを使用するには空欄のままに。"
+
+#~ msgid "Specify the xml file to be used :"
+#~ msgstr "使用する xml ファイルを指定 :"
+
+#~ msgid "Font to be used by default if none is specify in the .xml"
+#~ msgstr ".xml で何も指定されていない場合にデフォルトで使用されるフォント"
+
+#~ msgid "Default Font:"
+#~ msgstr "デフォルトのフォント :"
+
+#~ msgid "Color to be used by default if none is specify in the .xml"
+#~ msgstr ".xml で何も指定されていない場合にデフォルトで使用される色"
+
+#~ msgid "Default colour:"
+#~ msgstr "デフォルトの色 :"
+
+#~ msgid "Margin to be used on left, right and top of the desklet"
+#~ msgstr "デスクレットの左、右、上に使用される余白"
+
+#~ msgid "Margin all around the desklet:"
+#~ msgstr "デスクレット周囲の余白 :"
+
+#~ msgid "Use this to increase the space between the lines"
+#~ msgstr "行間の隙間を大きくするには、これを使用します"
+
+#~ msgid "Space between lines:"
+#~ msgstr "行間のスペース :"
+
+#~ msgid "Background"
+#~ msgstr "背景"
+
+#~ msgid ""
+#~ "You can have more attractive backgrounds using the Desklet decorations"
+#~ msgstr ""
+#~ "デスクレットの装飾を使用して、より魅力的な背景を持たせることができます。"
+
+#~ msgid "Display a simple background?"
+#~ msgstr "シンプルな背景を表示？"
+
+#~ msgid "first colour of the gradation"
+#~ msgstr "グラデーションの１番色"
+
+#~ msgid "Background first colour :"
+#~ msgstr "背景の１番色 :"
+
+#~ msgid "second colour of the gradation"
+#~ msgstr "グラデーションの２番色"
+
+#~ msgid "Background second colour:"
+#~ msgstr "背景の2番色 :"
+
+#~ msgid "Set the radius corner to 0 for no radius"
+#~ msgstr "丸みを付けないようにするには 0 に設定します。"
+
+#~ msgid "Background radius corner:"
+#~ msgstr "背景の角の丸み :"
+
+#~ msgid "Set the thickness to 0 for no border"
+#~ msgstr "境界線なしにするには太さを 0 に設定します。"
+
+#~ msgid "Border thickness:"
+#~ msgstr "外枠の太さ :"
+
+#~ msgid "Border colour"
+#~ msgstr "外枠の色"
+
+#~ msgid "Border colour :"
+#~ msgstr "境界の色 :"
+
+#~ msgid "Let empty to use the name of the folder."
+#~ msgstr "このフォルダの名前を使用するには空欄のままにしてください。"
+
+#~ msgid "How to render the icon :"
+#~ msgstr "アイコンの描画の仕方："
+
+#~ msgid "Use an image"
+#~ msgstr "画像を使用"
+
+#~ msgid "Draw sub-dock's content as emblems"
+#~ msgstr "サブ・ドックの内容をエンブレムとして描画"
+
+#~ msgid "Draw sub-dock's content as stack"
+#~ msgstr "サブ・ドックの内容をスタックとして描画"
+
+#~ msgid "Draw sub-dock's content inside a box"
+#~ msgstr "サブ・ドックの内容をボックス内に描画"
+
+#~ msgid "Folder's path:"
+#~ msgstr "フォルダのパス："
+
+#~ msgid "Sort files by :"
+#~ msgstr "ファイルの並び順："
+
+#~ msgid "Name"
+#~ msgstr "名前"
+
+#~ msgid "Date"
+#~ msgstr "日付"
+
+#~ msgid "Size"
+#~ msgstr "サイズ"
+
+#~ msgid "Sort folders before files?"
+#~ msgstr "フォルダをファイルより前に並べる？"
+
+#~ msgid "Show hidden files?"
+#~ msgstr "隠しファイルを表示？"
+
+#~ msgid "Display icons in the menu?"
+#~ msgstr "メニューにアイコンを表示？"
+
+#~ msgid "Shortkey to show/hide the menu:"
+#~ msgstr "メニューを表示/隠すショートカットキー :"
+
+#~ msgid "Shortkey to show/hide the quick-launch dialog:"
+#~ msgstr "クイック起動ダイアログの表示/非表示のショートキー :"
+
+#~ msgid "Command to use for configuring the menu:"
+#~ msgstr "メニューの編集に使用するコマンド :"
+
+#~ msgid "Recent documents"
+#~ msgstr "最近開いたドキュメント"
+
+#~ msgid "Show recent documents?"
+#~ msgstr "最近開いたドキュメントを表示？"
+
+#~ msgid "Leave blank if filter is not needed."
+#~ msgstr "このフィルタを使用しない場合は空欄に。"
+
+#~ msgid "Only show files that are under this folder or its sub-folder:"
+#~ msgstr ""
+#~ "このフォルダ下またはこのフォルダのサブフォルダ下のファイルのみ表示 :"
+
+#~ msgid "in days. Set 0 if unsued."
+#~ msgstr "日数単位。0 に設定すると、このフィルタは使用されません。"
+
+#~ msgid "Only show files whose last modification date is less than ;"
+#~ msgstr "最終変更日が指定日数内のファイルのみ表示 :"
+
+#~ msgid ""
+#~ "Animation of the icon when one of the application demands your attention :"
+#~ msgstr "アプリケーションが注意を要求している時のアイコンのアニメーション :"
+
+#~ msgid "Always display the icon, even when the dock is hidden?"
+#~ msgstr "ドックが隠れている時でも常にアイコンを表示？"
+
+#~ msgid "You can quickly switch to the other mode by scrolling on the icon."
+#~ msgstr ""
+#~ "アイコン上でのスクロールによって、別モードに素早く切り替えられます。"
+
+#~ msgid "Info displayed by the icon:"
+#~ msgstr "アイコンに表示する情報 :"
+
+#~ msgid "Wifi signal"
+#~ msgstr "WiFi 信号"
+
+#~ msgid "Connexion speed"
+#~ msgstr "接続速度"
+
+#~ msgid "By default the first active interface is used."
+#~ msgstr ""
+#~ "何も指定しない場合は、最初に有効になったインターフェイスが使用されます。"
+
+#~ msgid "Connection interface to monitor:"
+#~ msgstr "モニタ対象にする接続インターフェイス :"
+
+#~ msgid "Display numeric values:"
+#~ msgstr "数値の表示 :"
+
+#~ msgid ""
+#~ "You need OpenGL for this option. Set it to 0 means not used, 1 means the "
+#~ "movement is continue."
+#~ msgstr ""
+#~ "このオプションには OpenGL が必要です。0 に設定するとオプション不使用にな"
+#~ "り、1 に設定すると連続動作になります。"
+
+#~ msgid "Fluidity of the transition animation between 2 values:"
+#~ msgstr "２値間の遷移アニメーションの滑らかさ :"
+
+#~ msgid "Animation of the icon when connecting:"
+#~ msgstr "接続試行中時のアイコンのアニメーション :"
+
+#~ msgid ""
+#~ "Allow you to overwrite applet's default command line and launch your "
+#~ "preferred wireless configuration interface."
+#~ msgstr ""
+#~ "アプレットのデフォルトのコマンドラインを上書きして、任意の無線設定インタ"
+#~ "フェースを起動することができます。"
+
+#~ msgid "User command to show Wireless Configuration:"
+#~ msgstr "無線設定を表示するためのユーザー定義コマンド :"
+
+#~ msgid "User command to display a system monitor:"
+#~ msgstr "システム・モニタを表示するためのユーザー定義コマンド :"
+
+#~ msgid "Net Speed"
+#~ msgstr "ネット速度"
+
+#~ msgid "It's the colour of the graphic for high quality signal."
+#~ msgstr "信号が強い場合を示すグラフの色"
+
+#~ msgid "It's the colour of the graphic for low quality signal."
+#~ msgstr "信号が弱い場合を示すグラフの色"
+
+#~ msgid "Delays between net speed checks:"
+#~ msgstr "ネット速度チェックの間隔時間 :"
+
+#~ msgid "Wifi"
+#~ msgstr "WiFi"
+
+#~ msgid "Choose the style of the display:"
+#~ msgstr "表示スタイルの選択 :"
+
+#~ msgid "Icons"
+#~ msgstr "アイコン"
+
+#~ msgid "Effect to apply on the icon according to strength :"
+#~ msgstr "信号の強さに合わせてアイコンに適用する効果 :"
+
+#~ msgid "Zoom"
+#~ msgstr "ズーム"
+
+#~ msgid "Transparency"
+#~ msgstr "透過"
+
+#~ msgid "Draw Bar"
+#~ msgstr "バーの描画"
+
+#~ msgid "Leave empty to use the default icon."
+#~ msgstr "デフォルトのアイコンを使用するには空欄のままに。"
+
+#~ msgid "Name of the image for the 'No signal' icon :"
+#~ msgstr "「信号なし」の画像の名前 :"
+
+#~ msgid "Name of the image for the 'Very low' icon :"
+#~ msgstr "「非常に弱い」の画像の名前 :"
+
+#~ msgid "Name of the image for the 'Low' icon :"
+#~ msgstr "「弱い」の画像の名前 :"
+
+#~ msgid "Name of the image for the 'Middle' icon :"
+#~ msgstr "「中程度」の画像の名前 :"
+
+#~ msgid "Name of an image for the 'Good' icon :"
+#~ msgstr "「良好」の画像の名前 :"
+
+#~ msgid "Name of the image for the 'Excellent' icon :"
+#~ msgstr "「最高」の画像の名前 :"
+
+#~ msgid "Name of the image for the 'Not connected' icon :"
+#~ msgstr "「未接続」のアイコン画像の名前 :"
+
+#~ msgid "Name of the image for the 'Wired connection' icon :"
+#~ msgstr "「有線接続」のアイコン画像の名前 :"
+
+#~ msgid "in seconds. if you don't have Network-Manager."
+#~ msgstr "ミリ秒単位。ネットワーク・マネージャを使用していない場合。"
+
+#~ msgid "Delays between wifi signal checks:"
+#~ msgstr "WiFi 信号チェックの間隔時間 :"
+
+#~ msgid "Leave empty to use the title of the RSS feed."
+#~ msgstr "RSS フィードのタイトルを使用するには空欄のままに。"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS フィード"
+
+#~ msgid "Enter a valid atom/rss feed"
+#~ msgstr "有効な ATOM/RSS フィードを入力してください"
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "RSS login (optional):"
+#~ msgstr "RSS ログイン（オプション）:"
+
+#~ msgid "RSS password (optional):"
+#~ msgstr "RSS パスワード（オプション）:"
+
+#~ msgid "Notify about feed updates:"
+#~ msgstr "フィード更新の通知 :"
+
+#~ msgid "Icon animation"
+#~ msgstr "アイコンのアニメーション"
+
+#~ msgid "Icon animation + Dialog bubble"
+#~ msgstr "アイコンのアニメーション + ダイアログの吹き出し"
+
+#~ msgid "Let empty to use the default notification animation."
+#~ msgstr ""
+#~ "デフォルトの通知アニメーションを使用するには空欄のままにしてください。"
+
+#~ msgid "Animation of the icon:"
+#~ msgstr "アイコンのアニメーション :"
+
+#~ msgid ""
+#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close "
+#~ "it)."
+#~ msgstr ""
+#~ "秒単位。0 に設定すると時間制限なし（ダイアログをクリックして閉じる）になり"
+#~ "ます。"
+
+#~ msgid "Duration of the notification:"
+#~ msgstr "通知の継続時間 :"
+
+#~ msgid "Open the feed with the following program:"
+#~ msgstr "フィードを開くプログラムの指定 :"
+
+#~ msgid "Font to be used for the title"
+#~ msgstr "タイトルに使用するフォント"
+
+#~ msgid "Title font:"
+#~ msgstr "タイトルのフォント :"
+
+#~ msgid "Colour to be used for the title"
+#~ msgstr "タイトルに使用する色"
+
+#~ msgid "Title colour:"
+#~ msgstr "タイトルの色 :"
+
+#~ msgid "Alignment of the title:"
+#~ msgstr "タイトルの位置 :"
+
+#~ msgid "left"
+#~ msgstr "左"
+
+#~ msgid "right"
+#~ msgstr "右"
+
+#~ msgid "Font to be used for the feed lines"
+#~ msgstr "フィード・ラインに使用するフォント"
+
+#~ msgid "Feed lines font:"
+#~ msgstr "フィード・ラインのフォント :"
+
+#~ msgid "Colour to be used for the feed lines"
+#~ msgstr "フィード・ラインに使用する色"
+
+#~ msgid "Feed lines colour:"
+#~ msgstr "フィード・ラインの色 :"
+
+#~ msgid "Left margin for the feed lines:"
+#~ msgstr "フィード・ラインの左余白 :"
+
+#~ msgid "Space between 2 feed lines:"
+#~ msgstr "フィード・ライン同士の間隔 :"
+
+#~ msgid "Logo"
+#~ msgstr "ロゴ"
+
+#~ msgid "The default logo is the applet's icon"
+#~ msgstr "アプレットのアイコンがデフォルトのロゴです。"
+
+#~ msgid "Display the logo?"
+#~ msgstr "ロゴを表示？"
+
+#~ msgid "Adjust to increase/decrease the logo's size"
+#~ msgstr "ロゴの大きさの増減調節"
+
+#~ msgid "Logo size:"
+#~ msgstr "ロゴの大きさ :"
+
+#~ msgid "normal"
+#~ msgstr "普通"
+
+#~ msgid "Animation of the current icon :"
+#~ msgstr "現在のアイコンのアニメーション :"
+
+#~ msgid "Duration of the stop animation :"
+#~ msgstr "停止時のアニメーションの持続時間 :"
+
+#~ msgid "Shortkey to enable/disable the finder mode:"
+#~ msgstr "ファインダー・モードを開始/停止するショートキー :"
+
+#~ msgid ""
+#~ "Maximum number of mails that will be previewed. Put -1 to show the "
+#~ "maximum possible."
+#~ msgstr ""
+#~ "プレビューするメール数の上限です。-1 に設定すると最大限多く表示します。"
+
+#~ msgid ""
+#~ "Number of lines of the listing. If there are more results, the listing "
+#~ "will scroll when you go up or down with the arrows."
+#~ msgstr ""
+#~ "リストの行数。結果がこれよりも多い場合、上下カーソルキーでリストがスクロー"
+#~ "ルします。"
+
+#~ msgid "Number of lines to display :"
+#~ msgstr "表示する行数 :"
+
+#~ msgid "Animations"
+#~ msgstr "アニメーション"
+
+#~ msgid "Duration of the appearance animation :"
+#~ msgstr "出現時のアニメーションの持続時間 :"
+
+#~ msgid "Font used to display what you type:"
+#~ msgstr "入力文字の表示に使用するフォント :"
+
+#~ msgid "Color of the text's frame  :"
+#~ msgstr "文字の枠の色 :"
+
+#~ msgid "Font size, relative to the dock size:"
+#~ msgstr "ドックの大きさに相対したフォントの大きさ :"
+
+#~ msgid "between 1 and 9, the higher, the bigger."
+#~ msgstr "1 から 9 の間、大きい値ほど太くなります。"
+
+#~ msgid "Text size:"
+#~ msgstr "文字の太さ :"
+
+#~ msgid "Outline text?"
+#~ msgstr "文字をアウトライン？"
+
+#~ msgid "Text colour:"
+#~ msgstr "文字の色 :"
+
+#~ msgid "Character background colour:"
+#~ msgstr "文字の背景色 :"
+
+#~ msgid "Write text on the top of the dock?"
+#~ msgstr "ドックの上側に文字を表示？"
+
+#~ msgid "Favorite applications"
+#~ msgstr "優先アプリケーション"
+
+#~ msgid "FAvorite applications starting with 'a' :"
+#~ msgstr "'a' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application starting with 'b' :"
+#~ msgstr "'b' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'c' :"
+#~ msgstr "'c' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s starting with 'd' :"
+#~ msgstr "'d' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'e' :"
+#~ msgstr "'e' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'f' :"
+#~ msgstr "'f' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'g' :"
+#~ msgstr "'g' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'h' :"
+#~ msgstr "'h' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'i' :"
+#~ msgstr "'i' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'j' :"
+#~ msgstr "'j' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'k' :"
+#~ msgstr "'k' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'l' :"
+#~ msgstr "'l' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'm' :"
+#~ msgstr "'m' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'n' :"
+#~ msgstr "'n' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'o' :"
+#~ msgstr "'o' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'p' :"
+#~ msgstr "'p' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'q' :"
+#~ msgstr "'q' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'r' :"
+#~ msgstr "'r' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 's' :"
+#~ msgstr "'s' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 't' :"
+#~ msgstr "'t' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'u' :"
+#~ msgstr "'u' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'v' :"
+#~ msgstr "'v' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'w' :"
+#~ msgstr "'w' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'x' :"
+#~ msgstr "'x' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'y' :"
+#~ msgstr "'y' で始まる優先アプリケーション :"
+
+#~ msgid "Favorite application(s) starting with 'z' :"
+#~ msgstr "'z' で始まる優先アプリケーション :"
+
+#~ msgid "Propose some web search engines ?"
+#~ msgstr "ウェブ検索エンジンを指定？"
+
+#~ msgid "It can launch commands and even do some calculations."
+#~ msgstr "コマンド実行の他、数値計算もできます。"
+
+#~ msgid "Help"
+#~ msgstr "ヘルプ"
+
+#~ msgid "It's the colour of the graphic for high values."
+#~ msgstr "高負荷値のグラフの色"
+
+#~ msgid "It's the colour of the graphic for low values."
+#~ msgstr "低負荷値のグラフの色"
+
+#~ msgid "Show CPU usage?"
+#~ msgstr "CPU 使用率を表示？"
+
+#~ msgid "Show RAM usage ?"
+#~ msgstr "RAM 使用率を表示？"
+
+#~ msgid "Show SWAP too?"
+#~ msgstr "スワップも表示？"
+
+#~ msgid "You need an nVidia card and the 'nvidia-settings' tool."
+#~ msgstr "nVidia とその 'nviida-settings' ツールが必要です。"
+
+#~ msgid "Show graphic card's temperature?"
+#~ msgstr "グラフィックカードの温度を表示？"
+
+#~ msgid "Show free memory instead of used memory?"
+#~ msgstr "使用メモリの代わりに空きメモリを表示？"
+
+#~ msgid "Delay between refreshes:"
+#~ msgstr "更新の間隔時間 :"
+
+#~ msgid "How smooth is the movement?"
+#~ msgstr "動作の滑らかさの度合いは？"
+
+#~ msgid "Play a sound when displaying warning?"
+#~ msgstr "警告表示中に音を再生？"
+
+#~ msgid "Path to sound file:"
+#~ msgstr "音ファイルのパス :"
+
+#~ msgid ""
+#~ "It will prevent the system monitor's icon to show in the taskbar. The "
+#~ "applet's icon will then behave as a launcher, an application, and an "
+#~ "applet."
+#~ msgstr ""
+#~ "タスクバーにシステム・モニタのアイコンが表示されないようにします。これによ"
+#~ "り、アプレットのアイコンがランチャーやアプリケーション、アプレットとして動"
+#~ "作するようになります。"
+
+#~ msgid "Steal the system monitor's icon from the taskbar?"
+#~ msgstr "システム・モニタのアイコンをタスクバーから奪取？"
+
+#~ msgid "Class of the system monitor program:"
+#~ msgstr "システム・モニタのプログラムのクラス名 :"
+
+#~ msgid "Top List"
+#~ msgstr "トップ・リスト"
+
+#~ msgid ""
+#~ "When you left-click on the icon, you will get the list of the N most CPU/"
+#~ "RAM-intensive programs."
+#~ msgstr ""
+#~ "アイコンを左クリックすると、最も CPU/RAM を使用している上位 N 番目までのプ"
+#~ "ログラムを一覧にします。"
+
+#~ msgid "Number of programs to display in the top list:"
+#~ msgstr "トップ・リストに表示するプログラム数 :"
+
+#~ msgid "The first colour of the gradient used to display the top list."
+#~ msgstr "トップ・リストの記載に使用するグラデーションの開始色"
+
+#~ msgid "Top list start colour:"
+#~ msgstr "トップ・リストの開始色 :"
+
+#~ msgid "The second colour of the gradient used to display the top list."
+#~ msgstr "トップ・リストの記載に使用するグラデーションの終了色"
+
+#~ msgid "Top list stop colour:"
+#~ msgstr "トップ・リストの終了色 :"
+
+#~ msgid "Show top memory usage in %?"
+#~ msgstr "メモリ使用量のトップを％で表示？"
+
+#~ msgid "Delay between top list refreshes:"
+#~ msgstr "トップ・リストの更新間隔 :"
+
+#~ msgid "Graphic Card temperature"
+#~ msgstr "グラフィックカードの温度"
+
+#~ msgid ""
+#~ "in Celsius. The temperature will be displayed between this value and the "
+#~ "upper limit."
+#~ msgstr "摂氏。温度はこの値と上限値との間で表示されます。"
+
+#~ msgid "Lower limit of graphic card temperature:"
+#~ msgstr "コアの温度の下限 :"
+
+#~ msgid "Upper limit of graphic card temperature:"
+#~ msgstr "コアの温度の上限 :"
+
+#~ msgid "in celcius."
+#~ msgstr "摂氏"
+
+#~ msgid "Notification limit of graphic card temperature:"
+#~ msgstr "グラフィックカード温度の警告値 :"
+
+#~ msgid "Mean delay between winks:"
+#~ msgstr "ウィンク間の平均遅延時間 :"
+
+#~ msgid "Wink duration:"
+#~ msgstr "ウィンクの継続時間 :"
+
+#~ msgid "Keep ratio?"
+#~ msgstr "比率を維持？"
+
+#~ msgid "A high refresh frequency will use more CPU."
+#~ msgstr "更新周期を高くすると CPU をより多く使用します。"
+
+#~ msgid "High refresh frequency?"
+#~ msgstr "高い更新周期？"
+
+#~ msgid "Variation for 1 mouse scroll, in %:"
+#~ msgstr "マウススクロール1回当たりの変化量（%単位）:"
+
+#~ msgid "Use 0 for none."
+#~ msgstr "使用しない場合は 0 に設定してください。"
+
+#~ msgid "Brightness to apply automatically on startup:"
+#~ msgstr "スタートアップ時に自動的に適用する輝度:"
+
+#~ msgid "Leave empty to use the default sound card."
+#~ msgstr "デフォルトのサウンドカードを使用するには空欄のままに。"
+
+#~ msgid "Alsa"
+#~ msgstr "Alsa"
+
+#~ msgid "Sound card:"
+#~ msgstr "制御するサウンドカード :"
+
+#~ msgid "Select channel:"
+#~ msgstr "制御するチャンネルの選択 :"
+
+#~ msgid ""
+#~ "On some cards, a channel only controls 1 side (right or left). You will "
+#~ "then need to specify a second channel here, to control both sides. Most "
+#~ "of the time, you should just leave this empty."
+#~ msgstr ""
+#~ "カードのなかには、1チャンネルが右または左の片側のみ制御するものがありま"
+#~ "す。その際は両側の制御のために第2チャンネルの指定が必要になります。大抵の"
+#~ "場合、空欄のままにしてください。"
+
+#~ msgid "Choose a second channel to control (optional):"
+#~ msgstr "制御する第2チャンネルの選択（オプション） :"
+
+#~ msgid "Leave empty to use the default command."
+#~ msgstr "デフォルトのコマンドを使用するには空欄のままに。"
+
+#~ msgid "Specific command to run to show an advanced sound mixer:"
+#~ msgstr "高機能サウンドミキサー表示のために実行する特別コマンド :"
+
+#~ msgid "Control"
+#~ msgstr "制御"
+
+#~ msgid "Shortkey to show/hide the sound control dialog:"
+#~ msgstr "サウンド制御ダイアログの表示/隠すのショートカットキー :"
+
+#~ msgid "Hide the scale when mouse leaves the desklet?"
+#~ msgstr "マウスがデスクレットから離れた際に目盛りを隠す？"
+
+#~ msgid "Display volume :"
+#~ msgstr "ボリューム表示 :"
+
+#~ msgid "Effect to apply to the icon when adjusting volume:"
+#~ msgstr "音量に合わせてアイコンに適用する効果 :"
+
+#~ msgid "Default icon:"
+#~ msgstr "デフォルトのアイコン :"
+
+#~ msgid "Broken icon:"
+#~ msgstr "リンク切れ時のアイコン :"
+
+#~ msgid "Mute icon:"
+#~ msgstr "ミュート時のアイコン :"
+
+#~ msgid "Leave empty to use the location name if available."
+#~ msgstr "場所の名前を使用するには空欄のままに。"
+
+#~ msgid "Show the date:"
+#~ msgstr "日付を表示 :"
+
+#~ msgid "for digital format only."
+#~ msgstr "デジタル表示のみに適用"
+
+#~ msgid "Display the time in a 24h format?"
+#~ msgstr "時刻を24時間形式で表示？"
+
+#~ msgid ""
+#~ "if not, then the applet will update the time once a minute, saving CPU "
+#~ "power."
+#~ msgstr "CPU の使用を抑えて、アプレットを 1 分置きに更新します。"
+
+#~ msgid "Show seconds?"
+#~ msgstr "秒を表示？"
+
+#~ msgid ""
+#~ "In ms. Set 0 for non-smooth animation, set 1000 to have a continuous "
+#~ "animation. Requires OpenGL."
+#~ msgstr ""
+#~ "ミリ秒単位。滑らかなアニメーションにしない場合は 0 に設定、1000 に設定する"
+#~ "と連続したアニメーションになります。要 OpenGL。"
+
+#~ msgid "Display seconds with smooth animation for a duration of:"
+#~ msgstr "滑らかなアニメーションによる秒針表示の継続時間 :"
+
+#~ msgid "E.g. :Europe/Paris, :Japan, etc. Leave empty for local time."
+#~ msgstr ""
+#~ "例えば、 :Europe/Paris、 :Japan、等々。ローカルの時間を取得するには空欄の"
+#~ "ままにしてください。"
+
+#~ msgid "Timezone:"
+#~ msgstr "タイムゾーン :"
+
+#~ msgid "Use the tasks from the following task-manager:"
+#~ msgstr "指定タスクマネージャからのタスクを使用 :"
+
+#~ msgid "Default"
+#~ msgstr "デフォルト"
+
+#~ msgid "iCal"
+#~ msgstr "iCal"
+
+#~ msgid "Style"
+#~ msgstr "スタイル"
+
+#~ msgid ""
+#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
+#~ "in digital format."
+#~ msgstr ""
+#~ "アナログ表示は CairoClock を元にしています。それ以外の場合、デジタル方式で"
+#~ "表示されます。"
+
+#~ msgid "Select the view :"
+#~ msgstr "表示形式の選択 :"
+
+#~ msgid "Analogue"
+#~ msgstr "アナログ"
+
+#~ msgid "Digital"
+#~ msgstr "デジタル"
+
+#~ msgid "Analogue View"
+#~ msgstr "アナログ表示"
+
+#~ msgid "List of available themes for analogue display:"
+#~ msgstr "アナログ表示に利用可能なテーマのリスト :"
+
+#~ msgid "Date text colour:"
+#~ msgstr "日付の文字色 :"
+
+#~ msgid "Digital View"
+#~ msgstr "デジタル表示"
+
+#~ msgid "Font:"
+#~ msgstr "フォント :"
+
+#~ msgid "Ratio to apply on text :"
+#~ msgstr "文字に適用する比率 :"
+
+#~ msgid "Configure time and date"
+#~ msgstr "時刻と日付の設定"
+
+#~ msgid "Leave empty to execute the default command."
+#~ msgstr "デフォルトのコマンドを実行するには空欄のままに。"
+
+#~ msgid "Specific command to run:"
+#~ msgstr "実行するコマンドの指定 :"
+
+#~ msgid ""
+#~ "The new alarm will be added to the end / the last alarm will be removed."
+#~ msgstr "新しいアラームを最後に追加、または最後のアラームが削除されます。"
+
+#~ msgid "Add or remove an alarm:"
+#~ msgstr "アラームの追加または削除 :"
+
+#~ msgid ""
+#~ "Except when switching to another WM, you must activate the Dbus plugin in "
+#~ "Compiz along with the plugin corresponding to the desired action."
+#~ msgstr ""
+#~ "別のWMへの切り替え以外を選択した場合、Compiz の各アクションに対応するプラ"
+#~ "グインの他に、Dbus プラグインも有効にする必要があります。"
+
+#~ msgid "Action on middle-click:"
+#~ msgstr "中クリック時のアクション :"
+
+#~ msgid "Switch WM"
+#~ msgstr "WM の切り替え"
+
+#~ msgid "Expose"
+#~ msgstr "展開"
+
+#~ msgid "Show desktop"
+#~ msgstr "デスクトップの表示"
+
+#~ msgid ""
+#~ "This command will be used to launch the system WM. Leave blank to use the "
+#~ "default."
+#~ msgstr ""
+#~ "このコマンドはシステムの WM を起動するのに使用されます。デフォルトを使用す"
+#~ "るには空欄のままに。"
+
+#~ msgid "Custom command for system's Windows Manager:"
+#~ msgstr "システムのウィンドウ・マネージャを呼び出す任意コマンド"
+
+#~ msgid ""
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
+#~ "quit Compiz from the dock."
+#~ msgstr ""
+#~ "Compiz が予期せず終了した場合、Cairo-Dock が Compiz を再起動します。この場"
+#~ "合 Compiz の終了はドックから行う必要があります。"
+
+#~ msgid "Auto-reload Compiz?"
+#~ msgstr "Compiz を自動再読み込み？"
+
+#~ msgid ""
+#~ "If the decorator quits unexpectedly, Cairo-Dock will restart it. ou must "
+#~ "then quit Compiz from the dock."
+#~ msgstr ""
+#~ "デコレータが予期せず終了した場合、Cairo-Dock がデコレータを再起動します。"
+#~ "この場合 Compiz の終了はドックから行う必要があります。"
+
+#~ msgid "Auto-reload the Decorator?"
+#~ msgstr "デコレータを自動再読み込み？"
+
+#~ msgid "Load Compiz with options on startup."
+#~ msgstr "アプレットのスタートアップ時に Compiz をオプションとともに読み込み"
+
+#~ msgid "Force Compiz settings on startup?"
+#~ msgstr "スタートアップ時に Compiz の設定を適用？"
+
+#~ msgid ""
+#~ "This will prevent the CSSM or Emerald icons appearing in the taskbar. The "
+#~ "corresponding sub-dock's icons will then behave as a launcher and an "
+#~ "application."
+#~ msgstr ""
+#~ "CCSM や Emerald のアイコンがタスクバーに表示されるのを防ぎます。対応するサ"
+#~ "ブ・ドックのアイコンがランチャーやアプリケーションとして動作します。"
+
+#~ msgid "Steal the application's icon from the taskbar?"
+#~ msgstr "タスクバーのアプリケーションのアイコンを奪取？"
+
+#~ msgid ""
+#~ "Display two icons for Compiz Exposition & Widget Layer plug-ins in the "
+#~ "applet's sub-dock. Otherwise they will be available in the menu."
+#~ msgstr ""
+#~ "Compiz のウィジェット・レイヤと展開のプラグインの2つのアイコンをアプレット"
+#~ "のサブ・ドックに表示します。無効の場合でも、メニュー上から利用可能です。"
+
+#~ msgid "Add Exposition & Widget Layer to sub-dock?"
+#~ msgstr "展開とウィジェット・レイヤをサブ・ドックに追加？"
+
+#~ msgid ""
+#~ "Display an icon for the Emerald configuration panel in the applet's sub-"
+#~ "dock."
+#~ msgstr ""
+#~ "アプレットのサブ・ドックに Emerald の設定パネルのアイコンを表示します。"
+
+#~ msgid "Add Emerald Configuration to sub-dock?"
+#~ msgstr "サブ・ドックに Emerald の設定を追加？"
+
+#~ msgid "Compiz Options"
+#~ msgstr "Compiz のオプション"
+
+#~ msgid ""
+#~ "With strict binding, textures are bound whenever they are enabled. With "
+#~ "loose binding they are enabled when created. The Nvidia driver seems a "
+#~ "bit slow when binding textures, that's why this option gives a heavy "
+#~ "performance increase with Nvidia cards."
+#~ msgstr ""
+#~ "Strict binding では、テクスチャが有効のとき常にバインドされますが、Loose "
+#~ "binding では、テクスチャ生成時のみ有効になります。Nvidia ドライバはテクス"
+#~ "チャのバインディング処理が若干遅いようなので、Nvidia カードではこのオプ"
+#~ "ションによってパフォーマンスが著しく向上します。"
+
+#~ msgid "Use Loose Binding?"
+#~ msgstr "Loose Binding を使用？"
+
+#~ msgid "Only use these options if you know what you're doing.?"
+#~ msgstr "このオプションについて理解されている場合のみ使用してください。"
+
+#~ msgid "Use Indirect Rendering?"
+#~ msgstr "Indirect Rendering を使用？"
+
+#~ msgid "Useful when using two or more separate X screens."
+#~ msgstr "２以上のスクリーンを使用している時に有用です。"
+
+#~ msgid "Only Current Screen?"
+#~ msgstr "現在のスクリーンのみ？"
+
+#~ msgid "By default this will be Emerald."
+#~ msgstr "デフォルトでは Emerald になります"
+
+#~ msgid "Choose your Window Decorator:"
+#~ msgstr "ウィンドウ・デコレータの選択"
+
+#~ msgid "emerald"
+#~ msgstr "emerald"
+
+#~ msgid "gtk-window-decorator"
+#~ msgstr "gtk-window-decorator"
+
+#~ msgid "kde-window-decorator"
+#~ msgstr "kde-window-decorator"
+
+#~ msgid "heliodor"
+#~ msgstr "heliodor"
+
+#~ msgid "Leave empty to use default sub-dock view."
+#~ msgstr "デフォルトのサブ・ドックの外観を使用するには空欄のままに。"
+
+#~ msgid "Sub-dock view name:"
+#~ msgstr "サブ・ドックに使用する外観の名前 :"
+
+#~ msgid "Images"
+#~ msgstr "画像"
+
+#~ msgid "'Default' icon image name:"
+#~ msgstr "「デフォルト」のアイコン画像の名前 :"
+
+#~ msgid "'Broken' icon image name:"
+#~ msgstr "「リンク切れ」のアイコン画像の名前 :"
+
+#~ msgid "'Other WM' icon image name:"
+#~ msgstr "「その他の WM」のアイコン画像の名前 :"
+
+#~ msgid "'Settings' icon image name:"
+#~ msgstr "「設定」のアイコン画像の名前 :"
+
+#~ msgid "'Emerald' icon image name:"
+#~ msgstr "「Emerald」のアイコン画像の名前 :"
+
+#~ msgid "'Reload' icon image name:"
+#~ msgstr "「再読み込み」のアイコン画像の名前 :"
+
+#~ msgid "'Exhibition' icon image name:"
+#~ msgstr "「展開」のアイコン画像の名前 :"
+
+#~ msgid "'Widget Layer' icon image name:"
+#~ msgstr "「ウィジェット・レイヤ」のアイコン画像の名前 :"
+
+#~ msgid "Comics"
+#~ msgstr "コミックス"
+
+#~ msgid "Corner radius:"
+#~ msgstr "角の丸み :"
+
+#~ msgid "Border width:"
+#~ msgstr "境界の幅 :"
+
+#~ msgid "Bubble's line colour:"
+#~ msgstr "吹き出しの線の色 :"
+
+#~ msgid "Modern"
+#~ msgstr "モダン"
+
+#~ msgid "Space between lines of the tip :"
+#~ msgstr "チップの線同士の間隔 :"
+
+#~ msgid "Tooltip"
+#~ msgstr "ツールチップ"
+
+#~ msgid "Curly"
+#~ msgstr "カーリー"
+
+#~ msgid "Curvature of the tip :"
+#~ msgstr "チップの曲率 :"
+
+#~ msgid "Curve the sides too?"
+#~ msgstr "横側もカーブさせる？"
+
+#~ msgid "Info-bubbles"
+#~ msgstr "情報を通知する吹き出し"
+
+#~ msgid "Enable info-bubbles?"
+#~ msgstr "吹き出しによる情報表示を有効化？"
+
+#~ msgid "Duration of the info-bubbles :"
+#~ msgstr "吹き出しによる情報表示の継続時間 :"
+
+#~ msgid "Number of items to keep in the history :"
+#~ msgstr "履歴に保持するアイテムの数 :"
+
+#~ msgid "Keep a copy of each uploaded image?"
+#~ msgstr "アップロードした各画像のコピーを保持？"
+
+#~ msgid "This will override the image setting."
+#~ msgstr "こちらがアイコン画像の設定に代えて適用されます。"
+
+#~ msgid "If so, display the last image on the icon?"
+#~ msgstr "上のオプション有効の場合、最終アップロード画像をアイコンに表示？"
+
+#~ msgid "Use the following service to make the URL smaller:"
+#~ msgstr "URL を短縮するために使用するサービス："
+
+#~ msgid "Tiny-URL"
+#~ msgstr "Tiny-URL"
+
+#~ msgid "Use the tiny URL by default?"
+#~ msgstr "デフォルトで Tiny URL を使用？"
+
+#~ msgid "in KB/s - 0 means unlimited"
+#~ msgstr "KB/s単位 - 0 の場合は無制限です。"
+
+#~ msgid "Maximum upload rate:"
+#~ msgstr "アップロードの最高レート :"
+
+#~ msgid "Sites"
+#~ msgstr "サイト"
+
+#~ msgid "Preferred site for texts hosting :"
+#~ msgstr "テキストのホスティング用のサイト :"
+
+#~ msgid "Custom"
+#~ msgstr "カスタム"
+
+#~ msgid "Preferred site for images hosting :"
+#~ msgstr "画像のホスティング用のサイト :"
+
+#~ msgid "Uppix.net"
+#~ msgstr "Uppix.net"
+
+#~ msgid "Imagebin.ca"
+#~ msgstr "Imagebin.ca"
+
+#~ msgid "Preferred site for videos hosting :"
+#~ msgstr "動画のホスティング用のサイト :"
+
+#~ msgid "VideoBin.org"
+#~ msgstr "VideoBin.org"
+
+#~ msgid "Preferred site for files hosting :"
+#~ msgstr "ファイルのホスティング用のサイト :"
+
+#~ msgid "dl.free.fr"
+#~ msgstr "dl.free.fr"
+
+#~ msgid "DropBox"
+#~ msgstr "DropBox"
+
+#~ msgid ""
+#~ "The script takes the file path as a parameter, and write the resulting "
+#~ "URL on the standard output."
+#~ msgstr ""
+#~ "スクリプトは、ファイルのパスをパラメータとして受け取り、結果のURLを標準出"
+#~ "力に書き出します。"
+
+#~ msgid "Custom script for text upload :"
+#~ msgstr "テキストのアップロード用のカスタムスクリプト："
+
+#~ msgid "Custom script for image upload :"
+#~ msgstr "画像のアップロード用のカスタムスクリプト："
+
+#~ msgid "Custom script for video upload :"
+#~ msgstr "動画のアップロード用のカスタムスクリプト："
+
+#~ msgid "Custom script for file upload :"
+#~ msgstr "ファイルのアップロード用のカスタムスクリプト："
+
+#~ msgid "Leave empty to upload files into '~/Dropbox/Public'."
+#~ msgstr "'~/Dropbox/Public' にファイルをアップロードするには空欄のままに。"
+
+#~ msgid "Path of the DropBox folder :"
+#~ msgstr "DropBox フォルダのパス :"
+
+#~ msgid "Otherwise, your user name will be used when possible."
+#~ msgstr "有効にしていない場合、あなたのユーザー名を可能ならば使用します。"
+
+#~ msgid "Post text as Anonymous ?"
+#~ msgstr "匿名でテキストを投稿？"
+
+#~ msgid "Inclinated Plane"
+#~ msgstr "3Dプレーン"
+
+#~ msgid "The lower the value, the lower the point of view on the plane."
+#~ msgstr "小さい数値ほど、より低い視点から見た地面になります。"
+
+#~ msgid "Height of the vanishing point:"
+#~ msgstr "消尽点の高さ :"
+
+#~ msgid "The lower the value, the flatter the curve will appear."
+#~ msgstr "小さい数値ほど、カーブがより平坦に見えます。"
+
+#~ msgid "Curvature of the curve in percent:"
+#~ msgstr "カーブの曲率 :"
+
+#~ msgid "Amplitude of the curve:"
+#~ msgstr "カーブの高さ"
+
+#~ msgid "At 1, the icons will have the same size as in other views."
+#~ msgstr ""
+#~ "1 に設定の場合、アイコンは他のビュー形式での大きさと同じになります。"
+
+#~ msgid "Ratio to apply on icons' size :"
+#~ msgstr "アイコンの大きさの適用比率 :"
+
+#~ msgid "smaller icons"
+#~ msgstr "小さなアイコン"
+
+#~ msgid "normal icons"
+#~ msgstr "通常のアイコン"
+
+#~ msgid "Grid"
+#~ msgstr "グリッド"
+
+#~ msgid "Space between columns:"
+#~ msgstr "縦列同士の間隔 :"
+
+#~ msgid "Space between rows:"
+#~ msgstr "横列同士の間隔 :"
+
+#~ msgid "Zoom when mouse hovers an icon:"
+#~ msgstr "アイコン上にマウスを置いたときのズーム："
+
+#~ msgid "Sinusoidal wave radius:"
+#~ msgstr "正弦波の半径 :"
+
+#~ msgid "Use a linear wave rather than a sinusoidal wave?"
+#~ msgstr "正弦波ではなく線形波を使用？"
+
+#~ msgid "Display text for all icons?"
+#~ msgstr "全てのアイコンのテキストを表示？"
+
+#~ msgid "Frame"
+#~ msgstr "外枠"
+
+#~ msgid "Draw a background?"
+#~ msgstr "背景を描画？"
+
+#~ msgid "First gradient colour :"
+#~ msgstr "グラデーションの開始色 :"
+
+#~ msgid "Second gradient colour :"
+#~ msgstr "グラデーションの終了色 :"
+
+#~ msgid "Top to bottom gradient?"
+#~ msgstr "上から下にグラデーション？"
+
+#~ msgid "Left to right gradient?"
+#~ msgstr "左から右へグラデーション？"
+
+#~ msgid "Border line width :"
+#~ msgstr "外枠の幅 :"
+
+#~ msgid "Border line colour :"
+#~ msgstr "外枠線の色 :"
+
+#~ msgid "Arrow width :"
+#~ msgstr "矢印の幅 :"
+
+#~ msgid "Arrow height:"
+#~ msgstr "矢印の高さ :"
+
+#~ msgid "Scroll bar"
+#~ msgstr "スクロールバー"
+
+#~ msgid "Color of the scroll bar's outline:"
+#~ msgstr "スクロールバーの輪郭の色："
+
+#~ msgid "Color of the scroll bar's inside:"
+#~ msgstr "スクロールバーの内側の色："
+
+#~ msgid "Color of the scroll grip:"
+#~ msgstr "スクロールグリップの色："
+
+#~ msgid "The higher this value, the sooner the parabola will be curved."
+#~ msgstr "高い数値ほど、すぐに湾曲が始まります。"
+
+#~ msgid "Curvature:"
+#~ msgstr "湾曲率 :"
+
+#~ msgid "The parabola will be restricted to a rectangle of this proportion."
+#~ msgstr "湾曲はこのプロポーションの矩形に収縮されます。"
+
+#~ msgid "Height/width ratio:"
+#~ msgstr "高さ/幅 の割合 :"
+
+#~ msgid "0 represents a flat wave, 1 represents maximum wave curvature."
+#~ msgstr ""
+#~ "0 に設定するとアイコンのうねりが完全に平坦になります。1 に設定するとうねり"
+#~ "が最大になります。"
+
+#~ msgid "Magnitude of the wave:"
+#~ msgstr "波形の振幅 :"
+
+#~ msgid "Curve towards the outside?"
+#~ msgstr "外側に向かってカーブ？"
+
+#~ msgid "Space between icons and their captions:"
+#~ msgstr "アイコンとそのラベル同士の隙間 :"
+
+#~ msgid ""
+#~ "This may recquire more CPU during the unfolding animation, except if you "
+#~ "launch Cairo-Dock with OpenGL."
+#~ msgstr ""
+#~ "OpenGL を利用していない場合、展開アニメーション中に CPU の使用がより必要に"
+#~ "なる可能性があります。"
+
+#~ msgid "Draw captions while unfolding?"
+#~ msgstr "展開中にラベルを描画？"
+
+#~ msgid "Space between icons:"
+#~ msgstr "同列アイコン同士の間隔 :"
+
+#~ msgid ""
+#~ "0 represents a flat wave, 1 means the wave is identical to other views."
+#~ msgstr ""
+#~ "0 に設定するとうねりは完全に平坦になります。1 に設定するとうねりの大きさは"
+#~ "他の外観と同一になります。"
+
+#~ msgid "Number of icons on the first row:"
+#~ msgstr "最初の横列のアイコンの数 :"
+
+#~ msgid ""
+#~ "in degrees. The lower the value, the narrower the cone. 180° represents a "
+#~ "wide open cone."
+#~ msgstr ""
+#~ "円錐の角度。数値が小さいほど円錐が細くなります。180° にすると円錐が広く展"
+#~ "開します。"
+
+#~ msgid "Cone width:"
+#~ msgstr "円錐の幅 :"
+
+#~ msgid "Set transparency to 0 to not use it. This is quite slow with cairo."
+#~ msgstr ""
+#~ "弓形を使用しない場合は透明度を 0 に設定してください。この場合、cairo では"
+#~ "描画が遅くなります。"
+
+#~ msgid "Bow colour:"
+#~ msgstr "弓形の色 :"
+
+#~ msgid "Line colour:"
+#~ msgstr "線の色 :"
+
+#~ msgid "Drag and drop indicator"
+#~ msgstr "ドロップ&ドロップ標示"
+
+#~ msgid ""
+#~ "Typically an arrow, this will be displayed when you try to drop a new "
+#~ "launcher into the dock. Leave this empty to use the default."
+#~ msgstr ""
+#~ "ドックに新規ランチャーをドロップしようとするときなどに表示されるもので、典"
+#~ "型なのは矢印です。デフォルトの画像を使用するには空欄のままにしてください。"
+
+#~ msgid "Image for the drag & drop animation:"
+#~ msgstr "ドラッグ＆ドロップ・アニメーションの画像 :"
+
+#~ msgid "Image when hovering an icon :"
+#~ msgstr "アイコン上にマウスを置いたときの画像 :"
+
+#~ msgid "Animation"
+#~ msgstr "アニメーション"
+
+#~ msgid "Speed:"
+#~ msgstr "速度 :"
+
+#~ msgid "Rotation speed :"
+#~ msgstr "回転速度 :"
+
+#~ msgid "Theme"
+#~ msgstr "テーマ"
+
+#~ msgid "Name of the image to overwrite the theme's empty image :"
+#~ msgstr "空状態を表すテーマ画像に置き換える画像の名前 :"
+
+#~ msgid "Name of the image to overwrite the theme's full image :"
+#~ msgstr "満杯状態を表すテーマ画像に置き換える画像の名前 :"
+
+#~ msgid "Config"
+#~ msgstr "設定"
+
+#~ msgid "Display the following quick info :"
+#~ msgstr "クイック情報の表示 :"
+
+#~ msgid "Number of files"
+#~ msgstr "ファイルの数"
+
+#~ msgid "Total number of files"
+#~ msgstr "ファイルの総数"
+
+#~ msgid "Total weight"
+#~ msgstr "総量"
+
+#~ msgid "Ask confirmation before emptying Dustbin?"
+#~ msgstr "ゴミ箱を空にする前に確認を取る？"
+
+#~ msgid "Draw in background?"
+#~ msgstr "背景に描画？"
+
+#~ msgid "Rotate effects with dock?"
+#~ msgstr "ドックに従って効果を回転？"
+
+#~ msgid "Colours"
+#~ msgstr "色"
+
+#~ msgid ""
+#~ "This will slightly alter your colours, so you may have to modify them."
+#~ msgstr ""
+#~ "これを使用すると色が若干変化してしまうので、炎の色設定を修正する必要がある"
+#~ "かもしれません。"
+
+#~ msgid "Add luminance?"
+#~ msgstr "輝く効果を追加？"
+
+#~ msgid "Particles"
+#~ msgstr "粒子"
+
+#~ msgid "Number of particles:"
+#~ msgstr "粒子の数 :"
+
+#~ msgid "Particle size:"
+#~ msgstr "粒子の大きさ :"
+
+#~ msgid "Particle speed:"
+#~ msgstr "粒子の速度 :"
+
+#~ msgid "It particularily fits a dark wallpaper or a dark theme."
+#~ msgstr "特に暗い色の壁紙または暗い色のテーマに合います。"
+
+#~ msgid "Number of particles per source:"
+#~ msgstr "源泉当りの粒子の数 :"
+
+#~ msgid "In percentage of the icon's size."
+#~ msgstr "アイコンの大きさに対する割合"
+
+#~ msgid "Radius of the explosion:"
+#~ msgstr "花火の半径 :"
+
+#~ msgid "Show the launching?"
+#~ msgstr "打ち上げを表示？"
+
+#~ msgid "Particle friction:"
+#~ msgstr "粒子の摩擦 :"
+
+#~ msgid "Animation on disappearance:"
+#~ msgstr "消失時のアニメーション :"
+
+#~ msgid "Evaporate"
+#~ msgstr "蒸発"
+
+#~ msgid "Fade out"
+#~ msgstr "溶暗"
+
+#~ msgid "Explode"
+#~ msgstr "爆発"
+
+#~ msgid "Break"
+#~ msgstr "破砕"
+
+#~ msgid "Black Hole"
+#~ msgstr "ブラックホール"
+
+#~ msgid "Random"
+#~ msgstr "ランダム"
+
+#~ msgid "Animation on appearance:"
+#~ msgstr "出現時のアニメーション :"
+
+#~ msgid "Evaporate upwards?"
+#~ msgstr "上方向に蒸発？"
+
+#~ msgid "Number of pieces:"
+#~ msgstr "破片の数 :"
+
+#~ msgid "Explosion radius:"
+#~ msgstr "爆発の半径 :"
+
+#~ msgid "Break the icon into cubes?"
+#~ msgstr "キューブ状にアイコンを破砕？"
+
+#~ msgid "in round per second."
+#~ msgstr "秒当たりの回転数"
+
+#~ msgid "The greater, the faster the icon will collapse to the center."
+#~ msgstr "数値が大きいほど、アイコンは中央に速く収縮します。"
+
+#~ msgid "Attraction of the Black Hole:"
+#~ msgstr "ホールの引力 :"
+
+#~ msgid "caps lock, num lock, etc."
+#~ msgstr "caps lock, num lock 等"
+
+#~ msgid "Display keyboard locks as quick-info?"
+#~ msgstr "キーボードの Lock をクイック情報として表示？"
+
+#~ msgid ""
+#~ "in ms. Set to 0 if you don't want an animation when the keyboard layout "
+#~ "changes."
+#~ msgstr ""
+#~ "ミリ秒単位。キーボード・レイアウト変更時にアニメーションさせたくない場合"
+#~ "は 0 に設定してください。"
+
+#~ msgid "Duration of the transition animation:"
+#~ msgstr "レイアウト変更時のアニメーション持続時間 :"
+
+#~ msgid "Text colour"
+#~ msgstr "文字の色 :"
+
+#~ msgid ""
+#~ "the smaller is the text in the icon. 1 means the text fills all the icon."
+#~ msgstr ""
+#~ "小さい数値ほどアイコン上の文字が小さくなり、1 に設定するとアイコン全体を埋"
+#~ "める大きさになります。"
+
+#~ msgid "Relative size of the text :"
+#~ msgstr "文字の相対的な大きさ :"
+
+#~ msgid "smaller"
+#~ msgstr "小さく"
+
+#~ msgid "Action on left-click:"
+#~ msgstr "左クリック時のアクション :"
+
+#~ msgid "User-defined command to execute for logout:"
+#~ msgstr "ログアウトを実行するユーザー定義コマンド :"
+
+#~ msgid ""
+#~ "This will be available when middle-clicking. Leave empty to execute the "
+#~ "default command, which depends on your distribution. In some cases the "
+#~ "command to shutdown is the same as the one to log out."
+#~ msgstr ""
+#~ "中クリックによって利用できます。使用しているディストリビューションに大きく"
+#~ "依存しますが、デフォルトのコマンドを実行するには空欄のままにしてください。"
+#~ "シャットダウンするコマンドがログアウトするためのものと同じ場合がしばしばあ"
+#~ "ります。"
+
+#~ msgid "User-defined command to execute for shutdown:"
+#~ msgstr "シャットダウンを実行するユーザー定義コマンド :"
+
+#~ msgid "Customisation"
+#~ msgstr "カスタマイズ"
+
+#~ msgid ""
+#~ "If you have any problem with the applet, uncheck this option during the "
+#~ "maintenance mode, then after the dock has relaunched, remove/modify the "
+#~ "mail accounts you want."
+#~ msgstr ""
+#~ "このアプレットに何か問題があった場合、メンテナンス・モードでこのオプション"
+#~ "のチェックを外してからドックを起動させ、メール・アカウントの設定変更や削除"
+#~ "を行ってください。"
+
+#~ msgid "Check mail account on startup?"
+#~ msgstr "スタート時にメール・アカウントをチェック？"
+
+#~ msgid "Name of the file for the \"no mail\" image :"
+#~ msgstr "「メールなし」画像のファイルの名前 :"
+
+#~ msgid "Name of the file for the \"has mail\" image :"
+#~ msgstr "「メールあり」画像のファイルの名前 :"
+
+#~ msgid ""
+#~ "If checked, the number of mails will be shown even if there is no mail."
+#~ msgstr ""
+#~ "チェックを入れると、新着メールがない場合でもメール数が表示されます。"
+
+#~ msgid "Play sound when a new e-mail is received?"
+#~ msgstr "新着メールを受信した時に音を鳴らす？"
+
+#~ msgid "Name of the file for the \"new mail\" sound :"
+#~ msgstr "「新着メール」の音ファイル :"
+
+#~ msgid "Show new messages' content?"
+#~ msgstr "新着メッセージの内容を表示？"
+
+#~ msgid "Maximum number of mails that will be previewed."
+#~ msgstr "プレビューするメールの最大数です。"
+
+#~ msgid "Duration of the dialog:"
+#~ msgstr "プレビュー・ダイアログの表示継続時間 :"
+
+#~ msgid "Mail application"
+#~ msgstr "メール・アプリケーション"
+
+#~ msgid "Preferred mail application to launch on left-click :"
+#~ msgstr "左クリックで起動させる任意のメール・アプリケーション :"
+
+#~ msgid "Add a mail account (you've to launch the applet)"
+#~ msgstr "メール・アカウントの追加（アプレットを起動する必要があります）"
+
+#~ msgid "The new account will be created with the specified type and name."
+#~ msgstr "新しいアカウントが指定の種類と名前で作成されます。"
+
+#~ msgid "Add an account with specified type and name:"
+#~ msgstr "指定の種類と名前のアカウントを追加 :"
+
+#~ msgid "Also blur on mouse movement?"
+#~ msgstr "マウス動作時の挙動にもブラー効果？"
+
+#~ msgid "Blur amount:"
+#~ msgstr "ブラー量 :"
+
+#~ msgid ""
+#~ "Leave it empty to display the name of the player currently controlled."
+#~ msgstr "現在制御しているプレイヤーの名前を表示するには空欄のままに。"
+
+#~ msgid "Audio Player"
+#~ msgstr "オーディオ・プレイヤー"
+
+#~ msgid "Player to control:"
+#~ msgstr "制御するプレイヤー :"
+
+#~ msgid "Amarok 2"
+#~ msgstr "Amarok 2"
+
+#~ msgid "Audacious"
+#~ msgstr "Audacious"
+
+#~ msgid "Banshee"
+#~ msgstr "Banshee"
+
+#~ msgid "Clementine"
+#~ msgstr "Clementine"
+
+#~ msgid "Exaile"
+#~ msgstr "Exaile"
+
+#~ msgid "Exaile 0.3"
+#~ msgstr "Exaile 0.3"
+
+#~ msgid "Guayadeque"
+#~ msgstr "Guayadeque"
+
+#~ msgid "Listen"
+#~ msgstr "Listen"
+
+#~ msgid "Qmmp"
+#~ msgstr "Qmmp"
+
+#~ msgid "QuodLibet"
+#~ msgstr "QuodLibet"
+
+#~ msgid "Rhythmbox"
+#~ msgstr "Rhythmbox"
+
+#~ msgid "Songbird"
+#~ msgstr "Songbird"
+
+#~ msgid "XMMS 2"
+#~ msgstr "XMMS 2"
+
+#~ msgid "XMMS"
+#~ msgstr "XMMS"
+
+#~ msgid ""
+#~ "This will prevent the player icon appearing in the taskbar. The applet's "
+#~ "icon will then behave as a launcher, an application and an applet."
+#~ msgstr ""
+#~ "タスクバーにプレイヤーのアイコンが表示されないようにします。これにより、ア"
+#~ "プレットのアイコンがランチャーやアプリケーション、アプレットとして動作する"
+#~ "ようになります。"
+
+#~ msgid "Steal the player's icon from the taskbar?"
+#~ msgstr "タスクバーからプレイヤーのアイコンを奪取？"
+
+#~ msgid "Play/Pause on click, Next on middle-click"
+#~ msgstr "クリックで再生/一時停止、中クリックで次へ"
+
+#~ msgid "Show/Hide player on click, Play/Pause on middle-click"
+#~ msgstr "クリックでプレイヤーを表示/隠す、中クリックで再生/一時停止"
+
+#~ msgid "Action on music change"
+#~ msgstr "音楽切り替わり時のアクション"
+
+#~ msgid "Show tooltips?"
+#~ msgstr "吹き出しを表示して情報通知？"
+
+#~ msgid "Animation when music changes:"
+#~ msgstr "音楽の切り替わりの際のアニメーション :"
+
+#~ msgid "Information to display on the icon :"
+#~ msgstr "アイコン上に表示する情報 :"
+
+#~ msgid "Nothing"
+#~ msgstr "なし"
+
+#~ msgid "Time Elapsed"
+#~ msgstr "経過時間"
+
+#~ msgid "Time Remaining"
+#~ msgstr "残り時間"
+
+#~ msgid "Track number"
+#~ msgstr "トラック番号"
+
+#~ msgid "Display album's cover?"
+#~ msgstr "アルバムのカバーを表示？"
+
+#~ msgid "You need to be connected to the Internet."
+#~ msgstr "インターネットに接続している必要があります。"
+
+#~ msgid "Allow Cairo-Dock to download missing covers?"
+#~ msgstr "Cairo-Dock に未取得カバーをダウンロードさせる？"
+
+#~ msgid "requires OpenGL."
+#~ msgstr "OpenGL が必要です。"
+
+#~ msgid "List of available 3D themes for covers :"
+#~ msgstr "利用可能なカバー用の 3D テーマのリスト :"
+
+#~ msgid "Name of the image for the 'play' icon :"
+#~ msgstr "「再生」のアイコン画像の名前 :"
+
+#~ msgid "Name of the image for the 'stop' icon :"
+#~ msgstr "「停止」のアイコン画像の名前 :"
+
+#~ msgid "Name of the image for the 'pause' icon :"
+#~ msgstr "「一時停止」のアイコン画像の名前 :"
+
+#~ msgid "By default this will be 'eth0'."
+#~ msgstr "デフォルトでは 'eth0' になります。"
+
+#~ msgid "interface:"
+#~ msgstr "インターフェイス :"
+
+#~ msgid "Fluidity of the transition between 2 values :"
+#~ msgstr "２値間の遷移の滑らかさ :"
+
+#~ msgid "Display rate values :"
+#~ msgstr "レート値の表示 :"
+
+#~ msgid "Icon name:"
+#~ msgstr "アイコンの名前 :"
+
+#~ msgid "'On-battery' icon filename:"
+#~ msgstr "バッテリー放電時のアイコンのファイル名 :"
+
+#~ msgid "Icon's filename when on charge :"
+#~ msgstr "バッテリー充電時のアイコンのファイル名 :"
+
+#~ msgid "Effect to apply on the icon according to the charge :"
+#~ msgstr "充電量に応じてアイコンに適用する効果 :"
+
+#~ msgid "charge"
+#~ msgstr "充電量"
+
+#~ msgid "Leave it empty for no sound"
+#~ msgstr "音を使用しない場合は空欄のままに。"
+
+#~ msgid "Play a sound:"
+#~ msgstr "音を使用 :"
+
+#~ msgid "in percent."
+#~ msgstr "パーセント単位"
+
+#~ msgid "Battery level:"
+#~ msgstr "バッテリーレベル"
+
+#~ msgid "When battery level is under 4%"
+#~ msgstr "バッテリーレベルが 4% を下回るとき"
+
+#~ msgid "Notification when battery charge is critical ?"
+#~ msgstr "バッテリー残量が尽きかけている時に通知？"
+
+#~ msgid "Leave empty to use the folder's name."
+#~ msgstr "フォルダ名を使用するには空欄のままに。"
+
+#~ msgid "Folder"
+#~ msgstr "フォルダ"
+
+#~ msgid "Folder to browse :"
+#~ msgstr "参照するフォルダ :"
+
+#~ msgid "List folders first?"
+#~ msgstr "フォルダを先にリスト？"
+
+#~ msgid "Ignore case?"
+#~ msgstr "大文字小文字を区別しない？"
+
+#~ msgid "Menu"
+#~ msgstr "メニュー"
+
+#~ msgid "It can be CPU intense to load a lot of icons."
+#~ msgstr "多数のアイコンを読み込む場合は重くなる可能性があります。"
+
+#~ msgid "Icon size :"
+#~ msgstr "アイコンの大きさ :"
+
+#~ msgid "small"
+#~ msgstr "小"
+
+#~ msgid "large"
+#~ msgstr "大"
+
+#~ msgid ""
+#~ "Number of items loaded at once. Setting a high value speeds up loading a "
+#~ "little but will hang the application for longer."
+#~ msgstr ""
+#~ "一度に読み込むアイテムの数。高い値に設定すると読み込み速度が若干上がります"
+#~ "が、その分アプリをブロックします。"
+
+#~ msgid "Build menu gradually:"
+#~ msgstr "メニューの段階的な構築 :"
+
+#~ msgid "List drives and volumes?"
+#~ msgstr "ドライブとボリュームを一覧化？"
+
+#~ msgid "List networks?"
+#~ msgstr "ネットワークを一覧化？"
+
+#~ msgid "GTK bookmarks, that are used by Nautilus for exemple."
+#~ msgstr "例えば Nautilus で使用される、GTK ブックマークです。"
+
+#~ msgid "List bookmarks?"
+#~ msgstr "ブックマークを一覧化？"
+
+#~ msgid "Type of view for the desklet mode :"
+#~ msgstr "デスクレット・モード用の装飾の種類 :"
+
+#~ msgid "Tree"
+#~ msgstr "ツリー"
+
+#~ msgid "Disk usage"
+#~ msgstr "ディスク使用量"
+
+#~ msgid "Show disk usage :"
+#~ msgstr "ディスク使用量の表示 :"
+
+#~ msgid "Free space"
+#~ msgstr "空き容量"
+
+#~ msgid "Used space"
+#~ msgstr "使用容量"
+
+#~ msgid "Free space (in percent)"
+#~ msgstr "空き容量の割合"
+
+#~ msgid "Used space (in percent)"
+#~ msgstr "使用容量の割合"
+
+#~ msgid "Delay between disk usage refresh :"
+#~ msgstr "ディスク使用量の更新間隔 :"
+
+#~ msgid "In rotations per second."
+#~ msgstr "秒当りの回転数"
+
+#~ msgid "Show mouse on:"
+#~ msgstr "マウス表示効果対象 :"
+
+#~ msgid "Dock"
+#~ msgstr "ドック"
+
+#~ msgid "Particle life time:"
+#~ msgstr "粒子の持続時間"
+
+#~ msgid ""
+#~ "The higher the value, the more particles will scatter from their source."
+#~ msgstr "高い数値ほど、より広範囲に各源泉から粒子が拡散します。"
+
+#~ msgid "Scattering:"
+#~ msgstr "拡散 :"
+
+#~ msgid "Leave empty to use the same image."
+#~ msgstr "同じ画像を使用するには空欄のままに。"
+
+#~ msgid "Image when the applet is active :"
+#~ msgstr "アプレットがアクティブなときの画像 :"
+
+#~ msgid ""
+#~ "You need to activate the Dbus plug-in in Compiz for the last 2 actions. "
+#~ "Showing desktop and desklets can fail on some Window Manager (like "
+#~ "Metacity)."
+#~ msgstr ""
+#~ "最後の２つのアクションには、Compiz の Dbus プラグインの有効化が必要です。"
+#~ "例えば Metacity など、ウィンドウ・マネージャによっては「デスクトップとデス"
+#~ "クレットの表示」が正しく働きません。"
+
+#~ msgid "Show the desklets"
+#~ msgstr "デスクレットの表示"
+
+#~ msgid "Show desktop and desklets"
+#~ msgstr "デスクトップとデスクレットの表示"
+
+#~ msgid "Shortkey for the middle-click action:"
+#~ msgstr "中クリックのアクションに割り当てるショートキー :"
+
+#~ msgid "Folder for the images:"
+#~ msgstr "画像ファイルのフォルダ :"
+
+#~ msgid "Scan sub direcotries?"
+#~ msgstr "サブ・ディレクトリもスキャン？"
+
+#~ msgid "Randomly browse files?"
+#~ msgstr "ファイルをランダムに閲覧？"
+
+#~ msgid "Display image name as quickinfo?"
+#~ msgstr "画像の名前をクイック情報として表示？"
+
+#~ msgid ""
+#~ "This will prevent the dock from freezing during image loading, but works "
+#~ "only with OpenGL."
+#~ msgstr ""
+#~ "画像読み込み中にドックがフリーズすることを防ぎますが、Cairo バックエンド使"
+#~ "用時には働きません。"
+
+#~ msgid "Use another thread to load images?"
+#~ msgstr "画像の読み込みに別スレッドを使用？"
+
+#~ msgid "play/pause"
+#~ msgstr "再生/停止"
+
+#~ msgid "open image"
+#~ msgstr "画像を開く"
+
+#~ msgid "Sliding delay:"
+#~ msgstr "スライドの遅延時間 :"
+
+#~ msgid "Effect while changing image:"
+#~ msgstr "画像切り替え中の効果"
+
+#~ msgid "fade"
+#~ msgstr "fade"
+
+#~ msgid "blank fade"
+#~ msgstr "blank fade"
+
+#~ msgid "fade in/out"
+#~ msgstr "fade in/out"
+
+#~ msgid "side kick"
+#~ msgstr "side kick"
+
+#~ msgid "slideshow"
+#~ msgstr "slideshow"
+
+#~ msgid "grow up"
+#~ msgstr "grow up"
+
+#~ msgid "shrink"
+#~ msgstr "shrink"
+
+#~ msgid "cube"
+#~ msgstr "cube"
+
+#~ msgid "random"
+#~ msgstr "ランダム"
+
+#~ msgid "Number of steps for transitions:"
+#~ msgstr "画像切り替え時の描画刻み :"
+
+#~ msgid "fast"
+#~ msgstr "速い"
+
+#~ msgid "slow"
+#~ msgstr "遅い"
+
+#~ msgid ""
+#~ "Set the transparency channel to 0 if you just don't want to have a "
+#~ "background."
+#~ msgstr ""
+#~ "背景を持たせたくない場合は、透明度のチャンネルを 0 に設定してください。"
+
+#~ msgid "Choose a background colour :"
+#~ msgstr "背景色の選択 :"
+
+#~ msgid "Gives better image rendering."
+#~ msgstr "画像の描画をより良くします"
+
+#~ msgid "Keep width/height ratio?"
+#~ msgstr "縦横比を保つ？"
+
+#~ msgid "If the image is too small, it will be stretched."
+#~ msgstr "画像が小さすぎる場合にズームインします。"
+
+#~ msgid "Force the image to fill the icon/desklet?"
+#~ msgstr "画像がアイコン/デスクレットを埋めるように引き伸ばす？"
+
+#~ msgid "Leave empty to use a default name"
+#~ msgstr "デフォルトの名前を使用するには空欄のままに。"
+
+#~ msgid "They are items created by dropping a text into the Stack."
+#~ msgstr "テキストをスタックにドロップして作成されたアイテムを指します。"
+
+#~ msgid "Image for 'text' items:"
+#~ msgstr "テキスト・アイテム用の画像 :"
+
+#~ msgid "These are items created by dropping a URL into the Stack."
+#~ msgstr "URL をスタックにドロップして作成したアイテムを指します。"
+
+#~ msgid "Image for 'URL' items:"
+#~ msgstr "URL アイテム用の画像 :"
+
+#~ msgid "Options"
+#~ msgstr "オプション"
+
+#~ msgid ""
+#~ "These options allow you to prevent some files from displaying in stacks "
+#~ "based on their type (video, image, etc.)"
+#~ msgstr ""
+#~ "このオプションを使用すると、特定の種類（動画、画像、等々）のファイルをス"
+#~ "タックに表示しないようにすることができます。"
+
+#~ msgid "Filter files on MIME type?"
+#~ msgstr "MIME タイプによってファイルをフィルタ？"
+
+#~ msgid "E.g. image, text, video, audio, application..."
+#~ msgstr "例 : image, text, video, audio, application..."
+
+#~ msgid "Here you can specify a list of MIME types to ignore:"
+#~ msgstr "表示除外対象にする MIME タイプのリストの指定 :"
+
+#~ msgid "Sort items by:"
+#~ msgstr "アイテムの並べ替え :"
+
+#~ msgid "Type"
+#~ msgstr "種類"
+
+#~ msgid "Manual order"
+#~ msgstr "手動の順番"
+
+#~ msgid ""
+#~ "All desktops will be drawn on the main icon. Otherwise a sub-dock will "
+#~ "contain all desktops."
+#~ msgstr ""
+#~ "全てのデスクトップがメイン・アイコン上に描画されます。これが無効の場合は、"
+#~ "サブ・ドックに含まれるようになります。"
+
+#~ msgid "Use the compact mode?"
+#~ msgstr "コンパクト・モードを使用？"
+
+#~ msgid "Preserve the ratio of the screen ?"
+#~ msgstr "画面の縦横比を保持する？"
+
+#~ msgid "Map wallpaper to icons?"
+#~ msgstr "アイコン上に壁紙を配置？"
+
+#~ msgid "Show desktop number on icons?"
+#~ msgstr "アイコン上にデスクトップ番号を表示？"
+
+#~ msgid "Draw windows on icons?"
+#~ msgstr "アイコン上にウィンドウを描画？"
+
+#~ msgid "Draw hidden windows?"
+#~ msgstr "隠れた状態のウィンドウも描画？"
+
+#~ msgid "Show windows' list"
+#~ msgstr "ウィンドウ・リストの表示"
+
+#~ msgid "Workspace names :"
+#~ msgstr "ワークスペースの名前 :"
+
+#~ msgid "Display options"
+#~ msgstr "表示オプション"
+
+#~ msgid "r, g, b, a"
+#~ msgstr "赤、緑、青、アルファ"
+
+#~ msgid "Internal line colour:"
+#~ msgstr "内側の線の色 :"
+
+#~ msgid "External line size:"
+#~ msgstr "外側の線のサイズ :"
+
+#~ msgid "External line colour:"
+#~ msgstr "外側の線の色 :"
+
+#~ msgid "Window line colour:"
+#~ msgstr "ウィンドウの線の色 :"
+
+#~ msgid "Current desktop colour:"
+#~ msgstr "現在のデスクトップの色 :"
+
+#~ msgid "How to draw the current desktop:"
+#~ msgstr "現在のデスクトップの描画の仕方 :"
+
+#~ msgid "draw a frame"
+#~ msgstr "フレームを描画"
+
+#~ msgid "fill"
+#~ msgstr "塗りつぶし"
+
+#~ msgid "fill others"
+#~ msgstr "その他を塗りつぶし"
+
+#~ msgid "Icon to use in expanded mode if wallpaper is not mapped:"
+#~ msgstr "壁紙を配置しない場合に拡張モードで使用するアイコン :"
+
+#~ msgid "In expanded mode, render the desklet in 3D?"
+#~ msgstr "拡張モード時にデスクレットを 3D 描画？"
+
+#~ msgid "Name of the icon as it will appear in its label in cairo-dock :"
+#~ msgstr "Cairo-Dock のラベル上に表示するアイコンの名前 :"
+
+#~ msgid "Shortkey to toggle the systray in dock mode:"
+#~ msgstr "シストレイのドック・モードの切り替えショートキー :"
+
+#~ msgid "Icons packing :"
+#~ msgstr "アイコンをまとめる方向 :"
+
+#~ msgid "horizontal"
+#~ msgstr "水平"
+
+#~ msgid "vertical"
+#~ msgstr "垂直"
+
+#~ msgid "needs to restart the applet."
+#~ msgstr "アプレットの再起動が必要です。"
+
+#~ msgid "Terminal transparency:"
+#~ msgstr "端末の透明度 :"
+
+#~ msgid "transparent"
+#~ msgstr "透明"
+
+#~ msgid "opaque"
+#~ msgstr "不透明"
+
+#~ msgid "Foreground colour:"
+#~ msgstr "前景の色 :"
+
+#~ msgid "Background colour:"
+#~ msgstr "背景の色 :"
+
+#~ msgid ""
+#~ "When the terminal is in a dialog. When it is in a desklet, you can just "
+#~ "resize the desklet as usual."
+#~ msgstr ""
+#~ "ダイアログやデスクレットに端末が表示されているとき、通常のようにデスクレッ"
+#~ "トのサイズ変更が可能です。"
+
+#~ msgid "Size of the terminal (line x columns):"
+#~ msgstr "端末の大きさ（行×列） :"
+
+#~ msgid "Shortkey to show the terminal:"
+#~ msgstr "端末を表示するショートカットキー :"
+
+#~ msgid "'Close' icon image name:"
+#~ msgstr "「閉じる」のアイコン画像の名前："
+
+#~ msgid "Image file for the notes:"
+#~ msgstr "ノートに適用する画像ファイル："
+
+#~ msgid "Draw note's content on their icon?"
+#~ msgstr "アイコン上にノートの内容を描画？"
+
+#~ msgid "Text colour of the content :"
+#~ msgstr "ノート内容の文字色 :"
+
+#~ msgid "Display note's content with a dialog?"
+#~ msgstr "ノートの内容を吹き出しの形式で表示？"
+
+#~ msgid "Choose the note-taking application to control :"
+#~ msgstr "制御対象にするノート・アプリケーションの選択 :"
+
+#~ msgid "Gnote"
+#~ msgstr "Gnote"
+
+#~ msgid "Tomboy"
+#~ msgstr "Tomboy"
+
+#~ msgid "Ask for confirmation before deleting a note?"
+#~ msgstr "ノートを削除する前に確認を取る？"
+
+#~ msgid "Otherwise you will be asked to name it."
+#~ msgstr "無効の場合は名前の入力が求められます。"
+
+#~ msgid "Automatically name a new note?"
+#~ msgstr "新しいノートに自動的に名前を付ける？"
+
+#~ msgid ""
+#~ "Write the date format you usually use in your notes. The syntax is the "
+#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
+#~ msgstr ""
+#~ "ノートで普段使用している日付形式を記入してください。記述法は、年（下2桁）"
+#~ "が %y、月が %m、日が %d 等の 'strftime' に則ります。デフォルト（%d/%m/%y）"
+#~ "を使用するには、空欄のままにしてください。"
+
+#~ msgid "Date format to search for :"
+#~ msgstr "検索のための日付フォーマット :"
+
+#~ msgid ""
+#~ "Depending on your tomboy's version, the note deletion may not be "
+#~ "automatically notified to us. Only check this box if you notice some "
+#~ "error message like <<No marshaller for signature of signal "
+#~ "'NoteDeleted'>> in the terminal."
+#~ msgstr ""
+#~ "使用中の Tomboy のバージョンによっては、ノートの削除の自動的な通知が行われ"
+#~ "ない可能性があります。端末上で <<No marshaller for signature of signal "
+#~ "'NoteDeleted'>> のようなエラーメッセージに気づいた場合にのみ、このオプショ"
+#~ "ンにチェックを入れてください。"
+
+#~ msgid "Emulate the 'NoteDeleted' signal?"
+#~ msgstr "'NoteDeleted' 信号をエミュレート？"
+
+#~ msgid "Leave empty to use the name of the city."
+#~ msgstr "都市の名前を使用するには空欄のままに。"
+
+#~ msgid "Enter the name of your location in the text entry and press Enter."
+#~ msgstr "地名を文字入力欄に記入して Enter を押してください。"
+
+#~ msgid "Code for your location:"
+#~ msgstr "現在地のコード :"
+
+#~ msgid ""
+#~ "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
+#~ msgstr "これが有効の場合、摂氏で表示されます。無効の場合は華氏になります。"
+
+#~ msgid "Use International System Units?"
+#~ msgstr "国際単位系を使用？"
+
+#~ msgid "in seconds. Set 0 to have never-ending dialogs."
+#~ msgstr "秒単位。ダイアログを表示させたままにするには 0 に設定。"
+
+#~ msgid "Dialog duration:"
+#~ msgstr "ダイアログの継続時間 :"
+
+#~ msgid "Info"
+#~ msgstr "情報"
+
+#~ msgid "Display current conditions on the icon instead of the default one?"
+#~ msgstr "アイコン上にデフォルトの表示に代えて現在の天気を表示？"
+
+#~ msgid "Number of days to forecast:"
+#~ msgstr "予報日数 :"
+
+#~ msgid "Display nights?"
+#~ msgstr "夜の予報も表示？"
+
+#~ msgid "Display temperature as quick info?"
+#~ msgstr "アイコン上に気温を表示？"
+
+#~ msgid "Render desklet in 3D?"
+#~ msgstr "デスクレットを 3D 描画？"
+
+#~ msgid "URI to load in weblet"
+#~ msgstr "Weblet にロードする URI"
+
+#~ msgid "Show scrollbars?"
+#~ msgstr "スクロールバーを表示？"
+
+#~ msgid "Horizontal scroll of the browser in pixels"
+#~ msgstr "ブラウザの横スクロール（ピクセル単位）"
+
+#~ msgid "Position of horizontal scrollbar"
+#~ msgstr "横スクロールバーの位置"
+
+#~ msgid "Vertical scroll of the browser in pixels"
+#~ msgstr "ブラウザの縦スクロール（ピクセル単位）"
+
+#~ msgid "Position of vertical scrollbar in pixel"
+#~ msgstr "縦スクロールバーの位置（ピクセル単位）"
+
+#~ msgid ""
+#~ "This lets you right-click on the desklet to pop up the Cairo-Dock menu."
+#~ msgstr ""
+#~ "これにより、デスクレットの右クリック可能エリアを確保し、Cairo-Dock メ"
+#~ "ニューをポップアップさせることができます。"
+
+#~ msgid "Right margin width, in pixels:"
+#~ msgstr "右側のマージンの幅（ピクセル単位）:"
+
+#~ msgid "Transparent background?"
+#~ msgstr "透明な背景？"
+
+#~ msgid ""
+#~ "Time before reloading the weblet URI, in seconds. Zero means never reload."
+#~ msgstr ""
+#~ "Weblet URI の再読み込みを開始するまでの時間（秒）。ゼロの場合は再読み込み"
+#~ "しません。"
+
+#~ msgid "Any valid URI should work."
+#~ msgstr "有効な URI であれば全て動作します。"
+
+#~ msgid "Predefined bookmarks to show in applet menu:"
+#~ msgstr "アプレットのメニューに表示する既定ブックマーク :"
+
+#~ msgid "'No signal' icon filename:"
+#~ msgstr "「信号なし」のアイコン画像の名前 :"
+
+#~ msgid "'Very low' icon filename:"
+#~ msgstr "「非常に弱い」のアイコン画像の名前 :"
+
+#~ msgid "'Low' icon filename:"
+#~ msgstr "「弱い」のアイコン画像の名前 :"
+
+#~ msgid "'Average' icon filename:"
+#~ msgstr "「中程度」のアイコン画像の名前 :"
+
+#~ msgid "'Good' icon filename:"
+#~ msgstr "「良好」のアイコン画像の名前 :"
+
+#~ msgid "'Excellent' icon filename:"
+#~ msgstr "「最高」のアイコン画像の名前 :"
+
+#~ msgid ""
+#~ "Allow you to overwrite applet's default command line and launch your "
+#~ "wireless configuration interface."
+#~ msgstr ""
+#~ "アプレットのデフォルトのコマンドラインを上書きして、自分が使用中の無線設定"
+#~ "インタフェースを起動することができます。"
+
+#~ msgid "Alternative command line to launch Wireless Configuration :"
+#~ msgstr "無線設定を起動する代替のコマンドライン :"
+
+#~ msgid "Signal Strength"
+#~ msgstr "信号の強さ"
+
+#~ msgid "Signal Strength in percent"
+#~ msgstr "信号の強さ（％単位）"
+
+#~ msgid "Raw Signal Informations"
+#~ msgstr "信号の生情報"
+
+#~ msgid "Overwrite the default label with the connection point name?"
+#~ msgstr "デフォルトのラベルを接続ポイント名によって上書き？"

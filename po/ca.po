@@ -1,0 +1,2147 @@
+# Catalan translation for cairo-dock-core
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the cairo-dock-core package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# ferran <ferro66@ya.com>, 2010.
+# ferran <traductor@ferrranroig.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: cairo-dock-core\n"
+"Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"PO-Revision-Date: 2011-04-19 12:35+0100\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-16 04:34+0000\n"
+"X-Generator: Launchpad (build 12735)\n"
+
+#: ../GnoMenu/GnoMenu:130
+msgid "Preferences"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:134
+msgid "About"
+msgstr "Quant a"
+
+#: ../GnoMenu/GnoMenu:137
+msgid "Edit Menus"
+msgstr ""
+
+#: ../Calendar/messages:1 ../Cardapio/messages:1 ../CpuWatcher/messages:1
+#: ../Deluge/messages:1 ../DiskFree/messages:1 ../Facebook/messages:1
+#: ../GTG/messages:1 ../GnoMenu/messages:1 ../Google/messages:1
+#: ../KTorrent/messages:1 ../Lancelot/messages:1 ../Liferea/messages:1
+#: ../MintMenu/messages:1 ../Pidgin/messages:1 ../Quote/messages:1
+#: ../RubyBattery/messages:1 ../ShortUrl/messages:1 ../SubDock/messages:1
+#: ../Translator/messages:1 ../Transmission/messages:1 ../WebSearch/messages:1
+#: ../WindowsKiller/messages:1 ../Xchat/messages:1
+#, fuzzy
+msgid "Icon"
+msgstr "Icones"
+
+#: ../Calendar/messages:3 ../Cardapio/messages:3 ../CpuWatcher/messages:3
+#: ../Deluge/messages:3 ../DiskFree/messages:3 ../Facebook/messages:3
+#: ../GTG/messages:3 ../GnoMenu/messages:3 ../Google/messages:3
+#: ../KTorrent/messages:3 ../Lancelot/messages:3 ../Liferea/messages:3
+#: ../MintMenu/messages:3 ../Pidgin/messages:3 ../Quote/messages:3
+#: ../RubyBattery/messages:3 ../ShortUrl/messages:3 ../Translator/messages:3
+#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
+msgid "Applet"
+msgstr ""
+
+#: ../Calendar/messages:5 ../Cardapio/messages:5 ../CpuWatcher/messages:5
+#: ../Deluge/messages:5 ../DiskFree/messages:5 ../Facebook/messages:5
+#: ../GTG/messages:5 ../GnoMenu/messages:5 ../Google/messages:5
+#: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
+#: ../MintMenu/messages:5 ../Pidgin/messages:5 ../Quote/messages:5
+#: ../RubyBattery/messages:5 ../ShortUrl/messages:5 ../SubDock/messages:13
+#: ../Translator/messages:5 ../Transmission/messages:5 ../WebSearch/messages:3
+#: ../WindowsKiller/messages:5 ../Xchat/messages:5
+msgid "Name of the dock it belongs to:"
+msgstr ""
+
+#: ../Calendar/messages:7 ../Cardapio/messages:7 ../CpuWatcher/messages:7
+#: ../Deluge/messages:7 ../DiskFree/messages:7 ../Facebook/messages:7
+#: ../GTG/messages:7 ../GnoMenu/messages:7 ../Google/messages:7
+#: ../KTorrent/messages:7 ../Lancelot/messages:7 ../MintMenu/messages:7
+#: ../Pidgin/messages:7 ../Quote/messages:9 ../RubyBattery/messages:7
+#: ../ShortUrl/messages:7 ../SubDock/messages:7 ../Transmission/messages:7
+#: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
+msgid "Name of the icon as it will appear in its label in the dock :"
+msgstr ""
+
+#: ../Calendar/messages:9 ../Cardapio/messages:9 ../CpuWatcher/messages:9
+#: ../Deluge/messages:9 ../DiskFree/messages:9 ../Facebook/messages:9
+#: ../GTG/messages:9 ../GnoMenu/messages:9 ../Google/messages:9
+#: ../KTorrent/messages:9 ../Lancelot/messages:9 ../Liferea/messages:9
+#: ../MintMenu/messages:9 ../Pidgin/messages:9 ../Quote/messages:11
+#: ../RubyBattery/messages:9 ../ShortUrl/messages:9 ../Translator/messages:11
+#: ../Transmission/messages:9 ../WebSearch/messages:7
+#: ../WindowsKiller/messages:9 ../Xchat/messages:9
+msgid "Display"
+msgstr ""
+
+#: ../Calendar/messages:11 ../Cardapio/messages:11 ../CpuWatcher/messages:11
+#: ../Deluge/messages:11 ../DiskFree/messages:11 ../Facebook/messages:11
+#: ../GTG/messages:11 ../GnoMenu/messages:11 ../Google/messages:11
+#: ../KTorrent/messages:11 ../Lancelot/messages:11 ../Liferea/messages:11
+#: ../MintMenu/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
+#: ../RubyBattery/messages:11 ../ShortUrl/messages:11 ../SubDock/messages:9
+#: ../Transmission/messages:11 ../WebSearch/messages:9
+#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+#, fuzzy
+msgid "Let empty to use the default one."
+msgstr "Deixeu-ho buit per usar la mateixa vista que el Dock principal."
+
+#: ../Calendar/messages:13 ../Cardapio/messages:13 ../CpuWatcher/messages:13
+#: ../Deluge/messages:13 ../DiskFree/messages:13 ../Facebook/messages:13
+#: ../GTG/messages:13 ../GnoMenu/messages:13 ../Google/messages:13
+#: ../KTorrent/messages:13 ../Lancelot/messages:13 ../Liferea/messages:13
+#: ../MintMenu/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
+#: ../RubyBattery/messages:13 ../ShortUrl/messages:13 ../SubDock/messages:11
+#: ../Transmission/messages:13 ../WebSearch/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
+msgid "Image's filename :"
+msgstr ""
+
+#: ../Calendar/messages:15 ../Cardapio/messages:15 ../CpuWatcher/messages:15
+#: ../Deluge/messages:15 ../DiskFree/messages:15 ../Facebook/messages:15
+#: ../GTG/messages:15 ../GnoMenu/messages:15 ../Google/messages:15
+#: ../KTorrent/messages:15 ../Lancelot/messages:15 ../Liferea/messages:15
+#: ../MintMenu/messages:15 ../Pidgin/messages:15 ../Quote/messages:17
+#: ../RubyBattery/messages:15 ../ShortUrl/messages:15 ../SubDock/messages:3
+#: ../Translator/messages:17 ../Transmission/messages:15
+#: ../WebSearch/messages:13 ../WindowsKiller/messages:15 ../Xchat/messages:15
+msgid "Set to 0 to use the default applet size"
+msgstr ""
+
+#: ../Calendar/messages:17 ../Cardapio/messages:17 ../CpuWatcher/messages:17
+#: ../Deluge/messages:17 ../DiskFree/messages:17 ../Facebook/messages:17
+#: ../GTG/messages:17 ../GnoMenu/messages:17 ../Google/messages:17
+#: ../KTorrent/messages:17 ../Lancelot/messages:17 ../Liferea/messages:17
+#: ../MintMenu/messages:17 ../Pidgin/messages:17 ../Quote/messages:19
+#: ../RubyBattery/messages:17 ../ShortUrl/messages:17 ../SubDock/messages:5
+#: ../Translator/messages:19 ../Transmission/messages:17
+#: ../WebSearch/messages:15 ../WindowsKiller/messages:17 ../Xchat/messages:17
+msgid "Desired icon size for this applet"
+msgstr ""
+
+#: ../Calendar/messages:19 ../Cardapio/messages:19 ../CpuWatcher/messages:19
+#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Facebook/messages:19
+#: ../GTG/messages:19 ../GnoMenu/messages:19 ../Google/messages:19
+#: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
+#: ../MintMenu/messages:19 ../Pidgin/messages:19 ../Quote/messages:21
+#: ../RubyBattery/messages:19 ../ShortUrl/messages:19
+#: ../Translator/messages:21 ../Transmission/messages:19
+#: ../WebSearch/messages:17 ../Xchat/messages:19
+#, fuzzy
+msgid "Applet's Handbook"
+msgstr "Manual de la miniaplicació"
+
+#: ../Calendar/messages:21 ../Cardapio/messages:21 ../CpuWatcher/messages:21
+#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Facebook/messages:21
+#: ../GTG/messages:21 ../GnoMenu/messages:21 ../Google/messages:21
+#: ../KTorrent/messages:21 ../Lancelot/messages:21 ../Liferea/messages:21
+#: ../MintMenu/messages:21 ../Pidgin/messages:21 ../Quote/messages:23
+#: ../RubyBattery/messages:21 ../ShortUrl/messages:21 ../SubDock/messages:15
+#: ../Translator/messages:23 ../Transmission/messages:21
+#: ../WebSearch/messages:19 ../WindowsKiller/messages:19 ../Xchat/messages:21
+msgid "Desklet"
+msgstr ""
+
+#: ../Calendar/messages:23 ../Cardapio/messages:23 ../CpuWatcher/messages:23
+#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Facebook/messages:23
+#: ../GTG/messages:23 ../GnoMenu/messages:23 ../Google/messages:23
+#: ../KTorrent/messages:23 ../Lancelot/messages:23 ../Liferea/messages:23
+#: ../MintMenu/messages:23 ../Pidgin/messages:23 ../Quote/messages:25
+#: ../RubyBattery/messages:23 ../ShortUrl/messages:23 ../SubDock/messages:17
+#: ../Translator/messages:25 ../Transmission/messages:23
+#: ../WebSearch/messages:21 ../WindowsKiller/messages:21 ../Xchat/messages:23
+msgid "Position"
+msgstr "Posició"
+
+#: ../Calendar/messages:25 ../Cardapio/messages:25 ../CpuWatcher/messages:25
+#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Facebook/messages:25
+#: ../GTG/messages:25 ../GnoMenu/messages:25 ../Google/messages:25
+#: ../KTorrent/messages:25 ../Lancelot/messages:25 ../Liferea/messages:25
+#: ../MintMenu/messages:25 ../Pidgin/messages:25 ../Quote/messages:27
+#: ../RubyBattery/messages:25 ../ShortUrl/messages:25 ../SubDock/messages:19
+#: ../Translator/messages:27 ../Transmission/messages:25
+#: ../WebSearch/messages:23 ../WindowsKiller/messages:23 ../Xchat/messages:25
+msgid ""
+"If locked, the desklet cannot be moved by simply dragging it with the left "
+"mouse button. It can still be moved with ALT + left-click."
+msgstr ""
+
+#: ../Calendar/messages:27 ../Cardapio/messages:27 ../CpuWatcher/messages:27
+#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Facebook/messages:27
+#: ../GTG/messages:27 ../GnoMenu/messages:27 ../Google/messages:27
+#: ../KTorrent/messages:27 ../Lancelot/messages:27 ../Liferea/messages:27
+#: ../MintMenu/messages:27 ../Pidgin/messages:27 ../Quote/messages:29
+#: ../RubyBattery/messages:27 ../ShortUrl/messages:27 ../SubDock/messages:21
+#: ../Translator/messages:29 ../Transmission/messages:27
+#: ../WebSearch/messages:25 ../WindowsKiller/messages:25 ../Xchat/messages:27
+#, fuzzy
+msgid "Lock position?"
+msgstr "blocar icones"
+
+#: ../Calendar/messages:29 ../Cardapio/messages:29 ../CpuWatcher/messages:29
+#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Facebook/messages:29
+#: ../GTG/messages:29 ../GnoMenu/messages:29 ../Google/messages:29
+#: ../KTorrent/messages:29 ../Lancelot/messages:29 ../Liferea/messages:29
+#: ../MintMenu/messages:29 ../Pidgin/messages:29 ../Quote/messages:31
+#: ../RubyBattery/messages:29 ../ShortUrl/messages:29 ../SubDock/messages:23
+#: ../Translator/messages:31 ../Transmission/messages:29
+#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
+msgid ""
+"Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+
+#: ../Calendar/messages:31 ../Cardapio/messages:31 ../CpuWatcher/messages:31
+#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Facebook/messages:31
+#: ../GTG/messages:31 ../GnoMenu/messages:31 ../Google/messages:31
+#: ../KTorrent/messages:31 ../Lancelot/messages:31 ../Liferea/messages:31
+#: ../MintMenu/messages:31 ../Pidgin/messages:31 ../Quote/messages:33
+#: ../RubyBattery/messages:31 ../ShortUrl/messages:31 ../SubDock/messages:25
+#: ../Translator/messages:33 ../Transmission/messages:31
+#: ../WebSearch/messages:29 ../WindowsKiller/messages:29 ../Xchat/messages:31
+msgid "Desklet dimensions (width x height):"
+msgstr ""
+
+#: ../Calendar/messages:33 ../Cardapio/messages:33 ../CpuWatcher/messages:33
+#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Facebook/messages:33
+#: ../GTG/messages:33 ../GnoMenu/messages:33 ../Google/messages:33
+#: ../KTorrent/messages:33 ../Lancelot/messages:33 ../Liferea/messages:33
+#: ../MintMenu/messages:33 ../Pidgin/messages:33 ../Quote/messages:35
+#: ../RubyBattery/messages:33 ../ShortUrl/messages:33 ../SubDock/messages:27
+#: ../Translator/messages:35 ../Transmission/messages:33
+#: ../WebSearch/messages:31 ../WindowsKiller/messages:31 ../Xchat/messages:33
+msgid ""
+"Depending on your WindowManager, you may be able to move this with ALT + "
+"left-click.. Negative values are counted from the right/bottom of the screen"
+msgstr ""
+
+#: ../Calendar/messages:35 ../Cardapio/messages:35 ../CpuWatcher/messages:35
+#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Facebook/messages:35
+#: ../GTG/messages:35 ../GnoMenu/messages:35 ../Google/messages:35
+#: ../KTorrent/messages:35 ../Lancelot/messages:35 ../Liferea/messages:35
+#: ../MintMenu/messages:35 ../Pidgin/messages:35 ../Quote/messages:37
+#: ../RubyBattery/messages:35 ../ShortUrl/messages:35 ../SubDock/messages:29
+#: ../Translator/messages:37 ../Transmission/messages:35
+#: ../WebSearch/messages:33 ../WindowsKiller/messages:33 ../Xchat/messages:35
+msgid "Desklet position (x, y):"
+msgstr ""
+
+#: ../Calendar/messages:37 ../Cardapio/messages:37 ../CpuWatcher/messages:37
+#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Facebook/messages:37
+#: ../GTG/messages:37 ../GnoMenu/messages:37 ../Google/messages:37
+#: ../KTorrent/messages:37 ../Lancelot/messages:37 ../Liferea/messages:37
+#: ../MintMenu/messages:37 ../Pidgin/messages:37 ../Quote/messages:39
+#: ../RubyBattery/messages:37 ../ShortUrl/messages:37 ../SubDock/messages:31
+#: ../Translator/messages:39 ../Transmission/messages:37
+#: ../WebSearch/messages:35 ../WindowsKiller/messages:35 ../Xchat/messages:37
+msgid ""
+"You can quickly rotate the desklet with the mouse, by dragging the little "
+"buttons on its left and top sides."
+msgstr ""
+
+#: ../Calendar/messages:39 ../Cardapio/messages:39 ../CpuWatcher/messages:39
+#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Facebook/messages:39
+#: ../GTG/messages:39 ../GnoMenu/messages:39 ../Google/messages:39
+#: ../KTorrent/messages:39 ../Lancelot/messages:39 ../Liferea/messages:39
+#: ../MintMenu/messages:39 ../Pidgin/messages:39 ../Quote/messages:41
+#: ../RubyBattery/messages:39 ../ShortUrl/messages:39 ../SubDock/messages:33
+#: ../Translator/messages:41 ../Transmission/messages:39
+#: ../WebSearch/messages:37 ../WindowsKiller/messages:37 ../Xchat/messages:39
+#, fuzzy
+msgid "Rotation:"
+msgstr "aplicacions"
+
+#: ../Calendar/messages:41 ../Cardapio/messages:41 ../CpuWatcher/messages:41
+#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Facebook/messages:41
+#: ../GTG/messages:41 ../GnoMenu/messages:41 ../Google/messages:41
+#: ../KTorrent/messages:41 ../Lancelot/messages:41 ../Liferea/messages:41
+#: ../MintMenu/messages:41 ../Pidgin/messages:41 ../Quote/messages:43
+#: ../RubyBattery/messages:41 ../ShortUrl/messages:41 ../SubDock/messages:35
+#: ../Translator/messages:43 ../Transmission/messages:41
+#: ../WebSearch/messages:39 ../WindowsKiller/messages:39 ../Xchat/messages:41
+msgid "Visibility"
+msgstr "Visibilitat"
+
+#: ../Calendar/messages:43 ../Cardapio/messages:43 ../CpuWatcher/messages:43
+#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Facebook/messages:43
+#: ../GTG/messages:43 ../GnoMenu/messages:43 ../Google/messages:43
+#: ../KTorrent/messages:43 ../Lancelot/messages:43 ../Liferea/messages:43
+#: ../MintMenu/messages:43 ../Pidgin/messages:43 ../Quote/messages:45
+#: ../RubyBattery/messages:43 ../ShortUrl/messages:43 ../SubDock/messages:37
+#: ../Translator/messages:45 ../Transmission/messages:43
+#: ../WebSearch/messages:41 ../WindowsKiller/messages:41 ../Xchat/messages:43
+msgid "Is detached from the dock"
+msgstr ""
+
+#: ../Calendar/messages:45 ../Cardapio/messages:45 ../CpuWatcher/messages:45
+#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Facebook/messages:45
+#: ../GTG/messages:45 ../GnoMenu/messages:45 ../Google/messages:45
+#: ../KTorrent/messages:45 ../Lancelot/messages:45 ../Liferea/messages:45
+#: ../MintMenu/messages:45 ../Pidgin/messages:45 ../Quote/messages:47
+#: ../RubyBattery/messages:45 ../ShortUrl/messages:45 ../SubDock/messages:39
+#: ../Translator/messages:47 ../Transmission/messages:45
+#: ../WebSearch/messages:43 ../WindowsKiller/messages:43 ../Xchat/messages:45
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=utility)"
+msgstr ""
+
+#: ../Calendar/messages:47 ../Cardapio/messages:47 ../CpuWatcher/messages:47
+#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Facebook/messages:47
+#: ../GTG/messages:47 ../GnoMenu/messages:47 ../Google/messages:47
+#: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
+#: ../MintMenu/messages:47 ../Pidgin/messages:47 ../Quote/messages:49
+#: ../RubyBattery/messages:47 ../ShortUrl/messages:47 ../SubDock/messages:41
+#: ../Translator/messages:49 ../Transmission/messages:47
+#: ../WebSearch/messages:45 ../WindowsKiller/messages:45 ../Xchat/messages:47
+msgid "Visibility:"
+msgstr "Visibilitat:"
+
+#: ../Calendar/messages:49 ../Cardapio/messages:49 ../CpuWatcher/messages:49
+#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Facebook/messages:49
+#: ../GTG/messages:49 ../GnoMenu/messages:49 ../Google/messages:49
+#: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
+#: ../MintMenu/messages:49 ../Pidgin/messages:49 ../Quote/messages:51
+#: ../RubyBattery/messages:49 ../ShortUrl/messages:49 ../SubDock/messages:43
+#: ../Translator/messages:51 ../Transmission/messages:49
+#: ../WebSearch/messages:47 ../WindowsKiller/messages:47 ../Xchat/messages:49
+msgid "Normal"
+msgstr ""
+
+#: ../Calendar/messages:51 ../Cardapio/messages:51 ../CpuWatcher/messages:51
+#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Facebook/messages:51
+#: ../GTG/messages:51 ../GnoMenu/messages:51 ../Google/messages:51
+#: ../KTorrent/messages:51 ../Lancelot/messages:51 ../Liferea/messages:51
+#: ../MintMenu/messages:51 ../Pidgin/messages:51 ../Quote/messages:53
+#: ../RubyBattery/messages:51 ../ShortUrl/messages:51 ../SubDock/messages:45
+#: ../Translator/messages:53 ../Transmission/messages:51
+#: ../WebSearch/messages:49 ../WindowsKiller/messages:49 ../Xchat/messages:51
+msgid "Keep above"
+msgstr ""
+
+#: ../Calendar/messages:53 ../Cardapio/messages:53 ../CpuWatcher/messages:53
+#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Facebook/messages:53
+#: ../GTG/messages:53 ../GnoMenu/messages:53 ../Google/messages:53
+#: ../KTorrent/messages:53 ../Lancelot/messages:53 ../Liferea/messages:53
+#: ../MintMenu/messages:53 ../Pidgin/messages:53 ../Quote/messages:55
+#: ../RubyBattery/messages:53 ../ShortUrl/messages:53 ../SubDock/messages:47
+#: ../Translator/messages:55 ../Transmission/messages:53
+#: ../WebSearch/messages:51 ../WindowsKiller/messages:51 ../Xchat/messages:53
+msgid "Keep below"
+msgstr ""
+
+#: ../Calendar/messages:55 ../Cardapio/messages:55 ../CpuWatcher/messages:55
+#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Facebook/messages:55
+#: ../GTG/messages:55 ../GnoMenu/messages:55 ../Google/messages:55
+#: ../KTorrent/messages:55 ../Lancelot/messages:55 ../Liferea/messages:55
+#: ../MintMenu/messages:55 ../Pidgin/messages:55 ../Quote/messages:57
+#: ../RubyBattery/messages:55 ../ShortUrl/messages:55 ../SubDock/messages:49
+#: ../Translator/messages:57 ../Transmission/messages:55
+#: ../WebSearch/messages:53 ../WindowsKiller/messages:53 ../Xchat/messages:55
+msgid "Keep on widget layer"
+msgstr ""
+
+#: ../Calendar/messages:57 ../Cardapio/messages:57 ../CpuWatcher/messages:57
+#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Facebook/messages:57
+#: ../GTG/messages:57 ../GnoMenu/messages:57 ../Google/messages:57
+#: ../KTorrent/messages:57 ../Lancelot/messages:57 ../Liferea/messages:57
+#: ../MintMenu/messages:57 ../Pidgin/messages:57 ../Quote/messages:59
+#: ../RubyBattery/messages:57 ../ShortUrl/messages:57 ../SubDock/messages:51
+#: ../Translator/messages:59 ../Transmission/messages:57
+#: ../WebSearch/messages:55 ../WindowsKiller/messages:55 ../Xchat/messages:57
+msgid "Reserve space"
+msgstr ""
+
+#: ../Calendar/messages:59 ../Cardapio/messages:59 ../CpuWatcher/messages:59
+#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Facebook/messages:59
+#: ../GTG/messages:59 ../GnoMenu/messages:59 ../Google/messages:59
+#: ../KTorrent/messages:59 ../Lancelot/messages:59 ../Liferea/messages:59
+#: ../MintMenu/messages:59 ../Pidgin/messages:59 ../Quote/messages:61
+#: ../RubyBattery/messages:59 ../ShortUrl/messages:59 ../SubDock/messages:53
+#: ../Translator/messages:61 ../Transmission/messages:59
+#: ../WebSearch/messages:57 ../WindowsKiller/messages:57 ../Xchat/messages:59
+msgid "Should be visible on all desktops?"
+msgstr ""
+
+#: ../Calendar/messages:61 ../Cardapio/messages:61 ../CpuWatcher/messages:61
+#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Facebook/messages:61
+#: ../GTG/messages:61 ../GnoMenu/messages:61 ../Google/messages:61
+#: ../KTorrent/messages:61 ../Lancelot/messages:61 ../Liferea/messages:61
+#: ../MintMenu/messages:61 ../Pidgin/messages:61 ../Quote/messages:63
+#: ../RubyBattery/messages:61 ../ShortUrl/messages:61 ../SubDock/messages:55
+#: ../Translator/messages:63 ../Transmission/messages:61
+#: ../WebSearch/messages:59 ../WindowsKiller/messages:59 ../Xchat/messages:61
+msgid "Decorations"
+msgstr ""
+
+#: ../Calendar/messages:63 ../Cardapio/messages:63 ../CpuWatcher/messages:63
+#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Facebook/messages:63
+#: ../GTG/messages:63 ../GnoMenu/messages:63 ../Google/messages:63
+#: ../KTorrent/messages:63 ../Lancelot/messages:63 ../Liferea/messages:63
+#: ../MintMenu/messages:63 ../Pidgin/messages:63 ../Quote/messages:65
+#: ../RubyBattery/messages:63 ../ShortUrl/messages:63 ../SubDock/messages:57
+#: ../Translator/messages:65 ../Transmission/messages:63
+#: ../WebSearch/messages:61 ../WindowsKiller/messages:61 ../Xchat/messages:63
+msgid "Choose 'Custom decorations' to define your own decorations below."
+msgstr ""
+
+#: ../Calendar/messages:65 ../Cardapio/messages:65 ../CpuWatcher/messages:65
+#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Facebook/messages:65
+#: ../GTG/messages:65 ../GnoMenu/messages:65 ../Google/messages:65
+#: ../KTorrent/messages:65 ../Lancelot/messages:65 ../Liferea/messages:65
+#: ../MintMenu/messages:65 ../Pidgin/messages:65 ../Quote/messages:67
+#: ../RubyBattery/messages:65 ../ShortUrl/messages:65 ../SubDock/messages:59
+#: ../Translator/messages:67 ../Transmission/messages:65
+#: ../WebSearch/messages:63 ../WindowsKiller/messages:63 ../Xchat/messages:65
+#, fuzzy
+msgid "Choose a decoration theme for this desklet:"
+msgstr "Tria la vista per aquest Dock:/"
+
+#: ../Calendar/messages:67 ../Cardapio/messages:67 ../CpuWatcher/messages:67
+#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Facebook/messages:67
+#: ../GTG/messages:67 ../GnoMenu/messages:67 ../Google/messages:67
+#: ../KTorrent/messages:67 ../Lancelot/messages:67 ../Liferea/messages:67
+#: ../MintMenu/messages:67 ../Pidgin/messages:67 ../Quote/messages:69
+#: ../RubyBattery/messages:67 ../ShortUrl/messages:67 ../SubDock/messages:61
+#: ../Translator/messages:69 ../Transmission/messages:67
+#: ../WebSearch/messages:65 ../WindowsKiller/messages:65 ../Xchat/messages:67
+msgid ""
+"Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
+msgstr ""
+
+#: ../Calendar/messages:69 ../Cardapio/messages:69 ../CpuWatcher/messages:69
+#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Facebook/messages:69
+#: ../GTG/messages:69 ../GnoMenu/messages:69 ../Google/messages:69
+#: ../KTorrent/messages:69 ../Lancelot/messages:69 ../Liferea/messages:69
+#: ../MintMenu/messages:69 ../Pidgin/messages:69 ../Quote/messages:71
+#: ../RubyBattery/messages:69 ../ShortUrl/messages:69 ../SubDock/messages:63
+#: ../Translator/messages:71 ../Transmission/messages:69
+#: ../WebSearch/messages:67 ../WindowsKiller/messages:67 ../Xchat/messages:69
+#, fuzzy
+msgid "Background image:"
+msgstr "Fons"
+
+#: ../Calendar/messages:71 ../Cardapio/messages:71 ../CpuWatcher/messages:71
+#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Facebook/messages:71
+#: ../GTG/messages:71 ../GnoMenu/messages:71 ../Google/messages:71
+#: ../KTorrent/messages:71 ../Lancelot/messages:71 ../Liferea/messages:71
+#: ../MintMenu/messages:71 ../Pidgin/messages:71 ../Quote/messages:73
+#: ../RubyBattery/messages:71 ../ShortUrl/messages:71 ../SubDock/messages:65
+#: ../Translator/messages:73 ../Transmission/messages:71
+#: ../WebSearch/messages:69 ../WindowsKiller/messages:69 ../Xchat/messages:71
+#, fuzzy
+msgid "Background transparency:"
+msgstr "Fes les icones transparents"
+
+#: ../Calendar/messages:73 ../Cardapio/messages:73 ../CpuWatcher/messages:73
+#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Facebook/messages:73
+#: ../GTG/messages:73 ../GnoMenu/messages:73 ../Google/messages:73
+#: ../KTorrent/messages:73 ../Lancelot/messages:73 ../Liferea/messages:73
+#: ../MintMenu/messages:73 ../Pidgin/messages:73 ../Quote/messages:75
+#: ../RubyBattery/messages:73 ../ShortUrl/messages:73 ../SubDock/messages:67
+#: ../Translator/messages:75 ../Transmission/messages:73
+#: ../WebSearch/messages:71 ../WindowsKiller/messages:71 ../Xchat/messages:73
+msgid "in pixels. Use this to adjust the left position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:75 ../Cardapio/messages:75 ../CpuWatcher/messages:75
+#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Facebook/messages:75
+#: ../GTG/messages:75 ../GnoMenu/messages:75 ../Google/messages:75
+#: ../KTorrent/messages:75 ../Lancelot/messages:75 ../Liferea/messages:75
+#: ../MintMenu/messages:75 ../Pidgin/messages:75 ../Quote/messages:77
+#: ../RubyBattery/messages:75 ../ShortUrl/messages:75 ../SubDock/messages:69
+#: ../Translator/messages:77 ../Transmission/messages:75
+#: ../WebSearch/messages:73 ../WindowsKiller/messages:73 ../Xchat/messages:75
+#, fuzzy
+msgid "Left offset:"
+msgstr "Desplaçament lateral:"
+
+#: ../Calendar/messages:77 ../Cardapio/messages:77 ../CpuWatcher/messages:77
+#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Facebook/messages:77
+#: ../GTG/messages:77 ../GnoMenu/messages:77 ../Google/messages:77
+#: ../KTorrent/messages:77 ../Lancelot/messages:77 ../Liferea/messages:77
+#: ../MintMenu/messages:77 ../Pidgin/messages:77 ../Quote/messages:79
+#: ../RubyBattery/messages:77 ../ShortUrl/messages:77 ../SubDock/messages:71
+#: ../Translator/messages:79 ../Transmission/messages:77
+#: ../WebSearch/messages:75 ../WindowsKiller/messages:75 ../Xchat/messages:77
+msgid "in pixels. Use this to adjust the top position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:79 ../Cardapio/messages:79 ../CpuWatcher/messages:79
+#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Facebook/messages:79
+#: ../GTG/messages:79 ../GnoMenu/messages:79 ../Google/messages:79
+#: ../KTorrent/messages:79 ../Lancelot/messages:79 ../Liferea/messages:79
+#: ../MintMenu/messages:79 ../Pidgin/messages:79 ../Quote/messages:81
+#: ../RubyBattery/messages:79 ../ShortUrl/messages:79 ../SubDock/messages:73
+#: ../Translator/messages:81 ../Transmission/messages:79
+#: ../WebSearch/messages:77 ../WindowsKiller/messages:77 ../Xchat/messages:79
+#, fuzzy
+msgid "Top offset:"
+msgstr "Desplaçament lateral:"
+
+#: ../Calendar/messages:81 ../Cardapio/messages:81 ../CpuWatcher/messages:81
+#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Facebook/messages:81
+#: ../GTG/messages:81 ../GnoMenu/messages:81 ../Google/messages:81
+#: ../KTorrent/messages:81 ../Lancelot/messages:81 ../Liferea/messages:81
+#: ../MintMenu/messages:81 ../Pidgin/messages:81 ../Quote/messages:83
+#: ../RubyBattery/messages:81 ../ShortUrl/messages:81 ../SubDock/messages:75
+#: ../Translator/messages:83 ../Transmission/messages:81
+#: ../WebSearch/messages:79 ../WindowsKiller/messages:79 ../Xchat/messages:81
+msgid "in pixels. Use this to adjust the right position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:83 ../Cardapio/messages:83 ../CpuWatcher/messages:83
+#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Facebook/messages:83
+#: ../GTG/messages:83 ../GnoMenu/messages:83 ../Google/messages:83
+#: ../KTorrent/messages:83 ../Lancelot/messages:83 ../Liferea/messages:83
+#: ../MintMenu/messages:83 ../Pidgin/messages:83 ../Quote/messages:85
+#: ../RubyBattery/messages:83 ../ShortUrl/messages:83 ../SubDock/messages:77
+#: ../Translator/messages:85 ../Transmission/messages:83
+#: ../WebSearch/messages:81 ../WindowsKiller/messages:81 ../Xchat/messages:83
+#, fuzzy
+msgid "Right offset:"
+msgstr "Desplaçament lateral:"
+
+#: ../Calendar/messages:85 ../Cardapio/messages:85 ../CpuWatcher/messages:85
+#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Facebook/messages:85
+#: ../GTG/messages:85 ../GnoMenu/messages:85 ../Google/messages:85
+#: ../KTorrent/messages:85 ../Lancelot/messages:85 ../Liferea/messages:85
+#: ../MintMenu/messages:85 ../Pidgin/messages:85 ../Quote/messages:87
+#: ../RubyBattery/messages:85 ../ShortUrl/messages:85 ../SubDock/messages:79
+#: ../Translator/messages:87 ../Transmission/messages:85
+#: ../WebSearch/messages:83 ../WindowsKiller/messages:83 ../Xchat/messages:85
+msgid "in pixels. Use this to adjust the bottom position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:87 ../Cardapio/messages:87 ../CpuWatcher/messages:87
+#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Facebook/messages:87
+#: ../GTG/messages:87 ../GnoMenu/messages:87 ../Google/messages:87
+#: ../KTorrent/messages:87 ../Lancelot/messages:87 ../Liferea/messages:87
+#: ../MintMenu/messages:87 ../Pidgin/messages:87 ../Quote/messages:89
+#: ../RubyBattery/messages:87 ../ShortUrl/messages:87 ../SubDock/messages:81
+#: ../Translator/messages:89 ../Transmission/messages:87
+#: ../WebSearch/messages:85 ../WindowsKiller/messages:85 ../Xchat/messages:87
+#, fuzzy
+msgid "Bottom offset:"
+msgstr "Dock inferior"
+
+#: ../Calendar/messages:89 ../Cardapio/messages:89 ../CpuWatcher/messages:89
+#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Facebook/messages:89
+#: ../GTG/messages:89 ../GnoMenu/messages:89 ../Google/messages:89
+#: ../KTorrent/messages:89 ../Lancelot/messages:89 ../Liferea/messages:89
+#: ../MintMenu/messages:89 ../Pidgin/messages:89 ../Quote/messages:91
+#: ../RubyBattery/messages:89 ../ShortUrl/messages:89 ../SubDock/messages:83
+#: ../Translator/messages:91 ../Transmission/messages:89
+#: ../WebSearch/messages:87 ../WindowsKiller/messages:87 ../Xchat/messages:89
+msgid ""
+"Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
+"no image."
+msgstr ""
+
+#: ../Calendar/messages:91 ../Cardapio/messages:91 ../CpuWatcher/messages:91
+#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Facebook/messages:91
+#: ../GTG/messages:91 ../GnoMenu/messages:91 ../Google/messages:91
+#: ../KTorrent/messages:91 ../Lancelot/messages:91 ../Liferea/messages:91
+#: ../MintMenu/messages:91 ../Pidgin/messages:91 ../Quote/messages:93
+#: ../RubyBattery/messages:91 ../ShortUrl/messages:91 ../SubDock/messages:85
+#: ../Translator/messages:93 ../Transmission/messages:91
+#: ../WebSearch/messages:89 ../WindowsKiller/messages:89 ../Xchat/messages:91
+msgid "Foreground image:"
+msgstr ""
+
+#: ../Calendar/messages:93 ../Cardapio/messages:93 ../CpuWatcher/messages:93
+#: ../Deluge/messages:93 ../DiskFree/messages:93 ../Facebook/messages:93
+#: ../GTG/messages:93 ../GnoMenu/messages:93 ../Google/messages:93
+#: ../KTorrent/messages:93 ../Lancelot/messages:93 ../Liferea/messages:93
+#: ../MintMenu/messages:93 ../Pidgin/messages:93 ../Quote/messages:95
+#: ../RubyBattery/messages:93 ../ShortUrl/messages:93 ../SubDock/messages:87
+#: ../Translator/messages:95 ../Transmission/messages:93
+#: ../WebSearch/messages:91 ../WindowsKiller/messages:91 ../Xchat/messages:93
+msgid "Foreground tansparency:"
+msgstr ""
+
+#: ../Calendar/messages:95 ../Cardapio/messages:95 ../CpuWatcher/messages:95
+#: ../Deluge/messages:95 ../DiskFree/messages:95 ../Facebook/messages:95
+#: ../GTG/messages:95 ../GnoMenu/messages:95 ../KTorrent/messages:95
+#: ../Lancelot/messages:95 ../Liferea/messages:95 ../MintMenu/messages:95
+#: ../Pidgin/messages:95 ../Quote/messages:97 ../RubyBattery/messages:95
+#: ../ShortUrl/messages:95 ../SubDock/messages:89 ../Translator/messages:97
+#: ../Transmission/messages:95 ../WebSearch/messages:93 ../Xchat/messages:95
+#, fuzzy
+msgid "Configuration"
+msgstr "Configurar"
+
+#: ../Calendar/messages:97
+#, fuzzy
+msgid "Applications"
+msgstr "aplicacions"
+
+#: ../Calendar/messages:99
+msgid "Command to launch your favourite calendar application (middle click):"
+msgstr ""
+
+#: ../Calendar/messages:101
+msgid "Command to execute on dropping a file onto the calendar-icon:"
+msgstr ""
+
+#: ../Calendar/messages:103 ../Facebook/messages:117
+msgid "Behaviour"
+msgstr "Comportament"
+
+#: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
+msgid "in s."
+msgstr ""
+
+#: ../Calendar/messages:107
+msgid "Time length of dialogues for the calendar :"
+msgstr ""
+
+#: ../Calendar/messages:111
+msgid "Time length of dialogues for events of the day :"
+msgstr ""
+
+#: ../Calendar/messages:115
+msgid "Time length of dialogues for calendar of next month :"
+msgstr ""
+
+#: ../Calendar/messages:117
+msgid ""
+"The path to a script to generate an icon. Leave it empty to use the default "
+"one."
+msgstr ""
+
+#: ../Calendar/messages:119
+#, fuzzy
+msgid "Icon custom script:"
+msgstr "Mida de les icones:"
+
+#: ../Cardapio/messages:97 ../GnoMenu/messages:97 ../Lancelot/messages:97
+#: ../MintMenu/messages:97
+msgid "Shortkey to pop up the menu:"
+msgstr ""
+
+#: ../CpuWatcher/messages:97
+#, fuzzy
+msgid "in ms"
+msgstr "en ms."
+
+#: ../CpuWatcher/messages:99
+msgid "Refresh time :"
+msgstr ""
+
+#: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
+msgid "Shortkey to pop up the torrents info:"
+msgstr ""
+
+#: ../DiskFree/messages:97
+msgid ""
+"View available file system's space as Giga (checked) or Mega (unchecked) :"
+msgstr ""
+
+#: ../DiskFree/messages:99
+#, fuzzy
+msgid "in minutes"
+msgstr "en ms."
+
+#: ../DiskFree/messages:101
+msgid "Time between two file system's checking :"
+msgstr ""
+
+#: ../Facebook/messages:97
+#, fuzzy
+msgid "Notifications"
+msgstr "aplicacions"
+
+#: ../Facebook/messages:99
+msgid "Notifications for new messages?"
+msgstr ""
+
+#: ../Facebook/messages:101
+msgid ""
+"Notifications will keep recurring so long requests have not been either "
+"accepted or rejected."
+msgstr ""
+
+#: ../Facebook/messages:103
+msgid "Notifications for pending friend requests?"
+msgstr ""
+
+#: ../Facebook/messages:105
+msgid "likes, comments, tags, etc."
+msgstr ""
+
+#: ../Facebook/messages:107
+msgid "Notifications for unread notices?"
+msgstr ""
+
+#: ../Facebook/messages:109
+msgid "Notifications for pokes?"
+msgstr ""
+
+#: ../Facebook/messages:111
+msgid "Notifications for group invites?"
+msgstr ""
+
+#: ../Facebook/messages:113
+msgid "Notifications for event invites?"
+msgstr ""
+
+#: ../Facebook/messages:115
+msgid "Notifications for unread shares (deprecated)?"
+msgstr ""
+
+#: ../Facebook/messages:119
+msgid ""
+"\"always\" will notify you whenever the number of notifications is not 0; "
+"\"different\" will do so whenever the number of notifications changes; "
+"\"superior\" will notify you whenever it increases (default), \"never\"--"
+"obviously--will prevent the applet from bothering you. The applet will "
+"always set an emblem on the icon however."
+msgstr ""
+
+#: ../Facebook/messages:121
+msgid "Under what condition do you want the applet to notify you?:"
+msgstr ""
+
+#: ../Facebook/messages:123
+msgid "superior"
+msgstr ""
+
+#: ../Facebook/messages:125
+msgid "always"
+msgstr ""
+
+#: ../Facebook/messages:127
+msgid "different"
+msgstr ""
+
+#: ../Facebook/messages:129
+msgid "never"
+msgstr ""
+
+#: ../Facebook/messages:131
+msgid "Effect is \"bounce\" by default."
+msgstr ""
+
+#: ../Facebook/messages:133
+msgid ""
+"Do you want the applet to apply any effect on the icon during the "
+"notification?"
+msgstr ""
+
+#: ../Facebook/messages:135
+msgid "bounce"
+msgstr ""
+
+#: ../Facebook/messages:137
+msgid "blink"
+msgstr ""
+
+#: ../Facebook/messages:139
+msgid "pulse"
+msgstr ""
+
+#: ../Facebook/messages:141
+msgid "rotate"
+msgstr ""
+
+#: ../Facebook/messages:143
+msgid "spot"
+msgstr ""
+
+#: ../Facebook/messages:145
+msgid "wave"
+msgstr ""
+
+#: ../Facebook/messages:147
+msgid "wobbly"
+msgstr ""
+
+#: ../Facebook/messages:149 ../GTG/messages:113 ../Pidgin/messages:121
+#: ../Xchat/messages:113
+msgid "none"
+msgstr ""
+
+#: ../Facebook/messages:151
+msgid "True by default."
+msgstr ""
+
+#: ../Facebook/messages:153
+msgid "Do you want the applet to show a dialogue during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:155
+msgid "ATTENTION_SOUND is true by default."
+msgstr ""
+
+#: ../Facebook/messages:157
+msgid "Do you want the applet to play a sound during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:159
+msgid "Time in minutes."
+msgstr ""
+
+#: ../Facebook/messages:161
+msgid ""
+"How often do you want the applet to check your Facebook account? (in "
+"minutes):"
+msgstr ""
+
+#: ../Facebook/messages:163
+msgid "Appearance"
+msgstr "Aparença"
+
+#: ../Facebook/messages:165
+msgid "How do you want to represent the counter on the icon?"
+msgstr ""
+
+#: ../Facebook/messages:167
+msgid "emblem"
+msgstr ""
+
+#: ../Facebook/messages:169
+msgid "quickinfo"
+msgstr ""
+
+#: ../GTG/messages:97 ../Xchat/messages:99
+msgid "Bubbles duration :"
+msgstr ""
+
+#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
+msgid "Short"
+msgstr ""
+
+#: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
+msgid "Medium"
+msgstr "Mitjanes"
+
+#: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
+msgid "Long"
+msgstr ""
+
+#: ../GTG/messages:105 ../Xchat/messages:107
+msgid "Animation of the icon on receiving channel messages :"
+msgstr ""
+
+#: ../GTG/messages:107 ../Xchat/messages:97
+msgid "Display channel messages in a bubble :"
+msgstr ""
+
+#: ../GTG/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the "
+"icon.}\n"
+"history = 50\n"
+"j+[48;512] Post-it's initial dimension (width x height) :\n"
+"{Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+
+#: ../GTG/messages:111 ../Pidgin/messages:119 ../Xchat/messages:111
+msgid "Size of the history :"
+msgstr ""
+
+#: ../GTG/messages:115 ../Pidgin/messages:123 ../Xchat/messages:115
+#, fuzzy
+msgid "big"
+msgstr "Grans"
+
+#: ../Liferea/messages:7 ../Translator/messages:9
+msgid "Name of the icon as it will appear in its caption in the dock:"
+msgstr ""
+
+#: ../Liferea/messages:97
+#, fuzzy
+msgid "Show in the icon:"
+msgstr "Trieu un tema d'icones:"
+
+#: ../Liferea/messages:99
+msgid "Number of unread messages"
+msgstr ""
+
+#: ../Liferea/messages:101
+msgid " Number of new messages"
+msgstr ""
+
+#: ../Pidgin/messages:97 ../Pidgin/messages:101
+msgid "Parameters"
+msgstr ""
+
+#: ../Pidgin/messages:99
+#, fuzzy
+msgid "Choose a theme :"
+msgstr "Trieu un tema d'icones:"
+
+#: ../Pidgin/messages:103
+msgid "Display conversation messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:105
+msgid "Display chat messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:107
+msgid "Bubbles duration:"
+msgstr ""
+
+#: ../Pidgin/messages:115
+msgid "Animation of the icon on receiving a message:"
+msgstr ""
+
+#: ../Pidgin/messages:117 ../Xchat/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the icon."
+msgstr ""
+
+#: ../Quote/messages:7
+msgid "Let empty to display the current site's name."
+msgstr ""
+
+#: ../Quote/messages:99
+msgid "Quote source:"
+msgstr ""
+
+#: ../Quote/messages:101
+msgid "Quotationspage.com"
+msgstr ""
+
+#: ../Quote/messages:103
+msgid "Bash.org"
+msgstr ""
+
+#: ../Quote/messages:105
+msgid "Xkcdb.com"
+msgstr ""
+
+#: ../Quote/messages:107
+msgid "Qdb.us"
+msgstr ""
+
+#: ../Quote/messages:109
+msgid "Danstonchat.com"
+msgstr ""
+
+#: ../Quote/messages:111
+msgid "Jokes2go.com"
+msgstr ""
+
+#: ../Quote/messages:113
+msgid "Vidademerda.com.br"
+msgstr ""
+
+#: ../Quote/messages:115
+msgid "Grouphug.us"
+msgstr ""
+
+#: ../RubyBattery/messages:97
+msgid "Choose one of the available themes:"
+msgstr ""
+
+#: ../RubyBattery/messages:99
+#, fuzzy
+msgid "in seconds."
+msgstr "en segons"
+
+#: ../RubyBattery/messages:101
+msgid "Interval of time between 2 checks:"
+msgstr ""
+
+#: ../RubyBattery/messages:103
+msgid "Activate alert of critical charge?"
+msgstr ""
+
+#: ../RubyBattery/messages:105
+msgid "of % battery charge."
+msgstr ""
+
+#: ../RubyBattery/messages:107
+msgid "Threshold for the critical charge alert:"
+msgstr ""
+
+#: ../RubyBattery/messages:109
+msgid "Display a label with the charge?"
+msgstr ""
+
+#: ../ShortUrl/messages:97
+msgid ""
+"Cela vous permet de choisir de quel site vous souhaitez avoir l url "
+"raccourcie."
+msgstr ""
+
+#: ../ShortUrl/messages:99
+msgid "Choisissez votre site d url raccourcie :"
+msgstr ""
+
+#: ../ShortUrl/messages:101
+msgid "tinyurl.com"
+msgstr ""
+
+#: ../ShortUrl/messages:103
+msgid "shorterlink.org"
+msgstr ""
+
+#: ../ShortUrl/messages:105
+msgid "Cela vous permet de choisir l action a faire au clic gauche."
+msgstr ""
+
+#: ../ShortUrl/messages:107
+msgid "Action au clic gauche sur l icone :"
+msgstr ""
+
+#: ../ShortUrl/messages:109 ../ShortUrl/messages:117
+msgid "raccourcir le dernier lien de dnd2share"
+msgstr ""
+
+#: ../ShortUrl/messages:111 ../ShortUrl/messages:119
+msgid "ouvrir un dialogue pour raccourcir un lien"
+msgstr ""
+
+#: ../ShortUrl/messages:113
+msgid "Cela vous permet de choisir l action a faire au clic milieu."
+msgstr ""
+
+#: ../ShortUrl/messages:115
+msgid "Action au clic milieu sur l icone :"
+msgstr ""
+
+#: ../SubDock/messages:91
+msgid "Choose one of the available themes :"
+msgstr ""
+
+#: ../SubDock/messages:93
+msgid "Max value :"
+msgstr ""
+
+#: ../SubDock/messages:95
+msgid "Yes / No ?"
+msgstr ""
+
+#: ../Translator/messages:7
+msgid "Let empty to display the current source and destination languages."
+msgstr ""
+
+#: ../Translator/messages:13
+#, fuzzy
+msgid "Leave empty to use the default one."
+msgstr "Deixeu-ho buit per usar la mateixa vista que el Dock principal."
+
+#: ../Translator/messages:15
+msgid "Image filename:"
+msgstr ""
+
+#: ../Translator/messages:99
+msgid "Languages"
+msgstr ""
+
+#: ../Translator/messages:101
+msgid "Translate from:"
+msgstr ""
+
+#: ../Translator/messages:103 ../Translator/messages:219
+msgid "Afrikaans"
+msgstr ""
+
+#: ../Translator/messages:105 ../Translator/messages:221
+msgid "Albanian"
+msgstr ""
+
+#: ../Translator/messages:107 ../Translator/messages:223
+msgid "Arabic"
+msgstr ""
+
+#: ../Translator/messages:109 ../Translator/messages:225
+msgid "Armenian"
+msgstr ""
+
+#: ../Translator/messages:111 ../Translator/messages:227
+msgid "Azerbaijani"
+msgstr ""
+
+#: ../Translator/messages:113 ../Translator/messages:229
+msgid "Basque"
+msgstr ""
+
+#: ../Translator/messages:115 ../Translator/messages:231
+msgid "Belarusian"
+msgstr ""
+
+#: ../Translator/messages:117 ../Translator/messages:233
+msgid "Bulgarian"
+msgstr ""
+
+#: ../Translator/messages:119 ../Translator/messages:235
+msgid "Catalan"
+msgstr ""
+
+#: ../Translator/messages:121 ../Translator/messages:237
+msgid "Chinese"
+msgstr ""
+
+#: ../Translator/messages:123 ../Translator/messages:239
+msgid "Croatian"
+msgstr ""
+
+#: ../Translator/messages:125 ../Translator/messages:241
+msgid "Czech"
+msgstr ""
+
+#: ../Translator/messages:127 ../Translator/messages:243
+msgid "Danish"
+msgstr ""
+
+#: ../Translator/messages:129 ../Translator/messages:245
+msgid "Dutch"
+msgstr ""
+
+#: ../Translator/messages:131 ../Translator/messages:247
+msgid "English"
+msgstr ""
+
+#: ../Translator/messages:133 ../Translator/messages:249
+msgid "Estonian"
+msgstr ""
+
+#: ../Translator/messages:135 ../Translator/messages:251
+msgid "Filipino"
+msgstr ""
+
+#: ../Translator/messages:137 ../Translator/messages:253
+msgid "Finnish"
+msgstr ""
+
+#: ../Translator/messages:139 ../Translator/messages:255
+msgid "French"
+msgstr ""
+
+#: ../Translator/messages:141 ../Translator/messages:257
+msgid "Galician"
+msgstr ""
+
+#: ../Translator/messages:143 ../Translator/messages:259
+msgid "Georgian"
+msgstr ""
+
+#: ../Translator/messages:145 ../Translator/messages:261
+msgid "German"
+msgstr ""
+
+#: ../Translator/messages:147 ../Translator/messages:263
+msgid "Greek"
+msgstr ""
+
+#: ../Translator/messages:149 ../Translator/messages:265
+msgid "Haitian"
+msgstr ""
+
+#: ../Translator/messages:151 ../Translator/messages:267
+msgid "Hebrew"
+msgstr ""
+
+#: ../Translator/messages:153 ../Translator/messages:269
+msgid "Hindi"
+msgstr ""
+
+#: ../Translator/messages:155 ../Translator/messages:271
+msgid "Hungarian"
+msgstr ""
+
+#: ../Translator/messages:157 ../Translator/messages:273
+msgid "Icelandic"
+msgstr ""
+
+#: ../Translator/messages:159 ../Translator/messages:275
+msgid "Indonesian"
+msgstr ""
+
+#: ../Translator/messages:161 ../Translator/messages:277
+msgid "Irish"
+msgstr ""
+
+#: ../Translator/messages:163 ../Translator/messages:279
+msgid "Italian"
+msgstr ""
+
+#: ../Translator/messages:165 ../Translator/messages:281
+msgid "Japanese"
+msgstr ""
+
+#: ../Translator/messages:167 ../Translator/messages:283
+msgid "Korean"
+msgstr ""
+
+#: ../Translator/messages:169 ../Translator/messages:285
+msgid "Latvian"
+msgstr ""
+
+#: ../Translator/messages:171 ../Translator/messages:287
+msgid "Lithuanian"
+msgstr ""
+
+#: ../Translator/messages:173 ../Translator/messages:289
+msgid "Macedonian"
+msgstr ""
+
+#: ../Translator/messages:175 ../Translator/messages:291
+msgid "Malay"
+msgstr ""
+
+#: ../Translator/messages:177 ../Translator/messages:293
+msgid "Maltese"
+msgstr ""
+
+#: ../Translator/messages:179 ../Translator/messages:295
+msgid "Norwegian"
+msgstr ""
+
+#: ../Translator/messages:181 ../Translator/messages:297
+msgid "Persian"
+msgstr ""
+
+#: ../Translator/messages:183 ../Translator/messages:299
+msgid "Polish"
+msgstr ""
+
+#: ../Translator/messages:185 ../Translator/messages:301
+msgid "Portuguese"
+msgstr ""
+
+#: ../Translator/messages:187 ../Translator/messages:303
+msgid "Romanian"
+msgstr ""
+
+#: ../Translator/messages:189 ../Translator/messages:305
+msgid "Russian"
+msgstr ""
+
+#: ../Translator/messages:191 ../Translator/messages:307
+msgid "Serbian"
+msgstr ""
+
+#: ../Translator/messages:193 ../Translator/messages:309
+msgid "Slovak"
+msgstr ""
+
+#: ../Translator/messages:195 ../Translator/messages:311
+msgid "Slovenian"
+msgstr ""
+
+#: ../Translator/messages:197 ../Translator/messages:313
+msgid "Spanish"
+msgstr ""
+
+#: ../Translator/messages:199 ../Translator/messages:315
+msgid "Swahili"
+msgstr ""
+
+#: ../Translator/messages:201 ../Translator/messages:317
+msgid "Swedish"
+msgstr ""
+
+#: ../Translator/messages:203 ../Translator/messages:319
+msgid "Thai"
+msgstr ""
+
+#: ../Translator/messages:205 ../Translator/messages:321
+msgid "Turkish"
+msgstr ""
+
+#: ../Translator/messages:207 ../Translator/messages:323
+msgid "Ukrainian"
+msgstr ""
+
+#: ../Translator/messages:209 ../Translator/messages:325
+msgid "Urdu"
+msgstr ""
+
+#: ../Translator/messages:211 ../Translator/messages:327
+msgid "Vietnamese"
+msgstr ""
+
+#: ../Translator/messages:213 ../Translator/messages:329
+msgid "Welsh"
+msgstr ""
+
+#: ../Translator/messages:215 ../Translator/messages:331
+msgid "Yiddish"
+msgstr ""
+
+#: ../Translator/messages:217
+#, fuzzy
+msgid "Translate to:"
+msgstr "Transparent"
+
+#: ../Translator/messages:333
+msgid "Shortkeys"
+msgstr ""
+
+#: ../Translator/messages:335
+msgid "Shortkey to start translating from (read):"
+msgstr ""
+
+#: ../Translator/messages:337
+msgid "Shortkey to start translating to (write):"
+msgstr ""
+
+#: ../Translator/messages:339
+#, fuzzy
+msgid "Dialog"
+msgstr "Diàlegs"
+
+#: ../Translator/messages:341
+msgid "In s. Set 0 for an unlimited time."
+msgstr ""
+
+#: ../Translator/messages:343
+#, fuzzy
+msgid "Time-length of the result dialog:"
+msgstr "Durada dels diàlegs:"
+
+#: ../Translator/messages:345
+msgid "Editable text widget?"
+msgstr ""
+
+#: ../WebSearch/messages:95
+msgid "Search engine :"
+msgstr ""
+
+#: ../WebSearch/messages:97
+msgid "Google"
+msgstr ""
+
+#: ../WebSearch/messages:99
+msgid "Bing"
+msgstr ""
+
+#: ../WebSearch/messages:101
+msgid "Yahoo!"
+msgstr ""
+
+#: ../WebSearch/messages:103
+msgid "Teoma"
+msgstr ""
+
+#: ../WebSearch/messages:105
+msgid "Youtube"
+msgstr ""
+
+#: ../WebSearch/messages:107
+msgid "Webshots"
+msgstr ""
+
+#: ../WebSearch/messages:109
+msgid "Flickr"
+msgstr ""
+
+#: ../WebSearch/messages:111
+msgid "Wikipedia"
+msgstr ""
+
+#: ../WebSearch/messages:113
+msgid "ImageShack"
+msgstr ""
+
+#: ../WebSearch/messages:115
+msgid "Twitter"
+msgstr ""
+
+#: ../WebSearch/messages:117
+msgid "Digg"
+msgstr ""
+
+#: ../WebSearch/messages:119
+#, fuzzy
+msgid "in sub-icons."
+msgstr "en segons"
+
+#: ../WebSearch/messages:121
+#, fuzzy
+msgid "Maximum number of results shown :"
+msgstr "Número màxim de caràcters per els noms de les aplicacions:"
+
+#: ../WebSearch/messages:123
+msgid "Show the current page as the icon label ?"
+msgstr ""
+
+#: ../WebSearch/messages:125
+msgid ""
+"Show the description of the result instead of its URL in the sub-icons ?"
+msgstr ""
+
+#: ../WebSearch/messages:127
+msgid ""
+"for slow connections, disable will result in significantly faster fetching."
+msgstr ""
+
+#: ../WebSearch/messages:129
+msgid ""
+"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
+"and Digg searches ?"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Accessibility :"
+#~ msgstr "Accessibilitat"
+
+#~ msgid ""
+#~ "You have made some changes to the current theme.\n"
+#~ "You will lose them if you don't save before choosing a new theme. "
+#~ "Continue anyway?"
+#~ msgstr ""
+#~ "Heu fet canvis en el tema actual.\n"
+#~ "Si no els deseu els perdreu al triar un tema nou. Voleu continuar tot i "
+#~ "això?"
+
+#~ msgid "Please wait while importing the theme..."
+#~ msgstr "Esperi mentre s'importa el tema..."
+
+#~ msgid "Configure this applet"
+#~ msgstr "Configurar aquesta mini-aplicació"
+
+#~ msgid "Files"
+#~ msgstr "Fitxers"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "Desktop"
+#~ msgstr "Escriptori"
+
+#~ msgid "System"
+#~ msgstr "Sistema"
+
+#~ msgid "plug-in"
+#~ msgstr "Connector"
+
+#~ msgid "Launcher configuration"
+#~ msgstr "Configuració dels llançadors"
+
+#~ msgid "Accessories"
+#~ msgstr "Accessoris"
+
+#~ msgid "All"
+#~ msgstr "Tot"
+
+#~ msgid "Set the position of the main dock."
+#~ msgstr "Estableix la posició de la barra principal."
+
+#~ msgid "Display and interact with currently open windows."
+#~ msgstr "Mostra i interacciona amb les finestres obertes actualment."
+
+#~ msgid "Taskbar"
+#~ msgstr "Barra de tasques"
+
+#~ msgid "Set a background for your dock."
+#~ msgstr "Estableix un fons al teu acoblador"
+
+#~ msgid "Configure text bubble appearance."
+#~ msgstr "Configurar l'aspecte de les notificacions"
+
+#~ msgid "Dialog boxes"
+#~ msgstr "Diàlegs"
+
+#~ msgid "Indicators"
+#~ msgstr "Indicadors"
+
+#~ msgid "Captions"
+#~ msgstr "Etiquetes"
+
+#~ msgid "Categories"
+#~ msgstr "Categories"
+
+#~ msgid "Filter"
+#~ msgstr "Filtrar"
+
+#~ msgid "Options"
+#~ msgstr "Opcions"
+
+#~ msgid "All words"
+#~ msgstr "Totes les paraules"
+
+#~ msgid "Highlighted words"
+#~ msgstr "Realçar les paraules"
+
+#~ msgid "Hide others"
+#~ msgstr "Amaga altres"
+
+#~ msgid "Search in description"
+#~ msgstr "Cerca a la descripció"
+
+#~ msgid "Enable this module"
+#~ msgstr "Activa aquest mòdul"
+
+#~ msgid "< Maintenance mode >"
+#~ msgstr "< Mode de manteniment >"
+
+#~ msgid "Cairo-Dock configuration"
+#~ msgstr "Configuració de Cairo-Dock"
+
+#~ msgid ""
+#~ "The '%s' module is not present. You need to install it and all its "
+#~ "dependencies in order to use this module."
+#~ msgstr ""
+#~ "No hi ha el mòdul '%s'. Hauries d'instal·lar el mòdul o les seves "
+#~ "dependències per treure'n el màxim profit."
+
+#~ msgid "The '%s' module is not enabled."
+#~ msgstr "El mòdul '%s' no està activat."
+
+#~ msgid "Do you want to enable it now?"
+#~ msgstr "Vols activar-ho immediatament?"
+
+#~ msgid ""
+#~ "It appears that you've never entered the help module before.\n"
+#~ "If you are having difficulty configuring the dock, or if you want to "
+#~ "customise it,\n"
+#~ "the Help module is here for you!\n"
+#~ "Would you like to take a look at it now?"
+#~ msgstr ""
+#~ "Sembla que encara no has entrat al módul d'ajuda.\n"
+#~ "El mòdul d'Ajuda hi és per si tens alguna dificultat per configurar la "
+#~ "barra, \n"
+#~ "o vols personalitzar-la !\n"
+#~ "Vols fer-hi una ullada ?"
+
+#~ msgid "On mouse hover:"
+#~ msgstr "Al passar per sobre el ratolí:"
+
+#~ msgid "On click:"
+#~ msgstr "Al clicar:"
+
+#~ msgid "Find the latest version of Cairo-Dock here !"
+#~ msgstr "Troba aquí la darrera versió de Cairo-Dock !."
+
+#~ msgid "Development"
+#~ msgstr "Desenvolupament"
+
+#~ msgid "Support"
+#~ msgstr "Assistència"
+
+#~ msgid "Quit Cairo-Dock?"
+#~ msgstr "Tancar Cairo-Dock ?"
+
+#~ msgid "Configure behaviour, appearance, and applets."
+#~ msgstr "Configurar el comportament, aparença i miniaplicacions."
+
+#~ msgid "Configure this dock"
+#~ msgstr "Configurar aquesta barra"
+
+#~ msgid "Manage themes"
+#~ msgstr "Gestiona temes"
+
+#~ msgid "Unlock icons"
+#~ msgstr "desblocar icones"
+
+#~ msgid "This will (un)lock the position of the icons."
+#~ msgstr "Això (des)blocarà la posició de les icones."
+
+#~ msgid "Unlock dock"
+#~ msgstr "desbloca la barra"
+
+#~ msgid "Lock dock"
+#~ msgstr "bloca la barra"
+
+#~ msgid "This will (un)lock the whole dock."
+#~ msgstr "Això (des)blocarà tota la barra"
+
+#~ msgid "Quick-Hide"
+#~ msgstr "Oculta automàticament"
+
+#~ msgid "This will hide the dock until you hover over it with the mouse."
+#~ msgstr "Amagarà la barra fins que hi entris amb el ratolí."
+
+#~ msgid "Launch Cairo-Dock on startup"
+#~ msgstr "Executa Cairo-Dock a l'inici"
+
+#~ msgid "Help"
+#~ msgstr "Ajuda"
+
+#~ msgid "Quit"
+#~ msgstr "Surt"
+
+#~ msgid "You're about to remove this icon (%s) from the dock. Are you sure?"
+#~ msgstr ""
+#~ "Estàs a punt de treure aquesta icona (%s) de la barra. N'estàs segur ?"
+
+#~ msgid "You're about to remove this applet (%s) from the dock. Are you sure?"
+#~ msgstr ""
+#~ "Estàs a punt de treure aquesta miniaplicació (%s) de la barra. N'estàs "
+#~ "segur ?"
+
+#~ msgid "Move all to desktop %d"
+#~ msgstr "Mou-ho tot a l'escriptori %d"
+
+#~ msgid ""
+#~ "To remove the black rectangle around the dock, you will need to activate "
+#~ "a composite manager.\n"
+#~ "For instance, this can be done by activating desktop effects, launching "
+#~ "Compiz, or activating the composition in Metacity.\n"
+#~ "If your machine can't support composition, Cairo-Dock can emulate it. "
+#~ "This option is in the 'System' module of the configuration, at the bottom "
+#~ "of the page."
+#~ msgstr ""
+#~ "Per eliminar el rectangle negre al voltant del Dock, cal que activeu un "
+#~ "gestor de composició.\n"
+#~ "Per exemple, podeu fer-ho activant els Efectes d'escriptori, executant el "
+#~ "Compiz, o bé activant la composició en el Metacity.\n"
+#~ "Si el vostre ordinador no ofereix composició, Cairo-Dock pot emular-ho. "
+#~ "Aquesta opció està en el mòdul de configuració del 'Sistema', al peu de "
+#~ "la pàgina."
+
+#~ msgid "Use OpenGL in Cairo-Dock"
+#~ msgstr "Utilitzar OpenGL a Cairo-Dock ?"
+
+#~ msgid ""
+#~ "OpenGL allows you to use the hardware acceleration, reducing the CPU load "
+#~ "to the minimum.\n"
+#~ "It also allows some pretty visual effects similar to Compiz.\n"
+#~ "However, some cards and/or their drivers don't fully support it, which "
+#~ "may prevent the dock from running correctly.\n"
+#~ "Do you want to activate OpenGL ?\n"
+#~ " (To not show this dialog, launch the dock from the Application menu,\n"
+#~ "  or with the -o option to force OpenGL and -c to force cairo.)"
+#~ msgstr ""
+#~ "OpenGL et permet utilitzar l'acceleració per maquinari, reduïnt al mínim "
+#~ "l'ús de la CPU.\n"
+#~ "També permet utilitzar bonics efectes visuals semblants als de Compiz.\n"
+#~ "Tanmateix, algunes targes i/o els seus controladors no el suporten "
+#~ "completament, cosa que pot prevenir una execució correcta de a barra.\n"
+#~ "Vols activar OpenGL?\n"
+#~ " (Per no mostrar aquest quadre de diàleg, executa la barra des del menú "
+#~ "d'Aplicacions.\n"
+#~ "  o amb la opció -o per forçar l'ús d'OpenGL i -c per forçar l'ús de "
+#~ "cairo.)"
+
+#~ msgid ""
+#~ "The module '%s' may have encountered a problem.\n"
+#~ "It has been restored successfully, but if it happens again, please report "
+#~ "it at http://glx-dock.org"
+#~ msgstr ""
+#~ "Potser el mòdul '%s' ha trobat algun problema.\n"
+#~ "Ha esta restaurat amb èxit, però si torna a passar, informeu-nos-en al "
+#~ "web http://glx-dock.org"
+
+#~ msgid ""
+#~ "The theme could not be found; the default theme will be used instead.\n"
+#~ " You can change this by opening the configuration of this module. Do you "
+#~ "want to do it now?"
+#~ msgstr ""
+#~ "no s'ha pogut trobar el tema; en el seu lloc s'utilitzarà el tema per "
+#~ "defecte.\n"
+#~ " Pots canviar això obrint la configuració d'aquest mòdul; vols fer-ho ara?"
+
+#~ msgid "_custom decoration_"
+#~ msgstr "_decoració personalitzada_"
+
+#~ msgid "Top dock"
+#~ msgstr "Dock superior"
+
+#~ msgid "Right dock"
+#~ msgstr "Dock dret"
+
+#~ msgid "Left dock"
+#~ msgstr "Dock esquerra"
+
+#~ msgid "failed to mount %s"
+#~ msgstr "ha fallat el muntatge de %s"
+
+#~ msgid "Failed to unmount %s"
+#~ msgstr "no s'ha pogut desmuntar %s"
+
+#~ msgid "_Custom Icons_"
+#~ msgstr "_Icones Personalitzades_"
+
+#~ msgid "You must try the theme before you can rate it."
+#~ msgstr "Per poder valorar el tema, l'has d'haver provat."
+
+#~ msgid ""
+#~ "The '%s' module was not found.\n"
+#~ "Be sure to install it with the same version as the dock to enjoy these "
+#~ "features."
+#~ msgstr ""
+#~ "No s'ha pogut trobar el mòdul '%s'.\n"
+#~ "Assegura't que l'instal·les a la mateixa versió que la barra per disposar "
+#~ "d'aquestes característiques."
+
+#~ msgid ""
+#~ "The '%s' plug-in is not active.\n"
+#~ "Activate it now?"
+#~ msgstr ""
+#~ "El connector '%s' està desactivat.‎\n"
+#~ "Voleu activar-lo?"
+
+#~ msgid "Theme"
+#~ msgstr "tema"
+
+#~ msgid "Rating"
+#~ msgstr "valoració"
+
+#~ msgid "Sobriety"
+#~ msgstr "sobrietat"
+
+#~ msgid "Grab"
+#~ msgstr "agafa"
+
+#~ msgid "Move down"
+#~ msgstr "Mou avall"
+
+#~ msgid "Fade out"
+#~ msgstr "Fosa"
+
+#~ msgid "Semi transparent"
+#~ msgstr "Semitransparent"
+
+#~ msgid "Zoom out"
+#~ msgstr "Allunya"
+
+#~ msgid "Folding"
+#~ msgstr "Plegable"
+
+#~ msgid ""
+#~ "This provides different window decorators. Enable this first if you want "
+#~ "to select a different decorator for your dialog boxes."
+#~ msgstr ""
+#~ "Proporciona diferents decoracions de finestra. Activa-ho primer si vols "
+#~ "seleccionar una decoració diferent per als teus diàlegs."
+
+#~ msgid "Behavior"
+#~ msgstr "Comportament"
+
+#~ msgid "Position on the screen"
+#~ msgstr "Posició a la pantalla"
+
+#~ msgid "Choose which border of the screen the dock will be placed on:"
+#~ msgstr "Trieu quin contorn de superfície del Dock voleu col·locar a:"
+
+#~ msgid "bottom"
+#~ msgstr "baix"
+
+#~ msgid "top"
+#~ msgstr "dalt"
+
+#~ msgid "right"
+#~ msgstr "dreta"
+
+#~ msgid "left"
+#~ msgstr "esquerra"
+
+#~ msgid "Visibility of the main dock"
+#~ msgstr "Visibilitat del Dock principal"
+
+#~ msgid "Hide the dock when it overlaps the current window"
+#~ msgstr "Amaga el Dock quan tingui la finestra activa per sobre"
+
+#~ msgid "Pop-up on shortcut"
+#~ msgstr "Emergents sobre les dreceres"
+
+#~ msgid "Effect used to hide the dock:"
+#~ msgstr "Efecte per amagar el Dock:"
+
+#~ msgid "None"
+#~ msgstr "Cap"
+
+#~ msgid "Keyboard shortcut to pop-up the dock:"
+#~ msgstr "Drecera de teclat per emergir el Dock:"
+
+#~ msgid "Visibility of sub-docks"
+#~ msgstr "Visibilitat dels sub-docks"
+
+#~ msgid ""
+#~ "they will appear either when you click or when you linger over the icon "
+#~ "pointing on it."
+#~ msgstr "apareixeran quan feu clic o quan us atureu sobre una icona."
+
+#~ msgid "Appear on mouse over"
+#~ msgstr "Apareix al passar el ratolí per sobre"
+
+#~ msgid "Appear on click"
+#~ msgstr "Apareix al clicar"
+
+#~ msgid ""
+#~ "None     : Don't show opened windows in the dock.\n"
+#~ "MacOSX   : Mix applications with its launcher, show other windows only if "
+#~ "they are minimized.\n"
+#~ "KDE : Mix applications with its launcher, show all others windows and "
+#~ "group windows togather in sub-dock.\n"
+#~ "Gnome    : Separate the taskbar from the launchers and only show windows "
+#~ "that are on the current desktop."
+#~ msgstr ""
+#~ "Cap: No mostra les aplicacions obertes en el Dock.\n"
+#~ "MacOSX: Mescla les aplicacions obertes amb els seus llançadors, mostra "
+#~ "les altres finestres si estan minimitzades.\n"
+#~ "KDE: Mescla les aplicacions obertes amb els seus llançadors, mostra les "
+#~ "altres finestres en un sub-dock.\n"
+#~ "Gnome: Separa la barra de taques dels llançadors i només mostra finestres "
+#~ "que estan al escriptori actual."
+
+#~ msgid "Behaviour of the Taskbar:"
+#~ msgstr "Comportament del la barra de tasques:"
+
+#~ msgid "MacOSX"
+#~ msgstr "MacOSX"
+
+#~ msgid "KDE"
+#~ msgstr "KDE"
+
+#~ msgid "Gnome"
+#~ msgstr "Gnome"
+
+#~ msgid "Icons' animations and effects"
+#~ msgstr "Animacions i efectes de les icones"
+
+#~ msgid "On appearance/disappearance:"
+#~ msgstr "Al aparèixer/desaparèixer"
+
+#~ msgid ""
+#~ "Leave empty to use the current icon theme of your system. You can enter "
+#~ "the name of a theme that is installed on your system (like 'Gartoon' or "
+#~ "'Human'), or even a path to a folder containing icons."
+#~ msgstr ""
+#~ "Deixeu-ho buit si voleu utilitzar el mateix tema que el del sistema. "
+#~ "Podeu introduir el nom d'un tema instal·lar en el sistema (ex. 'Gartoon' "
+#~ "o 'Human'), o bé la ruta de la carpeta que conté les icones."
+
+#~ msgid "Very small"
+#~ msgstr "Molt petites"
+
+#~ msgid "Small"
+#~ msgstr "Petites"
+
+#~ msgid "Very Big"
+#~ msgstr "Molt grans"
+
+#~ msgid ""
+#~ "This will separate launchers, application, and applets from each others. "
+#~ "Separators will be automatically inserted then."
+#~ msgstr ""
+#~ "Això separarà els llançadors, aplicacions, i subprogrames entre ells. "
+#~ "S'inseriran automàticament a continuació."
+
+#~ msgid "Separate the different types of icons?"
+#~ msgstr "Voleu separar el diferents tipus d'icones?"
+
+#~ msgid "Order of the different types of icons :"
+#~ msgstr "Ordre dels diferents tipus d'icones:"
+
+#~ msgid "launchers"
+#~ msgstr "llançadors"
+
+#~ msgid "Choose the default view for main docks :"
+#~ msgstr "Trieu la vista per defecte del Dock principal :"
+
+#~ msgid "You can overwrite this parameter for each sub-dock."
+#~ msgstr "Podeu sobreescriure aquesst paràmetre per a cada sub-dock."
+
+#~ msgid "Choose the default view for sub-docks :"
+#~ msgstr "Trieu la vista per defecte dels sub-docks :"
+
+#~ msgid "Add-ons"
+#~ msgstr "Complements"
+
+#~ msgid ""
+#~ "Select a line to get a preview and a description of the applet.\n"
+#~ "Click on the left check-box to (de)activate an applet.\n"
+#~ "Once an applet is active, you can configure it by right clicking on its "
+#~ "icon."
+#~ msgstr ""
+#~ "Trieu una línia per veure una previsualització i descripció del "
+#~ "subprogrames.\n"
+#~ "Clic esquerra sobre la casella per (des)activar el subprograma.\n"
+#~ "Un cop està el subprograma actiu, podeu configurar-lo fent clic dret "
+#~ "sobre la icona."
+
+#~ msgid "Themes"
+#~ msgstr "Temes"
+
+#~ msgid ""
+#~ "When set to 0 the dock will position itself relative to the left corner "
+#~ "if horizontal and the top corner if vertical. When set to 1 it will "
+#~ "position itself relative to the right corner if horizontal and the bottom "
+#~ "corner if vertical. When set to 0.5, it will position itself relative to "
+#~ "the middle of the screen's edge."
+#~ msgstr ""
+#~ "Si s'estableix en 0 el Dock s'ubicarà en relació a la cantonada esquerra "
+#~ "si és horitzontal, o a la cantonada superior si és vertical. Si "
+#~ "s'estableix en 1 s'ubicarà en relació a la cantonada dreta si és "
+#~ "horitzontal, o a la cantonada inferior si és vertical. Si s'estableix en "
+#~ "0.5 s'ubicarà en relació al centre dels marges de la pantalla."
+
+#~ msgid "Relative alignment:"
+#~ msgstr "Alineació relativa:"
+
+#~ msgid "Offset from the screen's edge"
+#~ msgstr "Desplaçament des de la vora de la pantalla"
+
+#~ msgid ""
+#~ "Gap from the absolute position on the screen's edge, in pixels. You can "
+#~ "also move the dock by holding the ALT or CTRL key and the left mouse "
+#~ "button."
+#~ msgstr ""
+#~ "Espai entre la posició absoluta al marge de la pantalla, en píxels. Podeu "
+#~ "també moure el Dock amb el botó esquerra del ratolí mentre manteniu "
+#~ "premudes les tecles ALT i CTRL."
+
+#~ msgid ""
+#~ "in pixels. You can also move the dock by holding the ALT or CTRL key and "
+#~ "the left mouse button."
+#~ msgstr ""
+#~ "en píxels. Podeu també moure el Dock amb el botó esquerra del ratolí "
+#~ "mentre manteniu premudes les tecles ALT i CTRL."
+
+#~ msgid "Distance to the screen edge:"
+#~ msgstr "Distància dels marges de la superfície:"
+
+#~ msgid "Multiple screens"
+#~ msgstr "Pantalla múltiple"
+
+#~ msgid ""
+#~ "This option is to use if you have a dual-screen and use Xinerama to "
+#~ "manage them."
+#~ msgstr ""
+#~ "Aquesta opció és per gestionar Xinerama, en cas de tenir un escriptori en "
+#~ "una pantalla dual."
+
+#~ msgid "Use Xinerama?"
+#~ msgstr "Voleu usar Xinerama?"
+
+#~ msgid "0 is the first screen."
+#~ msgstr "0 si és la primera pantalla."
+
+#~ msgid "Number of the screen where the dock should be located:"
+#~ msgstr "Número de la pantalla on voleu situar el Dock:"
+
+#~ msgid "in ms. 0 means no delay."
+#~ msgstr "en ms. 0 significa sense retard."
+
+#~ msgid "Delay before the dock unhides itself:"
+#~ msgstr "Retard abans que el Dock s'amagui automàticament:"
+
+#~ msgid "Additional parameters"
+#~ msgstr "Paràmetres adicionals"
+
+#~ msgid "Stretch the dock to always fill the screen"
+#~ msgstr "Eixampla sempre el Dock fins abastar la pantalla"
+
+#~ msgid ""
+#~ "This is only usefull if you do not already use auto-hide and if your "
+#~ "Window Manager allows the dock in front of fullscreen windows (which is "
+#~ "rare)."
+#~ msgstr ""
+#~ "Això només us caldrà si no utilitzeu l'Auto-amaga i si el gestor de "
+#~ "finestres permet al Dock estar davant de les finestres a pantalla "
+#~ "complerta (cosa molt estranya)."
+
+#~ msgid "Automatically hide the dock when a window becomes full screen?"
+#~ msgstr "Voleu amagar automàticament el Dock quan es maximitzi una finestra?"
+
+#~ msgid "Sub-docks' visibility"
+#~ msgstr "Visibilitat dels sub-docs"
+
+#~ msgid "Delay before displaying a sub-dock:"
+#~ msgstr "Retard abans de mostrar un sub-dock:"
+
+#~ msgid "Delay before leaving a sub-dock takes effect:"
+#~ msgstr "Retard després de sortir d'un sub-dock:"
+
+#~ msgid "TaskBar"
+#~ msgstr "Barra de tasques"
+
+#~ msgid ""
+#~ "Cairo-Dock will then act as your taskbar. It is recommended to remove any "
+#~ "other taskbars."
+#~ msgstr ""
+#~ "Cairo-Dock farà la tasca de la barra d'eines. Per tant, recomanem "
+#~ "eliminar qualsevol altra barra de tasques."
+
+#~ msgid "Show currently opened applications in the dock?"
+#~ msgstr "Voleu mostrar en el Dock les aplicacions obertes?"
+
+#~ msgid "Only show icons whose windows are minimised"
+#~ msgstr "Mostra només les icones de finestres minimitzades"
+
+#~ msgid "Only show applications on current desktop"
+#~ msgstr "Mostra només les aplicacions del escriptori actual"
+
+#~ msgid ""
+#~ "Allows launchers to act as applications when their programs are running "
+#~ "and displays a marker on icons to indicate this. You can launch other "
+#~ "occurences of the program with SHIFT+click."
+#~ msgstr ""
+#~ "Quan el programa del llançador estigui actiu mostra un indicador en la "
+#~ "icona. Si voleu tenir actius dos o més programes iguals podeu fer-ho "
+#~ "clicant la icona mentre manteniu premuda la tecla Majúscules (shift)."
+
+#~ msgid "Mix launchers and applications"
+#~ msgstr "Mescla llançadors i aplicacions"
+
+#~ msgid ""
+#~ "This allows you to group all the windows of a given application into a "
+#~ "unique sub-dock, and to act on all of the windows at the same time."
+#~ msgstr ""
+#~ "Això us permet agrupar totes les finestres d'una aplicació en un sol sub-"
+#~ "dock, i actuar en totes les finestres al mateix temps."
+
+#~ msgid "Group windows from the same application in a sub-dock ?"
+#~ msgstr ""
+#~ "Voleu agrupar en un sol sub-dock les finestres d'una mateixa aplicació?"
+
+#~ msgid "Enter the class of the applications, separated by a semi-colon ';'"
+#~ msgstr ""
+#~ "Introduïu la classe de les aplicacions, separada per un punt i coma ';'"
+
+#~ msgid "\t\tExcept the following classes:"
+#~ msgstr "\t\tExcepte les classes següents:"
+
+#~ msgid "Representation"
+#~ msgstr "Representació"
+
+#~ msgid ""
+#~ "If not set, the icon provided by X for each application will be used. If "
+#~ "set, the same icon as the corresponding launcher will be used for each "
+#~ "application."
+#~ msgstr ""
+#~ "Si no es defineix, s'usarà les icones proporcionades per X per a cada "
+#~ "aplicació. Si es defineix, s'usarà per a cada llançador la mateixa icona "
+#~ "de l'aplicació."
+
+#~ msgid "Overwrite the X icon with the launchers' icon?"
+#~ msgstr "Voleu sobreescriure la icona X per les icones dels llançadors?"
+
+#~ msgid ""
+#~ "A composite manager is required to display the thumbnail.\n"
+#~ "OpenGL is required to draw the icon bent backwards."
+#~ msgstr ""
+#~ "Cal un gestor de composició per mostrar les miniatures.\n"
+#~ "Cal l'OpenGL per dibuixar la inclinació cap a enrere de les icones."
+
+#~ msgid "How to draw minimised windows ?"
+#~ msgstr "Com s'han de dibuixar les finestres minimitzades?"
+
+#~ msgid "Show a window's thumbnail"
+#~ msgstr "Mostra una miniatura de la finestra"
+
+#~ msgid "Draw it bent backwards"
+#~ msgstr "Dibuixa-la inclinada endarrere"
+
+#~ msgid "Transparency of icons whose window is minimised:"
+#~ msgstr "Transparència de les icones de finestres minimitzades:"
+
+#~ msgid "Opaque"
+#~ msgstr "Opac"
+
+#~ msgid "Play a short animation of the icon when its window becomes active"
+#~ msgstr "Anima les icones quan s'activin les finestres."
+
+#~ msgid "\"...\" will be added at the end if the name is too long."
+#~ msgstr "S'afegirà \"...\" al final del nom és massa llarg."
+
+#~ msgid "Interaction"
+#~ msgstr "Interacció"
+
+#~ msgid "This is the default behaviour of most taskbars."
+#~ msgstr "Comportament per defecte de la majoria de barra de tasques."
+
+#~ msgid ""
+#~ "Minimise the window when its icon is clicked, if it was already the "
+#~ "active window ?"
+#~ msgstr ""
+#~ "Voleu minimitza la finestra quan es cliqui la icona, si és la finestra "
+#~ "activa?"
+
+#~ msgid "Highlight applications requiring your attention with a dialog bubble"
+#~ msgstr "Ressalta les aplicacions que reclamin atenció mitjançant un diàleg."
+
+#~ msgid "fast"
+#~ msgstr "ràpid"
+
+#~ msgid "slow"
+#~ msgstr "lent"
+
+#~ msgid "The more there are, the slower it will be"
+#~ msgstr "Com major sigui, més lent anirà"
+
+#~ msgid ""
+#~ "The indicator is drawn on active launchers, but you may want to display "
+#~ "it on applications too."
+#~ msgstr ""
+#~ "Es dibuixa un indicador en els llançadors actius, però potser també voleu "
+#~ "mostrar-lo a les aplicacions"
+
+#~ msgid "starting from 0"
+#~ msgstr "començant de 0"
+
+#~ msgid "You can even paste an internet URL."
+#~ msgstr "També podeu enganxar una URL d'Internet."
+
+#~ msgid "...or drag and drop a theme package here :"
+#~ msgstr "...o bé arrossegar cap aquí un paquet de tema:"
+
+#~ msgid ""
+#~ "If you tick this box, your launchers will be deleted and replaced by the "
+#~ "ones provided in the new theme. Otherwise the current launchers will be "
+#~ "kept, only icons will be replaced."
+#~ msgstr ""
+#~ "Si marqueu aquesta casella, s'eliminaran els llançadors i es substituiran "
+#~ "per els previstos en el tema nou. En cas contrari els llançadors actuals "
+#~ "es mantindran i només es reemplaçaran les icones."
+
+#~ msgid "Use the new theme's launchers?"
+#~ msgstr "Voleu utilitzar el nou tema dels llançadors?"
+
+#~ msgid ""
+#~ "Otherwise the current behaviour will be kept. This defines the dock's "
+#~ "position, behavioural settings such as auto-hide, using taskbar or not, "
+#~ "etc."
+#~ msgstr ""
+#~ "En cas contrari es conservarà el comportament actual. Això defineix la "
+#~ "posició del Dock, configuració del comporament com l'auto-amagat, us o no "
+#~ "de la barra de tasques, etc."
+
+#~ msgid "Use the new theme's behaviour?"
+#~ msgstr "Voleu utilitzar el nou tema de comportament?"
+
+#~ msgid "Save"
+#~ msgstr "Desa"
+
+#~ msgid "Save current theme"
+#~ msgstr "Desa tema actual"
+
+#~ msgid "You will then be able to re-open it at any time."
+#~ msgstr "El podreu tornar a obrir quan vulgueu."
+
+#~ msgid "Save as:"
+#~ msgstr "Anomena i desa:"
+
+#~ msgid "Save current behaviour also?"
+#~ msgstr "Voleu desar també el comportament actual?"
+
+#~ msgid "Save current launchers also?"
+#~ msgstr "Voleu desar també els llançadors actuals?"
+
+#~ msgid "Build a package of the theme?"
+#~ msgstr "Voleu fer un paquet del tema?"
+
+#~ msgid "Delete"
+#~ msgstr "Elimina"
+
+#~ msgid "List of your personal themes"
+#~ msgstr "Llista dels temes personals"
+
+#~ msgid "Class of the program :"
+#~ msgstr "Classe de programa:"
+
+#~ msgid "It will use 'xterm'."
+#~ msgstr "Usarà 'xterm'."
+
+#~ msgid "Run in a terminal ?"
+#~ msgstr "Voleu executar-ho en un terminal?"

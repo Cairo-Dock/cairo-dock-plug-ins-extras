@@ -152,11 +152,6 @@ class TransparentPostIt(gtk.Window):
 	
 	def set_text(self,task_text):
 		self.textbuffer.set_text(task_text)
-				
-#gettext.install('cd-gtg', '/usr/share/locale')
-gettext.bindtextdomain('cd-gtg', '/usr/share/locale')
-gettext.bind_textdomain_codeset ('cd-gtg', 'UTF-8');
-gettext.textdomain('cd-gtg')
 
 applet_name = os.path.basename(os.path.abspath("."))  # the name of the applet must the same as the folder.
 DBusGMainLoop(set_as_default=True)

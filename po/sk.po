@@ -1,0 +1,6126 @@
+# Slovak translation for cairo-dock-plug-ins
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the cairo-dock-plug-ins package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cairo-dock-plug-ins\n"
+"Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"PO-Revision-Date: 2011-04-19 12:53+0100\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"Language-Team: Slovak <sk@li.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-16 05:15+0000\n"
+"X-Generator: Launchpad (build 12735)\n"
+
+#: ../GnoMenu/GnoMenu:130
+msgid "Preferences"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:134
+msgid "About"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:137
+msgid "Edit Menus"
+msgstr ""
+
+#: ../Calendar/messages:1 ../Cardapio/messages:1 ../CpuWatcher/messages:1
+#: ../Deluge/messages:1 ../DiskFree/messages:1 ../Facebook/messages:1
+#: ../GTG/messages:1 ../GnoMenu/messages:1 ../Google/messages:1
+#: ../KTorrent/messages:1 ../Lancelot/messages:1 ../Liferea/messages:1
+#: ../MintMenu/messages:1 ../Pidgin/messages:1 ../Quote/messages:1
+#: ../RubyBattery/messages:1 ../ShortUrl/messages:1 ../SubDock/messages:1
+#: ../Translator/messages:1 ../Transmission/messages:1 ../WebSearch/messages:1
+#: ../WindowsKiller/messages:1 ../Xchat/messages:1
+msgid "Icon"
+msgstr "Ikona"
+
+#: ../Calendar/messages:3 ../Cardapio/messages:3 ../CpuWatcher/messages:3
+#: ../Deluge/messages:3 ../DiskFree/messages:3 ../Facebook/messages:3
+#: ../GTG/messages:3 ../GnoMenu/messages:3 ../Google/messages:3
+#: ../KTorrent/messages:3 ../Lancelot/messages:3 ../Liferea/messages:3
+#: ../MintMenu/messages:3 ../Pidgin/messages:3 ../Quote/messages:3
+#: ../RubyBattery/messages:3 ../ShortUrl/messages:3 ../Translator/messages:3
+#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
+msgid "Applet"
+msgstr "Applet"
+
+#: ../Calendar/messages:5 ../Cardapio/messages:5 ../CpuWatcher/messages:5
+#: ../Deluge/messages:5 ../DiskFree/messages:5 ../Facebook/messages:5
+#: ../GTG/messages:5 ../GnoMenu/messages:5 ../Google/messages:5
+#: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
+#: ../MintMenu/messages:5 ../Pidgin/messages:5 ../Quote/messages:5
+#: ../RubyBattery/messages:5 ../ShortUrl/messages:5 ../SubDock/messages:13
+#: ../Translator/messages:5 ../Transmission/messages:5 ../WebSearch/messages:3
+#: ../WindowsKiller/messages:5 ../Xchat/messages:5
+msgid "Name of the dock it belongs to:"
+msgstr "Názov doku ku ktorému patrí :"
+
+#: ../Calendar/messages:7 ../Cardapio/messages:7 ../CpuWatcher/messages:7
+#: ../Deluge/messages:7 ../DiskFree/messages:7 ../Facebook/messages:7
+#: ../GTG/messages:7 ../GnoMenu/messages:7 ../Google/messages:7
+#: ../KTorrent/messages:7 ../Lancelot/messages:7 ../MintMenu/messages:7
+#: ../Pidgin/messages:7 ../Quote/messages:9 ../RubyBattery/messages:7
+#: ../ShortUrl/messages:7 ../SubDock/messages:7 ../Transmission/messages:7
+#: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
+msgid "Name of the icon as it will appear in its label in the dock :"
+msgstr "Názov ikony, ktorá sa objaví na štítku v docku :"
+
+#: ../Calendar/messages:9 ../Cardapio/messages:9 ../CpuWatcher/messages:9
+#: ../Deluge/messages:9 ../DiskFree/messages:9 ../Facebook/messages:9
+#: ../GTG/messages:9 ../GnoMenu/messages:9 ../Google/messages:9
+#: ../KTorrent/messages:9 ../Lancelot/messages:9 ../Liferea/messages:9
+#: ../MintMenu/messages:9 ../Pidgin/messages:9 ../Quote/messages:11
+#: ../RubyBattery/messages:9 ../ShortUrl/messages:9 ../Translator/messages:11
+#: ../Transmission/messages:9 ../WebSearch/messages:7
+#: ../WindowsKiller/messages:9 ../Xchat/messages:9
+msgid "Display"
+msgstr "Zobraziť"
+
+#: ../Calendar/messages:11 ../Cardapio/messages:11 ../CpuWatcher/messages:11
+#: ../Deluge/messages:11 ../DiskFree/messages:11 ../Facebook/messages:11
+#: ../GTG/messages:11 ../GnoMenu/messages:11 ../Google/messages:11
+#: ../KTorrent/messages:11 ../Lancelot/messages:11 ../Liferea/messages:11
+#: ../MintMenu/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
+#: ../RubyBattery/messages:11 ../ShortUrl/messages:11 ../SubDock/messages:9
+#: ../Transmission/messages:11 ../WebSearch/messages:9
+#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+msgid "Let empty to use the default one."
+msgstr "Nechať prázdne a použiť predvolené."
+
+#: ../Calendar/messages:13 ../Cardapio/messages:13 ../CpuWatcher/messages:13
+#: ../Deluge/messages:13 ../DiskFree/messages:13 ../Facebook/messages:13
+#: ../GTG/messages:13 ../GnoMenu/messages:13 ../Google/messages:13
+#: ../KTorrent/messages:13 ../Lancelot/messages:13 ../Liferea/messages:13
+#: ../MintMenu/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
+#: ../RubyBattery/messages:13 ../ShortUrl/messages:13 ../SubDock/messages:11
+#: ../Transmission/messages:13 ../WebSearch/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
+msgid "Image's filename :"
+msgstr "Názov súboru obrázku :"
+
+#: ../Calendar/messages:15 ../Cardapio/messages:15 ../CpuWatcher/messages:15
+#: ../Deluge/messages:15 ../DiskFree/messages:15 ../Facebook/messages:15
+#: ../GTG/messages:15 ../GnoMenu/messages:15 ../Google/messages:15
+#: ../KTorrent/messages:15 ../Lancelot/messages:15 ../Liferea/messages:15
+#: ../MintMenu/messages:15 ../Pidgin/messages:15 ../Quote/messages:17
+#: ../RubyBattery/messages:15 ../ShortUrl/messages:15 ../SubDock/messages:3
+#: ../Translator/messages:17 ../Transmission/messages:15
+#: ../WebSearch/messages:13 ../WindowsKiller/messages:15 ../Xchat/messages:15
+msgid "Set to 0 to use the default applet size"
+msgstr "Nastavte na 0 pre použitie predvolenej veľkosti appletu"
+
+#: ../Calendar/messages:17 ../Cardapio/messages:17 ../CpuWatcher/messages:17
+#: ../Deluge/messages:17 ../DiskFree/messages:17 ../Facebook/messages:17
+#: ../GTG/messages:17 ../GnoMenu/messages:17 ../Google/messages:17
+#: ../KTorrent/messages:17 ../Lancelot/messages:17 ../Liferea/messages:17
+#: ../MintMenu/messages:17 ../Pidgin/messages:17 ../Quote/messages:19
+#: ../RubyBattery/messages:17 ../ShortUrl/messages:17 ../SubDock/messages:5
+#: ../Translator/messages:19 ../Transmission/messages:17
+#: ../WebSearch/messages:15 ../WindowsKiller/messages:17 ../Xchat/messages:17
+msgid "Desired icon size for this applet"
+msgstr "Požadovaná veľkosť ikony pre tento applet"
+
+#: ../Calendar/messages:19 ../Cardapio/messages:19 ../CpuWatcher/messages:19
+#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Facebook/messages:19
+#: ../GTG/messages:19 ../GnoMenu/messages:19 ../Google/messages:19
+#: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
+#: ../MintMenu/messages:19 ../Pidgin/messages:19 ../Quote/messages:21
+#: ../RubyBattery/messages:19 ../ShortUrl/messages:19
+#: ../Translator/messages:21 ../Transmission/messages:19
+#: ../WebSearch/messages:17 ../Xchat/messages:19
+msgid "Applet's Handbook"
+msgstr "Príručka appletov"
+
+#: ../Calendar/messages:21 ../Cardapio/messages:21 ../CpuWatcher/messages:21
+#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Facebook/messages:21
+#: ../GTG/messages:21 ../GnoMenu/messages:21 ../Google/messages:21
+#: ../KTorrent/messages:21 ../Lancelot/messages:21 ../Liferea/messages:21
+#: ../MintMenu/messages:21 ../Pidgin/messages:21 ../Quote/messages:23
+#: ../RubyBattery/messages:21 ../ShortUrl/messages:21 ../SubDock/messages:15
+#: ../Translator/messages:23 ../Transmission/messages:21
+#: ../WebSearch/messages:19 ../WindowsKiller/messages:19 ../Xchat/messages:21
+msgid "Desklet"
+msgstr "Desklet"
+
+#: ../Calendar/messages:23 ../Cardapio/messages:23 ../CpuWatcher/messages:23
+#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Facebook/messages:23
+#: ../GTG/messages:23 ../GnoMenu/messages:23 ../Google/messages:23
+#: ../KTorrent/messages:23 ../Lancelot/messages:23 ../Liferea/messages:23
+#: ../MintMenu/messages:23 ../Pidgin/messages:23 ../Quote/messages:25
+#: ../RubyBattery/messages:23 ../ShortUrl/messages:23 ../SubDock/messages:17
+#: ../Translator/messages:25 ../Transmission/messages:23
+#: ../WebSearch/messages:21 ../WindowsKiller/messages:21 ../Xchat/messages:23
+msgid "Position"
+msgstr "Pozícia"
+
+#: ../Calendar/messages:25 ../Cardapio/messages:25 ../CpuWatcher/messages:25
+#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Facebook/messages:25
+#: ../GTG/messages:25 ../GnoMenu/messages:25 ../Google/messages:25
+#: ../KTorrent/messages:25 ../Lancelot/messages:25 ../Liferea/messages:25
+#: ../MintMenu/messages:25 ../Pidgin/messages:25 ../Quote/messages:27
+#: ../RubyBattery/messages:25 ../ShortUrl/messages:25 ../SubDock/messages:19
+#: ../Translator/messages:27 ../Transmission/messages:25
+#: ../WebSearch/messages:23 ../WindowsKiller/messages:23 ../Xchat/messages:25
+msgid ""
+"If locked, the desklet cannot be moved by simply dragging it with the left "
+"mouse button. It can still be moved with ALT + left-click."
+msgstr ""
+"Ak je je zamknutý, nedá deskletom pohnúť ťahaním ľavým tlačítkom myši. "
+"Samozrejme s ním stále môžete pohybovaťkombináciou ALT + ľavé tlačítko myši."
+
+#: ../Calendar/messages:27 ../Cardapio/messages:27 ../CpuWatcher/messages:27
+#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Facebook/messages:27
+#: ../GTG/messages:27 ../GnoMenu/messages:27 ../Google/messages:27
+#: ../KTorrent/messages:27 ../Lancelot/messages:27 ../Liferea/messages:27
+#: ../MintMenu/messages:27 ../Pidgin/messages:27 ../Quote/messages:29
+#: ../RubyBattery/messages:27 ../ShortUrl/messages:27 ../SubDock/messages:21
+#: ../Translator/messages:29 ../Transmission/messages:27
+#: ../WebSearch/messages:25 ../WindowsKiller/messages:25 ../Xchat/messages:27
+msgid "Lock position?"
+msgstr "Zamknúť pozíciu ?"
+
+#: ../Calendar/messages:29 ../Cardapio/messages:29 ../CpuWatcher/messages:29
+#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Facebook/messages:29
+#: ../GTG/messages:29 ../GnoMenu/messages:29 ../Google/messages:29
+#: ../KTorrent/messages:29 ../Lancelot/messages:29 ../Liferea/messages:29
+#: ../MintMenu/messages:29 ../Pidgin/messages:29 ../Quote/messages:31
+#: ../RubyBattery/messages:29 ../ShortUrl/messages:29 ../SubDock/messages:23
+#: ../Translator/messages:31 ../Transmission/messages:29
+#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
+msgid ""
+"Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+"V závislosti na manažérovi vašich okien, môžete zmeniť jeho veľkosť s ALT + "
+"stredné_klik alebo  ALT + ľavé_klik napr."
+
+#: ../Calendar/messages:31 ../Cardapio/messages:31 ../CpuWatcher/messages:31
+#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Facebook/messages:31
+#: ../GTG/messages:31 ../GnoMenu/messages:31 ../Google/messages:31
+#: ../KTorrent/messages:31 ../Lancelot/messages:31 ../Liferea/messages:31
+#: ../MintMenu/messages:31 ../Pidgin/messages:31 ../Quote/messages:33
+#: ../RubyBattery/messages:31 ../ShortUrl/messages:31 ../SubDock/messages:25
+#: ../Translator/messages:33 ../Transmission/messages:31
+#: ../WebSearch/messages:29 ../WindowsKiller/messages:29 ../Xchat/messages:31
+msgid "Desklet dimensions (width x height):"
+msgstr "Rozmery deskletov (šírka x výška) :"
+
+#: ../Calendar/messages:33 ../Cardapio/messages:33 ../CpuWatcher/messages:33
+#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Facebook/messages:33
+#: ../GTG/messages:33 ../GnoMenu/messages:33 ../Google/messages:33
+#: ../KTorrent/messages:33 ../Lancelot/messages:33 ../Liferea/messages:33
+#: ../MintMenu/messages:33 ../Pidgin/messages:33 ../Quote/messages:35
+#: ../RubyBattery/messages:33 ../ShortUrl/messages:33 ../SubDock/messages:27
+#: ../Translator/messages:35 ../Transmission/messages:33
+#: ../WebSearch/messages:31 ../WindowsKiller/messages:31 ../Xchat/messages:33
+msgid ""
+"Depending on your WindowManager, you may be able to move this with ALT + "
+"left-click.. Negative values are counted from the right/bottom of the screen"
+msgstr ""
+"V závislosti na vašom správcovi okien, budete môcť pohybovať pomocou ALT + "
+"ľavé tlačidlo.. Záporné hodnoty sú počítané z pravej/dolnej časti obrazovky"
+
+#: ../Calendar/messages:35 ../Cardapio/messages:35 ../CpuWatcher/messages:35
+#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Facebook/messages:35
+#: ../GTG/messages:35 ../GnoMenu/messages:35 ../Google/messages:35
+#: ../KTorrent/messages:35 ../Lancelot/messages:35 ../Liferea/messages:35
+#: ../MintMenu/messages:35 ../Pidgin/messages:35 ../Quote/messages:37
+#: ../RubyBattery/messages:35 ../ShortUrl/messages:35 ../SubDock/messages:29
+#: ../Translator/messages:37 ../Transmission/messages:35
+#: ../WebSearch/messages:33 ../WindowsKiller/messages:33 ../Xchat/messages:35
+msgid "Desklet position (x, y):"
+msgstr "Pozícia deskletu (x ; y) :"
+
+#: ../Calendar/messages:37 ../Cardapio/messages:37 ../CpuWatcher/messages:37
+#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Facebook/messages:37
+#: ../GTG/messages:37 ../GnoMenu/messages:37 ../Google/messages:37
+#: ../KTorrent/messages:37 ../Lancelot/messages:37 ../Liferea/messages:37
+#: ../MintMenu/messages:37 ../Pidgin/messages:37 ../Quote/messages:39
+#: ../RubyBattery/messages:37 ../ShortUrl/messages:37 ../SubDock/messages:31
+#: ../Translator/messages:39 ../Transmission/messages:37
+#: ../WebSearch/messages:35 ../WindowsKiller/messages:35 ../Xchat/messages:37
+msgid ""
+"You can quickly rotate the desklet with the mouse, by dragging the little "
+"buttons on its left and top sides."
+msgstr ""
+"Môžete rýchlo otočiť deskletom s myšou, ťahaním malého tlačidla na ľavej a "
+"hornej strane."
+
+#: ../Calendar/messages:39 ../Cardapio/messages:39 ../CpuWatcher/messages:39
+#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Facebook/messages:39
+#: ../GTG/messages:39 ../GnoMenu/messages:39 ../Google/messages:39
+#: ../KTorrent/messages:39 ../Lancelot/messages:39 ../Liferea/messages:39
+#: ../MintMenu/messages:39 ../Pidgin/messages:39 ../Quote/messages:41
+#: ../RubyBattery/messages:39 ../ShortUrl/messages:39 ../SubDock/messages:33
+#: ../Translator/messages:41 ../Transmission/messages:39
+#: ../WebSearch/messages:37 ../WindowsKiller/messages:37 ../Xchat/messages:39
+msgid "Rotation:"
+msgstr "Otáčanie :"
+
+#: ../Calendar/messages:41 ../Cardapio/messages:41 ../CpuWatcher/messages:41
+#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Facebook/messages:41
+#: ../GTG/messages:41 ../GnoMenu/messages:41 ../Google/messages:41
+#: ../KTorrent/messages:41 ../Lancelot/messages:41 ../Liferea/messages:41
+#: ../MintMenu/messages:41 ../Pidgin/messages:41 ../Quote/messages:43
+#: ../RubyBattery/messages:41 ../ShortUrl/messages:41 ../SubDock/messages:35
+#: ../Translator/messages:43 ../Transmission/messages:41
+#: ../WebSearch/messages:39 ../WindowsKiller/messages:39 ../Xchat/messages:41
+msgid "Visibility"
+msgstr "Viditeľnosť"
+
+#: ../Calendar/messages:43 ../Cardapio/messages:43 ../CpuWatcher/messages:43
+#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Facebook/messages:43
+#: ../GTG/messages:43 ../GnoMenu/messages:43 ../Google/messages:43
+#: ../KTorrent/messages:43 ../Lancelot/messages:43 ../Liferea/messages:43
+#: ../MintMenu/messages:43 ../Pidgin/messages:43 ../Quote/messages:45
+#: ../RubyBattery/messages:43 ../ShortUrl/messages:43 ../SubDock/messages:37
+#: ../Translator/messages:45 ../Transmission/messages:43
+#: ../WebSearch/messages:41 ../WindowsKiller/messages:41 ../Xchat/messages:43
+msgid "Is detached from the dock"
+msgstr "Je oddelený od docku ?"
+
+#: ../Calendar/messages:45 ../Cardapio/messages:45 ../CpuWatcher/messages:45
+#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Facebook/messages:45
+#: ../GTG/messages:45 ../GnoMenu/messages:45 ../Google/messages:45
+#: ../KTorrent/messages:45 ../Lancelot/messages:45 ../Liferea/messages:45
+#: ../MintMenu/messages:45 ../Pidgin/messages:45 ../Quote/messages:47
+#: ../RubyBattery/messages:45 ../ShortUrl/messages:45 ../SubDock/messages:39
+#: ../Translator/messages:47 ../Transmission/messages:45
+#: ../WebSearch/messages:43 ../WindowsKiller/messages:43 ../Xchat/messages:45
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=utility)"
+msgstr ""
+"pre CompizFusion \"widget layer\", nastavte správanie v Compize na: "
+"(class=Cairo-dock & type=utility)"
+
+#: ../Calendar/messages:47 ../Cardapio/messages:47 ../CpuWatcher/messages:47
+#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Facebook/messages:47
+#: ../GTG/messages:47 ../GnoMenu/messages:47 ../Google/messages:47
+#: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
+#: ../MintMenu/messages:47 ../Pidgin/messages:47 ../Quote/messages:49
+#: ../RubyBattery/messages:47 ../ShortUrl/messages:47 ../SubDock/messages:41
+#: ../Translator/messages:49 ../Transmission/messages:47
+#: ../WebSearch/messages:45 ../WindowsKiller/messages:45 ../Xchat/messages:47
+msgid "Visibility:"
+msgstr "Viditeľnosť :"
+
+#: ../Calendar/messages:49 ../Cardapio/messages:49 ../CpuWatcher/messages:49
+#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Facebook/messages:49
+#: ../GTG/messages:49 ../GnoMenu/messages:49 ../Google/messages:49
+#: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
+#: ../MintMenu/messages:49 ../Pidgin/messages:49 ../Quote/messages:51
+#: ../RubyBattery/messages:49 ../ShortUrl/messages:49 ../SubDock/messages:43
+#: ../Translator/messages:51 ../Transmission/messages:49
+#: ../WebSearch/messages:47 ../WindowsKiller/messages:47 ../Xchat/messages:49
+msgid "Normal"
+msgstr "Normálna"
+
+#: ../Calendar/messages:51 ../Cardapio/messages:51 ../CpuWatcher/messages:51
+#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Facebook/messages:51
+#: ../GTG/messages:51 ../GnoMenu/messages:51 ../Google/messages:51
+#: ../KTorrent/messages:51 ../Lancelot/messages:51 ../Liferea/messages:51
+#: ../MintMenu/messages:51 ../Pidgin/messages:51 ../Quote/messages:53
+#: ../RubyBattery/messages:51 ../ShortUrl/messages:51 ../SubDock/messages:45
+#: ../Translator/messages:53 ../Transmission/messages:51
+#: ../WebSearch/messages:49 ../WindowsKiller/messages:49 ../Xchat/messages:51
+msgid "Keep above"
+msgstr "Ponechať v popredí"
+
+#: ../Calendar/messages:53 ../Cardapio/messages:53 ../CpuWatcher/messages:53
+#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Facebook/messages:53
+#: ../GTG/messages:53 ../GnoMenu/messages:53 ../Google/messages:53
+#: ../KTorrent/messages:53 ../Lancelot/messages:53 ../Liferea/messages:53
+#: ../MintMenu/messages:53 ../Pidgin/messages:53 ../Quote/messages:55
+#: ../RubyBattery/messages:53 ../ShortUrl/messages:53 ../SubDock/messages:47
+#: ../Translator/messages:55 ../Transmission/messages:53
+#: ../WebSearch/messages:51 ../WindowsKiller/messages:51 ../Xchat/messages:53
+msgid "Keep below"
+msgstr "Ponechať na pozadí"
+
+#: ../Calendar/messages:55 ../Cardapio/messages:55 ../CpuWatcher/messages:55
+#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Facebook/messages:55
+#: ../GTG/messages:55 ../GnoMenu/messages:55 ../Google/messages:55
+#: ../KTorrent/messages:55 ../Lancelot/messages:55 ../Liferea/messages:55
+#: ../MintMenu/messages:55 ../Pidgin/messages:55 ../Quote/messages:57
+#: ../RubyBattery/messages:55 ../ShortUrl/messages:55 ../SubDock/messages:49
+#: ../Translator/messages:57 ../Transmission/messages:55
+#: ../WebSearch/messages:53 ../WindowsKiller/messages:53 ../Xchat/messages:55
+msgid "Keep on widget layer"
+msgstr "Ponechať na vrstve widgetu"
+
+#: ../Calendar/messages:57 ../Cardapio/messages:57 ../CpuWatcher/messages:57
+#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Facebook/messages:57
+#: ../GTG/messages:57 ../GnoMenu/messages:57 ../Google/messages:57
+#: ../KTorrent/messages:57 ../Lancelot/messages:57 ../Liferea/messages:57
+#: ../MintMenu/messages:57 ../Pidgin/messages:57 ../Quote/messages:59
+#: ../RubyBattery/messages:57 ../ShortUrl/messages:57 ../SubDock/messages:51
+#: ../Translator/messages:59 ../Transmission/messages:57
+#: ../WebSearch/messages:55 ../WindowsKiller/messages:55 ../Xchat/messages:57
+msgid "Reserve space"
+msgstr "Vyhradiť miesto"
+
+#: ../Calendar/messages:59 ../Cardapio/messages:59 ../CpuWatcher/messages:59
+#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Facebook/messages:59
+#: ../GTG/messages:59 ../GnoMenu/messages:59 ../Google/messages:59
+#: ../KTorrent/messages:59 ../Lancelot/messages:59 ../Liferea/messages:59
+#: ../MintMenu/messages:59 ../Pidgin/messages:59 ../Quote/messages:61
+#: ../RubyBattery/messages:59 ../ShortUrl/messages:59 ../SubDock/messages:53
+#: ../Translator/messages:61 ../Transmission/messages:59
+#: ../WebSearch/messages:57 ../WindowsKiller/messages:57 ../Xchat/messages:59
+msgid "Should be visible on all desktops?"
+msgstr "Má byť viditeľný na všetkých plochách ?"
+
+#: ../Calendar/messages:61 ../Cardapio/messages:61 ../CpuWatcher/messages:61
+#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Facebook/messages:61
+#: ../GTG/messages:61 ../GnoMenu/messages:61 ../Google/messages:61
+#: ../KTorrent/messages:61 ../Lancelot/messages:61 ../Liferea/messages:61
+#: ../MintMenu/messages:61 ../Pidgin/messages:61 ../Quote/messages:63
+#: ../RubyBattery/messages:61 ../ShortUrl/messages:61 ../SubDock/messages:55
+#: ../Translator/messages:63 ../Transmission/messages:61
+#: ../WebSearch/messages:59 ../WindowsKiller/messages:59 ../Xchat/messages:61
+msgid "Decorations"
+msgstr "Dekorácie"
+
+#: ../Calendar/messages:63 ../Cardapio/messages:63 ../CpuWatcher/messages:63
+#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Facebook/messages:63
+#: ../GTG/messages:63 ../GnoMenu/messages:63 ../Google/messages:63
+#: ../KTorrent/messages:63 ../Lancelot/messages:63 ../Liferea/messages:63
+#: ../MintMenu/messages:63 ../Pidgin/messages:63 ../Quote/messages:65
+#: ../RubyBattery/messages:63 ../ShortUrl/messages:63 ../SubDock/messages:57
+#: ../Translator/messages:65 ../Transmission/messages:63
+#: ../WebSearch/messages:61 ../WindowsKiller/messages:61 ../Xchat/messages:63
+msgid "Choose 'Custom decorations' to define your own decorations below."
+msgstr ""
+"Vyberte 'vlastné dekorácie' pre možnosť definovať si vlastné ozdoby nižšie."
+
+#: ../Calendar/messages:65 ../Cardapio/messages:65 ../CpuWatcher/messages:65
+#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Facebook/messages:65
+#: ../GTG/messages:65 ../GnoMenu/messages:65 ../Google/messages:65
+#: ../KTorrent/messages:65 ../Lancelot/messages:65 ../Liferea/messages:65
+#: ../MintMenu/messages:65 ../Pidgin/messages:65 ../Quote/messages:67
+#: ../RubyBattery/messages:65 ../ShortUrl/messages:65 ../SubDock/messages:59
+#: ../Translator/messages:67 ../Transmission/messages:65
+#: ../WebSearch/messages:63 ../WindowsKiller/messages:63 ../Xchat/messages:65
+msgid "Choose a decoration theme for this desklet:"
+msgstr "Vyberte ozdobu témy pre tento desklet :"
+
+#: ../Calendar/messages:67 ../Cardapio/messages:67 ../CpuWatcher/messages:67
+#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Facebook/messages:67
+#: ../GTG/messages:67 ../GnoMenu/messages:67 ../Google/messages:67
+#: ../KTorrent/messages:67 ../Lancelot/messages:67 ../Liferea/messages:67
+#: ../MintMenu/messages:67 ../Pidgin/messages:67 ../Quote/messages:69
+#: ../RubyBattery/messages:67 ../ShortUrl/messages:67 ../SubDock/messages:61
+#: ../Translator/messages:69 ../Transmission/messages:67
+#: ../WebSearch/messages:65 ../WindowsKiller/messages:65 ../Xchat/messages:67
+msgid ""
+"Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
+msgstr ""
+"Je to obrázok, ktorý se zobrazí pod kresbami, ako napríklad rámček. Ak "
+"žiadny nechcete, nechajte nevyplnené."
+
+#: ../Calendar/messages:69 ../Cardapio/messages:69 ../CpuWatcher/messages:69
+#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Facebook/messages:69
+#: ../GTG/messages:69 ../GnoMenu/messages:69 ../Google/messages:69
+#: ../KTorrent/messages:69 ../Lancelot/messages:69 ../Liferea/messages:69
+#: ../MintMenu/messages:69 ../Pidgin/messages:69 ../Quote/messages:71
+#: ../RubyBattery/messages:69 ../ShortUrl/messages:69 ../SubDock/messages:63
+#: ../Translator/messages:71 ../Transmission/messages:69
+#: ../WebSearch/messages:67 ../WindowsKiller/messages:67 ../Xchat/messages:69
+msgid "Background image:"
+msgstr "Obrázok pozadia:"
+
+#: ../Calendar/messages:71 ../Cardapio/messages:71 ../CpuWatcher/messages:71
+#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Facebook/messages:71
+#: ../GTG/messages:71 ../GnoMenu/messages:71 ../Google/messages:71
+#: ../KTorrent/messages:71 ../Lancelot/messages:71 ../Liferea/messages:71
+#: ../MintMenu/messages:71 ../Pidgin/messages:71 ../Quote/messages:73
+#: ../RubyBattery/messages:71 ../ShortUrl/messages:71 ../SubDock/messages:65
+#: ../Translator/messages:73 ../Transmission/messages:71
+#: ../WebSearch/messages:69 ../WindowsKiller/messages:69 ../Xchat/messages:71
+msgid "Background transparency:"
+msgstr "Priehľadnosť pozadia :"
+
+#: ../Calendar/messages:73 ../Cardapio/messages:73 ../CpuWatcher/messages:73
+#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Facebook/messages:73
+#: ../GTG/messages:73 ../GnoMenu/messages:73 ../Google/messages:73
+#: ../KTorrent/messages:73 ../Lancelot/messages:73 ../Liferea/messages:73
+#: ../MintMenu/messages:73 ../Pidgin/messages:73 ../Quote/messages:75
+#: ../RubyBattery/messages:73 ../ShortUrl/messages:73 ../SubDock/messages:67
+#: ../Translator/messages:75 ../Transmission/messages:73
+#: ../WebSearch/messages:71 ../WindowsKiller/messages:71 ../Xchat/messages:73
+msgid "in pixels. Use this to adjust the left position of drawings."
+msgstr "v pixeloch. Použite pre nastavenie ľavej polohy vykreslenia."
+
+#: ../Calendar/messages:75 ../Cardapio/messages:75 ../CpuWatcher/messages:75
+#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Facebook/messages:75
+#: ../GTG/messages:75 ../GnoMenu/messages:75 ../Google/messages:75
+#: ../KTorrent/messages:75 ../Lancelot/messages:75 ../Liferea/messages:75
+#: ../MintMenu/messages:75 ../Pidgin/messages:75 ../Quote/messages:77
+#: ../RubyBattery/messages:75 ../ShortUrl/messages:75 ../SubDock/messages:69
+#: ../Translator/messages:77 ../Transmission/messages:75
+#: ../WebSearch/messages:73 ../WindowsKiller/messages:73 ../Xchat/messages:75
+msgid "Left offset:"
+msgstr "Odsadenie zľava :"
+
+#: ../Calendar/messages:77 ../Cardapio/messages:77 ../CpuWatcher/messages:77
+#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Facebook/messages:77
+#: ../GTG/messages:77 ../GnoMenu/messages:77 ../Google/messages:77
+#: ../KTorrent/messages:77 ../Lancelot/messages:77 ../Liferea/messages:77
+#: ../MintMenu/messages:77 ../Pidgin/messages:77 ../Quote/messages:79
+#: ../RubyBattery/messages:77 ../ShortUrl/messages:77 ../SubDock/messages:71
+#: ../Translator/messages:79 ../Transmission/messages:77
+#: ../WebSearch/messages:75 ../WindowsKiller/messages:75 ../Xchat/messages:77
+msgid "in pixels. Use this to adjust the top position of drawings."
+msgstr "v pixeloch. Použite pre nastavenie hornej polohy vykreslenia."
+
+#: ../Calendar/messages:79 ../Cardapio/messages:79 ../CpuWatcher/messages:79
+#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Facebook/messages:79
+#: ../GTG/messages:79 ../GnoMenu/messages:79 ../Google/messages:79
+#: ../KTorrent/messages:79 ../Lancelot/messages:79 ../Liferea/messages:79
+#: ../MintMenu/messages:79 ../Pidgin/messages:79 ../Quote/messages:81
+#: ../RubyBattery/messages:79 ../ShortUrl/messages:79 ../SubDock/messages:73
+#: ../Translator/messages:81 ../Transmission/messages:79
+#: ../WebSearch/messages:77 ../WindowsKiller/messages:77 ../Xchat/messages:79
+msgid "Top offset:"
+msgstr "Odsadenie zhora :"
+
+#: ../Calendar/messages:81 ../Cardapio/messages:81 ../CpuWatcher/messages:81
+#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Facebook/messages:81
+#: ../GTG/messages:81 ../GnoMenu/messages:81 ../Google/messages:81
+#: ../KTorrent/messages:81 ../Lancelot/messages:81 ../Liferea/messages:81
+#: ../MintMenu/messages:81 ../Pidgin/messages:81 ../Quote/messages:83
+#: ../RubyBattery/messages:81 ../ShortUrl/messages:81 ../SubDock/messages:75
+#: ../Translator/messages:83 ../Transmission/messages:81
+#: ../WebSearch/messages:79 ../WindowsKiller/messages:79 ../Xchat/messages:81
+msgid "in pixels. Use this to adjust the right position of drawings."
+msgstr "v pixeloch. Použite pre nastavenie pravej polohy vykreslenia."
+
+#: ../Calendar/messages:83 ../Cardapio/messages:83 ../CpuWatcher/messages:83
+#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Facebook/messages:83
+#: ../GTG/messages:83 ../GnoMenu/messages:83 ../Google/messages:83
+#: ../KTorrent/messages:83 ../Lancelot/messages:83 ../Liferea/messages:83
+#: ../MintMenu/messages:83 ../Pidgin/messages:83 ../Quote/messages:85
+#: ../RubyBattery/messages:83 ../ShortUrl/messages:83 ../SubDock/messages:77
+#: ../Translator/messages:85 ../Transmission/messages:83
+#: ../WebSearch/messages:81 ../WindowsKiller/messages:81 ../Xchat/messages:83
+msgid "Right offset:"
+msgstr "Odsadenie vpravo :"
+
+#: ../Calendar/messages:85 ../Cardapio/messages:85 ../CpuWatcher/messages:85
+#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Facebook/messages:85
+#: ../GTG/messages:85 ../GnoMenu/messages:85 ../Google/messages:85
+#: ../KTorrent/messages:85 ../Lancelot/messages:85 ../Liferea/messages:85
+#: ../MintMenu/messages:85 ../Pidgin/messages:85 ../Quote/messages:87
+#: ../RubyBattery/messages:85 ../ShortUrl/messages:85 ../SubDock/messages:79
+#: ../Translator/messages:87 ../Transmission/messages:85
+#: ../WebSearch/messages:83 ../WindowsKiller/messages:83 ../Xchat/messages:85
+msgid "in pixels. Use this to adjust the bottom position of drawings."
+msgstr "v pixeloch. Použite pre nastavenie dolnej polohy vykreslenia."
+
+#: ../Calendar/messages:87 ../Cardapio/messages:87 ../CpuWatcher/messages:87
+#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Facebook/messages:87
+#: ../GTG/messages:87 ../GnoMenu/messages:87 ../Google/messages:87
+#: ../KTorrent/messages:87 ../Lancelot/messages:87 ../Liferea/messages:87
+#: ../MintMenu/messages:87 ../Pidgin/messages:87 ../Quote/messages:89
+#: ../RubyBattery/messages:87 ../ShortUrl/messages:87 ../SubDock/messages:81
+#: ../Translator/messages:89 ../Transmission/messages:87
+#: ../WebSearch/messages:85 ../WindowsKiller/messages:85 ../Xchat/messages:87
+msgid "Bottom offset:"
+msgstr "Odsadenie zdola"
+
+#: ../Calendar/messages:89 ../Cardapio/messages:89 ../CpuWatcher/messages:89
+#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Facebook/messages:89
+#: ../GTG/messages:89 ../GnoMenu/messages:89 ../Google/messages:89
+#: ../KTorrent/messages:89 ../Lancelot/messages:89 ../Liferea/messages:89
+#: ../MintMenu/messages:89 ../Pidgin/messages:89 ../Quote/messages:91
+#: ../RubyBattery/messages:89 ../ShortUrl/messages:89 ../SubDock/messages:83
+#: ../Translator/messages:91 ../Transmission/messages:89
+#: ../WebSearch/messages:87 ../WindowsKiller/messages:87 ../Xchat/messages:89
+msgid ""
+"Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
+"no image."
+msgstr ""
+"Je to obrázok, ktorý sa zobrazí nad kresbami, ako napríklad odraz. Ak žiadny "
+"nechcete, ponechajte nevyplnené."
+
+#: ../Calendar/messages:91 ../Cardapio/messages:91 ../CpuWatcher/messages:91
+#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Facebook/messages:91
+#: ../GTG/messages:91 ../GnoMenu/messages:91 ../Google/messages:91
+#: ../KTorrent/messages:91 ../Lancelot/messages:91 ../Liferea/messages:91
+#: ../MintMenu/messages:91 ../Pidgin/messages:91 ../Quote/messages:93
+#: ../RubyBattery/messages:91 ../ShortUrl/messages:91 ../SubDock/messages:85
+#: ../Translator/messages:93 ../Transmission/messages:91
+#: ../WebSearch/messages:89 ../WindowsKiller/messages:89 ../Xchat/messages:91
+msgid "Foreground image:"
+msgstr "Obrázok popredia :"
+
+#: ../Calendar/messages:93 ../Cardapio/messages:93 ../CpuWatcher/messages:93
+#: ../Deluge/messages:93 ../DiskFree/messages:93 ../Facebook/messages:93
+#: ../GTG/messages:93 ../GnoMenu/messages:93 ../Google/messages:93
+#: ../KTorrent/messages:93 ../Lancelot/messages:93 ../Liferea/messages:93
+#: ../MintMenu/messages:93 ../Pidgin/messages:93 ../Quote/messages:95
+#: ../RubyBattery/messages:93 ../ShortUrl/messages:93 ../SubDock/messages:87
+#: ../Translator/messages:95 ../Transmission/messages:93
+#: ../WebSearch/messages:91 ../WindowsKiller/messages:91 ../Xchat/messages:93
+msgid "Foreground tansparency:"
+msgstr "Priehľadné popredie :"
+
+#: ../Calendar/messages:95 ../Cardapio/messages:95 ../CpuWatcher/messages:95
+#: ../Deluge/messages:95 ../DiskFree/messages:95 ../Facebook/messages:95
+#: ../GTG/messages:95 ../GnoMenu/messages:95 ../KTorrent/messages:95
+#: ../Lancelot/messages:95 ../Liferea/messages:95 ../MintMenu/messages:95
+#: ../Pidgin/messages:95 ../Quote/messages:97 ../RubyBattery/messages:95
+#: ../ShortUrl/messages:95 ../SubDock/messages:89 ../Translator/messages:97
+#: ../Transmission/messages:95 ../WebSearch/messages:93 ../Xchat/messages:95
+msgid "Configuration"
+msgstr "Konfigurácia"
+
+#: ../Calendar/messages:97
+#, fuzzy
+msgid "Applications"
+msgstr "Menu aplikácií"
+
+#: ../Calendar/messages:99
+msgid "Command to launch your favourite calendar application (middle click):"
+msgstr ""
+
+#: ../Calendar/messages:101
+msgid "Command to execute on dropping a file onto the calendar-icon:"
+msgstr ""
+
+#: ../Calendar/messages:103 ../Facebook/messages:117
+msgid "Behaviour"
+msgstr "Správanie"
+
+#: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
+#, fuzzy
+msgid "in s."
+msgstr "v sekundách."
+
+#: ../Calendar/messages:107
+msgid "Time length of dialogues for the calendar :"
+msgstr ""
+
+#: ../Calendar/messages:111
+msgid "Time length of dialogues for events of the day :"
+msgstr ""
+
+#: ../Calendar/messages:115
+msgid "Time length of dialogues for calendar of next month :"
+msgstr ""
+
+#: ../Calendar/messages:117
+#, fuzzy
+msgid ""
+"The path to a script to generate an icon. Leave it empty to use the default "
+"one."
+msgstr ""
+"Znak, ktorý sa zobrazí pri pokuse pustiť niečo na ikonu. Nechať prázdne pre "
+"použitie predvoleného."
+
+#: ../Calendar/messages:119
+msgid "Icon custom script:"
+msgstr ""
+
+#: ../Cardapio/messages:97 ../GnoMenu/messages:97 ../Lancelot/messages:97
+#: ../MintMenu/messages:97
+#, fuzzy
+msgid "Shortkey to pop up the menu:"
+msgstr "Klávesová skratka pre vyskakovacie okno s položkami menu :"
+
+#: ../CpuWatcher/messages:97
+#, fuzzy
+msgid "in ms"
+msgstr "V Ms."
+
+#: ../CpuWatcher/messages:99
+#, fuzzy
+msgid "Refresh time :"
+msgstr "Obnoviť čas :"
+
+#: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
+#, fuzzy
+msgid "Shortkey to pop up the torrents info:"
+msgstr "Klávesová skratka pre vyskakovacie okno s položkami menu :"
+
+#: ../DiskFree/messages:97
+msgid ""
+"View available file system's space as Giga (checked) or Mega (unchecked) :"
+msgstr ""
+
+#: ../DiskFree/messages:99
+#, fuzzy
+msgid "in minutes"
+msgstr "v minútach."
+
+#: ../DiskFree/messages:101
+#, fuzzy
+msgid "Time between two file system's checking :"
+msgstr "Čas medzi obnovením dvoch stránok"
+
+#: ../Facebook/messages:97
+#, fuzzy
+msgid "Notifications"
+msgstr "Varovanie"
+
+#: ../Facebook/messages:99
+#, fuzzy
+msgid "Notifications for new messages?"
+msgstr "Oznámenie pri slabej batérii ?"
+
+#: ../Facebook/messages:101
+msgid ""
+"Notifications will keep recurring so long requests have not been either "
+"accepted or rejected."
+msgstr ""
+
+#: ../Facebook/messages:103
+msgid "Notifications for pending friend requests?"
+msgstr ""
+
+#: ../Facebook/messages:105
+msgid "likes, comments, tags, etc."
+msgstr ""
+
+#: ../Facebook/messages:107
+msgid "Notifications for unread notices?"
+msgstr ""
+
+#: ../Facebook/messages:109
+#, fuzzy
+msgid "Notifications for pokes?"
+msgstr "Typ oznámenia:"
+
+#: ../Facebook/messages:111
+#, fuzzy
+msgid "Notifications for group invites?"
+msgstr "Oznámenie pri slabej batérii ?"
+
+#: ../Facebook/messages:113
+#, fuzzy
+msgid "Notifications for event invites?"
+msgstr "Oznámenie pri slabej batérii ?"
+
+#: ../Facebook/messages:115
+msgid "Notifications for unread shares (deprecated)?"
+msgstr ""
+
+#: ../Facebook/messages:119
+msgid ""
+"\"always\" will notify you whenever the number of notifications is not 0; "
+"\"different\" will do so whenever the number of notifications changes; "
+"\"superior\" will notify you whenever it increases (default), \"never\"--"
+"obviously--will prevent the applet from bothering you. The applet will "
+"always set an emblem on the icon however."
+msgstr ""
+
+#: ../Facebook/messages:121
+msgid "Under what condition do you want the applet to notify you?:"
+msgstr ""
+
+#: ../Facebook/messages:123
+msgid "superior"
+msgstr ""
+
+#: ../Facebook/messages:125
+msgid "always"
+msgstr ""
+
+#: ../Facebook/messages:127
+msgid "different"
+msgstr ""
+
+#: ../Facebook/messages:129
+#, fuzzy
+msgid "never"
+msgstr "NIkdy"
+
+#: ../Facebook/messages:131
+msgid "Effect is \"bounce\" by default."
+msgstr ""
+
+#: ../Facebook/messages:133
+msgid ""
+"Do you want the applet to apply any effect on the icon during the "
+"notification?"
+msgstr ""
+
+#: ../Facebook/messages:135
+#, fuzzy
+msgid "bounce"
+msgstr "Odrážať"
+
+#: ../Facebook/messages:137
+#, fuzzy
+msgid "blink"
+msgstr "Blikať"
+
+#: ../Facebook/messages:139
+#, fuzzy
+msgid "pulse"
+msgstr "Pulz"
+
+#: ../Facebook/messages:141
+#, fuzzy
+msgid "rotate"
+msgstr "Otočiť"
+
+#: ../Facebook/messages:143
+msgid "spot"
+msgstr ""
+
+#: ../Facebook/messages:145
+msgid "wave"
+msgstr ""
+
+#: ../Facebook/messages:147
+#, fuzzy
+msgid "wobbly"
+msgstr "Trasenie"
+
+#: ../Facebook/messages:149 ../GTG/messages:113 ../Pidgin/messages:121
+#: ../Xchat/messages:113
+msgid "none"
+msgstr "žiadny"
+
+#: ../Facebook/messages:151
+msgid "True by default."
+msgstr ""
+
+#: ../Facebook/messages:153
+msgid "Do you want the applet to show a dialogue during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:155
+msgid "ATTENTION_SOUND is true by default."
+msgstr ""
+
+#: ../Facebook/messages:157
+msgid "Do you want the applet to play a sound during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:159
+#, fuzzy
+msgid "Time in minutes."
+msgstr "v minútach."
+
+#: ../Facebook/messages:161
+msgid ""
+"How often do you want the applet to check your Facebook account? (in "
+"minutes):"
+msgstr ""
+
+#: ../Facebook/messages:163
+msgid "Appearance"
+msgstr "Vzhľad"
+
+#: ../Facebook/messages:165
+msgid "How do you want to represent the counter on the icon?"
+msgstr ""
+
+#: ../Facebook/messages:167
+msgid "emblem"
+msgstr ""
+
+#: ../Facebook/messages:169
+msgid "quickinfo"
+msgstr ""
+
+#: ../GTG/messages:97 ../Xchat/messages:99
+#, fuzzy
+msgid "Bubbles duration :"
+msgstr "Doba trvania pulzu :"
+
+#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
+msgid "Short"
+msgstr ""
+
+#: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
+#, fuzzy
+msgid "Medium"
+msgstr "stredný"
+
+#: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
+msgid "Long"
+msgstr ""
+
+#: ../GTG/messages:105 ../Xchat/messages:107
+#, fuzzy
+msgid "Animation of the icon on receiving channel messages :"
+msgstr "Animácie ikony počas odosielania :"
+
+#: ../GTG/messages:107 ../Xchat/messages:97
+msgid "Display channel messages in a bubble :"
+msgstr ""
+
+#: ../GTG/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the "
+"icon.}\n"
+"history = 50\n"
+"j+[48;512] Post-it's initial dimension (width x height) :\n"
+"{Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+
+#: ../GTG/messages:111 ../Pidgin/messages:119 ../Xchat/messages:111
+#, fuzzy
+msgid "Size of the history :"
+msgstr "Veľkosť vo vnútri riadkov:"
+
+#: ../GTG/messages:115 ../Pidgin/messages:123 ../Xchat/messages:115
+msgid "big"
+msgstr "veľký"
+
+#: ../Liferea/messages:7 ../Translator/messages:9
+msgid "Name of the icon as it will appear in its caption in the dock:"
+msgstr "Názov ikony, ktorá sa objaví na štítku v docku :"
+
+#: ../Liferea/messages:97
+#, fuzzy
+msgid "Show in the icon:"
+msgstr "Zobraziť okno"
+
+#: ../Liferea/messages:99
+#, fuzzy
+msgid "Number of unread messages"
+msgstr "Počet kôl za sekundu."
+
+#: ../Liferea/messages:101
+#, fuzzy
+msgid " Number of new messages"
+msgstr "Maximum nových zobrazených správ ?"
+
+#: ../Pidgin/messages:97 ../Pidgin/messages:101
+msgid "Parameters"
+msgstr "Parametre"
+
+#: ../Pidgin/messages:99
+#, fuzzy
+msgid "Choose a theme :"
+msgstr "Použiť 3D témy ?"
+
+#: ../Pidgin/messages:103
+msgid "Display conversation messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:105
+#, fuzzy
+msgid "Display chat messages in a bubble?"
+msgstr "Zobraziť využitie disku s barom ?"
+
+#: ../Pidgin/messages:107
+#, fuzzy
+msgid "Bubbles duration:"
+msgstr "Doba trvania pulzu :"
+
+#: ../Pidgin/messages:115
+#, fuzzy
+msgid "Animation of the icon on receiving a message:"
+msgstr "Animácie ikony počas odosielania :"
+
+#: ../Pidgin/messages:117 ../Xchat/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the icon."
+msgstr ""
+
+#: ../Quote/messages:7
+#, fuzzy
+msgid "Let empty to display the current site's name."
+msgstr "Nechajte prázdne pre názov pripojenia."
+
+#: ../Quote/messages:99
+#, fuzzy
+msgid "Quote source:"
+msgstr "POčet zdrojov :"
+
+#: ../Quote/messages:101
+msgid "Quotationspage.com"
+msgstr ""
+
+#: ../Quote/messages:103
+msgid "Bash.org"
+msgstr ""
+
+#: ../Quote/messages:105
+msgid "Xkcdb.com"
+msgstr ""
+
+#: ../Quote/messages:107
+msgid "Qdb.us"
+msgstr ""
+
+#: ../Quote/messages:109
+msgid "Danstonchat.com"
+msgstr ""
+
+#: ../Quote/messages:111
+msgid "Jokes2go.com"
+msgstr ""
+
+#: ../Quote/messages:113
+msgid "Vidademerda.com.br"
+msgstr ""
+
+#: ../Quote/messages:115
+msgid "Grouphug.us"
+msgstr ""
+
+#: ../RubyBattery/messages:97
+msgid "Choose one of the available themes:"
+msgstr "Vyberte jeden z dostupných motívov :"
+
+#: ../RubyBattery/messages:99
+msgid "in seconds."
+msgstr "v sekundách."
+
+#: ../RubyBattery/messages:101
+#, fuzzy
+msgid "Interval of time between 2 checks:"
+msgstr "Oneskorenie medzi skúškami signálu :"
+
+#: ../RubyBattery/messages:103
+msgid "Activate alert of critical charge?"
+msgstr ""
+
+#: ../RubyBattery/messages:105
+#, fuzzy
+msgid "of % battery charge."
+msgstr "Oznámenie pri nabíjaní batérie ?"
+
+#: ../RubyBattery/messages:107
+msgid "Threshold for the critical charge alert:"
+msgstr ""
+
+#: ../RubyBattery/messages:109
+#, fuzzy
+msgid "Display a label with the charge?"
+msgstr "Zobraziť využitie disku s barom ?"
+
+#: ../ShortUrl/messages:97
+msgid ""
+"Cela vous permet de choisir de quel site vous souhaitez avoir l url "
+"raccourcie."
+msgstr ""
+
+#: ../ShortUrl/messages:99
+msgid "Choisissez votre site d url raccourcie :"
+msgstr ""
+
+#: ../ShortUrl/messages:101
+msgid "tinyurl.com"
+msgstr ""
+
+#: ../ShortUrl/messages:103
+msgid "shorterlink.org"
+msgstr ""
+
+#: ../ShortUrl/messages:105
+msgid "Cela vous permet de choisir l action a faire au clic gauche."
+msgstr ""
+
+#: ../ShortUrl/messages:107
+msgid "Action au clic gauche sur l icone :"
+msgstr ""
+
+#: ../ShortUrl/messages:109 ../ShortUrl/messages:117
+msgid "raccourcir le dernier lien de dnd2share"
+msgstr ""
+
+#: ../ShortUrl/messages:111 ../ShortUrl/messages:119
+msgid "ouvrir un dialogue pour raccourcir un lien"
+msgstr ""
+
+#: ../ShortUrl/messages:113
+msgid "Cela vous permet de choisir l action a faire au clic milieu."
+msgstr ""
+
+#: ../ShortUrl/messages:115
+#, fuzzy
+msgid "Action au clic milieu sur l icone :"
+msgstr "Akcia pri kliknutí stredným tlačítkom :"
+
+#: ../SubDock/messages:91
+#, fuzzy
+msgid "Choose one of the available themes :"
+msgstr "Vyberte jeden z dostupných motívov :"
+
+#: ../SubDock/messages:93
+#, fuzzy
+msgid "Max value :"
+msgstr "Zobraziť hodnoty :"
+
+#: ../SubDock/messages:95
+msgid "Yes / No ?"
+msgstr ""
+
+#: ../Translator/messages:7
+msgid "Let empty to display the current source and destination languages."
+msgstr ""
+
+#: ../Translator/messages:13
+msgid "Leave empty to use the default one."
+msgstr "Nechať prázdne a použiť predvolené."
+
+#: ../Translator/messages:15
+msgid "Image filename:"
+msgstr "Názov súboru obrázku :"
+
+#: ../Translator/messages:99
+msgid "Languages"
+msgstr ""
+
+#: ../Translator/messages:101
+msgid "Translate from:"
+msgstr ""
+
+#: ../Translator/messages:103 ../Translator/messages:219
+msgid "Afrikaans"
+msgstr ""
+
+#: ../Translator/messages:105 ../Translator/messages:221
+msgid "Albanian"
+msgstr ""
+
+#: ../Translator/messages:107 ../Translator/messages:223
+msgid "Arabic"
+msgstr ""
+
+#: ../Translator/messages:109 ../Translator/messages:225
+msgid "Armenian"
+msgstr ""
+
+#: ../Translator/messages:111 ../Translator/messages:227
+msgid "Azerbaijani"
+msgstr ""
+
+#: ../Translator/messages:113 ../Translator/messages:229
+msgid "Basque"
+msgstr ""
+
+#: ../Translator/messages:115 ../Translator/messages:231
+msgid "Belarusian"
+msgstr ""
+
+#: ../Translator/messages:117 ../Translator/messages:233
+msgid "Bulgarian"
+msgstr ""
+
+#: ../Translator/messages:119 ../Translator/messages:235
+msgid "Catalan"
+msgstr ""
+
+#: ../Translator/messages:121 ../Translator/messages:237
+msgid "Chinese"
+msgstr ""
+
+#: ../Translator/messages:123 ../Translator/messages:239
+msgid "Croatian"
+msgstr ""
+
+#: ../Translator/messages:125 ../Translator/messages:241
+msgid "Czech"
+msgstr ""
+
+#: ../Translator/messages:127 ../Translator/messages:243
+msgid "Danish"
+msgstr ""
+
+#: ../Translator/messages:129 ../Translator/messages:245
+msgid "Dutch"
+msgstr ""
+
+#: ../Translator/messages:131 ../Translator/messages:247
+msgid "English"
+msgstr ""
+
+#: ../Translator/messages:133 ../Translator/messages:249
+msgid "Estonian"
+msgstr ""
+
+#: ../Translator/messages:135 ../Translator/messages:251
+msgid "Filipino"
+msgstr ""
+
+#: ../Translator/messages:137 ../Translator/messages:253
+msgid "Finnish"
+msgstr ""
+
+#: ../Translator/messages:139 ../Translator/messages:255
+msgid "French"
+msgstr ""
+
+#: ../Translator/messages:141 ../Translator/messages:257
+msgid "Galician"
+msgstr ""
+
+#: ../Translator/messages:143 ../Translator/messages:259
+msgid "Georgian"
+msgstr ""
+
+#: ../Translator/messages:145 ../Translator/messages:261
+msgid "German"
+msgstr ""
+
+#: ../Translator/messages:147 ../Translator/messages:263
+msgid "Greek"
+msgstr ""
+
+#: ../Translator/messages:149 ../Translator/messages:265
+msgid "Haitian"
+msgstr ""
+
+#: ../Translator/messages:151 ../Translator/messages:267
+msgid "Hebrew"
+msgstr ""
+
+#: ../Translator/messages:153 ../Translator/messages:269
+msgid "Hindi"
+msgstr ""
+
+#: ../Translator/messages:155 ../Translator/messages:271
+msgid "Hungarian"
+msgstr ""
+
+#: ../Translator/messages:157 ../Translator/messages:273
+msgid "Icelandic"
+msgstr ""
+
+#: ../Translator/messages:159 ../Translator/messages:275
+msgid "Indonesian"
+msgstr ""
+
+#: ../Translator/messages:161 ../Translator/messages:277
+msgid "Irish"
+msgstr ""
+
+#: ../Translator/messages:163 ../Translator/messages:279
+msgid "Italian"
+msgstr ""
+
+#: ../Translator/messages:165 ../Translator/messages:281
+msgid "Japanese"
+msgstr ""
+
+#: ../Translator/messages:167 ../Translator/messages:283
+msgid "Korean"
+msgstr ""
+
+#: ../Translator/messages:169 ../Translator/messages:285
+msgid "Latvian"
+msgstr ""
+
+#: ../Translator/messages:171 ../Translator/messages:287
+msgid "Lithuanian"
+msgstr ""
+
+#: ../Translator/messages:173 ../Translator/messages:289
+msgid "Macedonian"
+msgstr ""
+
+#: ../Translator/messages:175 ../Translator/messages:291
+msgid "Malay"
+msgstr ""
+
+#: ../Translator/messages:177 ../Translator/messages:293
+msgid "Maltese"
+msgstr ""
+
+#: ../Translator/messages:179 ../Translator/messages:295
+msgid "Norwegian"
+msgstr ""
+
+#: ../Translator/messages:181 ../Translator/messages:297
+msgid "Persian"
+msgstr ""
+
+#: ../Translator/messages:183 ../Translator/messages:299
+msgid "Polish"
+msgstr ""
+
+#: ../Translator/messages:185 ../Translator/messages:301
+msgid "Portuguese"
+msgstr ""
+
+#: ../Translator/messages:187 ../Translator/messages:303
+msgid "Romanian"
+msgstr ""
+
+#: ../Translator/messages:189 ../Translator/messages:305
+msgid "Russian"
+msgstr ""
+
+#: ../Translator/messages:191 ../Translator/messages:307
+msgid "Serbian"
+msgstr ""
+
+#: ../Translator/messages:193 ../Translator/messages:309
+msgid "Slovak"
+msgstr ""
+
+#: ../Translator/messages:195 ../Translator/messages:311
+msgid "Slovenian"
+msgstr ""
+
+#: ../Translator/messages:197 ../Translator/messages:313
+msgid "Spanish"
+msgstr ""
+
+#: ../Translator/messages:199 ../Translator/messages:315
+msgid "Swahili"
+msgstr ""
+
+#: ../Translator/messages:201 ../Translator/messages:317
+msgid "Swedish"
+msgstr ""
+
+#: ../Translator/messages:203 ../Translator/messages:319
+msgid "Thai"
+msgstr ""
+
+#: ../Translator/messages:205 ../Translator/messages:321
+msgid "Turkish"
+msgstr ""
+
+#: ../Translator/messages:207 ../Translator/messages:323
+msgid "Ukrainian"
+msgstr ""
+
+#: ../Translator/messages:209 ../Translator/messages:325
+msgid "Urdu"
+msgstr ""
+
+#: ../Translator/messages:211 ../Translator/messages:327
+msgid "Vietnamese"
+msgstr ""
+
+#: ../Translator/messages:213 ../Translator/messages:329
+msgid "Welsh"
+msgstr ""
+
+#: ../Translator/messages:215 ../Translator/messages:331
+msgid "Yiddish"
+msgstr ""
+
+#: ../Translator/messages:217
+#, fuzzy
+msgid "Translate to:"
+msgstr "Premenovať na :"
+
+#: ../Translator/messages:333
+msgid "Shortkeys"
+msgstr ""
+
+#: ../Translator/messages:335
+msgid "Shortkey to start translating from (read):"
+msgstr ""
+
+#: ../Translator/messages:337
+msgid "Shortkey to start translating to (write):"
+msgstr ""
+
+#: ../Translator/messages:339
+#, fuzzy
+msgid "Dialog"
+msgstr "Bublinková nápoveda"
+
+#: ../Translator/messages:341
+#, fuzzy
+msgid "In s. Set 0 for an unlimited time."
+msgstr "v ms. Nastavte 0 pre nepoužitie tohto efektu."
+
+#: ../Translator/messages:343
+#, fuzzy
+msgid "Time-length of the result dialog:"
+msgstr "Čas zobrazenia info-bubliny :"
+
+#: ../Translator/messages:345
+msgid "Editable text widget?"
+msgstr ""
+
+#: ../WebSearch/messages:95
+#, fuzzy
+msgid "Search engine :"
+msgstr "Hľadanie ..."
+
+#: ../WebSearch/messages:97
+msgid "Google"
+msgstr "Google"
+
+#: ../WebSearch/messages:99
+msgid "Bing"
+msgstr ""
+
+#: ../WebSearch/messages:101
+msgid "Yahoo!"
+msgstr "Yahoo!"
+
+#: ../WebSearch/messages:103
+msgid "Teoma"
+msgstr ""
+
+#: ../WebSearch/messages:105
+msgid "Youtube"
+msgstr ""
+
+#: ../WebSearch/messages:107
+msgid "Webshots"
+msgstr ""
+
+#: ../WebSearch/messages:109
+msgid "Flickr"
+msgstr ""
+
+#: ../WebSearch/messages:111
+msgid "Wikipedia"
+msgstr "Wikipédia"
+
+#: ../WebSearch/messages:113
+#, fuzzy
+msgid "ImageShack"
+msgstr "ImageShack.us"
+
+#: ../WebSearch/messages:115
+msgid "Twitter"
+msgstr ""
+
+#: ../WebSearch/messages:117
+msgid "Digg"
+msgstr ""
+
+#: ../WebSearch/messages:119
+#, fuzzy
+msgid "in sub-icons."
+msgstr "v sekundách."
+
+#: ../WebSearch/messages:121
+#, fuzzy
+msgid "Maximum number of results shown :"
+msgstr "Maximálny počet výsledkov :"
+
+#: ../WebSearch/messages:123
+msgid "Show the current page as the icon label ?"
+msgstr ""
+
+#: ../WebSearch/messages:125
+msgid ""
+"Show the description of the result instead of its URL in the sub-icons ?"
+msgstr ""
+
+#: ../WebSearch/messages:127
+msgid ""
+"for slow connections, disable will result in significantly faster fetching."
+msgstr ""
+
+#: ../WebSearch/messages:129
+msgid ""
+"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
+"and Digg searches ?"
+msgstr ""
+
+#~ msgid "Animated icons"
+#~ msgstr "Animované ikony"
+
+#~ msgid "This plug-in provides many different animations for your icons."
+#~ msgstr ""
+#~ "Tento zásuvný modul ponúka množstvo rôzných animácií pre vaše ikony."
+
+#~ msgid "Wave"
+#~ msgstr "Vlnenie"
+
+#~ msgid "Spot"
+#~ msgstr "Bodový"
+
+#~ msgid ""
+#~ "Add a lively Penguin in your dock !\n"
+#~ "Left click to change the animation,\n"
+#~ "Middle-click to disturb him ^_^\n"
+#~ "Tux images are taken from Pingus, some other characters are available or "
+#~ "can be added easily."
+#~ msgstr ""
+#~ "Pridá živého tučniaka do vášho doku !\n"
+#~ "Ľavé kliknutie zmení animáciu,\n"
+#~ "Stredným tlačítkom ho vyrušíte ^_^\n"
+#~ "Animácie Tuxa sú z hry Pingus, aj ostatné postavičky sú dostupné alebo se "
+#~ "dajú ľahko pridať."
+
+#~ msgid "Cairo-Penguin"
+#~ msgstr "Cairo-Tučniak"
+
+#~ msgid "Hey, I'm here!"
+#~ msgstr "Hej, tu som !"
+
+#~ msgid "Sorry but I'm busy right now."
+#~ msgstr "Prepáč, teraz som zaneprázdnený."
+
+#~ msgid ""
+#~ "I don't have time to play with you, I have to dig and mine all these "
+#~ "icons."
+#~ msgstr ""
+#~ "Nemám čas sa s tebou hrať. Musím zakopať míny pod všetky tieto ikony."
+
+#~ msgid "Your dock is so messy! Let me clean it."
+#~ msgstr "Váš dok je taký špinavý! Dovoľte mi, aby som ho vyčistil."
+
+#~ msgid "Admit my superiority on you as a penguin!"
+#~ msgstr "Som tvoj nadriadený, pretože som tučniak!"
+
+#~ msgid "Wait, do you want to kill me?!"
+#~ msgstr "Počkaj, ty ma chceš zabiť?!"
+
+#~ msgid "Do you know how painful it is to be clicked on??"
+#~ msgstr "Ty vieš ako to bolí, keď na mňa klikáš??"
+
+#~ msgid "It's my dock now, mwahahaha!"
+#~ msgstr "Toto je teraz môj dok, hahaha!"
+
+#~ msgid "I want to be a pirate!"
+#~ msgstr "Chcem byť pirátom!"
+
+#~ msgid "You shall not pass!"
+#~ msgstr "Nemôžeš prejsť!"
+
+#~ msgid "I'm your father!"
+#~ msgstr "Som tvoj otec!"
+
+#~ msgid ""
+#~ "- Gee, Brain, what do you want to do tonight?\n"
+#~ "- The same thing we do every night, Pinky : try to take over the Dock!"
+#~ msgstr ""
+#~ "- Gee, Brain, čo chceš robiť dnes večer?\n"
+#~ "- To isté čo robíme každý večer, Pinky: pokús sa prevziať Dok!"
+
+#~ msgid "For Aiur!"
+#~ msgstr "Pre Aiur !"
+
+#~ msgid "Wake up"
+#~ msgstr "Zobuď sa"
+
+#~ msgid "Keep quiet"
+#~ msgstr "Buď ticho"
+
+#~ msgid "Start XPenguins"
+#~ msgstr "Spustiť x tučniakov"
+
+#~ msgid "Stop XPenguins"
+#~ msgstr "Zastaviť x tučniakov"
+
+#~ msgid "Zzzzz"
+#~ msgstr "Zzzzz"
+
+#~ msgid "No items yet."
+#~ msgstr "Zatiaľ žiadne položky."
+
+#~ msgid ""
+#~ "This applet keeps a trace of the clipboard and mouse selection,\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know "
+#~ "Klipper.\n"
+#~ "It supports clipboard and mouse selection, predefined actions, and "
+#~ "persistent items.\n"
+#~ "Left-click to popup the clipboard and mouse selection history,\n"
+#~ "Drop text on the icon to create persistent items, and middle-clck to "
+#~ "recall them."
+#~ msgstr ""
+#~ "Tento aplet drží stopu schránky a výber myšou,\n"
+#~ "takže si môžete spomenúť rýchlo. Je to klon dobre známeho-Klippera.\n"
+#~ "Podporuje schránky a výber myšou, vopred definované akcie a perzistentné "
+#~ "položky.\n"
+#~ "Ľavé-kliknutie to dava do schránky a výberom myši históriu,\n"
+#~ "Chytenie textu na ikone vytvorí perzistentné položky, a stredný-klik vám "
+#~ "pripomenie."
+
+#~ msgid "Clipboard history"
+#~ msgstr "História schránky"
+
+#~ msgid ""
+#~ "No persistent items.\n"
+#~ "You can add some by drag and dropping some text on the icon."
+#~ msgstr ""
+#~ "Žiadne perzistentné položky.\n"
+#~ "Môžete pridať pomocou pretiahnutia a hodenia nejakého textu na ikonu."
+
+#~ msgid ""
+#~ "This plug-in lets extern applications interact on the dock.\n"
+#~ "The communication between both sides is based on Dbus"
+#~ msgstr ""
+#~ "Tento plug-in umožňuje externým aplikáciam komunikovať s dockom.\n"
+#~ "Komunikácia medzi oboma stranami je založená na systéme Dbus"
+
+#~ msgid "Sorry, this module couldn't be added."
+#~ msgstr "Ľutujeme, tento modul nemôže byť pridaný."
+
+#~ msgid "The module has been added, but couldn't be launched."
+#~ msgstr "Modul bol pridaný, ale nemohol byť spustený."
+
+#~ msgid ""
+#~ "The applet '%s' has been succefully updated and automatically reloaded"
+#~ msgstr "Applet '%s' bol úspešne aktualizovaný a automaticky načítaný"
+
+#~ msgid ""
+#~ "The applet '%s' has been succefully installed and automatically launched"
+#~ msgstr "Applet '%s' bol úspešne nainštalovaný a automaticky spustený"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgid "r"
+#~ msgstr "r"
+
+#~ msgid "w"
+#~ msgstr "w"
+
+#~ msgid "N/A"
+#~ msgstr "Nie je k dispozícii"
+
+#~ msgid "Disks"
+#~ msgstr "Disky"
+
+#~ msgid "System Monitor"
+#~ msgstr "Sledovanie systému"
+
+#~ msgid "day(s)"
+#~ msgstr "deň(dní)"
+
+#~ msgid ""
+#~ "This applet allows you to write texts and monitor your system\n"
+#~ "with a \"text style desklet\".\n"
+#~ "USAGE:\n"
+#~ "  - NEED TO BE DETACHED FROM THE DOCK TO WORK !\n"
+#~ "  - Middle-clic to reload values"
+#~ msgstr ""
+#~ "Tento applet vám umožní písať texty a monitorovať váš systém\n"
+#~ "s použitím \"štýlu textu deskletu\".\n"
+#~ "POUŽITIE:\n"
+#~ "  - ABY PRACOVAL MUSÍ BYŤ ODPOJENÝ OD DOKU!\n"
+#~ "  - Stredným kliknutím znovu načítate hodnoty"
+
+#~ msgid "Folders"
+#~ msgstr "Priečinky"
+
+#~ msgid "Empty or unreadable folder."
+#~ msgstr "Prázdny, alebo nečítateľný priečinok."
+
+#~ msgid ""
+#~ "You're about deleting this file\n"
+#~ "  (%s)\n"
+#~ "from your hard-disk. Sure ?"
+#~ msgstr ""
+#~ "Chcete odstrániť tento súbor\n"
+#~ "  (%s)\n"
+#~ "z vášho hardisku. Ste si istý ?"
+
+#~ msgid ""
+#~ "Warning: could not delete this file.\n"
+#~ "Please check file permissions."
+#~ msgstr ""
+#~ "Upozornenie: nemôžete odstrániť tento súbor.\n"
+#~ "Skontrolujte si či máte právo na zapisovanie."
+
+#~ msgid ""
+#~ "Warning: could not rename %s.\n"
+#~ "Check file permissions \n"
+#~ "and that the new name does not already exist."
+#~ msgstr ""
+#~ "Upozornenie: nemôžete premenovať %s.\n"
+#~ "Skontrolujte si či máte právo na zapisovanie.\n"
+#~ " a či nový názov už neexistuje."
+
+#~ msgid "Enter a file name:"
+#~ msgstr "Vložte názov súboru:"
+
+#~ msgid ""
+#~ "Warning: could not create %s.\n"
+#~ "Check file permissions \n"
+#~ "and that the new name does not already exist."
+#~ msgstr ""
+#~ "Upozornenie: nedá sa vytvoriť %s.\n"
+#~ "Skontrolujte oprávnenia \n"
+#~ "a či nový názov už neexistuje."
+
+#~ msgid "Open the folder"
+#~ msgstr "Otvoriť priečinok"
+
+#~ msgid "middle-click"
+#~ msgstr "kliknutie stredným tlačítkom"
+
+#~ msgid "Rename this file"
+#~ msgstr "Premenovať tento súbor"
+
+#~ msgid "Delete this file"
+#~ msgstr "Odstrániť tento súbor"
+
+#~ msgid "Move this file"
+#~ msgstr "Premiestniť tento súbor"
+
+#~ msgid "Open with"
+#~ msgstr "Otvoriť s"
+
+#~ msgid "Properties"
+#~ msgstr "Vlastnosti"
+
+#~ msgid "Create a new file"
+#~ msgstr "Vytvoriť nový súbor"
+
+#~ msgid "Create a new folder"
+#~ msgstr "Vytvoriť nový priečinok"
+
+#~ msgid ""
+#~ "Displays the common Applications menu and the Recently used files.\n"
+#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set "
+#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
+#~ msgstr ""
+#~ "Zobrazí bežné menu Aplikácie a naposledy použité súbory.\n"
+#~ "Je kompatibilný s akýmkoľvek XDG zhodným menu (Gnome, XFCE, KDE, ...)\n"
+#~ "Stredným-kliknutím otvorte dialógové okno pre rýchle spustenie "
+#~ "ľubovoľného príkazu (môžete nastaviť skratku pre neho, ako ALT + F2)\n"
+#~ "Môžete tiež nastaviť, aby skratku vyskakovacieho menu (ako ALT + F1)"
+
+#~ msgid "Quick launch"
+#~ msgstr "Rýchle spustenie"
+
+#~ msgid "Configure menu"
+#~ msgstr "Nastaviť ponuku"
+
+#~ msgid "Clear recent"
+#~ msgstr "Vyčistiť nedávne"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Nedávne dokumenty"
+
+#~ msgid "Clear the list of the recently used documents?"
+#~ msgstr "Vyčistiť zoznam nedávno použitých dokumentov ?"
+
+#~ msgid "Enter a command to launch:"
+#~ msgstr "Vložte príkaz pre spustenie :"
+
+#~ msgid "Me Menu"
+#~ msgstr "Me Menu"
+
+#~ msgid ""
+#~ "A menu that lets you access quickly to your information, your online "
+#~ "status, your friends."
+#~ msgstr ""
+#~ "Menu, ktoré vám umožní rýchly prístup k vašim informáciám, váš stav ked "
+#~ "sa pripojíite, tvojiich priateľov."
+
+#~ msgid "It seems that the Me-Menu is not installed on your system"
+#~ msgstr "Zdá sa, že Me-Menu nie je nainštalované vo vašom systéme"
+
+#~ msgid "It seems that the Messaging-Menu is not installed on your system"
+#~ msgstr "Zdá sa, že Messaging-Menu nie je nainštalované vo vašom systéme"
+
+#~ msgid "Network connection state changed to inactive."
+#~ msgstr "Sieťové pripojenie nie je aktívne."
+
+#~ msgid "Connecting..."
+#~ msgstr "Pripájanie..."
+
+#~ msgid "Network connection is established."
+#~ msgstr "Sieťové pripojenie je nadviazané."
+
+#~ msgid "Network connection state changed to disconnected."
+#~ msgstr "Sieť bola odpojená."
+
+#~ msgid "A cable has been plugged"
+#~ msgstr "Kábel bol pripojený"
+
+#~ msgid "A cable has been unplugged"
+#~ msgstr "Kábel bol odpojený"
+
+#~ msgid "None"
+#~ msgstr "Žiadny"
+
+#~ msgid "Very Low"
+#~ msgstr "veľmi nízky"
+
+#~ msgid "Low"
+#~ msgstr "Nízky"
+
+#~ msgid "Middle"
+#~ msgstr "Uprostred"
+
+#~ msgid "Good"
+#~ msgstr "Dobré"
+
+#~ msgid "Excellent"
+#~ msgstr "Vynikajúce"
+
+#~ msgid "Not connected"
+#~ msgstr "Nepripojené"
+
+#~ msgid "Wired connection"
+#~ msgstr "Pripojenie káblom"
+
+#~ msgid ""
+#~ "Checking connection...\n"
+#~ "Please retry in a few seconds"
+#~ msgstr ""
+#~ "Skúšam pripojenie...\n"
+#~ "Prosím opakujte o pár sekúnd"
+
+#~ msgid "Wired Connection."
+#~ msgstr "Káblové pripojenie."
+
+#~ msgid "Interface"
+#~ msgstr "Prostredie"
+
+#~ msgid "Speed"
+#~ msgstr "Rýchlosť"
+
+#~ msgid "Wifi enabled."
+#~ msgstr "Wifi povolené."
+
+#~ msgid "Network ID"
+#~ msgstr "ID siete"
+
+#~ msgid "Unknown"
+#~ msgstr "Neznáme"
+
+#~ msgid "Access point"
+#~ msgstr "Prístupový bod"
+
+#~ msgid "Signal Quality"
+#~ msgstr "Kvalita signálu"
+
+#~ msgid "Network-Monitor"
+#~ msgstr "Sieťový-monitor"
+
+#~ msgid ""
+#~ "This applet allows you to monitor your network connection(s).\n"
+#~ "It can display the download/upload speeds and the wifi signal quality.\n"
+#~ "If you have network-manager running, it can also let you choose the "
+#~ "current wifi network.\n"
+#~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
+#~ "between net speed and wifi."
+#~ msgstr ""
+#~ "Tento applet vám umožní sledovať vaše pripojenie k sieti (am).\n"
+#~ "Môže zobrazovať download / upload rýchlosti a kvalitu signálu WiFi.\n"
+#~ "Ak máte spustený program sieťový-manager, môže tiež nechať zvoliť "
+#~ "aktuálnu wifi sieť.\n"
+#~ "Aj ľavé-kliknutie vám ponúkne info, Prejdite na túto ikonu pre prepnutie "
+#~ "zobrazenia medzi rýchlosťou siete a wifi."
+
+#~ msgid "Loading"
+#~ msgstr "Načítanie"
+
+#~ msgid "Check for Wireless Extension"
+#~ msgstr "Skontrolujte Wireless pripojenie"
+
+#~ msgid "Network Administration"
+#~ msgstr "Sieťová administrácia"
+
+#~ msgid "Activate network"
+#~ msgstr "Aktivovať sieť"
+
+#~ msgid "Deactivate network"
+#~ msgstr "Deaktivovať sieť"
+
+#~ msgid "Deactivate wifi"
+#~ msgstr "Deaktivovať wifi"
+
+#~ msgid "Activate wifi"
+#~ msgstr "Aktivovať wifi"
+
+#~ msgid "RSSreader"
+#~ msgstr "Čitačka RSS"
+
+#~ msgid ""
+#~ "This applet is an RSS/Atom feed reader.\n"
+#~ "You can instanciate it as many times as you want.\n"
+#~ "USAGE:\n"
+#~ " - Left-click : display the complete feed lines in a dialog.\n"
+#~ " - Middle-click : refresh the feed.\n"
+#~ " - Scroll on the desklet : make the feed lines scroll.\n"
+#~ " - Drag and drop a valid URL on the icon to use it,\n"
+#~ "    or copy it and use \"Paste a new RSS Url\" in the menu.\n"
+#~ "    or edit the Configuration Panel."
+#~ msgstr ""
+#~ "Tento applet je RSS/Atom čítačka zdrojov.\n"
+#~ "Môžete spustiť toľkokrát, koľkokrát chcete.\n"
+#~ "POUŽITIE:\n"
+#~ " - Ľavé kliknutie : zobrazí úplné linky zdrojov v dialógu.\n"
+#~ " - Stredné kliknutie : obnoví zdroj.\n"
+#~ " - Pretiahnutím platnej url adresy na ikonu ju otvoríte.\n"
+#~ "    alebo skopírujte a použite \"vložiť novú RSS Url\" v menu.\n"
+#~ "    alebo upravte konfiguračný panel."
+
+#~ msgid "Retrieving data..."
+#~ msgstr "Získavam údaje ..."
+
+#~ msgid "It doesn't seem to be a valid URL."
+#~ msgstr "To sa nezdá byť platná adresa URL."
+
+#~ msgid "Paste a new RSS Url (drag and drop)"
+#~ msgstr "Vložiť novú RSS adresu (chyť a vlož)"
+
+#~ msgid "Open with your web browser"
+#~ msgstr "Otvoriť vo vašom webovom prehliadači"
+
+#~ msgid "Refresh"
+#~ msgstr "Aktualizovať"
+
+#~ msgid "Warning: couldn't retrieve data last time we tried."
+#~ msgstr "Varovanie : pri poslednom pokuse sa neprijali žiadne údaje."
+
+#~ msgid "No URL is defined."
+#~ msgstr "Žiadna URL nie je definovaná."
+
+#~ msgid "No data (no connection?)"
+#~ msgstr "Žiadne údaje (nie ste pripojený ?)"
+
+#~ msgid "Invalid data (invalid RSS/Atom feed?)"
+#~ msgstr "Nesprávne údaje (neplatný RSS/Atom zdroj ?)"
+
+#~ msgid "No data"
+#~ msgstr "Žiadne údaje"
+
+#~ msgid "No modification"
+#~ msgstr "Žiadna zmena"
+
+#~ msgid "This RSS feed has been modified..."
+#~ msgstr "Tento RSS zdroj bol zmenený..."
+
+#~ msgid ""
+#~ "No URL is defined\n"
+#~ "You can define one by copying the URL in the clipboard,\n"
+#~ " and selecting \"Paste the URL\" in the menu."
+#~ msgstr ""
+#~ "Nie je definovaná URL\n"
+#~ "Môžete ju definovať skopírovaním URL do schránky\n"
+#~ " a vybrať \"Vložiť RL\n"
+#~ " v menu."
+
+#~ msgid ""
+#~ "No data\n"
+#~ "Did you set a valid RSS feed?\n"
+#~ "Is your connection alive?"
+#~ msgstr ""
+#~ "Žiadne údaje\n"
+#~ "Nastavili ste správny RSS zdroj ?\n"
+#~ "Je vaše pripojenie aktívne ?"
+
+#~ msgid "Recent files"
+#~ msgstr "Nedávne súbory"
+
+#~ msgid "The value %s has been copied into the clipboard."
+#~ msgstr "Hodnota %s bola skopírovaná do schránky."
+
+#~ msgid "Execute"
+#~ msgstr "Spustiť"
+
+#~ msgid "Open a terminal here"
+#~ msgstr "Tu otvoriť terminal"
+
+#~ msgid "Zip folder"
+#~ msgstr "Zip priečinok"
+
+#~ msgid "Move to"
+#~ msgstr "Presunúť do"
+
+#~ msgid "Copy URL"
+#~ msgstr "Kopírovať URL"
+
+#~ msgid "Open location"
+#~ msgstr "Otvoriť umiestnenie"
+
+#~ msgid "Zip file"
+#~ msgstr "Zip súbor"
+
+#~ msgid "Mail file"
+#~ msgstr "E-mail súbor"
+
+#~ msgid "Pick up a directory"
+#~ msgstr "Prejsť do vyššieho adresára"
+
+#~ msgid "Files"
+#~ msgstr "Súbory"
+
+#~ msgid "Open"
+#~ msgstr "Otvoriť"
+
+#~ msgid "Open in new window"
+#~ msgstr "Otvoriť v novom okne"
+
+#~ msgid "Open file"
+#~ msgstr "Otvoriť súbor"
+
+#~ msgid "Firefox bookmarks"
+#~ msgstr "Záložky Firefox"
+
+#~ msgid "Search on the web"
+#~ msgstr "Vyhľadať na webe"
+
+#~ msgid "Mediadico"
+#~ msgstr "Mediadico"
+
+#~ msgid "Amazon"
+#~ msgstr "Amazon"
+
+#~ msgid "(F1) Match case"
+#~ msgstr "(F1) Rozlišovať veľkosť"
+
+#~ msgid "(F2) Music"
+#~ msgstr "(F2) Hudba"
+
+#~ msgid "(F3) Image"
+#~ msgstr "(F3) Obrázky"
+
+#~ msgid "(F4) Video"
+#~ msgstr "(F4) Video"
+
+#~ msgid "(F5) Text"
+#~ msgstr "(F5) Text"
+
+#~ msgid "(F6) Html"
+#~ msgstr "(F6) Html"
+
+#~ msgid "(F7) Sources"
+#~ msgstr "(F6) Zdroje"
+
+#~ msgid "No result"
+#~ msgstr "Žiaden výsledok"
+
+#~ msgid "results"
+#~ msgstr "výsledky"
+
+#~ msgid "result"
+#~ msgstr "výsledok"
+
+#~ msgid "Enter your search"
+#~ msgstr "Vložte svoje hľadanie"
+
+#~ msgid "Uptime"
+#~ msgstr "Uplynulý čas"
+
+#~ msgid "Activity time"
+#~ msgstr "Aktívny čas"
+
+#~ msgid "CPU model"
+#~ msgstr "Model procesora"
+
+#~ msgid "Frequency"
+#~ msgstr "Frekvencia"
+
+#~ msgid "core(s)"
+#~ msgstr "jadro(á)"
+
+#~ msgid ""
+#~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
+#~ "etc.\n"
+#~ "Middle click on the icon to get some valuable info.\n"
+#~ "Left click on the icon to get a list of the most ressources using "
+#~ "programs.\n"
+#~ "You can instanciate this applet several times to show different values "
+#~ "each time."
+#~ msgstr ""
+#~ "Tento applet zobrazuje zaťaženie procesora, použitú RAM, teplotu "
+#~ "grafickej karty, atd.\n"
+#~ "Kliknutím stredným tlačítkom získate daľšie cenné informácie.\n"
+#~ "Kliknutím ľavým tlačítkom na ikonu dostanete zoznam programov, ktoré "
+#~ "používajú najviac zdrojov.\n"
+#~ "Môžete použiť tento aplet kedykoľvek a vždy získate nové zobrazenia "
+#~ "hodnôt."
+
+#~ msgid ""
+#~ "The acquisition of one or more data has failed.\n"
+#~ "You should remove the data that couldn't be fetched."
+#~ msgstr ""
+#~ "Získanie jedného alebo viacerých údajov zlyhalo.\n"
+#~ "Mali by ste odstrániť údaje, ktoré by mohli byť pritiahnuté za vlasy."
+
+#~ msgid "Show info"
+#~ msgstr "Zobraziť info"
+
+#~ msgid "GPU model"
+#~ msgstr "GPU model"
+
+#~ msgid "Video Ram"
+#~ msgstr "Video Ram"
+
+#~ msgid "Mb"
+#~ msgstr "Mb"
+
+#~ msgid "Driver Version"
+#~ msgstr "Verzia ovládača"
+
+#~ msgid "Core Temperature"
+#~ msgstr "Teplora jadra"
+
+#~ msgid "Alert! Graphic Card core temperature has reached %d°C"
+#~ msgstr "Výstraha ! Teplota jadra grafickej karty dosiahla %d°C"
+
+#~ msgid "Gb"
+#~ msgstr "Gb"
+
+#~ msgid "Memory"
+#~ msgstr "Pamäť"
+
+#~ msgid "Available"
+#~ msgstr "K dispozícii"
+
+#~ msgid "Cached"
+#~ msgstr "Vo vyrovnávacej pamäti"
+
+#~ msgid "Buffers"
+#~ msgstr "Buffery"
+
+#~ msgid "max"
+#~ msgstr "max"
+
+#~ msgid "alarm"
+#~ msgstr "výstraha"
+
+#~ msgid "rpm"
+#~ msgstr "otáčky za minútu"
+
+#~ msgid "CPU temperature has reached %d°C"
+#~ msgstr "Teplota procesora dosiahla %d°C"
+
+#~ msgid "Fan speed has reached %d rpm"
+#~ msgstr "Rýchlosť ventilátora dosiahla %d rpm"
+
+#~ msgid "This applet displays a toon that will look at your mouse."
+#~ msgstr "Tento applet ukazuje postavičku, ktorá bude sledovať vašu myš"
+
+#~ msgid ""
+#~ "Setup the luminosity of your screen directly from your dock.\n"
+#~ "Scroll up/down to increase/decrease the luminosity\n"
+#~ "Left-click to open a dialog to setup the luminosity\n"
+#~ "Middle-click to set it up for each color.\n"
+#~ "You can also define a luminosity value that will be applied automatically "
+#~ "on startup."
+#~ msgstr ""
+#~ "Nastavenie svietivosti obrazovky priamo z doku.\n"
+#~ "Posun nahor/nadol k zvýšeniu/zníženiu svietivosti\n"
+#~ "Ľavým-kliknutím otvorte dialóg pre nastavenie svietivosti\n"
+#~ "Stredným-kliknutím ho môžete nastaviť pre každú farbu.\n"
+#~ "Môžete tiež definovať svietivosti hodnota, ktorá bude použitá automaticky "
+#~ "pri štarte."
+
+#~ msgid "Apply current luminosity on startup"
+#~ msgstr "Použiť aktuálnu svietivosť pri štarte"
+
+#~ msgid "Set up gamma:"
+#~ msgstr "Nastaviť gamma :"
+
+#~ msgid ""
+#~ "This applet lets you control the sound volume from the dock.\n"
+#~ "Scroll up/down on the icon to increase/decrease the volume.\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard "
+#~ "shortcut for it)\n"
+#~ "You can also hide the dialog by clicking on it.\n"
+#~ "Middle-click to set or unset to mute, double-click to raise the channels "
+#~ "mixer.\n"
+#~ "This applet works with the Alsa sound driver."
+#~ msgstr ""
+#~ "Tento applet vám umožní ovládať hlasitosť zvuku z doku.\n"
+#~ "Posun hore/dole na ikonu zvýšenie/zníženie hlasitosti.\n"
+#~ "Kliknutím na ikonu zobrazíte/skryjete ovládanie hlasitosti (možno "
+#~ "naviazať na klávesovú skratku)\n"
+#~ "Môžete tiež skryť dialógové okno kliknutím na ňu.\n"
+#~ "Stredné-kliknutie nastaví alebo vypne zvuk, dvojité-kliknutie na zvýšenie "
+#~ "kanálov mixéra.\n"
+#~ "Tento applet pracuje s ovládačmi zvuku ALSA."
+
+#~ msgid "Sound Control"
+#~ msgstr "Ovládanie zvuku"
+
+#~ msgid "I couldn't open card '%s'"
+#~ msgstr "Nemohol som otvoriť kartu '%s'"
+
+#~ msgid "Card '%s' opened but I couldn't get any info"
+#~ msgstr "Karta '%s' otvorená, ale nemôžem získať žiadne info"
+
+#~ msgid "I couldn't open the mixer"
+#~ msgstr "Nemohol som otvoriť zmiešavač"
+
+#~ msgid "I couldn't attach the mixer to the card"
+#~ msgstr "Nemohol som pripojiť zmiešavač ku karte"
+
+#~ msgid "I couldn't register options"
+#~ msgstr "Nemohol som sa zaregistrovať voľby"
+
+#~ msgid "I couldn't load the mixer"
+#~ msgstr "Nemohol som spustiť zmiešavač"
+
+#~ msgid "Set up volume:"
+#~ msgstr "Nastaviť hlasitosť :"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Nastaviť kanály"
+
+#~ msgid "double-click"
+#~ msgstr "dvojklik"
+
+#~ msgid "Unmute"
+#~ msgstr "Zapnúť zvuk"
+
+#~ msgid "Mute"
+#~ msgstr "Vypnúť zvuk"
+
+#~ msgid "No title"
+#~ msgstr "Bez názvu"
+
+#~ msgid "years"
+#~ msgstr "roky"
+
+#~ msgid "Calendar and tasks"
+#~ msgstr "Kalendár a úlohy"
+
+#~ msgid "Alarm"
+#~ msgstr "Alarm"
+
+#~ msgid "Time you want to be notified:"
+#~ msgstr "Čas, kedy si chcete byť informovaní:"
+
+#~ msgid "In the form xx:xx. E.g.: 20:35 for 8:35pm"
+#~ msgstr "V tvare xx:xx Napríklad.: 20:35 na 8:35pm"
+
+#~ msgid "Day"
+#~ msgstr "Deň"
+
+#~ msgid "Monday"
+#~ msgstr "Pondelok"
+
+#~ msgid "Tuesday"
+#~ msgstr "Utorok"
+
+#~ msgid "Wednesday"
+#~ msgstr "Streda"
+
+#~ msgid "Thursday"
+#~ msgstr "Štvrtok"
+
+#~ msgid "Friday"
+#~ msgstr "Piatok"
+
+#~ msgid "Saturday"
+#~ msgstr "Sobota"
+
+#~ msgid "Sunday"
+#~ msgstr "Nedeľa"
+
+#~ msgid "Week Day"
+#~ msgstr "Deň v týždni"
+
+#~ msgid "Week End"
+#~ msgstr "Koniec týždňa"
+
+#~ msgid "Month"
+#~ msgstr "Mesiac"
+
+#~ msgid "Repeat every:"
+#~ msgstr "Opakovať každý:"
+
+#~ msgid "If every month, which day of the month?"
+#~ msgstr "Ak každý mesiac, ktorý deň v mesiaci?"
+
+#~ msgid "Message you want to use to be notified:"
+#~ msgstr "Správa, ktorú chcete použiť ako oznámenie:"
+
+#~ msgid "Tea Time!"
+#~ msgstr "Čas na čajík (alebo kávičku)!"
+
+#~ msgid "Command to launch:"
+#~ msgstr "Príkaz na spustenie:"
+
+#~ msgid "E.g.:"
+#~ msgstr "Napr.:"
+
+#~ msgid "Search for your location :"
+#~ msgstr "Hľadanie pre vaše umiestnenie :"
+
+#~ msgid "clock"
+#~ msgstr "hodiny"
+
+#~ msgid ""
+#~ "This applet displays time, date and a calandar.\n"
+#~ "2 view are available : <b>numeric</b> and <b>analogic</b>.\n"
+#~ " Analogic view is compatible with the Cairo-Clock's themes, and you can "
+#~ "detach the applet to be a perfect clone of Cairo-Clock.\n"
+#~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
+#~ "tasks</b>.\n"
+#~ "It also supports alarms, and allows you to setup time and date.\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a "
+#~ "notification,\n"
+#~ "Double-click on a day to edit the tasks for this day."
+#~ msgstr ""
+#~ "Tento aplet zobrazuje čas, dátum a kalendár.\n"
+#~ "K dispozícii sú 2 pohľady : <b>číselný</b> a <b>analógový</b>.\n"
+#~ " Analógový pohľad je kompatibilnýs témami Cairo-Clock, a applet môžete "
+#~ "odpojiť a získať dokonalý klon Cairo-Hodín.\n"
+#~ "Zobrazuje <b>kalendár</b> a ľavé kliknutie, vám umožní <b>spravovať "
+#~ "úlohy</b>.\n"
+#~ "Tiež podporuje alarmy, a umožnuje nastaviť čas a dátum.\n"
+#~ "Ľavé kliknutie zobrazí/skryje kalendar, Stredné kliknutie zastaví "
+#~ "oznamovanie,\n"
+#~ "Dvojité kliknutie na deň umožní upraviť dnešné úlohy."
+
+#~ msgid ""
+#~ "No task is sheduled for today.\n"
+#~ "\n"
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
+#~ msgstr ""
+#~ "Pre dnešok nie je žiadna úloha.\n"
+#~ "\n"
+#~ "Môžete pridať úlohy, kliknutím na applet pre otvorenie kalendára, a potom "
+#~ "dvoj-kliknutím na deň."
+
+#~ msgid ""
+#~ "No task is sheduled for the next 7 days.\n"
+#~ "\n"
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
+#~ msgstr ""
+#~ "Pre nasledujúcich 7 dní nie je žiadna úloha.\n"
+#~ "\n"
+#~ "Môžete pridať úlohy, kliknutím na applet pre otvorenie kalendára, a potom "
+#~ "dvoj-kliknutím na deň."
+
+#~ msgid "Show today's tasks"
+#~ msgstr "Zobraziť dnešné úlohy"
+
+#~ msgid "Show this week's tasks"
+#~ msgstr "Zobraziť úlohy pre tento týždeň"
+
+#~ msgid "Set up time and date"
+#~ msgstr "Nastaviť čas a dátum"
+
+#~ msgid "Add a new task"
+#~ msgstr "Pridať novú úlohu"
+
+#~ msgid "Delete this task"
+#~ msgstr "Odstrániť túto úlohu"
+
+#~ msgid "Don't repeat"
+#~ msgstr "Neopakovať"
+
+#~ msgid "Each month"
+#~ msgstr "Každý mesiac"
+
+#~ msgid "Each year"
+#~ msgstr "Každý rok"
+
+#~ msgid "each month"
+#~ msgstr "každý mesiac"
+
+#~ msgid "each year"
+#~ msgstr "každý rok"
+
+#~ msgid "Right-click to add a new task."
+#~ msgstr "Pravým kliknutím pridáte novú úlohu."
+
+#~ msgid "Title"
+#~ msgstr "Názov"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Time"
+#~ msgstr "Čas"
+
+#~ msgid "Freq."
+#~ msgstr "Frek."
+
+#~ msgid "Tags"
+#~ msgstr "Štítky"
+
+#~ msgid "1mn"
+#~ msgstr "1mn"
+
+#~ msgid "1h"
+#~ msgstr "1h"
+
+#~ msgid "The following task was scheduled at"
+#~ msgstr "Nasledujúca úloha bola naplánovaná na"
+
+#~ msgid "Repeat this message every:"
+#~ msgstr "Opakovať túto správu každých:"
+
+#~ msgid "The following task has felt due:"
+#~ msgstr "Nasledujúca úloha zlyhala z dôvodu:"
+
+#~ msgid "It's time for the following task:"
+#~ msgstr "Čas pre nasledujúcu úlohu:"
+
+#~ msgid "This task will begin in 15 minutes:"
+#~ msgstr "Táto úloha bude zahájená do 15 minút:"
+
+#~ msgid "Today is the following anniversary:"
+#~ msgstr "Dnes je nasledovné výročie:"
+
+#~ msgid "Tomorrow is the following anniversary:"
+#~ msgstr "Zajtra je nasledovné výročie:"
+
+#~ msgid "compiz-icon"
+#~ msgstr "compiz-ikona"
+
+#~ msgid ""
+#~ "This applet allows you to manage compiz and other windows manager\n"
+#~ "The sub-dock gives you to acces to CCSM, Emerald and some basic Compiz "
+#~ "actions.\n"
+#~ "You can bind one of these actions with the middle-click.\n"
+#~ "The configuration panel gives you some options to launch Compiz."
+#~ msgstr ""
+#~ "Tento applet vám umožní spravovať compiz a iných správcov okien\n"
+#~ "Sub-dock vám umožňuje prístup k CCSM, Emeraldu a ku niektorým základným "
+#~ "krokom Compizu.\n"
+#~ "Môžete naviazať jednu z týchto akcií sa stredné-kliknutie.\n"
+#~ "Konfiguračný panel ponúka niekoľko možností, ako spustiť Compiz."
+
+#~ msgid "Configure Compiz"
+#~ msgstr "Nastaviť Compiz"
+
+#~ msgid "Emerald Manager"
+#~ msgstr "Emerald Manažér"
+
+#~ msgid "Reload WM"
+#~ msgstr "Obnoviť WM"
+
+#~ msgid "Exposition"
+#~ msgstr "Expozícia"
+
+#~ msgid "Widget Layer"
+#~ msgstr "Vrstva widgetu"
+
+#~ msgid ""
+#~ "To configure Compiz, you need to install CCSM\n"
+#~ " through your package manager (Synaptic, YasT, etc)"
+#~ msgstr ""
+#~ "Ak chcete nastaviť Compiz, musíte nainštalovať CCSM\n"
+#~ " prostredníctvom svojho správcu balíkov (Synaptic, YaST, atď)"
+
+#~ msgid "Reload Emerald"
+#~ msgstr "Obnoviť Emerald"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Prepnúť správcu okien"
+
+#~ msgid "Switch Windows Decorator"
+#~ msgstr "Prepnúť aranžéra okien"
+
+#~ msgid "Toggle Exposition Mode"
+#~ msgstr "Prepínač módu expozície"
+
+#~ msgid "Toggle Widget Layer"
+#~ msgstr "Prepnúť vrstvu widgetov"
+
+#~ msgid "Toggle Show Desktop"
+#~ msgstr "Prepínač zobrazenia plochy"
+
+#~ msgid "frame&reflects"
+#~ msgstr "rám&zrkadlenie"
+
+#~ msgid "scotch sellotape"
+#~ msgstr "škótska lepiaca páska"
+
+#~ msgid "frame with sellotape"
+#~ msgstr "orámovanie lepiacou páskou"
+
+#~ msgid "CD box"
+#~ msgstr "CD box"
+
+#~ msgid "dark"
+#~ msgstr "tmavý"
+
+#~ msgid "clear"
+#~ msgstr "jasný"
+
+#~ msgid "futuristic"
+#~ msgstr "futuristický"
+
+#~ msgid "board"
+#~ msgstr "tabuľa"
+
+#~ msgid "desklet rendering"
+#~ msgstr "vykresľovanie desklet-u"
+
+#~ msgid "This module provides different views for your desklets."
+#~ msgstr "Tento modul poskytuje rôzne pohľady na vaše desklety."
+
+#~ msgid "3Dplane"
+#~ msgstr "3D rovina"
+
+#~ msgid "comics"
+#~ msgstr "komiks"
+
+#~ msgid "curly"
+#~ msgstr "vlnitý"
+
+#~ msgid "modern"
+#~ msgstr "moderný"
+
+#~ msgid "tooltip"
+#~ msgstr "Bublinová nápoveda"
+
+#~ msgid "dialog rendering"
+#~ msgstr "Vykreslenie dialógu"
+
+#~ msgid "This plug-in provides some decorators for dialog bubbles."
+#~ msgstr "Tento plugin poskytuje dekorácie dialógov pre dialógy v bublinách."
+
+#~ msgid ""
+#~ "Couldn't upload the file, check that your internet connection is active."
+#~ msgstr ""
+#~ "Nedá sa nahrať súbor, skontrolujte či je vaše internetové pripojenie "
+#~ "aktívne."
+
+#~ msgid ""
+#~ "File has been uploaded.\n"
+#~ "Just press CTRL+v to paste its URL anywhere."
+#~ msgstr ""
+#~ "Súbor bol nahraný.\n"
+#~ "Stačí stlačiť CTRL + V k prilepeniu adresy URL kdekoľvek."
+
+#~ msgid ""
+#~ "Please wait for the current upload to finish before starting a new one."
+#~ msgstr "Prosím, počkajte kým súčasné nahrávanie skončí pred začatím nového."
+
+#~ msgid "Tiny URL"
+#~ msgstr "Tiny URL"
+
+#~ msgid "Drop to share"
+#~ msgstr "Pustiť pre zdieľanie"
+
+#~ msgid "Clear the list of the recently uploaded files?"
+#~ msgstr "Vymazať zoznam nedávno nahratých súborov?"
+
+#~ msgid ""
+#~ "The text has been pasted in the clipboard.\n"
+#~ "You can retrieve it with CTRL+v."
+#~ msgstr ""
+#~ "Text bol vložený do schránky.\n"
+#~ "Môžete ho načítať pomocou CTRL + V."
+
+#~ msgid "Sorry, couldn't find the original file nor a preview of it."
+#~ msgstr "Prepáčte, nemôžem nájsť originál súbor, ani náhľad naň."
+
+#~ msgid ""
+#~ "The URL has been stored in the clipboard.\n"
+#~ "Just use 'CTRL+v' to paste it anywhere."
+#~ msgstr ""
+#~ "URL bola uložená do schránky.\n"
+#~ "Stačí použiť 'CTRL + V' a vložte ju kdekoľvek."
+
+#~ msgid ""
+#~ "No uploaded file available\n"
+#~ ".Just drag'n drop a file on the icon to upload it"
+#~ msgstr ""
+#~ "Nie je k dispozícii nahraný súbor\n"
+#~ "Stačí chytiť a pustiť súbor na ikonu k nahraniu."
+
+#~ msgid ""
+#~ "No uploaded file available.\n"
+#~ "Consider activating the history if you want the applet to remember "
+#~ "previous uploads."
+#~ msgstr ""
+#~ "Nie je k dispozícii nahraný súbor \n"
+#~ ". Zvážte aktiváciu histórie, ak chcete aby si applet pamätal "
+#~ "predchádzajúce nahrania."
+
+#~ msgid ""
+#~ "The current URL has been stored in the clipboard.\n"
+#~ "Just use 'CTRL+v' to paste it anywhere."
+#~ msgstr ""
+#~ "Súčasná URL bola uložená do schránky.\n"
+#~ "Stačí použiť 'CTRL + V' a vložte ju kdekoľvek."
+
+#~ msgid ""
+#~ "The current URL has been stored into the selection.\n"
+#~ "Just middle-click to paste it anywhere."
+#~ msgstr ""
+#~ "Aktuálna URL bola uložená do výberu.\n"
+#~ "Stredným-kliknutím ju vložíte kamkoľvek."
+
+#~ msgid "File"
+#~ msgstr "Súbor"
+
+#~ msgid "Click on the icon to copy the URL into the clipboard."
+#~ msgstr "Kliknutím na ikonu skopírujete URL do schránky."
+
+#~ msgid "Send the clipboard's content"
+#~ msgstr "Poslať obsah schránky"
+
+#~ msgid "History"
+#~ msgstr "História"
+
+#~ msgid "Get text"
+#~ msgstr "Získať text"
+
+#~ msgid "Remove from history"
+#~ msgstr "Odstrániť z histórie"
+
+#~ msgid "Clear History"
+#~ msgstr "Vyčistiť históriu"
+
+#~ msgid "Caroussel"
+#~ msgstr "Caroussel"
+
+#~ msgid "3D plane"
+#~ msgstr "3D rovina"
+
+#~ msgid "Parabolic"
+#~ msgstr "Parabolický"
+
+#~ msgid "Rainbow"
+#~ msgstr "Dúha"
+
+#~ msgid "Slide"
+#~ msgstr "Posun"
+
+#~ msgid "Curve"
+#~ msgstr "Krivka"
+
+#~ msgid "Panel"
+#~ msgstr "Panel"
+
+#~ msgid ""
+#~ "This module adds different views to your dock.\n"
+#~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
+#~ "views are provided."
+#~ msgstr ""
+#~ "Tento modul pridá rozličné pohľady na váš dock.\n"
+#~ "Každý dock alebo sub-dock môžu byť zobrazené so zreteľom na váš výber.\n"
+#~ "Súčasný, 3D-rovina,  Caroussel, Parabolický, Dúha, Posun a Krivky sú "
+#~ "poskytované ako pohľady."
+
+#~ msgid "drop indicator"
+#~ msgstr "pokles indikátora"
+
+#~ msgid ""
+#~ "This plug-in displays an animated indicator when you drop something into "
+#~ "the dock."
+#~ msgstr ""
+#~ "Tento plug-in zobrazuje animovaný indikátor, keď hodíte niečo do docku."
+
+#~ msgid "dustbin"
+#~ msgstr "nádoba na odpadky"
+
+#~ msgid "You're about to delete all files in all dustbins. Sure ?"
+#~ msgstr "Chystáte sa vymazať všetky súbory vo všetkých košov. Určite ?"
+
+#~ msgid "The trash contains"
+#~ msgstr "Kôš obsahuje"
+
+#~ msgid "files"
+#~ msgstr "súbory"
+
+#~ msgid "elements"
+#~ msgstr "prvky"
+
+#~ msgid "Counting total size and files number..."
+#~ msgstr "Spočítanie celkovej veľkosti a počet súborov..."
+
+#~ msgid "Show Trash (click)"
+#~ msgstr "Zobraziť kôš (kliknutie)"
+
+#~ msgid "Empty Trash"
+#~ msgstr "Vyprázdniť kôš"
+
+#~ msgid "Display dustbins information"
+#~ msgstr "Zobraziť informácie o košoch"
+
+#~ msgid "%s successfully unmounted"
+#~ msgstr "%s je teraz odpojený"
+
+#~ msgid "failed to unmount %s"
+#~ msgstr "zlyhalo pripojenie %s"
+
+#~ msgid "Unmouting this volume ..."
+#~ msgstr "Odpojiť túto jednotku..."
+
+#~ msgid " trashe(s)"
+#~ msgstr " kôš(e)"
+
+#~ msgid " file(s)"
+#~ msgstr " súbor(y)"
+
+#~ msgid "calculating"
+#~ msgstr "prebieha výpočet"
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a GNOME "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for old Gnome version (prior to 2.22)."
+#~ msgstr ""
+#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia "
+#~ "GNOME.\n"
+#~ "Je to aktivovaný automaticky, takže nie je potrebné ho aktivovať.\n"
+#~ "Je určený pre staršiu verziu GNOME (pred 2.22)."
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a GNOME "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for the a GNOME version >= 2.22"
+#~ msgstr ""
+#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia "
+#~ "GNOME.\n"
+#~ "Je to aktivovaný automaticky, takže nie je potrebné ho aktivovať.\n"
+#~ "Je určený pre verziu GNOME > = 2.22"
+
+#~ msgid "icon effects"
+#~ msgstr "efekty ikôn"
+
+#~ msgid "This plugin adds many special effects to your icons."
+#~ msgstr "Tento plug-in pridáva mnoho špeciálnych efektov do vašich ikôn."
+
+#~ msgid "Fire"
+#~ msgstr "Oheň"
+
+#~ msgid "Stars"
+#~ msgstr "Hviezdy"
+
+#~ msgid "Rain"
+#~ msgstr "Dážď"
+
+#~ msgid "Snow"
+#~ msgstr "Sneh"
+
+#~ msgid "Storm"
+#~ msgstr "Búrka"
+
+#~ msgid "Firework"
+#~ msgstr "Ohňostroj"
+
+#~ msgid "illusion"
+#~ msgstr "ilúzie"
+
+#~ msgid ""
+#~ "This plugin provides animations for appearance & disappearance of icons."
+#~ msgstr "Tento plug-in umožňuje animácie pre vzhľad & miznutie ikôn."
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a KDE "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for KDE4"
+#~ msgstr ""
+#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia "
+#~ "GNOME.\n"
+#~ "Je to aktivovaný automaticky, takže nie je potrebné ho aktivovať.\n"
+#~ "Je určený pre verziu KDE4"
+
+#~ msgid "keyboard indicator"
+#~ msgstr "indikátor klávesnice"
+
+#~ msgid ""
+#~ "This applet lets you control the keyboard layout.\n"
+#~ "\tIt can also display the current num and caps lock.\n"
+#~ "\tLeft-click to switch to the next layout\n"
+#~ "\tScroll up/down to select the previous/next layout\n"
+#~ "\tRight-click gives you access to the list of available layouts."
+#~ msgstr ""
+#~ "Tento aplet umožňuje nastaviť rozloženie klávesnice.\n"
+#~ "\t Môže tiež zobraziť aktuálne číslo a Caps Lock.\n"
+#~ "\t Ľavé-tlačidlo pre prepnutie na ďalšie rozloženie\n"
+#~ "\t Posun nahor/nadol vyberie predchádzajúce/nasledujúce rozloženie\n"
+#~ "\t Pravé-kliknutie vám umožní prístup k zoznamu dostupných rozložení."
+
+#~ msgid "logout"
+#~ msgstr "odhlásiť sa"
+
+#~ msgid ""
+#~ "A very simple applet that adds an icon to log out from your session\n"
+#~ "Left click to log out or change the user, middle click to shutdown or "
+#~ "restart\n"
+#~ "  (you can invert the buttons if you prefer to shutdown on left-click)."
+#~ msgstr ""
+#~ "Veľmi jednoduchý applet, ktorý pridá ikonu odhlásiť zo sedenia\n"
+#~ "Ľavým tlačidlom myši odhlásite alebo zmeníte užívateľa, stredným "
+#~ "tlačidlom vypnete alebo reštartujete\n"
+#~ "  (môžete invertovať tlačidlo, ak preferujete vypnutie ľavým kliknutím)."
+
+#~ msgid "Choose in how many minutes your PC will stop:"
+#~ msgstr "Vyberte si za koľko minút bude vaše PC vypnuté :"
+
+#~ msgid "Log out"
+#~ msgstr "Odhlásenie"
+
+#~ msgid "Shut down"
+#~ msgstr "Vypnutie"
+
+#~ msgid "Lock screen"
+#~ msgstr "Uzamknúť obrazovku"
+
+#~ msgid "Program an automatic shut-down"
+#~ msgstr "Program na automatické vypnutie"
+
+#~ msgid "Your computer will shut-down in 1 minute."
+#~ msgstr "Váš počítač bude vypnutý za jednu minútu."
+
+#~ msgid "Server address:"
+#~ msgstr "Adresa servera:"
+
+#~ msgid "myHost"
+#~ msgstr "môj počítač"
+
+#~ msgid "Username:"
+#~ msgstr "Meno používateľa:"
+
+#~ msgid "Password:"
+#~ msgstr "Heslo:"
+
+#~ msgid "The password will be crypted."
+#~ msgstr "Heslo bude šifrované."
+
+#~ msgid "Port:"
+#~ msgstr "Port:"
+
+#~ msgid ""
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
+#~ "and 995 for POP3S."
+#~ msgstr ""
+#~ "Vložte 0 pre použitie predvoleného portu. Predvolené porty sú 110 pre "
+#~ "POP3 a 995 pre POP3S."
+
+#~ msgid "Use a secure connection (SSL)"
+#~ msgstr "Použiť bezpečné pripojenie (SSL)"
+
+#~ msgid "Specific mail application"
+#~ msgstr "Upresnite aplikáciu pre poštu"
+
+#~ msgid "Leave empty to use the default mail application."
+#~ msgstr "Nechajte prázdne pre požitie predvolenej poštovej aplikácie."
+
+#~ msgid "Directory on server:"
+#~ msgstr "Adresár na serveri:"
+
+#~ msgid "Path of mbox file:"
+#~ msgstr "Cesta z mbox súboru:"
+
+#~ msgid "Path to Mail directory:"
+#~ msgstr "Cesta pre adresár pošty:"
+
+#~ msgid "Please choose an account type."
+#~ msgstr "Prosím vyberte typ účtu."
+
+#~ msgid "New account's name"
+#~ msgstr "Nový názov účtu"
+
+#~ msgid "Please enter a name for this account."
+#~ msgstr "Prosím, zadajte názov pre tento účet."
+
+#~ msgid ""
+#~ "This account already exists.\n"
+#~ "Please choose another name for the new account."
+#~ msgstr ""
+#~ "Tento účet už existuje.\n"
+#~ "Prosím vyberte iný názov pre tento účet."
+
+#~ msgid "Enter a name for this account. You can give it any name you want."
+#~ msgstr ""
+#~ "Prosím, zadajte názov pre tento účet. Môžete vložiť názov aký chcete."
+
+#~ msgid "Remove Account"
+#~ msgstr "Odstrániť účet"
+
+#~ msgid "unknown"
+#~ msgstr "neznámy"
+
+#~ msgid "no subject"
+#~ msgstr "bez predmetu"
+
+#~ msgid "No unread mail in your mailboxes"
+#~ msgstr "Žiadna neprečítaná správa vo vašej schránke"
+
+#~ msgid "You have %d new mails:"
+#~ msgstr "Máte %d nových mailov :"
+
+#~ msgid "You have a new mail:"
+#~ msgstr "Máte nový e-mail :"
+
+#~ msgid "mail"
+#~ msgstr "pošta"
+
+#~ msgid ""
+#~ "This applet is very useful to warn you when you get new e-mails\n"
+#~ "It can check in any kind of mailbox (yahoo, gmail, etc)\n"
+#~ "Left-click to launch the prefered mail application,\n"
+#~ "Middle-click to refresh all the mailboxes."
+#~ msgstr ""
+#~ "Tento applet je veľmi užitočný pre upozornenie, ak dostanete nové e-"
+#~ "maily\n"
+#~ "Tu môžete overovať rôzne druhy schránok (Yahoo, Gmail, atď)\n"
+#~ "Ľavé kliknutie spustí preferovaný mail,\n"
+#~ "Stredným kliknutím obnovíte všetky poštové schránky."
+
+#~ msgid ""
+#~ "A problem occured\n"
+#~ "If '%s' is not your usual mail application,\n"
+#~ "you can change it in the configuration panel of this module"
+#~ msgstr ""
+#~ "Nastal problém\n"
+#~ "Ak '%s' nie je obvyklou aplikáciou na spracovanie pošty,\n"
+#~ "môžete to zmeniť v conf paneli tohto modulu"
+
+#~ msgid "Refresh a mail account"
+#~ msgstr "Obnoviť poštový účet"
+
+#~ msgid "Refresh all"
+#~ msgstr "Obnoviť všetko"
+
+#~ msgid "Mark all emails as read"
+#~ msgstr "Označiť všetku poštu ako prečítanú"
+
+#~ msgid "Launch %s"
+#~ msgstr "Spustiť %s"
+
+#~ msgid "Mail"
+#~ msgstr "Pošta"
+
+#~ msgid "motion blur"
+#~ msgstr "rozmazanie pohybom"
+
+#~ msgid "This plugin adds a motion blur effect to docks."
+#~ msgstr "Tento plugin pridá efekt rozmazania pohybom do docku."
+
+#~ msgid "Unknown artist"
+#~ msgstr "Neznámy interpret"
+
+#~ msgid "Unknown title"
+#~ msgstr "Neznámy titul"
+
+#~ msgid "Track"
+#~ msgstr "Stopa"
+
+#~ msgid "Current song"
+#~ msgstr "Aktuálna skladba"
+
+#~ msgid "Artist"
+#~ msgstr "Interpret"
+
+#~ msgid "Album"
+#~ msgstr "Album"
+
+#~ msgid "Length"
+#~ msgstr "Dĺžka"
+
+#~ msgid "Track n°"
+#~ msgstr "Skladba číslo"
+
+#~ msgid "There is no media playing."
+#~ msgstr "Nie je žiadne medium na prehranie."
+
+#~ msgid "musicPlayer"
+#~ msgstr "Prehrávač hudby"
+
+#~ msgid ""
+#~ "This applet lets you control any music player.\n"
+#~ "Left click to Play/Pause, middle-click to play Next song.\n"
+#~ "Scroll up/down to play previous/next song.\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends "
+#~ "on Player),\n"
+#~ " and jpeg image to use as cover.\n"
+#~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
+#~ "       For SongBird, you have to install its dbus add-on.\n"
+#~ "       For Exaile 0.3, you have to activate its MPRIS plug-in"
+#~ msgstr ""
+#~ "Tento applet vám umožní ovládať akýkoľvek hudobný prehrávač.\n"
+#~ "Ľavé tlačidlo pre Prehrať/Pauza, stredné-kliknutie prehrá ďalšiu pieseň.\n"
+#~ "Posun nahor/nadol prehrá predchádzajúcu/ďalšiu skladbu.\n"
+#~ "Môžete chytiť & pustiť piesne na ikonu a dať ich do fronty (závisí na "
+#~ "Prehrávači),\n"
+#~ " a JPEG použiť ako obal .\n"
+#~ "Poznámka: U XMMS, musíte nainštalovať rozšírenie 'xmms-infopipe'.\n"
+#~ "       Pre Songbird, musíte nainštalovať jeho dbus add-on.\n"
+#~ "       Pre Exaile 0.3, musíte aktivovať jeho MPRIS plug-in"
+
+#~ msgid ""
+#~ "Sorry, I couldn't detect any player.\n"
+#~ "If it is running, it is maybe because its version is too old and does not "
+#~ "offer such service."
+#~ msgstr ""
+#~ "Prepáčte, neviem nájsť žiaden prehrávač.\n"
+#~ "Ak je spustený, to je možno preto, že jeho verzia je príliš stará a "
+#~ "neponúka tieto služby."
+
+#~ msgid "Find opened player"
+#~ msgstr "Nájdi otvorený prehrávač"
+
+#~ msgid "Previous"
+#~ msgstr "Predchádzajúci"
+
+#~ msgid "Play/Pause"
+#~ msgstr "Prehrať/Pozastaviť"
+
+#~ msgid "left-click"
+#~ msgstr "ľavé kliknutie"
+
+#~ msgid "Next"
+#~ msgstr "Ďalej"
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid "Information"
+#~ msgstr "Informácia"
+
+#~ msgid "Show JumpBox"
+#~ msgstr "Zobraziť JumpBox"
+
+#~ msgid "Toggle Shuffle"
+#~ msgstr "Prepnúť Náhodné"
+
+#~ msgid "Toggle Repeat"
+#~ msgstr "Prepnúť opakovanie"
+
+#~ msgid "Rate this song"
+#~ msgstr "Hodnotiť túto skladbu"
+
+#~ msgid "netspeed"
+#~ msgstr "rýchlosť pripojenia"
+
+#~ msgid ""
+#~ "This applet shows you the bit rate of your internet connection and some "
+#~ "stats about it.\n"
+#~ "Left-click on the icon to have the total amount of data transfered\n"
+#~ "Middle-click to (de)activate the network (needs NetworManager)"
+#~ msgstr ""
+#~ "Tento applet zobrazuje prenosovú rýchlosť vášho pripojenia k internetu a "
+#~ "niektoré štatistiky o ňom.\n"
+#~ "Ľavé-kliknutie na ikonu, zobrazí celkové množstvo prenesených dát\n"
+#~ "Stredné-kliknutie (de)aktivuje sieť (potrebný Network Manager)"
+
+#~ msgid "Total amount of data"
+#~ msgstr "Celkové množstvo dát"
+
+#~ msgid "downloaded"
+#~ msgstr "Stiahnuté"
+
+#~ msgid "uploaded"
+#~ msgstr "nahrané"
+
+#~ msgid ""
+#~ "Interface '%s' doesn't seem to exist or is not readable.\n"
+#~ " You may have to set up the interface you wish to monitor.\n"
+#~ " Do you want to do it now?"
+#~ msgstr ""
+#~ "Zdá sa, že rozhranie '%s'  neexistuje alebo nie je čitateľné.\n"
+#~ " Možno budete musieť nastaviť rozhranie, ktoré chcete sledovať.\n"
+#~ " Chceš to urobiť teraz?"
+
+#~ msgid "Enable/disable network"
+#~ msgstr "Povoliť/zakázať sieť"
+
+#~ msgid "Re-check interface"
+#~ msgstr "Skontrolovanie rozhrania"
+
+#~ msgid ""
+#~ "Laptop on Battery.\n"
+#~ " Battery charged at:"
+#~ msgstr ""
+#~ "Laptop na batérii\n"
+#~ " Batéria nabitá na:"
+
+#~ msgid "Estimated time with charge:"
+#~ msgstr "Zostávajúci čas do nabitia:"
+
+#~ msgid ""
+#~ "Laptop on Charge.\n"
+#~ " Battery charged at:"
+#~ msgstr ""
+#~ "Laptop sa nabíja.\n"
+#~ " Batéria nabitá na:"
+
+#~ msgid "Estimated charge time:"
+#~ msgstr "Zostávajúci čas nabíjania:"
+
+#~ msgid "No battery found."
+#~ msgstr "Batéria nenájdená"
+
+#~ msgid ""
+#~ "PowerManager.\n"
+#~ "Battery charge seems to be low"
+#~ msgstr ""
+#~ "Správa napájania.\n"
+#~ "Nabitia batérie je nízke"
+
+#~ msgid "Please put your laptop on charge."
+#~ msgstr "Prosím pripojte váš laptop na nabíjanie."
+
+#~ msgid ""
+#~ "PowerManager.\n"
+#~ "Your battery is now charged"
+#~ msgstr ""
+#~ "Správa napájania.\n"
+#~ "Vaša batéria sa teraz nabíja"
+
+#~ msgid "PowerManager"
+#~ msgstr "Správca napájania"
+
+#~ msgid "A power manager for laptop batteries. Works with ACPI and DBus."
+#~ msgstr "Správca napájania pre batérie laptopov. Spolupracuje s ACPI a DBus."
+
+#~ msgid "Set up power management"
+#~ msgstr "Nastaviť správu napájania"
+
+#~ msgid "Halt"
+#~ msgstr "Zastaviť"
+
+#~ msgid "Hibernate"
+#~ msgstr "Dlhodobý spánok"
+
+#~ msgid "Suspend"
+#~ msgstr "Úsporný režim"
+
+#~ msgid "Reboot"
+#~ msgstr "Reštartovať"
+
+#~ msgid "Quick Browser"
+#~ msgstr "Rýchly prehliadač"
+
+#~ msgid ""
+#~ "This applet lets you browse a folder and its sub-folders very quickly.\n"
+#~ "You can set up a shortkey to pop up the menu.\n"
+#~ "Midlle-click will open the main folder.\n"
+#~ "This applet can be instanciated several times, if you want to browse "
+#~ "different folders."
+#~ msgstr ""
+#~ "Tento applet vám umožní prezerať priečinok a jeho pod-zložky veľmi "
+#~ "rýchlo.\n"
+#~ "Môžete si nastaviť, klávesov skratku pop up menu.\n"
+#~ "Stredné-kliknutie otvorí hlavnú zložku.\n"
+#~ "Tento applet je možné otvoriť niekoľkokrát, keď si chcete prezerať rôzne "
+#~ "zložky."
+
+#~ msgid "Open this folder"
+#~ msgstr "Otvoriť tento priečinok"
+
+#~ msgid "Open folder"
+#~ msgstr "Otvoriť priečinok"
+
+#~ msgid "Unmounted"
+#~ msgstr "Odpojené"
+
+#~ msgid "%s is now mounted"
+#~ msgstr "%s je teraz pripojený"
+
+#~ msgid "%s has been connected"
+#~ msgstr "%s je pripojený"
+
+#~ msgid "%s is now unmounted"
+#~ msgstr "%s je teraz odpojený"
+
+#~ msgid "shortcuts"
+#~ msgstr "odkazy"
+
+#~ msgid ""
+#~ "An applet that let you access quickly to all of your shortcuts.\n"
+#~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
+#~ "don't have Nautilus).\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
+#~ "bookmark.\n"
+#~ "Middle-click on the main icon to show your home folder.\n"
+#~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
+#~ "The applet can also display valuable information about your disks, like "
+#~ "free space, type, etc."
+#~ msgstr ""
+#~ "Applet, ktorý vám umožní rýchly prístup ku všetkým vašim skratkám.\n"
+#~ "Môže spravovať disky, sieťové body, a Nautilus záložky (aj keď nemáte "
+#~ "Nautilus).\n"
+#~ "Pretiahnuť a pustiť zložky na hlavnú ikonu alebo sub-dock pre pridanie "
+#~ "záložky.\n"
+#~ "Kliknutím stredným tlačítkom na hlavnú ikonu zobrazíte váš domovský "
+#~ "adresár.\n"
+#~ "Kliknutím stredným tlačítkom na bod pripojenia ikony (od)pripojíte.\n"
+#~ "Applet môže tiež zobrazovať hodnotné informácie o vašich diskoch, ako je "
+#~ "voľné miesto, typ, atď"
+
+#~ msgid "failed to mount %s"
+#~ msgstr "Zlyhalo pripojenie %s"
+
+#~ msgid "Failed to unmount %s"
+#~ msgstr "Zlyhalo odpojenie %s"
+
+#~ msgid "Sorry, this applet is not yet available for KDE."
+#~ msgstr "Prepáčte, tento applet nie je dostupný pre KDE."
+
+#~ msgid "Open Home directory"
+#~ msgstr "Otvoriť domovský priečinok"
+
+#~ msgid "Rename this bookmark"
+#~ msgstr "Premenovať túto záložku"
+
+#~ msgid "Remove this bookmark"
+#~ msgstr "Odstrániť túto záložku"
+
+#~ msgid "Eject"
+#~ msgstr "Vysunúť"
+
+#~ msgid "Unmount"
+#~ msgstr "Odpojiť"
+
+#~ msgid "Mount"
+#~ msgstr "Pripojiť"
+
+#~ msgid "Get disk info"
+#~ msgstr "Získať info o disku"
+
+#~ msgid "Only folders can be bookmarked."
+#~ msgstr "Iba priečinky môžu byť záložkou."
+
+#~ msgid "show mouse"
+#~ msgstr "zobraziť myš"
+
+#~ msgid ""
+#~ "This plugin draws some animations around the cursor when it's inside a "
+#~ "dock/desklet."
+#~ msgstr ""
+#~ "Tento plugin vykresľuje niektoré animácie okolo kurzora, keď je vnútri "
+#~ "doku/deskletu."
+
+#~ msgid "showDesktop"
+#~ msgstr "zobraziťPlochu"
+
+#~ msgid ""
+#~ "This applet adds an icon to show your desktop,\n"
+#~ " and also : the desklets, the Widget Layer, or all the desktops at once.\n"
+#~ "It can also be used to quickly change the screen's resolution from the "
+#~ "right-click menu.\n"
+#~ "Left-click to show/hide the desktop,\n"
+#~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
+#~ "Layer, or all the desktops at once."
+#~ msgstr ""
+#~ "Tento aplet pridáva ikonu zobraziť plochu,\n"
+#~ " a tiež : desklety, Widget Layer, plochy alebo všetko súčasne.\n"
+#~ "Môže byť tiež použitý pre rýchlu zmenu rozlíšenia obrazovky pravým-"
+#~ "kliknutím menu.\n"
+#~ "Ľavé kliknutie zobrazí/skryje plochu,\n"
+#~ "Stredné kliknutie zobrazí/skryje na ploche, desklety, Widget Layer, alebo "
+#~ "súčasne všetky plochy."
+
+#~ msgid "Show the desktop"
+#~ msgstr "Zobraziť pracovnú plochu"
+
+#~ msgid "Show the Widget Layer (Compiz)"
+#~ msgstr "Zobraziť Widget Layer (Compiz)"
+
+#~ msgid "Change screen resolution"
+#~ msgstr "Zmeniť rozlíšenie obrazovky"
+
+#~ msgid "Move to the Desktop"
+#~ msgstr "Premiestniť na plochu"
+
+#~ msgid "Copy to the Desktop"
+#~ msgstr "Kopírovať na plochu"
+
+#~ msgid "Link to the Desktop"
+#~ msgstr "Odkaz na plochu"
+
+#~ msgid "Download onto the Desktop"
+#~ msgstr "Stiahnuť na plochu"
+
+#~ msgid "slider"
+#~ msgstr "posuvník"
+
+#~ msgid ""
+#~ "This applet is a basic image slider\n"
+#~ " You just have to select a directory and a display effect and you're "
+#~ "done\n"
+#~ "Click to play/pause or to edit the current image.\n"
+#~ "Middle-click to open the images folder."
+#~ msgstr ""
+#~ "Tento applet je jednoduchý prehliadač obraázkov.\n"
+#~ "Stačí si vybrať adresár a zobrazenie efektu a máte hotovo\n"
+#~ "Kliknite pre prehrávanie/pauza, alebo upraviť aktuálny obrázok.\n"
+#~ "Stredné kliknutie otvorí zložku s obrázkami."
+
+#~ msgid "Play"
+#~ msgstr "Prehrať"
+
+#~ msgid "Pause"
+#~ msgstr "Pozastaviť"
+
+#~ msgid "Open current image"
+#~ msgstr "Otvoriť aktuálny obrázok"
+
+#~ msgid "Browse images folder"
+#~ msgstr "Prechádzať priečinok s obrázkami"
+
+#~ msgid "stack"
+#~ msgstr "sklad"
+
+#~ msgid ""
+#~ "This applet allows you to build a stack of files, just like the Stacks "
+#~ "applet of MacOS X.\n"
+#~ "To add file into your stacks, you just have to drag and drop it on the "
+#~ "Stacks icon and you're done.\n"
+#~ "You can drop any file, or web URL, or even some piece of text\n"
+#~ "You can quickly copy the path/url/text to the clipboard, or open it."
+#~ msgstr ""
+#~ "Tento applet vám umožní vytvoriť zásobník súborov, rovnako ako Stacks "
+#~ "applet v MacOS X.\n"
+#~ "Ak chcete pridať súbor do svojho zásobníka, stačí ho pretiahnuť na ikonu "
+#~ "Stacks a máte hotovo.\n"
+#~ "Môžete vložiť akýkoľvek súbor alebo URL webovú adresu, alebo dokonca "
+#~ "nejaký kus textu\n"
+#~ "Môžete rýchlo skopírovať cestu/url/text do schránky, alebo ju otvoriť."
+
+#~ msgid ""
+#~ "No items in the stack.\n"
+#~ "You can add files, URL, and even a piece of text by dragging them onto "
+#~ "the icon."
+#~ msgstr ""
+#~ "Žiadne položky v zásobníku.\n"
+#~ "Môžete pridať súbory, URL, a dokonca aj kúsok textu presunutím na ikonu."
+
+#~ msgid "Clear the stack?"
+#~ msgstr "Vyčistiť zásobník ?"
+
+#~ msgid "Set new name for this item:"
+#~ msgstr "Nastaviť nový názov pre túto položku :"
+
+#~ msgid "Paste (drag'n'drop)"
+#~ msgstr "Vložiť (potiahni a pusti)"
+
+#~ msgid "Clear the stack"
+#~ msgstr "Vyčistiť sklad"
+
+#~ msgid "Open (click)"
+#~ msgstr "Otvoriť (klik)"
+
+#~ msgid "Copy"
+#~ msgstr "Kopírovať"
+
+#~ msgid "Cut"
+#~ msgstr "Vystrihnúť"
+
+#~ msgid "Rename this item"
+#~ msgstr "Premenovať túto položku"
+
+#~ msgid "Remove this item"
+#~ msgstr "Odstrániť túto položku"
+
+#~ msgid "Current"
+#~ msgstr "Aktuálny"
+
+#~ msgid "Desktop"
+#~ msgstr "Plocha"
+
+#~ msgid "switcher"
+#~ msgstr "prepínač"
+
+#~ msgid ""
+#~ "This applet allows you to interact with your workspaces :\n"
+#~ " - switch between your workspaces (scroll up/down with the mouse),\n"
+#~ " - name them (in the config),\n"
+#~ " - quickly add/remove a workspace (in the menu),\n"
+#~ " - show the desktop (middle-click or in the menu),\n"
+#~ " - list all windows on each workspace ((middle-click or in the menu)\n"
+#~ "It has 2 modes : compact (on 1 icon) and expanded (with a sub-dock)."
+#~ msgstr ""
+#~ "Tento aplet vám umožňuje prepínať vaše pracovné plochy:\n"
+#~ " - Prepínanie medzi vášho pracovnými plochami (pohybovať hore/dole "
+#~ "pomocou myši),\n"
+#~ " - Pomenovať ich (v konfigurácii),\n"
+#~ " - Rýchlo pridať/odobrať pracovnú plochu (v menu),\n"
+#~ " - Ukázať plochu (stredný klik alebo v menu),\n"
+#~ " - Zoznam všetkých okien na každej pracovnej ploche ((kliknite na stredné "
+#~ "tlačidlo, alebo v menu)\n"
+#~ "To má 2 režimy: kompaktné (na 1 ikonu) a rozšírená (s sub-dock)."
+
+#~ msgid "Rename this workspace"
+#~ msgstr "Premenovať túto pracovnú plochu"
+
+#~ msgid "Add a workspace"
+#~ msgstr "Pridať plochu"
+
+#~ msgid "Remove last workspace"
+#~ msgstr "Odstrániť poslednú plochu"
+
+#~ msgid "Move current workspace to this workspace"
+#~ msgstr "Premiestniť súčasnú plochu na túto plochu"
+
+#~ msgid ""
+#~ "This will move all windows from the current desktop to the one you "
+#~ "clicked on."
+#~ msgstr ""
+#~ "Toto premiestni všetky okná zo súčasnej plochy na tú kam ste klikli."
+
+#~ msgid "Windows List"
+#~ msgstr "Zoznam okien"
+
+#~ msgid "CD_APPLET_NAME"
+#~ msgstr "CD_APPLET_NAME"
+
+#~ msgid ""
+#~ "Useful description\n"
+#~ "and manual"
+#~ msgstr ""
+#~ "Použiteľný opis\n"
+#~ "a manuál"
+
+#~ msgid "terminal"
+#~ msgstr "terminál"
+
+#~ msgid "New Tab"
+#~ msgstr "Nová karta"
+
+#~ msgid "Rename current Tab"
+#~ msgstr "Odstrániť aktuálnu kartu"
+
+#~ msgid "Close current Tab"
+#~ msgstr "Zavrieť aktuálnu kartu"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminál"
+
+#~ msgid "Set title for this tab:"
+#~ msgstr "Nastaviť názov pre túto kartu :"
+
+#~ msgid "Select a color"
+#~ msgstr "Vyberte farbu"
+
+#~ msgid "You can recall the Terminal desklet by typing %s"
+#~ msgstr "Môžete vrátiť späť v Termináli napísaním %s"
+
+#~ msgid "Paste"
+#~ msgstr "Vložiť"
+
+#~ msgid "Rename this Tab"
+#~ msgstr "Premenovať"
+
+#~ msgid "Change this Tab's colour"
+#~ msgstr "Zmeniť farbu kariet"
+
+#~ msgid "Close this Tab"
+#~ msgstr "Zatvoriť túto kartu"
+
+#~ msgid "Note-Taking"
+#~ msgstr "Poznámka"
+
+#~ msgid ""
+#~ "Control your Gnote or TomBoy's notes directly in the dock !\n"
+#~ "Click on a note to open it, Escape to close it.\n"
+#~ "Middle-click to instantly create a new note.\n"
+#~ "You can search inside notes and display their content on the icons."
+#~ msgstr ""
+#~ "Ovládajte svoje Gnote alebo Tomboy poznámky priamo v docku !\n"
+#~ "Kliknitím na poznámku, ju otvoríte, Escape ju zavrie.\n"
+#~ "Stredné kliknutie jednoducho vytvorí novú poznámku.\n"
+#~ "Môžete hľadať vnútri poznámok a zobraziť ich obsah na ikonách."
+
+#~ msgid "Note name : "
+#~ msgstr "Názov poznámky : "
+
+#~ msgid "Delete this note?"
+#~ msgstr "Odstrániť túto poznámku ?"
+
+#~ msgid "Search for:"
+#~ msgstr "Hľadať :"
+
+#~ msgid "Search for tag:"
+#~ msgstr "Hľadať značku :"
+
+#~ msgid "Add a note"
+#~ msgstr "Pridať poznámku"
+
+#~ msgid "Delete this note"
+#~ msgstr "Odstrániť túto poznámku"
+
+#~ msgid "Reload notes"
+#~ msgstr "Obnoviť poznámky"
+
+#~ msgid "Search"
+#~ msgstr "Vyhľadávanie"
+
+#~ msgid "Search for tag"
+#~ msgstr "Hľadať značku"
+
+#~ msgid "Search for today's note"
+#~ msgstr "Vyhľadať poznámku na dnes"
+
+#~ msgid "Search for this week's note"
+#~ msgstr "Vyhľadať poznámku na tento týždeň"
+
+#~ msgid "Search for next week's note"
+#~ msgstr "Vyhľadať poznámku na nasledujúci týždeň"
+
+#~ msgid "Reset marks"
+#~ msgstr "Vymazať označenia"
+
+#~ msgid ""
+#~ "I couldn't get the info\n"
+#~ " Is connexion alive ?"
+#~ msgstr ""
+#~ "Nemôžem získať informácie\n"
+#~ " je pripojenie aktívne ?"
+
+#~ msgid "I couldn't find this location"
+#~ msgstr "Nemôžem nájsť umiestnenie"
+
+#~ msgid ""
+#~ "Enter the name of your location and press Enter to choose amongst results."
+#~ msgstr ""
+#~ "Zadajte názov svojho umiestnenia a stlačením Enter si vyberte medzi "
+#~ "výsledkami."
+
+#~ msgid "weather"
+#~ msgstr "počasie"
+
+#~ msgid ""
+#~ "This applet displays weather into your dock.\n"
+#~ "Data are provided by www.weather.com, you can find your location in the "
+#~ "config panel.\n"
+#~ "It can detach itself to be a totally eye-candy 3D deskelt.\n"
+#~ "Middle-click on the main icon to have current conditions information, "
+#~ "left-click on a sub-icon to have forcast information.\n"
+#~ msgstr ""
+#~ "Tento applet zobrazuje počasia v docku.\n"
+#~ "Dáta sú poskytované www.weather.com, môžete nájsť umiestnenie v "
+#~ "konfiguračnom paneli.\n"
+#~ "Odpojením z panelu získate úplne perfektný  3D deskelt.\n"
+#~ "Stredným-kliknutím na hlavnú ikonu máte aktuálne informácie o "
+#~ "podmienkach, ľavé kliknutie na sub-ikonu dá viac informácií.\n"
+
+#~ msgid "Jan"
+#~ msgstr "Jan"
+
+#~ msgid "Feb"
+#~ msgstr "Feb"
+
+#~ msgid "Mar"
+#~ msgstr "Mar"
+
+#~ msgid "Apr"
+#~ msgstr "Apr"
+
+#~ msgid "May"
+#~ msgstr "Máj"
+
+#~ msgid "Jun"
+#~ msgstr "Jún"
+
+#~ msgid "Jui"
+#~ msgstr "Júl"
+
+#~ msgid "Aug"
+#~ msgstr "Aug"
+
+#~ msgid "Sep"
+#~ msgstr "Sep"
+
+#~ msgid "Oct"
+#~ msgstr "Okt"
+
+#~ msgid "Nov"
+#~ msgstr "Nov"
+
+#~ msgid "Dec"
+#~ msgstr "Dec"
+
+#~ msgid "Data are being retrieved, please wait a moment."
+#~ msgstr "Získavam údaje, prosím, počkajte chvíľu."
+
+#~ msgid "Open weather.com (double-click)"
+#~ msgstr "Otvoriť weather.com (dvoj-klik)"
+
+#~ msgid "Reload now"
+#~ msgstr "Znova načítať"
+
+#~ msgid ""
+#~ "No data available\n"
+#~ " is your connection alive?"
+#~ msgstr ""
+#~ "Nie sú k dispozícii žiadne údaje\n"
+#~ " je spojenie aktívne ?"
+
+#~ msgid "Temperature"
+#~ msgstr "Teplota"
+
+#~ msgid "Precipitation probability"
+#~ msgstr "Pravdepodobnosť zrážok"
+
+#~ msgid "Wind"
+#~ msgstr "Vietor"
+
+#~ msgid "Humidity"
+#~ msgstr "Vlhkosť"
+
+#~ msgid "Sunrise"
+#~ msgstr "Východ slnka"
+
+#~ msgid "Sunset"
+#~ msgstr "Západ slnka"
+
+#~ msgid "Data are being fetched, please re-try in a few seconds."
+#~ msgstr "Dáta sú pritiahnuté za vlasy, prosím opakujte o niekoľko sekúnd."
+
+#~ msgid ""
+#~ "No data available\n"
+#~ "Retrying now..."
+#~ msgstr ""
+#~ "Žiadne údaje nie sú k dispozícii\n"
+#~ "Snažím sa znova ..."
+
+#~ msgid "Feels like"
+#~ msgstr "pocit"
+
+#~ msgid "Pressure"
+#~ msgstr "Tlak"
+
+#~ msgid ""
+#~ "The weblets applet allows you to show an interactive web page on your "
+#~ "desktop.\n"
+#~ "You can select your web page, set the desired scrolling,\n"
+#~ "and hide the scrollbars to get a real 'crop' of the page."
+#~ msgstr ""
+#~ "Weblets applet vám umožní zobraziť interaktívne webové stránky na vašej "
+#~ "ploche.\n"
+#~ "Môžete si vybrať svoje webové stránky, nastavte rolovanie,\n"
+#~ "a skryť scrollbars a získať skutočný 'výber' časti stránky."
+
+#~ msgid "Weblets"
+#~ msgstr "Weblety"
+
+#~ msgid "WiFi disabled."
+#~ msgstr "Wifi zakázaná."
+
+#~ msgid "wifi"
+#~ msgstr "wifi"
+
+#~ msgid ""
+#~ "This applet shows you the signal strength of the first active wifi "
+#~ "connection\n"
+#~ "Left-click to pop-up some info,Middle-click to re-check immediately."
+#~ msgstr ""
+#~ "Tento aplet vám ukáže silu signálu prvého aktívneho wifi pripojenia\n"
+#~ "Ľavý klik zobrazí nejaké info, Stredný klik to ihneď prekontroluje."
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a XFCE "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it."
+#~ msgstr ""
+#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia XFCE.\n"
+#~ "Je to aktívovaný automaticky, takže nie je potrebné aktivovať."
+
+#~ msgid "Global"
+#~ msgstr "Všeobecné"
+
+#~ msgid "Animations are triggered when hovering an icon only in OpenGL mode."
+#~ msgstr ""
+#~ "Animácie sú vyvolané, iba v režime OpenGL keď sa  vznášate na ikone."
+
+#~ msgid "when hovering over an icon"
+#~ msgstr "keď je nad ikonou"
+
+#~ msgid "Effects used:"
+#~ msgstr "Použité efekty  :"
+
+#~ msgid "when clicking on an launcher"
+#~ msgstr "keď kliknem na spúšťač"
+
+#~ msgid "Effects used on launcher:"
+#~ msgstr "Použité efekty na spúšťači :"
+
+#~ msgid "Number of times the animation will play:"
+#~ msgstr "Čas pokiaľ bude prehrávaná animácia :"
+
+#~ msgid "when clicking on an application"
+#~ msgstr "keď kliknem na appli"
+
+#~ msgid "Effects used on applications:"
+#~ msgstr "Použité efekty na applis :"
+
+#~ msgid "when clicking on an applet"
+#~ msgstr "keď kliknem na applet"
+
+#~ msgid "Effects used on applets:"
+#~ msgstr "Použité efekty na appletoch :"
+
+#~ msgid "Rotation"
+#~ msgstr "Otočenie"
+
+#~ msgid "Duration of the animation:"
+#~ msgstr "Doba trvania animácie:"
+
+#~ msgid "Repeat while icon is pointed to?"
+#~ msgstr "Opakovať, pri namierení na ikonu ?"
+
+#~ msgid "Type of mesh:"
+#~ msgstr "Typ sľučky :"
+
+#~ msgid "Cube"
+#~ msgstr "Kocka"
+
+#~ msgid "Capsule"
+#~ msgstr "Tobolka"
+
+#~ msgid "Colour of the sheen:"
+#~ msgstr "Farba lesku :"
+
+#~ msgid "Image for the spotlight:"
+#~ msgstr "Farba pre umiestnenie :"
+
+#~ msgid "Image for the front spotlight:"
+#~ msgstr "Obrázok pre predné miesto :"
+
+#~ msgid "Spot colour:"
+#~ msgstr "farba umiestnenia :"
+
+#~ msgid "Halo colour:"
+#~ msgstr "farba okolia kruhu :"
+
+#~ msgid "Rays"
+#~ msgstr "Lúče"
+
+#~ msgid "1st color of gradation :"
+#~ msgstr "Prvá farba postupného prechodu :"
+
+#~ msgid "2nd color of gradation :"
+#~ msgstr "Druhá farba postupného prechodu :"
+
+#~ msgid "Random colours?"
+#~ msgstr "Náhodné farby ?"
+
+#~ msgid "Number of rays:"
+#~ msgstr "Počet lúčov :"
+
+#~ msgid "Ray size:"
+#~ msgstr "Veľkosť lúčov :"
+
+#~ msgid "Ray speed:"
+#~ msgstr "Rýchlosť lúčov :"
+
+#~ msgid "Initial stretch:"
+#~ msgstr "Počiatočné roztiahnutie :"
+
+#~ msgid "Horizontal stretch"
+#~ msgstr "Vodorovné roztiahnutie"
+
+#~ msgid "Vertical stretch"
+#~ msgstr "Zvislé roztiahnutie"
+
+#~ msgid "Corner stretch"
+#~ msgstr "Roztiahnutie rohu"
+
+#~ msgid "Spring constant:"
+#~ msgstr "Konštanta rastu :"
+
+#~ msgid "Friction:"
+#~ msgstr "Trenia :"
+
+#~ msgid "Number of points on the grid in each direction:"
+#~ msgstr "Počet bodov v mriežke v jednom smere :"
+
+#~ msgid "Wave width:"
+#~ msgstr "Šírka vlny :"
+
+#~ msgid "Wave amplitude:"
+#~ msgstr "Amplitúda vlny :"
+
+#~ msgid "Pulse max zoom:"
+#~ msgstr "Maximálne priblíženie pulzu :"
+
+#~ msgid "Pulse follows icon shape?"
+#~ msgstr "Má pulz nasledovať pulz ikony ?"
+
+#~ msgid "Bounce duration:"
+#~ msgstr "Doba trvania poskočenia :"
+
+#~ msgid "When bouncing, resize the icon by:"
+#~ msgstr "Pri poskočení, zmeniť veľkosť ikony o :"
+
+#~ msgid "the lower the value, the more it will flatten."
+#~ msgstr "čím menšia, tým bude plochejšia"
+
+#~ msgid "How much the icon will flatten when hitting the ground:"
+#~ msgstr "Ako veľa sa ikony spošští pri priblížení k okraju :"
+
+#~ msgid "Blink duration:"
+#~ msgstr "Doba trvania blikania :"
+
+#~ msgid "Icon size for busy penguin:"
+#~ msgstr "Veľkosť ikony, keď tučniak nie je uvolnený :"
+
+#~ msgid "Delay between animation changes :"
+#~ msgstr "Oneskorenie medzi zmenou animácie :"
+
+#~ msgid "Penguin transparency:"
+#~ msgstr "Priehľadnosť tučniaka :"
+
+#~ msgid "Let the penguin wander everywhere in the dock?"
+#~ msgstr "Nechať tučniaka, nech behá po celom docku ?"
+
+#~ msgid "in pixels."
+#~ msgstr "v pixeloch."
+
+#~ msgid "Ground offset:"
+#~ msgstr "Oblasť odsadenia:"
+
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+#~ msgstr ""
+#~ "V závislosti na manažérovi vašich okien, môžete pohybovať pomocou ALT + "
+#~ "ľavý_klik"
+
+#~ msgid "Items"
+#~ msgstr "Položky"
+
+#~ msgid ""
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
+#~ "you get by selecting some text with the mouse."
+#~ msgstr ""
+#~ "Položky schránky sú tie, ktoré dostanete stlačením CTRL+c. Položky "
+#~ "označené sú tie, ktoré dostanete označením nejakého textu myšou."
+
+#~ msgid "Which items should be remembered?"
+#~ msgstr "Ktoré položky si mám zapamätať ?"
+
+#~ msgid "Clipboard"
+#~ msgstr "Schránka"
+
+#~ msgid "Selection"
+#~ msgstr "Výber"
+
+#~ msgid "Both"
+#~ msgstr "Obidve"
+
+#~ msgid "Number of items:"
+#~ msgstr "POčet položiek :"
+
+#~ msgid "Remember items between 2 sessions ?"
+#~ msgstr "Zapamätať položky medzi 2 sedeniami ?"
+
+#~ msgid ""
+#~ "It is especially useful if you often select text with the mouse and don't "
+#~ "want to loose your clipboard items due to too many items in the selection."
+#~ msgstr ""
+#~ "To je obzvlášť užitočné, ak si často vybráte text pomocou myši, a "
+#~ "nechcete prísť o svoje položky v schránke , pretože máte veľké množstvo "
+#~ "položiek."
+
+#~ msgid "Separate clipboard and selection?"
+#~ msgstr "Oddeliť schránku a výber ?"
+
+#~ msgid "If so, number of selection items:"
+#~ msgstr "Ak áno, počet vybraných položiek :"
+
+#~ msgid ""
+#~ "When you click on an item, its content will become accessible with CTRL+v"
+#~ msgstr "Ak kliknete na položku, jej obsah je dostupný stlačením CTRL+v"
+
+#~ msgid "Paste into Clipboard?"
+#~ msgstr "Vložiť do schránky ?"
+
+#~ msgid ""
+#~ "When you click on an item, its content will become accessible with the "
+#~ "middle-click"
+#~ msgstr ""
+#~ "Ak kliknete na položku, jej obsah je dostupný stlačením stredného "
+#~ "tlačítka myši"
+
+#~ msgid "Paste into Selection?"
+#~ msgstr "Vložiť do vybraného ?"
+
+#~ msgid "Pop-up menus at mouse position?"
+#~ msgstr "Vyskakovacie menu na pozícii myši ?"
+
+#~ msgid "Actions"
+#~ msgstr "Akcie"
+
+#~ msgid ""
+#~ "If some actions are associated with an item, they will be proposed when "
+#~ "the item is created."
+#~ msgstr ""
+#~ "Ak sú niektoré akcie asociované s položkou, budú navrhnuté pre vás, ak "
+#~ "vytvoríte položku."
+
+#~ msgid "Enable actions?"
+#~ msgstr "Povoliť akciu ?"
+
+#~ msgid "Display actions when selecting an item in the history."
+#~ msgstr "Zobraziť akcie pri výbere položky v histórii."
+
+#~ msgid "Replay actions?"
+#~ msgstr "Opakovať akciu ?"
+
+#~ msgid "Duration of the action menu:"
+#~ msgstr "Doba trvania akcie menu :"
+
+#~ msgid "Persistent items"
+#~ msgstr "Perzistentné položky"
+
+#~ msgid "A list of persistent items which can be accessed with middle-click:"
+#~ msgstr ""
+#~ "Zoznam perzistentných položiek, ku ktorým možno pristupovať pomocou "
+#~ "kliknutia stredným tlačítkom :"
+
+#~ msgid "Let external applications pop up dialogs in the dock?"
+#~ msgstr "Povolit externým aplikáciam zobrazovať dialógy v docku ?"
+
+#~ msgid "Let external applications reboot the dock?"
+#~ msgstr "Povolit externým aplikáciam reštartovať dock ?"
+
+#~ msgid "Let external applications quit the dock?"
+#~ msgstr "Povolit externým aplikáciam ukončovať dock ?"
+
+#~ msgid "Let external applications show/hide desklets?"
+#~ msgstr "Povolit externým aplikáciam zobrazovať/schovávať desklety ?"
+
+#~ msgid "Let external applications reload applets?"
+#~ msgstr "Povolit externým aplikáciam obnoviť desklety ?"
+
+#~ msgid "Let external applications show/hide docks?"
+#~ msgstr "Povolit externým aplikáciam zobrazovať/schovávať docky ?"
+
+#~ msgid "Let extern applications add launchers to the docks?"
+#~ msgstr "Povolit externým aplikáciam pridávať spúšťače v dockoch ?"
+
+#~ msgid "Let external applications modify the labels of icons?"
+#~ msgstr "Povolit externým aplikáciam upravovať označenie ikôn ?"
+
+#~ msgid "Let extern applications modify the quick-infos on icons?"
+#~ msgstr "Povoliť externým aplikáciam upravovať info na ikonách ?"
+
+#~ msgid "Let extern applications modify the icons' image?"
+#~ msgstr "Povoliť externým aplikáciam upravovať obrázky ikôn ?"
+
+#~ msgid "Let extern applications animate icons?"
+#~ msgstr "Povoliť externým aplikáciam animovať ikony ?"
+
+#~ msgid "Name of the container it belongs to:"
+#~ msgstr "Názov kontajnéra, do ktorého patria:"
+
+#~ msgid "Image's name or path :"
+#~ msgstr "Názov obrázkov alebo cesta :"
+
+#~ msgid "Custom decorations"
+#~ msgstr "Vlastné dekorácie"
+
+#~ msgid "Choose the style of the display: "
+#~ msgstr "Vyberte štýl zobrazenia : "
+
+#~ msgid "Gauge"
+#~ msgstr "Manometer"
+
+#~ msgid "Graph"
+#~ msgstr "Graf"
+
+#~ msgid "Type of graphic :"
+#~ msgstr "Typ grafiky :"
+
+#~ msgid "Line"
+#~ msgstr "Riadok"
+
+#~ msgid "Plain"
+#~ msgstr "Jednoduchý"
+
+#~ msgid "Bar"
+#~ msgstr "Pruh"
+
+#~ msgid "Circle"
+#~ msgstr "Kruh"
+
+#~ msgid "Plain Circle"
+#~ msgstr "Jednoduchý kruh"
+
+#~ msgid "It's the colour of the graphic for high rate values."
+#~ msgstr "Je to farba grafiky pre vysokú mieru hodnoty."
+
+#~ msgid "High value's colour :"
+#~ msgstr "Vysoké hodnoty farieb:"
+
+#~ msgid "Graph colour for low rate vaues:"
+#~ msgstr "Je to farba grafiky pre nízku mieru hodnoty."
+
+#~ msgid "Low value's colour :"
+#~ msgstr "Nízke hodnoty farieb:"
+
+#~ msgid "Background colour of the graphic :"
+#~ msgstr "Farba pozadia grafiky :"
+
+#~ msgid "Show all values on same graph?"
+#~ msgstr "Zobraziť všetky hodnoty, na rovnakom grafe?"
+
+#~ msgid "Display values"
+#~ msgstr "Zobraziť hodnoty"
+
+#~ msgid "No"
+#~ msgstr "Nie"
+
+#~ msgid "On icon"
+#~ msgstr "Na ikone"
+
+#~ msgid "On label"
+#~ msgstr "Na štítku"
+
+#~ msgid "Refresh time"
+#~ msgstr "Obnovovací čas"
+
+#~ msgid ""
+#~ "You need OpenGL for this option. Set it to 0 to disable it, 1 means the "
+#~ "transition is continue."
+#~ msgstr ""
+#~ "Pre túto možnosť potrebujete OpenGL. Nastavte ju na 0 pre nepoužiť, 1 "
+#~ "znamená, že prechod pokračuje aj naďalej."
+
+#~ msgid "Leave empty to use the default."
+#~ msgstr "Nechať prázdne a použiť predvolené."
+
+#~ msgid "Specify the xml file to be used :"
+#~ msgstr "Určite, ktorý xml súbor má byť použitý:"
+
+#~ msgid "Font to be used by default if none is specify in the .xml"
+#~ msgstr ""
+#~ "Písmo, ktoré má byť použité ako predvolené, sa nenachádza v špecifikácii ."
+#~ "xml"
+
+#~ msgid "Default Font:"
+#~ msgstr "Predvolené písmo:"
+
+#~ msgid "Color to be used by default if none is specify in the .xml"
+#~ msgstr "Predvolene použitá farba ak nie je špecifikovaná v .xml"
+
+#~ msgid "Default colour:"
+#~ msgstr "Predvolená farba :"
+
+#~ msgid "Margin to be used on left, right and top of the desklet"
+#~ msgstr "Okraj použitý vľavo, vpravo a navrchu deskletu"
+
+#~ msgid "Use this to increase the space between the lines"
+#~ msgstr "Použite toto pre zväčšenie medzery medzi riadkami"
+
+#~ msgid "Background"
+#~ msgstr "Pozadie"
+
+#~ msgid ""
+#~ "You can have more attractive backgrounds using the Desklet decorations"
+#~ msgstr "Môžete mať viac atraktívnych prostredí pomocou dekorácie Deskletov"
+
+#~ msgid "Display a simple background?"
+#~ msgstr "Zobraziť jednoduché pozadie ?"
+
+#~ msgid "first colour of the gradation"
+#~ msgstr "prvá farba stupňovania"
+
+#~ msgid "Background first colour :"
+#~ msgstr "Prvá farba pozadia"
+
+#~ msgid "second colour of the gradation"
+#~ msgstr "Druhá farba stupňovania"
+
+#~ msgid "Background second colour:"
+#~ msgstr "Druhá farba pozadia :"
+
+#~ msgid "Set the radius corner to 0 for no radius"
+#~ msgstr "Nastaviť zaoblenie rohu na hodnotu 0 bez zaoblenia"
+
+#~ msgid "Background radius corner:"
+#~ msgstr "Pozadie zaoblenia rohu:"
+
+#~ msgid "Set the thickness to 0 for no border"
+#~ msgstr "Nastaviť hrúbku na 0 pre žiadne ohraničenie"
+
+#~ msgid "Border thickness:"
+#~ msgstr "Hrúbka okraja"
+
+#~ msgid "Border colour"
+#~ msgstr "Farba okraja"
+
+#~ msgid "Border colour :"
+#~ msgstr "Farba ohraničenia :"
+
+#~ msgid "How to render the icon :"
+#~ msgstr "Ako vykresliť ikonu :"
+
+#~ msgid "Use an image"
+#~ msgstr "Použiť obrázok"
+
+#~ msgid "Draw sub-dock's content as emblems"
+#~ msgstr "Vykresliť obsah sub-dokov ako emblémy"
+
+#~ msgid "Draw sub-dock's content as stack"
+#~ msgstr "Vykresliť obsah sub-dokov ako zásobník"
+
+#~ msgid "Draw sub-dock's content inside a box"
+#~ msgstr "Vykresliť obsah sub-dokov vnútri boxu"
+
+#~ msgid "Folder's path:"
+#~ msgstr "Cesta k priečinkom:"
+
+#~ msgid "Sort files by :"
+#~ msgstr "Zoradiť súbory podľa :"
+
+#~ msgid "Name"
+#~ msgstr "Názov"
+
+#~ msgid "Date"
+#~ msgstr "Dátum"
+
+#~ msgid "Size"
+#~ msgstr "Veľkosť"
+
+#~ msgid "Sort folders before files?"
+#~ msgstr "Triediť zložky pred súbormi?"
+
+#~ msgid "Show hidden files?"
+#~ msgstr "Zobraziť skryté súbory ?"
+
+#~ msgid "Display icons in the menu?"
+#~ msgstr "Zobraziť ikony v menu ?"
+
+#~ msgid "Shortkey to show/hide the menu:"
+#~ msgstr "Klávesová skratka pre zobrazenie/schovanie menu :"
+
+#~ msgid "Shortkey to show/hide the quick-launch dialog:"
+#~ msgstr ""
+#~ "Klávesová skratka pre zobrazenie/skrytie dialógu rýchleho spustenia ?"
+
+#~ msgid "Command to use for configuring the menu:"
+#~ msgstr "Príkaz k nastaveniu menu :"
+
+#~ msgid "Recent documents"
+#~ msgstr "Nedávne dokumenty"
+
+#~ msgid "Show recent documents?"
+#~ msgstr "Zobraziť nedávne dokumenty ?"
+
+#~ msgid "Leave blank if filter is not needed."
+#~ msgstr "Nechať prázdne nepoužívať tento filter."
+
+#~ msgid "Only show files that are under this folder or its sub-folder:"
+#~ msgstr ""
+#~ "Zobraziť iba súbory,  ktoré sú v rámci tohoto priečinka alebo jeho pod-"
+#~ "priečinka :"
+
+#~ msgid "in days. Set 0 if unsued."
+#~ msgstr "v dňoch. Nastaviť 0 pre vypnutie tohto filtra."
+
+#~ msgid "Only show files whose last modification date is less than ;"
+#~ msgstr ""
+#~ "Zobrazovat iba súbory, ktorých dátum poslednej úpravy je menej ako :"
+
+#~ msgid "Always display the icon, even when the dock is hidden?"
+#~ msgstr "Vždy zobrazovať ikonu, aj keď je panel skrytý?"
+
+#~ msgid "You can quickly switch to the other mode by scrolling on the icon."
+#~ msgstr "Môžete rýchlo prepnúť do iného režimu posúvaním na ikonu."
+
+#~ msgid "Info displayed by the icon:"
+#~ msgstr "Informácie zobrazené ikonou :"
+
+#~ msgid "Wifi signal"
+#~ msgstr "Wifi signál"
+
+#~ msgid "Connexion speed"
+#~ msgstr "Rýchlosť pripojenia"
+
+#~ msgid "By default the first active interface is used."
+#~ msgstr "V predvolenom nastavení je použité prvé aktívne rozhranie."
+
+#~ msgid "Connection interface to monitor:"
+#~ msgstr "Sledovanie rozhrania pripojenia :"
+
+#~ msgid "Display numeric values:"
+#~ msgstr "Zobraziť číselné hodnoty :"
+
+#~ msgid ""
+#~ "You need OpenGL for this option. Set it to 0 means not used, 1 means the "
+#~ "movement is continue."
+#~ msgstr ""
+#~ "Potrebujete OpenGL pre túto možnosť. Nastavte ju na 0 ako nepoužiť, 1 "
+#~ "znamená, že pohyb pokračuje."
+
+#~ msgid "Fluidity of the transition animation between 2 values:"
+#~ msgstr "Plynulosť animácie prechodu medzi 2 hodnotami :"
+
+#~ msgid "Animation of the icon when connecting:"
+#~ msgstr "Animácia ikony pri pripojení"
+
+#~ msgid ""
+#~ "Allow you to overwrite applet's default command line and launch your "
+#~ "preferred wireless configuration interface."
+#~ msgstr ""
+#~ "Umožňujú prepísať appletu predvolený príkazový riadok a spustite vaše "
+#~ "preferované nastavenia bezdrôtového rozhrania."
+
+#~ msgid "User command to show Wireless Configuration:"
+#~ msgstr "Užívateľský prḱaz pre zobrazenie konfigurácie wireless :"
+
+#~ msgid "User command to display a system monitor:"
+#~ msgstr "Užívateľský prḱaz pre zobrazenie sledovania systému :"
+
+#~ msgid "Net Speed"
+#~ msgstr "Rýchlosť siete"
+
+#~ msgid "It's the colour of the graphic for high quality signal."
+#~ msgstr "Je to farba grafiky pre vysokú kvalitu signálu."
+
+#~ msgid "It's the colour of the graphic for low quality signal."
+#~ msgstr "Je to farba grafiky pre nízku kvalitu signálu."
+
+#~ msgid "Delays between net speed checks:"
+#~ msgstr "Oneskorenie medzi kontrolami rýchlosti siete :"
+
+#~ msgid "Wifi"
+#~ msgstr "Wifi"
+
+#~ msgid "Choose the style of the display:"
+#~ msgstr "Vyberte si štýl zobrazenia:"
+
+#~ msgid "Icons"
+#~ msgstr "Ikony"
+
+#~ msgid "Effect to apply on the icon according to strength :"
+#~ msgstr "Použiť efekt na ikone v závislosti na pevnosti :"
+
+#~ msgid "Zoom"
+#~ msgstr "Priblíženie"
+
+#~ msgid "Transparency"
+#~ msgstr "Priehľadnosť"
+
+#~ msgid "Draw Bar"
+#~ msgstr "Indikátor stavu"
+
+#~ msgid "Leave empty to use the default icon."
+#~ msgstr "Nechajte prázdne pre použitie predvolenej ikony."
+
+#~ msgid "Name of the image for the 'No signal' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Žiadny signál' :"
+
+#~ msgid "Name of the image for the 'Very low' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Veľmi slabý' :"
+
+#~ msgid "Name of the image for the 'Low' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Slabý' :"
+
+#~ msgid "Name of the image for the 'Middle' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Stredný' :"
+
+#~ msgid "Name of an image for the 'Good' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Dobrý' :"
+
+#~ msgid "Name of the image for the 'Excellent' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Veľmi dobrý' :"
+
+#~ msgid "Name of the image for the 'Not connected' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Nepripojený' :"
+
+#~ msgid "Name of the image for the 'Wired connection' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'Pripojený káblom' :"
+
+#~ msgid "in seconds. if you don't have Network-Manager."
+#~ msgstr "v sekundách. Ak nemáte sieťového manažéra."
+
+#~ msgid "Delays between wifi signal checks:"
+#~ msgstr "Oneskorenie medzi kontrolami wifi signálu :"
+
+#~ msgid "Leave empty to use the title of the RSS feed."
+#~ msgstr "Ponechať prázdne pre použitie názvu kanála RSS."
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS kanál"
+
+#~ msgid "Enter a valid atom/rss feed"
+#~ msgstr "Vložiť platný atom/rss kanál"
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "RSS login (optional):"
+#~ msgstr "RSS prihlásenie (nepovinné):"
+
+#~ msgid "RSS password (optional):"
+#~ msgstr "RSS heslo (nepovinné):"
+
+#~ msgid "Notify about feed updates:"
+#~ msgstr "Upozorniť na aktualizácie feed:"
+
+#~ msgid "Icon animation"
+#~ msgstr "Animácia ikony"
+
+#~ msgid "Icon animation + Dialog bubble"
+#~ msgstr "Animácia ikony + Bublinková nápoveda"
+
+#~ msgid "Let empty to use the default notification animation."
+#~ msgstr "Ponechajte prázdne pre použitie predvolenej animácie oznámenia."
+
+#~ msgid "Animation of the icon:"
+#~ msgstr "Animácia ikony:"
+
+#~ msgid ""
+#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close "
+#~ "it)."
+#~ msgstr ""
+#~ "V sekundách. Nastavte na 0 pre nekonečný čas (kliknutím sa dialóg "
+#~ "zatvorí)."
+
+#~ msgid "Duration of the notification:"
+#~ msgstr "Doba trvania oznámenia:"
+
+#~ msgid "Open the feed with the following program:"
+#~ msgstr "Otvoriť feed v nasledujúcom programe :"
+
+#~ msgid "Font to be used for the title"
+#~ msgstr "Písmo, ktoré bude použité pre názov"
+
+#~ msgid "Title font:"
+#~ msgstr "Písmo názvu :"
+
+#~ msgid "Colour to be used for the title"
+#~ msgstr "Farba, ktorá bude použitá pre názov"
+
+#~ msgid "Title colour:"
+#~ msgstr "Farba názvu :"
+
+#~ msgid "Alignment of the title:"
+#~ msgstr "Zarovnanie názvu:"
+
+#~ msgid "left"
+#~ msgstr "vľavo"
+
+#~ msgid "right"
+#~ msgstr "vpravo"
+
+#~ msgid "Font to be used for the feed lines"
+#~ msgstr "Písmo, ktoré bude použité pre feed linky"
+
+#~ msgid "Feed lines font:"
+#~ msgstr "Písmo pre feed linky :"
+
+#~ msgid "Colour to be used for the feed lines"
+#~ msgstr "Farba použitá pre feed linky"
+
+#~ msgid "Feed lines colour:"
+#~ msgstr "Farba feed liniek :"
+
+#~ msgid "Left margin for the feed lines:"
+#~ msgstr "Ľavý okraj pre linky zdrojov:"
+
+#~ msgid "Space between 2 feed lines:"
+#~ msgstr "Miesto medzi 2 feed linkami :"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "The default logo is the applet's icon"
+#~ msgstr "Predvolené loga je ikony appletov"
+
+#~ msgid "Display the logo?"
+#~ msgstr "Zobraziť logo ?"
+
+#~ msgid "Adjust to increase/decrease the logo's size"
+#~ msgstr "Prispôsobenie zväčšenia/zmenšenia veľkosti loga"
+
+#~ msgid "Logo size:"
+#~ msgstr "Veľkosť loga :"
+
+#~ msgid "normal"
+#~ msgstr "normálna"
+
+#~ msgid "Animation of the current icon :"
+#~ msgstr "Animácia aktuálnej ikony :"
+
+#~ msgid "Duration of the stop animation :"
+#~ msgstr "Doba trvania po zastavenie animácie :"
+
+#~ msgid "Shortkey to enable/disable the finder mode:"
+#~ msgstr "Klávesová skratka na aktivovanie/deaktivovanie módu vyhľadávač :"
+
+#~ msgid ""
+#~ "Maximum number of mails that will be previewed. Put -1 to show the "
+#~ "maximum possible."
+#~ msgstr ""
+#~ "Maximálny počet mailov, ktoré budú v ukážke. Dajte -1 zobrazí maximum "
+#~ "možných."
+
+#~ msgid ""
+#~ "Number of lines of the listing. If there are more results, the listing "
+#~ "will scroll when you go up or down with the arrows."
+#~ msgstr ""
+#~ "Počet riadkov zoznamu. Ak existuje viac výsledkov, bude zoznam posúvaný "
+#~ "hore alebo dolu pomocou šípok."
+
+#~ msgid "Number of lines to display :"
+#~ msgstr "Počet zobrazených riadkov :"
+
+#~ msgid "Animations"
+#~ msgstr "Animácie"
+
+#~ msgid "Duration of the appearance animation :"
+#~ msgstr "Doba trvania zobrazenia animácie :"
+
+#~ msgid "Font used to display what you type:"
+#~ msgstr "Písmo použité na zobrazenie toho, čo napíšete :"
+
+#~ msgid "Color of the text's frame  :"
+#~ msgstr "Farba textu v rámčeku :"
+
+#~ msgid "Font size, relative to the dock size:"
+#~ msgstr "Veľkosť písma pomerná k veľkosti docku :"
+
+#~ msgid "between 1 and 9, the higher, the bigger."
+#~ msgstr "medzi 1 a 9, väčšie, ťažšie."
+
+#~ msgid "Text size:"
+#~ msgstr "Hmotnosť textu :"
+
+#~ msgid "Outline text?"
+#~ msgstr "Mimorámcový text?"
+
+#~ msgid "Text colour:"
+#~ msgstr "Farba textu :"
+
+#~ msgid "Character background colour:"
+#~ msgstr "Farba pozadia znakov :"
+
+#~ msgid "Write text on the top of the dock?"
+#~ msgstr "Písanie textu na hornej časti doku ?"
+
+#~ msgid "Favorite applications"
+#~ msgstr "Štandardné aplikácie"
+
+#~ msgid "FAvorite applications starting with 'a' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'a' :"
+
+#~ msgid "Favorite application starting with 'b' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'b' :"
+
+#~ msgid "Favorite application(s) starting with 'c' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'c' :"
+
+#~ msgid "Favorite application(s starting with 'd' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'd' :"
+
+#~ msgid "Favorite application(s) starting with 'e' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'e' :"
+
+#~ msgid "Favorite application(s) starting with 'f' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'f' :"
+
+#~ msgid "Favorite application(s) starting with 'g' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'g' :"
+
+#~ msgid "Favorite application(s) starting with 'h' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'h' :"
+
+#~ msgid "Favorite application(s) starting with 'i' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'i' :"
+
+#~ msgid "Favorite application(s) starting with 'j' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'j' :"
+
+#~ msgid "Favorite application(s) starting with 'k' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'k' :"
+
+#~ msgid "Favorite application(s) starting with 'l' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'l' :"
+
+#~ msgid "Favorite application(s) starting with 'm' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'm' :"
+
+#~ msgid "Favorite application(s) starting with 'n' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'n' :"
+
+#~ msgid "Favorite application(s) starting with 'o' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'o' :"
+
+#~ msgid "Favorite application(s) starting with 'p' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'p' :"
+
+#~ msgid "Favorite application(s) starting with 'q' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'q' :"
+
+#~ msgid "Favorite application(s) starting with 'r' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'r' :"
+
+#~ msgid "Favorite application(s) starting with 's' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 's' :"
+
+#~ msgid "Favorite application(s) starting with 't' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 't' :"
+
+#~ msgid "Favorite application(s) starting with 'u' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'u' :"
+
+#~ msgid "Favorite application(s) starting with 'v' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'v' :"
+
+#~ msgid "Favorite application(s) starting with 'w' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'w' :"
+
+#~ msgid "Favorite application(s) starting with 'x' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'x' :"
+
+#~ msgid "Favorite application(s) starting with 'y' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'y' :"
+
+#~ msgid "Favorite application(s) starting with 'z' :"
+#~ msgstr "Štandardné aplikácie začínajúce na 'z' :"
+
+#~ msgid "Propose some web search engines ?"
+#~ msgstr "Navrhnúť niekoľko webových vyhľadávačov?"
+
+#~ msgid "It can launch commands and even do some calculations."
+#~ msgstr "Je možné spustiť príkazy a dokonca aj niektoré výpočty."
+
+#~ msgid "Help"
+#~ msgstr "Pomocník"
+
+#~ msgid "It's the colour of the graphic for high values."
+#~ msgstr "Je to farba grafiky pre vysoké hodnoty."
+
+#~ msgid "It's the colour of the graphic for low values."
+#~ msgstr "Je to farba grafiky pre nízke hodnoty."
+
+#~ msgid "Show CPU usage?"
+#~ msgstr "Zobraziť využitie CPU ?"
+
+#~ msgid "Show RAM usage ?"
+#~ msgstr "Zobraziť využitie RAM ?"
+
+#~ msgid "Show SWAP too?"
+#~ msgstr "Zobraziť aj SWAP ?"
+
+#~ msgid "You need an nVidia card and the 'nvidia-settings' tool."
+#~ msgstr "Budete potrebovať nVidia a 'nvidia-settings' nástroj."
+
+#~ msgid "Show graphic card's temperature?"
+#~ msgstr "Zobraziť teplotu grafickej karty ?"
+
+#~ msgid "Show free memory instead of used memory?"
+#~ msgstr "Ukázať voľnú pamäť namiesto využitej pamäte?"
+
+#~ msgid "Delay between refreshes:"
+#~ msgstr "Oneskorenie medzi obnovením :"
+
+#~ msgid "How smooth is the movement?"
+#~ msgstr "Je pohyb plynulý ?"
+
+#~ msgid "Play a sound when displaying warning?"
+#~ msgstr "Prehrať zvuk pri výstrahe ?"
+
+#~ msgid "Path to sound file:"
+#~ msgstr "Cesta k zvuku :"
+
+#~ msgid ""
+#~ "It will prevent the system monitor's icon to show in the taskbar. The "
+#~ "applet's icon will then behave as a launcher, an application, and an "
+#~ "applet."
+#~ msgstr ""
+#~ "Zabráni zobraziť ikonu monitora systému na hlavnom paneli. Ikona appletu "
+#~ "sa bude správať ako spúšťač, aplikácia a applet."
+
+#~ msgid "Steal the system monitor's icon from the taskbar?"
+#~ msgstr "Prevziať ikonu sledovania systému v hlavnom paneli ?"
+
+#~ msgid "Class of the system monitor program:"
+#~ msgstr "Trieda programu monitorovana systému:"
+
+#~ msgid "Top List"
+#~ msgstr "Top zoznam"
+
+#~ msgid ""
+#~ "When you left-click on the icon, you will get the list of the N most CPU/"
+#~ "RAM-intensive programs."
+#~ msgstr ""
+#~ "Keď kliknite ľavým tlačítkom na ikonu získate zoznam N najviac CPU/RAM-"
+#~ "používajúcich programov."
+
+#~ msgid "Number of programs to display in the top list:"
+#~ msgstr "Počet programov zobrazených v top zozname :"
+
+#~ msgid "The first colour of the gradient used to display the top list."
+#~ msgstr "Prvá farba stupňovania použitá na zobrazenie top zoznamu."
+
+#~ msgid "Top list start colour:"
+#~ msgstr "Prvá farba top zoznamu:"
+
+#~ msgid "The second colour of the gradient used to display the top list."
+#~ msgstr "Druhá farba stupňovania slúži na zobrazenie top zoznamu."
+
+#~ msgid "Top list stop colour:"
+#~ msgstr "Cieľová farba top zoznamu:"
+
+#~ msgid "Show top memory usage in %?"
+#~ msgstr "Zobraziť najvyššie použitie pamäte v % ?"
+
+#~ msgid "Delay between top list refreshes:"
+#~ msgstr "Opozdenie medzi obnovením top zoznamu:"
+
+#~ msgid "Graphic Card temperature"
+#~ msgstr "Teplota grafickej karty"
+
+#~ msgid ""
+#~ "in Celsius. The temperature will be displayed between this value and the "
+#~ "upper limit."
+#~ msgstr ""
+#~ "V stupňoch celzia. Teplota bude zobrazená medzi touto hodnotou a horným "
+#~ "limitom."
+
+#~ msgid "Lower limit of graphic card temperature:"
+#~ msgstr "Dolný limit teploty jadra :"
+
+#~ msgid "Upper limit of graphic card temperature:"
+#~ msgstr "Horná hranica teploty v jadre:"
+
+#~ msgid "in celcius."
+#~ msgstr "v stupňoch celzia."
+
+#~ msgid "Notification limit of graphic card temperature:"
+#~ msgstr "Oznámenie limitu teploty grafickej karty:"
+
+#~ msgid "Mean delay between winks:"
+#~ msgstr "Priemerná oneskorenie medzi mrknutím :"
+
+#~ msgid "Wink duration:"
+#~ msgstr "Doba mrknutia :"
+
+#~ msgid "Keep ratio?"
+#~ msgstr "Zachovať pomer?"
+
+#~ msgid "A high refresh frequency will use more CPU."
+#~ msgstr "Vysoká obnovovacia frekvencia bude používať viac CPU."
+
+#~ msgid "High refresh frequency?"
+#~ msgstr "Vysoká obnovovacia frekvencia ?"
+
+#~ msgid "Variation for 1 mouse scroll, in %:"
+#~ msgstr "Variácia pre 1 posun kolieskom myši, v%:"
+
+#~ msgid "Use 0 for none."
+#~ msgstr "Nastaviť 0 pre nepoužívanie."
+
+#~ msgid "Brightness to apply automatically on startup:"
+#~ msgstr "Svetelnosť sa automaticky použije pri štarte:"
+
+#~ msgid "Leave empty to use the default sound card."
+#~ msgstr "Nechať prázdne chcete použiť predvolenú zvukovú kartu."
+
+#~ msgid "Alsa"
+#~ msgstr "Alsa"
+
+#~ msgid "Sound card:"
+#~ msgstr "Ovládanie zvukovej karty :"
+
+#~ msgid "Select channel:"
+#~ msgstr "Vyberte, ktorý kanál chcete ovládať :"
+
+#~ msgid ""
+#~ "On some cards, a channel only controls 1 side (right or left). You will "
+#~ "then need to specify a second channel here, to control both sides. Most "
+#~ "of the time, you should just leave this empty."
+#~ msgstr ""
+#~ "Na niektorých kartách, ovládate kanál 1 strany (vpravo alebo vľavo). "
+#~ "Potom bude nutné zadať pre druhý kanál, kontrolu na oboch stranách. Pre "
+#~ "viac času, ho ponechajte prázdny."
+
+#~ msgid "Choose a second channel to control (optional):"
+#~ msgstr "Voliteľne, vyberte ovládanie pre druhý kanál  :"
+
+#~ msgid "Leave empty to use the default command."
+#~ msgstr "Nechajte prázdne pre predvolený príkaz."
+
+#~ msgid "Specific command to run to show an advanced sound mixer:"
+#~ msgstr ""
+#~ "Konkrétny príkaz na spustenie ukážky zdokonaleného mixovaného zvuku:"
+
+#~ msgid "Control"
+#~ msgstr "Ovládanie"
+
+#~ msgid "Shortkey to show/hide the sound control dialog:"
+#~ msgstr "Klávesová skratka pre zobraziť/schovať pre dialóg ovládanie zvuku :"
+
+#~ msgid "Hide the scale when mouse leaves the desklet?"
+#~ msgstr "Skryť stupnicu, keď myš opustí desklety ?"
+
+#~ msgid "Display volume :"
+#~ msgstr "Zobraziť hlasitosť :"
+
+#~ msgid "Effect to apply to the icon when adjusting volume:"
+#~ msgstr "Effet aplikovať na ikonu v závislosti na hlasitosti :"
+
+#~ msgid "Default icon:"
+#~ msgstr "Predvolená ikona :"
+
+#~ msgid "Broken icon:"
+#~ msgstr "Rozbitá ikona :"
+
+#~ msgid "Mute icon:"
+#~ msgstr "Ikona bez zvuku :"
+
+#~ msgid "Leave empty to use the location name if available."
+#~ msgstr "Nechajte prázdne pre použitie názvu miesta ak je k dispozícii."
+
+#~ msgid "Show the date:"
+#~ msgstr "Zobraziť dátum :"
+
+#~ msgid "for digital format only."
+#~ msgstr "len na číselnom formáte."
+
+#~ msgid "Display the time in a 24h format?"
+#~ msgstr "Zobraziť čas v 24h formáte ?"
+
+#~ msgid ""
+#~ "if not, then the applet will update the time once a minute, saving CPU "
+#~ "power."
+#~ msgstr ""
+#~ "ak nie, potom sa bude aktualizovať applet čas raz za minútu, čo šetrí CPU."
+
+#~ msgid "Show seconds?"
+#~ msgstr "Zobraziť sekundy ?"
+
+#~ msgid ""
+#~ "In ms. Set 0 for non-smooth animation, set 1000 to have a continuous "
+#~ "animation. Requires OpenGL."
+#~ msgstr ""
+#~ "V ms. Nastaviť 0 ak nebude mať plynulú animáciu, nastaviť 1000 pre trvalú "
+#~ "animácie. Vyžaduje OpenGL."
+
+#~ msgid "Display seconds with smooth animation for a duration of:"
+#~ msgstr "Zobraziť dĺžku v sekundách s plynulou animáciou:"
+
+#~ msgid "E.g. :Europe/Paris, :Japan, etc. Leave empty for local time."
+#~ msgstr ""
+#~ "Napríklad: Európa / Paríž, :Japonsko, atď. Nechajte prázdne, a vložte "
+#~ "miestny čas."
+
+#~ msgid "Timezone:"
+#~ msgstr "Časová zóna :"
+
+#~ msgid "Use the tasks from the following task-manager:"
+#~ msgstr "Použiť úlohy z tohoto správcu úloh:"
+
+#~ msgid "Default"
+#~ msgstr "Predvolené"
+
+#~ msgid "iCal"
+#~ msgstr "iCal"
+
+#~ msgid "Style"
+#~ msgstr "Štýl"
+
+#~ msgid ""
+#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
+#~ "in digital format."
+#~ msgstr ""
+#~ "Analogický pohľad je založený na CairoClock; inak bude zobrazený "
+#~ "numerickým spôsobom."
+
+#~ msgid "Select the view :"
+#~ msgstr "Vyberte ohľad :"
+
+#~ msgid "Analogue"
+#~ msgstr "Analógové"
+
+#~ msgid "Digital"
+#~ msgstr "Číselné"
+
+#~ msgid "Analogue View"
+#~ msgstr "Analógový pohľad"
+
+#~ msgid "List of available themes for analogue display:"
+#~ msgstr "Zoznam dostupných tém analógové zobraenie :"
+
+#~ msgid "Date text colour:"
+#~ msgstr "Farba textu dátumu :"
+
+#~ msgid "Digital View"
+#~ msgstr "Číselný pohľad"
+
+#~ msgid "Font:"
+#~ msgstr "Písmo :"
+
+#~ msgid "Ratio to apply on text :"
+#~ msgstr "Pomer použitý na text :"
+
+#~ msgid "Configure time and date"
+#~ msgstr "Nastaviť čas a dátum"
+
+#~ msgid "Leave empty to execute the default command."
+#~ msgstr "Ponechať prázdne pre vykonanie predvoleného príkazu."
+
+#~ msgid "Specific command to run:"
+#~ msgstr "Konkrétny príkaz na spustenie :"
+
+#~ msgid ""
+#~ "The new alarm will be added to the end / the last alarm will be removed."
+#~ msgstr "Nový alarm bude pridaný na koniec/posledný alarm, bude odstránený."
+
+#~ msgid "Add or remove an alarm:"
+#~ msgstr "Pridať alebo odstrániť alarm"
+
+#~ msgid ""
+#~ "Except when switching to another WM, you must activate the Dbus plugin in "
+#~ "Compiz along with the plugin corresponding to the desired action."
+#~ msgstr ""
+#~ "S výnimkou prechodu na iný WM, musíte aktivovať dbus plugin v Compize, "
+#~ "spolu s plug-inom zodpovedajúcim požadovanej akcii."
+
+#~ msgid "Action on middle-click:"
+#~ msgstr "Akcia na stredné kliknutie :"
+
+#~ msgid "Switch WM"
+#~ msgstr "Prepnúť WM"
+
+#~ msgid "Expose"
+#~ msgstr "Vystaviť"
+
+#~ msgid "Show desktop"
+#~ msgstr "Zobraziť plochu"
+
+#~ msgid ""
+#~ "This command will be used to launch the system WM. Leave blank to use the "
+#~ "default."
+#~ msgstr ""
+#~ "Tento príkaz bude použitý na spustenie systému WM; ponechajte prázdne pre "
+#~ "použitie predvoleného."
+
+#~ msgid "Custom command for system's Windows Manager:"
+#~ msgstr "Vlastný príkaz pre systém Windows Manager :"
+
+#~ msgid ""
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
+#~ "quit Compiz from the dock."
+#~ msgstr ""
+#~ "Ak Compiz neočakkávane skončí, Cairo-Dock bude reštartovaný. Musíte potom "
+#~ "ukončiť Compiz v doku."
+
+#~ msgid "Auto-reload Compiz?"
+#~ msgstr "Automatické obnovenie compizu ?"
+
+#~ msgid ""
+#~ "If the decorator quits unexpectedly, Cairo-Dock will restart it. ou must "
+#~ "then quit Compiz from the dock."
+#~ msgstr ""
+#~ "Ak došlo k nečakanému ukončeniu dekoratéra, Cairo-Dock bude reštartovaný. "
+#~ "Musíte zároveň ukončiť Compiz v docku."
+
+#~ msgid "Auto-reload the Decorator?"
+#~ msgstr "Automatické obnovenie Dekorátora ?"
+
+#~ msgid "Load Compiz with options on startup."
+#~ msgstr "Spustiť Compiz s nastavením appletu pri spustení."
+
+#~ msgid "Force Compiz settings on startup?"
+#~ msgstr "Vynútiť nastavenia compiz pri štarte ?"
+
+#~ msgid ""
+#~ "This will prevent the CSSM or Emerald icons appearing in the taskbar. The "
+#~ "corresponding sub-dock's icons will then behave as a launcher and an "
+#~ "application."
+#~ msgstr ""
+#~ "Zabráni zobrazeniu ikony CSSM alebo Emerald v hlavnom paneli. Príslušné "
+#~ "ikony subdoku sa budú správať ako spúšťače a aplikácie."
+
+#~ msgid "Steal the application's icon from the taskbar?"
+#~ msgstr "Prevziať ikonu aplikácie v hlavnom paneli ?"
+
+#~ msgid ""
+#~ "Display two icons for Compiz Exposition & Widget Layer plug-ins in the "
+#~ "applet's sub-dock. Otherwise they will be available in the menu."
+#~ msgstr ""
+#~ "Zobraziť na aplete sub-docku 2 ikony pre rozšírenia Compiz Expozícia & "
+#~ "Widget Layer. V opačnom prípade budú k dispozícii v menu."
+
+#~ msgid "Add Exposition & Widget Layer to sub-dock?"
+#~ msgstr "Pridať Expozíciu & Widget Layer do sub doku ?"
+
+#~ msgid ""
+#~ "Display an icon for the Emerald configuration panel in the applet's sub-"
+#~ "dock."
+#~ msgstr "Zobraziť ikonu pre konfiguráciu panelu Emerald v applete sub-docku."
+
+#~ msgid "Add Emerald Configuration to sub-dock?"
+#~ msgstr "Pridať konfiguráciu Emerald do sub-doku ?"
+
+#~ msgid "Compiz Options"
+#~ msgstr "Nastavenia Compiz"
+
+#~ msgid ""
+#~ "With strict binding, textures are bound whenever they are enabled. With "
+#~ "loose binding they are enabled when created. The Nvidia driver seems a "
+#~ "bit slow when binding textures, that's why this option gives a heavy "
+#~ "performance increase with Nvidia cards."
+#~ msgstr ""
+#~ "S neslobodnými textúrami sú viazané na ich povolenie. Voľné, sú povolené "
+#~ "pri vytvorení. Ovládač Nvidia sa zdá trochu pomalý pri viazaní textúr, čo "
+#~ "je dôvod prečo ich použitie umožňuje veľké zvýšenie výkonu s Nvidia "
+#~ "kartami."
+
+#~ msgid "Use Loose Binding?"
+#~ msgstr "Použiť voľnú väzbu ?"
+
+#~ msgid "Only use these options if you know what you're doing.?"
+#~ msgstr "Použite tieto možnosti len ak ich poznáte."
+
+#~ msgid "Use Indirect Rendering?"
+#~ msgstr "Použiť nepriame využitie vykresľovania ?"
+
+#~ msgid "Useful when using two or more separate X screens."
+#~ msgstr "Užitočné, keď máte dve alebo viac X samostatných obrazoviek."
+
+#~ msgid "Only Current Screen?"
+#~ msgstr "Iba súčasnú oberazovku ?"
+
+#~ msgid "By default this will be Emerald."
+#~ msgstr "V predvolenom nastavení bude Emerald."
+
+#~ msgid "Choose your Window Decorator:"
+#~ msgstr "Vyberte váš aranžér okien :"
+
+#~ msgid "emerald"
+#~ msgstr "emarald"
+
+#~ msgid "gtk-window-decorator"
+#~ msgstr "gtk-aranžér okien"
+
+#~ msgid "kde-window-decorator"
+#~ msgstr "kde-aranžér okien"
+
+#~ msgid "heliodor"
+#~ msgstr "heliodor"
+
+#~ msgid "Leave empty to use default sub-dock view."
+#~ msgstr "Ponechajte prázdne pre použitie predvoleného vzhľadu sub-doku"
+
+#~ msgid "Sub-dock view name:"
+#~ msgstr "Názov zobrazenia používaných pre sub-dock :"
+
+#~ msgid "Images"
+#~ msgstr "Obrázky"
+
+#~ msgid "'Default' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'predvolená' :"
+
+#~ msgid "'Broken' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'poškodená' :"
+
+#~ msgid "'Other WM' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'iná wm' :"
+
+#~ msgid "'Settings' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'nastavenie' :"
+
+#~ msgid "'Emerald' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'emerald' :"
+
+#~ msgid "'Reload' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'obnovené' :"
+
+#~ msgid "'Exhibition' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'expozícia' :"
+
+#~ msgid "'Widget Layer' icon image name:"
+#~ msgstr "Názov obrázku pre ikonu 'widget layer' :"
+
+#~ msgid "Comics"
+#~ msgstr "Komiks"
+
+#~ msgid "Corner radius:"
+#~ msgstr "Rohový rádius:"
+
+#~ msgid "Border width:"
+#~ msgstr "Šírka okraja :"
+
+#~ msgid "Bubble's line colour:"
+#~ msgstr "Farba ohraničenia bubliny :"
+
+#~ msgid "Modern"
+#~ msgstr "Moderná"
+
+#~ msgid "Space between lines of the tip :"
+#~ msgstr "Medzery medzi riadkami nápovedy:"
+
+#~ msgid "Tooltip"
+#~ msgstr "Bublinová nápoveda"
+
+#~ msgid "Curly"
+#~ msgstr "Vlnitý"
+
+#~ msgid "Curvature of the tip :"
+#~ msgstr "Tip pre zakrivenie :"
+
+#~ msgid "Curve the sides too?"
+#~ msgstr "Silne zakriviť po stranách ?"
+
+#~ msgid "Info-bubbles"
+#~ msgstr "bublinková nápoveda"
+
+#~ msgid "Enable info-bubbles?"
+#~ msgstr "Povoliť bublinkovú nápovedu"
+
+#~ msgid "Duration of the info-bubbles :"
+#~ msgstr "Doba trvania info-bubliny:"
+
+#~ msgid "Number of items to keep in the history :"
+#~ msgstr "Počet položiek ponechaných v histórii :"
+
+#~ msgid "Keep a copy of each uploaded image?"
+#~ msgstr "Ponechať kópiu každého obrázku ?"
+
+#~ msgid "This will override the image setting."
+#~ msgstr "Tým sa prepíše nastavenie obrázku."
+
+#~ msgid "If so, display the last image on the icon?"
+#~ msgstr "Ak áno, zobraziť posledný obrázok na ikone ?"
+
+#~ msgid "in KB/s - 0 means unlimited"
+#~ msgstr "v kB/s - 0 znamená neobmedzenú"
+
+#~ msgid "Maximum upload rate:"
+#~ msgstr "Maximálna rýchlosť odosielania:"
+
+#~ msgid "Sites"
+#~ msgstr "Siete"
+
+#~ msgid "Preferred site for texts hosting :"
+#~ msgstr "Preferovaná sieť pre hosťovanie textov :"
+
+#~ msgid "Custom"
+#~ msgstr "Vlastná"
+
+#~ msgid "Preferred site for images hosting :"
+#~ msgstr "Preferovaná sieť pre hosting obrázkov :"
+
+#~ msgid "Uppix.net"
+#~ msgstr "Uppix.net"
+
+#~ msgid "Imagebin.ca"
+#~ msgstr "Imagebin.ca"
+
+#~ msgid "Preferred site for videos hosting :"
+#~ msgstr "Preferovaná sieť pre uloženie videí :"
+
+#~ msgid "VideoBin.org"
+#~ msgstr "VideoBin.org"
+
+#~ msgid "Preferred site for files hosting :"
+#~ msgstr "Preferovaná sieť pre uloženie súborov :"
+
+#~ msgid "dl.free.fr"
+#~ msgstr "dl.free.fr"
+
+#~ msgid "DropBox"
+#~ msgstr "DropBox"
+
+#~ msgid "Leave empty to upload files into '~/Dropbox/Public'."
+#~ msgstr "Nechať prázdne pre odosielanie súborov do '~/Dropbox/Verejné'."
+
+#~ msgid "Path of the DropBox folder :"
+#~ msgstr "Cesta do priečinka DropBox :"
+
+#~ msgid "Post text as Anonymous ?"
+#~ msgstr "Textový príspevok ako anonym?"
+
+#~ msgid "Inclinated Plane"
+#~ msgstr "Naklonená rovina"
+
+#~ msgid "The lower the value, the lower the point of view on the plane."
+#~ msgstr "Čím nižšia, tým viac je nižší pohľad na rovinu."
+
+#~ msgid "Height of the vanishing point:"
+#~ msgstr "Výška miznúceho bodu :"
+
+#~ msgid "The lower the value, the flatter the curve will appear."
+#~ msgstr "Čím nižšia, tým viac sa bude zdať krivka plochá."
+
+#~ msgid "Curvature of the curve in percent:"
+#~ msgstr "Zakrivenie krivky v percentách :"
+
+#~ msgid "Amplitude of the curve:"
+#~ msgstr "Amplitúda krivky."
+
+#~ msgid "Grid"
+#~ msgstr "Mriežka"
+
+#~ msgid "Space between columns:"
+#~ msgstr "Priestor medzi stĺpmi :"
+
+#~ msgid "Space between rows:"
+#~ msgstr "Medzera medzi riadkami :"
+
+#~ msgid "Sinusoidal wave radius:"
+#~ msgstr "Rádius sínusoidnej vlny:"
+
+#~ msgid "Use a linear wave rather than a sinusoidal wave?"
+#~ msgstr "Použiť lineárnu vlnu radšej ako sínusoidovú vlnu?"
+
+#~ msgid "Display text for all icons?"
+#~ msgstr "Zobraziť text pre všetky ikony ?"
+
+#~ msgid "Frame"
+#~ msgstr "Rám"
+
+#~ msgid "Draw a background?"
+#~ msgstr "Vykresliť pozadie ?"
+
+#~ msgid "First gradient colour :"
+#~ msgstr "Prvá vzostupná farba :"
+
+#~ msgid "Second gradient colour :"
+#~ msgstr "Druhá vzostupná farba :"
+
+#~ msgid "Top to bottom gradient?"
+#~ msgstr "Vzostup zhora nadol ?"
+
+#~ msgid "Left to right gradient?"
+#~ msgstr "Vzostup zľava doprava ?"
+
+#~ msgid "Border line width :"
+#~ msgstr "Šírka čiary ohraničenia :"
+
+#~ msgid "Border line colour :"
+#~ msgstr "Farba čiary ohraničenia :"
+
+#~ msgid "Arrow width :"
+#~ msgstr "Šírka šípky"
+
+#~ msgid "Arrow height:"
+#~ msgstr "Výška šípky :"
+
+#~ msgid "The higher this value, the sooner the parabola will be curved."
+#~ msgstr "Čím je vyššia, tým skôr bude parabola zakrivená."
+
+#~ msgid "Curvature:"
+#~ msgstr "Zakrivenie :"
+
+#~ msgid "The parabola will be restricted to a rectangle of this proportion."
+#~ msgstr "Parabola bude zmenšená do obdĺžnika týchto rozmerov."
+
+#~ msgid "Height/width ratio:"
+#~ msgstr "Pomer výška/šírka :"
+
+#~ msgid "0 represents a flat wave, 1 represents maximum wave curvature."
+#~ msgstr ""
+#~ "0 znamená, že vlnenie je nevýrazné, 1 znamená, že vlnenie je maximálne."
+
+#~ msgid "Magnitude of the wave:"
+#~ msgstr "Veľkosť vlnenia :"
+
+#~ msgid "Curve towards the outside?"
+#~ msgstr "Zakriviť smerom von?"
+
+#~ msgid "Space between icons and their captions:"
+#~ msgstr "Priestor medzi ikonami a ich názvom :"
+
+#~ msgid ""
+#~ "This may recquire more CPU during the unfolding animation, except if you "
+#~ "launch Cairo-Dock with OpenGL."
+#~ msgstr ""
+#~ "Môže vyžadovať viac CPU počas rozvíjajúcej sa animácie, s výnimkou OpenGL."
+
+#~ msgid "Draw captions while unfolding?"
+#~ msgstr "Vykresľovanie popisiek pri rozvíjaní ?"
+
+#~ msgid "Space between icons:"
+#~ msgstr "Priestor medzi ikonami :"
+
+#~ msgid ""
+#~ "0 represents a flat wave, 1 means the wave is identical to other views."
+#~ msgstr ""
+#~ "0 znamená úplne plochú vlnu, 1 znamená, že vlna je totožná s inými "
+#~ "pohľadmi."
+
+#~ msgid "Number of icons on the first row:"
+#~ msgstr "Počet ikon na prvý riadok :"
+
+#~ msgid ""
+#~ "in degrees. The lower the value, the narrower the cone. 180° represents a "
+#~ "wide open cone."
+#~ msgstr ""
+#~ "v stupňoch. Čím menšie, tým viac je kužeľ užší. 180 ° znamená, že kužeľ "
+#~ "je široko otvorený."
+
+#~ msgid "Cone width:"
+#~ msgstr "Šírka kužeľov :"
+
+#~ msgid "Set transparency to 0 to not use it. This is quite slow with cairo."
+#~ msgstr "Nastaviť priehľadnosť na 0   nepoužívajte. Je veľmi spomaľujúce."
+
+#~ msgid "Bow colour:"
+#~ msgstr "Farba oblúka :"
+
+#~ msgid "Line colour:"
+#~ msgstr "Farba linky :"
+
+#~ msgid "Drag and drop indicator"
+#~ msgstr "Ťahať a pustiť ukazovateľ"
+
+#~ msgid ""
+#~ "Typically an arrow, this will be displayed when you try to drop a new "
+#~ "launcher into the dock. Leave this empty to use the default."
+#~ msgstr ""
+#~ "Typický ukazovateľ, ktorý bude zobrazený pri pokuse o spustenie nových "
+#~ "spúšťačov do docku. Ponechať prázdne pre použitie predvoleného."
+
+#~ msgid "Image for the drag & drop animation:"
+#~ msgstr "Obrátok pre animáciu ťahaj a pusti :"
+
+#~ msgid "Image when hovering an icon :"
+#~ msgstr "Obrázok pri vznesení sa na ikonu :"
+
+#~ msgid "Animation"
+#~ msgstr "Animácia"
+
+#~ msgid "Speed:"
+#~ msgstr "Rýchlosť :"
+
+#~ msgid "Rotation speed :"
+#~ msgstr "Rýchlosť rotácie :"
+
+#~ msgid "Theme"
+#~ msgstr "Téma vzhľadu"
+
+#~ msgid "Name of the image to overwrite the theme's empty image :"
+#~ msgstr "Názov obrázku pre prepísanie témy prázdneho obrázku :"
+
+#~ msgid "Name of the image to overwrite the theme's full image :"
+#~ msgstr "Názov obrázku pre prepísanie témy úplného obrázku :"
+
+#~ msgid "Config"
+#~ msgstr "Nastavenia"
+
+#~ msgid "Display the following quick info :"
+#~ msgstr "Zobraziť nasledujúcu rýchlu informáciu :"
+
+#~ msgid "Total number of files"
+#~ msgstr "Celkový počet súborov"
+
+#~ msgid "Total weight"
+#~ msgstr "Celková hmotnosť"
+
+#~ msgid "Ask confirmation before emptying Dustbin?"
+#~ msgstr "Vypýtať si potvrdenie pred vyprázdnením koša ?"
+
+#~ msgid "Draw in background?"
+#~ msgstr "Vykresliť v pozadí ?"
+
+#~ msgid "Rotate effects with dock?"
+#~ msgstr "Efekt otáčania s dockom ?"
+
+#~ msgid "Colours"
+#~ msgstr "Farby"
+
+#~ msgid ""
+#~ "This will slightly alter your colours, so you may have to modify them."
+#~ msgstr "Bude mierne meniť farby, takže možno budete potrebná úprava."
+
+#~ msgid "Add luminance?"
+#~ msgstr "Pridať svietivosť ?"
+
+#~ msgid "Particles"
+#~ msgstr "Častice"
+
+#~ msgid "Number of particles:"
+#~ msgstr "Počet častíc :"
+
+#~ msgid "Particle size:"
+#~ msgstr "Veľkosť častice :"
+
+#~ msgid "Particle speed:"
+#~ msgstr "Rýchlosť častice"
+
+#~ msgid "It particularily fits a dark wallpaper or a dark theme."
+#~ msgstr "To sa hodí najmä ku tmavej tapete alebo tmavej téme."
+
+#~ msgid "Number of particles per source:"
+#~ msgstr "Počet častíc na zdroj :"
+
+#~ msgid "In percentage of the icon's size."
+#~ msgstr "Veľkosť ikony v percentách."
+
+#~ msgid "Radius of the explosion:"
+#~ msgstr "Polomer explózie :"
+
+#~ msgid "Show the launching?"
+#~ msgstr "Zobraziť spustenie ?"
+
+#~ msgid "Particle friction:"
+#~ msgstr "Trenie častíc:"
+
+#~ msgid "Animation on disappearance:"
+#~ msgstr "Animácia miznutím :"
+
+#~ msgid "Evaporate"
+#~ msgstr "Vyparovanie"
+
+#~ msgid "Fade out"
+#~ msgstr "Zoslabenie"
+
+#~ msgid "Explode"
+#~ msgstr "Vybuchnutie"
+
+#~ msgid "Break"
+#~ msgstr "Prerušiť"
+
+#~ msgid "Black Hole"
+#~ msgstr "Čierna diera"
+
+#~ msgid "Random"
+#~ msgstr "Náhodné"
+
+#~ msgid "Animation on appearance:"
+#~ msgstr "Animácie na vzhľad :"
+
+#~ msgid "Evaporate upwards?"
+#~ msgstr "Vypariť smerom hore?"
+
+#~ msgid "Number of pieces:"
+#~ msgstr "Počet kusov :"
+
+#~ msgid "Explosion radius:"
+#~ msgstr "Rádius explózie :"
+
+#~ msgid "Break the icon into cubes?"
+#~ msgstr "Rozbiť ikonu v kockách ?"
+
+#~ msgid "in round per second."
+#~ msgstr "v kruhu za sekundu."
+
+#~ msgid "The greater, the faster the icon will collapse to the center."
+#~ msgstr "Najväčšia, najrýchlejšia ikona sa zrúti do centra."
+
+#~ msgid "Attraction of the Black Hole:"
+#~ msgstr "Príťažlivosť diery :"
+
+#~ msgid "caps lock, num lock, etc."
+#~ msgstr "caps lock, num lock, atď"
+
+#~ msgid "Display keyboard locks as quick-info?"
+#~ msgstr "Zobraziť zamknuie klávesnice ako rýchle-info ?"
+
+#~ msgid ""
+#~ "in ms. Set to 0 if you don't want an animation when the keyboard layout "
+#~ "changes."
+#~ msgstr ""
+#~ "v ms. Nastavte ju na 0, ak nechcete animáciu pri zmene rozloženia "
+#~ "klávesnice."
+
+#~ msgid "Duration of the transition animation:"
+#~ msgstr "Doba trvania prechodu animácie :"
+
+#~ msgid "Text colour"
+#~ msgstr "Farba textu"
+
+#~ msgid ""
+#~ "the smaller is the text in the icon. 1 means the text fills all the icon."
+#~ msgstr "tým menší je text v ikone. 1 znamená, že text vyplní všetky ikony."
+
+#~ msgid "Relative size of the text :"
+#~ msgstr "Relatívna veľkosť textu :"
+
+#~ msgid "smaller"
+#~ msgstr "menší"
+
+#~ msgid "Action on left-click:"
+#~ msgstr "Akcia na ľavé kliknutie :"
+
+#~ msgid "User-defined command to execute for logout:"
+#~ msgstr "Užívateľom definovaný príkaz na odhlásenie :"
+
+#~ msgid ""
+#~ "This will be available when middle-clicking. Leave empty to execute the "
+#~ "default command, which depends on your distribution. In some cases the "
+#~ "command to shutdown is the same as the one to log out."
+#~ msgstr ""
+#~ "K dispozícii bude stredné tlačidlo. Nechajte prázdne pre vykonanie "
+#~ "štandardného príkazu, záleží na vašej distribúcii. Niekedy je príkaz na "
+#~ "vypnutie rovnaký, ako ten pre odhlásenie."
+
+#~ msgid "User-defined command to execute for shutdown:"
+#~ msgstr "Užívateľom definovaný príkaz na vypnutie :"
+
+#~ msgid "Customisation"
+#~ msgstr "Personalizácia"
+
+#~ msgid ""
+#~ "If you have any problem with the applet, uncheck this option during the "
+#~ "maintenance mode, then after the dock has relaunched, remove/modify the "
+#~ "mail accounts you want."
+#~ msgstr ""
+#~ "Ak máte nejaké problémy s appletom, vypnite túto voľbu počas režimu "
+#~ "údržby, nech dock sám spustí, a odstráni/upraví poštové účty, ktoré "
+#~ "chcete."
+
+#~ msgid "Check mail account on startup?"
+#~ msgstr "Skontrolovať poštový účet pri spustení ?"
+
+#~ msgid "Name of the file for the \"no mail\" image :"
+#~ msgstr "Názov súboru pre obrázok \"žiadna pošta\":"
+
+#~ msgid "Name of the file for the \"has mail\" image :"
+#~ msgstr "Názov súboru pre obrázok \"má mail\" :"
+
+#~ msgid ""
+#~ "If checked, the number of mails will be shown even if there is no mail."
+#~ msgstr ""
+#~ "Ak je začiarknuté, bude zobrazený počet mailov, aj keď nie je žiadny mail."
+
+#~ msgid "Name of the file for the \"new mail\" sound :"
+#~ msgstr "Názov súboru pre obrázok \"nový mail\" :"
+
+#~ msgid "Show new messages' content?"
+#~ msgstr "Zobraziť obsah nových správ ?"
+
+#~ msgid "Maximum number of mails that will be previewed."
+#~ msgstr "Maximálny počet správ, ktoré budú mať náhľad."
+
+#~ msgid "Duration of the dialog:"
+#~ msgstr "Čas dĺžky dialógu :"
+
+#~ msgid "Mail application"
+#~ msgstr "Poštová aplikácia"
+
+#~ msgid "Preferred mail application to launch on left-click :"
+#~ msgstr "Preferovanú mailovú aplikáciu spustíte na ľavým-kliknutím :"
+
+#~ msgid "The new account will be created with the specified type and name."
+#~ msgstr "Nový účet bude vytvorený s zadaním typu a názvu."
+
+#~ msgid "Add an account with specified type and name:"
+#~ msgstr "Pridať účet s uvedeným typom a názvom:"
+
+#~ msgid "Also blur on mouse movement?"
+#~ msgstr "Rozmazanie pri pohybe myšou ?"
+
+#~ msgid "Blur amount:"
+#~ msgstr "Sila rozmazania :"
+
+#~ msgid ""
+#~ "Leave it empty to display the name of the player currently controlled."
+#~ msgstr ""
+#~ "Nechajte prázdne pre zobrazenie názvu aktuálne používaného prehrávača."
+
+#~ msgid "Audio Player"
+#~ msgstr "Prehrávač zvuku"
+
+#~ msgid "Player to control:"
+#~ msgstr "Ovládanie prehrávača:"
+
+#~ msgid "Amarok 2"
+#~ msgstr "Amarok 2"
+
+#~ msgid "Audacious"
+#~ msgstr "Audacious"
+
+#~ msgid "Banshee"
+#~ msgstr "Banshee"
+
+#~ msgid "Clementine"
+#~ msgstr "Clementine"
+
+#~ msgid "Exaile"
+#~ msgstr "Exaile"
+
+#~ msgid "Exaile 0.3"
+#~ msgstr "Exaile 0.3"
+
+#~ msgid "Guayadeque"
+#~ msgstr "Guayadeque"
+
+#~ msgid "Listen"
+#~ msgstr "Počúvanie"
+
+#~ msgid "Qmmp"
+#~ msgstr "Qmmp"
+
+#~ msgid "QuodLibet"
+#~ msgstr "QuodLibet"
+
+#~ msgid "Rhythmbox"
+#~ msgstr "Rhythmbox"
+
+#~ msgid "Songbird"
+#~ msgstr "Songbird"
+
+#~ msgid "XMMS 2"
+#~ msgstr "XMMS 2"
+
+#~ msgid "XMMS"
+#~ msgstr "XMMS"
+
+#~ msgid ""
+#~ "This will prevent the player icon appearing in the taskbar. The applet's "
+#~ "icon will then behave as a launcher, an application and an applet."
+#~ msgstr ""
+#~ "To zabráni ikone prehrávača aby bola zobrazená v hlavnom paneli. Ikona "
+#~ "appletu sa bude správať ako spúšťač, aplikácia a ako applet."
+
+#~ msgid "Steal the player's icon from the taskbar?"
+#~ msgstr "Prevziať ikonu hráčov z hlavného panela ?"
+
+#~ msgid "Play/Pause on click, Next on middle-click"
+#~ msgstr "Prehrať/pauza na klik, Ďaľší kliknutím stredného tlačítka"
+
+#~ msgid "Show/Hide player on click, Play/Pause on middle-click"
+#~ msgstr ""
+#~ "Zobraziť/Skryť prehrávač kliknutím, Prehrať/Pauza je kliknutie stredným "
+#~ "tlačítkom"
+
+#~ msgid "Action on music change"
+#~ msgstr "Akcia pri zmene hudby"
+
+#~ msgid "Show tooltips?"
+#~ msgstr "Zobraziť bublinu s nápovedou ?"
+
+#~ msgid "Animation when music changes:"
+#~ msgstr "Animácia keď sa zmení hudba :"
+
+#~ msgid "Information to display on the icon :"
+#~ msgstr "Informácie zobrazené na ikone :"
+
+#~ msgid "Nothing"
+#~ msgstr "Nič"
+
+#~ msgid "Time Elapsed"
+#~ msgstr "Uplynulý čas"
+
+#~ msgid "Time Remaining"
+#~ msgstr "Zostávajúci čas"
+
+#~ msgid "Track number"
+#~ msgstr "Číslo stopy"
+
+#~ msgid "Display album's cover?"
+#~ msgstr "Zobraziť obal albumu ?"
+
+#~ msgid "You need to be connected to the Internet."
+#~ msgstr "Musíte byť pripojený na internet."
+
+#~ msgid "Allow Cairo-Dock to download missing covers?"
+#~ msgstr "Povoliť Cairo-Docku stiahnuť stratené obaly ?"
+
+#~ msgid "requires OpenGL."
+#~ msgstr "vyžaduje OpenGL."
+
+#~ msgid "List of available 3D themes for covers :"
+#~ msgstr "Zoznam dostupných 3D tém pre obaly :"
+
+#~ msgid "Name of the image for the 'play' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'prehrať' :"
+
+#~ msgid "Name of the image for the 'stop' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'stop' :"
+
+#~ msgid "Name of the image for the 'pause' icon :"
+#~ msgstr "Názov obrázku pre ikonu 'pauza' :"
+
+#~ msgid "By default this will be 'eth0'."
+#~ msgstr "V predvolenom nastavení to bude 'eth0'."
+
+#~ msgid "interface:"
+#~ msgstr "rozhranie :"
+
+#~ msgid "Fluidity of the transition between 2 values :"
+#~ msgstr "Plynulosť prechodu medzi 2 hodnotami :"
+
+#~ msgid "Display rate values :"
+#~ msgstr "Zobrazenie hodnotenia :"
+
+#~ msgid "Icon name:"
+#~ msgstr "Názov ikony :"
+
+#~ msgid "'On-battery' icon filename:"
+#~ msgstr "Názov ikony pri napájaní batériou :"
+
+#~ msgid "Icon's filename when on charge :"
+#~ msgstr "Názov ikony pri nabíjaní :"
+
+#~ msgid "Effect to apply on the icon according to the charge :"
+#~ msgstr "Uplatňovať vplyv na ikonu podľa nabitia :"
+
+#~ msgid "charge"
+#~ msgstr "nabíjanie"
+
+#~ msgid "Leave it empty for no sound"
+#~ msgstr "Ponechajte prázdne ak nie je zvuk"
+
+#~ msgid "Play a sound:"
+#~ msgstr "Použi zvuk :"
+
+#~ msgid "in percent."
+#~ msgstr "v percentách."
+
+#~ msgid "Battery level:"
+#~ msgstr "Stav batérie :"
+
+#~ msgid "When battery level is under 4%"
+#~ msgstr "Ak je stav batérie menej ako 4%"
+
+#~ msgid "Notification when battery charge is critical ?"
+#~ msgstr "Upozornenie, keď je nabitie batérie kritické ?"
+
+#~ msgid "Leave empty to use the folder's name."
+#~ msgstr "Nechať prázdne pre použitie názvu priečinka."
+
+#~ msgid "Folder"
+#~ msgstr "Priečinok"
+
+#~ msgid "Folder to browse :"
+#~ msgstr "Prehliadať priečinok :"
+
+#~ msgid "List folders first?"
+#~ msgstr "Najprv zoznam priečinkov ?"
+
+#~ msgid "Ignore case?"
+#~ msgstr "Ignorovať udalosť ?"
+
+#~ msgid "Menu"
+#~ msgstr "Menu"
+
+#~ msgid "It can be CPU intense to load a lot of icons."
+#~ msgstr "To môže byť dosť ťažké spustiť tak veľa ikôn."
+
+#~ msgid "Icon size :"
+#~ msgstr "Veľkosť ikony :"
+
+#~ msgid "small"
+#~ msgstr "malý"
+
+#~ msgid "large"
+#~ msgstr "veľký"
+
+#~ msgid ""
+#~ "Number of items loaded at once. Setting a high value speeds up loading a "
+#~ "little but will hang the application for longer."
+#~ msgstr ""
+#~ "Počet položiek spustených súčasne. Nastavenie vysokej hodnoty zrýchli "
+#~ "načítanie, ale spustenie potrvá dlhšiu dobu."
+
+#~ msgid "Build menu gradually:"
+#~ msgstr "Postupné budovanie menu :"
+
+#~ msgid "List drives and volumes?"
+#~ msgstr "Zoznam jednotiek a zväzkov ?"
+
+#~ msgid "List networks?"
+#~ msgstr "Zoznam sietí ?"
+
+#~ msgid "GTK bookmarks, that are used by Nautilus for exemple."
+#~ msgstr "GTK záložky, ktoré využíva napríklad Nautilus."
+
+#~ msgid "List bookmarks?"
+#~ msgstr "Zoznam záložiek ?"
+
+#~ msgid "Type of view for the desklet mode :"
+#~ msgstr "Typ zobrazenia pre režim deskletov :"
+
+#~ msgid "Tree"
+#~ msgstr "Strom"
+
+#~ msgid "Disk usage"
+#~ msgstr "Využitie disku"
+
+#~ msgid "Show disk usage :"
+#~ msgstr "Zobraziť využitie disku :"
+
+#~ msgid "Free space"
+#~ msgstr "Voľné miesto"
+
+#~ msgid "Used space"
+#~ msgstr "Použité miesto"
+
+#~ msgid "Free space (in percent)"
+#~ msgstr "Voľné miesto v percentách"
+
+#~ msgid "Used space (in percent)"
+#~ msgstr "Použité miesto v percentách"
+
+#~ msgid "Delay between disk usage refresh :"
+#~ msgstr "Oneskorenie medzi obnovením využitia disku :"
+
+#~ msgid "In rotations per second."
+#~ msgstr "v otočení za sekundu."
+
+#~ msgid "Show mouse on:"
+#~ msgstr "Zobraziť myš na :"
+
+#~ msgid "Dock"
+#~ msgstr "panel"
+
+#~ msgid "Particle life time:"
+#~ msgstr "Čas trvania častíc :"
+
+#~ msgid ""
+#~ "The higher the value, the more particles will scatter from their source."
+#~ msgstr "Čím vyššia, tým viac sa častice rozptýlia od zdroja."
+
+#~ msgid "Scattering:"
+#~ msgstr "Rozptyl :"
+
+#~ msgid "Leave empty to use the same image."
+#~ msgstr "Ponechajte prázdne pre použitie rovnakého obrázku."
+
+#~ msgid "Image when the applet is active :"
+#~ msgstr "Obrázok keď je applet aktívny :"
+
+#~ msgid ""
+#~ "You need to activate the Dbus plug-in in Compiz for the last 2 actions. "
+#~ "Showing desktop and desklets can fail on some Window Manager (like "
+#~ "Metacity)."
+#~ msgstr ""
+#~ "Musíte aktivovať rozšírenie dbus Compiz pre posledné 2 akcie. Zobrazenie "
+#~ "plochu a deskletov môže zlyhať na niektorých správcoch okien, ako "
+#~ "Metacity."
+
+#~ msgid "Show the desklets"
+#~ msgstr "Zobraziť desklety"
+
+#~ msgid "Show desktop and desklets"
+#~ msgstr "Zobraziť plochu a desklety"
+
+#~ msgid "Shortkey for the middle-click action:"
+#~ msgstr "Klávesová skratka pre stredné kliknutie :"
+
+#~ msgid "Folder for the images:"
+#~ msgstr "Priečinok s obrázkami :"
+
+#~ msgid "Scan sub direcotries?"
+#~ msgstr "Prehľadať v pod priečinkoch ?"
+
+#~ msgid "Randomly browse files?"
+#~ msgstr "Náhodne prechádzať súbory ?"
+
+#~ msgid "Display image name as quickinfo?"
+#~ msgstr "Zobraziť názov obrázku ako rýchle info ?"
+
+#~ msgid ""
+#~ "This will prevent the dock from freezing during image loading, but works "
+#~ "only with OpenGL."
+#~ msgstr ""
+#~ "Môže ochrániť dock pred zamrznutím počas načítania obrázkov, ale "
+#~ "nefunguje s cairo."
+
+#~ msgid "Use another thread to load images?"
+#~ msgstr "Použiť iné vlákno na načítanie obrázkov ?"
+
+#~ msgid "play/pause"
+#~ msgstr "Prehrať/pauza"
+
+#~ msgid "open image"
+#~ msgstr "otvoriť obrázok"
+
+#~ msgid "Sliding delay:"
+#~ msgstr "Omeškanie posunutia :"
+
+#~ msgid "Effect while changing image:"
+#~ msgstr "Efekt pri zmene obrázka :"
+
+#~ msgid "fade"
+#~ msgstr "blednutie"
+
+#~ msgid "blank fade"
+#~ msgstr "Prázdne miznutie"
+
+#~ msgid "fade in/out"
+#~ msgstr "blednutie / tmavnutie"
+
+#~ msgid "side kick"
+#~ msgstr "kopnutie do boku"
+
+#~ msgid "slideshow"
+#~ msgstr "slideshow"
+
+#~ msgid "grow up"
+#~ msgstr "vyrásť"
+
+#~ msgid "shrink"
+#~ msgstr "zmenšiť"
+
+#~ msgid "cube"
+#~ msgstr "kocka"
+
+#~ msgid "random"
+#~ msgstr "náhodné"
+
+#~ msgid "Number of steps for transitions:"
+#~ msgstr "Počet krokov pri prechode :"
+
+#~ msgid "fast"
+#~ msgstr "rýchlo"
+
+#~ msgid "slow"
+#~ msgstr "pomaly"
+
+#~ msgid ""
+#~ "Set the transparency channel to 0 if you just don't want to have a "
+#~ "background."
+#~ msgstr "Nastavte transparentnosť kanála na 0 len ak nechcete mať pozadia."
+
+#~ msgid "Choose a background colour :"
+#~ msgstr "Vyberte farbu pozadia :"
+
+#~ msgid "Gives better image rendering."
+#~ msgstr "Poskytuje lepšie vykresľovanie obrazu."
+
+#~ msgid "Keep width/height ratio?"
+#~ msgstr "Udržujte pomer šírka/výška ?"
+
+#~ msgid "If the image is too small, it will be stretched."
+#~ msgstr "Ak je obraz príliš malý, bude priblížený."
+
+#~ msgid "Force the image to fill the icon/desklet?"
+#~ msgstr "Vnútiť obrázku vyplniť ikonu/desklet?"
+
+#~ msgid "Leave empty to use a default name"
+#~ msgstr "Nechajte prázdne pre použitie predvoleného názvu"
+
+#~ msgid "They are items created by dropping a text into the Stack."
+#~ msgstr "Toto sú položky vytvorené pretiahnutím textu do zásobníka."
+
+#~ msgid "Image for 'text' items:"
+#~ msgstr "Obrázok pre položky 'text' :"
+
+#~ msgid "These are items created by dropping a URL into the Stack."
+#~ msgstr "Toto sú položky vytvorené pretiahnutím URL do zásobníka."
+
+#~ msgid "Image for 'URL' items:"
+#~ msgstr "Obrázok pre 'URL' položky :"
+
+#~ msgid "Options"
+#~ msgstr "Nastavenia"
+
+#~ msgid ""
+#~ "These options allow you to prevent some files from displaying in stacks "
+#~ "based on their type (video, image, etc.)"
+#~ msgstr ""
+#~ "Táto voľba vám umožní vyhnúť sa niektorým súborom, ktoré majú byť "
+#~ "zobrazené v depozitárovi so zreteľom na ich typy (video, obrázky, atď ..)"
+
+#~ msgid "Filter files on MIME type?"
+#~ msgstr "Filtrovanie súborov s typom mime?"
+
+#~ msgid "E.g. image, text, video, audio, application..."
+#~ msgstr "Napr.: Obrázok, text, video, audio, aplikácie, ..."
+
+#~ msgid "Here you can specify a list of MIME types to ignore:"
+#~ msgstr "Tu môžete zadať zoznam mime typov, ktorým sa chcete vyhnúť :"
+
+#~ msgid "Sort items by:"
+#~ msgstr "Zoradiť položky podľa :"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Manual order"
+#~ msgstr "Manuálne zoradenie"
+
+#~ msgid ""
+#~ "All desktops will be drawn on the main icon. Otherwise a sub-dock will "
+#~ "contain all desktops."
+#~ msgstr ""
+#~ "Všetky plochy sa zobrazia na hlavnej ikone. Inak bude subdock obsahovať "
+#~ "všetky plochy."
+
+#~ msgid "Use the compact mode?"
+#~ msgstr "Použiť kompaktný mód?"
+
+#~ msgid "Map wallpaper to icons?"
+#~ msgstr "Mapa tapety na ikone ?"
+
+#~ msgid "Show desktop number on icons?"
+#~ msgstr "Použiť číslo plochy na ikonách ?"
+
+#~ msgid "Draw windows on icons?"
+#~ msgstr "Vykresliť okná na ikone ?"
+
+#~ msgid "Draw hidden windows?"
+#~ msgstr "Vykresliť aj skryté okná ?"
+
+#~ msgid "Show windows' list"
+#~ msgstr "Zobraziť zoznam okien"
+
+#~ msgid "Workspace names :"
+#~ msgstr "Názvy pracovných plôch :"
+
+#~ msgid "Display options"
+#~ msgstr "Zobraziť nastavenia"
+
+#~ msgid "r, g, b, a"
+#~ msgstr "r, g, b, a"
+
+#~ msgid "Internal line colour:"
+#~ msgstr "Farba vnútri riadkov :"
+
+#~ msgid "External line size:"
+#~ msgstr "Veľkosť externého okraja  :"
+
+#~ msgid "External line colour:"
+#~ msgstr "Farba externého okraja  :"
+
+#~ msgid "Window line colour:"
+#~ msgstr "Farba okraja okien :"
+
+#~ msgid "Current desktop colour:"
+#~ msgstr "Farba súčasnej plochy :"
+
+#~ msgid "How to draw the current desktop:"
+#~ msgstr "Ako vykresliť aktuálnu plochu :"
+
+#~ msgid "draw a frame"
+#~ msgstr "vykresliť rám"
+
+#~ msgid "fill"
+#~ msgstr "výplň"
+
+#~ msgid "fill others"
+#~ msgstr "vyplniť všetko"
+
+#~ msgid "Icon to use in expanded mode if wallpaper is not mapped:"
+#~ msgstr "Ikona na použitie v rozšírenom režime, ak nemáte mapu tapety :"
+
+#~ msgid "In expanded mode, render the desklet in 3D?"
+#~ msgstr "V rozšírenom režime vykresliť desklety v 3D?"
+
+#~ msgid "Name of the icon as it will appear in its label in cairo-dock :"
+#~ msgstr "Názov ikony, ako bude vyzerať jeho označenie v cairo-dock :"
+
+#~ msgid "Shortkey to toggle the systray in dock mode:"
+#~ msgstr "Klávesová skratka na prepínanie systray v dock režime :"
+
+#~ msgid "Icons packing :"
+#~ msgstr "Balíčky ikôn :"
+
+#~ msgid "horizontal"
+#~ msgstr "zvisle"
+
+#~ msgid "vertical"
+#~ msgstr "vodorovne"
+
+#~ msgid "This is a tooltip for this parameter."
+#~ msgstr "Nástroj nápovedy pre tento parameter."
+
+#~ msgid "This is a boolean parameter. Y/N ?"
+#~ msgstr "Toto je boolovský parameter, A/N ?"
+
+#~ msgid "This integer can go from 0 to 10 :"
+#~ msgstr "Toto číslo môže byť 0 až 10:"
+
+#~ msgid "Enter some text here :"
+#~ msgstr "Zadajte nejaký text sem :"
+
+#~ msgid "needs to restart the applet."
+#~ msgstr "je potrebné reštartovať applet."
+
+#~ msgid "Terminal transparency:"
+#~ msgstr "Priehľadnosť terminálov :"
+
+#~ msgid "transparent"
+#~ msgstr "priehľadný"
+
+#~ msgid "opaque"
+#~ msgstr "nepriehľadný"
+
+#~ msgid "Foreground colour:"
+#~ msgstr "Farba popredia :"
+
+#~ msgid "Background colour:"
+#~ msgstr "Farba pozadia :"
+
+#~ msgid ""
+#~ "When the terminal is in a dialog. When it is in a desklet, you can just "
+#~ "resize the desklet as usual."
+#~ msgstr ""
+#~ "Keď je terminál v dialógovom okne. Keď je v desklete, stačí zmeniť "
+#~ "veľkosť deskletov ako zvyčajne."
+
+#~ msgid "Size of the terminal (line x columns):"
+#~ msgstr "Veľkosť terminálu (riadky x stĺpce) :"
+
+#~ msgid "Shortkey to show the terminal:"
+#~ msgstr "Klávesová skratka pre zobrazenie terminálu :"
+
+#~ msgid "Draw note's content on their icon?"
+#~ msgstr "Nakresliť obsah poznámok na ich ikonu ?"
+
+#~ msgid "Text colour of the content :"
+#~ msgstr "Farba textu obsahu :"
+
+#~ msgid "Display note's content with a dialog?"
+#~ msgstr "Zobraziť poznámky obsahujúce dialóg ?"
+
+#~ msgid "Choose the note-taking application to control :"
+#~ msgstr "Vybrať aplikáciu poznámky pre ovládanie :"
+
+#~ msgid "Gnote"
+#~ msgstr "Gnote"
+
+#~ msgid "Tomboy"
+#~ msgstr "Tomboy"
+
+#~ msgid "Ask for confirmation before deleting a note?"
+#~ msgstr "Vypýtať potvrdenie pred odstránením poznámky ?"
+
+#~ msgid "Otherwise you will be asked to name it."
+#~ msgstr "V opačnom prípade budete vyzvaní k jej pomenovaniu."
+
+#~ msgid "Automatically name a new note?"
+#~ msgstr "Automatický názov pre novú poznámku ?"
+
+#~ msgid ""
+#~ "Write the date format you usually use in your notes. The syntax is the "
+#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
+#~ msgstr ""
+#~ "Napíšte formát dátumu, ktoré bežne používate v poznámkach. Syntax je "
+#~ "jedným z 'strftime':%d pre deň, m% pre mesiac,%y pre rok  (2 číslice), "
+#~ "atď. Nechajte prázdne pre použitie predvoleného (%d/%m/%y)."
+
+#~ msgid "Date format to search for :"
+#~ msgstr "Formát dátumu pre vyhľadávanie :"
+
+#~ msgid ""
+#~ "Depending on your tomboy's version, the note deletion may not be "
+#~ "automatically notified to us. Only check this box if you notice some "
+#~ "error message like <<No marshaller for signature of signal "
+#~ "'NoteDeleted'>> in the terminal."
+#~ msgstr ""
+#~ "V závislosti na vašej verzii Tomboy, nemusíte byť automaticky upozornení "
+#~ "o odstránení poznámky. Zaškrtnite toto políčko, ak si všimnete nejaké "
+#~ "chyby, ako je <<No marshaller for signature of signal 'NoteDeleted'>> v "
+#~ "termináli."
+
+#~ msgid "Emulate the 'NoteDeleted' signal?"
+#~ msgstr "Emulovať signál 'poznámka odstránená' ?"
+
+#~ msgid "Leave empty to use the name of the city."
+#~ msgstr "Ponechajte prázdne pre použitie názvu mesta."
+
+#~ msgid "Enter the name of your location in the text entry and press Enter."
+#~ msgstr "Vložte názov vášho umiestnenia do textového poľa a stlačte Enter."
+
+#~ msgid "Code for your location:"
+#~ msgstr "Kód vášho umiestnenia :"
+
+#~ msgid ""
+#~ "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
+#~ msgstr "Ak áno, stupne budú zobrazené v Celzia, inak vo Fahrenheit."
+
+#~ msgid "Use International System Units?"
+#~ msgstr "Použiť medzinárodné Jednotky ?"
+
+#~ msgid "in seconds. Set 0 to have never-ending dialogs."
+#~ msgstr "v sekundách. Nastavte 0 pre nikdy nekončiace dialógy."
+
+#~ msgid "Dialog duration:"
+#~ msgstr "Doba trvania dialógov :"
+
+#~ msgid "Info"
+#~ msgstr "Informácia"
+
+#~ msgid "Display current conditions on the icon instead of the default one?"
+#~ msgstr "Zobraziť aktuálne podmienky na ikone miesto predvolených ?"
+
+#~ msgid "Number of days to forecast:"
+#~ msgstr "Počet dní, na ktoré chcete mať predpoveď :"
+
+#~ msgid "Display nights?"
+#~ msgstr "Zobraziť aj nočné ?"
+
+#~ msgid "Display temperature as quick info?"
+#~ msgstr "Zobraziť teplotu ako rýchle info ?"
+
+#~ msgid "Render desklet in 3D?"
+#~ msgstr "Vykresliť desklet v 3D ?"
+
+#~ msgid "URI to load in weblet"
+#~ msgstr "URI pre načítanie vo weblete"
+
+#~ msgid "Show scrollbars?"
+#~ msgstr "Zobraziť vysúvací panel ?"
+
+#~ msgid "Horizontal scroll of the browser in pixels"
+#~ msgstr "Zvislé vysunutie prehliadača v pixeloch"
+
+#~ msgid "Position of horizontal scrollbar"
+#~ msgstr "Pozícia zvislého vysúvacieho panela ?"
+
+#~ msgid "Vertical scroll of the browser in pixels"
+#~ msgstr "Vodorovné vysunutie prehliadača v pixeloch"
+
+#~ msgid "Position of vertical scrollbar in pixel"
+#~ msgstr "Pozícia vodorového vysúvacieho panela v pixeloch"
+
+#~ msgid ""
+#~ "This lets you right-click on the desklet to pop up the Cairo-Dock menu."
+#~ msgstr ""
+#~ "To vám umožní pravé-kliknutie na desklety pre vyskakovacie okno Cairo-"
+#~ "Dock menu."
+
+#~ msgid "Right margin width, in pixels:"
+#~ msgstr "Šírka pravého okraja, v pixeloch:"
+
+#~ msgid "Transparent background?"
+#~ msgstr "Priehľadné pozadie ?"
+
+#~ msgid ""
+#~ "Time before reloading the weblet URI, in seconds. Zero means never reload."
+#~ msgstr ""
+#~ "Čas pred obnovením weblet URI, v sekundách. Nula znamená neobnovovať."
+
+#~ msgid "Any valid URI should work."
+#~ msgstr "Akékoľvek platná URI by mala fungovať."
+
+#~ msgid "Predefined bookmarks to show in applet menu:"
+#~ msgstr "Prednastavené záložky zobrazené v zozname appletov :"
+
+#~ msgid "'No signal' icon filename:"
+#~ msgstr "Názov obrázky pre ikonu 'žiaden signál' :"
+
+#~ msgid "'Very low' icon filename:"
+#~ msgstr "Názov obrázky pre ikonu 'veľmi slabé' :"
+
+#~ msgid "'Low' icon filename:"
+#~ msgstr "Názov obrázky pre ikonu 'slabé' :"
+
+#~ msgid "'Average' icon filename:"
+#~ msgstr "Názov obrázky pre ikonu 'stredné' :"
+
+#~ msgid "'Good' icon filename:"
+#~ msgstr "Názov obrázky pre ikonu 'dobrý' :"
+
+#~ msgid "'Excellent' icon filename:"
+#~ msgstr "Názov obrázky pre ikonu 'vynikajúci' :"
+
+#~ msgid ""
+#~ "Allow you to overwrite applet's default command line and launch your "
+#~ "wireless configuration interface."
+#~ msgstr ""
+#~ "Umožňuje prepísať appletu predvolený príkazový riadok a začne sa "
+#~ "konfigurácia bezdrôtových rozhraní."
+
+#~ msgid "Alternative command line to launch Wireless Configuration :"
+#~ msgstr ""
+#~ "Alternatívny príkaz pre spustenie Konfigurácie bezdrôtového pripojenia :"
+
+#~ msgid "Signal Strength"
+#~ msgstr "Sila signálu"
+
+#~ msgid "Signal Strength in percent"
+#~ msgstr "Sila signálu v percentách"
+
+#~ msgid "Raw Signal Informations"
+#~ msgstr "Oznámenia o čistote signálu"
+
+#~ msgid "Overwrite the default label with the connection point name?"
+#~ msgstr "Prepísať predvolené štítok s názvom bodu pripojenia ?"

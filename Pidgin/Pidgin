@@ -50,7 +50,7 @@ class Applet(CDApplet):
 		self.iface_name  = 'im.pidgin.purple.PurpleInterface'
 		self.bus = None
 		self.purple = None
-		self.share_data_dir = os.path.abspath(".")+"/"
+		self.share_data_dir = self.cShareDataDir+"/"
 		self.themes_dir = self.share_data_dir+'themes/'
 		self.iNbMsg = 0
 		self.pMsgList = []

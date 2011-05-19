@@ -1,0 +1,1364 @@
+# Hebrew translation for cairo-dock-core
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the cairo-dock-core package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cairo-dock-core\n"
+"Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"PO-Revision-Date: 2009-12-23 21:39+0000\n"
+"Last-Translator: Cairo-Dock Team <cairo-dock-team@lists.launchpad.net>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-12-24 04:36+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../GnoMenu/GnoMenu:130
+msgid "Preferences"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:134
+msgid "About"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:137
+msgid "Edit Menus"
+msgstr ""
+
+#: ../Calendar/messages:1 ../Cardapio/messages:1 ../CpuWatcher/messages:1
+#: ../Deluge/messages:1 ../DiskFree/messages:1 ../Facebook/messages:1
+#: ../GTG/messages:1 ../GnoMenu/messages:1 ../Google/messages:1
+#: ../KTorrent/messages:1 ../Lancelot/messages:1 ../Liferea/messages:1
+#: ../MintMenu/messages:1 ../Pidgin/messages:1 ../Quote/messages:1
+#: ../RubyBattery/messages:1 ../ShortUrl/messages:1 ../SubDock/messages:1
+#: ../Translator/messages:1 ../Transmission/messages:1 ../WebSearch/messages:1
+#: ../WindowsKiller/messages:1 ../Xchat/messages:1
+msgid "Icon"
+msgstr ""
+
+#: ../Calendar/messages:3 ../Cardapio/messages:3 ../CpuWatcher/messages:3
+#: ../Deluge/messages:3 ../DiskFree/messages:3 ../Facebook/messages:3
+#: ../GTG/messages:3 ../GnoMenu/messages:3 ../Google/messages:3
+#: ../KTorrent/messages:3 ../Lancelot/messages:3 ../Liferea/messages:3
+#: ../MintMenu/messages:3 ../Pidgin/messages:3 ../Quote/messages:3
+#: ../RubyBattery/messages:3 ../ShortUrl/messages:3 ../Translator/messages:3
+#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
+msgid "Applet"
+msgstr ""
+
+#: ../Calendar/messages:5 ../Cardapio/messages:5 ../CpuWatcher/messages:5
+#: ../Deluge/messages:5 ../DiskFree/messages:5 ../Facebook/messages:5
+#: ../GTG/messages:5 ../GnoMenu/messages:5 ../Google/messages:5
+#: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
+#: ../MintMenu/messages:5 ../Pidgin/messages:5 ../Quote/messages:5
+#: ../RubyBattery/messages:5 ../ShortUrl/messages:5 ../SubDock/messages:13
+#: ../Translator/messages:5 ../Transmission/messages:5 ../WebSearch/messages:3
+#: ../WindowsKiller/messages:5 ../Xchat/messages:5
+msgid "Name of the dock it belongs to:"
+msgstr ""
+
+#: ../Calendar/messages:7 ../Cardapio/messages:7 ../CpuWatcher/messages:7
+#: ../Deluge/messages:7 ../DiskFree/messages:7 ../Facebook/messages:7
+#: ../GTG/messages:7 ../GnoMenu/messages:7 ../Google/messages:7
+#: ../KTorrent/messages:7 ../Lancelot/messages:7 ../MintMenu/messages:7
+#: ../Pidgin/messages:7 ../Quote/messages:9 ../RubyBattery/messages:7
+#: ../ShortUrl/messages:7 ../SubDock/messages:7 ../Transmission/messages:7
+#: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
+msgid "Name of the icon as it will appear in its label in the dock :"
+msgstr ""
+
+#: ../Calendar/messages:9 ../Cardapio/messages:9 ../CpuWatcher/messages:9
+#: ../Deluge/messages:9 ../DiskFree/messages:9 ../Facebook/messages:9
+#: ../GTG/messages:9 ../GnoMenu/messages:9 ../Google/messages:9
+#: ../KTorrent/messages:9 ../Lancelot/messages:9 ../Liferea/messages:9
+#: ../MintMenu/messages:9 ../Pidgin/messages:9 ../Quote/messages:11
+#: ../RubyBattery/messages:9 ../ShortUrl/messages:9 ../Translator/messages:11
+#: ../Transmission/messages:9 ../WebSearch/messages:7
+#: ../WindowsKiller/messages:9 ../Xchat/messages:9
+msgid "Display"
+msgstr ""
+
+#: ../Calendar/messages:11 ../Cardapio/messages:11 ../CpuWatcher/messages:11
+#: ../Deluge/messages:11 ../DiskFree/messages:11 ../Facebook/messages:11
+#: ../GTG/messages:11 ../GnoMenu/messages:11 ../Google/messages:11
+#: ../KTorrent/messages:11 ../Lancelot/messages:11 ../Liferea/messages:11
+#: ../MintMenu/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
+#: ../RubyBattery/messages:11 ../ShortUrl/messages:11 ../SubDock/messages:9
+#: ../Transmission/messages:11 ../WebSearch/messages:9
+#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+msgid "Let empty to use the default one."
+msgstr ""
+
+#: ../Calendar/messages:13 ../Cardapio/messages:13 ../CpuWatcher/messages:13
+#: ../Deluge/messages:13 ../DiskFree/messages:13 ../Facebook/messages:13
+#: ../GTG/messages:13 ../GnoMenu/messages:13 ../Google/messages:13
+#: ../KTorrent/messages:13 ../Lancelot/messages:13 ../Liferea/messages:13
+#: ../MintMenu/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
+#: ../RubyBattery/messages:13 ../ShortUrl/messages:13 ../SubDock/messages:11
+#: ../Transmission/messages:13 ../WebSearch/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
+msgid "Image's filename :"
+msgstr ""
+
+#: ../Calendar/messages:15 ../Cardapio/messages:15 ../CpuWatcher/messages:15
+#: ../Deluge/messages:15 ../DiskFree/messages:15 ../Facebook/messages:15
+#: ../GTG/messages:15 ../GnoMenu/messages:15 ../Google/messages:15
+#: ../KTorrent/messages:15 ../Lancelot/messages:15 ../Liferea/messages:15
+#: ../MintMenu/messages:15 ../Pidgin/messages:15 ../Quote/messages:17
+#: ../RubyBattery/messages:15 ../ShortUrl/messages:15 ../SubDock/messages:3
+#: ../Translator/messages:17 ../Transmission/messages:15
+#: ../WebSearch/messages:13 ../WindowsKiller/messages:15 ../Xchat/messages:15
+msgid "Set to 0 to use the default applet size"
+msgstr ""
+
+#: ../Calendar/messages:17 ../Cardapio/messages:17 ../CpuWatcher/messages:17
+#: ../Deluge/messages:17 ../DiskFree/messages:17 ../Facebook/messages:17
+#: ../GTG/messages:17 ../GnoMenu/messages:17 ../Google/messages:17
+#: ../KTorrent/messages:17 ../Lancelot/messages:17 ../Liferea/messages:17
+#: ../MintMenu/messages:17 ../Pidgin/messages:17 ../Quote/messages:19
+#: ../RubyBattery/messages:17 ../ShortUrl/messages:17 ../SubDock/messages:5
+#: ../Translator/messages:19 ../Transmission/messages:17
+#: ../WebSearch/messages:15 ../WindowsKiller/messages:17 ../Xchat/messages:17
+msgid "Desired icon size for this applet"
+msgstr ""
+
+#: ../Calendar/messages:19 ../Cardapio/messages:19 ../CpuWatcher/messages:19
+#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Facebook/messages:19
+#: ../GTG/messages:19 ../GnoMenu/messages:19 ../Google/messages:19
+#: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
+#: ../MintMenu/messages:19 ../Pidgin/messages:19 ../Quote/messages:21
+#: ../RubyBattery/messages:19 ../ShortUrl/messages:19
+#: ../Translator/messages:21 ../Transmission/messages:19
+#: ../WebSearch/messages:17 ../Xchat/messages:19
+msgid "Applet's Handbook"
+msgstr ""
+
+#: ../Calendar/messages:21 ../Cardapio/messages:21 ../CpuWatcher/messages:21
+#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Facebook/messages:21
+#: ../GTG/messages:21 ../GnoMenu/messages:21 ../Google/messages:21
+#: ../KTorrent/messages:21 ../Lancelot/messages:21 ../Liferea/messages:21
+#: ../MintMenu/messages:21 ../Pidgin/messages:21 ../Quote/messages:23
+#: ../RubyBattery/messages:21 ../ShortUrl/messages:21 ../SubDock/messages:15
+#: ../Translator/messages:23 ../Transmission/messages:21
+#: ../WebSearch/messages:19 ../WindowsKiller/messages:19 ../Xchat/messages:21
+msgid "Desklet"
+msgstr ""
+
+#: ../Calendar/messages:23 ../Cardapio/messages:23 ../CpuWatcher/messages:23
+#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Facebook/messages:23
+#: ../GTG/messages:23 ../GnoMenu/messages:23 ../Google/messages:23
+#: ../KTorrent/messages:23 ../Lancelot/messages:23 ../Liferea/messages:23
+#: ../MintMenu/messages:23 ../Pidgin/messages:23 ../Quote/messages:25
+#: ../RubyBattery/messages:23 ../ShortUrl/messages:23 ../SubDock/messages:17
+#: ../Translator/messages:25 ../Transmission/messages:23
+#: ../WebSearch/messages:21 ../WindowsKiller/messages:21 ../Xchat/messages:23
+msgid "Position"
+msgstr ""
+
+#: ../Calendar/messages:25 ../Cardapio/messages:25 ../CpuWatcher/messages:25
+#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Facebook/messages:25
+#: ../GTG/messages:25 ../GnoMenu/messages:25 ../Google/messages:25
+#: ../KTorrent/messages:25 ../Lancelot/messages:25 ../Liferea/messages:25
+#: ../MintMenu/messages:25 ../Pidgin/messages:25 ../Quote/messages:27
+#: ../RubyBattery/messages:25 ../ShortUrl/messages:25 ../SubDock/messages:19
+#: ../Translator/messages:27 ../Transmission/messages:25
+#: ../WebSearch/messages:23 ../WindowsKiller/messages:23 ../Xchat/messages:25
+msgid ""
+"If locked, the desklet cannot be moved by simply dragging it with the left "
+"mouse button. It can still be moved with ALT + left-click."
+msgstr ""
+
+#: ../Calendar/messages:27 ../Cardapio/messages:27 ../CpuWatcher/messages:27
+#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Facebook/messages:27
+#: ../GTG/messages:27 ../GnoMenu/messages:27 ../Google/messages:27
+#: ../KTorrent/messages:27 ../Lancelot/messages:27 ../Liferea/messages:27
+#: ../MintMenu/messages:27 ../Pidgin/messages:27 ../Quote/messages:29
+#: ../RubyBattery/messages:27 ../ShortUrl/messages:27 ../SubDock/messages:21
+#: ../Translator/messages:29 ../Transmission/messages:27
+#: ../WebSearch/messages:25 ../WindowsKiller/messages:25 ../Xchat/messages:27
+msgid "Lock position?"
+msgstr ""
+
+#: ../Calendar/messages:29 ../Cardapio/messages:29 ../CpuWatcher/messages:29
+#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Facebook/messages:29
+#: ../GTG/messages:29 ../GnoMenu/messages:29 ../Google/messages:29
+#: ../KTorrent/messages:29 ../Lancelot/messages:29 ../Liferea/messages:29
+#: ../MintMenu/messages:29 ../Pidgin/messages:29 ../Quote/messages:31
+#: ../RubyBattery/messages:29 ../ShortUrl/messages:29 ../SubDock/messages:23
+#: ../Translator/messages:31 ../Transmission/messages:29
+#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
+msgid ""
+"Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+
+#: ../Calendar/messages:31 ../Cardapio/messages:31 ../CpuWatcher/messages:31
+#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Facebook/messages:31
+#: ../GTG/messages:31 ../GnoMenu/messages:31 ../Google/messages:31
+#: ../KTorrent/messages:31 ../Lancelot/messages:31 ../Liferea/messages:31
+#: ../MintMenu/messages:31 ../Pidgin/messages:31 ../Quote/messages:33
+#: ../RubyBattery/messages:31 ../ShortUrl/messages:31 ../SubDock/messages:25
+#: ../Translator/messages:33 ../Transmission/messages:31
+#: ../WebSearch/messages:29 ../WindowsKiller/messages:29 ../Xchat/messages:31
+msgid "Desklet dimensions (width x height):"
+msgstr ""
+
+#: ../Calendar/messages:33 ../Cardapio/messages:33 ../CpuWatcher/messages:33
+#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Facebook/messages:33
+#: ../GTG/messages:33 ../GnoMenu/messages:33 ../Google/messages:33
+#: ../KTorrent/messages:33 ../Lancelot/messages:33 ../Liferea/messages:33
+#: ../MintMenu/messages:33 ../Pidgin/messages:33 ../Quote/messages:35
+#: ../RubyBattery/messages:33 ../ShortUrl/messages:33 ../SubDock/messages:27
+#: ../Translator/messages:35 ../Transmission/messages:33
+#: ../WebSearch/messages:31 ../WindowsKiller/messages:31 ../Xchat/messages:33
+msgid ""
+"Depending on your WindowManager, you may be able to move this with ALT + "
+"left-click.. Negative values are counted from the right/bottom of the screen"
+msgstr ""
+
+#: ../Calendar/messages:35 ../Cardapio/messages:35 ../CpuWatcher/messages:35
+#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Facebook/messages:35
+#: ../GTG/messages:35 ../GnoMenu/messages:35 ../Google/messages:35
+#: ../KTorrent/messages:35 ../Lancelot/messages:35 ../Liferea/messages:35
+#: ../MintMenu/messages:35 ../Pidgin/messages:35 ../Quote/messages:37
+#: ../RubyBattery/messages:35 ../ShortUrl/messages:35 ../SubDock/messages:29
+#: ../Translator/messages:37 ../Transmission/messages:35
+#: ../WebSearch/messages:33 ../WindowsKiller/messages:33 ../Xchat/messages:35
+msgid "Desklet position (x, y):"
+msgstr ""
+
+#: ../Calendar/messages:37 ../Cardapio/messages:37 ../CpuWatcher/messages:37
+#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Facebook/messages:37
+#: ../GTG/messages:37 ../GnoMenu/messages:37 ../Google/messages:37
+#: ../KTorrent/messages:37 ../Lancelot/messages:37 ../Liferea/messages:37
+#: ../MintMenu/messages:37 ../Pidgin/messages:37 ../Quote/messages:39
+#: ../RubyBattery/messages:37 ../ShortUrl/messages:37 ../SubDock/messages:31
+#: ../Translator/messages:39 ../Transmission/messages:37
+#: ../WebSearch/messages:35 ../WindowsKiller/messages:35 ../Xchat/messages:37
+msgid ""
+"You can quickly rotate the desklet with the mouse, by dragging the little "
+"buttons on its left and top sides."
+msgstr ""
+
+#: ../Calendar/messages:39 ../Cardapio/messages:39 ../CpuWatcher/messages:39
+#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Facebook/messages:39
+#: ../GTG/messages:39 ../GnoMenu/messages:39 ../Google/messages:39
+#: ../KTorrent/messages:39 ../Lancelot/messages:39 ../Liferea/messages:39
+#: ../MintMenu/messages:39 ../Pidgin/messages:39 ../Quote/messages:41
+#: ../RubyBattery/messages:39 ../ShortUrl/messages:39 ../SubDock/messages:33
+#: ../Translator/messages:41 ../Transmission/messages:39
+#: ../WebSearch/messages:37 ../WindowsKiller/messages:37 ../Xchat/messages:39
+msgid "Rotation:"
+msgstr ""
+
+#: ../Calendar/messages:41 ../Cardapio/messages:41 ../CpuWatcher/messages:41
+#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Facebook/messages:41
+#: ../GTG/messages:41 ../GnoMenu/messages:41 ../Google/messages:41
+#: ../KTorrent/messages:41 ../Lancelot/messages:41 ../Liferea/messages:41
+#: ../MintMenu/messages:41 ../Pidgin/messages:41 ../Quote/messages:43
+#: ../RubyBattery/messages:41 ../ShortUrl/messages:41 ../SubDock/messages:35
+#: ../Translator/messages:43 ../Transmission/messages:41
+#: ../WebSearch/messages:39 ../WindowsKiller/messages:39 ../Xchat/messages:41
+msgid "Visibility"
+msgstr ""
+
+#: ../Calendar/messages:43 ../Cardapio/messages:43 ../CpuWatcher/messages:43
+#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Facebook/messages:43
+#: ../GTG/messages:43 ../GnoMenu/messages:43 ../Google/messages:43
+#: ../KTorrent/messages:43 ../Lancelot/messages:43 ../Liferea/messages:43
+#: ../MintMenu/messages:43 ../Pidgin/messages:43 ../Quote/messages:45
+#: ../RubyBattery/messages:43 ../ShortUrl/messages:43 ../SubDock/messages:37
+#: ../Translator/messages:45 ../Transmission/messages:43
+#: ../WebSearch/messages:41 ../WindowsKiller/messages:41 ../Xchat/messages:43
+msgid "Is detached from the dock"
+msgstr ""
+
+#: ../Calendar/messages:45 ../Cardapio/messages:45 ../CpuWatcher/messages:45
+#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Facebook/messages:45
+#: ../GTG/messages:45 ../GnoMenu/messages:45 ../Google/messages:45
+#: ../KTorrent/messages:45 ../Lancelot/messages:45 ../Liferea/messages:45
+#: ../MintMenu/messages:45 ../Pidgin/messages:45 ../Quote/messages:47
+#: ../RubyBattery/messages:45 ../ShortUrl/messages:45 ../SubDock/messages:39
+#: ../Translator/messages:47 ../Transmission/messages:45
+#: ../WebSearch/messages:43 ../WindowsKiller/messages:43 ../Xchat/messages:45
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=utility)"
+msgstr ""
+
+#: ../Calendar/messages:47 ../Cardapio/messages:47 ../CpuWatcher/messages:47
+#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Facebook/messages:47
+#: ../GTG/messages:47 ../GnoMenu/messages:47 ../Google/messages:47
+#: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
+#: ../MintMenu/messages:47 ../Pidgin/messages:47 ../Quote/messages:49
+#: ../RubyBattery/messages:47 ../ShortUrl/messages:47 ../SubDock/messages:41
+#: ../Translator/messages:49 ../Transmission/messages:47
+#: ../WebSearch/messages:45 ../WindowsKiller/messages:45 ../Xchat/messages:47
+msgid "Visibility:"
+msgstr ""
+
+#: ../Calendar/messages:49 ../Cardapio/messages:49 ../CpuWatcher/messages:49
+#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Facebook/messages:49
+#: ../GTG/messages:49 ../GnoMenu/messages:49 ../Google/messages:49
+#: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
+#: ../MintMenu/messages:49 ../Pidgin/messages:49 ../Quote/messages:51
+#: ../RubyBattery/messages:49 ../ShortUrl/messages:49 ../SubDock/messages:43
+#: ../Translator/messages:51 ../Transmission/messages:49
+#: ../WebSearch/messages:47 ../WindowsKiller/messages:47 ../Xchat/messages:49
+msgid "Normal"
+msgstr ""
+
+#: ../Calendar/messages:51 ../Cardapio/messages:51 ../CpuWatcher/messages:51
+#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Facebook/messages:51
+#: ../GTG/messages:51 ../GnoMenu/messages:51 ../Google/messages:51
+#: ../KTorrent/messages:51 ../Lancelot/messages:51 ../Liferea/messages:51
+#: ../MintMenu/messages:51 ../Pidgin/messages:51 ../Quote/messages:53
+#: ../RubyBattery/messages:51 ../ShortUrl/messages:51 ../SubDock/messages:45
+#: ../Translator/messages:53 ../Transmission/messages:51
+#: ../WebSearch/messages:49 ../WindowsKiller/messages:49 ../Xchat/messages:51
+msgid "Keep above"
+msgstr ""
+
+#: ../Calendar/messages:53 ../Cardapio/messages:53 ../CpuWatcher/messages:53
+#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Facebook/messages:53
+#: ../GTG/messages:53 ../GnoMenu/messages:53 ../Google/messages:53
+#: ../KTorrent/messages:53 ../Lancelot/messages:53 ../Liferea/messages:53
+#: ../MintMenu/messages:53 ../Pidgin/messages:53 ../Quote/messages:55
+#: ../RubyBattery/messages:53 ../ShortUrl/messages:53 ../SubDock/messages:47
+#: ../Translator/messages:55 ../Transmission/messages:53
+#: ../WebSearch/messages:51 ../WindowsKiller/messages:51 ../Xchat/messages:53
+msgid "Keep below"
+msgstr ""
+
+#: ../Calendar/messages:55 ../Cardapio/messages:55 ../CpuWatcher/messages:55
+#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Facebook/messages:55
+#: ../GTG/messages:55 ../GnoMenu/messages:55 ../Google/messages:55
+#: ../KTorrent/messages:55 ../Lancelot/messages:55 ../Liferea/messages:55
+#: ../MintMenu/messages:55 ../Pidgin/messages:55 ../Quote/messages:57
+#: ../RubyBattery/messages:55 ../ShortUrl/messages:55 ../SubDock/messages:49
+#: ../Translator/messages:57 ../Transmission/messages:55
+#: ../WebSearch/messages:53 ../WindowsKiller/messages:53 ../Xchat/messages:55
+msgid "Keep on widget layer"
+msgstr ""
+
+#: ../Calendar/messages:57 ../Cardapio/messages:57 ../CpuWatcher/messages:57
+#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Facebook/messages:57
+#: ../GTG/messages:57 ../GnoMenu/messages:57 ../Google/messages:57
+#: ../KTorrent/messages:57 ../Lancelot/messages:57 ../Liferea/messages:57
+#: ../MintMenu/messages:57 ../Pidgin/messages:57 ../Quote/messages:59
+#: ../RubyBattery/messages:57 ../ShortUrl/messages:57 ../SubDock/messages:51
+#: ../Translator/messages:59 ../Transmission/messages:57
+#: ../WebSearch/messages:55 ../WindowsKiller/messages:55 ../Xchat/messages:57
+msgid "Reserve space"
+msgstr ""
+
+#: ../Calendar/messages:59 ../Cardapio/messages:59 ../CpuWatcher/messages:59
+#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Facebook/messages:59
+#: ../GTG/messages:59 ../GnoMenu/messages:59 ../Google/messages:59
+#: ../KTorrent/messages:59 ../Lancelot/messages:59 ../Liferea/messages:59
+#: ../MintMenu/messages:59 ../Pidgin/messages:59 ../Quote/messages:61
+#: ../RubyBattery/messages:59 ../ShortUrl/messages:59 ../SubDock/messages:53
+#: ../Translator/messages:61 ../Transmission/messages:59
+#: ../WebSearch/messages:57 ../WindowsKiller/messages:57 ../Xchat/messages:59
+msgid "Should be visible on all desktops?"
+msgstr ""
+
+#: ../Calendar/messages:61 ../Cardapio/messages:61 ../CpuWatcher/messages:61
+#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Facebook/messages:61
+#: ../GTG/messages:61 ../GnoMenu/messages:61 ../Google/messages:61
+#: ../KTorrent/messages:61 ../Lancelot/messages:61 ../Liferea/messages:61
+#: ../MintMenu/messages:61 ../Pidgin/messages:61 ../Quote/messages:63
+#: ../RubyBattery/messages:61 ../ShortUrl/messages:61 ../SubDock/messages:55
+#: ../Translator/messages:63 ../Transmission/messages:61
+#: ../WebSearch/messages:59 ../WindowsKiller/messages:59 ../Xchat/messages:61
+msgid "Decorations"
+msgstr ""
+
+#: ../Calendar/messages:63 ../Cardapio/messages:63 ../CpuWatcher/messages:63
+#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Facebook/messages:63
+#: ../GTG/messages:63 ../GnoMenu/messages:63 ../Google/messages:63
+#: ../KTorrent/messages:63 ../Lancelot/messages:63 ../Liferea/messages:63
+#: ../MintMenu/messages:63 ../Pidgin/messages:63 ../Quote/messages:65
+#: ../RubyBattery/messages:63 ../ShortUrl/messages:63 ../SubDock/messages:57
+#: ../Translator/messages:65 ../Transmission/messages:63
+#: ../WebSearch/messages:61 ../WindowsKiller/messages:61 ../Xchat/messages:63
+msgid "Choose 'Custom decorations' to define your own decorations below."
+msgstr ""
+
+#: ../Calendar/messages:65 ../Cardapio/messages:65 ../CpuWatcher/messages:65
+#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Facebook/messages:65
+#: ../GTG/messages:65 ../GnoMenu/messages:65 ../Google/messages:65
+#: ../KTorrent/messages:65 ../Lancelot/messages:65 ../Liferea/messages:65
+#: ../MintMenu/messages:65 ../Pidgin/messages:65 ../Quote/messages:67
+#: ../RubyBattery/messages:65 ../ShortUrl/messages:65 ../SubDock/messages:59
+#: ../Translator/messages:67 ../Transmission/messages:65
+#: ../WebSearch/messages:63 ../WindowsKiller/messages:63 ../Xchat/messages:65
+msgid "Choose a decoration theme for this desklet:"
+msgstr ""
+
+#: ../Calendar/messages:67 ../Cardapio/messages:67 ../CpuWatcher/messages:67
+#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Facebook/messages:67
+#: ../GTG/messages:67 ../GnoMenu/messages:67 ../Google/messages:67
+#: ../KTorrent/messages:67 ../Lancelot/messages:67 ../Liferea/messages:67
+#: ../MintMenu/messages:67 ../Pidgin/messages:67 ../Quote/messages:69
+#: ../RubyBattery/messages:67 ../ShortUrl/messages:67 ../SubDock/messages:61
+#: ../Translator/messages:69 ../Transmission/messages:67
+#: ../WebSearch/messages:65 ../WindowsKiller/messages:65 ../Xchat/messages:67
+msgid ""
+"Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
+msgstr ""
+
+#: ../Calendar/messages:69 ../Cardapio/messages:69 ../CpuWatcher/messages:69
+#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Facebook/messages:69
+#: ../GTG/messages:69 ../GnoMenu/messages:69 ../Google/messages:69
+#: ../KTorrent/messages:69 ../Lancelot/messages:69 ../Liferea/messages:69
+#: ../MintMenu/messages:69 ../Pidgin/messages:69 ../Quote/messages:71
+#: ../RubyBattery/messages:69 ../ShortUrl/messages:69 ../SubDock/messages:63
+#: ../Translator/messages:71 ../Transmission/messages:69
+#: ../WebSearch/messages:67 ../WindowsKiller/messages:67 ../Xchat/messages:69
+msgid "Background image:"
+msgstr ""
+
+#: ../Calendar/messages:71 ../Cardapio/messages:71 ../CpuWatcher/messages:71
+#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Facebook/messages:71
+#: ../GTG/messages:71 ../GnoMenu/messages:71 ../Google/messages:71
+#: ../KTorrent/messages:71 ../Lancelot/messages:71 ../Liferea/messages:71
+#: ../MintMenu/messages:71 ../Pidgin/messages:71 ../Quote/messages:73
+#: ../RubyBattery/messages:71 ../ShortUrl/messages:71 ../SubDock/messages:65
+#: ../Translator/messages:73 ../Transmission/messages:71
+#: ../WebSearch/messages:69 ../WindowsKiller/messages:69 ../Xchat/messages:71
+msgid "Background transparency:"
+msgstr ""
+
+#: ../Calendar/messages:73 ../Cardapio/messages:73 ../CpuWatcher/messages:73
+#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Facebook/messages:73
+#: ../GTG/messages:73 ../GnoMenu/messages:73 ../Google/messages:73
+#: ../KTorrent/messages:73 ../Lancelot/messages:73 ../Liferea/messages:73
+#: ../MintMenu/messages:73 ../Pidgin/messages:73 ../Quote/messages:75
+#: ../RubyBattery/messages:73 ../ShortUrl/messages:73 ../SubDock/messages:67
+#: ../Translator/messages:75 ../Transmission/messages:73
+#: ../WebSearch/messages:71 ../WindowsKiller/messages:71 ../Xchat/messages:73
+msgid "in pixels. Use this to adjust the left position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:75 ../Cardapio/messages:75 ../CpuWatcher/messages:75
+#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Facebook/messages:75
+#: ../GTG/messages:75 ../GnoMenu/messages:75 ../Google/messages:75
+#: ../KTorrent/messages:75 ../Lancelot/messages:75 ../Liferea/messages:75
+#: ../MintMenu/messages:75 ../Pidgin/messages:75 ../Quote/messages:77
+#: ../RubyBattery/messages:75 ../ShortUrl/messages:75 ../SubDock/messages:69
+#: ../Translator/messages:77 ../Transmission/messages:75
+#: ../WebSearch/messages:73 ../WindowsKiller/messages:73 ../Xchat/messages:75
+msgid "Left offset:"
+msgstr ""
+
+#: ../Calendar/messages:77 ../Cardapio/messages:77 ../CpuWatcher/messages:77
+#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Facebook/messages:77
+#: ../GTG/messages:77 ../GnoMenu/messages:77 ../Google/messages:77
+#: ../KTorrent/messages:77 ../Lancelot/messages:77 ../Liferea/messages:77
+#: ../MintMenu/messages:77 ../Pidgin/messages:77 ../Quote/messages:79
+#: ../RubyBattery/messages:77 ../ShortUrl/messages:77 ../SubDock/messages:71
+#: ../Translator/messages:79 ../Transmission/messages:77
+#: ../WebSearch/messages:75 ../WindowsKiller/messages:75 ../Xchat/messages:77
+msgid "in pixels. Use this to adjust the top position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:79 ../Cardapio/messages:79 ../CpuWatcher/messages:79
+#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Facebook/messages:79
+#: ../GTG/messages:79 ../GnoMenu/messages:79 ../Google/messages:79
+#: ../KTorrent/messages:79 ../Lancelot/messages:79 ../Liferea/messages:79
+#: ../MintMenu/messages:79 ../Pidgin/messages:79 ../Quote/messages:81
+#: ../RubyBattery/messages:79 ../ShortUrl/messages:79 ../SubDock/messages:73
+#: ../Translator/messages:81 ../Transmission/messages:79
+#: ../WebSearch/messages:77 ../WindowsKiller/messages:77 ../Xchat/messages:79
+msgid "Top offset:"
+msgstr ""
+
+#: ../Calendar/messages:81 ../Cardapio/messages:81 ../CpuWatcher/messages:81
+#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Facebook/messages:81
+#: ../GTG/messages:81 ../GnoMenu/messages:81 ../Google/messages:81
+#: ../KTorrent/messages:81 ../Lancelot/messages:81 ../Liferea/messages:81
+#: ../MintMenu/messages:81 ../Pidgin/messages:81 ../Quote/messages:83
+#: ../RubyBattery/messages:81 ../ShortUrl/messages:81 ../SubDock/messages:75
+#: ../Translator/messages:83 ../Transmission/messages:81
+#: ../WebSearch/messages:79 ../WindowsKiller/messages:79 ../Xchat/messages:81
+msgid "in pixels. Use this to adjust the right position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:83 ../Cardapio/messages:83 ../CpuWatcher/messages:83
+#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Facebook/messages:83
+#: ../GTG/messages:83 ../GnoMenu/messages:83 ../Google/messages:83
+#: ../KTorrent/messages:83 ../Lancelot/messages:83 ../Liferea/messages:83
+#: ../MintMenu/messages:83 ../Pidgin/messages:83 ../Quote/messages:85
+#: ../RubyBattery/messages:83 ../ShortUrl/messages:83 ../SubDock/messages:77
+#: ../Translator/messages:85 ../Transmission/messages:83
+#: ../WebSearch/messages:81 ../WindowsKiller/messages:81 ../Xchat/messages:83
+msgid "Right offset:"
+msgstr ""
+
+#: ../Calendar/messages:85 ../Cardapio/messages:85 ../CpuWatcher/messages:85
+#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Facebook/messages:85
+#: ../GTG/messages:85 ../GnoMenu/messages:85 ../Google/messages:85
+#: ../KTorrent/messages:85 ../Lancelot/messages:85 ../Liferea/messages:85
+#: ../MintMenu/messages:85 ../Pidgin/messages:85 ../Quote/messages:87
+#: ../RubyBattery/messages:85 ../ShortUrl/messages:85 ../SubDock/messages:79
+#: ../Translator/messages:87 ../Transmission/messages:85
+#: ../WebSearch/messages:83 ../WindowsKiller/messages:83 ../Xchat/messages:85
+msgid "in pixels. Use this to adjust the bottom position of drawings."
+msgstr ""
+
+#: ../Calendar/messages:87 ../Cardapio/messages:87 ../CpuWatcher/messages:87
+#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Facebook/messages:87
+#: ../GTG/messages:87 ../GnoMenu/messages:87 ../Google/messages:87
+#: ../KTorrent/messages:87 ../Lancelot/messages:87 ../Liferea/messages:87
+#: ../MintMenu/messages:87 ../Pidgin/messages:87 ../Quote/messages:89
+#: ../RubyBattery/messages:87 ../ShortUrl/messages:87 ../SubDock/messages:81
+#: ../Translator/messages:89 ../Transmission/messages:87
+#: ../WebSearch/messages:85 ../WindowsKiller/messages:85 ../Xchat/messages:87
+msgid "Bottom offset:"
+msgstr ""
+
+#: ../Calendar/messages:89 ../Cardapio/messages:89 ../CpuWatcher/messages:89
+#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Facebook/messages:89
+#: ../GTG/messages:89 ../GnoMenu/messages:89 ../Google/messages:89
+#: ../KTorrent/messages:89 ../Lancelot/messages:89 ../Liferea/messages:89
+#: ../MintMenu/messages:89 ../Pidgin/messages:89 ../Quote/messages:91
+#: ../RubyBattery/messages:89 ../ShortUrl/messages:89 ../SubDock/messages:83
+#: ../Translator/messages:91 ../Transmission/messages:89
+#: ../WebSearch/messages:87 ../WindowsKiller/messages:87 ../Xchat/messages:89
+msgid ""
+"Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
+"no image."
+msgstr ""
+
+#: ../Calendar/messages:91 ../Cardapio/messages:91 ../CpuWatcher/messages:91
+#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Facebook/messages:91
+#: ../GTG/messages:91 ../GnoMenu/messages:91 ../Google/messages:91
+#: ../KTorrent/messages:91 ../Lancelot/messages:91 ../Liferea/messages:91
+#: ../MintMenu/messages:91 ../Pidgin/messages:91 ../Quote/messages:93
+#: ../RubyBattery/messages:91 ../ShortUrl/messages:91 ../SubDock/messages:85
+#: ../Translator/messages:93 ../Transmission/messages:91
+#: ../WebSearch/messages:89 ../WindowsKiller/messages:89 ../Xchat/messages:91
+msgid "Foreground image:"
+msgstr ""
+
+#: ../Calendar/messages:93 ../Cardapio/messages:93 ../CpuWatcher/messages:93
+#: ../Deluge/messages:93 ../DiskFree/messages:93 ../Facebook/messages:93
+#: ../GTG/messages:93 ../GnoMenu/messages:93 ../Google/messages:93
+#: ../KTorrent/messages:93 ../Lancelot/messages:93 ../Liferea/messages:93
+#: ../MintMenu/messages:93 ../Pidgin/messages:93 ../Quote/messages:95
+#: ../RubyBattery/messages:93 ../ShortUrl/messages:93 ../SubDock/messages:87
+#: ../Translator/messages:95 ../Transmission/messages:93
+#: ../WebSearch/messages:91 ../WindowsKiller/messages:91 ../Xchat/messages:93
+msgid "Foreground tansparency:"
+msgstr ""
+
+#: ../Calendar/messages:95 ../Cardapio/messages:95 ../CpuWatcher/messages:95
+#: ../Deluge/messages:95 ../DiskFree/messages:95 ../Facebook/messages:95
+#: ../GTG/messages:95 ../GnoMenu/messages:95 ../KTorrent/messages:95
+#: ../Lancelot/messages:95 ../Liferea/messages:95 ../MintMenu/messages:95
+#: ../Pidgin/messages:95 ../Quote/messages:97 ../RubyBattery/messages:95
+#: ../ShortUrl/messages:95 ../SubDock/messages:89 ../Translator/messages:97
+#: ../Transmission/messages:95 ../WebSearch/messages:93 ../Xchat/messages:95
+msgid "Configuration"
+msgstr ""
+
+#: ../Calendar/messages:97
+msgid "Applications"
+msgstr ""
+
+#: ../Calendar/messages:99
+msgid "Command to launch your favourite calendar application (middle click):"
+msgstr ""
+
+#: ../Calendar/messages:101
+msgid "Command to execute on dropping a file onto the calendar-icon:"
+msgstr ""
+
+#: ../Calendar/messages:103 ../Facebook/messages:117
+msgid "Behaviour"
+msgstr ""
+
+#: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
+msgid "in s."
+msgstr ""
+
+#: ../Calendar/messages:107
+msgid "Time length of dialogues for the calendar :"
+msgstr ""
+
+#: ../Calendar/messages:111
+msgid "Time length of dialogues for events of the day :"
+msgstr ""
+
+#: ../Calendar/messages:115
+msgid "Time length of dialogues for calendar of next month :"
+msgstr ""
+
+#: ../Calendar/messages:117
+msgid ""
+"The path to a script to generate an icon. Leave it empty to use the default "
+"one."
+msgstr ""
+
+#: ../Calendar/messages:119
+msgid "Icon custom script:"
+msgstr ""
+
+#: ../Cardapio/messages:97 ../GnoMenu/messages:97 ../Lancelot/messages:97
+#: ../MintMenu/messages:97
+msgid "Shortkey to pop up the menu:"
+msgstr ""
+
+#: ../CpuWatcher/messages:97
+msgid "in ms"
+msgstr ""
+
+#: ../CpuWatcher/messages:99
+msgid "Refresh time :"
+msgstr ""
+
+#: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
+msgid "Shortkey to pop up the torrents info:"
+msgstr ""
+
+#: ../DiskFree/messages:97
+msgid ""
+"View available file system's space as Giga (checked) or Mega (unchecked) :"
+msgstr ""
+
+#: ../DiskFree/messages:99
+msgid "in minutes"
+msgstr ""
+
+#: ../DiskFree/messages:101
+msgid "Time between two file system's checking :"
+msgstr ""
+
+#: ../Facebook/messages:97
+msgid "Notifications"
+msgstr ""
+
+#: ../Facebook/messages:99
+msgid "Notifications for new messages?"
+msgstr ""
+
+#: ../Facebook/messages:101
+msgid ""
+"Notifications will keep recurring so long requests have not been either "
+"accepted or rejected."
+msgstr ""
+
+#: ../Facebook/messages:103
+msgid "Notifications for pending friend requests?"
+msgstr ""
+
+#: ../Facebook/messages:105
+msgid "likes, comments, tags, etc."
+msgstr ""
+
+#: ../Facebook/messages:107
+msgid "Notifications for unread notices?"
+msgstr ""
+
+#: ../Facebook/messages:109
+msgid "Notifications for pokes?"
+msgstr ""
+
+#: ../Facebook/messages:111
+msgid "Notifications for group invites?"
+msgstr ""
+
+#: ../Facebook/messages:113
+msgid "Notifications for event invites?"
+msgstr ""
+
+#: ../Facebook/messages:115
+msgid "Notifications for unread shares (deprecated)?"
+msgstr ""
+
+#: ../Facebook/messages:119
+msgid ""
+"\"always\" will notify you whenever the number of notifications is not 0; "
+"\"different\" will do so whenever the number of notifications changes; "
+"\"superior\" will notify you whenever it increases (default), \"never\"--"
+"obviously--will prevent the applet from bothering you. The applet will "
+"always set an emblem on the icon however."
+msgstr ""
+
+#: ../Facebook/messages:121
+msgid "Under what condition do you want the applet to notify you?:"
+msgstr ""
+
+#: ../Facebook/messages:123
+msgid "superior"
+msgstr ""
+
+#: ../Facebook/messages:125
+msgid "always"
+msgstr ""
+
+#: ../Facebook/messages:127
+msgid "different"
+msgstr ""
+
+#: ../Facebook/messages:129
+msgid "never"
+msgstr ""
+
+#: ../Facebook/messages:131
+msgid "Effect is \"bounce\" by default."
+msgstr ""
+
+#: ../Facebook/messages:133
+msgid ""
+"Do you want the applet to apply any effect on the icon during the "
+"notification?"
+msgstr ""
+
+#: ../Facebook/messages:135
+msgid "bounce"
+msgstr ""
+
+#: ../Facebook/messages:137
+msgid "blink"
+msgstr ""
+
+#: ../Facebook/messages:139
+msgid "pulse"
+msgstr ""
+
+#: ../Facebook/messages:141
+msgid "rotate"
+msgstr ""
+
+#: ../Facebook/messages:143
+msgid "spot"
+msgstr ""
+
+#: ../Facebook/messages:145
+msgid "wave"
+msgstr ""
+
+#: ../Facebook/messages:147
+msgid "wobbly"
+msgstr ""
+
+#: ../Facebook/messages:149 ../GTG/messages:113 ../Pidgin/messages:121
+#: ../Xchat/messages:113
+msgid "none"
+msgstr ""
+
+#: ../Facebook/messages:151
+msgid "True by default."
+msgstr ""
+
+#: ../Facebook/messages:153
+msgid "Do you want the applet to show a dialogue during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:155
+msgid "ATTENTION_SOUND is true by default."
+msgstr ""
+
+#: ../Facebook/messages:157
+msgid "Do you want the applet to play a sound during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:159
+msgid "Time in minutes."
+msgstr ""
+
+#: ../Facebook/messages:161
+msgid ""
+"How often do you want the applet to check your Facebook account? (in "
+"minutes):"
+msgstr ""
+
+#: ../Facebook/messages:163
+msgid "Appearance"
+msgstr ""
+
+#: ../Facebook/messages:165
+msgid "How do you want to represent the counter on the icon?"
+msgstr ""
+
+#: ../Facebook/messages:167
+msgid "emblem"
+msgstr ""
+
+#: ../Facebook/messages:169
+msgid "quickinfo"
+msgstr ""
+
+#: ../GTG/messages:97 ../Xchat/messages:99
+msgid "Bubbles duration :"
+msgstr ""
+
+#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
+msgid "Short"
+msgstr ""
+
+#: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
+msgid "Medium"
+msgstr ""
+
+#: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
+msgid "Long"
+msgstr ""
+
+#: ../GTG/messages:105 ../Xchat/messages:107
+msgid "Animation of the icon on receiving channel messages :"
+msgstr ""
+
+#: ../GTG/messages:107 ../Xchat/messages:97
+msgid "Display channel messages in a bubble :"
+msgstr ""
+
+#: ../GTG/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the "
+"icon.}\n"
+"history = 50\n"
+"j+[48;512] Post-it's initial dimension (width x height) :\n"
+"{Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+
+#: ../GTG/messages:111 ../Pidgin/messages:119 ../Xchat/messages:111
+msgid "Size of the history :"
+msgstr ""
+
+#: ../GTG/messages:115 ../Pidgin/messages:123 ../Xchat/messages:115
+msgid "big"
+msgstr ""
+
+#: ../Liferea/messages:7 ../Translator/messages:9
+msgid "Name of the icon as it will appear in its caption in the dock:"
+msgstr ""
+
+#: ../Liferea/messages:97
+msgid "Show in the icon:"
+msgstr ""
+
+#: ../Liferea/messages:99
+msgid "Number of unread messages"
+msgstr ""
+
+#: ../Liferea/messages:101
+msgid " Number of new messages"
+msgstr ""
+
+#: ../Pidgin/messages:97 ../Pidgin/messages:101
+msgid "Parameters"
+msgstr ""
+
+#: ../Pidgin/messages:99
+msgid "Choose a theme :"
+msgstr ""
+
+#: ../Pidgin/messages:103
+msgid "Display conversation messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:105
+msgid "Display chat messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:107
+msgid "Bubbles duration:"
+msgstr ""
+
+#: ../Pidgin/messages:115
+msgid "Animation of the icon on receiving a message:"
+msgstr ""
+
+#: ../Pidgin/messages:117 ../Xchat/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the icon."
+msgstr ""
+
+#: ../Quote/messages:7
+msgid "Let empty to display the current site's name."
+msgstr ""
+
+#: ../Quote/messages:99
+msgid "Quote source:"
+msgstr ""
+
+#: ../Quote/messages:101
+msgid "Quotationspage.com"
+msgstr ""
+
+#: ../Quote/messages:103
+msgid "Bash.org"
+msgstr ""
+
+#: ../Quote/messages:105
+msgid "Xkcdb.com"
+msgstr ""
+
+#: ../Quote/messages:107
+msgid "Qdb.us"
+msgstr ""
+
+#: ../Quote/messages:109
+msgid "Danstonchat.com"
+msgstr ""
+
+#: ../Quote/messages:111
+msgid "Jokes2go.com"
+msgstr ""
+
+#: ../Quote/messages:113
+msgid "Vidademerda.com.br"
+msgstr ""
+
+#: ../Quote/messages:115
+msgid "Grouphug.us"
+msgstr ""
+
+#: ../RubyBattery/messages:97
+msgid "Choose one of the available themes:"
+msgstr ""
+
+#: ../RubyBattery/messages:99
+msgid "in seconds."
+msgstr ""
+
+#: ../RubyBattery/messages:101
+msgid "Interval of time between 2 checks:"
+msgstr ""
+
+#: ../RubyBattery/messages:103
+msgid "Activate alert of critical charge?"
+msgstr ""
+
+#: ../RubyBattery/messages:105
+msgid "of % battery charge."
+msgstr ""
+
+#: ../RubyBattery/messages:107
+msgid "Threshold for the critical charge alert:"
+msgstr ""
+
+#: ../RubyBattery/messages:109
+msgid "Display a label with the charge?"
+msgstr ""
+
+#: ../ShortUrl/messages:97
+msgid ""
+"Cela vous permet de choisir de quel site vous souhaitez avoir l url "
+"raccourcie."
+msgstr ""
+
+#: ../ShortUrl/messages:99
+msgid "Choisissez votre site d url raccourcie :"
+msgstr ""
+
+#: ../ShortUrl/messages:101
+msgid "tinyurl.com"
+msgstr ""
+
+#: ../ShortUrl/messages:103
+msgid "shorterlink.org"
+msgstr ""
+
+#: ../ShortUrl/messages:105
+msgid "Cela vous permet de choisir l action a faire au clic gauche."
+msgstr ""
+
+#: ../ShortUrl/messages:107
+msgid "Action au clic gauche sur l icone :"
+msgstr ""
+
+#: ../ShortUrl/messages:109 ../ShortUrl/messages:117
+msgid "raccourcir le dernier lien de dnd2share"
+msgstr ""
+
+#: ../ShortUrl/messages:111 ../ShortUrl/messages:119
+msgid "ouvrir un dialogue pour raccourcir un lien"
+msgstr ""
+
+#: ../ShortUrl/messages:113
+msgid "Cela vous permet de choisir l action a faire au clic milieu."
+msgstr ""
+
+#: ../ShortUrl/messages:115
+msgid "Action au clic milieu sur l icone :"
+msgstr ""
+
+#: ../SubDock/messages:91
+msgid "Choose one of the available themes :"
+msgstr ""
+
+#: ../SubDock/messages:93
+msgid "Max value :"
+msgstr ""
+
+#: ../SubDock/messages:95
+msgid "Yes / No ?"
+msgstr ""
+
+#: ../Translator/messages:7
+msgid "Let empty to display the current source and destination languages."
+msgstr ""
+
+#: ../Translator/messages:13
+msgid "Leave empty to use the default one."
+msgstr ""
+
+#: ../Translator/messages:15
+msgid "Image filename:"
+msgstr ""
+
+#: ../Translator/messages:99
+msgid "Languages"
+msgstr ""
+
+#: ../Translator/messages:101
+msgid "Translate from:"
+msgstr ""
+
+#: ../Translator/messages:103 ../Translator/messages:219
+msgid "Afrikaans"
+msgstr ""
+
+#: ../Translator/messages:105 ../Translator/messages:221
+msgid "Albanian"
+msgstr ""
+
+#: ../Translator/messages:107 ../Translator/messages:223
+msgid "Arabic"
+msgstr ""
+
+#: ../Translator/messages:109 ../Translator/messages:225
+msgid "Armenian"
+msgstr ""
+
+#: ../Translator/messages:111 ../Translator/messages:227
+msgid "Azerbaijani"
+msgstr ""
+
+#: ../Translator/messages:113 ../Translator/messages:229
+msgid "Basque"
+msgstr ""
+
+#: ../Translator/messages:115 ../Translator/messages:231
+msgid "Belarusian"
+msgstr ""
+
+#: ../Translator/messages:117 ../Translator/messages:233
+msgid "Bulgarian"
+msgstr ""
+
+#: ../Translator/messages:119 ../Translator/messages:235
+msgid "Catalan"
+msgstr ""
+
+#: ../Translator/messages:121 ../Translator/messages:237
+msgid "Chinese"
+msgstr ""
+
+#: ../Translator/messages:123 ../Translator/messages:239
+msgid "Croatian"
+msgstr ""
+
+#: ../Translator/messages:125 ../Translator/messages:241
+msgid "Czech"
+msgstr ""
+
+#: ../Translator/messages:127 ../Translator/messages:243
+msgid "Danish"
+msgstr ""
+
+#: ../Translator/messages:129 ../Translator/messages:245
+msgid "Dutch"
+msgstr ""
+
+#: ../Translator/messages:131 ../Translator/messages:247
+msgid "English"
+msgstr ""
+
+#: ../Translator/messages:133 ../Translator/messages:249
+msgid "Estonian"
+msgstr ""
+
+#: ../Translator/messages:135 ../Translator/messages:251
+msgid "Filipino"
+msgstr ""
+
+#: ../Translator/messages:137 ../Translator/messages:253
+msgid "Finnish"
+msgstr ""
+
+#: ../Translator/messages:139 ../Translator/messages:255
+msgid "French"
+msgstr ""
+
+#: ../Translator/messages:141 ../Translator/messages:257
+msgid "Galician"
+msgstr ""
+
+#: ../Translator/messages:143 ../Translator/messages:259
+msgid "Georgian"
+msgstr ""
+
+#: ../Translator/messages:145 ../Translator/messages:261
+msgid "German"
+msgstr ""
+
+#: ../Translator/messages:147 ../Translator/messages:263
+msgid "Greek"
+msgstr ""
+
+#: ../Translator/messages:149 ../Translator/messages:265
+msgid "Haitian"
+msgstr ""
+
+#: ../Translator/messages:151 ../Translator/messages:267
+msgid "Hebrew"
+msgstr ""
+
+#: ../Translator/messages:153 ../Translator/messages:269
+msgid "Hindi"
+msgstr ""
+
+#: ../Translator/messages:155 ../Translator/messages:271
+msgid "Hungarian"
+msgstr ""
+
+#: ../Translator/messages:157 ../Translator/messages:273
+msgid "Icelandic"
+msgstr ""
+
+#: ../Translator/messages:159 ../Translator/messages:275
+msgid "Indonesian"
+msgstr ""
+
+#: ../Translator/messages:161 ../Translator/messages:277
+msgid "Irish"
+msgstr ""
+
+#: ../Translator/messages:163 ../Translator/messages:279
+msgid "Italian"
+msgstr ""
+
+#: ../Translator/messages:165 ../Translator/messages:281
+msgid "Japanese"
+msgstr ""
+
+#: ../Translator/messages:167 ../Translator/messages:283
+msgid "Korean"
+msgstr ""
+
+#: ../Translator/messages:169 ../Translator/messages:285
+msgid "Latvian"
+msgstr ""
+
+#: ../Translator/messages:171 ../Translator/messages:287
+msgid "Lithuanian"
+msgstr ""
+
+#: ../Translator/messages:173 ../Translator/messages:289
+msgid "Macedonian"
+msgstr ""
+
+#: ../Translator/messages:175 ../Translator/messages:291
+msgid "Malay"
+msgstr ""
+
+#: ../Translator/messages:177 ../Translator/messages:293
+msgid "Maltese"
+msgstr ""
+
+#: ../Translator/messages:179 ../Translator/messages:295
+msgid "Norwegian"
+msgstr ""
+
+#: ../Translator/messages:181 ../Translator/messages:297
+msgid "Persian"
+msgstr ""
+
+#: ../Translator/messages:183 ../Translator/messages:299
+msgid "Polish"
+msgstr ""
+
+#: ../Translator/messages:185 ../Translator/messages:301
+msgid "Portuguese"
+msgstr ""
+
+#: ../Translator/messages:187 ../Translator/messages:303
+msgid "Romanian"
+msgstr ""
+
+#: ../Translator/messages:189 ../Translator/messages:305
+msgid "Russian"
+msgstr ""
+
+#: ../Translator/messages:191 ../Translator/messages:307
+msgid "Serbian"
+msgstr ""
+
+#: ../Translator/messages:193 ../Translator/messages:309
+msgid "Slovak"
+msgstr ""
+
+#: ../Translator/messages:195 ../Translator/messages:311
+msgid "Slovenian"
+msgstr ""
+
+#: ../Translator/messages:197 ../Translator/messages:313
+msgid "Spanish"
+msgstr ""
+
+#: ../Translator/messages:199 ../Translator/messages:315
+msgid "Swahili"
+msgstr ""
+
+#: ../Translator/messages:201 ../Translator/messages:317
+msgid "Swedish"
+msgstr ""
+
+#: ../Translator/messages:203 ../Translator/messages:319
+msgid "Thai"
+msgstr ""
+
+#: ../Translator/messages:205 ../Translator/messages:321
+msgid "Turkish"
+msgstr ""
+
+#: ../Translator/messages:207 ../Translator/messages:323
+msgid "Ukrainian"
+msgstr ""
+
+#: ../Translator/messages:209 ../Translator/messages:325
+msgid "Urdu"
+msgstr ""
+
+#: ../Translator/messages:211 ../Translator/messages:327
+msgid "Vietnamese"
+msgstr ""
+
+#: ../Translator/messages:213 ../Translator/messages:329
+msgid "Welsh"
+msgstr ""
+
+#: ../Translator/messages:215 ../Translator/messages:331
+msgid "Yiddish"
+msgstr ""
+
+#: ../Translator/messages:217
+msgid "Translate to:"
+msgstr ""
+
+#: ../Translator/messages:333
+msgid "Shortkeys"
+msgstr ""
+
+#: ../Translator/messages:335
+msgid "Shortkey to start translating from (read):"
+msgstr ""
+
+#: ../Translator/messages:337
+msgid "Shortkey to start translating to (write):"
+msgstr ""
+
+#: ../Translator/messages:339
+msgid "Dialog"
+msgstr ""
+
+#: ../Translator/messages:341
+msgid "In s. Set 0 for an unlimited time."
+msgstr ""
+
+#: ../Translator/messages:343
+msgid "Time-length of the result dialog:"
+msgstr ""
+
+#: ../Translator/messages:345
+msgid "Editable text widget?"
+msgstr ""
+
+#: ../WebSearch/messages:95
+msgid "Search engine :"
+msgstr ""
+
+#: ../WebSearch/messages:97
+msgid "Google"
+msgstr ""
+
+#: ../WebSearch/messages:99
+msgid "Bing"
+msgstr ""
+
+#: ../WebSearch/messages:101
+msgid "Yahoo!"
+msgstr ""
+
+#: ../WebSearch/messages:103
+msgid "Teoma"
+msgstr ""
+
+#: ../WebSearch/messages:105
+msgid "Youtube"
+msgstr ""
+
+#: ../WebSearch/messages:107
+msgid "Webshots"
+msgstr ""
+
+#: ../WebSearch/messages:109
+msgid "Flickr"
+msgstr ""
+
+#: ../WebSearch/messages:111
+msgid "Wikipedia"
+msgstr ""
+
+#: ../WebSearch/messages:113
+msgid "ImageShack"
+msgstr ""
+
+#: ../WebSearch/messages:115
+msgid "Twitter"
+msgstr ""
+
+#: ../WebSearch/messages:117
+msgid "Digg"
+msgstr ""
+
+#: ../WebSearch/messages:119
+msgid "in sub-icons."
+msgstr ""
+
+#: ../WebSearch/messages:121
+msgid "Maximum number of results shown :"
+msgstr ""
+
+#: ../WebSearch/messages:123
+msgid "Show the current page as the icon label ?"
+msgstr ""
+
+#: ../WebSearch/messages:125
+msgid ""
+"Show the description of the result instead of its URL in the sub-icons ?"
+msgstr ""
+
+#: ../WebSearch/messages:127
+msgid ""
+"for slow connections, disable will result in significantly faster fetching."
+msgstr ""
+
+#: ../WebSearch/messages:129
+msgid ""
+"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
+"and Digg searches ?"
+msgstr ""
+
+#~ msgid "_custom decoration_"
+#~ msgstr "_קישוט מותאם אישית_"

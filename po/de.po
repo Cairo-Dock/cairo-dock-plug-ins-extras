@@ -1,0 +1,4963 @@
+# German translation for cairo-dock-plug-ins
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the cairo-dock-plug-ins package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# Jens Maucher <defcon.ubuntu@online.de>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cairo-dock-plug-ins\n"
+"Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"PO-Revision-Date: 2011-04-19 12:54+0100\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"Language-Team: German <de@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-16 05:13+0000\n"
+"X-Generator: Launchpad (build 12735)\n"
+
+#: ../GnoMenu/GnoMenu:130
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../GnoMenu/GnoMenu:134
+msgid "About"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:137
+msgid "Edit Menus"
+msgstr ""
+
+#: ../Calendar/messages:1 ../Cardapio/messages:1 ../CpuWatcher/messages:1
+#: ../Deluge/messages:1 ../DiskFree/messages:1 ../Facebook/messages:1
+#: ../GTG/messages:1 ../GnoMenu/messages:1 ../Google/messages:1
+#: ../KTorrent/messages:1 ../Lancelot/messages:1 ../Liferea/messages:1
+#: ../MintMenu/messages:1 ../Pidgin/messages:1 ../Quote/messages:1
+#: ../RubyBattery/messages:1 ../ShortUrl/messages:1 ../SubDock/messages:1
+#: ../Translator/messages:1 ../Transmission/messages:1 ../WebSearch/messages:1
+#: ../WindowsKiller/messages:1 ../Xchat/messages:1
+msgid "Icon"
+msgstr "Symbol"
+
+#: ../Calendar/messages:3 ../Cardapio/messages:3 ../CpuWatcher/messages:3
+#: ../Deluge/messages:3 ../DiskFree/messages:3 ../Facebook/messages:3
+#: ../GTG/messages:3 ../GnoMenu/messages:3 ../Google/messages:3
+#: ../KTorrent/messages:3 ../Lancelot/messages:3 ../Liferea/messages:3
+#: ../MintMenu/messages:3 ../Pidgin/messages:3 ../Quote/messages:3
+#: ../RubyBattery/messages:3 ../ShortUrl/messages:3 ../Translator/messages:3
+#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
+msgid "Applet"
+msgstr "Applet"
+
+#: ../Calendar/messages:5 ../Cardapio/messages:5 ../CpuWatcher/messages:5
+#: ../Deluge/messages:5 ../DiskFree/messages:5 ../Facebook/messages:5
+#: ../GTG/messages:5 ../GnoMenu/messages:5 ../Google/messages:5
+#: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
+#: ../MintMenu/messages:5 ../Pidgin/messages:5 ../Quote/messages:5
+#: ../RubyBattery/messages:5 ../ShortUrl/messages:5 ../SubDock/messages:13
+#: ../Translator/messages:5 ../Transmission/messages:5 ../WebSearch/messages:3
+#: ../WindowsKiller/messages:5 ../Xchat/messages:5
+msgid "Name of the dock it belongs to:"
+msgstr "Name des Docks, zu dem es gehört:"
+
+#: ../Calendar/messages:7 ../Cardapio/messages:7 ../CpuWatcher/messages:7
+#: ../Deluge/messages:7 ../DiskFree/messages:7 ../Facebook/messages:7
+#: ../GTG/messages:7 ../GnoMenu/messages:7 ../Google/messages:7
+#: ../KTorrent/messages:7 ../Lancelot/messages:7 ../MintMenu/messages:7
+#: ../Pidgin/messages:7 ../Quote/messages:9 ../RubyBattery/messages:7
+#: ../ShortUrl/messages:7 ../SubDock/messages:7 ../Transmission/messages:7
+#: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
+msgid "Name of the icon as it will appear in its label in the dock :"
+msgstr ""
+
+#: ../Calendar/messages:9 ../Cardapio/messages:9 ../CpuWatcher/messages:9
+#: ../Deluge/messages:9 ../DiskFree/messages:9 ../Facebook/messages:9
+#: ../GTG/messages:9 ../GnoMenu/messages:9 ../Google/messages:9
+#: ../KTorrent/messages:9 ../Lancelot/messages:9 ../Liferea/messages:9
+#: ../MintMenu/messages:9 ../Pidgin/messages:9 ../Quote/messages:11
+#: ../RubyBattery/messages:9 ../ShortUrl/messages:9 ../Translator/messages:11
+#: ../Transmission/messages:9 ../WebSearch/messages:7
+#: ../WindowsKiller/messages:9 ../Xchat/messages:9
+msgid "Display"
+msgstr "Anzeige"
+
+#: ../Calendar/messages:11 ../Cardapio/messages:11 ../CpuWatcher/messages:11
+#: ../Deluge/messages:11 ../DiskFree/messages:11 ../Facebook/messages:11
+#: ../GTG/messages:11 ../GnoMenu/messages:11 ../Google/messages:11
+#: ../KTorrent/messages:11 ../Lancelot/messages:11 ../Liferea/messages:11
+#: ../MintMenu/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
+#: ../RubyBattery/messages:11 ../ShortUrl/messages:11 ../SubDock/messages:9
+#: ../Transmission/messages:11 ../WebSearch/messages:9
+#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+msgid "Let empty to use the default one."
+msgstr ""
+
+#: ../Calendar/messages:13 ../Cardapio/messages:13 ../CpuWatcher/messages:13
+#: ../Deluge/messages:13 ../DiskFree/messages:13 ../Facebook/messages:13
+#: ../GTG/messages:13 ../GnoMenu/messages:13 ../Google/messages:13
+#: ../KTorrent/messages:13 ../Lancelot/messages:13 ../Liferea/messages:13
+#: ../MintMenu/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
+#: ../RubyBattery/messages:13 ../ShortUrl/messages:13 ../SubDock/messages:11
+#: ../Transmission/messages:13 ../WebSearch/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
+msgid "Image's filename :"
+msgstr "Dateiname der Grafik:"
+
+#: ../Calendar/messages:15 ../Cardapio/messages:15 ../CpuWatcher/messages:15
+#: ../Deluge/messages:15 ../DiskFree/messages:15 ../Facebook/messages:15
+#: ../GTG/messages:15 ../GnoMenu/messages:15 ../Google/messages:15
+#: ../KTorrent/messages:15 ../Lancelot/messages:15 ../Liferea/messages:15
+#: ../MintMenu/messages:15 ../Pidgin/messages:15 ../Quote/messages:17
+#: ../RubyBattery/messages:15 ../ShortUrl/messages:15 ../SubDock/messages:3
+#: ../Translator/messages:17 ../Transmission/messages:15
+#: ../WebSearch/messages:13 ../WindowsKiller/messages:15 ../Xchat/messages:15
+msgid "Set to 0 to use the default applet size"
+msgstr "Tragen Sie 0 ein, um die standardmäßige Appletgröße zu verwenden"
+
+#: ../Calendar/messages:17 ../Cardapio/messages:17 ../CpuWatcher/messages:17
+#: ../Deluge/messages:17 ../DiskFree/messages:17 ../Facebook/messages:17
+#: ../GTG/messages:17 ../GnoMenu/messages:17 ../Google/messages:17
+#: ../KTorrent/messages:17 ../Lancelot/messages:17 ../Liferea/messages:17
+#: ../MintMenu/messages:17 ../Pidgin/messages:17 ../Quote/messages:19
+#: ../RubyBattery/messages:17 ../ShortUrl/messages:17 ../SubDock/messages:5
+#: ../Translator/messages:19 ../Transmission/messages:17
+#: ../WebSearch/messages:15 ../WindowsKiller/messages:17 ../Xchat/messages:17
+msgid "Desired icon size for this applet"
+msgstr "Gewünschte Symbolgröße für dieses Applet"
+
+#: ../Calendar/messages:19 ../Cardapio/messages:19 ../CpuWatcher/messages:19
+#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Facebook/messages:19
+#: ../GTG/messages:19 ../GnoMenu/messages:19 ../Google/messages:19
+#: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
+#: ../MintMenu/messages:19 ../Pidgin/messages:19 ../Quote/messages:21
+#: ../RubyBattery/messages:19 ../ShortUrl/messages:19
+#: ../Translator/messages:21 ../Transmission/messages:19
+#: ../WebSearch/messages:17 ../Xchat/messages:19
+msgid "Applet's Handbook"
+msgstr "Handbuch des Applets"
+
+#: ../Calendar/messages:21 ../Cardapio/messages:21 ../CpuWatcher/messages:21
+#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Facebook/messages:21
+#: ../GTG/messages:21 ../GnoMenu/messages:21 ../Google/messages:21
+#: ../KTorrent/messages:21 ../Lancelot/messages:21 ../Liferea/messages:21
+#: ../MintMenu/messages:21 ../Pidgin/messages:21 ../Quote/messages:23
+#: ../RubyBattery/messages:21 ../ShortUrl/messages:21 ../SubDock/messages:15
+#: ../Translator/messages:23 ../Transmission/messages:21
+#: ../WebSearch/messages:19 ../WindowsKiller/messages:19 ../Xchat/messages:21
+msgid "Desklet"
+msgstr "Desklet"
+
+#: ../Calendar/messages:23 ../Cardapio/messages:23 ../CpuWatcher/messages:23
+#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Facebook/messages:23
+#: ../GTG/messages:23 ../GnoMenu/messages:23 ../Google/messages:23
+#: ../KTorrent/messages:23 ../Lancelot/messages:23 ../Liferea/messages:23
+#: ../MintMenu/messages:23 ../Pidgin/messages:23 ../Quote/messages:25
+#: ../RubyBattery/messages:23 ../ShortUrl/messages:23 ../SubDock/messages:17
+#: ../Translator/messages:25 ../Transmission/messages:23
+#: ../WebSearch/messages:21 ../WindowsKiller/messages:21 ../Xchat/messages:23
+msgid "Position"
+msgstr "Position"
+
+#: ../Calendar/messages:25 ../Cardapio/messages:25 ../CpuWatcher/messages:25
+#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Facebook/messages:25
+#: ../GTG/messages:25 ../GnoMenu/messages:25 ../Google/messages:25
+#: ../KTorrent/messages:25 ../Lancelot/messages:25 ../Liferea/messages:25
+#: ../MintMenu/messages:25 ../Pidgin/messages:25 ../Quote/messages:27
+#: ../RubyBattery/messages:25 ../ShortUrl/messages:25 ../SubDock/messages:19
+#: ../Translator/messages:27 ../Transmission/messages:25
+#: ../WebSearch/messages:23 ../WindowsKiller/messages:23 ../Xchat/messages:25
+msgid ""
+"If locked, the desklet cannot be moved by simply dragging it with the left "
+"mouse button. It can still be moved with ALT + left-click."
+msgstr ""
+"Falls gesperrt, kann das Desklet nicht durch einfaches Ziehen und Ablegen "
+"mit der linken Maustaste verschoben werden. Es lässt sich nur bei gedrückter "
+"Alt-Taste bewegen."
+
+#: ../Calendar/messages:27 ../Cardapio/messages:27 ../CpuWatcher/messages:27
+#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Facebook/messages:27
+#: ../GTG/messages:27 ../GnoMenu/messages:27 ../Google/messages:27
+#: ../KTorrent/messages:27 ../Lancelot/messages:27 ../Liferea/messages:27
+#: ../MintMenu/messages:27 ../Pidgin/messages:27 ../Quote/messages:29
+#: ../RubyBattery/messages:27 ../ShortUrl/messages:27 ../SubDock/messages:21
+#: ../Translator/messages:29 ../Transmission/messages:27
+#: ../WebSearch/messages:25 ../WindowsKiller/messages:25 ../Xchat/messages:27
+msgid "Lock position?"
+msgstr "Position sperren?"
+
+#: ../Calendar/messages:29 ../Cardapio/messages:29 ../CpuWatcher/messages:29
+#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Facebook/messages:29
+#: ../GTG/messages:29 ../GnoMenu/messages:29 ../Google/messages:29
+#: ../KTorrent/messages:29 ../Lancelot/messages:29 ../Liferea/messages:29
+#: ../MintMenu/messages:29 ../Pidgin/messages:29 ../Quote/messages:31
+#: ../RubyBattery/messages:29 ../ShortUrl/messages:29 ../SubDock/messages:23
+#: ../Translator/messages:31 ../Transmission/messages:29
+#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
+msgid ""
+"Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+"Abhängig von Ihrem Fensterverwalter können Sie Größenänderungen durch "
+"Linksklick oder Mittelklick bei gedrückter Alt-Taste ausführen."
+
+#: ../Calendar/messages:31 ../Cardapio/messages:31 ../CpuWatcher/messages:31
+#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Facebook/messages:31
+#: ../GTG/messages:31 ../GnoMenu/messages:31 ../Google/messages:31
+#: ../KTorrent/messages:31 ../Lancelot/messages:31 ../Liferea/messages:31
+#: ../MintMenu/messages:31 ../Pidgin/messages:31 ../Quote/messages:33
+#: ../RubyBattery/messages:31 ../ShortUrl/messages:31 ../SubDock/messages:25
+#: ../Translator/messages:33 ../Transmission/messages:31
+#: ../WebSearch/messages:29 ../WindowsKiller/messages:29 ../Xchat/messages:31
+msgid "Desklet dimensions (width x height):"
+msgstr "Abmessungen des Desklets (Breite x Höhe):"
+
+#: ../Calendar/messages:33 ../Cardapio/messages:33 ../CpuWatcher/messages:33
+#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Facebook/messages:33
+#: ../GTG/messages:33 ../GnoMenu/messages:33 ../Google/messages:33
+#: ../KTorrent/messages:33 ../Lancelot/messages:33 ../Liferea/messages:33
+#: ../MintMenu/messages:33 ../Pidgin/messages:33 ../Quote/messages:35
+#: ../RubyBattery/messages:33 ../ShortUrl/messages:33 ../SubDock/messages:27
+#: ../Translator/messages:35 ../Transmission/messages:33
+#: ../WebSearch/messages:31 ../WindowsKiller/messages:31 ../Xchat/messages:33
+msgid ""
+"Depending on your WindowManager, you may be able to move this with ALT + "
+"left-click.. Negative values are counted from the right/bottom of the screen"
+msgstr ""
+
+#: ../Calendar/messages:35 ../Cardapio/messages:35 ../CpuWatcher/messages:35
+#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Facebook/messages:35
+#: ../GTG/messages:35 ../GnoMenu/messages:35 ../Google/messages:35
+#: ../KTorrent/messages:35 ../Lancelot/messages:35 ../Liferea/messages:35
+#: ../MintMenu/messages:35 ../Pidgin/messages:35 ../Quote/messages:37
+#: ../RubyBattery/messages:35 ../ShortUrl/messages:35 ../SubDock/messages:29
+#: ../Translator/messages:37 ../Transmission/messages:35
+#: ../WebSearch/messages:33 ../WindowsKiller/messages:33 ../Xchat/messages:35
+msgid "Desklet position (x, y):"
+msgstr "Position des Desklets (x, y):"
+
+#: ../Calendar/messages:37 ../Cardapio/messages:37 ../CpuWatcher/messages:37
+#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Facebook/messages:37
+#: ../GTG/messages:37 ../GnoMenu/messages:37 ../Google/messages:37
+#: ../KTorrent/messages:37 ../Lancelot/messages:37 ../Liferea/messages:37
+#: ../MintMenu/messages:37 ../Pidgin/messages:37 ../Quote/messages:39
+#: ../RubyBattery/messages:37 ../ShortUrl/messages:37 ../SubDock/messages:31
+#: ../Translator/messages:39 ../Transmission/messages:37
+#: ../WebSearch/messages:35 ../WindowsKiller/messages:35 ../Xchat/messages:37
+msgid ""
+"You can quickly rotate the desklet with the mouse, by dragging the little "
+"buttons on its left and top sides."
+msgstr ""
+"Sie können das Desklet schnell mit der Maus drehen. Klicken Sie dazu die "
+"kleinen Knöpfe links und oben an und ziehen Sie sie."
+
+#: ../Calendar/messages:39 ../Cardapio/messages:39 ../CpuWatcher/messages:39
+#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Facebook/messages:39
+#: ../GTG/messages:39 ../GnoMenu/messages:39 ../Google/messages:39
+#: ../KTorrent/messages:39 ../Lancelot/messages:39 ../Liferea/messages:39
+#: ../MintMenu/messages:39 ../Pidgin/messages:39 ../Quote/messages:41
+#: ../RubyBattery/messages:39 ../ShortUrl/messages:39 ../SubDock/messages:33
+#: ../Translator/messages:41 ../Transmission/messages:39
+#: ../WebSearch/messages:37 ../WindowsKiller/messages:37 ../Xchat/messages:39
+msgid "Rotation:"
+msgstr "Drehung:"
+
+#: ../Calendar/messages:41 ../Cardapio/messages:41 ../CpuWatcher/messages:41
+#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Facebook/messages:41
+#: ../GTG/messages:41 ../GnoMenu/messages:41 ../Google/messages:41
+#: ../KTorrent/messages:41 ../Lancelot/messages:41 ../Liferea/messages:41
+#: ../MintMenu/messages:41 ../Pidgin/messages:41 ../Quote/messages:43
+#: ../RubyBattery/messages:41 ../ShortUrl/messages:41 ../SubDock/messages:35
+#: ../Translator/messages:43 ../Transmission/messages:41
+#: ../WebSearch/messages:39 ../WindowsKiller/messages:39 ../Xchat/messages:41
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+#: ../Calendar/messages:43 ../Cardapio/messages:43 ../CpuWatcher/messages:43
+#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Facebook/messages:43
+#: ../GTG/messages:43 ../GnoMenu/messages:43 ../Google/messages:43
+#: ../KTorrent/messages:43 ../Lancelot/messages:43 ../Liferea/messages:43
+#: ../MintMenu/messages:43 ../Pidgin/messages:43 ../Quote/messages:45
+#: ../RubyBattery/messages:43 ../ShortUrl/messages:43 ../SubDock/messages:37
+#: ../Translator/messages:45 ../Transmission/messages:43
+#: ../WebSearch/messages:41 ../WindowsKiller/messages:41 ../Xchat/messages:43
+msgid "Is detached from the dock"
+msgstr "Ist vom Dock abgetrennt"
+
+#: ../Calendar/messages:45 ../Cardapio/messages:45 ../CpuWatcher/messages:45
+#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Facebook/messages:45
+#: ../GTG/messages:45 ../GnoMenu/messages:45 ../Google/messages:45
+#: ../KTorrent/messages:45 ../Lancelot/messages:45 ../Liferea/messages:45
+#: ../MintMenu/messages:45 ../Pidgin/messages:45 ../Quote/messages:47
+#: ../RubyBattery/messages:45 ../ShortUrl/messages:45 ../SubDock/messages:39
+#: ../Translator/messages:47 ../Transmission/messages:45
+#: ../WebSearch/messages:43 ../WindowsKiller/messages:43 ../Xchat/messages:45
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=utility)"
+msgstr ""
+
+#: ../Calendar/messages:47 ../Cardapio/messages:47 ../CpuWatcher/messages:47
+#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Facebook/messages:47
+#: ../GTG/messages:47 ../GnoMenu/messages:47 ../Google/messages:47
+#: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
+#: ../MintMenu/messages:47 ../Pidgin/messages:47 ../Quote/messages:49
+#: ../RubyBattery/messages:47 ../ShortUrl/messages:47 ../SubDock/messages:41
+#: ../Translator/messages:49 ../Transmission/messages:47
+#: ../WebSearch/messages:45 ../WindowsKiller/messages:45 ../Xchat/messages:47
+msgid "Visibility:"
+msgstr "Sichtbarkeit :"
+
+#: ../Calendar/messages:49 ../Cardapio/messages:49 ../CpuWatcher/messages:49
+#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Facebook/messages:49
+#: ../GTG/messages:49 ../GnoMenu/messages:49 ../Google/messages:49
+#: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
+#: ../MintMenu/messages:49 ../Pidgin/messages:49 ../Quote/messages:51
+#: ../RubyBattery/messages:49 ../ShortUrl/messages:49 ../SubDock/messages:43
+#: ../Translator/messages:51 ../Transmission/messages:49
+#: ../WebSearch/messages:47 ../WindowsKiller/messages:47 ../Xchat/messages:49
+msgid "Normal"
+msgstr "Normal"
+
+#: ../Calendar/messages:51 ../Cardapio/messages:51 ../CpuWatcher/messages:51
+#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Facebook/messages:51
+#: ../GTG/messages:51 ../GnoMenu/messages:51 ../Google/messages:51
+#: ../KTorrent/messages:51 ../Lancelot/messages:51 ../Liferea/messages:51
+#: ../MintMenu/messages:51 ../Pidgin/messages:51 ../Quote/messages:53
+#: ../RubyBattery/messages:51 ../ShortUrl/messages:51 ../SubDock/messages:45
+#: ../Translator/messages:53 ../Transmission/messages:51
+#: ../WebSearch/messages:49 ../WindowsKiller/messages:49 ../Xchat/messages:51
+msgid "Keep above"
+msgstr "Im Vordergrund halten"
+
+#: ../Calendar/messages:53 ../Cardapio/messages:53 ../CpuWatcher/messages:53
+#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Facebook/messages:53
+#: ../GTG/messages:53 ../GnoMenu/messages:53 ../Google/messages:53
+#: ../KTorrent/messages:53 ../Lancelot/messages:53 ../Liferea/messages:53
+#: ../MintMenu/messages:53 ../Pidgin/messages:53 ../Quote/messages:55
+#: ../RubyBattery/messages:53 ../ShortUrl/messages:53 ../SubDock/messages:47
+#: ../Translator/messages:55 ../Transmission/messages:53
+#: ../WebSearch/messages:51 ../WindowsKiller/messages:51 ../Xchat/messages:53
+msgid "Keep below"
+msgstr "Im Hintergrund"
+
+#: ../Calendar/messages:55 ../Cardapio/messages:55 ../CpuWatcher/messages:55
+#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Facebook/messages:55
+#: ../GTG/messages:55 ../GnoMenu/messages:55 ../Google/messages:55
+#: ../KTorrent/messages:55 ../Lancelot/messages:55 ../Liferea/messages:55
+#: ../MintMenu/messages:55 ../Pidgin/messages:55 ../Quote/messages:57
+#: ../RubyBattery/messages:55 ../ShortUrl/messages:55 ../SubDock/messages:49
+#: ../Translator/messages:57 ../Transmission/messages:55
+#: ../WebSearch/messages:53 ../WindowsKiller/messages:53 ../Xchat/messages:55
+msgid "Keep on widget layer"
+msgstr "In der Widget-Ebene behalten"
+
+#: ../Calendar/messages:57 ../Cardapio/messages:57 ../CpuWatcher/messages:57
+#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Facebook/messages:57
+#: ../GTG/messages:57 ../GnoMenu/messages:57 ../Google/messages:57
+#: ../KTorrent/messages:57 ../Lancelot/messages:57 ../Liferea/messages:57
+#: ../MintMenu/messages:57 ../Pidgin/messages:57 ../Quote/messages:59
+#: ../RubyBattery/messages:57 ../ShortUrl/messages:57 ../SubDock/messages:51
+#: ../Translator/messages:59 ../Transmission/messages:57
+#: ../WebSearch/messages:55 ../WindowsKiller/messages:55 ../Xchat/messages:57
+msgid "Reserve space"
+msgstr "Platz reservieren"
+
+#: ../Calendar/messages:59 ../Cardapio/messages:59 ../CpuWatcher/messages:59
+#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Facebook/messages:59
+#: ../GTG/messages:59 ../GnoMenu/messages:59 ../Google/messages:59
+#: ../KTorrent/messages:59 ../Lancelot/messages:59 ../Liferea/messages:59
+#: ../MintMenu/messages:59 ../Pidgin/messages:59 ../Quote/messages:61
+#: ../RubyBattery/messages:59 ../ShortUrl/messages:59 ../SubDock/messages:53
+#: ../Translator/messages:61 ../Transmission/messages:59
+#: ../WebSearch/messages:57 ../WindowsKiller/messages:57 ../Xchat/messages:59
+msgid "Should be visible on all desktops?"
+msgstr "Auf allen Arbeitsfächen sichtbar?"
+
+#: ../Calendar/messages:61 ../Cardapio/messages:61 ../CpuWatcher/messages:61
+#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Facebook/messages:61
+#: ../GTG/messages:61 ../GnoMenu/messages:61 ../Google/messages:61
+#: ../KTorrent/messages:61 ../Lancelot/messages:61 ../Liferea/messages:61
+#: ../MintMenu/messages:61 ../Pidgin/messages:61 ../Quote/messages:63
+#: ../RubyBattery/messages:61 ../ShortUrl/messages:61 ../SubDock/messages:55
+#: ../Translator/messages:63 ../Transmission/messages:61
+#: ../WebSearch/messages:59 ../WindowsKiller/messages:59 ../Xchat/messages:61
+msgid "Decorations"
+msgstr "Dekorationen"
+
+#: ../Calendar/messages:63 ../Cardapio/messages:63 ../CpuWatcher/messages:63
+#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Facebook/messages:63
+#: ../GTG/messages:63 ../GnoMenu/messages:63 ../Google/messages:63
+#: ../KTorrent/messages:63 ../Lancelot/messages:63 ../Liferea/messages:63
+#: ../MintMenu/messages:63 ../Pidgin/messages:63 ../Quote/messages:65
+#: ../RubyBattery/messages:63 ../ShortUrl/messages:63 ../SubDock/messages:57
+#: ../Translator/messages:65 ../Transmission/messages:63
+#: ../WebSearch/messages:61 ../WindowsKiller/messages:61 ../Xchat/messages:63
+msgid "Choose 'Custom decorations' to define your own decorations below."
+msgstr ""
+"Wählen Sie »Benutzerdefinierte Dekorationen«, um nachfolgend Ihre eigenen "
+"Dekorationen festzulegen."
+
+#: ../Calendar/messages:65 ../Cardapio/messages:65 ../CpuWatcher/messages:65
+#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Facebook/messages:65
+#: ../GTG/messages:65 ../GnoMenu/messages:65 ../Google/messages:65
+#: ../KTorrent/messages:65 ../Lancelot/messages:65 ../Liferea/messages:65
+#: ../MintMenu/messages:65 ../Pidgin/messages:65 ../Quote/messages:67
+#: ../RubyBattery/messages:65 ../ShortUrl/messages:65 ../SubDock/messages:59
+#: ../Translator/messages:67 ../Transmission/messages:65
+#: ../WebSearch/messages:63 ../WindowsKiller/messages:63 ../Xchat/messages:65
+msgid "Choose a decoration theme for this desklet:"
+msgstr "Wählen Sie ein Dekorationsthema für dieses Desklet:"
+
+#: ../Calendar/messages:67 ../Cardapio/messages:67 ../CpuWatcher/messages:67
+#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Facebook/messages:67
+#: ../GTG/messages:67 ../GnoMenu/messages:67 ../Google/messages:67
+#: ../KTorrent/messages:67 ../Lancelot/messages:67 ../Liferea/messages:67
+#: ../MintMenu/messages:67 ../Pidgin/messages:67 ../Quote/messages:69
+#: ../RubyBattery/messages:67 ../ShortUrl/messages:67 ../SubDock/messages:61
+#: ../Translator/messages:69 ../Transmission/messages:67
+#: ../WebSearch/messages:65 ../WindowsKiller/messages:65 ../Xchat/messages:67
+msgid ""
+"Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
+msgstr ""
+"Bild als Hintergrund für Darstellungen, z.B. ein Rahmen. Leer lassen, um "
+"kein Bild zu verwenden."
+
+#: ../Calendar/messages:69 ../Cardapio/messages:69 ../CpuWatcher/messages:69
+#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Facebook/messages:69
+#: ../GTG/messages:69 ../GnoMenu/messages:69 ../Google/messages:69
+#: ../KTorrent/messages:69 ../Lancelot/messages:69 ../Liferea/messages:69
+#: ../MintMenu/messages:69 ../Pidgin/messages:69 ../Quote/messages:71
+#: ../RubyBattery/messages:69 ../ShortUrl/messages:69 ../SubDock/messages:63
+#: ../Translator/messages:71 ../Transmission/messages:69
+#: ../WebSearch/messages:67 ../WindowsKiller/messages:67 ../Xchat/messages:69
+msgid "Background image:"
+msgstr "Hintergrundbild:"
+
+#: ../Calendar/messages:71 ../Cardapio/messages:71 ../CpuWatcher/messages:71
+#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Facebook/messages:71
+#: ../GTG/messages:71 ../GnoMenu/messages:71 ../Google/messages:71
+#: ../KTorrent/messages:71 ../Lancelot/messages:71 ../Liferea/messages:71
+#: ../MintMenu/messages:71 ../Pidgin/messages:71 ../Quote/messages:73
+#: ../RubyBattery/messages:71 ../ShortUrl/messages:71 ../SubDock/messages:65
+#: ../Translator/messages:73 ../Transmission/messages:71
+#: ../WebSearch/messages:69 ../WindowsKiller/messages:69 ../Xchat/messages:71
+msgid "Background transparency:"
+msgstr "Hintergrund-Transparenz:"
+
+#: ../Calendar/messages:73 ../Cardapio/messages:73 ../CpuWatcher/messages:73
+#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Facebook/messages:73
+#: ../GTG/messages:73 ../GnoMenu/messages:73 ../Google/messages:73
+#: ../KTorrent/messages:73 ../Lancelot/messages:73 ../Liferea/messages:73
+#: ../MintMenu/messages:73 ../Pidgin/messages:73 ../Quote/messages:75
+#: ../RubyBattery/messages:73 ../ShortUrl/messages:73 ../SubDock/messages:67
+#: ../Translator/messages:75 ../Transmission/messages:73
+#: ../WebSearch/messages:71 ../WindowsKiller/messages:71 ../Xchat/messages:73
+msgid "in pixels. Use this to adjust the left position of drawings."
+msgstr ""
+"in Pixel. Verwenden Sie dies zum Anpassen der linken Position der "
+"Darstellung."
+
+#: ../Calendar/messages:75 ../Cardapio/messages:75 ../CpuWatcher/messages:75
+#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Facebook/messages:75
+#: ../GTG/messages:75 ../GnoMenu/messages:75 ../Google/messages:75
+#: ../KTorrent/messages:75 ../Lancelot/messages:75 ../Liferea/messages:75
+#: ../MintMenu/messages:75 ../Pidgin/messages:75 ../Quote/messages:77
+#: ../RubyBattery/messages:75 ../ShortUrl/messages:75 ../SubDock/messages:69
+#: ../Translator/messages:77 ../Transmission/messages:75
+#: ../WebSearch/messages:73 ../WindowsKiller/messages:73 ../Xchat/messages:75
+msgid "Left offset:"
+msgstr "Linker Versatz:"
+
+#: ../Calendar/messages:77 ../Cardapio/messages:77 ../CpuWatcher/messages:77
+#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Facebook/messages:77
+#: ../GTG/messages:77 ../GnoMenu/messages:77 ../Google/messages:77
+#: ../KTorrent/messages:77 ../Lancelot/messages:77 ../Liferea/messages:77
+#: ../MintMenu/messages:77 ../Pidgin/messages:77 ../Quote/messages:79
+#: ../RubyBattery/messages:77 ../ShortUrl/messages:77 ../SubDock/messages:71
+#: ../Translator/messages:79 ../Transmission/messages:77
+#: ../WebSearch/messages:75 ../WindowsKiller/messages:75 ../Xchat/messages:77
+msgid "in pixels. Use this to adjust the top position of drawings."
+msgstr ""
+"in Pixel. Verwenden Sie dies zum Anpassen der oberen Position der "
+"Darstellung."
+
+#: ../Calendar/messages:79 ../Cardapio/messages:79 ../CpuWatcher/messages:79
+#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Facebook/messages:79
+#: ../GTG/messages:79 ../GnoMenu/messages:79 ../Google/messages:79
+#: ../KTorrent/messages:79 ../Lancelot/messages:79 ../Liferea/messages:79
+#: ../MintMenu/messages:79 ../Pidgin/messages:79 ../Quote/messages:81
+#: ../RubyBattery/messages:79 ../ShortUrl/messages:79 ../SubDock/messages:73
+#: ../Translator/messages:81 ../Transmission/messages:79
+#: ../WebSearch/messages:77 ../WindowsKiller/messages:77 ../Xchat/messages:79
+msgid "Top offset:"
+msgstr "Oberer Versatz:"
+
+#: ../Calendar/messages:81 ../Cardapio/messages:81 ../CpuWatcher/messages:81
+#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Facebook/messages:81
+#: ../GTG/messages:81 ../GnoMenu/messages:81 ../Google/messages:81
+#: ../KTorrent/messages:81 ../Lancelot/messages:81 ../Liferea/messages:81
+#: ../MintMenu/messages:81 ../Pidgin/messages:81 ../Quote/messages:83
+#: ../RubyBattery/messages:81 ../ShortUrl/messages:81 ../SubDock/messages:75
+#: ../Translator/messages:83 ../Transmission/messages:81
+#: ../WebSearch/messages:79 ../WindowsKiller/messages:79 ../Xchat/messages:81
+msgid "in pixels. Use this to adjust the right position of drawings."
+msgstr ""
+"in Pixel. Verwenden Sie dies zum Anpassen der rechten Position der "
+"Darstellung."
+
+#: ../Calendar/messages:83 ../Cardapio/messages:83 ../CpuWatcher/messages:83
+#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Facebook/messages:83
+#: ../GTG/messages:83 ../GnoMenu/messages:83 ../Google/messages:83
+#: ../KTorrent/messages:83 ../Lancelot/messages:83 ../Liferea/messages:83
+#: ../MintMenu/messages:83 ../Pidgin/messages:83 ../Quote/messages:85
+#: ../RubyBattery/messages:83 ../ShortUrl/messages:83 ../SubDock/messages:77
+#: ../Translator/messages:85 ../Transmission/messages:83
+#: ../WebSearch/messages:81 ../WindowsKiller/messages:81 ../Xchat/messages:83
+msgid "Right offset:"
+msgstr "Rechter Versatz:"
+
+#: ../Calendar/messages:85 ../Cardapio/messages:85 ../CpuWatcher/messages:85
+#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Facebook/messages:85
+#: ../GTG/messages:85 ../GnoMenu/messages:85 ../Google/messages:85
+#: ../KTorrent/messages:85 ../Lancelot/messages:85 ../Liferea/messages:85
+#: ../MintMenu/messages:85 ../Pidgin/messages:85 ../Quote/messages:87
+#: ../RubyBattery/messages:85 ../ShortUrl/messages:85 ../SubDock/messages:79
+#: ../Translator/messages:87 ../Transmission/messages:85
+#: ../WebSearch/messages:83 ../WindowsKiller/messages:83 ../Xchat/messages:85
+msgid "in pixels. Use this to adjust the bottom position of drawings."
+msgstr ""
+"in Pixel. Verwenden Sie dies zum Anpassen der unteren Position der "
+"Darstellung."
+
+#: ../Calendar/messages:87 ../Cardapio/messages:87 ../CpuWatcher/messages:87
+#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Facebook/messages:87
+#: ../GTG/messages:87 ../GnoMenu/messages:87 ../Google/messages:87
+#: ../KTorrent/messages:87 ../Lancelot/messages:87 ../Liferea/messages:87
+#: ../MintMenu/messages:87 ../Pidgin/messages:87 ../Quote/messages:89
+#: ../RubyBattery/messages:87 ../ShortUrl/messages:87 ../SubDock/messages:81
+#: ../Translator/messages:89 ../Transmission/messages:87
+#: ../WebSearch/messages:85 ../WindowsKiller/messages:85 ../Xchat/messages:87
+msgid "Bottom offset:"
+msgstr "Unterer Versatz:"
+
+#: ../Calendar/messages:89 ../Cardapio/messages:89 ../CpuWatcher/messages:89
+#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Facebook/messages:89
+#: ../GTG/messages:89 ../GnoMenu/messages:89 ../Google/messages:89
+#: ../KTorrent/messages:89 ../Lancelot/messages:89 ../Liferea/messages:89
+#: ../MintMenu/messages:89 ../Pidgin/messages:89 ../Quote/messages:91
+#: ../RubyBattery/messages:89 ../ShortUrl/messages:89 ../SubDock/messages:83
+#: ../Translator/messages:91 ../Transmission/messages:89
+#: ../WebSearch/messages:87 ../WindowsKiller/messages:87 ../Xchat/messages:89
+msgid ""
+"Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
+"no image."
+msgstr ""
+"Bild zum darstellen über der Zeichnung, zum Beispiel  eine Reflektion. Lasse "
+"es leer für kein Bild."
+
+#: ../Calendar/messages:91 ../Cardapio/messages:91 ../CpuWatcher/messages:91
+#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Facebook/messages:91
+#: ../GTG/messages:91 ../GnoMenu/messages:91 ../Google/messages:91
+#: ../KTorrent/messages:91 ../Lancelot/messages:91 ../Liferea/messages:91
+#: ../MintMenu/messages:91 ../Pidgin/messages:91 ../Quote/messages:93
+#: ../RubyBattery/messages:91 ../ShortUrl/messages:91 ../SubDock/messages:85
+#: ../Translator/messages:93 ../Transmission/messages:91
+#: ../WebSearch/messages:89 ../WindowsKiller/messages:89 ../Xchat/messages:91
+msgid "Foreground image:"
+msgstr "Vordergrundbild:"
+
+#: ../Calendar/messages:93 ../Cardapio/messages:93 ../CpuWatcher/messages:93
+#: ../Deluge/messages:93 ../DiskFree/messages:93 ../Facebook/messages:93
+#: ../GTG/messages:93 ../GnoMenu/messages:93 ../Google/messages:93
+#: ../KTorrent/messages:93 ../Lancelot/messages:93 ../Liferea/messages:93
+#: ../MintMenu/messages:93 ../Pidgin/messages:93 ../Quote/messages:95
+#: ../RubyBattery/messages:93 ../ShortUrl/messages:93 ../SubDock/messages:87
+#: ../Translator/messages:95 ../Transmission/messages:93
+#: ../WebSearch/messages:91 ../WindowsKiller/messages:91 ../Xchat/messages:93
+msgid "Foreground tansparency:"
+msgstr "Transparenz des Vordergrundes:"
+
+#: ../Calendar/messages:95 ../Cardapio/messages:95 ../CpuWatcher/messages:95
+#: ../Deluge/messages:95 ../DiskFree/messages:95 ../Facebook/messages:95
+#: ../GTG/messages:95 ../GnoMenu/messages:95 ../KTorrent/messages:95
+#: ../Lancelot/messages:95 ../Liferea/messages:95 ../MintMenu/messages:95
+#: ../Pidgin/messages:95 ../Quote/messages:97 ../RubyBattery/messages:95
+#: ../ShortUrl/messages:95 ../SubDock/messages:89 ../Translator/messages:97
+#: ../Transmission/messages:95 ../WebSearch/messages:93 ../Xchat/messages:95
+msgid "Configuration"
+msgstr "Einstellungen"
+
+#: ../Calendar/messages:97
+#, fuzzy
+msgid "Applications"
+msgstr "Menü \"Anwendungen\""
+
+#: ../Calendar/messages:99
+msgid "Command to launch your favourite calendar application (middle click):"
+msgstr ""
+
+#: ../Calendar/messages:101
+msgid "Command to execute on dropping a file onto the calendar-icon:"
+msgstr ""
+
+#: ../Calendar/messages:103 ../Facebook/messages:117
+msgid "Behaviour"
+msgstr "Verhalten"
+
+#: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
+#, fuzzy
+msgid "in s."
+msgstr "in Sekunden."
+
+#: ../Calendar/messages:107
+msgid "Time length of dialogues for the calendar :"
+msgstr ""
+
+#: ../Calendar/messages:111
+msgid "Time length of dialogues for events of the day :"
+msgstr ""
+
+#: ../Calendar/messages:115
+msgid "Time length of dialogues for calendar of next month :"
+msgstr ""
+
+#: ../Calendar/messages:117
+#, fuzzy
+msgid ""
+"The path to a script to generate an icon. Leave it empty to use the default "
+"one."
+msgstr "Leer lassen, um die Vorgabe zu verwenden."
+
+#: ../Calendar/messages:119
+msgid "Icon custom script:"
+msgstr ""
+
+#: ../Cardapio/messages:97 ../GnoMenu/messages:97 ../Lancelot/messages:97
+#: ../MintMenu/messages:97
+#, fuzzy
+msgid "Shortkey to pop up the menu:"
+msgstr "Tastenkürzel zum Aufklappen des Objektmenüs:"
+
+#: ../CpuWatcher/messages:97
+#, fuzzy
+msgid "in ms"
+msgstr "In ms."
+
+#: ../CpuWatcher/messages:99
+#, fuzzy
+msgid "Refresh time :"
+msgstr "Aktualisierungszeit:"
+
+#: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
+#, fuzzy
+msgid "Shortkey to pop up the torrents info:"
+msgstr "Tastenkürzel zum Aufklappen des Objektmenüs:"
+
+#: ../DiskFree/messages:97
+msgid ""
+"View available file system's space as Giga (checked) or Mega (unchecked) :"
+msgstr ""
+
+#: ../DiskFree/messages:99
+#, fuzzy
+msgid "in minutes"
+msgstr "In Minuten."
+
+#: ../DiskFree/messages:101
+msgid "Time between two file system's checking :"
+msgstr ""
+
+#: ../Facebook/messages:97
+#, fuzzy
+msgid "Notifications"
+msgstr "Benachrichtigung"
+
+#: ../Facebook/messages:99
+#, fuzzy
+msgid "Notifications for new messages?"
+msgstr "Benachrichtigung wenn die Batterie geladen wird?"
+
+#: ../Facebook/messages:101
+msgid ""
+"Notifications will keep recurring so long requests have not been either "
+"accepted or rejected."
+msgstr ""
+
+#: ../Facebook/messages:103
+msgid "Notifications for pending friend requests?"
+msgstr ""
+
+#: ../Facebook/messages:105
+msgid "likes, comments, tags, etc."
+msgstr ""
+
+#: ../Facebook/messages:107
+msgid "Notifications for unread notices?"
+msgstr ""
+
+#: ../Facebook/messages:109
+#, fuzzy
+msgid "Notifications for pokes?"
+msgstr "Benachrichtigung"
+
+#: ../Facebook/messages:111
+msgid "Notifications for group invites?"
+msgstr ""
+
+#: ../Facebook/messages:113
+msgid "Notifications for event invites?"
+msgstr ""
+
+#: ../Facebook/messages:115
+msgid "Notifications for unread shares (deprecated)?"
+msgstr ""
+
+#: ../Facebook/messages:119
+msgid ""
+"\"always\" will notify you whenever the number of notifications is not 0; "
+"\"different\" will do so whenever the number of notifications changes; "
+"\"superior\" will notify you whenever it increases (default), \"never\"--"
+"obviously--will prevent the applet from bothering you. The applet will "
+"always set an emblem on the icon however."
+msgstr ""
+
+#: ../Facebook/messages:121
+msgid "Under what condition do you want the applet to notify you?:"
+msgstr ""
+
+#: ../Facebook/messages:123
+msgid "superior"
+msgstr ""
+
+#: ../Facebook/messages:125
+msgid "always"
+msgstr ""
+
+#: ../Facebook/messages:127
+msgid "different"
+msgstr ""
+
+#: ../Facebook/messages:129
+#, fuzzy
+msgid "never"
+msgstr "Niemals"
+
+#: ../Facebook/messages:131
+msgid "Effect is \"bounce\" by default."
+msgstr ""
+
+#: ../Facebook/messages:133
+msgid ""
+"Do you want the applet to apply any effect on the icon during the "
+"notification?"
+msgstr ""
+
+#: ../Facebook/messages:135
+#, fuzzy
+msgid "bounce"
+msgstr "Springen"
+
+#: ../Facebook/messages:137
+#, fuzzy
+msgid "blink"
+msgstr "Blinken"
+
+#: ../Facebook/messages:139
+#, fuzzy
+msgid "pulse"
+msgstr "Pulsieren"
+
+#: ../Facebook/messages:141
+#, fuzzy
+msgid "rotate"
+msgstr "Rotieren"
+
+#: ../Facebook/messages:143
+msgid "spot"
+msgstr ""
+
+#: ../Facebook/messages:145
+msgid "wave"
+msgstr ""
+
+#: ../Facebook/messages:147
+#, fuzzy
+msgid "wobbly"
+msgstr "Wackeln"
+
+#: ../Facebook/messages:149 ../GTG/messages:113 ../Pidgin/messages:121
+#: ../Xchat/messages:113
+msgid "none"
+msgstr "kein"
+
+#: ../Facebook/messages:151
+msgid "True by default."
+msgstr ""
+
+#: ../Facebook/messages:153
+msgid "Do you want the applet to show a dialogue during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:155
+msgid "ATTENTION_SOUND is true by default."
+msgstr ""
+
+#: ../Facebook/messages:157
+msgid "Do you want the applet to play a sound during the notification?:"
+msgstr ""
+
+#: ../Facebook/messages:159
+#, fuzzy
+msgid "Time in minutes."
+msgstr "In Minuten."
+
+#: ../Facebook/messages:161
+msgid ""
+"How often do you want the applet to check your Facebook account? (in "
+"minutes):"
+msgstr ""
+
+#: ../Facebook/messages:163
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: ../Facebook/messages:165
+msgid "How do you want to represent the counter on the icon?"
+msgstr ""
+
+#: ../Facebook/messages:167
+msgid "emblem"
+msgstr ""
+
+#: ../Facebook/messages:169
+msgid "quickinfo"
+msgstr ""
+
+#: ../GTG/messages:97 ../Xchat/messages:99
+#, fuzzy
+msgid "Bubbles duration :"
+msgstr "Schwingungsdauer:"
+
+#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
+msgid "Short"
+msgstr ""
+
+#: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
+#, fuzzy
+msgid "Medium"
+msgstr "mittelgroß"
+
+#: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
+msgid "Long"
+msgstr ""
+
+#: ../GTG/messages:105 ../Xchat/messages:107
+#, fuzzy
+msgid "Animation of the icon on receiving channel messages :"
+msgstr "Animation des Symbols beim Verbinden:"
+
+#: ../GTG/messages:107 ../Xchat/messages:97
+msgid "Display channel messages in a bubble :"
+msgstr ""
+
+#: ../GTG/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the "
+"icon.}\n"
+"history = 50\n"
+"j+[48;512] Post-it's initial dimension (width x height) :\n"
+"{Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+
+#: ../GTG/messages:111 ../Pidgin/messages:119 ../Xchat/messages:111
+msgid "Size of the history :"
+msgstr ""
+
+#: ../GTG/messages:115 ../Pidgin/messages:123 ../Xchat/messages:115
+msgid "big"
+msgstr "groß"
+
+#: ../Liferea/messages:7 ../Translator/messages:9
+msgid "Name of the icon as it will appear in its caption in the dock:"
+msgstr "Name des Symbols, so wie es als Beschriftung im Dock erscheint:"
+
+#: ../Liferea/messages:97
+#, fuzzy
+msgid "Show in the icon:"
+msgstr "Das Fenster anzeigen"
+
+#: ../Liferea/messages:99
+#, fuzzy
+msgid "Number of unread messages"
+msgstr "Anzahl der Strahlen"
+
+#: ../Liferea/messages:101
+#, fuzzy
+msgid " Number of new messages"
+msgstr "Anzahl der Einträge:"
+
+#: ../Pidgin/messages:97 ../Pidgin/messages:101
+msgid "Parameters"
+msgstr "Parameter"
+
+#: ../Pidgin/messages:99
+msgid "Choose a theme :"
+msgstr ""
+
+#: ../Pidgin/messages:103
+msgid "Display conversation messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:105
+msgid "Display chat messages in a bubble?"
+msgstr ""
+
+#: ../Pidgin/messages:107
+#, fuzzy
+msgid "Bubbles duration:"
+msgstr "Schwingungsdauer:"
+
+#: ../Pidgin/messages:115
+#, fuzzy
+msgid "Animation of the icon on receiving a message:"
+msgstr "Animation des Symbols beim Verbinden:"
+
+#: ../Pidgin/messages:117 ../Xchat/messages:109
+msgid ""
+"This is the number of messages that you can recall by scrolling on the icon."
+msgstr ""
+
+#: ../Quote/messages:7
+#, fuzzy
+msgid "Let empty to display the current site's name."
+msgstr "Leer lassen, um den Verbindungsnamen zu verwenden."
+
+#: ../Quote/messages:99
+msgid "Quote source:"
+msgstr ""
+
+#: ../Quote/messages:101
+msgid "Quotationspage.com"
+msgstr ""
+
+#: ../Quote/messages:103
+msgid "Bash.org"
+msgstr ""
+
+#: ../Quote/messages:105
+msgid "Xkcdb.com"
+msgstr ""
+
+#: ../Quote/messages:107
+msgid "Qdb.us"
+msgstr ""
+
+#: ../Quote/messages:109
+msgid "Danstonchat.com"
+msgstr ""
+
+#: ../Quote/messages:111
+msgid "Jokes2go.com"
+msgstr ""
+
+#: ../Quote/messages:113
+msgid "Vidademerda.com.br"
+msgstr ""
+
+#: ../Quote/messages:115
+msgid "Grouphug.us"
+msgstr ""
+
+#: ../RubyBattery/messages:97
+msgid "Choose one of the available themes:"
+msgstr "Eines der verfügbaren Themen wählen:"
+
+#: ../RubyBattery/messages:99
+msgid "in seconds."
+msgstr "in Sekunden."
+
+#: ../RubyBattery/messages:101
+#, fuzzy
+msgid "Interval of time between 2 checks:"
+msgstr "Zeitintervall zwischen Signalprüfungen :"
+
+#: ../RubyBattery/messages:103
+msgid "Activate alert of critical charge?"
+msgstr ""
+
+#: ../RubyBattery/messages:105
+#, fuzzy
+msgid "of % battery charge."
+msgstr "Benachrichtigung wenn die Batterie geladen wird?"
+
+#: ../RubyBattery/messages:107
+msgid "Threshold for the critical charge alert:"
+msgstr ""
+
+#: ../RubyBattery/messages:109
+msgid "Display a label with the charge?"
+msgstr ""
+
+#: ../ShortUrl/messages:97
+msgid ""
+"Cela vous permet de choisir de quel site vous souhaitez avoir l url "
+"raccourcie."
+msgstr ""
+
+#: ../ShortUrl/messages:99
+msgid "Choisissez votre site d url raccourcie :"
+msgstr ""
+
+#: ../ShortUrl/messages:101
+msgid "tinyurl.com"
+msgstr ""
+
+#: ../ShortUrl/messages:103
+msgid "shorterlink.org"
+msgstr ""
+
+#: ../ShortUrl/messages:105
+msgid "Cela vous permet de choisir l action a faire au clic gauche."
+msgstr ""
+
+#: ../ShortUrl/messages:107
+msgid "Action au clic gauche sur l icone :"
+msgstr ""
+
+#: ../ShortUrl/messages:109 ../ShortUrl/messages:117
+msgid "raccourcir le dernier lien de dnd2share"
+msgstr ""
+
+#: ../ShortUrl/messages:111 ../ShortUrl/messages:119
+msgid "ouvrir un dialogue pour raccourcir un lien"
+msgstr ""
+
+#: ../ShortUrl/messages:113
+msgid "Cela vous permet de choisir l action a faire au clic milieu."
+msgstr ""
+
+#: ../ShortUrl/messages:115
+msgid "Action au clic milieu sur l icone :"
+msgstr ""
+
+#: ../SubDock/messages:91
+#, fuzzy
+msgid "Choose one of the available themes :"
+msgstr "Eines der verfügbaren Themen wählen:"
+
+#: ../SubDock/messages:93
+msgid "Max value :"
+msgstr ""
+
+#: ../SubDock/messages:95
+msgid "Yes / No ?"
+msgstr ""
+
+#: ../Translator/messages:7
+msgid "Let empty to display the current source and destination languages."
+msgstr ""
+
+#: ../Translator/messages:13
+msgid "Leave empty to use the default one."
+msgstr "Leer lassen, um die Vorgabe zu verwenden."
+
+#: ../Translator/messages:15
+msgid "Image filename:"
+msgstr "Name der Bilddatei:"
+
+#: ../Translator/messages:99
+msgid "Languages"
+msgstr ""
+
+#: ../Translator/messages:101
+msgid "Translate from:"
+msgstr ""
+
+#: ../Translator/messages:103 ../Translator/messages:219
+msgid "Afrikaans"
+msgstr ""
+
+#: ../Translator/messages:105 ../Translator/messages:221
+msgid "Albanian"
+msgstr ""
+
+#: ../Translator/messages:107 ../Translator/messages:223
+msgid "Arabic"
+msgstr ""
+
+#: ../Translator/messages:109 ../Translator/messages:225
+msgid "Armenian"
+msgstr ""
+
+#: ../Translator/messages:111 ../Translator/messages:227
+msgid "Azerbaijani"
+msgstr ""
+
+#: ../Translator/messages:113 ../Translator/messages:229
+msgid "Basque"
+msgstr ""
+
+#: ../Translator/messages:115 ../Translator/messages:231
+msgid "Belarusian"
+msgstr ""
+
+#: ../Translator/messages:117 ../Translator/messages:233
+msgid "Bulgarian"
+msgstr ""
+
+#: ../Translator/messages:119 ../Translator/messages:235
+msgid "Catalan"
+msgstr ""
+
+#: ../Translator/messages:121 ../Translator/messages:237
+msgid "Chinese"
+msgstr ""
+
+#: ../Translator/messages:123 ../Translator/messages:239
+msgid "Croatian"
+msgstr ""
+
+#: ../Translator/messages:125 ../Translator/messages:241
+msgid "Czech"
+msgstr ""
+
+#: ../Translator/messages:127 ../Translator/messages:243
+msgid "Danish"
+msgstr ""
+
+#: ../Translator/messages:129 ../Translator/messages:245
+msgid "Dutch"
+msgstr ""
+
+#: ../Translator/messages:131 ../Translator/messages:247
+msgid "English"
+msgstr ""
+
+#: ../Translator/messages:133 ../Translator/messages:249
+msgid "Estonian"
+msgstr ""
+
+#: ../Translator/messages:135 ../Translator/messages:251
+msgid "Filipino"
+msgstr ""
+
+#: ../Translator/messages:137 ../Translator/messages:253
+msgid "Finnish"
+msgstr ""
+
+#: ../Translator/messages:139 ../Translator/messages:255
+msgid "French"
+msgstr ""
+
+#: ../Translator/messages:141 ../Translator/messages:257
+msgid "Galician"
+msgstr ""
+
+#: ../Translator/messages:143 ../Translator/messages:259
+msgid "Georgian"
+msgstr ""
+
+#: ../Translator/messages:145 ../Translator/messages:261
+msgid "German"
+msgstr ""
+
+#: ../Translator/messages:147 ../Translator/messages:263
+msgid "Greek"
+msgstr ""
+
+#: ../Translator/messages:149 ../Translator/messages:265
+msgid "Haitian"
+msgstr ""
+
+#: ../Translator/messages:151 ../Translator/messages:267
+msgid "Hebrew"
+msgstr ""
+
+#: ../Translator/messages:153 ../Translator/messages:269
+msgid "Hindi"
+msgstr ""
+
+#: ../Translator/messages:155 ../Translator/messages:271
+msgid "Hungarian"
+msgstr ""
+
+#: ../Translator/messages:157 ../Translator/messages:273
+msgid "Icelandic"
+msgstr ""
+
+#: ../Translator/messages:159 ../Translator/messages:275
+msgid "Indonesian"
+msgstr ""
+
+#: ../Translator/messages:161 ../Translator/messages:277
+msgid "Irish"
+msgstr ""
+
+#: ../Translator/messages:163 ../Translator/messages:279
+msgid "Italian"
+msgstr ""
+
+#: ../Translator/messages:165 ../Translator/messages:281
+msgid "Japanese"
+msgstr ""
+
+#: ../Translator/messages:167 ../Translator/messages:283
+msgid "Korean"
+msgstr ""
+
+#: ../Translator/messages:169 ../Translator/messages:285
+msgid "Latvian"
+msgstr ""
+
+#: ../Translator/messages:171 ../Translator/messages:287
+msgid "Lithuanian"
+msgstr ""
+
+#: ../Translator/messages:173 ../Translator/messages:289
+msgid "Macedonian"
+msgstr ""
+
+#: ../Translator/messages:175 ../Translator/messages:291
+msgid "Malay"
+msgstr ""
+
+#: ../Translator/messages:177 ../Translator/messages:293
+msgid "Maltese"
+msgstr ""
+
+#: ../Translator/messages:179 ../Translator/messages:295
+msgid "Norwegian"
+msgstr ""
+
+#: ../Translator/messages:181 ../Translator/messages:297
+msgid "Persian"
+msgstr ""
+
+#: ../Translator/messages:183 ../Translator/messages:299
+msgid "Polish"
+msgstr ""
+
+#: ../Translator/messages:185 ../Translator/messages:301
+msgid "Portuguese"
+msgstr ""
+
+#: ../Translator/messages:187 ../Translator/messages:303
+msgid "Romanian"
+msgstr ""
+
+#: ../Translator/messages:189 ../Translator/messages:305
+msgid "Russian"
+msgstr ""
+
+#: ../Translator/messages:191 ../Translator/messages:307
+msgid "Serbian"
+msgstr ""
+
+#: ../Translator/messages:193 ../Translator/messages:309
+msgid "Slovak"
+msgstr ""
+
+#: ../Translator/messages:195 ../Translator/messages:311
+msgid "Slovenian"
+msgstr ""
+
+#: ../Translator/messages:197 ../Translator/messages:313
+msgid "Spanish"
+msgstr ""
+
+#: ../Translator/messages:199 ../Translator/messages:315
+msgid "Swahili"
+msgstr ""
+
+#: ../Translator/messages:201 ../Translator/messages:317
+msgid "Swedish"
+msgstr ""
+
+#: ../Translator/messages:203 ../Translator/messages:319
+msgid "Thai"
+msgstr ""
+
+#: ../Translator/messages:205 ../Translator/messages:321
+msgid "Turkish"
+msgstr ""
+
+#: ../Translator/messages:207 ../Translator/messages:323
+msgid "Ukrainian"
+msgstr ""
+
+#: ../Translator/messages:209 ../Translator/messages:325
+msgid "Urdu"
+msgstr ""
+
+#: ../Translator/messages:211 ../Translator/messages:327
+msgid "Vietnamese"
+msgstr ""
+
+#: ../Translator/messages:213 ../Translator/messages:329
+msgid "Welsh"
+msgstr ""
+
+#: ../Translator/messages:215 ../Translator/messages:331
+msgid "Yiddish"
+msgstr ""
+
+#: ../Translator/messages:217
+#, fuzzy
+msgid "Translate to:"
+msgstr "Umbenennen in:"
+
+#: ../Translator/messages:333
+msgid "Shortkeys"
+msgstr ""
+
+#: ../Translator/messages:335
+msgid "Shortkey to start translating from (read):"
+msgstr ""
+
+#: ../Translator/messages:337
+msgid "Shortkey to start translating to (write):"
+msgstr ""
+
+#: ../Translator/messages:339
+#, fuzzy
+msgid "Dialog"
+msgstr "Sprechblase"
+
+#: ../Translator/messages:341
+#, fuzzy
+msgid "In s. Set 0 for an unlimited time."
+msgstr "in Tagen. \"0\" wenn ungenutzt."
+
+#: ../Translator/messages:343
+#, fuzzy
+msgid "Time-length of the result dialog:"
+msgstr "Ausrichtung des Titels:"
+
+#: ../Translator/messages:345
+msgid "Editable text widget?"
+msgstr ""
+
+#: ../WebSearch/messages:95
+#, fuzzy
+msgid "Search engine :"
+msgstr "Suche..."
+
+#: ../WebSearch/messages:97
+msgid "Google"
+msgstr "Google"
+
+#: ../WebSearch/messages:99
+msgid "Bing"
+msgstr ""
+
+#: ../WebSearch/messages:101
+msgid "Yahoo!"
+msgstr "Yahoo!"
+
+#: ../WebSearch/messages:103
+msgid "Teoma"
+msgstr ""
+
+#: ../WebSearch/messages:105
+msgid "Youtube"
+msgstr ""
+
+#: ../WebSearch/messages:107
+msgid "Webshots"
+msgstr ""
+
+#: ../WebSearch/messages:109
+msgid "Flickr"
+msgstr ""
+
+#: ../WebSearch/messages:111
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+#: ../WebSearch/messages:113
+#, fuzzy
+msgid "ImageShack"
+msgstr "ImageShack.us"
+
+#: ../WebSearch/messages:115
+msgid "Twitter"
+msgstr ""
+
+#: ../WebSearch/messages:117
+msgid "Digg"
+msgstr ""
+
+#: ../WebSearch/messages:119
+#, fuzzy
+msgid "in sub-icons."
+msgstr "in Sekunden."
+
+#: ../WebSearch/messages:121
+#, fuzzy
+msgid "Maximum number of results shown :"
+msgstr "Maximale Anzahl der Ergebnisse:"
+
+#: ../WebSearch/messages:123
+msgid "Show the current page as the icon label ?"
+msgstr ""
+
+#: ../WebSearch/messages:125
+msgid ""
+"Show the description of the result instead of its URL in the sub-icons ?"
+msgstr ""
+
+#: ../WebSearch/messages:127
+msgid ""
+"for slow connections, disable will result in significantly faster fetching."
+msgstr ""
+
+#: ../WebSearch/messages:129
+msgid ""
+"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
+"and Digg searches ?"
+msgstr ""
+
+#~ msgid "Animated icons"
+#~ msgstr "Animierte Symbole"
+
+#~ msgid "This plug-in provides many different animations for your icons."
+#~ msgstr ""
+#~ "Diese Erweiterung stellt viele unterschiedliche Animationen für Ihre Dock-"
+#~ "Symbole zur Verfügung."
+
+#~ msgid "Wave"
+#~ msgstr "Welle"
+
+#~ msgid "Spot"
+#~ msgstr "Punkt"
+
+#~ msgid ""
+#~ "Add a lively Penguin in your dock !\n"
+#~ "Left click to change the animation,\n"
+#~ "Middle-click to disturb him ^_^\n"
+#~ "Tux images are taken from Pingus, some other characters are available or "
+#~ "can be added easily."
+#~ msgstr ""
+#~ "Ein lebendiger Pinguin für das Dock.\n"
+#~ "Linksklick für einen Animationswechsel,\n"
+#~ "Rechtsklick um ihn zu stören\n"
+#~ "Die TuX-Grafiken sind von Pingus übernommen, andere Charaktere stehen zur "
+#~ "Verfügung und können leicht hinzugefügt werden."
+
+#~ msgid "Cairo-Penguin"
+#~ msgstr "Cairo-Pinguin"
+
+#~ msgid "Hey, I'm here!"
+#~ msgstr "Hey, hier bin ich!"
+
+#~ msgid "Sorry but I'm busy right now."
+#~ msgstr "Sorry, ich bin gerade beschäftigt."
+
+#~ msgid ""
+#~ "I don't have time to play with you, I have to dig and mine all these "
+#~ "icons."
+#~ msgstr ""
+#~ "Ich habe keine Zeit mit dir zu spielen, ich muss diese ganzen Symbole "
+#~ "ausgraben."
+
+#~ msgid "Your dock is so messy! Let me clean it."
+#~ msgstr "Dein Dock ist so unordentlich! Lass mich aufräumen."
+
+#~ msgid "Admit my superiority on you as a penguin!"
+#~ msgstr "Gib zu, ich bin dir als Pinguin überlegen!"
+
+#~ msgid "Wait, do you want to kill me?!"
+#~ msgstr "Warte, du willst mich töten?!"
+
+#~ msgid "Do you know how painful it is to be clicked on??"
+#~ msgstr "Weißt du, wie sehr es weh tut, geklickt zu werden?!"
+
+#~ msgid "It's my dock now, mwahahaha!"
+#~ msgstr "Jetzt ist es mein Dock, muhahaha!"
+
+#~ msgid "I want to be a pirate!"
+#~ msgstr "Ich will ein Pirat sein!"
+
+#~ msgid "You shall not pass!"
+#~ msgstr "Du kannst nicht vorbei!"
+
+#~ msgid "I'm your father!"
+#~ msgstr "Ich bin dein Vater!"
+
+#~ msgid ""
+#~ "- Gee, Brain, what do you want to do tonight?\n"
+#~ "- The same thing we do every night, Pinky : try to take over the Dock!"
+#~ msgstr ""
+#~ "- Was wollen wir denn heute Abend machen, Brain?\n"
+#~ "- Das Gleiche, wie jeden Tag, Pinky: Wir versuchen, das Dock an uns zu "
+#~ "reißen!"
+
+#~ msgid "For Aiur!"
+#~ msgstr "Für Aiur!"
+
+#~ msgid "Wake up"
+#~ msgstr "Aufwachen"
+
+#~ msgid "Keep quiet"
+#~ msgstr "Still halten"
+
+#~ msgid "Start XPenguins"
+#~ msgstr "XPenguins starten"
+
+#~ msgid "Stop XPenguins"
+#~ msgstr "XPenguins stoppen"
+
+#~ msgid "Zzzzz"
+#~ msgstr "Zzzzz"
+
+#~ msgid "No items yet."
+#~ msgstr "Noch keine Einträge."
+
+#~ msgid ""
+#~ "This applet keeps a trace of the clipboard and mouse selection,\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know "
+#~ "Klipper.\n"
+#~ "It supports clipboard and mouse selection, predefined actions, and "
+#~ "persistent items.\n"
+#~ "Left-click to popup the clipboard and mouse selection history,\n"
+#~ "Drop text on the icon to create persistent items, and middle-clck to "
+#~ "recall them."
+#~ msgstr ""
+#~ "Diese Minianwendung speichert die Zwischenablage und die Mausmarkierung,\n"
+#~ "sodass sie schnell abgerufen werden können. Es ist ein Klon des "
+#~ "wohlbekannten Klipper.\n"
+#~ "Sie unterstützt die Zwischenablage, die Mausmarkierung, vordefinierte "
+#~ "Aktionen sowie dauerhafte Einträge.\n"
+#~ "Per Linksklick wird die Chronik der Zwischenablage und der "
+#~ "Mausmarkierungen aufgerufen.\n"
+#~ "Zum Erstellen von dauerhaften Einträgen einen Textausschnitt mit der Maus "
+#~ "auf das Symbol ziehen, Aufrufen per Mittelklick."
+
+#~ msgid "Clipboard history"
+#~ msgstr "Verlauf der Zwischenablage"
+
+#~ msgid ""
+#~ "No persistent items.\n"
+#~ "You can add some by drag and dropping some text on the icon."
+#~ msgstr ""
+#~ "Keine dauerhaften Einträge.\n"
+#~ "Zum Erstellen einen Textausschnitt mit der Maus auf das Symbol ziehen."
+
+#~ msgid ""
+#~ "This plug-in lets extern applications interact on the dock.\n"
+#~ "The communication between both sides is based on Dbus"
+#~ msgstr ""
+#~ "Dieses Plugin ermöglicht eine Interaktion mit externen Anwendungen.\n"
+#~ "Die Kommunikation findet über D-Bus statt."
+
+#~ msgid "Sorry, this module couldn't be added."
+#~ msgstr "Entschuldigung, aber dieses Modul kann nicht hinzugefügt werden."
+
+#~ msgid "The module has been added, but couldn't be launched."
+#~ msgstr "Das Modul wurde hinzugefügt, konnte aber nicht gestartet werden."
+
+#~ msgid ""
+#~ "The applet '%s' has been succefully updated and automatically reloaded"
+#~ msgstr ""
+#~ "Das Applet '%s' wurde erfolgreich aktualisiert und automatisch neu "
+#~ "geladen."
+
+#~ msgid ""
+#~ "The applet '%s' has been succefully installed and automatically launched"
+#~ msgstr ""
+#~ "Das Applet '%s' wurde erfolgreich installiert und automatisch gestartet."
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgid "r"
+#~ msgstr "r"
+
+#~ msgid "w"
+#~ msgstr "w"
+
+#~ msgid "N/A"
+#~ msgstr "n. v."
+
+#~ msgid "Disks"
+#~ msgstr "Laufwerke"
+
+#~ msgid "System Monitor"
+#~ msgstr "Systemmonitor"
+
+#~ msgid "day(s)"
+#~ msgstr "Tag(e)"
+
+#~ msgid ""
+#~ "This applet allows you to write texts and monitor your system\n"
+#~ "with a \"text style desklet\".\n"
+#~ "USAGE:\n"
+#~ "  - NEED TO BE DETACHED FROM THE DOCK TO WORK !\n"
+#~ "  - Middle-clic to reload values"
+#~ msgstr ""
+#~ "Dieses Applet erlaubt es Ihnen Texte zu schreiben und Ihr System zu "
+#~ "überwachen\n"
+#~ "mit einem \"Textstil-Desklet\".\n"
+#~ "Benutzung:\n"
+#~ "  - MUSS VOM DOCK ABGEHÄNGT WERDEN, UM ZU FUNKTIONIEREN!\n"
+#~ "  - Mit dem mittleren Maustasten werden die Werte neu geladen"
+
+#~ msgid "Folders"
+#~ msgstr "Ordner"
+
+#~ msgid ""
+#~ "This applet imports folders inside the Dock\n"
+#~ "You can have as many instances of this applet as you want, each one with "
+#~ "a different folder.\n"
+#~ "To add a folder in your dock:\n"
+#~ " - activate the applet, open its configuration panel, and select a "
+#~ "folder\n"
+#~ " - or just drop a folder into the dock\n"
+#~ "Middle-click on the main icon opens the folder.\n"
+#~ msgstr ""
+#~ "Dieses Applet importiert Ordner in das Dock.\n"
+#~ "Sie können eine unbegrenzte Anzahl von Instanzen dieses Applets haben, "
+#~ "wobei jede davon einen bestimmten Ordner zeigt.\n"
+#~ "So fügen Sie einen Ordner zu Ihrem Dock hinzu:\n"
+#~ " - Aktivieren Sie das Applet, öffnen Sie dessen Konfiguration und wählen "
+#~ "Sie einen Ordner.\n"
+#~ " - Oder ziehen Sie einfach einen Ordner in das Dock.\n"
+#~ "Ein Klick mit der mittleren Maustaste auf das Hauptsymbol öffnet den "
+#~ "Ordner.\n"
+
+#~ msgid "Open the configuration of the applet to choose a folder to import."
+#~ msgstr ""
+#~ "Die Konfiguration des Applets öffnen, um einen zu importierenden Ordner "
+#~ "zu öffnen."
+
+#~ msgid "Empty or unreadable folder."
+#~ msgstr "Ordner ist leer oder nicht lesbar."
+
+#~ msgid ""
+#~ "You're about deleting this file\n"
+#~ "  (%s)\n"
+#~ "from your hard-disk. Sure ?"
+#~ msgstr ""
+#~ "Soll die Datei\n"
+#~ "  (%s)\n"
+#~ "von der Festplatte gelöscht werden?"
+
+#~ msgid ""
+#~ "Warning: could not delete this file.\n"
+#~ "Please check file permissions."
+#~ msgstr ""
+#~ "Warnung: Diese Datei konnte nicht gelöscht werden.\n"
+#~ "Bitte überprüfen Sie die Zugriffsrechte der Datei."
+
+#~ msgid ""
+#~ "Warning: could not rename %s.\n"
+#~ "Check file permissions \n"
+#~ "and that the new name does not already exist."
+#~ msgstr ""
+#~ "Warnung: %s konnte nicht umbenannt werden.\n"
+#~ "Bitte prüfen Sie die Zugriffsrechte der Datei \n"
+#~ "und ob der neue Name nicht bereits existiert."
+
+#~ msgid "Enter a file name:"
+#~ msgstr "Geben Sie einen Dateinamen ein:"
+
+#~ msgid ""
+#~ "Warning: could not create %s.\n"
+#~ "Check file permissions \n"
+#~ "and that the new name does not already exist."
+#~ msgstr ""
+#~ "Achtung: %s konnte nicht erstellt werden.\n"
+#~ "Überprüfen Sie die Zugriffsberechtigungen \n"
+#~ "und ob der Dateiname bereits vorhanden ist."
+
+#~ msgid "Open the folder"
+#~ msgstr "Den Ordner öffnen"
+
+#~ msgid "middle-click"
+#~ msgstr "Mittelklick"
+
+#~ msgid "Rename this file"
+#~ msgstr "Diese Datei umbenennen"
+
+#~ msgid "Delete this file"
+#~ msgstr "Diese Datei löschen"
+
+#~ msgid "Move this file"
+#~ msgstr "Diese Datei verschieben"
+
+#~ msgid "Open with"
+#~ msgstr "Öffnen mit"
+
+#~ msgid "Properties"
+#~ msgstr "Eigenschaften"
+
+#~ msgid "Create a new file"
+#~ msgstr "Neue Datei erstellen"
+
+#~ msgid "Create a new folder"
+#~ msgstr "Neuen Ordner erstellen"
+
+#~ msgid ""
+#~ "Displays the common Applications menu and the Recently used files.\n"
+#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set "
+#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
+#~ msgstr ""
+#~ "Zeigt das Anwendungen-Menü und die Zuletzt geöffneten Dokumente an.\n"
+#~ "Kompatibel zu jedem XDG-konformen Menü (Gnome, Xfce, KDE, ...).\n"
+#~ "Mittelklick zum Öffnen eines Schnellstart-Dialogs (auch mit "
+#~ "Tastenkombinationen wie ALT+F2 aufrufbar).\n"
+#~ "Auch für das Öffnen des Menüs kann eine Tastenkombination gewählt werden "
+#~ "(wie ALT+F1)."
+
+#~ msgid "Quick launch"
+#~ msgstr "Anwendung ausführen"
+
+#~ msgid "Configure menu"
+#~ msgstr "Menü konfigurieren"
+
+#~ msgid "Clear recent"
+#~ msgstr "Liste der zuletzt geöffneten Dokumente löschen"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Zuletzt geöffnete Dokumente"
+
+#~ msgid "Clear the list of the recently used documents?"
+#~ msgstr "Liste der zuletzt geöffneten Dokumente löschen?"
+
+#~ msgid "Enter a command to launch:"
+#~ msgstr "Auszuführender Befehl:"
+
+#~ msgid "Me Menu"
+#~ msgstr "Me Menü"
+
+#~ msgid ""
+#~ "A menu that lets you access quickly to your information, your online "
+#~ "status, your friends."
+#~ msgstr ""
+#~ "Ein Menü, das Ihnen den schnellen Zugriff auf ihre Informationen, Ihren "
+#~ "Anwesenheitsstatus und ihre Freunde gestattet."
+
+#~ msgid "It seems that the Me-Menu is not installed on your system"
+#~ msgstr "Es scheint das, dass Me-Menu nicht auf dem System installiert ist."
+
+#~ msgid "Messaging Menu"
+#~ msgstr "Nachrichten Menü"
+
+#~ msgid ""
+#~ "A menu that notices you about new messages from Mail or Chat "
+#~ "applications.\n"
+#~ "It handles Evolution, Pidgin, Empathy, etc"
+#~ msgstr ""
+#~ "Ein Menü das über neue Nachrichten von Mail oder Chat Programmen "
+#~ "benachrichtigt.\n"
+#~ "z.B. Evolution, Pidgin, Empathy, usw."
+
+#~ msgid "It seems that the Messaging-Menu is not installed on your system"
+#~ msgstr "Es scheint das, dass Me-Menu nicht auf dem System installiert ist."
+
+#~ msgid "Network connection state changed to inactive."
+#~ msgstr "Die Netzwerkverbindung wurde deaktiviert."
+
+#~ msgid "Connecting..."
+#~ msgstr "Verbinde..."
+
+#~ msgid "Network connection is established."
+#~ msgstr "Netzwerkverbindung wurder hergestellt"
+
+#~ msgid "Network connection state changed to disconnected."
+#~ msgstr "Verbindung zum Netzwerk wurde getrennt."
+
+#~ msgid "A cable has been plugged"
+#~ msgstr "Ein Kabel wurde eingesteckt"
+
+#~ msgid "A cable has been unplugged"
+#~ msgstr "Ein Kabel wurde entfernt"
+
+#~ msgid "None"
+#~ msgstr "Keines"
+
+#~ msgid "Very Low"
+#~ msgstr "Sehr schwach"
+
+#~ msgid "Low"
+#~ msgstr "Schwach"
+
+#~ msgid "Middle"
+#~ msgstr "Mittel"
+
+#~ msgid "Good"
+#~ msgstr "Gut"
+
+#~ msgid "Excellent"
+#~ msgstr "Hervorragend"
+
+#~ msgid "Not connected"
+#~ msgstr "Nicht verbunden"
+
+#~ msgid "Wired connection"
+#~ msgstr "Kabelgebundene Verbindung"
+
+#~ msgid ""
+#~ "Checking connection...\n"
+#~ "Please retry in a few seconds"
+#~ msgstr ""
+#~ "Prüfe Verbindung...\n"
+#~ "Bitte versuchen Sie es in ein paar Sekunden erneut"
+
+#~ msgid "Wired Connection."
+#~ msgstr "Kabelgebundene Verbindung."
+
+#~ msgid "Interface"
+#~ msgstr "Schnittstelle"
+
+#~ msgid "Speed"
+#~ msgstr "Geschwindigkeit"
+
+#~ msgid "Wifi enabled."
+#~ msgstr "Wifi aktiviert."
+
+#~ msgid "Network ID"
+#~ msgstr "Netzwerk-ID"
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Access point"
+#~ msgstr "Zugangspunkt"
+
+#~ msgid "Signal Quality"
+#~ msgstr "Signalqualität"
+
+#~ msgid "Network-Monitor"
+#~ msgstr "Netzwerkmonitor"
+
+#~ msgid ""
+#~ "This applet allows you to monitor your network connection(s).\n"
+#~ "It can display the download/upload speeds and the wifi signal quality.\n"
+#~ "If you have network-manager running, it can also let you choose the "
+#~ "current wifi network.\n"
+#~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
+#~ "between net speed and wifi."
+#~ msgstr ""
+#~ "Dieses Applet erlaubt es Ihnen ihre Netzwerkverbindung(en) zu "
+#~ "überwachen.\n"
+#~ "Es zeigt die Download/Upload Geschwindigkeiten und die Signalqualität der "
+#~ "kabellosen Verbindung.\n"
+#~ "Wenn Sie einen Netzwerk-Manager benutzen, können Sie auch das kabellose "
+#~ "Netzwerk festlegen.\n"
+#~ "Links-Klicken Sie um mehr Informationen zu zeigen, Scrollen Sie über das "
+#~ "Icon, um zwischen der Netzgeschwindigkeit und der Signalstärke zu wechseln"
+
+#~ msgid "Loading"
+#~ msgstr "Laden"
+
+#~ msgid "Check for Wireless Extension"
+#~ msgstr "Suche nach drahtlosen Peripheriegeräten"
+
+#~ msgid "Network Administration"
+#~ msgstr "Netzwerk Administration"
+
+#~ msgid "Activate network"
+#~ msgstr "Aktiviere Netzwerkverbindung"
+
+#~ msgid "Deactivate network"
+#~ msgstr "Deaktiviere Netzwerkverbindung"
+
+#~ msgid "Deactivate wifi"
+#~ msgstr "Deaktiviere WiFi"
+
+#~ msgid "Activate wifi"
+#~ msgstr "Aktiviere WiFi"
+
+#~ msgid "RSSreader"
+#~ msgstr "RSSreader"
+
+#~ msgid ""
+#~ "This applet is an RSS/Atom feed reader.\n"
+#~ "You can instanciate it as many times as you want.\n"
+#~ "USAGE:\n"
+#~ " - Left-click : display the complete feed lines in a dialog.\n"
+#~ " - Middle-click : refresh the feed.\n"
+#~ " - Scroll on the desklet : make the feed lines scroll.\n"
+#~ " - Drag and drop a valid URL on the icon to use it,\n"
+#~ "    or copy it and use \"Paste a new RSS Url\" in the menu.\n"
+#~ "    or edit the Configuration Panel."
+#~ msgstr ""
+#~ "Dieses Applet ist ein RSS/Atom Feed-Reader.\n"
+#~ "Sie können es so oft öffnen, wie Sie wollen.\n"
+#~ "BENUTZUNG:\n"
+#~ " - Linke Maustaste : Zeigt alle Feeds in einem Dialogfenster\n"
+#~ " - Mittlere Maustaste : Erneuert alle Feeds.\n"
+#~ " - Scrollrad auf dem Desklet : Wechselt durch die Feeds.\n"
+#~ " - Ziehen und legen Sie eine gültige URL auf dem Icon ab um sie "
+#~ "auszulesen\n"
+#~ "    oder kopieren Sie sie und benutzen Sie \"Neue RSS Url hinzufügen\" im "
+#~ "Menü\n"
+#~ "    oder bearbeiten Sie das Einstellungs-Panel"
+
+#~ msgid "Retrieving data..."
+#~ msgstr "Empfange Daten ..."
+
+#~ msgid "It doesn't seem to be a valid URL."
+#~ msgstr "Die URL scheint nicht gültig zu sein."
+
+#~ msgid "Paste a new RSS Url (drag and drop)"
+#~ msgstr "Fügen Sie einen neuen RSS-Link ein"
+
+#~ msgid "Open with your web browser"
+#~ msgstr "Mit dem Web-Browser öffnen"
+
+#~ msgid "Refresh"
+#~ msgstr "Aktualisieren"
+
+#~ msgid "Warning: couldn't retrieve data last time we tried."
+#~ msgstr "Warnung : Beim letzen Versuch konnten keine Daten empfangen werden."
+
+#~ msgid "No URL is defined."
+#~ msgstr "Es ist keine URL definiert."
+
+#~ msgid "No data (no connection?)"
+#~ msgstr "Keine Daten gefunden ( Verbindung inaktiv ?)"
+
+#~ msgid "Invalid data (invalid RSS/Atom feed?)"
+#~ msgstr "Unzulässige Daten (RSS/Atom feed ungültig ?)"
+
+#~ msgid "No data"
+#~ msgstr "Keine Daten"
+
+#~ msgid "No modification"
+#~ msgstr "Keine Veränderung"
+
+#~ msgid "This RSS feed has been modified..."
+#~ msgstr "Dieser RSS-Feed wurde verändert..."
+
+#~ msgid ""
+#~ "No URL is defined\n"
+#~ "You can define one by copying the URL in the clipboard,\n"
+#~ " and selecting \"Paste the URL\" in the menu."
+#~ msgstr ""
+#~ "Keine Adresse ausgewählt.\n"
+#~ "Es kann eine durch Kopieren in die Zwischenablage\n"
+#~ " und Auswählen von \"Einfügen der RL(?)\"\n"
+#~ " im Menü festgelegt werden"
+
+#~ msgid ""
+#~ "No data\n"
+#~ "Did you set a valid RSS feed?\n"
+#~ "Is your connection alive?"
+#~ msgstr ""
+#~ "Keine Daten empfangen.\n"
+#~ "Haben Sie einen gültigen RSS feed eingestellt ?\n"
+#~ "Ist ihre Verbindung aktiv ?"
+
+#~ msgid "Open parent folder"
+#~ msgstr "Eltern-Ordner öffnen"
+
+#~ msgid "Recent files"
+#~ msgstr "Zuletzt verwendete Dateien"
+
+#~ msgid "The value %s has been copied into the clipboard."
+#~ msgstr "Der Wert %s wurde in Ihre Zwischenablage kopiert."
+
+#~ msgid "Execute"
+#~ msgstr "Ausführen"
+
+#~ msgid "Open a terminal here"
+#~ msgstr "Ein Terminal-Fenster hier öffnen"
+
+#~ msgid "Zip folder"
+#~ msgstr "Zip-Ordner"
+
+#~ msgid "Move to"
+#~ msgstr "Verschieben nach"
+
+#~ msgid "Copy URL"
+#~ msgstr "URL kopieren"
+
+#~ msgid "Open location"
+#~ msgstr "Ort öffnen"
+
+#~ msgid "Zip file"
+#~ msgstr "Zip-Datei"
+
+#~ msgid "Mail file"
+#~ msgstr "Mail-Datei"
+
+#~ msgid "Pick up a directory"
+#~ msgstr "Wähle ein Verzeichnis"
+
+#~ msgid "Files"
+#~ msgstr "Dateien"
+
+#~ msgid "Open"
+#~ msgstr "Öffnen"
+
+#~ msgid "Open in new window"
+#~ msgstr "In neuem Fenster öffnen"
+
+#~ msgid "Open file"
+#~ msgstr "Öffne Datei"
+
+#~ msgid "Firefox bookmarks"
+#~ msgstr "Firefox Lesezeichen"
+
+#~ msgid "Search on the web"
+#~ msgstr "Im Web suchen"
+
+#~ msgid "Mediadico"
+#~ msgstr "Mediadico"
+
+#~ msgid "Amazon"
+#~ msgstr "Amazon"
+
+#~ msgid "(F1) Match case"
+#~ msgstr "(F1) Passender Fall"
+
+#~ msgid "(F2) Music"
+#~ msgstr "(F2) Musik"
+
+#~ msgid "(F3) Image"
+#~ msgstr "(F3) Bild"
+
+#~ msgid "(F4) Video"
+#~ msgstr "(F4) Video"
+
+#~ msgid "(F5) Text"
+#~ msgstr "(F5) Text"
+
+#~ msgid "(F6) Html"
+#~ msgstr "(F6) HTML"
+
+#~ msgid "(F7) Sources"
+#~ msgstr "(F7) Quellen"
+
+#~ msgid "No result"
+#~ msgstr "Kein Ergebnis"
+
+#~ msgid "results"
+#~ msgstr "Ergebnisse"
+
+#~ msgid "result"
+#~ msgstr "Ergebnis"
+
+#~ msgid "Enter your search"
+#~ msgstr "Geben Sie Ihre Suche ein"
+
+#~ msgid "Uptime"
+#~ msgstr "Betriebszeit"
+
+#~ msgid "Activity time"
+#~ msgstr "Laufzeit"
+
+#~ msgid "CPU model"
+#~ msgstr "Prozessor-Modell"
+
+#~ msgid "Frequency"
+#~ msgstr "Taktfrequenz"
+
+#~ msgid "core(s)"
+#~ msgstr "Kern(e)"
+
+#~ msgid ""
+#~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
+#~ "etc.\n"
+#~ "Middle click on the icon to get some valuable info.\n"
+#~ "Left click on the icon to get a list of the most ressources using "
+#~ "programs.\n"
+#~ "You can instanciate this applet several times to show different values "
+#~ "each time."
+#~ msgstr ""
+#~ "Dieses Applet zeigt die Prozessorauslastung, Arbeitsspeicherverbrauch, "
+#~ "Grafikkartentemperatur, etc.\n"
+#~ "Mit der mittleren Maustaste auf das Symbol klicken um einige nützliche "
+#~ "Informationen zu erhalten.\n"
+#~ "Linksklick für eine Liste der Programme die am meisten Leistung "
+#~ "verbrauchen.\n"
+#~ "Es kann mehrere mehrere Male gestartet werden und dabei jeweils andere "
+#~ "Informationen anzeigen."
+
+#~ msgid ""
+#~ "The acquisition of one or more data has failed.\n"
+#~ "You should remove the data that couldn't be fetched."
+#~ msgstr ""
+#~ "Der Abruf eines oder mehrerer Werte schlug fehl.\n"
+#~ "Die Daten, die nicht beschafft werden konnten, sollten entfernt werden."
+
+#~ msgid "Open the System-Monitor"
+#~ msgstr "Den System-Monitor öffnen"
+
+#~ msgid "Show info"
+#~ msgstr "Zeige Info"
+
+#~ msgid "GPU model"
+#~ msgstr "GPU-Model"
+
+#~ msgid "Video Ram"
+#~ msgstr "Video-RAM"
+
+#~ msgid "Mb"
+#~ msgstr "Mb"
+
+#~ msgid "Driver Version"
+#~ msgstr "Treiber-Version"
+
+#~ msgid "Core Temperature"
+#~ msgstr "Prozessortemperatur"
+
+#~ msgid "Alert! Graphic Card core temperature has reached %d°C"
+#~ msgstr "Achtung ! Die Kerntemperatur der Grafikkarte hat %d°C erreicht."
+
+#~ msgid "Gb"
+#~ msgstr "Gb"
+
+#~ msgid "Memory"
+#~ msgstr "Speicher"
+
+#~ msgid "Available"
+#~ msgstr "Verfügbar"
+
+#~ msgid "Cached"
+#~ msgstr "Zwischengespeichert"
+
+#~ msgid "Buffers"
+#~ msgstr "Ablagen"
+
+#~ msgid "min"
+#~ msgstr "min."
+
+#~ msgid "max"
+#~ msgstr "max."
+
+#~ msgid "alarm"
+#~ msgstr "Alarm"
+
+#~ msgid "rpm"
+#~ msgstr "U/min"
+
+#~ msgid "CPU temperature has reached %d°C"
+#~ msgstr "CPU-Temperatur hat %d°C erreicht"
+
+#~ msgid "Fan speed has reached %d rpm"
+#~ msgstr "Lüftergeschwindigkeit hat %d U/min erreicht"
+
+#~ msgid "Toons"
+#~ msgstr "Cartoons"
+
+#~ msgid "This applet displays a toon that will look at your mouse."
+#~ msgstr "Dieses Applet zeigt eine Figur, die deine Maus beobachtet."
+
+#~ msgid ""
+#~ "Setup the luminosity of your screen directly from your dock.\n"
+#~ "Scroll up/down to increase/decrease the luminosity\n"
+#~ "Left-click to open a dialog to setup the luminosity\n"
+#~ "Middle-click to set it up for each color.\n"
+#~ "You can also define a luminosity value that will be applied automatically "
+#~ "on startup."
+#~ msgstr ""
+#~ "Stelle die Bildschirmhelligkeit direkt vom Dock aus ein.\n"
+#~ "Hoch/Runter scrollen zum Erhöhen/Senken der Helligkeit.\n"
+#~ "Linksklick zum Öffnen eines Einstellungsdialoges.\n"
+#~ "Mittelklick um die Leuchtkraft für jede Farbe einzeln einzustellen.\n"
+#~ "Es kann außerdem ein Helligkeitswert eingestellt werden, der bei jedem "
+#~ "Start übernommen wird."
+
+#~ msgid "Screen Luminosity"
+#~ msgstr "Bildschirmhelligkeit"
+
+#~ msgid "Apply current luminosity on startup"
+#~ msgstr "Übernehmen der aktuellen Bildschirmhelligkeit beim Start"
+
+#~ msgid "Set up gamma:"
+#~ msgstr "Verwalten der Gamme-Einstellung:"
+
+#~ msgid ""
+#~ "This applet lets you control the sound volume from the dock.\n"
+#~ "Scroll up/down on the icon to increase/decrease the volume.\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard "
+#~ "shortcut for it)\n"
+#~ "You can also hide the dialog by clicking on it.\n"
+#~ "Middle-click to set or unset to mute, double-click to raise the channels "
+#~ "mixer.\n"
+#~ "This applet works with the Alsa sound driver."
+#~ msgstr ""
+#~ "Dieses Applet erlaubt es, vom Dock aus die Lautstärke einzustellen.\n"
+#~ "Scrolle auf dem Icon hoch/runter um die Lautstärke zu erhöhen/"
+#~ "verringern.\n"
+#~ "Auf das Icon klicken, um die Lautstärkekontrolle anzuzeigen oder zu "
+#~ "verbergen (Hierfür kann außerdem eine Tastenkombination festgelegt "
+#~ "werden)\n"
+#~ "Der Dialog kann per Mausklick verborgen werden.\n"
+#~ "Klick mit der mittleren Maustaste um die Stummschaltung zu aktivieren "
+#~ "oder zu deaktivieren.\n"
+#~ "Dieses Applet funktioniert mit dem ALSA-Tontreiber."
+
+#~ msgid "Sound Control"
+#~ msgstr "Klangeinstellung"
+
+#~ msgid "I couldn't open card '%s'"
+#~ msgstr "Karte '%s' konnte nicht geöffnet werden"
+
+#~ msgid "Card '%s' opened but I couldn't get any info"
+#~ msgstr ""
+#~ "Die Karte '%s' wurde geöffnet, ich konnte jedoch keine Informationen "
+#~ "erhalten."
+
+#~ msgid "I couldn't open the mixer"
+#~ msgstr "Ich konnte den Mixer nicht öffnen."
+
+#~ msgid "I couldn't attach the mixer to the card"
+#~ msgstr "Der Mixer konnte keiner Soundkarte zugewiesen werden."
+
+#~ msgid "I couldn't register options"
+#~ msgstr "Optionen konnten nicht registriert werden"
+
+#~ msgid "I couldn't load the mixer"
+#~ msgstr "Ich konnte den Mixer nicht laden."
+
+#~ msgid "Set up volume:"
+#~ msgstr "Lautstärke einstellen :"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Bearbeiten der Kanaleinstellungen"
+
+#~ msgid "double-click"
+#~ msgstr "Doppelklick"
+
+#~ msgid "Unmute"
+#~ msgstr "Laut schalten"
+
+#~ msgid "Mute"
+#~ msgstr "Stumm schalten"
+
+#~ msgid "No title"
+#~ msgstr "Kein Titel"
+
+#~ msgid "years"
+#~ msgstr "Jahre"
+
+#~ msgid "Calendar and tasks"
+#~ msgstr "Kalender und Aufgaben"
+
+#~ msgid "Alarm"
+#~ msgstr "Alarm"
+
+#~ msgid "Time you want to be notified:"
+#~ msgstr "Erinnerungszeit:"
+
+#~ msgid "In the form xx:xx. E.g.: 20:35 for 8:35pm"
+#~ msgstr "In der Form xx:xx. z.B.: 20:35 für 8:35pm"
+
+#~ msgid "Day"
+#~ msgstr "Tag"
+
+#~ msgid "Monday"
+#~ msgstr "Montag"
+
+#~ msgid "Tuesday"
+#~ msgstr "Dienstag"
+
+#~ msgid "Wednesday"
+#~ msgstr "Mittwoch"
+
+#~ msgid "Thursday"
+#~ msgstr "Donnerstag"
+
+#~ msgid "Friday"
+#~ msgstr "Freitag"
+
+#~ msgid "Saturday"
+#~ msgstr "Samstag"
+
+#~ msgid "Sunday"
+#~ msgstr "Sonntag"
+
+#~ msgid "Week Day"
+#~ msgstr "Wochentag"
+
+#~ msgid "Week End"
+#~ msgstr "Wochenende"
+
+#~ msgid "Month"
+#~ msgstr "Monat"
+
+#~ msgid "Repeat every:"
+#~ msgstr "Erinnern alle:"
+
+#~ msgid "If every month, which day of the month?"
+#~ msgstr "Falls monatlich, an welchem Tag des Monats?"
+
+#~ msgid "Message you want to use to be notified:"
+#~ msgstr "Meldung, die als Erinnerung angezeigt werden soll:"
+
+#~ msgid "Tea Time!"
+#~ msgstr "Tea Time!"
+
+#~ msgid "Command to launch:"
+#~ msgstr "Auszuführender Befehl:"
+
+#~ msgid "E.g.:"
+#~ msgstr "z.B.:"
+
+#~ msgid "Search for your location :"
+#~ msgstr "Suche nach dem Ort:"
+
+#~ msgid "clock"
+#~ msgstr "Uhr"
+
+#~ msgid ""
+#~ "This applet displays time, date and a calandar.\n"
+#~ "2 view are available : <b>numeric</b> and <b>analogic</b>.\n"
+#~ " Analogic view is compatible with the Cairo-Clock's themes, and you can "
+#~ "detach the applet to be a perfect clone of Cairo-Clock.\n"
+#~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
+#~ "tasks</b>.\n"
+#~ "It also supports alarms, and allows you to setup time and date.\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a "
+#~ "notification,\n"
+#~ "Double-click on a day to edit the tasks for this day."
+#~ msgstr ""
+#~ "Dieses Applet zeigt Zeit, Datum und einen Kalender an.\n"
+#~ "Zwei Ansichten sind verfügbar : <b>numerisch</b> und <b>analog</b>.\n"
+#~ " Die analoge Ansicht ist zu den Cairo-Clock-Themen kompatibel, daher "
+#~ "können Sie durch Abtrennen des Applets eine perfekte Kopie der Cairo-"
+#~ "Clock erzeugen.\n"
+#~ "Durch einen Linksklick wird ein <b>Kalender</b> angezeigt, in welchem Sie "
+#~ "<b>Aufgaben verwalten können</b>.\n"
+#~ "Außerdem werden Erinnerungen angezeigt, und die Anpassung von Zeit und "
+#~ "Datum sind möglich.\n"
+#~ "Ein Linksklick zeigt den Kalender an oder verbirgt ihn, ein Mittelklick "
+#~ "stoppt die Benachrichtigung.\n"
+#~ "Ein Doppelklick auf einen Tag ermöglicht die Bearbeitung der Aufgaben für "
+#~ "diesen Tag."
+
+#~ msgid ""
+#~ "No task is sheduled for today.\n"
+#~ "\n"
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
+#~ msgstr ""
+#~ "Für heute stehen keine Aufgaben an.\n"
+#~ "\n"
+#~ "Sie können Aufgaben hinzufügen, indem Sie zum Öffnen des Kalenders auf "
+#~ "das Applet klicken und anschließend auf einen Tag doppelklicken."
+
+#~ msgid ""
+#~ "No task is sheduled for the next 7 days.\n"
+#~ "\n"
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
+#~ msgstr ""
+#~ "Für die nächsten 7 Tage stehen keine Aufgaben an.\n"
+#~ "\n"
+#~ "Sie können Aufgaben hinzufügen, indem Sie zum Öffnen des Kalenders auf "
+#~ "das Applet klicken und anschließend auf einen Tag doppelklicken."
+
+#~ msgid "Show today's tasks"
+#~ msgstr "Heutige Aufgaben anzeigen"
+
+#~ msgid "Show this week's tasks"
+#~ msgstr "Aufgaben für diese Woche anzeigen"
+
+#~ msgid "Set up time and date"
+#~ msgstr "Stelle Datum und Zeit ein"
+
+#~ msgid "Add a new task"
+#~ msgstr "Neue Aufgabe hinzufügen"
+
+#~ msgid "Delete this task"
+#~ msgstr "Diese Aufgabe löschen"
+
+#~ msgid "Don't repeat"
+#~ msgstr "Nicht wiederholen"
+
+#~ msgid "Each month"
+#~ msgstr "Jeden Monat"
+
+#~ msgid "Each year"
+#~ msgstr "Jedes Jahr"
+
+#~ msgid "each month"
+#~ msgstr "jeden Monat"
+
+#~ msgid "each year"
+#~ msgstr "jedes Jahr"
+
+#~ msgid "Right-click to add a new task."
+#~ msgstr ""
+#~ "Klicken Sie mit der rechten Maustaste, um eine neue Aufgabe hinzuzufügen."
+
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Time"
+#~ msgstr "Zeit"
+
+#~ msgid "Freq."
+#~ msgstr "Freq."
+
+#~ msgid "Tags"
+#~ msgstr "Schlagwörter"
+
+#~ msgid "1mn"
+#~ msgstr "1min"
+
+#~ msgid "1h"
+#~ msgstr "1h"
+
+#~ msgid "The following task was scheduled at"
+#~ msgstr "Die folgende Aufgabe wurde beauftragt um"
+
+#~ msgid "Repeat this message every:"
+#~ msgstr "Wiederhole diese Nachricht alle:"
+
+#~ msgid "The following task has felt due:"
+#~ msgstr "Die folgende Aufgabe ist fällig:"
+
+#~ msgid "It's time for the following task:"
+#~ msgstr "Die folgende Aufgabe ist fällig:"
+
+#~ msgid "This task will begin in 15 minutes:"
+#~ msgstr "Diese Aufgabe wird in 15 Minuten beginnen:"
+
+#~ msgid "Today is the following anniversary:"
+#~ msgstr "Heute ist folgender Jahrestag:"
+
+#~ msgid "Tomorrow is the following anniversary:"
+#~ msgstr "Morgen ist folgender Jahrestag:"
+
+#~ msgid "compiz-icon"
+#~ msgstr "compiz-symbol"
+
+#~ msgid ""
+#~ "This applet allows you to manage compiz and other windows manager\n"
+#~ "The sub-dock gives you to acces to CCSM, Emerald and some basic Compiz "
+#~ "actions.\n"
+#~ "You can bind one of these actions with the middle-click.\n"
+#~ "The configuration panel gives you some options to launch Compiz."
+#~ msgstr ""
+#~ "Dieses Applet ermöglicht es, Compiz und andere Fenstermanager zu "
+#~ "verwalten.\n"
+#~ "Die Unter-Docks erlauben den Zugriff auf den Konfigurationsmanager von "
+#~ "Compiz, Emerald und einige grundlegende Aktionen mit Compiz.\n"
+#~ "Eine dieser Vorgänge kann an den Klick mit der mittleren Maustaste "
+#~ "gebunden werden.\n"
+#~ "Das Konfigurationsfeld stellt  einige Optionen bereit um Compiz zu "
+#~ "starten."
+
+#~ msgid "Configure Compiz"
+#~ msgstr "Konfiguriere compiz"
+
+#~ msgid "Emerald Manager"
+#~ msgstr "Emerald-Manager"
+
+#~ msgid "Reload WM"
+#~ msgstr "Lade den Fesntermanager neu"
+
+#~ msgid "Exposition"
+#~ msgstr "Darstellung"
+
+#~ msgid "Widget Layer"
+#~ msgstr "Widget Layer"
+
+#~ msgid ""
+#~ "To configure Compiz, you need to install CCSM\n"
+#~ " through your package manager (Synaptic, YasT, etc)"
+#~ msgstr ""
+#~ "Um Compiz zu konfigurieren muss der Compiz-Einstellungsmanager "
+#~ "installiert werden.\n"
+#~ " Dies ist mit Hilfe von Synaptic möglich."
+
+#~ msgid "Reload Emerald"
+#~ msgstr "Lade Emerald neu"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Wechsel den Fenstermanager"
+
+#~ msgid "Switch Windows Decorator"
+#~ msgstr "Ändere Fensterdekoration"
+
+#~ msgid "Toggle Exposition Mode"
+#~ msgstr "Ändern des Darstellungsmodus"
+
+#~ msgid "Toggle Widget Layer"
+#~ msgstr "Wechselt zwischen den einzelnen Widget Ebenen."
+
+#~ msgid "Toggle Show Desktop"
+#~ msgstr "Wechsle Arbeitsfläche anzeigen"
+
+#~ msgid "frame&reflects"
+#~ msgstr "Rahmen & Reflektionen"
+
+#~ msgid "scotch sellotape"
+#~ msgstr "Scotch-Tesafilm"
+
+#~ msgid "frame with sellotape"
+#~ msgstr "Rahmen mit Klebeband"
+
+#~ msgid "CD box"
+#~ msgstr "CD-Hülle"
+
+#~ msgid "dark"
+#~ msgstr "dunkel"
+
+#~ msgid "clear"
+#~ msgstr "leeren"
+
+#~ msgid "futuristic"
+#~ msgstr "futuristisch"
+
+#~ msgid "board"
+#~ msgstr "Tafel"
+
+#~ msgid "desklet rendering"
+#~ msgstr "Desklet Darstellung"
+
+#~ msgid "This module provides different views for your desklets."
+#~ msgstr ""
+#~ "Dieses Modul stellt verschiedene Ansichten für Ihre Desklets bereit."
+
+#~ msgid "3Dplane"
+#~ msgstr "3D-Ebene"
+
+#~ msgid "comics"
+#~ msgstr "Comics"
+
+#~ msgid "curly"
+#~ msgstr "gewellt"
+
+#~ msgid "modern"
+#~ msgstr "modern"
+
+#~ msgid "tooltip"
+#~ msgstr "Tooltip"
+
+#~ msgid "dialog rendering"
+#~ msgstr "Dialog Darstellung"
+
+#~ msgid "This plug-in provides some decorators for dialog bubbles."
+#~ msgstr ""
+#~ "Diese Erweiterung stellt einige Dekorationen für Sprechblasen zur "
+#~ "Verfügung."
+
+#~ msgid ""
+#~ "Couldn't upload the file, check that your internet connection is active."
+#~ msgstr ""
+#~ "Datei konnte nicht hochgeladen werden, kontrollieren Sie ob die "
+#~ "Internetverbindung aktiv ist."
+
+#~ msgid ""
+#~ "File has been uploaded.\n"
+#~ "Just press CTRL+v to paste its URL anywhere."
+#~ msgstr ""
+#~ "Datei wurde hochgeladen.\n"
+#~ "Drücken Sie Strg+v um die URL irgendwo einzufügen."
+
+#~ msgid ""
+#~ "Please wait for the current upload to finish before starting a new one."
+#~ msgstr ""
+#~ "Bitte beginnen Sie erst mit einem neuen Upload, wen der Aktuelle beendet "
+#~ "ist."
+
+#~ msgid "Tiny URL"
+#~ msgstr "Verkürzte URL"
+
+#~ msgid "Drop to share"
+#~ msgstr "Hier ablegen zum Freigeben"
+
+#~ msgid "Clear the list of the recently uploaded files?"
+#~ msgstr "Die Liste der kürzlich hochgeladenen Dateien leeren ?"
+
+#~ msgid ""
+#~ "The text has been pasted in the clipboard.\n"
+#~ "You can retrieve it with CTRL+v."
+#~ msgstr ""
+#~ "Der Text wurde in Ihrer Zwischenablage gespeichert.\n"
+#~ "Sie können Ihn mit STRG+v abrufen."
+
+#~ msgid "Sorry, couldn't find the original file nor a preview of it."
+#~ msgstr ""
+#~ "Entschuldigung, es konnte weder die Originaldatei noch eine Vorschau von "
+#~ "ihr gefunden werden."
+
+#~ msgid ""
+#~ "The URL has been stored in the clipboard.\n"
+#~ "Just use 'CTRL+v' to paste it anywhere."
+#~ msgstr ""
+#~ "Die URL wurde in Ihre Zwischenablage gespeichert.\n"
+#~ "Verwenden Sie einfach 'STRG-v', um die URL irgendwo einzufügen."
+
+#~ msgid ""
+#~ "No uploaded file available\n"
+#~ ".Just drag'n drop a file on the icon to upload it"
+#~ msgstr ""
+#~ "Keine hochgeladene Datei verfügbar.\n"
+#~ "Ziehen Sie einfach eine per Drag-and-Drop in das Symbol, um sie "
+#~ "hochzuladen."
+
+#~ msgid ""
+#~ "No uploaded file available.\n"
+#~ "Consider activating the history if you want the applet to remember "
+#~ "previous uploads."
+#~ msgstr ""
+#~ "Keine hochgeladene Datei verfügbar.\n"
+#~ "Denken Sie daran, die Chronik zu aktivieren, damit das Applet sich an "
+#~ "frühere Uploads erinnert."
+
+#~ msgid ""
+#~ "The current URL has been stored in the clipboard.\n"
+#~ "Just use 'CTRL+v' to paste it anywhere."
+#~ msgstr ""
+#~ "Die derzeitige URL wurde in die Zwischeablage gespeichert\n"
+#~ "Verwenden Sie einfach 'STRG-v', um die URL irgendwo einzufügen."
+
+#~ msgid ""
+#~ "The current URL has been stored into the selection.\n"
+#~ "Just middle-click to paste it anywhere."
+#~ msgstr ""
+#~ "Die derzeitige URL wurde in die Auswahl gespeichert\n"
+#~ "Benutzen Sie einfach die mittlere Maustaste, um die URL irgendwo "
+#~ "einzufügen."
+
+#~ msgid "File"
+#~ msgstr "Datei"
+
+#~ msgid "Click on the icon to copy the URL into the clipboard."
+#~ msgstr ""
+#~ "Klicken Sie auf das Symbol, um die URL in die Zwischenablage zu speichern."
+
+#~ msgid "Send the clipboard's content"
+#~ msgstr "Sende den Inhalt der Zwischenablage"
+
+#~ msgid "History"
+#~ msgstr "Verlauf"
+
+#~ msgid "Get text"
+#~ msgstr "Hole einen Text"
+
+#~ msgid "Remove from history"
+#~ msgstr "Von der Chronik entfernen"
+
+#~ msgid "Clear History"
+#~ msgstr "Verlauf leeren"
+
+#~ msgid "Caroussel"
+#~ msgstr "Karussell"
+
+#~ msgid "3D plane"
+#~ msgstr "3D Fläche"
+
+#~ msgid "Parabolic"
+#~ msgstr "Parabolisch"
+
+#~ msgid "Rainbow"
+#~ msgstr "Regenbogen"
+
+#~ msgid "Slide"
+#~ msgstr "Gleiten"
+
+#~ msgid "Curve"
+#~ msgstr "Kurve"
+
+#~ msgid "Panel"
+#~ msgstr "Panel"
+
+#~ msgid ""
+#~ "This module adds different views to your dock.\n"
+#~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
+#~ "views are provided."
+#~ msgstr ""
+#~ "Dieses Modul fügt verschiedene Ansichten zu Ihrem Dock hinzu.\n"
+#~ "Jedes Dock oder Sub-Dock kann mit der Ansicht Ihrer Wahl angezeigt "
+#~ "werden.\n"
+#~ "Verfügbar sind das Aktuelle, 3D-Ebene, Karussell, Parabolisch , "
+#~ "Regenbogen, Gleiten und Wölbung."
+
+#~ msgid "drop indicator"
+#~ msgstr "Zielmarkierung"
+
+#~ msgid ""
+#~ "This plug-in displays an animated indicator when you drop something into "
+#~ "the dock."
+#~ msgstr ""
+#~ "Diese Erweiterung zeigt einen Hinweis, wenn Sie etwas in das Dock fallen "
+#~ "lassen."
+
+#~ msgid "dustbin"
+#~ msgstr "Mülleimer"
+
+#~ msgid ""
+#~ "This applet manages the dustbin\n"
+#~ "You can threw files and unmount disks by drag-and-dropping them on the "
+#~ "icon.\n"
+#~ "Middle-click on the icon will empty the dustbin."
+#~ msgstr ""
+#~ "Diese Anwendung verwaltet den Papierkorb\n"
+#~ "Sie können per Drag-and-Drop Dateien in den Papierkorb legen oder "
+#~ "Laufwerke aushängen.\n"
+#~ "Klicken Sie mit der mittleren Maustaste auf das Symbol um den Papierkorb "
+#~ "zu leeren."
+
+#~ msgid "You're about to delete all files in all dustbins. Sure ?"
+#~ msgstr ""
+#~ "Sie sind dabei, alle Dateien im Mülleimer zu löschen. Sind Sie sich "
+#~ "sicher?"
+
+#~ msgid "The trash contains"
+#~ msgstr "Der Müll enthält"
+
+#~ msgid "files"
+#~ msgstr "Dateien"
+
+#~ msgid "elements"
+#~ msgstr "Elemente"
+
+#~ msgid "Mo"
+#~ msgstr "Mo"
+
+#~ msgid "Ko"
+#~ msgstr "Knock-out"
+
+#~ msgid "Counting total size and files number..."
+#~ msgstr "Größe und Anzahl der Dateien wird erfasst..."
+
+#~ msgid "Show Trash (click)"
+#~ msgstr "Müll anzeigen (klicken)"
+
+#~ msgid "Empty Trash"
+#~ msgstr "Leere Mülleimer"
+
+#~ msgid "Display dustbins information"
+#~ msgstr "Zeigt ihnen Informationen über den Papierkorb an"
+
+#~ msgid "%s successfully unmounted"
+#~ msgstr "%s ist jetzt ausgehängt"
+
+#~ msgid "failed to unmount %s"
+#~ msgstr "Aushängen von %s fehlgeschlagen"
+
+#~ msgid "Unmouting this volume ..."
+#~ msgstr "Diesen Datenträger aushängen …"
+
+#~ msgid " trashe(s)"
+#~ msgstr " Müll"
+
+#~ msgid " file(s)"
+#~ msgstr " Datei(en)"
+
+#~ msgid "calculating"
+#~ msgstr "berechne..."
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a GNOME "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for old Gnome version (prior to 2.22)."
+#~ msgstr ""
+#~ "Dieses Applet stellt Funktionen für eine bessere Integration in eine "
+#~ "Gnome-Umgebung bereit.\n"
+#~ "Es ist automatisch angeschaltet, eine Aktivierung ist deshalb nicht "
+#~ "notwendig.\n"
+#~ "Es ist für ältere Gnome-Versionen (vor Version 2.22) gedacht."
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a GNOME "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for the a GNOME version >= 2.22"
+#~ msgstr ""
+#~ "Dieses Applet stellt Funktionen für eine bessere Integration in eine "
+#~ "Gnome-Umgebung bereit.\n"
+#~ "Es ist automatisch angeschaltet, eine Aktivierung ist deshalb nicht "
+#~ "notwendig.\n"
+#~ "Es ist für eine Gnome-Version >= 2.22 ausgelegt."
+
+#~ msgid "icon effects"
+#~ msgstr "Symbol-Effekte"
+
+#~ msgid "This plugin adds many special effects to your icons."
+#~ msgstr ""
+#~ "Diese Erweiterung fügt viele Spezialeffekte zu Ihren Symbolen hinzu."
+
+#~ msgid "Fire"
+#~ msgstr "Feuer"
+
+#~ msgid "Stars"
+#~ msgstr "Sterne"
+
+#~ msgid "Rain"
+#~ msgstr "Regen"
+
+#~ msgid "Snow"
+#~ msgstr "Schnee"
+
+#~ msgid "Storm"
+#~ msgstr "Sturm"
+
+#~ msgid "Firework"
+#~ msgstr "Feuerwerk"
+
+#~ msgid "illusion"
+#~ msgstr "illusion"
+
+#~ msgid ""
+#~ "This plugin provides animations for appearance & disappearance of icons."
+#~ msgstr ""
+#~ "Diese Erweiterung stellt Animationen für das Erscheinen und Verschwinden "
+#~ "von Symbolen bereit."
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a KDE "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it.\n"
+#~ "It is designed for KDE4"
+#~ msgstr ""
+#~ "Dieses Applet stellt Funktionen für eine bessere Integration in eine KDE-"
+#~ "Umgebung bereit.\n"
+#~ "Es ist automatisch eingeschaltet, eine Aktivierung ist deshalb nicht "
+#~ "notwendig.\n"
+#~ "Es ist für KDE4 ausgelegt."
+
+#~ msgid "keyboard indicator"
+#~ msgstr "Tastatur-Layout-Anzeige"
+
+#~ msgid ""
+#~ "This applet lets you control the keyboard layout.\n"
+#~ "\tIt can also display the current num and caps lock.\n"
+#~ "\tLeft-click to switch to the next layout\n"
+#~ "\tScroll up/down to select the previous/next layout\n"
+#~ "\tRight-click gives you access to the list of available layouts."
+#~ msgstr ""
+#~ "Dieses Applet erlaubt Ihnen, Ihr Tastaturbelegung zu verwalten.\n"
+#~ "\tEs kann außerdem den aktuellen Num- bzw. Caps-Lock anzeigen.\n"
+#~ "\tLinksklick, um zur nächsten Belegung zu wechseln.\n"
+#~ "\tHoch-/Runterscrollen um die vorige/nächste Tastaturbelegung "
+#~ "auszuwählen.\n"
+#~ "\tMit Hilfe eines Rechtsklicks erhalten Sie Zugriff auf eine Liste der "
+#~ "verfügbaren Tastaturbelegungen."
+
+#~ msgid "Keyboard preferences"
+#~ msgstr "Tastatureinstellungen"
+
+#~ msgid "logout"
+#~ msgstr "Abmelden"
+
+#~ msgid ""
+#~ "A very simple applet that adds an icon to log out from your session\n"
+#~ "Left click to log out or change the user, middle click to shutdown or "
+#~ "restart\n"
+#~ "  (you can invert the buttons if you prefer to shutdown on left-click)."
+#~ msgstr ""
+#~ "Eine einfache Anwendung die eine Abmelden-Schaltfläche hinzufügt\n"
+#~ "Mit Linksklick können sie sich ausloggen oder den Benutzer wechseln, mit "
+#~ "der mittleren Maustaste den Rechner herunterfahren oder Neustarten\n"
+#~ "  (sie können die Tastenbelegung vertauschen wenn sie mit der linken "
+#~ "Maustaste Herunterfahren wollen)"
+
+#~ msgid "Choose in how many minutes your PC will stop:"
+#~ msgstr ""
+#~ "Wählen Sie aus, in wieviel Minuten Ihr Computer heruntergefahren wird:"
+
+#~ msgid "Log out"
+#~ msgstr "Abmelden"
+
+#~ msgid "Shut down"
+#~ msgstr "Ausschalten"
+
+#~ msgid "Lock screen"
+#~ msgstr "Bildschirm sperren"
+
+#~ msgid "Program an automatic shut-down"
+#~ msgstr "Stellen Sie das automatische Herunterfahren ein"
+
+#~ msgid "Your computer will shut-down in 1 minute."
+#~ msgstr "Ihr Computer wird in einer Minute herunterfahren."
+
+#~ msgid "Server address:"
+#~ msgstr "Serveradresse:"
+
+#~ msgid "myLogin"
+#~ msgstr "meinLogin"
+
+#~ msgid "myHost"
+#~ msgstr "meinHost"
+
+#~ msgid "Username:"
+#~ msgstr "Benutzername:"
+
+#~ msgid "Password:"
+#~ msgstr "Passwort:"
+
+#~ msgid "The password will be crypted."
+#~ msgstr "Das Passwort wird verschlüsselt."
+
+#~ msgid "Port:"
+#~ msgstr "Port:"
+
+#~ msgid ""
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
+#~ "and 995 for POP3S."
+#~ msgstr ""
+#~ "Geben Sie 0 ein, um den vorgegebenen Port zu verwenden. Die Vorgabeports "
+#~ "sind 110 für POP3 oder APOP und 995 für POP3S."
+
+#~ msgid ""
+#~ "Enter 0 to use the default port. Default ports are 143 for IMAP4 and 993 "
+#~ "for IMAP4 over SSL."
+#~ msgstr ""
+#~ "Geben Sie 0 ein, um den Standardport zu verwenden. Standardports sind 143 "
+#~ "für IMAP4 und 993 für IMAP4 über SSL."
+
+#~ msgid "Use a secure connection (SSL)"
+#~ msgstr "Sichere Verbindung verwenden (SSL)"
+
+#~ msgid "Specific mail application"
+#~ msgstr "Benutzerdefinierte E-Mail-Anwendung"
+
+#~ msgid "Leave empty to use the default mail application."
+#~ msgstr "Leer lassen, um die vorgegebene E-Mail-Anwendung zu verwenden."
+
+#~ msgid "Directory on server:"
+#~ msgstr "Ordner auf dem Server:"
+
+#~ msgid "Path of mbox file:"
+#~ msgstr "Pfad zur mbox-Datei:"
+
+#~ msgid "Path to Mail directory:"
+#~ msgstr "Pfad zum Mailordner:"
+
+#~ msgid "Address of feed:"
+#~ msgstr "Pfad zum Mailordner:"
+
+#~ msgid "Remove this account"
+#~ msgstr "Dieses Konto löschen"
+
+#~ msgid ""
+#~ "Don't forget to enable IMAP (or POP) service from settings of your mail "
+#~ "account."
+#~ msgstr ""
+#~ "Vergessen Sie nicht, den IMAP- oder POP-Dienst in den Einstellungen Ihres "
+#~ "E-Mail-Kontos zu aktivieren."
+
+#~ msgid "Please choose an account type."
+#~ msgstr "Bitte wählen Sie ein Kontotyp aus."
+
+#~ msgid "New account's name"
+#~ msgstr "Neuer Name des Kontos"
+
+#~ msgid "Please enter a name for this account."
+#~ msgstr "Bitte geben Sie einen Namen für dieses Konto ein."
+
+#~ msgid ""
+#~ "This account already exists.\n"
+#~ "Please choose another name for the new account."
+#~ msgstr ""
+#~ "Dieses Konto existiert bereits.\n"
+#~ "Bitte wählen Sie ein anderen Namen für das neue Konto."
+
+#~ msgid "Enter a name for this account. You can give it any name you want."
+#~ msgstr ""
+#~ "Geben Sie einen Namen für dieses Konto ein. Sie können jeden Namen "
+#~ "verwenden, den Sie möchten."
+
+#~ msgid "Remove Account"
+#~ msgstr "Konto entfernen"
+
+#~ msgid "unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "no subject"
+#~ msgstr "Kein Betreff"
+
+#~ msgid "No unread mail in your mailboxes"
+#~ msgstr "Keine ungelesene E-mail in Ihrem Postfach"
+
+#~ msgid "You have %d new mails:"
+#~ msgstr "Sie haben %d neue E-Mails :"
+
+#~ msgid "You have a new mail:"
+#~ msgstr "Sie haben eine neue E-Mail :"
+
+#~ msgid "mail"
+#~ msgstr "E-Mail"
+
+#~ msgid ""
+#~ "This applet is very useful to warn you when you get new e-mails\n"
+#~ "It can check in any kind of mailbox (yahoo, gmail, etc)\n"
+#~ "Left-click to launch the prefered mail application,\n"
+#~ "Middle-click to refresh all the mailboxes."
+#~ msgstr ""
+#~ "Dieses Applet ist sehr nützlich, um bei neuen E-Mails einen Hinweis "
+#~ "anzuzeigen\n"
+#~ "Es kann jede Art von Mail-Postfach prüfen (Yahoo, GMail, etc.)\n"
+#~ "Ein Linksklick startet Ihr bevorzugtes E-Mail-Programm\n"
+#~ "Ein Mittelklick aktualisiert alle E-Mail-Postfächer"
+
+#~ msgid ""
+#~ "A problem occured\n"
+#~ "If '%s' is not your usual mail application,\n"
+#~ "you can change it in the configuration panel of this module"
+#~ msgstr ""
+#~ "Ein Problem fand statt.\n"
+#~ "Wenn '%s' nicht Ihr übliches Mailprogramm ist, können Sie dies in der "
+#~ "Konfigurationsleiste dieses Moduls ändern."
+
+#~ msgid ""
+#~ "No mail application is defined,\n"
+#~ "you can define it in the configuration panel of this module"
+#~ msgstr ""
+#~ "Es ist kein E-Mail-Programm definiert,\n"
+#~ "Sie können eines in der Konfiguration dieses Moduls festlegen"
+
+#~ msgid "Refresh a mail account"
+#~ msgstr "Aktualisiere ein E-Mail-Konto"
+
+#~ msgid "Refresh all"
+#~ msgstr "Alle aktualiseren"
+
+#~ msgid "Refresh %s"
+#~ msgstr "Aktualisieren %s"
+
+#~ msgid "Mark all emails as read"
+#~ msgstr "Markiere alle Mails als gelesen"
+
+#~ msgid "Launch %s"
+#~ msgstr "Starte %s"
+
+#~ msgid "Mail"
+#~ msgstr "E-Mail"
+
+#~ msgid "motion blur"
+#~ msgstr "Motion-Blur"
+
+#~ msgid "This plugin adds a motion blur effect to docks."
+#~ msgstr "Diese Erweiterung fügt einen Motion-Blur-Effekt zu den Docks hinzu"
+
+#~ msgid "Unknown artist"
+#~ msgstr "Unbekannter Künstler"
+
+#~ msgid "Unknown title"
+#~ msgstr "Unbekannter Titel"
+
+#~ msgid "Track"
+#~ msgstr "Titel"
+
+#~ msgid "Current song"
+#~ msgstr "Aktuelles Lied"
+
+#~ msgid "Artist"
+#~ msgstr "Künstler"
+
+#~ msgid "Album"
+#~ msgstr "Album"
+
+#~ msgid "Length"
+#~ msgstr "Länge"
+
+#~ msgid "Track n°"
+#~ msgstr "Stück n°"
+
+#~ msgid "Song n°"
+#~ msgstr "Lied n°"
+
+#~ msgid "There is no media playing."
+#~ msgstr "Es werden keine Mediendateien abgespielt."
+
+#~ msgid "musicPlayer"
+#~ msgstr "Musikspieler"
+
+#~ msgid ""
+#~ "This applet lets you control any music player.\n"
+#~ "Left click to Play/Pause, middle-click to play Next song.\n"
+#~ "Scroll up/down to play previous/next song.\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends "
+#~ "on Player),\n"
+#~ " and jpeg image to use as cover.\n"
+#~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
+#~ "       For SongBird, you have to install its dbus add-on.\n"
+#~ "       For Exaile 0.3, you have to activate its MPRIS plug-in"
+#~ msgstr ""
+#~ "Dieses Applet erlaubt ihnen jeden Musikspieler zu kontrollieren.\n"
+#~ "Linksklick für Play/Pause, Mittelklick, um das nächste Lied zu spielen\n"
+#~ "Scrollen sie hoch/runter, um den vorherigen/nächsten Track abzuspielen\n"
+#~ "Mit Drag-and-Drop können Lieder auf das Symbol gezogen werden, um sie in "
+#~ "die Warteschlange zu stellen (hängt vom Player ab),\n"
+#~ " und JPEG-Bilder, um sie als Cover zu nutzen.\n"
+#~ "Hinweis: Für XMMS muss das 'xmms-infopipe'-Plugin installiert werden.\n"
+#~ "       Für Songbird wird die dazugehörige DBus-Erweiterung benötigt.\n"
+#~ "       Für Exaile 0.3 muss die MPRIS-Erweiterung aktiviert werden."
+
+#~ msgid ""
+#~ "Sorry, I couldn't detect any player.\n"
+#~ "If it is running, it is maybe because its version is too old and does not "
+#~ "offer such service."
+#~ msgstr ""
+#~ "Entschuldigung, Ich konnte keinen Player erkennen.\n"
+#~ "Sollte der Player laufen, kann es sein, dass seine Version zu alt ist und "
+#~ "er einen solchen Dienst nicht unterstützt."
+
+#~ msgid "Find opened player"
+#~ msgstr "Finde geöffneten Player"
+
+#~ msgid "Previous"
+#~ msgstr "Vorheriges"
+
+#~ msgid "scroll-up"
+#~ msgstr "Hinaufscrollen"
+
+#~ msgid "Play/Pause"
+#~ msgstr "Wiedergabe/Pause"
+
+#~ msgid "left-click"
+#~ msgstr "Linksklick"
+
+#~ msgid "Next"
+#~ msgstr "Nächster"
+
+#~ msgid "scroll-down"
+#~ msgstr "Hinunterscrollen"
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid "Information"
+#~ msgstr "Information"
+
+#~ msgid "Show JumpBox"
+#~ msgstr "Zeige JumpBox"
+
+#~ msgid "Toggle Shuffle"
+#~ msgstr "Zufallswiedergabe an/aus"
+
+#~ msgid "Toggle Repeat"
+#~ msgstr "Wiederholen an/aus"
+
+#~ msgid "Rate this song"
+#~ msgstr "Bewerte dieses Lied"
+
+#~ msgid "netspeed"
+#~ msgstr "Netzwerkgeschwindigkeit."
+
+#~ msgid ""
+#~ "This applet shows you the bit rate of your internet connection and some "
+#~ "stats about it.\n"
+#~ "Left-click on the icon to have the total amount of data transfered\n"
+#~ "Middle-click to (de)activate the network (needs NetworManager)"
+#~ msgstr ""
+#~ "Dieses Applet zeigt Ihnen die Geschwindigkeit Ihrer Internetverbindung "
+#~ "sowie einige Informationen über diese an.\n"
+#~ "Linksklick auf das Symbol, um die Gesamtmenge der übertragenen Daten "
+#~ "anzuzeigen.\n"
+#~ "Mittelklick um das Netzwerk, zu (de)aktivieren (benötigt den "
+#~ "NetworkManager)"
+
+#~ msgid "Total amount of data"
+#~ msgstr "Gesamtmenge der übertragenen Daten:"
+
+#~ msgid "downloaded"
+#~ msgstr "heruntergeladen"
+
+#~ msgid "uploaded"
+#~ msgstr "hochgeladen"
+
+#~ msgid ""
+#~ "Interface '%s' doesn't seem to exist or is not readable.\n"
+#~ " You may have to set up the interface you wish to monitor.\n"
+#~ " Do you want to do it now?"
+#~ msgstr ""
+#~ "Die Schnittstelle '%s scheint nicht zu existieren oder ist nicht lesbar.\n"
+#~ " Sie muss möglicherweise aktiviert werden, um sie beobachten zu können.\n"
+#~ " Wollen Sie dies nun tun?"
+
+#~ msgid "Enable/disable network"
+#~ msgstr "Netzwerk aktivieren/deaktivieren"
+
+#~ msgid "Re-check interface"
+#~ msgstr "Kontrolliere die Schnittstelle noch einmal"
+
+#~ msgid ""
+#~ "Laptop on Battery.\n"
+#~ " Battery charged at:"
+#~ msgstr ""
+#~ "Laptopbetrieb über Akku.\n"
+#~ " Akkuladezustand bei:"
+
+#~ msgid "Estimated time with charge:"
+#~ msgstr "Mit Laden vergangene Zeit:"
+
+#~ msgid ""
+#~ "Laptop on Charge.\n"
+#~ " Battery charged at:"
+#~ msgstr ""
+#~ "Laptopbetrieb über Netzadapter.\n"
+#~ " Akkuladezustand bei:"
+
+#~ msgid "Estimated charge time:"
+#~ msgstr "Noch für das Laden benötigte Zeit:"
+
+#~ msgid "No battery found."
+#~ msgstr "Keinen Akku gefunden."
+
+#~ msgid ""
+#~ "PowerManager.\n"
+#~ "Battery charge seems to be low"
+#~ msgstr ""
+#~ "Energieverwaltung.\n"
+#~ "Der Ladezustand ihres Akkus scheint gering zu sein."
+
+#~ msgid "Please put your laptop on charge."
+#~ msgstr "Bitte schließen Sie Ihren Laptop an die Ladestation an"
+
+#~ msgid ""
+#~ "PowerManager.\n"
+#~ "Your battery is now charged"
+#~ msgstr ""
+#~ "Energieverwaltung.\n"
+#~ "Ihr Akku ist nun aufgeladen"
+
+#~ msgid "PowerManager"
+#~ msgstr "Energieverwaltung"
+
+#~ msgid "A power manager for laptop batteries. Works with ACPI and DBus."
+#~ msgstr ""
+#~ "Ein Energiemanage für Laptopbatterien. Funktioniert mit ACPI und DBus."
+
+#~ msgid "Set up power management"
+#~ msgstr "Einstellen der Energieverwaltung"
+
+#~ msgid "Halt"
+#~ msgstr "Stoppen"
+
+#~ msgid "Hibernate"
+#~ msgstr "Ruhezustand"
+
+#~ msgid "Suspend"
+#~ msgstr "Bereitschaft"
+
+#~ msgid "Reboot"
+#~ msgstr "Neustart"
+
+#~ msgid "Quick Browser"
+#~ msgstr "Schnellanzeiger"
+
+#~ msgid ""
+#~ "This applet lets you browse a folder and its sub-folders very quickly.\n"
+#~ "You can set up a shortkey to pop up the menu.\n"
+#~ "Midlle-click will open the main folder.\n"
+#~ "This applet can be instanciated several times, if you want to browse "
+#~ "different folders."
+#~ msgstr ""
+#~ "Mit diesem Applet können Sie schnell durch einen Ordner und seine "
+#~ "Unterordner blättern.\n"
+#~ "Sie können eine Tastenkombination einstellen, mit der das Menü angezeigt "
+#~ "wird.\n"
+#~ "Mittelklick öffnet den Hauptordner.\n"
+#~ "Dieses Applet kann mehrere Male dargestellt werden, wenn Sie durch "
+#~ "verschiedene Ordner blättern wollen."
+
+#~ msgid "Open this folder"
+#~ msgstr "Öffne dieses Verzeichnis"
+
+#~ msgid "Open folder"
+#~ msgstr "Verzeichnis öffnen"
+
+#~ msgid "Unmounted"
+#~ msgstr "Nicht eingebunden"
+
+#~ msgid "%s is now mounted"
+#~ msgstr "%s  wurde eingehängt"
+
+#~ msgid "%s has been connected"
+#~ msgstr "%s wurde verbunden"
+
+#~ msgid "%s is now unmounted"
+#~ msgstr "%s ist jetzt ausgehängt"
+
+#~ msgid "shortcuts"
+#~ msgstr "Schnellzugriff"
+
+#~ msgid ""
+#~ "An applet that let you access quickly to all of your shortcuts.\n"
+#~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
+#~ "don't have Nautilus).\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
+#~ "bookmark.\n"
+#~ "Middle-click on the main icon to show your home folder.\n"
+#~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
+#~ "The applet can also display valuable information about your disks, like "
+#~ "free space, type, etc."
+#~ msgstr ""
+#~ "Dieses Applet ermöglicht Ihnen den Zugriff auf Ihre Tastenkombinationen.\n"
+#~ "Es verwaltet Datenträger, Orte im Netzwerk und Nautilus-Lesezeichen "
+#~ "(selbst dann, wenn Sie Nautilus nicht\n"
+#~ "haben sollten). Ziehen Sie einen Ordner auf das Hauptsymbol oder das "
+#~ "Subdock, um ein Lesezeichen\n"
+#~ "hinzuzufügen. Ein Mittelklick auf das Hauptsymbol zeigt Ihren "
+#~ "persönlichen Ordner an. Ein Mittelklick\n"
+#~ "auf das Symbol eines Einhängepunkts hängt das Objekt aus oder ein. Das "
+#~ "Applet kann außerdem\n"
+#~ "Informationen über Ihre Datenträger anzeigen, wie den freien Platz, den "
+#~ "Typ usw."
+
+#~ msgid "failed to mount %s"
+#~ msgstr "Einhängen von %s fehlgeschlagen"
+
+#~ msgid "Failed to unmount %s"
+#~ msgstr "Aushängen von %s fehlgeschlagen"
+
+#~ msgid "Sorry, this applet is not yet available for KDE."
+#~ msgstr "Dieses Applet ist leider für KDE noch nicht verfügbar."
+
+#~ msgid "No disks or bookmarks were found."
+#~ msgstr "Es wurden keine Datenträger oder Lesezeichen gefunden."
+
+#~ msgid "Enter a name for this bookmark:"
+#~ msgstr "Geben Sie einen Namen für dieses Lesezeichen ein:"
+
+#~ msgid "Open Home directory"
+#~ msgstr "Öffne persönlichen Ordner"
+
+#~ msgid "Rename this bookmark"
+#~ msgstr "Dieses Lesezeichen umbenennen"
+
+#~ msgid "Remove this bookmark"
+#~ msgstr "Entferne dieses Lesezeichen"
+
+#~ msgid "Eject"
+#~ msgstr "Auswerfen"
+
+#~ msgid "Unmount"
+#~ msgstr "Aushängen"
+
+#~ msgid "Mount"
+#~ msgstr "Einhängen"
+
+#~ msgid "Get disk info"
+#~ msgstr "Hole Datenträger-Informationen"
+
+#~ msgid "Only folders can be bookmarked."
+#~ msgstr "Nur Ordner können als Lesezeichen angegeben werden."
+
+#~ msgid "show mouse"
+#~ msgstr "zeige Maus"
+
+#~ msgid ""
+#~ "This plugin draws some animations around the cursor when it's inside a "
+#~ "dock/desklet."
+#~ msgstr ""
+#~ "Dieses Plugin zeichnet Animationen um den Mauszeiger, wenn er sich in "
+#~ "einem Dock/Desklet befindet."
+
+#~ msgid "showDesktop"
+#~ msgstr "Zeige den Desktop"
+
+#~ msgid ""
+#~ "This applet adds an icon to show your desktop,\n"
+#~ " and also : the desklets, the Widget Layer, or all the desktops at once.\n"
+#~ "It can also be used to quickly change the screen's resolution from the "
+#~ "right-click menu.\n"
+#~ "Left-click to show/hide the desktop,\n"
+#~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
+#~ "Layer, or all the desktops at once."
+#~ msgstr ""
+#~ "Dieses Applet fügt ein Symbol zu Ihrem Desktop hinzu\n"
+#~ " und außerdem die Desklets, den Widget-Layer und alle Desktops auf "
+#~ "einmal.\n"
+#~ "Es kann außerdem verwendet werden, um mit Hilfe des Rechtsklick-Menüs "
+#~ "schnell die Bildschirmauflösung zu ändern.\n"
+#~ "Linksklick zum zeigen/verbergen des Desktops.\n"
+#~ "Mittelklick, um entweder den Desktop, die Desklets, den Widget-Layer oder "
+#~ "alle Desktops auf einmal zu zeigen/verbergen."
+
+#~ msgid "Show the desktop"
+#~ msgstr "Arbeitsfläche anzeigen"
+
+#~ msgid "Show the Widget Layer (Compiz)"
+#~ msgstr "Zeige Widget-Ebene (Compiz)"
+
+#~ msgid "Change screen resolution"
+#~ msgstr "Bildschirmauflösung ändern"
+
+#~ msgid "Move to the Desktop"
+#~ msgstr "Auf die Arbeitsfläche verschieben"
+
+#~ msgid "Copy to the Desktop"
+#~ msgstr "Auf die Arbeitsfläche kopieren"
+
+#~ msgid "Link to the Desktop"
+#~ msgstr "Verknüpfung auf der Arbeitsfläche erstellen"
+
+#~ msgid "Download onto the Desktop"
+#~ msgstr "Auf die Arbeitsfläche herunterladen"
+
+#~ msgid "slider"
+#~ msgstr "Schieberegler"
+
+#~ msgid ""
+#~ "This applet is a basic image slider\n"
+#~ " You just have to select a directory and a display effect and you're "
+#~ "done\n"
+#~ "Click to play/pause or to edit the current image.\n"
+#~ "Middle-click to open the images folder."
+#~ msgstr ""
+#~ "Dieses Applet ist eine einfache Diashow,\n"
+#~ " Sie müssen lediglich einen Ordner und einen Anzeige-Effekt einstellen "
+#~ "und sind dann fertig\n"
+#~ "Klick zum Spielen/Pausieren oder zum Editieren des aktuellen Bildes.\n"
+#~ "Mittelklick um den Bilder-Ordner zu öffnen."
+
+#~ msgid "Play"
+#~ msgstr "Wiedergabe"
+
+#~ msgid "Pause"
+#~ msgstr "Pause"
+
+#~ msgid "Open current image"
+#~ msgstr "Öffne das aktuelle Bild"
+
+#~ msgid "Browse images folder"
+#~ msgstr "Navigiere durch den Bilder-Ordner"
+
+#~ msgid "stack"
+#~ msgstr "Zwischenablage"
+
+#~ msgid ""
+#~ "This applet allows you to build a stack of files, just like the Stacks "
+#~ "applet of MacOS X.\n"
+#~ "To add file into your stacks, you just have to drag and drop it on the "
+#~ "Stacks icon and you're done.\n"
+#~ "You can drop any file, or web URL, or even some piece of text\n"
+#~ "You can quickly copy the path/url/text to the clipboard, or open it."
+#~ msgstr ""
+#~ "Diese Mini-Anwendung ermöglicht es Ihnen, einen Stapel von Dateien "
+#~ "aufzubauen, wie das Stapel-Applet von MacOS X.\n"
+#~ "Um eine Datei dem Stapel hinzuzufügen, ziehen Sie diese einfach auf das "
+#~ "Stapel-Icon und schon sind Sie fertig.\n"
+#~ "Sie können jede Datei, Internetadresse oder sogar Textauszüge auf das "
+#~ "Stapel-Icon fallen lassen.\n"
+#~ "Sie können jederzeit den Pfad der Datei, die Adresse oder den Text zur "
+#~ "Zwischenablage hinzufügen."
+
+#~ msgid ""
+#~ "No items in the stack.\n"
+#~ "You can add files, URL, and even a piece of text by dragging them onto "
+#~ "the icon."
+#~ msgstr ""
+#~ "Keine Elemente im Stapel.\n"
+#~ "Sie können Dateien, URLs, und sogar Textausschnitte hinzufügen, indem Sie "
+#~ "die Elemente auf das Symbol ziehen."
+
+#~ msgid "Clear the stack?"
+#~ msgstr "Den Stapel leeren?"
+
+#~ msgid "Set new name for this item:"
+#~ msgstr "Definiere einen neuen Namen für dieses Element :"
+
+#~ msgid "Paste (drag'n'drop)"
+#~ msgstr "Einfügen (drag'n'drop)"
+
+#~ msgid "Clear the stack"
+#~ msgstr "Den Stapel löschen"
+
+#~ msgid "Open (click)"
+#~ msgstr "Öffnen (klick)"
+
+#~ msgid "Copy"
+#~ msgstr "Kopieren"
+
+#~ msgid "Cut"
+#~ msgstr "Ausschneiden"
+
+#~ msgid "Rename this item"
+#~ msgstr "Dieses Element umbenennen"
+
+#~ msgid "Remove this item"
+#~ msgstr "Dieses Element entfernen"
+
+#~ msgid "Current"
+#~ msgstr "Aktuell"
+
+#~ msgid "Desktop"
+#~ msgstr "Arbeitsfläche"
+
+#~ msgid "switcher"
+#~ msgstr "Wechsler"
+
+#~ msgid ""
+#~ "This applet allows you to interact with your workspaces :\n"
+#~ " - switch between your workspaces (scroll up/down with the mouse),\n"
+#~ " - name them (in the config),\n"
+#~ " - quickly add/remove a workspace (in the menu),\n"
+#~ " - show the desktop (middle-click or in the menu),\n"
+#~ " - list all windows on each workspace ((middle-click or in the menu)\n"
+#~ "It has 2 modes : compact (on 1 icon) and expanded (with a sub-dock)."
+#~ msgstr ""
+#~ "Dieses Applet ermöglicht Ihnen die Interaktion mit Ihren Arbeitsflächen:\n"
+#~ " - Wechsel zwischen den Arbeitsflächen (Rollen nach oben oder unten mit "
+#~ "der Maus)\n"
+#~ " - Bezeichnungen festlegen (in der Konfiguration)\n"
+#~ " - schnelles Hinzufügen und Entfernen von Arbeitsflächen (im Menü)\n"
+#~ " - die Arbeitsfläche anzeigen (Mittelklick oder im Menü)\n"
+#~ " - alle Fenster einer Arbeitsfläche auflisten (Mittelklick oder im Menü)\n"
+#~ "Zwei Modi sind verfügbar: kompakt (in einem Symbol) oder ausgeklappt (als "
+#~ "Subdock)"
+
+#~ msgid "Rename this workspace"
+#~ msgstr "Arbeitsfläche umbenennen"
+
+#~ msgid "Add a workspace"
+#~ msgstr "Arbeitsfläche hinzufügen"
+
+#~ msgid "Remove last workspace"
+#~ msgstr "Entferne letzten Desktop"
+
+#~ msgid "Move current workspace to this workspace"
+#~ msgstr "Aktuelle Arbeitsfläche auf diese Arbeitsfläche verschieben"
+
+#~ msgid ""
+#~ "This will move all windows from the current desktop to the one you "
+#~ "clicked on."
+#~ msgstr ""
+#~ "Hiermit werden alle Fenster von der aktuellen Arbeitsfläche zu der "
+#~ "angeklickten bewegt."
+
+#~ msgid "Windows List"
+#~ msgstr "Fensterliste"
+
+#~ msgid ""
+#~ "Add a systray to your dock.\n"
+#~ "Left-click to show/hide the systray in a dialog (you can bind a keyboard "
+#~ "shortcut for it.)\n"
+#~ "But the best way to use it is to detach it from the dock, and place it "
+#~ "somewhere, above other windows."
+#~ msgstr ""
+#~ "Fügen Sie ihrem Dock eine Systembenachrichtigung hinzu.\n"
+#~ "Linksklick um die Systembenachrichtigung in einem Dialog anzuzeigen/zu "
+#~ "verbergen (hierfür können Sie eine Tastenkombination anlegen).\n"
+#~ "Die beste Möglichkeit ist aber, die Systembenachrichtigung vom Dock "
+#~ "abzulösen und im Vordergrund anderer Fenster zu plazieren."
+
+#~ msgid ""
+#~ "Another systray is already running (probably on your panel)\n"
+#~ "Since there can only be one systray at once, you should remove it to "
+#~ "avoid any conflict."
+#~ msgstr ""
+#~ "Ein weiteres Benachrichtigungsfeld läuft bereits, möglicherweise in Ihrem "
+#~ "Panel.\n"
+#~ "Da Sie nur eines betreiben können, sollten Sie es entfernen, um Konflikte "
+#~ "zu vermeiden."
+
+#~ msgid "CD_APPLET_NAME"
+#~ msgstr "CD_APPLET_NAME"
+
+#~ msgid ""
+#~ "Useful description\n"
+#~ "and manual"
+#~ msgstr ""
+#~ "Nützliche Beschreibung\n"
+#~ "und Anleitung"
+
+#~ msgid "terminal"
+#~ msgstr "Terminal"
+
+#~ msgid ""
+#~ "Add a terminal to your dock !\n"
+#~ "Left-click to show/hide terminal (you can bind a keyboard shortcut for "
+#~ "it.)\n"
+#~ "You can drag'n'drop files or text and select an action.\n"
+#~ "You can open many tabs, rename them, change their color (right-click on a "
+#~ "tab to interact on it)\n"
+#~ "To open a new tab : type 'CTRL+t' or double-click next to the last tab\n"
+#~ "To close a tab : type 'CTRL+w' or middle-click on it."
+#~ msgstr ""
+#~ "Fügen Sie ihrem Dock eine Konsole hinzu.\n"
+#~ "Linksklick um die Konsole anzuzeigen/zu verbergen (hierfür können Sie "
+#~ "eine Tastenkombination anlegen).\n"
+#~ "Sie können Dateien und Text via drag'n'drop einfügen und eine Aktion "
+#~ "auswählen.\n"
+#~ "Sie können mehrere Reiter öffnen, sie umbenennen und ihre Farbe ändern "
+#~ "(rechtsklicken Sie auf Reiter um sie zu bearbeiten).\n"
+#~ "Um einen neuen Reiter zu öffnen: drücken sie 'STRG+t' oder doppelklicken "
+#~ "Sie den Bereich neben dem letzten Reiter.\n"
+#~ "Um einen Reiter zu schließen: drücken Sie 'STRG+w' oder mittelklicken Sie "
+#~ "den betreffenden Reiter."
+
+#~ msgid "New Tab"
+#~ msgstr "Neuer Tab"
+
+#~ msgid "Rename current Tab"
+#~ msgstr "Aktuellen Tab umbenennen"
+
+#~ msgid "Close current Tab"
+#~ msgstr "Aktuellen Tab schließen"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "Set title for this tab:"
+#~ msgstr "Den Titel für diesen Tab einstellen:"
+
+#~ msgid "Select a color"
+#~ msgstr "Wählen Sie eine Farbe"
+
+#~ msgid "You can recall the Terminal desklet by typing %s"
+#~ msgstr ""
+#~ "Sie können das Konsole-Desklet wiederaufrufen indem sie  %s eingeben"
+
+#~ msgid "Paste"
+#~ msgstr "Einfügen"
+
+#~ msgid "Rename this Tab"
+#~ msgstr "Diesen Tab umbenennen"
+
+#~ msgid "Change this Tab's colour"
+#~ msgstr "Die Farbe dieses Tabs ändern"
+
+#~ msgid "Close this Tab"
+#~ msgstr "Schließe diesen Tab"
+
+#~ msgid "Note-Taking"
+#~ msgstr "Notizanwendung"
+
+#~ msgid ""
+#~ "Control your Gnote or TomBoy's notes directly in the dock !\n"
+#~ "Click on a note to open it, Escape to close it.\n"
+#~ "Middle-click to instantly create a new note.\n"
+#~ "You can search inside notes and display their content on the icons."
+#~ msgstr ""
+#~ "Überwachen Sie Ihre Notizen aus Gnote oder Tomboy direkt im Dock!\n"
+#~ "Klicken Sie die Notiz an, um Sie zu öffnen, oder drücken Sie Esc, um sie "
+#~ "zu schließen.\n"
+#~ "Ein Mittelklick erstellt direkt eine neue Notiz.\n"
+#~ "Sie können in den Notizen suchen und deren Inhalte in den Symbolen "
+#~ "darstellen lassen."
+
+#~ msgid "Note name : "
+#~ msgstr "Notizname : "
+
+#~ msgid "Delete this note?"
+#~ msgstr "Diese Notiz entfernen ?"
+
+#~ msgid "Search for:"
+#~ msgstr "Suche nach:"
+
+#~ msgid "Search for tag:"
+#~ msgstr "Suche nach dem tag:"
+
+#~ msgid "Add a note"
+#~ msgstr "Eine Notiz hinzufügen"
+
+#~ msgid "Delete this note"
+#~ msgstr "Diese Notiz löschen"
+
+#~ msgid "Reload notes"
+#~ msgstr "Notizen aktualisieren"
+
+#~ msgid "Search"
+#~ msgstr "Suche"
+
+#~ msgid "Search for tag"
+#~ msgstr "Suche nach dem tag"
+
+#~ msgid "Search for today's note"
+#~ msgstr "Nach Notizen für den heutigen Tag suchen"
+
+#~ msgid "Search for this week's note"
+#~ msgstr "Nach Notizen für die aktuelle Woche suchen"
+
+#~ msgid "Search for next week's note"
+#~ msgstr "Suchen von Notizen der nächsten Woche"
+
+#~ msgid "Reset marks"
+#~ msgstr "Markierungen zurücksetzen"
+
+#~ msgid ""
+#~ "I couldn't get the info\n"
+#~ " Is connexion alive ?"
+#~ msgstr ""
+#~ "Information konnte nicht abgerufen werden.\n"
+#~ " Ist die Verbindung aktiv?"
+
+#~ msgid "I couldn't find this location"
+#~ msgstr "Ich konnte diesen Standort nicht finden"
+
+#~ msgid ""
+#~ "Enter the name of your location and press Enter to choose amongst results."
+#~ msgstr ""
+#~ "Geben Sie den Namen ihres Standortes ein und drücken Sie die Eingabetaste "
+#~ "um zwischen den Ergebnissen zu wählen."
+
+#~ msgid "weather"
+#~ msgstr "Wetter"
+
+#~ msgid ""
+#~ "This applet displays weather into your dock.\n"
+#~ "Data are provided by www.weather.com, you can find your location in the "
+#~ "config panel.\n"
+#~ "It can detach itself to be a totally eye-candy 3D deskelt.\n"
+#~ "Middle-click on the main icon to have current conditions information, "
+#~ "left-click on a sub-icon to have forcast information.\n"
+#~ msgstr ""
+#~ "Diese Mini-Anwendung zeigt das Wetter in Ihrem Dock an.\n"
+#~ "Die Daten werden von www.weather.com zur Verfügung gestellt. Ihren "
+#~ "Standort finden Sie im Konfigurationsdialog.\n"
+#~ "Sie können es aus dem Dock herauslösen, sodass es zu einem Augenschmaus "
+#~ "3D-Desklet wird.\n"
+#~ "Ein Mittelklick auf das Haupt-Icon zeigt aktuelle Informationen an, ein "
+#~ "Linksklick auf ein Unter-Icon zeigt Vorhersagen an.\n"
+
+#~ msgid "Jan"
+#~ msgstr "Januar"
+
+#~ msgid "Feb"
+#~ msgstr "Februar"
+
+#~ msgid "Mar"
+#~ msgstr "März"
+
+#~ msgid "Apr"
+#~ msgstr "April"
+
+#~ msgid "May"
+#~ msgstr "Mai"
+
+#~ msgid "Jun"
+#~ msgstr "Juni"
+
+#~ msgid "Jui"
+#~ msgstr "Juli"
+
+#~ msgid "Aug"
+#~ msgstr "August"
+
+#~ msgid "Sep"
+#~ msgstr "September"
+
+#~ msgid "Oct"
+#~ msgstr "Oktober"
+
+#~ msgid "Nov"
+#~ msgstr "November"
+
+#~ msgid "Dec"
+#~ msgstr "Dezember"
+
+#~ msgid "Data are being retrieved, please wait a moment."
+#~ msgstr "Daten werden empfangen, bitte warten Sie einen Moment."
+
+#~ msgid "Show current conditions (middle-click)"
+#~ msgstr "Aktuelle Bedingungen anzeigen (Mittelklick)"
+
+#~ msgid "Open weather.com (double-click)"
+#~ msgstr "Open weather.com (double-click)"
+
+#~ msgid "Reload now"
+#~ msgstr "Aktualisiere jetzt"
+
+#~ msgid ""
+#~ "No data available\n"
+#~ " is your connection alive?"
+#~ msgstr ""
+#~ "Es waren keine Daten verfügbar\n"
+#~ " ist die Verbindung aktiv ?"
+
+#~ msgid "Temperature"
+#~ msgstr "Temperatur"
+
+#~ msgid "Precipitation probability"
+#~ msgstr "Niederschlagswahrscheinlichkeit"
+
+#~ msgid "Wind"
+#~ msgstr "Wind"
+
+#~ msgid "Humidity"
+#~ msgstr "Luftfeuchtigkeit"
+
+#~ msgid "Sunrise"
+#~ msgstr "Sonnenaufgang"
+
+#~ msgid "Sunset"
+#~ msgstr "Sonnenuntergang"
+
+#~ msgid "Data are being fetched, please re-try in a few seconds."
+#~ msgstr ""
+#~ "Daten werden abgerufen, bitte versuchen Sie es in ein paar Sekunden noch "
+#~ "einmal."
+
+#~ msgid ""
+#~ "No data available\n"
+#~ "Retrying now..."
+#~ msgstr ""
+#~ "Es waren keine Daten verfügbar\n"
+#~ "Versuche es erneut ..."
+
+#~ msgid "Feels like"
+#~ msgstr "gefühlt"
+
+#~ msgid "Pressure"
+#~ msgstr "Luftdruck"
+
+#~ msgid "weblets"
+#~ msgstr "Weblets"
+
+#~ msgid ""
+#~ "The weblets applet allows you to show an interactive web page on your "
+#~ "desktop.\n"
+#~ "You can select your web page, set the desired scrolling,\n"
+#~ "and hide the scrollbars to get a real 'crop' of the page."
+#~ msgstr ""
+#~ "Das Weblets-Applet ermöglicht Ihnen die Anzeige einer interaktiven "
+#~ "Webseite\n"
+#~ "auf Ihrer Arbeitsfläche. Sie können die Webseite auswählen, das Rollen\n"
+#~ "wie gewünscht einrichten sowie die Rollbalken verbergen, um einen\n"
+#~ "echten »Zuschnitt« der Webseite zu erhalten."
+
+#~ msgid "Weblets"
+#~ msgstr "Weblets"
+
+#~ msgid "WiFi disabled."
+#~ msgstr "Wifi deaktiviert"
+
+#~ msgid "wifi"
+#~ msgstr "WiFi"
+
+#~ msgid ""
+#~ "This applet shows you the signal strength of the first active wifi "
+#~ "connection\n"
+#~ "Left-click to pop-up some info,Middle-click to re-check immediately."
+#~ msgstr ""
+#~ "Dieses Applet zeigt Ihnen die Signalstärke der ersten aktiven Wifi "
+#~ "Verbindung.\n"
+#~ "Klicken Sie mit der linken Maustaste, um ein paar Informationen "
+#~ "erscheinen zu lassen, oder die mittlere Maustaste um sofort neu zu prüfen."
+
+#~ msgid ""
+#~ "This applet provides functions for a better integration into a XFCE "
+#~ "environnement.\n"
+#~ "It is auto-activated, so you don't need to activate it."
+#~ msgstr ""
+#~ "Dieses Applet bietet Funktionen, für eine bessere Integration in eine "
+#~ "XFCE Umgebung.\n"
+#~ "Sie brauchen das Applet nicht zu aktivieren, da es automatisch aktiviert "
+#~ "ist."
+
+#~ msgid "Global"
+#~ msgstr "Global"
+
+#~ msgid "Animations are triggered when hovering an icon only in OpenGL mode."
+#~ msgstr ""
+#~ "Animationen beim hervorheben eines Icons werden nur im OpenGL Modus "
+#~ "dargestellt."
+
+#~ msgid "when hovering over an icon"
+#~ msgstr "beim Überfahren eines Symbols mit dem Mauszeiger"
+
+#~ msgid "Effects used:"
+#~ msgstr "Verwendete Effekte:"
+
+#~ msgid "when clicking on an launcher"
+#~ msgstr "beim Klicken eines Starters"
+
+#~ msgid "Effects used on launcher:"
+#~ msgstr "Auf Starter angewandte Effekte:"
+
+#~ msgid "Number of times the animation will play:"
+#~ msgstr "Anzahl der Durchläufe der Animation:"
+
+#~ msgid "when clicking on an application"
+#~ msgstr "Wenn Sie auf ein Programm Icon klicken"
+
+#~ msgid "Effects used on applications:"
+#~ msgstr "Effekte welche für Programm Icons verwendet werden:"
+
+#~ msgid "when clicking on an applet"
+#~ msgstr "beim Anklicken eines Applets"
+
+#~ msgid "Effects used on applets:"
+#~ msgstr "Auf Applets anzuwendende Effekte:"
+
+#~ msgid "Rotation"
+#~ msgstr "Drehung"
+
+#~ msgid "Duration of the animation:"
+#~ msgstr "Dauer der Animation:"
+
+#~ msgid "Type of mesh:"
+#~ msgstr "Mesh-Typ:"
+
+#~ msgid "Cube"
+#~ msgstr "Würfel"
+
+#~ msgid "Capsule"
+#~ msgstr "Kapsel"
+
+#~ msgid "Colour of the sheen:"
+#~ msgstr "Glanzfarbe:"
+
+#~ msgid "Image for the spotlight:"
+#~ msgstr "Bild für das Rampenlicht"
+
+#~ msgid "Image for the front spotlight:"
+#~ msgstr "Bild für das vordere Rampenlicht"
+
+#~ msgid "Spot colour:"
+#~ msgstr "Lichtfarbe"
+
+#~ msgid "Halo colour:"
+#~ msgstr "Lichtstrahl-Farbe"
+
+#~ msgid "Rays"
+#~ msgstr "Strahlen"
+
+#~ msgid "1st color of gradation :"
+#~ msgstr "erste Farbe des Farbverlaufes"
+
+#~ msgid "2nd color of gradation :"
+#~ msgstr "zweite Frabe des Farbverlaufes"
+
+#~ msgid "Random colours?"
+#~ msgstr "Zufällige Farben?"
+
+#~ msgid "Ray size:"
+#~ msgstr "Strahlengröße"
+
+#~ msgid "Ray speed:"
+#~ msgstr "Strahl-Geschwindigkeit:"
+
+#~ msgid "Initial stretch:"
+#~ msgstr "Anfängliche Dehnung:"
+
+#~ msgid "Horizontal stretch"
+#~ msgstr "Horizontale Dehnung"
+
+#~ msgid "Vertical stretch"
+#~ msgstr "Vertikale Dehnung"
+
+#~ msgid "Friction:"
+#~ msgstr "Reibung:"
+
+#~ msgid "Number of points on the grid in each direction:"
+#~ msgstr "Anzahl der Punkte im Raster in jeder Richtung:"
+
+#~ msgid "Wave width:"
+#~ msgstr "Wellenbreite:"
+
+#~ msgid "Wave amplitude:"
+#~ msgstr "Wellenausschlag:"
+
+#~ msgid "Pulse max zoom:"
+#~ msgstr "Maximale Vergrößerung der Schwingung:"
+
+#~ msgid "Pulse follows icon shape?"
+#~ msgstr "Schwingung folgt der Symbolform?"
+
+#~ msgid "Bounce duration:"
+#~ msgstr "Sprungdauer:"
+
+#~ msgid "When bouncing, resize the icon by:"
+#~ msgstr "Beim Springen das Symbol verkleinern um:"
+
+#~ msgid "the lower the value, the more it will flatten."
+#~ msgstr "Je niedriger der Wert, umso größer ist die Abflachung."
+
+#~ msgid "How much the icon will flatten when hitting the ground:"
+#~ msgstr "Abplattung das Symbols bei Bodenkontakt:"
+
+#~ msgid "Blink duration:"
+#~ msgstr "Blinkdauer:"
+
+#~ msgid "Icon size for busy penguin:"
+#~ msgstr "Symbolgröße für fleißigen Pinguin:"
+
+#~ msgid "Delay between animation changes :"
+#~ msgstr "Verzögerung zwischen Animationswechsel:"
+
+#~ msgid "Penguin transparency:"
+#~ msgstr "Transparenz des Pinguins:"
+
+#~ msgid "Let the penguin wander everywhere in the dock?"
+#~ msgstr "Den Pinguin im Dock wandern lassen?"
+
+#~ msgid "in pixels."
+#~ msgstr "in Pixel."
+
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+#~ msgstr ""
+#~ "Abhängig von Ihrem Fensterverwalter können Sie Verschiebungen durch "
+#~ "Linksklick bei gedrückter Alt-Taste ausführen."
+
+#~ msgid "Items"
+#~ msgstr "Objekte"
+
+#~ msgid ""
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
+#~ "you get by selecting some text with the mouse."
+#~ msgstr ""
+#~ "Objekte der Zwischenablage erreichen sie über Strg+c. Auswahlobjekte "
+#~ "erhalten Sie durch das Markieren von Text mit der Maus."
+
+#~ msgid "Which items should be remembered?"
+#~ msgstr "Welche Objekte sollen gespeichert werden?"
+
+#~ msgid "Clipboard"
+#~ msgstr "Zwischenablage"
+
+#~ msgid "Selection"
+#~ msgstr "Auswahl"
+
+#~ msgid "Both"
+#~ msgstr "Beides"
+
+#~ msgid "Remember items between 2 sessions ?"
+#~ msgstr "Objekte für die nächste Sitzung merken?"
+
+#~ msgid ""
+#~ "It is especially useful if you often select text with the mouse and don't "
+#~ "want to loose your clipboard items due to too many items in the selection."
+#~ msgstr ""
+#~ "Das ist insbesondere nützlich, wenn Sie oft Text mit der Maus markieren "
+#~ "und den Inhalt der Zwischenablage nicht durch zu viele Einträge verlieren "
+#~ "wollen."
+
+#~ msgid "Separate clipboard and selection?"
+#~ msgstr "Zwischenablage und Auswahl trennen?"
+
+#~ msgid "If so, number of selection items:"
+#~ msgstr "Falls ja, Anzahl der Auswahlobjekte:"
+
+#~ msgid ""
+#~ "When you click on an item, its content will become accessible with CTRL+v"
+#~ msgstr ""
+#~ "Wenn Sie ein Objekt anklicken, wird dessen Inhalt über Strg+v verfügbar"
+
+#~ msgid "Paste into Clipboard?"
+#~ msgstr "In Zwischenablage einfügen?"
+
+#~ msgid ""
+#~ "When you click on an item, its content will become accessible with the "
+#~ "middle-click"
+#~ msgstr ""
+#~ "Wenn Sie ein Objekt anklicken, wird dessen Inhalt über einen Mittelklick "
+#~ "verfügbar"
+
+#~ msgid "Paste into Selection?"
+#~ msgstr "In Auswahl einfügen?"
+
+#~ msgid "Pop-up menus at mouse position?"
+#~ msgstr "Aufklappmenüs an der Mausposition?"
+
+#~ msgid "Actions"
+#~ msgstr "Aktionen"
+
+#~ msgid ""
+#~ "If some actions are associated with an item, they will be proposed when "
+#~ "the item is created."
+#~ msgstr ""
+#~ "Falls Aktionen mit einem Objekt verknüpft sind, werden diese bei der "
+#~ "Erstellung eines Objekts vorgeschlagen."
+
+#~ msgid "Enable actions?"
+#~ msgstr "Aktionen aktivieren?"
+
+#~ msgid "Display actions when selecting an item in the history."
+#~ msgstr "Aktionen bei der Auswahl eines Objekts in der Chronik anzeigen"
+
+#~ msgid "Replay actions?"
+#~ msgstr "Soll die Aktion wiederholt werden?"
+
+#~ msgid "Duration of the action menu:"
+#~ msgstr "Anzeigedauer des Aktionsmenüs:"
+
+#~ msgid "Persistent items"
+#~ msgstr "Dauerhafte Objekte"
+
+#~ msgid "A list of persistent items which can be accessed with middle-click:"
+#~ msgstr ""
+#~ "Eine Liste dauerhaft verfügbarer Objekte, die über einen Mittelklick "
+#~ "verfügbar sind:"
+
+#~ msgid "Let external applications pop up dialogs in the dock?"
+#~ msgstr ""
+#~ "Externen Anwendungen das Aufklappen von Dialogen im Dock ermöglichen?"
+
+#~ msgid "Let external applications reboot the dock?"
+#~ msgstr "Das Dock durch externe Anwendungen neu starten lassen?"
+
+#~ msgid "Let external applications quit the dock?"
+#~ msgstr "Das Dock durch externe Anwendungen beenden lassen?"
+
+#~ msgid "Let external applications show/hide desklets?"
+#~ msgstr "Desklets durch externe Anwendungen anzeigen/verbergen lassen?"
+
+#~ msgid "Let external applications reload applets?"
+#~ msgstr "Applets durch externe Anwendungen neu laden lassen?"
+
+#~ msgid "Let external applications show/hide docks?"
+#~ msgstr "Docks durch externe Anwendungen anzeigen oder verbergen lassen?"
+
+#~ msgid "Let extern applications add launchers to the docks?"
+#~ msgstr "Starter durch externe Anwendungen zum Dock hinzufügen lassen?"
+
+#~ msgid "Let external applications modify the labels of icons?"
+#~ msgstr "Bezeichnungen der Symbole durch externe Anwendungen ändern lassen?"
+
+#~ msgid "Let extern applications modify the quick-infos on icons?"
+#~ msgstr "Schnellinfos zu Symbolen durch externe Anwendungen ändern lassen?"
+
+#~ msgid "Let extern applications modify the icons' image?"
+#~ msgstr "Grafiken zu Symbolen durch externe Anwendungen ändern lassen?"
+
+#~ msgid "Let extern applications animate icons?"
+#~ msgstr "Symbole durch externe Anwendungen animieren lassen?"
+
+#~ msgid "Name of the container it belongs to:"
+#~ msgstr "Name des umschließenden Containers:"
+
+#~ msgid "Image's name or path :"
+#~ msgstr "Name oder Pfad des Bildes:"
+
+#~ msgid "Desklet mode"
+#~ msgstr "Desklet-Modus"
+
+#~ msgid "Custom decorations"
+#~ msgstr "Benutzerdefinierte Dekorationen"
+
+#~ msgid "Custom margins"
+#~ msgstr "Benutzerdefinierte Ränder"
+
+#~ msgid "Choose the style of the display: "
+#~ msgstr "Wählen Sie den Anzeigestil: "
+
+#~ msgid "Gauge"
+#~ msgstr "Maßstab"
+
+#~ msgid "Graph"
+#~ msgstr "Graf"
+
+#~ msgid "Type of graphic :"
+#~ msgstr "Art der Grafik"
+
+#~ msgid "Line"
+#~ msgstr "Linie"
+
+#~ msgid "Plain"
+#~ msgstr "Einfach"
+
+#~ msgid "Bar"
+#~ msgstr "Balken"
+
+#~ msgid "Circle"
+#~ msgstr "Kreis"
+
+#~ msgid "Plain Circle"
+#~ msgstr "Einfacher Kreis"
+
+#~ msgid "It's the colour of the graphic for high rate values."
+#~ msgstr "Grafikfarbe für hohe Werte."
+
+#~ msgid "High value's colour :"
+#~ msgstr "Hoher Farbwert:"
+
+#~ msgid "Graph colour for low rate vaues:"
+#~ msgstr "Grafikfarbe für niedrige Werte:"
+
+#~ msgid "Low value's colour :"
+#~ msgstr "Niedriger Farbwert:"
+
+#~ msgid "Background colour of the graphic :"
+#~ msgstr "Hintergrundfarbe der Grafik:"
+
+#~ msgid "Show all values on same graph?"
+#~ msgstr "Alle Werte in einem Diagramm anzeigen?"
+
+#~ msgid "Display values"
+#~ msgstr "Werte anzeigen"
+
+#~ msgid "No"
+#~ msgstr "Nein"
+
+#~ msgid "On icon"
+#~ msgstr "im Symbol"
+
+#~ msgid "On label"
+#~ msgstr "in der Bezeichnung"
+
+#~ msgid "Refresh time"
+#~ msgstr "Aktualisierungsintervall"
+
+#~ msgid ""
+#~ "You need OpenGL for this option. Set it to 0 to disable it, 1 means the "
+#~ "transition is continue."
+#~ msgstr ""
+#~ "Für diese Option benötigen Sie OpenGL. \"0\" deaktiviert,\"1\" setzt den "
+#~ "Übergang fort.."
+
+#~ msgid "Disks monitored : Speed"
+#~ msgstr "Festplattenüberwachung: Geschwindigkeit"
+
+#~ msgid "E.g. sda, sdb... Up to 5 values allowed"
+#~ msgstr "z.B. sda, sdb … Bis zu 5 Werte sind erlaubt"
+
+#~ msgid "Partitions monitored : Size"
+#~ msgstr "Überwachte Partitionseigenschaften: Größe"
+
+#~ msgid "E.g. sda1, sdb5..."
+#~ msgstr "z.B. sda1, sdb5 …"
+
+#~ msgid "Leave empty to use the default."
+#~ msgstr "Leer lassen, um Standardwert zu verwenden."
+
+#~ msgid "System monitor command"
+#~ msgstr "Befehl für Systemüberwachung"
+
+#~ msgid "Specify the xml file to be used :"
+#~ msgstr "Geben Sie die zu verwendende XML-Datei an:"
+
+#~ msgid "Font to be used by default if none is specify in the .xml"
+#~ msgstr "Zu verwendende Schrift, wenn nichts in der .xml angegeben ist"
+
+#~ msgid "Default Font:"
+#~ msgstr "Standardschrift:"
+
+#~ msgid "Color to be used by default if none is specify in the .xml"
+#~ msgstr "Zu verwendende Farbe, wenn nichts in der .xml angegeben ist"
+
+#~ msgid "Default colour:"
+#~ msgstr "Standardfarbe:"
+
+#~ msgid "Margin to be used on left, right and top of the desklet"
+#~ msgstr "Rand links, rechts und oben am Desklet"
+
+#~ msgid "Margin all around the desklet:"
+#~ msgstr "Ränder um dasDesklet:"
+
+#~ msgid "Use this to increase the space between the lines"
+#~ msgstr "Dadurch kann der Raum zwischen den Zeilen vergrößert werden"
+
+#~ msgid "Space between lines:"
+#~ msgstr "Leerzeichen zwischen den Zeilen:"
+
+#~ msgid "Background"
+#~ msgstr "Hintergrund"
+
+#~ msgid ""
+#~ "You can have more attractive backgrounds using the Desklet decorations"
+#~ msgstr ""
+#~ "Du kannst durch die Desklet Dekorationen attraktivere Hintergründe "
+#~ "benutzen."
+
+#~ msgid "Display a simple background?"
+#~ msgstr "Einen einfachen Hintergrund anzeigen?"
+
+#~ msgid "first colour of the gradation"
+#~ msgstr "Erste Farbe des Farbverlaufs"
+
+#~ msgid "Background first colour :"
+#~ msgstr "Hintergrundfarbe 1:"
+
+#~ msgid "second colour of the gradation"
+#~ msgstr "Zweite Farbe des Farbverlaufs"
+
+#~ msgid "Background second colour:"
+#~ msgstr "Hintergrundfarbe 2:"
+
+#~ msgid "Set the radius corner to 0 for no radius"
+#~ msgstr "Für keine Abrundung auf 0 setzen"
+
+#~ msgid "Background radius corner:"
+#~ msgstr "Radius der Ecken des Hintergrundes:"
+
+#~ msgid "Set the thickness to 0 for no border"
+#~ msgstr "Setze die Dicke auf 0 um keine Linien anzuzeigen."
+
+#~ msgid "Border thickness:"
+#~ msgstr "Dicke des Randes:"
+
+#~ msgid "Border colour"
+#~ msgstr "Randfarbe"
+
+#~ msgid "Border colour :"
+#~ msgstr "Randfrabe:"
+
+#~ msgid "Let empty to use the name of the folder."
+#~ msgstr "Leer lassen, um den Namen des Ordners zu verwenden."
+
+#~ msgid "How to render the icon :"
+#~ msgstr "So wird das Symbol dargestellt:"
+
+#~ msgid "Use an image"
+#~ msgstr "Ein Bild benutzen"
+
+#~ msgid "Draw sub-dock's content as emblems"
+#~ msgstr "Inhalt des Subdocks als Embleme darstellen"
+
+#~ msgid "Draw sub-dock's content as stack"
+#~ msgstr "Inhalt des Subdocks als Stapel anzeigen"
+
+#~ msgid "Draw sub-dock's content inside a box"
+#~ msgstr "Inhalt des Subdocks in einem Kasten anzeigen"
+
+#~ msgid "Folder's path:"
+#~ msgstr "Ordnerpfad:"
+
+#~ msgid "Show folder's content?"
+#~ msgstr "Inhalt des Ordners anzeigen?"
+
+#~ msgid "Sort files by :"
+#~ msgstr "Dateien sortieren nach :"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Size"
+#~ msgstr "Größe"
+
+#~ msgid "Sort folders before files?"
+#~ msgstr "Ordner vor Dateien anzeigen?"
+
+#~ msgid "Show hidden files?"
+#~ msgstr "Verborgene Dateien anzeigen ?"
+
+#~ msgid "Display icons in the menu?"
+#~ msgstr "Symbole im Menü anzeigen?"
+
+#~ msgid "Shortkey to show/hide the menu:"
+#~ msgstr "Tastenkürzel zum Anzeigen/Verbergen des Menüs:"
+
+#~ msgid "Shortkey to show/hide the quick-launch dialog:"
+#~ msgstr "Tastenkürzel zum Anzeigen/Verbergen des Schnellstartdialogs:"
+
+#~ msgid "Command to use for configuring the menu:"
+#~ msgstr "Befehl für die Menüeinstellungen:"
+
+#~ msgid "Recent documents"
+#~ msgstr "Zuletzt verwendete Dokumente"
+
+#~ msgid "Show recent documents?"
+#~ msgstr "Zuletzt verwendete Dokumente anzeigen?"
+
+#~ msgid "Leave blank if filter is not needed."
+#~ msgstr "Leer lassen, falls kein Filter erforderlich ist."
+
+#~ msgid "Only show files that are under this folder or its sub-folder:"
+#~ msgstr ""
+#~ "Nur Dateien unterhalb dieses Ordners oder dessen Unterordners anzeigen:"
+
+#~ msgid "Only show files whose last modification date is less than ;"
+#~ msgstr "Zeige nur Dateien an deren letzte Modifikation vor ;"
+
+#~ msgid ""
+#~ "Animation of the icon when one of the application demands your attention :"
+#~ msgstr ""
+#~ "Animation des Symbols, wenn eine der Anwendungen Ihre Aufmerksamkeit "
+#~ "erfordert:"
+
+#~ msgid "Always display the icon, even when the dock is hidden?"
+#~ msgstr "Das Symbol immer anzeigen, selbst wenn das Dock verborgen ist?"
+
+#~ msgid "Info displayed by the icon:"
+#~ msgstr "Am Symbol angezeigte Info:"
+
+#~ msgid "Wifi signal"
+#~ msgstr "WiFi-Signal"
+
+#~ msgid "Connexion speed"
+#~ msgstr "Verbindungsgeschwindigkeit:"
+
+#~ msgid "By default the first active interface is used."
+#~ msgstr "Als Vorgabe wird die erste aktive Schnittstelle verwendet."
+
+#~ msgid "Connection interface to monitor:"
+#~ msgstr "Zu überwachende Schnittstelle:"
+
+#~ msgid "Display numeric values:"
+#~ msgstr "Numerische Werte anzeigen:"
+
+#~ msgid "User command to show Wireless Configuration:"
+#~ msgstr "Benutzerbefehl zum Anzeigen der WiFi-Konfiguration:"
+
+#~ msgid "User command to display a system monitor:"
+#~ msgstr "Benutzerbefehl zum Anzeigen einer Systemüberwachung:"
+
+#~ msgid "Net Speed"
+#~ msgstr "Netz-Geschwindigkeit"
+
+#~ msgid "It's the colour of the graphic for high quality signal."
+#~ msgstr "Farbe der Grafik für ein Signal hoher Qualität."
+
+#~ msgid "It's the colour of the graphic for low quality signal."
+#~ msgstr "Farbe der Grafik für ein Signal niedriger Qualität."
+
+#~ msgid "Delays between net speed checks:"
+#~ msgstr "Abstand zwischen den Geschwindigkeitstests:"
+
+#~ msgid "Wifi"
+#~ msgstr "WiFi"
+
+#~ msgid "Choose the style of the display:"
+#~ msgstr "Wählen Sie den Anzeigestil:"
+
+#~ msgid "Icons"
+#~ msgstr "Symbole"
+
+#~ msgid "Effect to apply on the icon according to strength :"
+#~ msgstr "Effekt des Symbols entsprechend der Signalstärke:"
+
+#~ msgid "Zoom"
+#~ msgstr "Zoom"
+
+#~ msgid "Transparency"
+#~ msgstr "Transparenz"
+
+#~ msgid "Draw Bar"
+#~ msgstr "Zeichnungsleiste"
+
+#~ msgid "Leave empty to use the default icon."
+#~ msgstr "Leer lassen, um ein Standardsymbol zu verwenden."
+
+#~ msgid "Name of the image for the 'No signal' icon :"
+#~ msgstr "Bildname für das Symbol \"Kein Signal\":"
+
+#~ msgid "Name of the image for the 'Very low' icon :"
+#~ msgstr "Bildname für das Symbol \"Sehr niedrig\":"
+
+#~ msgid "Name of the image for the 'Low' icon :"
+#~ msgstr "Bildname für das Symbol \"Sehr niedrig\":"
+
+#~ msgid "Name of the image for the 'Middle' icon :"
+#~ msgstr "Bildname für das Symbol \"Kein Signal\":"
+
+#~ msgid "Name of the image for the 'Excellent' icon :"
+#~ msgstr "Bildname für das Symbol \"Ausgezeichnet\""
+
+#~ msgid "Name of the image for the 'Not connected' icon :"
+#~ msgstr "Bildname für das Symbol \"Keine Verbindung\""
+
+#~ msgid "Name of the image for the 'Wired connection' icon :"
+#~ msgstr "Bildname für das Symbol \"Kabelgebundene Verbindung\""
+
+#~ msgid "Delays between wifi signal checks:"
+#~ msgstr "Abstand zwischen Signaltests:"
+
+#~ msgid "Leave empty to use the title of the RSS feed."
+#~ msgstr "Leer lassen, um den Titel der RSS-Quelle zu verwenden."
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS-Nachrichtenquelle"
+
+#~ msgid "URL:"
+#~ msgstr "Adresse:"
+
+#~ msgid "RSS login (optional):"
+#~ msgstr "RSS-Benutzername (optional):"
+
+#~ msgid "RSS password (optional):"
+#~ msgstr "RSS-Passwort (optional):"
+
+#~ msgid "Notify about feed updates:"
+#~ msgstr "Über Aktualisierungen der Nachrichtenquelle informieren:"
+
+#~ msgid "Icon animation"
+#~ msgstr "Symbol animieren"
+
+#~ msgid "Icon animation + Dialog bubble"
+#~ msgstr "Symbol animieren und Sprechblase"
+
+#~ msgid "Let empty to use the default notification animation."
+#~ msgstr "Leer lassen, um die Vorgabeanimation zu verwenden."
+
+#~ msgid "Animation of the icon:"
+#~ msgstr "Animation des Symbols:"
+
+#~ msgid "Duration of the notification:"
+#~ msgstr "Dauer der Benachrichtigung:"
+
+#~ msgid "Open the feed with the following program:"
+#~ msgstr "Nachrichtenquelle mit folgendem Programm öffnen:"
+
+#~ msgid "Font to be used for the title"
+#~ msgstr "Für den Titel zu verwendende Schrift"
+
+#~ msgid "Title font:"
+#~ msgstr "Schriftart für Titel:"
+
+#~ msgid "Colour to be used for the title"
+#~ msgstr "Für den Titel zu verwendende Farbe"
+
+#~ msgid "Title colour:"
+#~ msgstr "Farbe für Titel:"
+
+#~ msgid "left"
+#~ msgstr "links"
+
+#~ msgid "right"
+#~ msgstr "rechts"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "The default logo is the applet's icon"
+#~ msgstr "Das Standardlogo ist das Applet-Symbol"
+
+#~ msgid "Display the logo?"
+#~ msgstr "Logo anzeigen?"
+
+#~ msgid "Logo size:"
+#~ msgstr "Größe des Logos:"
+
+#~ msgid "normal"
+#~ msgstr "normal"
+
+#~ msgid ""
+#~ "Maximum number of mails that will be previewed. Put -1 to show the "
+#~ "maximum possible."
+#~ msgstr ""
+#~ "Anzahl der Nachrichten für die Vorschau. Geben Sie -1 an, um die maximal "
+#~ "mögliche Anzahl anzuzeigen."
+
+#~ msgid ""
+#~ "Number of lines of the listing. If there are more results, the listing "
+#~ "will scroll when you go up or down with the arrows."
+#~ msgstr ""
+#~ "Anzahl der Zeilen für die Liste. Falls mehr Ergebnisse vorhanden sind, "
+#~ "können Sie mit den Pfeilen durch die Liste navigieren."
+
+#~ msgid "Number of lines to display :"
+#~ msgstr "Anzahl der anzuzeigenden Zeilen:"
+
+#~ msgid "Animations"
+#~ msgstr "Animationen"
+
+#~ msgid "Color of the text's frame  :"
+#~ msgstr "Farbe des Textrahmens:"
+
+#~ msgid "Font size, relative to the dock size:"
+#~ msgstr "Schriftgröße, relativ zur Größe des Docks:"
+
+#~ msgid "Text size:"
+#~ msgstr "Textgröße:"
+
+#~ msgid "Outline text?"
+#~ msgstr "Text umrahmen?"
+
+#~ msgid "Text colour:"
+#~ msgstr "Textfarbe:"
+
+#~ msgid "Character background colour:"
+#~ msgstr "Hintergrundfarbe für Zeichen:"
+
+#~ msgid "Favorite applications"
+#~ msgstr "Bevorzugte Anwendungen"
+
+#~ msgid "FAvorite applications starting with 'a' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'a' :"
+
+#~ msgid "Favorite application starting with 'b' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'b' :"
+
+#~ msgid "Favorite application(s) starting with 'c' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'c' :"
+
+#~ msgid "Favorite application(s starting with 'd' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'd' :"
+
+#~ msgid "Favorite application(s) starting with 'e' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'e' :"
+
+#~ msgid "Favorite application(s) starting with 'f' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'f' :"
+
+#~ msgid "Favorite application(s) starting with 'g' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'g' :"
+
+#~ msgid "Favorite application(s) starting with 'h' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'h' :"
+
+#~ msgid "Favorite application(s) starting with 'i' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'i' :"
+
+#~ msgid "Favorite application(s) starting with 'j' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'j' :"
+
+#~ msgid "Favorite application(s) starting with 'k' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'k' :"
+
+#~ msgid "Favorite application(s) starting with 'l' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'l' :"
+
+#~ msgid "Favorite application(s) starting with 'm' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'm' :"
+
+#~ msgid "Favorite application(s) starting with 'n' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'n' :"
+
+#~ msgid "Favorite application(s) starting with 'o' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'o' :"
+
+#~ msgid "Favorite application(s) starting with 'p' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'p' :"
+
+#~ msgid "Favorite application(s) starting with 'q' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'q' :"
+
+#~ msgid "Favorite application(s) starting with 'r' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'r' :"
+
+#~ msgid "Favorite application(s) starting with 's' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 's' :"
+
+#~ msgid "Favorite application(s) starting with 't' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 't' :"
+
+#~ msgid "Favorite application(s) starting with 'u' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'u' :"
+
+#~ msgid "Favorite application(s) starting with 'v' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'v' :"
+
+#~ msgid "Favorite application(s) starting with 'w' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'w' :"
+
+#~ msgid "Favorite application(s) starting with 'x' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'x' :"
+
+#~ msgid "Favorite application(s) starting with 'y' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'y' :"
+
+#~ msgid "Favorite application(s) starting with 'z' :"
+#~ msgstr "Bevorzugte Anwendung(en) mit 'z' :"
+
+#~ msgid "Propose some web search engines ?"
+#~ msgstr "Web-Suchmaschinen vorschlagen?"
+
+#~ msgid "Help"
+#~ msgstr "Hilfe"
+
+#~ msgid "It's the colour of the graphic for high values."
+#~ msgstr "Grafikfarbe für hohe Werte."
+
+#~ msgid "It's the colour of the graphic for low values."
+#~ msgstr "Grafikfarbe für niedrige Werte."
+
+#~ msgid "Show CPU usage?"
+#~ msgstr "CPU-Nutzung anzeigen?"
+
+#~ msgid "Show RAM usage ?"
+#~ msgstr "RAM-Nutzung anzeigen?"
+
+#~ msgid "Show SWAP too?"
+#~ msgstr "SWAP auch anzeigen?"
+
+#~ msgid "You need an nVidia card and the 'nvidia-settings' tool."
+#~ msgstr ""
+#~ "Sie brauchen eine nVidia-Grafikkarte und das Einstellungswerkzeug »nvidia-"
+#~ "settings«."
+
+#~ msgid "Show graphic card's temperature?"
+#~ msgstr "Temperatur der Grafikkarte anzeigen?"
+
+#~ msgid "Show CPU temperature?"
+#~ msgstr "Temperatur des Prozessors anzeigen?"
+
+#~ msgid "Show fan speed?"
+#~ msgstr "Lüfterdrehzahl anzeigen?"
+
+#~ msgid "Show free memory instead of used memory?"
+#~ msgstr "Freien Speicher anstelle des benutzten Speichers anzeigen?"
+
+#~ msgid "Delay between refreshes:"
+#~ msgstr "Abstand zwischen Aktualisierungen:"
+
+#~ msgid "Alerts"
+#~ msgstr "Warnungen"
+
+#~ msgid "Show alerts?"
+#~ msgstr "Warnungen anzeigen?"
+
+#~ msgid "Play a sound when displaying warning?"
+#~ msgstr "Einen Klang während der Anzeige einer Warnung abspielen?"
+
+#~ msgid "Path to sound file:"
+#~ msgstr "Pfad zur Audio-Datei:"
+
+#~ msgid "System-Monitor"
+#~ msgstr "Systemüberwachung"
+
+#~ msgid "Graphic Card temperature"
+#~ msgstr "Grafikkarten Temperatur"
+
+#~ msgid "in celcius."
+#~ msgstr "in Celsius."
+
+#~ msgid "Alsa"
+#~ msgstr "Alsa"
+
+#~ msgid "Sound card:"
+#~ msgstr "Soundkarte"
+
+#~ msgid "Select channel:"
+#~ msgstr "Kanal auswählen:"
+
+#~ msgid "Timezone:"
+#~ msgstr "Zeitzone:"
+
+#~ msgid "Analogue"
+#~ msgstr "Analog"
+
+#~ msgid "Digital"
+#~ msgstr "Digital"
+
+#~ msgid "Font:"
+#~ msgstr "Schrift:"
+
+#~ msgid "Show desktop"
+#~ msgstr "Zeige Desktop"
+
+#~ msgid "emerald"
+#~ msgstr "emerald"
+
+#~ msgid "gtk-window-decorator"
+#~ msgstr "gtk-window-decorator"
+
+#~ msgid "kde-window-decorator"
+#~ msgstr "kde-window-decorator"
+
+#~ msgid "Images"
+#~ msgstr "Bilder"
+
+#~ msgid "Modern"
+#~ msgstr "Modern"
+
+#~ msgid "Curly"
+#~ msgstr "gewellt"
+
+#~ msgid "Sites"
+#~ msgstr "Seiten"
+
+#~ msgid "Uppix.net"
+#~ msgstr "Uppix.net"
+
+#~ msgid "Imagebin.ca"
+#~ msgstr "Imagebin.ca"
+
+#~ msgid "VideoBin.org"
+#~ msgstr "VideoBin.org"
+
+#~ msgid "dl.free.fr"
+#~ msgstr "dl.free.fr"
+
+#~ msgid "Name of the image to overwrite the theme's empty image :"
+#~ msgstr "Bildname, um leeres Bild des Themas zu überschreiben:"
+
+#~ msgid "Name of the image to overwrite the theme's full image :"
+#~ msgstr "Bildname, um vollständige Bild des Themas zu überschreiben:"
+
+#~ msgid "Colours"
+#~ msgstr "Farben"
+
+#~ msgid "Text colour"
+#~ msgstr "Textfarbe"
+
+#~ msgid "smaller"
+#~ msgstr "kleiner"
+
+#~ msgid "Amarok 2"
+#~ msgstr "Amarok 2"
+
+#~ msgid "Audacious"
+#~ msgstr "Audacious"
+
+#~ msgid "Banshee"
+#~ msgstr "Banshee"
+
+#~ msgid "Clementine"
+#~ msgstr "Clementine"
+
+#~ msgid "Exaile"
+#~ msgstr "Exaile"
+
+#~ msgid "Exaile 0.3"
+#~ msgstr "Exaile 0.3"
+
+#~ msgid "Qmmp"
+#~ msgstr "Qmmp"
+
+#~ msgid "QuodLibet"
+#~ msgstr "QuodLibet"
+
+#~ msgid "Rhythmbox"
+#~ msgstr "Rhythmbox"
+
+#~ msgid "Songbird"
+#~ msgstr "Songbird"
+
+#~ msgid "XMMS 2"
+#~ msgstr "XMMS 2"
+
+#~ msgid "XMMS"
+#~ msgstr "XMMS"
+
+#~ msgid "Allow Cairo-Dock to download missing covers?"
+#~ msgstr "Erlaube Cairo-Dock fehlende Covers herunterzuladen ?"
+
+#~ msgid "Name of the image for the 'play' icon :"
+#~ msgstr "Bildname für das Symbol \"Wiedergabe\""
+
+#~ msgid "Name of the image for the 'stop' icon :"
+#~ msgstr "Bildname für das Symbol \"Stopp\""
+
+#~ msgid "Name of the image for the 'pause' icon :"
+#~ msgstr "Bildname für das Symbol \"Pause\""
+
+#~ msgid "Icon name:"
+#~ msgstr "Symbolname :"
+
+#~ msgid "charge"
+#~ msgstr "laden"
+
+#~ msgid "in percent."
+#~ msgstr "in Prozent."
+
+#~ msgid "Battery level:"
+#~ msgstr "Batteriezustand :"
+
+#~ msgid "Folder"
+#~ msgstr "Ordner"
+
+#~ msgid "Menu"
+#~ msgstr "Menü"
+
+#~ msgid "Icon size :"
+#~ msgstr "Symbolgröße :"
+
+#~ msgid "small"
+#~ msgstr "klein"
+
+#~ msgid "large"
+#~ msgstr "groß"
+
+#~ msgid "Free space"
+#~ msgstr "Freier Speicher"
+
+#~ msgid "Used space"
+#~ msgstr "Benutzter Speicher"
+
+#~ msgid "Free space (in percent)"
+#~ msgstr "Freier Speicher (in Prozent)"
+
+#~ msgid "Used space (in percent)"
+#~ msgstr "Benutzter Speicher (in Prozent)"
+
+#~ msgid "Scattering:"
+#~ msgstr "Streuung :"
+
+#~ msgid "Choose a background colour :"
+#~ msgstr "Wähle eine Hintergrundfarbe :"
+
+#~ msgid "Options"
+#~ msgstr "Optionen"
+
+#~ msgid "Sort items by:"
+#~ msgstr "Sortiere Einträge nach :"
+
+#~ msgid "Show windows' list"
+#~ msgstr "Zeige Fensterliste"
+
+#~ msgid "This is a tooltip for this parameter."
+#~ msgstr "Dies ist eine Minihilfe für diesen Parameter."
+
+#~ msgid "Enter some text here :"
+#~ msgstr "Geben Sie hier Text ein:"
+
+#~ msgid "Foreground colour:"
+#~ msgstr "Vordergrundfarbe"
+
+#~ msgid "Background colour:"
+#~ msgstr "Hintergrundfarbe:"
+
+#~ msgid "Shortkey to show the terminal:"
+#~ msgstr "Tastaturkombination um das Terminal anzuzeigen:"
+
+#~ msgid "Gnote"
+#~ msgstr "Gnote"
+
+#~ msgid "Tomboy"
+#~ msgstr "Tomboy"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Number of days to forecast:"
+#~ msgstr "Anzahl der Tage welche vorhergesagt werden sollen:"
+
+#~ msgid "Display nights?"
+#~ msgstr "Sollen Nächte auch anezeigt werden?"
+
+#~ msgid "Render desklet in 3D?"
+#~ msgstr "Soll das Desklet in 3D angezeigt werden?"
+
+#~ msgid "Show scrollbars?"
+#~ msgstr "Scrollleisten anzeigen?"
+
+#~ msgid "Transparent background?"
+#~ msgstr "Transparenter Hintergrund ?"
+
+#~ msgid "'No signal' icon filename:"
+#~ msgstr "'Kein Signal' Symboldateiname:"
+
+#~ msgid "'Very low' icon filename:"
+#~ msgstr "'Sehr niedrig' Symboldateiname:"
+
+#~ msgid "'Low' icon filename:"
+#~ msgstr "'Niedrig' Symboldateiname:"
+
+#~ msgid "'Average' icon filename:"
+#~ msgstr "'Durchschnittlich' Symboldateiname:"
+
+#~ msgid "'Good' icon filename:"
+#~ msgstr "'Gut' Symboldateiname:"
+
+#~ msgid "'Excellent' icon filename:"
+#~ msgstr "'Exzellent' Symboldateiname:"
+
+#~ msgid "Alternative command line to launch Wireless Configuration :"
+#~ msgstr ""
+#~ "Alternativer Kommandozeilenbefehl um die drahtlose Konfiguration zu "
+#~ "starten."
+
+#~ msgid "Signal Strength"
+#~ msgstr "Signalstärke"
+
+#~ msgid "Signal Strength in percent"
+#~ msgstr "Signalstärke in Prozent"
+
+#~ msgid "Raw Signal Informations"
+#~ msgstr "RAW-Signal-Informationen"
+
+#~ msgid "Overwrite the default label with the connection point name?"
+#~ msgstr "Standardbezeichnung mit dem Verbindungspunktnamen überschreiben?"
