@@ -6,19 +6,18 @@
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
 #
 # This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
 
 # This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-#    GNU General Public License for more details.
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#	GNU General Public License for more details.
 
-# This applet displays the moon phases as its own icon, 
-# and some informations about the current moon
+# This applet displays the moon phases and its informations for the current day or week
 
-import urllib, urllib2, datetime, os, re
+import urllib, datetime, os, re
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
 
@@ -28,77 +27,109 @@ from CDApplet import CDApplet
 from MoonCalendarParser import MoonCalendarParser
 
 class AgentOpener(FancyURLopener):
-    """Masked user-agent otherwise the access would be forbidden"""
-    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+	"""Masked user-agent otherwise the access would be forbidden"""
+	version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
 
 class Interface:
 
-    def __init__(self, year, month, day):
-        self.year, self.month, self.day = year, month, day
-        self.information = ""
-        self.moon_image = ""
+	def __init__(self, year, month, day):
+		self.year, self.month, self.day = year, month, day
+		self.information = ""
+		self.moon_image = ""
 
-    def fetch(self):
-        parser = MoonCalendarParser()
-        opener = AgentOpener()                                                      # opens the web connection with masked user-agent
-        params = urllib.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
+	def fetch(self):
+		parser = MoonCalendarParser()
+		opener = AgentOpener()													  		# opens the web connection with masked user-agent
+		params = urllib.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
 
-        try:
-            page = urllib2.urlopen(parser.url, params)                              # get the HTML
-        except IOError:
-            log ("Problem to open %s" % (parser.url))
-        else:
-            parser.parse(page.read())                                               # feed the parser to get the specific content: translated text
-            page.close()                                                            # lets close the page connection
-            self.information = parser.information
-            self.moon_image = parser.moon_image
-        return self.moon_image, self.information
-
-# TODO: Use this struct to build the week structure in order to
-# maintain the information about the moon for the next seven days
-#class Data:
-#    def __init__(self, **kwds):
-#        self.__dict__.update(kwds)
+		try:
+			page = opener.open(parser.url, params)
+		except IOError:
+			log("Problem to open %s" % (parser.url))
+		else:
+			parser.parse(page.read())											   		# feed the parser to get the specific content: translated text
+			page.close()																# lets close the page connection
+			self.information = parser.information
+			self.moon_image = parser.moon_image
+		return self.moon_image, self.information
 
 class Applet(CDApplet):
 
-    def inform_start_of_waiting_process(self):
-        self.icon.SetQuickInfo("...")
+	def inform_start_of_waiting_process(self):
+		self.icon.SetQuickInfo("...")
 
-    def inform_end_of_waiting_process(self):
-        self.icon.SetQuickInfo("")
+	def inform_end_of_waiting_process(self):
+		self.icon.SetQuickInfo("")
 
-    def get_moon_from_web(self):
-        self.inform_start_of_waiting_process()
+	def flatten(self, array):															# Ruby method :-)
+		return [item for sublist in array for item in sublist]
+	
+	def clean(self, string):
+		return re.sub("\s+\n\s+" , " \n", string)										# " ".join(information.split())
 
-        interface = Interface(self.year, self.month, self.day)
-        image, information = interface.fetch()
-        self.information = re.sub("\s+\n\s+" , " \n", information)                                 # " ".join(information.split())
-        # os.popen("wget -N -q http://www.briancasey.org/artifacts/astro/image/%s -O %s" % (image, os.path.abspath("./data/%s" % (image))))
-        self.icon.SetIcon(os.path.abspath("./data/%s" % image))
+	def get_moon_from_web(self):
+		self.inform_start_of_waiting_process()
+		
+		# TODO: Remove code duplication
+		if self.show_week_moon:															# week information
+			today = datetime.date.today()
+			tomorrow = datetime.timedelta(days=1)
+			end_of_the_week = datetime.date.today() + datetime.timedelta(days=6)
+			week = []
+			self.week_information = []
+			id = 0
+			while today <= end_of_the_week:
+				ye, mo, da = today.timetuple()[:3]
+				interface = Interface(ye, mo, da)
+				image, information = interface.fetch()
+				self.week_information.append(self.clean(information))
+				day_of_the_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+				day = []
+				day.append(day_of_the_week[datetime.date.weekday(today)])				# name of the icon is the week day name
+				day.append(os.path.abspath("./data/%s" % image))						# icon image is the moon image
+				day.append(str(id))														# id is a sequential from today (0) until end of the week (6)
+				week.append(day)
+				id += 1
+				today += tomorrow
+			# log(week)
+			self.sub_icons.AddSubIcons(self.flatten(week))
+		else:																			# todays information
+			ye, mo, da = datetime.date.today().timetuple()[:3]
+			interface = Interface(ye, mo, da)
+			image, information = interface.fetch()
+			self.information = self.clean(information)
+			# os.popen("wget -N -q http://www.briancasey.org/artifacts/astro/image/%s -O %s" % (image, os.path.abspath("./data/%s" % (image))))
+			image = os.path.abspath("./data/%s" % image)
+			self.icon.SetIcon(image)
 
-        self.inform_end_of_waiting_process()
+		self.inform_end_of_waiting_process()
 
-    def __init__(self):
+	def __init__(self):
 
-        self.year, self.month, self.day = datetime.date.today().timetuple()[:3]
-        self.information = ""
-        self.moon_image = ""
-        self.week = []
-        self.dialog_active_time = 30                                                    # time in seconds that the dialog window will be active
+		self.show_week_moon = False
+		self.information = ""
+		self.week_information = []
+		self.dialog_active_time = 30													# time in seconds that the dialog window will be active
 
-        CDApplet.__init__(self)                                                         # call high-level init
+		CDApplet.__init__(self)														 	# call high-level init
 
-    # Inherited methods from CDApplet
-    def begin(self):
-        self.get_moon_from_web()
+	# Inherited methods from CDApplet
+	def begin(self):
+		self.get_moon_from_web()
 
-    def reload(self):
-        self.get_moon_from_web()                                                        # refresh the moon informations
+	def get_config(self, keyfile):
+		self.show_week_moon = keyfile.getboolean('Configuration', 'week')				# get the source of quotations
 
-    # Callbacks
-    def on_click(self, key):
-        self.icon.PopupDialog({'message':self.information, 'time-length':self.dialog_active_time},{})
+	def reload(self):
+		self.get_moon_from_web()														# refresh the moon informations
+
+	# Callbacks
+	def on_click(self, key):
+		if not self.show_week_moon:														# avoid useless popup
+			self.icon.PopupDialog({'message':self.information, 'time-length':self.dialog_active_time},{})
+	
+	def on_click_sub_icon (self, state, sub_icon_id):
+		self.icon.PopupDialog({'message':self.week_information[int(sub_icon_id)], 'time-length':self.dialog_active_time},{})
 
 if __name__ == '__main__':
 	Applet().run()
