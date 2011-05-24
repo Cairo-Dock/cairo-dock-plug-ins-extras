@@ -1,2 +1,3 @@
+0.0.3: (May/24/2011): Fixing a non sub-icons cleaning problem. Adding moon00b.gif that I forgot. Changing the whole icon set, using the icons created by Presto-X -- http://presto-x.deviantart.com/art/Presto-s-Moon-Phases-53625689
 0.0.2: (May/22/2011): Able to show the moon informations for all the current week. Using the FancyURLopener opener instead of urllib2, I do not know why I was using urllib2.
 0.0.1: (May/12/2011): Moon applet was created with the possibility to show the moon phases as its own icon, and to show some informations. The service used in this applet was created by Brian Casey -- http://www.briancasey.org/artifacts/astro/moon.cgi

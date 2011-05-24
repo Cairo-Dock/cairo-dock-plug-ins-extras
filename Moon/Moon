@@ -66,16 +66,20 @@ class Applet(CDApplet):
 	
 	def clean(self, string):
 		return re.sub("\s+\n\s+" , " \n", string)										# " ".join(information.split())
+	
+	def clean_week_icons(self):
+		self.sub_icons.RemoveSubIcon("any")
 
 	def get_moon_from_web(self):
 		self.inform_start_of_waiting_process()
-		
+
+		self.clean_week_icons()
 		# TODO: Remove code duplication
 		if self.show_week_moon:															# week information
 			today = datetime.date.today()
 			tomorrow = datetime.timedelta(days=1)
 			end_of_the_week = datetime.date.today() + datetime.timedelta(days=6)
-			week = []
+			week = []																# ['namesubicon1','imagesubicon1','idsubicon1', 'namesubicon2' ...]
 			self.week_information = []
 			id = 0
 			while today <= end_of_the_week:
@@ -84,15 +88,13 @@ class Applet(CDApplet):
 				image, information = interface.fetch()
 				self.week_information.append(self.clean(information))
 				day_of_the_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-				day = []
-				day.append(day_of_the_week[datetime.date.weekday(today)])				# name of the icon is the week day name
-				day.append(os.path.abspath("./data/%s" % image))						# icon image is the moon image
-				day.append(str(id))														# id is a sequential from today (0) until end of the week (6)
-				week.append(day)
+				week.append(day_of_the_week[datetime.date.weekday(today)])				# name of the icon is the week day name
+				week.append(os.path.abspath("./data/%s" % image))					# icon image is the moon image
+				week.append(str(id))													# id is a sequential from today (0) until end of the week (6)
 				id += 1
 				today += tomorrow
 			# log(week)
-			self.sub_icons.AddSubIcons(self.flatten(week))
+			self.sub_icons.AddSubIcons(week)
 		else:																			# todays information
 			ye, mo, da = datetime.date.today().timetuple()[:3]
 			interface = Interface(ye, mo, da)
