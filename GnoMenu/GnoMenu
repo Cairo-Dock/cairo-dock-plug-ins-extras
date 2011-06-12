@@ -29,12 +29,13 @@ try:
 except:
 	INSTALL_PREFIX = '/usr'
 sys.path.append(INSTALL_PREFIX + '/lib/gnomenu')
-import backend
-from Menu_Main import Main_Menu
 
-gettext.textdomain('gnomenu')
-gettext.install('gnomenu', INSTALL_PREFIX +  '/share/locale')
-gettext.bindtextdomain('gnomenu', INSTALL_PREFIX +  '/share/locale')
+dependancies_ok = True
+try:
+	import backend
+	from Menu_Main import Main_Menu
+except:
+	dependancies_ok = False
 
 ####################
 ### Applet class ###
@@ -89,12 +90,17 @@ class Applet(CDApplet):
 	def HideMenu(self):
 		if self.hwg:
 			if self.hwg.window.window:
-				if self.hwg.window.window.is_visible()== True:
+				if self.hwg.window.window.is_visible():
 						self.hwg.hide_window()
 						self.show = False
 
 	def ToggleMenu(self):
 		if self.hwg is None:
+			dialog_attributes = {
+				"message" : "GnoMenu is not installed. Please install it before you run this applet.",
+				"time-length" : 6 }
+			widget_attributes = {}
+			self.icon.PopupDialog (dialog_attributes, widget_attributes)
 			return
 		if self.hwg.window.window and self.hwg.window.window.is_visible():
 			self.HideMenu()
@@ -110,6 +116,8 @@ class Applet(CDApplet):
 		self.hwg.destroy()
 	
 	def begin(self):
+		if (not dependancies_ok):
+			return
 		self.get_geometry()
 		self.hwg = Main_Menu(self.HideMenu)
 		import Globals as Globals

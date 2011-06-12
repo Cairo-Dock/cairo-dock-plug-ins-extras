@@ -20,8 +20,6 @@
 ####################
 # we need to do several hacks here, because the mintMenu class is soooo messy with the paths
 # (it changes the current path, and it has a horrible mix of hard-coded paths and run-time paths).
-#~ import os
-#~ my_applet_name = os.path.basename(os.path.abspath("."))
 import sys
 sys.argv[0] = "/usr/lib/linuxmint/mintMenu/mintMenu.py"
 import gtk
@@ -30,7 +28,11 @@ import subprocess
 from CDApplet import CDApplet
 sys.path.append("/usr/lib/linuxmint/mintMenu")
 sys.path.append("/usr/lib/linuxmint/mintMenu/plugins")
-from mintMenu import MenuWin
+dependancies_ok = True
+try:
+	from mintMenu import MenuWin
+except:
+	dependancies_ok = False
 
 # this hack is here because MintMenu directly accesses the window of the gnome-applet, rather than using  the high-level applet interface only.
 ##################
@@ -120,6 +122,8 @@ class Applet(CDApplet):
 	
 	def begin(self):
 		# build the menu in the background, since it's soooo long to start.
+		if (not dependancies_ok):
+			return
 		print "build menu..."
 		self.mintmenu = MenuWin(self.gapplet,None)
 		print "ok."
@@ -136,6 +140,13 @@ class Applet(CDApplet):
 	##### callbacks #####
 	
 	def on_click(self,iState):
+		if (self.mintmenu is None):
+			dialog_attributes = {
+				"message" : "MintMenu is not installed. Please install it before you run this applet.",
+				"time-length" : 6 }
+			widget_attributes = {}
+			self.icon.PopupDialog (dialog_attributes, widget_attributes)
+			return
 		# emitting a "button-press-event" doesn't seem to work, so let's just cut through and use the showMenu() method.
 		self.mintmenu.toggleMenu()  # showMenu
 		

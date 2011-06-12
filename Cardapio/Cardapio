@@ -19,11 +19,14 @@
 ### dependancies ###
 ####################
 import sys
-sys.path.append("/usr/share/pyshared")
 import gtk
 from CDApplet import *
 sys.path.append("/usr/lib/cardapio")
-from cardapio import *
+dependancies_ok = True
+try:
+	from cardapio import *
+except:
+	dependancies_ok = False
 
 ####################
 ### Applet class ###
@@ -37,6 +40,13 @@ class Applet(CDApplet):
 	##### private methods #####
 	
 	def show_menu(self):
+		if (self.cardapiomenu is None):
+			dialog_attributes = {
+				"message" : "Cardapio is not installed. Please install it before you run this applet.",
+				"time-length" : 6 }
+			widget_attributes = {}
+			self.icon.PopupDialog (dialog_attributes, widget_attributes)
+			return
 		props = self.icon.GetAll()
 		x = props["x"]
 		y = props["y"]
@@ -81,6 +91,8 @@ class Applet(CDApplet):
 		pass
 	
 	def begin(self):
+		if (not dependancies_ok):
+			return
 		self.cardapiomenu = Cardapio(show = Cardapio.DONT_SHOW)  # launch in the background
 		self.cardapiomenu.window.set_decorated(False)
 		

@@ -82,6 +82,11 @@ class Applet(CDApplet):
 	
 	def toggle_menu(self):
 		if self.lancelot is None:
+			dialog_attributes = {
+				"message" : "Lancelot is not installed. Please install it before you run this applet.",
+				"time-length" : 6 }
+			widget_attributes = {}
+			self.icon.PopupDialog (dialog_attributes, widget_attributes)
 			return
 		# the method isShowing doesn't work ! it is overloaded by a isShowing(section), which is useless. so we just show the Menu whenever.
 		self.show_menu ()

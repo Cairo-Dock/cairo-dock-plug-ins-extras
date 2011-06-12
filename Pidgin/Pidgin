@@ -50,8 +50,8 @@ class Applet(CDApplet):
 		self.iface_name  = 'im.pidgin.purple.PurpleInterface'
 		self.bus = None
 		self.purple = None
-		self.share_data_dir = self.cShareDataDir+"/"
-		self.themes_dir = self.share_data_dir+'themes/'
+		self.share_data_dir = ""  # we don't know it until the parent class has init, so we do it in the begin.
+		self.themes_dir = ""
 		self.iNbMsg = 0
 		self.pMsgList = []
 		self.iCurrentMsg = -1
@@ -352,6 +352,8 @@ class Applet(CDApplet):
 		self.config['cOriginalName'] 	= keyfile.get('Icon', 'name')
 		
 	def begin(self):
+		self.share_data_dir = self.cShareDataDir+"/"
+		self.themes_dir = self.share_data_dir+'themes/'
 		self.bus = dbus.SessionBus()
 		self.bus.watch_name_owner(self.bus_name, self.on_name_owner_changed)
 		self.icon.ControlAppli("pidgin")
