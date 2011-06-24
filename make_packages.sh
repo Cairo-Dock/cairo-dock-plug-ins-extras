@@ -16,7 +16,7 @@ else
 		# remove unwanted files.
 		rm -f "$f/*.pyc" "$f/*~"
 		
-		# check that the version in noth .conf are identical.
+		# check that the version in both .conf are identical.
 		version1=`grep "^version *= *" "$f/auto-load.conf" | sed "s/.*= *//g"`
 		version2=`head -1 "$f/$f.conf" | tr -d "#"`
 		if test "$version1" != "$version2"; then
