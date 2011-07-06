@@ -16,6 +16,7 @@
 #	GNU General Public License for more details.
 
 # This applet displays the moon phases and its informations for the current day or week
+# from the Northern or Southern hemisphere
 
 import urllib, datetime, os, re
 from sgmllib import SGMLParser
@@ -39,7 +40,7 @@ class Interface:
 
 	def fetch(self):
 		parser = MoonCalendarParser()
-		opener = AgentOpener()													  		# opens the web connection with masked user-agent
+		opener = AgentOpener()													  	# opens the web connection with masked user-agent
 		params = urllib.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
 
 		try:
@@ -47,8 +48,8 @@ class Interface:
 		except IOError:
 			log("Problem to open %s" % (parser.url))
 		else:
-			parser.parse(page.read())											   		# feed the parser to get the specific content: translated text
-			page.close()																# lets close the page connection
+			parser.parse(page.read())											   	# feed the parser to get the specific content: translated text
+			page.close()															# lets close the page connection
 			self.information = parser.information
 			self.moon_image = parser.moon_image
 		return self.moon_image, self.information
@@ -61,73 +62,87 @@ class Applet(CDApplet):
 	def inform_end_of_waiting_process(self):
 		self.icon.SetQuickInfo("")
 
-	def flatten(self, array):															# Ruby method :-)
+	def flatten(self, array):														# Ruby method :-)
 		return [item for sublist in array for item in sublist]
 	
 	def clean(self, string):
-		return re.sub("\s+\n\s+" , " \n", string)										# " ".join(information.split())
+		return re.sub("\s+\n\s+" , " \n", string)									# " ".join(information.split())
 	
 	def clean_week_icons(self):
 		self.sub_icons.RemoveSubIcon("any")
+
+	def name_of_the_day(self, day):
+		days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+		return days[datetime.date.weekday(day)]
+
+	def img_local_path(self, image):
+		return os.path.abspath("./data/%s" % image)
 
 	def get_moon_from_web(self):
 		self.inform_start_of_waiting_process()
 
 		self.clean_week_icons()
 		# TODO: Remove code duplication
-		if self.show_week_moon:															# week information
+		if self.show_week_moon:														# week information
 			today = datetime.date.today()
 			tomorrow = datetime.timedelta(days=1)
-			end_of_the_week = datetime.date.today() + datetime.timedelta(days=6)
+			last_day = datetime.date.today() + datetime.timedelta(days=6)
 			week = []																# ['namesubicon1','imagesubicon1','idsubicon1', 'namesubicon2' ...]
 			self.week_information = []
 			id = 0
-			while today <= end_of_the_week:
+			while today <= last_day:
 				ye, mo, da = today.timetuple()[:3]
 				interface = Interface(ye, mo, da)
 				image, information = interface.fetch()
+				# The website provides images from the Northern perspective, but since
+				# a) The images differs horizontally by "a", or "b" in its names;
+				# b) The moon differs horizontally between hemispheres;
+				# It is just a question of replace "a" (North) by "b" (South)
+				if self.hemisphere == self.south:
+					image = image.replace('a','b')
 				self.week_information.append(self.clean(information))
-				day_of_the_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-				week.append(day_of_the_week[datetime.date.weekday(today)])				# name of the icon is the week day name
-				week.append(os.path.abspath("./data/%s" % image))					# icon image is the moon image
-				week.append(str(id))													# id is a sequential from today (0) until end of the week (6)
+				week.append(self.name_of_the_day(today))
+				week.append(self.img_local_path(image))
+				week.append(str(id))												# id is a sequential from today (0) until end of the week (6)
 				id += 1
 				today += tomorrow
 			# log(week)
 			self.sub_icons.AddSubIcons(week)
-		else:																			# todays information
+		else:																		# todays information
 			ye, mo, da = datetime.date.today().timetuple()[:3]
 			interface = Interface(ye, mo, da)
 			image, information = interface.fetch()
 			self.information = self.clean(information)
 			# os.popen("wget -N -q http://www.briancasey.org/artifacts/astro/image/%s -O %s" % (image, os.path.abspath("./data/%s" % (image))))
-			image = os.path.abspath("./data/%s" % image)
-			self.icon.SetIcon(image)
+			self.icon.SetIcon(self.img_local_path(image))
 
 		self.inform_end_of_waiting_process()
 
 	def __init__(self):
 
 		self.show_week_moon = False
+		self.north, self.south = range(2)
+		self.hemisphere = self.north
 		self.information = ""
 		self.week_information = []
-		self.dialog_active_time = 30													# time in seconds that the dialog window will be active
+		self.dialog_active_time = 30												# time in seconds that the dialog window will be active
 
-		CDApplet.__init__(self)														 	# call high-level init
+		CDApplet.__init__(self)														# call high-level init
 
 	# Inherited methods from CDApplet
 	def begin(self):
 		self.get_moon_from_web()
 
 	def get_config(self, keyfile):
-		self.show_week_moon = keyfile.getboolean('Configuration', 'week')				# get the source of quotations
+		self.show_week_moon = keyfile.getboolean('Configuration', 'week')			# information from the current day or from the whole week
+		self.hemisphere = keyfile.getboolean('Configuration', 'hemisphere')			# view from the north, or south hemisphere
 
 	def reload(self):
-		self.get_moon_from_web()														# refresh the moon informations
+		self.get_moon_from_web()													# refresh the moon informations
 
 	# Callbacks
 	def on_click(self, key):
-		if not self.show_week_moon:														# avoid useless popup
+		if not self.show_week_moon:													# avoid useless popup
 			self.icon.PopupDialog({'message':self.information, 'time-length':self.dialog_active_time},{})
 	
 	def on_click_sub_icon (self, state, sub_icon_id):
