@@ -160,11 +160,11 @@ msgstr "Position sperren?"
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Google/messages:29
-#: ../GTG/messages:29 ../KTorrent/messages:29 ../Lancelot/messages:29
-#: ../Liferea/messages:29 ../MintMenu/messages:29 ../Pidgin/messages:29
-#: ../Quote/messages:31 ../RubyBattery/messages:29 ../Translator/messages:31
-#: ../Transmission/messages:29 ../WebSearch/messages:27
-#: ../WindowsKiller/messages:27 ../Xchat/messages:29
+#: ../GTG/messages:29 ../GTG/messages:109 ../KTorrent/messages:29
+#: ../Lancelot/messages:29 ../Liferea/messages:29 ../MintMenu/messages:29
+#: ../Pidgin/messages:29 ../Quote/messages:31 ../RubyBattery/messages:29
+#: ../Translator/messages:31 ../Transmission/messages:29
+#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
 msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
@@ -623,27 +623,10 @@ msgstr "Animation des Symbols beim Verbinden:"
 msgid "Display channel messages in a bubble :"
 msgstr ""
 
-#: ../GTG/messages:109
-msgid ""
-"This is the number of messages that you can recall by scrolling on the "
-"icon.}\n"
-"history = 50\n"
-"j+[48;512] Post-it's initial dimension (width x height) :\n"
-"{Depending on your WindowManager, you may be able to resize this with ALT + "
-"middle-click or ALT + left-click."
-msgstr ""
-
-#: ../GTG/messages:111 ../Pidgin/messages:119 ../Xchat/messages:111
-msgid "Size of the history :"
-msgstr ""
-
-#: ../GTG/messages:113 ../Pidgin/messages:121 ../Xchat/messages:113
-msgid "none"
-msgstr "kein"
-
-#: ../GTG/messages:115 ../Pidgin/messages:123 ../Xchat/messages:115
-msgid "big"
-msgstr "groß"
+#: ../GTG/messages:111
+#, fuzzy
+msgid "Post-it's initial dimension (width x height) :"
+msgstr "Abmessungen des Desklets (Breite x Höhe):"
 
 #: ../Liferea/messages:7 ../Translator/messages:9
 msgid "Name of the icon as it will appear in its caption in the dock:"
@@ -694,6 +677,18 @@ msgstr "Animation des Symbols beim Verbinden:"
 msgid ""
 "This is the number of messages that you can recall by scrolling on the icon."
 msgstr ""
+
+#: ../Pidgin/messages:119 ../Xchat/messages:111
+msgid "Size of the history :"
+msgstr ""
+
+#: ../Pidgin/messages:121 ../Xchat/messages:113
+msgid "none"
+msgstr "kein"
+
+#: ../Pidgin/messages:123 ../Xchat/messages:115
+msgid "big"
+msgstr "groß"
 
 #: ../Quote/messages:7
 #, fuzzy
@@ -1191,10 +1186,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Abhängig von Ihrem Fensterverwalter können Sie Größenänderungen durch "
 #~ "Linksklick oder Mittelklick bei gedrückter Alt-Taste ausführen."
-
-#, fuzzy
-#~ msgid "Desklet's dimension (width x height) :"
-#~ msgstr "Abmessungen des Desklets (Breite x Höhe):"
 
 #, fuzzy
 #~ msgid ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2011-06-25 01:29+0200\n"
+"POT-Creation-Date: 2011-07-09 01:31+0200\n"
 "PO-Revision-Date: 2011-04-19 12:54+0100\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
@@ -159,11 +159,11 @@ msgstr "Lock position?"
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Google/messages:29
-#: ../GTG/messages:29 ../KTorrent/messages:29 ../Lancelot/messages:29
-#: ../Liferea/messages:29 ../MintMenu/messages:29 ../Pidgin/messages:29
-#: ../Quote/messages:31 ../RubyBattery/messages:29 ../Translator/messages:31
-#: ../Transmission/messages:29 ../WebSearch/messages:27
-#: ../WindowsKiller/messages:27 ../Xchat/messages:29
+#: ../GTG/messages:29 ../GTG/messages:109 ../KTorrent/messages:29
+#: ../Lancelot/messages:29 ../Liferea/messages:29 ../MintMenu/messages:29
+#: ../Pidgin/messages:29 ../Quote/messages:31 ../RubyBattery/messages:29
+#: ../Translator/messages:31 ../Transmission/messages:29
+#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
 msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
@@ -619,28 +619,10 @@ msgstr "Animation of the icon during upload :"
 msgid "Display channel messages in a bubble :"
 msgstr ""
 
-#: ../GTG/messages:109
-msgid ""
-"This is the number of messages that you can recall by scrolling on the "
-"icon.}\n"
-"history = 50\n"
-"j+[48;512] Post-it's initial dimension (width x height) :\n"
-"{Depending on your WindowManager, you may be able to resize this with ALT + "
-"middle-click or ALT + left-click."
-msgstr ""
-
-#: ../GTG/messages:111 ../Pidgin/messages:119 ../Xchat/messages:111
+#: ../GTG/messages:111
 #, fuzzy
-msgid "Size of the history :"
-msgstr "Size of the inside lines :"
-
-#: ../GTG/messages:113 ../Pidgin/messages:121 ../Xchat/messages:113
-msgid "none"
-msgstr "none"
-
-#: ../GTG/messages:115 ../Pidgin/messages:123 ../Xchat/messages:115
-msgid "big"
-msgstr "big"
+msgid "Post-it's initial dimension (width x height) :"
+msgstr "Desklet dimensions (width x height):"
 
 #: ../Liferea/messages:7 ../Translator/messages:9
 msgid "Name of the icon as it will appear in its caption in the dock:"
@@ -693,6 +675,19 @@ msgstr "Animation of the icon during upload :"
 msgid ""
 "This is the number of messages that you can recall by scrolling on the icon."
 msgstr ""
+
+#: ../Pidgin/messages:119 ../Xchat/messages:111
+#, fuzzy
+msgid "Size of the history :"
+msgstr "Size of the inside lines :"
+
+#: ../Pidgin/messages:121 ../Xchat/messages:113
+msgid "none"
+msgstr "none"
+
+#: ../Pidgin/messages:123 ../Xchat/messages:115
+msgid "big"
+msgstr "big"
 
 #: ../Quote/messages:7
 #, fuzzy
@@ -1197,10 +1192,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Depending on your WindowManager, you may be able to resize this with ALT "
 #~ "+ middle-click or ALT + left-click."
-
-#, fuzzy
-#~ msgid "Desklet's dimension (width x height) :"
-#~ msgstr "Desklet dimensions (width x height):"
 
 #, fuzzy
 #~ msgid ""
