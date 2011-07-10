@@ -23,7 +23,7 @@
 ### dependancies ###
 ####################
 
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 import glib
 import gtk
 import os

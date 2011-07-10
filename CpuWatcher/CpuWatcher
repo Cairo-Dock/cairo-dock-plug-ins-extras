@@ -21,7 +21,7 @@
 import gobject
 import os
 from copy import deepcopy
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 
 applet_name = os.path.basename(os.path.abspath("."))
 

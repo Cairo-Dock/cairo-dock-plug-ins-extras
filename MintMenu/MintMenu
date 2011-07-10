@@ -25,7 +25,7 @@ sys.argv[0] = "/usr/lib/linuxmint/mintMenu/mintMenu.py"
 import gtk
 import gnomeapplet
 import subprocess
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 sys.path.append("/usr/lib/linuxmint/mintMenu")
 sys.path.append("/usr/lib/linuxmint/mintMenu/plugins")
 dependancies_ok = True
@@ -142,7 +142,7 @@ class Applet(CDApplet):
 	def on_click(self,iState):
 		if (self.mintmenu is None):
 			dialog_attributes = {
-				"message" : "MintMenu is not installed. Please install it before you run this applet.",
+				"message" : _("MintMenu is not installed. Please install it before you run this applet."),
 				"time-length" : 6 }
 			widget_attributes = {}
 			self.icon.PopupDialog (dialog_attributes, widget_attributes)
@@ -151,7 +151,7 @@ class Applet(CDApplet):
 		self.mintmenu.toggleMenu()  # showMenu
 		
 	def on_build_menu(self):
-		items = [ { "label": "Edit Menus",
+		items = [ { "label": _("Edit Menus"),
 				"icon" : "gtk-preferences",
 				"id"   : 1 } ]
 		self.icon.AddMenuItems(items)

@@ -25,7 +25,7 @@
 
 import dbus, os, subprocess
 from util import log
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 
 class Applet(CDApplet):
 

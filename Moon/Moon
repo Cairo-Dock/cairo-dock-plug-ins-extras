@@ -22,7 +22,7 @@ from sgmllib import SGMLParser
 from urllib import FancyURLopener
 
 from util import log
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 
 from MoonCalendarParser import MoonCalendarParser
 

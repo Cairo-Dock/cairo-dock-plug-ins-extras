@@ -27,12 +27,7 @@ import gobject
 import glib
 import dbus
 import gettext
-from CDApplet import CDApplet
-
-#gettext.install('cd-xchat', '/usr/share/locale')
-gettext.bindtextdomain('cd-xchat', '/usr/share/locale')
-gettext.bind_textdomain_codeset ('cd-xchat', 'UTF-8');
-gettext.textdomain('cd-xchat')
+from CDApplet import CDApplet, _
 
 ####################
 ### Applet class ###
@@ -259,11 +254,11 @@ class Applet(CDApplet):
 		items=[]
 		
 		items=[{"type" : 1,  # 1 = sub-menu
-			"label": "Channels",
+			"label": _("Channels"),
 			"icon" : "gtk-jump-to",
 			"menu" : 0,
 			"id"   : 1,
-			"tooltip" : "Switch the channel you'll send message to with the middle-click."}]
+			"tooltip" : _("Switch the channel you'll send message to with the middle-click.")}]
 		
 		chans = self.list_channels()
 		i=2
@@ -272,11 +267,11 @@ class Applet(CDApplet):
 			i += 1
 		
 		items.append({"type" : 3,  # 3 = check-box
-			"label": "Silent mode",
+			"label": _("Silent mode"),
 			"menu" : 0,
 			"id"   : 100,
 			"state": self.bSilentMode,
-			"tooltip" : "Switch the applet to silent mode (no pop-up on new message)."})
+			"tooltip" : _("Switch the applet to silent mode (no pop-up on new message).")})
 		self.icon.AddMenuItems(items)
 	
 	def on_menu_select(self,iNumEntry):

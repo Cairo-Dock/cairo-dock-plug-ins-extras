@@ -17,6 +17,23 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-16 05:16+0000\n"
 "X-Generator: Launchpad (build 12735)\n"
 
+#: ../GnoMenu/GnoMenu:100
+msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:138
+msgid "GnoMenu's settings"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:141
+msgid "About"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:119
+#: ../MintMenu/MintMenu:154
+msgid "Edit Menus"
+msgstr ""
+
 #: ../GnoMenu/messages:1 ../Calendar/messages:1 ../Cardapio/messages:1
 #: ../Deluge/messages:1 ../DiskFree/messages:1 ../Google/messages:1
 #: ../GTG/messages:1 ../KTorrent/messages:1 ../Lancelot/messages:1
@@ -573,6 +590,30 @@ msgstr ""
 msgid "Icon custom script:"
 msgstr ""
 
+#: ../Cardapio/Cardapio:45
+msgid ""
+"Cardapio is not installed. Please install it before you run this applet."
+msgstr ""
+
+#: ../Deluge/Deluge:166
+msgid "Deluge is not running, or is not responding to us."
+msgstr ""
+
+#: ../Deluge/Deluge:287 ../Transmission/Transmission:395
+msgid "Pause all torrents"
+msgstr ""
+
+#: ../Deluge/Deluge:292 ../Transmission/Transmission:400
+#, fuzzy
+msgid "Resume all torrents"
+msgstr "Видалити всі події"
+
+#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
+#: ../Transmission/Transmission:405
+#, fuzzy
+msgid "Torrents info (middle-click)"
+msgstr "Показати чинний стан (клацання середньою кнопкою)"
+
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
 #, fuzzy
 msgid "Shortkey to pop up the torrents info:"
@@ -625,6 +666,15 @@ msgstr ""
 msgid "Post-it's initial dimension (width x height) :"
 msgstr "Розмір десклету (ширина Х висота)"
 
+#: ../KTorrent/KTorrent:323
+msgid "Suspend all torrents"
+msgstr ""
+
+#: ../Lancelot/Lancelot:86
+msgid ""
+"Lancelot is not installed. Please install it before you run this applet."
+msgstr ""
+
 #: ../Liferea/messages:7 ../Translator/messages:9
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Ім'я значка, як воно буде відображено в підписі на панелі:"
@@ -642,6 +692,38 @@ msgstr "Кількість прокручувань за секунду."
 #: ../Liferea/messages:101
 #, fuzzy
 msgid " Number of new messages"
+msgstr "Максимальна кількість нових повідомлень?"
+
+#: ../MintMenu/MintMenu:145
+msgid ""
+"MintMenu is not installed. Please install it before you run this applet."
+msgstr ""
+
+#: ../Pidgin/Pidgin:406
+#, fuzzy
+msgid "Conversations"
+msgstr "Налаштування"
+
+#: ../Pidgin/Pidgin:420
+msgid "Change your status"
+msgstr ""
+
+#: ../Pidgin/Pidgin:435
+msgid "Set your status message"
+msgstr ""
+
+#: ../Pidgin/Pidgin:440 ../Xchat/Xchat:270
+#, fuzzy
+msgid "Silent mode"
+msgstr "Режим десклетів"
+
+#: ../Pidgin/Pidgin:444 ../Xchat/Xchat:274
+msgid "Switch the applet to silent mode (no pop-up on new message)."
+msgstr ""
+
+#: ../Pidgin/Pidgin:455
+#, fuzzy
+msgid "Enter your new status message:"
 msgstr "Максимальна кількість нових повідомлень?"
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
@@ -762,6 +844,23 @@ msgstr ""
 #, fuzzy
 msgid "Display a label with the charge?"
 msgstr "Показувати використання диску як графік?"
+
+#: ../Translator/Translator:434
+msgid "To"
+msgstr ""
+
+#: ../Translator/Translator:453
+msgid "From"
+msgstr ""
+
+#: ../Translator/Translator:473
+#, fuzzy
+msgid "Switch languages"
+msgstr "Перемикнути віконний менеджер"
+
+#: ../Translator/Translator:487
+msgid "Translate from clipboard (middle-click)"
+msgstr ""
 
 #: ../Translator/messages:7
 #, fuzzy
@@ -1049,6 +1148,19 @@ msgstr "Термін інформаційної хмарки:"
 msgid "Editable text widget?"
 msgstr ""
 
+#: ../Transmission/Transmission:186
+msgid "Transmission is not running, or is not responding to us."
+msgstr ""
+
+#: ../Transmission/Transmission:193
+msgid ""
+"Couldn't get data from Transmission. You need Transmission 1.9 or above."
+msgstr ""
+
+#: ../Transmission/Transmission:353
+msgid "You have to enable the Web client in the Transmisison's settings."
+msgstr ""
+
 #: ../WebSearch/messages:95
 #, fuzzy
 msgid "Search engine :"
@@ -1127,6 +1239,15 @@ msgstr ""
 msgid ""
 "Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
 "and Digg searches ?"
+msgstr ""
+
+#: ../Xchat/Xchat:257
+#, fuzzy
+msgid "Channels"
+msgstr "Налаштування каналів"
+
+#: ../Xchat/Xchat:261
+msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
 #~ msgid "Preferences"
@@ -1948,9 +2069,6 @@ msgstr ""
 #~ msgid "Delete today's events"
 #~ msgstr "Видалити сьогоднішні події"
 
-#~ msgid "Delete all events"
-#~ msgstr "Видалити всі події"
-
 #~ msgid "The value %s has been copied into the clipboard."
 #~ msgstr "Значення %s було скопійовано в буфер обміну"
 
@@ -2211,9 +2329,6 @@ msgstr ""
 #~ msgid "Set up volume:"
 #~ msgstr "Встановлення гучності:"
 
-#~ msgid "Adjust channels"
-#~ msgstr "Налаштування каналів"
-
 #~ msgid "double-click"
 #~ msgstr "подвійне клацання"
 
@@ -2453,9 +2568,6 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Перезапустити Emerald"
-
-#~ msgid "Switch Windows Manager"
-#~ msgstr "Перемикнути віконний менеджер"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Перемикнути віконний декоратор"
@@ -3724,9 +3836,6 @@ msgstr ""
 #~ msgid "Data are being retrieved, please wait a moment."
 #~ msgstr "Запит інформації, зачекайте."
 
-#~ msgid "Show current conditions (middle-click)"
-#~ msgstr "Показати чинний стан (клацання середньою кнопкою)"
-
 #~ msgid "Open weather.com (double-click)"
 #~ msgstr "Відкрити weather.com (подвійне клацання)"
 
@@ -4098,9 +4207,6 @@ msgstr ""
 
 #~ msgid "Image's name or path :"
 #~ msgstr "Назва зображення або шлях :"
-
-#~ msgid "Desklet mode"
-#~ msgstr "Режим десклетів"
 
 #~ msgid "Custom decorations"
 #~ msgstr "Нетипове оздоблення"

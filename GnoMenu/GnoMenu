@@ -23,7 +23,7 @@ import gtk
 import sys
 import os
 import subprocess
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 try:
 	INSTALL_PREFIX = open("/etc/gnomenu/prefix").read()[:-1] 
 except:
@@ -97,7 +97,7 @@ class Applet(CDApplet):
 	def ToggleMenu(self):
 		if self.hwg is None:
 			dialog_attributes = {
-				"message" : "GnoMenu is not installed. Please install it before you run this applet.",
+				"message" : _("GnoMenu is not installed. Please install it before you run this applet."),
 				"time-length" : 6 }
 			widget_attributes = {}
 			self.icon.PopupDialog (dialog_attributes, widget_attributes)
@@ -135,10 +135,9 @@ class Applet(CDApplet):
 		self.ToggleMenu()
 	
 	def on_build_menu(self):
-		items=[{"label": _("Preferences"),
+		items=[{"label": _("GnoMenu's settings"),
 			"icon" : "gtk-preferences",
-			"id"   : 0,
-			"tooltip" : "Configure GnoMenu."},
+			"id"   : 0},
 			{"label": _("About"),
 			"icon" : "gtk-about",
 			"id"   : 1},

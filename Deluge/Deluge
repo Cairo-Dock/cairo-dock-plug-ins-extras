@@ -38,7 +38,7 @@ import subprocess
 from os import popen
 from math import sqrt
 from gobject import timeout_add
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 
 def format_bytes(x):
 	unit=''
@@ -163,7 +163,7 @@ class Applet(CDApplet):
 		if self.bConnected:
 			client.core.get_torrents_status({},['name','progress','eta','paused','ratio','num_peers','num_seeds']).addCallback(self.on_got_torrents_status)
 		else:
-			self.icon.ShowDialog("Deluge is not running, or is not responding to us.", 4)
+			self.icon.ShowDialog(_("Deluge is not running, or is not responding to us."), 4)
 	
 	def on_got_torrents_status(self,status):
 		info = ""
@@ -284,17 +284,17 @@ class Applet(CDApplet):
 	def on_build_menu(self):
 		if self.bConnected:
 			items = [ {
-					"label": "Pause all torrents",
+					"label": _("Pause all torrents"),
 					"icon" : "gtk-media-pause",
 					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 1
 				}, {
-					"label": "Resume all torrents",
+					"label": _("Resume all torrents"),
 					"icon" : "gtk-media-play",
 					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 2
 				}, {
-					"label": "Torrents info (middle-click)",
+					"label": _("Torrents info (middle-click)"),
 					"icon" : "gtk-info",
 					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 3

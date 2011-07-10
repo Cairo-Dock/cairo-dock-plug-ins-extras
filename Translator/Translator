@@ -36,7 +36,7 @@ from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
 
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _, _
 
 class AgentOpener(FancyURLopener):
 	"""Masked user-agent otherwise the access would be forbidden"""
@@ -431,7 +431,7 @@ class Applet(CDApplet):
 		sub_menu_icon = os.path.abspath("./data/to.png")
 		sub_menu_id = DESTINATION_INDEX
 		destination_sub_menu = [{'type'  : CDApplet.MENU_SUB_MENU,  # sub-menu
-								 'label' : 'To',
+								 'label' : _('To'),
 								 'menu'  : CDApplet.MAIN_MENU_ID,  # belongs to the main menu
 								 'id'    : sub_menu_id,
 								 'icon'  : sub_menu_icon }]
@@ -450,7 +450,7 @@ class Applet(CDApplet):
 		sub_menu_icon = os.path.abspath("./data/from.png")
 		sub_menu_id = SOURCE_INDEX
 		source_sub_menu = [{'type'  : CDApplet.MENU_SUB_MENU,  # sub-menu
-							'label' : 'From',
+							'label' : _('From'),
 							'menu'  : CDApplet.MAIN_MENU_ID,  # belongs to the main menu
 							'id'    : sub_menu_id,
 							'icon'  : sub_menu_icon }]
@@ -470,7 +470,7 @@ class Applet(CDApplet):
 		index = SWITCH_INDEX
 		tooltip = "%s to %s" % (self.destination.name, self.source.name)
 		return [{'type'   : CDApplet.MENU_ENTRY,  # normal entry
-				 'label'  : 'Switch languages',
+				 'label'  : _('Switch languages'),
 				 'menu'   : CDApplet.MAIN_MENU_ID,  # belongs to the main menu
 				 'id'     : index,
 				 'icon'   : menu_icon,
@@ -484,7 +484,7 @@ class Applet(CDApplet):
 		items.append({ 'type'  : CDApplet.MENU_SEPARATOR,  # separator
 					   'menu'  : 0 })  # belongs to the main menu
 		items.append({ 'type'  : CDApplet.MENU_ENTRY,  # normal entry
-					   'label' : 'Translate from clipboard (middle-click)',
+					   'label' : _("Translate from clipboard (middle-click)"),
 					   'menu'  : CDApplet.MAIN_MENU_ID,  # belongs to the main menu
 					   'id'    : CLIPBOARD_INDEX,
 					   'icon'  : 'stock_paste' })

@@ -29,7 +29,7 @@ from os import popen
 import subprocess
 import os.path
 from gobject import timeout_add
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 
 TR_STATUS_CHECK_WAIT   = (1<<0)
 TR_STATUS_CHECK        = (1<<1)
@@ -183,14 +183,14 @@ class Applet(CDApplet):
 	
 	def show_torrents_info(self):
 		if self.iSessionID == 0:
-			self.icon.ShowDialog("Transmission is not running, or is not responding to us.", 4)
+			self.icon.ShowDialog(_("Transmission is not running, or is not responding to us."), 4)
 			return
 		
 		# get torrents data
 		data = self._request ("torrent-get", { "fields": [
 			"name", "percentDone", "eta", "status", "uploadRatio", "peersConnected", "peersSendingToUs", "webseedsSendingToUs" ] } )
 		if data == None or data['result'] != 'success':
-			self.icon.ShowDialog("Couldn't get data from Transmission. You need Transmission 1.9 or above.", 4)
+			self.icon.ShowDialog(_("Couldn't get data from Transmission. You need Transmission 1.9 or above."), 4)
 			return
 		info = ""
 		n = 0
@@ -350,7 +350,7 @@ class Applet(CDApplet):
 		
 		# get the URL to contact transmission.
 		if not self.config['rpc-enabled']:
-			self.icon.ShowDialog("You have to enable the Web client in the Transmisison's preferences.",8)
+			self.icon.ShowDialog(_("You have to enable the Web client in the Transmisison's settings."),8)
 		
 		base_url = 'http://' + self.config['server'] + ':' + str(self.config['port'])
 		self.url = base_url + '/transmission/rpc'
@@ -392,17 +392,17 @@ class Applet(CDApplet):
 	def on_build_menu(self):
 		if self.iSessionID != 0:
 			items = [ {
-					"label": "Pause all torrents",
+					"label": _("Pause all torrents"),
 					"icon" : "gtk-media-pause",
 					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 1
 				}, {
-					"label": "Resume all torrents",
+					"label": _("Resume all torrents"),
 					"icon" : "gtk-media-play",
 					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 2
 				}, {
-					"label": "Torrents info (middle-click)",
+					"label": _("Torrents info (middle-click)"),
 					"icon" : "gtk-info",
 					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 3

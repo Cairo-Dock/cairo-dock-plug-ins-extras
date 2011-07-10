@@ -17,6 +17,23 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-16 04:34+0000\n"
 "X-Generator: Launchpad (build 12735)\n"
 
+#: ../GnoMenu/GnoMenu:100
+msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:138
+msgid "GnoMenu's settings"
+msgstr ""
+
+#: ../GnoMenu/GnoMenu:141
+msgid "About"
+msgstr "সম্পর্কে"
+
+#: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:119
+#: ../MintMenu/MintMenu:154
+msgid "Edit Menus"
+msgstr ""
+
 #: ../GnoMenu/messages:1 ../Calendar/messages:1 ../Cardapio/messages:1
 #: ../Deluge/messages:1 ../DiskFree/messages:1 ../Google/messages:1
 #: ../GTG/messages:1 ../KTorrent/messages:1 ../Lancelot/messages:1
@@ -563,6 +580,28 @@ msgstr ""
 msgid "Icon custom script:"
 msgstr ""
 
+#: ../Cardapio/Cardapio:45
+msgid ""
+"Cardapio is not installed. Please install it before you run this applet."
+msgstr ""
+
+#: ../Deluge/Deluge:166
+msgid "Deluge is not running, or is not responding to us."
+msgstr ""
+
+#: ../Deluge/Deluge:287 ../Transmission/Transmission:395
+msgid "Pause all torrents"
+msgstr ""
+
+#: ../Deluge/Deluge:292 ../Transmission/Transmission:400
+msgid "Resume all torrents"
+msgstr ""
+
+#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
+#: ../Transmission/Transmission:405
+msgid "Torrents info (middle-click)"
+msgstr ""
+
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
 msgid "Shortkey to pop up the torrents info:"
 msgstr ""
@@ -608,6 +647,15 @@ msgstr ""
 msgid "Post-it's initial dimension (width x height) :"
 msgstr ""
 
+#: ../KTorrent/KTorrent:323
+msgid "Suspend all torrents"
+msgstr ""
+
+#: ../Lancelot/Lancelot:86
+msgid ""
+"Lancelot is not installed. Please install it before you run this applet."
+msgstr ""
+
 #: ../Liferea/messages:7 ../Translator/messages:9
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr ""
@@ -622,6 +670,36 @@ msgstr ""
 
 #: ../Liferea/messages:101
 msgid " Number of new messages"
+msgstr ""
+
+#: ../MintMenu/MintMenu:145
+msgid ""
+"MintMenu is not installed. Please install it before you run this applet."
+msgstr ""
+
+#: ../Pidgin/Pidgin:406
+#, fuzzy
+msgid "Conversations"
+msgstr "কনফিগার"
+
+#: ../Pidgin/Pidgin:420
+msgid "Change your status"
+msgstr ""
+
+#: ../Pidgin/Pidgin:435
+msgid "Set your status message"
+msgstr ""
+
+#: ../Pidgin/Pidgin:440 ../Xchat/Xchat:270
+msgid "Silent mode"
+msgstr ""
+
+#: ../Pidgin/Pidgin:444 ../Xchat/Xchat:274
+msgid "Switch the applet to silent mode (no pop-up on new message)."
+msgstr ""
+
+#: ../Pidgin/Pidgin:455
+msgid "Enter your new status message:"
 msgstr ""
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
@@ -731,6 +809,22 @@ msgstr ""
 
 #: ../RubyBattery/messages:109
 msgid "Display a label with the charge?"
+msgstr ""
+
+#: ../Translator/Translator:434
+msgid "To"
+msgstr ""
+
+#: ../Translator/Translator:453
+msgid "From"
+msgstr ""
+
+#: ../Translator/Translator:473
+msgid "Switch languages"
+msgstr ""
+
+#: ../Translator/Translator:487
+msgid "Translate from clipboard (middle-click)"
 msgstr ""
 
 #: ../Translator/messages:7
@@ -1014,6 +1108,19 @@ msgstr ""
 msgid "Editable text widget?"
 msgstr ""
 
+#: ../Transmission/Transmission:186
+msgid "Transmission is not running, or is not responding to us."
+msgstr ""
+
+#: ../Transmission/Transmission:193
+msgid ""
+"Couldn't get data from Transmission. You need Transmission 1.9 or above."
+msgstr ""
+
+#: ../Transmission/Transmission:353
+msgid "You have to enable the Web client in the Transmisison's settings."
+msgstr ""
+
 #: ../WebSearch/messages:95
 msgid "Search engine :"
 msgstr ""
@@ -1090,8 +1197,13 @@ msgid ""
 "and Digg searches ?"
 msgstr ""
 
-#~ msgid "About"
-#~ msgstr "সম্পর্কে"
+#: ../Xchat/Xchat:257
+msgid "Channels"
+msgstr ""
+
+#: ../Xchat/Xchat:261
+msgid "Switch the channel you'll send message to with the middle-click."
+msgstr ""
 
 #, fuzzy
 #~ msgid "blink"

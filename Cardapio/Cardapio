@@ -42,7 +42,7 @@ class Applet(CDApplet):
 	def show_menu(self):
 		if (self.cardapiomenu is None):
 			dialog_attributes = {
-				"message" : "Cardapio is not installed. Please install it before you run this applet.",
+				"message" : _("Cardapio is not installed. Please install it before you run this applet."),
 				"time-length" : 6 }
 			widget_attributes = {}
 			self.icon.PopupDialog (dialog_attributes, widget_attributes)
@@ -107,7 +107,7 @@ class Applet(CDApplet):
 		self.show_menu()
 	
 	def on_build_menu(self):
-		items = [ { "label": "Edit Menus",
+		items = [ { "label": _("Edit Menus"),
 				"icon" : "gtk-preferences",
 				"id"   : 1 } ]
 		self.icon.AddMenuItems(items)

@@ -27,7 +27,7 @@ import subprocess
 import htmllib
 import re
 import dbus
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 
 STATUS=['Not_connected', 'Offline', 'Online', 'Unavailable', 'Invisible', 'Away', 'Extended_away', 'Mobile', 'Tune']
 STATUS_ICO=['offline', 'offline', 'available', 'busy', 'invisible', 'away', 'extended-away', 'mobile', 'tune']
@@ -403,7 +403,7 @@ class Applet(CDApplet):
 			return
 		
 		items=[{"type" : 1,  # 1 = sub-menu
-			"label": "Conversations",
+			"label": _("Conversations"),
 			"icon" : "gtk-jump-to",
 			"menu" : 0,
 			"id"   : 1,
@@ -417,7 +417,7 @@ class Applet(CDApplet):
 				"id"   : 100+i})
 			i += 1
 		items.append({"type" : 1,
-			"label": "Change your status",
+			"label": _("Change your status"),
 			"icon" : "gtk-convert",
 			"menu" : 0,
 			"id"   : 2})
@@ -432,16 +432,16 @@ class Applet(CDApplet):
 		items.append({"type" : 2,  # 2 = separator
 			"menu" : 2})
 		items.append({"type" : 0,
-			"label": "Set your status message",
+			"label": _("Set your status message"),
 			"icon" : "gtk-dialog-info",
 			"menu" : 2,
 			"id"   : 299})
 		items.append({"type" : 3,  # 3 = check-box
-			"label": "Silent mode",
+			"label": _("Silent mode"),
 			"menu" : 0,
 			"id"   : 3,
 			"state": self.bSilentMode,
-			"tooltip" : "Switch the applet to silent mode (no pop-up on new message)."})
+			"tooltip" : _("Switch the applet to silent mode (no pop-up on new message).")})
 		
 		self.icon.AddMenuItems(items)
 		
@@ -452,7 +452,7 @@ class Applet(CDApplet):
 			if iNumEntry == 99:
 				dialog_attributes = {
 					"icon" : "gtk-info",
-					"message" : "Enter your new status message:",
+					"message" : _("Enter your new status message:"),
 					"buttons" : "ok;cancel"}
 				widget_attributes = {
 					"widget-type" : "text-entry"}
