@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-04-19 12:54+0100\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-06-21 00:19+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
-"Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-16 05:13+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:50+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Language: et\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -523,14 +525,12 @@ msgstr "Seaded"
 
 #: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
 #: ../MintMenu/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the menu:"
-msgstr "Kiirklahv terminali kuvamiseks:"
+msgstr ""
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Rakenduste menüü"
+msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -545,9 +545,8 @@ msgid "Behaviour"
 msgstr "Käitumine"
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "sekundites."
+msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
@@ -594,9 +593,8 @@ msgid "Torrents info (middle-click)"
 msgstr ""
 
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Kiirklahv terminali kuvamiseks:"
+msgstr ""
 
 #: ../DiskFree/messages:97
 msgid ""
@@ -604,27 +602,24 @@ msgid ""
 msgstr ""
 
 #: ../DiskFree/messages:99
-#, fuzzy
 msgid "in minutes"
-msgstr "Minutites."
+msgstr ""
 
 #: ../DiskFree/messages:101
 msgid "Time between two file system's checking :"
 msgstr ""
 
 #: ../GTG/messages:97 ../Xchat/messages:99
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Dialoogi kestus:"
+msgstr ""
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Short"
 msgstr ""
 
 #: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
-#, fuzzy
 msgid "Medium"
-msgstr "keskmine"
+msgstr ""
 
 #: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "Long"
@@ -656,9 +651,8 @@ msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr ""
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Näita akent"
+msgstr ""
 
 #: ../Liferea/messages:99
 msgid "Number of unread messages"
@@ -674,9 +668,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Seaded"
+msgstr ""
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
@@ -715,9 +708,8 @@ msgid "Display chat messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:107
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Dialoogi kestus:"
+msgstr ""
 
 #: ../Pidgin/messages:115
 msgid "Animation of the icon on receiving a message:"
@@ -789,9 +781,8 @@ msgid "in seconds."
 msgstr "sekundites."
 
 #: ../RubyBattery/messages:101
-#, fuzzy
 msgid "Interval of time between 2 checks:"
-msgstr "Viide signaali kontrollimiste vahel:"
+msgstr ""
 
 #: ../RubyBattery/messages:103
 msgid "Activate alert of critical charge?"
@@ -818,9 +809,8 @@ msgid "From"
 msgstr ""
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Lülita Windows Manager"
+msgstr ""
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
@@ -1075,9 +1065,8 @@ msgid "Yiddish"
 msgstr ""
 
 #: ../Translator/messages:217
-#, fuzzy
 msgid "Translate to:"
-msgstr "Nimeta ümber:"
+msgstr ""
 
 #: ../Translator/messages:333
 msgid "Shortkeys"
@@ -1121,9 +1110,8 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Otsin ..."
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1158,9 +1146,8 @@ msgid "Wikipedia"
 msgstr "Wikipedia"
 
 #: ../WebSearch/messages:113
-#, fuzzy
 msgid "ImageShack"
-msgstr "Pildid"
+msgstr ""
 
 #: ../WebSearch/messages:115
 msgid "Twitter"
@@ -1171,9 +1158,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "sekundites."
+msgstr ""
 
 #: ../WebSearch/messages:121
 msgid "Maximum number of results shown :"
@@ -1200,96 +1186,15 @@ msgid ""
 msgstr ""
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Reguleeri kanaleid"
+msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Värskendusaeg:"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Teavitus"
-
-#, fuzzy
-#~ msgid "Notifications for pokes?"
-#~ msgstr "Teavitus"
-
-#, fuzzy
-#~ msgid "never"
-#~ msgstr "Mitte kunagi"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Tagasipõrge"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Vilkuv"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Pulseerimine"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Pööra"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Värisemine"
-
-#, fuzzy
-#~ msgid "Time in minutes."
-#~ msgstr "Minutites."
-
 #~ msgid "Appearance"
 #~ msgstr "Välimus"
-
-#, fuzzy
-#~ msgid "Accessibility :"
-#~ msgstr "Nähtavus:"
-
-#, fuzzy
-#~ msgid "On Widget Layer"
-#~ msgstr "Vidinate kiht"
-
-#, fuzzy
-#~ msgid "Should be visible on all desktops ?"
-#~ msgstr "Peaks olema nähtav kõigis töölaudades?"
-
-#, fuzzy
-#~ msgid "Lock position ?"
-#~ msgstr "Esitlus"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Pöörlemine:"
-
-#, fuzzy
-#~ msgid "Background image :"
-#~ msgstr "Taustapilt:"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Tausta läbipaistvus:"
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "Esiplaani pilt:"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Esiplaani läbipaistvus:"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Vali üks saadaolevatest teemadest:"
 
 #~ msgid "Animated icons"
 #~ msgstr "Animeeritud ikoonid"
@@ -1307,8 +1212,8 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Lisage lõbus Pingviin oma dokile!\n"
 #~ "Vasak klikk muudab animatsiooni,\n"
@@ -1326,11 +1231,9 @@ msgstr ""
 #~ msgstr "Kahju, aga ma olen praegu hõivatud."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
-#~ "Mul pole aega sinuga mängida, ma pean kaevama ja mineerima kõik need "
-#~ "ikoonid."
+#~ "Mul pole aega sinuga mängida, ma pean kaevama ja mineerima kõik need ikoonid."
 
 #~ msgid "Your dock is so messy! Let me clean it."
 #~ msgstr "Sinu dokk on nii sassis! Las ma korrastan seda."
@@ -1427,11 +1330,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet imports folders inside the Dock\n"
-#~ "You can have as many instances of this applet as you want, each one with "
-#~ "a different folder.\n"
+#~ "You can have as many instances of this applet as you want, each one with a "
+#~ "different folder.\n"
 #~ "To add a folder in your dock:\n"
-#~ " - activate the applet, open its configuration panel, and select a "
-#~ "folder\n"
+#~ " - activate the applet, open its configuration panel, and select a folder\n"
 #~ " - or just drop a folder into the dock\n"
 #~ "Middle-click on the main icon opens the folder.\n"
 #~ msgstr ""
@@ -1514,8 +1416,8 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Kuvab üldise rakenduste menüü ja hiljuti kasutatud failide nimekirja.\n"
@@ -1546,11 +1448,10 @@ msgstr ""
 #~ msgstr "Minu menüü"
 
 #~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online "
-#~ "status, your friends."
+#~ "A menu that lets you access quickly to your information, your online status, "
+#~ "your friends."
 #~ msgstr ""
-#~ "See menüü  lubab kiiret juurdepääsu oma andmetele, võrguolekule ja "
-#~ "sõpradele."
+#~ "See menüü  lubab kiiret juurdepääsu oma andmetele, võrguolekule ja sõpradele."
 
 #~ msgid "It seems that the Me-Menu is not installed on your system"
 #~ msgstr "Tundub, et Me-Menu ei ole paigaldatud."
@@ -1559,8 +1460,7 @@ msgstr ""
 #~ msgstr "Suhtlusmenüü"
 
 #~ msgid ""
-#~ "A menu that notices you about new messages from Mail or Chat "
-#~ "applications.\n"
+#~ "A menu that notices you about new messages from Mail or Chat applications.\n"
 #~ "It handles Evolution, Pidgin, Empathy, etc"
 #~ msgstr ""
 #~ "See menüü teavitab sind meili- ja suhtlusprogrammide uutest sõnumitest.\n"
@@ -1648,17 +1548,16 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
 #~ "See vidin lubab sul jälgida võrguühendusi.\n"
-#~ "Vidin võimaldab kuvada alla/üleslaadimiskiirusi ja wifi "
-#~ "signaalikvaliteeti.\n"
+#~ "Vidin võimaldab kuvada alla/üleslaadimiskiirusi ja wifi signaalikvaliteeti.\n"
 #~ "Kui võrguhaldur töötab, siis on võimalik valida wifi võrke.\n"
-#~ "Vasak hiireklahv kuvab mõningast infot. Ikoonil kerimine võimaldab "
-#~ "vahetada võrgu kiiruse ja võrgu nime kuvamise vahel."
+#~ "Vasak hiireklahv kuvab mõningast infot. Ikoonil kerimine võimaldab vahetada "
+#~ "võrgu kiiruse ja võrgu nime kuvamise vahel."
 
 #~ msgid "Loading"
 #~ msgstr "Laadimine"
@@ -1865,13 +1764,12 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most ressources using programs.\n"
+#~ "You can instanciate this applet several times to show different values each "
+#~ "time."
 #~ msgstr ""
-#~ "See vidin kuvab CPU koormust, RAM-i kasutust , graafikakaardi "
-#~ "temperatuuri, jne.\n"
+#~ "See vidin kuvab CPU koormust, RAM-i kasutust , graafikakaardi temperatuuri, "
+#~ "jne.\n"
 #~ "Keskmise klahvi vajutus kuvab vajalikku infot. \n"
 #~ "Vasaku hiireklahvi vajutus ikoonil kuvab enim resursse kasutavad "
 #~ "programmid.\n"
@@ -1950,8 +1848,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
+#~ "for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to set or unset to mute, double-click to raise the channels "
 #~ "mixer.\n"
@@ -1989,6 +1887,9 @@ msgstr ""
 
 #~ msgid "Set up volume:"
 #~ msgstr "Sea helivaljus:"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Reguleeri kanaleid"
 
 #~ msgid "Unmute"
 #~ msgstr "Heli sisse"
@@ -2079,8 +1980,7 @@ msgstr ""
 #~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
 #~ "tasks</b>.\n"
 #~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a "
-#~ "notification,\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a notification,\n"
 #~ "Double-click on a day to edit the tasks for this day."
 #~ msgstr ""
 #~ "See vidin kuvab aega, kuupäeva ja kalendri.  \t\n"
@@ -2097,8 +1997,8 @@ msgstr ""
 #~ msgid ""
 #~ "No task is sheduled for today.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "Täna ülesandeid pole.\n"
 #~ "\n"
@@ -2198,6 +2098,12 @@ msgstr ""
 #~ msgid "Reload WM"
 #~ msgstr "Taaskäivita aknahaldur"
 
+#~ msgid "Exposition"
+#~ msgstr "Esitlus"
+
+#~ msgid "Widget Layer"
+#~ msgstr "Vidinate kiht"
+
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
 #~ " through your package manager (Synaptic, YasT, etc)"
@@ -2207,6 +2113,9 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Lae Emerald uuesti"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Lülita Windows Manager"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Lülita Windows Decorator"
@@ -2278,12 +2187,11 @@ msgstr ""
 
 #~ msgid ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
+#~ "Consider activating the history if you want the applet to remember previous "
+#~ "uploads."
 #~ msgstr ""
 #~ "Üleslaetud faile pole.\n"
-#~ "Palun kaaluge ajaloo aktiveerimist, et vidin mäletaks eelmisi "
-#~ "üleslaadimisi."
+#~ "Palun kaaluge ajaloo aktiveerimist, et vidin mäletaks eelmisi üleslaadimisi."
 
 #~ msgid "File"
 #~ msgstr "Fail"

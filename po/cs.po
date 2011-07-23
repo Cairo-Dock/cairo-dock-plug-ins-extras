@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-04-19 12:54+0100\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-06-21 00:39+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-16 05:12+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:50+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Language: cs\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -532,14 +534,12 @@ msgstr "Konfigurace"
 
 #: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
 #: ../MintMenu/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the menu:"
-msgstr "Klávesová zkratka pro zobrazení menu položek :"
+msgstr ""
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Menu Aplikace"
+msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -554,9 +554,8 @@ msgid "Behaviour"
 msgstr ""
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "v sekundách."
+msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
@@ -571,11 +570,10 @@ msgid "Time length of dialogues for calendar of next month :"
 msgstr ""
 
 #: ../Calendar/messages:117
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
-msgstr "Nechat prázdné použít implicitní."
+msgstr ""
 
 #: ../Calendar/messages:119
 msgid "Icon custom script:"
@@ -604,9 +602,8 @@ msgid "Torrents info (middle-click)"
 msgstr ""
 
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Klávesová zkratka pro zobrazení menu položek :"
+msgstr ""
 
 #: ../DiskFree/messages:97
 msgid ""
@@ -614,18 +611,16 @@ msgid ""
 msgstr ""
 
 #: ../DiskFree/messages:99
-#, fuzzy
 msgid "in minutes"
-msgstr "V minutách."
+msgstr ""
 
 #: ../DiskFree/messages:101
 msgid "Time between two file system's checking :"
 msgstr ""
 
 #: ../GTG/messages:97 ../Xchat/messages:99
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Trvání pulsu"
+msgstr ""
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Short"
@@ -648,9 +643,8 @@ msgid "Display channel messages in a bubble :"
 msgstr ""
 
 #: ../GTG/messages:111
-#, fuzzy
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "Rozměry deskletu (šířka x výška)"
+msgstr ""
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -666,19 +660,16 @@ msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Název ikony, která se objeví ve štítku v docku :"
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Ukázat okno"
+msgstr ""
 
 #: ../Liferea/messages:99
-#, fuzzy
 msgid "Number of unread messages"
-msgstr "Množství paprsků :"
+msgstr ""
 
 #: ../Liferea/messages:101
-#, fuzzy
 msgid " Number of new messages"
-msgstr "Počet položek :"
+msgstr ""
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -686,9 +677,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Konfigurace"
+msgstr ""
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
@@ -707,9 +697,8 @@ msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
 
 #: ../Pidgin/Pidgin:455
-#, fuzzy
 msgid "Enter your new status message:"
-msgstr "Počet položek :"
+msgstr ""
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
 msgid "Parameters"
@@ -728,9 +717,8 @@ msgid "Display chat messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:107
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Trvání pulsu"
+msgstr ""
 
 #: ../Pidgin/messages:115
 msgid "Animation of the icon on receiving a message:"
@@ -754,9 +742,8 @@ msgid "big"
 msgstr ""
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Nechte prázdné pro použití jména připojení."
+msgstr ""
 
 #: ../Quote/messages:99
 msgid "Quote source:"
@@ -831,9 +818,8 @@ msgid "From"
 msgstr ""
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Přepnout správce oken"
+msgstr ""
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
@@ -1088,9 +1074,8 @@ msgid "Yiddish"
 msgstr ""
 
 #: ../Translator/messages:217
-#, fuzzy
 msgid "Translate to:"
-msgstr "Přejmenovat na :"
+msgstr ""
 
 #: ../Translator/messages:333
 msgid "Shortkeys"
@@ -1109,9 +1094,8 @@ msgid "Dialog"
 msgstr ""
 
 #: ../Translator/messages:341
-#, fuzzy
 msgid "In s. Set 0 for an unlimited time."
-msgstr "ve dnech. Pro vypnutí tohoto filtru nastavte na 0"
+msgstr ""
 
 #: ../Translator/messages:343
 msgid "Time-length of the result dialog:"
@@ -1135,9 +1119,8 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Hledání ..."
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1184,9 +1167,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "v sekundách."
+msgstr ""
 
 #: ../WebSearch/messages:121
 msgid "Maximum number of results shown :"
@@ -1213,154 +1195,12 @@ msgid ""
 msgstr ""
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Nastavit kanály"
+msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Obnovovací čas:"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Žádné modifikace"
-
-#, fuzzy
-#~ msgid "never"
-#~ msgstr "Nikdy"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Skákat"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Blikat"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Pulzovat"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Rotovat"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Kmitat"
-
-#, fuzzy
-#~ msgid "Time in minutes."
-#~ msgstr "V minutách."
-
-#, fuzzy
-#~ msgid "Desklet's position (x ; y) :"
-#~ msgstr "Pozice deskletu (x ; y) :"
-
-#, fuzzy
-#~ msgid "Is detached from the dock ?"
-#~ msgstr "Je vzhledem k docku samostatný ?"
-
-#, fuzzy
-#~ msgid "On Widget Layer"
-#~ msgstr "Vrstva widgetů"
-
-#, fuzzy
-#~ msgid "Should be visible on all desktops ?"
-#~ msgstr "Má být neviditelný na všech plochách ?"
-
-#, fuzzy
-#~ msgid ""
-#~ "If locked, the desklet can't be moved by simply dragging it with the left "
-#~ "mouse button. Of course you can still move it with ALT + left_click."
-#~ msgstr ""
-#~ "Pokud je zamknut, nelze s deskletem pohnout pouhým přetažením levým "
-#~ "tlačítkem myši. Samozřejmě s ním stále můžete pohybovat kombinací ALT + "
-#~ "levé tlačítko myši."
-
-#, fuzzy
-#~ msgid "Lock position ?"
-#~ msgstr "Zamknout pozici ?"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Rotace :"
-
-#, fuzzy
-#~ msgid "Choose a decoration theme for this desklet :"
-#~ msgstr "Vyberte dekorační motiv pro tento desklet :"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed below the drawings, like a frame for "
-#~ "exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Je to obrázek, který se zobrazí pod kresbami, jako například rámeček. "
-#~ "Pokud žádný nechcete, ponechte nevyplněné."
-
-#, fuzzy
-#~ msgid "Background image :"
-#~ msgstr "Obrázek pozadí :"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Průhlednost pozadí :"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the left position of the drawings."
-#~ msgstr "v pixelech. Použijte pro upravení levé pozice kreseb."
-
-#, fuzzy
-#~ msgid "Left offset :"
-#~ msgstr "Odsazení z leva :"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the top position of the drawings."
-#~ msgstr "v pixelech. Použijte pro upravení horní pozice kreseb."
-
-#, fuzzy
-#~ msgid "Top offset :"
-#~ msgstr "Odsazení zezhora :"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the right position of the drawings."
-#~ msgstr "v pixelech. Použijte pro upravení pravé pozice kreseb."
-
-#, fuzzy
-#~ msgid "Right offset :"
-#~ msgstr "Odsazení z prava :"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the bottom position of the drawings."
-#~ msgstr "v pixelech. Použijte pro upravení spodní pozice kreseb."
-
-#, fuzzy
-#~ msgid "Bottom offset :"
-#~ msgstr "Odsazení zespoda :"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed above the drawings, like a reflect "
-#~ "for exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Je to obrázek, který se zobrazí nad kresbami, jako například odraz. Pokud "
-#~ "žádný nechcete, ponechte nevyplněné."
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "Obrázek popředí :"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Průhlednost popředí :"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Vyberte jedno z dostupných motivů :"
 
 #~ msgid "Animated icons"
 #~ msgstr "Animované ikony"
@@ -1378,8 +1218,8 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Přidá živého tučňáka do vašeho docku!\n"
 #~ "Levým kliknutím změníte animaci,\n"
@@ -1394,8 +1234,7 @@ msgstr ""
 #~ msgstr "Promiň, ale právě sem zaneprázdněn."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
 #~ "Nemám čas si s tebou hrát. Musím vykopat a podminovat všechny tyhle ikony."
 
@@ -1440,13 +1279,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know Klipper.\n"
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
+#~ "Drop text on the icon to create persistent items, and middle-clck to recall "
+#~ "them."
 #~ msgstr ""
 #~ "Tento applet sleduje schránku a výběry myší,\n"
 #~ "takže je můžete rychle vyvolat. Je to klon dobře známé aplikace Klipper.\n"
@@ -1531,11 +1369,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet imports folders inside the Dock\n"
-#~ "You can have as many instances of this applet as you want, each one with "
-#~ "a different folder.\n"
+#~ "You can have as many instances of this applet as you want, each one with a "
+#~ "different folder.\n"
 #~ "To add a folder in your dock:\n"
-#~ " - activate the applet, open its configuration panel, and select a "
-#~ "folder\n"
+#~ " - activate the applet, open its configuration panel, and select a folder\n"
 #~ " - or just drop a folder into the dock\n"
 #~ "Middle-click on the main icon opens the folder.\n"
 #~ msgstr ""
@@ -1617,13 +1454,12 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Zobrazí společně menu Aplikace a Nedávno použité soubory.\n"
-#~ "Je kompatibilní s kterýmkoliv menu specifikace XDG (Gnome, XFCE, "
-#~ "KDE, ...)\n"
+#~ "Je kompatibilní s kterýmkoliv menu specifikace XDG (Gnome, XFCE, KDE, ...)\n"
 #~ "Kliknutí prostředním tlačítkem otevřete dialog a rychle spustíte jakýkoli "
 #~ "příkaz (můžete si na to nastavit klávesovou zkratku, jako ALT+F2\n"
 #~ "Můžete si také nastavit klávesovou zkratku pro vyvolání menu (jako ALT+F1)"
@@ -1647,11 +1483,11 @@ msgstr ""
 #~ msgstr "Vložte příkaz, který chcete spustit:"
 
 #~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online "
-#~ "status, your friends."
+#~ "A menu that lets you access quickly to your information, your online status, "
+#~ "your friends."
 #~ msgstr ""
-#~ "Nabídka, která vám umoží rychlý přístup k vašim informacím, online "
-#~ "statusu, vašim přátelům."
+#~ "Nabídka, která vám umoží rychlý přístup k vašim informacím, online statusu, "
+#~ "vašim přátelům."
 
 #~ msgid "It seems that the Me-Menu is not installed on your system"
 #~ msgstr "Zdá se, že Me-Menu není na vašem systému nainstalováno."
@@ -1660,8 +1496,7 @@ msgstr ""
 #~ msgstr "Nabídka zpráv"
 
 #~ msgid ""
-#~ "A menu that notices you about new messages from Mail or Chat "
-#~ "applications.\n"
+#~ "A menu that notices you about new messages from Mail or Chat applications.\n"
 #~ "It handles Evolution, Pidgin, Empathy, etc"
 #~ msgstr ""
 #~ "Nabídka, která upozorňuje na nové zprávy z mailových, nebo komunikačních "
@@ -1750,8 +1585,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
@@ -1960,18 +1795,16 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most ressources using programs.\n"
+#~ "You can instanciate this applet several times to show different values each "
+#~ "time."
 #~ msgstr ""
 #~ "Tento applet ukazuje vytížení CPU, využití RAM, teplotu GPU, atd.\n"
 #~ "Kliknutím prostředním tlačítkem na ikonu, obdržíte pár užitečných "
 #~ "informací.\n"
 #~ "Kliknutím levým tlačítkem na ikonu, obdržíte seznam programů, které "
 #~ "spotřebovávají nejvíce zdrojů.\n"
-#~ "Applet můžete spustit vícekrát a v každé instanci nastavit různé "
-#~ "informace."
+#~ "Applet můžete spustit vícekrát a v každé instanci nastavit různé informace."
 
 #~ msgid ""
 #~ "The acquisition of one or more data has failed.\n"
@@ -2042,8 +1875,8 @@ msgstr ""
 #~ "Scroll up/down to increase/decrease the luminosity\n"
 #~ "Left-click to open a dialog to setup the luminosity\n"
 #~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically "
-#~ "on startup."
+#~ "You can also define a luminosity value that will be applied automatically on "
+#~ "startup."
 #~ msgstr ""
 #~ "Nastavte si jas obrazovky přímo z vašeho doku.\n"
 #~ "Otáčejte kolečkem nahoru a dolů, pro zvýšení, či snížení jasu.\n"
@@ -2064,8 +1897,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
+#~ "for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to set or unset to mute, double-click to raise the channels "
 #~ "mixer.\n"
@@ -2102,6 +1935,9 @@ msgstr ""
 
 #~ msgid "Set up volume:"
 #~ msgstr "Nastavit hlasitost:"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Nastavit kanály"
 
 #~ msgid "double-click"
 #~ msgstr "dvojklik"
@@ -2189,24 +2025,23 @@ msgstr ""
 #~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
 #~ "tasks</b>.\n"
 #~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a "
-#~ "notification,\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a notification,\n"
 #~ "Double-click on a day to edit the tasks for this day."
 #~ msgstr ""
 #~ "Tento applet zobrazuje čas, datum a kalendář.\n"
 #~ "K dispozici jsou dva typy zobrazení: digitální a analogový.\n"
-#~ " Analogové zobrazení je kompatibilní s motivy Cairo-Clock a po odpoutání "
-#~ "od doku, jsou perfektní kopií Cairo-Clock.\n"
+#~ " Analogové zobrazení je kompatibilní s motivy Cairo-Clock a po odpoutání od "
+#~ "doku, jsou perfektní kopií Cairo-Clock.\n"
 #~ "Applet také nabízí budíky a umožňuje nastavit čas a datum.\n"
-#~ "Levým tlačítkem vyvoláte/schováte kalendář, prostředním tlačítkem "
-#~ "zastavíte upozornění.\n"
+#~ "Levým tlačítkem vyvoláte/schováte kalendář, prostředním tlačítkem zastavíte "
+#~ "upozornění.\n"
 #~ "Dvojklikem na den vyvoláte editaci úkolů pro tento den."
 
 #~ msgid ""
 #~ "No task is sheduled for today.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "Pro dnešní den nejsou naplánovány žádné úkoly.\n"
 #~ "\n"
@@ -2216,8 +2051,8 @@ msgstr ""
 #~ msgid ""
 #~ "No task is sheduled for the next 7 days.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "Na příštích 7 dní nejsou naplánovány žádné úkoly.\n"
 #~ "\n"
@@ -2323,6 +2158,9 @@ msgstr ""
 #~ msgid "Exposition"
 #~ msgstr "Expo"
 
+#~ msgid "Widget Layer"
+#~ msgstr "Vrstva widgetů"
+
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
 #~ " through your package manager (Synaptic, YasT, etc)"
@@ -2332,6 +2170,9 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Znovu načíst Emerald"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Přepnout správce oken"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Přepnout dekorátor oken"
@@ -2399,8 +2240,7 @@ msgstr ""
 #~ msgid ""
 #~ "Couldn't upload the file, check that your internet connection is active."
 #~ msgstr ""
-#~ "Nelze nahrát soubor, zkontrolujte zda je vaše připojení k internetu "
-#~ "funkční."
+#~ "Nelze nahrát soubor, zkontrolujte zda je vaše připojení k internetu funkční."
 
 #~ msgid ""
 #~ "File has been uploaded.\n"
@@ -2448,8 +2288,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
+#~ "Consider activating the history if you want the applet to remember previous "
+#~ "uploads."
 #~ msgstr ""
 #~ "Není dostupný žádný nahrabý soubor.\n"
 #~ "Zvažte aktivaci historie, pokud chcete, aby si applet pamatoval předchozí "
@@ -2511,23 +2351,21 @@ msgstr ""
 #~ msgid ""
 #~ "This module adds different views to your dock.\n"
 #~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
-#~ "views are provided."
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve views "
+#~ "are provided."
 #~ msgstr ""
 #~ "Tento modul přidává různé vzhledy vašemu doku.\n"
 #~ "Kterýkoliv dok, nebo sub-dok, může být zobrazen podle vaší volby.\n"
-#~ "Aktuálně 3D panel, Kolotoč, Parabola, Duha, Slide a Oblouk jsou k "
-#~ "dispozici."
+#~ "Aktuálně 3D panel, Kolotoč, Parabola, Duha, Slide a Oblouk jsou k dispozici."
 
 #~ msgid "drop indicator"
 #~ msgstr "pustit indikátor"
 
 #~ msgid ""
-#~ "This plug-in displays an animated indicator when you drop something into "
-#~ "the dock."
+#~ "This plug-in displays an animated indicator when you drop something into the "
+#~ "dock."
 #~ msgstr ""
-#~ "Tento zásuvný modul zobrazuje animované indikátory když něco pustíte do "
-#~ "doku."
+#~ "Tento zásuvný modul zobrazuje animované indikátory když něco pustíte do doku."
 
 #~ msgid "dustbin"
 #~ msgstr "Odpadkový koš"
@@ -2672,10 +2510,9 @@ msgstr ""
 #~ "restart\n"
 #~ "  (you can invert the buttons if you prefer to shutdown on left-click)."
 #~ msgstr ""
-#~ "Velmi jednoduchý applet, který přidává ikonu pro odhlášení z vašeho "
-#~ "sezení.\n"
-#~ "Kliknutím levým tlačítkem se odhlásíte, nebo změníte uživatele, "
-#~ "prostřední tlačítko myši systém vypne, nebo restartuje.\n"
+#~ "Velmi jednoduchý applet, který přidává ikonu pro odhlášení z vašeho sezení.\n"
+#~ "Kliknutím levým tlačítkem se odhlásíte, nebo změníte uživatele, prostřední "
+#~ "tlačítko myši systém vypne, nebo restartuje.\n"
 #~ "  (tlačítka můžete vyměnit, pokud preferujete vypínání levým tlačítkem)"
 
 #~ msgid "Choose in how many minutes your PC will stop:"
@@ -2718,8 +2555,8 @@ msgstr ""
 #~ msgstr "Port:"
 
 #~ msgid ""
-#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
-#~ "and 995 for POP3S."
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP and "
+#~ "995 for POP3S."
 #~ msgstr ""
 #~ "Zadejte nulu, pro použití výchozího portu. Výchozími porty jsou 110 pro "
 #~ "POP3, nebo APOP a 995 pro POP3S."
@@ -2861,19 +2698,18 @@ msgstr ""
 #~ "This applet lets you control any music player.\n"
 #~ "Left click to Play/Pause, middle-click to play Next song.\n"
 #~ "Scroll up/down to play previous/next song.\n"
-#~ "You can drag and drop songs on the icon to put them in the queue (depends "
-#~ "on Player),\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends on "
+#~ "Player),\n"
 #~ " and jpeg image to use as cover.\n"
 #~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
 #~ "       For SongBird, you have to install its dbus add-on.\n"
 #~ "       For Exaile 0.3, you have to activate its MPRIS plug-in"
 #~ msgstr ""
 #~ "Tento applet vám umožňuje ovládat libovolný hudební přehrávač.\n"
-#~ "Levé tlačítko myši funguje jako Spustit/Pauza, prostředním tlačítkem "
-#~ "skočíte na následující skladbu.\n"
+#~ "Levé tlačítko myši funguje jako Spustit/Pauza, prostředním tlačítkem skočíte "
+#~ "na následující skladbu.\n"
 #~ "Otáčením kolečka myši přeskočíte na  předchozí/následující skladbu.\n"
-#~ "Přetáhnutím skladby na ikonu ji zařadíte do fronty (záleží na "
-#~ "přehrávači),\n"
+#~ "Přetáhnutím skladby na ikonu ji zařadíte do fronty (záleží na přehrávači),\n"
 #~ " přetáhnutím jpeg obrázku vytvoříte nový obal.\n"
 #~ "Poznámka : Pro XMMS musíte nainstalovat zásuvný modul 'xmms-infopipe'.\n"
 #~ "       Pro SongBird musíte nainstalovat jeho doplňek dbus\n"
@@ -2885,8 +2721,8 @@ msgstr ""
 #~ "offer such service."
 #~ msgstr ""
 #~ "Bohužel se nepodařilo detekovat žádný přehrávač.\n"
-#~ "Pokud je nějaký spuštěný, možná je v příliš staré verzi, která "
-#~ "nepodporuje tuto službu."
+#~ "Pokud je nějaký spuštěný, možná je v příliš staré verzi, která nepodporuje "
+#~ "tuto službu."
 
 #~ msgid "Find opened player"
 #~ msgstr "Najít otevřený přehrávač"
@@ -3005,8 +2841,7 @@ msgstr ""
 #~ "This applet can be instanciated several times, if you want to browse "
 #~ "different folders."
 #~ msgstr ""
-#~ "Tento applet vám umožňuje velmi rychle prohlížet složku a její "
-#~ "podsložky.\n"
+#~ "Tento applet vám umožňuje velmi rychle prohlížet složku a její podsložky.\n"
 #~ "Můžete si nastavit zkratku pro vyskakovací menu.\n"
 #~ "Kliknutím prostředního tlačítka myši otevřete hlavní složku.\n"
 #~ "Tento applet může být v pohotovosti několikrát najednou, pokud chcete "
@@ -3094,8 +2929,8 @@ msgstr ""
 #~ msgstr "Přesunout současnou plochu na tuto plochu"
 
 #~ msgid ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
+#~ "This will move all windows from the current desktop to the one you clicked "
+#~ "on."
 #~ msgstr ""
 #~ "Toto přesune všechna okna z současné plochy na tu, na kterou kliknete."
 
@@ -3196,8 +3031,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "Enter the name of your location and press Enter to choose amongst results."
-#~ msgstr ""
-#~ "Vložte název své lokace a stiskněte Enter pro vybrání mezi výsledky."
+#~ msgstr "Vložte název své lokace a stiskněte Enter pro vybrání mezi výsledky."
 
 #~ msgid "weather"
 #~ msgstr "počasí"
@@ -3429,8 +3263,8 @@ msgstr ""
 #~ msgstr "Základní odsazení :"
 
 #~ msgid ""
-#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
-#~ "you get by selecting some text with the mouse."
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those you "
+#~ "get by selecting some text with the mouse."
 #~ msgstr ""
 #~ "Položky schránky jsou ty, které dostanete stisknutím CTRL+c. Položky "
 #~ "označení jsou ty, které dostanete označením nějakého textu myší."
@@ -3484,8 +3318,8 @@ msgstr ""
 #~ msgstr "Akce"
 
 #~ msgid ""
-#~ "If some actions are associated with an item, they will be proposed when "
-#~ "the item is created."
+#~ "If some actions are associated with an item, they will be proposed when the "
+#~ "item is created."
 #~ msgstr ""
 #~ "Pokud budou nějaké akce přiřazeny k položce, budou vám navrženy když bude "
 #~ "položka vytvořena."
@@ -3575,8 +3409,7 @@ msgstr ""
 #~ msgstr "Klávesová zkratka pro zobrazení/schování menu :"
 
 #~ msgid "Shortkey to show/hide the quick-launch dialog:"
-#~ msgstr ""
-#~ "Klávesová skratka pro zobrazení/schování dialogu rychlého spuštění :"
+#~ msgstr "Klávesová skratka pro zobrazení/schování dialogu rychlého spuštění :"
 
 #~ msgid "Command to use for configuring the menu:"
 #~ msgstr "Příkaz k nastavování menu :"
@@ -3589,8 +3422,8 @@ msgstr ""
 
 #~ msgid "Only show files that are under this folder or its sub-folder:"
 #~ msgstr ""
-#~ "Zobrazovat pouze soubory, které jsou pod touto složkou, nebo její "
-#~ "podsložkou :"
+#~ "Zobrazovat pouze soubory, které jsou pod touto složkou, nebo její podsložkou "
+#~ ":"
 
 #~ msgid "Only show files whose last modification date is less than ;"
 #~ msgstr ""

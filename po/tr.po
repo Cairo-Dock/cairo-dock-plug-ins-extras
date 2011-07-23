@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-04-19 12:53+0100\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-06-20 23:27+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-16 05:16+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:52+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Language: tr\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -523,14 +525,12 @@ msgstr "Yapılandırma"
 
 #: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
 #: ../MintMenu/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the menu:"
-msgstr "Menüyü göstermek/gizlemek için kısayol:"
+msgstr ""
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Konumu aç"
+msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -545,9 +545,8 @@ msgid "Behaviour"
 msgstr ""
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "saniye olarak."
+msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
@@ -562,11 +561,10 @@ msgid "Time length of dialogues for calendar of next month :"
 msgstr ""
 
 #: ../Calendar/messages:117
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
-msgstr "Varsayılanı kullanmak için boş bırakınız."
+msgstr ""
 
 #: ../Calendar/messages:119
 msgid "Icon custom script:"
@@ -595,9 +593,8 @@ msgid "Torrents info (middle-click)"
 msgstr ""
 
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Menüyü göstermek/gizlemek için kısayol:"
+msgstr ""
 
 #: ../DiskFree/messages:97
 msgid ""
@@ -613,9 +610,8 @@ msgid "Time between two file system's checking :"
 msgstr ""
 
 #: ../GTG/messages:97 ../Xchat/messages:99
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Darbe süresi:"
+msgstr ""
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Short"
@@ -655,19 +651,16 @@ msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr ""
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Masaüstünü göster"
+msgstr ""
 
 #: ../Liferea/messages:99
-#, fuzzy
 msgid "Number of unread messages"
-msgstr "Işınların sayısı :"
+msgstr ""
 
 #: ../Liferea/messages:101
-#, fuzzy
 msgid " Number of new messages"
-msgstr "Işınların sayısı :"
+msgstr ""
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -675,9 +668,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Yapılandırma"
+msgstr ""
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
@@ -696,9 +688,8 @@ msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
 
 #: ../Pidgin/Pidgin:455
-#, fuzzy
 msgid "Enter your new status message:"
-msgstr "Işınların sayısı :"
+msgstr ""
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
 msgid "Parameters"
@@ -717,9 +708,8 @@ msgid "Display chat messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:107
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Darbe süresi:"
+msgstr ""
 
 #: ../Pidgin/messages:115
 msgid "Animation of the icon on receiving a message:"
@@ -743,9 +733,8 @@ msgid "big"
 msgstr ""
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Varsayılanı kullanmak için boş bırakınız."
+msgstr ""
 
 #: ../Quote/messages:99
 msgid "Quote source:"
@@ -792,9 +781,8 @@ msgid "in seconds."
 msgstr "saniye olarak."
 
 #: ../RubyBattery/messages:101
-#, fuzzy
 msgid "Interval of time between 2 checks:"
-msgstr "Sinyal kontrolleri arası gecikme:"
+msgstr ""
 
 #: ../RubyBattery/messages:103
 msgid "Activate alert of critical charge?"
@@ -821,9 +809,8 @@ msgid "From"
 msgstr ""
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Pencere Yöneticisini Değiştir"
+msgstr ""
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
@@ -1078,9 +1065,8 @@ msgid "Yiddish"
 msgstr ""
 
 #: ../Translator/messages:217
-#, fuzzy
 msgid "Translate to:"
-msgstr "Yeniden adlandır:"
+msgstr ""
 
 #: ../Translator/messages:333
 msgid "Shortkeys"
@@ -1124,9 +1110,8 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Aranıyor..."
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1173,9 +1158,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "saniye olarak."
+msgstr ""
 
 #: ../WebSearch/messages:121
 msgid "Maximum number of results shown :"
@@ -1202,80 +1186,15 @@ msgid ""
 msgstr ""
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Kanalları ayarla"
+msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
-#, fuzzy
-#~ msgid "in ms"
-#~ msgstr "ms olarak."
-
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Yenile"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Değişiklik yok"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Zıplama"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Yanıp sönme"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Darbe"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Döndürme"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Titreme"
-
 #~ msgid "Appearance"
 #~ msgstr "Görünüm"
-
-#, fuzzy
-#~ msgid "Accessibility :"
-#~ msgstr "Görünürlük:"
-
-#, fuzzy
-#~ msgid "Lock position ?"
-#~ msgstr "Sergi"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Döndürme:"
-
-#, fuzzy
-#~ msgid "Background image :"
-#~ msgstr "Arkaplan görüntüsü:"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Arkaplan şeffaflığı:"
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "Arkaplan görüntüsü:"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Arkaplan şeffaflığı:"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Uygun temalardan birini seçiniz:"
 
 #~ msgid "Animated icons"
 #~ msgstr "Canlandırmalı simgeler"
@@ -1293,8 +1212,8 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Dock'unuz için hareketli bir penguen ekleyin !\n"
 #~ "Animasyonları değiştirmek için sol tıkla\n"
@@ -1312,11 +1231,10 @@ msgstr ""
 #~ msgstr "Üzgünüm ama şu anda meşgulüm."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
-#~ "Gösteriniz için süre ayarlamadım, gözatmak zorundayım ve bunlar "
-#~ "simgelerin hepsi."
+#~ "Gösteriniz için süre ayarlamadım, gözatmak zorundayım ve bunlar simgelerin "
+#~ "hepsi."
 
 #~ msgid "Your dock is so messy! Let me clean it."
 #~ msgstr "Dock'unuz o kadar dağınık ki ! Onu temizlemem için izin ver."
@@ -1380,8 +1298,7 @@ msgstr ""
 #~ msgid ""
 #~ "The applet '%s' has been succefully updated and automatically reloaded"
 #~ msgstr ""
-#~ "'%s' ugulamacığı başarıyla güncellendi ve otomatik olarak yeniden "
-#~ "yüklendi."
+#~ "'%s' ugulamacığı başarıyla güncellendi ve otomatik olarak yeniden yüklendi."
 
 #~ msgid ""
 #~ "The applet '%s' has been succefully installed and automatically launched"
@@ -1420,8 +1337,8 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Genel Uygulamalar menüsünü ve Son kullanılan dosyaları gösterir.\n"
@@ -1525,17 +1442,17 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
 #~ "Bu uygulamacık ağ bağlantı(ları)nızı göstermeye yarar.\n"
 #~ "İndirme/yükleme hızlarını ve wifi sinyal kalitesini de gösterebilir.\n"
-#~ "Eğer ağ- yöneticiniz çalışıyorsa, size mevcut wifi ağını seçmenize de "
-#~ "olanak sağlar.\n"
-#~ "Açılır pencereye bazı bilgiler için sol-tıklayın, net net ve wifi "
-#~ "hızlarını birlikte göstermek için simge üzerine sürükleyin."
+#~ "Eğer ağ- yöneticiniz çalışıyorsa, size mevcut wifi ağını seçmenize de olanak "
+#~ "sağlar.\n"
+#~ "Açılır pencereye bazı bilgiler için sol-tıklayın, net net ve wifi hızlarını "
+#~ "birlikte göstermek için simge üzerine sürükleyin."
 
 #~ msgid "Loading"
 #~ msgstr "Yükleniyor"
@@ -1709,13 +1626,12 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most ressources using programs.\n"
+#~ "You can instanciate this applet several times to show different values each "
+#~ "time."
 #~ msgstr ""
-#~ "Bu uygulamacık size CPU yükü, RAM kullanımı, grafik kartları sıcaklığı, "
-#~ "vb gösterir.\n"
+#~ "Bu uygulamacık size CPU yükü, RAM kullanımı, grafik kartları sıcaklığı, vb "
+#~ "gösterir.\n"
 #~ "Bazı önemli bilgileri almak için simgeye orta tuşla tıklayın.\n"
 #~ "En çok kaynak kullanan programların bir listesini almak için simgeye sol "
 #~ "tıklayın.\n"
@@ -1776,6 +1692,9 @@ msgstr ""
 #~ msgid "Set up volume:"
 #~ msgstr "Sesi ayarla :"
 
+#~ msgid "Adjust channels"
+#~ msgstr "Kanalları ayarla"
+
 #~ msgid "Monday"
 #~ msgstr "Pazartesi"
 
@@ -1821,6 +1740,9 @@ msgstr ""
 #~ msgid "Reload WM"
 #~ msgstr "WM'yi yeniden yükle"
 
+#~ msgid "Exposition"
+#~ msgstr "Sergi"
+
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
 #~ " through your package manager (Synaptic, YasT, etc)"
@@ -1830,6 +1752,9 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Emerald'ı yeniden yükle"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Pencere Yöneticisini Değiştir"
 
 #~ msgid "CD box"
 #~ msgstr "CD kutusu"
@@ -1852,8 +1777,8 @@ msgstr ""
 #~ msgid ""
 #~ "Please wait for the current upload to finish before starting a new one."
 #~ msgstr ""
-#~ "Yeni bir tanesini başlatmadan önce lütfen mevcut veri yüklemenin "
-#~ "bitmesini bekleyin."
+#~ "Yeni bir tanesini başlatmadan önce lütfen mevcut veri yüklemenin bitmesini "
+#~ "bekleyin."
 
 #~ msgid "Clear the list of the recently uploaded files?"
 #~ msgstr "Son gönderilen dosyaların listesi temizlensin mi?"
@@ -2199,8 +2124,8 @@ msgstr ""
 #~ msgstr "Geçerli masaüstünü bu masasütüne taşı"
 
 #~ msgid ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
+#~ "This will move all windows from the current desktop to the one you clicked "
+#~ "on."
 #~ msgstr "Bu geçerli masaüstündeki tüm pencereleri tıkladığınıza taşır."
 
 #~ msgid "Windows List"

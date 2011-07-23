@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-04-19 12:53+0100\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-06-21 00:09+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-16 05:14+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:51+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Language: hu\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -528,14 +530,12 @@ msgstr "Beállítás"
 
 #: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
 #: ../MintMenu/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the menu:"
-msgstr "Gyorsbillentyű a menü megjelenítéséhez/elrejtéséhez:"
+msgstr ""
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Műveletek"
+msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -550,9 +550,8 @@ msgid "Behaviour"
 msgstr "Viselkedés"
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "másodpercekben."
+msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
@@ -567,11 +566,10 @@ msgid "Time length of dialogues for calendar of next month :"
 msgstr ""
 
 #: ../Calendar/messages:117
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
-msgstr "Hagyja üresen az alapértelmezés használatához."
+msgstr ""
 
 #: ../Calendar/messages:119
 msgid "Icon custom script:"
@@ -600,9 +598,8 @@ msgid "Torrents info (middle-click)"
 msgstr ""
 
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Gyorsbillentyű a menü megjelenítéséhez/elrejtéséhez:"
+msgstr ""
 
 #: ../DiskFree/messages:97
 msgid ""
@@ -610,14 +607,12 @@ msgid ""
 msgstr ""
 
 #: ../DiskFree/messages:99
-#, fuzzy
 msgid "in minutes"
-msgstr "Percekben."
+msgstr ""
 
 #: ../DiskFree/messages:101
-#, fuzzy
 msgid "Time between two file system's checking :"
-msgstr "Két oldalfrissítés közötti idő"
+msgstr ""
 
 #: ../GTG/messages:97 ../Xchat/messages:99
 msgid "Bubbles duration :"
@@ -661,19 +656,16 @@ msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr ""
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Asztal megjelenítése"
+msgstr ""
 
 #: ../Liferea/messages:99
-#, fuzzy
 msgid "Number of unread messages"
-msgstr "Sugarak száma:"
+msgstr ""
 
 #: ../Liferea/messages:101
-#, fuzzy
 msgid " Number of new messages"
-msgstr "Elemek száma:"
+msgstr ""
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -681,9 +673,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Beállítás"
+msgstr ""
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
@@ -702,18 +693,16 @@ msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
 
 #: ../Pidgin/Pidgin:455
-#, fuzzy
 msgid "Enter your new status message:"
-msgstr "Elemek száma:"
+msgstr ""
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
 msgid "Parameters"
 msgstr "Paraméterek"
 
 #: ../Pidgin/messages:99
-#, fuzzy
 msgid "Choose a theme :"
-msgstr "Használjon 3D témát?"
+msgstr ""
 
 #: ../Pidgin/messages:103
 msgid "Display conversation messages in a bubble?"
@@ -749,9 +738,8 @@ msgid "big"
 msgstr "nagy"
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Hagyja üresen az alapértelmezés használatához."
+msgstr ""
 
 #: ../Quote/messages:99
 msgid "Quote source:"
@@ -826,9 +814,8 @@ msgid "From"
 msgstr ""
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Ablakkezelő cseréje"
+msgstr ""
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
@@ -1103,9 +1090,8 @@ msgid "Dialog"
 msgstr ""
 
 #: ../Translator/messages:341
-#, fuzzy
 msgid "In s. Set 0 for an unlimited time."
-msgstr "napokban. Adjon meg 0-t a szűrő tiltásához."
+msgstr ""
 
 #: ../Translator/messages:343
 msgid "Time-length of the result dialog:"
@@ -1129,9 +1115,8 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Keresés..."
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1178,14 +1163,12 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "másodpercekben."
+msgstr ""
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid "Maximum number of results shown :"
-msgstr "Találatok maximális száma:"
+msgstr ""
 
 #: ../WebSearch/messages:123
 msgid "Show the current page as the icon label ?"
@@ -1208,124 +1191,15 @@ msgid ""
 msgstr ""
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Csatornák beállítása"
+msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
-#, fuzzy
-#~ msgid "in ms"
-#~ msgstr "Milliszekundumokban"
-
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Frissítés"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Nincs változás"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Pattogás"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Villanás"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Lüktetés"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Forgás"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Remegés"
-
-#, fuzzy
-#~ msgid "Time in minutes."
-#~ msgstr "Percekben."
-
 #~ msgid "Appearance"
 #~ msgstr "Megjelenés"
-
-#, fuzzy
-#~ msgid "On Widget Layer"
-#~ msgstr "Szerkentyű réteg"
-
-#, fuzzy
-#~ msgid "Should be visible on all desktops ?"
-#~ msgstr "Látható legyen minden asztalon?"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Forgatás:"
-
-#, fuzzy
-#~ msgid "Background image :"
-#~ msgstr "Háttérkép:"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Háttér átlátszósága:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the left position of the drawings."
-#~ msgstr ""
-#~ "pixelekben. Ezzel állíthatja be a rajzok bal oldalhoz viszonyított "
-#~ "helyzetét."
-
-#, fuzzy
-#~ msgid "Left offset :"
-#~ msgstr "Bal oldali eltolás"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the top position of the drawings."
-#~ msgstr ""
-#~ "pixelekben. Ezzel állíthatja be a rajzok felső oldalhoz viszonyított "
-#~ "helyzetét."
-
-#, fuzzy
-#~ msgid "Top offset :"
-#~ msgstr "Felső eltolás:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the right position of the drawings."
-#~ msgstr ""
-#~ "pixelekben. Ezzel állíthatja be a rajzok jobb oldalhoz viszonyított "
-#~ "helyzetét."
-
-#, fuzzy
-#~ msgid "Right offset :"
-#~ msgstr "Jobb oldali eltolás:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the bottom position of the drawings."
-#~ msgstr ""
-#~ "pixelekben. Ezzel állíthatja be a rajzok felső oldalhoz viszonyított "
-#~ "helyzetét."
-
-#, fuzzy
-#~ msgid "Bottom offset :"
-#~ msgstr "Alsó eltolás:"
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "Előtér kép:"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Előtér átlátszósága:"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Válasszon ki egyet az elérhető témákból:"
 
 #~ msgid "Animated icons"
 #~ msgstr "Ikonanimációk"
@@ -1343,8 +1217,8 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Adjon hozzá egy élő pingvint a dokkhoz!\n"
 #~ "Az animáció megváltoztatásához kattintson rajta bal egérgombbal,\n"
@@ -1359,11 +1233,9 @@ msgstr ""
 #~ msgstr "Bocs, de épp nem érek rá."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
-#~ "Nincs időm veled játszani, fel kell ásnom és aláaknáznom ezeket az "
-#~ "ikonokat."
+#~ "Nincs időm veled játszani, fel kell ásnom és aláaknáznom ezeket az ikonokat."
 
 #~ msgid "Your dock is so messy! Let me clean it."
 #~ msgstr "A dokkod olyan piszkos! Hadd takarítsam ki."
@@ -1394,8 +1266,8 @@ msgstr ""
 #~ "- The same thing we do every night, Pinky : try to take over the Dock!"
 #~ msgstr ""
 #~ "- Jé, Brain, mit csinálunk ma este?\n"
-#~ "- Ugyanazt, amit minden este, Pinky. Megpróbáljuk átvenni a hatalmat a "
-#~ "dokk felett!"
+#~ "- Ugyanazt, amit minden este, Pinky. Megpróbáljuk átvenni a hatalmat a dokk "
+#~ "felett!"
 
 #~ msgid "For Aiur!"
 #~ msgstr "Auirért!"
@@ -1420,16 +1292,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know Klipper.\n"
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
+#~ "Drop text on the icon to create persistent items, and middle-clck to recall "
+#~ "them."
 #~ msgstr ""
-#~ "Ez a kisalkalmazás tárolja a vágólap tartalmát és az "
-#~ "egérkiválasztásokat,\n"
+#~ "Ez a kisalkalmazás tárolja a vágólap tartalmát és az egérkiválasztásokat,\n"
 #~ "így gyorsan előhívhatja azokat. Ez a kisalkalmazás a jól ismert Klipper "
 #~ "klónja.\n"
 #~ "Támogatja a vágólapot és az egérkiválasztásokat, előre meghatározott "
@@ -1477,16 +1347,15 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
-#~ "Megjeleníti a megszokott Alkalmazások menüt és a legutóbbi "
-#~ "dokumentumokat.\n"
-#~ "Kompatibilis minden, az XDG-specifikációnak megfelelő menüvel (Gnome,"
-#~ "XFCE, KDE, ...)\n"
-#~ "A középső egérgomb megnyitja a gyorsindító párbeszédablakot (beállíthat "
-#~ "rá egy billentyű-kombinációt is, például ALT+F2)\n"
+#~ "Megjeleníti a megszokott Alkalmazások menüt és a legutóbbi dokumentumokat.\n"
+#~ "Kompatibilis minden, az XDG-specifikációnak megfelelő menüvel (Gnome,XFCE, "
+#~ "KDE, ...)\n"
+#~ "A középső egérgomb megnyitja a gyorsindító párbeszédablakot (beállíthat rá "
+#~ "egy billentyű-kombinációt is, például ALT+F2)\n"
 #~ "Beállíthat gyorsbillentyűt a menü megnyitására is (például ALT+F1)"
 
 #~ msgid "Quick launch"
@@ -1732,17 +1601,16 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most ressources using programs.\n"
+#~ "You can instanciate this applet several times to show different values each "
+#~ "time."
 #~ msgstr ""
-#~ "A processzorterhelést, memóriahasználatot, videokártya hőmérsékletét, "
-#~ "stb. mutató kisalkalmazás.\n"
+#~ "A processzorterhelést, memóriahasználatot, videokártya hőmérsékletét, stb. "
+#~ "mutató kisalkalmazás.\n"
 #~ "Ha középső egérgombbal kattint az ikonra, némi értékes információhoz "
 #~ "juthat.\n"
-#~ "Ha bal egérgombbal kattint az ikonra, megkapja a legtöbb erőforrást "
-#~ "használó programok listáját.\n"
+#~ "Ha bal egérgombbal kattint az ikonra, megkapja a legtöbb erőforrást használó "
+#~ "programok listáját.\n"
 #~ "Több példányt létrehozva a kisalkalmazásokból mindegyiket más érték "
 #~ "mutatására állíthatja be."
 
@@ -1792,8 +1660,8 @@ msgstr ""
 #~ "Scroll up/down to increase/decrease the luminosity\n"
 #~ "Left-click to open a dialog to setup the luminosity\n"
 #~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically "
-#~ "on startup."
+#~ "You can also define a luminosity value that will be applied automatically on "
+#~ "startup."
 #~ msgstr ""
 #~ "Állítsa be közvetlenül a dokkról a kijelző fényerejét.\n"
 #~ "Felfelé/lefelé görgetéssel növelheti/csökkentheti a fényerőt.\n"
@@ -1810,15 +1678,14 @@ msgstr ""
 #~ msgid ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
+#~ "for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to set or unset to mute, double-click to raise the channels "
 #~ "mixer.\n"
 #~ "This applet works with the Alsa sound driver."
 #~ msgstr ""
-#~ "Ezzel a kisalkalmazással közvetlenül a dokkról szabályozhatja a "
-#~ "hangerőt.\n"
+#~ "Ezzel a kisalkalmazással közvetlenül a dokkról szabályozhatja a hangerőt.\n"
 #~ "Az ikonon felfelé/lefelé görgetéssel növelheti/csökkentheti a hangerőt.\n"
 #~ "Kattintással nyithatja meg vagy rejtheti el a hangerőszabályzót, vagy "
 #~ "hozzárendelhet egy gyorsbillentyűt.\n"
@@ -1832,8 +1699,7 @@ msgstr ""
 
 #~ msgid "Card '%s' opened but I couldn't get any info"
 #~ msgstr ""
-#~ "A(z) '%s' kártya meg van nyitva, de nem férek hozzá semmilyen "
-#~ "információhoz."
+#~ "A(z) '%s' kártya meg van nyitva, de nem férek hozzá semmilyen információhoz."
 
 #~ msgid "I couldn't open the mixer"
 #~ msgstr "Nem sikerült megnyitni a keverőt"
@@ -1849,6 +1715,9 @@ msgstr ""
 
 #~ msgid "Set up volume:"
 #~ msgstr "Hangerőbeállítás:"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Csatornák beállítása"
 
 #~ msgid "Monday"
 #~ msgstr "Hétfő"
@@ -1920,6 +1789,9 @@ msgstr ""
 #~ msgid "Reload WM"
 #~ msgstr "Ablakkezelő újraindítása"
 
+#~ msgid "Widget Layer"
+#~ msgstr "Szerkentyű réteg"
+
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
 #~ " through your package manager (Synaptic, YasT, etc)"
@@ -1929,6 +1801,9 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Emerald újraindítása"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Ablakkezelő cseréje"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Ablakdíszítő cseréje"
@@ -1947,8 +1822,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "Couldn't upload the file, check that your internet connection is active."
-#~ msgstr ""
-#~ "Nem sikerült feltölteni a fájlt, ellenőrizze az internetkapcsolatát."
+#~ msgstr "Nem sikerült feltölteni a fájlt, ellenőrizze az internetkapcsolatát."
 
 #~ msgid ""
 #~ "File has been uploaded.\n"
@@ -1991,12 +1865,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
+#~ "Consider activating the history if you want the applet to remember previous "
+#~ "uploads."
 #~ msgstr ""
 #~ "Nincs feltöltött fájl.\n"
-#~ "Kapcsolja be az előzményeket, ha azt akarja, hogy a kisalkalmazás "
-#~ "emlékezzen a korábbi feltöltésekre."
+#~ "Kapcsolja be az előzményeket, ha azt akarja, hogy a kisalkalmazás emlékezzen "
+#~ "a korábbi feltöltésekre."
 
 #~ msgid ""
 #~ "The current URL has been stored in the clipboard.\n"
@@ -2045,17 +1919,17 @@ msgstr ""
 #~ msgid ""
 #~ "This module adds different views to your dock.\n"
 #~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
-#~ "views are provided."
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve views "
+#~ "are provided."
 #~ msgstr ""
 #~ "Ez a modul különböző nézeteket ad a dokkjához.\n"
 #~ "Bármelyik vagy aldokk úgy jelenik meg, ahogy Ön szeretné.\n"
-#~ "Jelenleg a 3D-s panel, az Áttekintő, a Parabolikus, a  Szivárvány, a "
-#~ "Csúszka és a Görbe nézetek érhetőek el."
+#~ "Jelenleg a 3D-s panel, az Áttekintő, a Parabolikus, a  Szivárvány, a Csúszka "
+#~ "és a Görbe nézetek érhetőek el."
 
 #~ msgid ""
-#~ "This plug-in displays an animated indicator when you drop something into "
-#~ "the dock."
+#~ "This plug-in displays an animated indicator when you drop something into the "
+#~ "dock."
 #~ msgstr ""
 #~ "Ez a kisalkalmazás megjelenít egy animált jelzőt, amikor valamit a dokkra "
 #~ "dob."

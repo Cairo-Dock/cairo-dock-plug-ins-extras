@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-04-19 12:54+0100\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-06-21 00:31+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
-"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-16 05:13+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:51+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Language: el\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -209,8 +211,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Ανάλογα με τον διαχειριστή παραθύρων, μπορεί να είναι δυνατόν να το "
-"μετακινήσετε με ALT + αριστερό κλικ. Αρνητικές τιμές μετρώνται από τα δεξιά/"
-"κάτω της οθόνης"
+"μετακινήσετε με ALT + αριστερό κλικ. Αρνητικές τιμές μετρώνται από τα "
+"δεξιά/κάτω της οθόνης"
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Google/messages:35
@@ -541,14 +543,12 @@ msgstr "Διαμόρφωση"
 
 #: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
 #: ../MintMenu/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the menu:"
-msgstr "Πλήκτρο συντόμευσης για εμφάνιση του μενού αντικειμένων:"
+msgstr ""
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Μενού εφαρμογών"
+msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -563,9 +563,8 @@ msgid "Behaviour"
 msgstr "Συμπεριφορά"
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "σε δευτερόλεπτα."
+msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
@@ -580,13 +579,10 @@ msgid "Time length of dialogues for calendar of next month :"
 msgstr ""
 
 #: ../Calendar/messages:117
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
-"Ένα έβλημα που θα εμφανίζεται όταν προσπαθείτε να αφήσετε κάτι σε ένα "
-"εικονίδιο. Αφήστε το κενό για χρήση της προεπιλογής."
 
 #: ../Calendar/messages:119
 msgid "Icon custom script:"
@@ -606,20 +602,17 @@ msgid "Pause all torrents"
 msgstr ""
 
 #: ../Deluge/Deluge:292 ../Transmission/Transmission:400
-#, fuzzy
 msgid "Resume all torrents"
-msgstr "Διαγραφή όλων των γεγονότων"
+msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "Torrents info (middle-click)"
-msgstr "Εμφάνιση τρεχουσών συνθηκών (μεσαίο κλικ)"
+msgstr ""
 
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Πλήκτρο συντόμευσης για εμφάνιση του μενού αντικειμένων:"
+msgstr ""
 
 #: ../DiskFree/messages:97
 msgid ""
@@ -627,46 +620,40 @@ msgid ""
 msgstr ""
 
 #: ../DiskFree/messages:99
-#, fuzzy
 msgid "in minutes"
-msgstr "Σε λεπτά."
+msgstr ""
 
 #: ../DiskFree/messages:101
-#, fuzzy
 msgid "Time between two file system's checking :"
-msgstr "Χρόνος μεταξύ δύο ανανεώσεων σελίδας"
+msgstr ""
 
 #: ../GTG/messages:97 ../Xchat/messages:99
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Διάρκεια παλμού:"
+msgstr ""
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Short"
 msgstr ""
 
 #: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
-#, fuzzy
 msgid "Medium"
-msgstr "μεσαίο"
+msgstr ""
 
 #: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "Long"
 msgstr ""
 
 #: ../GTG/messages:105 ../Xchat/messages:107
-#, fuzzy
 msgid "Animation of the icon on receiving channel messages :"
-msgstr "Εφέ κίνησης του εικονιδίου κατά το ανέβασμα :"
+msgstr ""
 
 #: ../GTG/messages:107 ../Xchat/messages:97
 msgid "Display channel messages in a bubble :"
 msgstr ""
 
 #: ../GTG/messages:111
-#, fuzzy
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "Διαστάσεις desklet (πλάτος x ύψος):"
+msgstr ""
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -682,19 +669,16 @@ msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Όνομα του εικονιδίου όπως θα εμφανίζεται στη λεζάντα του στο dock:"
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Εμφάνιση παραθύρου"
+msgstr ""
 
 #: ../Liferea/messages:99
-#, fuzzy
 msgid "Number of unread messages"
-msgstr "Αριθμός γύρων το δευτερόλεπτο."
+msgstr ""
 
 #: ../Liferea/messages:101
-#, fuzzy
 msgid " Number of new messages"
-msgstr "Μέγιστος αριθμός νέων μηνυμάτων που θα εμφανισθούν;"
+msgstr ""
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -702,9 +686,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Διαμόρφωση"
+msgstr ""
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
@@ -715,46 +698,40 @@ msgid "Set your status message"
 msgstr ""
 
 #: ../Pidgin/Pidgin:440 ../Xchat/Xchat:270
-#, fuzzy
 msgid "Silent mode"
-msgstr "Κατάσταση Desklet"
+msgstr ""
 
 #: ../Pidgin/Pidgin:444 ../Xchat/Xchat:274
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
 
 #: ../Pidgin/Pidgin:455
-#, fuzzy
 msgid "Enter your new status message:"
-msgstr "Μέγιστος αριθμός νέων μηνυμάτων που θα εμφανισθούν;"
+msgstr ""
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
 msgid "Parameters"
 msgstr "Παράμετροι"
 
 #: ../Pidgin/messages:99
-#, fuzzy
 msgid "Choose a theme :"
-msgstr "Χρήση τρισδιάστατων θεμάτων;"
+msgstr ""
 
 #: ../Pidgin/messages:103
 msgid "Display conversation messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:105
-#, fuzzy
 msgid "Display chat messages in a bubble?"
-msgstr "Εμφάνιση χρήσης δίσκου με μπάρα;"
+msgstr ""
 
 #: ../Pidgin/messages:107
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Διάρκεια παλμού:"
+msgstr ""
 
 #: ../Pidgin/messages:115
-#, fuzzy
 msgid "Animation of the icon on receiving a message:"
-msgstr "Εφέ κίνησης του εικονιδίου κατά το ανέβασμα :"
+msgstr ""
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid ""
@@ -762,9 +739,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
-#, fuzzy
 msgid "Size of the history :"
-msgstr "Μέγεθος των εσωτερικών γραμμών :"
+msgstr ""
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid "none"
@@ -775,14 +751,12 @@ msgid "big"
 msgstr "μεγάλο"
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Αφήστε κενό για εμφάνιση της τρέχουσας φωτεινότητας."
+msgstr ""
 
 #: ../Quote/messages:99
-#, fuzzy
 msgid "Quote source:"
-msgstr "Αριθμός πηγών:"
+msgstr ""
 
 #: ../Quote/messages:101
 msgid "Quotationspage.com"
@@ -825,27 +799,24 @@ msgid "in seconds."
 msgstr "σε δευτερόλεπτα."
 
 #: ../RubyBattery/messages:101
-#, fuzzy
 msgid "Interval of time between 2 checks:"
-msgstr "Διάστημα μεταξύ ελέγχων σήματος :"
+msgstr ""
 
 #: ../RubyBattery/messages:103
 msgid "Activate alert of critical charge?"
 msgstr ""
 
 #: ../RubyBattery/messages:105
-#, fuzzy
 msgid "of % battery charge."
-msgstr "Ειδοποίηση όταν φορτιστεί η μπαταρία;"
+msgstr ""
 
 #: ../RubyBattery/messages:107
 msgid "Threshold for the critical charge alert:"
 msgstr ""
 
 #: ../RubyBattery/messages:109
-#, fuzzy
 msgid "Display a label with the charge?"
-msgstr "Εμφάνιση χρήσης δίσκου με μπάρα;"
+msgstr ""
 
 #: ../Translator/Translator:434
 msgid "To"
@@ -856,18 +827,16 @@ msgid "From"
 msgstr ""
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Αλλαγή διαχειριστή παραθύρων"
+msgstr ""
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
 msgstr ""
 
 #: ../Translator/messages:7
-#, fuzzy
 msgid "Let empty to display the current source and destination languages."
-msgstr "Αφήστε κενό για εμφάνιση των πληροφοριών τρέχουσας κατάστασης."
+msgstr ""
 
 #: ../Translator/messages:13
 msgid "Leave empty to use the default one."
@@ -1102,9 +1071,8 @@ msgid "Urdu"
 msgstr ""
 
 #: ../Translator/messages:211 ../Translator/messages:327
-#, fuzzy
 msgid "Vietnamese"
-msgstr "Όνομα αρχείου"
+msgstr ""
 
 #: ../Translator/messages:213 ../Translator/messages:329
 msgid "Welsh"
@@ -1115,9 +1083,8 @@ msgid "Yiddish"
 msgstr ""
 
 #: ../Translator/messages:217
-#, fuzzy
 msgid "Translate to:"
-msgstr "Μετονομασία σε:"
+msgstr ""
 
 #: ../Translator/messages:333
 msgid "Shortkeys"
@@ -1132,19 +1099,16 @@ msgid "Shortkey to start translating to (write):"
 msgstr ""
 
 #: ../Translator/messages:339
-#, fuzzy
 msgid "Dialog"
-msgstr "Φυσσαλίδα διαλόγου"
+msgstr ""
 
 #: ../Translator/messages:341
-#, fuzzy
 msgid "In s. Set 0 for an unlimited time."
-msgstr "Σε ms. Ορίστε σε 0 για να μη γίνει χρήση του εφέ."
+msgstr ""
 
 #: ../Translator/messages:343
-#, fuzzy
 msgid "Time-length of the result dialog:"
-msgstr "Χρονική διάρκεια των αναδυόμενων συμβουλών:"
+msgstr ""
 
 #: ../Translator/messages:345
 msgid "Editable text widget?"
@@ -1164,9 +1128,8 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Αναζήτηση …"
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1201,9 +1164,8 @@ msgid "Wikipedia"
 msgstr "Βικιπαίδεια"
 
 #: ../WebSearch/messages:113
-#, fuzzy
 msgid "ImageShack"
-msgstr "ImageShack.us"
+msgstr ""
 
 #: ../WebSearch/messages:115
 msgid "Twitter"
@@ -1214,14 +1176,12 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "σε δευτερόλεπτα."
+msgstr ""
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid "Maximum number of results shown :"
-msgstr "Μέγιστος αριθμός αποτελεσμάτων :"
+msgstr ""
 
 #: ../WebSearch/messages:123
 msgid "Show the current page as the icon label ?"
@@ -1244,9 +1204,8 @@ msgid ""
 msgstr ""
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Ρύθμιση καναλιών"
+msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
@@ -1255,224 +1214,16 @@ msgstr ""
 #~ msgid "Preferences"
 #~ msgstr "Προτιμήσεις"
 
-#, fuzzy
-#~ msgid "in ms"
-#~ msgstr "σε ms."
-
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Χρόνος ανανέωσης:"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Ειδοποίηση"
-
-#, fuzzy
-#~ msgid "Notifications for new messages?"
-#~ msgstr "Ειδοποίηση όταν η μπαταρία αδειάσει;"
-
-#, fuzzy
-#~ msgid "Notifications for pokes?"
-#~ msgstr "Τύπος ειδοποίησης:"
-
-#, fuzzy
-#~ msgid "Notifications for group invites?"
-#~ msgstr "Ειδοποίηση όταν η μπαταρία αδειάσει;"
-
-#, fuzzy
-#~ msgid "Notifications for event invites?"
-#~ msgstr "Ειδοποίηση όταν η μπαταρία αδειάσει;"
-
-#, fuzzy
-#~ msgid "never"
-#~ msgstr "Ποτέ"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Αναπήδηση"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Αναβόσβημα"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Παλμός"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Περιστροφή:"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Ταλάντευση"
-
-#, fuzzy
-#~ msgid "Time in minutes."
-#~ msgstr "Σε λεπτά."
-
 #~ msgid "Appearance"
 #~ msgstr "Εμφάνιση"
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can resize it with ALT + "
-#~ "middle_click or ALT + left_click for exemple."
-#~ msgstr ""
-#~ "Ανάλογα με το διαχειριστή παραθύρων σας, μπορείτε να του αλλάξετε το "
-#~ "μέγεθος με ALT + μεσαίο κλικ ή ALT + αριστερό κλικ."
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can move it with ALT + left_click"
-#~ msgstr ""
-#~ "Ανάλογα με το διαχειριστή παραθύρων σας, μπορείτε να το μετακινήσετε με "
-#~ "ALT + αριστερό κλικ."
-
-#, fuzzy
-#~ msgid "Desklet's position (x ; y) :"
-#~ msgstr "Θέση desklet (x, y):"
-
-#, fuzzy
-#~ msgid "Is detached from the dock ?"
-#~ msgstr "Είναι αποσυνδεδεμένο από το dock"
-
-#, fuzzy
-#~ msgid "Accessibility :"
-#~ msgstr "Ορατότητα :"
-
-#, fuzzy
-#~ msgid "On Widget Layer"
-#~ msgstr "Επίπεδο Widget"
-
-#, fuzzy
-#~ msgid "Should be visible on all desktops ?"
-#~ msgstr "Θα πρέπει να είναι ορατό σε όλες τις επιφάνειες εργασίας;"
-
-#, fuzzy
-#~ msgid ""
-#~ "If locked, the desklet can't be moved by simply dragging it with the left "
-#~ "mouse button. Of course you can still move it with ALT + left_click."
-#~ msgstr ""
-#~ "Αν είναι κλειδωμένο, το desklet δεν μπορεί να μετακινηθεί απλά με σύρσιμο "
-#~ "με το αριστερό κουμπί, Μπορεί να μετακινηθεί με ALT + αριστερό κλικ."
-
-#, fuzzy
-#~ msgid "Lock position ?"
-#~ msgstr "Κλείδωμα θέσης;"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Περιστροφή:"
-
-#, fuzzy
-#~ msgid "Choose the 'personnal' one to define your own decorations below."
-#~ msgstr ""
-#~ "Επιλέξτε 'Προσαρμοσμένος διάκοσμος' για να καθορίσετε το δικό σας "
-#~ "διάκοσμο παρακάτω."
-
-#, fuzzy
-#~ msgid "Choose a decoration theme for this desklet :"
-#~ msgstr "Επιλέξτε ένα θέμα διακόσμησης για αυτό το desklet:"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed below the drawings, like a frame for "
-#~ "exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Εικόνα που θα εμφανίζεται κάτω από τα σχέδια, π.χ. ένα πλαίσιο. Αφήστε "
-#~ "κενό για να μη χρησιμοποιηθεί εικόνα."
-
-#, fuzzy
-#~ msgid "Background image :"
-#~ msgstr "Εικόνα παρασκηνίου:"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Διαφάνεια παρασκηνίου:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the left position of the drawings."
-#~ msgstr ""
-#~ "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε την αριστερή θέση των σχεδίων."
-
-#, fuzzy
-#~ msgid "Left offset :"
-#~ msgstr "Αριστερή μετατόπιση"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the top position of the drawings."
-#~ msgstr "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε την άνω θέση των σχεδίων."
-
-#, fuzzy
-#~ msgid "Top offset :"
-#~ msgstr "Άνω μετατόπιση:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the right position of the drawings."
-#~ msgstr ""
-#~ "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε τη δεξιά θέση των σχεδίων."
-
-#, fuzzy
-#~ msgid "Right offset :"
-#~ msgstr "Δεξιά μετατόπιση:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the bottom position of the drawings."
-#~ msgstr ""
-#~ "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε την κάτω θέση των σχεδίων."
-
-#, fuzzy
-#~ msgid "Bottom offset :"
-#~ msgstr "Κάτω μετατόπιση:"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed above the drawings, like a reflect "
-#~ "for exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Εικόνα που θα εμφανισθεί πάνω από τα σχέδια, π.χ. μια αντανάκλαση. Αφήστε "
-#~ "κενό για να μη χρησιμοποιηθεί εικόνα."
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "Εικόνα προσκήνιου:"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Διαφάνεια προσκήνιου:"
-
-#, fuzzy
-#~ msgid "Show the moon for all the current week?"
-#~ msgstr "Πως θα σχεδιασθεί η τρέχουσα πειφάνεια εργασίας:"
-
-#, fuzzy
-#~ msgid "tinyurl.com"
-#~ msgstr "Pastebin.com"
-
-#, fuzzy
-#~ msgid "shorterlink.org"
-#~ msgstr "Shorter-Link"
-
-#, fuzzy
-#~ msgid "Action au clic milieu sur l icone :"
-#~ msgstr "Ενέργειες με κλικ και μεσαίο κλικ :"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Επιλέξτε ένα από τα διαθέσιμα θέματα :"
-
-#, fuzzy
-#~ msgid "Max value :"
-#~ msgstr "Εμφάνιση τιμών :"
 
 #~ msgid "Animated icons"
 #~ msgstr "Κινούμενα εικονίδια"
 
 #~ msgid "This plug-in provides many different animations for your icons."
 #~ msgstr ""
-#~ "Αυτό το πρόσθετο προσφέρει πολλές διαφορετικές κινούμενες απεικονίσεις "
-#~ "για τα εικονίδιά σας."
+#~ "Αυτό το πρόσθετο προσφέρει πολλές διαφορετικές κινούμενες απεικονίσεις για "
+#~ "τα εικονίδιά σας."
 
 #~ msgid "Wave"
 #~ msgstr "Κυματισμός"
@@ -1484,8 +1235,8 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Προσθέστε έναν ζωηρό πιγκουίνο στο dock σας!\n"
 #~ "Αριστερό κλικ για αλλαγή της κινούμενης απεικόνισης.\n"
@@ -1503,11 +1254,10 @@ msgstr ""
 #~ msgstr "Συγνώμη, αλλά είμαι απασχολημένος τώρα."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
-#~ "Δεν έχω χρόνο να παίξω μαζί σου. Πρέπει να \"σκάψω για να εξορύξω\" αυτά "
-#~ "τα εικονίδια."
+#~ "Δεν έχω χρόνο να παίξω μαζί σου. Πρέπει να \"σκάψω για να εξορύξω\" αυτά τα "
+#~ "εικονίδια."
 
 #~ msgid "Your dock is so messy! Let me clean it."
 #~ msgstr "Το dock σου είναι πολύ \"λερωμένο\"! Επίτρεψέ μου να το καθαρίσω."
@@ -1564,13 +1314,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know Klipper.\n"
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
+#~ "Drop text on the icon to create persistent items, and middle-clck to recall "
+#~ "them."
 #~ msgstr ""
 #~ "Αυτή η μικροεφαρμογή κρατάει ιστορικό του πρόχειρου και των επιλογών του "
 #~ "ποντικιού,\n"
@@ -1579,8 +1328,8 @@ msgstr ""
 #~ "ενέργειες και μόνιμα αντικείμενα.\n"
 #~ "Με αριστερό κλικ αναδύεται το ιστορικό του πρόχειρου και των επιλογών του "
 #~ "ποντικιού.\n"
-#~ "Αφήστε κείμενο στο εικονίδιο για να δημιουργήσετε μόνιμα αντικείμενα και "
-#~ "με μεσαίο κλικ τα ανακαλείτε."
+#~ "Αφήστε κείμενο στο εικονίδιο για να δημιουργήσετε μόνιμα αντικείμενα και με "
+#~ "μεσαίο κλικ τα ανακαλείτε."
 
 #~ msgid "Clipboard history"
 #~ msgstr "Ιστορικό προχείρου"
@@ -1590,8 +1339,7 @@ msgstr ""
 #~ "You can add some by drag and dropping some text on the icon."
 #~ msgstr ""
 #~ "Δεν υπάρχουν μόνιμα αντικείμενα.\n"
-#~ "Μπορείτε να προσθέσετε μερικά σύροντας και αφήνοντας κείμενο στο "
-#~ "εικονίδιο."
+#~ "Μπορείτε να προσθέσετε μερικά σύροντας και αφήνοντας κείμενο στο εικονίδιο."
 
 #~ msgid ""
 #~ "This plug-in lets extern applications interact on the dock.\n"
@@ -1616,8 +1364,7 @@ msgstr ""
 #~ msgid ""
 #~ "The applet '%s' has been succefully installed and automatically launched"
 #~ msgstr ""
-#~ "Η μικροεφαρμογή '%s' έχει επιτυχώς εγκατασταθεί και έχει εκκινηθεί "
-#~ "αυτόματα."
+#~ "Η μικροεφαρμογή '%s' έχει επιτυχώς εγκατασταθεί και έχει εκκινηθεί αυτόματα."
 
 #~ msgid "B"
 #~ msgstr "Β"
@@ -1681,8 +1428,8 @@ msgstr ""
 #~ "  - NEED TO BE DETACHED FROM THE DOCK TO WORK !\n"
 #~ "  - Middle-clic to reload values"
 #~ msgstr ""
-#~ "Αυτή η μικροεφαρμογή σας επιτρέπει να γράψετε κείμενα και να "
-#~ "παρακολουθείτε το σύστημά σας\n"
+#~ "Αυτή η μικροεφαρμογή σας επιτρέπει να γράψετε κείμενα και να παρακολουθείτε "
+#~ "το σύστημά σας\n"
 #~ "με ένα \"desklet σε στυλ κειμένου\".\n"
 #~ "ΧΡΗΣΗ:\n"
 #~ "  - ΠΡΕΠΕΙ ΝΑ ΑΠΟΣΥΝΔΕΘΕΙ ΑΠΟ ΤΟ DOCK ΓΙΑ ΝΑ ΔΟΥΛΕΨΕΙ !\\n\n"
@@ -1696,20 +1443,19 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet imports folders inside the Dock\n"
-#~ "You can have as many instances of this applet as you want, each one with "
-#~ "a different folder.\n"
+#~ "You can have as many instances of this applet as you want, each one with a "
+#~ "different folder.\n"
 #~ "To add a folder in your dock:\n"
-#~ " - activate the applet, open its configuration panel, and select a "
-#~ "folder\n"
+#~ " - activate the applet, open its configuration panel, and select a folder\n"
 #~ " - or just drop a folder into the dock\n"
 #~ "Middle-click on the main icon opens the folder.\n"
 #~ msgstr ""
 #~ "Αυτή η μικροεφαρμογή εισάγει φακέλους μέσα στο Dcok\n"
-#~ "Μπορείτε να έχετε όσες εκτελέσεις αυτής της μικροεφαρμογής θέλετε, "
-#~ "καθεμιά με διαφορετικό φάκελο.\n"
+#~ "Μπορείτε να έχετε όσες εκτελέσεις αυτής της μικροεφαρμογής θέλετε, καθεμιά "
+#~ "με διαφορετικό φάκελο.\n"
 #~ "Για να προσθέσετε ένα φάκελο στο dock σας:\n"
-#~ " - ενεργοποιήστε τη μικροεφαρμογή, ανοίξτε το πάνελ διαμόρφωσης και "
-#~ "επιλέξτε ένα φάκελο\n"
+#~ " - ενεργοποιήστε τη μικροεφαρμογή, ανοίξτε το πάνελ διαμόρφωσης και επιλέξτε "
+#~ "ένα φάκελο\n"
 #~ " - ή απλώς ρίξτε ένα φάκελο στο dock\n"
 #~ "Μεσαίο κλικ στο κύριο εικονίδιο ανοίγει το φάκελο.\n"
 
@@ -1788,16 +1534,14 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Εμφανίζει το κοινό μενού Εφαρμογών και τα πρόσφατα αρχεία.\n"
-#~ "Είναι συμβατή με οποιοδήποτε μενού προδιαγραφών XDG (Gnome, XFCE, KDE, "
-#~ "…)\n"
-#~ "Με μεσαίο κλικ ανοίγει ένα παράθυρο διαλόγου για δώσετε γρήγορα "
-#~ "οποιαδήποτε εντολή (μπορείτε να ορίσετε συντόμευση γι' αυτό, όπως το ALT"
-#~ "+F2)\n"
+#~ "Είναι συμβατή με οποιοδήποτε μενού προδιαγραφών XDG (Gnome, XFCE, KDE, …)\n"
+#~ "Με μεσαίο κλικ ανοίγει ένα παράθυρο διαλόγου για δώσετε γρήγορα οποιαδήποτε "
+#~ "εντολή (μπορείτε να ορίσετε συντόμευση γι' αυτό, όπως το ALT+F2)\n"
 #~ "Μπορείτε επίσης να ορίσετε συντόμευση για να αναδύεται το μενού (όπως το "
 #~ "ALT+F1)"
 
@@ -1823,8 +1567,8 @@ msgstr ""
 #~ msgstr "Me Menu"
 
 #~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online "
-#~ "status, your friends."
+#~ "A menu that lets you access quickly to your information, your online status, "
+#~ "your friends."
 #~ msgstr ""
 #~ "Ένα μενού που σας επιτρέπει γρήγορη πρόσβαση στις πληροφορίες σας, την "
 #~ "κατάσταση σύνδεσης, τους φίλους σας."
@@ -1836,8 +1580,7 @@ msgstr ""
 #~ msgstr "Μενού μηνυμάτων"
 
 #~ msgid ""
-#~ "A menu that notices you about new messages from Mail or Chat "
-#~ "applications.\n"
+#~ "A menu that notices you about new messages from Mail or Chat applications.\n"
 #~ "It handles Evolution, Pidgin, Empathy, etc"
 #~ msgstr ""
 #~ "Ένα μενού που σας ειδοποιεί για νέα μηνύματα από εφαρμογές ταχυδρομείου ή "
@@ -1927,8 +1670,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
@@ -1936,11 +1679,10 @@ msgstr ""
 #~ "συνδέσεις) δικτύου.\n"
 #~ "Μπορεί να εμφανίσει τις ταχύτητες μεταφόρτωσης/αποστολής και την ποιότητα "
 #~ "του ασύρματου σήματος.\n"
-#~ "Αν εκτελείται ο network-manager, μπορεί επίσης να σας επιτρέψει να "
-#~ "επιλέξετε το τρέχον ασύρματο δίκτυο.\n"
-#~ "Με αριστερό κλικ αναδύονται ορισμένες πληροφορίες. Κυλήστε στο εικονίδιο "
-#~ "για να αλλάξετε την απεικόνιση μεταξύ ταχύτητας δικτύου και ασύρματου "
-#~ "σήματος."
+#~ "Αν εκτελείται ο network-manager, μπορεί επίσης να σας επιτρέψει να επιλέξετε "
+#~ "το τρέχον ασύρματο δίκτυο.\n"
+#~ "Με αριστερό κλικ αναδύονται ορισμένες πληροφορίες. Κυλήστε στο εικονίδιο για "
+#~ "να αλλάξετε την απεικόνιση μεταξύ ταχύτητας δικτύου και ασύρματου σήματος."
 
 #~ msgid "Loading"
 #~ msgstr "Φόρτωση"
@@ -2098,6 +1840,9 @@ msgstr ""
 #~ msgid "Delete today's events"
 #~ msgstr "Διαγραφή σημερινών γεγονότων"
 
+#~ msgid "Delete all events"
+#~ msgstr "Διαγραφή όλων των γεγονότων"
+
 #~ msgid "The value %s has been copied into the clipboard."
 #~ msgstr "Η τιμή %s έχει αντιγραφεί στο πρόχειρο."
 
@@ -2204,13 +1949,12 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most ressources using programs.\n"
+#~ "You can instanciate this applet several times to show different values each "
+#~ "time."
 #~ msgstr ""
-#~ "Αυτή η μικροεφαρμογή σας δείχνει το φόρτο του επεξεργαστή, τη χρήση "
-#~ "μνήμης, τη θερμοκρασία της κάρτας γραφικών κλπ.\n"
+#~ "Αυτή η μικροεφαρμογή σας δείχνει το φόρτο του επεξεργαστή, τη χρήση μνήμης, "
+#~ "τη θερμοκρασία της κάρτας γραφικών κλπ.\n"
 #~ "Με μεσαίο κλικ στο εικονίδιο παίρνετε μερικές χρήσιμες πληροφορίες.\n"
 #~ "Με αριστερό κλικ στο εικονίδιο παίρνετε μια λίστα με τα προγράμματα που "
 #~ "χρησιμοποιούν τους περισσότερους πόρους.\n"
@@ -2288,16 +2032,16 @@ msgstr ""
 
 #~ msgid "This applet displays a toon that will look at your mouse."
 #~ msgstr ""
-#~ "Αυτή η μικροεφαρμογή εμφανίζει ένα κινούμενο σχέδιο που κοιτάζει το "
-#~ "ποντίκι σας."
+#~ "Αυτή η μικροεφαρμογή εμφανίζει ένα κινούμενο σχέδιο που κοιτάζει το ποντίκι "
+#~ "σας."
 
 #~ msgid ""
 #~ "Setup the luminosity of your screen directly from your dock.\n"
 #~ "Scroll up/down to increase/decrease the luminosity\n"
 #~ "Left-click to open a dialog to setup the luminosity\n"
 #~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically "
-#~ "on startup."
+#~ "You can also define a luminosity value that will be applied automatically on "
+#~ "startup."
 #~ msgstr ""
 #~ "Ορίστε τη φωτεινότητα της οθόνης σας απευθείας από το dock.\n"
 #~ "Κυλήστε πάνω/κάτω για να αυξήσετε/ελαττώσετε τη φωτεινότητα\n"
@@ -2322,8 +2066,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
+#~ "for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to set or unset to mute, double-click to raise the channels "
 #~ "mixer.\n"
@@ -2347,8 +2091,7 @@ msgstr ""
 
 #~ msgid "Card '%s' opened but I couldn't get any info"
 #~ msgstr ""
-#~ "Η κάρτα '%s' άνοιξε αλλά δεν ήταν δυνατή η ανάκτηση οποιασήποτε "
-#~ "πληροφορίας."
+#~ "Η κάρτα '%s' άνοιξε αλλά δεν ήταν δυνατή η ανάκτηση οποιασήποτε πληροφορίας."
 
 #~ msgid "I couldn't open the mixer"
 #~ msgstr "Αδυναμία ανοίγματος του μίκτη."
@@ -2364,6 +2107,9 @@ msgstr ""
 
 #~ msgid "Set up volume:"
 #~ msgstr "Καθορισμός έντασης:"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Ρύθμιση καναλιών"
 
 #~ msgid "double-click"
 #~ msgstr "διπλό-κλικ"
@@ -2457,19 +2203,18 @@ msgstr ""
 #~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
 #~ "tasks</b>.\n"
 #~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a "
-#~ "notification,\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a notification,\n"
 #~ "Double-click on a day to edit the tasks for this day."
 #~ msgstr ""
 #~ "Αυτή η μικροεφαρμογή εμφανίζει ώρα, ημέρα και ημερολόγιο.\n"
 #~ "Είναι διαθέσιμες 2 προβολές: <b>αριθμητική</b> και <b>αναλογική</b>.\n"
-#~ " Η αναλογική προβολή είναι συμβατή με τα θέματα του Cairo-Clock και "
-#~ "μπορείτε να αποσυνδέσετε τη μικροεφαρμογή ώστε να είναι τέλειος κλώνος "
-#~ "του Cairo-Clock.\n"
-#~ "Εμφανίζει ένα <b>ημερολόγιο</b> με αριστερό κλικ, το οποίο σας επιτρέπει "
-#~ "να <b>διαχειριστείτε εργασίες</b>.\n"
-#~ "Επίσης υποστηρίζει ειδοποιήσεις και σας επιτρέπει να ορίσετε την ημέρα "
-#~ "και την ώρα.\n"
+#~ " Η αναλογική προβολή είναι συμβατή με τα θέματα του Cairo-Clock και μπορείτε "
+#~ "να αποσυνδέσετε τη μικροεφαρμογή ώστε να είναι τέλειος κλώνος του Cairo-"
+#~ "Clock.\n"
+#~ "Εμφανίζει ένα <b>ημερολόγιο</b> με αριστερό κλικ, το οποίο σας επιτρέπει να "
+#~ "<b>διαχειριστείτε εργασίες</b>.\n"
+#~ "Επίσης υποστηρίζει ειδοποιήσεις και σας επιτρέπει να ορίσετε την ημέρα και "
+#~ "την ώρα.\n"
 #~ "Με αριστερό κλικ εμφανίζεται/αποκρύπτεται το ημερολόγιο, με μεσαίο κλικ "
 #~ "σταματά μια ειδοποίηση,\n"
 #~ "με δεξί κλικ σε μια ημέρα γίνεται επεξεργασία των εργασιών γι' αυτή."
@@ -2477,23 +2222,23 @@ msgstr ""
 #~ msgid ""
 #~ "No task is sheduled for today.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "Δεν υπάρχουν προγραμματισμένες εργασίες για σήμερα.\n"
 #~ "\n"
-#~ "Μπορείτε να προσθέσετε εργασίες με κλικ στη μικροεφαρμογή για να ανοίξετε "
-#~ "το ημερολόγιο και μετά διπλό κλικ σε μια ημέρα."
+#~ "Μπορείτε να προσθέσετε εργασίες με κλικ στη μικροεφαρμογή για να ανοίξετε το "
+#~ "ημερολόγιο και μετά διπλό κλικ σε μια ημέρα."
 
 #~ msgid ""
 #~ "No task is sheduled for the next 7 days.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "Δεν υπάρχουν προγραμματισμένες εργασίες για τις επόμενες 7 ημέρες.\n"
-#~ "Μπορείτε να προσθέσετε εργασίες με κλικ στη μικροεφαρμογή για να ανοίξετε "
-#~ "το ημερολόγιο και μετά διπλό κλικ σε μια ημέρα."
+#~ "Μπορείτε να προσθέσετε εργασίες με κλικ στη μικροεφαρμογή για να ανοίξετε το "
+#~ "ημερολόγιο και μετά διπλό κλικ σε μια ημέρα."
 
 #~ msgid "Show today's tasks"
 #~ msgstr "Εμφάνιση σημερινών εργασιών"
@@ -2585,8 +2330,7 @@ msgstr ""
 #~ "Το sub-dock σας δίνει πρόσβαση στο CCSM, το Emerald και μερικές βασικές "
 #~ "ενέργειες του Compiz.\n"
 #~ "Μπορείτε να συνδέσετε μια από αυτές τις ενέργειες με το μεσαίο κλικ.\n"
-#~ "Το πάνελ διαμόρφωσης σας δίνει μερικές επιλογές για να εκκινήσετε το "
-#~ "Compiz."
+#~ "Το πάνελ διαμόρφωσης σας δίνει μερικές επιλογές για να εκκινήσετε το Compiz."
 
 #~ msgid "Configure Compiz"
 #~ msgstr "Διαμόρφωση του Compiz"
@@ -2600,6 +2344,9 @@ msgstr ""
 #~ msgid "Exposition"
 #~ msgstr "Έκθεση"
 
+#~ msgid "Widget Layer"
+#~ msgstr "Επίπεδο Widget"
+
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
 #~ " through your package manager (Synaptic, YasT, etc)"
@@ -2609,6 +2356,9 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Επαναφόρτωση Emerald"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Αλλαγή διαχειριστή παραθύρων"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Αλλαγή διακοσμητή παραθύρων"
@@ -2672,8 +2422,7 @@ msgstr ""
 
 #~ msgid "This plug-in provides some decorators for dialog bubbles."
 #~ msgstr ""
-#~ "Αυτό το πρόσθετο σας παρέχει μερικούς διακοσμητές για τις φυσαλίδες "
-#~ "διαλόγου."
+#~ "Αυτό το πρόσθετο σας παρέχει μερικούς διακοσμητές για τις φυσαλίδες διαλόγου."
 
 #~ msgid ""
 #~ "Couldn't upload the file, check that your internet connection is active."
@@ -2702,29 +2451,29 @@ msgstr ""
 #~ "Drag-and-drop a file on the icon to upload it to one of the available "
 #~ "hosting sites.\n"
 #~ "You can upload text, image, video, files, and even the current clipboard\n"
-#~ " and you can choose amongst many sites, like DropBox, Imageshack, "
-#~ "pastebin, etc\n"
+#~ " and you can choose amongst many sites, like DropBox, Imageshack, pastebin, "
+#~ "etc\n"
 #~ "The resulting URL is automatically stored in the clipboard to be directly "
 #~ "copied by CTRL+v.\n"
 #~ "It can keep an history of your last uploads to retrieve them without "
 #~ "registering on the sites.\n"
-#~ "Press left-click to copy the latest URL into the clipboard, middle-click "
-#~ "to copy it into the mouse selection.\n"
+#~ "Press left-click to copy the latest URL into the clipboard, middle-click to "
+#~ "copy it into the mouse selection.\n"
 #~ "You'll need to install 'curl' and 'wget' to upload the data."
 #~ msgstr ""
 #~ "Αυτή η μικροεφαρμογή σας επιτρέπει να μοιράζεστε αρχεία εύκολα:\n"
-#~ "Σύρετε και αφήστε ένα αρχείο στο εικονίδιο για να το αποστείλετε σε έναν "
-#~ "από τους διαθέσιμους ιστοτόπους αποθήκευσης.\n"
-#~ "Μπορείτε να αποστείλετε κείμενο, εικόνα, βίντεο, αρχεία ακόμα και το "
-#~ "τρέχον πρόχειρο\n"
+#~ "Σύρετε και αφήστε ένα αρχείο στο εικονίδιο για να το αποστείλετε σε έναν από "
+#~ "τους διαθέσιμους ιστοτόπους αποθήκευσης.\n"
+#~ "Μπορείτε να αποστείλετε κείμενο, εικόνα, βίντεο, αρχεία ακόμα και το τρέχον "
+#~ "πρόχειρο\n"
 #~ " και μπορείτε να επιλέξετε μεταξύ πολλών ιστοτόπων, όπως οι DropBox, "
 #~ "Imageshack, pastebin κλπ\n"
 #~ "Το παραγόμενο URL αποθηκεύεται αυτόματα στο πρόχειρο για να αντιγραφεί "
 #~ "απευθείας με CTRL+v.\n"
 #~ "Μπορεί να τηρήσει ιστορικό των τελευταίων αποστολών σας για να τις "
 #~ "ανακτήσετε χωρίς να συνδεθείτε στους ιστοτόπους,\n"
-#~ "Με αριστερό κλικ αντιγράφετε το πιο πρόσφατο URL στο πρόχειρο, με μεσαίο "
-#~ "το αντιγράφετε στην επιλογή.\n"
+#~ "Με αριστερό κλικ αντιγράφετε το πιο πρόσφατο URL στο πρόχειρο, με μεσαίο το "
+#~ "αντιγράφετε στην επιλογή.\n"
 #~ "Θα χρειαστεί να αντικαταστήσετε τα 'curl' και 'wget' για να αποστείλετε "
 #~ "δεδομένα."
 
@@ -2761,12 +2510,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
+#~ "Consider activating the history if you want the applet to remember previous "
+#~ "uploads."
 #~ msgstr ""
 #~ "Δεν υπάρχει διαθέσιμο απεσταλμένο αρχείο.\n"
-#~ "Σκεφτείτε να ενεργοποιήσετε το ιστορικό αν θέλετε η μικροεφαρμογή να "
-#~ "θυμάται προηγούμενες αποστολές."
+#~ "Σκεφτείτε να ενεργοποιήσετε το ιστορικό αν θέλετε η μικροεφαρμογή να θυμάται "
+#~ "προηγούμενες αποστολές."
 
 #~ msgid ""
 #~ "The current URL has been stored in the clipboard.\n"
@@ -2827,24 +2576,23 @@ msgstr ""
 #~ msgid ""
 #~ "This module adds different views to your dock.\n"
 #~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
-#~ "views are provided."
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve views "
+#~ "are provided."
 #~ msgstr ""
 #~ "Αυτό το άρθρωμα προσθέτει διάφορες προβολές στο dock σας.\n"
-#~ "Οποιοδήποτε dock ή sub-dock μπορεί να εμφανισθεί με την προβολή της "
-#~ "επιλογής σας.\n"
-#~ "Προς το παρόν είναι διαθέσιμες οι προβολές: Τρισδιάστατο επίπεδο, "
-#~ "Caroussel, Παραβολική, Διαφάνεια και Καμπύλη."
+#~ "Οποιοδήποτε dock ή sub-dock μπορεί να εμφανισθεί με την προβολή της επιλογής "
+#~ "σας.\n"
+#~ "Προς το παρόν είναι διαθέσιμες οι προβολές: Τρισδιάστατο επίπεδο, Caroussel, "
+#~ "Παραβολική, Διαφάνεια και Καμπύλη."
 
 #~ msgid "drop indicator"
 #~ msgstr "δείκτης άφεσης"
 
 #~ msgid ""
-#~ "This plug-in displays an animated indicator when you drop something into "
-#~ "the dock."
-#~ msgstr ""
-#~ "Αυτό το πρόσθετο εμφανίζει ένα κινούμενο δείκτη όταν αφήνετε κάτι στο "
+#~ "This plug-in displays an animated indicator when you drop something into the "
 #~ "dock."
+#~ msgstr ""
+#~ "Αυτό το πρόσθετο εμφανίζει ένα κινούμενο δείκτη όταν αφήνετε κάτι στο dock."
 
 #~ msgid "dustbin"
 #~ msgstr "κάδος απορριμμάτων"
@@ -2987,8 +2735,8 @@ msgstr ""
 #~ "\tRight-click gives you access to the list of available layouts."
 #~ msgstr ""
 #~ "Αυτή η μικροεφαρμογή σας αφήνει να ελέγξετε τη διάταξη πληκτρολογίου.\n"
-#~ "\tΜπορεί επίσης να εμφανίζει την τρέχουσα ένδειξη για κλείδωμα "
-#~ "αριθμητικού πληκτρολογίου και κεφαλαίων.\n"
+#~ "\tΜπορεί επίσης να εμφανίζει την τρέχουσα ένδειξη για κλείδωμα αριθμητικού "
+#~ "πληκτρολογίου και κεφαλαίων.\n"
 #~ "\tΜε αριστερό κλικ αλλάζετε στην επόμενη διάταξη\n"
 #~ "\tΚύλιση άνω/κάτω επιλέγει την προηγούμενη/επόμενη διάταξη\n"
 #~ "\tΜε δεξί κλικ έχετε πρόσβαση στη λίστα των διαθέσιμων διατάξεων."
@@ -3005,8 +2753,8 @@ msgstr ""
 #~ "restart\n"
 #~ "  (you can invert the buttons if you prefer to shutdown on left-click)."
 #~ msgstr ""
-#~ "Μια πολύ απλή μικροεφαρμογή που προσθέτει ένα εικονίδιο για να "
-#~ "αποσυνδέεστε από τη συνεδρία σας\n"
+#~ "Μια πολύ απλή μικροεφαρμογή που προσθέτει ένα εικονίδιο για να αποσυνδέεστε "
+#~ "από τη συνεδρία σας\n"
 #~ "Με αριστερό κλικ αποσυνδέεστε ή αλλάζετε το χρήστη, μεσαίο κλικ για "
 #~ "τερματισμό ή επανεκκίνηση\n"
 #~ "  (μπορείτε να αναστρέψετε τα κουμπιά αν προτιμάτε τον τερματισμό με "
@@ -3052,18 +2800,18 @@ msgstr ""
 #~ msgstr "Θύρα:"
 
 #~ msgid ""
-#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
-#~ "and 995 for POP3S."
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP and "
+#~ "995 for POP3S."
 #~ msgstr ""
-#~ "Εισάγετε 0 για να χρησιμοποιήσετε την προεπιλεγμένη θύρα. Οι "
-#~ "προεπιλεγμένες θύρες είναι η 110 για POP3 ή APOP και η 995 για POP3S."
+#~ "Εισάγετε 0 για να χρησιμοποιήσετε την προεπιλεγμένη θύρα. Οι προεπιλεγμένες "
+#~ "θύρες είναι η 110 για POP3 ή APOP και η 995 για POP3S."
 
 #~ msgid ""
-#~ "Enter 0 to use the default port. Default ports are 143 for IMAP4 and 993 "
-#~ "for IMAP4 over SSL."
+#~ "Enter 0 to use the default port. Default ports are 143 for IMAP4 and 993 for "
+#~ "IMAP4 over SSL."
 #~ msgstr ""
-#~ "Εισάγετε 0 για χρήση της προεπιλεγμένης θύρας. Αυτές είναι η 143 για "
-#~ "IMAP4 και η 993 για IMAP4 over SSL."
+#~ "Εισάγετε 0 για χρήση της προεπιλεγμένης θύρας. Αυτές είναι η 143 για IMAP4 "
+#~ "και η 993 για IMAP4 over SSL."
 
 #~ msgid "Use a secure connection (SSL)"
 #~ msgstr "Χρήση ασφαλούς σύνδεσης (SSL)"
@@ -3093,8 +2841,8 @@ msgstr ""
 #~ "Don't forget to enable IMAP (or POP) service from settings of your mail "
 #~ "account."
 #~ msgstr ""
-#~ "Μην ξεχάσετε να ενεργοποιήσετε την υπηρεσία IMAP (ή POP) από τις "
-#~ "ρυθμίσεις του λογαριασμού αλληλογραφίας σας."
+#~ "Μην ξεχάσετε να ενεργοποιήσετε την υπηρεσία IMAP (ή POP) από τις ρυθμίσεις "
+#~ "του λογαριασμού αλληλογραφίας σας."
 
 #~ msgid "Please choose an account type."
 #~ msgstr "Παρακαλω επιλέξτε τύπο λογαριασμού."
@@ -3227,8 +2975,8 @@ msgstr ""
 #~ "This applet lets you control any music player.\n"
 #~ "Left click to Play/Pause, middle-click to play Next song.\n"
 #~ "Scroll up/down to play previous/next song.\n"
-#~ "You can drag and drop songs on the icon to put them in the queue (depends "
-#~ "on Player),\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends on "
+#~ "Player),\n"
 #~ " and jpeg image to use as cover.\n"
 #~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
 #~ "       For SongBird, you have to install its dbus add-on.\n"
@@ -3241,8 +2989,7 @@ msgstr ""
 #~ "Μπορείτε να σύρετε και αφήσετε τραγούδια στο εικονίδιο για να βάλετε στην "
 #~ "ουρά αναπαραγωγής (ανάλογα με το πρόγραμμα),\n"
 #~ " και εικόνες jpeg για τα εξώφυλλα.\n"
-#~ "Σημείωση: Για το XMMS, πρέπει να εγκαταστήσετε το πρόσθετο 'xmms-"
-#~ "infopipe'.\n"
+#~ "Σημείωση: Για το XMMS, πρέπει να εγκαταστήσετε το πρόσθετο 'xmms-infopipe'.\n"
 #~ "       Για το SongBird, πρέπει να εγκαταστήσετε το πρόσθετο για το dbus "
 #~ "του.\n"
 #~ "       Για το Exaile 0.3,πρέπει να ενεργοποιήσετε το πρόσθετο MPRIS"
@@ -3308,8 +3055,7 @@ msgstr ""
 #~ "διαδίκτυο και μερικά στατιστικά γι' αυτή.\n"
 #~ "Με αριστερό κλικ στο εικονίδιο έχετε τον συνολικό όγκο δεδομένων που "
 #~ "μεταφέρθηκε\n"
-#~ "Με μεσαίο κλικ (απ)ενεργοποιείται το διαδίκτυο (χρειάζεται το "
-#~ "NetworkManager)"
+#~ "Με μεσαίο κλικ (απ)ενεργοποιείται το διαδίκτυο (χρειάζεται το NetworkManager)"
 
 #~ msgid "Total amount of data"
 #~ msgstr "Συνολικός όγκος δεδομένων"
@@ -3383,8 +3129,8 @@ msgstr ""
 
 #~ msgid "A power manager for laptop batteries. Works with ACPI and DBus."
 #~ msgstr ""
-#~ "Ένα διαχειριστής ενέργειας για τις μπαταρίες των φορητών. Δουλεύει με "
-#~ "ACPI και DBus."
+#~ "Ένα διαχειριστής ενέργειας για τις μπαταρίες των φορητών. Δουλεύει με ACPI "
+#~ "και DBus."
 
 #~ msgid "Set up power management"
 #~ msgstr "Ρύθμιση διαχείρισης ενέργειας"
@@ -3443,12 +3189,11 @@ msgstr ""
 #~ "An applet that let you access quickly to all of your shortcuts.\n"
 #~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
 #~ "don't have Nautilus).\n"
-#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
-#~ "bookmark.\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a bookmark.\n"
 #~ "Middle-click on the main icon to show your home folder.\n"
 #~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
-#~ "The applet can also display valuable information about your disks, like "
-#~ "free space, type, etc."
+#~ "The applet can also display valuable information about your disks, like free "
+#~ "space, type, etc."
 #~ msgstr ""
 #~ "Μια μικροεφαρμογή που σας επιτρέπει να έχετε γρήγορη πρόσβαση σε όλες τις "
 #~ "συντομεύσεις σας.\n"
@@ -3468,8 +3213,7 @@ msgstr ""
 #~ msgstr "Αποτυχία αποπροσάρτησης του %s"
 
 #~ msgid "Sorry, this applet is not yet available for KDE."
-#~ msgstr ""
-#~ "Συγγνώμη, αυτή η μικροεφαρμογή δεν είναι ακόμα διαθέσιμη για το KDE."
+#~ msgstr "Συγγνώμη, αυτή η μικροεφαρμογή δεν είναι ακόμα διαθέσιμη για το KDE."
 
 #~ msgid "No disks or bookmarks were found."
 #~ msgstr "Δεν βρέθηκαν δίσκοι ή σελιδοδείκτες."
@@ -3517,8 +3261,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet adds an icon to show your desktop,\n"
 #~ " and also : the desklets, the Widget Layer, or all the desktops at once.\n"
-#~ "It can also be used to quickly change the screen's resolution from the "
-#~ "right-click menu.\n"
+#~ "It can also be used to quickly change the screen's resolution from the right-"
+#~ "click menu.\n"
 #~ "Left-click to show/hide the desktop,\n"
 #~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
 #~ "Layer, or all the desktops at once."
@@ -3527,8 +3271,8 @@ msgstr ""
 #~ "εργασίας σας\n"
 #~ " καθώς και : τα desklet, το Επίπεδο Widget ή όλους τους χώρους εργασίας "
 #~ "ταυτόχρονα.\n"
-#~ "Μπορεί επίσης να χρησιμοποιηθεί για να αλλάξετε γρήγορα την ανάλυση "
-#~ "οθόνης από το μενού του δεξί κλικ.\n"
+#~ "Μπορεί επίσης να χρησιμοποιηθεί για να αλλάξετε γρήγορα την ανάλυση οθόνης "
+#~ "από το μενού του δεξί κλικ.\n"
 #~ "Αριστερό κλικ για την εμφάνιση/απόκρυψη της επιφάνειας εργασίας,\n"
 #~ "μεσαίο κλικ για την εμφάνιση/απόκρυψη είτε της επιφάνειας εργασίας, των "
 #~ "desklet του επιπέδου Widget ή όλων των χώρων εργασίας ταυτόχρονα."
@@ -3562,8 +3306,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet is a basic image slider\n"
-#~ " You just have to select a directory and a display effect and you're "
-#~ "done\n"
+#~ " You just have to select a directory and a display effect and you're done\n"
 #~ "Click to play/pause or to edit the current image.\n"
 #~ "Middle-click to open the images folder."
 #~ msgstr ""
@@ -3601,17 +3344,17 @@ msgstr ""
 #~ "στο εικονίδιο και είστε έτοιμοι.\n"
 #~ "Μπορείτε να αφήσετε οποιοδήποτε αρχείο, URL ιστού ή ακόμα και τμήμα "
 #~ "κειμένου.\n"
-#~ "Μπορείτε γρήγορα να αντιγράψετε τη διαδρομή/url/κείμενο στο πρόχειρο ή να "
-#~ "τα ανοίξετε."
+#~ "Μπορείτε γρήγορα να αντιγράψετε τη διαδρομή/url/κείμενο στο πρόχειρο ή να τα "
+#~ "ανοίξετε."
 
 #~ msgid ""
 #~ "No items in the stack.\n"
-#~ "You can add files, URL, and even a piece of text by dragging them onto "
-#~ "the icon."
+#~ "You can add files, URL, and even a piece of text by dragging them onto the "
+#~ "icon."
 #~ msgstr ""
 #~ "Δεν υπάρχουν αντικείμενα στη στοίβα.\n"
-#~ "Μπορείτε να προσθέσετε αρχεία, URL, ακόμα και τμήμα κειμένου σύροντάς τα "
-#~ "στο εικονίδιο."
+#~ "Μπορείτε να προσθέσετε αρχεία, URL, ακόμα και τμήμα κειμένου σύροντάς τα στο "
+#~ "εικονίδιο."
 
 #~ msgid "Clear the stack?"
 #~ msgstr "Εκκαθάριση της στοίβας;"
@@ -3664,10 +3407,9 @@ msgstr ""
 #~ " - ονομασία τους (στο config),\n"
 #~ " - γρήγορη προσθήκη/αφαίρεση χώρου (στο μενού),\n"
 #~ " - εμφάνιση της επιφάνειας εργασίας (μεσαίο κλικ ή στο μενού),\n"
-#~ " - λίστα όλων των παραθύρων σε κάθε χώρο εργασίας (μεσαίο κλικ ή στο "
-#~ "μενού)\n"
-#~ "Έχει δύο τρόπους λειτουργίας : συνεπτυγμένος (σε 1 εικονίδιο) ή "
-#~ "εκτεταμένος (με sub-dock)."
+#~ " - λίστα όλων των παραθύρων σε κάθε χώρο εργασίας (μεσαίο κλικ ή στο μενού)\n"
+#~ "Έχει δύο τρόπους λειτουργίας : συνεπτυγμένος (σε 1 εικονίδιο) ή εκτεταμένος "
+#~ "(με sub-dock)."
 
 #~ msgid "Rename this workspace"
 #~ msgstr "Μετονομασία αυτού του χώρου εργασίας"
@@ -3682,11 +3424,11 @@ msgstr ""
 #~ msgstr "Μετακίνηση τρέχοντα χώρου εργασίας σε αυτό το χώρο εργασίας"
 
 #~ msgid ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
+#~ "This will move all windows from the current desktop to the one you clicked "
+#~ "on."
 #~ msgstr ""
-#~ "Αυτό θα μετακινήσει όλα τα παράθυρα από την τρέχουσα επιφάνεια εργασίας "
-#~ "σε αυτή που κάνατε κλικ."
+#~ "Αυτό θα μετακινήσει όλα τα παράθυρα από την τρέχουσα επιφάνεια εργασίας σε "
+#~ "αυτή που κάνατε κλικ."
 
 #~ msgid "Windows List"
 #~ msgstr "Λίστα παραθύρων"
@@ -3704,13 +3446,13 @@ msgstr ""
 #~ "Προσθήκη systray στο dock σας.\n"
 #~ "Με αριστερό κλικ εμφανίζεται/αποκρύπτεται το systray σε ένα παράθυρο "
 #~ "διαλόγου (μπορείτε να ορίσετε συντόμευση πληκτρολογίου).\n"
-#~ "Αλλά ο καλύτερος τρόπος να το χρησιμοποιήσετε είναι να το αποσυνδέσετε "
-#~ "από το dock και να το βάλετε αλλού, πάνω από άλλα παράθυρα."
+#~ "Αλλά ο καλύτερος τρόπος να το χρησιμοποιήσετε είναι να το αποσυνδέσετε από "
+#~ "το dock και να το βάλετε αλλού, πάνω από άλλα παράθυρα."
 
 #~ msgid ""
 #~ "Another systray is already running (probably on your panel)\n"
-#~ "Since there can only be one systray at once, you should remove it to "
-#~ "avoid any conflict."
+#~ "Since there can only be one systray at once, you should remove it to avoid "
+#~ "any conflict."
 #~ msgstr ""
 #~ "Εκτελείται ήδη ένα άλλο systray (πιθανώς στον πίνακα εφαρμογών σας)\n"
 #~ "Από τη στιγμή που μπορεί να υπάρχει ένα μόνο κάθε φορά, θα πρέπει να το "
@@ -3731,8 +3473,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "Add a terminal to your dock !\n"
-#~ "Left-click to show/hide terminal (you can bind a keyboard shortcut for "
-#~ "it.)\n"
+#~ "Left-click to show/hide terminal (you can bind a keyboard shortcut for it.)\n"
 #~ "You can drag'n'drop files or text and select an action.\n"
 #~ "You can open many tabs, rename them, change their color (right-click on a "
 #~ "tab to interact on it)\n"
@@ -3740,8 +3481,8 @@ msgstr ""
 #~ "To close a tab : type 'CTRL+w' or middle-click on it."
 #~ msgstr ""
 #~ "Προσθήκη τερματικού στο dock σας !\n"
-#~ "Με αριστερό κλικ εμφανίζεται/αποκρύπτεται το τερματικό (μπορείτε να "
-#~ "ορίσετε συντόμευση πληκτρολογίου).\n"
+#~ "Με αριστερό κλικ εμφανίζεται/αποκρύπτεται το τερματικό (μπορείτε να ορίσετε "
+#~ "συντόμευση πληκτρολογίου).\n"
 #~ "Μπορείτε να σύρετε και να αφήσετε αρχεία ή κείμενο και να επιλέξετε μια "
 #~ "ενέργεια.\n"
 #~ "Μπορείτε να ανοίξετε πολλές καρτέλες, να τις μετονομάσετε να αλλάξετε το "
@@ -3856,8 +3597,8 @@ msgstr ""
 #~ msgid ""
 #~ "Enter the name of your location and press Enter to choose amongst results."
 #~ msgstr ""
-#~ "Εισάγετε το όνομα της τοποθεσίας και πατήστε Enter για να επιλέξετε "
-#~ "μεταξύ των αποτελεσμάτων."
+#~ "Εισάγετε το όνομα της τοποθεσίας και πατήστε Enter για να επιλέξετε μεταξύ "
+#~ "των αποτελεσμάτων."
 
 #~ msgid "weather"
 #~ msgstr "πρόγνωση καιρού"
@@ -3867,15 +3608,15 @@ msgstr ""
 #~ "Data are provided by www.weather.com, you can find your location in the "
 #~ "config panel.\n"
 #~ "It can detach itself to be a totally eye-candy 3D deskelt.\n"
-#~ "Middle-click on the main icon to have current conditions information, "
-#~ "left-click on a sub-icon to have forcast information.\n"
+#~ "Middle-click on the main icon to have current conditions information, left-"
+#~ "click on a sub-icon to have forcast information.\n"
 #~ msgstr ""
 #~ "Αυτή η μικροεφαρμογή εμφανίζει την πρόγνωση καιρού στο dock σας.\n"
 #~ "Τα δεδομένα προέρχονται από το www.weather.com, μπορείτε να βρείτε την "
 #~ "τοποθεσία σας στον πίνακα διαμόρφωσης.\n"
 #~ "Μπορεί να αποσυνδεθεί για να γίνει ένα πανέμορφο τρισδιάστατο desklet.\n"
-#~ "Μεσαίο κλικ στο κύριο εικονίδιο εμφανίζει τις τρέχουσες συνθήκες, "
-#~ "αριστερό κλικ σε υπο-εικονίδιο για πληροφορίες πρόγνωσης.\n"
+#~ "Μεσαίο κλικ στο κύριο εικονίδιο εμφανίζει τις τρέχουσες συνθήκες, αριστερό "
+#~ "κλικ σε υπο-εικονίδιο για πληροφορίες πρόγνωσης.\n"
 
 #~ msgid "Jan"
 #~ msgstr "Ιαν"
@@ -3915,6 +3656,9 @@ msgstr ""
 
 #~ msgid "Data are being retrieved, please wait a moment."
 #~ msgstr "Ανάκτηση δεδομένων, παρακαλώ περιμένετε λίγο."
+
+#~ msgid "Show current conditions (middle-click)"
+#~ msgstr "Εμφάνιση τρεχουσών συνθηκών (μεσαίο κλικ)"
 
 #~ msgid "Open weather.com (double-click)"
 #~ msgstr "Άνοιγμα του weather.com (διπλό κλικ)"
@@ -3973,10 +3717,9 @@ msgstr ""
 #~ "You can select your web page, set the desired scrolling,\n"
 #~ "and hide the scrollbars to get a real 'crop' of the page."
 #~ msgstr ""
-#~ "Η μικροεφαρμογή weblets επιτρέπει να εμφανίζεται μια διαδραστική "
-#~ "ιστοσελίδα στην επιφάνεια εργασίας σας.\n"
-#~ "Μπορείτε να επιλέξετε την ιστοσελίδα σας, να ορίσετε την επιθυμητή "
-#~ "κύλιση,\n"
+#~ "Η μικροεφαρμογή weblets επιτρέπει να εμφανίζεται μια διαδραστική ιστοσελίδα "
+#~ "στην επιφάνεια εργασίας σας.\n"
+#~ "Μπορείτε να επιλέξετε την ιστοσελίδα σας, να ορίσετε την επιθυμητή κύλιση,\n"
 #~ "να κρύψετε τις μπάρες κύλισης για να πάρετε ένα πραγματικό 'κομμάτι' της "
 #~ "σελίδας."
 
@@ -4013,8 +3756,8 @@ msgstr ""
 
 #~ msgid "Animations are triggered when hovering an icon only in OpenGL mode."
 #~ msgstr ""
-#~ "Τα εφέ κίνησης ενεργοποιούνται όταν περνάμε πάνω από ένα εικονίδιο μόνο "
-#~ "σε κατάσταση λειτουργίας OpenGL."
+#~ "Τα εφέ κίνησης ενεργοποιούνται όταν περνάμε πάνω από ένα εικονίδιο μόνο σε "
+#~ "κατάσταση λειτουργίας OpenGL."
 
 #~ msgid "when hovering over an icon"
 #~ msgstr "κατά την αιώρηση πάνω από εα εικονίδιο"
@@ -4140,8 +3883,7 @@ msgstr ""
 #~ msgstr "όσο χαμηλότερη η τιμή, τόσο περισσότερο θα συμπιεστεί."
 
 #~ msgid "How much the icon will flatten when hitting the ground:"
-#~ msgstr ""
-#~ "Πόσο πολύ θα συμπιεστεί το εικονίδιο κατά την πρόσκρουση στο έδαφος:"
+#~ msgstr "Πόσο πολύ θα συμπιεστεί το εικονίδιο κατά την πρόσκρουση στο έδαφος:"
 
 #~ msgid "Blink duration:"
 #~ msgstr "Διάρκεια αναβοσβησίματος:"
@@ -4164,12 +3906,19 @@ msgstr ""
 #~ msgid "Ground offset:"
 #~ msgstr "Μετατόπιση από το έδαφος:"
 
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+#~ msgstr ""
+#~ "Ανάλογα με το διαχειριστή παραθύρων σας, μπορείτε να το μετακινήσετε με ALT "
+#~ "+ αριστερό κλικ."
+
 #~ msgid "Items"
 #~ msgstr "Αντικείμενα"
 
 #~ msgid ""
-#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
-#~ "you get by selecting some text with the mouse."
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those you "
+#~ "get by selecting some text with the mouse."
 #~ msgstr ""
 #~ "Αντικείμενα του προχείρου είναι αυτά που επιλέγετε με CTRL+c. Αντικείμενα "
 #~ "επιλογής είναι αυτά που παίρνετε επιλέγοντας κείμενο με το ποντίκι."
@@ -4197,8 +3946,8 @@ msgstr ""
 #~ "want to loose your clipboard items due to too many items in the selection."
 #~ msgstr ""
 #~ "Είναι ιδιαίτερα χρήσιμο αν επιλέγετε συχνά κείμενο με το ποντίκι και δεν "
-#~ "θέλετε να χάσετε τα αντικείμενα του προχείρου σας λόγω πολλών "
-#~ "αντικειμένων στην επιλογή."
+#~ "θέλετε να χάσετε τα αντικείμενα του προχείρου σας λόγω πολλών αντικειμένων "
+#~ "στην επιλογή."
 
 #~ msgid "Separate clipboard and selection?"
 #~ msgstr "Διαχωρισμός προχείρου και επιλογής;"
@@ -4209,8 +3958,8 @@ msgstr ""
 #~ msgid ""
 #~ "When you click on an item, its content will become accessible with CTRL+v"
 #~ msgstr ""
-#~ "Όταν κάνετε κλικ σε ένα αντικείμενο, το περιεχόμενό του θα γίνει "
-#~ "προσβάσιμο με CTRL+v"
+#~ "Όταν κάνετε κλικ σε ένα αντικείμενο, το περιεχόμενό του θα γίνει προσβάσιμο "
+#~ "με CTRL+v"
 
 #~ msgid "Paste into Clipboard?"
 #~ msgstr "Επικόλληση στο πρόχειρο;"
@@ -4219,8 +3968,8 @@ msgstr ""
 #~ "When you click on an item, its content will become accessible with the "
 #~ "middle-click"
 #~ msgstr ""
-#~ "Όταν κάνετε κλικ σε ένα αντικείμενο, το περιεχόμενό του θα γίνει "
-#~ "προσβάσιμο με μεσαίο κλικ"
+#~ "Όταν κάνετε κλικ σε ένα αντικείμενο, το περιεχόμενό του θα γίνει προσβάσιμο "
+#~ "με μεσαίο κλικ"
 
 #~ msgid "Paste into Selection?"
 #~ msgstr "Επικόλληση στην επιλογή;"
@@ -4232,8 +3981,8 @@ msgstr ""
 #~ msgstr "Ενέργειες"
 
 #~ msgid ""
-#~ "If some actions are associated with an item, they will be proposed when "
-#~ "the item is created."
+#~ "If some actions are associated with an item, they will be proposed when the "
+#~ "item is created."
 #~ msgstr ""
 #~ "Αν κάποιες ενέργειες είναι συσχετισμένες με ένα αντικείμενο, θα προταθούν "
 #~ "όταν δημιουργηθεί το αντικείμενο."
@@ -4270,8 +4019,7 @@ msgstr ""
 
 #~ msgid "Let external applications show/hide desklets?"
 #~ msgstr ""
-#~ "Να επιτρέπεται στις εξωτερικές εφαρμογές να εμφανίζουν/αποκρύπτουν "
-#~ "desklet;"
+#~ "Να επιτρέπεται στις εξωτερικές εφαρμογές να εμφανίζουν/αποκρύπτουν desklet;"
 
 #~ msgid "Let external applications reload applets?"
 #~ msgstr ""
@@ -4302,14 +4050,16 @@ msgstr ""
 
 #~ msgid "Let extern applications animate icons?"
 #~ msgstr ""
-#~ "Να επιτρέπεται στις εξωτερικές εφαρμογές να κάνουν εφέ κίνησης στα "
-#~ "εικονίδια;"
+#~ "Να επιτρέπεται στις εξωτερικές εφαρμογές να κάνουν εφέ κίνησης στα εικονίδια;"
 
 #~ msgid "Name of the container it belongs to:"
 #~ msgstr "Όνομα του περιέκτη στον οποίο ανήκει:"
 
 #~ msgid "Image's name or path :"
 #~ msgstr "Όνομα ή διαδρομή της εικόνας:"
+
+#~ msgid "Desklet mode"
+#~ msgstr "Κατάσταση Desklet"
 
 #~ msgid "Custom decorations"
 #~ msgstr "Προσαρμοσμένοι διάκοσμοι"
@@ -4410,16 +4160,15 @@ msgstr ""
 
 #~ msgid "Font to be used by default if none is specify in the .xml"
 #~ msgstr ""
-#~ "Γραμματοσειρά που θα χρησιμοποιηθεί ως προεπιλογή αν δεν καθορίζεται "
-#~ "καμμιά στο .xml"
+#~ "Γραμματοσειρά που θα χρησιμοποιηθεί ως προεπιλογή αν δεν καθορίζεται καμμιά "
+#~ "στο .xml"
 
 #~ msgid "Default Font:"
 #~ msgstr "Προεπιλεγμένη γραμματοσειρά:"
 
 #~ msgid "Color to be used by default if none is specify in the .xml"
 #~ msgstr ""
-#~ "Χρώμα που θα χρησιμοποιηθεί ως προεπιλογή αν δεν καθορίζεται κανένα στο ."
-#~ "xml"
+#~ "Χρώμα που θα χρησιμοποιηθεί ως προεπιλογή αν δεν καθορίζεται κανένα στο .xml"
 
 #~ msgid "Default colour:"
 #~ msgstr "Προεπιλεγμένο χρώμα:"
@@ -4443,8 +4192,8 @@ msgstr ""
 #~ msgid ""
 #~ "You can have more attractive backgrounds using the Desklet decorations"
 #~ msgstr ""
-#~ "Μπορείτε να έχετε πιο ελκυστικά παρασκήνια χρησιμοποιώντας τους "
-#~ "διάκοσμους των Desklet"
+#~ "Μπορείτε να έχετε πιο ελκυστικά παρασκήνια χρησιμοποιώντας τους διάκοσμους "
+#~ "των Desklet"
 
 #~ msgid "Display a simple background?"
 #~ msgstr "Εμφάνιση απλού παρασκηνίου;"
@@ -4501,11 +4250,11 @@ msgstr ""
 #~ msgstr "Διαδρομή φακέλου:"
 
 #~ msgid ""
-#~ "Allow to show the files of the folder in a sub-dock. If disabled, the "
-#~ "applet behaves as a mere launcher."
+#~ "Allow to show the files of the folder in a sub-dock. If disabled, the applet "
+#~ "behaves as a mere launcher."
 #~ msgstr ""
-#~ "Να επιτρέπεται η εμφάνιση των αρχείων του φακέλου σε ένα sub-dock. Αν "
-#~ "είναι απενεργοποιημένο, η μικροεφαρμογή συμπεριφέρεται ως απλός εκκινητής."
+#~ "Να επιτρέπεται η εμφάνιση των αρχείων του φακέλου σε ένα sub-dock. Αν είναι "
+#~ "απενεργοποιημένο, η μικροεφαρμογή συμπεριφέρεται ως απλός εκκινητής."
 
 #~ msgid "Show folder's content?"
 #~ msgstr "Να εμφανιστεί το περιεχόμενο του φακέλου;"
@@ -4552,8 +4301,7 @@ msgstr ""
 
 #~ msgid "Only show files that are under this folder or its sub-folder:"
 #~ msgstr ""
-#~ "Εμφάνιση μόνο των αρχείων που βρίσκονται σε αυτό το φάκελο ή τον "
-#~ "υποφάκελο:"
+#~ "Εμφάνιση μόνο των αρχείων που βρίσκονται σε αυτό το φάκελο ή τον υποφάκελο:"
 
 #~ msgid "in days. Set 0 if unsued."
 #~ msgstr "σε ημέρες. Ορίστε σε 0 αν δεν χρησιμοποιηθεί."
@@ -4566,8 +4314,8 @@ msgstr ""
 #~ msgid ""
 #~ "Animation of the icon when one of the application demands your attention :"
 #~ msgstr ""
-#~ "Εφέ κίνησης στο εικονίδιο όταν μία από τις εφαρμογές απαιτεί την προσοχή "
-#~ "σας :"
+#~ "Εφέ κίνησης στο εικονίδιο όταν μία από τις εφαρμογές απαιτεί την προσοχή σας "
+#~ ":"
 
 #~ msgid "Leave empty to use the connection name."
 #~ msgstr "Αφήστε κενό για χρήση του ονόματος της σύνδεσης."
@@ -4578,8 +4326,8 @@ msgstr ""
 
 #~ msgid "You can quickly switch to the other mode by scrolling on the icon."
 #~ msgstr ""
-#~ "Μπορείτε να αλλάξετε γρήγορα στην άλλη κατάσταση λειτουργίας με κύλιση "
-#~ "στο εικονίδιο."
+#~ "Μπορείτε να αλλάξετε γρήγορα στην άλλη κατάσταση λειτουργίας με κύλιση στο "
+#~ "εικονίδιο."
 
 #~ msgid "Info displayed by the icon:"
 #~ msgstr "Πληροφορίες που εμφανίζονται από το εικονίδιο:"
@@ -4603,8 +4351,8 @@ msgstr ""
 #~ "You need OpenGL for this option. Set it to 0 means not used, 1 means the "
 #~ "movement is continue."
 #~ msgstr ""
-#~ "Χρειάζεται το OpenGL για αυτή την επιλογή. Αν ορισθεί σε 0 σημαίνει ότι "
-#~ "δεν θα χρησιμοποιηθεί, 1 σημαίνει η κίνηση είναι συνεχής."
+#~ "Χρειάζεται το OpenGL για αυτή την επιλογή. Αν ορισθεί σε 0 σημαίνει ότι δεν "
+#~ "θα χρησιμοποιηθεί, 1 σημαίνει η κίνηση είναι συνεχής."
 
 #~ msgid "Fluidity of the transition animation between 2 values:"
 #~ msgstr "Ροή του εφέ κίνησης της μετάβασης μεταξύ 2 τιμών:"
@@ -4726,8 +4474,7 @@ msgstr ""
 #~ msgstr "Εφέ κίνησης του εικονιδίου:"
 
 #~ msgid ""
-#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close "
-#~ "it)."
+#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close it)."
 #~ msgstr ""
 #~ "Σε δευτερόλεπτα. Ορίστε σε 0 για άπειρο χρόνο (πρέπει να κάνετε κλικ στον "
 #~ "διάλογο για να τον κλείσετε)."
@@ -4812,22 +4559,21 @@ msgstr ""
 
 #~ msgid "Shortkey to enable/disable the finder mode:"
 #~ msgstr ""
-#~ "Πλήκτρο συντόμευσης για ενεργοποίηση/απενεργοποίηση της κατάστασης "
-#~ "εύρεσης:"
+#~ "Πλήκτρο συντόμευσης για ενεργοποίηση/απενεργοποίηση της κατάστασης εύρεσης:"
 
 #~ msgid ""
-#~ "Maximum number of mails that will be previewed. Put -1 to show the "
-#~ "maximum possible."
+#~ "Maximum number of mails that will be previewed. Put -1 to show the maximum "
+#~ "possible."
 #~ msgstr ""
 #~ "Μέγιστος αριθμός μηνυμάτων που θα προεπισκοπηθούν. Θέστε -1 για να "
 #~ "εμφανισθεί  ο μέγιστος δυνατός."
 
 #~ msgid ""
-#~ "Number of lines of the listing. If there are more results, the listing "
-#~ "will scroll when you go up or down with the arrows."
+#~ "Number of lines of the listing. If there are more results, the listing will "
+#~ "scroll when you go up or down with the arrows."
 #~ msgstr ""
-#~ "Αριθμός γραμμών της λίστας. Αν υπάρχουν περισσότερα αποτελέσματα, η λίστα "
-#~ "θα κυλίσει όταν πάτε πάνω ή κάτω με τα βέλη."
+#~ "Αριθμός γραμμών της λίστας. Αν υπάρχουν περισσότερα αποτελέσματα, η λίστα θα "
+#~ "κυλίσει όταν πάτε πάνω ή κάτω με τα βέλη."
 
 #~ msgid "Number of lines to display :"
 #~ msgstr "Αριθμός γραμμών για εμφάνιση:"
@@ -5008,17 +4754,15 @@ msgstr ""
 
 #~ msgid ""
 #~ "It will prevent the system monitor's icon to show in the taskbar. The "
-#~ "applet's icon will then behave as a launcher, an application, and an "
-#~ "applet."
+#~ "applet's icon will then behave as a launcher, an application, and an applet."
 #~ msgstr ""
-#~ "Θα εμποδίσει την εμφάνιση του εικονιδίου της παρακολούθησης συστήματος "
-#~ "στην μπάρα εργασιών. Το εικονίδιο της μικροεφαρμογής θα συμπεριφέρεται "
-#~ "τότε ως εκκινητής, εφαρμοφή και μικροεφαρμογή."
+#~ "Θα εμποδίσει την εμφάνιση του εικονιδίου της παρακολούθησης συστήματος στην "
+#~ "μπάρα εργασιών. Το εικονίδιο της μικροεφαρμογής θα συμπεριφέρεται τότε ως "
+#~ "εκκινητής, εφαρμοφή και μικροεφαρμογή."
 
 #~ msgid "Steal the system monitor's icon from the taskbar?"
 #~ msgstr ""
-#~ "Αφαίρεση του εικονιδίου της παρακολούθησης συστήματος από την μπάρα "
-#~ "εργασιών;"
+#~ "Αφαίρεση του εικονιδίου της παρακολούθησης συστήματος από την μπάρα εργασιών;"
 
 #~ msgid "Class of the system monitor program:"
 #~ msgstr "Κλάση του προγραμματος παρακολούθησης συστήματος:"
@@ -5027,8 +4771,8 @@ msgstr ""
 #~ msgstr "Λίστα κορυφαίων"
 
 #~ msgid ""
-#~ "When you left-click on the icon, you will get the list of the N most CPU/"
-#~ "RAM-intensive programs."
+#~ "When you left-click on the icon, you will get the list of the N most CPU/RAM-"
+#~ "intensive programs."
 #~ msgstr ""
 #~ "Όταν κάνετε αριστερό κλικ στο εικονίδιο, θα παέρετε τη λίστα με τα Ν πιο "
 #~ "εντατικά στη χρήση CPU/RAM προγράμματα."
@@ -5038,8 +4782,8 @@ msgstr ""
 
 #~ msgid "The first colour of the gradient used to display the top list."
 #~ msgstr ""
-#~ "Το πρώτο χρώμα της διαβάθμισης που θα χρησιμοποιηθεί για την απεικόνιση "
-#~ "της λίστας."
+#~ "Το πρώτο χρώμα της διαβάθμισης που θα χρησιμοποιηθεί για την απεικόνιση της "
+#~ "λίστας."
 
 #~ msgid "Top list start colour:"
 #~ msgstr "Χρώμα έναρξης λίστας κορυφαίων:"
@@ -5065,8 +4809,8 @@ msgstr ""
 #~ "in Celsius. The temperature will be displayed between this value and the "
 #~ "upper limit."
 #~ msgstr ""
-#~ "σε βαθμούς Κελσίου. Η θερμοκρασία θα εμφανίζεται μεταξύ αυτής της τιμής "
-#~ "και του ανώτερου ορίου."
+#~ "σε βαθμούς Κελσίου. Η θερμοκρασία θα εμφανίζεται μεταξύ αυτής της τιμής και "
+#~ "του ανώτερου ορίου."
 
 #~ msgid "Lower limit of graphic card temperature:"
 #~ msgstr "Χαμηλότερο όριο θερμοκρασίας κάρτας γραφικών:"
@@ -5118,13 +4862,13 @@ msgstr ""
 #~ msgstr "Επιλογή καναλιού:"
 
 #~ msgid ""
-#~ "On some cards, a channel only controls 1 side (right or left). You will "
-#~ "then need to specify a second channel here, to control both sides. Most "
-#~ "of the time, you should just leave this empty."
+#~ "On some cards, a channel only controls 1 side (right or left). You will then "
+#~ "need to specify a second channel here, to control both sides. Most of the "
+#~ "time, you should just leave this empty."
 #~ msgstr ""
-#~ "Σε ορισμένες κάρτες, ένα κανάλι ελέγχει μόνο 1 πλευρά (αριστερή ή δεξιά). "
-#~ "Θα πρέπει τότε να ορίσετε ένα δεύτερο κανάλι εδώ, για να ελέγχετε και τις "
-#~ "δύο πλευρές.Τις περισσότερες φορές θα πρέπει απλώς να το αφήσετε κενό."
+#~ "Σε ορισμένες κάρτες, ένα κανάλι ελέγχει μόνο 1 πλευρά (αριστερή ή δεξιά). Θα "
+#~ "πρέπει τότε να ορίσετε ένα δεύτερο κανάλι εδώ, για να ελέγχετε και τις δύο "
+#~ "πλευρές.Τις περισσότερες φορές θα πρέπει απλώς να το αφήσετε κενό."
 
 #~ msgid "Choose a second channel to control (optional):"
 #~ msgstr "Επιλέξτε ένα δεύτερο κανάλι για να ελέγχετε (προαιρετικά):"
@@ -5139,8 +4883,7 @@ msgstr ""
 #~ msgstr "Έλεγχος"
 
 #~ msgid "Shortkey to show/hide the sound control dialog:"
-#~ msgstr ""
-#~ "Πλήκτρο συντόμευσης για εμφάνιση/απόκρυψη του διαλόγου ελέγχου ήχου:"
+#~ msgstr "Πλήκτρο συντόμευσης για εμφάνιση/απόκρυψη του διαλόγου ελέγχου ήχου:"
 
 #~ msgid "Hide the scale when mouse leaves the desklet?"
 #~ msgstr "Απόκρυψη της κλίμακας όταν το ποντίκι φεύγει από το desklet;"
@@ -5174,8 +4917,7 @@ msgstr ""
 #~ msgstr "Εμφάνιση της ώρας με 24ωρη μορφή;"
 
 #~ msgid ""
-#~ "if not, then the applet will update the time once a minute, saving CPU "
-#~ "power."
+#~ "if not, then the applet will update the time once a minute, saving CPU power."
 #~ msgstr ""
 #~ "αν όχι, τότε η μικροεφαρμογή θα ανανεώνει την ώρα μια φορά το λεπτό, "
 #~ "ελαφρύνοντας τον επεξεργαστή."
@@ -5187,8 +4929,8 @@ msgstr ""
 #~ "In ms. Set 0 for non-smooth animation, set 1000 to have a continuous "
 #~ "animation. Requires OpenGL."
 #~ msgstr ""
-#~ "Σε ms. Ορίστε σε 0 για μη ομαλή κίνηση, σε 1000 για συνεχή κίνηση. "
-#~ "Απαιτεί το OpenGL."
+#~ "Σε ms. Ορίστε σε 0 για μη ομαλή κίνηση, σε 1000 για συνεχή κίνηση. Απαιτεί "
+#~ "το OpenGL."
 
 #~ msgid "Display seconds with smooth animation for a duration of:"
 #~ msgstr "Εμφάνιση δευτερολέπτων με ομαλή κίνηση διάρκειας:"
@@ -5212,8 +4954,8 @@ msgstr ""
 #~ msgstr "Στυλ"
 
 #~ msgid ""
-#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
-#~ "in digital format."
+#~ "The analogue view is based on CairoClock; otherwise it will be displayed in "
+#~ "digital format."
 #~ msgstr ""
 #~ "Η αναλογική προβολή βασίζεται στο CairoClock, αλλιώς θα εμφανίζεται σε "
 #~ "ψηφιακή μορφή."
@@ -5299,15 +5041,15 @@ msgstr ""
 #~ "This command will be used to launch the system WM. Leave blank to use the "
 #~ "default."
 #~ msgstr ""
-#~ "Αυτή η εντολή θα χρησιμοποιηθεί για την εκκίνηση του διαχειριστή "
-#~ "παραθύρων του συστήματος. Αφήστε κενό για χρήση της προεπιλογής."
+#~ "Αυτή η εντολή θα χρησιμοποιηθεί για την εκκίνηση του διαχειριστή παραθύρων "
+#~ "του συστήματος. Αφήστε κενό για χρήση της προεπιλογής."
 
 #~ msgid "Custom command for system's Windows Manager:"
 #~ msgstr "προσαρμοσμένη εντολή για τον διαχειριστή παραθύρων του συστήματος:"
 
 #~ msgid ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
-#~ "quit Compiz from the dock."
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then quit "
+#~ "Compiz from the dock."
 #~ msgstr ""
 #~ "Αν το Compiz τερματιστεί αναπάντεχα, το Cairo-Dock θα το επανεκκινήσει. "
 #~ "Πρέπει τότε να τερματίσετε το Compiz από το dock."
@@ -5319,8 +5061,8 @@ msgstr ""
 #~ "If the decorator quits unexpectedly, Cairo-Dock will restart it. ou must "
 #~ "then quit Compiz from the dock."
 #~ msgstr ""
-#~ "Αν οδιακοσμητής τερματιστεί αναπάντεχα, το Cairo-Dock θα τον "
-#~ "επανεκκινήσει. Πρέπει τότε να τερματίσετε το Compiz από το dock."
+#~ "Αν οδιακοσμητής τερματιστεί αναπάντεχα, το Cairo-Dock θα τον επανεκκινήσει. "
+#~ "Πρέπει τότε να τερματίσετε το Compiz από το dock."
 
 #~ msgid "Auto-reload the Decorator?"
 #~ msgstr "Αυτόματη επαναφόρτωση του Διακοσμητή;"
@@ -5337,8 +5079,8 @@ msgstr ""
 #~ "application."
 #~ msgstr ""
 #~ "Αυτό θα εμποδίσει τα εικονίδια του CSSM ή του Emerald να εμφανίζονται στη "
-#~ "μπάρα εργασιών. Τα αντίστοιχα εικονίδια του sub-dock θα συμπεριφέρονται "
-#~ "ως εκκινητής και εφαρμογή."
+#~ "μπάρα εργασιών. Τα αντίστοιχα εικονίδια του sub-dock θα συμπεριφέρονται ως "
+#~ "εκκινητής και εφαρμογή."
 
 #~ msgid "Steal the application's icon from the taskbar?"
 #~ msgstr "Αφαίρεση του εικονιδίου της εφαρμογής από τη μπάρα εργασιών;"
@@ -5347,18 +5089,17 @@ msgstr ""
 #~ "Display two icons for Compiz Exposition & Widget Layer plug-ins in the "
 #~ "applet's sub-dock. Otherwise they will be available in the menu."
 #~ msgstr ""
-#~ "Εμφάνιση δύο εικονιδίων για τα πρόσθετα Compiz Exposition & Widget Layer "
-#~ "στο sub-dock της μικροεφαρμογής. Αλλιώς θα είναι διαθέσιμα στο μενού."
+#~ "Εμφάνιση δύο εικονιδίων για τα πρόσθετα Compiz Exposition & Widget Layer στο "
+#~ "sub-dock της μικροεφαρμογής. Αλλιώς θα είναι διαθέσιμα στο μενού."
 
 #~ msgid "Add Exposition & Widget Layer to sub-dock?"
 #~ msgstr "Προσθήκη Exposition & Widget Layer στο sub-dock;"
 
 #~ msgid ""
-#~ "Display an icon for the Emerald configuration panel in the applet's sub-"
-#~ "dock."
+#~ "Display an icon for the Emerald configuration panel in the applet's sub-dock."
 #~ msgstr ""
-#~ "Εμφάνιση εικονιδίου για τον πίνακα διαμόρφωσης του Emerald στο sub-dock "
-#~ "της μικροεφαρμογής."
+#~ "Εμφάνιση εικονιδίου για τον πίνακα διαμόρφωσης του Emerald στο sub-dock της "
+#~ "μικροεφαρμογής."
 
 #~ msgid "Add Emerald Configuration to sub-dock?"
 #~ msgstr "Προσθήκη της διαμόρφωσης του Emerald στο sub-dock;"
@@ -5368,14 +5109,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a "
-#~ "bit slow when binding textures, that's why this option gives a heavy "
-#~ "performance increase with Nvidia cards."
+#~ "loose binding they are enabled when created. The Nvidia driver seems a bit "
+#~ "slow when binding textures, that's why this option gives a heavy performance "
+#~ "increase with Nvidia cards."
 #~ msgstr ""
 #~ "Με αυστηρή δέσμευση, οι υφές δεσμεύονται όπου ενεργοποιούνται. Με χαλαρή "
-#~ "δέσμευση ενεργοποιούνται όταν δημιουργούνται. Ο οδηγός της Nvidia "
-#~ "φαίνεται να είναι λίγο αργός στη δέσμευση υφών, γι' αυτό αυτή η επιλογή "
-#~ "δίνει μεγάλη αύξηση επιδόσεων με κάρτες της Nvidia."
+#~ "δέσμευση ενεργοποιούνται όταν δημιουργούνται. Ο οδηγός της Nvidia φαίνεται "
+#~ "να είναι λίγο αργός στη δέσμευση υφών, γι' αυτό αυτή η επιλογή δίνει μεγάλη "
+#~ "αύξηση επιδόσεων με κάρτες της Nvidia."
 
 #~ msgid "Use Loose Binding?"
 #~ msgstr "Χρήση χαλαρής δέσμευσης;"
@@ -5387,8 +5128,7 @@ msgstr ""
 #~ msgstr "Χρήση έμμεσης απόδοσης;"
 
 #~ msgid "Useful when using two or more separate X screens."
-#~ msgstr ""
-#~ "Χρήσιμο όταν χρησιμοποιείται δύο ή περισσότερες ξεχωριστές οθόνες Χ."
+#~ msgstr "Χρήσιμο όταν χρησιμοποιείται δύο ή περισσότερες ξεχωριστές οθόνες Χ."
 
 #~ msgid "Only Current Screen?"
 #~ msgstr "Μόνο την τρέχουσα οθόνη;"
@@ -5560,11 +5300,11 @@ msgstr ""
 #~ msgstr "UbuntuOne"
 
 #~ msgid ""
-#~ "The script takes the file path as a parameter, and write the resulting "
-#~ "URL on the standard output."
+#~ "The script takes the file path as a parameter, and write the resulting URL "
+#~ "on the standard output."
 #~ msgstr ""
-#~ "Το script δέχεται την διαδρομή αρχείου ως παράμετρο και γράφει την URL "
-#~ "που προκύπτει στην καθορισμένη έξοδο."
+#~ "Το script δέχεται την διαδρομή αρχείου ως παράμετρο και γράφει την URL που "
+#~ "προκύπτει στην καθορισμένη έξοδο."
 
 #~ msgid "Custom script for text upload :"
 #~ msgstr "Προσαρμοσμένο script για αποστολή κειμένου :"
@@ -5594,8 +5334,7 @@ msgstr ""
 #~ msgstr "Κεκλιμένο επίπεδο"
 
 #~ msgid "The lower the value, the lower the point of view on the plane."
-#~ msgstr ""
-#~ "Όσο χαμηλότερη η τιμή τόσο χαμηλότερα το σημείο θέασης του επιπέδου."
+#~ msgstr "Όσο χαμηλότερη η τιμή τόσο χαμηλότερα το σημείο θέασης του επιπέδου."
 
 #~ msgid "Height of the vanishing point:"
 #~ msgstr "Ύψος του σημείου ορίζοντα:"
@@ -5739,8 +5478,8 @@ msgstr ""
 #~ msgid ""
 #~ "0 represents a flat wave, 1 means the wave is identical to other views."
 #~ msgstr ""
-#~ "Το 0 αντιπροσωπεύει ένα επίπεδο κύμα, το 1 σημαίνει ότι το κύμα είναι "
-#~ "ίδιο με τις άλλες προβολές."
+#~ "Το 0 αντιπροσωπεύει ένα επίπεδο κύμα, το 1 σημαίνει ότι το κύμα είναι ίδιο "
+#~ "με τις άλλες προβολές."
 
 #~ msgid "Number of icons on the first row:"
 #~ msgstr "Αριθμός εικονιδίων στην πρώτη γραμμή:"
@@ -5773,8 +5512,8 @@ msgstr ""
 #~ "Typically an arrow, this will be displayed when you try to drop a new "
 #~ "launcher into the dock. Leave this empty to use the default."
 #~ msgstr ""
-#~ "Συνήθως ένα βέλος, αυτό θα εμφανίζεται όταν προσπαθείτε να αφήσετε ένα "
-#~ "νέο εκκινητή στο dock. Αφήστε το κενό για χρήση της προεπιλογής."
+#~ "Συνήθως ένα βέλος, αυτό θα εμφανίζεται όταν προσπαθείτε να αφήσετε ένα νέο "
+#~ "εκκινητή στο dock. Αφήστε το κενό για χρήση της προεπιλογής."
 
 #~ msgid "Image for the drag & drop animation:"
 #~ msgstr "Εικόνα για το εφέ κίνησης της μετακίνησης και άφεσης:"
@@ -5907,8 +5646,7 @@ msgstr ""
 
 #~ msgid "The greater, the faster the icon will collapse to the center."
 #~ msgstr ""
-#~ "Όσο μεγαλύτερο τόσο γρηγορότερα το εικονίδιο θα καταρρεύσει στο κέντρο "
-#~ "του."
+#~ "Όσο μεγαλύτερο τόσο γρηγορότερα το εικονίδιο θα καταρρεύσει στο κέντρο του."
 
 #~ msgid "Attraction of the Black Hole:"
 #~ msgstr "Έλξη της μαύρης τρύπας:"
@@ -5923,8 +5661,8 @@ msgstr ""
 #~ "in ms. Set to 0 if you don't want an animation when the keyboard layout "
 #~ "changes."
 #~ msgstr ""
-#~ "σε ms. ορίστε σε 0 αν δεν θέλετε ένα εφέ απεικόνισης όταν αλλάζει η "
-#~ "διάταξη πληκτρολογίου."
+#~ "σε ms. ορίστε σε 0 αν δεν θέλετε ένα εφέ απεικόνισης όταν αλλάζει η διάταξη "
+#~ "πληκτρολογίου."
 
 #~ msgid "Duration of the transition animation:"
 #~ msgstr "Διάρκεια της κίνησης μετάβασης:"
@@ -5973,12 +5711,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "If you have any problem with the applet, uncheck this option during the "
-#~ "maintenance mode, then after the dock has relaunched, remove/modify the "
-#~ "mail accounts you want."
+#~ "maintenance mode, then after the dock has relaunched, remove/modify the mail "
+#~ "accounts you want."
 #~ msgstr ""
-#~ "Αν έχετε πρόβλημα με τη μικροεφαρμογή, αποεπιλέξτε αυτή την επιλογή κατά "
-#~ "τη λειτουργία συντήρησης, μετά αφού επανεκκινηθεί το dock, αφαιρέστε/"
-#~ "τροποποιήστε τους λογαριασμούς αλληλογραφίας που επιθυμείτε."
+#~ "Αν έχετε πρόβλημα με τη μικροεφαρμογή, αποεπιλέξτε αυτή την επιλογή κατά τη "
+#~ "λειτουργία συντήρησης, μετά αφού επανεκκινηθεί το dock, "
+#~ "αφαιρέστε/τροποποιήστε τους λογαριασμούς αλληλογραφίας που επιθυμείτε."
 
 #~ msgid "Check mail account on startup?"
 #~ msgstr "Έλεγχος λογαριασμού αλληλογραφίας κατά την εκκίνηση;"
@@ -6049,8 +5787,7 @@ msgstr ""
 #~ msgid ""
 #~ "Leave it empty to display the name of the player currently controlled."
 #~ msgstr ""
-#~ "Αφήστε κενό για να εμφανίζεται το όνομα του παίκτη που ελέγχετε κάθε "
-#~ "στιγμή."
+#~ "Αφήστε κενό για να εμφανίζεται το όνομα του παίκτη που ελέγχετε κάθε στιγμή."
 
 #~ msgid "Audio Player"
 #~ msgstr "Αναπαραγωγέας ήχου"
@@ -6152,8 +5889,7 @@ msgstr ""
 #~ msgstr "Πρέπει να είστε συνδεδεμένοι στο διαδίκτυο."
 
 #~ msgid "Allow Cairo-Dock to download missing covers?"
-#~ msgstr ""
-#~ "Να επιτραπεί στο Cairo-Dock να μεταφορτώσει τα εξώφυλλα που λείπουν;"
+#~ msgstr "Να επιτραπεί στο Cairo-Dock να μεταφορτώσει τα εξώφυλλα που λείπουν;"
 
 #~ msgid "requires OpenGL."
 #~ msgstr "απαιτεί το OpenGL."
@@ -6255,9 +5991,8 @@ msgstr ""
 #~ "Number of items loaded at once. Setting a high value speeds up loading a "
 #~ "little but will hang the application for longer."
 #~ msgstr ""
-#~ "Αριθμός αντικειμένων που φορτώνονται ταυτόχρονα. Μια υψηλή τιμή "
-#~ "επιταχύνει τη φόρτωση λίγο αλλά θα κρεμάσει την εφαρμογή για περισσότερο "
-#~ "χρόνο."
+#~ "Αριθμός αντικειμένων που φορτώνονται ταυτόχρονα. Μια υψηλή τιμή επιταχύνει "
+#~ "τη φόρτωση λίγο αλλά θα κρεμάσει την εφαρμογή για περισσότερο χρόνο."
 
 #~ msgid "Build menu gradually:"
 #~ msgstr "σταδιακή δημιουργία μενού:"
@@ -6330,8 +6065,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "You need to activate the Dbus plug-in in Compiz for the last 2 actions. "
-#~ "Showing desktop and desklets can fail on some Window Manager (like "
-#~ "Metacity)."
+#~ "Showing desktop and desklets can fail on some Window Manager (like Metacity)."
 #~ msgstr ""
 #~ "Πρέπει να ενεργοποιήσετε το πρόσθετο Dbus στο Compiz για τις τελευταίες 2 "
 #~ "ενέργειες."
@@ -6361,8 +6095,8 @@ msgstr ""
 #~ "This will prevent the dock from freezing during image loading, but works "
 #~ "only with OpenGL."
 #~ msgstr ""
-#~ "Αυτό θα εμποδίσει το dock να παγώσει κατά τη φόρτωση εικόνας αλλά "
-#~ "δουλεύει μόνο με το OpenGL."
+#~ "Αυτό θα εμποδίσει το dock να παγώσει κατά τη φόρτωση εικόνας αλλά δουλεύει "
+#~ "μόνο με το OpenGL."
 
 #~ msgid "Use another thread to load images?"
 #~ msgstr "Χρήση άλλου νήματος για φόρτωση εικόνων;"
@@ -6455,8 +6189,7 @@ msgstr ""
 #~ msgstr "Αφήστε κενό για χρήση του προεπιλεγμένου"
 
 #~ msgid "They are items created by dropping a text into the Stack."
-#~ msgstr ""
-#~ "Είναι αντικείμενα που δημιοργούνται αφήνοντας κείμενο σε μια Στοίβα."
+#~ msgstr "Είναι αντικείμενα που δημιοργούνται αφήνοντας κείμενο σε μια Στοίβα."
 
 #~ msgid "Image for 'text' items:"
 #~ msgstr "Εικόνα για αντικείμενα 'κειμένου':"
@@ -6475,8 +6208,8 @@ msgstr ""
 #~ "These options allow you to prevent some files from displaying in stacks "
 #~ "based on their type (video, image, etc.)"
 #~ msgstr ""
-#~ "Αυτές οι επιλογές σας επιτρέπουν να εμποδίσετε μερικά αρχεία να "
-#~ "εμφανίζονται σε στοίβες ανάλογα με τον τύπο τους (βίντεο, εικόνα κλπ)"
+#~ "Αυτές οι επιλογές σας επιτρέπουν να εμποδίσετε μερικά αρχεία να εμφανίζονται "
+#~ "σε στοίβες ανάλογα με τον τύπο τους (βίντεο, εικόνα κλπ)"
 
 #~ msgid "Filter files on MIME type?"
 #~ msgstr "Φιλτράρισμα αρχείων τύπου MIME;"
@@ -6500,8 +6233,8 @@ msgstr ""
 #~ "All desktops will be drawn on the main icon. Otherwise a sub-dock will "
 #~ "contain all desktops."
 #~ msgstr ""
-#~ "'Όλες οι επιφάνειες εργασίας θα σχεδιαστούν στο κεντρικό εικονίδιο. "
-#~ "Αλλιώς ένα subdock θα περιέχει όλες τις επιφάνειες εργασίας."
+#~ "'Όλες οι επιφάνειες εργασίας θα σχεδιαστούν στο κεντρικό εικονίδιο. Αλλιώς "
+#~ "ένα subdock θα περιέχει όλες τις επιφάνειες εργασίας."
 
 #~ msgid "Use the compact mode?"
 #~ msgstr "Χρήση συμπτυγμένης κατάστασης;"
@@ -6547,6 +6280,9 @@ msgstr ""
 
 #~ msgid "Current desktop colour:"
 #~ msgstr "Χρώμα τρέχουσας επιφάνειας:"
+
+#~ msgid "How to draw the current desktop:"
+#~ msgstr "Πως θα σχεδιασθεί η τρέχουσα πειφάνεια εργασίας:"
 
 #~ msgid "draw a frame"
 #~ msgstr "σχεδίαση πλαισίου"
@@ -6658,23 +6394,23 @@ msgstr ""
 #~ msgstr "Αυτόματη ονομασία νέας σημείωσης;"
 
 #~ msgid ""
-#~ "Write the date format you usually use in your notes. The syntax is the "
-#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "Write the date format you usually use in your notes. The syntax is the one "
+#~ "of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
 #~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
 #~ msgstr ""
-#~ "Γράψτε τη μορφή ημερομηνίας που χρησιμοποιείτε συνήθως στις σημειώσεις "
-#~ "σας. Το συντακτικό είναι αυτό του 'strftime' : %d για την ημέρα, %m για "
-#~ "το μήνα, %y για το έτος (2 ψηφία), κλπ. Αφήστε το κενό για χρήση της "
-#~ "προεπιλογής (%d/%m/%y)."
+#~ "Γράψτε τη μορφή ημερομηνίας που χρησιμοποιείτε συνήθως στις σημειώσεις σας. "
+#~ "Το συντακτικό είναι αυτό του 'strftime' : %d για την ημέρα, %m για το μήνα, "
+#~ "%y για το έτος (2 ψηφία), κλπ. Αφήστε το κενό για χρήση της προεπιλογής "
+#~ "(%d/%m/%y)."
 
 #~ msgid "Date format to search for :"
 #~ msgstr "Μορφή ημερομηνίας για αναζήτηση:"
 
 #~ msgid ""
 #~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some "
-#~ "error message like <<No marshaller for signature of signal "
-#~ "'NoteDeleted'>> in the terminal."
+#~ "automatically notified to us. Only check this box if you notice some error "
+#~ "message like <<No marshaller for signature of signal 'NoteDeleted'>> in the "
+#~ "terminal."
 #~ msgstr ""
 #~ "Ανάλογα με την έκδοσή σας του tomboy, η διαγραφή σημειώσεων μπορεί να μην "
 #~ "ενημερωθεί αυτόματα σε μας. Επιλέξτε αυτό το πεδίο μόνο αν παρατηρήσετε "
@@ -6694,10 +6430,8 @@ msgstr ""
 #~ msgid "Code for your location:"
 #~ msgstr "Κωδικός τοποθεσίας σας:"
 
-#~ msgid ""
-#~ "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
-#~ msgstr ""
-#~ "Αν είναι έτσι, οι βαθμοί θα είναι Κελσίου, αλλιώς θα είναι Φαρενάιτ."
+#~ msgid "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
+#~ msgstr "Αν είναι έτσι, οι βαθμοί θα είναι Κελσίου, αλλιώς θα είναι Φαρενάιτ."
 
 #~ msgid "Use International System Units?"
 #~ msgstr "Χρήση μονάδων SI;"
@@ -6747,8 +6481,8 @@ msgstr ""
 #~ msgid ""
 #~ "This lets you right-click on the desklet to pop up the Cairo-Dock menu."
 #~ msgstr ""
-#~ "Αυτό σας επιτρέπει να κάνετε δεξί κλικ στο desklet για να αναδυθεί το "
-#~ "μενού του Cairo-Dock."
+#~ "Αυτό σας επιτρέπει να κάνετε δεξί κλικ στο desklet για να αναδυθεί το μενού "
+#~ "του Cairo-Dock."
 
 #~ msgid "Right margin width, in pixels:"
 #~ msgstr "Πλάτος δεξιού περιθωρίου σε pixel:"
@@ -6809,5 +6543,4 @@ msgstr ""
 
 #~ msgid "Overwrite the default label with the connection point name?"
 #~ msgstr ""
-#~ "Αντικατάσταση της προεπιλεγμένης ετικέτας με το όνομα του σημείου "
-#~ "σύνδεσης;"
+#~ "Αντικατάσταση της προεπιλεγμένης ετικέτας με το όνομα του σημείου σύνδεσης;"

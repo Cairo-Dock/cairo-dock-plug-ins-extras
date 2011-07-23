@@ -7,19 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2011-07-11 01:25+0200\n"
-"PO-Revision-Date: 2011-04-19 12:54+0100\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-06-21 00:27+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-16 05:17+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:53+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -538,14 +539,12 @@ msgstr "Configuration"
 
 #: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
 #: ../MintMenu/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the menu:"
-msgstr "Shortkey to pop-up the items menu:"
+msgstr ""
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Applications Menu"
+msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -560,9 +559,8 @@ msgid "Behaviour"
 msgstr "Behaviour"
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "in seconds."
+msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
@@ -577,13 +575,10 @@ msgid "Time length of dialogues for calendar of next month :"
 msgstr ""
 
 #: ../Calendar/messages:117
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
-"An emblem that will be displayed when you try to drop something on an icon. "
-"Leave empty to use the default one."
 
 #: ../Calendar/messages:119
 msgid "Icon custom script:"
@@ -608,14 +603,12 @@ msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "Torrents info (middle-click)"
-msgstr "Action on middle-click:"
+msgstr ""
 
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Shortkey to pop-up the items menu:"
+msgstr ""
 
 #: ../DiskFree/messages:97
 msgid ""
@@ -623,46 +616,40 @@ msgid ""
 msgstr ""
 
 #: ../DiskFree/messages:99
-#, fuzzy
 msgid "in minutes"
-msgstr "In minutes."
+msgstr ""
 
 #: ../DiskFree/messages:101
-#, fuzzy
 msgid "Time between two file system's checking :"
-msgstr "Time between page refreshes"
+msgstr ""
 
 #: ../GTG/messages:97 ../Xchat/messages:99
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Pulse duration:"
+msgstr ""
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Short"
 msgstr ""
 
 #: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
-#, fuzzy
 msgid "Medium"
-msgstr "medium"
+msgstr ""
 
 #: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "Long"
 msgstr ""
 
 #: ../GTG/messages:105 ../Xchat/messages:107
-#, fuzzy
 msgid "Animation of the icon on receiving channel messages :"
-msgstr "Animation of the icon during upload :"
+msgstr ""
 
 #: ../GTG/messages:107 ../Xchat/messages:97
 msgid "Display channel messages in a bubble :"
 msgstr ""
 
 #: ../GTG/messages:111
-#, fuzzy
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "Desklet dimensions (width x height):"
+msgstr ""
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -678,19 +665,16 @@ msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Name of the icon as it will appear in its caption in the dock:"
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Show the Window"
+msgstr ""
 
 #: ../Liferea/messages:99
-#, fuzzy
 msgid "Number of unread messages"
-msgstr "Number of round per second."
+msgstr ""
 
 #: ../Liferea/messages:101
-#, fuzzy
 msgid " Number of new messages"
-msgstr "Maximum of new messages shown?"
+msgstr ""
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -698,9 +682,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Configuration"
+msgstr ""
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
@@ -719,37 +702,32 @@ msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
 
 #: ../Pidgin/Pidgin:455
-#, fuzzy
 msgid "Enter your new status message:"
-msgstr "Maximum of new messages shown?"
+msgstr ""
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
 msgid "Parameters"
 msgstr "Parameters"
 
 #: ../Pidgin/messages:99
-#, fuzzy
 msgid "Choose a theme :"
-msgstr "Use 3D themes?"
+msgstr ""
 
 #: ../Pidgin/messages:103
 msgid "Display conversation messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:105
-#, fuzzy
 msgid "Display chat messages in a bubble?"
-msgstr "Display disk usage with a bar?"
+msgstr ""
 
 #: ../Pidgin/messages:107
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Pulse duration:"
+msgstr ""
 
 #: ../Pidgin/messages:115
-#, fuzzy
 msgid "Animation of the icon on receiving a message:"
-msgstr "Animation of the icon during upload :"
+msgstr ""
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid ""
@@ -757,9 +735,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
-#, fuzzy
 msgid "Size of the history :"
-msgstr "Size of the inside lines :"
+msgstr ""
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid "none"
@@ -770,14 +747,12 @@ msgid "big"
 msgstr "big"
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Leave empty to use the connection name."
+msgstr ""
 
 #: ../Quote/messages:99
-#, fuzzy
 msgid "Quote source:"
-msgstr "Number of sources:"
+msgstr ""
 
 #: ../Quote/messages:101
 msgid "Quotationspage.com"
@@ -820,27 +795,24 @@ msgid "in seconds."
 msgstr "in seconds."
 
 #: ../RubyBattery/messages:101
-#, fuzzy
 msgid "Interval of time between 2 checks:"
-msgstr "Delay between signal checks :"
+msgstr ""
 
 #: ../RubyBattery/messages:103
 msgid "Activate alert of critical charge?"
 msgstr ""
 
 #: ../RubyBattery/messages:105
-#, fuzzy
 msgid "of % battery charge."
-msgstr "Notification when battery charged?"
+msgstr ""
 
 #: ../RubyBattery/messages:107
 msgid "Threshold for the critical charge alert:"
 msgstr ""
 
 #: ../RubyBattery/messages:109
-#, fuzzy
 msgid "Display a label with the charge?"
-msgstr "Display disk usage with a bar?"
+msgstr ""
 
 #: ../Translator/Translator:434
 msgid "To"
@@ -851,9 +823,8 @@ msgid "From"
 msgstr ""
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Switch Windows Manager"
+msgstr ""
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
@@ -1108,9 +1079,8 @@ msgid "Yiddish"
 msgstr ""
 
 #: ../Translator/messages:217
-#, fuzzy
 msgid "Translate to:"
-msgstr "Rename to:"
+msgstr ""
 
 #: ../Translator/messages:333
 msgid "Shortkeys"
@@ -1125,19 +1095,16 @@ msgid "Shortkey to start translating to (write):"
 msgstr ""
 
 #: ../Translator/messages:339
-#, fuzzy
 msgid "Dialog"
-msgstr "Dialog bubble"
+msgstr ""
 
 #: ../Translator/messages:341
-#, fuzzy
 msgid "In s. Set 0 for an unlimited time."
-msgstr "In ms. Set 0 to not use this effect."
+msgstr ""
 
 #: ../Translator/messages:343
-#, fuzzy
 msgid "Time-length of the result dialog:"
-msgstr "Time length of tooltips:"
+msgstr ""
 
 #: ../Translator/messages:345
 msgid "Editable text widget?"
@@ -1157,9 +1124,8 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Searching ..."
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1194,9 +1160,8 @@ msgid "Wikipedia"
 msgstr "Wikipedia"
 
 #: ../WebSearch/messages:113
-#, fuzzy
 msgid "ImageShack"
-msgstr "ImageShack.us"
+msgstr ""
 
 #: ../WebSearch/messages:115
 msgid "Twitter"
@@ -1207,14 +1172,12 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "in seconds."
+msgstr ""
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid "Maximum number of results shown :"
-msgstr "Maximum number of results :"
+msgstr ""
 
 #: ../WebSearch/messages:123
 msgid "Show the current page as the icon label ?"
@@ -1237,215 +1200,15 @@ msgid ""
 msgstr ""
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Adjust channels"
+msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
-#, fuzzy
-#~ msgid "in ms"
-#~ msgstr "In ms."
-
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Refresh time:"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Notification"
-
-#, fuzzy
-#~ msgid "Notifications for new messages?"
-#~ msgstr "Notification when low battery?"
-
-#, fuzzy
-#~ msgid "Notifications for pokes?"
-#~ msgstr "Notification type:"
-
-#, fuzzy
-#~ msgid "Notifications for group invites?"
-#~ msgstr "Notification when low battery?"
-
-#, fuzzy
-#~ msgid "Notifications for event invites?"
-#~ msgstr "Notification when low battery?"
-
-#, fuzzy
-#~ msgid "never"
-#~ msgstr "Never"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Bounce"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Blink"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Pulse"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Rotate"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Wobbly"
-
-#, fuzzy
-#~ msgid "Time in minutes."
-#~ msgstr "In minutes."
-
 #~ msgid "Appearance"
 #~ msgstr "Appearance"
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can resize it with ALT + "
-#~ "middle_click or ALT + left_click for exemple."
-#~ msgstr ""
-#~ "Depending on your WindowManager, you may be able to resize this with ALT "
-#~ "+ middle-click or ALT + left-click."
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can move it with ALT + left_click"
-#~ msgstr ""
-#~ "Depending on your WindowManager, you may be able to move this with ALT + "
-#~ "left-click."
-
-#, fuzzy
-#~ msgid "Desklet's position (x ; y) :"
-#~ msgstr "Desklet position (x, y):"
-
-#, fuzzy
-#~ msgid "Is detached from the dock ?"
-#~ msgstr "Is detached from the dock"
-
-#, fuzzy
-#~ msgid "Accessibility :"
-#~ msgstr "Visibility:"
-
-#, fuzzy
-#~ msgid "On Widget Layer"
-#~ msgstr "Widget Layer"
-
-#, fuzzy
-#~ msgid "Should be visible on all desktops ?"
-#~ msgstr "Should be visible on all desktops?"
-
-#, fuzzy
-#~ msgid ""
-#~ "If locked, the desklet can't be moved by simply dragging it with the left "
-#~ "mouse button. Of course you can still move it with ALT + left_click."
-#~ msgstr ""
-#~ "If locked, the desklet cannot be moved by simply dragging it with the "
-#~ "left mouse button. It can still be moved with ALT + left-click."
-
-#, fuzzy
-#~ msgid "Lock position ?"
-#~ msgstr "Lock position?"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Rotation:"
-
-#, fuzzy
-#~ msgid "Choose the 'personnal' one to define your own decorations below."
-#~ msgstr "Choose 'Custom decorations' to define your own decorations below."
-
-#, fuzzy
-#~ msgid "Choose a decoration theme for this desklet :"
-#~ msgstr "Choose a decoration theme for this desklet:"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed below the drawings, like a frame for "
-#~ "exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Image to be displayed below drawings, e.g. a frame. Leave empty for no "
-#~ "image."
-
-#, fuzzy
-#~ msgid "Background image :"
-#~ msgstr "Background image:"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Background transparency:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the left position of the drawings."
-#~ msgstr "in pixels. Use this to adjust the left position of drawings."
-
-#, fuzzy
-#~ msgid "Left offset :"
-#~ msgstr "Left offset:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the top position of the drawings."
-#~ msgstr "in pixels. Use this to adjust the top position of drawings."
-
-#, fuzzy
-#~ msgid "Top offset :"
-#~ msgstr "Top offset:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the right position of the drawings."
-#~ msgstr "in pixels. Use this to adjust the right position of drawings."
-
-#, fuzzy
-#~ msgid "Right offset :"
-#~ msgstr "Right offset:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the bottom position of the drawings."
-#~ msgstr "in pixels. Use this to adjust the bottom position of drawings."
-
-#, fuzzy
-#~ msgid "Bottom offset :"
-#~ msgstr "Bottom offset:"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed above the drawings, like a reflect "
-#~ "for exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Image to be displayed above the drawings, e.g. a reflection. Leave empty "
-#~ "for no image."
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "Foreground image:"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Foreground tansparency:"
-
-#, fuzzy
-#~ msgid "Show the moon for all the current week?"
-#~ msgstr "How to draw the current desktop:"
-
-#, fuzzy
-#~ msgid "shorterlink.org"
-#~ msgstr "Shorter-Link"
-
-#, fuzzy
-#~ msgid "Action au clic milieu sur l icone :"
-#~ msgstr "Actions on click and middle-click :"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Choose one of the available themes:"
-
-#, fuzzy
-#~ msgid "Max value :"
-#~ msgstr "Display values :"
 
 #~ msgid "Animated icons"
 #~ msgstr "Animated icons"
@@ -1463,14 +1226,14 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Add a lively Penguin in your dock!\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to annoy him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 
 #~ msgid "Cairo-Penguin"
 #~ msgstr "Cairo-Penguin"
@@ -1482,11 +1245,9 @@ msgstr ""
 #~ msgstr "Sorry but I'm busy right now."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 
 #~ msgid "Your dock is so messy! Let me clean it."
 #~ msgstr "Your dock is so messy! Let me clean it."
@@ -1542,13 +1303,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know Klipper.\n"
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
+#~ "Drop text on the icon to create persistent items, and middle-clck to recall "
+#~ "them."
 #~ msgstr ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
 #~ "so that you can recall them quickly. It's a clone of the well-known "
@@ -1556,8 +1316,8 @@ msgstr ""
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-click to "
-#~ "recall them."
+#~ "Drop text on the icon to create persistent items, and middle-click to recall "
+#~ "them."
 
 #~ msgid "Clipboard history"
 #~ msgstr "Clipboard history"
@@ -1631,20 +1391,18 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet imports folders inside the Dock\n"
-#~ "You can have as many instances of this applet as you want, each one with "
-#~ "a different folder.\n"
+#~ "You can have as many instances of this applet as you want, each one with a "
+#~ "different folder.\n"
 #~ "To add a folder in your dock:\n"
-#~ " - activate the applet, open its configuration panel, and select a "
-#~ "folder\n"
+#~ " - activate the applet, open its configuration panel, and select a folder\n"
 #~ " - or just drop a folder into the dock\n"
 #~ "Middle-click on the main icon opens the folder.\n"
 #~ msgstr ""
 #~ "This applet imports folders inside the Dock\n"
-#~ "You can have as many instances of this applet as you want, each one with "
-#~ "a different folder.\n"
+#~ "You can have as many instances of this applet as you want, each one with a "
+#~ "different folder.\n"
 #~ "To add a folder in your dock:\n"
-#~ " - activate the applet, open its configuration panel, and select a "
-#~ "folder\n"
+#~ " - activate the applet, open its configuration panel, and select a folder\n"
 #~ " - or just drop a folder into the dock\n"
 #~ "Middle-click on the main icon will open the folder.\n"
 
@@ -1715,14 +1473,14 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 
 #~ msgid "Quick launch"
@@ -1747,8 +1505,8 @@ msgstr ""
 #~ msgstr "Me Menu"
 
 #~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online "
-#~ "status, your friends."
+#~ "A menu that lets you access quickly to your information, your online status, "
+#~ "your friends."
 #~ msgstr ""
 #~ "A menu that lets you quickly access your information, your online status, "
 #~ "your friends."
@@ -1760,12 +1518,10 @@ msgstr ""
 #~ msgstr "Messaging Menu"
 
 #~ msgid ""
-#~ "A menu that notices you about new messages from Mail or Chat "
-#~ "applications.\n"
+#~ "A menu that notices you about new messages from Mail or Chat applications.\n"
 #~ "It handles Evolution, Pidgin, Empathy, etc"
 #~ msgstr ""
-#~ "A menu that notify you about new messages from Mail or Chat "
-#~ "applications.\n"
+#~ "A menu that notify you about new messages from Mail or Chat applications.\n"
 #~ "It handles Evolution, Pidgin, Empathy, etc."
 
 #~ msgid "It seems that the Messaging-Menu is not installed on your system"
@@ -1850,16 +1606,16 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds as well as the wifi signal "
 #~ "quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to display some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 
@@ -2075,18 +1831,16 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most ressources using programs.\n"
+#~ "You can instanciate this applet several times to show different values each "
+#~ "time."
 #~ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most resources using "
-#~ "programs.\n"
-#~ "You can instantiate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most resources using programs.\n"
+#~ "You can instantiate this applet several times to show different values each "
+#~ "time."
 
 #~ msgid ""
 #~ "The acquisition of one or more data has failed.\n"
@@ -2139,15 +1893,15 @@ msgstr ""
 #~ "Scroll up/down to increase/decrease the luminosity\n"
 #~ "Left-click to open a dialog to setup the luminosity\n"
 #~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically "
-#~ "on startup."
+#~ "You can also define a luminosity value that will be applied automatically on "
+#~ "startup."
 #~ msgstr ""
 #~ "Setup the luminosity of your screen directly from your dock.\n"
 #~ "Scroll up/down to increase/decrease the luminosity\n"
 #~ "Left-click to open a dialog to setup the luminosity\n"
 #~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically "
-#~ "on startup."
+#~ "You can also define a luminosity value that will be applied automatically on "
+#~ "startup."
 
 #~ msgid "Screen Luminosity"
 #~ msgstr "Screen Luminosity"
@@ -2161,8 +1915,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
+#~ "for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to set or unset to mute, double-click to raise the channels "
 #~ "mixer.\n"
@@ -2170,8 +1924,8 @@ msgstr ""
 #~ msgstr ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
+#~ "for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to mute/unmute, double-click to raise the channels mixer.\n"
 #~ "This applet works with the Alsa sound driver."
@@ -2199,6 +1953,9 @@ msgstr ""
 
 #~ msgid "Set up volume:"
 #~ msgstr "Set up volume:"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Adjust channels"
 
 #~ msgid "Unmute"
 #~ msgstr "Unmute"
@@ -2289,8 +2046,7 @@ msgstr ""
 #~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
 #~ "tasks</b>.\n"
 #~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a "
-#~ "notification,\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a notification,\n"
 #~ "Double-click on a day to edit the tasks for this day."
 #~ msgstr ""
 #~ "This applet displays time, date and a calendar.\n"
@@ -2300,31 +2056,30 @@ msgstr ""
 #~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
 #~ "tasks</b>.\n"
 #~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a "
-#~ "notification,\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a notification,\n"
 #~ "Double-click on a day to edit the tasks for this day."
 
 #~ msgid ""
 #~ "No task is sheduled for today.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "No task is scheduled for today.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 
 #~ msgid ""
 #~ "No task is sheduled for the next 7 days.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "No task is scheduled for the next 7 days.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 
 #~ msgid "Show today's tasks"
 #~ msgstr "Show today's tasks"
@@ -2429,6 +2184,9 @@ msgstr ""
 #~ msgid "Exposition"
 #~ msgstr "Exposition"
 
+#~ msgid "Widget Layer"
+#~ msgstr "Widget Layer"
+
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
 #~ " through your package manager (Synaptic, YasT, etc)"
@@ -2438,6 +2196,9 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Reload Emerald"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Switch Windows Manager"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Switch Windows Decorator"
@@ -2554,12 +2315,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
+#~ "Consider activating the history if you want the applet to remember previous "
+#~ "uploads."
 #~ msgstr ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
+#~ "Consider activating the history if you want the applet to remember previous "
+#~ "uploads."
 
 #~ msgid ""
 #~ "The current URL has been stored in the clipboard.\n"
@@ -2620,23 +2381,23 @@ msgstr ""
 #~ msgid ""
 #~ "This module adds different views to your dock.\n"
 #~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
-#~ "views are provided."
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve views "
+#~ "are provided."
 #~ msgstr ""
 #~ "This module adds different views to your dock.\n"
 #~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
-#~ "views are provided."
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve views "
+#~ "are provided."
 
 #~ msgid "drop indicator"
 #~ msgstr "Drop Indicator"
 
 #~ msgid ""
-#~ "This plug-in displays an animated indicator when you drop something into "
-#~ "the dock."
+#~ "This plug-in displays an animated indicator when you drop something into the "
+#~ "dock."
 #~ msgstr ""
-#~ "This plug-in displays an animated indicator when you drop something into "
-#~ "the dock."
+#~ "This plug-in displays an animated indicator when you drop something into the "
+#~ "dock."
 
 #~ msgid "dustbin"
 #~ msgstr "Trash"
@@ -2829,11 +2590,11 @@ msgstr ""
 #~ msgstr "Port:"
 
 #~ msgid ""
-#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
-#~ "and 995 for POP3S."
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP and "
+#~ "995 for POP3S."
 #~ msgstr ""
-#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
-#~ "and 995 for POP3S."
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP and "
+#~ "995 for POP3S."
 
 #~ msgid "Use a secure connection (SSL)"
 #~ msgstr "Use a secure connection (SSL)"
@@ -2974,8 +2735,8 @@ msgstr ""
 #~ "This applet lets you control any music player.\n"
 #~ "Left click to Play/Pause, middle-click to play Next song.\n"
 #~ "Scroll up/down to play previous/next song.\n"
-#~ "You can drag and drop songs on the icon to put them in the queue (depends "
-#~ "on Player),\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends on "
+#~ "Player),\n"
 #~ " and jpeg image to use as cover.\n"
 #~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
 #~ "       For SongBird, you have to install its dbus add-on.\n"
@@ -2984,8 +2745,8 @@ msgstr ""
 #~ "This applet lets you control any music player.\n"
 #~ "Left click to Play/Pause, middle-click to play Next song.\n"
 #~ "Scroll up/down to play previous/next song.\n"
-#~ "You can drag and drop songs on the icon to put them in the queue "
-#~ "(depending on the Player),\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depending "
+#~ "on the Player),\n"
 #~ " and jpeg image to use as cover.\n"
 #~ "Note : For XMMS, you will need to install the 'xmms-infopipe' plug-in.\n"
 #~ "       For SongBird, you have to install its dbus add-on.\n"
@@ -3133,8 +2894,7 @@ msgstr ""
 #~ "This applet lets you browse a folder and its sub-folders very quickly.\n"
 #~ "You can set up a shortkey to pop up the menu.\n"
 #~ "Midlle-click will open the main folder.\n"
-#~ "This applet supports multiple instances, so you can browse several "
-#~ "folders."
+#~ "This applet supports multiple instances, so you can browse several folders."
 
 #~ msgid "Open this folder"
 #~ msgstr "Open this folder"
@@ -3161,22 +2921,20 @@ msgstr ""
 #~ "An applet that let you access quickly to all of your shortcuts.\n"
 #~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
 #~ "don't have Nautilus).\n"
-#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
-#~ "bookmark.\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a bookmark.\n"
 #~ "Middle-click on the main icon to show your home folder.\n"
 #~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
-#~ "The applet can also display valuable information about your disks, like "
-#~ "free space, type, etc."
+#~ "The applet can also display valuable information about your disks, like free "
+#~ "space, type, etc."
 #~ msgstr ""
 #~ "An applet that let you quickly access all of your short-cuts.\n"
 #~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
 #~ "don't have Nautilus).\n"
-#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
-#~ "bookmark.\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a bookmark.\n"
 #~ "Middle-click on the main icon to show your home folder.\n"
 #~ "Middle-click on a mounting point icon to (un)mount it quickly.\n"
-#~ "The applet can also display valuable information about your disks, like "
-#~ "free space, type, etc."
+#~ "The applet can also display valuable information about your disks, like free "
+#~ "space, type, etc."
 
 #~ msgid "failed to mount %s"
 #~ msgstr "failed to mount %s"
@@ -3224,16 +2982,16 @@ msgstr ""
 #~ msgid ""
 #~ "This applet adds an icon to show your desktop,\n"
 #~ " and also : the desklets, the Widget Layer, or all the desktops at once.\n"
-#~ "It can also be used to quickly change the screen's resolution from the "
-#~ "right-click menu.\n"
+#~ "It can also be used to quickly change the screen's resolution from the right-"
+#~ "click menu.\n"
 #~ "Left-click to show/hide the desktop,\n"
 #~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
 #~ "Layer, or all the desktops at once."
 #~ msgstr ""
 #~ "This applet adds an icon to show your desktop,\n"
 #~ " and also : the desklets, the Widget Layer, or all the Desktops at once.\n"
-#~ "It can also be used to quickly change the screen's resolution from the "
-#~ "right-click menu.\n"
+#~ "It can also be used to quickly change the screen's resolution from the right-"
+#~ "click menu.\n"
 #~ "Left-click to show/hide the desktop,\n"
 #~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
 #~ "Layer, or all the desktops at once."
@@ -3264,8 +3022,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet is a basic image slider\n"
-#~ " You just have to select a directory and a display effect and you're "
-#~ "done\n"
+#~ " You just have to select a directory and a display effect and you're done\n"
 #~ "Click to play/pause or to edit the current image.\n"
 #~ "Middle-click to open the images folder."
 #~ msgstr ""
@@ -3299,19 +3056,19 @@ msgstr ""
 #~ msgstr ""
 #~ "This applet allows you to build a stack of files, just like the Stacks "
 #~ "applet of MacOS X.\n"
-#~ "To add files into your stacks, simply drag and drop them on the Stacks "
-#~ "icon and you're done.\n"
+#~ "To add files into your stacks, simply drag and drop them on the Stacks icon "
+#~ "and you're done.\n"
 #~ "You can drop any file or web URL or even some piece of text\n"
 #~ "You can quickly copy the path/url/text to the clipboard, or open it."
 
 #~ msgid ""
 #~ "No items in the stack.\n"
-#~ "You can add files, URL, and even a piece of text by dragging them onto "
-#~ "the icon."
+#~ "You can add files, URL, and even a piece of text by dragging them onto the "
+#~ "icon."
 #~ msgstr ""
 #~ "No items in the stack.\n"
-#~ "You can add files, URL, and even a piece of text by dragging them onto "
-#~ "the icon."
+#~ "You can add files, URL, and even a piece of text by dragging them onto the "
+#~ "icon."
 
 #~ msgid "Clear the stack?"
 #~ msgstr "Clear the stack?"
@@ -3379,23 +3136,23 @@ msgstr ""
 #~ msgstr "Move current workspace to this workspace"
 
 #~ msgid ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
+#~ "This will move all windows from the current desktop to the one you clicked "
+#~ "on."
 #~ msgstr ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
+#~ "This will move all windows from the current desktop to the one you clicked "
+#~ "on."
 
 #~ msgid "Windows List"
 #~ msgstr "Windows List"
 
 #~ msgid ""
 #~ "Another systray is already running (probably on your panel)\n"
-#~ "Since there can only be one systray at once, you should remove it to "
-#~ "avoid any conflict."
+#~ "Since there can only be one systray at once, you should remove it to avoid "
+#~ "any conflict."
 #~ msgstr ""
 #~ "Another systray is already running (probably on your panel)\n"
-#~ "Since there can only be one systray at once, you should remove it to "
-#~ "avoid any conflict."
+#~ "Since there can only be one systray at once, you should remove it to avoid "
+#~ "any conflict."
 
 #~ msgid "CD_APPLET_NAME"
 #~ msgstr "CD_APPLET_NAME"
@@ -3519,8 +3276,8 @@ msgstr ""
 #~ "Data are provided by www.weather.com, you can find your location in the "
 #~ "config panel.\n"
 #~ "It can detach itself to be a totally eye-candy 3D deskelt.\n"
-#~ "Middle-click on the main icon to have current conditions information, "
-#~ "left-click on a sub-icon to have forcast information.\n"
+#~ "Middle-click on the main icon to have current conditions information, left-"
+#~ "click on a sub-icon to have forcast information.\n"
 #~ msgstr ""
 #~ "This applet displays weather information in your dock.\n"
 #~ "Data is provided by www.weather.com. You can find your location in the "
@@ -3806,15 +3563,22 @@ msgstr ""
 #~ msgid "Ground offset:"
 #~ msgstr "Ground offset:"
 
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+#~ msgstr ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+
 #~ msgid "Items"
 #~ msgstr "Items"
 
 #~ msgid ""
-#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
-#~ "you get by selecting some text with the mouse."
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those you "
+#~ "get by selecting some text with the mouse."
 #~ msgstr ""
-#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
-#~ "you get by selecting some text with the mouse."
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those you "
+#~ "get by selecting some text with the mouse."
 
 #~ msgid "Which items should be remembered?"
 #~ msgstr "Which items should be remembered?"
@@ -3872,11 +3636,11 @@ msgstr ""
 #~ msgstr "Actions"
 
 #~ msgid ""
-#~ "If some actions are associated with an item, they will be proposed when "
-#~ "the item is created."
+#~ "If some actions are associated with an item, they will be proposed when the "
+#~ "item is created."
 #~ msgstr ""
-#~ "If some actions are associated with an item, they will be proposed when "
-#~ "the item is created."
+#~ "If some actions are associated with an item, they will be proposed when the "
+#~ "item is created."
 
 #~ msgid "Enable actions?"
 #~ msgstr "Enable actions?"
@@ -4285,11 +4049,9 @@ msgstr ""
 #~ msgstr "Animation of the icon:"
 
 #~ msgid ""
-#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close "
-#~ "it)."
+#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close it)."
 #~ msgstr ""
-#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close "
-#~ "it)."
+#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close it)."
 
 #~ msgid "Duration of the notification:"
 #~ msgstr "Duration of the notification:"
@@ -4367,18 +4129,18 @@ msgstr ""
 #~ msgstr "Shortkey to enable/disable the finder mode:"
 
 #~ msgid ""
-#~ "Maximum number of mails that will be previewed. Put -1 to show the "
-#~ "maximum possible."
+#~ "Maximum number of mails that will be previewed. Put -1 to show the maximum "
+#~ "possible."
 #~ msgstr ""
-#~ "Maximum number of mails that will be previewed. Put -1 to show the "
-#~ "maximum possible."
+#~ "Maximum number of mails that will be previewed. Put -1 to show the maximum "
+#~ "possible."
 
 #~ msgid ""
-#~ "Number of lines of the listing. If there are more results, the listing "
-#~ "will scroll when you go up or down with the arrows."
+#~ "Number of lines of the listing. If there are more results, the listing will "
+#~ "scroll when you go up or down with the arrows."
 #~ msgstr ""
-#~ "Number of lines of the listing. If there are more results, the listing "
-#~ "will scroll when you go up or down with the arrows."
+#~ "Number of lines of the listing. If there are more results, the listing will "
+#~ "scroll when you go up or down with the arrows."
 
 #~ msgid "Number of lines to display :"
 #~ msgstr "Number of lines to display :"
@@ -4544,12 +4306,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "It will prevent the system monitor's icon to show in the taskbar. The "
-#~ "applet's icon will then behave as a launcher, an application, and an "
-#~ "applet."
+#~ "applet's icon will then behave as a launcher, an application, and an applet."
 #~ msgstr ""
 #~ "It will prevent the system monitor's icon to show in the taskbar. The "
-#~ "applet's icon will then behave as a launcher, an application, and an "
-#~ "applet."
+#~ "applet's icon will then behave as a launcher, an application, and an applet."
 
 #~ msgid "Steal the system monitor's icon from the taskbar?"
 #~ msgstr "Steal the system monitor's icon from the taskbar?"
@@ -4561,11 +4321,11 @@ msgstr ""
 #~ msgstr "Top List"
 
 #~ msgid ""
-#~ "When you left-click on the icon, you will get the list of the N most CPU/"
-#~ "RAM-intensive programs."
+#~ "When you left-click on the icon, you will get the list of the N most CPU/RAM-"
+#~ "intensive programs."
 #~ msgstr ""
-#~ "When you left-click on the icon, you will get the list of the N most CPU/"
-#~ "RAM-intensive programs."
+#~ "When you left-click on the icon, you will get the list of the N most CPU/RAM-"
+#~ "intensive programs."
 
 #~ msgid "Number of programs to display in the top list:"
 #~ msgstr "Number of programs to display in the top list:"
@@ -4647,13 +4407,13 @@ msgstr ""
 #~ msgstr "Select channel:"
 
 #~ msgid ""
-#~ "On some cards, a channel only controls 1 side (right or left). You will "
-#~ "then need to specify a second channel here, to control both sides. Most "
-#~ "of the time, you should just leave this empty."
+#~ "On some cards, a channel only controls 1 side (right or left). You will then "
+#~ "need to specify a second channel here, to control both sides. Most of the "
+#~ "time, you should just leave this empty."
 #~ msgstr ""
-#~ "On some cards, a channel only controls 1 side (right or left). You will "
-#~ "then need to specify a second channel here, to control both sides. Most "
-#~ "of the time, you should just leave this empty."
+#~ "On some cards, a channel only controls 1 side (right or left). You will then "
+#~ "need to specify a second channel here, to control both sides. Most of the "
+#~ "time, you should just leave this empty."
 
 #~ msgid "Choose a second channel to control (optional):"
 #~ msgstr "Choose a second channel to control (optional):"
@@ -4701,11 +4461,9 @@ msgstr ""
 #~ msgstr "Display the time in a 24h format?"
 
 #~ msgid ""
-#~ "if not, then the applet will update the time once a minute, saving CPU "
-#~ "power."
+#~ "if not, then the applet will update the time once a minute, saving CPU power."
 #~ msgstr ""
-#~ "if not, then the applet will update the time once a minute, saving CPU "
-#~ "power."
+#~ "if not, then the applet will update the time once a minute, saving CPU power."
 
 #~ msgid "Show seconds?"
 #~ msgstr "Show seconds?"
@@ -4739,11 +4497,11 @@ msgstr ""
 #~ msgstr "Style"
 
 #~ msgid ""
-#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
-#~ "in digital format."
+#~ "The analogue view is based on CairoClock; otherwise it will be displayed in "
+#~ "digital format."
 #~ msgstr ""
-#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
-#~ "in digital format."
+#~ "The analogue view is based on CairoClock; otherwise it will be displayed in "
+#~ "digital format."
 
 #~ msgid "Select the view :"
 #~ msgstr "Select the view :"
@@ -4808,6 +4566,9 @@ msgstr ""
 #~ "Except when switching to another WM, you must activate the Dbus plugin in "
 #~ "Compiz along with the plugin corresponding to the desired action."
 
+#~ msgid "Action on middle-click:"
+#~ msgstr "Action on middle-click:"
+
 #~ msgid "Switch WM"
 #~ msgstr "Switch WM"
 
@@ -4828,11 +4589,11 @@ msgstr ""
 #~ msgstr "Custom command for system's Windows Manager:"
 
 #~ msgid ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
-#~ "quit Compiz from the dock."
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then quit "
+#~ "Compiz from the dock."
 #~ msgstr ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
-#~ "quit Compiz from the dock."
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then quit "
+#~ "Compiz from the dock."
 
 #~ msgid "Auto-reload Compiz?"
 #~ msgstr "Auto-reload Compiz?"
@@ -4876,11 +4637,9 @@ msgstr ""
 #~ msgstr "Add Exposition & Widget Layer to sub-dock?"
 
 #~ msgid ""
-#~ "Display an icon for the Emerald configuration panel in the applet's sub-"
-#~ "dock."
+#~ "Display an icon for the Emerald configuration panel in the applet's sub-dock."
 #~ msgstr ""
-#~ "Display an icon for the Emerald configuration panel in the applet's sub-"
-#~ "dock."
+#~ "Display an icon for the Emerald configuration panel in the applet's sub-dock."
 
 #~ msgid "Add Emerald Configuration to sub-dock?"
 #~ msgstr "Add Emerald Configuration to sub-dock?"
@@ -4890,14 +4649,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a "
-#~ "bit slow when binding textures, that's why this option gives a heavy "
-#~ "performance increase with Nvidia cards."
+#~ "loose binding they are enabled when created. The Nvidia driver seems a bit "
+#~ "slow when binding textures, that's why this option gives a heavy performance "
+#~ "increase with Nvidia cards."
 #~ msgstr ""
 #~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a "
-#~ "bit slow when binding textures, that's why this option gives a heavy "
-#~ "performance increase with Nvidia cards."
+#~ "loose binding they are enabled when created. The Nvidia driver seems a bit "
+#~ "slow when binding textures, that's why this option gives a heavy performance "
+#~ "increase with Nvidia cards."
 
 #~ msgid "Use Loose Binding?"
 #~ msgstr "Use Loose Binding?"
@@ -5065,11 +4824,11 @@ msgstr ""
 #~ msgstr "DropBox"
 
 #~ msgid ""
-#~ "The script takes the file path as a parameter, and write the resulting "
-#~ "URL on the standard output."
+#~ "The script takes the file path as a parameter, and write the resulting URL "
+#~ "on the standard output."
 #~ msgstr ""
-#~ "The script takes the file path as a parameter, and write the resulting "
-#~ "URL on the standard output."
+#~ "The script takes the file path as a parameter, and write the resulting URL "
+#~ "on the standard output."
 
 #~ msgid "Custom script for text upload :"
 #~ msgstr "Custom script for text upload:"
@@ -5449,12 +5208,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "If you have any problem with the applet, uncheck this option during the "
-#~ "maintenance mode, then after the dock has relaunched, remove/modify the "
-#~ "mail accounts you want."
+#~ "maintenance mode, then after the dock has relaunched, remove/modify the mail "
+#~ "accounts you want."
 #~ msgstr ""
 #~ "If you have any problem with the applet, uncheck this option during the "
-#~ "maintenance mode, then after the dock has relaunched, remove/modify the "
-#~ "mail accounts you want."
+#~ "maintenance mode, then after the dock has relaunched, remove/modify the mail "
+#~ "accounts you want."
 
 #~ msgid "Check mail account on startup?"
 #~ msgstr "Check mail account on startup?"
@@ -5781,12 +5540,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "You need to activate the Dbus plug-in in Compiz for the last 2 actions. "
-#~ "Showing desktop and desklets can fail on some Window Manager (like "
-#~ "Metacity)."
+#~ "Showing desktop and desklets can fail on some Window Manager (like Metacity)."
 #~ msgstr ""
 #~ "You need to activate the Dbus plug-in in Compiz for the last 2 actions. "
-#~ "Showing desktop and desklets can fail on some Window Manager (like "
-#~ "Metacity)."
+#~ "Showing desktop and desklets can fail on some Window Manager (like Metacity)."
 
 #~ msgid "Show the desklets"
 #~ msgstr "Show the desklets"
@@ -5984,6 +5741,9 @@ msgstr ""
 #~ msgid "Current desktop colour:"
 #~ msgstr "Current desktop colour:"
 
+#~ msgid "How to draw the current desktop:"
+#~ msgstr "How to draw the current desktop:"
+
 #~ msgid "draw a frame"
 #~ msgstr "draw a frame"
 
@@ -6091,12 +5851,12 @@ msgstr ""
 #~ msgstr "Automatically name a new note?"
 
 #~ msgid ""
-#~ "Write the date format you usually use in your notes. The syntax is the "
-#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "Write the date format you usually use in your notes. The syntax is the one "
+#~ "of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
 #~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
 #~ msgstr ""
-#~ "Write the date format you usually use in your notes. The syntax is the "
-#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "Write the date format you usually use in your notes. The syntax is the one "
+#~ "of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
 #~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
 
 #~ msgid "Date format to search for :"
@@ -6104,14 +5864,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some "
-#~ "error message like <<No marshaller for signature of signal "
-#~ "'NoteDeleted'>> in the terminal."
+#~ "automatically notified to us. Only check this box if you notice some error "
+#~ "message like <<No marshaller for signature of signal 'NoteDeleted'>> in the "
+#~ "terminal."
 #~ msgstr ""
 #~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some "
-#~ "error message like <<No marshaller for signature of signal "
-#~ "'NoteDeleted'>> in the terminal."
+#~ "automatically notified to us. Only check this box if you notice some error "
+#~ "message like <<No marshaller for signature of signal 'NoteDeleted'>> in the "
+#~ "terminal."
 
 #~ msgid "Emulate the 'NoteDeleted' signal?"
 #~ msgstr "Emulate the 'NoteDeleted' signal?"
@@ -6125,8 +5885,7 @@ msgstr ""
 #~ msgid "Code for your location:"
 #~ msgstr "Code for your location:"
 
-#~ msgid ""
-#~ "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
+#~ msgid "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
 #~ msgstr ""
 #~ "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
 

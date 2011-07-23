@@ -7,32 +7,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-04-19 12:53+0100\n"
-"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-07-14 09:08+0000\n"
+"Last-Translator: Alyx Nikolaenko <ceekay80@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-18 05:15+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-15 05:05+0000\n"
+"X-Generator: Launchpad (build 13405)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
-msgstr ""
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
+msgstr "GnoMenu не установлен. Установите, прежде чем использовать апплет."
 
 #: ../GnoMenu/GnoMenu:138
 msgid "GnoMenu's settings"
-msgstr ""
+msgstr "Настройки GnoMenu"
 
 #: ../GnoMenu/GnoMenu:141
 msgid "About"
-msgstr ""
+msgstr "О программе"
 
 #: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:119
 #: ../MintMenu/MintMenu:154
 msgid "Edit Menus"
-msgstr ""
+msgstr "Редактировать меню"
 
 #: ../GnoMenu/messages:1 ../Calendar/messages:1 ../Cardapio/messages:1
 #: ../Deluge/messages:1 ../DiskFree/messages:1 ../Google/messages:1
@@ -540,230 +542,210 @@ msgstr "Настройки"
 
 #: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
 #: ../MintMenu/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the menu:"
-msgstr "Клавиатурное сочетание для вызова меню:"
+msgstr "Клавиатурное сокращение для открытия меню:"
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Меню приложений"
+msgstr "Приложения"
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
-msgstr ""
+msgstr "Команда запуска вашего календаря (средний щелчок):"
 
 #: ../Calendar/messages:101
 msgid "Command to execute on dropping a file onto the calendar-icon:"
-msgstr ""
+msgstr "Команда, выполняемая при перетаскивании файла на значок календаря:"
 
 #: ../Calendar/messages:103
 msgid "Behaviour"
 msgstr "Поведение"
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "в секундах."
+msgstr "в сек."
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
-msgstr ""
+msgstr "Время отображения окон календаря:"
 
 #: ../Calendar/messages:111
 msgid "Time length of dialogues for events of the day :"
-msgstr ""
+msgstr "Время отображения окон событий дня:"
 
 #: ../Calendar/messages:115
 msgid "Time length of dialogues for calendar of next month :"
-msgstr ""
+msgstr "Время отображения окон календаря следущего месяца:"
 
 #: ../Calendar/messages:117
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
-"Эмблема, которая будет отображаться, когда вы пытаетесь сбросить что-либо на "
-"значок. Оставьте пустым, чтобы использовать стандартную."
+"Путь к скрипту создающему значок. Оставьте пустым, чтобы использовать "
+"стандартный."
 
 #: ../Calendar/messages:119
 msgid "Icon custom script:"
-msgstr ""
+msgstr "Скрипт создания значка:"
 
 #: ../Cardapio/Cardapio:45
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
-msgstr ""
+msgstr "Cardapio не установлен. Установите, прежде чем использовать апплет."
 
 #: ../Deluge/Deluge:166
 msgid "Deluge is not running, or is not responding to us."
-msgstr ""
+msgstr "Deluge не запущен или не отвечает."
 
 #: ../Deluge/Deluge:287 ../Transmission/Transmission:395
 msgid "Pause all torrents"
-msgstr ""
+msgstr "Поставить на паузу все"
 
 #: ../Deluge/Deluge:292 ../Transmission/Transmission:400
-#, fuzzy
 msgid "Resume all torrents"
-msgstr "Удалить все события"
+msgstr "Возобновить закачку"
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "Torrents info (middle-click)"
-msgstr "Показать текущую погоду (средний щелчок)"
+msgstr "Инфо о торренте (средний щелчок)"
 
 #: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-#, fuzzy
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Клавиатурное сочетание для вызова меню:"
+msgstr "Клавиатурное сокращение информации о торрентах:"
 
 #: ../DiskFree/messages:97
 msgid ""
 "View available file system's space as Giga (checked) or Mega (unchecked) :"
 msgstr ""
+"Отображать доступное место в Гигабайтах (отмечено) или Мегабайтах (не "
+"отмечено):"
 
 #: ../DiskFree/messages:99
-#, fuzzy
 msgid "in minutes"
-msgstr "В минутах."
+msgstr "в минутах"
 
 #: ../DiskFree/messages:101
-#, fuzzy
 msgid "Time between two file system's checking :"
-msgstr "Интервал между обновлениями 2 страниц"
+msgstr "Интервал проверки файловых систем:"
 
 #: ../GTG/messages:97 ../Xchat/messages:99
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Продолжительность пульса:"
+msgstr "Продолжительность облачков напоминаний:"
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Short"
-msgstr ""
+msgstr "Короткая"
 
 #: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
-#, fuzzy
 msgid "Medium"
-msgstr "средние"
+msgstr "Средняя"
 
 #: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "Long"
-msgstr ""
+msgstr "Долгая"
 
 #: ../GTG/messages:105 ../Xchat/messages:107
-#, fuzzy
 msgid "Animation of the icon on receiving channel messages :"
-msgstr "Анимировать значок при загрузке:"
+msgstr "Анимация значка при получении новых сообщений:"
 
 #: ../GTG/messages:107 ../Xchat/messages:97
 msgid "Display channel messages in a bubble :"
-msgstr ""
+msgstr "Показывать сообщения в облачках:"
 
 #: ../GTG/messages:111
-#, fuzzy
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "Размер десклета (ширина x высота):"
+msgstr "Размер заметки (ширина х высота):"
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
-msgstr ""
+msgstr "Приостановить все"
 
 #: ../Lancelot/Lancelot:86
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
-msgstr ""
+msgstr "Lancelot не установлен. Установите, прежде чем использовать апплет."
 
 #: ../Liferea/messages:7 ../Translator/messages:9
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Имя значка, как оно будет отображено в подписи на панели:"
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Показать окно"
+msgstr "Показывать на значке:"
 
 #: ../Liferea/messages:99
-#, fuzzy
 msgid "Number of unread messages"
-msgstr "Количество вращений в в секунду."
+msgstr "Количество непрочитанных сообщений"
 
 #: ../Liferea/messages:101
-#, fuzzy
 msgid " Number of new messages"
-msgstr "Максимальное число новых сообщений?"
+msgstr " Количество новых сообщений"
 
 #: ../MintMenu/MintMenu:145
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
-msgstr ""
+msgstr "MintMenu не установлен. Установите, прежде чем использовать апплет."
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Настройки"
+msgstr "Беседы"
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
-msgstr ""
+msgstr "Изменить статус"
 
 #: ../Pidgin/Pidgin:435
 msgid "Set your status message"
-msgstr ""
+msgstr "Установить сообщение статуса"
 
 #: ../Pidgin/Pidgin:440 ../Xchat/Xchat:270
-#, fuzzy
 msgid "Silent mode"
-msgstr "Режим десклета"
+msgstr "Тихий режим"
 
 #: ../Pidgin/Pidgin:444 ../Xchat/Xchat:274
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
+"Переключить апплет в тихий режим (вы не будете получать уведомления о новых "
+"сообщениях)."
 
 #: ../Pidgin/Pidgin:455
-#, fuzzy
 msgid "Enter your new status message:"
-msgstr "Максимальное число новых сообщений?"
+msgstr "Введите сообщение статуса:"
 
 #: ../Pidgin/messages:97 ../Pidgin/messages:101
 msgid "Parameters"
 msgstr "Параметры"
 
 #: ../Pidgin/messages:99
-#, fuzzy
 msgid "Choose a theme :"
-msgstr "Использовать 3D темы?"
+msgstr "Выберите тему:"
 
 #: ../Pidgin/messages:103
 msgid "Display conversation messages in a bubble?"
-msgstr ""
+msgstr "Показывать беседу в облачках?"
 
 #: ../Pidgin/messages:105
-#, fuzzy
 msgid "Display chat messages in a bubble?"
-msgstr "Отображать использование диска в виде графика?"
+msgstr "Показывать сообщения чата в облачках?"
 
 #: ../Pidgin/messages:107
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Продолжительность пульса:"
+msgstr "Продолжительность облачков:"
 
 #: ../Pidgin/messages:115
-#, fuzzy
 msgid "Animation of the icon on receiving a message:"
-msgstr "Анимировать значок при загрузке:"
+msgstr "Анимация значка при приёме сообщений:"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid ""
 "This is the number of messages that you can recall by scrolling on the icon."
-msgstr ""
+msgstr "Количество сообщений, которые вы можете прокрутить на значке."
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
-#, fuzzy
 msgid "Size of the history :"
-msgstr "Размер внутренних линий:"
+msgstr "Размер истории сообщений:"
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid "none"
@@ -774,46 +756,44 @@ msgid "big"
 msgstr "большой"
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Оставьте пустым, чтобы показать текущий контраст."
+msgstr "Оставьте пустым, чтобы показывать название текщего сайта."
 
 #: ../Quote/messages:99
-#, fuzzy
 msgid "Quote source:"
-msgstr "Количество источников:"
+msgstr "Источник цитат:"
 
 #: ../Quote/messages:101
 msgid "Quotationspage.com"
-msgstr ""
+msgstr "Quotationspage.com"
 
 #: ../Quote/messages:103
 msgid "Bash.org"
-msgstr ""
+msgstr "Bash.org"
 
 #: ../Quote/messages:105
 msgid "Xkcdb.com"
-msgstr ""
+msgstr "Xkcdb.com"
 
 #: ../Quote/messages:107
 msgid "Qdb.us"
-msgstr ""
+msgstr "Qdb.us"
 
 #: ../Quote/messages:109
 msgid "Danstonchat.com"
-msgstr ""
+msgstr "Danstonchat.com"
 
 #: ../Quote/messages:111
 msgid "Jokes2go.com"
-msgstr ""
+msgstr "Jokes2go.com"
 
 #: ../Quote/messages:113
 msgid "Vidademerda.com.br"
-msgstr ""
+msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:115
 msgid "Grouphug.us"
-msgstr ""
+msgstr "Grouphug.us"
 
 #: ../RubyBattery/messages:97
 msgid "Choose one of the available themes:"
@@ -824,49 +804,44 @@ msgid "in seconds."
 msgstr "в секундах."
 
 #: ../RubyBattery/messages:101
-#, fuzzy
 msgid "Interval of time between 2 checks:"
-msgstr "Интервал между проверками:"
+msgstr "Интервал между двумя проверками:"
 
 #: ../RubyBattery/messages:103
 msgid "Activate alert of critical charge?"
-msgstr ""
+msgstr "Предупреждать о критическом заряде?"
 
 #: ../RubyBattery/messages:105
-#, fuzzy
 msgid "of % battery charge."
-msgstr "Уведомлять при полной зарадке батареи?"
+msgstr "в % от заряда батареи."
 
 #: ../RubyBattery/messages:107
 msgid "Threshold for the critical charge alert:"
-msgstr ""
+msgstr "Порог критического заряда:"
 
 #: ../RubyBattery/messages:109
-#, fuzzy
 msgid "Display a label with the charge?"
-msgstr "Отображать использование диска в виде графика?"
+msgstr "Показывать подпись с зарадом?"
 
 #: ../Translator/Translator:434
 msgid "To"
-msgstr ""
+msgstr "На"
 
 #: ../Translator/Translator:453
 msgid "From"
-msgstr ""
+msgstr "С"
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Переключить Оконный менеджер"
+msgstr "Поменять языки"
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
-msgstr ""
+msgstr "Перевести из буфера обмена (средний щелчок)"
 
 #: ../Translator/messages:7
-#, fuzzy
 msgid "Let empty to display the current source and destination languages."
-msgstr "Оставьте пустым, чтобы показать информацию о текущем статусе."
+msgstr "Оставьте пустым, чтобы показывать текущие направления перевода."
 
 #: ../Translator/messages:13
 msgid "Leave empty to use the default one."
@@ -878,294 +853,290 @@ msgstr "Имя изображения:"
 
 #: ../Translator/messages:99
 msgid "Languages"
-msgstr ""
+msgstr "Языки"
 
 #: ../Translator/messages:101
 msgid "Translate from:"
-msgstr ""
+msgstr "С языка:"
 
 #: ../Translator/messages:103 ../Translator/messages:219
 msgid "Afrikaans"
-msgstr ""
+msgstr "Африкаанс"
 
 #: ../Translator/messages:105 ../Translator/messages:221
 msgid "Albanian"
-msgstr ""
+msgstr "Албанский"
 
 #: ../Translator/messages:107 ../Translator/messages:223
 msgid "Arabic"
-msgstr ""
+msgstr "Арабский"
 
 #: ../Translator/messages:109 ../Translator/messages:225
 msgid "Armenian"
-msgstr ""
+msgstr "Армянский"
 
 #: ../Translator/messages:111 ../Translator/messages:227
 msgid "Azerbaijani"
-msgstr ""
+msgstr "Азербайджанский"
 
 #: ../Translator/messages:113 ../Translator/messages:229
 msgid "Basque"
-msgstr ""
+msgstr "Баскский"
 
 #: ../Translator/messages:115 ../Translator/messages:231
 msgid "Belarusian"
-msgstr ""
+msgstr "Белорусский"
 
 #: ../Translator/messages:117 ../Translator/messages:233
 msgid "Bulgarian"
-msgstr ""
+msgstr "Болгарский"
 
 #: ../Translator/messages:119 ../Translator/messages:235
 msgid "Catalan"
-msgstr ""
+msgstr "Каталанский"
 
 #: ../Translator/messages:121 ../Translator/messages:237
 msgid "Chinese"
-msgstr ""
+msgstr "Китайский"
 
 #: ../Translator/messages:123 ../Translator/messages:239
 msgid "Croatian"
-msgstr ""
+msgstr "Хорватский"
 
 #: ../Translator/messages:125 ../Translator/messages:241
 msgid "Czech"
-msgstr ""
+msgstr "Чешский"
 
 #: ../Translator/messages:127 ../Translator/messages:243
 msgid "Danish"
-msgstr ""
+msgstr "Датский"
 
 #: ../Translator/messages:129 ../Translator/messages:245
 msgid "Dutch"
-msgstr ""
+msgstr "Голландский"
 
 #: ../Translator/messages:131 ../Translator/messages:247
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: ../Translator/messages:133 ../Translator/messages:249
 msgid "Estonian"
-msgstr ""
+msgstr "Эстонский"
 
 #: ../Translator/messages:135 ../Translator/messages:251
 msgid "Filipino"
-msgstr ""
+msgstr "Филиппинский"
 
 #: ../Translator/messages:137 ../Translator/messages:253
 msgid "Finnish"
-msgstr ""
+msgstr "Финский"
 
 #: ../Translator/messages:139 ../Translator/messages:255
 msgid "French"
-msgstr ""
+msgstr "Французский"
 
 #: ../Translator/messages:141 ../Translator/messages:257
 msgid "Galician"
-msgstr ""
+msgstr "Галисийский"
 
 #: ../Translator/messages:143 ../Translator/messages:259
 msgid "Georgian"
-msgstr ""
+msgstr "Грузинский"
 
 #: ../Translator/messages:145 ../Translator/messages:261
 msgid "German"
-msgstr ""
+msgstr "Немецкий"
 
 #: ../Translator/messages:147 ../Translator/messages:263
 msgid "Greek"
-msgstr ""
+msgstr "Греческий"
 
 #: ../Translator/messages:149 ../Translator/messages:265
 msgid "Haitian"
-msgstr ""
+msgstr "Гаитянский"
 
 #: ../Translator/messages:151 ../Translator/messages:267
 msgid "Hebrew"
-msgstr ""
+msgstr "Иврит"
 
 #: ../Translator/messages:153 ../Translator/messages:269
 msgid "Hindi"
-msgstr ""
+msgstr "Хинди"
 
 #: ../Translator/messages:155 ../Translator/messages:271
 msgid "Hungarian"
-msgstr ""
+msgstr "Венгерский"
 
 #: ../Translator/messages:157 ../Translator/messages:273
 msgid "Icelandic"
-msgstr ""
+msgstr "Исландский"
 
 #: ../Translator/messages:159 ../Translator/messages:275
 msgid "Indonesian"
-msgstr ""
+msgstr "Индонезийский"
 
 #: ../Translator/messages:161 ../Translator/messages:277
 msgid "Irish"
-msgstr ""
+msgstr "Ирландский"
 
 #: ../Translator/messages:163 ../Translator/messages:279
 msgid "Italian"
-msgstr ""
+msgstr "Итальянский"
 
 #: ../Translator/messages:165 ../Translator/messages:281
 msgid "Japanese"
-msgstr ""
+msgstr "Японский"
 
 #: ../Translator/messages:167 ../Translator/messages:283
 msgid "Korean"
-msgstr ""
+msgstr "Корейский"
 
 #: ../Translator/messages:169 ../Translator/messages:285
 msgid "Latvian"
-msgstr ""
+msgstr "Латвийский"
 
 #: ../Translator/messages:171 ../Translator/messages:287
 msgid "Lithuanian"
-msgstr ""
+msgstr "Литовский"
 
 #: ../Translator/messages:173 ../Translator/messages:289
 msgid "Macedonian"
-msgstr ""
+msgstr "Македонский"
 
 #: ../Translator/messages:175 ../Translator/messages:291
 msgid "Malay"
-msgstr ""
+msgstr "Малайский"
 
 #: ../Translator/messages:177 ../Translator/messages:293
 msgid "Maltese"
-msgstr ""
+msgstr "Мальтийский"
 
 #: ../Translator/messages:179 ../Translator/messages:295
 msgid "Norwegian"
-msgstr ""
+msgstr "Норвежский"
 
 #: ../Translator/messages:181 ../Translator/messages:297
 msgid "Persian"
-msgstr ""
+msgstr "Персидский"
 
 #: ../Translator/messages:183 ../Translator/messages:299
 msgid "Polish"
-msgstr ""
+msgstr "Польский"
 
 #: ../Translator/messages:185 ../Translator/messages:301
 msgid "Portuguese"
-msgstr ""
+msgstr "Португальский"
 
 #: ../Translator/messages:187 ../Translator/messages:303
 msgid "Romanian"
-msgstr ""
+msgstr "Румынский"
 
 #: ../Translator/messages:189 ../Translator/messages:305
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: ../Translator/messages:191 ../Translator/messages:307
 msgid "Serbian"
-msgstr ""
+msgstr "Сербский"
 
 #: ../Translator/messages:193 ../Translator/messages:309
 msgid "Slovak"
-msgstr ""
+msgstr "Словацкий"
 
 #: ../Translator/messages:195 ../Translator/messages:311
 msgid "Slovenian"
-msgstr ""
+msgstr "Словенский"
 
 #: ../Translator/messages:197 ../Translator/messages:313
 msgid "Spanish"
-msgstr ""
+msgstr "Испанский"
 
 #: ../Translator/messages:199 ../Translator/messages:315
 msgid "Swahili"
-msgstr ""
+msgstr "Суахили"
 
 #: ../Translator/messages:201 ../Translator/messages:317
 msgid "Swedish"
-msgstr ""
+msgstr "Шведский"
 
 #: ../Translator/messages:203 ../Translator/messages:319
 msgid "Thai"
-msgstr ""
+msgstr "Тайский"
 
 #: ../Translator/messages:205 ../Translator/messages:321
 msgid "Turkish"
-msgstr ""
+msgstr "Турецкий"
 
 #: ../Translator/messages:207 ../Translator/messages:323
 msgid "Ukrainian"
-msgstr ""
+msgstr "Украинский"
 
 #: ../Translator/messages:209 ../Translator/messages:325
 msgid "Urdu"
-msgstr ""
+msgstr "Урду"
 
 #: ../Translator/messages:211 ../Translator/messages:327
-#, fuzzy
 msgid "Vietnamese"
-msgstr "Имя файла"
+msgstr "Вьетнамский"
 
 #: ../Translator/messages:213 ../Translator/messages:329
 msgid "Welsh"
-msgstr ""
+msgstr "Валлийский"
 
 #: ../Translator/messages:215 ../Translator/messages:331
 msgid "Yiddish"
-msgstr ""
+msgstr "Идиш"
 
 #: ../Translator/messages:217
-#, fuzzy
 msgid "Translate to:"
-msgstr "Переименовать в:"
+msgstr "На язык:"
 
 #: ../Translator/messages:333
 msgid "Shortkeys"
-msgstr ""
+msgstr "Клавиатурное сокращение"
 
 #: ../Translator/messages:335
 msgid "Shortkey to start translating from (read):"
-msgstr ""
+msgstr "Чтобы начать перевод с языка (чтение):"
 
 #: ../Translator/messages:337
 msgid "Shortkey to start translating to (write):"
-msgstr ""
+msgstr "Чтобы начать перевод на язык (запись):"
 
 #: ../Translator/messages:339
-#, fuzzy
 msgid "Dialog"
-msgstr "Облачко уведомлений"
+msgstr "Диалоговое окно"
 
 #: ../Translator/messages:341
-#, fuzzy
 msgid "In s. Set 0 for an unlimited time."
-msgstr "в мсек. Установите 0, чтобы не использовать эффект."
+msgstr "В сек. Установите 0, для бесконечности."
 
 #: ../Translator/messages:343
-#, fuzzy
 msgid "Time-length of the result dialog:"
-msgstr "Продолжительность инфо-облачка:"
+msgstr "Продолжительность окна вывода:"
 
 #: ../Translator/messages:345
 msgid "Editable text widget?"
-msgstr ""
+msgstr "Редактируемый текстовый виджет?"
 
 #: ../Transmission/Transmission:186
 msgid "Transmission is not running, or is not responding to us."
-msgstr ""
+msgstr "Transmission не запущен или не отвечает."
 
 #: ../Transmission/Transmission:193
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
+"Не удалось получить данные из Transmission. Требуется версия Transmission "
+"1.9 или выше."
 
 #: ../Transmission/Transmission:353
 msgid "You have to enable the Web client in the Transmisison's settings."
-msgstr ""
+msgstr "Необходимо включить Web клиент в настройках Transmisison."
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Поиск..."
+msgstr "Поисковая система:"
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1173,7 +1144,7 @@ msgstr "Google"
 
 #: ../WebSearch/messages:99
 msgid "Bing"
-msgstr ""
+msgstr "Bing"
 
 #: ../WebSearch/messages:101
 msgid "Yahoo!"
@@ -1181,303 +1152,94 @@ msgstr "Yahoo!"
 
 #: ../WebSearch/messages:103
 msgid "Teoma"
-msgstr ""
+msgstr "Teoma"
 
 #: ../WebSearch/messages:105
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: ../WebSearch/messages:107
 msgid "Webshots"
-msgstr ""
+msgstr "Webshots"
 
 #: ../WebSearch/messages:109
 msgid "Flickr"
-msgstr ""
+msgstr "Flickr"
 
 #: ../WebSearch/messages:111
 msgid "Wikipedia"
 msgstr "Wikipedia"
 
 #: ../WebSearch/messages:113
-#, fuzzy
 msgid "ImageShack"
-msgstr "ImageShack.us"
+msgstr "ImageShack"
 
 #: ../WebSearch/messages:115
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: ../WebSearch/messages:117
 msgid "Digg"
-msgstr ""
+msgstr "Digg"
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "в секундах."
+msgstr "в суб-значках."
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid "Maximum number of results shown :"
-msgstr "Максимальное количество результатов поиска:"
+msgstr "Максимальное количество результатов:"
 
 #: ../WebSearch/messages:123
 msgid "Show the current page as the icon label ?"
-msgstr ""
+msgstr "Показывать текущую страницу как подпись значка?"
 
 #: ../WebSearch/messages:125
 msgid ""
 "Show the description of the result instead of its URL in the sub-icons ?"
-msgstr ""
+msgstr "Показывать описание результата, вместо адреса в суб-значке?"
 
 #: ../WebSearch/messages:127
 msgid ""
 "for slow connections, disable will result in significantly faster fetching."
 msgstr ""
+"выключение, для медленных соединений, позволит значительно увеличить "
+"скорость обработки."
 
 #: ../WebSearch/messages:129
 msgid ""
 "Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
 "and Digg searches ?"
 msgstr ""
+"Отображать эскизы для Youtube, Webshots, Flickr, ImageShack, Twitter и Digg?"
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Настройка каналов"
+msgstr "Каналы"
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
+"Средний щелчок, чтобы переключить канал в который посылаете сообщение."
 
 #~ msgid "Preferences"
 #~ msgstr "Настройки"
 
-#, fuzzy
-#~ msgid "in ms"
-#~ msgstr "В мсек."
-
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Интервал обновлений:"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Уведомление"
-
-#, fuzzy
-#~ msgid "Notifications for new messages?"
-#~ msgstr "Область уведомлений"
-
-#, fuzzy
-#~ msgid "Notifications for unread notices?"
-#~ msgstr "Область уведомлений"
-
-#, fuzzy
-#~ msgid "Notifications for pokes?"
-#~ msgstr "Область уведомлений"
-
-#, fuzzy
-#~ msgid "Notifications for group invites?"
-#~ msgstr "Область уведомлений"
-
-#, fuzzy
-#~ msgid "Notifications for event invites?"
-#~ msgstr "Область уведомлений"
-
-#, fuzzy
-#~ msgid "never"
-#~ msgstr "Никогда"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Отскакивать от краёв"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Мигание"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Пульсирующий"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Вращение"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Желе"
-
-#, fuzzy
-#~ msgid "Time in minutes."
-#~ msgstr "В минутах."
-
 #~ msgid "Appearance"
 #~ msgstr "Оформление"
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can resize it with ALT + "
-#~ "middle_click or ALT + left_click for exemple."
-#~ msgstr ""
-#~ "В зависимости от вашего Менеджера Окон, вы можете изменять размер при "
-#~ "помощи ALT + средний щелчок или ALT + левый щелчок."
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can move it with ALT + left_click"
-#~ msgstr ""
-#~ "В зависимости от вашего Менеджера Окон, вы можете перемешать с помощью "
-#~ "ALT + левый щелчок"
-
-#, fuzzy
-#~ msgid "Desklet's position (x ; y) :"
-#~ msgstr "Позиция десклета (x ; y):"
-
-#, fuzzy
-#~ msgid "Is detached from the dock ?"
-#~ msgstr "Открепить от панели?"
-
-#, fuzzy
-#~ msgid "Accessibility :"
-#~ msgstr "Видимость:"
-
-#, fuzzy
-#~ msgid "On Widget Layer"
-#~ msgstr "Слой виджетов"
-
-#, fuzzy
-#~ msgid "Should be visible on all desktops ?"
-#~ msgstr "Показывать на всех рабочих столах?"
-
-#, fuzzy
-#~ msgid ""
-#~ "If locked, the desklet can't be moved by simply dragging it with the left "
-#~ "mouse button. Of course you can still move it with ALT + left_click."
-#~ msgstr ""
-#~ "Если заблокировано, то десклет можно легко переместить захватив его левой "
-#~ "кнопкой мыши. И, конечно, вы по-прежнему можете использовать ALT + левый "
-#~ "щелчок."
-
-#, fuzzy
-#~ msgid "Lock position ?"
-#~ msgstr "Заблокировать позицию?"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Вращение:"
-
-#, fuzzy
-#~ msgid "Choose the 'personnal' one to define your own decorations below."
-#~ msgstr ""
-#~ "Выберите 'Собственное оформление', чтобы настроить своё оформление ниже."
-
-#, fuzzy
-#~ msgid "Choose a decoration theme for this desklet :"
-#~ msgstr "Выберите тему оформления для этого десклета:"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed below the drawings, like a frame for "
-#~ "exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Изображение показываемое позади рисунка, например рамка. Оставьте пустым, "
-#~ "чтобы не использовать."
-
-#, fuzzy
-#~ msgid "Background image :"
-#~ msgstr "Фоновое изображение:"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Фоновая прозрачность:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the left position of the drawings."
-#~ msgstr "в пикселях. Определяет левую позицию рисунка."
-
-#, fuzzy
-#~ msgid "Left offset :"
-#~ msgstr "Левое смещение:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the top position of the drawings."
-#~ msgstr "в пикселях. Определяет верхнюю позицию рисунка."
-
-#, fuzzy
-#~ msgid "Top offset :"
-#~ msgstr "Верхнее смещение:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the right position of the drawings."
-#~ msgstr "в пикселях. Определяет правую позицию рисунка."
-
-#, fuzzy
-#~ msgid "Right offset :"
-#~ msgstr "Правое смещение:"
-
-#, fuzzy
-#~ msgid "in pixels. Use this to adjust the bottom position of the drawings."
-#~ msgstr "в пикселях. Определяет нижнюю позицию рисунка."
-
-#, fuzzy
-#~ msgid "Bottom offset :"
-#~ msgstr "Нижнее смещение:"
-
-#, fuzzy
-#~ msgid ""
-#~ "It's an image that will be displayed above the drawings, like a reflect "
-#~ "for exemple. Let empty to not use any."
-#~ msgstr ""
-#~ "Изображение показываемое поверх рисунка, например отражение. Оставьте "
-#~ "пустым, чтобы не использовать."
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "Изображение переднего плана:"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Прозрачность переднего плана:"
-
-#, fuzzy
-#~ msgid "Show the moon for all the current week?"
-#~ msgstr "Как отрисовывать текущий рабочий стол:"
-
-#, fuzzy
-#~ msgid "tinyurl.com"
-#~ msgstr "Pastebin.com"
-
-#, fuzzy
-#~ msgid "shorterlink.org"
-#~ msgstr "Shorter-Link"
-
-#, fuzzy
-#~ msgid "Action au clic milieu sur l icone :"
-#~ msgstr "Действие по среднему щелчку:"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Выберите одну из доступных тем:"
-
-#, fuzzy
-#~ msgid "Max value :"
-#~ msgstr "Показывать значения:"
 
 #~ msgid ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Добавьте симпатичного пингвинчика к себе на панель!\n"
 #~ "Левым щелчком менять анимацию,\n"
 #~ "Средним -  побеспокоить его ^_^\n"
-#~ "Изображения Тукса взяты из Pingus, есть и другие персонажи, а также можно "
-#~ "с лёгкостью подключить своих."
+#~ "Изображения Тукса взяты из Pingus, есть и другие персонажи, а также можно с "
+#~ "лёгкостью подключить своих."
 
 #~ msgid "Cairo-Penguin"
 #~ msgstr "Cairo-Пингвин"
@@ -1501,8 +1263,7 @@ msgstr ""
 #~ msgstr "Простите, но я сейчас занят."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
 #~ "У меня нет времени с тобой играть, я должен копать, чтобы добыть все эти "
 #~ "значки."
@@ -1561,13 +1322,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know Klipper.\n"
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
+#~ "Drop text on the icon to create persistent items, and middle-clck to recall "
+#~ "them."
 #~ msgstr ""
 #~ "Этот апплет отслеживает буфер обмена и выделения, сделанные мышью,\n"
 #~ "для того, чтобы вы в любой момент могли их вызвать. Клон популярного "
@@ -1575,8 +1335,8 @@ msgstr ""
 #~ "Поддерживает буфер обмена и выделения мышью, предустановленные действия и "
 #~ "постоянные элементы.\n"
 #~ "Левый щелчок, чтобы показать историю буфера обмена и выделения мышью,\n"
-#~ "затем перетащите текст на значок, чтобы создать постоянный элемент; "
-#~ "средний щелчок - для его вызова."
+#~ "затем перетащите текст на значок, чтобы создать постоянный элемент; средний "
+#~ "щелчок - для его вызова."
 
 #~ msgid "Clipboard history"
 #~ msgstr "История буфера обмена"
@@ -1684,11 +1444,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet imports folders inside the Dock\n"
-#~ "You can have as many instances of this applet as you want, each one with "
-#~ "a different folder.\n"
+#~ "You can have as many instances of this applet as you want, each one with a "
+#~ "different folder.\n"
 #~ "To add a folder in your dock:\n"
-#~ " - activate the applet, open its configuration panel, and select a "
-#~ "folder\n"
+#~ " - activate the applet, open its configuration panel, and select a folder\n"
 #~ " - or just drop a folder into the dock\n"
 #~ "Middle-click on the main icon opens the folder.\n"
 #~ msgstr ""
@@ -1792,14 +1551,14 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Отображает меню с часто используемыми приложениями и файлами.\n"
 #~ "Совместимо с любыми XDG меню (Gnome, XFCE, KDE, ...)\n"
-#~ "Средний щелчок, чтобы открыть окно для быстрого запуска любой команды "
-#~ "(можно назначит клавишу, как ALT+F2)\n"
+#~ "Средний щелчок, чтобы открыть окно для быстрого запуска любой команды (можно "
+#~ "назначит клавишу, как ALT+F2)\n"
 #~ "Кроме того, вы можете установить клавишу для показа меню (как ALT+F1)"
 
 #~ msgid "Quick launch"
@@ -1824,11 +1583,11 @@ msgstr ""
 #~ msgstr "Моё Меню"
 
 #~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online "
-#~ "status, your friends."
+#~ "A menu that lets you access quickly to your information, your online status, "
+#~ "your friends."
 #~ msgstr ""
-#~ "Меню, которое предоставляет быстрый доступ до нужной информации, такой "
-#~ "как: ваш сетевой статус, ваши знакомые."
+#~ "Меню, которое предоставляет быстрый доступ до нужной информации, такой как: "
+#~ "ваш сетевой статус, ваши знакомые."
 
 #~ msgid "It seems that the Me-Menu is not installed on your system"
 #~ msgstr "По всей видимости Me-Menu не установлено на вашей системе"
@@ -1837,8 +1596,7 @@ msgstr ""
 #~ msgstr "Меню сообщений"
 
 #~ msgid ""
-#~ "A menu that notices you about new messages from Mail or Chat "
-#~ "applications.\n"
+#~ "A menu that notices you about new messages from Mail or Chat applications.\n"
 #~ "It handles Evolution, Pidgin, Empathy, etc"
 #~ msgstr ""
 #~ "Меню, уведомляющее о получении нового сообщения по почте или в чате.\n"
@@ -1926,16 +1684,15 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
 #~ "Этот апплет позволяет управлять сетевыми соединениями.\n"
-#~ "С его помощью вы сможете наблюдать за скоростью загрузки/закачки и "
-#~ "качестве Wifi сигнала.\n"
-#~ "Кроме того, при запущенном network-manager, вы сможете выбирать WiFi "
-#~ "сети.\n"
+#~ "С его помощью вы сможете наблюдать за скоростью загрузки/закачки и качестве "
+#~ "Wifi сигнала.\n"
+#~ "Кроме того, при запущенном network-manager, вы сможете выбирать WiFi сети.\n"
 #~ "Левый щелчок для получения информации, прокручивание по значку для смены "
 #~ "информации о скорости или WiFi."
 
@@ -2094,6 +1851,9 @@ msgstr ""
 #~ msgid "Delete today's events"
 #~ msgstr "Удалить сегодняшние события"
 
+#~ msgid "Delete all events"
+#~ msgstr "Удалить все события"
+
 #~ msgid "The value %s has been copied into the clipboard."
 #~ msgstr "Значение %s  было скопировано в буфер обмена"
 
@@ -2184,9 +1944,8 @@ msgstr ""
 #~ msgid ""
 #~ "A <b>notification area</b> for your dock\n"
 #~ "Programs can use it to display their current status.\n"
-#~ "If a program doesn't appear inside when it should, it's probably because "
-#~ "it doesn't support the this feature yet. Please fill a bug report to the "
-#~ "devs."
+#~ "If a program doesn't appear inside when it should, it's probably because it "
+#~ "doesn't support the this feature yet. Please fill a bug report to the devs."
 #~ msgstr ""
 #~ "<b>Область уведомлений</b> для панели\n"
 #~ "Приложения используют её для отображения уведомлений.\n"
@@ -2213,17 +1972,16 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
+#~ "Left click on the icon to get a list of the most ressources using programs.\n"
+#~ "You can instanciate this applet several times to show different values each "
+#~ "time."
 #~ msgstr ""
-#~ "Этот апплет показывает нагрузку на CPU, использование ОЗУ, температуру "
-#~ "видео-карты и т.д.\n"
+#~ "Этот апплет показывает нагрузку на CPU, использование ОЗУ, температуру видео-"
+#~ "карты и т.д.\n"
 #~ "Средний щелчок на значке, чтобы показать дополнительную информацию.\n"
 #~ "Левый щелчок – получить список наиболее ресурсоёмких приложений.\n"
-#~ "Вы можете запустить это апплет несколько раз, чтобы видеть сразу "
-#~ "несколько значений."
+#~ "Вы можете запустить это апплет несколько раз, чтобы видеть сразу несколько "
+#~ "значений."
 
 #~ msgid ""
 #~ "The acquisition of one or more data has failed.\n"
@@ -2302,15 +2060,15 @@ msgstr ""
 #~ "Scroll up/down to increase/decrease the luminosity\n"
 #~ "Left-click to open a dialog to setup the luminosity\n"
 #~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically "
-#~ "on startup."
+#~ "You can also define a luminosity value that will be applied automatically on "
+#~ "startup."
 #~ msgstr ""
 #~ "Настраивайте яркость прямо из панели.\n"
 #~ "Прокручивание колесом мыши изменяет яркость.\n"
 #~ "Левый щелчок, для открытия окна настроек яркости.\n"
 #~ "Средний, для настройки под каждый цвет.\n"
-#~ "Вы также можете настроить яркость, которая будет выставляться при "
-#~ "загрузке системы."
+#~ "Вы также можете настроить яркость, которая будет выставляться при загрузке "
+#~ "системы."
 
 #~ msgid "Screen Luminosity"
 #~ msgstr "Яркость экрана"
@@ -2330,8 +2088,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
+#~ "for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to set or unset to mute, double-click to raise the channels "
 #~ "mixer.\n"
@@ -2369,6 +2127,9 @@ msgstr ""
 
 #~ msgid "Set up volume:"
 #~ msgstr "Установка громкости:"
+
+#~ msgid "Adjust channels"
+#~ msgstr "Настройка каналов"
 
 #~ msgid "double-click"
 #~ msgstr "двойной щелчок"
@@ -2462,16 +2223,15 @@ msgstr ""
 #~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
 #~ "tasks</b>.\n"
 #~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a "
-#~ "notification,\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a notification,\n"
 #~ "Double-click on a day to edit the tasks for this day."
 #~ msgstr ""
 #~ "Этот апплет показывает время, дату и календарь.\n"
 #~ "Доступно два вида: <b>цифровой</b> и <b>аналоговый</b>.\n"
 #~ " Аналоговый вид совместим с темами от Cairo-Clock и вы можете открепить "
 #~ "апплет от панели, получив ни чуть не хуже самого Cairo-Clock.\n"
-#~ "При левом щелчке отображается <b>календарь</b>, где вы можете "
-#~ "<b>управлять событиями</b>.\n"
+#~ "При левом щелчке отображается <b>календарь</b>, где вы можете <b>управлять "
+#~ "событиями</b>.\n"
 #~ "Также поддерживаются напоминания и установка времени и даты.\n"
 #~ "Левый щелчок, чтобы показать/скрыть календарь, Средний щелчок, чтобы "
 #~ "остановить напоминание,\n"
@@ -2480,24 +2240,24 @@ msgstr ""
 #~ msgid ""
 #~ "No task is sheduled for today.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "Сегодня нет назначенных задач.\n"
 #~ "\n"
-#~ "Вы можете добавить задачу открыв щелчком календарь, а затем сделать "
-#~ "двойной щелчок на дне."
+#~ "Вы можете добавить задачу открыв щелчком календарь, а затем сделать двойной "
+#~ "щелчок на дне."
 
 #~ msgid ""
 #~ "No task is sheduled for the next 7 days.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and then "
+#~ "double-clicking on a day."
 #~ msgstr ""
 #~ "Нет назначенных задач на ближайшие 7 дней.\n"
 #~ "\n"
-#~ "Вы можете добавить задачу открыв щелчком календарь, а затем сделать "
-#~ "двойной щелчок на дне."
+#~ "Вы можете добавить задачу открыв щелчком календарь, а затем сделать двойной "
+#~ "щелчок на дне."
 
 #~ msgid "Show today's tasks"
 #~ msgstr "Показать сегодняшние события"
@@ -2601,6 +2361,9 @@ msgstr ""
 #~ msgid "Exposition"
 #~ msgstr "Экспозиция"
 
+#~ msgid "Widget Layer"
+#~ msgstr "Слой виджетов"
+
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
 #~ " through your package manager (Synaptic, YasT, etc)"
@@ -2610,6 +2373,9 @@ msgstr ""
 
 #~ msgid "Reload Emerald"
 #~ msgstr "Перезапустить Emerald"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Переключить Оконный менеджер"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Переключить Оконный декоратор"
@@ -2698,14 +2464,14 @@ msgstr ""
 #~ "Drag-and-drop a file on the icon to upload it to one of the available "
 #~ "hosting sites.\n"
 #~ "You can upload text, image, video, files, and even the current clipboard\n"
-#~ " and you can choose amongst many sites, like DropBox, Imageshack, "
-#~ "pastebin, etc\n"
+#~ " and you can choose amongst many sites, like DropBox, Imageshack, pastebin, "
+#~ "etc\n"
 #~ "The resulting URL is automatically stored in the clipboard to be directly "
 #~ "copied by CTRL+v.\n"
 #~ "It can keep an history of your last uploads to retrieve them without "
 #~ "registering on the sites.\n"
-#~ "Press left-click to copy the latest URL into the clipboard, middle-click "
-#~ "to copy it into the mouse selection.\n"
+#~ "Press left-click to copy the latest URL into the clipboard, middle-click to "
+#~ "copy it into the mouse selection.\n"
 #~ "You'll need to install 'curl' and 'wget' to upload the data."
 #~ msgstr ""
 #~ "Этот апплет позволяет вам с лёгкостью делиться вашими файлами:\n"
@@ -2713,14 +2479,14 @@ msgstr ""
 #~ "файл-хостингов.\n"
 #~ "Вы можете закачивать тексты, изображения, видео, файлы и даже содержимое "
 #~ "буфера обмена\n"
-#~ " на любой из доступных хостингов, таких как DropBox, Imageshack, pastebin "
-#~ "и т.д.\n"
-#~ "Полученный URL автоматически копируется в буфер обмена, используйте CTRL"
-#~ "+v для вставки.\n"
+#~ " на любой из доступных хостингов, таких как DropBox, Imageshack, pastebin и "
+#~ "т.д.\n"
+#~ "Полученный URL автоматически копируется в буфер обмена, используйте CTRL+v "
+#~ "для вставки.\n"
 #~ "Кроме того, он сохраняется в истории последних закачек, чтобы вы могли "
 #~ "быстро его вставить снова.\n"
-#~ "Левый щелчок — скопировать последний URL в буфер, средний — скопировать "
-#~ "его в выделение мышью.\n"
+#~ "Левый щелчок — скопировать последний URL в буфер, средний — скопировать его "
+#~ "в выделение мышью.\n"
 #~ "Для закачивания файлов, вам потребуется установить 'curl' и 'wget'."
 
 #~ msgid "Drop to share"
@@ -2756,8 +2522,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
+#~ "Consider activating the history if you want the applet to remember previous "
+#~ "uploads."
 #~ msgstr ""
 #~ "Не обнаружен файл для загрузки.\n"
 #~ " Активируйте историю загруженных файлов, чтобы апплет мог сохранять её."
@@ -2821,8 +2587,8 @@ msgstr ""
 #~ msgid ""
 #~ "This module adds different views to your dock.\n"
 #~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
-#~ "views are provided."
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve views "
+#~ "are provided."
 #~ msgstr ""
 #~ "Этот апплет предоставляет различные виды для вашей панели.\n"
 #~ "Каждая панель или суб-панель будет выглядеть так, как вы укажите.\n"
@@ -2833,11 +2599,11 @@ msgstr ""
 #~ msgstr "Индикатор сброса"
 
 #~ msgid ""
-#~ "This plug-in displays an animated indicator when you drop something into "
-#~ "the dock."
+#~ "This plug-in displays an animated indicator when you drop something into the "
+#~ "dock."
 #~ msgstr ""
-#~ "Этот плагин отображает анимированный индикатор, когда вы помещаете что-"
-#~ "либо на панель."
+#~ "Этот плагин отображает анимированный индикатор, когда вы помещаете что-либо "
+#~ "на панель."
 
 #~ msgid "dustbin"
 #~ msgstr "Мусорная корзина"
@@ -3038,18 +2804,18 @@ msgstr ""
 #~ msgstr "Порт:"
 
 #~ msgid ""
-#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
-#~ "and 995 for POP3S."
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP and "
+#~ "995 for POP3S."
 #~ msgstr ""
-#~ "Введите 0, чтобы использовать порт по умолчанию. Это будут 110 для POP3 "
-#~ "или APOP и 995 для POP3S"
+#~ "Введите 0, чтобы использовать порт по умолчанию. Это будут 110 для POP3 или "
+#~ "APOP и 995 для POP3S"
 
 #~ msgid ""
-#~ "Enter 0 to use the default port. Default ports are 143 for IMAP4 and 993 "
-#~ "for IMAP4 over SSL."
+#~ "Enter 0 to use the default port. Default ports are 143 for IMAP4 and 993 for "
+#~ "IMAP4 over SSL."
 #~ msgstr ""
-#~ "Введите 0, чтобы использовать порт по умолчанию. По умолчанию "
-#~ "используются 143 для IMAP4 и 993 для IMAP4 через SSL."
+#~ "Введите 0, чтобы использовать порт по умолчанию. По умолчанию используются "
+#~ "143 для IMAP4 и 993 для IMAP4 через SSL."
 
 #~ msgid "Use a secure connection (SSL)"
 #~ msgstr "Использовать безопасное соединение (SSL)"
@@ -3211,8 +2977,8 @@ msgstr ""
 #~ "This applet lets you control any music player.\n"
 #~ "Left click to Play/Pause, middle-click to play Next song.\n"
 #~ "Scroll up/down to play previous/next song.\n"
-#~ "You can drag and drop songs on the icon to put them in the queue (depends "
-#~ "on Player),\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends on "
+#~ "Player),\n"
 #~ " and jpeg image to use as cover.\n"
 #~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
 #~ "       For SongBird, you have to install its dbus add-on.\n"
@@ -3234,8 +3000,8 @@ msgstr ""
 #~ "offer such service."
 #~ msgstr ""
 #~ "Не удалось определить ни один проигрыватель.\n"
-#~ "Если он запущен, то возможно он имеет устаревшую версию и не "
-#~ "предоставляет такого сервиса."
+#~ "Если он запущен, то возможно он имеет устаревшую версию и не предоставляет "
+#~ "такого сервиса."
 
 #~ msgid "Find opened player"
 #~ msgstr "Обнаружить открытые проигрователи"
@@ -3285,12 +3051,10 @@ msgstr ""
 #~ "Left-click on the icon to have the total amount of data transfered\n"
 #~ "Middle-click to (de)activate the network (needs NetworManager)"
 #~ msgstr ""
-#~ "Этот апплет отображает скорость вашего интернетного соединения и "
-#~ "некоторые сведения о нём.\n"
-#~ "Левый щелчок на значке, чтобы отобразить количество переданной "
-#~ "информации\n"
-#~ "Средний, чтобы (де)активировать сетевое соединение (требуется "
-#~ "NetworkManager)"
+#~ "Этот апплет отображает скорость вашего интернетного соединения и некоторые "
+#~ "сведения о нём.\n"
+#~ "Левый щелчок на значке, чтобы отобразить количество переданной информации\n"
+#~ "Средний, чтобы (де)активировать сетевое соединение (требуется NetworkManager)"
 
 #~ msgid "Total amount of data"
 #~ msgstr "Общее количество информации"
@@ -3390,8 +3154,7 @@ msgstr ""
 #~ "This applet can be instanciated several times, if you want to browse "
 #~ "different folders."
 #~ msgstr ""
-#~ "Этот апплет позволяет очень быстро просматривать каталоги и их "
-#~ "подкаталоги.\n"
+#~ "Этот апплет позволяет очень быстро просматривать каталоги и их подкаталоги.\n"
 #~ "Вы можете задать клавиатурное сочетание для вызова меню.\n"
 #~ "Средний щелчок, чтобы открыть главный каталог.\n"
 #~ "Это апплет можно использовать несколько раз, чтобы просматривать сразу "
@@ -3422,22 +3185,20 @@ msgstr ""
 #~ "An applet that let you access quickly to all of your shortcuts.\n"
 #~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
 #~ "don't have Nautilus).\n"
-#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
-#~ "bookmark.\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a bookmark.\n"
 #~ "Middle-click on the main icon to show your home folder.\n"
 #~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
-#~ "The applet can also display valuable information about your disks, like "
-#~ "free space, type, etc."
+#~ "The applet can also display valuable information about your disks, like free "
+#~ "space, type, etc."
 #~ msgstr ""
 #~ "Апплет, которые позволит быстро добраться до всех ваших ярлыков.\n"
 #~ "Поддерживает управление дисками, сетевыми ресурсами и закладками Nautilus "
 #~ "(даже если вы его не используете).\n"
-#~ "Перетащите каталог на главный значок или суб-панель, чтобы добавить "
-#~ "ярлык.\n"
+#~ "Перетащите каталог на главный значок или суб-панель, чтобы добавить ярлык.\n"
 #~ "Средний щелчок на главном значке, чтобы показать ваш домашний каталог.\n"
 #~ "Средний щелчок на присоединённом томе, чтобы быстро его (от)соединить.\n"
-#~ "Апплет показывает важную информацию о ваших дисках: свободное место, тип "
-#~ "и т.д."
+#~ "Апплет показывает важную информацию о ваших дисках: свободное место, тип и "
+#~ "т.д."
 
 #~ msgid "failed to mount %s"
 #~ msgstr "Не удалось присоединить %s"
@@ -3485,8 +3246,8 @@ msgstr ""
 #~ "This plugin draws some animations around the cursor when it's inside a "
 #~ "dock/desklet."
 #~ msgstr ""
-#~ "Этот плагин украшает курсор различной анимацией, когда тот находится "
-#~ "внутри панели/десклета."
+#~ "Этот плагин украшает курсор различной анимацией, когда тот находится внутри "
+#~ "панели/десклета."
 
 #~ msgid "showDesktop"
 #~ msgstr "Рабочий стол"
@@ -3494,19 +3255,19 @@ msgstr ""
 #~ msgid ""
 #~ "This applet adds an icon to show your desktop,\n"
 #~ " and also : the desklets, the Widget Layer, or all the desktops at once.\n"
-#~ "It can also be used to quickly change the screen's resolution from the "
-#~ "right-click menu.\n"
+#~ "It can also be used to quickly change the screen's resolution from the right-"
+#~ "click menu.\n"
 #~ "Left-click to show/hide the desktop,\n"
 #~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
 #~ "Layer, or all the desktops at once."
 #~ msgstr ""
 #~ "Этот апплет добавляет значок показа рабочего стола,\n"
 #~ " а также: десклетов, Слоя Виджетов или всех рабочих столов вместе.\n"
-#~ "Кроме того, его можно использовать для быстрой смены разрешения экрана "
-#~ "через правый щелчок.\n"
+#~ "Кроме того, его можно использовать для быстрой смены разрешения экрана через "
+#~ "правый щелчок.\n"
 #~ "Левый щелчок для показа/скрытия рабочего стола,\n"
-#~ "Средний щелчок для показа/скрытия рабочего стола, десклетов, Слоя "
-#~ "Виджетов или всех столов сразу"
+#~ "Средний щелчок для показа/скрытия рабочего стола, десклетов, Слоя Виджетов "
+#~ "или всех столов сразу"
 
 #~ msgid "Show the desktop"
 #~ msgstr "Показать рабочий стол"
@@ -3537,8 +3298,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet is a basic image slider\n"
-#~ " You just have to select a directory and a display effect and you're "
-#~ "done\n"
+#~ " You just have to select a directory and a display effect and you're done\n"
 #~ "Click to play/pause or to edit the current image.\n"
 #~ "Middle-click to open the images folder."
 #~ msgstr ""
@@ -3571,8 +3331,8 @@ msgstr ""
 #~ "You can drop any file, or web URL, or even some piece of text\n"
 #~ "You can quickly copy the path/url/text to the clipboard, or open it."
 #~ msgstr ""
-#~ "Этот апплет позволяет создавать стэк файлов, как это делает апплет Stacks "
-#~ "в MacOS X.\n"
+#~ "Этот апплет позволяет создавать стэк файлов, как это делает апплет Stacks в "
+#~ "MacOS X.\n"
 #~ "Чтобы добавить файл в стэк, просто перетащите его на значок апплета.\n"
 #~ "Вы можете скинуть простой файл или ссылку, или даже отрывок текста.\n"
 #~ "Затем вы сможете быстро копировать путь/ссылку/текст в буфер обмена или "
@@ -3580,8 +3340,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "No items in the stack.\n"
-#~ "You can add files, URL, and even a piece of text by dragging them onto "
-#~ "the icon."
+#~ "You can add files, URL, and even a piece of text by dragging them onto the "
+#~ "icon."
 #~ msgstr ""
 #~ "Нет элементов в stack.\n"
 #~ "Вы можете добавить файлы, URL и даже текст, просто перетащив их на значок."
@@ -3642,8 +3402,7 @@ msgstr ""
 #~ " — Задавать имя (в настройках),\n"
 #~ " — Быстро добавлять/удалять их (через меню),\n"
 #~ " — Показывать рабочий стол (средний щелчок по значку),\n"
-#~ " — Показывать список окон на каждом столе (средний щелчок или через "
-#~ "меню)\n"
+#~ " — Показывать список окон на каждом столе (средний щелчок или через меню)\n"
 #~ "Существует 2 режима: компактный (на одном значке) и расширенный (с "
 #~ "использованием суб-панели)."
 
@@ -3660,8 +3419,8 @@ msgstr ""
 #~ msgstr "Переместить текущий рабочий стол на этот стол"
 
 #~ msgid ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
+#~ "This will move all windows from the current desktop to the one you clicked "
+#~ "on."
 #~ msgstr ""
 #~ "Это переместит все окна с текущего рабочего стола на тот, по которому вы "
 #~ "щёлкнули."
@@ -3680,22 +3439,22 @@ msgstr ""
 #~ "somewhere, above other windows."
 #~ msgstr ""
 #~ "Область уведомлений на панели.\n"
-#~ "Левый щелчок, чтобы показать/скрыть область уведомлений (вы можете "
-#~ "назначить клавиатурное сокращение.)\n"
-#~ "Но лучшим вариантом будет открепить её от панели и разместить где-нибудь "
-#~ "на рабочем столе."
+#~ "Левый щелчок, чтобы показать/скрыть область уведомлений (вы можете назначить "
+#~ "клавиатурное сокращение.)\n"
+#~ "Но лучшим вариантом будет открепить её от панели и разместить где-нибудь на "
+#~ "рабочем столе."
 
 #~ msgid "Notification Area Old"
 #~ msgstr "Старая область уведомлений"
 
 #~ msgid ""
 #~ "Another systray is already running (probably on your panel)\n"
-#~ "Since there can only be one systray at once, you should remove it to "
-#~ "avoid any conflict."
+#~ "Since there can only be one systray at once, you should remove it to avoid "
+#~ "any conflict."
 #~ msgstr ""
 #~ "Область задач уже запущена (возможно на вашей панели)\n"
-#~ "Одновременно может быть запущена только одна область задач. Чтобы "
-#~ "избежать конфликтов, вам следует удалить вторую."
+#~ "Одновременно может быть запущена только одна область задач. Чтобы избежать "
+#~ "конфликтов, вам следует удалить вторую."
 
 #~ msgid "CD_APPLET_NAME"
 #~ msgstr "CD_APPLET_NAME"
@@ -3712,8 +3471,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "Add a terminal to your dock !\n"
-#~ "Left-click to show/hide terminal (you can bind a keyboard shortcut for "
-#~ "it.)\n"
+#~ "Left-click to show/hide terminal (you can bind a keyboard shortcut for it.)\n"
 #~ "You can drag'n'drop files or text and select an action.\n"
 #~ "You can open many tabs, rename them, change their color (right-click on a "
 #~ "tab to interact on it)\n"
@@ -3728,8 +3486,7 @@ msgstr ""
 #~ "(правый щелчок для изменения)\n"
 #~ "Для открытия новой вкладки: введите 'CTRL+t' или сделайте двойной щелчок "
 #~ "рядом с последней открытой\n"
-#~ "Чтобы закрыть вкладку: введите 'CTRL+w' или сделайте средний щелчок на "
-#~ "ней."
+#~ "Чтобы закрыть вкладку: введите 'CTRL+w' или сделайте средний щелчок на ней."
 
 #~ msgid "New Tab"
 #~ msgstr "Новая вкладка"
@@ -3847,16 +3604,16 @@ msgstr ""
 #~ "Data are provided by www.weather.com, you can find your location in the "
 #~ "config panel.\n"
 #~ "It can detach itself to be a totally eye-candy 3D deskelt.\n"
-#~ "Middle-click on the main icon to have current conditions information, "
-#~ "left-click on a sub-icon to have forcast information.\n"
+#~ "Middle-click on the main icon to have current conditions information, left-"
+#~ "click on a sub-icon to have forcast information.\n"
 #~ msgstr ""
 #~ "Этот апплет отображает прогноз погоды на вашей панели.\n"
 #~ "Информация предоставлена www.weather.com, вы можете указать ваше "
 #~ "местонахождение в настройках.\n"
-#~ "Этот апплет можно открепить от панели и превратить в симпатичный, "
-#~ "полностью трёхмерный десклет.\n"
-#~ "Средний щелчок на основном значке, чтобы показать текущее состояние "
-#~ "погоды, левый, чтобы увидеть прогноз.\n"
+#~ "Этот апплет можно открепить от панели и превратить в симпатичный, полностью "
+#~ "трёхмерный десклет.\n"
+#~ "Средний щелчок на основном значке, чтобы показать текущее состояние погоды, "
+#~ "левый, чтобы увидеть прогноз.\n"
 
 #~ msgid "Jan"
 #~ msgstr "Янв"
@@ -3896,6 +3653,9 @@ msgstr ""
 
 #~ msgid "Data are being retrieved, please wait a moment."
 #~ msgstr "Запрашивается информация, подождите немного."
+
+#~ msgid "Show current conditions (middle-click)"
+#~ msgstr "Показать текущую погоду (средний щелчок)"
 
 #~ msgid "Open weather.com (double-click)"
 #~ msgstr "Открыть weather.com (двойной щелчок)"
@@ -3972,8 +3732,7 @@ msgstr ""
 #~ "connection\n"
 #~ "Left-click to pop-up some info,Middle-click to re-check immediately."
 #~ msgstr ""
-#~ "Этот апплет показывает мощность сигнала первого активного wifi "
-#~ "соединения\n"
+#~ "Этот апплет показывает мощность сигнала первого активного wifi соединения\n"
 #~ "Левый щелчок, чтобы отобразить некоторую информацию, средний, для "
 #~ "немедленного обновления."
 
@@ -3982,8 +3741,7 @@ msgstr ""
 #~ "environnement.\n"
 #~ "It is auto-activated, so you don't need to activate it."
 #~ msgstr ""
-#~ "Этот апплет обеспечивает лучшую интеграцию со средой рабочего стола "
-#~ "XFCE.\n"
+#~ "Этот апплет обеспечивает лучшую интеграцию со средой рабочего стола XFCE.\n"
 #~ "Активируется автоматически."
 
 #~ msgid "Global"
@@ -3991,8 +3749,7 @@ msgstr ""
 
 #~ msgid "Animations are triggered when hovering an icon only in OpenGL mode."
 #~ msgstr ""
-#~ "В режиме OpenGL, анимация будет выполняться только при наведении на "
-#~ "значке."
+#~ "В режиме OpenGL, анимация будет выполняться только при наведении на значке."
 
 #~ msgid "when hovering over an icon"
 #~ msgstr "При наведении на значок"
@@ -4141,12 +3898,19 @@ msgstr ""
 #~ msgid "Ground offset:"
 #~ msgstr "Смещение от поверхности:"
 
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+#~ msgstr ""
+#~ "В зависимости от вашего Менеджера Окон, вы можете перемешать с помощью ALT + "
+#~ "левый щелчок"
+
 #~ msgid "Items"
 #~ msgstr "Элементы"
 
 #~ msgid ""
-#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
-#~ "you get by selecting some text with the mouse."
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those you "
+#~ "get by selecting some text with the mouse."
 #~ msgstr ""
 #~ "Элементы буфера обмена — это те, которые вы копируете с помощью CTRL+c. "
 #~ "Элементы выделения — это те, которые вы выделяете мышью."
@@ -4208,11 +3972,11 @@ msgstr ""
 #~ msgstr "Действия"
 
 #~ msgid ""
-#~ "If some actions are associated with an item, they will be proposed when "
-#~ "the item is created."
+#~ "If some actions are associated with an item, they will be proposed when the "
+#~ "item is created."
 #~ msgstr ""
-#~ "Если некоторые действия ассоциированы с элементом, то они будут "
-#~ "предложены вам, когда элемент будет создан."
+#~ "Если некоторые действия ассоциированы с элементом, то они будут предложены "
+#~ "вам, когда элемент будет создан."
 
 #~ msgid "Enable actions?"
 #~ msgstr "Разрешить действия?"
@@ -4270,6 +4034,9 @@ msgstr ""
 
 #~ msgid "Image's name or path :"
 #~ msgstr "Файл изображения или путь:"
+
+#~ msgid "Desklet mode"
+#~ msgstr "Режим десклета"
 
 #~ msgid "Custom decorations"
 #~ msgstr "Настраиваемое оформление"
@@ -4456,8 +4223,8 @@ msgstr ""
 #~ msgstr "Путь к каталогу:"
 
 #~ msgid ""
-#~ "Allow to show the files of the folder in a sub-dock. If disabled, the "
-#~ "applet behaves as a mere launcher."
+#~ "Allow to show the files of the folder in a sub-dock. If disabled, the applet "
+#~ "behaves as a mere launcher."
 #~ msgstr ""
 #~ "Разрешить отображать файлы каталога в суб-панели. Если выключено, апплет "
 #~ "ведёт себя как простой значок запуска."
@@ -4564,8 +4331,8 @@ msgstr ""
 #~ "Allow you to overwrite applet's default command line and launch your "
 #~ "preferred wireless configuration interface."
 #~ msgstr ""
-#~ "Позволит вам перезаписывать стандартную командную строку апплета и "
-#~ "запускать ваш собственный интерфейс настроек беспроводного соединения."
+#~ "Позволит вам перезаписывать стандартную командную строку апплета и запускать "
+#~ "ваш собственный интерфейс настроек беспроводного соединения."
 
 #~ msgid "User command to show Wireless Configuration:"
 #~ msgstr "Пользовательская команда для Настроек Беспроводной сети:"
@@ -4673,11 +4440,10 @@ msgstr ""
 #~ msgstr "Анимация значка:"
 
 #~ msgid ""
-#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close "
-#~ "it)."
+#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close it)."
 #~ msgstr ""
-#~ "В секундах. Установите 0 для бесконечности (щёлкните по окну, чтобы "
-#~ "закрыть его)."
+#~ "В секундах. Установите 0 для бесконечности (щёлкните по окну, чтобы закрыть "
+#~ "его)."
 
 #~ msgid "Duration of the notification:"
 #~ msgstr "Продолжительность анимации:"
@@ -4761,18 +4527,18 @@ msgstr ""
 #~ msgstr "Клавиатурное сокращение для (де)активирования режима поиска:"
 
 #~ msgid ""
-#~ "Maximum number of mails that will be previewed. Put -1 to show the "
-#~ "maximum possible."
+#~ "Maximum number of mails that will be previewed. Put -1 to show the maximum "
+#~ "possible."
 #~ msgstr ""
 #~ "Максимальное число показываемых новых сообщений. Установите -1, чтобы "
 #~ "показывать максимально возможное число."
 
 #~ msgid ""
-#~ "Number of lines of the listing. If there are more results, the listing "
-#~ "will scroll when you go up or down with the arrows."
+#~ "Number of lines of the listing. If there are more results, the listing will "
+#~ "scroll when you go up or down with the arrows."
 #~ msgstr ""
-#~ "Количество строк в списке. Если результатов окажется больше, то список "
-#~ "будет прокручиваться."
+#~ "Количество строк в списке. Если результатов окажется больше, то список будет "
+#~ "прокручиваться."
 
 #~ msgid "Number of lines to display :"
 #~ msgstr "Количество отображаемых строк:"
@@ -4968,8 +4734,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "It will prevent the system monitor's icon to show in the taskbar. The "
-#~ "applet's icon will then behave as a launcher, an application, and an "
-#~ "applet."
+#~ "applet's icon will then behave as a launcher, an application, and an applet."
 #~ msgstr ""
 #~ "Это предотвратит появление значка на панели задач. Значок апплета будет "
 #~ "вести себя как значок запуска, приложение и апплет."
@@ -4984,11 +4749,11 @@ msgstr ""
 #~ msgstr "Топ-лист"
 
 #~ msgid ""
-#~ "When you left-click on the icon, you will get the list of the N most CPU/"
-#~ "RAM-intensive programs."
+#~ "When you left-click on the icon, you will get the list of the N most CPU/RAM-"
+#~ "intensive programs."
 #~ msgstr ""
-#~ "При левом щелчке на значке вы получите список из N приложений, больше "
-#~ "всего использующих ЦП/ОЗУ."
+#~ "При левом щелчке на значке вы получите список из N приложений, больше всего "
+#~ "использующих ЦП/ОЗУ."
 
 #~ msgid "Number of programs to display in the top list:"
 #~ msgstr "Количество программ в списке:"
@@ -5070,13 +4835,13 @@ msgstr ""
 #~ msgstr "Выберите канал для управления:"
 
 #~ msgid ""
-#~ "On some cards, a channel only controls 1 side (right or left). You will "
-#~ "then need to specify a second channel here, to control both sides. Most "
-#~ "of the time, you should just leave this empty."
+#~ "On some cards, a channel only controls 1 side (right or left). You will then "
+#~ "need to specify a second channel here, to control both sides. Most of the "
+#~ "time, you should just leave this empty."
 #~ msgstr ""
-#~ "На некоторых картах, один канал может отвечать только за одну сторону "
-#~ "(левую или правую). Поэтому укажите здесь другой канал, чтобы управлять "
-#~ "обеими сторонами. В большинстве случаев, просто оставьте поле пустым."
+#~ "На некоторых картах, один канал может отвечать только за одну сторону (левую "
+#~ "или правую). Поэтому укажите здесь другой канал, чтобы управлять обеими "
+#~ "сторонами. В большинстве случаев, просто оставьте поле пустым."
 
 #~ msgid "Choose a second channel to control (optional):"
 #~ msgstr "Опционально, вебрите другой канал для управления:"
@@ -5125,11 +4890,9 @@ msgstr ""
 #~ msgstr "Отображать в 24-часовом формате?"
 
 #~ msgid ""
-#~ "if not, then the applet will update the time once a minute, saving CPU "
-#~ "power."
+#~ "if not, then the applet will update the time once a minute, saving CPU power."
 #~ msgstr ""
-#~ "если нет, то апплет будет обновлять время раз в минуту, сохраняя ресурсы "
-#~ "CPU."
+#~ "если нет, то апплет будет обновлять время раз в минуту, сохраняя ресурсы CPU."
 
 #~ msgid "Show seconds?"
 #~ msgstr "Показывать секунды?"
@@ -5146,8 +4909,8 @@ msgstr ""
 
 #~ msgid "E.g. :Europe/Paris, :Japan, etc. Leave empty for local time."
 #~ msgstr ""
-#~ "К примеру: Европа/Париж, Япония и т.д. Оставьте пустым, чтобы "
-#~ "использовать локальное время."
+#~ "К примеру: Европа/Париж, Япония и т.д. Оставьте пустым, чтобы использовать "
+#~ "локальное время."
 
 #~ msgid "Timezone:"
 #~ msgstr "Временная зона:"
@@ -5165,8 +4928,8 @@ msgstr ""
 #~ msgstr "Оформление"
 
 #~ msgid ""
-#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
-#~ "in digital format."
+#~ "The analogue view is based on CairoClock; otherwise it will be displayed in "
+#~ "digital format."
 #~ msgstr ""
 #~ "Аналоговый вид основан на CairoClock; в другом случае будет использован "
 #~ "цифровой вид."
@@ -5251,18 +5014,18 @@ msgstr ""
 #~ "This command will be used to launch the system WM. Leave blank to use the "
 #~ "default."
 #~ msgstr ""
-#~ "Эта команда будет использована для запуска системного ОМ; оставьте "
-#~ "пустым, чтобы использовать стандартную."
+#~ "Эта команда будет использована для запуска системного ОМ; оставьте пустым, "
+#~ "чтобы использовать стандартную."
 
 #~ msgid "Custom command for system's Windows Manager:"
 #~ msgstr "Пользовательская команда для системного ОМ:"
 
 #~ msgid ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
-#~ "quit Compiz from the dock."
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then quit "
+#~ "Compiz from the dock."
 #~ msgstr ""
-#~ "В случае непредвиденного завершения Compiz, Cairo-Dock будет "
-#~ "перезапускать его. Вам потребуется выйти из Compiz из панели."
+#~ "В случае непредвиденного завершения Compiz, Cairo-Dock будет перезапускать "
+#~ "его. Вам потребуется выйти из Compiz из панели."
 
 #~ msgid "Auto-reload Compiz?"
 #~ msgstr "Автоматически перезапускать Compiz?"
@@ -5306,8 +5069,7 @@ msgstr ""
 #~ msgstr "Добавить Экспозицию и Слой виджетов в суб-панель?"
 
 #~ msgid ""
-#~ "Display an icon for the Emerald configuration panel in the applet's sub-"
-#~ "dock."
+#~ "Display an icon for the Emerald configuration panel in the applet's sub-dock."
 #~ msgstr "Отображать в суб-панели апплета значок настройки Emerald."
 
 #~ msgid "Add Emerald Configuration to sub-dock?"
@@ -5318,14 +5080,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a "
-#~ "bit slow when binding textures, that's why this option gives a heavy "
-#~ "performance increase with Nvidia cards."
+#~ "loose binding they are enabled when created. The Nvidia driver seems a bit "
+#~ "slow when binding textures, that's why this option gives a heavy performance "
+#~ "increase with Nvidia cards."
 #~ msgstr ""
-#~ "С точной привязкой, текстуры будут обработаны вне зависимости от того, "
-#~ "когда были задействованы. Со свободной привязкой они будут задействованы, "
-#~ "когда созданы. Драйверы Nvidia иногда бывают притормаживают при обработке "
-#~ "текстур, поэтому эта опция может хорошо увеличить быстродействие."
+#~ "С точной привязкой, текстуры будут обработаны вне зависимости от того, когда "
+#~ "были задействованы. Со свободной привязкой они будут задействованы, когда "
+#~ "созданы. Драйверы Nvidia иногда бывают притормаживают при обработке текстур, "
+#~ "поэтому эта опция может хорошо увеличить быстродействие."
 
 #~ msgid "Use Loose Binding?"
 #~ msgstr "Использовать свободную привязку?"
@@ -5338,8 +5100,8 @@ msgstr ""
 
 #~ msgid "Useful when using two or more separate X screens."
 #~ msgstr ""
-#~ "Полезно, если вы используете нексолько мониторов или несколько раздельных "
-#~ "X экранов."
+#~ "Полезно, если вы используете нексолько мониторов или несколько раздельных X "
+#~ "экранов."
 
 #~ msgid "Only Current Screen?"
 #~ msgstr "Только на текущем экране?"
@@ -5510,8 +5272,8 @@ msgstr ""
 #~ msgstr "UbuntuOne"
 
 #~ msgid ""
-#~ "The script takes the file path as a parameter, and write the resulting "
-#~ "URL on the standard output."
+#~ "The script takes the file path as a parameter, and write the resulting URL "
+#~ "on the standard output."
 #~ msgstr ""
 #~ "Этот скрипт берёт путь файлу в качестве параметра и записывает "
 #~ "результирующий URL в стандартном виде."
@@ -5678,8 +5440,7 @@ msgstr ""
 #~ "This may recquire more CPU during the unfolding animation, except if you "
 #~ "launch Cairo-Dock with OpenGL."
 #~ msgstr ""
-#~ "Потребуется больше процессорных ресурсов, если только не используется "
-#~ "OpenGL."
+#~ "Потребуется больше процессорных ресурсов, если только не используется OpenGL."
 
 #~ msgid "Draw captions while unfolding?"
 #~ msgstr "Рисовать подписи во время раскрытия?"
@@ -5700,8 +5461,8 @@ msgstr ""
 #~ "in degrees. The lower the value, the narrower the cone. 180° represents a "
 #~ "wide open cone."
 #~ msgstr ""
-#~ "в градусах. Чем меньше, тем более узким будет конус. При значении 180° "
-#~ "конус будет полностью открыт."
+#~ "в градусах. Чем меньше, тем более узким будет конус. При значении 180° конус "
+#~ "будет полностью открыт."
 
 #~ msgid "Cone width:"
 #~ msgstr "Ширина конуса:"
@@ -5725,8 +5486,7 @@ msgstr ""
 #~ "launcher into the dock. Leave this empty to use the default."
 #~ msgstr ""
 #~ "Обычно в виде стрелки, это будет отображаться, когда вы перетаскиваете на "
-#~ "панель новый значок запуска. Оставьте пустым, чтобы использовать "
-#~ "стандартный."
+#~ "панель новый значок запуска. Оставьте пустым, чтобы использовать стандартный."
 
 #~ msgid "Image for the drag & drop animation:"
 #~ msgstr "Изображение для анимации перетаскивания:"
@@ -5910,8 +5670,8 @@ msgstr ""
 #~ "command to shutdown is the same as the one to log out."
 #~ msgstr ""
 #~ "Будет доступна по среднему щелчку. Оставьте пустым, чтобы использовать "
-#~ "стандартную, которая в большинстве зависит от вашего дистрибутива. "
-#~ "Иногда, команда для выключения одинакова с командой завершения сеанса."
+#~ "стандартную, которая в большинстве зависит от вашего дистрибутива. Иногда, "
+#~ "команда для выключения одинакова с командой завершения сеанса."
 
 #~ msgid "User-defined command to execute for shutdown:"
 #~ msgstr "Пользовательская команда для выключения:"
@@ -5924,11 +5684,11 @@ msgstr ""
 
 #~ msgid ""
 #~ "If you have any problem with the applet, uncheck this option during the "
-#~ "maintenance mode, then after the dock has relaunched, remove/modify the "
-#~ "mail accounts you want."
+#~ "maintenance mode, then after the dock has relaunched, remove/modify the mail "
+#~ "accounts you want."
 #~ msgstr ""
-#~ "Если вы испытываете какие-либо проблемы с этим апплетом, уберите эту "
-#~ "опцию во время режима обслуживания, затем позвольте панели загрузиться и "
+#~ "Если вы испытываете какие-либо проблемы с этим апплетом, уберите эту опцию "
+#~ "во время режима обслуживания, затем позвольте панели загрузиться и "
 #~ "измените/удалите нужный аккаунт."
 
 #~ msgid "Check mail account on startup?"
@@ -6196,8 +5956,7 @@ msgstr ""
 
 #~ msgid "It can be CPU intense to load a lot of icons."
 #~ msgstr ""
-#~ "Может потребоваться много времени для загрузки большого количества "
-#~ "значков."
+#~ "Может потребоваться много времени для загрузки большого количества значков."
 
 #~ msgid "Icon size :"
 #~ msgstr "Размер значка:"
@@ -6212,8 +5971,8 @@ msgstr ""
 #~ "Number of items loaded at once. Setting a high value speeds up loading a "
 #~ "little but will hang the application for longer."
 #~ msgstr ""
-#~ "Количество элементов для одновременной загрузки. Установка высоких "
-#~ "значений немного ускоряет загрузку, но дольше блокирует приложение."
+#~ "Количество элементов для одновременной загрузки. Установка высоких значений "
+#~ "немного ускоряет загрузку, но дольше блокирует приложение."
 
 #~ msgid "Build menu gradually:"
 #~ msgstr "Последовательное построение меню:"
@@ -6285,8 +6044,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "You need to activate the Dbus plug-in in Compiz for the last 2 actions. "
-#~ "Showing desktop and desklets can fail on some Window Manager (like "
-#~ "Metacity)."
+#~ "Showing desktop and desklets can fail on some Window Manager (like Metacity)."
 #~ msgstr ""
 #~ "Для следующих действий необходимо активировать Compiz плагин Dbus. "
 #~ "Отображение рабочего стола и десклетов может завершиться неудачей для "
@@ -6386,8 +6144,7 @@ msgstr ""
 #~ msgid ""
 #~ "Set the transparency channel to 0 if you just don't want to have a "
 #~ "background."
-#~ msgstr ""
-#~ "Установите прозрачность канала в 0, если не хотите иметь задний фон."
+#~ msgstr "Установите прозрачность канала в 0, если не хотите иметь задний фон."
 
 #~ msgid "Choose a background colour :"
 #~ msgstr "Выберите цвет заднего фона:"
@@ -6502,6 +6259,9 @@ msgstr ""
 #~ msgid "Current desktop colour:"
 #~ msgstr "Цвет текущего рабочего стола:"
 
+#~ msgid "How to draw the current desktop:"
+#~ msgstr "Как отрисовывать текущий рабочий стол:"
+
 #~ msgid "draw a frame"
 #~ msgstr "рамка"
 
@@ -6567,8 +6327,8 @@ msgstr ""
 #~ "When the terminal is in a dialog. When it is in a desklet, you can just "
 #~ "resize the desklet as usual."
 #~ msgstr ""
-#~ "Когда терминал в окне. Когда он в декслете, то вы можете изменять его "
-#~ "размер как обычно."
+#~ "Когда терминал в окне. Когда он в декслете, то вы можете изменять его размер "
+#~ "как обычно."
 
 #~ msgid "Size of the terminal (line x columns):"
 #~ msgstr "Размер терминала (строк х столбцов):"
@@ -6610,27 +6370,26 @@ msgstr ""
 #~ msgstr "Автоматически называть новую записку?"
 
 #~ msgid ""
-#~ "Write the date format you usually use in your notes. The syntax is the "
-#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "Write the date format you usually use in your notes. The syntax is the one "
+#~ "of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
 #~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
 #~ msgstr ""
-#~ "Задайте формат даты, который вы обычно используете в записках. Синтаксис "
-#~ "как в 'strftime' : %d - день, %m - месяц, %y - год (2 цифры) и т.д. "
-#~ "Оставьте пустым, чтобы использовать стандартный (%d/%m/%y)."
+#~ "Задайте формат даты, который вы обычно используете в записках. Синтаксис как "
+#~ "в 'strftime' : %d - день, %m - месяц, %y - год (2 цифры) и т.д. Оставьте "
+#~ "пустым, чтобы использовать стандартный (%d/%m/%y)."
 
 #~ msgid "Date format to search for :"
 #~ msgstr "Формат даты для поиска:"
 
 #~ msgid ""
 #~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some "
-#~ "error message like <<No marshaller for signature of signal "
-#~ "'NoteDeleted'>> in the terminal."
+#~ "automatically notified to us. Only check this box if you notice some error "
+#~ "message like <<No marshaller for signature of signal 'NoteDeleted'>> in the "
+#~ "terminal."
 #~ msgstr ""
-#~ "В зависимости от версии Tomboy, удаление записки может автоматически нас "
-#~ "и не уведомлять. Установив эту опцию, вы сможете вписать некоторое "
-#~ "сообщение, вроде <<No marshaller for signature of signal 'NoteDeleted'>> "
-#~ "в терминале."
+#~ "В зависимости от версии Tomboy, удаление записки может автоматически нас и "
+#~ "не уведомлять. Установив эту опцию, вы сможете вписать некоторое сообщение, "
+#~ "вроде <<No marshaller for signature of signal 'NoteDeleted'>> в терминале."
 
 #~ msgid "Emulate the 'NoteDeleted' signal?"
 #~ msgstr "Эмулировать сигнал 'NoteDeleted'?"
@@ -6644,8 +6403,7 @@ msgstr ""
 #~ msgid "Code for your location:"
 #~ msgstr "Код местонахождения:"
 
-#~ msgid ""
-#~ "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
+#~ msgid "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
 #~ msgstr ""
 #~ "Если так, то градусы будут показаны по Цельсию, в противном случае по "
 #~ "Фаренгейту."
@@ -6739,8 +6497,8 @@ msgstr ""
 #~ "Allow you to overwrite applet's default command line and launch your "
 #~ "wireless configuration interface."
 #~ msgstr ""
-#~ "Позволяет перезаписать стандартную команду апплета и запускать ваш "
-#~ "интерфейс конфигурации беспроводного соединения."
+#~ "Позволяет перезаписать стандартную команду апплета и запускать ваш интерфейс "
+#~ "конфигурации беспроводного соединения."
 
 #~ msgid "Alternative command line to launch Wireless Configuration :"
 #~ msgstr "Альтернативная команда запуска Настройки Беспроводного Соединения:"
@@ -6756,3 +6514,17 @@ msgstr ""
 
 #~ msgid "Overwrite the default label with the connection point name?"
 #~ msgstr "Заменить стандартную подпись, на имя точки доступа?"
+
+#~ msgid ""
+#~ "This is the number of messages that you can recall by scrolling on the "
+#~ "icon.}\n"
+#~ "history = 50\n"
+#~ "j+[48;512] Post-it's initial dimension (width x height) :\n"
+#~ "{Depending on your WindowManager, you may be able to resize this with ALT + "
+#~ "middle-click or ALT + left-click."
+#~ msgstr ""
+#~ "Количество сообщений хранящихся в истории.\n"
+#~ "по умолчанию = 50\n"
+#~ "j+[48;512] Начальный размер заметки (ширина х высота):\n"
+#~ "В зависимости от вашего ОМ, можно изменить размер с помощь ALT+средний "
+#~ "щелчок или ALT+левый щелчок."

@@ -7,20 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-04-19 12:53+0100\n"
+"POT-Creation-Date: 2011-07-10 23:42+0000\n"
+"PO-Revision-Date: 2011-06-20 23:28+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Cairo-Dock\n"
-"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-16 05:16+0000\n"
-"X-Generator: Launchpad (build 12735)\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:52+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
 "X-Poedit-Country: SWEDEN\n"
+"Language: sv\n"
 "X-Poedit-Language: Swedish\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -533,9 +535,8 @@ msgid "Shortkey to pop up the menu:"
 msgstr ""
 
 #: ../Calendar/messages:97
-#, fuzzy
 msgid "Applications"
-msgstr "Program-menyn"
+msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -550,9 +551,8 @@ msgid "Behaviour"
 msgstr "Beteende"
 
 #: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-#, fuzzy
 msgid "in s."
-msgstr "i sekunder."
+msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Time length of dialogues for the calendar :"
@@ -616,9 +616,8 @@ msgid "Time between two file system's checking :"
 msgstr ""
 
 #: ../GTG/messages:97 ../Xchat/messages:99
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Visningstid för fönster:"
+msgstr ""
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Short"
@@ -641,9 +640,8 @@ msgid "Display channel messages in a bubble :"
 msgstr ""
 
 #: ../GTG/messages:111
-#, fuzzy
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "Storlek på Desklet (bredd x höjd):"
+msgstr ""
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -659,9 +657,8 @@ msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Ikonens etikett:"
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Visa datum:"
+msgstr ""
 
 #: ../Liferea/messages:99
 msgid "Number of unread messages"
@@ -677,9 +674,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/Pidgin:406
-#, fuzzy
 msgid "Conversations"
-msgstr "Konfiguration"
+msgstr ""
 
 #: ../Pidgin/Pidgin:420
 msgid "Change your status"
@@ -718,9 +714,8 @@ msgid "Display chat messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:107
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Visningstid för fönster:"
+msgstr ""
 
 #: ../Pidgin/messages:115
 msgid "Animation of the icon on receiving a message:"
@@ -732,9 +727,8 @@ msgid ""
 msgstr ""
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
-#, fuzzy
 msgid "Size of the history :"
-msgstr "Storlek på inre linjer:"
+msgstr ""
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid "none"
@@ -793,9 +787,8 @@ msgid "in seconds."
 msgstr "i sekunder."
 
 #: ../RubyBattery/messages:101
-#, fuzzy
 msgid "Interval of time between 2 checks:"
-msgstr "Tid mellan uppdateringar:"
+msgstr ""
 
 #: ../RubyBattery/messages:103
 msgid "Activate alert of critical charge?"
@@ -822,9 +815,8 @@ msgid "From"
 msgstr ""
 
 #: ../Translator/Translator:473
-#, fuzzy
 msgid "Switch languages"
-msgstr "Byt fönsterhanterare"
+msgstr ""
 
 #: ../Translator/Translator:487
 msgid "Translate from clipboard (middle-click)"
@@ -1079,9 +1071,8 @@ msgid "Yiddish"
 msgstr ""
 
 #: ../Translator/messages:217
-#, fuzzy
 msgid "Translate to:"
-msgstr "Döpom till:"
+msgstr ""
 
 #: ../Translator/messages:333
 msgid "Shortkeys"
@@ -1104,9 +1095,8 @@ msgid "In s. Set 0 for an unlimited time."
 msgstr ""
 
 #: ../Translator/messages:343
-#, fuzzy
 msgid "Time-length of the result dialog:"
-msgstr "Tid som infobubblor visas:"
+msgstr ""
 
 #: ../Translator/messages:345
 msgid "Editable text widget?"
@@ -1126,9 +1116,8 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
 #: ../WebSearch/messages:95
-#, fuzzy
 msgid "Search engine :"
-msgstr "Söker ..."
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Google"
@@ -1163,9 +1152,8 @@ msgid "Wikipedia"
 msgstr "Wikipedia"
 
 #: ../WebSearch/messages:113
-#, fuzzy
 msgid "ImageShack"
-msgstr "Bilder"
+msgstr ""
 
 #: ../WebSearch/messages:115
 msgid "Twitter"
@@ -1176,9 +1164,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:119
-#, fuzzy
 msgid "in sub-icons."
-msgstr "i sekunder."
+msgstr ""
 
 #: ../WebSearch/messages:121
 msgid "Maximum number of results shown :"
@@ -1205,116 +1192,12 @@ msgid ""
 msgstr ""
 
 #: ../Xchat/Xchat:257
-#, fuzzy
 msgid "Channels"
-msgstr "Justera kanaler"
+msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Refresh time :"
-#~ msgstr "Uppdatera"
-
-#, fuzzy
-#~ msgid "Notifications"
-#~ msgstr "Meddelande"
-
-#, fuzzy
-#~ msgid "Notifications for pokes?"
-#~ msgstr "Meddelande"
-
-#, fuzzy
-#~ msgid "never"
-#~ msgstr "Aldrig"
-
-#, fuzzy
-#~ msgid "bounce"
-#~ msgstr "Studsa"
-
-#, fuzzy
-#~ msgid "blink"
-#~ msgstr "Blinka"
-
-#, fuzzy
-#~ msgid "pulse"
-#~ msgstr "Pulsera"
-
-#, fuzzy
-#~ msgid "rotate"
-#~ msgstr "Rotera"
-
-#, fuzzy
-#~ msgid "wobbly"
-#~ msgstr "Vackla"
-
-#, fuzzy
-#~ msgid "Time in minutes."
-#~ msgstr "Tid kvar"
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can resize it with ALT + "
-#~ "middle_click or ALT + left_click for exemple."
-#~ msgstr ""
-#~ "Beroende på din fönsterhanterare, kan du ändra storlek med ALT"
-#~ "+mellanklick eller ALT+vänsterklick"
-
-#, fuzzy
-#~ msgid ""
-#~ "Depending on your WindowManager, you can move it with ALT + left_click"
-#~ msgstr ""
-#~ "Beroende på din fönsterhanterare, kan du flytta appleten med ALT"
-#~ "+vänsterklick"
-
-#, fuzzy
-#~ msgid "Desklet's position (x ; y) :"
-#~ msgstr "Deskletens position (x, y):"
-
-#, fuzzy
-#~ msgid "Is detached from the dock ?"
-#~ msgstr "Koppla loss från dockan?"
-
-#, fuzzy
-#~ msgid "On Widget Layer"
-#~ msgstr "Widgetlager"
-
-#, fuzzy
-#~ msgid ""
-#~ "If locked, the desklet can't be moved by simply dragging it with the left "
-#~ "mouse button. Of course you can still move it with ALT + left_click."
-#~ msgstr ""
-#~ "En låst desklet kan inte flyttas genom att klicka och dra med du kan "
-#~ "alltid använda ALT+vänsterklick."
-
-#, fuzzy
-#~ msgid "Lock position ?"
-#~ msgstr "Lås position?"
-
-#, fuzzy
-#~ msgid "Rotation :"
-#~ msgstr "Meddelande"
-
-#, fuzzy
-#~ msgid "Background tansparency :"
-#~ msgstr "Pingvinens genomskinlighet:"
-
-#, fuzzy
-#~ msgid "Foreground image :"
-#~ msgstr "öppna bild"
-
-#, fuzzy
-#~ msgid "Foreground tansparency :"
-#~ msgstr "Pingvinens genomskinlighet:"
-
-#, fuzzy
-#~ msgid "Show the moon for all the current week?"
-#~ msgstr "Hur ska aktivt skrivbord visas:"
-
-#, fuzzy
-#~ msgid "Choose one of the available themes :"
-#~ msgstr "Välj ett tema:"
 
 #~ msgid "Animated icons"
 #~ msgstr "Animerade ikoner"
@@ -1333,8 +1216,8 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or can "
+#~ "be added easily."
 #~ msgstr ""
 #~ "Lägg till en livfull Pingvin till din docka!\n"
 #~ "Vänsterklicka för att ändra animering,\n"
@@ -1349,8 +1232,7 @@ msgstr ""
 #~ msgstr "Tyvärr, jag är upptagen nu."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
+#~ "I don't have time to play with you, I have to dig and mine all these icons."
 #~ msgstr ""
 #~ "Jag har inte tid att leka med dig. Jag måste gräva och bryta alla dessa "
 #~ "ikoner."
@@ -1409,22 +1291,21 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know Klipper.\n"
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
+#~ "Drop text on the icon to create persistent items, and middle-clck to recall "
+#~ "them."
 #~ msgstr ""
 #~ "Detta applet håller koll på dina urklipp och markeringar,\n"
-#~ "så att du kan återkalla dem fort. Det är en kopia av det välkända "
-#~ "programmet Klipper.\n"
-#~ "Det stödjer urklipp och markeringar, förinställda handlingar, och "
-#~ "ihållande punkter.\n"
+#~ "så att du kan återkalla dem fort. Det är en kopia av det välkända programmet "
+#~ "Klipper.\n"
+#~ "Det stödjer urklipp och markeringar, förinställda handlingar, och ihållande "
+#~ "punkter.\n"
 #~ "Vänsterklicka för en lista med historik,\n"
-#~ "Släpp text på ikonen för att skapa ihållande punkter, och mittenklicka "
-#~ "för att återkalla dem."
+#~ "Släpp text på ikonen för att skapa ihållande punkter, och mittenklicka för "
+#~ "att återkalla dem."
 
 #~ msgid "Clipboard history"
 #~ msgstr "Klippbordshistorik"
@@ -1452,14 +1333,12 @@ msgstr ""
 #~ msgid ""
 #~ "The applet '%s' has been succefully updated and automatically reloaded"
 #~ msgstr ""
-#~ "Appleten '%s' har blivit framgångsrikt uppdaterat och automatiskt "
-#~ "omstartat."
+#~ "Appleten '%s' har blivit framgångsrikt uppdaterat och automatiskt omstartat."
 
 #~ msgid ""
 #~ "The applet '%s' has been succefully installed and automatically launched"
 #~ msgstr ""
-#~ "Appleten '%s' har blivit framgångsrikt installerat och automatiskt "
-#~ "startat."
+#~ "Appleten '%s' har blivit framgångsrikt installerat och automatiskt startat."
 
 #~ msgid "B"
 #~ msgstr "B"
@@ -1571,17 +1450,15 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
+#~ "a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Visar den vanliga Program listan och de tidigare använda filerna.\n"
-#~ "Det är kompatibelt med alla XDG kompatibla menyer (Gnome, XFCE, "
-#~ "KDE, ...)\n"
-#~ "Mittenklicka för att öppna en dialog för att snabbt köra ett kommando(du "
-#~ "kan sätta upp en tangentkombination för det, t ex Alt+F2)\n"
-#~ "Du kan också sätta upp en tangentkombination för att visa menyn(t ex Alt"
-#~ "+F1)"
+#~ "Det är kompatibelt med alla XDG kompatibla menyer (Gnome, XFCE, KDE, ...)\n"
+#~ "Mittenklicka för att öppna en dialog för att snabbt köra ett kommando(du kan "
+#~ "sätta upp en tangentkombination för det, t ex Alt+F2)\n"
+#~ "Du kan också sätta upp en tangentkombination för att visa menyn(t ex Alt+F1)"
 
 #~ msgid "Quick launch"
 #~ msgstr "Snabbstart"
@@ -1680,8 +1557,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the current "
+#~ "wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
@@ -1847,6 +1724,9 @@ msgstr ""
 #~ msgid "Set up volume:"
 #~ msgstr "Volymkontroll:"
 
+#~ msgid "Adjust channels"
+#~ msgstr "Justera kanaler"
+
 #~ msgid "Unmute"
 #~ msgstr "Aktivera ljud"
 
@@ -1907,8 +1787,14 @@ msgstr ""
 #~ msgid "Exposition"
 #~ msgstr "Exposition"
 
+#~ msgid "Widget Layer"
+#~ msgstr "Widgetlager"
+
 #~ msgid "Reload Emerald"
 #~ msgstr "Starta om Emerald"
+
+#~ msgid "Switch Windows Manager"
+#~ msgstr "Byt fönsterhanterare"
 
 #~ msgid "Switch Windows Decorator"
 #~ msgstr "Byt fönsterdekorator"
@@ -2219,11 +2105,20 @@ msgstr ""
 #~ msgid "Delay between animation changes :"
 #~ msgstr "Tid mellan animeringsändringar:"
 
+#~ msgid "Penguin transparency:"
+#~ msgstr "Pingvinens genomskinlighet:"
+
 #~ msgid "Let the penguin wander everywhere in the dock?"
 #~ msgstr "Tillåt pingvinen att vandra överallt?"
 
 #~ msgid "in pixels."
 #~ msgstr "i pixlar."
+
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click."
+#~ msgstr ""
+#~ "Beroende på din fönsterhanterare, kan du flytta appleten med ALT+vänsterklick"
 
 #~ msgid "Actions"
 #~ msgstr "Aktiviteter"
@@ -2343,8 +2238,8 @@ msgstr ""
 #~ "Except when switching to another WM, you must activate the Dbus plugin in "
 #~ "Compiz along with the plugin corresponding to the desired action."
 #~ msgstr ""
-#~ "För att kunna byta till en annan fönsterhanterare, måste du aktivera Dbus "
-#~ "i Compiz och dessutom den applet som ska användas."
+#~ "För att kunna byta till en annan fönsterhanterare, måste du aktivera Dbus i "
+#~ "Compiz och dessutom den applet som ska användas."
 
 #~ msgid "Switch WM"
 #~ msgstr "Byt fönsterhanterare"
@@ -2363,11 +2258,11 @@ msgstr ""
 #~ msgstr "Anpassat kommando för att starta fönsterhanteraren:"
 
 #~ msgid ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
-#~ "quit Compiz from the dock."
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then quit "
+#~ "Compiz from the dock."
 #~ msgstr ""
-#~ "Om Compiz stängs ner, startas den om av Cairo-Dock. Om det händer, måste "
-#~ "du avsluta Compiz från dockan."
+#~ "Om Compiz stängs ner, startas den om av Cairo-Dock. Om det händer, måste du "
+#~ "avsluta Compiz från dockan."
 
 #~ msgid "Auto-reload Compiz?"
 #~ msgstr "Starta om Compiz automatiskt?"
@@ -2393,8 +2288,8 @@ msgstr ""
 #~ "corresponding sub-dock's icons will then behave as a launcher and an "
 #~ "application."
 #~ msgstr ""
-#~ "Gör att CSSM och Emerald ikonen inte visas i aktivitetsfältet. Sub-"
-#~ "dockans ikoner används då för att starta."
+#~ "Gör att CSSM och Emerald ikonen inte visas i aktivitetsfältet. Sub-dockans "
+#~ "ikoner används då för att starta."
 
 #~ msgid "Steal the application's icon from the taskbar?"
 #~ msgstr "Stjäl programmets ikon från aktivitetsfältet?"
@@ -2403,8 +2298,8 @@ msgstr ""
 #~ "Display two icons for Compiz Exposition & Widget Layer plug-ins in the "
 #~ "applet's sub-dock. Otherwise they will be available in the menu."
 #~ msgstr ""
-#~ "Visa ikoner för Compiz Exposition och Widgetlager i sub-dockan. Annars "
-#~ "visas de i menyn."
+#~ "Visa ikoner för Compiz Exposition och Widgetlager i sub-dockan. Annars visas "
+#~ "de i menyn."
 
 #~ msgid "Add Exposition & Widget Layer to sub-dock?"
 #~ msgstr "Lägg till Exposition och Widgetlager till sub-dockan?"
@@ -2414,14 +2309,13 @@ msgstr ""
 
 #~ msgid ""
 #~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a "
-#~ "bit slow when binding textures, that's why this option gives a heavy "
-#~ "performance increase with Nvidia cards."
+#~ "loose binding they are enabled when created. The Nvidia driver seems a bit "
+#~ "slow when binding textures, that's why this option gives a heavy performance "
+#~ "increase with Nvidia cards."
 #~ msgstr ""
-#~ "Med strikt bindning, binds texturer när de aktivers, med lös bindning "
-#~ "binds de när de skapas. nVidias drivare är lite långsam när den binder "
-#~ "texturer så denna inställning kan snabba upp hastigheten ganska mycket "
-#~ "för nVidia."
+#~ "Med strikt bindning, binds texturer när de aktivers, med lös bindning binds "
+#~ "de när de skapas. nVidias drivare är lite långsam när den binder texturer så "
+#~ "denna inställning kan snabba upp hastigheten ganska mycket för nVidia."
 
 #~ msgid "Use Loose Binding?"
 #~ msgstr "Använd lös bindning?"
@@ -2573,8 +2467,8 @@ msgstr ""
 #~ msgid ""
 #~ "0 represents a flat wave, 1 means the wave is identical to other views."
 #~ msgstr ""
-#~ "0 betyder at vågen är helt platt. 1 betyder att vågen är identisk med "
-#~ "andra vyer."
+#~ "0 betyder at vågen är helt platt. 1 betyder att vågen är identisk med andra "
+#~ "vyer."
 
 #~ msgid "Number of icons on the first row:"
 #~ msgstr "Antal ikoner på första raden:"
@@ -2638,8 +2532,8 @@ msgstr ""
 #~ "This will prevent the player icon appearing in the taskbar. The applet's "
 #~ "icon will then behave as a launcher, an application and an applet."
 #~ msgstr ""
-#~ "Gör att spelarens ikon inte visas i aktivitetsfältet. Appletens ikon "
-#~ "används istället för att styra programmet."
+#~ "Gör att spelarens ikon inte visas i aktivitetsfältet. Appletens ikon används "
+#~ "istället för att styra programmet."
 
 #~ msgid "Steal the player's icon from the taskbar?"
 #~ msgstr "Stjäl spelarens ikon från aktivitetsfältet?"
@@ -2730,6 +2624,9 @@ msgstr ""
 
 #~ msgid "play/pause"
 #~ msgstr "spela/pausa"
+
+#~ msgid "open image"
+#~ msgstr "öppna bild"
 
 #~ msgid "Sliding delay:"
 #~ msgstr "Paus mellan bilder:"
@@ -2828,8 +2725,8 @@ msgstr ""
 #~ "All desktops will be drawn on the main icon. Otherwise a sub-dock will "
 #~ "contain all desktops."
 #~ msgstr ""
-#~ "Markera för att visa alla skrivbord på huvudikonen, avmarkera för att "
-#~ "visa skrivbord i en sub-docka."
+#~ "Markera för att visa alla skrivbord på huvudikonen, avmarkera för att visa "
+#~ "skrivbord i en sub-docka."
 
 #~ msgid "Map wallpaper to icons?"
 #~ msgstr "Visa skrivbordsbakgrund på ikonen?"
@@ -2860,6 +2757,9 @@ msgstr ""
 
 #~ msgid "Current desktop colour:"
 #~ msgstr "Färg för aktivt skrivbord:"
+
+#~ msgid "How to draw the current desktop:"
+#~ msgstr "Hur ska aktivt skrivbord visas:"
 
 #~ msgid "draw a frame"
 #~ msgstr "rita en ram"
@@ -2901,26 +2801,26 @@ msgstr ""
 #~ msgstr "Visa noteringens innehåll på ikonen?"
 
 #~ msgid ""
-#~ "Write the date format you usually use in your notes. The syntax is the "
-#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "Write the date format you usually use in your notes. The syntax is the one "
+#~ "of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
 #~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
 #~ msgstr ""
-#~ "Ange datumformat som du oftast använder. Syntax är samma som för "
-#~ "'strftime': %d för dag, %m för månad, %y för år (2 siffror) etc. Lämna "
-#~ "tomt för att använda standardformatet (%d/%m/%y)."
+#~ "Ange datumformat som du oftast använder. Syntax är samma som för 'strftime': "
+#~ "%d för dag, %m för månad, %y för år (2 siffror) etc. Lämna tomt för att "
+#~ "använda standardformatet (%d/%m/%y)."
 
 #~ msgid "Date format to search for :"
 #~ msgstr "Datumformat att söka efter:"
 
 #~ msgid ""
 #~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some "
-#~ "error message like <<No marshaller for signature of signal "
-#~ "'NoteDeleted'>> in the terminal."
+#~ "automatically notified to us. Only check this box if you notice some error "
+#~ "message like <<No marshaller for signature of signal 'NoteDeleted'>> in the "
+#~ "terminal."
 #~ msgstr ""
 #~ "beroende på vilken version av Tomboy du har, kanske inte borttagning av "
-#~ "anteckningar alltid upptäcks. Markera bara rutan om du ser meddelanden "
-#~ "som <<No marshaller for signature of signal 'NoteDeleted'>> i ett "
+#~ "anteckningar alltid upptäcks. Markera bara rutan om du ser meddelanden som "
+#~ "<<No marshaller for signature of signal 'NoteDeleted'>> i ett "
 #~ "terminalfönster."
 
 #~ msgid "Emulate the 'NoteDeleted' signal?"
