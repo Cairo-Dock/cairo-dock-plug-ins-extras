@@ -29,8 +29,6 @@ import sys # used to find relative paths
 
 import SVGmaker # home-made module to edit SVG counter emblem
 
-from menu import Menu # home-made module for left-click menu
-
 
 class Gmail(CDApplet):
 
