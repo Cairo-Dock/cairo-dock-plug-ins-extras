@@ -29,6 +29,8 @@ import sys # used to find relative paths
 
 import SVGmaker # home-made module to edit SVG counter emblem
 
+from menu import Menu # home-made module for left-click menu
+
 
 class Gmail(CDApplet):
 
@@ -44,8 +46,8 @@ class Gmail(CDApplet):
         self.flag = None # used to check current status (especially with dialogues)
         self.path = sys.argv[3][0:-10] # relative path to config file's folder
         self.subpath = self.path+'subscription' # file containing Gmail account details
-        self.svgpath = self.path+'em        print "checking mail ... "blem.svg' # SVG emblem file
-        self.wav = os.path.abspath("./alarm.wav")
+        self.svgpath = self.path+'emblem.svg' # SVG emblem file
+        self.wav = os.path.abspath("./snd/pop.wav")
         self.rep = False # used not to run more than one loop
         CDApplet.__init__(self)
 
@@ -58,6 +60,7 @@ class Gmail(CDApplet):
 
         self.config['notify'] = keyfile.getboolean('Configuration', 'NOTIFY')
         self.config['when'] = keyfile.get('Configuration', 'WHEN')
+        self.config['anim'] = keyfile.getboolean('Configuration', 'ANIM')
         self.config['how'] = keyfile.get('Configuration', 'HOW')
         self.config['dia'] = keyfile.getboolean('Configuration', 'DIA')
         self.config['sound'] = keyfile.getboolean('Configuration', 'SOUND')
@@ -65,8 +68,18 @@ class Gmail(CDApplet):
         self.config['count'] = keyfile.getboolean('Configuration', 'COUNT')
         self.config['info'] = keyfile.get('Configuration', 'INFO')
         wav = keyfile.get('Configuration', 'WAV')
+        # set default sound
         if len(wav) > 0:
             self.wav = os.path.abspath(wav)
+        # set default animation
+        if len(self.config['how']) == 0:
+            self.config['how'] = 'default'
+
+        # in case user switched between emblem/quickinfo while count > 0
+        if self.account.get('count', 0) > 0:
+            self.update_display()
+        if self.flag == 'error':
+            self.error('')
 
     def check_subscription(self):
 
@@ -75,7 +88,6 @@ class Gmail(CDApplet):
             passwords as well as how often the account should be checked.
         """
 
-        print 'checking subscription'
         # reset flag in case of prior error:
         self.flag = None
 
@@ -276,6 +288,7 @@ class Gmail(CDApplet):
                 self.icon.SetQuickInfo(format(''))
             else:
                 self.icon.SetQuickInfo(format(self.account['count']))
+
         else:
             # reset quick-info (in case displayed before)
             self.icon.SetQuickInfo(format(''))
@@ -284,15 +297,15 @@ class Gmail(CDApplet):
                 # reset icon
                 self.icon.SetIcon(os.path.abspath("./icon"))
             else:
-                # make SVG emblem with external module SVGmaker
-                SVG = SVGmaker.add_counter(self.account['count'])
+                # get size out of config
+                size = self.config['info'].split()[0]
+                # make icon with external module SVGmaker
+                SVG = SVGmaker.add_counter(self.account['count'], size)
                 svg = open(self.svgpath, 'w')
                 svg.write(SVG)
                 svg.close()
-                # clean up icon from previous emblem
-                self.icon.SetIcon(os.path.abspath('./icon'))
-                # put SVG emblem on icon
-                self.icon.SetEmblem(self.svgpath, CDApplet.UPPER_RIGHT)
+                # set icon with emblem
+                self.icon.SetIcon(self.svgpath)
 
     def error(self, message):
 
@@ -300,10 +313,21 @@ class Gmail(CDApplet):
             Warns the user if an error occured.
         """
 
-        # clean up icon from previous emblem
-        self.icon.SetIcon(os.path.abspath('./icon'))
-        # put SVG error emblem on icon
-        self.icon.SetEmblem(os.path.abspath('./error.svg'), CDApplet.UPPER_RIGHT)
+        if self.config['info'] != 'quickinfo':
+            # remove previous quickinfo if needed:
+            self.icon.SetQuickInfo(format(''))
+            # get size from config:
+            size = self.config['info'].split()[0]
+            # pass size to filename:
+            file = './img/gmail-error-'+size+'.svg'
+            # set icon with error emblem
+            self.icon.SetIcon(os.path.abspath(file))
+
+        else:
+            # reset icon in case needed
+            self.icon.SetIcon(os.path.abspath('./icon'))
+            # set quickinfo:
+            self.icon.SetQuickInfo(format('Error!'))
         # check if any error is already known
         # or if the user is changing subscription details
         if self.flag != None:
@@ -335,7 +359,7 @@ class Gmail(CDApplet):
             return
 
         # check whether user wants an effect on the icon
-        if self.config['how'] != 'none':
+        if self.config['anim'] == True:
             self.icon.DemandsAttention(True, self.config['how'])
 
         # check whether user wants a dialogue
@@ -353,7 +377,7 @@ class Gmail(CDApplet):
                 os.popen('aplay ' + self.wav)
             except:
                 # restore default sound file if custom is corrupted
-                self.wav = os.path.abspath("./alarm.wav")
+                self.wav = os.path.abspath("./snd/pop.wav")
 
 
     def repeat(self):
@@ -444,12 +468,15 @@ class Gmail(CDApplet):
             pass
 
 
-    def on_click(self):
+    def on_click(self, iState):
 
         """
             Launches Gmail in default browser or application.
         """
-        pass
+        if self.account['count'] < 1:
+            self.check_mail()
+        else:
+            os.popen('x-www-browser https://mail.google.com/mail')
 
 if __name__ == "__main__":
     gmail = Gmail()
