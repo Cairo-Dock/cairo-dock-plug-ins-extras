@@ -28,7 +28,54 @@ import os # used to find paths and to launch 'aplay'
 import sys # used to find relative paths
 
 import SVGmaker # home-made module to edit SVG counter emblem
+import gtk # used for Menu class displaying inbox
 
+class Menu(gtk.Menu):
+
+    def __init__(self, inbox):
+        gtk.Menu.__init__(self)
+	
+
+	# create header
+	#ebox = gtk.EventBox()
+	#ebox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse('#FFFFFF'))
+	#ebox.add(gtk.image_new_from_file('./img/menu-gmail.png'))
+	#menu_item = gtk.MenuItem('test')
+	#menu_item.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse('#FFFFFF'))
+	#menu_item.child_set(ebox)
+	#self.append(menu_item)
+	#ebox.show()
+	#menu_item.show()
+	
+	# get all mail from inbox
+	for mail in inbox:
+		# check if mail has subject / title
+		if len(mail['title']) == 0:
+			mail['title'] = '<i>(No Subject)</i>'
+		# create markups
+		string = '<b>'+mail['author']+':</b>\n'+mail['title']
+		menu_item = gtk.ImageMenuItem()
+		# the true label is set after with set_markup()
+		menu_item.set_label('')
+		menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
+		menu_item.get_children()[0].set_markup(string)
+		menu_item.url = mail['link']
+		menu_item.connect('activate', self.open_mail)
+		self.append(menu_item)
+		menu_item.show()
+		# add a separator if mail is not last in list
+		if inbox.index(mail) != len(inbox) - 1:
+			sep = gtk.SeparatorMenuItem()		
+			self.append(sep)
+			sep.show()
+		
+        self.show()
+	
+    def open_mail(self, mail=None):
+
+	""" Opens the mail URL """
+
+	os.popen('x-www-browser https://mail.google.com/mail')
 
 class Gmail(CDApplet):
 
@@ -168,12 +215,18 @@ class Gmail(CDApplet):
         if data == None:
             return True
 
-        # parse content to find number of new mails
-        count = self.count_mail(data.read())
+        # unpack and store XML
+        xml = data.read()
+
+        # reading inbox
+        self.account['inbox'] = self.get_inbox(xml)
 
         # check if mail count could be retrieved
-        if count == None:
+        if self.account['inbox'] == None:
             return True
+
+        # parse inbox content to find number of new mails
+        count = len(self.account['inbox'])
 
         # update account information
         self.account['diff'] = count - self.account['count']
@@ -188,20 +241,32 @@ class Gmail(CDApplet):
 
         return True
 
-
-    def count_mail(self, xml_data):
+    def get_inbox(self, xml_data):
 
         """
-            Counts the "fullcount" value of the XML inbox content.
+            Counts the unreade messages from the XML inbox content.
         """
-        
+
+
+        inbox = []
+
         try:
             tree = libxml2.parseDoc(xml_data)
             path = tree.xpathNewContext()
             path.xpathRegisterNs('purl', 'http://purl.org/atom/ns#')
-            return int(path.xpathEval('//purl:fullcount')[0].content)
+            entries = path.xpathEval('//purl:entry')
+            if len(entries) > 0:
+                for entry in entries:
+                    path.setContextNode(entry)
+                    mail = {}
+                    mail['title'] = path.xpathEval('purl:title')[0].content
+                    mail['summary'] = path.xpathEval('purl:summary')[0].content
+                    mail['link'] = path.xpathEval('purl:link')[0].prop('href')
+                    mail['author'] = path.xpathEval('purl:author/purl:name')[0].content
+                    inbox.append(mail)
+            return inbox
         except:
-            self.error("WARNING: there was an erro reading XML content.")
+            self.error("WARNING: there was an error reading XML content.")
             return None
 
     def request_gmail(self):
@@ -474,7 +539,42 @@ class Gmail(CDApplet):
         if self.account['count'] < 1:
             self.check_mail()
         else:
-            os.popen('x-www-browser https://mail.google.com/mail')
+        	m = Menu(self.account['inbox'])
+        	m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
+                	button=1, activate_time=0)
+
+    def get_xy(self, m, data):
+
+
+        # fetch icon geometry
+        icondata = self.icon.GetAll()
+        iconContainer  = icondata['container']
+        iconOrientation = icondata['orientation']
+        iconWidth = icondata['width']
+        iconHeight = icondata['height']
+        iconPosX = icondata['x']
+        iconPosY = icondata['y']
+
+        # get menu geometry
+        menuWidth, menuHeight = m.size_request()
+
+        # adapt to container and orientation
+        if iconContainer == 1:  # Then it's a desklet, always oriented in a bottom-like way.
+            if iconPosY['y'] < (gtk.gdk.screen_height() / 2):
+                iconOrientation = 1
+            else:
+                iconOrientation = 0
+
+        if iconOrientation == 0:
+            # compute position of menu
+            x = iconPosX - (menuWidth / 2)
+            y = iconPosY - (iconHeight / 2) - menuHeight
+
+        else:
+            x = iconPosX - (menuWidth / 2)
+            y = iconPosY + (iconHeight / 2)
+
+        return (x, y, True)
 
 if __name__ == "__main__":
     gmail = Gmail()
