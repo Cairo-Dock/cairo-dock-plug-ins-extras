@@ -7,20 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2011-07-10 23:42+0000\n"
 "PO-Revision-Date: 2011-06-20 23:33+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2011-07-12 04:52+0000\n"
 "X-Generator: Launchpad (build 13168)\n"
-"Language: sk\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -34,555 +32,6 @@ msgstr ""
 #: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:119
 #: ../MintMenu/MintMenu:154
 msgid "Edit Menus"
-msgstr ""
-
-#: ../GnoMenu/messages:1 ../Calendar/messages:1 ../Cardapio/messages:1
-#: ../Deluge/messages:1 ../DiskFree/messages:1 ../Google/messages:1
-#: ../GTG/messages:1 ../KTorrent/messages:1 ../Lancelot/messages:1
-#: ../Liferea/messages:1 ../MintMenu/messages:1 ../Pidgin/messages:1
-#: ../Quote/messages:1 ../RubyBattery/messages:1 ../Translator/messages:1
-#: ../Transmission/messages:1 ../WebSearch/messages:1
-#: ../WindowsKiller/messages:1 ../Xchat/messages:1
-msgid "Icon"
-msgstr "Ikona"
-
-#: ../GnoMenu/messages:3 ../Calendar/messages:3 ../Cardapio/messages:3
-#: ../Deluge/messages:3 ../DiskFree/messages:3 ../Google/messages:3
-#: ../GTG/messages:3 ../KTorrent/messages:3 ../Lancelot/messages:3
-#: ../Liferea/messages:3 ../MintMenu/messages:3 ../Pidgin/messages:3
-#: ../Quote/messages:3 ../RubyBattery/messages:3 ../Translator/messages:3
-#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
-msgid "Applet"
-msgstr "Applet"
-
-#: ../GnoMenu/messages:5 ../Calendar/messages:5 ../Cardapio/messages:5
-#: ../Deluge/messages:5 ../DiskFree/messages:5 ../Google/messages:5
-#: ../GTG/messages:5 ../KTorrent/messages:5 ../Lancelot/messages:5
-#: ../Liferea/messages:5 ../MintMenu/messages:5 ../Pidgin/messages:5
-#: ../Quote/messages:5 ../RubyBattery/messages:5 ../Translator/messages:5
-#: ../Transmission/messages:5 ../WebSearch/messages:3
-#: ../WindowsKiller/messages:5 ../Xchat/messages:5
-msgid "Name of the dock it belongs to:"
-msgstr "Názov doku ku ktorému patrí :"
-
-#: ../GnoMenu/messages:7 ../Calendar/messages:7 ../Cardapio/messages:7
-#: ../Deluge/messages:7 ../DiskFree/messages:7 ../Google/messages:7
-#: ../GTG/messages:7 ../KTorrent/messages:7 ../Lancelot/messages:7
-#: ../MintMenu/messages:7 ../Pidgin/messages:7 ../Quote/messages:9
-#: ../RubyBattery/messages:7 ../Transmission/messages:7
-#: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
-msgid "Name of the icon as it will appear in its label in the dock :"
-msgstr "Názov ikony, ktorá sa objaví na štítku v docku :"
-
-#: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Cardapio/messages:9
-#: ../Deluge/messages:9 ../DiskFree/messages:9 ../Google/messages:9
-#: ../GTG/messages:9 ../KTorrent/messages:9 ../Lancelot/messages:9
-#: ../Liferea/messages:9 ../MintMenu/messages:9 ../Pidgin/messages:9
-#: ../Quote/messages:11 ../RubyBattery/messages:9 ../Translator/messages:11
-#: ../Transmission/messages:9 ../WebSearch/messages:7
-#: ../WindowsKiller/messages:9 ../Xchat/messages:9
-msgid "Display"
-msgstr "Zobraziť"
-
-#: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
-#: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
-#: ../GTG/messages:11 ../KTorrent/messages:11 ../Lancelot/messages:11
-#: ../Liferea/messages:11 ../MintMenu/messages:11 ../Pidgin/messages:11
-#: ../Quote/messages:13 ../RubyBattery/messages:11 ../Transmission/messages:11
-#: ../WebSearch/messages:9 ../WindowsKiller/messages:11 ../Xchat/messages:11
-msgid "Let empty to use the default one."
-msgstr "Nechať prázdne a použiť predvolené."
-
-#: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
-#: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
-#: ../GTG/messages:13 ../KTorrent/messages:13 ../Lancelot/messages:13
-#: ../Liferea/messages:13 ../MintMenu/messages:13 ../Pidgin/messages:13
-#: ../Quote/messages:15 ../RubyBattery/messages:13 ../Transmission/messages:13
-#: ../WebSearch/messages:11 ../WindowsKiller/messages:13 ../Xchat/messages:13
-msgid "Image's filename :"
-msgstr "Názov súboru obrázku :"
-
-#: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
-#: ../Deluge/messages:15 ../DiskFree/messages:15 ../Google/messages:15
-#: ../GTG/messages:15 ../KTorrent/messages:15 ../Lancelot/messages:15
-#: ../Liferea/messages:15 ../MintMenu/messages:15 ../Pidgin/messages:15
-#: ../Quote/messages:17 ../RubyBattery/messages:15 ../Translator/messages:17
-#: ../Transmission/messages:15 ../WebSearch/messages:13
-#: ../WindowsKiller/messages:15 ../Xchat/messages:15
-msgid "Set to 0 to use the default applet size"
-msgstr "Nastavte na 0 pre použitie predvolenej veľkosti appletu"
-
-#: ../GnoMenu/messages:17 ../Calendar/messages:17 ../Cardapio/messages:17
-#: ../Deluge/messages:17 ../DiskFree/messages:17 ../Google/messages:17
-#: ../GTG/messages:17 ../KTorrent/messages:17 ../Lancelot/messages:17
-#: ../Liferea/messages:17 ../MintMenu/messages:17 ../Pidgin/messages:17
-#: ../Quote/messages:19 ../RubyBattery/messages:17 ../Translator/messages:19
-#: ../Transmission/messages:17 ../WebSearch/messages:15
-#: ../WindowsKiller/messages:17 ../Xchat/messages:17
-msgid "Desired icon size for this applet"
-msgstr "Požadovaná veľkosť ikony pre tento applet"
-
-#: ../GnoMenu/messages:19 ../Calendar/messages:19 ../Cardapio/messages:19
-#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Google/messages:19
-#: ../GTG/messages:19 ../KTorrent/messages:19 ../Lancelot/messages:19
-#: ../Liferea/messages:19 ../MintMenu/messages:19 ../Pidgin/messages:19
-#: ../Quote/messages:21 ../RubyBattery/messages:19 ../Translator/messages:21
-#: ../Transmission/messages:19 ../WebSearch/messages:17 ../Xchat/messages:19
-msgid "Applet's Handbook"
-msgstr "Príručka appletov"
-
-#: ../GnoMenu/messages:21 ../Calendar/messages:21 ../Cardapio/messages:21
-#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Google/messages:21
-#: ../GTG/messages:21 ../KTorrent/messages:21 ../Lancelot/messages:21
-#: ../Liferea/messages:21 ../MintMenu/messages:21 ../Pidgin/messages:21
-#: ../Quote/messages:23 ../RubyBattery/messages:21 ../Translator/messages:23
-#: ../Transmission/messages:21 ../WebSearch/messages:19
-#: ../WindowsKiller/messages:19 ../Xchat/messages:21
-msgid "Desklet"
-msgstr "Desklet"
-
-#: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
-#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Google/messages:23
-#: ../GTG/messages:23 ../KTorrent/messages:23 ../Lancelot/messages:23
-#: ../Liferea/messages:23 ../MintMenu/messages:23 ../Pidgin/messages:23
-#: ../Quote/messages:25 ../RubyBattery/messages:23 ../Translator/messages:25
-#: ../Transmission/messages:23 ../WebSearch/messages:21
-#: ../WindowsKiller/messages:21 ../Xchat/messages:23
-msgid "Position"
-msgstr "Pozícia"
-
-#: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
-#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Google/messages:25
-#: ../GTG/messages:25 ../KTorrent/messages:25 ../Lancelot/messages:25
-#: ../Liferea/messages:25 ../MintMenu/messages:25 ../Pidgin/messages:25
-#: ../Quote/messages:27 ../RubyBattery/messages:25 ../Translator/messages:27
-#: ../Transmission/messages:25 ../WebSearch/messages:23
-#: ../WindowsKiller/messages:23 ../Xchat/messages:25
-msgid ""
-"If locked, the desklet cannot be moved by simply dragging it with the left "
-"mouse button. It can still be moved with ALT + left-click."
-msgstr ""
-"Ak je je zamknutý, nedá deskletom pohnúť ťahaním ľavým tlačítkom myši. "
-"Samozrejme s ním stále môžete pohybovaťkombináciou ALT + ľavé tlačítko myši."
-
-#: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
-#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Google/messages:27
-#: ../GTG/messages:27 ../KTorrent/messages:27 ../Lancelot/messages:27
-#: ../Liferea/messages:27 ../MintMenu/messages:27 ../Pidgin/messages:27
-#: ../Quote/messages:29 ../RubyBattery/messages:27 ../Translator/messages:29
-#: ../Transmission/messages:27 ../WebSearch/messages:25
-#: ../WindowsKiller/messages:25 ../Xchat/messages:27
-msgid "Lock position?"
-msgstr "Zamknúť pozíciu ?"
-
-#: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
-#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Google/messages:29
-#: ../GTG/messages:29 ../GTG/messages:109 ../KTorrent/messages:29
-#: ../Lancelot/messages:29 ../Liferea/messages:29 ../MintMenu/messages:29
-#: ../Pidgin/messages:29 ../Quote/messages:31 ../RubyBattery/messages:29
-#: ../Translator/messages:31 ../Transmission/messages:29
-#: ../WebSearch/messages:27 ../WindowsKiller/messages:27 ../Xchat/messages:29
-msgid ""
-"Depending on your WindowManager, you may be able to resize this with ALT + "
-"middle-click or ALT + left-click."
-msgstr ""
-"V závislosti na manažérovi vašich okien, môžete zmeniť jeho veľkosť s ALT + "
-"stredné_klik alebo  ALT + ľavé_klik napr."
-
-#: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
-#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Google/messages:31
-#: ../GTG/messages:31 ../KTorrent/messages:31 ../Lancelot/messages:31
-#: ../Liferea/messages:31 ../MintMenu/messages:31 ../Pidgin/messages:31
-#: ../Quote/messages:33 ../RubyBattery/messages:31 ../Translator/messages:33
-#: ../Transmission/messages:31 ../WebSearch/messages:29
-#: ../WindowsKiller/messages:29 ../Xchat/messages:31
-msgid "Desklet dimensions (width x height):"
-msgstr "Rozmery deskletov (šírka x výška) :"
-
-#: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
-#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Google/messages:33
-#: ../GTG/messages:33 ../KTorrent/messages:33 ../Lancelot/messages:33
-#: ../Liferea/messages:33 ../MintMenu/messages:33 ../Pidgin/messages:33
-#: ../Quote/messages:35 ../RubyBattery/messages:33 ../Translator/messages:35
-#: ../Transmission/messages:33 ../WebSearch/messages:31
-#: ../WindowsKiller/messages:31 ../Xchat/messages:33
-msgid ""
-"Depending on your WindowManager, you may be able to move this with ALT + "
-"left-click.. Negative values are counted from the right/bottom of the screen"
-msgstr ""
-"V závislosti na vašom správcovi okien, budete môcť pohybovať pomocou ALT + "
-"ľavé tlačidlo.. Záporné hodnoty sú počítané z pravej/dolnej časti obrazovky"
-
-#: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
-#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Google/messages:35
-#: ../GTG/messages:35 ../KTorrent/messages:35 ../Lancelot/messages:35
-#: ../Liferea/messages:35 ../MintMenu/messages:35 ../Pidgin/messages:35
-#: ../Quote/messages:37 ../RubyBattery/messages:35 ../Translator/messages:37
-#: ../Transmission/messages:35 ../WebSearch/messages:33
-#: ../WindowsKiller/messages:33 ../Xchat/messages:35
-msgid "Desklet position (x, y):"
-msgstr "Pozícia deskletu (x ; y) :"
-
-#: ../GnoMenu/messages:37 ../Calendar/messages:37 ../Cardapio/messages:37
-#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Google/messages:37
-#: ../GTG/messages:37 ../KTorrent/messages:37 ../Lancelot/messages:37
-#: ../Liferea/messages:37 ../MintMenu/messages:37 ../Pidgin/messages:37
-#: ../Quote/messages:39 ../RubyBattery/messages:37 ../Translator/messages:39
-#: ../Transmission/messages:37 ../WebSearch/messages:35
-#: ../WindowsKiller/messages:35 ../Xchat/messages:37
-msgid ""
-"You can quickly rotate the desklet with the mouse, by dragging the little "
-"buttons on its left and top sides."
-msgstr ""
-"Môžete rýchlo otočiť deskletom s myšou, ťahaním malého tlačidla na ľavej a "
-"hornej strane."
-
-#: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
-#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Google/messages:39
-#: ../GTG/messages:39 ../KTorrent/messages:39 ../Lancelot/messages:39
-#: ../Liferea/messages:39 ../MintMenu/messages:39 ../Pidgin/messages:39
-#: ../Quote/messages:41 ../RubyBattery/messages:39 ../Translator/messages:41
-#: ../Transmission/messages:39 ../WebSearch/messages:37
-#: ../WindowsKiller/messages:37 ../Xchat/messages:39
-msgid "Rotation:"
-msgstr "Otáčanie :"
-
-#: ../GnoMenu/messages:41 ../Calendar/messages:41 ../Cardapio/messages:41
-#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Google/messages:41
-#: ../GTG/messages:41 ../KTorrent/messages:41 ../Lancelot/messages:41
-#: ../Liferea/messages:41 ../MintMenu/messages:41 ../Pidgin/messages:41
-#: ../Quote/messages:43 ../RubyBattery/messages:41 ../Translator/messages:43
-#: ../Transmission/messages:41 ../WebSearch/messages:39
-#: ../WindowsKiller/messages:39 ../Xchat/messages:41
-msgid "Visibility"
-msgstr "Viditeľnosť"
-
-#: ../GnoMenu/messages:43 ../Calendar/messages:43 ../Cardapio/messages:43
-#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Google/messages:43
-#: ../GTG/messages:43 ../KTorrent/messages:43 ../Lancelot/messages:43
-#: ../Liferea/messages:43 ../MintMenu/messages:43 ../Pidgin/messages:43
-#: ../Quote/messages:45 ../RubyBattery/messages:43 ../Translator/messages:45
-#: ../Transmission/messages:43 ../WebSearch/messages:41
-#: ../WindowsKiller/messages:41 ../Xchat/messages:43
-msgid "Is detached from the dock"
-msgstr "Je oddelený od docku ?"
-
-#: ../GnoMenu/messages:45 ../Calendar/messages:45 ../Cardapio/messages:45
-#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Google/messages:45
-#: ../GTG/messages:45 ../KTorrent/messages:45 ../Lancelot/messages:45
-#: ../Liferea/messages:45 ../MintMenu/messages:45 ../Pidgin/messages:45
-#: ../Quote/messages:47 ../RubyBattery/messages:45 ../Translator/messages:47
-#: ../Transmission/messages:45 ../WebSearch/messages:43
-#: ../WindowsKiller/messages:43 ../Xchat/messages:45
-msgid ""
-"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-"(class=Cairo-dock & type=utility)"
-msgstr ""
-"pre CompizFusion \"widget layer\", nastavte správanie v Compize na: "
-"(class=Cairo-dock & type=utility)"
-
-#: ../GnoMenu/messages:47 ../Calendar/messages:47 ../Cardapio/messages:47
-#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Google/messages:47
-#: ../GTG/messages:47 ../KTorrent/messages:47 ../Lancelot/messages:47
-#: ../Liferea/messages:47 ../MintMenu/messages:47 ../Pidgin/messages:47
-#: ../Quote/messages:49 ../RubyBattery/messages:47 ../Translator/messages:49
-#: ../Transmission/messages:47 ../WebSearch/messages:45
-#: ../WindowsKiller/messages:45 ../Xchat/messages:47
-msgid "Visibility:"
-msgstr "Viditeľnosť :"
-
-#: ../GnoMenu/messages:49 ../Calendar/messages:49 ../Cardapio/messages:49
-#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Google/messages:49
-#: ../GTG/messages:49 ../KTorrent/messages:49 ../Lancelot/messages:49
-#: ../Liferea/messages:49 ../MintMenu/messages:49 ../Pidgin/messages:49
-#: ../Quote/messages:51 ../RubyBattery/messages:49 ../Translator/messages:51
-#: ../Transmission/messages:49 ../WebSearch/messages:47
-#: ../WindowsKiller/messages:47 ../Xchat/messages:49
-msgid "Normal"
-msgstr "Normálna"
-
-#: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
-#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Google/messages:51
-#: ../GTG/messages:51 ../KTorrent/messages:51 ../Lancelot/messages:51
-#: ../Liferea/messages:51 ../MintMenu/messages:51 ../Pidgin/messages:51
-#: ../Quote/messages:53 ../RubyBattery/messages:51 ../Translator/messages:53
-#: ../Transmission/messages:51 ../WebSearch/messages:49
-#: ../WindowsKiller/messages:49 ../Xchat/messages:51
-msgid "Keep above"
-msgstr "Ponechať v popredí"
-
-#: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
-#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Google/messages:53
-#: ../GTG/messages:53 ../KTorrent/messages:53 ../Lancelot/messages:53
-#: ../Liferea/messages:53 ../MintMenu/messages:53 ../Pidgin/messages:53
-#: ../Quote/messages:55 ../RubyBattery/messages:53 ../Translator/messages:55
-#: ../Transmission/messages:53 ../WebSearch/messages:51
-#: ../WindowsKiller/messages:51 ../Xchat/messages:53
-msgid "Keep below"
-msgstr "Ponechať na pozadí"
-
-#: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
-#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Google/messages:55
-#: ../GTG/messages:55 ../KTorrent/messages:55 ../Lancelot/messages:55
-#: ../Liferea/messages:55 ../MintMenu/messages:55 ../Pidgin/messages:55
-#: ../Quote/messages:57 ../RubyBattery/messages:55 ../Translator/messages:57
-#: ../Transmission/messages:55 ../WebSearch/messages:53
-#: ../WindowsKiller/messages:53 ../Xchat/messages:55
-msgid "Keep on widget layer"
-msgstr "Ponechať na vrstve widgetu"
-
-#: ../GnoMenu/messages:57 ../Calendar/messages:57 ../Cardapio/messages:57
-#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Google/messages:57
-#: ../GTG/messages:57 ../KTorrent/messages:57 ../Lancelot/messages:57
-#: ../Liferea/messages:57 ../MintMenu/messages:57 ../Pidgin/messages:57
-#: ../Quote/messages:59 ../RubyBattery/messages:57 ../Translator/messages:59
-#: ../Transmission/messages:57 ../WebSearch/messages:55
-#: ../WindowsKiller/messages:55 ../Xchat/messages:57
-msgid "Reserve space"
-msgstr "Vyhradiť miesto"
-
-#: ../GnoMenu/messages:59 ../Calendar/messages:59 ../Cardapio/messages:59
-#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Google/messages:59
-#: ../GTG/messages:59 ../KTorrent/messages:59 ../Lancelot/messages:59
-#: ../Liferea/messages:59 ../MintMenu/messages:59 ../Pidgin/messages:59
-#: ../Quote/messages:61 ../RubyBattery/messages:59 ../Translator/messages:61
-#: ../Transmission/messages:59 ../WebSearch/messages:57
-#: ../WindowsKiller/messages:57 ../Xchat/messages:59
-msgid "Should be visible on all desktops?"
-msgstr "Má byť viditeľný na všetkých plochách ?"
-
-#: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
-#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Google/messages:61
-#: ../GTG/messages:61 ../KTorrent/messages:61 ../Lancelot/messages:61
-#: ../Liferea/messages:61 ../MintMenu/messages:61 ../Pidgin/messages:61
-#: ../Quote/messages:63 ../RubyBattery/messages:61 ../Translator/messages:63
-#: ../Transmission/messages:61 ../WebSearch/messages:59
-#: ../WindowsKiller/messages:59 ../Xchat/messages:61
-msgid "Decorations"
-msgstr "Dekorácie"
-
-#: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
-#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Google/messages:63
-#: ../GTG/messages:63 ../KTorrent/messages:63 ../Lancelot/messages:63
-#: ../Liferea/messages:63 ../MintMenu/messages:63 ../Pidgin/messages:63
-#: ../Quote/messages:65 ../RubyBattery/messages:63 ../Translator/messages:65
-#: ../Transmission/messages:63 ../WebSearch/messages:61
-#: ../WindowsKiller/messages:61 ../Xchat/messages:63
-msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr ""
-"Vyberte 'vlastné dekorácie' pre možnosť definovať si vlastné ozdoby nižšie."
-
-#: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
-#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Google/messages:65
-#: ../GTG/messages:65 ../KTorrent/messages:65 ../Lancelot/messages:65
-#: ../Liferea/messages:65 ../MintMenu/messages:65 ../Pidgin/messages:65
-#: ../Quote/messages:67 ../RubyBattery/messages:65 ../Translator/messages:67
-#: ../Transmission/messages:65 ../WebSearch/messages:63
-#: ../WindowsKiller/messages:63 ../Xchat/messages:65
-msgid "Choose a decoration theme for this desklet:"
-msgstr "Vyberte ozdobu témy pre tento desklet :"
-
-#: ../GnoMenu/messages:67 ../Calendar/messages:67 ../Cardapio/messages:67
-#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Google/messages:67
-#: ../GTG/messages:67 ../KTorrent/messages:67 ../Lancelot/messages:67
-#: ../Liferea/messages:67 ../MintMenu/messages:67 ../Pidgin/messages:67
-#: ../Quote/messages:69 ../RubyBattery/messages:67 ../Translator/messages:69
-#: ../Transmission/messages:67 ../WebSearch/messages:65
-#: ../WindowsKiller/messages:65 ../Xchat/messages:67
-msgid ""
-"Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
-msgstr ""
-"Je to obrázok, ktorý se zobrazí pod kresbami, ako napríklad rámček. Ak "
-"žiadny nechcete, nechajte nevyplnené."
-
-#: ../GnoMenu/messages:69 ../Calendar/messages:69 ../Cardapio/messages:69
-#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Google/messages:69
-#: ../GTG/messages:69 ../KTorrent/messages:69 ../Lancelot/messages:69
-#: ../Liferea/messages:69 ../MintMenu/messages:69 ../Pidgin/messages:69
-#: ../Quote/messages:71 ../RubyBattery/messages:69 ../Translator/messages:71
-#: ../Transmission/messages:69 ../WebSearch/messages:67
-#: ../WindowsKiller/messages:67 ../Xchat/messages:69
-msgid "Background image:"
-msgstr "Obrázok pozadia:"
-
-#: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
-#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Google/messages:71
-#: ../GTG/messages:71 ../KTorrent/messages:71 ../Lancelot/messages:71
-#: ../Liferea/messages:71 ../MintMenu/messages:71 ../Pidgin/messages:71
-#: ../Quote/messages:73 ../RubyBattery/messages:71 ../Translator/messages:73
-#: ../Transmission/messages:71 ../WebSearch/messages:69
-#: ../WindowsKiller/messages:69 ../Xchat/messages:71
-msgid "Background transparency:"
-msgstr "Priehľadnosť pozadia :"
-
-#: ../GnoMenu/messages:73 ../Calendar/messages:73 ../Cardapio/messages:73
-#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Google/messages:73
-#: ../GTG/messages:73 ../KTorrent/messages:73 ../Lancelot/messages:73
-#: ../Liferea/messages:73 ../MintMenu/messages:73 ../Pidgin/messages:73
-#: ../Quote/messages:75 ../RubyBattery/messages:73 ../Translator/messages:75
-#: ../Transmission/messages:73 ../WebSearch/messages:71
-#: ../WindowsKiller/messages:71 ../Xchat/messages:73
-msgid "in pixels. Use this to adjust the left position of drawings."
-msgstr "v pixeloch. Použite pre nastavenie ľavej polohy vykreslenia."
-
-#: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
-#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Google/messages:75
-#: ../GTG/messages:75 ../KTorrent/messages:75 ../Lancelot/messages:75
-#: ../Liferea/messages:75 ../MintMenu/messages:75 ../Pidgin/messages:75
-#: ../Quote/messages:77 ../RubyBattery/messages:75 ../Translator/messages:77
-#: ../Transmission/messages:75 ../WebSearch/messages:73
-#: ../WindowsKiller/messages:73 ../Xchat/messages:75
-msgid "Left offset:"
-msgstr "Odsadenie zľava :"
-
-#: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
-#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Google/messages:77
-#: ../GTG/messages:77 ../KTorrent/messages:77 ../Lancelot/messages:77
-#: ../Liferea/messages:77 ../MintMenu/messages:77 ../Pidgin/messages:77
-#: ../Quote/messages:79 ../RubyBattery/messages:77 ../Translator/messages:79
-#: ../Transmission/messages:77 ../WebSearch/messages:75
-#: ../WindowsKiller/messages:75 ../Xchat/messages:77
-msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr "v pixeloch. Použite pre nastavenie hornej polohy vykreslenia."
-
-#: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
-#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Google/messages:79
-#: ../GTG/messages:79 ../KTorrent/messages:79 ../Lancelot/messages:79
-#: ../Liferea/messages:79 ../MintMenu/messages:79 ../Pidgin/messages:79
-#: ../Quote/messages:81 ../RubyBattery/messages:79 ../Translator/messages:81
-#: ../Transmission/messages:79 ../WebSearch/messages:77
-#: ../WindowsKiller/messages:77 ../Xchat/messages:79
-msgid "Top offset:"
-msgstr "Odsadenie zhora :"
-
-#: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
-#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Google/messages:81
-#: ../GTG/messages:81 ../KTorrent/messages:81 ../Lancelot/messages:81
-#: ../Liferea/messages:81 ../MintMenu/messages:81 ../Pidgin/messages:81
-#: ../Quote/messages:83 ../RubyBattery/messages:81 ../Translator/messages:83
-#: ../Transmission/messages:81 ../WebSearch/messages:79
-#: ../WindowsKiller/messages:79 ../Xchat/messages:81
-msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr "v pixeloch. Použite pre nastavenie pravej polohy vykreslenia."
-
-#: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
-#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Google/messages:83
-#: ../GTG/messages:83 ../KTorrent/messages:83 ../Lancelot/messages:83
-#: ../Liferea/messages:83 ../MintMenu/messages:83 ../Pidgin/messages:83
-#: ../Quote/messages:85 ../RubyBattery/messages:83 ../Translator/messages:85
-#: ../Transmission/messages:83 ../WebSearch/messages:81
-#: ../WindowsKiller/messages:81 ../Xchat/messages:83
-msgid "Right offset:"
-msgstr "Odsadenie vpravo :"
-
-#: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
-#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Google/messages:85
-#: ../GTG/messages:85 ../KTorrent/messages:85 ../Lancelot/messages:85
-#: ../Liferea/messages:85 ../MintMenu/messages:85 ../Pidgin/messages:85
-#: ../Quote/messages:87 ../RubyBattery/messages:85 ../Translator/messages:87
-#: ../Transmission/messages:85 ../WebSearch/messages:83
-#: ../WindowsKiller/messages:83 ../Xchat/messages:85
-msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr "v pixeloch. Použite pre nastavenie dolnej polohy vykreslenia."
-
-#: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
-#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Google/messages:87
-#: ../GTG/messages:87 ../KTorrent/messages:87 ../Lancelot/messages:87
-#: ../Liferea/messages:87 ../MintMenu/messages:87 ../Pidgin/messages:87
-#: ../Quote/messages:89 ../RubyBattery/messages:87 ../Translator/messages:89
-#: ../Transmission/messages:87 ../WebSearch/messages:85
-#: ../WindowsKiller/messages:85 ../Xchat/messages:87
-msgid "Bottom offset:"
-msgstr "Odsadenie zdola"
-
-#: ../GnoMenu/messages:89 ../Calendar/messages:89 ../Cardapio/messages:89
-#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Google/messages:89
-#: ../GTG/messages:89 ../KTorrent/messages:89 ../Lancelot/messages:89
-#: ../Liferea/messages:89 ../MintMenu/messages:89 ../Pidgin/messages:89
-#: ../Quote/messages:91 ../RubyBattery/messages:89 ../Translator/messages:91
-#: ../Transmission/messages:89 ../WebSearch/messages:87
-#: ../WindowsKiller/messages:87 ../Xchat/messages:89
-msgid ""
-"Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
-"no image."
-msgstr ""
-"Je to obrázok, ktorý sa zobrazí nad kresbami, ako napríklad odraz. Ak žiadny "
-"nechcete, ponechajte nevyplnené."
-
-#: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
-#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Google/messages:91
-#: ../GTG/messages:91 ../KTorrent/messages:91 ../Lancelot/messages:91
-#: ../Liferea/messages:91 ../MintMenu/messages:91 ../Pidgin/messages:91
-#: ../Quote/messages:93 ../RubyBattery/messages:91 ../Translator/messages:93
-#: ../Transmission/messages:91 ../WebSearch/messages:89
-#: ../WindowsKiller/messages:89 ../Xchat/messages:91
-msgid "Foreground image:"
-msgstr "Obrázok popredia :"
-
-#: ../GnoMenu/messages:93 ../Calendar/messages:93 ../Cardapio/messages:93
-#: ../Deluge/messages:93 ../DiskFree/messages:93 ../Google/messages:93
-#: ../GTG/messages:93 ../KTorrent/messages:93 ../Lancelot/messages:93
-#: ../Liferea/messages:93 ../MintMenu/messages:93 ../Pidgin/messages:93
-#: ../Quote/messages:95 ../RubyBattery/messages:93 ../Translator/messages:95
-#: ../Transmission/messages:93 ../WebSearch/messages:91
-#: ../WindowsKiller/messages:91 ../Xchat/messages:93
-msgid "Foreground tansparency:"
-msgstr "Priehľadné popredie :"
-
-#: ../GnoMenu/messages:95 ../Calendar/messages:95 ../Cardapio/messages:95
-#: ../Deluge/messages:95 ../DiskFree/messages:95 ../GTG/messages:95
-#: ../KTorrent/messages:95 ../Lancelot/messages:95 ../Liferea/messages:95
-#: ../MintMenu/messages:95 ../Pidgin/messages:95 ../Quote/messages:97
-#: ../RubyBattery/messages:95 ../Translator/messages:97
-#: ../Transmission/messages:95 ../WebSearch/messages:93 ../Xchat/messages:95
-msgid "Configuration"
-msgstr "Konfigurácia"
-
-#: ../GnoMenu/messages:97 ../Cardapio/messages:97 ../Lancelot/messages:97
-#: ../MintMenu/messages:97
-msgid "Shortkey to pop up the menu:"
-msgstr ""
-
-#: ../Calendar/messages:97
-msgid "Applications"
-msgstr ""
-
-#: ../Calendar/messages:99
-msgid "Command to launch your favourite calendar application (middle click):"
-msgstr ""
-
-#: ../Calendar/messages:101
-msgid "Command to execute on dropping a file onto the calendar-icon:"
-msgstr ""
-
-#: ../Calendar/messages:103
-msgid "Behaviour"
-msgstr "Správanie"
-
-#: ../Calendar/messages:105 ../Calendar/messages:109 ../Calendar/messages:113
-msgid "in s."
-msgstr ""
-
-#: ../Calendar/messages:107
-msgid "Time length of dialogues for the calendar :"
-msgstr ""
-
-#: ../Calendar/messages:111
-msgid "Time length of dialogues for events of the day :"
-msgstr ""
-
-#: ../Calendar/messages:115
-msgid "Time length of dialogues for calendar of next month :"
-msgstr ""
-
-#: ../Calendar/messages:117
-msgid ""
-"The path to a script to generate an icon. Leave it empty to use the default "
-"one."
-msgstr ""
-
-#: ../Calendar/messages:119
-msgid "Icon custom script:"
 msgstr ""
 
 #: ../Cardapio/Cardapio:45
@@ -607,51 +56,6 @@ msgstr ""
 msgid "Torrents info (middle-click)"
 msgstr ""
 
-#: ../Deluge/messages:97 ../KTorrent/messages:97 ../Transmission/messages:97
-msgid "Shortkey to pop up the torrents info:"
-msgstr ""
-
-#: ../DiskFree/messages:97
-msgid ""
-"View available file system's space as Giga (checked) or Mega (unchecked) :"
-msgstr ""
-
-#: ../DiskFree/messages:99
-msgid "in minutes"
-msgstr ""
-
-#: ../DiskFree/messages:101
-msgid "Time between two file system's checking :"
-msgstr ""
-
-#: ../GTG/messages:97 ../Xchat/messages:99
-msgid "Bubbles duration :"
-msgstr ""
-
-#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
-msgid "Short"
-msgstr ""
-
-#: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
-msgid "Medium"
-msgstr ""
-
-#: ../GTG/messages:103 ../Pidgin/messages:113 ../Xchat/messages:105
-msgid "Long"
-msgstr ""
-
-#: ../GTG/messages:105 ../Xchat/messages:107
-msgid "Animation of the icon on receiving channel messages :"
-msgstr ""
-
-#: ../GTG/messages:107 ../Xchat/messages:97
-msgid "Display channel messages in a bubble :"
-msgstr ""
-
-#: ../GTG/messages:111
-msgid "Post-it's initial dimension (width x height) :"
-msgstr ""
-
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
 msgstr ""
@@ -659,22 +63,6 @@ msgstr ""
 #: ../Lancelot/Lancelot:86
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
-msgstr ""
-
-#: ../Liferea/messages:7 ../Translator/messages:9
-msgid "Name of the icon as it will appear in its caption in the dock:"
-msgstr "Názov ikony, ktorá sa objaví na štítku v docku :"
-
-#: ../Liferea/messages:97
-msgid "Show in the icon:"
-msgstr ""
-
-#: ../Liferea/messages:99
-msgid "Number of unread messages"
-msgstr ""
-
-#: ../Liferea/messages:101
-msgid " Number of new messages"
 msgstr ""
 
 #: ../MintMenu/MintMenu:145
@@ -706,115 +94,6 @@ msgstr ""
 msgid "Enter your new status message:"
 msgstr ""
 
-#: ../Pidgin/messages:97 ../Pidgin/messages:101
-msgid "Parameters"
-msgstr "Parametre"
-
-#: ../Pidgin/messages:99
-msgid "Choose a theme :"
-msgstr ""
-
-#: ../Pidgin/messages:103
-msgid "Display conversation messages in a bubble?"
-msgstr ""
-
-#: ../Pidgin/messages:105
-msgid "Display chat messages in a bubble?"
-msgstr ""
-
-#: ../Pidgin/messages:107
-msgid "Bubbles duration:"
-msgstr ""
-
-#: ../Pidgin/messages:115
-msgid "Animation of the icon on receiving a message:"
-msgstr ""
-
-#: ../Pidgin/messages:117 ../Xchat/messages:109
-msgid ""
-"This is the number of messages that you can recall by scrolling on the icon."
-msgstr ""
-
-#: ../Pidgin/messages:119 ../Xchat/messages:111
-msgid "Size of the history :"
-msgstr ""
-
-#: ../Pidgin/messages:121 ../Xchat/messages:113
-msgid "none"
-msgstr "žiadny"
-
-#: ../Pidgin/messages:123 ../Xchat/messages:115
-msgid "big"
-msgstr "veľký"
-
-#: ../Quote/messages:7
-msgid "Let empty to display the current site's name."
-msgstr ""
-
-#: ../Quote/messages:99
-msgid "Quote source:"
-msgstr ""
-
-#: ../Quote/messages:101
-msgid "Quotationspage.com"
-msgstr ""
-
-#: ../Quote/messages:103
-msgid "Bash.org"
-msgstr ""
-
-#: ../Quote/messages:105
-msgid "Xkcdb.com"
-msgstr ""
-
-#: ../Quote/messages:107
-msgid "Qdb.us"
-msgstr ""
-
-#: ../Quote/messages:109
-msgid "Danstonchat.com"
-msgstr ""
-
-#: ../Quote/messages:111
-msgid "Jokes2go.com"
-msgstr ""
-
-#: ../Quote/messages:113
-msgid "Vidademerda.com.br"
-msgstr ""
-
-#: ../Quote/messages:115
-msgid "Grouphug.us"
-msgstr ""
-
-#: ../RubyBattery/messages:97
-msgid "Choose one of the available themes:"
-msgstr "Vyberte jeden z dostupných motívov :"
-
-#: ../RubyBattery/messages:99
-msgid "in seconds."
-msgstr "v sekundách."
-
-#: ../RubyBattery/messages:101
-msgid "Interval of time between 2 checks:"
-msgstr ""
-
-#: ../RubyBattery/messages:103
-msgid "Activate alert of critical charge?"
-msgstr ""
-
-#: ../RubyBattery/messages:105
-msgid "of % battery charge."
-msgstr ""
-
-#: ../RubyBattery/messages:107
-msgid "Threshold for the critical charge alert:"
-msgstr ""
-
-#: ../RubyBattery/messages:109
-msgid "Display a label with the charge?"
-msgstr ""
-
 #: ../Translator/Translator:434
 msgid "To"
 msgstr ""
@@ -831,286 +110,6 @@ msgstr ""
 msgid "Translate from clipboard (middle-click)"
 msgstr ""
 
-#: ../Translator/messages:7
-msgid "Let empty to display the current source and destination languages."
-msgstr ""
-
-#: ../Translator/messages:13
-msgid "Leave empty to use the default one."
-msgstr "Nechať prázdne a použiť predvolené."
-
-#: ../Translator/messages:15
-msgid "Image filename:"
-msgstr "Názov súboru obrázku :"
-
-#: ../Translator/messages:99
-msgid "Languages"
-msgstr ""
-
-#: ../Translator/messages:101
-msgid "Translate from:"
-msgstr ""
-
-#: ../Translator/messages:103 ../Translator/messages:219
-msgid "Afrikaans"
-msgstr ""
-
-#: ../Translator/messages:105 ../Translator/messages:221
-msgid "Albanian"
-msgstr ""
-
-#: ../Translator/messages:107 ../Translator/messages:223
-msgid "Arabic"
-msgstr ""
-
-#: ../Translator/messages:109 ../Translator/messages:225
-msgid "Armenian"
-msgstr ""
-
-#: ../Translator/messages:111 ../Translator/messages:227
-msgid "Azerbaijani"
-msgstr ""
-
-#: ../Translator/messages:113 ../Translator/messages:229
-msgid "Basque"
-msgstr ""
-
-#: ../Translator/messages:115 ../Translator/messages:231
-msgid "Belarusian"
-msgstr ""
-
-#: ../Translator/messages:117 ../Translator/messages:233
-msgid "Bulgarian"
-msgstr ""
-
-#: ../Translator/messages:119 ../Translator/messages:235
-msgid "Catalan"
-msgstr ""
-
-#: ../Translator/messages:121 ../Translator/messages:237
-msgid "Chinese"
-msgstr ""
-
-#: ../Translator/messages:123 ../Translator/messages:239
-msgid "Croatian"
-msgstr ""
-
-#: ../Translator/messages:125 ../Translator/messages:241
-msgid "Czech"
-msgstr ""
-
-#: ../Translator/messages:127 ../Translator/messages:243
-msgid "Danish"
-msgstr ""
-
-#: ../Translator/messages:129 ../Translator/messages:245
-msgid "Dutch"
-msgstr ""
-
-#: ../Translator/messages:131 ../Translator/messages:247
-msgid "English"
-msgstr ""
-
-#: ../Translator/messages:133 ../Translator/messages:249
-msgid "Estonian"
-msgstr ""
-
-#: ../Translator/messages:135 ../Translator/messages:251
-msgid "Filipino"
-msgstr ""
-
-#: ../Translator/messages:137 ../Translator/messages:253
-msgid "Finnish"
-msgstr ""
-
-#: ../Translator/messages:139 ../Translator/messages:255
-msgid "French"
-msgstr ""
-
-#: ../Translator/messages:141 ../Translator/messages:257
-msgid "Galician"
-msgstr ""
-
-#: ../Translator/messages:143 ../Translator/messages:259
-msgid "Georgian"
-msgstr ""
-
-#: ../Translator/messages:145 ../Translator/messages:261
-msgid "German"
-msgstr ""
-
-#: ../Translator/messages:147 ../Translator/messages:263
-msgid "Greek"
-msgstr ""
-
-#: ../Translator/messages:149 ../Translator/messages:265
-msgid "Haitian"
-msgstr ""
-
-#: ../Translator/messages:151 ../Translator/messages:267
-msgid "Hebrew"
-msgstr ""
-
-#: ../Translator/messages:153 ../Translator/messages:269
-msgid "Hindi"
-msgstr ""
-
-#: ../Translator/messages:155 ../Translator/messages:271
-msgid "Hungarian"
-msgstr ""
-
-#: ../Translator/messages:157 ../Translator/messages:273
-msgid "Icelandic"
-msgstr ""
-
-#: ../Translator/messages:159 ../Translator/messages:275
-msgid "Indonesian"
-msgstr ""
-
-#: ../Translator/messages:161 ../Translator/messages:277
-msgid "Irish"
-msgstr ""
-
-#: ../Translator/messages:163 ../Translator/messages:279
-msgid "Italian"
-msgstr ""
-
-#: ../Translator/messages:165 ../Translator/messages:281
-msgid "Japanese"
-msgstr ""
-
-#: ../Translator/messages:167 ../Translator/messages:283
-msgid "Korean"
-msgstr ""
-
-#: ../Translator/messages:169 ../Translator/messages:285
-msgid "Latvian"
-msgstr ""
-
-#: ../Translator/messages:171 ../Translator/messages:287
-msgid "Lithuanian"
-msgstr ""
-
-#: ../Translator/messages:173 ../Translator/messages:289
-msgid "Macedonian"
-msgstr ""
-
-#: ../Translator/messages:175 ../Translator/messages:291
-msgid "Malay"
-msgstr ""
-
-#: ../Translator/messages:177 ../Translator/messages:293
-msgid "Maltese"
-msgstr ""
-
-#: ../Translator/messages:179 ../Translator/messages:295
-msgid "Norwegian"
-msgstr ""
-
-#: ../Translator/messages:181 ../Translator/messages:297
-msgid "Persian"
-msgstr ""
-
-#: ../Translator/messages:183 ../Translator/messages:299
-msgid "Polish"
-msgstr ""
-
-#: ../Translator/messages:185 ../Translator/messages:301
-msgid "Portuguese"
-msgstr ""
-
-#: ../Translator/messages:187 ../Translator/messages:303
-msgid "Romanian"
-msgstr ""
-
-#: ../Translator/messages:189 ../Translator/messages:305
-msgid "Russian"
-msgstr ""
-
-#: ../Translator/messages:191 ../Translator/messages:307
-msgid "Serbian"
-msgstr ""
-
-#: ../Translator/messages:193 ../Translator/messages:309
-msgid "Slovak"
-msgstr ""
-
-#: ../Translator/messages:195 ../Translator/messages:311
-msgid "Slovenian"
-msgstr ""
-
-#: ../Translator/messages:197 ../Translator/messages:313
-msgid "Spanish"
-msgstr ""
-
-#: ../Translator/messages:199 ../Translator/messages:315
-msgid "Swahili"
-msgstr ""
-
-#: ../Translator/messages:201 ../Translator/messages:317
-msgid "Swedish"
-msgstr ""
-
-#: ../Translator/messages:203 ../Translator/messages:319
-msgid "Thai"
-msgstr ""
-
-#: ../Translator/messages:205 ../Translator/messages:321
-msgid "Turkish"
-msgstr ""
-
-#: ../Translator/messages:207 ../Translator/messages:323
-msgid "Ukrainian"
-msgstr ""
-
-#: ../Translator/messages:209 ../Translator/messages:325
-msgid "Urdu"
-msgstr ""
-
-#: ../Translator/messages:211 ../Translator/messages:327
-msgid "Vietnamese"
-msgstr ""
-
-#: ../Translator/messages:213 ../Translator/messages:329
-msgid "Welsh"
-msgstr ""
-
-#: ../Translator/messages:215 ../Translator/messages:331
-msgid "Yiddish"
-msgstr ""
-
-#: ../Translator/messages:217
-msgid "Translate to:"
-msgstr ""
-
-#: ../Translator/messages:333
-msgid "Shortkeys"
-msgstr ""
-
-#: ../Translator/messages:335
-msgid "Shortkey to start translating from (read):"
-msgstr ""
-
-#: ../Translator/messages:337
-msgid "Shortkey to start translating to (write):"
-msgstr ""
-
-#: ../Translator/messages:339
-msgid "Dialog"
-msgstr ""
-
-#: ../Translator/messages:341
-msgid "In s. Set 0 for an unlimited time."
-msgstr ""
-
-#: ../Translator/messages:343
-msgid "Time-length of the result dialog:"
-msgstr ""
-
-#: ../Translator/messages:345
-msgid "Editable text widget?"
-msgstr ""
-
 #: ../Transmission/Transmission:186
 msgid "Transmission is not running, or is not responding to us."
 msgstr ""
@@ -1124,82 +123,6 @@ msgstr ""
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
-#: ../WebSearch/messages:95
-msgid "Search engine :"
-msgstr ""
-
-#: ../WebSearch/messages:97
-msgid "Google"
-msgstr "Google"
-
-#: ../WebSearch/messages:99
-msgid "Bing"
-msgstr ""
-
-#: ../WebSearch/messages:101
-msgid "Yahoo!"
-msgstr "Yahoo!"
-
-#: ../WebSearch/messages:103
-msgid "Teoma"
-msgstr ""
-
-#: ../WebSearch/messages:105
-msgid "Youtube"
-msgstr ""
-
-#: ../WebSearch/messages:107
-msgid "Webshots"
-msgstr ""
-
-#: ../WebSearch/messages:109
-msgid "Flickr"
-msgstr ""
-
-#: ../WebSearch/messages:111
-msgid "Wikipedia"
-msgstr "Wikipédia"
-
-#: ../WebSearch/messages:113
-msgid "ImageShack"
-msgstr ""
-
-#: ../WebSearch/messages:115
-msgid "Twitter"
-msgstr ""
-
-#: ../WebSearch/messages:117
-msgid "Digg"
-msgstr ""
-
-#: ../WebSearch/messages:119
-msgid "in sub-icons."
-msgstr ""
-
-#: ../WebSearch/messages:121
-msgid "Maximum number of results shown :"
-msgstr ""
-
-#: ../WebSearch/messages:123
-msgid "Show the current page as the icon label ?"
-msgstr ""
-
-#: ../WebSearch/messages:125
-msgid ""
-"Show the description of the result instead of its URL in the sub-icons ?"
-msgstr ""
-
-#: ../WebSearch/messages:127
-msgid ""
-"for slow connections, disable will result in significantly faster fetching."
-msgstr ""
-
-#: ../WebSearch/messages:129
-msgid ""
-"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
-"and Digg searches ?"
-msgstr ""
-
 #: ../Xchat/Xchat:257
 msgid "Channels"
 msgstr ""
@@ -1208,6 +131,219 @@ msgstr ""
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
+#~ msgid "Icon"
+#~ msgstr "Ikona"
+
+#~ msgid "Applet"
+#~ msgstr "Applet"
+
+#~ msgid "Name of the dock it belongs to:"
+#~ msgstr "Názov doku ku ktorému patrí :"
+
+#~ msgid "Name of the icon as it will appear in its label in the dock :"
+#~ msgstr "Názov ikony, ktorá sa objaví na štítku v docku :"
+
+#~ msgid "Display"
+#~ msgstr "Zobraziť"
+
+#~ msgid "Let empty to use the default one."
+#~ msgstr "Nechať prázdne a použiť predvolené."
+
+#~ msgid "Image's filename :"
+#~ msgstr "Názov súboru obrázku :"
+
+#~ msgid "Set to 0 to use the default applet size"
+#~ msgstr "Nastavte na 0 pre použitie predvolenej veľkosti appletu"
+
+#~ msgid "Desired icon size for this applet"
+#~ msgstr "Požadovaná veľkosť ikony pre tento applet"
+
+#~ msgid "Applet's Handbook"
+#~ msgstr "Príručka appletov"
+
+#~ msgid "Desklet"
+#~ msgstr "Desklet"
+
+#~ msgid "Position"
+#~ msgstr "Pozícia"
+
+#~ msgid ""
+#~ "If locked, the desklet cannot be moved by simply dragging it with the "
+#~ "left mouse button. It can still be moved with ALT + left-click."
+#~ msgstr ""
+#~ "Ak je je zamknutý, nedá deskletom pohnúť ťahaním ľavým tlačítkom myši. "
+#~ "Samozrejme s ním stále môžete pohybovaťkombináciou ALT + ľavé tlačítko "
+#~ "myši."
+
+#~ msgid "Lock position?"
+#~ msgstr "Zamknúť pozíciu ?"
+
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to resize this with ALT "
+#~ "+ middle-click or ALT + left-click."
+#~ msgstr ""
+#~ "V závislosti na manažérovi vašich okien, môžete zmeniť jeho veľkosť s ALT "
+#~ "+ stredné_klik alebo  ALT + ľavé_klik napr."
+
+#~ msgid "Desklet dimensions (width x height):"
+#~ msgstr "Rozmery deskletov (šírka x výška) :"
+
+#~ msgid ""
+#~ "Depending on your WindowManager, you may be able to move this with ALT + "
+#~ "left-click.. Negative values are counted from the right/bottom of the "
+#~ "screen"
+#~ msgstr ""
+#~ "V závislosti na vašom správcovi okien, budete môcť pohybovať pomocou ALT "
+#~ "+ ľavé tlačidlo.. Záporné hodnoty sú počítané z pravej/dolnej časti "
+#~ "obrazovky"
+
+#~ msgid "Desklet position (x, y):"
+#~ msgstr "Pozícia deskletu (x ; y) :"
+
+#~ msgid ""
+#~ "You can quickly rotate the desklet with the mouse, by dragging the little "
+#~ "buttons on its left and top sides."
+#~ msgstr ""
+#~ "Môžete rýchlo otočiť deskletom s myšou, ťahaním malého tlačidla na ľavej "
+#~ "a hornej strane."
+
+#~ msgid "Rotation:"
+#~ msgstr "Otáčanie :"
+
+#~ msgid "Visibility"
+#~ msgstr "Viditeľnosť"
+
+#~ msgid "Is detached from the dock"
+#~ msgstr "Je oddelený od docku ?"
+
+#~ msgid ""
+#~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+#~ "(class=Cairo-dock & type=utility)"
+#~ msgstr ""
+#~ "pre CompizFusion \"widget layer\", nastavte správanie v Compize na: "
+#~ "(class=Cairo-dock & type=utility)"
+
+#~ msgid "Visibility:"
+#~ msgstr "Viditeľnosť :"
+
+#~ msgid "Normal"
+#~ msgstr "Normálna"
+
+#~ msgid "Keep above"
+#~ msgstr "Ponechať v popredí"
+
+#~ msgid "Keep below"
+#~ msgstr "Ponechať na pozadí"
+
+#~ msgid "Keep on widget layer"
+#~ msgstr "Ponechať na vrstve widgetu"
+
+#~ msgid "Reserve space"
+#~ msgstr "Vyhradiť miesto"
+
+#~ msgid "Should be visible on all desktops?"
+#~ msgstr "Má byť viditeľný na všetkých plochách ?"
+
+#~ msgid "Decorations"
+#~ msgstr "Dekorácie"
+
+#~ msgid "Choose 'Custom decorations' to define your own decorations below."
+#~ msgstr ""
+#~ "Vyberte 'vlastné dekorácie' pre možnosť definovať si vlastné ozdoby "
+#~ "nižšie."
+
+#~ msgid "Choose a decoration theme for this desklet:"
+#~ msgstr "Vyberte ozdobu témy pre tento desklet :"
+
+#~ msgid ""
+#~ "Image to be displayed below drawings, e.g. a frame. Leave empty for no "
+#~ "image."
+#~ msgstr ""
+#~ "Je to obrázok, ktorý se zobrazí pod kresbami, ako napríklad rámček. Ak "
+#~ "žiadny nechcete, nechajte nevyplnené."
+
+#~ msgid "Background image:"
+#~ msgstr "Obrázok pozadia:"
+
+#~ msgid "Background transparency:"
+#~ msgstr "Priehľadnosť pozadia :"
+
+#~ msgid "in pixels. Use this to adjust the left position of drawings."
+#~ msgstr "v pixeloch. Použite pre nastavenie ľavej polohy vykreslenia."
+
+#~ msgid "Left offset:"
+#~ msgstr "Odsadenie zľava :"
+
+#~ msgid "in pixels. Use this to adjust the top position of drawings."
+#~ msgstr "v pixeloch. Použite pre nastavenie hornej polohy vykreslenia."
+
+#~ msgid "Top offset:"
+#~ msgstr "Odsadenie zhora :"
+
+#~ msgid "in pixels. Use this to adjust the right position of drawings."
+#~ msgstr "v pixeloch. Použite pre nastavenie pravej polohy vykreslenia."
+
+#~ msgid "Right offset:"
+#~ msgstr "Odsadenie vpravo :"
+
+#~ msgid "in pixels. Use this to adjust the bottom position of drawings."
+#~ msgstr "v pixeloch. Použite pre nastavenie dolnej polohy vykreslenia."
+
+#~ msgid "Bottom offset:"
+#~ msgstr "Odsadenie zdola"
+
+#~ msgid ""
+#~ "Image to be displayed above the drawings, e.g. a reflection. Leave empty "
+#~ "for no image."
+#~ msgstr ""
+#~ "Je to obrázok, ktorý sa zobrazí nad kresbami, ako napríklad odraz. Ak "
+#~ "žiadny nechcete, ponechajte nevyplnené."
+
+#~ msgid "Foreground image:"
+#~ msgstr "Obrázok popredia :"
+
+#~ msgid "Foreground tansparency:"
+#~ msgstr "Priehľadné popredie :"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfigurácia"
+
+#~ msgid "Behaviour"
+#~ msgstr "Správanie"
+
+#~ msgid "Name of the icon as it will appear in its caption in the dock:"
+#~ msgstr "Názov ikony, ktorá sa objaví na štítku v docku :"
+
+#~ msgid "Parameters"
+#~ msgstr "Parametre"
+
+#~ msgid "none"
+#~ msgstr "žiadny"
+
+#~ msgid "big"
+#~ msgstr "veľký"
+
+#~ msgid "Choose one of the available themes:"
+#~ msgstr "Vyberte jeden z dostupných motívov :"
+
+#~ msgid "in seconds."
+#~ msgstr "v sekundách."
+
+#~ msgid "Leave empty to use the default one."
+#~ msgstr "Nechať prázdne a použiť predvolené."
+
+#~ msgid "Image filename:"
+#~ msgstr "Názov súboru obrázku :"
+
+#~ msgid "Google"
+#~ msgstr "Google"
+
+#~ msgid "Yahoo!"
+#~ msgstr "Yahoo!"
+
+#~ msgid "Wikipedia"
+#~ msgstr "Wikipédia"
+
 #~ msgid "Appearance"
 #~ msgstr "Vzhľad"
 
@@ -1215,7 +351,8 @@ msgstr ""
 #~ msgstr "Animované ikony"
 
 #~ msgid "This plug-in provides many different animations for your icons."
-#~ msgstr "Tento zásuvný modul ponúka množstvo rôzných animácií pre vaše ikony."
+#~ msgstr ""
+#~ "Tento zásuvný modul ponúka množstvo rôzných animácií pre vaše ikony."
 
 #~ msgid "Wave"
 #~ msgstr "Vlnenie"
@@ -1227,8 +364,8 @@ msgstr ""
 #~ "Add a lively Penguin in your dock !\n"
 #~ "Left click to change the animation,\n"
 #~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or can "
-#~ "be added easily."
+#~ "Tux images are taken from Pingus, some other characters are available or "
+#~ "can be added easily."
 #~ msgstr ""
 #~ "Pridá živého tučniaka do vášho doku !\n"
 #~ "Ľavé kliknutie zmení animáciu,\n"
@@ -1246,7 +383,8 @@ msgstr ""
 #~ msgstr "Prepáč, teraz som zaneprázdnený."
 
 #~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these icons."
+#~ "I don't have time to play with you, I have to dig and mine all these "
+#~ "icons."
 #~ msgstr ""
 #~ "Nemám čas sa s tebou hrať. Musím zakopať míny pod všetky tieto ikony."
 
@@ -1304,12 +442,13 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know Klipper.\n"
+#~ "so that you can recall them quickly. It's a clone of the well-know "
+#~ "Klipper.\n"
 #~ "It supports clipboard and mouse selection, predefined actions, and "
 #~ "persistent items.\n"
 #~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to recall "
-#~ "them."
+#~ "Drop text on the icon to create persistent items, and middle-clck to "
+#~ "recall them."
 #~ msgstr ""
 #~ "Tento aplet drží stopu schránky a výber myšou,\n"
 #~ "takže si môžete spomenúť rýchlo. Je to klon dobre známeho-Klippera.\n"
@@ -1469,14 +608,14 @@ msgstr ""
 #~ msgid ""
 #~ "Displays the common Applications menu and the Recently used files.\n"
 #~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set up "
-#~ "a shortkey for it, like ALT+F2)\n"
+#~ "Middle-click to open a dialog to quickly launch any command (you can set "
+#~ "up a shortkey for it, like ALT+F2)\n"
 #~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
 #~ msgstr ""
 #~ "Zobrazí bežné menu Aplikácie a naposledy použité súbory.\n"
 #~ "Je kompatibilný s akýmkoľvek XDG zhodným menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Stredným-kliknutím otvorte dialógové okno pre rýchle spustenie ľubovoľného "
-#~ "príkazu (môžete nastaviť skratku pre neho, ako ALT + F2)\n"
+#~ "Stredným-kliknutím otvorte dialógové okno pre rýchle spustenie "
+#~ "ľubovoľného príkazu (môžete nastaviť skratku pre neho, ako ALT + F2)\n"
 #~ "Môžete tiež nastaviť, aby skratku vyskakovacieho menu (ako ALT + F1)"
 
 #~ msgid "Quick launch"
@@ -1501,11 +640,11 @@ msgstr ""
 #~ msgstr "Me Menu"
 
 #~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online status, "
-#~ "your friends."
+#~ "A menu that lets you access quickly to your information, your online "
+#~ "status, your friends."
 #~ msgstr ""
-#~ "Menu, ktoré vám umožní rýchly prístup k vašim informáciám, váš stav ked sa "
-#~ "pripojíite, tvojiich priateľov."
+#~ "Menu, ktoré vám umožní rýchly prístup k vašim informáciám, váš stav ked "
+#~ "sa pripojíite, tvojiich priateľov."
 
 #~ msgid "It seems that the Me-Menu is not installed on your system"
 #~ msgstr "Zdá sa, že Me-Menu nie je nainštalované vo vašom systéme"
@@ -1592,15 +731,15 @@ msgstr ""
 #~ msgid ""
 #~ "This applet allows you to monitor your network connection(s).\n"
 #~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the current "
-#~ "wifi network.\n"
+#~ "If you have network-manager running, it can also let you choose the "
+#~ "current wifi network.\n"
 #~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
 #~ "between net speed and wifi."
 #~ msgstr ""
 #~ "Tento applet vám umožní sledovať vaše pripojenie k sieti (am).\n"
 #~ "Môže zobrazovať download / upload rýchlosti a kvalitu signálu WiFi.\n"
-#~ "Ak máte spustený program sieťový-manager, môže tiež nechať zvoliť aktuálnu "
-#~ "wifi sieť.\n"
+#~ "Ak máte spustený program sieťový-manager, môže tiež nechať zvoliť "
+#~ "aktuálnu wifi sieť.\n"
 #~ "Aj ľavé-kliknutie vám ponúkne info, Prejdite na túto ikonu pre prepnutie "
 #~ "zobrazenia medzi rýchlosťou siete a wifi."
 
@@ -1812,16 +951,18 @@ msgstr ""
 #~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
 #~ "etc.\n"
 #~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using programs.\n"
-#~ "You can instanciate this applet several times to show different values each "
-#~ "time."
+#~ "Left click on the icon to get a list of the most ressources using "
+#~ "programs.\n"
+#~ "You can instanciate this applet several times to show different values "
+#~ "each time."
 #~ msgstr ""
-#~ "Tento applet zobrazuje zaťaženie procesora, použitú RAM, teplotu grafickej "
-#~ "karty, atd.\n"
+#~ "Tento applet zobrazuje zaťaženie procesora, použitú RAM, teplotu "
+#~ "grafickej karty, atd.\n"
 #~ "Kliknutím stredným tlačítkom získate daľšie cenné informácie.\n"
 #~ "Kliknutím ľavým tlačítkom na ikonu dostanete zoznam programov, ktoré "
 #~ "používajú najviac zdrojov.\n"
-#~ "Môžete použiť tento aplet kedykoľvek a vždy získate nové zobrazenia hodnôt."
+#~ "Môžete použiť tento aplet kedykoľvek a vždy získate nové zobrazenia "
+#~ "hodnôt."
 
 #~ msgid ""
 #~ "The acquisition of one or more data has failed.\n"
@@ -1889,8 +1030,8 @@ msgstr ""
 #~ "Scroll up/down to increase/decrease the luminosity\n"
 #~ "Left-click to open a dialog to setup the luminosity\n"
 #~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically on "
-#~ "startup."
+#~ "You can also define a luminosity value that will be applied automatically "
+#~ "on startup."
 #~ msgstr ""
 #~ "Nastavenie svietivosti obrazovky priamo z doku.\n"
 #~ "Posun nahor/nadol k zvýšeniu/zníženiu svietivosti\n"
@@ -1908,8 +1049,8 @@ msgstr ""
 #~ msgid ""
 #~ "This applet lets you control the sound volume from the dock.\n"
 #~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard shortcut "
-#~ "for it)\n"
+#~ "Click on icon to show/hide volume control (you can bind a keyboard "
+#~ "shortcut for it)\n"
 #~ "You can also hide the dialog by clicking on it.\n"
 #~ "Middle-click to set or unset to mute, double-click to raise the channels "
 #~ "mixer.\n"
@@ -1917,8 +1058,8 @@ msgstr ""
 #~ msgstr ""
 #~ "Tento applet vám umožní ovládať hlasitosť zvuku z doku.\n"
 #~ "Posun hore/dole na ikonu zvýšenie/zníženie hlasitosti.\n"
-#~ "Kliknutím na ikonu zobrazíte/skryjete ovládanie hlasitosti (možno naviazať "
-#~ "na klávesovú skratku)\n"
+#~ "Kliknutím na ikonu zobrazíte/skryjete ovládanie hlasitosti (možno "
+#~ "naviazať na klávesovú skratku)\n"
 #~ "Môžete tiež skryť dialógové okno kliknutím na ňu.\n"
 #~ "Stredné-kliknutie nastaví alebo vypne zvuk, dvojité-kliknutie na zvýšenie "
 #~ "kanálov mixéra.\n"
@@ -2043,7 +1184,8 @@ msgstr ""
 #~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
 #~ "tasks</b>.\n"
 #~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a notification,\n"
+#~ "Left-click to show/hide the calendar, Middle-click to stop a "
+#~ "notification,\n"
 #~ "Double-click on a day to edit the tasks for this day."
 #~ msgstr ""
 #~ "Tento aplet zobrazuje čas, dátum a kalendár.\n"
@@ -2060,8 +1202,8 @@ msgstr ""
 #~ msgid ""
 #~ "No task is sheduled for today.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and then "
-#~ "double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
 #~ msgstr ""
 #~ "Pre dnešok nie je žiadna úloha.\n"
 #~ "\n"
@@ -2071,8 +1213,8 @@ msgstr ""
 #~ msgid ""
 #~ "No task is sheduled for the next 7 days.\n"
 #~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and then "
-#~ "double-clicking on a day."
+#~ "You can add tasks by clicking on the applet to open the calendar, and "
+#~ "then double-clicking on a day."
 #~ msgstr ""
 #~ "Pre nasledujúcich 7 dní nie je žiadna úloha.\n"
 #~ "\n"
@@ -2264,7 +1406,8 @@ msgstr ""
 #~ msgid ""
 #~ "Couldn't upload the file, check that your internet connection is active."
 #~ msgstr ""
-#~ "Nedá sa nahrať súbor, skontrolujte či je vaše internetové pripojenie aktívne."
+#~ "Nedá sa nahrať súbor, skontrolujte či je vaše internetové pripojenie "
+#~ "aktívne."
 
 #~ msgid ""
 #~ "File has been uploaded.\n"
@@ -2312,12 +1455,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember previous "
-#~ "uploads."
+#~ "Consider activating the history if you want the applet to remember "
+#~ "previous uploads."
 #~ msgstr ""
 #~ "Nie je k dispozícii nahraný súbor \n"
-#~ ". Zvážte aktiváciu histórie, ak chcete aby si applet pamätal predchádzajúce "
-#~ "nahrania."
+#~ ". Zvážte aktiváciu histórie, ak chcete aby si applet pamätal "
+#~ "predchádzajúce nahrania."
 
 #~ msgid ""
 #~ "The current URL has been stored in the clipboard.\n"
@@ -2378,8 +1521,8 @@ msgstr ""
 #~ msgid ""
 #~ "This module adds different views to your dock.\n"
 #~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve views "
-#~ "are provided."
+#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
+#~ "views are provided."
 #~ msgstr ""
 #~ "Tento modul pridá rozličné pohľady na váš dock.\n"
 #~ "Každý dock alebo sub-dock môžu byť zobrazené so zreteľom na váš výber.\n"
@@ -2390,8 +1533,8 @@ msgstr ""
 #~ msgstr "pokles indikátora"
 
 #~ msgid ""
-#~ "This plug-in displays an animated indicator when you drop something into the "
-#~ "dock."
+#~ "This plug-in displays an animated indicator when you drop something into "
+#~ "the dock."
 #~ msgstr ""
 #~ "Tento plug-in zobrazuje animovaný indikátor, keď hodíte niečo do docku."
 
@@ -2446,7 +1589,8 @@ msgstr ""
 #~ "It is auto-activated, so you don't need to activate it.\n"
 #~ "It is designed for old Gnome version (prior to 2.22)."
 #~ msgstr ""
-#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia GNOME.\n"
+#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia "
+#~ "GNOME.\n"
 #~ "Je to aktivovaný automaticky, takže nie je potrebné ho aktivovať.\n"
 #~ "Je určený pre staršiu verziu GNOME (pred 2.22)."
 
@@ -2456,7 +1600,8 @@ msgstr ""
 #~ "It is auto-activated, so you don't need to activate it.\n"
 #~ "It is designed for the a GNOME version >= 2.22"
 #~ msgstr ""
-#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia GNOME.\n"
+#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia "
+#~ "GNOME.\n"
 #~ "Je to aktivovaný automaticky, takže nie je potrebné ho aktivovať.\n"
 #~ "Je určený pre verziu GNOME > = 2.22"
 
@@ -2497,7 +1642,8 @@ msgstr ""
 #~ "It is auto-activated, so you don't need to activate it.\n"
 #~ "It is designed for KDE4"
 #~ msgstr ""
-#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia GNOME.\n"
+#~ "Tento applet poskytuje funkcie pre lepšiu integráciu do prostredia "
+#~ "GNOME.\n"
 #~ "Je to aktivovaný automaticky, takže nie je potrebné ho aktivovať.\n"
 #~ "Je určený pre verziu KDE4"
 
@@ -2527,8 +1673,8 @@ msgstr ""
 #~ "  (you can invert the buttons if you prefer to shutdown on left-click)."
 #~ msgstr ""
 #~ "Veľmi jednoduchý applet, ktorý pridá ikonu odhlásiť zo sedenia\n"
-#~ "Ľavým tlačidlom myši odhlásite alebo zmeníte užívateľa, stredným tlačidlom "
-#~ "vypnete alebo reštartujete\n"
+#~ "Ľavým tlačidlom myši odhlásite alebo zmeníte užívateľa, stredným "
+#~ "tlačidlom vypnete alebo reštartujete\n"
 #~ "  (môžete invertovať tlačidlo, ak preferujete vypnutie ľavým kliknutím)."
 
 #~ msgid "Choose in how many minutes your PC will stop:"
@@ -2568,11 +1714,11 @@ msgstr ""
 #~ msgstr "Port:"
 
 #~ msgid ""
-#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP and "
-#~ "995 for POP3S."
+#~ "Enter 0 to use the default port. Default ports are 110 for POP3 or APOP "
+#~ "and 995 for POP3S."
 #~ msgstr ""
-#~ "Vložte 0 pre použitie predvoleného portu. Predvolené porty sú 110 pre POP3 a "
-#~ "995 pre POP3S."
+#~ "Vložte 0 pre použitie predvoleného portu. Predvolené porty sú 110 pre "
+#~ "POP3 a 995 pre POP3S."
 
 #~ msgid "Use a secure connection (SSL)"
 #~ msgstr "Použiť bezpečné pripojenie (SSL)"
@@ -2639,7 +1785,8 @@ msgstr ""
 #~ "Left-click to launch the prefered mail application,\n"
 #~ "Middle-click to refresh all the mailboxes."
 #~ msgstr ""
-#~ "Tento applet je veľmi užitočný pre upozornenie, ak dostanete nové e-maily\n"
+#~ "Tento applet je veľmi užitočný pre upozornenie, ak dostanete nové e-"
+#~ "maily\n"
 #~ "Tu môžete overovať rôzne druhy schránok (Yahoo, Gmail, atď)\n"
 #~ "Ľavé kliknutie spustí preferovaný mail,\n"
 #~ "Stredným kliknutím obnovíte všetky poštové schránky."
@@ -2708,8 +1855,8 @@ msgstr ""
 #~ "This applet lets you control any music player.\n"
 #~ "Left click to Play/Pause, middle-click to play Next song.\n"
 #~ "Scroll up/down to play previous/next song.\n"
-#~ "You can drag and drop songs on the icon to put them in the queue (depends on "
-#~ "Player),\n"
+#~ "You can drag and drop songs on the icon to put them in the queue (depends "
+#~ "on Player),\n"
 #~ " and jpeg image to use as cover.\n"
 #~ "Note : For XMMS, you have to install the 'xmms-infopipe' plug-in.\n"
 #~ "       For SongBird, you have to install its dbus add-on.\n"
@@ -2731,8 +1878,8 @@ msgstr ""
 #~ "offer such service."
 #~ msgstr ""
 #~ "Prepáčte, neviem nájsť žiaden prehrávač.\n"
-#~ "Ak je spustený, to je možno preto, že jeho verzia je príliš stará a neponúka "
-#~ "tieto služby."
+#~ "Ak je spustený, to je možno preto, že jeho verzia je príliš stará a "
+#~ "neponúka tieto služby."
 
 #~ msgid "Find opened player"
 #~ msgstr "Nájdi otvorený prehrávač"
@@ -2876,7 +2023,8 @@ msgstr ""
 #~ "This applet can be instanciated several times, if you want to browse "
 #~ "different folders."
 #~ msgstr ""
-#~ "Tento applet vám umožní prezerať priečinok a jeho pod-zložky veľmi rýchlo.\n"
+#~ "Tento applet vám umožní prezerať priečinok a jeho pod-zložky veľmi "
+#~ "rýchlo.\n"
 #~ "Môžete si nastaviť, klávesov skratku pop up menu.\n"
 #~ "Stredné-kliknutie otvorí hlavnú zložku.\n"
 #~ "Tento applet je možné otvoriť niekoľkokrát, keď si chcete prezerať rôzne "
@@ -2907,11 +2055,12 @@ msgstr ""
 #~ "An applet that let you access quickly to all of your shortcuts.\n"
 #~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
 #~ "don't have Nautilus).\n"
-#~ "Drag and drop a folder on the main icon or the sub-dock to add a bookmark.\n"
+#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
+#~ "bookmark.\n"
 #~ "Middle-click on the main icon to show your home folder.\n"
 #~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
-#~ "The applet can also display valuable information about your disks, like free "
-#~ "space, type, etc."
+#~ "The applet can also display valuable information about your disks, like "
+#~ "free space, type, etc."
 #~ msgstr ""
 #~ "Applet, ktorý vám umožní rýchly prístup ku všetkým vašim skratkám.\n"
 #~ "Môže spravovať disky, sieťové body, a Nautilus záložky (aj keď nemáte "
@@ -2973,16 +2122,16 @@ msgstr ""
 #~ msgid ""
 #~ "This applet adds an icon to show your desktop,\n"
 #~ " and also : the desklets, the Widget Layer, or all the desktops at once.\n"
-#~ "It can also be used to quickly change the screen's resolution from the right-"
-#~ "click menu.\n"
+#~ "It can also be used to quickly change the screen's resolution from the "
+#~ "right-click menu.\n"
 #~ "Left-click to show/hide the desktop,\n"
 #~ "Middle-click to show/hide either the desktop, the desklets, the Widget "
 #~ "Layer, or all the desktops at once."
 #~ msgstr ""
 #~ "Tento aplet pridáva ikonu zobraziť plochu,\n"
 #~ " a tiež : desklety, Widget Layer, plochy alebo všetko súčasne.\n"
-#~ "Môže byť tiež použitý pre rýchlu zmenu rozlíšenia obrazovky pravým-kliknutím "
-#~ "menu.\n"
+#~ "Môže byť tiež použitý pre rýchlu zmenu rozlíšenia obrazovky pravým-"
+#~ "kliknutím menu.\n"
 #~ "Ľavé kliknutie zobrazí/skryje plochu,\n"
 #~ "Stredné kliknutie zobrazí/skryje na ploche, desklety, Widget Layer, alebo "
 #~ "súčasne všetky plochy."
@@ -3013,7 +2162,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "This applet is a basic image slider\n"
-#~ " You just have to select a directory and a display effect and you're done\n"
+#~ " You just have to select a directory and a display effect and you're "
+#~ "done\n"
 #~ "Click to play/pause or to edit the current image.\n"
 #~ "Middle-click to open the images folder."
 #~ msgstr ""
@@ -3045,18 +2195,18 @@ msgstr ""
 #~ "You can drop any file, or web URL, or even some piece of text\n"
 #~ "You can quickly copy the path/url/text to the clipboard, or open it."
 #~ msgstr ""
-#~ "Tento applet vám umožní vytvoriť zásobník súborov, rovnako ako Stacks applet "
-#~ "v MacOS X.\n"
+#~ "Tento applet vám umožní vytvoriť zásobník súborov, rovnako ako Stacks "
+#~ "applet v MacOS X.\n"
 #~ "Ak chcete pridať súbor do svojho zásobníka, stačí ho pretiahnuť na ikonu "
 #~ "Stacks a máte hotovo.\n"
-#~ "Môžete vložiť akýkoľvek súbor alebo URL webovú adresu, alebo dokonca nejaký "
-#~ "kus textu\n"
+#~ "Môžete vložiť akýkoľvek súbor alebo URL webovú adresu, alebo dokonca "
+#~ "nejaký kus textu\n"
 #~ "Môžete rýchlo skopírovať cestu/url/text do schránky, alebo ju otvoriť."
 
 #~ msgid ""
 #~ "No items in the stack.\n"
-#~ "You can add files, URL, and even a piece of text by dragging them onto the "
-#~ "icon."
+#~ "You can add files, URL, and even a piece of text by dragging them onto "
+#~ "the icon."
 #~ msgstr ""
 #~ "Žiadne položky v zásobníku.\n"
 #~ "Môžete pridať súbory, URL, a dokonca aj kúsok textu presunutím na ikonu."
@@ -3107,8 +2257,8 @@ msgstr ""
 #~ "It has 2 modes : compact (on 1 icon) and expanded (with a sub-dock)."
 #~ msgstr ""
 #~ "Tento aplet vám umožňuje prepínať vaše pracovné plochy:\n"
-#~ " - Prepínanie medzi vášho pracovnými plochami (pohybovať hore/dole pomocou "
-#~ "myši),\n"
+#~ " - Prepínanie medzi vášho pracovnými plochami (pohybovať hore/dole "
+#~ "pomocou myši),\n"
 #~ " - Pomenovať ich (v konfigurácii),\n"
 #~ " - Rýchlo pridať/odobrať pracovnú plochu (v menu),\n"
 #~ " - Ukázať plochu (stredný klik alebo v menu),\n"
@@ -3129,9 +2279,10 @@ msgstr ""
 #~ msgstr "Premiestniť súčasnú plochu na túto plochu"
 
 #~ msgid ""
-#~ "This will move all windows from the current desktop to the one you clicked "
-#~ "on."
-#~ msgstr "Toto premiestni všetky okná zo súčasnej plochy na tú kam ste klikli."
+#~ "This will move all windows from the current desktop to the one you "
+#~ "clicked on."
+#~ msgstr ""
+#~ "Toto premiestni všetky okná zo súčasnej plochy na tú kam ste klikli."
 
 #~ msgid "Windows List"
 #~ msgstr "Zoznam okien"
@@ -3259,15 +2410,15 @@ msgstr ""
 #~ "Data are provided by www.weather.com, you can find your location in the "
 #~ "config panel.\n"
 #~ "It can detach itself to be a totally eye-candy 3D deskelt.\n"
-#~ "Middle-click on the main icon to have current conditions information, left-"
-#~ "click on a sub-icon to have forcast information.\n"
+#~ "Middle-click on the main icon to have current conditions information, "
+#~ "left-click on a sub-icon to have forcast information.\n"
 #~ msgstr ""
 #~ "Tento applet zobrazuje počasia v docku.\n"
 #~ "Dáta sú poskytované www.weather.com, môžete nájsť umiestnenie v "
 #~ "konfiguračnom paneli.\n"
 #~ "Odpojením z panelu získate úplne perfektný  3D deskelt.\n"
-#~ "Stredným-kliknutím na hlavnú ikonu máte aktuálne informácie o podmienkach, "
-#~ "ľavé kliknutie na sub-ikonu dá viac informácií.\n"
+#~ "Stredným-kliknutím na hlavnú ikonu máte aktuálne informácie o "
+#~ "podmienkach, ľavé kliknutie na sub-ikonu dá viac informácií.\n"
 
 #~ msgid "Jan"
 #~ msgstr "Jan"
@@ -3395,7 +2546,8 @@ msgstr ""
 #~ msgstr "Všeobecné"
 
 #~ msgid "Animations are triggered when hovering an icon only in OpenGL mode."
-#~ msgstr "Animácie sú vyvolané, iba v režime OpenGL keď sa  vznášate na ikone."
+#~ msgstr ""
+#~ "Animácie sú vyvolané, iba v režime OpenGL keď sa  vznášate na ikone."
 
 #~ msgid "when hovering over an icon"
 #~ msgstr "keď je nad ikonou"
@@ -3555,11 +2707,11 @@ msgstr ""
 #~ msgstr "Položky"
 
 #~ msgid ""
-#~ "Clipboard items are those you get with CTRL+c. Selection items are those you "
-#~ "get by selecting some text with the mouse."
+#~ "Clipboard items are those you get with CTRL+c. Selection items are those "
+#~ "you get by selecting some text with the mouse."
 #~ msgstr ""
-#~ "Položky schránky sú tie, ktoré dostanete stlačením CTRL+c. Položky označené "
-#~ "sú tie, ktoré dostanete označením nejakého textu myšou."
+#~ "Položky schránky sú tie, ktoré dostanete stlačením CTRL+c. Položky "
+#~ "označené sú tie, ktoré dostanete označením nejakého textu myšou."
 
 #~ msgid "Which items should be remembered?"
 #~ msgstr "Ktoré položky si mám zapamätať ?"
@@ -3583,8 +2735,9 @@ msgstr ""
 #~ "It is especially useful if you often select text with the mouse and don't "
 #~ "want to loose your clipboard items due to too many items in the selection."
 #~ msgstr ""
-#~ "To je obzvlášť užitočné, ak si často vybráte text pomocou myši, a nechcete "
-#~ "prísť o svoje položky v schránke , pretože máte veľké množstvo položiek."
+#~ "To je obzvlášť užitočné, ak si často vybráte text pomocou myši, a "
+#~ "nechcete prísť o svoje položky v schránke , pretože máte veľké množstvo "
+#~ "položiek."
 
 #~ msgid "Separate clipboard and selection?"
 #~ msgstr "Oddeliť schránku a výber ?"
@@ -3603,8 +2756,8 @@ msgstr ""
 #~ "When you click on an item, its content will become accessible with the "
 #~ "middle-click"
 #~ msgstr ""
-#~ "Ak kliknete na položku, jej obsah je dostupný stlačením stredného tlačítka "
-#~ "myši"
+#~ "Ak kliknete na položku, jej obsah je dostupný stlačením stredného "
+#~ "tlačítka myši"
 
 #~ msgid "Paste into Selection?"
 #~ msgstr "Vložiť do vybraného ?"
@@ -3616,8 +2769,8 @@ msgstr ""
 #~ msgstr "Akcie"
 
 #~ msgid ""
-#~ "If some actions are associated with an item, they will be proposed when the "
-#~ "item is created."
+#~ "If some actions are associated with an item, they will be proposed when "
+#~ "the item is created."
 #~ msgstr ""
 #~ "Ak sú niektoré akcie asociované s položkou, budú navrhnuté pre vás, ak "
 #~ "vytvoríte položku."
@@ -3759,7 +2912,8 @@ msgstr ""
 
 #~ msgid "Font to be used by default if none is specify in the .xml"
 #~ msgstr ""
-#~ "Písmo, ktoré má byť použité ako predvolené, sa nenachádza v špecifikácii .xml"
+#~ "Písmo, ktoré má byť použité ako predvolené, sa nenachádza v špecifikácii ."
+#~ "xml"
 
 #~ msgid "Default Font:"
 #~ msgstr "Predvolené písmo:"
@@ -3883,7 +3037,8 @@ msgstr ""
 #~ msgstr "v dňoch. Nastaviť 0 pre vypnutie tohto filtra."
 
 #~ msgid "Only show files whose last modification date is less than ;"
-#~ msgstr "Zobrazovat iba súbory, ktorých dátum poslednej úpravy je menej ako :"
+#~ msgstr ""
+#~ "Zobrazovat iba súbory, ktorých dátum poslednej úpravy je menej ako :"
 
 #~ msgid "Always display the icon, even when the dock is hidden?"
 #~ msgstr "Vždy zobrazovať ikonu, aj keď je panel skrytý?"
@@ -4035,9 +3190,11 @@ msgstr ""
 #~ msgstr "Animácia ikony:"
 
 #~ msgid ""
-#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close it)."
+#~ "In seconds. Set to 0 for infinite time (need to click on dialog to close "
+#~ "it)."
 #~ msgstr ""
-#~ "V sekundách. Nastavte na 0 pre nekonečný čas (kliknutím sa dialóg zatvorí)."
+#~ "V sekundách. Nastavte na 0 pre nekonečný čas (kliknutím sa dialóg "
+#~ "zatvorí)."
 
 #~ msgid "Duration of the notification:"
 #~ msgstr "Doba trvania oznámenia:"
@@ -4112,18 +3269,18 @@ msgstr ""
 #~ msgstr "Klávesová skratka na aktivovanie/deaktivovanie módu vyhľadávač :"
 
 #~ msgid ""
-#~ "Maximum number of mails that will be previewed. Put -1 to show the maximum "
-#~ "possible."
+#~ "Maximum number of mails that will be previewed. Put -1 to show the "
+#~ "maximum possible."
 #~ msgstr ""
 #~ "Maximálny počet mailov, ktoré budú v ukážke. Dajte -1 zobrazí maximum "
 #~ "možných."
 
 #~ msgid ""
-#~ "Number of lines of the listing. If there are more results, the listing will "
-#~ "scroll when you go up or down with the arrows."
+#~ "Number of lines of the listing. If there are more results, the listing "
+#~ "will scroll when you go up or down with the arrows."
 #~ msgstr ""
-#~ "Počet riadkov zoznamu. Ak existuje viac výsledkov, bude zoznam posúvaný hore "
-#~ "alebo dolu pomocou šípok."
+#~ "Počet riadkov zoznamu. Ak existuje viac výsledkov, bude zoznam posúvaný "
+#~ "hore alebo dolu pomocou šípok."
 
 #~ msgid "Number of lines to display :"
 #~ msgstr "Počet zobrazených riadkov :"
@@ -4289,10 +3446,11 @@ msgstr ""
 
 #~ msgid ""
 #~ "It will prevent the system monitor's icon to show in the taskbar. The "
-#~ "applet's icon will then behave as a launcher, an application, and an applet."
+#~ "applet's icon will then behave as a launcher, an application, and an "
+#~ "applet."
 #~ msgstr ""
-#~ "Zabráni zobraziť ikonu monitora systému na hlavnom paneli. Ikona appletu sa "
-#~ "bude správať ako spúšťač, aplikácia a applet."
+#~ "Zabráni zobraziť ikonu monitora systému na hlavnom paneli. Ikona appletu "
+#~ "sa bude správať ako spúšťač, aplikácia a applet."
 
 #~ msgid "Steal the system monitor's icon from the taskbar?"
 #~ msgstr "Prevziať ikonu sledovania systému v hlavnom paneli ?"
@@ -4304,8 +3462,8 @@ msgstr ""
 #~ msgstr "Top zoznam"
 
 #~ msgid ""
-#~ "When you left-click on the icon, you will get the list of the N most CPU/RAM-"
-#~ "intensive programs."
+#~ "When you left-click on the icon, you will get the list of the N most CPU/"
+#~ "RAM-intensive programs."
 #~ msgstr ""
 #~ "Keď kliknite ľavým tlačítkom na ikonu získate zoznam N najviac CPU/RAM-"
 #~ "používajúcich programov."
@@ -4390,13 +3548,13 @@ msgstr ""
 #~ msgstr "Vyberte, ktorý kanál chcete ovládať :"
 
 #~ msgid ""
-#~ "On some cards, a channel only controls 1 side (right or left). You will then "
-#~ "need to specify a second channel here, to control both sides. Most of the "
-#~ "time, you should just leave this empty."
+#~ "On some cards, a channel only controls 1 side (right or left). You will "
+#~ "then need to specify a second channel here, to control both sides. Most "
+#~ "of the time, you should just leave this empty."
 #~ msgstr ""
-#~ "Na niektorých kartách, ovládate kanál 1 strany (vpravo alebo vľavo). Potom "
-#~ "bude nutné zadať pre druhý kanál, kontrolu na oboch stranách. Pre viac času, "
-#~ "ho ponechajte prázdny."
+#~ "Na niektorých kartách, ovládate kanál 1 strany (vpravo alebo vľavo). "
+#~ "Potom bude nutné zadať pre druhý kanál, kontrolu na oboch stranách. Pre "
+#~ "viac času, ho ponechajte prázdny."
 
 #~ msgid "Choose a second channel to control (optional):"
 #~ msgstr "Voliteľne, vyberte ovládanie pre druhý kanál  :"
@@ -4405,7 +3563,8 @@ msgstr ""
 #~ msgstr "Nechajte prázdne pre predvolený príkaz."
 
 #~ msgid "Specific command to run to show an advanced sound mixer:"
-#~ msgstr "Konkrétny príkaz na spustenie ukážky zdokonaleného mixovaného zvuku:"
+#~ msgstr ""
+#~ "Konkrétny príkaz na spustenie ukážky zdokonaleného mixovaného zvuku:"
 
 #~ msgid "Control"
 #~ msgstr "Ovládanie"
@@ -4444,7 +3603,8 @@ msgstr ""
 #~ msgstr "Zobraziť čas v 24h formáte ?"
 
 #~ msgid ""
-#~ "if not, then the applet will update the time once a minute, saving CPU power."
+#~ "if not, then the applet will update the time once a minute, saving CPU "
+#~ "power."
 #~ msgstr ""
 #~ "ak nie, potom sa bude aktualizovať applet čas raz za minútu, čo šetrí CPU."
 
@@ -4482,11 +3642,11 @@ msgstr ""
 #~ msgstr "Štýl"
 
 #~ msgid ""
-#~ "The analogue view is based on CairoClock; otherwise it will be displayed in "
-#~ "digital format."
+#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
+#~ "in digital format."
 #~ msgstr ""
-#~ "Analogický pohľad je založený na CairoClock; inak bude zobrazený numerickým "
-#~ "spôsobom."
+#~ "Analogický pohľad je založený na CairoClock; inak bude zobrazený "
+#~ "numerickým spôsobom."
 
 #~ msgid "Select the view :"
 #~ msgstr "Vyberte ohľad :"
@@ -4535,8 +3695,8 @@ msgstr ""
 #~ "Except when switching to another WM, you must activate the Dbus plugin in "
 #~ "Compiz along with the plugin corresponding to the desired action."
 #~ msgstr ""
-#~ "S výnimkou prechodu na iný WM, musíte aktivovať dbus plugin v Compize, spolu "
-#~ "s plug-inom zodpovedajúcim požadovanej akcii."
+#~ "S výnimkou prechodu na iný WM, musíte aktivovať dbus plugin v Compize, "
+#~ "spolu s plug-inom zodpovedajúcim požadovanej akcii."
 
 #~ msgid "Action on middle-click:"
 #~ msgstr "Akcia na stredné kliknutie :"
@@ -4561,8 +3721,8 @@ msgstr ""
 #~ msgstr "Vlastný príkaz pre systém Windows Manager :"
 
 #~ msgid ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then quit "
-#~ "Compiz from the dock."
+#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
+#~ "quit Compiz from the dock."
 #~ msgstr ""
 #~ "Ak Compiz neočakkávane skončí, Cairo-Dock bude reštartovaný. Musíte potom "
 #~ "ukončiť Compiz v doku."
@@ -4608,7 +3768,8 @@ msgstr ""
 #~ msgstr "Pridať Expozíciu & Widget Layer do sub doku ?"
 
 #~ msgid ""
-#~ "Display an icon for the Emerald configuration panel in the applet's sub-dock."
+#~ "Display an icon for the Emerald configuration panel in the applet's sub-"
+#~ "dock."
 #~ msgstr "Zobraziť ikonu pre konfiguráciu panelu Emerald v applete sub-docku."
 
 #~ msgid "Add Emerald Configuration to sub-dock?"
@@ -4619,13 +3780,14 @@ msgstr ""
 
 #~ msgid ""
 #~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a bit "
-#~ "slow when binding textures, that's why this option gives a heavy performance "
-#~ "increase with Nvidia cards."
+#~ "loose binding they are enabled when created. The Nvidia driver seems a "
+#~ "bit slow when binding textures, that's why this option gives a heavy "
+#~ "performance increase with Nvidia cards."
 #~ msgstr ""
-#~ "S neslobodnými textúrami sú viazané na ich povolenie. Voľné, sú povolené pri "
-#~ "vytvorení. Ovládač Nvidia sa zdá trochu pomalý pri viazaní textúr, čo je "
-#~ "dôvod prečo ich použitie umožňuje veľké zvýšenie výkonu s Nvidia kartami."
+#~ "S neslobodnými textúrami sú viazané na ich povolenie. Voľné, sú povolené "
+#~ "pri vytvorení. Ovládač Nvidia sa zdá trochu pomalý pri viazaní textúr, čo "
+#~ "je dôvod prečo ich použitie umožňuje veľké zvýšenie výkonu s Nvidia "
+#~ "kartami."
 
 #~ msgid "Use Loose Binding?"
 #~ msgstr "Použiť voľnú väzbu ?"
@@ -4898,7 +4060,8 @@ msgstr ""
 #~ msgid ""
 #~ "0 represents a flat wave, 1 means the wave is identical to other views."
 #~ msgstr ""
-#~ "0 znamená úplne plochú vlnu, 1 znamená, že vlna je totožná s inými pohľadmi."
+#~ "0 znamená úplne plochú vlnu, 1 znamená, že vlna je totožná s inými "
+#~ "pohľadmi."
 
 #~ msgid "Number of icons on the first row:"
 #~ msgstr "Počet ikon na prvý riadok :"
@@ -4907,8 +4070,8 @@ msgstr ""
 #~ "in degrees. The lower the value, the narrower the cone. 180° represents a "
 #~ "wide open cone."
 #~ msgstr ""
-#~ "v stupňoch. Čím menšie, tým viac je kužeľ užší. 180 ° znamená, že kužeľ je "
-#~ "široko otvorený."
+#~ "v stupňoch. Čím menšie, tým viac je kužeľ užší. 180 ° znamená, že kužeľ "
+#~ "je široko otvorený."
 
 #~ msgid "Cone width:"
 #~ msgstr "Šírka kužeľov :"
@@ -5072,7 +4235,8 @@ msgstr ""
 #~ "in ms. Set to 0 if you don't want an animation when the keyboard layout "
 #~ "changes."
 #~ msgstr ""
-#~ "v ms. Nastavte ju na 0, ak nechcete animáciu pri zmene rozloženia klávesnice."
+#~ "v ms. Nastavte ju na 0, ak nechcete animáciu pri zmene rozloženia "
+#~ "klávesnice."
 
 #~ msgid "Duration of the transition animation:"
 #~ msgstr "Doba trvania prechodu animácie :"
@@ -5113,11 +4277,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "If you have any problem with the applet, uncheck this option during the "
-#~ "maintenance mode, then after the dock has relaunched, remove/modify the mail "
-#~ "accounts you want."
+#~ "maintenance mode, then after the dock has relaunched, remove/modify the "
+#~ "mail accounts you want."
 #~ msgstr ""
-#~ "Ak máte nejaké problémy s appletom, vypnite túto voľbu počas režimu údržby, "
-#~ "nech dock sám spustí, a odstráni/upraví poštové účty, ktoré chcete."
+#~ "Ak máte nejaké problémy s appletom, vypnite túto voľbu počas režimu "
+#~ "údržby, nech dock sám spustí, a odstráni/upraví poštové účty, ktoré "
+#~ "chcete."
 
 #~ msgid "Check mail account on startup?"
 #~ msgstr "Skontrolovať poštový účet pri spustení ?"
@@ -5433,10 +4598,12 @@ msgstr ""
 
 #~ msgid ""
 #~ "You need to activate the Dbus plug-in in Compiz for the last 2 actions. "
-#~ "Showing desktop and desklets can fail on some Window Manager (like Metacity)."
+#~ "Showing desktop and desklets can fail on some Window Manager (like "
+#~ "Metacity)."
 #~ msgstr ""
 #~ "Musíte aktivovať rozšírenie dbus Compiz pre posledné 2 akcie. Zobrazenie "
-#~ "plochu a deskletov môže zlyhať na niektorých správcoch okien, ako Metacity."
+#~ "plochu a deskletov môže zlyhať na niektorých správcoch okien, ako "
+#~ "Metacity."
 
 #~ msgid "Show the desklets"
 #~ msgstr "Zobraziť desklety"
@@ -5463,8 +4630,8 @@ msgstr ""
 #~ "This will prevent the dock from freezing during image loading, but works "
 #~ "only with OpenGL."
 #~ msgstr ""
-#~ "Môže ochrániť dock pred zamrznutím počas načítania obrázkov, ale nefunguje s "
-#~ "cairo."
+#~ "Môže ochrániť dock pred zamrznutím počas načítania obrázkov, ale "
+#~ "nefunguje s cairo."
 
 #~ msgid "Use another thread to load images?"
 #~ msgstr "Použiť iné vlákno na načítanie obrázkov ?"
@@ -5559,8 +4726,8 @@ msgstr ""
 #~ "These options allow you to prevent some files from displaying in stacks "
 #~ "based on their type (video, image, etc.)"
 #~ msgstr ""
-#~ "Táto voľba vám umožní vyhnúť sa niektorým súborom, ktoré majú byť zobrazené "
-#~ "v depozitárovi so zreteľom na ich typy (video, obrázky, atď ..)"
+#~ "Táto voľba vám umožní vyhnúť sa niektorým súborom, ktoré majú byť "
+#~ "zobrazené v depozitárovi so zreteľom na ich typy (video, obrázky, atď ..)"
 
 #~ msgid "Filter files on MIME type?"
 #~ msgstr "Filtrovanie súborov s typom mime?"
@@ -5696,8 +4863,8 @@ msgstr ""
 #~ "When the terminal is in a dialog. When it is in a desklet, you can just "
 #~ "resize the desklet as usual."
 #~ msgstr ""
-#~ "Keď je terminál v dialógovom okne. Keď je v desklete, stačí zmeniť veľkosť "
-#~ "deskletov ako zvyčajne."
+#~ "Keď je terminál v dialógovom okne. Keď je v desklete, stačí zmeniť "
+#~ "veľkosť deskletov ako zvyčajne."
 
 #~ msgid "Size of the terminal (line x columns):"
 #~ msgstr "Veľkosť terminálu (riadky x stĺpce) :"
@@ -5733,26 +4900,27 @@ msgstr ""
 #~ msgstr "Automatický názov pre novú poznámku ?"
 
 #~ msgid ""
-#~ "Write the date format you usually use in your notes. The syntax is the one "
-#~ "of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
+#~ "Write the date format you usually use in your notes. The syntax is the "
+#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
 #~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
 #~ msgstr ""
-#~ "Napíšte formát dátumu, ktoré bežne používate v poznámkach. Syntax je jedným "
-#~ "z 'strftime':%d pre deň, m% pre mesiac,%y pre rok  (2 číslice), atď. "
-#~ "Nechajte prázdne pre použitie predvoleného (%d/%m/%y)."
+#~ "Napíšte formát dátumu, ktoré bežne používate v poznámkach. Syntax je "
+#~ "jedným z 'strftime':%d pre deň, m% pre mesiac,%y pre rok  (2 číslice), "
+#~ "atď. Nechajte prázdne pre použitie predvoleného (%d/%m/%y)."
 
 #~ msgid "Date format to search for :"
 #~ msgstr "Formát dátumu pre vyhľadávanie :"
 
 #~ msgid ""
 #~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some error "
-#~ "message like <<No marshaller for signature of signal 'NoteDeleted'>> in the "
-#~ "terminal."
+#~ "automatically notified to us. Only check this box if you notice some "
+#~ "error message like <<No marshaller for signature of signal "
+#~ "'NoteDeleted'>> in the terminal."
 #~ msgstr ""
-#~ "V závislosti na vašej verzii Tomboy, nemusíte byť automaticky upozornení o "
-#~ "odstránení poznámky. Zaškrtnite toto políčko, ak si všimnete nejaké chyby, "
-#~ "ako je <<No marshaller for signature of signal 'NoteDeleted'>> v termináli."
+#~ "V závislosti na vašej verzii Tomboy, nemusíte byť automaticky upozornení "
+#~ "o odstránení poznámky. Zaškrtnite toto políčko, ak si všimnete nejaké "
+#~ "chyby, ako je <<No marshaller for signature of signal 'NoteDeleted'>> v "
+#~ "termináli."
 
 #~ msgid "Emulate the 'NoteDeleted' signal?"
 #~ msgstr "Emulovať signál 'poznámka odstránená' ?"
@@ -5766,7 +4934,8 @@ msgstr ""
 #~ msgid "Code for your location:"
 #~ msgstr "Kód vášho umiestnenia :"
 
-#~ msgid "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
+#~ msgid ""
+#~ "If so, degrees will be displayed in Celsius, otherwise in Fahrenheit."
 #~ msgstr "Ak áno, stupne budú zobrazené v Celzia, inak vo Fahrenheit."
 
 #~ msgid "Use International System Units?"
@@ -5817,8 +4986,8 @@ msgstr ""
 #~ msgid ""
 #~ "This lets you right-click on the desklet to pop up the Cairo-Dock menu."
 #~ msgstr ""
-#~ "To vám umožní pravé-kliknutie na desklety pre vyskakovacie okno Cairo-Dock "
-#~ "menu."
+#~ "To vám umožní pravé-kliknutie na desklety pre vyskakovacie okno Cairo-"
+#~ "Dock menu."
 
 #~ msgid "Right margin width, in pixels:"
 #~ msgstr "Šírka pravého okraja, v pixeloch:"
