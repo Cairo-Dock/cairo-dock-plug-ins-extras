@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEEDED_EXTRAS="python libxslt-dev libxml2-dev xclip libgee-dev valac"
+NEEDED_EXTRAS="python libxslt-dev libxml2-dev xclip valac"
 
 LOG_CD=../log.txt
 

@@ -19,7 +19,6 @@ http://www.gnu.org/licenses/licenses.html#GPL */
 
 using GLib;
 using CairoDock.Applet;
-using Gee; // HashMap
 
 const uint CAIROBZR_ICON_STRING_LENGTH = 4;
 
@@ -146,7 +145,7 @@ action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
 		action_add(CDCairoBzrAction.DOWNLOAD_CORE, launch_download_core, "Download Core", "gtk-network", 0, true);
 		action_add(CDCairoBzrAction.DOWNLOAD_PLUGINS, launch_download_plugins, "Download Plug-Ins", "gtk-network", 0, true);
 		action_add(CDCairoBzrAction.DOWNLOAD_ALL, launch_download_all, "Download All", "gtk-network", 0, true);
-		action_add(CDCairoBzrAction.UPDATE_ALL, launch_update_all, "Update All", "gtk-network", 0, true);
+		action_add(CDCairoBzrAction.UPDATE_ALL, launch_update_all, "Update All", "gtk-execute", 0, true);
 
 		this.action_get (CDCairoBzrAction.TOGGLE_USER_MODE).set_checkbox_reference (&this.config.bDevMode);
 		this.action_get (CDCairoBzrAction.TOGGLE_RELOAD_ACTION).set_checkbox_reference (&this.config.bReload);
@@ -448,7 +447,7 @@ public delegate void DelegateType();
 public class CDAppletVala : CDApplet {
 	// my config.
 	protected CairoBzrConfig config;
-	protected HashMap<CDCairoBzrAction, CairoAction> lActions;
+	protected HashTable<CDCairoBzrAction, CairoAction> tActions;
 	protected string sAppletDirectory;
 
 
@@ -456,16 +455,16 @@ public class CDAppletVala : CDApplet {
 
 
 	protected void actions_init () {
-		this.lActions = new HashMap<CDCairoBzrAction, CairoAction> ();
+		this.tActions = new HashTable<CDCairoBzrAction, CairoAction> (direct_hash, direct_equal);
 	}
 
 	protected void action_add (CDCairoBzrAction iAction, DelegateType pFunction, string sName, string sIcon, int iIconType = 0, bool bUseThread = false) {
-		this.lActions[iAction] = new CairoAction (pFunction, sName, sIcon, iIconType, bUseThread);
+		this.tActions.insert (iAction, new CairoAction (pFunction, sName, sIcon, iIconType, bUseThread));
 	}
 
 
 	public CairoAction action_get (CDCairoBzrAction iAction) {
-		return this.lActions[iAction];
+		return this.tActions.lookup (iAction);
 	}
 
 
