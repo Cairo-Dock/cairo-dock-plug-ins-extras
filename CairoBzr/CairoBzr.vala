@@ -14,7 +14,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 http://www.gnu.org/licenses/licenses.html#GPL */
 
-/// See README for informations on this plug-in
+/// See README.txt for informations on this plug-in
 
 
 using GLib;
@@ -23,79 +23,78 @@ using CairoDock.Applet;
 const uint CAIROBZR_ICON_STRING_LENGTH = 4;
 
 
-/// List of actions defined in this plug-in.
-/// The config options "dev left click" and "dev middle click" must match with this list.
-public enum CDCairoBzrAction {
-	NONE,
-	SHOW_DIFF,
-	SHOW_VERSIONS,
-	TOGGLE_TARGET,
-	TOGGLE_USER_MODE,
-	TOGGLE_RELOAD_ACTION,
-	SET_PLUGIN_NAME,
-	GENERATE_REPORT, // TODO
-	BUILD_TARGET,
-	BUILD_ONE,
-	BUILD_CORE,
-	BUILD_PLUG_INS,
-	BUILD_ALL,
-	DOWNLOAD_CORE,
-	DOWNLOAD_PLUGINS,
-	DOWNLOAD_ALL,
-	UPDATE_ALL
-}
-
-
 /// Must match with the config options "tester left click" and "tester middle click".
-const CDCairoBzrAction[] CAIROBZR_CLICK_TESTER = {
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.SHOW_VERSIONS,
-	CDCairoBzrAction.DOWNLOAD_ALL,
-	CDCairoBzrAction.BUILD_ALL,
-	CDCairoBzrAction.UPDATE_ALL
+const string[] CAIROBZR_CLICK_TESTER = {
+	"NONE",
+	"CairoBzr.SHOW_VERSIONS",
+	"CairoBzr.DOWNLOAD_ALL",
+	"CairoBzr.BUILD_ALL",
+	"CairoBzr.UPDATE_ALL"
+};
+
+
+/// Must match with the config options "dev left click" and "dev middle click".
+const string[] CAIROBZR_CLICK_DEV = {
+	"NONE",
+	"CairoBzr.SHOW_DIFF",
+	"CairoBzr.SHOW_VERSIONS",
+	"CairoBzr.TOGGLE_TARGET",
+	"CairoBzr.TOGGLE_USER_MODE",
+	"CairoBzr.TOGGLE_RELOAD_ACTION",
+	"CairoBzr.SET_PLUGIN_NAME",
+	"CairoBzr.GENERATE_REPORT", // TODO
+	"CairoBzr.BUILD_TARGET",
+	"CairoBzr.BUILD_ONE",
+	"CairoBzr.BUILD_CORE",
+	"CairoBzr.BUILD_PLUG_INS",
+	"CairoBzr.BUILD_ALL",
+	"CairoBzr.DOWNLOAD_CORE",
+	"CairoBzr.DOWNLOAD_PLUGINS",
+	"CairoBzr.DOWNLOAD_ALL",
+	"CairoBzr.UPDATE_ALL"
 };
 
 
 /// Must match with the config option "dev mouse wheel".
-const CDCairoBzrAction[] CAIROBZR_WHEEL_DEV = {
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.TOGGLE_TARGET
+const string[] CAIROBZR_WHEEL_DEV = {
+	"NONE",
+	"CairoBzr.TOGGLE_TARGET"
 };
 
 
 /// Actions available in developer menu.
-const CDCairoBzrAction[] CAIROBZR_MENU_DEV = {
-	CDCairoBzrAction.TOGGLE_TARGET,
-	CDCairoBzrAction.SET_PLUGIN_NAME,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.SHOW_DIFF,
-	CDCairoBzrAction.SHOW_VERSIONS,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.BUILD_ONE,
-	CDCairoBzrAction.BUILD_CORE,
-	CDCairoBzrAction.BUILD_PLUG_INS,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.DOWNLOAD_CORE,
-	CDCairoBzrAction.DOWNLOAD_PLUGINS,
-	CDCairoBzrAction.DOWNLOAD_ALL,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.UPDATE_ALL,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.TOGGLE_RELOAD_ACTION,
-	CDCairoBzrAction.TOGGLE_USER_MODE
+const string[] CAIROBZR_MENU_DEV = {
+	"CairoBzr.TOGGLE_TARGET",
+	"CairoBzr.SET_PLUGIN_NAME",
+	"NONE",
+	"CairoBzr.SHOW_DIFF",
+	"CairoBzr.SHOW_VERSIONS",
+	"NONE",
+	"CairoBzr.BUILD_ONE",
+	"CairoBzr.BUILD_CORE",
+	"CairoBzr.BUILD_PLUG_INS",
+	"NONE",
+	"CairoBzr.DOWNLOAD_CORE",
+	"CairoBzr.DOWNLOAD_PLUGINS",
+	"CairoBzr.DOWNLOAD_ALL",
+	"NONE",
+	"CairoBzr.UPDATE_ALL",
+	"NONE",
+	"CairoBzr.TOGGLE_RELOAD_ACTION",
+	"CairoBzr.TOGGLE_USER_MODE"
 };
 
 
 /// Actions available in tester menu.
-const CDCairoBzrAction[] CAIROBZR_MENU_TESTER = {
-	CDCairoBzrAction.SHOW_VERSIONS,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.UPDATE_ALL,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.DOWNLOAD_ALL,
-	CDCairoBzrAction.BUILD_ALL,
-	CDCairoBzrAction.NONE,
-	CDCairoBzrAction.TOGGLE_USER_MODE
+const string[] CAIROBZR_MENU_TESTER = {
+	"CairoBzr.SHOW_VERSIONS",
+	"NONE",
+	"CairoBzr.UPDATE_ALL",
+	"NONE",
+	"CairoBzr.DOWNLOAD_ALL",
+	"CairoBzr.BUILD_ALL",
+	"NONE",
+	"CairoBzr.TOGGLE_USER_MODE"
 };
 
 
@@ -104,12 +103,12 @@ public struct CairoBzrConfig {
 	protected bool bDevMode; /// false = tester / true = developer
 	protected bool bTarget; /// false = core / true = plug-in(s)
 	protected bool bReload; /// true if the reload action should be triggered after build
-	protected CDCairoBzrAction iTesterActionLeftClick;
-	protected CDCairoBzrAction iTesterActionMiddleClick;
-	protected CDCairoBzrAction iDevActionLeftClick;
-	protected CDCairoBzrAction iDevActionMiddleClick;
-	protected CDCairoBzrAction iDevActionMouseWheel;
-//~ 	private CDCairoBzrAction iActionOnDragAndDrop;
+	protected int iTesterActionLeftClick;
+	protected int iTesterActionMiddleClick;
+	protected int iDevActionLeftClick;
+	protected int iDevActionMiddleClick;
+	protected int iDevActionMouseWheel;
+//~ 	private int iActionOnDragAndDrop;
 	protected string sBuildScriptMain;
 	protected string sBuildScriptPlugIn;
 	protected string sDiffCommand;
@@ -129,33 +128,30 @@ public class CairoBzr : CDAppletVala {
 
 	private void actions_load () {
 		actions_init ();
-		action_add(CDCairoBzrAction.NONE, launch_none, "", "", 2);
-		action_add(CDCairoBzrAction.SHOW_DIFF, launch_show_diff, "Show Diff", "gtk-justify-fill");
-		action_add(CDCairoBzrAction.SHOW_VERSIONS, launch_show_versions, "Show Versions", "gtk-network", 0, true);
-		action_add(CDCairoBzrAction.TOGGLE_TARGET, launch_toggle_target, "", "gtk-refresh");
-		action_add(CDCairoBzrAction.TOGGLE_USER_MODE, launch_toggle_user_mode, "Use developer mode", "", 3);
-		action_add(CDCairoBzrAction.TOGGLE_RELOAD_ACTION, launch_toggle_reload_action, "Reload after build", "", 3);
-		action_add(CDCairoBzrAction.SET_PLUGIN_NAME, launch_set_plugin_name, "Set plug-in name", "gtk-refresh");
-action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
-		action_add(CDCairoBzrAction.BUILD_TARGET, launch_build_target, "", "gtk-media-play");
-		action_add(CDCairoBzrAction.BUILD_ONE, launch_build_one_plugin, "", "gtk-media-play", 0, true);
-		action_add(CDCairoBzrAction.BUILD_CORE, launch_build_core, "Build Core", "gtk-media-forward", 0, true);
-		action_add(CDCairoBzrAction.BUILD_PLUG_INS, launch_build_plugins, "Build Plug-Ins", "gtk-media-next", 0, true);
-		action_add(CDCairoBzrAction.BUILD_ALL, launch_build_all, "Build All", "gtk-media-next", 0, true);
-		action_add(CDCairoBzrAction.DOWNLOAD_CORE, launch_download_core, "Download Core", "gtk-network", 0, true);
-		action_add(CDCairoBzrAction.DOWNLOAD_PLUGINS, launch_download_plugins, "Download Plug-Ins", "gtk-network", 0, true);
-		action_add(CDCairoBzrAction.DOWNLOAD_ALL, launch_download_all, "Download All", "gtk-network", 0, true);
-		action_add(CDCairoBzrAction.UPDATE_ALL, launch_update_all, "Update All", "gtk-execute", 0, true);
+		action_add("CairoBzr.SHOW_DIFF", launch_show_diff, "Show Diff", "gtk-justify-fill");
+		action_add("CairoBzr.SHOW_VERSIONS", launch_show_versions, "Show Versions", "gtk-network", 0, true);
+		action_add("CairoBzr.TOGGLE_TARGET", launch_toggle_target, "", "gtk-refresh");
+		action_add("CairoBzr.TOGGLE_USER_MODE", launch_toggle_user_mode, "Use developer mode", "", 3);
+		action_add("CairoBzr.TOGGLE_RELOAD_ACTION", launch_toggle_reload_action, "Reload after build", "", 3);
+		action_add("CairoBzr.SET_PLUGIN_NAME", launch_set_plugin_name, "Set plug-in name", "gtk-refresh");
+action_add("CairoBzr.GENERATE_REPORT", action_none, "", "gtk-refresh");
+		action_add("CairoBzr.BUILD_TARGET", launch_build_target, "", "gtk-media-play");
+		action_add("CairoBzr.BUILD_ONE", launch_build_one_plugin, "", "gtk-media-play", 0, true);
+		action_add("CairoBzr.BUILD_CORE", launch_build_core, "Build Core", "gtk-media-forward", 0, true);
+		action_add("CairoBzr.BUILD_PLUG_INS", launch_build_plugins, "Build Plug-Ins", "gtk-media-next", 0, true);
+		action_add("CairoBzr.BUILD_ALL", launch_build_all, "Build All", "gtk-media-next", 0, true);
+		action_add("CairoBzr.DOWNLOAD_CORE", launch_download_core, "Download Core", "gtk-network", 0, true);
+		action_add("CairoBzr.DOWNLOAD_PLUGINS", launch_download_plugins, "Download Plug-Ins", "gtk-network", 0, true);
+		action_add("CairoBzr.DOWNLOAD_ALL", launch_download_all, "Download All", "gtk-network", 0, true);
+		action_add("CairoBzr.UPDATE_ALL", launch_update_all, "Update All", "gtk-execute", 0, true);
 
-		this.action_get (CDCairoBzrAction.TOGGLE_USER_MODE).set_checkbox_reference (&this.config.bDevMode);
-		this.action_get (CDCairoBzrAction.TOGGLE_RELOAD_ACTION).set_checkbox_reference (&this.config.bReload);
+		this.action_get ("CairoBzr.TOGGLE_USER_MODE").set_checkbox_reference (&this.config.bDevMode);
+		this.action_get ("CairoBzr.TOGGLE_RELOAD_ACTION").set_checkbox_reference (&this.config.bReload);
 	}
 
 
 
 	/***  BASIC ACTIONS CALLS  ***/
-
-	public void launch_none () {}
 
 	private void launch_show_diff () {
 		string[] argv = { this.config.sDiffCommand, "." };
@@ -194,7 +190,7 @@ action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
 
 
 	public void launch_build_target () {
-		action_launch (this.config.bTarget ? CDCairoBzrAction.BUILD_ONE : CDCairoBzrAction.BUILD_CORE);
+		action_launch (this.config.bTarget ? "CairoBzr.BUILD_ONE" : "CairoBzr.BUILD_CORE");
 	}
 
 
@@ -282,9 +278,9 @@ action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
 		if (sText.length > 0)
 			this.config.sBuildPlugInName = sText;
 		string sName = this.config.bTarget ? this.config.sBuildPlugInName : "core";
-		this.action_get (CDCairoBzrAction.TOGGLE_TARGET).set_label ("Target : " + sName);
-		this.action_get (CDCairoBzrAction.BUILD_TARGET).set_label ("Build " + sName);
-		this.action_get (CDCairoBzrAction.BUILD_ONE).set_label ("Build " + this.config.sBuildPlugInName);
+		this.action_get ("CairoBzr.TOGGLE_TARGET").set_label ("Target : " + sName);
+		this.action_get ("CairoBzr.BUILD_TARGET").set_label ("Build " + sName);
+		this.action_get ("CairoBzr.BUILD_ONE").set_label ("Build " + this.config.sBuildPlugInName);
 		set_icon_info ();
 	}
 
@@ -371,11 +367,11 @@ action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
 	/***  MAIN ICON CALLBACKS  ***/
 
 	public override void on_click (int iState) {
-		action_launch (this.config.bDevMode ? this.config.iDevActionLeftClick : CAIROBZR_CLICK_TESTER[this.config.iTesterActionLeftClick]);
+		action_launch (this.config.bDevMode ? CAIROBZR_CLICK_DEV[this.config.iDevActionLeftClick] : CAIROBZR_CLICK_TESTER[this.config.iTesterActionLeftClick]);
 	}
 	
 	public override void on_middle_click () {
-		action_launch (this.config.bDevMode ? this.config.iDevActionMiddleClick : CAIROBZR_CLICK_TESTER[this.config.iTesterActionMiddleClick]);
+		action_launch (this.config.bDevMode ? CAIROBZR_CLICK_DEV[this.config.iDevActionMiddleClick] : CAIROBZR_CLICK_TESTER[this.config.iTesterActionMiddleClick]);
 	}
 
 	public override void on_scroll (bool bScrollUp) { 
@@ -388,7 +384,7 @@ action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
 		}
 
 	public override void on_build_menu () {
-		build_menu ( this.config.bDevMode ? (CDCairoBzrAction[]) CAIROBZR_MENU_DEV : (CDCairoBzrAction[]) CAIROBZR_MENU_TESTER );
+		build_menu ( this.config.bDevMode ? (string[]) CAIROBZR_MENU_DEV : (string[]) CAIROBZR_MENU_TESTER );
 	}
 
 	public override void on_answer_dialog (int iButton, Variant answer) {
@@ -410,11 +406,11 @@ action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
 			this.config.sFolderPlugIns = keyfile.get_string("Configuration", "folder plug-ins");
 			this.config.sBuildPlugInName  = keyfile.get_string("Developer", "build plug-in name");
 			this.config.sDiffCommand = keyfile.get_string("Developer", "diff gui");
-			this.config.iTesterActionLeftClick = (CDCairoBzrAction) keyfile.get_integer("Configuration", "tester left click");
-			this.config.iTesterActionMiddleClick = (CDCairoBzrAction) keyfile.get_integer("Configuration", "tester middle click");
-			this.config.iDevActionLeftClick = (CDCairoBzrAction) keyfile.get_integer("Developer", "dev left click");
-			this.config.iDevActionMiddleClick = (CDCairoBzrAction) keyfile.get_integer("Developer", "dev middle click");
-			this.config.iDevActionMouseWheel = (CDCairoBzrAction) keyfile.get_integer("Developer", "dev mouse wheel");
+			this.config.iTesterActionLeftClick = keyfile.get_integer("Configuration", "tester left click");
+			this.config.iTesterActionMiddleClick = keyfile.get_integer("Configuration", "tester middle click");
+			this.config.iDevActionLeftClick = keyfile.get_integer("Developer", "dev left click");
+			this.config.iDevActionMiddleClick = keyfile.get_integer("Developer", "dev middle click");
+			this.config.iDevActionMouseWheel = keyfile.get_integer("Developer", "dev mouse wheel");
 		}
 		catch (Error e) {
 			print ("[CairoBzr] Error when trying to load configuration data : %s\n", e.message);
@@ -425,6 +421,7 @@ action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
 	public override void begin () {
 		Process.spawn_command_line_sync ("pwd", out this.sAppletDirectory); // SpawnError
 		this.sAppletDirectory = this.sAppletDirectory.substring (0, this.sAppletDirectory.length - 1);
+		this.sEmblemBusy = "/icons/emblem-important.svg";
 		reload ();
 	}
 
@@ -447,29 +444,31 @@ public delegate void DelegateType();
 public class CDAppletVala : CDApplet {
 	// my config.
 	protected CairoBzrConfig config;
-	protected HashTable<CDCairoBzrAction, CairoAction> tActions;
+	protected HashTable<string, CairoAction> tActions;
 	protected string sAppletDirectory;
+	protected string sEmblemBusy;
 
 
 	public CDAppletVala (string[] argv) { base(argv); }
 
 
 	protected void actions_init () {
-		this.tActions = new HashTable<CDCairoBzrAction, CairoAction> (direct_hash, direct_equal);
+		this.tActions = new HashTable<string, CairoAction> (str_hash, str_equal);
+		action_add("NONE", action_none, "", "", 2);
 	}
 
-	protected void action_add (CDCairoBzrAction iAction, DelegateType pFunction, string sName, string sIcon, int iIconType = 0, bool bUseThread = false) {
-		this.tActions.insert (iAction, new CairoAction (pFunction, sName, sIcon, iIconType, bUseThread));
-	}
-
-
-	public CairoAction action_get (CDCairoBzrAction iAction) {
-		return this.tActions.lookup (iAction);
+	protected void action_add (string sAction, DelegateType pFunction, string sName, string sIcon, int iIconType = 0, bool bUseThread = false) {
+		this.tActions.insert (sAction, new CairoAction (pFunction, sName, sIcon, iIconType, bUseThread));
 	}
 
 
-	public void action_launch (CDCairoBzrAction iAction) {
-		var pAction = action_get (iAction);
+	public CairoAction action_get (string sAction) {
+		return this.tActions.lookup (sAction);
+	}
+
+
+	public void action_launch (string sAction) {
+		var pAction = action_get (sAction);
 		var pFunction = pAction.function ();
 		if (pAction.use_thread ()) {
       set_emblem_busy ();
@@ -479,6 +478,9 @@ public class CDAppletVala : CDApplet {
 		else
 			pFunction ();
 	}
+
+
+	public void action_none () {}
 
 
 	public void set_emblem_busy () {
@@ -492,14 +494,14 @@ public class CDAppletVala : CDApplet {
 	}
 
 
-	protected void build_menu (CDCairoBzrAction[] pMenu) {
+	protected void build_menu (string[] pMenu) {
 		HashTable<string,Variant>[] pItems = {};
-		CDCairoBzrAction iActionType;
+		string sActionType;
 		CairoAction pAction;
 		HashTable<string,Variant?>  pItem;
 		for (int a = 0; a < pMenu.length; a++) {
-			iActionType = pMenu[a];
-			pAction = action_get (iActionType);
+			sActionType = pMenu[a];
+			pAction = action_get (sActionType);
 			switch (pAction.iIconType) {
 				case 2: /// Separator
 					pItem = pAction.menu_separator ();
@@ -585,8 +587,6 @@ public class CairoAction {
 	}
 
 
-//~ 	public string label ()          { return this.sLabel; }
-//~ 	public string icon ()           { return this.sIcon; }
 	public DelegateType function () { return this.pFunction; }
 	public bool use_thread ()       { return this.bUseThread; }
 
