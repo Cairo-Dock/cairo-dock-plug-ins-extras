@@ -21,6 +21,8 @@ using GLib;
 using CairoDock.Applet;
 using Gee; // HashMap
 
+const uint CAIROBZR_ICON_STRING_LENGTH = 4;
+
 
 /// List of actions defined in this plug-in.
 /// The config options "dev left click" and "dev middle click" must match with this list.
@@ -31,28 +33,27 @@ public enum CDCairoBzrAction {
 	TOGGLE_TARGET,
 	TOGGLE_USER_MODE,
 	TOGGLE_RELOAD_ACTION,
-	SET_MODULE_NAME, // TODO
+	SET_PLUGIN_NAME,
 	GENERATE_REPORT, // TODO
 	BUILD_TARGET,
 	BUILD_ONE,
 	BUILD_CORE,
 	BUILD_PLUG_INS,
 	BUILD_ALL,
-	DOWNLOAD_CORE, // TODO
-	DOWNLOAD_PLUGINS, // TODO
-	DOWNLOAD_ALL, // TODO
-	UPDATE_ALL // TODO
+	DOWNLOAD_CORE,
+	DOWNLOAD_PLUGINS,
+	DOWNLOAD_ALL,
+	UPDATE_ALL
 }
 
-const uint CAIROBZR_ICON_STRING_LENGTH = 4;
 
 /// Must match with the config options "tester left click" and "tester middle click".
 const CDCairoBzrAction[] CAIROBZR_CLICK_TESTER = {
 	CDCairoBzrAction.NONE,
 	CDCairoBzrAction.SHOW_VERSIONS,
-	CDCairoBzrAction.NONE,	// CDCairoBzrAction.CD_ACT_COMPILE_DOWNLOAD_ALL,
+	CDCairoBzrAction.DOWNLOAD_ALL,
 	CDCairoBzrAction.BUILD_ALL,
-	CDCairoBzrAction.NONE //~ 		CDCairoBzrAction.CD_ACT_COMPILE_UPDATE_ALL,
+	CDCairoBzrAction.UPDATE_ALL
 };
 
 
@@ -66,6 +67,7 @@ const CDCairoBzrAction[] CAIROBZR_WHEEL_DEV = {
 /// Actions available in developer menu.
 const CDCairoBzrAction[] CAIROBZR_MENU_DEV = {
 	CDCairoBzrAction.TOGGLE_TARGET,
+	CDCairoBzrAction.SET_PLUGIN_NAME,
 	CDCairoBzrAction.NONE,
 	CDCairoBzrAction.SHOW_DIFF,
 	CDCairoBzrAction.SHOW_VERSIONS,
@@ -73,6 +75,12 @@ const CDCairoBzrAction[] CAIROBZR_MENU_DEV = {
 	CDCairoBzrAction.BUILD_ONE,
 	CDCairoBzrAction.BUILD_CORE,
 	CDCairoBzrAction.BUILD_PLUG_INS,
+	CDCairoBzrAction.NONE,
+	CDCairoBzrAction.DOWNLOAD_CORE,
+	CDCairoBzrAction.DOWNLOAD_PLUGINS,
+	CDCairoBzrAction.DOWNLOAD_ALL,
+	CDCairoBzrAction.NONE,
+	CDCairoBzrAction.UPDATE_ALL,
 	CDCairoBzrAction.NONE,
 	CDCairoBzrAction.TOGGLE_RELOAD_ACTION,
 	CDCairoBzrAction.TOGGLE_USER_MODE
@@ -82,10 +90,10 @@ const CDCairoBzrAction[] CAIROBZR_MENU_DEV = {
 /// Actions available in tester menu.
 const CDCairoBzrAction[] CAIROBZR_MENU_TESTER = {
 	CDCairoBzrAction.SHOW_VERSIONS,
-//~ 		CDCairoBzrAction.NONE,
-//~ 		CDCairoBzrAction.CD_ACT_COMPILE_UPDATE_ALL,
 	CDCairoBzrAction.NONE,
-//~ 		CDCairoBzrAction.CD_ACT_COMPILE_DOWNLOAD_ALL,
+	CDCairoBzrAction.UPDATE_ALL,
+	CDCairoBzrAction.NONE,
+	CDCairoBzrAction.DOWNLOAD_ALL,
 	CDCairoBzrAction.BUILD_ALL,
 	CDCairoBzrAction.NONE,
 	CDCairoBzrAction.TOGGLE_USER_MODE
@@ -115,8 +123,6 @@ public struct CairoBzrConfig {
 
 
 public class CairoBzr : CDAppletVala {
-	private string sAppletDirectory;
-
 	public CairoBzr (string[] argv) { base(argv); }
 
 
@@ -124,86 +130,91 @@ public class CairoBzr : CDAppletVala {
 
 	private void actions_load () {
 		actions_init ();
-		action_add(CDCairoBzrAction.NONE, action_none, "", "", 2);
-		action_add(CDCairoBzrAction.SHOW_DIFF, action_show_diff, "Show Diff", "gtk-justify-fill");
-		action_add(CDCairoBzrAction.SHOW_VERSIONS, action_show_versions, "Show Versions", "gtk-network");
-		action_add(CDCairoBzrAction.TOGGLE_TARGET, action_toggle_target, "", "gtk-refresh");
-		action_add(CDCairoBzrAction.TOGGLE_USER_MODE, action_toggle_user_mode, "Use developer mode", "", 3);
-		action_add(CDCairoBzrAction.TOGGLE_RELOAD_ACTION, action_toggle_reload_action, "Reload after build", "", 3);
-action_add(CDCairoBzrAction.SET_MODULE_NAME, action_none, "", "gtk-refresh");
-action_add(CDCairoBzrAction.GENERATE_REPORT, action_none, "", "gtk-refresh");
-		action_add(CDCairoBzrAction.BUILD_TARGET, action_build_target, "", "gtk-media-play");
-		action_add(CDCairoBzrAction.BUILD_ONE, action_build_one_module, "Build " + this.config.sBuildPlugInName, "gtk-media-play");
-		action_add(CDCairoBzrAction.BUILD_CORE, action_build_core, "Build Core", "gtk-media-forward");
-		action_add(CDCairoBzrAction.BUILD_PLUG_INS, action_build_plugins, "Build Plug-Ins", "gtk-media-next");
-		action_add(CDCairoBzrAction.BUILD_ALL, action_build_all, "Build All", "gtk-media-next");
-action_add(CDCairoBzrAction.DOWNLOAD_CORE, action_none, "", "gtk-refresh");
-action_add(CDCairoBzrAction.DOWNLOAD_PLUGINS, action_none, "", "gtk-refresh");
-action_add(CDCairoBzrAction.DOWNLOAD_ALL, action_none, "", "gtk-network");
-action_add(CDCairoBzrAction.UPDATE_ALL, action_none, "", "gtk-network");
+		action_add(CDCairoBzrAction.NONE, launch_none, "", "", 2);
+		action_add(CDCairoBzrAction.SHOW_DIFF, launch_show_diff, "Show Diff", "gtk-justify-fill");
+		action_add(CDCairoBzrAction.SHOW_VERSIONS, launch_show_versions, "Show Versions", "gtk-network", 0, true);
+		action_add(CDCairoBzrAction.TOGGLE_TARGET, launch_toggle_target, "", "gtk-refresh");
+		action_add(CDCairoBzrAction.TOGGLE_USER_MODE, launch_toggle_user_mode, "Use developer mode", "", 3);
+		action_add(CDCairoBzrAction.TOGGLE_RELOAD_ACTION, launch_toggle_reload_action, "Reload after build", "", 3);
+		action_add(CDCairoBzrAction.SET_PLUGIN_NAME, launch_set_plugin_name, "Set plug-in name", "gtk-refresh");
+action_add(CDCairoBzrAction.GENERATE_REPORT, launch_none, "", "gtk-refresh");
+		action_add(CDCairoBzrAction.BUILD_TARGET, launch_build_target, "", "gtk-media-play");
+		action_add(CDCairoBzrAction.BUILD_ONE, launch_build_one_plugin, "", "gtk-media-play", 0, true);
+		action_add(CDCairoBzrAction.BUILD_CORE, launch_build_core, "Build Core", "gtk-media-forward", 0, true);
+		action_add(CDCairoBzrAction.BUILD_PLUG_INS, launch_build_plugins, "Build Plug-Ins", "gtk-media-next", 0, true);
+		action_add(CDCairoBzrAction.BUILD_ALL, launch_build_all, "Build All", "gtk-media-next", 0, true);
+		action_add(CDCairoBzrAction.DOWNLOAD_CORE, launch_download_core, "Download Core", "gtk-network", 0, true);
+		action_add(CDCairoBzrAction.DOWNLOAD_PLUGINS, launch_download_plugins, "Download Plug-Ins", "gtk-network", 0, true);
+		action_add(CDCairoBzrAction.DOWNLOAD_ALL, launch_download_all, "Download All", "gtk-network", 0, true);
+		action_add(CDCairoBzrAction.UPDATE_ALL, launch_update_all, "Update All", "gtk-network", 0, true);
 
-		this.lActions[CDCairoBzrAction.TOGGLE_USER_MODE].set_checkbox_reference (&this.config.bDevMode);
-		this.lActions[CDCairoBzrAction.TOGGLE_RELOAD_ACTION].set_checkbox_reference (&this.config.bReload);
+		this.action_get (CDCairoBzrAction.TOGGLE_USER_MODE).set_checkbox_reference (&this.config.bDevMode);
+		this.action_get (CDCairoBzrAction.TOGGLE_RELOAD_ACTION).set_checkbox_reference (&this.config.bReload);
 	}
 
 
 
+	/***  BASIC ACTIONS CALLS  ***/
 
-	/***  ACTIONS CALLS  ***/
+	public void launch_none () {}
 
-	public void action_none () {}
-
-	private void action_show_diff () {
+	private void launch_show_diff () {
 		string[] argv = { this.config.sDiffCommand, "." };
 		this.spawn_async (this.config.bTarget ? this.config.sFolderPlugIns : this.config.sFolderCore, argv);
 	}
 
 
-
-	private void action_toggle_target () {
+	private void launch_toggle_target () {
 		this.config.bTarget = this.config.bTarget == true ? false : true;
 		set_target ();
 	}
 
 
-	private void action_toggle_user_mode () {
+	private void launch_toggle_user_mode () {
 		this.config.bDevMode = this.config.bDevMode == true ? false : true;
 		set_icon_info ();
 	}
 
-	private void action_toggle_reload_action () {
+
+	private void launch_toggle_reload_action () {
 		this.config.bReload = this.config.bReload == true ? false : true;
 	}
 
 
-	public void action_show_versions ()    { thread_launch ((ThreadFunc) thread_show_versions); }
-	public void action_build_target ()     { action_launch (this.config.bTarget ? CDCairoBzrAction.BUILD_ONE : CDCairoBzrAction.BUILD_CORE); }
-	public void action_build_one_module () { thread_launch ((ThreadFunc) thread_build_one_plugin); }
-	public void action_build_core ()       { thread_launch ((ThreadFunc) thread_build_core); }
-	public void action_build_plugins ()    { thread_launch ((ThreadFunc) thread_build_plugins); }
-	public void action_build_all ()        { thread_launch ((ThreadFunc) thread_build_all); }
-
-
-
-	/***  THREADED ACTIONS  ***/
-
-	private void thread_show_versions () {
-		set_emblem_busy ();
-		string sLogCore = compile_bzr_log (this.config.sFolderCore, "lp:cairo-dock-core");
-		string sLogPlugIns = compile_bzr_log (this.config.sFolderPlugIns, "lp:cairo-dock-plug-ins");
-		try {
-			this.icon.ShowDialog("Core : %s\nPlug-ins : %s".printf(sLogCore, sLogPlugIns), 60);
-		}
+	private void launch_set_plugin_name () {
+		var dialog_attributes = new HashTable<string,Variant>(str_hash, str_equal);
+		dialog_attributes.insert ("icon", "stock_properties");
+		dialog_attributes.insert ("message", "Set build plugin name");
+		dialog_attributes.insert ("buttons", "ok;cancel");
+		var widget_attributes = new HashTable<string,Variant>(str_hash, str_equal);
+		widget_attributes.insert ("widget-type", "text-entry");
+		widget_attributes.insert ("editable", true);
+		try { this.icon.PopupDialog (dialog_attributes, widget_attributes); }
 		catch (Error e) {}
-		set_icon ();
 	}
 
 
-	public void thread_build_one_plugin () {
-		set_emblem_busy ();
+	public void launch_build_target () {
+		action_launch (this.config.bTarget ? CDCairoBzrAction.BUILD_ONE : CDCairoBzrAction.BUILD_CORE);
+	}
+
+
+
+	/***  THREADED ACTIONS CALLS  ***/
+
+	private void launch_show_versions () {
+		string sLogCore = compile_bzr_log (this.config.sFolderCore, "lp:cairo-dock-core");
+		string sLogPlugIns = compile_bzr_log (this.config.sFolderPlugIns, "lp:cairo-dock-plug-ins");
+		try { this.icon.ShowDialog("Core : %s\nPlug-ins : %s".printf(sLogCore, sLogPlugIns), 60); }
+		catch (Error e) {}
+		set_emblem_none ();
+	}
+
+
+	public void launch_build_one_plugin () {
 		string sCompileDirectory = this.config.sFolderPlugIns + "/build/" + this.config.sBuildPlugInName;
 		string sError;
-		print("[CairoBzr] Build module : %s\n", this.config.sBuildPlugInName);
+		print("[CairoBzr] Build plugin : %s\n", this.config.sBuildPlugInName);
 		string[] argv = { directory_scripts () + this.config.sBuildScriptPlugIn };
 		if (this.config.bReload)
 			argv += this.config.sBuildPlugInName;
@@ -211,29 +222,52 @@ action_add(CDCairoBzrAction.UPDATE_ALL, action_none, "", "gtk-network");
 		this.spawn_sync(sCompileDirectory, argv, null, out sError);
 		if (sError.length > 0)
 			print(sError + "\n");
-		set_icon ();
+		set_emblem_none ();
 	}
 
 
-	public void thread_build_core ()    {
-		set_emblem_busy ();
+	public void launch_build_core ()    {
 		build_main (this.config.sFolderCore, this.config.bReload);
-		set_icon ();
+		set_emblem_none ();
 	}
 
 
-	public void thread_build_plugins ()    {
-		set_emblem_busy ();
+	public void launch_build_plugins ()    {
 		build_main (this.config.sFolderPlugIns, this.config.bReload);
-		set_icon ();
+		set_emblem_none ();
 	}
 
 
-	public void thread_build_all () {
-		set_emblem_busy ();
+	public void launch_build_all () {
 		if (build_main (this.config.sFolderCore, false))
-			build_main (this.config.sFolderPlugIns, this.config.bReload);
-		set_icon ();
+			build_main (this.config.sFolderPlugIns, !this.config.bDevMode || this.config.bReload);
+		set_emblem_none ();
+	}
+
+
+	public void launch_download_core () {
+		download_main (this.config.sFolderCore);
+		set_emblem_none ();
+	}
+
+
+	public void launch_download_plugins () {
+		download_main (this.config.sFolderPlugIns);
+		set_emblem_none ();
+	}
+
+
+	public void launch_download_all () {
+		if (download_main (this.config.sFolderCore))
+			download_main (this.config.sFolderPlugIns);
+		set_emblem_none ();
+	}
+
+
+	public void launch_update_all () {
+		if (download_main (this.config.sFolderCore) && download_main (this.config.sFolderPlugIns) && build_main (this.config.sFolderCore, false))
+			build_main (this.config.sFolderPlugIns, !this.config.bDevMode || this.config.bReload);
+		set_emblem_none ();
 	}
 
 
@@ -245,10 +279,13 @@ action_add(CDCairoBzrAction.UPDATE_ALL, action_none, "", "gtk-network");
 	}
 
 
-	private void set_target () {
+	private void set_target (string sText = "") {
+		if (sText.length > 0)
+			this.config.sBuildPlugInName = sText;
 		string sName = this.config.bTarget ? this.config.sBuildPlugInName : "core";
-		this.lActions[CDCairoBzrAction.TOGGLE_TARGET].set_label ("Target : " + sName);
-		this.lActions[CDCairoBzrAction.BUILD_TARGET].set_label ("Build " + sName);
+		this.action_get (CDCairoBzrAction.TOGGLE_TARGET).set_label ("Target : " + sName);
+		this.action_get (CDCairoBzrAction.BUILD_TARGET).set_label ("Build " + sName);
+		this.action_get (CDCairoBzrAction.BUILD_ONE).set_label ("Build " + this.config.sBuildPlugInName);
 		set_icon_info ();
 	}
 
@@ -261,46 +298,49 @@ action_add(CDCairoBzrAction.UPDATE_ALL, action_none, "", "gtk-network");
 			else
 				sTextInfo = "Core";
 		}
-		try {
-		this.icon.SetQuickInfo(sTextInfo);
-		}
-		catch (Error e) {}
-	}
-
-
-	public void set_emblem_busy () {
-		try {
-		this.icon.SetEmblem (this.sAppletDirectory + "/icons/emblem-important.svg", 3);
-		}
+		try { this.icon.SetQuickInfo(sTextInfo); }
 		catch (Error e) {}
 	}
 
 
 	public void set_icon () {
-		try {
-		this.icon.SetIcon (this.sAppletDirectory + "/icon");
-		}
+		try { this.icon.SetIcon (this.sAppletDirectory + "/icon"); }
 		catch (Error e) {}
 	}
 
 
 	private bool build_main (string sDirectory, bool bCanReload = true) {
+		if (!(sDirectory.length > 0)) return false;
 		int iExitStatus;
 		string sError;
 		string[] argv = { directory_scripts () + this.config.sBuildScriptMain };
 		if (bCanReload)
 			argv += "-r";
 		print("[CairoBzr] Build main : %s\n", sDirectory);
-		set_emblem_busy ();
 		this.spawn_sync(sDirectory, argv, null, out sError, out iExitStatus);
 		if (sError.length > 0)
 			print(sError + "\n");
-		set_icon ();
+		return iExitStatus > 0 ? false : true;
+	}
+
+
+	private bool download_main (string sDirectory) {
+		if (!(sDirectory.length > 0)) return false;
+		int iExitStatus;
+		string sError, sOutout;
+		string[] argv = { "/usr/bin/bzr", "pull" };
+		print("[CairoBzr] Download main : %s\n", sDirectory);
+		this.spawn_sync(sDirectory, argv, out sOutout, out sError, out iExitStatus);
+		if (sOutout.length > 0)
+			print(sOutout + "\n");
+		if (sError.length > 0)
+			print(sError + "\n");
 		return iExitStatus > 0 ? false : true;
 	}
 
 
 	private string compile_bzr_log (string sDirectory, string sBranch){
+		if (!(sDirectory.length > 0)) return "";
 		int iLocalVersion = 0, iDistVersion = 0;
 		string sLog = "";
 		
@@ -349,9 +389,12 @@ action_add(CDCairoBzrAction.UPDATE_ALL, action_none, "", "gtk-network");
 		}
 
 	public override void on_build_menu () {
-		build_menu ( this.config.bDevMode ? CAIROBZR_MENU_DEV : CAIROBZR_MENU_TESTER );
+		build_menu ( this.config.bDevMode ? (CDCairoBzrAction[]) CAIROBZR_MENU_DEV : (CDCairoBzrAction[]) CAIROBZR_MENU_TESTER );
 	}
 
+	public override void on_answer_dialog (int iButton, Variant answer) {
+		set_target ((string) answer);
+	}
 
 
 	/***  APPLET DEFINITION  ***/
@@ -393,62 +436,10 @@ action_add(CDCairoBzrAction.UPDATE_ALL, action_none, "", "gtk-network");
 	}
 
 	public override void end () {
-//~ 		print ("[CairoBzr] module is stopped\n");
+//~ 		print ("[CairoBzr] applet is stopped\n");
 	}
 
 } // End class : CairoBzr
-
-
-
-
-public class CairoAction {
-	private string sIcon;
-	private string sLabel;
-	private DelegateType pFunction;
-	public int iIconType;
-	private bool* bChecked;
-
-	public CairoAction (DelegateType pFunction, string sLabel = "", string sIcon = "", int iIconType = 0) {
-		this.pFunction = pFunction;
-		this.set_label (sLabel);
-		this.sIcon = sIcon;
-		this.iIconType = iIconType;
-	}
-
-
-	public HashTable<string,Variant?> menu_separator () {
-		var pItem = new HashTable<string,Variant?>(str_hash, str_equal);
-		pItem.insert("type", 2);
-		return pItem;
-	}
-
-
-	public HashTable<string,Variant?> menu_icon (int iId) {
-		var pItem = new HashTable<string,Variant?>(str_hash, str_equal);
-		pItem.insert("label", this.sLabel);
-		pItem.insert("icon", this.sIcon);
-		pItem.insert("id", iId);
-		return pItem;
-	}
-
-
-	public HashTable<string,Variant?> menu_checkbox (int iId) {
-		var pItem = new HashTable<string,Variant?>(str_hash, str_equal);
-		pItem.insert("type", 3);
-		pItem.insert("label", this.sLabel);
-		pItem.insert("state", *this.bChecked);
-		pItem.insert("id", iId);
-		return pItem;
-	}
-
-
-	public string label () { return this.sLabel; }
-	public string icon () { return this.sIcon; }
-
-	public void set_label (string sLabel) { this.sLabel = sLabel; }
-	public void set_checkbox_reference (bool* bPointer) { this.bChecked = bPointer; }
-	public void launch () { this.pFunction (); }
-} // End class : CairoAction
 
 
 
@@ -458,6 +449,7 @@ public class CDAppletVala : CDApplet {
 	// my config.
 	protected CairoBzrConfig config;
 	protected HashMap<CDCairoBzrAction, CairoAction> lActions;
+	protected string sAppletDirectory;
 
 
 	public CDAppletVala (string[] argv) { base(argv); }
@@ -467,31 +459,57 @@ public class CDAppletVala : CDApplet {
 		this.lActions = new HashMap<CDCairoBzrAction, CairoAction> ();
 	}
 
-	protected void action_add (CDCairoBzrAction iAction, DelegateType pFunction, string sName, string sIcon, int iIconType = 0) {
-		this.lActions[iAction] = new CairoAction (pFunction, sName, sIcon, iIconType);
+	protected void action_add (CDCairoBzrAction iAction, DelegateType pFunction, string sName, string sIcon, int iIconType = 0, bool bUseThread = false) {
+		this.lActions[iAction] = new CairoAction (pFunction, sName, sIcon, iIconType, bUseThread);
 	}
 
 
-	protected void action_launch (CDCairoBzrAction iAction) {
-		this.lActions[iAction].launch ();
+	public CairoAction action_get (CDCairoBzrAction iAction) {
+		return this.lActions[iAction];
+	}
+
+
+	public void action_launch (CDCairoBzrAction iAction) {
+		var pAction = action_get (iAction);
+		var pFunction = pAction.function ();
+		if (pAction.use_thread ()) {
+      set_emblem_busy ();
+			try { Thread.create<void> ((ThreadFunc) pFunction, false); }
+			catch (ThreadError e) {}
+		}
+		else
+			pFunction ();
+	}
+
+
+	public void set_emblem_busy () {
+		try { this.icon.SetEmblem (this.sAppletDirectory + "/icons/emblem-important.svg", 3); }
+		catch (Error e) {}
+	}
+
+	public void set_emblem_none () {
+		try { this.icon.SetEmblem ("", 3); }
+		catch (Error e) {}
 	}
 
 
 	protected void build_menu (CDCairoBzrAction[] pMenu) {
 		HashTable<string,Variant>[] pItems = {};
 		CDCairoBzrAction iActionType;
+		CairoAction pAction;
 		HashTable<string,Variant?>  pItem;
 		for (int a = 0; a < pMenu.length; a++) {
 			iActionType = pMenu[a];
-			switch (this.lActions[iActionType].iIconType) {
+			pAction = action_get (iActionType);
+			switch (pAction.iIconType) {
 				case 2: /// Separator
-					pItem = this.lActions[iActionType].menu_separator ();
+					pItem = pAction.menu_separator ();
 					break;
 				case 3: /// Checkbox
-					pItem = this.lActions[iActionType].menu_checkbox (a);
+					pItem = pAction.menu_checkbox (a);
 					break;
 				default: /// Icon
-					pItem = this.lActions[iActionType].menu_icon (a);
+					pItem = pAction.menu_icon (a);
 					break;
 			}
 			pItems += pItem;
@@ -521,15 +539,62 @@ public class CDAppletVala : CDApplet {
 		}
 	}
 
-
-	public void thread_launch (ThreadFunc pFunction) {
-		try {
-			Thread.create<void> (pFunction, false);
-		} catch (ThreadError e) {}
-	}
-
 } // End class : CDAppletVala
 
+
+
+public class CairoAction {
+	private string sIcon;
+	private string sLabel;
+	private DelegateType pFunction;
+	public int iIconType;
+	private bool bUseThread;
+	private bool* bChecked;
+
+	public CairoAction (DelegateType pFunction, string sLabel = "", string sIcon = "", int iIconType = 0, bool bUseThread = false) {
+		this.pFunction = pFunction;
+		this.set_label (sLabel);
+		this.sIcon = sIcon;
+		this.iIconType = iIconType;
+		this.bUseThread = bUseThread;
+	}
+
+
+	public HashTable<string,Variant?> menu_separator () {
+		var pItem = new HashTable<string,Variant?>(str_hash, str_equal);
+		pItem.insert("type", 2);
+		return pItem;
+	}
+
+
+	public HashTable<string,Variant?> menu_icon (int iId) {
+		var pItem = new HashTable<string,Variant?>(str_hash, str_equal);
+		pItem.insert("label", this.sLabel);
+		pItem.insert("icon", this.sIcon);
+		pItem.insert("id", iId);
+		return pItem;
+	}
+
+
+	public HashTable<string,Variant?> menu_checkbox (int iId) {
+		var pItem = new HashTable<string,Variant?>(str_hash, str_equal);
+		pItem.insert("type", 3);
+		pItem.insert("label", this.sLabel);
+		pItem.insert("state", *this.bChecked);
+		pItem.insert("id", iId);
+		return pItem;
+	}
+
+
+//~ 	public string label ()          { return this.sLabel; }
+//~ 	public string icon ()           { return this.sIcon; }
+	public DelegateType function () { return this.pFunction; }
+	public bool use_thread ()       { return this.bUseThread; }
+
+	public void set_label (string sLabel)               { this.sLabel = sLabel; }
+	public void set_checkbox_reference (bool* bPointer) { this.bChecked = bPointer; }
+	
+} // End class : CairoAction
 
 
 
