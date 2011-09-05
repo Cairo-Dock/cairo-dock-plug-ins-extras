@@ -200,19 +200,26 @@ action_add("CairoBzr.GENERATE_REPORT", action_none, "", "gtk-refresh");
 	private void launch_show_versions () {
 		string sLogCore = compile_bzr_log (this.config.sFolderCore, "lp:cairo-dock-core");
 		string sLogPlugIns = compile_bzr_log (this.config.sFolderPlugIns, "lp:cairo-dock-plug-ins");
-		try { this.icon.ShowDialog("Core : %s\nPlug-ins : %s".printf(sLogCore, sLogPlugIns), 60); }
+		string sMessage = "<b><u>Core</u></b> : %s\n<b><u>Plug-ins</u></b> : %s".printf (sLogCore, sLogPlugIns);
+		var dialog_attributes = popup_dialog_attribute ("cairo-dock", sMessage, "cancel", true);
+		try { this.icon.PopupDialog (dialog_attributes, popup_widget_attribute_empty ()); }
 		catch (Error e) {}
 		set_emblem_none ();
 	}
 
 
 	public void launch_build_one_plugin () {
+		if (!(this.config.sFolderPlugIns.length > 0)) return;
 		string sCompileDirectory = this.config.sFolderPlugIns + "/build/" + this.config.sBuildPlugInName;
 		string sError;
 		print("[CairoBzr] Build plugin : %s\n", this.config.sBuildPlugInName);
 		string[] argv = { directory_scripts () + this.config.sBuildScriptPlugIn };
+
 		if (this.config.bReload)
-			argv += this.config.sBuildPlugInName;
+			try {
+				var regex = new Regex ("-");
+				argv += regex.replace (this.config.sBuildPlugInName, -1, 0, " ");
+			} catch (RegexError e) {}
 //~ 		this.spawn_async(sCompileDirectory, argv);
 		this.spawn_sync(sCompileDirectory, argv, null, out sError);
 		if (sError.length > 0)
@@ -314,7 +321,7 @@ action_add("CairoBzr.GENERATE_REPORT", action_none, "", "gtk-refresh");
 		print("[CairoBzr] Build main : %s\n", sDirectory);
 		this.spawn_sync(sDirectory, argv, null, out sError, out iExitStatus);
 		if (sError.length > 0)
-			print(sError + "\n");
+			print (sError + "\n");
 		return iExitStatus > 0 ? false : true;
 	}
 
@@ -327,7 +334,7 @@ action_add("CairoBzr.GENERATE_REPORT", action_none, "", "gtk-refresh");
 		print("[CairoBzr] Download main : %s\n", sDirectory);
 		this.spawn_sync(sDirectory, argv, out sOutout, out sError, out iExitStatus);
 		if (sOutout.length > 0)
-			print(sOutout + "\n");
+			print (sOutout + "\n");
 		if (sError.length > 0)
 			print(sError + "\n");
 		return iExitStatus > 0 ? false : true;
@@ -337,29 +344,37 @@ action_add("CairoBzr.GENERATE_REPORT", action_none, "", "gtk-refresh");
 	private string compile_bzr_log (string sDirectory, string sBranch){
 		if (!(sDirectory.length > 0)) return "";
 		int iLocalVersion = 0, iDistVersion = 0;
-		string sLog = "";
 		
 		int iExitStatus;
 		string sOutput;
 		string[] argv = { "/usr/bin/bzr", "revno" };
 		this.spawn_sync (sDirectory, argv, out sOutput, null, out iExitStatus);
 		if (iExitStatus == 0) {
-			iLocalVersion = int.parse(sOutput);
+			iLocalVersion = int.parse (sOutput);
 			argv += sBranch;
 			this.spawn_sync (sDirectory, argv, out sOutput, null, out iExitStatus);
 			if (iExitStatus == 0) {
-				iDistVersion = int.parse(sOutput);
+				iDistVersion = int.parse (sOutput);
 				int iDelta = iDistVersion - iLocalVersion;
 				if (iDelta > 0) {
 					argv[1] = "log";
-					argv += "-l%d".printf(iDelta);
-					argv += "--line";
-					this.spawn_sync (sDirectory, argv, out sLog, null, null);
-					if (sLog.length > 0) sLog = "\n" + sLog;
+					argv += "-l%d".printf (iDelta);
+					argv += "--short";
+					string sLog;
+					this.spawn_sync (sDirectory, argv, out sLog);
+					if (sLog.length > 0) {
+						try {
+							var regex = new Regex ("\n\n");
+							sLog = regex.replace (sLog, -1, 0, "\n");
+						} catch (RegexError e) {}
+						sLog = "\n" + sLog;
+					}
+					return "<b>%d / %d</b>%s".printf (iLocalVersion, iDistVersion, sLog);
 				}
+				return "Up-to-date (%d)".printf (iLocalVersion);
 			}
 		}
-		return "%d / %d%s\n".printf (iLocalVersion, iDistVersion, sLog);
+		return "Unable to fetch versions";
 	}
 
 
@@ -469,7 +484,7 @@ public class CDAppletVala : CDApplet {
 
 	public void action_launch (string sAction) {
 		var pAction = action_get (sAction);
-		var pFunction = pAction.function ();
+		unowned DelegateType pFunction = pAction.function ();
 		if (pAction.use_thread ()) {
       set_emblem_busy ();
 			try { Thread.create<void> ((ThreadFunc) pFunction, false); }
@@ -520,6 +535,21 @@ public class CDAppletVala : CDApplet {
 	}
 
 
+	protected HashTable<string,Variant> popup_dialog_attribute (string sIcon, string sMessage = "", string sButtons = "ok;cancel", bool bUseMarkup = false) {
+		var dialog_attributes = new HashTable<string,Variant>(str_hash, str_equal);
+		dialog_attributes.insert ("icon", sIcon);
+		dialog_attributes.insert ("message", sMessage);
+		dialog_attributes.insert ("buttons", sButtons);
+		dialog_attributes.insert ("use-markup", bUseMarkup);
+		return dialog_attributes;
+	}
+
+
+	protected HashTable<string,Variant> popup_widget_attribute_empty () {
+		return new HashTable<string,Variant>(str_hash, str_equal);
+	}
+
+
 	protected void spawn_async (string sDirectory, string[] argv) {
 		Pid child_pid;
 		try {
@@ -547,7 +577,7 @@ public class CDAppletVala : CDApplet {
 public class CairoAction {
 	private string sIcon;
 	private string sLabel;
-	private DelegateType pFunction;
+	private unowned DelegateType pFunction;
 	public int iIconType;
 	private bool bUseThread;
 	private bool* bChecked;
@@ -587,7 +617,7 @@ public class CairoAction {
 	}
 
 
-	public DelegateType function () { return this.pFunction; }
+	public unowned DelegateType function () { return this.pFunction; }
 	public bool use_thread ()       { return this.bUseThread; }
 
 	public void set_label (string sLabel)               { this.sLabel = sLabel; }

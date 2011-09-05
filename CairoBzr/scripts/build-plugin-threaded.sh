@@ -7,7 +7,7 @@ function reload_plugin {
 
 make clean && make -j $(grep -c ^processor /proc/cpuinfo) && 
 gksudo -S -g -m "Root password required for installation" make install &&
-if [ $@ > 0 ];
+if [ $# > 0 ];
 then reload_plugin "$1"
 fi
 #sudo make install
