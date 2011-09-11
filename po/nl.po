@@ -231,10 +231,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 #~ msgstr ""
 #~ "voor CompizFusion's \"widget layer\", stel gedrag in Compiz in op: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 
 #~ msgid "Visibility:"
 #~ msgstr "Zichtbaarheid :"

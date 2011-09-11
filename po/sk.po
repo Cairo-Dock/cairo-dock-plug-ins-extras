@@ -218,10 +218,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 #~ msgstr ""
 #~ "pre CompizFusion \"widget layer\", nastavte správanie v Compize na: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 
 #~ msgid "Visibility:"
 #~ msgstr "Viditeľnosť :"

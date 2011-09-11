@@ -219,10 +219,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 #~ msgstr ""
 #~ "para la \"capa de complementos\" de Compiz-Fusion, establezca el "
-#~ "comportamiento en Compiz como: (class=Cairo-dock & type=utility)"
+#~ "comportamiento en Compiz como: (class=Cairo-dock & type=Utility)"
 
 #~ msgid "Visibility:"
 #~ msgstr "Visibilidad:"

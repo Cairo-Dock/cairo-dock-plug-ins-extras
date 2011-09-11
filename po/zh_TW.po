@@ -213,10 +213,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 #~ msgstr ""
 #~ "要在 CompizFusion's 的 桌面面板程式層(Widget Layer) 當中，行為(behaviour) "
-#~ "設置裏面設定 class=Cairo-dock & type=utility"
+#~ "設置裏面設定 class=Cairo-dock & type=Utility"
 
 #~ msgid "Visibility:"
 #~ msgstr "能見度："

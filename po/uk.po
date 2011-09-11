@@ -218,7 +218,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 #~ msgstr ""
 #~ "Для шару віджетів CompizFusion, встановіть поведінку в  Compiz на "
 #~ "(клас=Cairo-dock та тип=utility)"

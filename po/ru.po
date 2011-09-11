@@ -222,7 +222,7 @@ msgstr "Средний щелчок, чтобы переключить кана�
 
 #~ msgid ""
 #~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-#~ "(class=Cairo-dock & type=utility)"
+#~ "(class=Cairo-dock & type=Utility)"
 #~ msgstr ""
 #~ "Для слоя виджетов CompizFusion, установите поведение в Compiz на: "
 #~ "(класс=Cairo-dock и тип=utility)"
