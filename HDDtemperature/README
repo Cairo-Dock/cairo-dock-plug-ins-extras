@@ -1,0 +1,43 @@
+HDDtemperature applet for Cairo-Dock shows maximal temperature of your hard disk drives
+getting values from 'hddtemp' daemon (see: man hddtemp )
+
+Author : Reali$t helped by Matttbe and Nochka85's demo script
+E-mail : lynx333[at]mail333.com
+Rev : 14.09.2011
+
+
+INSTALLATION:
+-------------
+
+1) The name of this applet is "HDDtemperature"; it is placed in a folder  "~/.config/cairo-dock/third-party"
+
+So, files in "~/.config/cairo-dock/third-party/HDDtemperature" directory are:
+
+"auto-load.conf"      : the file describing the applet
+"icon"                : the default icon of the applet
+"HDDtemperature"      : the python script, without extension
+"HDDtemperature.sh"   : the script in bash, actually applet's code
+"HDDtemperature.conf" : the config file of the applet
+"preview"             : a preview of the applet
+
+
+2) Make the files "HDDtemperature" and "HDDtemperature.sh" executable:
+
+   chmod a+x ~/.config/cairo-dock/third-party/HDDtemperature/HDDtemperature
+
+   chmod a+x ~/.config/cairo-dock/third-party/HDDtemperature/HDDtemperature.sh
+
+
+3) Check whether 'hddtemp' daemon is running:
+
+   ps -f -C hddtemp
+
+If no, start it:
+
+   service hddtemp start
+
+(Read more about 'hddtemp' utility in its manual)
+
+
+4) Turn the applet on and customize it (if you wish) in the "System" section of "Configure" menu of Cairo-Dock.
+
