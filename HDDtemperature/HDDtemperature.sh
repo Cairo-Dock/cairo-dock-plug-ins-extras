@@ -107,8 +107,7 @@ SEPARATOR=${SEPARATOR:0:1}
     echo "$i" >> store
   done
 
-  echo  "dbus-send --session --dest=org.cairodock.CairoDock /org/cairodock/CairoDock
-         org.cairodock.CairoDock.ReloadModule string:HDDtemperature" \
+  echo  "dbus-send --session --dest=org.cairodock.CairoDock /org/cairodock/CairoDock org.cairodock.CairoDock.ReloadModule string:HDDtemperature" \
         | at now + $TIME_INT min                  # refresh in background
 }
 
