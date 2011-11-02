@@ -1,7 +1,7 @@
 #!/bin/sh
 MODULE="CairoBzr"
 
-valac --pkg CDApplet --pkg gee-1.0 -o $MODULE $MODULE.vala &&
+valac --pkg CDApplet -o $MODULE $MODULE.vala &&
 
 #if [ $@ > 0 ] && [ "$1" = "-r" ]; then
 if [ "$1" = "-r" ]; then
