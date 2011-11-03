@@ -1,3 +1,5 @@
+0.2.1:(November/3/2011): Updating the list of languages supported by the Google Translator.
+0.2.0:(February/17/2011): Using CDApplet interface. Improving, and fixing the dictionary, added some unknown word types when fetching dictionary. Not always one word means that dictionary will be returned.
 0.1.8:(January/17/2011): Dropping text, or URL is allowed in the plugin.
 0.1.7:(January/16/2011): Added the Web Page translation. Entering a URL, the translated page is loaded in the current web browser.
 0.1.6:(January/14/2011): Added the dictionary functionality. If there is only one word to be translated, show the dictionary with the possible translations in categories.
