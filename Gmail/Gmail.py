@@ -473,8 +473,8 @@ class Gmail(CDApplet):
             Processes dialogue input for username and password.
         """
 
-        # check user pressed OK
-        if key == 0 or key == -1:
+        # check user pressed the first button (OK) or Enter
+        if key == 0 or key == CDApplet.DIALOG_KEY_ENTER:
             # check user entered something
             if len(content) > 0:
                 # check if requesting username
@@ -501,17 +501,17 @@ class Gmail(CDApplet):
         """
             Appends items to right-click menu.
         """
-
-        self.icon.AddMenuItems([{"widget-type" : 0,
+		
+        self.icon.AddMenuItems([{"widget-type" : CDApplet.MENU_ENTRY,
         "label": "Add or change subscription",
         "icon" : "gtk-add",
-        "menu" : 1,
+        "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 1,
         "tooltip" : "Use this to add or change your Gmail account details."},
-        {"widget-type" : 0,
-        "label": "Check inbox now",
+        {"widget-type" : CDApplet.MENU_ENTRY,
+        "label": "Check inbox now" + " (middle-click)",
         "icon" : "gtk-refresh",
-        "menu" : 1,
+        "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 2,
         "tooltip" : "Check Gmail inbox now if you can't wait."}])
         
@@ -542,6 +542,15 @@ class Gmail(CDApplet):
         	m = Menu(self.account['inbox'])
         	m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
                 	button=1, activate_time=0)
+
+
+    def on_middle_click(self):
+
+        """
+            Check for new mails now.
+        """
+        self.check_mail()
+
 
     def get_xy(self, m, data):
 
