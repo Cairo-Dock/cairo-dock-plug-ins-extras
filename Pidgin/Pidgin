@@ -375,7 +375,7 @@ class Applet(CDApplet):
 				self.iCurrentGuiConv = convs[0]
 			if self.iCurrentGuiConv != 0:
 				print "present conv "+str(self.iCurrentGuiConv)
-				self.icon.ShowAppli(True) # we have to do that due to a bug in Pidgin (http://developer.pidgin.im/ticket/12534)
+				self.icon.ActOnAppli("show") # we have to do that due to a bug in Pidgin (http://developer.pidgin.im/ticket/12534)
 				self.purple.PurpleConversationPresent(self.iCurrentGuiConv)  # on ne peut pas recuperer la conversation courante de l'IHM en regardant laquelle a le focus, car elles ne l'ont que lorsque la fenetre a le focus.
 		else:
 			subprocess.Popen("pidgin")

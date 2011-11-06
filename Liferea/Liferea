@@ -78,13 +78,13 @@ class Applet(CDApplet):
         self.liferea.Subscribe(url) 
 
     def switch_window_focus(self):
-        if not self.icon.Get("has_focus"):                                          # liferea running, but its window has no the focus
+        if not self.icon.Get("has_focus"):                                          # liferea running, but its window has not the focus
             try:                                                                    
-                self.icon.ShowAppli(True)                                           # bring the window to the foreground
-            except:                                                                 # if liferea is only in notification bar, ShowAppli doesnt work ...
+                self.icon.ActOnAppli("show")                                           # bring the window to the foreground
+            except:                                                                 # if liferea is in the notification area, its window is actually closed, so we must re-open it
                 subprocess.Popen("liferea-bin")                                         # ... so it is necessary to recall the application
         else:
-            self.icon.ShowAppli(False)                                              # take the window to the background
+            self.icon.ActOnAppli("minimize")                                              # take the window to the background
 
     def show_icon_information(self):
         if self.config_info == self.show_number_of_unread_msgs:

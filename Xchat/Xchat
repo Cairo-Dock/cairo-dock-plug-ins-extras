@@ -232,9 +232,9 @@ class Applet(CDApplet):
 				return
 		else:  # on montre la fenetre.
 			if self.bHasFocus:  # la fenetre existe et a le focus.
-				self.icon.ShowAppli(False)  # on minimise la fenetre.
+				self.icon.ActOnAppli("minimize")  # on minimise la fenetre.
 			else:  # soit la fenetre n'existe pas, soit elle n'a pas le focus.
-				self.icon.ShowAppli(True)
+				self.icon.ActOnAppli("show")
 	
 	def on_middle_click(self):
 		if self.xchat == None:
