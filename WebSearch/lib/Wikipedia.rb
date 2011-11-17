@@ -18,12 +18,13 @@ class Wikipedia < Engine
 	
 	# Fetch links from english Wikipedia. It is necessary to set user agent, or the connection is Forbidden (403)
 	def retrieve_links(query, offset = 0)
-		wikipedia = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&offset=#{offset}&limit=#{self.number_of_fetched_links}", 'User-Agent' => 'ruby')))
-		self.stats = retrieve_webshots_result_wikipedia(wikipedia, query)
-		(wikipedia/"ul[@class='mw-search-results']/li/a").each do |res|
-			url = res['href']
+		puts "Query #{self.query_url}#{query}&offset=#{offset}&limit=#{self.number_of_fetched_links}"
+		wikipedia = Nokogiri::HTML(open("#{self.query_url}#{query}&offset=#{offset}&limit=#{self.number_of_fetched_links}", 'User-Agent' => 'ruby'))
+		#self.stats = retrieve_webshots_result_wikipedia(wikipedia, query)
+		(wikipedia/"ul[@class='mw-search-results']/li/div/a").each do |res|
+			url = "#{self.base_url}#{res['href']}"
 			description = res['title']
-			self.links << Link.new("#{self.query_url}#{url}", description)
+			self.links << Link.new(url, description)
 		end
 		self.links
 	end

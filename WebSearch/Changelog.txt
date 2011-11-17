@@ -1,3 +1,4 @@
+1.4.2: (July/13/2010: Simplifying the dependencies. Fixing Wikipedia search.
 1.4.0: (July/13/2010: WebSearch now keeps a history of recently searched terms.
 1.3.1: (June/29/2010: URL encoding was not being done. Fixed it.
 1.3.0: (May/28/2010): WebSearch now fetch results from Digg. Changing the thumb download directory handling.
