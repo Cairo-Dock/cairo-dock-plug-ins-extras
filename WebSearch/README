@@ -2,8 +2,8 @@ In order to use WebSearch applet it is necessary to install Ruby, Rubygems and s
 
 # Installing the dependencies
 
-[1st] sudo apt-get install ruby rubygems libxslt-dev libxml2-dev
-[2nd] sudo gem install parseconfig, addressable, launchy, nokogiri, ruby-dbus
+[1st] sudo apt-get install ruby rubygems libxslt1-dev libxml2-dev
+[2nd] sudo gem install parseconfig addressable launchy nokogiri ruby-dbus
 
 # WebSearch installation process
 
