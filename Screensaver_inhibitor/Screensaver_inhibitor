@@ -1,0 +1,222 @@
+#!/usr/bin/python
+
+# This is a part of the external demo applet for Cairo-Dock
+# Copyright : (C) 2010-2011 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+
+####################
+### dependancies ###
+####################
+from CDApplet import CDApplet, _
+from os import popen
+import dbus
+from gobject import timeout_add, source_remove
+
+def isProcessRunning(app):
+	result = os.popen("ps -ef | grep %s | grep -v grep" % app).read().rstrip()
+	return (result != None and result != "")
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		# define internal variables
+		self.ss_method = None  # screen-saver inhibition method
+		self.pm_method = None  # power-manager inhibition method
+		self.ss_cookie = None
+		self.pm_cookie = None
+		self.inhibited = False  # current state
+		self.sid_deactivate = 0 # timer of deactivation every 1 minute
+		self.sid_auto_deinhibit = 0  # timer of automatic de-inhibition
+		# call high-level init
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+	
+	def _guess_method(self):
+		bus = dbus.SessionBus()
+		if 'org.gnome.SessionManager' in bus.list_names():
+			self.ss_method = "Gnome"
+			self.pm_method = "Gnome"
+		else:
+			if 'org.freedesktop.ScreenSaver' in bus.list_names():
+				self.ss_method = "Freedesktop"
+			elif isProcessRunning("xscreensaver"):
+				self.ss_method = "xscreensaver"
+			elif isProcessRunning("gnome-screensaver"):
+				self.ss_method = "gnome-screensaver"
+			
+			if 'org.freedesktop.PowerManagement.Inhibit' in bus.list_names():
+				self.pm_method = "Freedesktop"
+			else:
+				self.pm_method = "dpms"
+	
+	def _update_icon(self):
+		if self.inhibited:
+			if self.config['icon-inhib'] != "":
+				self.icon.SetIcon(self.config['icon-inhib'])
+			else:
+				self.icon.SetIcon(self.cShareDataDir+"/icon-inhibit.svg")
+			self.icon.SetLabel(_("Screensaver is currently disabled"))
+		else:
+			if self.config['icon'] != "":
+				self.icon.SetIcon(self.config['icon'])
+			else:
+				self.icon.SetIcon(self.cShareDataDir+"/icon.svg")
+			self.icon.SetLabel(_("Disable the screensaver"))
+	
+	def _deactivate_ss(self):
+		print " deactivate the screensaver for one more minute"
+		if self.ss_method == "xscreensaver":
+			os.popen("xscreensaver-command -deactivate")  # .read().rstrip()
+		elif self.ss_method == "gnome-screensaver":
+			os.popen("gnome-screensaver-command --deactivate")
+		return True
+	
+	def _auto_deinhibit(self):
+		if self.inhibited:
+			self._toggle()
+		self.sid_auto_deinhibit = 0
+		return False
+		
+	def _toggle(self,timelength=-1):
+		if self.ss_method == None or self.pm_method == None:
+			self._guess_method()
+		
+		if self.ss_method == "Gnome":
+			bus = dbus.SessionBus()
+			proxy = bus.get_object('org.gnome.SessionManager', '/org/gnome/SessionManager')
+			if self.inhibited:
+				if self.ss_cookie != None:
+					proxy.Uninhibit(self.ss_cookie)
+					self.ss_cookie = None
+			else:
+				self.ss_cookie = proxy.Inhibit("Cairo-Dock", dbus.UInt32(0), "Disable the screensaver", dbus.UInt32(8))
+		elif self.ss_method == "Freedesktop":
+			bus = dbus.SessionBus()
+			proxy = bus.get_object('org.freedesktop.ScreenSaver', '/ScreenSaver')
+			if self.inhibited:
+				if self.ss_cookie != None:
+					proxy.UnInhibit(self.ss_cookie)
+					self.ss_cookie = None
+			else:
+				self.ss_cookie = proxy.Inhibit("Cairo-Dock", "Disable the screensaver")
+		elif self.ss_method != None:  # xscreensaver or gnome-screensaver
+			if self.inhibited:
+				if self.sid_deactivate != 0:
+					source_remove(self.sid_deactivate)
+					self.sid_deactivate = 0
+			elif self.sid_deactivate == 0:
+				self.sid_deactivate = timeout_add(59*1000, self._deactivate_ss)
+		
+		if self.pm_method == "Gnome":
+			pass  # nothing more to do
+		elif self.pm_method == "Freedesktop":
+			bus = dbus.SessionBus()
+			proxy = bus.get_object('org.freedesktop.PowerManagement.Inhibit', '/org/freedesktop/PowerManagement/Inhibit')
+			if self.inhibited:
+				if self.pm_cookie != None:
+					proxy.UnInhibit(self.pm_cookie)
+					self.pm_cookie = None
+			else:
+				self.spm_cookie = proxy.Inhibit("Cairo-Dock", "Disable the screensaver")
+		elif self.ss_method != None:  # dpms
+			if self.inhibited:
+				os.popen("xset +dpms")
+				os.popen("xset s on")
+			else:
+				os.popen("xset -dpms")
+				os.popen("xset s off")
+		
+		self.inhibited = not self.inhibited
+		
+		self._update_icon()
+		
+		if timelength == -1:
+			timelength = self.config['timelength']
+		if self.sid_auto_deinhibit != 0:
+			source_remove(self.sid_auto_deinhibit)
+			self.sid_auto_deinhibit = 0
+		if self.inhibited and timelength > 0:  # is now inhibited, we'll de-inhibit it in a given time.
+			print "we'll stop inhibiting in %dmn" % timelength
+			self.sid_auto_deinhibit = timeout_add(timelength*60*1000, self._auto_deinhibit)
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['shortkey'] 		= keyfile.get('Configuration', 'shortkey')
+		self.config['timelength'] 		= keyfile.getint('Configuration', 'timelength')
+		self.config['icon'] 			= keyfile.get('Icon', 'icon')
+		self.config['icon-inhib'] 		= keyfile.get('Icon', 'icon-inhib')
+		
+	def end(self):
+		pass
+	
+	def begin(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+		# we should probably try to get the current state ...
+		self._update_icon()
+	
+	def reload(self):
+		self.icon.BindShortkey([self.config['shortkey']])
+		self._update_icon()
+	
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		self._toggle()
+	
+	def on_middle_click(self):
+		dialog_attributes = {
+			"icon" : "same icon",
+			"message" : _("Inhibit for a given timelength (in minutes)"),
+			"buttons" : "ok;cancel"}
+		widget_attributes = {
+			"widget-type" : "scale",
+			"initial-value" : float(self.config['timelength']),
+			"nb-digit" : 0,
+			"max-value" : float (150),
+			"message" : _("timelength")+":"}
+		
+		self.icon.PopupDialog(dialog_attributes, widget_attributes)
+	
+	def on_build_menu(self):
+		items = [ {
+				"label": "%s (%s)" % (_("Inhibit for a given timelength"), _("middle-click")),
+				"icon" : "gtk-execute",
+				"id"   : 1
+			}]
+		self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if iNumEntry == 1:
+			self.on_middle_click()
+	
+	def on_answer_dialog(self,button, answer):
+		timelength = int (answer)
+		if self.inhibited:  # if currently inhibited, de-inhibit it
+			self._toggle()
+		self._toggle(timelength)
+	
+	def on_shortkey(self,key):
+		self._toggle()
+	
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()
