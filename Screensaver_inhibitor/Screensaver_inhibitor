@@ -25,7 +25,7 @@ import dbus
 from gobject import timeout_add, source_remove
 
 def isProcessRunning(app):
-	result = os.popen("ps -ef | grep %s | grep -v grep" % app).read().rstrip()
+	result = popen("ps -ef | grep %s | grep -v grep" % app).read().rstrip()
 	return (result != None and result != "")
 
 ####################
@@ -81,9 +81,9 @@ class Applet(CDApplet):
 	def _deactivate_ss(self):
 		print " deactivate the screensaver for one more minute"
 		if self.ss_method == "xscreensaver":
-			os.popen("xscreensaver-command -deactivate")  # .read().rstrip()
+			popen("xscreensaver-command -deactivate")
 		elif self.ss_method == "gnome-screensaver":
-			os.popen("gnome-screensaver-command --deactivate")
+			popen("gnome-screensaver-command --deactivate")
 		return True
 	
 	def _auto_deinhibit(self):
@@ -135,11 +135,11 @@ class Applet(CDApplet):
 				self.spm_cookie = proxy.Inhibit("Cairo-Dock", "Disable the screensaver")
 		elif self.ss_method != None:  # dpms
 			if self.inhibited:
-				os.popen("xset +dpms")
-				os.popen("xset s on")
+				popen("xset +dpms")
+				popen("xset s on")
 			else:
-				os.popen("xset -dpms")
-				os.popen("xset s off")
+				popen("xset -dpms")
+				popen("xset s off")
 		
 		self.inhibited = not self.inhibited
 		
@@ -167,7 +167,7 @@ class Applet(CDApplet):
 	
 	def begin(self):
 		self.icon.BindShortkey([self.config['shortkey']])
-		# we should probably try to get the current state ...
+		# we could try to get the current state ...
 		self._update_icon()
 	
 	def reload(self):
