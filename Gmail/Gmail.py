@@ -90,7 +90,7 @@ class Gmail(CDApplet):
         self.config = {} # user configuration
         self.flag = None # used to check current status (especially with dialogues)
         self.path = sys.argv[3][0:-10] # relative path to config file's folder
-        self.subpath = self.path+'subscription' # file containing Gmail account details
+        self.subpath = self.path+'../../../.Gmail_subscription' # file containing Gmail account details
         self.svgpath = self.path+'emblem.svg' # SVG emblem file
         self.wav = os.path.abspath("./snd/pop.wav")
         self.rep = False # used not to run more than one loop
