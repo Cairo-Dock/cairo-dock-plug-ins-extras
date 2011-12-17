@@ -1,0 +1,246 @@
+#!/usr/bin/python
+
+# This is a part of the external Twitter applet for Cairo-Dock
+#
+# Author: Eduardo Mucelli Rezende Oliveira
+# E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
+#
+# This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#	GNU General Public License for more details.
+
+# This applet provides for Cairo-Dock an interface with Twitter
+
+import urlparse, os, webbrowser, simplejson
+from oauth import oauth
+from http import post, get
+from util import logp, logm
+from CDApplet import CDApplet
+#TODO import ConfigParser later conver files to config syntax
+
+CONSUMER_KEY = 'OzZoSVpO6PZqByM15MsLlg'
+CONSUMER_SECRET = 'mKsbuXgpHEO6C2axmUI8cPUt0ZPCbDb67uvT5wOIW1s'
+
+class TwitterOauth:
+	def __init__(self):
+		self.request_token_url = 'https://twitter.com/oauth/request_token'
+		self.access_token_url = 'https://twitter.com/oauth/access_token'
+		self.authorize_url = 'http://twitter.com/oauth/authorize'
+
+		self.consumer_key, self.consumer_secret = self.read_consumer_key_and_secret()
+		print "=========================="
+		print self.consumer_key
+		print self.consumer_secret
+		print "=========================="
+		self.consumer = oauth.OAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET)
+		self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
+		self.request_token = None
+		self.access_token = None
+
+	def read_consumer_key_and_secret(self):
+		try:
+			f = open('.keys')
+		except IOError:
+			logm("It was not possible to read the consumer key and secret, check the .keys file")
+		else:
+			return f.read().split()
+		
+	def get_authorization_url(self):
+		self.request_token = self.get_unauthorized_request_token()
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, token=self.request_token, http_url=self.authorize_url)
+		oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
+		return oauth_request.to_url()
+	
+	def get_unauthorized_request_token(self):
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url=self.request_token_url)
+		oauth_request.sign_request(self.signature_method, self.consumer, None)
+		url = oauth_request.to_url()
+		response = get(url)
+		token = oauth.OAuthToken.from_string(response)
+		return token
+
+	# Exchange request token for access token
+	def get_access_token_and_secret(self, pin):
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url=self.access_token_url, verifier=pin, token=self.request_token )
+		oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
+		url = oauth_request.to_url()
+		response = get(url)
+		self.access_token = oauth.OAuthToken.from_string(response)
+		access_token_data = dict((x, y) for x, y in urlparse.parse_qsl(response))							# tuple to dict
+		return access_token_data['oauth_token'], access_token_data['oauth_token_secret']
+
+class TwitterAPI:
+	def __init__(self, access_key, access_secret):
+		self.update_url = 'http://twitter.com/statuses/update.json'
+		self.home_timeline_url = 'http://twitter.com/statuses/home_timeline.json'
+
+		self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
+		self.consumer = oauth.OAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET)
+		self.access_token = oauth.OAuthToken(access_key, access_secret)
+
+	def tweety(self, message):																																				# popularly "send a tweety"
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, token=self.access_token, http_url=self.update_url, parameters = {'status':message}, http_method="POST")
+		oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
+		post_data = oauth_request.to_postdata()
+		return post(self.update_url, post_data)
+
+	def home_timeline(self):
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, token=self.access_token, http_url=self.home_timeline_url, http_method="GET")
+		oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
+		url = oauth_request.to_url()
+		response = get(url)
+		return simplejson.loads(response)
+
+class User:
+	def __init__(self, screen_name="", access_key="", access_secret=""):
+		self.screen_name = screen_name
+		self.access_key = access_key
+		self.access_secret = access_secret
+
+class Applet(CDApplet):
+
+	def inform_start_of_waiting_process(self):
+		self.icon.SetQuickInfo("...")
+
+	def inform_end_of_waiting_process(self):
+		self.icon.SetQuickInfo("")
+
+	# Twitter methods
+
+	def show_home_timeline(self):
+		self.inform_start_of_waiting_process()
+
+		timeline = self.api.home_timeline()
+		if len(timeline) > 0:
+			message = "".join (["[%s] %s\n" % (status['user']['name'], status['text']) for status in timeline])
+		else:
+			message = "Oh, dear, your timeline is empty :-("
+
+		self.inform_end_of_waiting_process()
+		self.show_popup_message(message)
+
+	def tweety(self, message):																																				# popularly "send a tweety"
+		self.api.update_status(message)
+
+	# Applet methods
+
+	def ask_for_tweety(self):
+		dialog = {'buttons':'ok;cancel'}
+		widget = {'widget-type':'text-entry', 'nb-chars':140}
+		self.show_popup_message(("%s, send a tweety") % self.user.screen_name, dialog, widget)
+		self.dialog_type = self.responding_tweety
+
+	# TODO: Handle multiple users inside the .users files
+	# TODO: Implement it as a config file using screen_name as section index
+	def read_user_data(self):
+		"""Read the users file formated as Screen Name<space>Access Key<space>Access Secret"""
+		found = False
+		if os.path.exists(self.user_file):
+			if os.path.getsize(self.user_file) > 0:
+				f = open(self.user_file, "rb")
+				# for line in f:
+				data = f.read()
+				self.user.screen_name, self.user.access_key, self.user.access_secret = data.split()	# split the line by space token
+				f.close()
+				found = True
+		return found
+
+	def write_user_data(self):
+		f = open(self.user_file, 'w')
+		f.write("%s %s %s" % (self.user.screen_name, self.user.access_key, self.user.access_secret))
+		f.close()
+
+	def ask_for_screen_name(self):
+		message = "What is your Twitter screen name?"
+		dialog = {'buttons':'ok'}
+		widget = {'widget-type':'text-entry'}
+		self.show_popup_message(message, dialog, widget)
+		# self.dialog_type = self.responding_screen_name
+
+	def ask_for_authorization(self):
+		message = "Twitter applet needs you to give the authorization. Press Enter and your browser will be open with the URL shown bellow. Copy the PIN number that will be shown in the browser"
+		dialog = {'buttons':'ok'}
+		widget = {'widget-type':'text-entry', 'initial-value':self.twitter_auth.get_authorization_url()}
+		self.show_popup_message(message, dialog, widget)
+		self.dialog_type = self.responding_authorization
+
+	def ask_for_pin_number(self):
+		message = "Enter the PIN number that appeared when you accessed the URL shown before"
+		dialog = {'buttons':'ok'}
+		widget = {'widget-type':'text-entry'}
+		self.show_popup_message(message, dialog, widget)
+		self.dialog_type = self.responding_pin
+
+	def show_popup_successful_connection(self):
+		self.show_popup_message("Successfully connected with Twitter")
+
+	def show_popup_message(self, message, dialog={}, widget={}):
+		dialog_attributes = {'message':message}
+		widget_attributes = {}
+		dialog_attributes.update(dialog)
+		widget_attributes.update(widget)
+		self.icon.PopupDialog (dialog_attributes, widget_attributes)
+
+	def __init__(self):
+		self.user = User()
+		self.user_file = '.users'
+		self.twitter_auth = TwitterOauth()
+		self.api = None
+		self.responding_screen_name, self.responding_authorization, self.responding_pin, self.responding_success, self.responding_tweety = range(5)
+		self.dialog_type = self.responding_screen_name
+
+		CDApplet.__init__(self)																													# call CDApplet interface init
+
+	# Inherited methods from CDApplet
+	def begin(self):
+		logp("Looking for user ...")
+		if not self.read_user_data():
+			logm("User not found")
+			self.ask_for_screen_name()
+		else:
+			logp("User '%s' found" % self.user.screen_name)
+			self.api = TwitterAPI(self.user.access_key, self.user.access_secret)
+
+	def reload(self):
+		self.read_user_data()
+
+	# Callbacks
+	def on_answer_dialog(self, key, content):
+		if (key == 0 or key == -1) and content:																					# ... and pressed Ok or Enter
+			if self.dialog_type == self.responding_screen_name:														# user typed screen name ...
+				logp("Receiving screen name '%s'" % content)
+				self.user.screen_name = content
+				self.ask_for_authorization()
+			elif self.dialog_type == self.responding_authorization:
+				logp("Authorizing ...")
+				webbrowser.open(content)
+				logp("Opening the auth URL '%s'" % content)
+				self.ask_for_pin_number()																										# ask for the PIN number received when acessed the auth URL
+			elif self.dialog_type == self.responding_pin:																	# user typed the PIN number
+				logp("Receiving PIN: %s" % content)
+				self.user.access_key, self.user.access_secret = self.twitter_auth.get_access_token_and_secret(content)
+				logp("Writing user data")
+				self.write_user_data()																											# writing the new users data
+				self.api = TwitterAPI(self.user.access_key, self.user.access_secret)				# getting control over the api
+				if self.api:
+					self.show_popup_successful_connection()
+				else:
+					logm("A problem has occurred while getting access to the API")
+			elif self.dialog_type == self.responding_tweety:
+				logp("Sending a tweety '%s'" % content)
+				self.api.tweety(content)
+
+	def on_click(self, key):
+		self.ask_for_tweety()
+
+	def on_middle_click(self):
+		self.show_home_timeline()
+
+if __name__ == '__main__':
+	Applet().run()
