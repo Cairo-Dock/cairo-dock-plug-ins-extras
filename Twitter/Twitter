@@ -17,48 +17,40 @@
 
 # This applet provides for Cairo-Dock an interface with Twitter
 
+# On the first time, the applet is going to ask your screen name and later the authorization to connect with Twitter.
+# Authorize opening the URL shown in the dialog box pressing Enter.
+# Log in on the browser and copy the number that you will be presented. On the dock, paste this number on the next dialog box will be shown.
+# The plugin is going to inform that you are successfully connected.
+
 import urlparse, os, webbrowser, simplejson
 from oauth import oauth
 from http import post, get
-from util import logp, logm
+from util import *
 from CDApplet import CDApplet
-#TODO import ConfigParser later conver files to config syntax
-
-CONSUMER_KEY = 'OzZoSVpO6PZqByM15MsLlg'
-CONSUMER_SECRET = 'mKsbuXgpHEO6C2axmUI8cPUt0ZPCbDb67uvT5wOIW1s'
+# TODO import ConfigParser later conver files to config syntax
 
 class TwitterOauth:
 	def __init__(self):
-		self.request_token_url = 'https://twitter.com/oauth/request_token'
-		self.access_token_url = 'https://twitter.com/oauth/access_token'
-		self.authorize_url = 'http://twitter.com/oauth/authorize'
+		self.request_token_url 	= 'https://twitter.com/oauth/request_token'
+		self.access_token_url 	= 'https://twitter.com/oauth/access_token'
+		self.authorize_url 			= 'http://twitter.com/oauth/authorize'
 
-		self.consumer_key, self.consumer_secret = self.read_consumer_key_and_secret()
-		print "=========================="
-		print self.consumer_key
-		print self.consumer_secret
-		print "=========================="
-		self.consumer = oauth.OAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET)
+		consumer_key, consumer_secret = read_consumer_key_and_secret()
+		self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
 		self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
 		self.request_token = None
 		self.access_token = None
-
-	def read_consumer_key_and_secret(self):
-		try:
-			f = open('.keys')
-		except IOError:
-			logm("It was not possible to read the consumer key and secret, check the .keys file")
-		else:
-			return f.read().split()
 		
 	def get_authorization_url(self):
 		self.request_token = self.get_unauthorized_request_token()
-		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, token=self.request_token, http_url=self.authorize_url)
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+																															 token = self.request_token,
+																															 http_url = self.authorize_url)
 		oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
 		return oauth_request.to_url()
 	
 	def get_unauthorized_request_token(self):
-		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url=self.request_token_url)
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url = self.request_token_url)
 		oauth_request.sign_request(self.signature_method, self.consumer, None)
 		url = oauth_request.to_url()
 		response = get(url)
@@ -67,7 +59,10 @@ class TwitterOauth:
 
 	# Exchange request token for access token
 	def get_access_token_and_secret(self, pin):
-		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url=self.access_token_url, verifier=pin, token=self.request_token )
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+																															 http_url = self.access_token_url,
+																															 verifier = pin,
+																															 token = self.request_token )
 		oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
 		url = oauth_request.to_url()
 		response = get(url)
@@ -77,21 +72,41 @@ class TwitterOauth:
 
 class TwitterAPI:
 	def __init__(self, access_key, access_secret):
-		self.update_url = 'http://twitter.com/statuses/update.json'
-		self.home_timeline_url = 'http://twitter.com/statuses/home_timeline.json'
+		self.update_url 				= 'http://twitter.com/statuses/update.json'
+		self.home_timeline_url 	= 'http://twitter.com/statuses/home_timeline.json'
+		self.tweety_streaming_url = 'https://userstream.twitter.com/2/user.json'
 
 		self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
-		self.consumer = oauth.OAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET)
+		consumer_key, consumer_secret = read_consumer_key_and_secret()
+		self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
 		self.access_token = oauth.OAuthToken(access_key, access_secret)
 
+#	def tweety_streaming(self):
+#		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+#																															 token = self.access_token,
+#																															 http_url = self.tweety_streaming_url,
+#																															 parameters = {'track':'recipe', 'delimited':'length'},
+#																															 http_method = "GET")
+#		oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
+#		url = oauth_request.to_url()
+#		response = get(url)
+#		return simplejson.loads(response)
+
 	def tweety(self, message):																																				# popularly "send a tweety"
-		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, token=self.access_token, http_url=self.update_url, parameters = {'status':message}, http_method="POST")
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+																															 token = self.access_token,
+																															 http_url = self.update_url,
+																															 parameters = {'status':message},
+																															 http_method = "POST")
 		oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
 		post_data = oauth_request.to_postdata()
 		return post(self.update_url, post_data)
 
 	def home_timeline(self):
-		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, token=self.access_token, http_url=self.home_timeline_url, http_method="GET")
+		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+																															 token = self.access_token,
+																															 http_url = self.home_timeline_url,
+																															 http_method = "GET")
 		oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
 		url = oauth_request.to_url()
 		response = get(url)
@@ -126,13 +141,15 @@ class Applet(CDApplet):
 		self.show_popup_message(message)
 
 	def tweety(self, message):																																				# popularly "send a tweety"
+		self.inform_start_of_waiting_process()
 		self.api.update_status(message)
+		self.inform_end_of_waiting_process()
 
 	# Applet methods
 
 	def ask_for_tweety(self):
 		dialog = {'buttons':'ok;cancel'}
-		widget = {'widget-type':'text-entry', 'nb-chars':140}
+		widget = {'widget-type':'text-entry', 'nb-chars':140}																						# 140 characters max, a tweety :)
 		self.show_popup_message(("%s, send a tweety") % self.user.screen_name, dialog, widget)
 		self.dialog_type = self.responding_tweety
 
@@ -157,7 +174,7 @@ class Applet(CDApplet):
 		f.close()
 
 	def ask_for_screen_name(self):
-		message = "What is your Twitter screen name?"
+		message = "What is your Twitter nickname?"
 		dialog = {'buttons':'ok'}
 		widget = {'widget-type':'text-entry'}
 		self.show_popup_message(message, dialog, widget)
@@ -200,13 +217,14 @@ class Applet(CDApplet):
 	# Inherited methods from CDApplet
 	def begin(self):
 		logp("Looking for user ...")
-		if not self.read_user_data():
+		if not self.read_user_data():																										# first time for the user
 			logm("User not found")
-			self.ask_for_screen_name()
-		else:
+			self.ask_for_screen_name()																										# start asking for its screen name
+		else:																																						# user not found
 			logp("User '%s' found" % self.user.screen_name)
-			self.api = TwitterAPI(self.user.access_key, self.user.access_secret)
+			self.api = TwitterAPI(self.user.access_key, self.user.access_secret)					# getting control over the api
 
+	# TODO: Fix it!
 	def reload(self):
 		self.read_user_data()
 
