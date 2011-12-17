@@ -62,7 +62,7 @@ class TwitterOauth:
 		oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
 																															 http_url = self.access_token_url,
 																															 verifier = pin,
-																															 token = self.request_token )
+																															 token = self.request_token)
 		oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
 		url = oauth_request.to_url()
 		response = get(url)
@@ -181,10 +181,18 @@ class Applet(CDApplet):
 		# self.dialog_type = self.responding_screen_name
 
 	def ask_for_authorization(self):
-		message = "Twitter applet needs you to give the authorization. Press Enter and your browser will be open with the URL shown bellow. Copy the PIN number that will be shown in the browser"
-		dialog = {'buttons':'ok'}
-		widget = {'widget-type':'text-entry', 'initial-value':self.twitter_auth.get_authorization_url()}
-		self.show_popup_message(message, dialog, widget)
+		authorization_url = self.twitter_auth.get_authorization_url()
+		logp("Opening the auth URL '%s'" % authorization_url)
+		try:
+			webbrowser.open(authorization_url)
+			message = "Twitter applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you do, copy the PIN number that will be shown, and close this dialog"
+			dialog = {'buttons':'ok'}
+			self.show_popup_message(message, dialog)
+		except webbrowser.Error:		
+			message = "Twitter applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize"
+			dialog = {'buttons':'ok'}
+			widget = {'widget-type':'text-entry', 'initial-value':authorization_url}
+			self.show_popup_message(message, dialog, widget)
 		self.dialog_type = self.responding_authorization
 
 	def ask_for_pin_number(self):
@@ -230,15 +238,13 @@ class Applet(CDApplet):
 
 	# Callbacks
 	def on_answer_dialog(self, key, content):
-		if (key == 0 or key == -1) and content:																					# ... and pressed Ok or Enter
+		if (key == 0 or key == -1):																											# ... and pressed Ok or Enter
 			if self.dialog_type == self.responding_screen_name:														# user typed screen name ...
 				logp("Receiving screen name '%s'" % content)
 				self.user.screen_name = content
 				self.ask_for_authorization()
 			elif self.dialog_type == self.responding_authorization:
-				logp("Authorizing ...")
-				webbrowser.open(content)
-				logp("Opening the auth URL '%s'" % content)
+				logp("Asking for PIN")
 				self.ask_for_pin_number()																										# ask for the PIN number received when acessed the auth URL
 			elif self.dialog_type == self.responding_pin:																	# user typed the PIN number
 				logp("Receiving PIN: %s" % content)
