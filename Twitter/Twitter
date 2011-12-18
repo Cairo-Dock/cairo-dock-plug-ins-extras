@@ -17,9 +17,10 @@
 
 # This applet provides for Cairo-Dock an interface with Twitter
 
-# On the first time, the applet is going to ask your screen name and later the authorization to connect with Twitter.
-# Authorize opening the URL shown in the dialog box pressing Enter.
-# Log in on the browser and copy the number that you will be presented. On the dock, paste this number on the next dialog box will be shown.
+# On the first time, the applet is going to ask your nickname and authorization to connect with Twitter.
+# The applet is going to open your browser with the authorization page
+# As soon as you authorize it, a PIN number will be shown on the page, copy this number
+# Paste this number on the next dialog box will be shown.
 # The plugin is going to inform that you are successfully connected.
 
 import urlparse, os, webbrowser, simplejson
@@ -31,9 +32,9 @@ from CDApplet import CDApplet
 
 class TwitterOauth:
   def __init__(self):
-    self.request_token_url = 'https://twitter.com/oauth/request_token'
-    self.access_token_url  = 'https://twitter.com/oauth/access_token'
-    self.authorize_url     = 'http://twitter.com/oauth/authorize'
+    self.request_token_url  = 'https://twitter.com/oauth/request_token'
+    self.access_token_url   = 'https://twitter.com/oauth/access_token'
+    self.authorize_url      = 'http://twitter.com/oauth/authorize'
 
     consumer_key, consumer_secret = read_consumer_key_and_secret()
     self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
@@ -196,7 +197,7 @@ class Applet(CDApplet):
     self.dialog_type = self.responding_authorization
 
   def ask_for_pin_number(self):
-    message = "Enter the PIN number that appeared when you accessed the URL shown before"
+    message = "Enter the PIN number on the authorization page"
     dialog = {'buttons':'ok'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
