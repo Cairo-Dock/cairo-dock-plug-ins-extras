@@ -45,6 +45,7 @@ else
 		if [ -x $i/$i ]; then
 			sed --follow-symlinks -i "1s/python/python2/"  $i/$i
 		fi
+		date +%Y%m%d > $i/last-modif
 	done
 	cd ..
 	tar czf "$FULLNAME"_python2.tar.gz "$FULLNAME"
