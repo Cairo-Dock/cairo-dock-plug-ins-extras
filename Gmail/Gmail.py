@@ -46,22 +46,22 @@ class Menu(gtk.Menu):
             # check if mail has subject / title
             if len(mail['title']) == 0:
                 mail['title'] = '<i>(No Subject)</i>'
-                # create markups
-                string = '<b>'+mail['author']+':</b>\n'+mail['title']
-                menu_item = gtk.ImageMenuItem()
-                # the true label is set after with set_markup()
-                menu_item.set_label('')
-                menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
-                menu_item.get_children()[0].set_markup(string)
-                menu_item.url = mail['link']
-                menu_item.connect('activate', self.open_mail)
-                self.append(menu_item)
-                menu_item.show()
-                # add a separator if mail is not last in list
-                if inbox.index(mail) != len(inbox) - 1:
-                    sep = gtk.SeparatorMenuItem()		
-                    self.append(sep)
-                    sep.show()
+            # create markups
+            string = '<b>'+mail['author']+':</b>\n'+mail['title']
+            menu_item = gtk.ImageMenuItem()
+            # the true label is set after with set_markup()
+            menu_item.set_label('')
+            menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
+            menu_item.get_children()[0].set_markup(string)
+            menu_item.url = mail['link']
+            menu_item.connect('activate', self.open_mail)
+            self.append(menu_item)
+            menu_item.show()
+            # add a separator if mail is not last in list
+            if inbox.index(mail) != len(inbox) - 1:
+                sep = gtk.SeparatorMenuItem()
+                self.append(sep)
+                sep.show()
 
         self.show()
 
@@ -579,7 +579,7 @@ class Gmail(CDApplet):
         else:
             m = Menu(self.account['inbox'])
             m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
-            button=1, activate_time=0)
+                    button=1, activate_time=0)
 
 
 
