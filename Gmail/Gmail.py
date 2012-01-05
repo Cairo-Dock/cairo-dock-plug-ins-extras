@@ -30,52 +30,54 @@ import sys # used to find relative paths
 import SVGmaker # home-made module to edit SVG counter emblem
 import gtk # used for Menu class displaying inbox
 
+
+
+
+
+
+
 class Menu(gtk.Menu):
 
     def __init__(self, inbox):
         gtk.Menu.__init__(self)
-	
 
-	# create header
-	#ebox = gtk.EventBox()
-	#ebox.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse('#FFFFFF'))
-	#ebox.add(gtk.image_new_from_file('./img/menu-gmail.png'))
-	#menu_item = gtk.MenuItem('test')
-	#menu_item.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse('#FFFFFF'))
-	#menu_item.child_set(ebox)
-	#self.append(menu_item)
-	#ebox.show()
-	#menu_item.show()
-	
-	# get all mail from inbox
-	for mail in inbox:
-		# check if mail has subject / title
-		if len(mail['title']) == 0:
-			mail['title'] = '<i>(No Subject)</i>'
-		# create markups
-		string = '<b>'+mail['author']+':</b>\n'+mail['title']
-		menu_item = gtk.ImageMenuItem()
-		# the true label is set after with set_markup()
-		menu_item.set_label('')
-		menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
-		menu_item.get_children()[0].set_markup(string)
-		menu_item.url = mail['link']
-		menu_item.connect('activate', self.open_mail)
-		self.append(menu_item)
-		menu_item.show()
-		# add a separator if mail is not last in list
-		if inbox.index(mail) != len(inbox) - 1:
-			sep = gtk.SeparatorMenuItem()		
-			self.append(sep)
-			sep.show()
-		
+        # get all mail from inbox
+        for mail in inbox:
+            # check if mail has subject / title
+            if len(mail['title']) == 0:
+                mail['title'] = '<i>(No Subject)</i>'
+                # create markups
+                string = '<b>'+mail['author']+':</b>\n'+mail['title']
+                menu_item = gtk.ImageMenuItem()
+                # the true label is set after with set_markup()
+                menu_item.set_label('')
+                menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
+                menu_item.get_children()[0].set_markup(string)
+                menu_item.url = mail['link']
+                menu_item.connect('activate', self.open_mail)
+                self.append(menu_item)
+                menu_item.show()
+                # add a separator if mail is not last in list
+                if inbox.index(mail) != len(inbox) - 1:
+                    sep = gtk.SeparatorMenuItem()		
+                    self.append(sep)
+                    sep.show()
+
         self.show()
-	
+
+
+
+
     def open_mail(self, mail=None):
 
-	""" Opens the mail URL """
+        """ Opens the mail URL """
 
-	os.popen('x-www-browser https://mail.google.com/mail')
+        os.popen('x-www-browser https://mail.google.com/mail')
+
+
+
+
+
 
 class Gmail(CDApplet):
 
@@ -97,8 +99,10 @@ class Gmail(CDApplet):
         CDApplet.__init__(self)
 
 
+
+
     def get_config(self, keyfile):
-        
+
         """
             Gets configuration from configuration file.
         """
@@ -125,6 +129,9 @@ class Gmail(CDApplet):
             self.update_display()
         if self.flag == 'error':
             self.error('')
+
+
+
 
     def check_subscription(self):
 
@@ -171,6 +178,8 @@ class Gmail(CDApplet):
             self.repeat()
 
 
+
+
     def add_subscription(self, request=None):
 
         """
@@ -183,14 +192,14 @@ class Gmail(CDApplet):
             self.flag = 'username'
             # prompt for username
             self.icon.PopupDialog({"message" : "Please, enter your Gmail username:", "buttons" : "ok;cancel"},
-			{"widget-type" : "text-entry"})
+                    {"widget-type" : "text-entry"})
         # if requesting new password:
         elif request == 'password':
             # set dialogue flag to 'password'
             self.flag = 'password'
             # prompt for password
             self.icon.PopupDialog({"message" : "Please, enter your Gmail password:", "buttons" : "ok;cancel"},
-			{"widget-type" : "text-entry", "visible" : False})
+                    {"widget-type" : "text-entry", "visible" : False})
         # default request is to encrypt username and password
         else:
             # open, encode and write to subscription file
@@ -200,6 +209,8 @@ class Gmail(CDApplet):
             file.close()
             # run subscription check as double check
             self.check_subscription()
+
+
 
 
     def check_mail(self):
@@ -241,6 +252,9 @@ class Gmail(CDApplet):
 
         return True
 
+
+
+
     def get_inbox(self, xml_data):
 
         """
@@ -269,25 +283,28 @@ class Gmail(CDApplet):
             self.error("WARNING: there was an error reading XML content.")
             return None
 
+
+
+
     def request_gmail(self):
 
         """
             Authenticates and requests inbox content from Gmail.
         """
-        
+
         gmailfeed = 'https://mail.google.com/mail/feed/atom/'
         request = urllib2.Request(gmailfeed)
 
         # connect to Gmail
         try:
-	    handle = urllib2.urlopen(request)
-	except IOError, error:
-	    # here we will need "fail" as we receive a 401 error to get access
-	    pass
+            handle = urllib2.urlopen(request)
+        except IOError, error:
+            # here we will need "fail" as we receive a 401 error to get access
+            pass
 
         if not hasattr(error, 'code') or error.code != 401:
-	    # we got an error - but not a 401 error
-	    self.error("WARNING: Gmail applet failed to connect to Gmail atom feed.")
+            # we got an error - but not a 401 error
+            self.error("WARNING: Gmail applet failed to connect to Gmail atom feed.")
             return None
 
         # get the www-authenticate line from the headers
@@ -297,34 +314,36 @@ class Gmail(CDApplet):
         authobject = re.compile(
                                 r'''(?:\s*www-authenticate\s*:)?\s*(\w*)\s+realm=['"]([^'"]+)['"]''',
                                 re.IGNORECASE)
-	matchobject = authobject.match(authline)
+        matchobject = authobject.match(authline)
 
         # make sure scheme and realm was found
         if not matchobject:
-	    m = "WARNING: Gmail atom feed is badly formed: " + authline
+            m = "WARNING: Gmail atom feed is badly formed: " + authline
             self.error(m)
             return None
 
         # check what scheme we have
         scheme = matchobject.group(1)
         if scheme.lower() != 'basic':
-	    return self.error('WARNING: Gmail Applet is not equiped for authentication \
-        other than BASIC.')
+            return self.error('WARNING: Gmail Applet is not equiped for authentication \
+                    other than BASIC.')
 
         # authenticate and get inbox content
         username = self.account['username']
         password = self.account['password']
         base64string = base64.encodestring('%s:%s' % (username, password))[:-1]
-	authheader = "Basic %s" % base64string
-	request.add_header("Authorization", authheader)
-	try:
-	    handle = urllib2.urlopen(request)
-	except IOError, error:
-	    # here we shouldn't fail if the username/password is right
-	    self.error("WARNING: Gmail username or password may be wrong.")
+        authheader = "Basic %s" % base64string
+        request.add_header("Authorization", authheader)
+        try:
+            handle = urllib2.urlopen(request)
+        except IOError, error:
+            # here we shouldn't fail if the username/password is right
+            self.error("WARNING: Gmail username or password may be wrong.")
             return None
 
         return handle
+
+
 
 
     def update_display(self):
@@ -333,7 +352,7 @@ class Gmail(CDApplet):
         Updates applet icon either with quickinfo or svg emblem.
         Only if new mail count is superior to 0.
         """
-        
+
         # if user does not want any counter on the icon
         if self.config['count'] == False:
             # clean up quick-info
@@ -341,7 +360,7 @@ class Gmail(CDApplet):
             # clean up icon
             self.icon.SetIcon(os.path.abspath('./icon'))
             return
-        
+
         # otherwise
         if self.config['info'] == 'quickinfo':
             # clean up icon
@@ -369,6 +388,9 @@ class Gmail(CDApplet):
                 svg.close()
                 # set icon with emblem
                 self.icon.SetIcon(self.svgpath)
+
+
+
 
     def error(self, message):
 
@@ -399,10 +421,12 @@ class Gmail(CDApplet):
         self.flag = 'error'
         # show dialogue
         self.icon.ShowDialog(message, 4)
-        
+
+
+
 
     def send_alert(self):
-        
+
         """
             Notifies user according to requirements.
         """
@@ -443,8 +467,10 @@ class Gmail(CDApplet):
                 self.wav = os.path.abspath("./snd/pop.wav")
 
 
+
+
     def repeat(self):
-        
+
         """
            Timer for postman to check messages.
            Will continue as long as check_messages returns True
@@ -456,8 +482,10 @@ class Gmail(CDApplet):
         glib.timeout_add(self.config['update'], self.check_mail)
 
 
+
+
     def begin(self):
-        
+
         """
             First method ran by CairoDock when applet is launched.
         """
@@ -465,7 +493,9 @@ class Gmail(CDApplet):
         self.icon.SetLabel("Gmail")
         # the applet will not enter the loop until a subscription is found
         self.check_subscription()
-        
+
+
+
 
     def on_answer_dialog(self, key, content):
 
@@ -496,12 +526,15 @@ class Gmail(CDApplet):
             else:
                 self.error("Sorry, there was no input!")
 
+
+
+
     def on_build_menu(self):
 
         """
             Appends items to right-click menu.
         """
-		
+
         self.icon.AddMenuItems([{"widget-type" : CDApplet.MENU_ENTRY,
         "label": "Add or change subscription",
         "icon" : "gtk-add",
@@ -514,7 +547,9 @@ class Gmail(CDApplet):
         "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 2,
         "tooltip" : "Check Gmail inbox now if you can't wait."}])
-        
+
+
+
 
     def on_menu_select(self, iNumEntry):
 
@@ -531,29 +566,39 @@ class Gmail(CDApplet):
             pass
 
 
+
+
     def on_click(self, iState):
 
         """
             Launches Gmail in default browser or application.
         """
+
         if self.account['count'] < 1:
             self.check_mail()
         else:
-        	m = Menu(self.account['inbox'])
-        	m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
-                	button=1, activate_time=0)
+            m = Menu(self.account['inbox'])
+            m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
+            button=1, activate_time=0)
+
+
 
 
     def on_middle_click(self):
-
+    
         """
             Check for new mails now.
         """
+        
         self.check_mail()
+        
+        
+        
+
+
 
 
     def get_xy(self, m, data):
-
 
         # fetch icon geometry
         icondata = self.icon.GetAll()
@@ -584,6 +629,9 @@ class Gmail(CDApplet):
             y = iconPosY + (iconHeight / 2)
 
         return (x, y, True)
+
+
+
 
 if __name__ == "__main__":
     gmail = Gmail()
