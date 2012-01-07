@@ -29,6 +29,8 @@ from http import post, get
 from util import *
 from CDApplet import CDApplet
 # TODO import ConfigParser later conver files to config syntax
+# from threading import Thread
+# import time
 
 class TwitterOauth:
   def __init__(self):
@@ -71,16 +73,31 @@ class TwitterOauth:
     access_token_data = dict((x, y) for x, y in urlparse.parse_qsl(response))              # tuple to dict
     return access_token_data['oauth_token'], access_token_data['oauth_token_secret']
 
-class TwitterAPI:
+#class TwitterAPI(threading.Thread):
+class TwitterAPI():
   def __init__(self, access_key, access_secret):
     self.update_url           = 'http://twitter.com/statuses/update.json'
     self.home_timeline_url    = 'http://twitter.com/statuses/home_timeline.json'
-    self.tweety_streaming_url = 'https://userstream.twitter.com/2/user.json'
 
     self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
     consumer_key, consumer_secret = read_consumer_key_and_secret()
     self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
     self.access_token = oauth.OAuthToken(access_key, access_secret)
+
+#    self.current_home_timeline = self.home_timeline()
+#    self.current_last_status_time = time.strptime(self.current_home_timeline[0]['created_at'], "%a %b %d %H:%M:%S +0000 %Y")
+#    print "==== initial last time ========="
+#    print self.current_home_timeline[0]['text']
+#    print self.current_last_status_time
+#    print "============="
+#    t = Thread(target=self.check_home_timeline())
+#    t.start()
+#    t.join()
+#    self.check_home_timeline()
+    #threading.Thread.__init__(self)
+
+#  def run(self):
+#    self.check_home_timeline()
 
 #  def tweety_streaming(self):
 #    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -103,6 +120,37 @@ class TwitterAPI:
     post_data = oauth_request.to_postdata()
     return post(self.update_url, post_data)
 
+#  def check_home_timeline(self):
+#    i = 0
+#    while i < 5:
+#      new_home_timeline = self.home_timeline()
+#      new_tweetys = []
+#      if self.current_home_timeline:
+#        for status in new_home_timeline:
+#          #if status['created_at'] > self.current_last_status_time:
+#          if time.strptime(status['created_at'], "%a %b %d %H:%M:%S +0000 %Y") > self.current_last_status_time:
+#            print "==== found greater last time ========="
+#            print status['text']
+#            print status['created_at']
+#            print "============="
+#            new_tweetys.append(status)
+#        logp("Thread - Changed home timeline")
+#        self.current_home_timeline = new_home_timeline
+#        message = "".join (["[%s] %s\n" % (status['user']['name'], status['text']) for status in new_tweetys])
+#        logp(message)
+#        #self.show_popup_message(message)
+#        self.current_last_status_time = time.strptime(self.current_home_timeline[0]['created_at'], "%a %b %d %H:%M:%S +0000 %Y")
+#        print "==== novo greater last time ========="
+#        print status['text']
+#        print status['created_at']
+#        print "============="
+#        #self.current_last_status_time = self.current_home_timeline[0]['created_at']
+#      else:
+#        logp("Thread - Fetching home timeline")
+#        self.current_home_timeline = new_home_timeline
+#      time.sleep(20)
+#      i+=1
+
   def home_timeline(self):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
                                                                token = self.access_token,
@@ -110,7 +158,7 @@ class TwitterAPI:
                                                                http_method = "GET")
     oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
     url = oauth_request.to_url()
-    response = get(url)
+    response = get(url) 
     return simplejson.loads(response)
 
 class User:
@@ -174,31 +222,36 @@ class Applet(CDApplet):
     f.write("%s %s %s" % (self.user.screen_name, self.user.access_key, self.user.access_secret))
     f.close()
 
+  def show_initial_informations(self):
+    message = "Twitter Applet needs your nickname, and an authorization\nthat you accept it to connect on your Twitter account"
+    dialog = {'buttons':'next'}
+    self.show_popup_message(message, dialog)
+    self.dialog_type = self.responding_initial_informations
+
   def ask_for_screen_name(self):
     message = "What is your Twitter nickname?"
-    dialog = {'buttons':'ok'}
+    dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
-    # self.dialog_type = self.responding_screen_name
+    self.dialog_type = self.responding_screen_name
 
   def ask_for_authorization(self):
     authorization_url = self.twitter_auth.get_authorization_url()
     logp("Opening the auth URL '%s'" % authorization_url)
+    dialog = {'buttons':'next'}
     try:
       webbrowser.open(authorization_url)
-      message = "Twitter applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you do, copy the PIN number that will be shown, and close this dialog"
-      dialog = {'buttons':'ok'}
+      message = "Twitter applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and close this dialog"
       self.show_popup_message(message, dialog)
     except webbrowser.Error:    
       message = "Twitter applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize"
-      dialog = {'buttons':'ok'}
       widget = {'widget-type':'text-entry', 'initial-value':authorization_url}
       self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_authorization
 
   def ask_for_pin_number(self):
     message = "Enter the PIN number on the authorization page"
-    dialog = {'buttons':'ok'}
+    dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_pin
@@ -218,18 +271,18 @@ class Applet(CDApplet):
     self.user_file = '.users'
     self.twitter_auth = TwitterOauth()
     self.api = None
-    self.responding_screen_name, self.responding_authorization, self.responding_pin, self.responding_success, self.responding_tweety = range(5)
-    self.dialog_type = self.responding_screen_name
+    self.responding_screen_name, self.responding_authorization, self.responding_pin, self.responding_success, self.responding_tweety, self.responding_initial_informations = range(6)
+    self.dialog_type = None
 
-    CDApplet.__init__(self)                                                          # call CDApplet interface init
+    CDApplet.__init__(self)                                                           # call CDApplet interface init
 
   # Inherited methods from CDApplet
   def begin(self):
     logp("Looking for user ...")
-    if not self.read_user_data():                                                    # first time for the user
+    if not self.read_user_data():                                                     # first time for the user
       logm("User not found")
-      self.ask_for_screen_name()                                                    # start asking for its screen name
-    else:                                                                            # user not found
+      self.show_initial_informations()                                                # start the wizard
+    else:                                                                             # user not found
       logp("User '%s' found" % self.user.screen_name)
       self.api = TwitterAPI(self.user.access_key, self.user.access_secret)          # getting control over the api
 
@@ -240,7 +293,9 @@ class Applet(CDApplet):
   # Callbacks
   def on_answer_dialog(self, key, content):
     if (key == 0 or key == -1):                                                      # ... and pressed Ok or Enter
-      if self.dialog_type == self.responding_screen_name:                            # user typed screen name ...
+      if self.dialog_type == self.responding_initial_informations:
+        self.ask_for_screen_name()
+      elif self.dialog_type == self.responding_screen_name:                            # user typed screen name ...
         logp("Receiving screen name '%s'" % content)
         self.user.screen_name = content
         self.ask_for_authorization()
