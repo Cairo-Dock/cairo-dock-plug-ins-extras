@@ -78,6 +78,7 @@ class TwitterAPI():
   def __init__(self, access_key, access_secret):
     self.update_url           = 'http://twitter.com/statuses/update.json'
     self.home_timeline_url    = 'http://twitter.com/statuses/home_timeline.json'
+    self.direct_messages_url  = 'https://api.twitter.com/1/direct_messages.json'
 
     self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
     consumer_key, consumer_secret = read_consumer_key_and_secret()
@@ -161,6 +162,17 @@ class TwitterAPI():
     response = get(url) 
     return simplejson.loads(response)
 
+  def direct_messages(self):
+    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+                                                               token = self.access_token,
+                                                               http_url = self.direct_messages_url,
+                                                               http_method = "GET")
+    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
+    url = oauth_request.to_url()
+    response = get(url)
+    print simplejson.loads(response)[0]
+    return simplejson.loads(response)
+
 class User:
   def __init__(self, screen_name="", access_key="", access_secret=""):
     self.screen_name = screen_name
@@ -179,13 +191,21 @@ class Applet(CDApplet):
 
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
-
     timeline = self.api.home_timeline()
     if len(timeline) > 0:
       message = "".join (["[%s] %s\n" % (status['user']['name'], status['text']) for status in timeline])
     else:
       message = "Oh, dear, your timeline is empty :-("
+    self.inform_end_of_waiting_process()
+    self.show_popup_message(message)
 
+  def show_direct_messages(self):
+    self.inform_start_of_waiting_process()
+    messages = self.api.direct_messages()
+    if len(messages) > 0:
+      message = "".join (["[%s] %s\n" % (status['sender']['name'], status['text']) for status in messages])
+    else:
+      message = "Oh, dear, you do not have direct messages :-("
     self.inform_end_of_waiting_process()
     self.show_popup_message(message)
 
@@ -266,13 +286,27 @@ class Applet(CDApplet):
     widget_attributes.update(widget)
     self.icon.PopupDialog (dialog_attributes, widget_attributes)
 
+  def build_direct_messages_menu(self):
+    direct_messages_menu = []
+    direct_messages_menu.append ({
+        'type'  : CDApplet.MENU_ENTRY,
+        'label' : "Received direct messages",
+        'menu'  : CDApplet.MAIN_MENU_ID,
+        'id'    : self.direct_messages_menu_id,
+        'icon'  : os.path.abspath("./data/received.png")
+    })
+    self.icon.AddMenuItems(direct_messages_menu)
+
   def __init__(self):
     self.user = User()
     self.user_file = '.users'
     self.twitter_auth = TwitterOauth()
     self.api = None
-    self.responding_screen_name, self.responding_authorization, self.responding_pin, self.responding_success, self.responding_tweety, self.responding_initial_informations = range(6)
+    (self.responding_screen_name, self.responding_authorization, self.responding_pin,
+    self.responding_success, self.responding_tweety, self.responding_initial_informations) = range(6)
     self.dialog_type = None
+
+    self.direct_messages_menu_id = 1000
 
     CDApplet.__init__(self)                                                           # call CDApplet interface init
 
@@ -321,6 +355,13 @@ class Applet(CDApplet):
 
   def on_middle_click(self):
     self.show_home_timeline()
+
+  def on_build_menu(self):
+    self.build_direct_messages_menu()
+
+  def on_menu_select(self, selected_menu):
+    if selected_menu == self.direct_messages_menu_id:
+      self.show_direct_messages()
 
 if __name__ == '__main__':
   Applet().run()
