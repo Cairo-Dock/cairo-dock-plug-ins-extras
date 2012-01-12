@@ -70,7 +70,7 @@ class TwitterOauth:
     url = oauth_request.to_url()
     response = get(url)
     self.access_token = oauth.OAuthToken.from_string(response)
-    access_token_data = dict((x, y) for x, y in urlparse.parse_qsl(response))              # tuple to dict
+    access_token_data = dict((x, y) for x, y in urlparse.parse_qsl(response))                 # tuple to dict
     return access_token_data['oauth_token'], access_token_data['oauth_token_secret']
 
 #class TwitterAPI(threading.Thread):
@@ -111,7 +111,7 @@ class TwitterAPI():
 #    response = get(url)
 #    return simplejson.loads(response)
 
-  def tweety(self, message):                                                                        # popularly "send a tweety"
+  def tweety(self, message):                                                                  # popularly "send a tweety"
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
                                                                token = self.access_token,
                                                                http_url = self.update_url,
@@ -193,23 +193,25 @@ class Applet(CDApplet):
     self.inform_start_of_waiting_process()
     timeline = self.api.home_timeline()
     if len(timeline) > 0:
-      message = "".join (["[%s] %s\n" % (status['user']['name'], status['text']) for status in timeline])
+      message = "".join (["[<b>%s</b>] %s\n" % (status['user']['name'], status['text']) for status in timeline])
     else:
       message = "Oh, dear, your timeline is empty :-("
+    dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
-    self.show_popup_message(message)
+    self.show_popup_message(message, dialog)
 
   def show_direct_messages(self):
     self.inform_start_of_waiting_process()
     messages = self.api.direct_messages()
     if len(messages) > 0:
-      message = "".join (["[%s] %s\n" % (status['sender']['name'], status['text']) for status in messages])
+      message = "".join (["[<b>%s</b>] %s\n" % (status['sender']['name'], status['text']) for status in messages])
     else:
       message = "Oh, dear, you do not have direct messages :-("
+    dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
-    self.show_popup_message(message)
+    self.show_popup_message(message, dialog)
 
-  def tweety(self, message):                                                                        # popularly "send a tweety"
+  def tweety(self, message):                                                                  # popularly "send a tweety"
     self.inform_start_of_waiting_process()
     self.api.update_status(message)
     self.inform_end_of_waiting_process()
@@ -218,7 +220,7 @@ class Applet(CDApplet):
 
   def ask_for_tweety(self):
     dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':140}                                            # 140 characters max, a tweety :)
+    widget = {'widget-type':'text-entry', 'nb-chars':140}                                     # 140 characters max, a tweety :)
     self.show_popup_message(("%s, send a tweety") % self.user.screen_name, dialog, widget)
     self.dialog_type = self.responding_tweety
 
@@ -232,7 +234,7 @@ class Applet(CDApplet):
         f = open(self.user_file, "rb")
         # for line in f:
         data = f.read()
-        self.user.screen_name, self.user.access_key, self.user.access_secret = data.split()  # split the line by space token
+        self.user.screen_name, self.user.access_key, self.user.access_secret = data.split()   # split the line by space token
         f.close()
         found = True
     return found
@@ -299,7 +301,7 @@ class Applet(CDApplet):
 
   def __init__(self):
     self.user = User()
-    self.user_file = '.users'
+    self.user_file = os.path.abspath(os.path.join(os.getcwd(), '..','..','..','.twitter_users'))  # ~/.config/.twitter_users
     self.twitter_auth = TwitterOauth()
     self.api = None
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
@@ -318,7 +320,7 @@ class Applet(CDApplet):
       self.show_initial_informations()                                                # start the wizard
     else:                                                                             # user not found
       logp("User '%s' found" % self.user.screen_name)
-      self.api = TwitterAPI(self.user.access_key, self.user.access_secret)          # getting control over the api
+      self.api = TwitterAPI(self.user.access_key, self.user.access_secret)            # getting control over the api
 
   # TODO: Fix it!
   def reload(self):
@@ -326,22 +328,22 @@ class Applet(CDApplet):
 
   # Callbacks
   def on_answer_dialog(self, key, content):
-    if (key == 0 or key == -1):                                                      # ... and pressed Ok or Enter
+    if (key == 0 or key == -1):                                                       # ... and pressed Ok or Enter
       if self.dialog_type == self.responding_initial_informations:
         self.ask_for_screen_name()
-      elif self.dialog_type == self.responding_screen_name:                            # user typed screen name ...
+      elif self.dialog_type == self.responding_screen_name:                           # user typed screen name ...
         logp("Receiving screen name '%s'" % content)
         self.user.screen_name = content
         self.ask_for_authorization()
       elif self.dialog_type == self.responding_authorization:
         logp("Asking for PIN")
-        self.ask_for_pin_number()                                                    # ask for the PIN number received when acessed the auth URL
-      elif self.dialog_type == self.responding_pin:                                  # user typed the PIN number
+        self.ask_for_pin_number()                                                     # ask for the PIN number received when acessed the auth URL
+      elif self.dialog_type == self.responding_pin:                                   # user typed the PIN number
         logp("Receiving PIN: %s" % content)
         self.user.access_key, self.user.access_secret = self.twitter_auth.get_access_token_and_secret(content)
         logp("Writing user data")
-        self.write_user_data()                                                      # writing the new users data
-        self.api = TwitterAPI(self.user.access_key, self.user.access_secret)        # getting control over the api
+        self.write_user_data()                                                        # writing the new users data
+        self.api = TwitterAPI(self.user.access_key, self.user.access_secret)          # getting control over the api
         if self.api:
           self.show_popup_successful_connection()
         else:
