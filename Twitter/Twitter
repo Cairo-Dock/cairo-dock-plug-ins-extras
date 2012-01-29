@@ -23,11 +23,14 @@
 # Paste this number on the next dialog box will be shown.
 # The plugin is going to inform that you are successfully connected.
 
+# To see the received direct messages right-click on the icon -> Twitter -> Received direct messages
+# To see some user's info right-click on the icon -> Twitter -> Info
+
 import urlparse, os, webbrowser, simplejson
 from oauth import oauth
 from http import post, get
 from util import *
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 # TODO import ConfigParser later conver files to config syntax
 # from threading import Thread
 # import time
@@ -76,9 +79,10 @@ class TwitterOauth:
 #class TwitterAPI(threading.Thread):
 class TwitterAPI():
   def __init__(self, access_key, access_secret):
-    self.update_url           = 'http://twitter.com/statuses/update.json'
-    self.home_timeline_url    = 'http://twitter.com/statuses/home_timeline.json'
-    self.direct_messages_url  = 'https://api.twitter.com/1/direct_messages.json'
+    self.update_url             = 'http://twitter.com/statuses/update.json'
+    self.home_timeline_url      = 'http://twitter.com/statuses/home_timeline.json'
+    self.direct_messages_url    = 'https://api.twitter.com/1/direct_messages.json'
+    self.verify_credentials_url = 'https://api.twitter.com/1/account/verify_credentials.json'
 
     self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
     consumer_key, consumer_secret = read_consumer_key_and_secret()
@@ -173,6 +177,16 @@ class TwitterAPI():
     print simplejson.loads(response)[0]
     return simplejson.loads(response)
 
+  def verify_credentials(self):
+    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+                                                               token = self.access_token,
+                                                               http_url = self.verify_credentials_url,
+                                                               http_method = "GET")
+    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
+    url = oauth_request.to_url()
+    response = get(url) 
+    return simplejson.loads(response)
+
 class User:
   def __init__(self, screen_name="", access_key="", access_secret=""):
     self.screen_name = screen_name
@@ -195,7 +209,7 @@ class Applet(CDApplet):
     if len(timeline) > 0:
       message = "".join (["[<b>%s</b>] %s\n" % (status['user']['name'], status['text']) for status in timeline])
     else:
-      message = "Oh, dear, your timeline is empty :-("
+      message = _("Oh, dear, your timeline is empty :-(")
     dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
@@ -206,7 +220,7 @@ class Applet(CDApplet):
     if len(messages) > 0:
       message = "".join (["[<b>%s</b>] %s\n" % (status['sender']['name'], status['text']) for status in messages])
     else:
-      message = "Oh, dear, you do not have direct messages :-("
+      message = _("Oh, dear, you do not have direct messages :-(")
     dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
@@ -216,15 +230,23 @@ class Applet(CDApplet):
     self.api.update_status(message)
     self.inform_end_of_waiting_process()
 
+  # TODO
+  def show_credentials(self):
+    self.inform_start_of_waiting_process()
+    credentials = self.api.verify_credentials()
+    message = _("%s [<b>%s</b>]\nFollowers: %s\nFriends: %s\nTweets: %s\n") % (credentials['name'], credentials['screen_name'], credentials['followers_count'], credentials['friends_count'], credentials['statuses_count'])
+    dialog = {'use-markup':True}
+    self.inform_end_of_waiting_process()
+    self.show_popup_message(message, dialog)
+
   # Applet methods
 
   def ask_for_tweety(self):
     dialog = {'buttons':'ok;cancel'}
     widget = {'widget-type':'text-entry', 'nb-chars':140}                                     # 140 characters max, a tweety :)
-    self.show_popup_message(("%s, send a tweety") % self.user.screen_name, dialog, widget)
+    self.show_popup_message((_("%s, send a tweety")) % self.user.screen_name, dialog, widget)
     self.dialog_type = self.responding_tweety
 
-  # TODO: Handle multiple users inside the .users files
   # TODO: Implement it as a config file using screen_name as section index
   def read_user_data(self):
     """Read the users file formated as Screen Name<space>Access Key<space>Access Secret"""
@@ -232,7 +254,6 @@ class Applet(CDApplet):
     if os.path.exists(self.user_file):
       if os.path.getsize(self.user_file) > 0:
         f = open(self.user_file, "rb")
-        # for line in f:
         data = f.read()
         self.user.screen_name, self.user.access_key, self.user.access_secret = data.split()   # split the line by space token
         f.close()
@@ -245,13 +266,13 @@ class Applet(CDApplet):
     f.close()
 
   def show_initial_informations(self):
-    message = "Twitter Applet needs your nickname, and an authorization\nthat you accept it to connect on your Twitter account"
+    message = _("Twitter Applet needs your nickname, and an authorization\nthat you accept it to connect on your Twitter account")
     dialog = {'buttons':'next'}
     self.show_popup_message(message, dialog)
     self.dialog_type = self.responding_initial_informations
 
   def ask_for_screen_name(self):
-    message = "What is your Twitter nickname?"
+    message = _("What is your Twitter nickname?")
     dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
@@ -263,23 +284,23 @@ class Applet(CDApplet):
     dialog = {'buttons':'next'}
     try:
       webbrowser.open(authorization_url)
-      message = "Twitter applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and close this dialog"
+      message = _("Twitter applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and close this dialog")
       self.show_popup_message(message, dialog)
     except webbrowser.Error:    
-      message = "Twitter applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize"
+      message = _("Twitter applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize")
       widget = {'widget-type':'text-entry', 'initial-value':authorization_url}
       self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_authorization
 
   def ask_for_pin_number(self):
-    message = "Enter the PIN number on the authorization page"
+    message = _("Enter the PIN number on the authorization page")
     dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_pin
 
   def show_popup_successful_connection(self):
-    self.show_popup_message("Successfully connected with Twitter")
+    self.show_popup_message(_("Successfully connected with Twitter"))
 
   def show_popup_message(self, message, dialog={}, widget={}):
     dialog_attributes = {'message':message}
@@ -292,12 +313,21 @@ class Applet(CDApplet):
     direct_messages_menu = []
     direct_messages_menu.append ({
         'type'  : CDApplet.MENU_ENTRY,
-        'label' : "Received direct messages",
-        'menu'  : CDApplet.MAIN_MENU_ID,
+        'label' : _("Received direct messages"),
         'id'    : self.direct_messages_menu_id,
         'icon'  : os.path.abspath("./data/received.png")
     })
     self.icon.AddMenuItems(direct_messages_menu)
+
+  def build_credentials_menu(self):
+    credentials_menu = []
+    credentials_menu.append ({
+        'type'  : CDApplet.MENU_ENTRY,
+        'label' : _("Info"),
+        'id'    : self.credentials_menu_id,
+        'icon'  : os.path.abspath("./data/credentials.png")
+    })
+    self.icon.AddMenuItems(credentials_menu)
 
   def __init__(self):
     self.user = User()
@@ -309,6 +339,7 @@ class Applet(CDApplet):
     self.dialog_type = None
 
     self.direct_messages_menu_id = 1000
+    self.credentials_menu_id = 2000
 
     CDApplet.__init__(self)                                                           # call CDApplet interface init
 
@@ -360,10 +391,13 @@ class Applet(CDApplet):
 
   def on_build_menu(self):
     self.build_direct_messages_menu()
+    self.build_credentials_menu()
 
   def on_menu_select(self, selected_menu):
     if selected_menu == self.direct_messages_menu_id:
       self.show_direct_messages()
+    elif selected_menu == self.credentials_menu_id:
+      self.show_credentials()
 
 if __name__ == '__main__':
   Applet().run()
