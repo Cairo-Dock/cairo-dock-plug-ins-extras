@@ -1,6 +1,7 @@
-1.4.2: (July/13/2010: Simplifying the dependencies. Fixing Wikipedia search.
-1.4.0: (July/13/2010: WebSearch now keeps a history of recently searched terms.
-1.3.1: (June/29/2010: URL encoding was not being done. Fixed it.
+1.4.3: (January/31/2012): Fixing Youtube search. Fixing a problem when opening URLs.
+1.4.2: (November/17/2011): Simplifying the dependencies. Fixing Wikipedia search.
+1.4.0: (July/13/2010): WebSearch now keeps a history of recently searched terms.
+1.3.1: (June/29/2010): URL encoding was not being done. Fixed it.
 1.3.0: (May/28/2010): WebSearch now fetch results from Digg. Changing the thumb download directory handling.
 1.2.1: (May/23/2010): Working around a bug in Ruby-dbus to construct list of sub-icons which description contains encoded characters.
 1.2.0: (May/21/2010): WebSearch now fetch results from Twitter. Fixing a bug that I introduced in the code refactoring, forget that some engines use page, and some use offset. Modularizing the engines. Shortening the description the same way as the url because some tweets are very long. Engine class now uses a neat way for lazy-loading and engine instantiation.

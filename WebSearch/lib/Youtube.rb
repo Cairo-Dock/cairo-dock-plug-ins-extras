@@ -18,7 +18,7 @@ class Youtube < Engine
 	def retrieve_links(query, page = 1)
 		youtube = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&page=#{page}")))
 		self.stats = retrieve_youtube_result_stats(youtube, query)
-		(youtube/"a[@id^='video-long-title-']").each do |res|							# 'a' tag has id which starts with "video-long-title-"
+		(youtube/"h3[@id^='video-long-title-']/a").each do |res|							# 'a' tag has id which starts with "video-long-title-"
 			url = res['href']
 			description = res.inner_text
 			video_id = url.split('=').last												# /watch?v=WwojCsQ3Fa8 => WwojCsQ3Fa8 => video_id
@@ -29,7 +29,7 @@ class Youtube < Engine
 	end
 
 	def retrieve_youtube_result_stats (youtube, query)
-		total = youtube.at("div[@class='name']").inner_text.split.last
+		total = youtube.at("p[@class='num-results']/strong").inner_text
 		"Search for #{query} returned #{total} results"
 	end
 end
