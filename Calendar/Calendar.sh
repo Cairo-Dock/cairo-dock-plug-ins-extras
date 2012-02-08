@@ -3,6 +3,7 @@
 # This is a part of the external applet Calendar for Cairo-Dock
 #
 # Copyright : (C) 2009 by Royohboy & Matttbe
+#                 2009-2012 by Matttbe
 #                         Thanks to Nochka85 for his demo
 # E-mail : werbungfuerroy@googlemail.com and matttbe@gmail.com
 #
@@ -20,66 +21,47 @@
 
 ## Rev : 21/01/2010
 
-DBUS_NAME="org.cairodock.CairoDock"
-DBUS_PATH="/org/cairodock/CairoDock"
-DBUS_INTERFACE="org.cairodock.CairoDock"
+. /usr/share/cairo-dock/plug-ins/Dbus/CDBashApplet.sh $*
+
 COMMAND=$0
 SCRIPT_NAME=`basename $COMMAND`
-APP_NAME="`echo $SCRIPT_NAME | cut -f1 -d '.' `"
-ACTION=$1
-DROP_DATA=$2
-MENU_SELECT=$2
-SCROLL_UP=$2
-CONF_FILE="/home/$USER/.config/cairo-dock/current_theme/plug-ins/$APP_NAME/$APP_NAME.conf"
-
-#############################################################################################################
-get_conf_param() {
-LIGNE=`cat $CONF_FILE | grep "$1"`
-PARAM="`echo $LIGNE | cut -f2 -d '=' `"
-}
+DROP_DATA=$1
 
 #############################################################################################################
 get_ALL_conf_params() {
 
-get_conf_param "calendar_command"
-calendar_command="$PARAM"
+calendar_command=`get_conf_param "calendar_command"`
 
-get_conf_param "import_command"
-import_command="$PARAM"
+import_command=`get_conf_param "import_command"`
 
-get_conf_param "icon_script"
-icon_command="$PARAM"
+icon_command=`get_conf_param "icon_script"`
 
-get_conf_param "time_dialog_cal_today"
-time_dialog_cal="$PARAM"
+time_dialog_cal=`get_conf_param "time_dialog_cal_today"`
 
-get_conf_param "time_dialog_ev"
-time_dialog_ev="$PARAM"
+time_dialog_ev=`get_conf_param "time_dialog_ev"`
 
-get_conf_param "time_dialog_cal_next"
-time_dialog_cal_next="$PARAM"
+time_dialog_cal_next=`get_conf_param "time_dialog_cal_next"`
 
 }
 
 #############################################################################################################
-action_on_click() {
-get_conf_param "time_dialog_cal_today"
-time_dialog_cal_today="$PARAM"
+on_click() {
+
+time_dialog_cal_today=`get_conf_param "time_dialog_cal_today"`
 which cal > /dev/null
 if [ $? -eq 0 ]; then
-	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`cal`" int32:$time_dialog_cal_today
+	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.applet.ShowDialog  string:"`cal -h`" int32:$time_dialog_cal_today
 else
 	echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
-	dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"ERROR: 'cal' isn't installed" int32:5
+	call ShowDialog "string:\"ERROR: 'cal' isn't installed\"" "int32:5"
 fi
 #echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> Left clic !"
 exit
 }
 
 #############################################################################################################
-action_on_middle_click() {
-get_conf_param "calendar_command"
-calendar_command="$PARAM"
+on_middle_click() {
+calendar_command=`get_conf_param "calendar_command"`
 
 $calendar_command
 
@@ -88,15 +70,14 @@ exit
 }
 
 #############################################################################################################
-action_on_scroll_icon() {
+on_scroll_icon() {
 
 date_TD=`date +%Y%m%d%H%M%S`
 
-if [ $SCROLL_UP -eq "0" ]; then
+if [ $1 -eq 1 ]; then
 	# Scroll UP
 
-	get_conf_param "time_dialog_cal_next"
-	time_dialog_cal_next="$PARAM"
+	time_dialog_cal_next=`get_conf_param "time_dialog_cal_next"`
 
 	if test -e .wait; then
 		date_WAIT=`head -n 1 .wait`
@@ -133,24 +114,23 @@ if [ $SCROLL_UP -eq "0" ]; then
 			echo $MONTH_NEXT > .wait_month
 			echo $YEAR_NEXT > .wait_year
 		fi
-		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:" Next month :
-`cal $MONTH_NEXT $YEAR_NEXT`" int32:$time_dialog_cal_next
+		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.applet.ShowDialog  string:" Next month :
+`cal -h $MONTH_NEXT $YEAR_NEXT`" int32:$time_dialog_cal_next
 		echo $date_TD > .wait
 	else
 		echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
-		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"ERROR: 'cal' isn't installed" int32:5
+		call ShowDialog "string:\"ERROR: 'cal' isn't installed\"" "int32:5"
 	fi
 
 else
 	# Scroll DOWN
 
-	get_conf_param "time_dialog_ev"
-	time_dialog_ev="$PARAM"
+	time_dialog_ev=`get_conf_param "time_dialog_ev"`
 
 	which calendar > /dev/null
 	if [ $? -nq 0 ]; then
 		echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'calendar' isn't installed"
-		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"ERROR: 'calendar' isn't installed" int32:5
+		call ShowDialog "string:\"ERROR: 'calendar' isn't installed\"" "int32:5"
 		exit
 	fi
 
@@ -160,12 +140,12 @@ else
 			# we wait for 3 sec
 			calendar -f /usr/share/calendar/calendar.all > /dev/null # The loading takes some time :-/
 			sleep 0.5
-			dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`calendar -f /usr/share/calendar/calendar.all`" int32:$time_dialog_ev
+			dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.applet.ShowDialog  string:"`calendar -f /usr/share/calendar/calendar.all`" int32:$time_dialog_ev
 		else
 			exit
 		fi
 	else
-		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"`calendar`" int32:$time_dialog_ev
+		dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.applet.ShowDialog  string:"`calendar`" int32:$time_dialog_ev
 	fi
 
 	echo $date_TD > .wait1
@@ -175,13 +155,11 @@ exit
 }
 
 #############################################################################################################
-action_on_drop_data() {
-get_conf_param "import_command"
-import_command="$PARAM"
+on_drop_data() {
+import_command=`get_conf_param "import_command"`
 
 if [ "`echo $DROP_DATA |grep 'file://'`" != "" ]; then 	# It's a file !
 	DROP_DATA="`echo $DROP_DATA | cut -c 8-`"  # we remove 'file://' before the location
-	#dbus-send --session --dest=$DBUS_NAME $DBUS_PATH/$APP_NAME $DBUS_INTERFACE.applet.ShowDialog string:"FILE : $DROP_DATA has been dropped on applet" int32:4
 	$import_command $DROP_DATA
 fi
 
@@ -189,33 +167,21 @@ exit
 }
 
 #############################################################################################################
-action_on_init() {
+begin() {
+cp $CONF_FILE $CONF_FILE.bak
 # Generate fresh calendar icon
 get_ALL_conf_params
 rm -f .wait .wait1 .wait_month .wait_year .day
 if test `ps aux | grep -c "update_calendar"` -gt 1; then
 	killall update_calendar.sh
 fi
-(sh update_calendar.sh &)
-
-if test "$icon_command" = "" -o "$icon_command" = " "; then
-	bash icon.sh
-else
-	bash "$icon_command"
-fi
-
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The calendar_command in config is : $calendar_command"
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The import_command in config is : $import_command"
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The time_dialog_cal_today in config is : '$time_dialog_cal_today'"
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The time_dialog_ev in config is : '$time_dialog_ev'"
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> The time_dialog_cal_next in config is : '$time_dialog_cal_next'"
-#echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> Our module is started"
+(bash update_calendar.sh "$icon_command" &)
 
 exit
 }
 
 #############################################################################################################
-action_on_stop() {
+end() {
 rm -f .wait .wait1 .wait_month .wait_year .day
 if test `ps aux | grep -c "update_calendar"` -gt 1; then
 	killall update_calendar.sh
@@ -223,42 +189,23 @@ fi
 }
 
 #############################################################################################################
-action_on_reload() {
-get_ALL_conf_params
-rm -f .wait .wait1 .wait_month .wait_year .day
-if test `ps aux | grep -c "update_calendar"` -gt 1; then
-	killall update_calendar.sh
+reload() {
+diff $CONF_FILE $CONF_FILE.bak >/dev/null
+if [ $? -eq 1 ]; then
+	cp $CONF_FILE $CONF_FILE.bak
+	get_ALL_conf_params
+	rm -f .wait .wait1 .wait_month .wait_year .day
+	if test `ps aux | grep -c "update_calendar"` -gt 1; then
+		killall update_calendar.sh
+	fi
+	(bash update_calendar.sh "$icon_command" &)
 fi
-(sh update_calendar.sh &)
 exit
 }
 
-
-#############################################################################################################
-# START ### DO NOT CHANGE THIS SECTION
 #############################################################################################################
 
-if [ "`echo $ACTION |grep 'register_the_applet'`" != "" ]; then
-	register_the_applet
-elif [ "`echo $ACTION |grep 'action_on_click'`" != "" ]; then
-	action_on_click
-elif [ "`echo $ACTION |grep 'action_on_middle_click'`" != "" ]; then
-	action_on_middle_click
-elif [ "`echo $ACTION |grep 'action_on_scroll_icon'`" != "" ]; then
-	action_on_scroll_icon
-elif [ "`echo $ACTION |grep 'action_on_drop_data'`" != "" ]; then
-	action_on_drop_data
-elif [ "`echo $ACTION |grep 'action_on_init'`" != "" ]; then
-	action_on_init
-elif [ "`echo $ACTION |grep 'action_on_stop'`" != "" ]; then
-	action_on_stop
-elif [ "`echo $ACTION |grep 'action_on_reload'`" != "" ]; then
-	action_on_reload
-elif [ "`echo $ACTION |grep 'action_on_build_menu'`" != "" ]; then
-	action_on_build_menu
-elif [ "`echo $ACTION |grep 'action_on_menu_select'`" != "" ]; then
-	action_on_menu_select
-fi
+run $*
 
-exit
+exit 0
 

@@ -2,7 +2,7 @@
 
 # This is a part of the external applet Calendar for Cairo-Dock
 #
-# Copyright : (C) 2009 by Royohboy & Matttbe
+# Copyright : (C) 2009-2012 by Royohboy & Matttbe
 #                         inspired of the icon of arkham
 # E-mail : werbungfuerroy@googlemail.com and matttbe@gmail.com
 #
@@ -17,6 +17,7 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
+
 
 date_TODAY=`date '+%Y%m%d'`
 # get current day and month

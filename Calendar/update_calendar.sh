@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 # This is a part of the external applet Calendar for Cairo-Dock
 #
-# Copyright : (C) 2009 by Matttbe
+# Copyright : (C) 2009-2012 by Matttbe
 # E-mail : matttbe@gmail.com
 #
 #
@@ -17,18 +17,16 @@
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
 
-APP_NAME="Calendar"
-CONF_FILE="/home/$USER/.config/cairo-dock/current_theme/plug-ins/$APP_NAME/$APP_NAME.conf"
-LIGNE=`cat $CONF_FILE | grep "icon_script"`
-icon_command="`echo $LIGNE | cut -f2 -d '=' `"
+
+icon_command="$1"
 
 rm -rf .day
-if test "$icon_command" = "" -o "$icon_command" = " "; then
+if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
 	bash icon.sh
 else
 	bash "$icon_command"
 fi
-ARG=$1
+ARG=$2
 
 # sometime there is a bug with: 10-02
 if [ "$ARG" = "" ]; then
@@ -97,17 +95,17 @@ if [ "$ARG" = "" ]; then
 		;;
 	esac
 
-	ARG=$(((23-`date +%k`)*3600+(59-$MIN)*60+60-$SEC)) # 00:00:01
+	ARG=$(((23-`date +%H`)*3600+(59-$MIN)*60+60-$SEC)) # 00:00:01
 fi
-echo "We wait for $ARG sec."
+# echo "We wait for $ARG sec."
 
 sleep $ARG
 rm .day # force the reload
-if test "$icon_command" = "" -o "$icon_command" = " "; then
+if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
 	bash icon.sh
 else
 	bash "$icon_command"
 fi
 
 # updated 24h later
-sh update_calendar.sh 86400
+bash update_calendar.sh "$icon_command" 86400
