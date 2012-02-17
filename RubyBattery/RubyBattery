@@ -114,8 +114,10 @@ class Applet
 		if status != self.status														# status has been changed in the last check
 			self.status = status
 			# since emblems are drawn directly on the icon, in order to remove it, is necessary to redrawn the gauge to render a new emblem
+			# TODO: this may not be true any more... to avoid any problem, use the CDApplet API
 			refresh_graphic_informations
 		end
+		# TODO: use the CDApplet constants... more generally, use the CDApplet class
 		@icon.SetEmblem(File.expand_path("./emblems/discharging.png"), 1) if self.status == "Discharging"
 		@icon.SetEmblem(File.expand_path("./emblems/charging.png"), 1) if self.status == "Charging"
 		if charge != self.charge														# charge has been changed in the last check

@@ -499,12 +499,12 @@ public class CDAppletVala : CDApplet {
 
 
 	public void set_emblem_busy () {
-		try { this.icon.SetEmblem (this.sAppletDirectory + "/icons/emblem-important.svg", 3); }
+		try { this.icon.SetEmblem (this.sAppletDirectory + "/icons/emblem-important.svg", CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT); }
 		catch (Error e) {}
 	}
 
 	public void set_emblem_none () {
-		try { this.icon.SetEmblem ("", 3); }
+		try { this.icon.SetEmblem ("", CDApplet.EMBLEM_TOP_RIGHT); }
 		catch (Error e) {}
 	}
 

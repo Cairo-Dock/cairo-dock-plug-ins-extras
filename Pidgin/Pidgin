@@ -142,7 +142,7 @@ class Applet(CDApplet):
 		self.icon.SetIcon(icon_path)
 		if emblem != None:
 			# print ">>> emblem : "+emblem
-			self.icon.SetEmblem(emblem, 1)  # lower right
+			self.icon.SetEmblem(emblem, CDApplet.EMBLEM_BOTTOM_RIGHT + CDApplet.EMBLEM_PRINT)  # bottom right, printed directly on the icon
 	
 	def set_status_message(self,message):
 		current = self.purple.PurpleSavedstatusGetType(self.purple.PurpleSavedstatusGetCurrent())  # on ne changera pas le statut courant.
@@ -283,11 +283,12 @@ class Applet(CDApplet):
 	
 	def on_buddy_typing(self, account,name):
 		# print ">>> buddy typing",name
-		self.icon.SetEmblem(self.share_data_dir+"Emblems/typing.png", 0)
+		self.icon.SetEmblem(self.share_data_dir+"Emblems/typing.png", CDApplet.EMBLEM_TOP_LEFT + CDApplet.EMBLEM_PERSISTENT)
 	
 	def on_buddy_typing_stopped(self, account,name):
 		# print ">>> buddy stopped typing : ",name
-		self.set_status_icon()
+		#self.set_status_icon()
+		self.icon.SetEmblem(None, CDApplet.EMBLEM_TOP_LEFT)  # remove the emblem at the top left position
 	
 	#def on_buddy_icon_changed(self, name):
 		## print ">>> buddy icon changed : ",name
@@ -359,7 +360,7 @@ class Applet(CDApplet):
 		self.icon.ControlAppli("pidgin")
 	
 	def reload(self):
-		self.set_status_icon()
+		self.set_status_icon()  # refresh the icon, in case the theme has changed
 	
 	##### callbacks #####
 	

@@ -262,8 +262,9 @@ class FaceBook(CDApplet):
 				self.icon.SetQuickInfo(format(self.counter))
 		else:
 			if self.counter == 0:
-				# rest icon
-				self.icon.SetIcon(os.path.abspath("./icon"))
+				# remove emblem, we don't want to display "0"
+				#self.icon.SetIcon(os.path.abspath("./icon"))
+				self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT) 
 				pass
 			else:
 				# write svg emblem
@@ -273,9 +274,9 @@ class FaceBook(CDApplet):
 				svg.write(self.svg_data)
 				svg.close()
 				# rest icon
-				self.icon.SetIcon(os.path.abspath("./icon"))
+				#self.icon.SetIcon(os.path.abspath("./icon"))
 				# put svg emblem on icon
-				self.icon.SetEmblem(self.svg_path, CDApplet.UPPER_RIGHT) 
+				self.icon.SetEmblem(self.svg_path, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT) 
 	
 	def check_when(self, diff):
 		# this method checks whether the user needs attention or not
@@ -345,9 +346,9 @@ class FaceBook(CDApplet):
 	def error(self):
 		#signal the applet is in difficulty by adding a [!] emblem to the icon:
 		# reset icon:
-		self.icon.SetIcon(os.path.abspath("./icon"))
+		#self.icon.SetIcon(os.path.abspath("./icon"))
 		# put warning svg emblem on icon
-		self.icon.SetEmblem(os.path.abspath("./warning.svg"), CDApplet.UPPER_RIGHT)
+		self.icon.SetEmblem(os.path.abspath("./warning.svg"), CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # this emblem is placed at the same position as the count, so when the applet finally succeeds, the error emblem will be automatically removed.
 		
 	def read_fb(self):
 		# reset fblist
