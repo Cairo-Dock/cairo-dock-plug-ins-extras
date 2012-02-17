@@ -34,6 +34,538 @@ msgstr "О программе"
 msgid "Edit Menus"
 msgstr "Редактировать меню"
 
+#: ../GnoMenu/messages:1 ../Calendar/messages:1 ../Cardapio/messages:1
+#: ../Deluge/messages:1 ../DiskFree/messages:1 ../Gmail/messages:1
+#: ../Gmail/messages:3 ../Google/messages:1 ../GTG/messages:1
+#: ../HDDtemperature/messages:1 ../KTorrent/messages:1 ../Lancelot/messages:1
+#: ../Liferea/messages:1 ../MintMenu/messages:1 ../Moon/messages:1
+#: ../Pidgin/messages:1 ../Quote/messages:1
+#: ../Screensaver_inhibitor/messages:1 ../Screensaver_inhibitor/messages:3
+#: ../Translator/messages:1 ../Transmission/messages:1 ../WebSearch/messages:1
+#: ../WindowsKiller/messages:1 ../Xchat/messages:1
+msgid "Icon"
+msgstr "Значок"
+
+#: ../GnoMenu/messages:3 ../Calendar/messages:3 ../Cardapio/messages:3
+#: ../Deluge/messages:3 ../DiskFree/messages:3 ../Google/messages:3
+#: ../GTG/messages:3 ../KTorrent/messages:3 ../Lancelot/messages:3
+#: ../Liferea/messages:3 ../MintMenu/messages:3 ../Moon/messages:3
+#: ../Pidgin/messages:3 ../Quote/messages:3 ../Translator/messages:3
+#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
+msgid "Applet"
+msgstr "Апплет"
+
+#: ../GnoMenu/messages:5 ../Calendar/messages:5 ../Cardapio/messages:5
+#: ../Deluge/messages:5 ../DiskFree/messages:5 ../Gmail/messages:5
+#: ../Google/messages:5 ../GTG/messages:5 ../HDDtemperature/messages:13
+#: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
+#: ../MintMenu/messages:5 ../Moon/messages:5 ../Pidgin/messages:5
+#: ../Quote/messages:5 ../Screensaver_inhibitor/messages:5
+#: ../Translator/messages:5 ../Transmission/messages:5 ../WebSearch/messages:3
+#: ../WindowsKiller/messages:5 ../Xchat/messages:5
+msgid "Name of the dock it belongs to:"
+msgstr "Имя панели, к которой он принадлежит:"
+
+#: ../GnoMenu/messages:7 ../Calendar/messages:7 ../Cardapio/messages:7
+#: ../Deluge/messages:7 ../DiskFree/messages:7 ../Google/messages:7
+#: ../GTG/messages:7 ../HDDtemperature/messages:7 ../KTorrent/messages:7
+#: ../Lancelot/messages:7 ../MintMenu/messages:7 ../Pidgin/messages:7
+#: ../Quote/messages:9 ../Transmission/messages:7 ../WebSearch/messages:5
+#: ../WindowsKiller/messages:7 ../Xchat/messages:7
+msgid "Name of the icon as it will appear in its label in the dock :"
+msgstr "Имя значка, как оно будет отображено в подписи на панели:"
+
+#: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Cardapio/messages:9
+#: ../Deluge/messages:9 ../DiskFree/messages:9 ../Google/messages:9
+#: ../GTG/messages:9 ../KTorrent/messages:9 ../Lancelot/messages:9
+#: ../Liferea/messages:9 ../MintMenu/messages:9 ../Moon/messages:9
+#: ../Pidgin/messages:9 ../Quote/messages:11 ../Translator/messages:9
+#: ../Transmission/messages:9 ../WebSearch/messages:7
+#: ../WindowsKiller/messages:9 ../Xchat/messages:9
+msgid "Display"
+msgstr "Отображение"
+
+#: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
+#: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
+#: ../GTG/messages:11 ../HDDtemperature/messages:9 ../KTorrent/messages:11
+#: ../Lancelot/messages:11 ../Liferea/messages:11 ../MintMenu/messages:11
+#: ../Moon/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
+#: ../Transmission/messages:11 ../WebSearch/messages:9
+#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+msgid "Let empty to use the default one."
+msgstr "Оставьте пустым, чтобы использовать стандартное."
+
+#: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
+#: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
+#: ../GTG/messages:13 ../HDDtemperature/messages:11 ../KTorrent/messages:13
+#: ../Lancelot/messages:13 ../Liferea/messages:13 ../MintMenu/messages:13
+#: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
+#: ../Transmission/messages:13 ../WebSearch/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
+msgid "Image's filename :"
+msgstr "Имя изображения:"
+
+#: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
+#: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:9
+#: ../Google/messages:15 ../GTG/messages:15 ../HDDtemperature/messages:3
+#: ../KTorrent/messages:15 ../Lancelot/messages:15 ../Liferea/messages:15
+#: ../MintMenu/messages:15 ../Moon/messages:15 ../Pidgin/messages:15
+#: ../Quote/messages:17 ../Screensaver_inhibitor/messages:17
+#: ../Translator/messages:15 ../Transmission/messages:15
+#: ../WebSearch/messages:13 ../WindowsKiller/messages:15 ../Xchat/messages:15
+msgid "Set to 0 to use the default applet size"
+msgstr "Установите 0, чтобы использовать стандартный размер апплета."
+
+#: ../GnoMenu/messages:17 ../Calendar/messages:17 ../Cardapio/messages:17
+#: ../Deluge/messages:17 ../DiskFree/messages:17 ../Gmail/messages:11
+#: ../Google/messages:17 ../GTG/messages:17 ../HDDtemperature/messages:5
+#: ../KTorrent/messages:17 ../Lancelot/messages:17 ../Liferea/messages:17
+#: ../MintMenu/messages:17 ../Moon/messages:17 ../Pidgin/messages:17
+#: ../Quote/messages:19 ../Screensaver_inhibitor/messages:19
+#: ../Translator/messages:17 ../Transmission/messages:17
+#: ../WebSearch/messages:15 ../WindowsKiller/messages:17 ../Xchat/messages:17
+msgid "Desired icon size for this applet"
+msgstr "Определите размер значка для этого апплета"
+
+#: ../GnoMenu/messages:19 ../Calendar/messages:19 ../Cardapio/messages:19
+#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Gmail/messages:15
+#: ../Google/messages:19 ../GTG/messages:19 ../HDDtemperature/messages:15
+#: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
+#: ../MintMenu/messages:19 ../Moon/messages:19 ../Pidgin/messages:19
+#: ../Quote/messages:21 ../Screensaver_inhibitor/messages:21
+#: ../Translator/messages:19 ../Transmission/messages:19
+#: ../WebSearch/messages:17 ../Xchat/messages:19
+msgid "Applet's Handbook"
+msgstr "Руководство по апплетам"
+
+#: ../GnoMenu/messages:21 ../Calendar/messages:21 ../Cardapio/messages:21
+#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Gmail/messages:17
+#: ../Google/messages:21 ../GTG/messages:21 ../HDDtemperature/messages:17
+#: ../KTorrent/messages:21 ../Lancelot/messages:21 ../Liferea/messages:21
+#: ../MintMenu/messages:21 ../Moon/messages:21 ../Pidgin/messages:21
+#: ../Quote/messages:23 ../Screensaver_inhibitor/messages:23
+#: ../Translator/messages:21 ../Transmission/messages:21
+#: ../WebSearch/messages:19 ../WindowsKiller/messages:19 ../Xchat/messages:21
+msgid "Desklet"
+msgstr "Десклет"
+
+#: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
+#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:19
+#: ../Google/messages:23 ../GTG/messages:23 ../KTorrent/messages:23
+#: ../Lancelot/messages:23 ../Liferea/messages:23 ../MintMenu/messages:23
+#: ../Pidgin/messages:23 ../Quote/messages:25 ../Translator/messages:23
+#: ../Transmission/messages:23 ../WebSearch/messages:21
+#: ../WindowsKiller/messages:21 ../Xchat/messages:23
+msgid "Position"
+msgstr "Позиция"
+
+#: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
+#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:21
+#: ../Google/messages:25 ../GTG/messages:25 ../KTorrent/messages:25
+#: ../Lancelot/messages:25 ../Liferea/messages:25 ../MintMenu/messages:25
+#: ../Pidgin/messages:25 ../Quote/messages:27 ../Translator/messages:25
+#: ../Transmission/messages:25 ../WebSearch/messages:23
+#: ../WindowsKiller/messages:23 ../Xchat/messages:25
+msgid ""
+"If locked, the desklet cannot be moved by simply dragging it with the left "
+"mouse button. It can still be moved with ALT + left-click."
+msgstr ""
+"Если заблокировано, то десклет можно легко переместить захватив его левой "
+"кнопкой мыши. И, конечно, вы по-прежнему можете использовать ALT + левый "
+"щелчок."
+
+#: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
+#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:23
+#: ../Google/messages:27 ../GTG/messages:27 ../KTorrent/messages:27
+#: ../Lancelot/messages:27 ../Liferea/messages:27 ../MintMenu/messages:27
+#: ../Pidgin/messages:27 ../Quote/messages:29 ../Translator/messages:27
+#: ../Transmission/messages:27 ../WebSearch/messages:25
+#: ../WindowsKiller/messages:25 ../Xchat/messages:27
+msgid "Lock position?"
+msgstr "Заблокировать позицию?"
+
+#: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
+#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
+#: ../Google/messages:29 ../GTG/messages:29 ../GTG/messages:107
+#: ../KTorrent/messages:29 ../Lancelot/messages:29 ../Liferea/messages:29
+#: ../MintMenu/messages:29 ../Pidgin/messages:29 ../Quote/messages:31
+#: ../Transmission/messages:29 ../WebSearch/messages:27
+#: ../WindowsKiller/messages:27 ../Xchat/messages:29
+msgid ""
+"Depending on your WindowManager, you may be able to resize this with ALT + "
+"middle-click or ALT + left-click."
+msgstr ""
+"В зависимости от вашего Менеджера Окон, вы можете изменять размер при помощи "
+"ALT + средний щелчок или ALT + левый щелчок."
+
+#: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
+#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:27
+#: ../Google/messages:31 ../GTG/messages:31 ../KTorrent/messages:31
+#: ../Lancelot/messages:31 ../Liferea/messages:31 ../MintMenu/messages:31
+#: ../Pidgin/messages:31 ../Quote/messages:33 ../Transmission/messages:31
+#: ../WebSearch/messages:29 ../WindowsKiller/messages:29 ../Xchat/messages:31
+msgid "Desklet dimensions (width x height):"
+msgstr "Размер десклета (ширина x высота):"
+
+#: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
+#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:29
+#: ../Google/messages:33 ../GTG/messages:33 ../KTorrent/messages:33
+#: ../Lancelot/messages:33 ../Liferea/messages:33 ../MintMenu/messages:33
+#: ../Pidgin/messages:33 ../Quote/messages:35 ../Transmission/messages:33
+#: ../WebSearch/messages:31 ../WindowsKiller/messages:31 ../Xchat/messages:33
+msgid ""
+"Depending on your WindowManager, you may be able to move this with ALT + "
+"left-click.. Negative values are counted from the right/bottom of the screen"
+msgstr ""
+"В зависимости от вашего ОМ, вы можете перемещать панель с помощью ALT+левый "
+"щелчок. Отрицательные значения вычисляются относительно правого/нижнего угла "
+"экрана."
+
+#: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
+#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:31
+#: ../Google/messages:35 ../GTG/messages:35 ../KTorrent/messages:35
+#: ../Lancelot/messages:35 ../Liferea/messages:35 ../MintMenu/messages:35
+#: ../Pidgin/messages:35 ../Quote/messages:37 ../Transmission/messages:35
+#: ../WebSearch/messages:33 ../WindowsKiller/messages:33 ../Xchat/messages:35
+msgid "Desklet position (x, y):"
+msgstr "Позиция десклета (x ; y):"
+
+#: ../GnoMenu/messages:37 ../Calendar/messages:37 ../Cardapio/messages:37
+#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Gmail/messages:33
+#: ../Google/messages:37 ../GTG/messages:37 ../KTorrent/messages:37
+#: ../Lancelot/messages:37 ../Liferea/messages:37 ../MintMenu/messages:37
+#: ../Pidgin/messages:37 ../Quote/messages:39 ../Translator/messages:37
+#: ../Transmission/messages:37 ../WebSearch/messages:35
+#: ../WindowsKiller/messages:35 ../Xchat/messages:37
+msgid ""
+"You can quickly rotate the desklet with the mouse, by dragging the little "
+"buttons on its left and top sides."
+msgstr ""
+"Вы можете с лёгкостью вращать любой десклет, используйте для этого маленькие "
+"кнопки по сторонам десклета."
+
+#: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
+#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:35
+#: ../Google/messages:39 ../GTG/messages:39 ../KTorrent/messages:39
+#: ../Lancelot/messages:39 ../Liferea/messages:39 ../MintMenu/messages:39
+#: ../Pidgin/messages:39 ../Quote/messages:41 ../Translator/messages:39
+#: ../Transmission/messages:39 ../WebSearch/messages:37
+#: ../WindowsKiller/messages:37 ../Xchat/messages:39
+msgid "Rotation:"
+msgstr "Вращение:"
+
+#: ../GnoMenu/messages:41 ../Calendar/messages:41 ../Cardapio/messages:41
+#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Gmail/messages:37
+#: ../Google/messages:41 ../GTG/messages:41 ../KTorrent/messages:41
+#: ../Lancelot/messages:41 ../Liferea/messages:41 ../MintMenu/messages:41
+#: ../Pidgin/messages:41 ../Quote/messages:43 ../Translator/messages:41
+#: ../Transmission/messages:41 ../WebSearch/messages:39
+#: ../WindowsKiller/messages:39 ../Xchat/messages:41
+msgid "Visibility"
+msgstr "Видимость"
+
+#: ../GnoMenu/messages:43 ../Calendar/messages:43 ../Cardapio/messages:43
+#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Gmail/messages:39
+#: ../Google/messages:43 ../GTG/messages:43 ../KTorrent/messages:43
+#: ../Lancelot/messages:43 ../Liferea/messages:43 ../MintMenu/messages:43
+#: ../Pidgin/messages:43 ../Quote/messages:45 ../Transmission/messages:43
+#: ../WebSearch/messages:41 ../WindowsKiller/messages:41 ../Xchat/messages:43
+msgid "Is detached from the dock"
+msgstr "Открепить от панели?"
+
+#: ../GnoMenu/messages:45 ../Calendar/messages:45 ../Cardapio/messages:45
+#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Gmail/messages:41
+#: ../Google/messages:45 ../GTG/messages:45 ../KTorrent/messages:45
+#: ../Lancelot/messages:45 ../Liferea/messages:45 ../MintMenu/messages:45
+#: ../Pidgin/messages:45 ../Quote/messages:47 ../Transmission/messages:45
+#: ../WebSearch/messages:43 ../WindowsKiller/messages:43 ../Xchat/messages:45
+msgid "Visibility:"
+msgstr "Видимость:"
+
+#: ../GnoMenu/messages:47 ../Calendar/messages:47 ../Cardapio/messages:47
+#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Gmail/messages:43
+#: ../Google/messages:47 ../GTG/messages:47 ../HDDtemperature/messages:33
+#: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
+#: ../MintMenu/messages:47 ../Moon/messages:35 ../Pidgin/messages:47
+#: ../Quote/messages:49 ../Screensaver_inhibitor/messages:39
+#: ../Translator/messages:49 ../Transmission/messages:47
+#: ../WebSearch/messages:45 ../WindowsKiller/messages:45 ../Xchat/messages:47
+msgid "Normal"
+msgstr "Обычная"
+
+#: ../GnoMenu/messages:49 ../Calendar/messages:49 ../Cardapio/messages:49
+#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Gmail/messages:45
+#: ../Google/messages:49 ../GTG/messages:49 ../HDDtemperature/messages:35
+#: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
+#: ../MintMenu/messages:49 ../Moon/messages:37 ../Pidgin/messages:49
+#: ../Quote/messages:51 ../Screensaver_inhibitor/messages:41
+#: ../Translator/messages:51 ../Transmission/messages:49
+#: ../WebSearch/messages:47 ../WindowsKiller/messages:47 ../Xchat/messages:49
+msgid "Keep above"
+msgstr "Держать поверх"
+
+#: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
+#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:47
+#: ../Google/messages:51 ../GTG/messages:51 ../HDDtemperature/messages:37
+#: ../KTorrent/messages:51 ../Lancelot/messages:51 ../Liferea/messages:51
+#: ../MintMenu/messages:51 ../Moon/messages:39 ../Pidgin/messages:51
+#: ../Quote/messages:53 ../Screensaver_inhibitor/messages:43
+#: ../Translator/messages:53 ../Transmission/messages:51
+#: ../WebSearch/messages:49 ../WindowsKiller/messages:49 ../Xchat/messages:51
+msgid "Keep below"
+msgstr "Держать позади"
+
+#: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
+#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:49
+#: ../Google/messages:53 ../GTG/messages:53 ../KTorrent/messages:53
+#: ../Lancelot/messages:53 ../Liferea/messages:53 ../MintMenu/messages:53
+#: ../Pidgin/messages:53 ../Quote/messages:55 ../Transmission/messages:53
+#: ../WebSearch/messages:51 ../WindowsKiller/messages:51 ../Xchat/messages:53
+msgid "Keep on widget layer"
+msgstr "На слое виджетов"
+
+#: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
+#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:51
+#: ../Google/messages:55 ../GTG/messages:55 ../HDDtemperature/messages:41
+#: ../KTorrent/messages:55 ../Lancelot/messages:55 ../Liferea/messages:55
+#: ../MintMenu/messages:55 ../Moon/messages:43 ../Pidgin/messages:55
+#: ../Quote/messages:57 ../Screensaver_inhibitor/messages:47
+#: ../Translator/messages:57 ../Transmission/messages:55
+#: ../WebSearch/messages:53 ../WindowsKiller/messages:53 ../Xchat/messages:55
+msgid "Reserve space"
+msgstr "Резервировать место"
+
+#: ../GnoMenu/messages:57 ../Calendar/messages:57 ../Cardapio/messages:57
+#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Gmail/messages:53
+#: ../Google/messages:57 ../GTG/messages:57 ../KTorrent/messages:57
+#: ../Lancelot/messages:57 ../Liferea/messages:57 ../MintMenu/messages:57
+#: ../Pidgin/messages:57 ../Quote/messages:59 ../Transmission/messages:57
+#: ../WebSearch/messages:55 ../WindowsKiller/messages:55 ../Xchat/messages:57
+msgid "Should be visible on all desktops?"
+msgstr "Показывать на всех рабочих столах?"
+
+#: ../GnoMenu/messages:59 ../Calendar/messages:59 ../Cardapio/messages:59
+#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Gmail/messages:55
+#: ../Google/messages:59 ../GTG/messages:59 ../HDDtemperature/messages:53
+#: ../KTorrent/messages:59 ../Lancelot/messages:59 ../Liferea/messages:59
+#: ../MintMenu/messages:59 ../Moon/messages:55 ../Pidgin/messages:59
+#: ../Quote/messages:61 ../Screensaver_inhibitor/messages:59
+#: ../Translator/messages:61 ../Transmission/messages:59
+#: ../WebSearch/messages:57 ../WindowsKiller/messages:57 ../Xchat/messages:59
+msgid "Decorations"
+msgstr "Оформление"
+
+#: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
+#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:57
+#: ../Google/messages:61 ../GTG/messages:61 ../KTorrent/messages:61
+#: ../Lancelot/messages:61 ../Liferea/messages:61 ../MintMenu/messages:61
+#: ../Pidgin/messages:61 ../Quote/messages:63 ../Transmission/messages:61
+#: ../WebSearch/messages:59 ../WindowsKiller/messages:59 ../Xchat/messages:61
+msgid "Choose 'Custom decorations' to define your own decorations below."
+msgstr ""
+"Выберите 'Собственное оформление', чтобы настроить своё оформление ниже."
+
+#: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
+#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:59
+#: ../Google/messages:63 ../GTG/messages:63 ../KTorrent/messages:63
+#: ../Lancelot/messages:63 ../Liferea/messages:63 ../MintMenu/messages:63
+#: ../Pidgin/messages:63 ../Quote/messages:65 ../Transmission/messages:63
+#: ../WebSearch/messages:61 ../WindowsKiller/messages:61 ../Xchat/messages:63
+msgid "Choose a decoration theme for this desklet:"
+msgstr "Выберите тему оформления для этого десклета:"
+
+#: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
+#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:61
+#: ../Google/messages:65 ../GTG/messages:65 ../KTorrent/messages:65
+#: ../Lancelot/messages:65 ../Liferea/messages:65 ../MintMenu/messages:65
+#: ../Pidgin/messages:65 ../Quote/messages:67 ../Transmission/messages:65
+#: ../WebSearch/messages:63 ../WindowsKiller/messages:63 ../Xchat/messages:65
+msgid ""
+"Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
+msgstr ""
+"Изображение показываемое позади рисунка, например рамка. Оставьте пустым, "
+"чтобы не использовать."
+
+#: ../GnoMenu/messages:67 ../Calendar/messages:67 ../Cardapio/messages:67
+#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Gmail/messages:63
+#: ../Google/messages:67 ../GTG/messages:67 ../KTorrent/messages:67
+#: ../Lancelot/messages:67 ../Liferea/messages:67 ../MintMenu/messages:67
+#: ../Pidgin/messages:67 ../Quote/messages:69 ../Transmission/messages:67
+#: ../WebSearch/messages:65 ../WindowsKiller/messages:65 ../Xchat/messages:67
+msgid "Background image:"
+msgstr "Фоновое изображение:"
+
+#: ../GnoMenu/messages:69 ../Calendar/messages:69 ../Cardapio/messages:69
+#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Gmail/messages:65
+#: ../Google/messages:69 ../GTG/messages:69 ../KTorrent/messages:69
+#: ../Lancelot/messages:69 ../Liferea/messages:69 ../MintMenu/messages:69
+#: ../Pidgin/messages:69 ../Quote/messages:71 ../Transmission/messages:69
+#: ../WebSearch/messages:67 ../WindowsKiller/messages:67 ../Xchat/messages:69
+msgid "Background transparency:"
+msgstr "Фоновая прозрачность:"
+
+#: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
+#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:67
+#: ../Google/messages:71 ../GTG/messages:71 ../KTorrent/messages:71
+#: ../Lancelot/messages:71 ../Liferea/messages:71 ../MintMenu/messages:71
+#: ../Pidgin/messages:71 ../Quote/messages:73 ../Transmission/messages:71
+#: ../WebSearch/messages:69 ../WindowsKiller/messages:69 ../Xchat/messages:71
+msgid "in pixels. Use this to adjust the left position of drawings."
+msgstr "в пикселях. Определяет левую позицию рисунка."
+
+#: ../GnoMenu/messages:73 ../Calendar/messages:73 ../Cardapio/messages:73
+#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Gmail/messages:69
+#: ../Google/messages:73 ../GTG/messages:73 ../KTorrent/messages:73
+#: ../Lancelot/messages:73 ../Liferea/messages:73 ../MintMenu/messages:73
+#: ../Pidgin/messages:73 ../Quote/messages:75 ../Transmission/messages:73
+#: ../WebSearch/messages:71 ../WindowsKiller/messages:71 ../Xchat/messages:73
+msgid "Left offset:"
+msgstr "Левое смещение:"
+
+#: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
+#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Gmail/messages:71
+#: ../Google/messages:75 ../GTG/messages:75 ../KTorrent/messages:75
+#: ../Lancelot/messages:75 ../Liferea/messages:75 ../MintMenu/messages:75
+#: ../Pidgin/messages:75 ../Quote/messages:77 ../Transmission/messages:75
+#: ../WebSearch/messages:73 ../WindowsKiller/messages:73 ../Xchat/messages:75
+msgid "in pixels. Use this to adjust the top position of drawings."
+msgstr "в пикселях. Определяет верхнюю позицию рисунка."
+
+#: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
+#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:73
+#: ../Google/messages:77 ../GTG/messages:77 ../KTorrent/messages:77
+#: ../Lancelot/messages:77 ../Liferea/messages:77 ../MintMenu/messages:77
+#: ../Pidgin/messages:77 ../Quote/messages:79 ../Transmission/messages:77
+#: ../WebSearch/messages:75 ../WindowsKiller/messages:75 ../Xchat/messages:77
+msgid "Top offset:"
+msgstr "Верхнее смещение:"
+
+#: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
+#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:75
+#: ../Google/messages:79 ../GTG/messages:79 ../KTorrent/messages:79
+#: ../Lancelot/messages:79 ../Liferea/messages:79 ../MintMenu/messages:79
+#: ../Pidgin/messages:79 ../Quote/messages:81 ../Transmission/messages:79
+#: ../WebSearch/messages:77 ../WindowsKiller/messages:77 ../Xchat/messages:79
+msgid "in pixels. Use this to adjust the right position of drawings."
+msgstr "в пикселях. Определяет правую позицию рисунка."
+
+#: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
+#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:77
+#: ../Google/messages:81 ../GTG/messages:81 ../KTorrent/messages:81
+#: ../Lancelot/messages:81 ../Liferea/messages:81 ../MintMenu/messages:81
+#: ../Pidgin/messages:81 ../Quote/messages:83 ../Transmission/messages:81
+#: ../WebSearch/messages:79 ../WindowsKiller/messages:79 ../Xchat/messages:81
+msgid "Right offset:"
+msgstr "Правое смещение:"
+
+#: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
+#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Gmail/messages:79
+#: ../Google/messages:83 ../GTG/messages:83 ../KTorrent/messages:83
+#: ../Lancelot/messages:83 ../Liferea/messages:83 ../MintMenu/messages:83
+#: ../Pidgin/messages:83 ../Quote/messages:85 ../Transmission/messages:83
+#: ../WebSearch/messages:81 ../WindowsKiller/messages:81 ../Xchat/messages:83
+msgid "in pixels. Use this to adjust the bottom position of drawings."
+msgstr "в пикселях. Определяет нижнюю позицию рисунка."
+
+#: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
+#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:81
+#: ../Google/messages:85 ../GTG/messages:85 ../KTorrent/messages:85
+#: ../Lancelot/messages:85 ../Liferea/messages:85 ../MintMenu/messages:85
+#: ../Pidgin/messages:85 ../Quote/messages:87 ../Transmission/messages:85
+#: ../WebSearch/messages:83 ../WindowsKiller/messages:83 ../Xchat/messages:85
+msgid "Bottom offset:"
+msgstr "Нижнее смещение:"
+
+#: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
+#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Gmail/messages:83
+#: ../Google/messages:87 ../GTG/messages:87 ../KTorrent/messages:87
+#: ../Lancelot/messages:87 ../Liferea/messages:87 ../MintMenu/messages:87
+#: ../Pidgin/messages:87 ../Quote/messages:89 ../Transmission/messages:87
+#: ../WebSearch/messages:85 ../WindowsKiller/messages:85 ../Xchat/messages:87
+msgid ""
+"Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
+"no image."
+msgstr ""
+"Изображение показываемое поверх рисунка, например отражение. Оставьте "
+"пустым, чтобы не использовать."
+
+#: ../GnoMenu/messages:89 ../Calendar/messages:89 ../Cardapio/messages:89
+#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Gmail/messages:85
+#: ../Google/messages:89 ../GTG/messages:89 ../KTorrent/messages:89
+#: ../Lancelot/messages:89 ../Liferea/messages:89 ../MintMenu/messages:89
+#: ../Pidgin/messages:89 ../Quote/messages:91 ../Transmission/messages:89
+#: ../WebSearch/messages:87 ../WindowsKiller/messages:87 ../Xchat/messages:89
+msgid "Foreground image:"
+msgstr "Изображение переднего плана:"
+
+#: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
+#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:87
+#: ../Google/messages:91 ../GTG/messages:91 ../KTorrent/messages:91
+#: ../Lancelot/messages:91 ../Liferea/messages:91 ../MintMenu/messages:91
+#: ../Pidgin/messages:91 ../Quote/messages:93 ../Transmission/messages:91
+#: ../WebSearch/messages:89 ../WindowsKiller/messages:89 ../Xchat/messages:91
+msgid "Foreground tansparency:"
+msgstr "Прозрачность переднего плана:"
+
+#: ../GnoMenu/messages:93 ../Calendar/messages:93 ../Cardapio/messages:93
+#: ../Deluge/messages:93 ../DiskFree/messages:93 ../Gmail/messages:89
+#: ../GTG/messages:93 ../HDDtemperature/messages:87 ../KTorrent/messages:93
+#: ../Lancelot/messages:93 ../Liferea/messages:93 ../MintMenu/messages:93
+#: ../Moon/messages:89 ../Pidgin/messages:93 ../Quote/messages:95
+#: ../Screensaver_inhibitor/messages:93 ../Translator/messages:95
+#: ../Transmission/messages:93 ../WebSearch/messages:91 ../Xchat/messages:93
+msgid "Configuration"
+msgstr "Настройки"
+
+#: ../GnoMenu/messages:95 ../Cardapio/messages:95 ../Lancelot/messages:95
+#: ../MintMenu/messages:95
+msgid "Shortkey to pop up the menu:"
+msgstr "Клавиатурное сокращение для открытия меню:"
+
+#: ../Calendar/messages:95
+msgid "Applications"
+msgstr "Приложения"
+
+#: ../Calendar/messages:97
+msgid "Command to launch your favourite calendar application (middle click):"
+msgstr "Команда запуска вашего календаря (средний щелчок):"
+
+#: ../Calendar/messages:99
+msgid "Command to execute on dropping a file onto the calendar-icon:"
+msgstr "Команда, выполняемая при перетаскивании файла на значок календаря:"
+
+#: ../Calendar/messages:101
+msgid "Behaviour"
+msgstr "Поведение"
+
+#: ../Calendar/messages:103 ../Calendar/messages:107 ../Calendar/messages:111
+msgid "in s."
+msgstr "в сек."
+
+#: ../Calendar/messages:105
+msgid "Time length of dialogues for the calendar :"
+msgstr "Время отображения окон календаря:"
+
+#: ../Calendar/messages:109
+msgid "Time length of dialogues for events of the day :"
+msgstr "Время отображения окон событий дня:"
+
+#: ../Calendar/messages:113
+msgid "Time length of dialogues for calendar of next month :"
+msgstr "Время отображения окон календаря следущего месяца:"
+
+#: ../Calendar/messages:115
+msgid ""
+"The path to a script to generate an icon. Leave it empty to use the default "
+"one."
+msgstr ""
+"Путь к скрипту создающему значок. Оставьте пустым, чтобы использовать "
+"стандартный."
+
+#: ../Calendar/messages:117
+msgid "Icon custom script:"
+msgstr "Скрипт создания значка:"
+
 #: ../Cardapio/Cardapio:45
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
@@ -53,8 +585,415 @@ msgstr "Возобновить закачку"
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-msgid "Torrents info (middle-click)"
+#, fuzzy
+msgid "Torrents info"
 msgstr "Инфо о торренте (средний щелчок)"
+
+#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:198
+#: ../Transmission/Transmission:405
+msgid "middle-click"
+msgstr "средний щелчок"
+
+#: ../Deluge/messages:95 ../KTorrent/messages:95 ../Transmission/messages:95
+msgid "Shortkey to pop up the torrents info:"
+msgstr "Клавиатурное сокращение информации о торрентах:"
+
+#: ../DiskFree/messages:95
+msgid ""
+"View available file system's space as Giga (checked) or Mega (unchecked) :"
+msgstr ""
+"Отображать доступное место в Гигабайтах (отмечено) или Мегабайтах (не "
+"отмечено):"
+
+#: ../DiskFree/messages:97
+msgid "in minutes"
+msgstr "в минутах"
+
+#: ../DiskFree/messages:99
+msgid "Time between two file system's checking :"
+msgstr "Интервал проверки файловых систем:"
+
+#: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
+#: ../Screensaver_inhibitor/messages:7 ../Translator/messages:7
+msgid "Name of the icon as it will appear in its caption in the dock:"
+msgstr "Имя значка, как оно будет отображено в подписи на панели:"
+
+#: ../Gmail/messages:13
+msgid "Always display the icon, even when the dock is hidden?"
+msgstr "Всегда показывать значок, даже если панель скрыта?"
+
+#: ../Gmail/messages:91
+#, fuzzy
+msgid "(in minutes)"
+msgstr "в минутах"
+
+#: ../Gmail/messages:93
+msgid "Delay between refreshes:"
+msgstr "Интервал между проверками:"
+
+#: ../Gmail/messages:95
+msgid "Alerts"
+msgstr "Оповещения"
+
+#: ../Gmail/messages:97
+msgid "Show alerts?"
+msgstr "Показывать оповещания?"
+
+#: ../Gmail/messages:99
+msgid ""
+"\"always\" will notify you whenever the number of emails is not 0; "
+"\"different\" will do so whenever the number of emails changes; \"superior\" "
+"will notify you whenever it increases (default)."
+msgstr ""
+
+#: ../Gmail/messages:101
+msgid "On which condition?"
+msgstr ""
+
+#: ../Gmail/messages:103
+msgid "superior"
+msgstr ""
+
+#: ../Gmail/messages:105
+msgid "always"
+msgstr ""
+
+#: ../Gmail/messages:107
+msgid "different"
+msgstr ""
+
+#: ../Gmail/messages:109
+msgid "Should an animation be applied to the icon?"
+msgstr ""
+
+#: ../Gmail/messages:111
+#, fuzzy
+msgid "Show animation?"
+msgstr "Анимация значка"
+
+#: ../Gmail/messages:113
+msgid "Which animation should the apply to the icon?"
+msgstr ""
+
+#: ../Gmail/messages:115
+#, fuzzy
+msgid "Choose animation?"
+msgstr "Анимация значка"
+
+#: ../Gmail/messages:117
+msgid "Should the applet display a dialogue box with the notification?"
+msgstr ""
+
+#: ../Gmail/messages:119
+#, fuzzy
+msgid "Show dialogue?"
+msgstr "Показывать оповещания?"
+
+#: ../Gmail/messages:121
+msgid "Should the applet play a sound with the notification?"
+msgstr ""
+
+#: ../Gmail/messages:123
+#, fuzzy
+msgid "Play a sound?"
+msgstr "Использовать звук:"
+
+#: ../Gmail/messages:125
+msgid ""
+"Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
+msgstr ""
+
+#: ../Gmail/messages:127
+msgid "Path to sound file:"
+msgstr "Путь до звукового файла:"
+
+#: ../Gmail/messages:129
+#, fuzzy
+msgid "Display a counter on the icon?"
+msgstr "Показывать значки в меню?"
+
+#: ../Gmail/messages:131
+msgid "Do you want an emblem or a quick-info label to be displayed?"
+msgstr ""
+
+#: ../Gmail/messages:133
+msgid "How?"
+msgstr ""
+
+#: ../Gmail/messages:135
+#, fuzzy
+msgid "small emblem"
+msgstr "меньше"
+
+#: ../Gmail/messages:137
+msgid "large emblem"
+msgstr ""
+
+#: ../Gmail/messages:139
+msgid "quickinfo"
+msgstr ""
+
+#: ../GTG/messages:95 ../Xchat/messages:97
+msgid "Bubbles duration :"
+msgstr "Продолжительность облачков напоминаний:"
+
+#: ../GTG/messages:97 ../Pidgin/messages:107 ../Xchat/messages:99
+msgid "Short"
+msgstr "Короткая"
+
+#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
+msgid "Medium"
+msgstr "Средняя"
+
+#: ../GTG/messages:101 ../Pidgin/messages:111 ../Xchat/messages:103
+msgid "Long"
+msgstr "Долгая"
+
+#: ../GTG/messages:103 ../Xchat/messages:105
+msgid "Animation of the icon on receiving channel messages :"
+msgstr "Анимация значка при получении новых сообщений:"
+
+#: ../GTG/messages:105 ../Xchat/messages:95
+msgid "Display channel messages in a bubble :"
+msgstr "Показывать сообщения в облачках:"
+
+#: ../GTG/messages:109
+msgid "Post-it's initial dimension (width x height) :"
+msgstr "Размер заметки (ширина х высота):"
+
+#: ../HDDtemperature/messages:19 ../Moon/messages:23
+#: ../Screensaver_inhibitor/messages:25 ../Translator/messages:29
+#, fuzzy
+msgid ""
+"Depending on your WindowManager, you can resize it with ALT + middle_click "
+"or ALT + left_click for exemple."
+msgstr ""
+"В зависимости от вашего Менеджера Окон, вы можете изменять размер при помощи "
+"ALT + средний щелчок или ALT + левый щелчок."
+
+#: ../HDDtemperature/messages:21 ../Moon/messages:25
+#: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
+#, fuzzy
+msgid "Desklet's dimension (width x height) :"
+msgstr "Размер десклета (ширина x высота):"
+
+#: ../HDDtemperature/messages:23 ../Moon/messages:27
+#: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
+#, fuzzy
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgstr ""
+"В зависимости от вашего Менеджера Окон, вы можете перемешать с помощью ALT + "
+"левый щелчок"
+
+#: ../HDDtemperature/messages:25 ../Moon/messages:29
+#: ../Screensaver_inhibitor/messages:31 ../Translator/messages:35
+#, fuzzy
+msgid "Desklet's position (x ; y) :"
+msgstr "Позиция десклета (x ; y):"
+
+#: ../HDDtemperature/messages:27 ../Moon/messages:31
+#: ../Screensaver_inhibitor/messages:33 ../Translator/messages:43
+#, fuzzy
+msgid "Is detached from the dock ?"
+msgstr "Открепить от панели?"
+
+#: ../HDDtemperature/messages:29 ../Translator/messages:45
+#, fuzzy
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=utility)"
+msgstr ""
+"Для слоя виджетов CompizFusion, установите поведение в Compiz на: "
+"(класс=Cairo-dock и тип=utility)"
+
+#: ../HDDtemperature/messages:31 ../Moon/messages:33
+#: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
+#, fuzzy
+msgid "Accessibility :"
+msgstr "Видимость:"
+
+#: ../HDDtemperature/messages:39 ../Moon/messages:41
+#: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
+#, fuzzy
+msgid "On Widget Layer"
+msgstr "Слой виджетов"
+
+#: ../HDDtemperature/messages:43 ../Moon/messages:45
+#: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
+#, fuzzy
+msgid "Should be visible on all desktops ?"
+msgstr "Показывать на всех рабочих столах?"
+
+#: ../HDDtemperature/messages:45 ../Moon/messages:47
+#: ../Screensaver_inhibitor/messages:51
+#, fuzzy
+msgid ""
+"If locked, the desklet can't be moved by simply dragging it with the left "
+"mouse button. Of course you can still move it with ALT + left_click."
+msgstr ""
+"Если заблокировано, то десклет можно легко переместить захватив его левой "
+"кнопкой мыши. И, конечно, вы по-прежнему можете использовать ALT + левый "
+"щелчок."
+
+#: ../HDDtemperature/messages:47 ../Moon/messages:49
+#: ../Screensaver_inhibitor/messages:53
+#, fuzzy
+msgid "Lock position ?"
+msgstr "Заблокировать позицию?"
+
+#: ../HDDtemperature/messages:49 ../Moon/messages:51
+#: ../Screensaver_inhibitor/messages:55
+msgid "in degrees."
+msgstr ""
+
+#: ../HDDtemperature/messages:51 ../Moon/messages:53
+#: ../Screensaver_inhibitor/messages:57
+#, fuzzy
+msgid "Rotation :"
+msgstr "Вращение:"
+
+#: ../HDDtemperature/messages:55 ../Moon/messages:57
+#: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
+#, fuzzy
+msgid "Choose the 'personnal' one to define your own decorations below."
+msgstr ""
+"Выберите 'Собственное оформление', чтобы настроить своё оформление ниже."
+
+#: ../HDDtemperature/messages:57 ../Moon/messages:59
+#: ../Screensaver_inhibitor/messages:63 ../Translator/messages:65
+#, fuzzy
+msgid "Choose a decoration theme for this desklet :"
+msgstr "Выберите тему оформления для этого десклета:"
+
+#: ../HDDtemperature/messages:59 ../Moon/messages:61
+#: ../Screensaver_inhibitor/messages:65 ../Translator/messages:67
+#, fuzzy
+msgid ""
+"It's an image that will be displayed below the drawings, like a frame for "
+"exemple. Let empty to not use any."
+msgstr ""
+"Изображение показываемое позади рисунка, например рамка. Оставьте пустым, "
+"чтобы не использовать."
+
+#: ../HDDtemperature/messages:61 ../Moon/messages:63
+#: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
+#, fuzzy
+msgid "Background image :"
+msgstr "Фоновое изображение:"
+
+#: ../HDDtemperature/messages:63 ../Moon/messages:65
+#: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
+#, fuzzy
+msgid "Background tansparency :"
+msgstr "Фоновая прозрачность:"
+
+#: ../HDDtemperature/messages:65 ../Moon/messages:67
+#: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
+#, fuzzy
+msgid "in pixels. Use this to adjust the left position of the drawings."
+msgstr "в пикселях. Определяет левую позицию рисунка."
+
+#: ../HDDtemperature/messages:67 ../Moon/messages:69
+#: ../Screensaver_inhibitor/messages:73 ../Translator/messages:75
+#, fuzzy
+msgid "Left offset :"
+msgstr "Левое смещение:"
+
+#: ../HDDtemperature/messages:69 ../Moon/messages:71
+#: ../Screensaver_inhibitor/messages:75 ../Translator/messages:77
+#, fuzzy
+msgid "in pixels. Use this to adjust the top position of the drawings."
+msgstr "в пикселях. Определяет верхнюю позицию рисунка."
+
+#: ../HDDtemperature/messages:71 ../Moon/messages:73
+#: ../Screensaver_inhibitor/messages:77 ../Translator/messages:79
+#, fuzzy
+msgid "Top offset :"
+msgstr "Верхнее смещение:"
+
+#: ../HDDtemperature/messages:73 ../Moon/messages:75
+#: ../Screensaver_inhibitor/messages:79 ../Translator/messages:81
+#, fuzzy
+msgid "in pixels. Use this to adjust the right position of the drawings."
+msgstr "в пикселях. Определяет правую позицию рисунка."
+
+#: ../HDDtemperature/messages:75 ../Moon/messages:77
+#: ../Screensaver_inhibitor/messages:81 ../Translator/messages:83
+#, fuzzy
+msgid "Right offset :"
+msgstr "Правое смещение:"
+
+#: ../HDDtemperature/messages:77 ../Moon/messages:79
+#: ../Screensaver_inhibitor/messages:83 ../Translator/messages:85
+#, fuzzy
+msgid "in pixels. Use this to adjust the bottom position of the drawings."
+msgstr "в пикселях. Определяет нижнюю позицию рисунка."
+
+#: ../HDDtemperature/messages:79 ../Moon/messages:81
+#: ../Screensaver_inhibitor/messages:85 ../Translator/messages:87
+#, fuzzy
+msgid "Bottom offset :"
+msgstr "Нижнее смещение:"
+
+#: ../HDDtemperature/messages:81 ../Moon/messages:83
+#: ../Screensaver_inhibitor/messages:87 ../Translator/messages:89
+#, fuzzy
+msgid ""
+"It's an image that will be displayed above the drawings, like a reflect for "
+"exemple. Let empty to not use any."
+msgstr ""
+"Изображение показываемое поверх рисунка, например отражение. Оставьте "
+"пустым, чтобы не использовать."
+
+#: ../HDDtemperature/messages:83 ../Moon/messages:85
+#: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
+#, fuzzy
+msgid "Foreground image :"
+msgstr "Изображение переднего плана:"
+
+#: ../HDDtemperature/messages:85 ../Moon/messages:87
+#: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
+#, fuzzy
+msgid "Foreground tansparency :"
+msgstr "Прозрачность переднего плана:"
+
+#: ../HDDtemperature/messages:89
+msgid "One or more device drive path to monitor:"
+msgstr ""
+
+#: ../HDDtemperature/messages:91
+#, fuzzy
+msgid "Show maximum temperature on icon?"
+msgstr "Показывать температуру процессора?"
+
+#: ../HDDtemperature/messages:93
+msgid "Time interval for checking (minutes):"
+msgstr ""
+
+#: ../HDDtemperature/messages:95
+msgid "It should conform to units used by hddtemp daemon"
+msgstr ""
+
+#: ../HDDtemperature/messages:97
+msgid "Alert temperature value (°C by default)"
+msgstr ""
+
+#: ../HDDtemperature/messages:99
+msgid "0 for permanent show"
+msgstr ""
+
+#: ../HDDtemperature/messages:101
+msgid "Pop up bubble duration (in seconds)"
+msgstr ""
+
+#: ../HDDtemperature/messages:103
+msgid "Port number to listen to hddtemp daemon (7634 by default)"
+msgstr ""
+
+#: ../HDDtemperature/messages:105
+msgid "Separator between fields used by hddtemp daemon ( | by default)"
+msgstr ""
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -65,36 +1004,207 @@ msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr "Lancelot не установлен. Установите, прежде чем использовать апплет."
 
+#: ../Liferea/messages:95
+msgid "Show in the icon:"
+msgstr "Показывать на значке:"
+
+#: ../Liferea/messages:97
+msgid "Number of unread messages"
+msgstr "Количество непрочитанных сообщений"
+
+#: ../Liferea/messages:99
+msgid " Number of new messages"
+msgstr " Количество новых сообщений"
+
 #: ../MintMenu/MintMenu:145
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr "MintMenu не установлен. Установите, прежде чем использовать апплет."
 
-#: ../Pidgin/Pidgin:406
+#: ../Moon/messages:91
+#, fuzzy
+msgid "Show the moon for all the current week?"
+msgstr "Как отрисовывать текущий рабочий стол:"
+
+#: ../Moon/messages:93
+msgid "You are going to see the moon from the perspective of this hemisphere"
+msgstr ""
+
+#: ../Moon/messages:95
+msgid "Hemisphere:"
+msgstr ""
+
+#: ../Moon/messages:97
+msgid "North"
+msgstr ""
+
+#: ../Moon/messages:99
+msgid "South"
+msgstr ""
+
+#: ../Pidgin/Pidgin:407
 msgid "Conversations"
 msgstr "Беседы"
 
-#: ../Pidgin/Pidgin:420
+#: ../Pidgin/Pidgin:421
 msgid "Change your status"
 msgstr "Изменить статус"
 
-#: ../Pidgin/Pidgin:435
+#: ../Pidgin/Pidgin:436
 msgid "Set your status message"
 msgstr "Установить сообщение статуса"
 
-#: ../Pidgin/Pidgin:440 ../Xchat/Xchat:270
+#: ../Pidgin/Pidgin:441 ../Xchat/Xchat:270
 msgid "Silent mode"
 msgstr "Тихий режим"
 
-#: ../Pidgin/Pidgin:444 ../Xchat/Xchat:274
+#: ../Pidgin/Pidgin:445 ../Xchat/Xchat:274
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
 "Переключить апплет в тихий режим (вы не будете получать уведомления о новых "
 "сообщениях)."
 
-#: ../Pidgin/Pidgin:455
+#: ../Pidgin/Pidgin:456
 msgid "Enter your new status message:"
 msgstr "Введите сообщение статуса:"
+
+#: ../Pidgin/messages:95 ../Pidgin/messages:99
+msgid "Parameters"
+msgstr "Параметры"
+
+#: ../Pidgin/messages:97
+msgid "Choose a theme :"
+msgstr "Выберите тему:"
+
+#: ../Pidgin/messages:101
+msgid "Display conversation messages in a bubble?"
+msgstr "Показывать беседу в облачках?"
+
+#: ../Pidgin/messages:103
+msgid "Display chat messages in a bubble?"
+msgstr "Показывать сообщения чата в облачках?"
+
+#: ../Pidgin/messages:105
+msgid "Bubbles duration:"
+msgstr "Продолжительность облачков:"
+
+#: ../Pidgin/messages:113
+msgid "Animation of the icon on receiving a message:"
+msgstr "Анимация значка при приёме сообщений:"
+
+#: ../Pidgin/messages:115 ../Xchat/messages:107
+msgid ""
+"This is the number of messages that you can recall by scrolling on the icon."
+msgstr "Количество сообщений, которые вы можете прокрутить на значке."
+
+#: ../Pidgin/messages:117 ../Xchat/messages:109
+msgid "Size of the history :"
+msgstr "Размер истории сообщений:"
+
+#: ../Pidgin/messages:119 ../Xchat/messages:111
+msgid "none"
+msgstr "нет"
+
+#: ../Pidgin/messages:121 ../Xchat/messages:113
+msgid "big"
+msgstr "большой"
+
+#: ../Quote/messages:7
+msgid "Let empty to display the current site's name."
+msgstr "Оставьте пустым, чтобы показывать название текщего сайта."
+
+#: ../Quote/messages:97
+msgid "Quote source:"
+msgstr "Источник цитат:"
+
+#: ../Quote/messages:99
+msgid "Quotationspage.com"
+msgstr "Quotationspage.com"
+
+#: ../Quote/messages:101
+msgid "Bash.org"
+msgstr "Bash.org"
+
+#: ../Quote/messages:103
+msgid "Xkcdb.com"
+msgstr "Xkcdb.com"
+
+#: ../Quote/messages:105
+msgid "Qdb.us"
+msgstr "Qdb.us"
+
+#: ../Quote/messages:107
+msgid "Danstonchat.com"
+msgstr "Danstonchat.com"
+
+#: ../Quote/messages:109
+msgid "Jokes2go.com"
+msgstr "Jokes2go.com"
+
+#: ../Quote/messages:111
+msgid "Vidademerda.com.br"
+msgstr "Vidademerda.com.br"
+
+#: ../Quote/messages:113
+msgid "Grouphug.us"
+msgstr "Grouphug.us"
+
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:73
+msgid "Screensaver is currently disabled"
+msgstr ""
+
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:79
+msgid "Disable the screensaver"
+msgstr ""
+
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:185
+msgid "Inhibit for a given timelength (in minutes)"
+msgstr ""
+
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:192
+#, fuzzy
+msgid "timelength"
+msgstr "Врменная шкала"
+
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:198
+msgid "Inhibit for a given timelength"
+msgstr ""
+
+#: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
+#: ../Translator/messages:11
+msgid "Leave empty to use the default one."
+msgstr "Оставьте пустым, чтобы использовать стандартное."
+
+#: ../Screensaver_inhibitor/messages:11 ../Translator/messages:13
+msgid "Image filename:"
+msgstr "Имя изображения:"
+
+#: ../Screensaver_inhibitor/messages:15
+msgid "Image filename when the screensaver is inhibited:"
+msgstr ""
+
+#: ../Screensaver_inhibitor/messages:35
+#, fuzzy
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=Utility)"
+msgstr ""
+"Для слоя виджетов CompizFusion, установите поведение в Compiz на: "
+"(класс=Cairo-dock и тип=utility)"
+
+#: ../Screensaver_inhibitor/messages:95
+msgid "0 to never stop automatically"
+msgstr ""
+
+#: ../Screensaver_inhibitor/messages:97
+#, fuzzy
+msgid "Timelength of the inhibition:"
+msgstr "Продолжительность окна вывода:"
+
+#: ../Screensaver_inhibitor/messages:99
+#, fuzzy
+msgid "Shortkey to (de)inhibit the screensaver:"
+msgstr "Клавиатурное сокращение для показа терминала:"
 
 #: ../Translator/Translator:434
 msgid "To"
@@ -112,6 +1222,310 @@ msgstr "Поменять языки"
 msgid "Translate from clipboard (middle-click)"
 msgstr "Перевести из буфера обмена (средний щелчок)"
 
+#: ../Translator/messages:97
+msgid "Languages"
+msgstr "Языки"
+
+#: ../Translator/messages:99
+msgid "Translate from:"
+msgstr "С языка:"
+
+#: ../Translator/messages:101 ../Translator/messages:231
+msgid "Afrikaans"
+msgstr "Африкаанс"
+
+#: ../Translator/messages:103 ../Translator/messages:233
+msgid "Albanian"
+msgstr "Албанский"
+
+#: ../Translator/messages:105 ../Translator/messages:235
+msgid "Arabic"
+msgstr "Арабский"
+
+#: ../Translator/messages:107 ../Translator/messages:237
+msgid "Armenian"
+msgstr "Армянский"
+
+#: ../Translator/messages:109 ../Translator/messages:239
+msgid "Azerbaijani"
+msgstr "Азербайджанский"
+
+#: ../Translator/messages:111 ../Translator/messages:241
+msgid "Basque"
+msgstr "Баскский"
+
+#: ../Translator/messages:113 ../Translator/messages:243
+msgid "Belarusian"
+msgstr "Белорусский"
+
+#: ../Translator/messages:115 ../Translator/messages:245
+msgid "Bengali"
+msgstr ""
+
+#: ../Translator/messages:117 ../Translator/messages:247
+msgid "Bulgarian"
+msgstr "Болгарский"
+
+#: ../Translator/messages:119 ../Translator/messages:249
+msgid "Catalan"
+msgstr "Каталанский"
+
+#: ../Translator/messages:121
+msgid "Chinese (simplified)"
+msgstr ""
+
+#: ../Translator/messages:123
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: ../Translator/messages:125 ../Translator/messages:255
+msgid "Croatian"
+msgstr "Хорватский"
+
+#: ../Translator/messages:127 ../Translator/messages:257
+msgid "Czech"
+msgstr "Чешский"
+
+#: ../Translator/messages:129 ../Translator/messages:259
+msgid "Danish"
+msgstr "Датский"
+
+#: ../Translator/messages:131 ../Translator/messages:261
+msgid "Dutch"
+msgstr "Голландский"
+
+#: ../Translator/messages:133 ../Translator/messages:263
+msgid "English"
+msgstr "Английский"
+
+#: ../Translator/messages:135 ../Translator/messages:265
+msgid "Estonian"
+msgstr "Эстонский"
+
+#: ../Translator/messages:137 ../Translator/messages:267
+msgid "Filipino"
+msgstr "Филиппинский"
+
+#: ../Translator/messages:139 ../Translator/messages:269
+msgid "Finnish"
+msgstr "Финский"
+
+#: ../Translator/messages:141 ../Translator/messages:271
+msgid "French"
+msgstr "Французский"
+
+#: ../Translator/messages:143 ../Translator/messages:273
+msgid "Galician"
+msgstr "Галисийский"
+
+#: ../Translator/messages:145 ../Translator/messages:275
+msgid "Georgian"
+msgstr "Грузинский"
+
+#: ../Translator/messages:147 ../Translator/messages:277
+msgid "German"
+msgstr "Немецкий"
+
+#: ../Translator/messages:149 ../Translator/messages:279
+msgid "Greek"
+msgstr "Греческий"
+
+#: ../Translator/messages:151 ../Translator/messages:281
+msgid "Gujarati"
+msgstr ""
+
+#: ../Translator/messages:153 ../Translator/messages:283
+msgid "Haitian"
+msgstr "Гаитянский"
+
+#: ../Translator/messages:155 ../Translator/messages:285
+msgid "Hebrew"
+msgstr "Иврит"
+
+#: ../Translator/messages:157 ../Translator/messages:287
+msgid "Hindi"
+msgstr "Хинди"
+
+#: ../Translator/messages:159 ../Translator/messages:289
+msgid "Hungarian"
+msgstr "Венгерский"
+
+#: ../Translator/messages:161 ../Translator/messages:291
+msgid "Icelandic"
+msgstr "Исландский"
+
+#: ../Translator/messages:163 ../Translator/messages:293
+msgid "Indonesian"
+msgstr "Индонезийский"
+
+#: ../Translator/messages:165 ../Translator/messages:295
+msgid "Irish"
+msgstr "Ирландский"
+
+#: ../Translator/messages:167 ../Translator/messages:297
+msgid "Italian"
+msgstr "Итальянский"
+
+#: ../Translator/messages:169 ../Translator/messages:299
+msgid "Japanese"
+msgstr "Японский"
+
+#: ../Translator/messages:171 ../Translator/messages:301
+msgid "Kannada"
+msgstr ""
+
+#: ../Translator/messages:173 ../Translator/messages:303
+msgid "Korean"
+msgstr "Корейский"
+
+#: ../Translator/messages:175 ../Translator/messages:305
+msgid "Latin"
+msgstr ""
+
+#: ../Translator/messages:177 ../Translator/messages:307
+msgid "Latvian"
+msgstr "Латвийский"
+
+#: ../Translator/messages:179 ../Translator/messages:309
+msgid "Lithuanian"
+msgstr "Литовский"
+
+#: ../Translator/messages:181 ../Translator/messages:311
+msgid "Macedonian"
+msgstr "Македонский"
+
+#: ../Translator/messages:183 ../Translator/messages:313
+msgid "Malay"
+msgstr "Малайский"
+
+#: ../Translator/messages:185 ../Translator/messages:315
+msgid "Maltese"
+msgstr "Мальтийский"
+
+#: ../Translator/messages:187 ../Translator/messages:317
+msgid "Norwegian"
+msgstr "Норвежский"
+
+#: ../Translator/messages:189 ../Translator/messages:319
+msgid "Persian"
+msgstr "Персидский"
+
+#: ../Translator/messages:191 ../Translator/messages:321
+msgid "Polish"
+msgstr "Польский"
+
+#: ../Translator/messages:193 ../Translator/messages:323
+msgid "Portuguese"
+msgstr "Португальский"
+
+#: ../Translator/messages:195 ../Translator/messages:325
+msgid "Romanian"
+msgstr "Румынский"
+
+#: ../Translator/messages:197 ../Translator/messages:327
+msgid "Russian"
+msgstr "Русский"
+
+#: ../Translator/messages:199 ../Translator/messages:329
+msgid "Serbian"
+msgstr "Сербский"
+
+#: ../Translator/messages:201 ../Translator/messages:331
+msgid "Slovak"
+msgstr "Словацкий"
+
+#: ../Translator/messages:203 ../Translator/messages:333
+msgid "Slovenian"
+msgstr "Словенский"
+
+#: ../Translator/messages:205 ../Translator/messages:335
+msgid "Spanish"
+msgstr "Испанский"
+
+#: ../Translator/messages:207 ../Translator/messages:337
+msgid "Swahili"
+msgstr "Суахили"
+
+#: ../Translator/messages:209 ../Translator/messages:339
+msgid "Swedish"
+msgstr "Шведский"
+
+#: ../Translator/messages:211 ../Translator/messages:341
+msgid "Tamil"
+msgstr ""
+
+#: ../Translator/messages:213 ../Translator/messages:343
+msgid "Telugu"
+msgstr ""
+
+#: ../Translator/messages:215 ../Translator/messages:345
+msgid "Thai"
+msgstr "Тайский"
+
+#: ../Translator/messages:217 ../Translator/messages:347
+msgid "Turkish"
+msgstr "Турецкий"
+
+#: ../Translator/messages:219 ../Translator/messages:349
+msgid "Ukrainian"
+msgstr "Украинский"
+
+#: ../Translator/messages:221 ../Translator/messages:351
+msgid "Urdu"
+msgstr "Урду"
+
+#: ../Translator/messages:223 ../Translator/messages:353
+msgid "Vietnamese"
+msgstr "Вьетнамский"
+
+#: ../Translator/messages:225 ../Translator/messages:355
+msgid "Welsh"
+msgstr "Валлийский"
+
+#: ../Translator/messages:227 ../Translator/messages:357
+msgid "Yiddish"
+msgstr "Идиш"
+
+#: ../Translator/messages:229
+msgid "Translate to:"
+msgstr "На язык:"
+
+#: ../Translator/messages:251
+msgid "Simplified Chinese"
+msgstr ""
+
+#: ../Translator/messages:253
+msgid "Traditional Chinese"
+msgstr ""
+
+#: ../Translator/messages:359
+msgid "Shortkeys"
+msgstr "Клавиатурное сокращение"
+
+#: ../Translator/messages:361
+msgid "Shortkey to start translating from (read):"
+msgstr "Чтобы начать перевод с языка (чтение):"
+
+#: ../Translator/messages:363
+msgid "Shortkey to start translating to (write):"
+msgstr "Чтобы начать перевод на язык (запись):"
+
+#: ../Translator/messages:365
+msgid "Dialog"
+msgstr "Диалоговое окно"
+
+#: ../Translator/messages:367
+msgid "In s. Set 0 for an unlimited time."
+msgstr "В сек. Установите 0, для бесконечности."
+
+#: ../Translator/messages:369
+msgid "Time-length of the result dialog:"
+msgstr "Продолжительность окна вывода:"
+
+#: ../Translator/messages:371
+msgid "Editable text widget?"
+msgstr "Редактируемый текстовый виджет?"
+
 #: ../Transmission/Transmission:186
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission не запущен или не отвечает."
@@ -127,6 +1541,85 @@ msgstr ""
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr "Необходимо включить Web клиент в настройках Transmisison."
 
+#: ../WebSearch/messages:93
+msgid "Search engine :"
+msgstr "Поисковая система:"
+
+#: ../WebSearch/messages:95
+msgid "Google"
+msgstr "Google"
+
+#: ../WebSearch/messages:97
+msgid "Bing"
+msgstr "Bing"
+
+#: ../WebSearch/messages:99
+msgid "Yahoo!"
+msgstr "Yahoo!"
+
+#: ../WebSearch/messages:101
+msgid "Teoma"
+msgstr "Teoma"
+
+#: ../WebSearch/messages:103
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../WebSearch/messages:105
+msgid "Webshots"
+msgstr "Webshots"
+
+#: ../WebSearch/messages:107
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../WebSearch/messages:109
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+#: ../WebSearch/messages:111
+msgid "ImageShack"
+msgstr "ImageShack"
+
+#: ../WebSearch/messages:113
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../WebSearch/messages:115
+msgid "Digg"
+msgstr "Digg"
+
+#: ../WebSearch/messages:117
+msgid "in sub-icons."
+msgstr "в суб-значках."
+
+#: ../WebSearch/messages:119
+msgid "Maximum number of results shown :"
+msgstr "Максимальное количество результатов:"
+
+#: ../WebSearch/messages:121
+msgid "Show the current page as the icon label ?"
+msgstr "Показывать текущую страницу как подпись значка?"
+
+#: ../WebSearch/messages:123
+msgid ""
+"Show the description of the result instead of its URL in the sub-icons ?"
+msgstr "Показывать описание результата, вместо адреса в суб-значке?"
+
+#: ../WebSearch/messages:125
+msgid ""
+"for slow connections, disable will result in significantly faster fetching."
+msgstr ""
+"выключение, для медленных соединений, позволит значительно увеличить "
+"скорость обработки."
+
+#: ../WebSearch/messages:127
+msgid ""
+"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
+"and Digg searches ?"
+msgstr ""
+"Отображать эскизы для Youtube, Webshots, Flickr, ImageShack, Twitter и Digg?"
+
 #: ../Xchat/Xchat:257
 msgid "Channels"
 msgstr "Каналы"
@@ -135,329 +1628,11 @@ msgstr "Каналы"
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr "Средний щелчок, чтобы переключить канал в который посылаете сообщение."
 
-#~ msgid "Icon"
-#~ msgstr "Значок"
-
-#~ msgid "Applet"
-#~ msgstr "Апплет"
-
-#~ msgid "Name of the dock it belongs to:"
-#~ msgstr "Имя панели, к которой он принадлежит:"
-
-#~ msgid "Name of the icon as it will appear in its label in the dock :"
-#~ msgstr "Имя значка, как оно будет отображено в подписи на панели:"
-
-#~ msgid "Display"
-#~ msgstr "Отображение"
-
-#~ msgid "Let empty to use the default one."
-#~ msgstr "Оставьте пустым, чтобы использовать стандартное."
-
-#~ msgid "Image's filename :"
-#~ msgstr "Имя изображения:"
-
-#~ msgid "Set to 0 to use the default applet size"
-#~ msgstr "Установите 0, чтобы использовать стандартный размер апплета."
-
-#~ msgid "Desired icon size for this applet"
-#~ msgstr "Определите размер значка для этого апплета"
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Руководство по апплетам"
-
-#~ msgid "Desklet"
-#~ msgstr "Десклет"
-
-#~ msgid "Position"
-#~ msgstr "Позиция"
-
-#~ msgid ""
-#~ "If locked, the desklet cannot be moved by simply dragging it with the "
-#~ "left mouse button. It can still be moved with ALT + left-click."
-#~ msgstr ""
-#~ "Если заблокировано, то десклет можно легко переместить захватив его левой "
-#~ "кнопкой мыши. И, конечно, вы по-прежнему можете использовать ALT + левый "
-#~ "щелчок."
-
-#~ msgid "Lock position?"
-#~ msgstr "Заблокировать позицию?"
-
-#~ msgid ""
-#~ "Depending on your WindowManager, you may be able to resize this with ALT "
-#~ "+ middle-click or ALT + left-click."
-#~ msgstr ""
-#~ "В зависимости от вашего Менеджера Окон, вы можете изменять размер при "
-#~ "помощи ALT + средний щелчок или ALT + левый щелчок."
-
-#~ msgid "Desklet dimensions (width x height):"
-#~ msgstr "Размер десклета (ширина x высота):"
-
-#~ msgid ""
-#~ "Depending on your WindowManager, you may be able to move this with ALT + "
-#~ "left-click.. Negative values are counted from the right/bottom of the "
-#~ "screen"
-#~ msgstr ""
-#~ "В зависимости от вашего ОМ, вы можете перемещать панель с помощью ALT"
-#~ "+левый щелчок. Отрицательные значения вычисляются относительно правого/"
-#~ "нижнего угла экрана."
-
-#~ msgid "Desklet position (x, y):"
-#~ msgstr "Позиция десклета (x ; y):"
-
-#~ msgid ""
-#~ "You can quickly rotate the desklet with the mouse, by dragging the little "
-#~ "buttons on its left and top sides."
-#~ msgstr ""
-#~ "Вы можете с лёгкостью вращать любой десклет, используйте для этого "
-#~ "маленькие кнопки по сторонам десклета."
-
-#~ msgid "Rotation:"
-#~ msgstr "Вращение:"
-
-#~ msgid "Visibility"
-#~ msgstr "Видимость"
-
-#~ msgid "Is detached from the dock"
-#~ msgstr "Открепить от панели?"
-
-#~ msgid ""
-#~ "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-#~ "(class=Cairo-dock & type=Utility)"
-#~ msgstr ""
-#~ "Для слоя виджетов CompizFusion, установите поведение в Compiz на: "
-#~ "(класс=Cairo-dock и тип=utility)"
-
-#~ msgid "Visibility:"
-#~ msgstr "Видимость:"
-
-#~ msgid "Normal"
-#~ msgstr "Обычная"
-
-#~ msgid "Keep above"
-#~ msgstr "Держать поверх"
-
-#~ msgid "Keep below"
-#~ msgstr "Держать позади"
-
-#~ msgid "Keep on widget layer"
-#~ msgstr "На слое виджетов"
-
-#~ msgid "Reserve space"
-#~ msgstr "Резервировать место"
-
-#~ msgid "Should be visible on all desktops?"
-#~ msgstr "Показывать на всех рабочих столах?"
-
-#~ msgid "Decorations"
-#~ msgstr "Оформление"
-
-#~ msgid "Choose 'Custom decorations' to define your own decorations below."
-#~ msgstr ""
-#~ "Выберите 'Собственное оформление', чтобы настроить своё оформление ниже."
-
-#~ msgid "Choose a decoration theme for this desklet:"
-#~ msgstr "Выберите тему оформления для этого десклета:"
-
-#~ msgid ""
-#~ "Image to be displayed below drawings, e.g. a frame. Leave empty for no "
-#~ "image."
-#~ msgstr ""
-#~ "Изображение показываемое позади рисунка, например рамка. Оставьте пустым, "
-#~ "чтобы не использовать."
-
-#~ msgid "Background image:"
-#~ msgstr "Фоновое изображение:"
-
-#~ msgid "Background transparency:"
-#~ msgstr "Фоновая прозрачность:"
-
-#~ msgid "in pixels. Use this to adjust the left position of drawings."
-#~ msgstr "в пикселях. Определяет левую позицию рисунка."
-
-#~ msgid "Left offset:"
-#~ msgstr "Левое смещение:"
-
-#~ msgid "in pixels. Use this to adjust the top position of drawings."
-#~ msgstr "в пикселях. Определяет верхнюю позицию рисунка."
-
-#~ msgid "Top offset:"
-#~ msgstr "Верхнее смещение:"
-
-#~ msgid "in pixels. Use this to adjust the right position of drawings."
-#~ msgstr "в пикселях. Определяет правую позицию рисунка."
-
-#~ msgid "Right offset:"
-#~ msgstr "Правое смещение:"
-
-#~ msgid "in pixels. Use this to adjust the bottom position of drawings."
-#~ msgstr "в пикселях. Определяет нижнюю позицию рисунка."
-
-#~ msgid "Bottom offset:"
-#~ msgstr "Нижнее смещение:"
-
-#~ msgid ""
-#~ "Image to be displayed above the drawings, e.g. a reflection. Leave empty "
-#~ "for no image."
-#~ msgstr ""
-#~ "Изображение показываемое поверх рисунка, например отражение. Оставьте "
-#~ "пустым, чтобы не использовать."
-
-#~ msgid "Foreground image:"
-#~ msgstr "Изображение переднего плана:"
-
-#~ msgid "Foreground tansparency:"
-#~ msgstr "Прозрачность переднего плана:"
-
-#~ msgid "Configuration"
-#~ msgstr "Настройки"
-
-#~ msgid "Shortkey to pop up the menu:"
-#~ msgstr "Клавиатурное сокращение для открытия меню:"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid ""
-#~ "Command to launch your favourite calendar application (middle click):"
-#~ msgstr "Команда запуска вашего календаря (средний щелчок):"
-
-#~ msgid "Command to execute on dropping a file onto the calendar-icon:"
-#~ msgstr "Команда, выполняемая при перетаскивании файла на значок календаря:"
-
-#~ msgid "Behaviour"
-#~ msgstr "Поведение"
-
-#~ msgid "in s."
-#~ msgstr "в сек."
-
-#~ msgid "Time length of dialogues for the calendar :"
-#~ msgstr "Время отображения окон календаря:"
-
-#~ msgid "Time length of dialogues for events of the day :"
-#~ msgstr "Время отображения окон событий дня:"
-
-#~ msgid "Time length of dialogues for calendar of next month :"
-#~ msgstr "Время отображения окон календаря следущего месяца:"
-
-#~ msgid ""
-#~ "The path to a script to generate an icon. Leave it empty to use the "
-#~ "default one."
-#~ msgstr ""
-#~ "Путь к скрипту создающему значок. Оставьте пустым, чтобы использовать "
-#~ "стандартный."
-
-#~ msgid "Icon custom script:"
-#~ msgstr "Скрипт создания значка:"
-
-#~ msgid "Shortkey to pop up the torrents info:"
-#~ msgstr "Клавиатурное сокращение информации о торрентах:"
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Отображать доступное место в Гигабайтах (отмечено) или Мегабайтах (не "
-#~ "отмечено):"
-
-#~ msgid "in minutes"
-#~ msgstr "в минутах"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Интервал проверки файловых систем:"
-
-#~ msgid "Bubbles duration :"
-#~ msgstr "Продолжительность облачков напоминаний:"
-
-#~ msgid "Short"
-#~ msgstr "Короткая"
-
-#~ msgid "Medium"
-#~ msgstr "Средняя"
-
-#~ msgid "Long"
-#~ msgstr "Долгая"
-
-#~ msgid "Animation of the icon on receiving channel messages :"
-#~ msgstr "Анимация значка при получении новых сообщений:"
-
-#~ msgid "Display channel messages in a bubble :"
-#~ msgstr "Показывать сообщения в облачках:"
-
-#~ msgid "Post-it's initial dimension (width x height) :"
-#~ msgstr "Размер заметки (ширина х высота):"
-
-#~ msgid "Name of the icon as it will appear in its caption in the dock:"
-#~ msgstr "Имя значка, как оно будет отображено в подписи на панели:"
-
-#~ msgid "Show in the icon:"
-#~ msgstr "Показывать на значке:"
-
-#~ msgid "Number of unread messages"
-#~ msgstr "Количество непрочитанных сообщений"
-
-#~ msgid " Number of new messages"
-#~ msgstr " Количество новых сообщений"
-
-#~ msgid "Parameters"
-#~ msgstr "Параметры"
-
-#~ msgid "Choose a theme :"
-#~ msgstr "Выберите тему:"
-
-#~ msgid "Display conversation messages in a bubble?"
-#~ msgstr "Показывать беседу в облачках?"
-
-#~ msgid "Display chat messages in a bubble?"
-#~ msgstr "Показывать сообщения чата в облачках?"
-
-#~ msgid "Bubbles duration:"
-#~ msgstr "Продолжительность облачков:"
-
-#~ msgid "Animation of the icon on receiving a message:"
-#~ msgstr "Анимация значка при приёме сообщений:"
-
-#~ msgid ""
-#~ "This is the number of messages that you can recall by scrolling on the "
-#~ "icon."
-#~ msgstr "Количество сообщений, которые вы можете прокрутить на значке."
-
-#~ msgid "Size of the history :"
-#~ msgstr "Размер истории сообщений:"
-
-#~ msgid "none"
-#~ msgstr "нет"
-
-#~ msgid "big"
-#~ msgstr "большой"
-
-#~ msgid "Let empty to display the current site's name."
-#~ msgstr "Оставьте пустым, чтобы показывать название текщего сайта."
-
-#~ msgid "Quote source:"
-#~ msgstr "Источник цитат:"
-
-#~ msgid "Quotationspage.com"
-#~ msgstr "Quotationspage.com"
-
-#~ msgid "Bash.org"
-#~ msgstr "Bash.org"
-
-#~ msgid "Xkcdb.com"
-#~ msgstr "Xkcdb.com"
-
-#~ msgid "Qdb.us"
-#~ msgstr "Qdb.us"
-
-#~ msgid "Danstonchat.com"
-#~ msgstr "Danstonchat.com"
-
-#~ msgid "Jokes2go.com"
-#~ msgstr "Jokes2go.com"
-
-#~ msgid "Vidademerda.com.br"
-#~ msgstr "Vidademerda.com.br"
-
-#~ msgid "Grouphug.us"
-#~ msgstr "Grouphug.us"
+#~ msgid "Let empty to display the current source and destination languages."
+#~ msgstr "Оставьте пустым, чтобы показывать текущие направления перевода."
+
+#~ msgid "Chinese"
+#~ msgstr "Китайский"
 
 #~ msgid "Choose one of the available themes:"
 #~ msgstr "Выберите одну из доступных тем:"
@@ -479,279 +1654,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 
 #~ msgid "Display a label with the charge?"
 #~ msgstr "Показывать подпись с зарадом?"
-
-#~ msgid "Let empty to display the current source and destination languages."
-#~ msgstr "Оставьте пустым, чтобы показывать текущие направления перевода."
-
-#~ msgid "Leave empty to use the default one."
-#~ msgstr "Оставьте пустым, чтобы использовать стандартное."
-
-#~ msgid "Image filename:"
-#~ msgstr "Имя изображения:"
-
-#~ msgid "Languages"
-#~ msgstr "Языки"
-
-#~ msgid "Translate from:"
-#~ msgstr "С языка:"
-
-#~ msgid "Afrikaans"
-#~ msgstr "Африкаанс"
-
-#~ msgid "Albanian"
-#~ msgstr "Албанский"
-
-#~ msgid "Arabic"
-#~ msgstr "Арабский"
-
-#~ msgid "Armenian"
-#~ msgstr "Армянский"
-
-#~ msgid "Azerbaijani"
-#~ msgstr "Азербайджанский"
-
-#~ msgid "Basque"
-#~ msgstr "Баскский"
-
-#~ msgid "Belarusian"
-#~ msgstr "Белорусский"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Болгарский"
-
-#~ msgid "Catalan"
-#~ msgstr "Каталанский"
-
-#~ msgid "Chinese"
-#~ msgstr "Китайский"
-
-#~ msgid "Croatian"
-#~ msgstr "Хорватский"
-
-#~ msgid "Czech"
-#~ msgstr "Чешский"
-
-#~ msgid "Danish"
-#~ msgstr "Датский"
-
-#~ msgid "Dutch"
-#~ msgstr "Голландский"
-
-#~ msgid "English"
-#~ msgstr "Английский"
-
-#~ msgid "Estonian"
-#~ msgstr "Эстонский"
-
-#~ msgid "Filipino"
-#~ msgstr "Филиппинский"
-
-#~ msgid "Finnish"
-#~ msgstr "Финский"
-
-#~ msgid "French"
-#~ msgstr "Французский"
-
-#~ msgid "Galician"
-#~ msgstr "Галисийский"
-
-#~ msgid "Georgian"
-#~ msgstr "Грузинский"
-
-#~ msgid "German"
-#~ msgstr "Немецкий"
-
-#~ msgid "Greek"
-#~ msgstr "Греческий"
-
-#~ msgid "Haitian"
-#~ msgstr "Гаитянский"
-
-#~ msgid "Hebrew"
-#~ msgstr "Иврит"
-
-#~ msgid "Hindi"
-#~ msgstr "Хинди"
-
-#~ msgid "Hungarian"
-#~ msgstr "Венгерский"
-
-#~ msgid "Icelandic"
-#~ msgstr "Исландский"
-
-#~ msgid "Indonesian"
-#~ msgstr "Индонезийский"
-
-#~ msgid "Irish"
-#~ msgstr "Ирландский"
-
-#~ msgid "Italian"
-#~ msgstr "Итальянский"
-
-#~ msgid "Japanese"
-#~ msgstr "Японский"
-
-#~ msgid "Korean"
-#~ msgstr "Корейский"
-
-#~ msgid "Latvian"
-#~ msgstr "Латвийский"
-
-#~ msgid "Lithuanian"
-#~ msgstr "Литовский"
-
-#~ msgid "Macedonian"
-#~ msgstr "Македонский"
-
-#~ msgid "Malay"
-#~ msgstr "Малайский"
-
-#~ msgid "Maltese"
-#~ msgstr "Мальтийский"
-
-#~ msgid "Norwegian"
-#~ msgstr "Норвежский"
-
-#~ msgid "Persian"
-#~ msgstr "Персидский"
-
-#~ msgid "Polish"
-#~ msgstr "Польский"
-
-#~ msgid "Portuguese"
-#~ msgstr "Португальский"
-
-#~ msgid "Romanian"
-#~ msgstr "Румынский"
-
-#~ msgid "Russian"
-#~ msgstr "Русский"
-
-#~ msgid "Serbian"
-#~ msgstr "Сербский"
-
-#~ msgid "Slovak"
-#~ msgstr "Словацкий"
-
-#~ msgid "Slovenian"
-#~ msgstr "Словенский"
-
-#~ msgid "Spanish"
-#~ msgstr "Испанский"
-
-#~ msgid "Swahili"
-#~ msgstr "Суахили"
-
-#~ msgid "Swedish"
-#~ msgstr "Шведский"
-
-#~ msgid "Thai"
-#~ msgstr "Тайский"
-
-#~ msgid "Turkish"
-#~ msgstr "Турецкий"
-
-#~ msgid "Ukrainian"
-#~ msgstr "Украинский"
-
-#~ msgid "Urdu"
-#~ msgstr "Урду"
-
-#~ msgid "Vietnamese"
-#~ msgstr "Вьетнамский"
-
-#~ msgid "Welsh"
-#~ msgstr "Валлийский"
-
-#~ msgid "Yiddish"
-#~ msgstr "Идиш"
-
-#~ msgid "Translate to:"
-#~ msgstr "На язык:"
-
-#~ msgid "Shortkeys"
-#~ msgstr "Клавиатурное сокращение"
-
-#~ msgid "Shortkey to start translating from (read):"
-#~ msgstr "Чтобы начать перевод с языка (чтение):"
-
-#~ msgid "Shortkey to start translating to (write):"
-#~ msgstr "Чтобы начать перевод на язык (запись):"
-
-#~ msgid "Dialog"
-#~ msgstr "Диалоговое окно"
-
-#~ msgid "In s. Set 0 for an unlimited time."
-#~ msgstr "В сек. Установите 0, для бесконечности."
-
-#~ msgid "Time-length of the result dialog:"
-#~ msgstr "Продолжительность окна вывода:"
-
-#~ msgid "Editable text widget?"
-#~ msgstr "Редактируемый текстовый виджет?"
-
-#~ msgid "Search engine :"
-#~ msgstr "Поисковая система:"
-
-#~ msgid "Google"
-#~ msgstr "Google"
-
-#~ msgid "Bing"
-#~ msgstr "Bing"
-
-#~ msgid "Yahoo!"
-#~ msgstr "Yahoo!"
-
-#~ msgid "Teoma"
-#~ msgstr "Teoma"
-
-#~ msgid "Youtube"
-#~ msgstr "Youtube"
-
-#~ msgid "Webshots"
-#~ msgstr "Webshots"
-
-#~ msgid "Flickr"
-#~ msgstr "Flickr"
-
-#~ msgid "Wikipedia"
-#~ msgstr "Wikipedia"
-
-#~ msgid "ImageShack"
-#~ msgstr "ImageShack"
-
-#~ msgid "Twitter"
-#~ msgstr "Twitter"
-
-#~ msgid "Digg"
-#~ msgstr "Digg"
-
-#~ msgid "in sub-icons."
-#~ msgstr "в суб-значках."
-
-#~ msgid "Maximum number of results shown :"
-#~ msgstr "Максимальное количество результатов:"
-
-#~ msgid "Show the current page as the icon label ?"
-#~ msgstr "Показывать текущую страницу как подпись значка?"
-
-#~ msgid ""
-#~ "Show the description of the result instead of its URL in the sub-icons ?"
-#~ msgstr "Показывать описание результата, вместо адреса в суб-значке?"
-
-#~ msgid ""
-#~ "for slow connections, disable will result in significantly faster "
-#~ "fetching."
-#~ msgstr ""
-#~ "выключение, для медленных соединений, позволит значительно увеличить "
-#~ "скорость обработки."
-
-#~ msgid ""
-#~ "Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, "
-#~ "Twitter, and Digg searches ?"
-#~ msgstr ""
-#~ "Отображать эскизы для Youtube, Webshots, Flickr, ImageShack, Twitter и "
-#~ "Digg?"
 
 #~ msgid "Preferences"
 #~ msgstr "Настройки"
@@ -1039,9 +1941,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 
 #~ msgid "Open the folder"
 #~ msgstr "Открыть каталог"
-
-#~ msgid "middle-click"
-#~ msgstr "средний щелчок"
 
 #~ msgid "Rename this file"
 #~ msgstr "Переименовать этот файл"
@@ -1899,9 +2798,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 
 #~ msgid "Exposition"
 #~ msgstr "Экспозиция"
-
-#~ msgid "Widget Layer"
-#~ msgstr "Слой виджетов"
 
 #~ msgid ""
 #~ "To configure Compiz, you need to install CCSM\n"
@@ -3449,13 +4345,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 #~ msgid "Ground offset:"
 #~ msgstr "Смещение от поверхности:"
 
-#~ msgid ""
-#~ "Depending on your WindowManager, you may be able to move this with ALT + "
-#~ "left-click."
-#~ msgstr ""
-#~ "В зависимости от вашего Менеджера Окон, вы можете перемешать с помощью "
-#~ "ALT + левый щелчок"
-
 #~ msgid "Items"
 #~ msgstr "Элементы"
 
@@ -3801,9 +4690,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 #~ msgid "Show hidden files?"
 #~ msgstr "Показывать скрытые файлы?"
 
-#~ msgid "Display icons in the menu?"
-#~ msgstr "Показывать значки в меню?"
-
 #~ msgid "Shortkey to show/hide the menu:"
 #~ msgstr "Клавиатурное сокращение для показа/скрытия меню:"
 
@@ -3838,9 +4724,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 
 #~ msgid "Leave empty to use the connection name."
 #~ msgstr "Оставьте пустым, чтобы использовать имя соединения."
-
-#~ msgid "Always display the icon, even when the dock is hidden?"
-#~ msgstr "Всегда показывать значок, даже если панель скрыта?"
 
 #~ msgid "You can quickly switch to the other mode by scrolling on the icon."
 #~ msgstr ""
@@ -3977,9 +4860,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 
 #~ msgid "Notify about feed updates:"
 #~ msgstr "Уведомлять об обновлениях ленты:"
-
-#~ msgid "Icon animation"
-#~ msgstr "Анимация значка"
 
 #~ msgid "Icon animation + Dialog bubble"
 #~ msgstr "Анимация значка и облачко уведомлений"
@@ -4254,32 +5134,17 @@ msgstr "Средний щелчок, чтобы переключить кана�
 #~ msgid "Show graphic card's temperature?"
 #~ msgstr "Показывать температуру видео-карты?"
 
-#~ msgid "Show CPU temperature?"
-#~ msgstr "Показывать температуру процессора?"
-
 #~ msgid "Show fan speed?"
 #~ msgstr "Показывать скорость вентилятора?"
 
 #~ msgid "Show free memory instead of used memory?"
 #~ msgstr "Показывать свободную память вместо используемой?"
 
-#~ msgid "Delay between refreshes:"
-#~ msgstr "Интервал между проверками:"
-
 #~ msgid "How smooth is the movement?"
 #~ msgstr "Насколько гладко совершать движение?"
 
-#~ msgid "Alerts"
-#~ msgstr "Оповещения"
-
-#~ msgid "Show alerts?"
-#~ msgstr "Показывать оповещания?"
-
 #~ msgid "Play a sound when displaying warning?"
 #~ msgstr "Звуковой сигнал при уведомлении?"
-
-#~ msgid "Path to sound file:"
-#~ msgstr "Путь до звукового файла:"
 
 #~ msgid "System-Monitor"
 #~ msgstr "Системный монитор"
@@ -5207,9 +6072,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 #~ msgid "Relative size of the text :"
 #~ msgstr "Относительный размер текста:"
 
-#~ msgid "smaller"
-#~ msgstr "меньше"
-
 #~ msgid "Action"
 #~ msgstr "Действия"
 
@@ -5464,17 +6326,11 @@ msgstr "Средний щелчок, чтобы переключить кана�
 #~ msgid "charge"
 #~ msgstr "заряд"
 
-#~ msgid "Timelength"
-#~ msgstr "Врменная шкала"
-
 #~ msgid "Emblem icon's filename when on charge:"
 #~ msgstr "Эмблема на значке при зарядке:"
 
 #~ msgid "Leave it empty for no sound"
 #~ msgstr "Оставьте пустым, чтобы не использовать звук"
-
-#~ msgid "Play a sound:"
-#~ msgstr "Использовать звук:"
 
 #~ msgid "Notification when low battery ?"
 #~ msgstr "Уведомлять при низком заряде батареи?"
@@ -5820,9 +6676,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 #~ msgid "Current desktop colour:"
 #~ msgstr "Цвет текущего рабочего стола:"
 
-#~ msgid "How to draw the current desktop:"
-#~ msgstr "Как отрисовывать текущий рабочий стол:"
-
 #~ msgid "draw a frame"
 #~ msgstr "рамка"
 
@@ -5893,9 +6746,6 @@ msgstr "Средний щелчок, чтобы переключить кана�
 
 #~ msgid "Size of the terminal (line x columns):"
 #~ msgstr "Размер терминала (строк х столбцов):"
-
-#~ msgid "Shortkey to show the terminal:"
-#~ msgstr "Клавиатурное сокращение для показа терминала:"
 
 #~ msgid "'Close' icon image name:"
 #~ msgstr "Изображение для значка 'Закрыть':"
