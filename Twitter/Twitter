@@ -26,9 +26,9 @@
 # To see the received direct messages right-click on the icon -> Twitter -> Received direct messages
 # To see some user's info right-click on the icon -> Twitter -> Info
 
-import urlparse, os, webbrowser, simplejson
+import urlparse, os, webbrowser, simplejson, threading, Queue, time, urllib2, simplejson
 from oauth import oauth
-from http import post, get
+from http import post, get #, stream
 from util import *
 from CDApplet import CDApplet, _
 # TODO import ConfigParser later conver files to config syntax
@@ -75,45 +75,59 @@ class TwitterOauth:
     self.access_token = oauth.OAuthToken.from_string(response)
     access_token_data = dict((x, y) for x, y in urlparse.parse_qsl(response))                 # tuple to dict
     return access_token_data['oauth_token'], access_token_data['oauth_token_secret']
+    
+# TODO: Separate things starting with this, check also the possible inheritance with TwitterOauth
+#class API():
+#  def __init__(self, access_key, access_secret):
+#    self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
+#    consumer_key, consumer_secret = read_consumer_key_and_secret()
+#    self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
+#    self.access_token = oauth.OAuthToken(access_key, access_secret)
 
-#class TwitterAPI(threading.Thread):
-class TwitterAPI():
+#class TwitterAPI(API):
+class TwitterAPI:
   def __init__(self, access_key, access_secret):
+    #API.__init__(self, access_key, access_secret)
     self.update_url             = 'http://twitter.com/statuses/update.json'
     self.home_timeline_url      = 'http://twitter.com/statuses/home_timeline.json'
     self.direct_messages_url    = 'https://api.twitter.com/1/direct_messages.json'
     self.verify_credentials_url = 'https://api.twitter.com/1/account/verify_credentials.json'
+    self.user_stream_url        = "https://userstream.twitter.com/2/user.json"
 
     self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
     consumer_key, consumer_secret = read_consumer_key_and_secret()
     self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
     self.access_token = oauth.OAuthToken(access_key, access_secret)
+    
+    thread = threading.Thread(target=self.tweety_streaming)
+    thread.start()
+    self.stream_content = Queue.Queue()
+    
+  def tweety_streaming(self):
+    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+                                                               token = self.access_token,
+                                                               http_url = self.user_stream_url)
+    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
+    #stream(oauth_request.to_url())
+    url = oauth_request.to_url()
+    req = urllib2.urlopen(url)
+    buffer = ''
+    while True:
+      chunk = req.read(1)
+      if not chunk:
+        print buffer
+        break
 
-#    self.current_home_timeline = self.home_timeline()
-#    self.current_last_status_time = time.strptime(self.current_home_timeline[0]['created_at'], "%a %b %d %H:%M:%S +0000 %Y")
-#    print "==== initial last time ========="
-#    print self.current_home_timeline[0]['text']
-#    print self.current_last_status_time
-#    print "============="
-#    t = Thread(target=self.check_home_timeline())
-#    t.start()
-#    t.join()
-#    self.check_home_timeline()
-    #threading.Thread.__init__(self)
-
-#  def run(self):
-#    self.check_home_timeline()
-
-#  def tweety_streaming(self):
-#    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-#                                                               token = self.access_token,
-#                                                               http_url = self.tweety_streaming_url,
-#                                                               parameters = {'track':'recipe', 'delimited':'length'},
-#                                                               http_method = "GET")
-#    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-#    url = oauth_request.to_url()
-#    response = get(url)
-#    return simplejson.loads(response)
+      buffer += chunk
+      tweets = buffer.split("\n",1)
+      if len(tweets) > 1:
+        content = tweets[0]
+        if "text" in content:
+          content = simplejson.loads(content)
+          self.stream_content.put(content)
+          self.stream_content.task_done()
+          print content
+        buffer = tweets[1]
 
   def tweety(self, message):                                                                  # popularly "send a tweety"
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -125,36 +139,6 @@ class TwitterAPI():
     post_data = oauth_request.to_postdata()
     return post(self.update_url, post_data)
 
-#  def check_home_timeline(self):
-#    i = 0
-#    while i < 5:
-#      new_home_timeline = self.home_timeline()
-#      new_tweetys = []
-#      if self.current_home_timeline:
-#        for status in new_home_timeline:
-#          #if status['created_at'] > self.current_last_status_time:
-#          if time.strptime(status['created_at'], "%a %b %d %H:%M:%S +0000 %Y") > self.current_last_status_time:
-#            print "==== found greater last time ========="
-#            print status['text']
-#            print status['created_at']
-#            print "============="
-#            new_tweetys.append(status)
-#        logp("Thread - Changed home timeline")
-#        self.current_home_timeline = new_home_timeline
-#        message = "".join (["[%s] %s\n" % (status['user']['name'], status['text']) for status in new_tweetys])
-#        logp(message)
-#        #self.show_popup_message(message)
-#        self.current_last_status_time = time.strptime(self.current_home_timeline[0]['created_at'], "%a %b %d %H:%M:%S +0000 %Y")
-#        print "==== novo greater last time ========="
-#        print status['text']
-#        print status['created_at']
-#        print "============="
-#        #self.current_last_status_time = self.current_home_timeline[0]['created_at']
-#      else:
-#        logp("Thread - Fetching home timeline")
-#        self.current_home_timeline = new_home_timeline
-#      time.sleep(20)
-#      i+=1
 
   def home_timeline(self):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -202,6 +186,27 @@ class Applet(CDApplet):
     self.icon.SetQuickInfo("")
 
   # Twitter methods
+  
+  # TODO: Encapsulate this method inside the StreamAPI class
+  # TODO: Make available a "Animation" option upon a new tweet arrival
+  def check_twitter_user_stream(self):
+    while True:
+      time.sleep(30)                                              # TODO: variable for this!
+      logp("Checking Stream ...")
+      if not self.api.stream_content.empty():
+        self.tweets_on_the_user_stream_queue = self.api.stream_content.qsize()
+        logp("There are new %d items on the Stream Queue" % self.tweets_on_the_user_stream_queue)
+        self.icon.SetQuickInfo(str(self.tweets_on_the_user_stream_queue))
+
+  def show_new_tweets(self):
+    self.inform_start_of_waiting_process()
+    message = ''
+    while not self.api.stream_content.empty():
+      tweet = self.api.stream_content.get()
+      message += "[<b>%s</b>] %s\n" % (tweet['user']['name'], tweet['text'])
+    dialog = {'use-markup':True}
+    self.inform_end_of_waiting_process()
+    self.show_popup_message(message, dialog)
 
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
@@ -328,6 +333,17 @@ class Applet(CDApplet):
         'icon'  : os.path.abspath("./data/credentials.png")
     })
     self.icon.AddMenuItems(credentials_menu)
+    
+  # TODO: As soon as clean up the API code, the label will be: "New tweets (%d)" % self.tweets_on_the_user_stream_queue
+  def build_user_stream_menu(self):
+    user_stream_menu = []
+    user_stream_menu.append ({
+        'type'  : CDApplet.MENU_ENTRY,
+        'label' : _("New tweets"),
+        'id'    : self.user_stream_menu_id,
+        'icon'  : os.path.abspath("./data/new.png")
+    })
+    self.icon.AddMenuItems(user_stream_menu)
 
   def __init__(self):
     self.user = User()
@@ -340,6 +356,10 @@ class Applet(CDApplet):
 
     self.direct_messages_menu_id = 1000
     self.credentials_menu_id = 2000
+    self.user_stream_menu_id = 3000
+    
+    self.tweets_on_the_user_stream_queue = 0
+    # TODO: Array with the two threads here
 
     CDApplet.__init__(self)                                                           # call CDApplet interface init
 
@@ -352,7 +372,12 @@ class Applet(CDApplet):
     else:                                                                             # user not found
       logp("User '%s' found" % self.user.screen_name)
       self.api = TwitterAPI(self.user.access_key, self.user.access_secret)            # getting control over the api
-
+      thread = threading.Thread(target=self.check_twitter_user_stream)
+      thread.start()
+  
+  #def end(self):
+    # TODO: Iterate over the array of threads and join them here
+  
   # TODO: Fix it!
   def reload(self):
     self.read_user_data()
@@ -392,12 +417,16 @@ class Applet(CDApplet):
   def on_build_menu(self):
     self.build_direct_messages_menu()
     self.build_credentials_menu()
+    if self.tweets_on_the_user_stream_queue > 0:
+      self.build_user_stream_menu()
 
   def on_menu_select(self, selected_menu):
     if selected_menu == self.direct_messages_menu_id:
       self.show_direct_messages()
     elif selected_menu == self.credentials_menu_id:
       self.show_credentials()
+    elif selected_menu == self.user_stream_menu_id:
+      self.show_new_tweets()
 
 if __name__ == '__main__':
   Applet().run()
