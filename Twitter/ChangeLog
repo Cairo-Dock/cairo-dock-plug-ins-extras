@@ -1,3 +1,4 @@
+0.1.1: (March/6/2012): Using callback instead of a thread to check for the new tweet from the stream, faster, better, and cleaner. Fixed new tweets count that was not being updated. Increased modularization.
 0.1: (March/5/2012): Finally, after long work, compatible with Twitter Stream, and using it to show the tweets that just arrived. Changed the "received" icon for direct messages, and added the "new" for new tweets, both are from the icon pack Basic made by Pixel Maker, http://pixel-mixer.com
 0.0.3: (January/14/2012): Possible to see user's info. Translation directives were added on the strings.
 0.0.2: (January/8/2012): Possible to see the received direct messages.

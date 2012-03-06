@@ -23,6 +23,7 @@
 # Paste this number on the next dialog box will be shown.
 # The plugin is going to inform that you are successfully connected.
 
+# To see the received tweets right-click on the icon -> Twitter -> New tweets.
 # To see the received direct messages right-click on the icon -> Twitter -> Received direct messages
 # To see some user's info right-click on the icon -> Twitter -> Info
 
@@ -76,41 +77,32 @@ class TwitterOauth:
     access_token_data = dict((x, y) for x, y in urlparse.parse_qsl(response))                 # tuple to dict
     return access_token_data['oauth_token'], access_token_data['oauth_token_secret']
     
-# TODO: Separate things starting with this, check also the possible inheritance with TwitterOauth
-#class API():
-#  def __init__(self, access_key, access_secret):
-#    self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
-#    consumer_key, consumer_secret = read_consumer_key_and_secret()
-#    self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
-#    self.access_token = oauth.OAuthToken(access_key, access_secret)
-
-#class TwitterAPI(API):
-class TwitterAPI:
+# TODO: Check also the possible inheritance with TwitterOauth
+class API():
   def __init__(self, access_key, access_secret):
-    #API.__init__(self, access_key, access_secret)
-    self.update_url             = 'http://twitter.com/statuses/update.json'
-    self.home_timeline_url      = 'http://twitter.com/statuses/home_timeline.json'
-    self.direct_messages_url    = 'https://api.twitter.com/1/direct_messages.json'
-    self.verify_credentials_url = 'https://api.twitter.com/1/account/verify_credentials.json'
-    self.user_stream_url        = "https://userstream.twitter.com/2/user.json"
-
     self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
     consumer_key, consumer_secret = read_consumer_key_and_secret()
     self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
     self.access_token = oauth.OAuthToken(access_key, access_secret)
-    
-    thread = threading.Thread(target=self.tweety_streaming)
+
+class TwitterStreamAPI(API):
+  def __init__(self, access_key, access_secret, callback):
+    API.__init__(self, access_key, access_secret)
+
+    self.user_stream_url = "https://userstream.twitter.com/2/user.json"
+    self.callback = callback                                                                  # this method is going to be called as soon as a new entry on the stream appears
+    thread = threading.Thread(target=self.tweet_streaming)
     thread.start()
-    self.stream_content = Queue.Queue()
-    
-  def tweety_streaming(self):
+
+  def tweet_streaming(self):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
                                                                token = self.access_token,
                                                                http_url = self.user_stream_url)
     oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    #stream(oauth_request.to_url())
+
     url = oauth_request.to_url()
     req = urllib2.urlopen(url)
+    
     buffer = ''
     while True:
       chunk = req.read(1)
@@ -124,12 +116,20 @@ class TwitterAPI:
         content = tweets[0]
         if "text" in content:
           content = simplejson.loads(content)
-          self.stream_content.put(content)
-          self.stream_content.task_done()
-          print content
+          logp("Received from Twitter Stream: %s" % content)
+          self.callback(content)                                                              # at the moment this method is called 'on_receive_new_tweet_callback'
         buffer = tweets[1]
+ 
+class TwitterAPI(API):
+  def __init__(self, access_key, access_secret):
+    API.__init__(self, access_key, access_secret)
+    
+    self.update_url             = 'http://twitter.com/statuses/update.json'
+    self.home_timeline_url      = 'http://twitter.com/statuses/home_timeline.json'
+    self.direct_messages_url    = 'https://api.twitter.com/1/direct_messages.json'
+    self.verify_credentials_url = 'https://api.twitter.com/1/account/verify_credentials.json'
 
-  def tweety(self, message):                                                                  # popularly "send a tweety"
+  def tweet(self, message):                                                                   # popularly "send a tweet"
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
                                                                token = self.access_token,
                                                                http_url = self.update_url,
@@ -186,23 +186,21 @@ class Applet(CDApplet):
     self.icon.SetQuickInfo("")
 
   # Twitter methods
-  
-  # TODO: Encapsulate this method inside the StreamAPI class
+
   # TODO: Make available a "Animation" option upon a new tweet arrival
-  def check_twitter_user_stream(self):
-    while True:
-      time.sleep(30)                                              # TODO: variable for this!
-      logp("Checking Stream ...")
-      if not self.api.stream_content.empty():
-        self.tweets_on_the_user_stream_queue = self.api.stream_content.qsize()
-        logp("There are new %d items on the Stream Queue" % self.tweets_on_the_user_stream_queue)
-        self.icon.SetQuickInfo(str(self.tweets_on_the_user_stream_queue))
+  # This method is a callback that is called as soon as a new tweet that arrives on the stream
+  # It is passed as parameter when creating the instance for the TwitterStreamAPI
+  # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_tweet_callback)
+  def on_receive_new_tweet_callback(self, tweet):
+    logp("Inserting new tweet on the stream Queue: %s" % tweet)
+    self.stream.put(tweet)                                                                                              # put the new tweet on the stream queue
+    self.icon.SetQuickInfo(str(self.stream.qsize()))                                                                    # update the new tweets counter on the icon
 
   def show_new_tweets(self):
     self.inform_start_of_waiting_process()
     message = ''
-    while not self.api.stream_content.empty():
-      tweet = self.api.stream_content.get()
+    while not self.stream.empty():                                                                                      # iterate on the stream composing the message
+      tweet = self.stream.get()
       message += "[<b>%s</b>] %s\n" % (tweet['user']['name'], tweet['text'])
     dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
@@ -230,12 +228,11 @@ class Applet(CDApplet):
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
 
-  def tweety(self, message):                                                                  # popularly "send a tweety"
+  def tweet(self, message):                                                                   # popularly "send a tweet"
     self.inform_start_of_waiting_process()
     self.api.update_status(message)
     self.inform_end_of_waiting_process()
 
-  # TODO
   def show_credentials(self):
     self.inform_start_of_waiting_process()
     credentials = self.api.verify_credentials()
@@ -246,11 +243,11 @@ class Applet(CDApplet):
 
   # Applet methods
 
-  def ask_for_tweety(self):
+  def ask_for_tweet(self):
     dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':140}                                     # 140 characters max, a tweety :)
-    self.show_popup_message((_("%s, send a tweety")) % self.user.screen_name, dialog, widget)
-    self.dialog_type = self.responding_tweety
+    widget = {'widget-type':'text-entry', 'nb-chars':140}                                     # 140 characters max, a tweet :)
+    self.show_popup_message((_("%s, send a tweet")) % self.user.screen_name, dialog, widget)
+    self.dialog_type = self.responding_tweet
 
   # TODO: Implement it as a config file using screen_name as section index
   def read_user_data(self):
@@ -350,30 +347,29 @@ class Applet(CDApplet):
     self.user_file = os.path.abspath(os.path.join(os.getcwd(), '..','..','..','.twitter_users'))  # ~/.config/.twitter_users
     self.twitter_auth = TwitterOauth()
     self.api = None
+    self.stream_api = None
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
-    self.responding_success, self.responding_tweety, self.responding_initial_informations) = range(6)
+    self.responding_success, self.responding_tweet, self.responding_initial_informations) = range(6)
     self.dialog_type = None
 
     self.direct_messages_menu_id = 1000
     self.credentials_menu_id = 2000
     self.user_stream_menu_id = 3000
     
-    self.tweets_on_the_user_stream_queue = 0
-    # TODO: Array with the two threads here
+    self.stream = Queue.Queue()
 
-    CDApplet.__init__(self)                                                           # call CDApplet interface init
+    CDApplet.__init__(self)                                                                                                 # call CDApplet interface init
 
   # Inherited methods from CDApplet
   def begin(self):
     logp("Looking for user ...")
-    if not self.read_user_data():                                                     # first time for the user
+    if not self.read_user_data():                                                                                           # first time for the user
       logm("User not found")
-      self.show_initial_informations()                                                # start the wizard
-    else:                                                                             # user not found
+      self.show_initial_informations()                                                                                      # start the wizard
+    else:                                                                                                                   # user not found
       logp("User '%s' found" % self.user.screen_name)
-      self.api = TwitterAPI(self.user.access_key, self.user.access_secret)            # getting control over the api
-      thread = threading.Thread(target=self.check_twitter_user_stream)
-      thread.start()
+      self.api = TwitterAPI(self.user.access_key, self.user.access_secret)                                                  # getting control over the api
+      self.stream_api = TwitterStreamAPI(self.user.access_key, self.user.access_secret, self.on_receive_new_tweet_callback) # setting the callback to receive the data of every entry on the stream
   
   #def end(self):
     # TODO: Iterate over the array of threads and join them here
@@ -404,12 +400,12 @@ class Applet(CDApplet):
           self.show_popup_successful_connection()
         else:
           logm("A problem has occurred while getting access to the API")
-      elif self.dialog_type == self.responding_tweety:
-        logp("Sending a tweety '%s'" % content)
-        self.api.tweety(content)
+      elif self.dialog_type == self.responding_tweet:
+        logp("Sending a tweet '%s'" % content)
+        self.api.tweet(content)
 
   def on_click(self, key):
-    self.ask_for_tweety()
+    self.ask_for_tweet()
 
   def on_middle_click(self):
     self.show_home_timeline()
@@ -417,7 +413,7 @@ class Applet(CDApplet):
   def on_build_menu(self):
     self.build_direct_messages_menu()
     self.build_credentials_menu()
-    if self.tweets_on_the_user_stream_queue > 0:
+    if self.stream.qsize() > 0:
       self.build_user_stream_menu()
 
   def on_menu_select(self, selected_menu):
