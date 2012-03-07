@@ -27,14 +27,12 @@
 # To see the received direct messages right-click on the icon -> Twitter -> Received direct messages
 # To see some user's info right-click on the icon -> Twitter -> Info
 
-import urlparse, os, webbrowser, simplejson, threading, Queue, time, urllib2
+import os, webbrowser, simplejson, threading, Queue, urllib2
 from oauth import oauth
 from http import post, get #, stream
 from util import *
 from CDApplet import CDApplet, _
 # TODO import ConfigParser later conver files to config syntax
-# from threading import Thread
-# import time
 
 class TwitterOauth:
   def __init__(self):
@@ -73,9 +71,8 @@ class TwitterOauth:
     oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
     url = oauth_request.to_url()
     response = get(url)
-    self.access_token = oauth.OAuthToken.from_string(response)
-    access_token_data = dict((x, y) for x, y in urlparse.parse_qsl(response))                 # tuple to dict
-    return access_token_data['oauth_token'], access_token_data['oauth_token_secret']
+    self.access_token = oauth.OAuthToken.from_string(response)                              # create both .key and .secret attributes
+    return self.access_token.key, self.access_token.secret
     
 # TODO: Check also the possible inheritance with TwitterOauth
 class API():
@@ -107,7 +104,6 @@ class TwitterStreamAPI(API):
     while True:
       chunk = req.read(1)
       if not chunk:
-        print buffer
         break
 
       buffer += chunk
@@ -158,7 +154,6 @@ class TwitterAPI(API):
     oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
     url = oauth_request.to_url()
     response = get(url)
-    print simplejson.loads(response)[0]
     return simplejson.loads(response)
 
   def verify_credentials(self):
@@ -192,7 +187,7 @@ class Applet(CDApplet):
   # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_tweet_callback)
   # TODO: Make available an "Animation" option upon a new tweet arrival
   def on_receive_new_tweet_callback(self, tweet):
-    if 'screen_name' in tweet and not (tweet['screen_name'] == self.user.screen_name):                                
+    if not tweet['user']['screen_name'] == self.user.screen_name:
       logp("Inserting new tweet on the stream Queue: %s" % tweet)                                                       # not sent by the own user
       self.stream.put(tweet)                                                                                            # put the new tweet on the stream queue
       self.icon.SetQuickInfo(str(self.stream.qsize()))                                                                  # update the new tweets counter on the icon
