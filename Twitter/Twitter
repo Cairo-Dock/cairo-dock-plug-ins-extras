@@ -27,7 +27,7 @@
 # To see the received direct messages right-click on the icon -> Twitter -> Received direct messages
 # To see some user's info right-click on the icon -> Twitter -> Info
 
-import urlparse, os, webbrowser, simplejson, threading, Queue, time, urllib2, simplejson
+import urlparse, os, webbrowser, simplejson, threading, Queue, time, urllib2
 from oauth import oauth
 from http import post, get #, stream
 from util import *
@@ -91,8 +91,8 @@ class TwitterStreamAPI(API):
 
     self.user_stream_url = "https://userstream.twitter.com/2/user.json"
     self.callback = callback                                                                  # this method is going to be called as soon as a new entry on the stream appears
-    thread = threading.Thread(target=self.tweet_streaming)
-    thread.start()
+    thread = threading.Thread(target=self.tweet_streaming)                                    # keep checking for new entries on the stream
+    thread.start()                                                                            # run, forrest run
 
   def tweet_streaming(self):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -187,14 +187,15 @@ class Applet(CDApplet):
 
   # Twitter methods
 
-  # TODO: Make available a "Animation" option upon a new tweet arrival
   # This method is a callback that is called as soon as a new tweet that arrives on the stream
   # It is passed as parameter when creating the instance for the TwitterStreamAPI
   # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_tweet_callback)
+  # TODO: Make available an "Animation" option upon a new tweet arrival
   def on_receive_new_tweet_callback(self, tweet):
-    logp("Inserting new tweet on the stream Queue: %s" % tweet)
-    self.stream.put(tweet)                                                                                              # put the new tweet on the stream queue
-    self.icon.SetQuickInfo(str(self.stream.qsize()))                                                                    # update the new tweets counter on the icon
+    if 'screen_name' in tweet and not (tweet['screen_name'] == self.user.screen_name):                                
+      logp("Inserting new tweet on the stream Queue: %s" % tweet)                                                       # not sent by the own user
+      self.stream.put(tweet)                                                                                            # put the new tweet on the stream queue
+      self.icon.SetQuickInfo(str(self.stream.qsize()))                                                                  # update the new tweets counter on the icon
 
   def show_new_tweets(self):
     self.inform_start_of_waiting_process()
