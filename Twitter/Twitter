@@ -31,6 +31,7 @@ import os, webbrowser, simplejson, threading, Queue, urllib2
 from oauth import oauth
 from http import post, get #, stream
 from util import *
+import emblem
 from CDApplet import CDApplet, _
 # TODO import ConfigParser later conver files to config syntax
 
@@ -38,7 +39,7 @@ class TwitterOauth:
   def __init__(self):
     self.request_token_url  = 'https://twitter.com/oauth/request_token'
     self.access_token_url   = 'https://twitter.com/oauth/access_token'
-    self.authorize_url      = 'http://twitter.com/oauth/authorize'
+    self.authorize_url      = 'https://twitter.com/oauth/authorize'
 
     consumer_key, consumer_secret = read_consumer_key_and_secret()
     self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
@@ -71,7 +72,7 @@ class TwitterOauth:
     oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
     url = oauth_request.to_url()
     response = get(url)
-    self.access_token = oauth.OAuthToken.from_string(response)                              # create both .key and .secret attributes
+    self.access_token = oauth.OAuthToken.from_string(response)                                # create both .key and .secret attributes
     return self.access_token.key, self.access_token.secret
     
 # TODO: Check also the possible inheritance with TwitterOauth
@@ -99,15 +100,15 @@ class TwitterStreamAPI(API):
 
     url = oauth_request.to_url()
     req = urllib2.urlopen(url)
-    
+   
     buffer = ''
     while True:
-      chunk = req.read(1)
+      chunk = req.read(1)                                                                     # read character per character from the connection ...
       if not chunk:
         break
 
       buffer += chunk
-      tweets = buffer.split("\n",1)
+      tweets = buffer.split("\n",1)                                                           # ... until find the end of a tweet marked with a '\n'
       if len(tweets) > 1:
         content = tweets[0]
         if "text" in content:
@@ -190,7 +191,9 @@ class Applet(CDApplet):
     if not tweet['user']['screen_name'] == self.user.screen_name:
       logp("Inserting new tweet on the stream Queue: %s" % tweet)                                                       # not sent by the own user
       self.stream.put(tweet)                                                                                            # put the new tweet on the stream queue
-      self.icon.SetQuickInfo(str(self.stream.qsize()))                                                                  # update the new tweets counter on the icon
+      self.emblem.update(self.stream.qsize())                                                                           # create the emblem with the counter
+      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)                   # add emblem
+      #self.icon.SetQuickInfo(str(self.stream.qsize()))                                                                  # update the new tweets counter on the icon
 
   def show_new_tweets(self):
     self.inform_start_of_waiting_process()
@@ -199,6 +202,7 @@ class Applet(CDApplet):
       tweet = self.stream.get()
       message += "[<b>%s</b>] %s\n" % (tweet['user']['name'], tweet['text'])
     dialog = {'use-markup':True}
+    self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)                                                                  # erase emblem
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
 
@@ -340,13 +344,14 @@ class Applet(CDApplet):
 
   def __init__(self):
     self.user = User()
-    self.user_file = os.path.abspath(os.path.join(os.getcwd(), '..','..','..','.twitter_users'))  # ~/.config/.twitter_users
+    self.user_file = os.path.abspath(os.path.join(os.getcwd(), '..','..','..','.twitter_users'        # ~/.config/.twitter_users
     self.twitter_auth = TwitterOauth()
     self.api = None
     self.stream_api = None
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
     self.responding_success, self.responding_tweet, self.responding_initial_informations) = range(6)
     self.dialog_type = None
+    self.emblem = emblem.Emblem()                                                                     # emblem maker, see emblem.py
 
     self.direct_messages_menu_id = 1000
     self.credentials_menu_id = 2000
@@ -367,12 +372,9 @@ class Applet(CDApplet):
       self.api = TwitterAPI(self.user.access_key, self.user.access_secret)                                                  # getting control over the api
       self.stream_api = TwitterStreamAPI(self.user.access_key, self.user.access_secret, self.on_receive_new_tweet_callback) # setting the callback to receive the data of every entry on the stream
   
-  #def end(self):
-    # TODO: Iterate over the array of threads and join them here
-  
   # TODO: Fix it!
-  def reload(self):
-    self.read_user_data()
+  #def reload(self):
+    #self.read_user_data()
 
   # Callbacks
   def on_answer_dialog(self, key, content):
