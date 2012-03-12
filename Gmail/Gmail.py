@@ -158,7 +158,7 @@ class Gmail(CDApplet):
             return
 
         # if so process the data
-        account = base64.b64decode(sub.strip('\n')).split()
+        account = base64.b64decode(sub.strip('\n')).split('\n')
 
         # check if the data is correct
         if len(account) != 2:
@@ -205,7 +205,7 @@ class Gmail(CDApplet):
             # open, encode and write to subscription file
             file = open(self.subpath, 'w')
             file.write(base64.b64encode(str(self.account['username']+ \
-            ' '+self.account['password'])))
+            '\n'+self.account['password'])))
             file.close()
             # run subscription check as double check
             self.check_subscription()
