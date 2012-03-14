@@ -24,14 +24,14 @@
 # The plugin is going to inform that you are successfully connected.
 
 # To see the received tweets right-click on the icon -> Twitter -> New tweets.
-# To see the received direct messages right-click on the icon -> Twitter -> Received direct messages
+# To see the received direct messages right-click on the icon -> Twitter -> Received direct messages. You can reply one of them just by left-clicking on it.
 # To see some user's info right-click on the icon -> Twitter -> Info
 
 import os, webbrowser, simplejson, threading, Queue, urllib2
 from oauth import oauth
 from http import post, get #, stream
 from util import *
-import emblem
+import emblem, menu
 from CDApplet import CDApplet, _
 # TODO import ConfigParser later conver files to config syntax
 
@@ -54,7 +54,7 @@ class TwitterOauth:
                                                                http_url = self.authorize_url)
     oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
     return oauth_request.to_url()
-  
+
   def get_unauthorized_request_token(self):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url = self.request_token_url)
     oauth_request.sign_request(self.signature_method, self.consumer, None)
@@ -103,39 +103,51 @@ class TwitterStreamAPI(API):
    
     buffer = ''
     while True:
-      chunk = req.read(1)                                                           # read character per character from the connection ...
+      chunk = req.read(1)                                               # read character per character from the connection ...
       if not chunk:
         break
 
       buffer += chunk
-      tweets = buffer.split("\n",1)                                                 # ... until find the end of a tweet marked with a '\n'
+      tweets = buffer.split("\n",1)                                     # ... until find the end of a tweet marked with a '\n'
       if len(tweets) > 1:
         content = tweets[0]
         if "text" in content:
           content = simplejson.loads(content)
           logp("Received from Twitter Stream: %s" % content)
-          self.callback(content)                                                    # at the moment this method is called 'on_receive_new_tweet_callback'
+          self.callback(content)                                        # at the moment this method is called 'on_receive_new_entry_into_stream_callback'
         buffer = tweets[1]
  
 class TwitterAPI(API):
   def __init__(self, access_key, access_secret):
     API.__init__(self, access_key, access_secret)
     
-    self.update_url             = 'http://twitter.com/statuses/update.json'
-    self.home_timeline_url      = 'http://twitter.com/statuses/home_timeline.json'
-    self.direct_messages_url    = 'https://api.twitter.com/1/direct_messages.json'
-    self.verify_credentials_url = 'https://api.twitter.com/1/account/verify_credentials.json'
+    self.update_url               = 'http://twitter.com/statuses/update.json'
+    self.home_timeline_url        = 'http://twitter.com/statuses/home_timeline.json'
+    self.direct_messages_url      = 'https://api.twitter.com/1/direct_messages.json'
+    self.new_direct_messages_url  = 'https://api.twitter.com/1/direct_messages/new.json'
+    self.verify_credentials_url   = 'https://api.twitter.com/1/account/verify_credentials.json'
 
   def tweet(self, message):                                                         # popularly "send a tweet"
+    params = {'status':message}
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
                                                                token = self.access_token,
                                                                http_url = self.update_url,
-                                                               parameters = {'status':message},
+                                                               parameters = params,
                                                                http_method = "POST")
     oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    post_data = oauth_request.to_postdata()
-    return post(self.update_url, post_data)
+    header = oauth_request.to_header()
+    post(self.update_url, params, header)
 
+  def new_direct_message(self, message, destinatary):
+    params = {'text':message, 'screen_name':destinatary}
+    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
+                                                               token = self.access_token,
+                                                               http_url = self.new_direct_messages_url,
+                                                               parameters = params,
+                                                               http_method = "POST")
+    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
+    header = oauth_request.to_header()
+    post(self.new_direct_messages_url, params, header)
 
   def home_timeline(self):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -167,6 +179,11 @@ class TwitterAPI(API):
     response = get(url) 
     return simplejson.loads(response)
 
+class Message:
+  def __init__(self, text, sender):
+    self.text = text
+    self.sender = sender
+
 class User:
   def __init__(self, screen_name="", access_key="", access_secret=""):
     self.screen_name = screen_name
@@ -183,18 +200,22 @@ class Applet(CDApplet):
 
   # Twitter methods
 
-  # This method is a callback that is called as soon as a new tweet that arrives on the stream
+  # This method is a callback that is called as soon as a new entry arrives on the stream
   # It is passed as parameter when creating the instance for the TwitterStreamAPI
-  # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_tweet_callback)
-  # TODO: Make available an "Animation" option upon a new tweet arrival
-  def on_receive_new_tweet_callback(self, tweet):
-    if not tweet['user']['screen_name'] == self.user.screen_name:
-      logp("Inserting new tweet on the stream Queue: %s" % tweet)                   # not sent by the own user
-      self.stream.put(tweet)                                                        # put the new tweet on the stream queue
-      self.emblem.update(self.stream.qsize())                                       # create the emblem with the counter
-      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
-      #self.icon.SetQuickInfo(str(self.stream.qsize()))                             # update the new tweets counter on the icon
+  # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_entry_into_stream_callback)
+  # TODO: Make available an "Animation" option upon a new entry arrival
+  # TODO: Consider the direct messages arriving on the stream
+  #       Create two Queues to deal with tweets and messages separately
+  def on_receive_new_entry_into_stream_callback(self, entry):
+    #if 'direct_message' in entry:                                                    #TODO direct message
+    if 'user' in entry:                                                               # tweet
+      if not entry['user']['screen_name'] == self.user.screen_name:
+        logp("Inserting new tweet on the stream Queue: %s" % entry)                   # not sent by the own user
+        self.stream.put(entry)                                                        # put the new tweet on the stream queue
+        self.emblem.update(self.stream.qsize())                                       # create the emblem with the counter
+        self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
 
+  # TODO: Use the Menu class
   def show_new_tweets(self):
     self.inform_start_of_waiting_process()
     message = ''
@@ -206,11 +227,12 @@ class Applet(CDApplet):
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
 
+  # TODO: Use the Menu class
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
     timeline = self.api.home_timeline()
     if len(timeline) > 0:
-      message = "".join (["[<b>%s</b>] %s\n" % (status['user']['name'], status['text']) for status in timeline])
+      message = "".join (["[<b>%s</b>] %s\n" % (status['user']['screen_name'], status['text']) for status in timeline])
     else:
       message = _("Oh, dear, your timeline is empty :-(")
     dialog = {'use-markup':True}
@@ -220,13 +242,30 @@ class Applet(CDApplet):
   def show_direct_messages(self):
     self.inform_start_of_waiting_process()
     messages = self.api.direct_messages()
+    # message = ""
+    itens = []
     if len(messages) > 0:
-      message = "".join (["[<b>%s</b>] %s\n" % (status['sender']['name'], status['text']) for status in messages])
+      # Message (content of text, nick name of who sent it)
+      ([itens.append(Message(status['text'], status['sender']['screen_name'])) for status in messages])
+        #message += "[<b>%s</b>] %s\n" % (sender, text)
+      direct_messages_list_menu = menu.Menu(itens, self.on_direct_messages_list_menu_clicked)
+      direct_messages_list_menu.pop_up(self.icon)
+      #message = "".join (["[<b>%s</b>] %s\n" % (status['sender']['screen_name'], status['text']) for status in messages])
     else:
       message = _("Oh, dear, you do not have direct messages :-(")
     dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
-    self.show_popup_message(message, dialog)
+    #self.show_popup_message(message, dialog)
+    
+  def on_direct_messages_list_menu_clicked(self, widget):
+    self.ask_for_direct_message_reply(widget.get_label())                           # label holds the sender of the message, reply to him/her now
+
+  def ask_for_direct_message_reply(self, destinatary):
+    dialog = {'buttons':'ok;cancel'}
+    widget = {'widget-type':'text-entry', 'nb-chars':140}                           # 140 characters max, a direct message
+    self.show_popup_message((_("%s, write a reply to %s")) % (self.user.screen_name, destinatary), dialog, widget)
+    self.dialog_type = self.responding_sending_direct_message_reply
+    self.replying_direct_message_to = destinatary
 
   def tweet(self, message):                                                         # popularly "send a tweet"
     self.inform_start_of_waiting_process()
@@ -349,7 +388,8 @@ class Applet(CDApplet):
     self.api = None
     self.stream_api = None
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
-    self.responding_success, self.responding_tweet, self.responding_initial_informations) = range(6)
+    self.responding_success, self.responding_tweet, self.responding_initial_informations,
+    self.responding_sending_direct_message_reply) = range(7)
     self.dialog_type = None
     self.emblem = emblem.Emblem()                                                                     # emblem maker, see emblem.py
 
@@ -358,6 +398,7 @@ class Applet(CDApplet):
     self.user_stream_menu_id = 3000
     
     self.stream = Queue.Queue()
+    #self.direct_messages = {}
 
     CDApplet.__init__(self)                                                                           # call CDApplet interface init
 
@@ -371,7 +412,7 @@ class Applet(CDApplet):
       logp("User '%s' found" % self.user.screen_name)
       self.api = TwitterAPI(self.user.access_key, self.user.access_secret)                            # getting control over the api
       # setting the callback to receive the data of every entry on the stream
-      self.stream_api = TwitterStreamAPI(self.user.access_key, self.user.access_secret, self.on_receive_new_tweet_callback)
+      self.stream_api = TwitterStreamAPI(self.user.access_key, self.user.access_secret, self.on_receive_new_entry_into_stream_callback)
 
   #def reload(self):
     #self.read_user_data()
@@ -401,6 +442,9 @@ class Applet(CDApplet):
       elif self.dialog_type == self.responding_tweet:
         logp("Sending a tweet '%s'" % content)
         self.api.tweet(content)
+      elif self.dialog_type == self.responding_sending_direct_message_reply:
+        logp("Sending a direct message '%s'" % content)
+        self.api.new_direct_message(content, self.replying_direct_message_to)
 
   def on_click(self, key):
     self.ask_for_tweet()

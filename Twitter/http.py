@@ -5,32 +5,36 @@
 # Author: Eduardo Mucelli Rezende Oliveira
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
 
-import urllib2, json
+import urllib2, urllib
 from util import logp, logm
 
 # HTTP GET
 def get(url, tries = 0):
-	while True:
-		try:
-			logp("Trying to connect to %s" % url)
-			request = urllib2.Request(url)
-			response = urllib2.urlopen(request)
-			return response.read()
-		except urllib2.HTTPError:
-			tries += 1
-			if tries > 3:
-				raise
+  while True:
+    try:
+      logp("GET: Trying to connect to %s" % url)
+      request = urllib2.Request(url)
+      response = urllib2.urlopen(request)
+      return response.read()
+    except urllib2.HTTPError:
+      tries += 1
+      if tries > 3:
+        raise
 
 # HTTP POST
-def post(url, post_data, tries = 0):
-	while True:
-		try:
-			return urllib2.urlopen(url, post_data)
-		except urllib2.HTTPError:
-			tries += 1
-			if tries > 3:
-				raise
-				
+def post(url, params, header, tries = 0):
+  while True:
+    try:
+      logp("POST: Trying to connect to %s" % url)
+      data = urllib.urlencode(params)
+      request = urllib2.Request(url, data, headers=header)
+      response = urllib2.urlopen(request)
+      return response.read()
+    except urllib2.HTTPError:
+      tries += 1
+      if tries > 3:
+        raise
+        
 #def stream(url):
 #  req = urllib2.urlopen(url)
 #  buffer = ''
