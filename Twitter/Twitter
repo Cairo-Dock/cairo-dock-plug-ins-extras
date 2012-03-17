@@ -127,57 +127,35 @@ class TwitterAPI(API):
     self.new_direct_messages_url  = 'https://api.twitter.com/1/direct_messages/new.json'
     self.verify_credentials_url   = 'https://api.twitter.com/1/account/verify_credentials.json'
 
-  def tweet(self, message):                                                         # popularly "send a tweet"
-    params = {'status':message}
+  def dispatch(self, url, mode, parameters={}):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               token = self.access_token,
-                                                               http_url = self.update_url,
-                                                               parameters = params,
-                                                               http_method = "POST")
+                                                             token = self.access_token,
+                                                             http_url = url,
+                                                             parameters = parameters,
+                                                             http_method = mode)
     oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    header = oauth_request.to_header()
-    post(self.update_url, params, header)
+    if mode == "GET":
+      url = oauth_request.to_url()
+      response = get(url) 
+      return simplejson.loads(response)
+    elif mode == "POST":
+      header = oauth_request.to_header()
+      post(url, parameters, header)  
+      
+  def tweet(self, message):                                                         # popularly "send a tweet"
+    self.dispatch(self.update_url, "POST", {'status':message})
 
   def new_direct_message(self, message, destinatary):
-    params = {'text':message, 'screen_name':destinatary}
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               token = self.access_token,
-                                                               http_url = self.new_direct_messages_url,
-                                                               parameters = params,
-                                                               http_method = "POST")
-    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    header = oauth_request.to_header()
-    post(self.new_direct_messages_url, params, header)
+    self.dispatch(self.new_direct_messages_url, "POST", {'text':message, 'screen_name':destinatary})
 
   def home_timeline(self):
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               token = self.access_token,
-                                                               http_url = self.home_timeline_url,
-                                                               http_method = "GET")
-    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    url = oauth_request.to_url()
-    response = get(url) 
-    return simplejson.loads(response)
+    return self.dispatch(self.home_timeline_url, "GET")
 
   def direct_messages(self):
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               token = self.access_token,
-                                                               http_url = self.direct_messages_url,
-                                                               http_method = "GET")
-    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    url = oauth_request.to_url()
-    response = get(url)
-    return simplejson.loads(response)
+    return self.dispatch(self.direct_messages_url, "GET")
 
   def verify_credentials(self):
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               token = self.access_token,
-                                                               http_url = self.verify_credentials_url,
-                                                               http_method = "GET")
-    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    url = oauth_request.to_url()
-    response = get(url) 
-    return simplejson.loads(response)
+    return self.dispatch(self.verify_credentials_url, "GET")
 
 class Message:
   def __init__(self, text, sender):
@@ -211,16 +189,16 @@ class Applet(CDApplet):
     if 'user' in entry:                                                               # tweet
       if not entry['user']['screen_name'] == self.user.screen_name:
         logp("Inserting new tweet on the stream Queue: %s" % entry)                   # not sent by the own user
-        self.stream.put(entry)                                                        # put the new tweet on the stream queue
-        self.emblem.update(self.stream.qsize())                                       # create the emblem with the counter
+        self.tweet_stream.put(entry)                                                        # put the new tweet on the stream queue
+        self.emblem.update(self.tweet_stream.qsize())                                       # create the emblem with the counter
         self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
 
   # TODO: Use the Menu class
   def show_new_tweets(self):
     self.inform_start_of_waiting_process()
     message = ''
-    while not self.stream.empty():                                                  # iterate on the stream composing the message
-      tweet = self.stream.get()
+    while not self.tweet_stream.empty():                                                  # iterate on the stream composing the message
+      tweet = self.tweet_stream.get()
       message += "[<b>%s</b>] %s\n" % (tweet['user']['name'], tweet['text'])
     dialog = {'use-markup':True}
     self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)                              # erase emblem
@@ -228,6 +206,7 @@ class Applet(CDApplet):
     self.show_popup_message(message, dialog)
 
   # TODO: Use the Menu class
+  # TODO: Add an option on the context menu for Home Timeline
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
     timeline = self.api.home_timeline()
@@ -350,6 +329,7 @@ class Applet(CDApplet):
     widget_attributes.update(widget)
     self.icon.PopupDialog (dialog_attributes, widget_attributes)
 
+  # TODO: As soon as the message_stream is done, put _("Received direct messages (%d)" % % self.message_stream.qsize())
   def build_direct_messages_menu(self):
     direct_messages_menu = []
     direct_messages_menu.append ({
@@ -370,16 +350,15 @@ class Applet(CDApplet):
     })
     self.icon.AddMenuItems(credentials_menu)
     
-  # TODO: As soon as clean up the API code, the label will be: "New tweets (%d)" % self.tweets_on_the_user_stream_queue
-  def build_user_stream_menu(self):
-    user_stream_menu = []
-    user_stream_menu.append ({
+  def build_tweet_stream_menu(self):
+    tweet_stream_menu = []
+    tweet_stream_menu.append ({
         'type'  : CDApplet.MENU_ENTRY,
-        'label' : _("New tweets"),
-        'id'    : self.user_stream_menu_id,
+        'label' : _("New tweets (%d)" % self.tweet_stream.qsize()),
+        'id'    : self.tweet_stream_menu_id,
         'icon'  : os.path.abspath("./data/new.png")
     })
-    self.icon.AddMenuItems(user_stream_menu)
+    self.icon.AddMenuItems(tweet_stream_menu)
 
   def __init__(self):
     self.user = User()
@@ -395,9 +374,11 @@ class Applet(CDApplet):
 
     self.direct_messages_menu_id = 1000
     self.credentials_menu_id = 2000
-    self.user_stream_menu_id = 3000
+    self.tweet_stream_menu_id = 3000
     
-    self.stream = Queue.Queue()
+    #self.stream = Queue.Queue()
+    self.tweet_stream = Queue.Queue()
+    self.messages_stream = Queue.Queue()
     #self.direct_messages = {}
 
     CDApplet.__init__(self)                                                                           # call CDApplet interface init
@@ -455,15 +436,15 @@ class Applet(CDApplet):
   def on_build_menu(self):
     self.build_direct_messages_menu()
     self.build_credentials_menu()
-    if self.stream.qsize() > 0:
-      self.build_user_stream_menu()
+    if self.tweet_stream.qsize() > 0:
+      self.build_tweet_stream_menu()
 
   def on_menu_select(self, selected_menu):
     if selected_menu == self.direct_messages_menu_id:
       self.show_direct_messages()
     elif selected_menu == self.credentials_menu_id:
       self.show_credentials()
-    elif selected_menu == self.user_stream_menu_id:
+    elif selected_menu == self.tweet_stream_menu_id:
       self.show_new_tweets()
 
 if __name__ == '__main__':
