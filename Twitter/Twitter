@@ -15,7 +15,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #  GNU General Public License for more details.
 
-# This applet provides for Cairo-Dock an interface with Twitter
+# This applet provides Cairo-Dock an interface with Twitter
 
 # On the first time, the applet is going to ask your nickname and authorization to connect with Twitter.
 # The applet is going to open your browser with the authorization page
@@ -23,8 +23,8 @@
 # Paste this number on the next dialog box will be shown.
 # The plugin is going to inform that you are successfully connected.
 
-# To see the received tweets right-click on the icon -> Twitter -> New tweets.
-# To see the received direct messages right-click on the icon -> Twitter -> Received direct messages. You can reply one of them just by left-clicking on it.
+# To see the received tweets right-click on the icon -> Twitter -> [New] tweets.
+# To see the received direct messages right-click on the icon -> Twitter -> [New] direct messages. You can reply one of them just by left-clicking on it.
 # To see some user's info right-click on the icon -> Twitter -> Info
 
 import os, webbrowser, simplejson, threading, Queue, urllib2
@@ -126,7 +126,8 @@ class TwitterAPI(API):
     self.direct_messages_url      = 'https://api.twitter.com/1/direct_messages.json'
     self.new_direct_messages_url  = 'https://api.twitter.com/1/direct_messages/new.json'
     self.verify_credentials_url   = 'https://api.twitter.com/1/account/verify_credentials.json'
-
+    self.user_timeline_url        = 'http://api.twitter.com/1/statuses/user_timeline.json'
+    
   def dispatch(self, url, mode, parameters={}):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
                                                              token = self.access_token,
@@ -150,6 +151,9 @@ class TwitterAPI(API):
 
   def home_timeline(self):
     return self.dispatch(self.home_timeline_url, "GET")
+    
+  def user_timeline(self):
+    return self.dispatch(self.user_timeline_url, "GET")
 
   def direct_messages(self):
     return self.dispatch(self.direct_messages_url, "GET")
@@ -175,38 +179,62 @@ class Applet(CDApplet):
 
   def inform_end_of_waiting_process(self):
     self.icon.SetQuickInfo("")
+    
+  def play_alert_sound(self):
+    os.popen('aplay %s' % os.path.abspath("./data/alert.wav"))
 
   # Twitter methods
 
   # This method is a callback that is called as soon as a new entry arrives on the stream
-  # It is passed as parameter when creating the instance for the TwitterStreamAPI
+  # The method is passed as parameter when creating the instance for the TwitterStreamAPI
   # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_entry_into_stream_callback)
   # TODO: Make available an "Animation" option upon a new entry arrival
-  # TODO: Consider the direct messages arriving on the stream
-  #       Create two Queues to deal with tweets and messages separately
   def on_receive_new_entry_into_stream_callback(self, entry):
-    #if 'direct_message' in entry:                                                    #TODO direct message
-    if 'user' in entry:                                                               # tweet
-      if not entry['user']['screen_name'] == self.user.screen_name:
-        logp("Inserting new tweet on the stream Queue: %s" % entry)                   # not sent by the own user
+    if 'user' in entry:                                                                     # tweet
+      if not entry['user']['screen_name'] == self.user.screen_name:                         # not sent by the own user
+        logp("Inserting new tweet on the stream Queue: %s" % entry)
         self.tweet_stream.put(entry)                                                        # put the new tweet on the stream queue
-        self.emblem.update(self.tweet_stream.qsize())                                       # create the emblem with the counter
-        self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
+        self.play_alert_sound()
+    elif 'direct_message' in entry:                                                         # direct messages
+      if not entry['direct_message']['sender']['screen_name'] == self.user.screen_name:     # not sent by the own user
+        logp("Inserting new message on the message Queue: %s" % entry)
+        self.message_stream.put(entry)                                                      # put the new message on the message queue
+        self.play_alert_sound()
+
+    self.emblem.update(self.tweet_stream.qsize() + self.message_stream.qsize())             # create the emblem with the counter
+    self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
 
   # TODO: Use the Menu class
   def show_new_tweets(self):
     self.inform_start_of_waiting_process()
     message = ''
-    while not self.tweet_stream.empty():                                                  # iterate on the stream composing the message
+    while not self.tweet_stream.empty():                                                    # iterate on the stream composing the message
       tweet = self.tweet_stream.get()
       message += "[<b>%s</b>] %s\n" % (tweet['user']['name'], tweet['text'])
     dialog = {'use-markup':True}
-    self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)                              # erase emblem
     self.inform_end_of_waiting_process()
+    
+    if self.message_stream.empty():                                                         # if there are not new messages, erase the emblem
+      self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)
+    else:                                                                                   # but it is possible that there are also new message
+      self.emblem.update(self.message_stream.qsize())                                         # update the emblem for the direct messages counter
+      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)
+    
     self.show_popup_message(message, dialog)
+  
+  # TODO: Use the Menu class
+  def show_user_timeline(self):
+    self.inform_start_of_waiting_process()
+    timeline = self.api.user_timeline()
+    if len(timeline) > 0:
+      message = "".join (["[<b>%s</b>] %s\n" % (status['user']['screen_name'], status['text']) for status in timeline])
+    else:
+      message = _("Oh, dear, your timeline is empty :-(")
+    dialog = {'use-markup':True}
+    self.inform_end_of_waiting_process()
+    self.show_popup_message(message, dialog)    
 
   # TODO: Use the Menu class
-  # TODO: Add an option on the context menu for Home Timeline
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
     timeline = self.api.home_timeline()
@@ -218,23 +246,40 @@ class Applet(CDApplet):
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
 
+  def show_new_direct_messages(self):
+    self.inform_start_of_waiting_process()
+    
+    itens =[]
+    while not self.message_stream.empty():                                                  # iterate on the stream composing the message
+      direct_message = self.message_stream.get()
+      itens.append(Message(direct_message['direct_message']['text'], direct_message['direct_message']['sender']['screen_name']))
+    direct_messages_list_menu = menu.Menu(itens, self.on_direct_messages_list_menu_clicked)
+    direct_messages_list_menu.pop_up(self.icon)
+      
+    if self.tweet_stream.empty():                                                           # if there are not new tweets, erase the emblem
+      self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)
+    else:                                                                                   # but it is possible that there are also new tweets
+      self.emblem.update(self.tweet_stream.qsize())                                         # update the emblem for the new tweets counter
+      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)
+      
+    self.inform_end_of_waiting_process()
+    
   def show_direct_messages(self):
     self.inform_start_of_waiting_process()
+
     messages = self.api.direct_messages()
-    # message = ""
     itens = []
+
     if len(messages) > 0:
-      # Message (content of text, nick name of who sent it)
       ([itens.append(Message(status['text'], status['sender']['screen_name'])) for status in messages])
-        #message += "[<b>%s</b>] %s\n" % (sender, text)
       direct_messages_list_menu = menu.Menu(itens, self.on_direct_messages_list_menu_clicked)
       direct_messages_list_menu.pop_up(self.icon)
-      #message = "".join (["[<b>%s</b>] %s\n" % (status['sender']['screen_name'], status['text']) for status in messages])
     else:
+      dialog = {'use-markup':True}
       message = _("Oh, dear, you do not have direct messages :-(")
-    dialog = {'use-markup':True}
+      self.show_popup_message(message, dialog)
+
     self.inform_end_of_waiting_process()
-    #self.show_popup_message(message, dialog)
     
   def on_direct_messages_list_menu_clicked(self, widget):
     self.ask_for_direct_message_reply(widget.get_label())                           # label holds the sender of the message, reply to him/her now
@@ -329,12 +374,15 @@ class Applet(CDApplet):
     widget_attributes.update(widget)
     self.icon.PopupDialog (dialog_attributes, widget_attributes)
 
-  # TODO: As soon as the message_stream is done, put _("Received direct messages (%d)" % % self.message_stream.qsize())
   def build_direct_messages_menu(self):
     direct_messages_menu = []
+    if self.message_stream.empty():
+      label = _("Direct messages")
+    else:
+      label = _("New direct messages (%d)" % self.message_stream.qsize())
     direct_messages_menu.append ({
         'type'  : CDApplet.MENU_ENTRY,
-        'label' : _("Received direct messages"),
+        'label' : label,
         'id'    : self.direct_messages_menu_id,
         'icon'  : os.path.abspath("./data/received.png")
     })
@@ -350,36 +398,41 @@ class Applet(CDApplet):
     })
     self.icon.AddMenuItems(credentials_menu)
     
-  def build_tweet_stream_menu(self):
-    tweet_stream_menu = []
-    tweet_stream_menu.append ({
+  def build_tweets_menu(self):
+    tweets_menu = []
+    if self.tweet_stream.empty():
+      label = _("Tweets")
+    else:
+      label = _("New tweets (%d)" % self.tweet_stream.qsize())
+    tweets_menu.append ({
         'type'  : CDApplet.MENU_ENTRY,
-        'label' : _("New tweets (%d)" % self.tweet_stream.qsize()),
-        'id'    : self.tweet_stream_menu_id,
+        'label' : label,
+        'id'    : self.tweets_menu_id,
         'icon'  : os.path.abspath("./data/new.png")
     })
-    self.icon.AddMenuItems(tweet_stream_menu)
+    self.icon.AddMenuItems(tweets_menu)
 
   def __init__(self):
     self.user = User()
     self.user_file = os.path.abspath(os.path.join(os.getcwd(), '..','..','..','.twitter_users'))      # ~/.config/.twitter_users
     self.twitter_auth = TwitterOauth()
+    
     self.api = None
     self.stream_api = None
+    
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
     self.responding_success, self.responding_tweet, self.responding_initial_informations,
     self.responding_sending_direct_message_reply) = range(7)
     self.dialog_type = None
+    
     self.emblem = emblem.Emblem()                                                                     # emblem maker, see emblem.py
 
-    self.direct_messages_menu_id = 1000
-    self.credentials_menu_id = 2000
-    self.tweet_stream_menu_id = 3000
+    self.direct_messages_menu_id  = 1000
+    self.credentials_menu_id      = 2000
+    self.tweets_menu_id           = 3000
     
-    #self.stream = Queue.Queue()
-    self.tweet_stream = Queue.Queue()
-    self.messages_stream = Queue.Queue()
-    #self.direct_messages = {}
+    self.tweet_stream   = Queue.Queue()
+    self.message_stream = Queue.Queue()
 
     CDApplet.__init__(self)                                                                           # call CDApplet interface init
 
@@ -434,18 +487,23 @@ class Applet(CDApplet):
     self.show_home_timeline()
 
   def on_build_menu(self):
-    self.build_direct_messages_menu()
     self.build_credentials_menu()
-    if self.tweet_stream.qsize() > 0:
-      self.build_tweet_stream_menu()
+    self.build_direct_messages_menu()
+    self.build_tweets_menu()
 
   def on_menu_select(self, selected_menu):
     if selected_menu == self.direct_messages_menu_id:
-      self.show_direct_messages()
+      if self.message_stream.empty():                                                 # there are not new direct messages
+        self.show_direct_messages()                                                   # show the last 20
+      else:                                                                           # new direct messages on the stream
+        self.show_new_direct_messages()                                               # show new direct messages
     elif selected_menu == self.credentials_menu_id:
       self.show_credentials()
-    elif selected_menu == self.tweet_stream_menu_id:
-      self.show_new_tweets()
+    elif selected_menu == self.tweets_menu_id:
+      if self.tweet_stream.empty():                                                   # there are not new tweets
+        self.show_home_timeline()                                                     # show the last 20 tweets on the home timeline
+      else:                                                                           # new tweets on the stream
+        self.show_new_tweets()                                                        # show new tweets
 
 if __name__ == '__main__':
   Applet().run()
