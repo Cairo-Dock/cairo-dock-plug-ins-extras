@@ -6,31 +6,39 @@
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
 
 import gtk, os
+from message import DirectMessage, Tweet
 
 class Menu(gtk.Menu):
 
-  def __init__(self, messages, callback):
+  def __init__(self, icon, callback):
     gtk.Menu.__init__(self)
-        
-    for message in messages:
+    
+    self.messages = []
+    self.icon = icon
+    self.callback = callback
+      
+  def add(self, message):
+    self.messages.append(message)
+  
+  def pop_up(self):
+    for message in self.messages:
       text = "<b>%s</b>\n%s" % (message.sender, message.text)
       item = gtk.ImageMenuItem()
       # the true label is set after with set_markup()
-      item.set_label(message.sender)
+      if isinstance(message, DirectMessage):
+        item.set_label(message.sender)                                                # used to track who sent the message in order to reply it.
+      elif isinstance(message, Tweet):
+        item.set_label(message.uid)                                                   # used to retweet the tweet
       item.set_image(gtk.image_new_from_file(os.path.abspath("./data/received_menu.png")))
       item.get_children()[0].set_markup(text)
-      item.connect('activate', callback)
+      item.connect('activate', self.callback)
       self.append(item)
-      item.show()
       # add a separator if mail is not last in list
-      if messages.index(message) != len(messages) - 1:
+      if self.messages.index(message) != len(self.messages) - 1:
         separator = gtk.SeparatorMenuItem()
         self.append(separator)
 
     self.show_all()
-    
-  def pop_up(self, icon):
-    self.icon = icon
     self.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400), button=1, activate_time=0)
 
   def get_xy(self, m, data):

@@ -23,15 +23,18 @@
 # Paste this number on the next dialog box will be shown.
 # The plugin is going to inform that you are successfully connected.
 
-# To see the received tweets right-click on the icon -> Twitter -> [New] tweets.
-# To see the received direct messages right-click on the icon -> Twitter -> [New] direct messages. You can reply one of them just by left-clicking on it.
+# To see the received tweets right-click on the icon -> Twitter -> [New] tweets. You can retweet any of them by left-clicking on it.
+# To see the received direct messages right-click on the icon -> Twitter -> [New] direct messages. You can reply any of them by left-clicking on it.
 # To see some user's info right-click on the icon -> Twitter -> Info
 
 import os, webbrowser, simplejson, threading, Queue, urllib2
 from oauth import oauth
-from http import post, get #, stream
 from util import *
+
+from http import post, get #, stream
 import emblem, menu
+from message import DirectMessage, Tweet
+
 from CDApplet import CDApplet, _
 # TODO import ConfigParser later conver files to config syntax
 
@@ -127,6 +130,7 @@ class TwitterAPI(API):
     self.new_direct_messages_url  = 'https://api.twitter.com/1/direct_messages/new.json'
     self.verify_credentials_url   = 'https://api.twitter.com/1/account/verify_credentials.json'
     self.user_timeline_url        = 'http://api.twitter.com/1/statuses/user_timeline.json'
+    self.retweet_url_prefix       = 'http://api.twitter.com/1/statuses/retweet/'            # lacks the id of the tweet to be retweeted
     
   def dispatch(self, url, mode, parameters={}):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -143,15 +147,20 @@ class TwitterAPI(API):
       header = oauth_request.to_header()
       post(url, parameters, header)  
       
-  def tweet(self, message):                                                         # popularly "send a tweet"
+  def tweet(self, message):                                                                 # popularly "send a tweet"
     self.dispatch(self.update_url, "POST", {'status':message})
+    
+  def retweet(self, tweet_id):
+    url = "%s%s.json" % (self.retweet_url_prefix, tweet_id)
+    self.dispatch(url, "POST")
 
   def new_direct_message(self, message, destinatary):
     self.dispatch(self.new_direct_messages_url, "POST", {'text':message, 'screen_name':destinatary})
 
   def home_timeline(self):
     return self.dispatch(self.home_timeline_url, "GET")
-    
+  
+  #TODO: Use it.
   def user_timeline(self):
     return self.dispatch(self.user_timeline_url, "GET")
 
@@ -160,11 +169,6 @@ class TwitterAPI(API):
 
   def verify_credentials(self):
     return self.dispatch(self.verify_credentials_url, "GET")
-
-class Message:
-  def __init__(self, text, sender):
-    self.text = text
-    self.sender = sender
 
 class User:
   def __init__(self, screen_name="", access_key="", access_secret=""):
@@ -188,40 +192,23 @@ class Applet(CDApplet):
   # This method is a callback that is called as soon as a new entry arrives on the stream
   # The method is passed as parameter when creating the instance for the TwitterStreamAPI
   # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_entry_into_stream_callback)
-  # TODO: Make available an "Animation" option upon a new entry arrival
+  # TODO: Make configurable the alerts, sound, animation, etc
   def on_receive_new_entry_into_stream_callback(self, entry):
     if 'user' in entry:                                                                     # tweet
       if not entry['user']['screen_name'] == self.user.screen_name:                         # not sent by the own user
         logp("Inserting new tweet on the stream Queue: %s" % entry)
         self.tweet_stream.put(entry)                                                        # put the new tweet on the stream queue
+        self.emblem.update(self.tweet_stream.qsize() + self.message_stream.qsize())             # create the emblem with the counter
+        self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
         self.play_alert_sound()
     elif 'direct_message' in entry:                                                         # direct messages
       if not entry['direct_message']['sender']['screen_name'] == self.user.screen_name:     # not sent by the own user
         logp("Inserting new message on the message Queue: %s" % entry)
         self.message_stream.put(entry)                                                      # put the new message on the message queue
+        self.emblem.update(self.tweet_stream.qsize() + self.message_stream.qsize())             # create the emblem with the counter
+        self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
         self.play_alert_sound()
 
-    self.emblem.update(self.tweet_stream.qsize() + self.message_stream.qsize())             # create the emblem with the counter
-    self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
-
-  # TODO: Use the Menu class
-  def show_new_tweets(self):
-    self.inform_start_of_waiting_process()
-    message = ''
-    while not self.tweet_stream.empty():                                                    # iterate on the stream composing the message
-      tweet = self.tweet_stream.get()
-      message += "[<b>%s</b>] %s\n" % (tweet['user']['name'], tweet['text'])
-    dialog = {'use-markup':True}
-    self.inform_end_of_waiting_process()
-    
-    if self.message_stream.empty():                                                         # if there are not new messages, erase the emblem
-      self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)
-    else:                                                                                   # but it is possible that there are also new message
-      self.emblem.update(self.message_stream.qsize())                                         # update the emblem for the direct messages counter
-      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)
-    
-    self.show_popup_message(message, dialog)
-  
   # TODO: Use the Menu class
   def show_user_timeline(self):
     self.inform_start_of_waiting_process()
@@ -234,27 +221,55 @@ class Applet(CDApplet):
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)    
 
-  # TODO: Use the Menu class
+  def show_new_tweets(self):
+    self.inform_start_of_waiting_process()
+    
+    nt_menu = menu.Menu(self.icon, self.on_tweet_list_menu_clicked)
+    while not self.tweet_stream.empty():                                                    # iterate on the stream composing the message
+      tweet = self.tweet_stream.get()
+      text = tweet['text']
+      sender = tweet['user']['name']
+      uid = tweet['id_str']
+      nt_menu.add(Tweet(text, sender, uid))
+    nt_menu.pop_up()
+    
+    if self.message_stream.empty():                                                         # if there are not new messages, erase the emblem
+      self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)
+    else:                                                                                   # but it is possible that there are also new message
+      self.emblem.update(self.message_stream.qsize())                                         # update the emblem for the direct messages counter
+      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)
+    
+    self.inform_end_of_waiting_process()
+
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
+    
     timeline = self.api.home_timeline()
     if len(timeline) > 0:
-      message = "".join (["[<b>%s</b>] %s\n" % (status['user']['screen_name'], status['text']) for status in timeline])
+      ht_menu = menu.Menu(self.icon, self.on_tweet_list_menu_clicked)
+      for status in timeline:
+        text = status['text']
+        sender = status['user']['screen_name']
+        uid = status['id_str']
+        ht_menu.add(Tweet(text, sender, uid))
+      ht_menu.pop_up()
     else:
       message = _("Oh, dear, your timeline is empty :-(")
-    dialog = {'use-markup':True}
+      dialog = {'use-markup':True}
+      self.show_popup_message(message, dialog)
+      
     self.inform_end_of_waiting_process()
-    self.show_popup_message(message, dialog)
 
   def show_new_direct_messages(self):
     self.inform_start_of_waiting_process()
     
-    itens =[]
+    dm_menu = menu.Menu(self.icon, self.on_direct_messages_list_menu_clicked)
     while not self.message_stream.empty():                                                  # iterate on the stream composing the message
       direct_message = self.message_stream.get()
-      itens.append(Message(direct_message['direct_message']['text'], direct_message['direct_message']['sender']['screen_name']))
-    direct_messages_list_menu = menu.Menu(itens, self.on_direct_messages_list_menu_clicked)
-    direct_messages_list_menu.pop_up(self.icon)
+      text = direct_message['direct_message']['text']
+      sender = direct_message['direct_message']['sender']['screen_name']
+      dm_menu.add(DirectMessage(text, sender))
+    dm_menu.pop_up()
       
     if self.tweet_stream.empty():                                                           # if there are not new tweets, erase the emblem
       self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)
@@ -268,12 +283,13 @@ class Applet(CDApplet):
     self.inform_start_of_waiting_process()
 
     messages = self.api.direct_messages()
-    itens = []
-
     if len(messages) > 0:
-      ([itens.append(Message(status['text'], status['sender']['screen_name'])) for status in messages])
-      direct_messages_list_menu = menu.Menu(itens, self.on_direct_messages_list_menu_clicked)
-      direct_messages_list_menu.pop_up(self.icon)
+      dm_menu = menu.Menu(self.icon, self.on_direct_messages_list_menu_clicked)
+      for status in messages:
+        text = status['text']
+        sender = status['sender']['screen_name']
+        dm_menu.add(DirectMessage(text, sender))
+      dm_menu.pop_up()
     else:
       dialog = {'use-markup':True}
       message = _("Oh, dear, you do not have direct messages :-(")
@@ -282,14 +298,10 @@ class Applet(CDApplet):
     self.inform_end_of_waiting_process()
     
   def on_direct_messages_list_menu_clicked(self, widget):
-    self.ask_for_direct_message_reply(widget.get_label())                           # label holds the sender of the message, reply to him/her now
-
-  def ask_for_direct_message_reply(self, destinatary):
-    dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':140}                           # 140 characters max, a direct message
-    self.show_popup_message((_("%s, write a reply to %s")) % (self.user.screen_name, destinatary), dialog, widget)
-    self.dialog_type = self.responding_sending_direct_message_reply
-    self.replying_direct_message_to = destinatary
+    self.ask_for_direct_message_reply(widget.get_label())                           # label contains the sender of the message, reply to him/her now
+    
+  def on_tweet_list_menu_clicked(self, widget):
+    self.ask_for_retweet(widget.get_label())                                        # label contains the id of the tweet needed to retweet it
 
   def tweet(self, message):                                                         # popularly "send a tweet"
     self.inform_start_of_waiting_process()
@@ -306,11 +318,24 @@ class Applet(CDApplet):
 
   # Applet methods
 
+  def ask_for_direct_message_reply(self, destinatary):
+    dialog = {'buttons':'ok;cancel'}
+    widget = {'widget-type':'text-entry', 'nb-chars':140}                           # 140 characters max, a direct message
+    self.show_popup_message((_("%s, write a reply to %s")) % (self.user.screen_name, destinatary), dialog, widget)
+    self.dialog_type = self.responding_sending_direct_message_reply
+    self.replying_direct_message_to = destinatary
+
   def ask_for_tweet(self):
     dialog = {'buttons':'ok;cancel'}
     widget = {'widget-type':'text-entry', 'nb-chars':140}                           # 140 characters max, a tweet :)
     self.show_popup_message((_("%s, send a tweet")) % self.user.screen_name, dialog, widget)
     self.dialog_type = self.responding_tweet
+    
+  def ask_for_retweet(self, tweet_id):
+    dialog = {'buttons':'ok;cancel'}
+    self.show_popup_message((_("%s, retweet?")) % self.user.screen_name, dialog)
+    self.dialog_type = self.responding_retweet
+    self.retweet_tweet_id = tweet_id
 
   # TODO: Implement it as a config file using screen_name as section index
   def read_user_data(self):
@@ -422,7 +447,7 @@ class Applet(CDApplet):
     
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
     self.responding_success, self.responding_tweet, self.responding_initial_informations,
-    self.responding_sending_direct_message_reply) = range(7)
+    self.responding_sending_direct_message_reply, self.responding_retweet) = range(8)
     self.dialog_type = None
     
     self.emblem = emblem.Emblem()                                                                     # emblem maker, see emblem.py
@@ -479,6 +504,9 @@ class Applet(CDApplet):
       elif self.dialog_type == self.responding_sending_direct_message_reply:
         logp("Sending a direct message '%s'" % content)
         self.api.new_direct_message(content, self.replying_direct_message_to)
+      elif self.dialog_type == self.responding_retweet:
+        logp("Retweeting")
+        self.api.retweet(self.retweet_tweet_id)
 
   def on_click(self, key):
     self.ask_for_tweet()
