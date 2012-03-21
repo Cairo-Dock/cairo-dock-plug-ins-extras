@@ -183,7 +183,23 @@ class Applet(CDApplet):
 
   def inform_end_of_waiting_process(self):
     self.icon.SetQuickInfo("")
+
+  def refresh_emblem_counter(self):
+    counter = self.tweet_stream.qsize() + self.message_stream.qsize()
+    if counter > 0:
+      self.emblem.update(counter)                                                 # create the emblem with the counter
+      self.icon.SetIcon(self.emblem.emblem)
+    else:
+      self.icon.SetIcon(os.path.abspath("./icon"))  
     
+  def refresh_emblem_size(self):
+    if self.config['emblem_size'] == "Small":
+      self.emblem.set_size_small()
+    elif self.config['emblem_size'] == "Medium":
+      self.emblem.set_size_medium()
+    else:
+      self.emblem.set_size_large()
+
   def play_alert_sound(self):
     os.popen('aplay %s' % os.path.abspath("./data/alert.wav"))
 
@@ -198,15 +214,13 @@ class Applet(CDApplet):
       if not entry['user']['screen_name'] == self.user.screen_name:                         # not sent by the own user
         logp("Inserting new tweet on the stream Queue: %s" % entry)
         self.tweet_stream.put(entry)                                                        # put the new tweet on the stream queue
-        self.emblem.update(self.tweet_stream.qsize() + self.message_stream.qsize())             # create the emblem with the counter
-        self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
+        self.refresh_emblem_counter()
         self.play_alert_sound()
     elif 'direct_message' in entry:                                                         # direct messages
       if not entry['direct_message']['sender']['screen_name'] == self.user.screen_name:     # not sent by the own user
         logp("Inserting new message on the message Queue: %s" % entry)
         self.message_stream.put(entry)                                                      # put the new message on the message queue
-        self.emblem.update(self.tweet_stream.qsize() + self.message_stream.qsize())             # create the emblem with the counter
-        self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)  # add emblem
+        self.refresh_emblem_counter()
         self.play_alert_sound()
 
   # TODO: Use the Menu class
@@ -233,12 +247,7 @@ class Applet(CDApplet):
       nt_menu.add(Tweet(text, sender, uid))
     nt_menu.pop_up()
     
-    if self.message_stream.empty():                                                         # if there are not new messages, erase the emblem
-      self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)
-    else:                                                                                   # but it is possible that there are also new message
-      self.emblem.update(self.message_stream.qsize())                                         # update the emblem for the direct messages counter
-      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)
-    
+    self.refresh_emblem_counter() 
     self.inform_end_of_waiting_process()
 
   def show_home_timeline(self):
@@ -270,13 +279,8 @@ class Applet(CDApplet):
       sender = direct_message['direct_message']['sender']['screen_name']
       dm_menu.add(DirectMessage(text, sender))
     dm_menu.pop_up()
-      
-    if self.tweet_stream.empty():                                                           # if there are not new tweets, erase the emblem
-      self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_RIGHT)
-    else:                                                                                   # but it is possible that there are also new tweets
-      self.emblem.update(self.tweet_stream.qsize())                                         # update the emblem for the new tweets counter
-      self.icon.SetEmblem(self.emblem.emblem, CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT)
-      
+
+    self.refresh_emblem_counter()
     self.inform_end_of_waiting_process()
     
   def show_direct_messages(self):
@@ -473,8 +477,12 @@ class Applet(CDApplet):
       # setting the callback to receive the data of every entry on the stream
       self.stream_api = TwitterStreamAPI(self.user.access_key, self.user.access_secret, self.on_receive_new_entry_into_stream_callback)
 
-  #def reload(self):
-    #self.read_user_data()
+  def get_config(self, keyfile):
+    self.config['emblem_size'] = keyfile.get('Configuration', 'emblem_size')
+
+  def reload(self):
+    self.refresh_emblem_counter()
+    self.refresh_emblem_size()
 
   # Callbacks
   def on_answer_dialog(self, key, content):
