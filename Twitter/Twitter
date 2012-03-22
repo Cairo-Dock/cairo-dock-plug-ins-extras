@@ -332,14 +332,14 @@ class Applet(CDApplet):
 
   def ask_for_direct_message_reply(self, destinatary):
     dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':140}                           # 140 characters max, a direct message
+    widget = {'widget-type':'text-entry', 'nb-chars':141}                           # 140 characters max, a direct message
     self.show_popup_message((_("%s, write a reply to %s")) % (self.user.screen_name, destinatary), dialog, widget)
     self.dialog_type = self.responding_sending_direct_message_reply
     self.replying_direct_message_to = destinatary
 
   def ask_for_tweet(self):
     dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':140}                           # 140 characters max, a tweet :)
+    widget = {'widget-type':'text-entry', 'nb-chars':141}                           # 140 characters max, a tweet :)
     self.show_popup_message((_("%s, send a tweet")) % self.user.screen_name, dialog, widget)
     self.dialog_type = self.responding_tweet
     
@@ -462,7 +462,7 @@ class Applet(CDApplet):
 
   def __init__(self):
     self.user = User()
-    self.user_file = os.path.abspath(os.path.join(os.getcwd(), '..','..','..','.twitter_users'))      # ~/.config/.twitter_users
+    self.user_file = os.path.abspath(os.path.join(os.getcwd(),'..','..','.twitter_users'))      # ~/.config/cairo-dock/.twitter_users
     self.twitter_auth = TwitterOauth()
     
     self.api = None
