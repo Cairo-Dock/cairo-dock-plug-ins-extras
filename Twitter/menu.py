@@ -10,7 +10,7 @@ from message import DirectMessage, Tweet
 
 class Menu(gtk.Menu):
 
-  def __init__(self, icon, callback):
+  def __init__(self, icon, callback=None):
     gtk.Menu.__init__(self)
     
     self.messages = []
@@ -22,16 +22,17 @@ class Menu(gtk.Menu):
   
   def pop_up(self):
     for message in self.messages:
-      text = "<b>%s</b>\n%s" % (message.sender, message.text)
       item = gtk.ImageMenuItem()
       # the true label is set after with set_markup()
       if isinstance(message, DirectMessage):
         item.set_label(message.sender)                                                # used to track who sent the message in order to reply it.
       elif isinstance(message, Tweet):
         item.set_label(message.uid)                                                   # used to retweet the tweet
-      item.set_image(gtk.image_new_from_file(os.path.abspath("./data/received_menu.png")))
+      item.set_image(gtk.image_new_from_file(os.path.abspath("./data/message_small.png")))
+      text = "<b>%s</b>\n%s" % (message.sender, message.text)
       item.get_children()[0].set_markup(text)
-      item.connect('activate', self.callback)
+      if self.callback:                                                               # for tweets posted by the user, there is not callback to be set
+        item.connect('activate', self.callback)
       self.append(item)
       # add a separator if mail is not last in list
       if self.messages.index(message) != len(self.messages) - 1:

@@ -223,17 +223,25 @@ class Applet(CDApplet):
         self.refresh_emblem_counter()
         self.play_alert_sound()
 
-  # TODO: Use the Menu class
   def show_user_timeline(self):
     self.inform_start_of_waiting_process()
+    
     timeline = self.api.user_timeline()
+    print timeline[0]
     if len(timeline) > 0:
-      message = "".join (["[<b>%s</b>] %s\n" % (status['user']['screen_name'], status['text']) for status in timeline])
+      ut_menu = menu.Menu(self.icon)                                                        # callback not set since there is no action when clicking ...
+      for status in timeline:                                                               # ... on the menu generated from this list
+        text = status['text']
+        sender = status['user']['name']
+        uid = status['id_str']
+        ut_menu.add(Tweet(text, sender, uid))
+      ut_menu.pop_up()
     else:
       message = _("Oh, dear, your timeline is empty :-(")
-    dialog = {'use-markup':True}
+      dialog = {'use-markup':True}
+      self.show_popup_message(message, dialog)
+
     self.inform_end_of_waiting_process()
-    self.show_popup_message(message, dialog)    
 
   def show_new_tweets(self):
     self.inform_start_of_waiting_process()
@@ -413,7 +421,7 @@ class Applet(CDApplet):
         'type'  : CDApplet.MENU_ENTRY,
         'label' : label,
         'id'    : self.direct_messages_menu_id,
-        'icon'  : os.path.abspath("./data/received.png")
+        'icon'  : os.path.abspath("./data/message.png")
     })
     self.icon.AddMenuItems(direct_messages_menu)
 
@@ -437,9 +445,20 @@ class Applet(CDApplet):
         'type'  : CDApplet.MENU_ENTRY,
         'label' : label,
         'id'    : self.tweets_menu_id,
-        'icon'  : os.path.abspath("./data/new.png")
+        'icon'  : os.path.abspath("./data/tweet.png")
     })
     self.icon.AddMenuItems(tweets_menu)
+    
+  def build_user_timeline_menu(self):
+    user_timeline_menu = []
+    
+    user_timeline_menu.append ({
+        'type'  : CDApplet.MENU_ENTRY,
+        'label' : _("My tweets"),
+        'id'    : self.user_timeline_menu_id,
+        'icon'  : os.path.abspath("./data/tweet.png")
+    })
+    self.icon.AddMenuItems(user_timeline_menu)
 
   def __init__(self):
     self.user = User()
@@ -459,6 +478,7 @@ class Applet(CDApplet):
     self.direct_messages_menu_id  = 1000
     self.credentials_menu_id      = 2000
     self.tweets_menu_id           = 3000
+    self.user_timeline_menu_id    = 4000
     
     self.tweet_stream   = Queue.Queue()
     self.message_stream = Queue.Queue()
@@ -524,6 +544,7 @@ class Applet(CDApplet):
 
   def on_build_menu(self):
     self.build_credentials_menu()
+    self.build_user_timeline_menu()
     self.build_direct_messages_menu()
     self.build_tweets_menu()
 
@@ -540,6 +561,8 @@ class Applet(CDApplet):
         self.show_home_timeline()                                                     # show the last 20 tweets on the home timeline
       else:                                                                           # new tweets on the stream
         self.show_new_tweets()                                                        # show new tweets
+    elif selected_menu == self.user_timeline_menu_id:
+      self.show_user_timeline()
 
 if __name__ == '__main__':
   Applet().run()
