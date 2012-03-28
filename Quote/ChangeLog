@@ -1,3 +1,4 @@
+0.0.9:(March/28/2012): Removed Grouphug.us because it is not offering the random quote anymore. Fixing the return from Bash and Qdb.
 0.0.8:(March/17/2010): Added Grouphug.us.
 0.0.7:(January/27/2010): Fixing the message when there were no translation for only one word. Adding Vidademerda.com.br. Adding next quote button in the PopupDialog.
 0.0.6:(December/22/2010): Automatic fetch more quotes when all of them were already showed to the user, except for Quotationspage.com.

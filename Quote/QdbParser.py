@@ -27,16 +27,17 @@ class QdbParser(SGMLParser):
 
     def handle_data(self, text):
         if self.inside_span_element:                                                # estamos dentro de <span>...</span>
-            if not self.inside_nickname:                                            # <nickname> quote
-                if text == '<':                                                     # entered the "nickname area"
-                    self.inside_nickname = True
-                    self.current_quote += '\n<'                                     # linebreak
-                else:
-                    self.current_quote += text                                      # concatena tudo que tiver dentro da tag
-            else:                                                                   
-                self.current_quote += text                                          # concatenate all the nickname
-                if text == '>':                                                     # nickname is over
-                    self.inside_nickname = False                                    # set it
+            self.current_quote += text
+#            if not self.inside_nickname:                                            # <nickname> quote
+#                if text == '<':                                                     # entered the "nickname area"
+#                    self.inside_nickname = True
+#                    self.current_quote += '\n<'                                     # linebreak
+#                else:
+#                    self.current_quote += text                                      # concatena tudo que tiver dentro da tag
+#            else:                                                                   
+#                self.current_quote += text                                          # concatenate all the nickname
+#                if text == '>':                                                     # nickname is over
+#                    self.inside_nickname = False                                    # set it
 
     def parse(self, page):
         self.feed(page)                                                             # feed the parser with the page's html
