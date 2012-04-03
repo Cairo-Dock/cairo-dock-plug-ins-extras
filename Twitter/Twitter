@@ -332,16 +332,23 @@ class Applet(CDApplet):
 
   def ask_for_direct_message_reply(self, destinatary):
     dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':141}                           # 140 characters max, a direct message
+    widget = {'widget-type':'text-entry', 'nb-chars':self.tweet_length + 1}         # 140 characters max, a direct message
     self.show_popup_message((_("%s, write a reply to %s")) % (self.user.screen_name, destinatary), dialog, widget)
     self.dialog_type = self.responding_sending_direct_message_reply
     self.replying_direct_message_to = destinatary
 
-  def ask_for_tweet(self):
+  # Opens the dialog to be filled with the tweet and also
+  # informs about tweet longer than 140 characters
+  def ask_for_tweet(self, default="", warning=False):
     dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':141}                           # 140 characters max, a tweet :)
-    self.show_popup_message((_("%s, send a tweet")) % self.user.screen_name, dialog, widget)
-    self.dialog_type = self.responding_tweet
+    widget = {'widget-type':'text-entry', 'nb-chars':self.tweet_length + 1, 'initial-value':default}  # 140 characters max, a tweet :)
+    if not warning:
+      message = _("%s, send a tweet") % self.user.screen_name
+      self.dialog_type = self.responding_tweet
+    else:                                                                                             # user entered more than 140 characters
+      message = _("Your tweet has more than %d characters, please make it shorter") % self.tweet_length
+      self.dialog_type = self.responding_tweet
+    self.show_popup_message(message, dialog, widget)
     
   def ask_for_retweet(self, tweet_id):
     dialog = {'buttons':'ok;cancel'}
@@ -480,6 +487,8 @@ class Applet(CDApplet):
     self.tweets_menu_id           = 3000
     self.user_timeline_menu_id    = 4000
     
+    self.tweet_length             = 140
+    
     self.tweet_stream   = Queue.Queue()
     self.message_stream = Queue.Queue()
 
@@ -527,8 +536,11 @@ class Applet(CDApplet):
         else:
           logm("A problem has occurred while getting access to the API")
       elif self.dialog_type == self.responding_tweet:
-        logp("Sending a tweet '%s'" % content)
-        self.api.tweet(content)
+        if len(content) > self.tweet_length:
+            self.ask_for_tweet(content, True)
+        else:
+          logp("Sending a tweet '%s'" % content)
+          self.api.tweet(content)
       elif self.dialog_type == self.responding_sending_direct_message_reply:
         logp("Sending a direct message '%s'" % content)
         self.api.new_direct_message(content, self.replying_direct_message_to)
