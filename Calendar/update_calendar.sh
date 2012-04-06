@@ -20,7 +20,7 @@
 
 icon_command="$1"
 
-rm -rf .day
+rm -f .day
 if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
 	bash icon.sh
 else
@@ -100,7 +100,7 @@ fi
 # echo "We wait for $ARG sec."
 
 sleep $ARG
-rm .day # force the reload
+rm -f .day # force the reload
 if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
 	bash icon.sh
 else

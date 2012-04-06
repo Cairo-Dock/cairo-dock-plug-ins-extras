@@ -35,6 +35,13 @@ calendar_command=`get_conf_param "calendar_command"`
 import_command=`get_conf_param "import_command"`
 
 icon_command=`get_conf_param "icon_script"`
+if [ "$icon_command" != "" ]; then
+	if [ "${icon_command:0:1}" = "~" ]; then
+		icon_command="$HOME/${icon_command:1}"
+	elif [ "${icon_command:0:1}" != "/" ]; then
+		icon_command="`dirname $COMMAND`/$icon_command"
+	fi
+fi
 }
 
 #############################################################################################################
