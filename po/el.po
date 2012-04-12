@@ -41,8 +41,8 @@ msgstr ""
 #: ../Liferea/messages:1 ../MintMenu/messages:1 ../Moon/messages:1
 #: ../Pidgin/messages:1 ../Quote/messages:1
 #: ../Screensaver_inhibitor/messages:1 ../Screensaver_inhibitor/messages:3
-#: ../Translator/messages:1 ../Transmission/messages:1 ../WebSearch/messages:1
-#: ../WindowsKiller/messages:1 ../Xchat/messages:1
+#: ../Translator/messages:1 ../Transmission/messages:1 ../Twitter/messages:1
+#: ../WebSearch/messages:1 ../WindowsKiller/messages:1 ../Xchat/messages:1
 msgid "Icon"
 msgstr "Εικονίδιο"
 
@@ -51,7 +51,8 @@ msgstr "Εικονίδιο"
 #: ../GTG/messages:3 ../KTorrent/messages:3 ../Lancelot/messages:3
 #: ../Liferea/messages:3 ../MintMenu/messages:3 ../Moon/messages:3
 #: ../Pidgin/messages:3 ../Quote/messages:3 ../Translator/messages:3
-#: ../Transmission/messages:3 ../WindowsKiller/messages:3 ../Xchat/messages:3
+#: ../Transmission/messages:3 ../Twitter/messages:3
+#: ../WindowsKiller/messages:3 ../Xchat/messages:3
 msgid "Applet"
 msgstr "Μικροεφαρμογή"
 
@@ -61,8 +62,8 @@ msgstr "Μικροεφαρμογή"
 #: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
 #: ../MintMenu/messages:5 ../Moon/messages:5 ../Pidgin/messages:5
 #: ../Quote/messages:5 ../Screensaver_inhibitor/messages:5
-#: ../Translator/messages:5 ../Transmission/messages:5 ../WebSearch/messages:3
-#: ../WindowsKiller/messages:5 ../Xchat/messages:5
+#: ../Translator/messages:5 ../Transmission/messages:5 ../Twitter/messages:5
+#: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
 msgid "Name of the dock it belongs to:"
 msgstr "Όνομα του dock στο οποίο ανήκει:"
 
@@ -80,7 +81,7 @@ msgstr "Όνομα εικονιδίου όπως θα εμφανισθεί στ�
 #: ../GTG/messages:9 ../KTorrent/messages:9 ../Lancelot/messages:9
 #: ../Liferea/messages:9 ../MintMenu/messages:9 ../Moon/messages:9
 #: ../Pidgin/messages:9 ../Quote/messages:11 ../Translator/messages:9
-#: ../Transmission/messages:9 ../WebSearch/messages:7
+#: ../Transmission/messages:9 ../Twitter/messages:9 ../WebSearch/messages:7
 #: ../WindowsKiller/messages:9 ../Xchat/messages:9
 msgid "Display"
 msgstr "Εμφάνιση"
@@ -90,7 +91,7 @@ msgstr "Εμφάνιση"
 #: ../GTG/messages:11 ../HDDtemperature/messages:9 ../KTorrent/messages:11
 #: ../Lancelot/messages:11 ../Liferea/messages:11 ../MintMenu/messages:11
 #: ../Moon/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
-#: ../Transmission/messages:11 ../WebSearch/messages:9
+#: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
 #: ../WindowsKiller/messages:11 ../Xchat/messages:11
 msgid "Let empty to use the default one."
 msgstr "Αφήστε κενό για να χρησιμοποιηθεί το προεπιλεγμένο."
@@ -100,7 +101,7 @@ msgstr "Αφήστε κενό για να χρησιμοποιηθεί το πρ
 #: ../GTG/messages:13 ../HDDtemperature/messages:11 ../KTorrent/messages:13
 #: ../Lancelot/messages:13 ../Liferea/messages:13 ../MintMenu/messages:13
 #: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
-#: ../Transmission/messages:13 ../WebSearch/messages:11
+#: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13
 msgid "Image's filename :"
 msgstr "Όνομα αρχείου εικόνας :"
@@ -112,7 +113,8 @@ msgstr "Όνομα αρχείου εικόνας :"
 #: ../MintMenu/messages:15 ../Moon/messages:15 ../Pidgin/messages:15
 #: ../Quote/messages:17 ../Screensaver_inhibitor/messages:17
 #: ../Translator/messages:15 ../Transmission/messages:15
-#: ../WebSearch/messages:13 ../WindowsKiller/messages:15 ../Xchat/messages:15
+#: ../Twitter/messages:15 ../WebSearch/messages:13
+#: ../WindowsKiller/messages:15 ../Xchat/messages:15
 msgid "Set to 0 to use the default applet size"
 msgstr "Ορίστε σε 0 για χρήση του προεπιλεγμένου μεγέθους μικροεφαρμογής"
 
@@ -123,7 +125,8 @@ msgstr "Ορίστε σε 0 για χρήση του προεπιλεγμένο�
 #: ../MintMenu/messages:17 ../Moon/messages:17 ../Pidgin/messages:17
 #: ../Quote/messages:19 ../Screensaver_inhibitor/messages:19
 #: ../Translator/messages:17 ../Transmission/messages:17
-#: ../WebSearch/messages:15 ../WindowsKiller/messages:17 ../Xchat/messages:17
+#: ../Twitter/messages:17 ../WebSearch/messages:15
+#: ../WindowsKiller/messages:17 ../Xchat/messages:17
 msgid "Desired icon size for this applet"
 msgstr "Επιθυμητό μέγεθος εικονιδίου για αυτή τη μικροεφαρμογή"
 
@@ -134,7 +137,7 @@ msgstr "Επιθυμητό μέγεθος εικονιδίου για αυτή �
 #: ../MintMenu/messages:19 ../Moon/messages:19 ../Pidgin/messages:19
 #: ../Quote/messages:21 ../Screensaver_inhibitor/messages:21
 #: ../Translator/messages:19 ../Transmission/messages:19
-#: ../WebSearch/messages:17 ../Xchat/messages:19
+#: ../Twitter/messages:19 ../WebSearch/messages:17 ../Xchat/messages:19
 msgid "Applet's Handbook"
 msgstr "Εγχειρίδιο μικροεφαρμογής"
 
@@ -145,7 +148,8 @@ msgstr "Εγχειρίδιο μικροεφαρμογής"
 #: ../MintMenu/messages:21 ../Moon/messages:21 ../Pidgin/messages:21
 #: ../Quote/messages:23 ../Screensaver_inhibitor/messages:23
 #: ../Translator/messages:21 ../Transmission/messages:21
-#: ../WebSearch/messages:19 ../WindowsKiller/messages:19 ../Xchat/messages:21
+#: ../Twitter/messages:21 ../WebSearch/messages:19
+#: ../WindowsKiller/messages:19 ../Xchat/messages:21
 msgid "Desklet"
 msgstr "Desklet"
 
@@ -154,7 +158,7 @@ msgstr "Desklet"
 #: ../Google/messages:23 ../GTG/messages:23 ../KTorrent/messages:23
 #: ../Lancelot/messages:23 ../Liferea/messages:23 ../MintMenu/messages:23
 #: ../Pidgin/messages:23 ../Quote/messages:25 ../Translator/messages:23
-#: ../Transmission/messages:23 ../WebSearch/messages:21
+#: ../Transmission/messages:23 ../Twitter/messages:23 ../WebSearch/messages:21
 #: ../WindowsKiller/messages:21 ../Xchat/messages:23
 msgid "Position"
 msgstr "Θέση"
@@ -164,7 +168,7 @@ msgstr "Θέση"
 #: ../Google/messages:25 ../GTG/messages:25 ../KTorrent/messages:25
 #: ../Lancelot/messages:25 ../Liferea/messages:25 ../MintMenu/messages:25
 #: ../Pidgin/messages:25 ../Quote/messages:27 ../Translator/messages:25
-#: ../Transmission/messages:25 ../WebSearch/messages:23
+#: ../Transmission/messages:25 ../Twitter/messages:25 ../WebSearch/messages:23
 #: ../WindowsKiller/messages:23 ../Xchat/messages:25
 msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
@@ -178,7 +182,7 @@ msgstr ""
 #: ../Google/messages:27 ../GTG/messages:27 ../KTorrent/messages:27
 #: ../Lancelot/messages:27 ../Liferea/messages:27 ../MintMenu/messages:27
 #: ../Pidgin/messages:27 ../Quote/messages:29 ../Translator/messages:27
-#: ../Transmission/messages:27 ../WebSearch/messages:25
+#: ../Transmission/messages:27 ../Twitter/messages:27 ../WebSearch/messages:25
 #: ../WindowsKiller/messages:25 ../Xchat/messages:27
 msgid "Lock position?"
 msgstr "Κλείδωμα θέσης;"
@@ -188,7 +192,7 @@ msgstr "Κλείδωμα θέσης;"
 #: ../Google/messages:29 ../GTG/messages:29 ../GTG/messages:107
 #: ../KTorrent/messages:29 ../Lancelot/messages:29 ../Liferea/messages:29
 #: ../MintMenu/messages:29 ../Pidgin/messages:29 ../Quote/messages:31
-#: ../Transmission/messages:29 ../WebSearch/messages:27
+#: ../Transmission/messages:29 ../Twitter/messages:29 ../WebSearch/messages:27
 #: ../WindowsKiller/messages:27 ../Xchat/messages:29
 msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
@@ -202,7 +206,8 @@ msgstr ""
 #: ../Google/messages:31 ../GTG/messages:31 ../KTorrent/messages:31
 #: ../Lancelot/messages:31 ../Liferea/messages:31 ../MintMenu/messages:31
 #: ../Pidgin/messages:31 ../Quote/messages:33 ../Transmission/messages:31
-#: ../WebSearch/messages:29 ../WindowsKiller/messages:29 ../Xchat/messages:31
+#: ../Twitter/messages:31 ../WebSearch/messages:29
+#: ../WindowsKiller/messages:29 ../Xchat/messages:31
 msgid "Desklet dimensions (width x height):"
 msgstr "Διαστάσεις desklet (πλάτος x ύψος):"
 
@@ -211,7 +216,8 @@ msgstr "Διαστάσεις desklet (πλάτος x ύψος):"
 #: ../Google/messages:33 ../GTG/messages:33 ../KTorrent/messages:33
 #: ../Lancelot/messages:33 ../Liferea/messages:33 ../MintMenu/messages:33
 #: ../Pidgin/messages:33 ../Quote/messages:35 ../Transmission/messages:33
-#: ../WebSearch/messages:31 ../WindowsKiller/messages:31 ../Xchat/messages:33
+#: ../Twitter/messages:33 ../WebSearch/messages:31
+#: ../WindowsKiller/messages:31 ../Xchat/messages:33
 msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
@@ -225,7 +231,8 @@ msgstr ""
 #: ../Google/messages:35 ../GTG/messages:35 ../KTorrent/messages:35
 #: ../Lancelot/messages:35 ../Liferea/messages:35 ../MintMenu/messages:35
 #: ../Pidgin/messages:35 ../Quote/messages:37 ../Transmission/messages:35
-#: ../WebSearch/messages:33 ../WindowsKiller/messages:33 ../Xchat/messages:35
+#: ../Twitter/messages:35 ../WebSearch/messages:33
+#: ../WindowsKiller/messages:33 ../Xchat/messages:35
 msgid "Desklet position (x, y):"
 msgstr "Θέση desklet (x, y):"
 
@@ -234,7 +241,7 @@ msgstr "Θέση desklet (x, y):"
 #: ../Google/messages:37 ../GTG/messages:37 ../KTorrent/messages:37
 #: ../Lancelot/messages:37 ../Liferea/messages:37 ../MintMenu/messages:37
 #: ../Pidgin/messages:37 ../Quote/messages:39 ../Translator/messages:37
-#: ../Transmission/messages:37 ../WebSearch/messages:35
+#: ../Transmission/messages:37 ../Twitter/messages:37 ../WebSearch/messages:35
 #: ../WindowsKiller/messages:35 ../Xchat/messages:37
 msgid ""
 "You can quickly rotate the desklet with the mouse, by dragging the little "
@@ -248,7 +255,7 @@ msgstr ""
 #: ../Google/messages:39 ../GTG/messages:39 ../KTorrent/messages:39
 #: ../Lancelot/messages:39 ../Liferea/messages:39 ../MintMenu/messages:39
 #: ../Pidgin/messages:39 ../Quote/messages:41 ../Translator/messages:39
-#: ../Transmission/messages:39 ../WebSearch/messages:37
+#: ../Transmission/messages:39 ../Twitter/messages:39 ../WebSearch/messages:37
 #: ../WindowsKiller/messages:37 ../Xchat/messages:39
 msgid "Rotation:"
 msgstr "Περιστροφή:"
@@ -258,7 +265,7 @@ msgstr "Περιστροφή:"
 #: ../Google/messages:41 ../GTG/messages:41 ../KTorrent/messages:41
 #: ../Lancelot/messages:41 ../Liferea/messages:41 ../MintMenu/messages:41
 #: ../Pidgin/messages:41 ../Quote/messages:43 ../Translator/messages:41
-#: ../Transmission/messages:41 ../WebSearch/messages:39
+#: ../Transmission/messages:41 ../Twitter/messages:41 ../WebSearch/messages:39
 #: ../WindowsKiller/messages:39 ../Xchat/messages:41
 msgid "Visibility"
 msgstr "Ορατότητα"
@@ -268,7 +275,8 @@ msgstr "Ορατότητα"
 #: ../Google/messages:43 ../GTG/messages:43 ../KTorrent/messages:43
 #: ../Lancelot/messages:43 ../Liferea/messages:43 ../MintMenu/messages:43
 #: ../Pidgin/messages:43 ../Quote/messages:45 ../Transmission/messages:43
-#: ../WebSearch/messages:41 ../WindowsKiller/messages:41 ../Xchat/messages:43
+#: ../Twitter/messages:43 ../WebSearch/messages:41
+#: ../WindowsKiller/messages:41 ../Xchat/messages:43
 msgid "Is detached from the dock"
 msgstr "Είναι αποσυνδεδεμένο από το dock"
 
@@ -277,7 +285,8 @@ msgstr "Είναι αποσυνδεδεμένο από το dock"
 #: ../Google/messages:45 ../GTG/messages:45 ../KTorrent/messages:45
 #: ../Lancelot/messages:45 ../Liferea/messages:45 ../MintMenu/messages:45
 #: ../Pidgin/messages:45 ../Quote/messages:47 ../Transmission/messages:45
-#: ../WebSearch/messages:43 ../WindowsKiller/messages:43 ../Xchat/messages:45
+#: ../Twitter/messages:45 ../WebSearch/messages:43
+#: ../WindowsKiller/messages:43 ../Xchat/messages:45
 msgid "Visibility:"
 msgstr "Ορατότητα :"
 
@@ -288,7 +297,8 @@ msgstr "Ορατότητα :"
 #: ../MintMenu/messages:47 ../Moon/messages:35 ../Pidgin/messages:47
 #: ../Quote/messages:49 ../Screensaver_inhibitor/messages:39
 #: ../Translator/messages:49 ../Transmission/messages:47
-#: ../WebSearch/messages:45 ../WindowsKiller/messages:45 ../Xchat/messages:47
+#: ../Twitter/messages:47 ../WebSearch/messages:45
+#: ../WindowsKiller/messages:45 ../Xchat/messages:47
 msgid "Normal"
 msgstr "Κανονικό"
 
@@ -299,7 +309,8 @@ msgstr "Κανονικό"
 #: ../MintMenu/messages:49 ../Moon/messages:37 ../Pidgin/messages:49
 #: ../Quote/messages:51 ../Screensaver_inhibitor/messages:41
 #: ../Translator/messages:51 ../Transmission/messages:49
-#: ../WebSearch/messages:47 ../WindowsKiller/messages:47 ../Xchat/messages:49
+#: ../Twitter/messages:49 ../WebSearch/messages:47
+#: ../WindowsKiller/messages:47 ../Xchat/messages:49
 msgid "Keep above"
 msgstr "Διατήρηση άνωθεν"
 
@@ -310,7 +321,8 @@ msgstr "Διατήρηση άνωθεν"
 #: ../MintMenu/messages:51 ../Moon/messages:39 ../Pidgin/messages:51
 #: ../Quote/messages:53 ../Screensaver_inhibitor/messages:43
 #: ../Translator/messages:53 ../Transmission/messages:51
-#: ../WebSearch/messages:49 ../WindowsKiller/messages:49 ../Xchat/messages:51
+#: ../Twitter/messages:51 ../WebSearch/messages:49
+#: ../WindowsKiller/messages:49 ../Xchat/messages:51
 msgid "Keep below"
 msgstr "Διατήρηση κάτω"
 
@@ -319,7 +331,8 @@ msgstr "Διατήρηση κάτω"
 #: ../Google/messages:53 ../GTG/messages:53 ../KTorrent/messages:53
 #: ../Lancelot/messages:53 ../Liferea/messages:53 ../MintMenu/messages:53
 #: ../Pidgin/messages:53 ../Quote/messages:55 ../Transmission/messages:53
-#: ../WebSearch/messages:51 ../WindowsKiller/messages:51 ../Xchat/messages:53
+#: ../Twitter/messages:53 ../WebSearch/messages:51
+#: ../WindowsKiller/messages:51 ../Xchat/messages:53
 msgid "Keep on widget layer"
 msgstr "Διατήρηση στο επίπεδο widget"
 
@@ -330,7 +343,8 @@ msgstr "Διατήρηση στο επίπεδο widget"
 #: ../MintMenu/messages:55 ../Moon/messages:43 ../Pidgin/messages:55
 #: ../Quote/messages:57 ../Screensaver_inhibitor/messages:47
 #: ../Translator/messages:57 ../Transmission/messages:55
-#: ../WebSearch/messages:53 ../WindowsKiller/messages:53 ../Xchat/messages:55
+#: ../Twitter/messages:55 ../WebSearch/messages:53
+#: ../WindowsKiller/messages:53 ../Xchat/messages:55
 msgid "Reserve space"
 msgstr "Δέσμευση χώρου"
 
@@ -339,7 +353,8 @@ msgstr "Δέσμευση χώρου"
 #: ../Google/messages:57 ../GTG/messages:57 ../KTorrent/messages:57
 #: ../Lancelot/messages:57 ../Liferea/messages:57 ../MintMenu/messages:57
 #: ../Pidgin/messages:57 ../Quote/messages:59 ../Transmission/messages:57
-#: ../WebSearch/messages:55 ../WindowsKiller/messages:55 ../Xchat/messages:57
+#: ../Twitter/messages:57 ../WebSearch/messages:55
+#: ../WindowsKiller/messages:55 ../Xchat/messages:57
 msgid "Should be visible on all desktops?"
 msgstr "Θα πρέπει να είναι ορατό σε όλες τις επιφάνειες εργασίας;"
 
@@ -350,7 +365,8 @@ msgstr "Θα πρέπει να είναι ορατό σε όλες τις επι
 #: ../MintMenu/messages:59 ../Moon/messages:55 ../Pidgin/messages:59
 #: ../Quote/messages:61 ../Screensaver_inhibitor/messages:59
 #: ../Translator/messages:61 ../Transmission/messages:59
-#: ../WebSearch/messages:57 ../WindowsKiller/messages:57 ../Xchat/messages:59
+#: ../Twitter/messages:59 ../WebSearch/messages:57
+#: ../WindowsKiller/messages:57 ../Xchat/messages:59
 msgid "Decorations"
 msgstr "Διάκοσμος"
 
@@ -359,7 +375,8 @@ msgstr "Διάκοσμος"
 #: ../Google/messages:61 ../GTG/messages:61 ../KTorrent/messages:61
 #: ../Lancelot/messages:61 ../Liferea/messages:61 ../MintMenu/messages:61
 #: ../Pidgin/messages:61 ../Quote/messages:63 ../Transmission/messages:61
-#: ../WebSearch/messages:59 ../WindowsKiller/messages:59 ../Xchat/messages:61
+#: ../Twitter/messages:61 ../WebSearch/messages:59
+#: ../WindowsKiller/messages:59 ../Xchat/messages:61
 msgid "Choose 'Custom decorations' to define your own decorations below."
 msgstr ""
 "Επιλέξτε 'Προσαρμοσμένος διάκοσμος' για να καθορίσετε το δικό σας διάκοσμο "
@@ -370,7 +387,8 @@ msgstr ""
 #: ../Google/messages:63 ../GTG/messages:63 ../KTorrent/messages:63
 #: ../Lancelot/messages:63 ../Liferea/messages:63 ../MintMenu/messages:63
 #: ../Pidgin/messages:63 ../Quote/messages:65 ../Transmission/messages:63
-#: ../WebSearch/messages:61 ../WindowsKiller/messages:61 ../Xchat/messages:63
+#: ../Twitter/messages:63 ../WebSearch/messages:61
+#: ../WindowsKiller/messages:61 ../Xchat/messages:63
 msgid "Choose a decoration theme for this desklet:"
 msgstr "Επιλέξτε ένα θέμα διακόσμησης για αυτό το desklet:"
 
@@ -379,7 +397,8 @@ msgstr "Επιλέξτε ένα θέμα διακόσμησης για αυτό 
 #: ../Google/messages:65 ../GTG/messages:65 ../KTorrent/messages:65
 #: ../Lancelot/messages:65 ../Liferea/messages:65 ../MintMenu/messages:65
 #: ../Pidgin/messages:65 ../Quote/messages:67 ../Transmission/messages:65
-#: ../WebSearch/messages:63 ../WindowsKiller/messages:63 ../Xchat/messages:65
+#: ../Twitter/messages:65 ../WebSearch/messages:63
+#: ../WindowsKiller/messages:63 ../Xchat/messages:65
 msgid ""
 "Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
 msgstr ""
@@ -391,7 +410,8 @@ msgstr ""
 #: ../Google/messages:67 ../GTG/messages:67 ../KTorrent/messages:67
 #: ../Lancelot/messages:67 ../Liferea/messages:67 ../MintMenu/messages:67
 #: ../Pidgin/messages:67 ../Quote/messages:69 ../Transmission/messages:67
-#: ../WebSearch/messages:65 ../WindowsKiller/messages:65 ../Xchat/messages:67
+#: ../Twitter/messages:67 ../WebSearch/messages:65
+#: ../WindowsKiller/messages:65 ../Xchat/messages:67
 msgid "Background image:"
 msgstr "Εικόνα παρασκηνίου:"
 
@@ -400,7 +420,8 @@ msgstr "Εικόνα παρασκηνίου:"
 #: ../Google/messages:69 ../GTG/messages:69 ../KTorrent/messages:69
 #: ../Lancelot/messages:69 ../Liferea/messages:69 ../MintMenu/messages:69
 #: ../Pidgin/messages:69 ../Quote/messages:71 ../Transmission/messages:69
-#: ../WebSearch/messages:67 ../WindowsKiller/messages:67 ../Xchat/messages:69
+#: ../Twitter/messages:69 ../WebSearch/messages:67
+#: ../WindowsKiller/messages:67 ../Xchat/messages:69
 msgid "Background transparency:"
 msgstr "Διαφάνεια παρασκηνίου:"
 
@@ -409,7 +430,8 @@ msgstr "Διαφάνεια παρασκηνίου:"
 #: ../Google/messages:71 ../GTG/messages:71 ../KTorrent/messages:71
 #: ../Lancelot/messages:71 ../Liferea/messages:71 ../MintMenu/messages:71
 #: ../Pidgin/messages:71 ../Quote/messages:73 ../Transmission/messages:71
-#: ../WebSearch/messages:69 ../WindowsKiller/messages:69 ../Xchat/messages:71
+#: ../Twitter/messages:71 ../WebSearch/messages:69
+#: ../WindowsKiller/messages:69 ../Xchat/messages:71
 msgid "in pixels. Use this to adjust the left position of drawings."
 msgstr ""
 "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε την αριστερή θέση των σχεδίων."
@@ -419,7 +441,8 @@ msgstr ""
 #: ../Google/messages:73 ../GTG/messages:73 ../KTorrent/messages:73
 #: ../Lancelot/messages:73 ../Liferea/messages:73 ../MintMenu/messages:73
 #: ../Pidgin/messages:73 ../Quote/messages:75 ../Transmission/messages:73
-#: ../WebSearch/messages:71 ../WindowsKiller/messages:71 ../Xchat/messages:73
+#: ../Twitter/messages:73 ../WebSearch/messages:71
+#: ../WindowsKiller/messages:71 ../Xchat/messages:73
 msgid "Left offset:"
 msgstr "Αριστερή μετατόπιση"
 
@@ -428,7 +451,8 @@ msgstr "Αριστερή μετατόπιση"
 #: ../Google/messages:75 ../GTG/messages:75 ../KTorrent/messages:75
 #: ../Lancelot/messages:75 ../Liferea/messages:75 ../MintMenu/messages:75
 #: ../Pidgin/messages:75 ../Quote/messages:77 ../Transmission/messages:75
-#: ../WebSearch/messages:73 ../WindowsKiller/messages:73 ../Xchat/messages:75
+#: ../Twitter/messages:75 ../WebSearch/messages:73
+#: ../WindowsKiller/messages:73 ../Xchat/messages:75
 msgid "in pixels. Use this to adjust the top position of drawings."
 msgstr "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε την άνω θέση των σχεδίων."
 
@@ -437,7 +461,8 @@ msgstr "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε 
 #: ../Google/messages:77 ../GTG/messages:77 ../KTorrent/messages:77
 #: ../Lancelot/messages:77 ../Liferea/messages:77 ../MintMenu/messages:77
 #: ../Pidgin/messages:77 ../Quote/messages:79 ../Transmission/messages:77
-#: ../WebSearch/messages:75 ../WindowsKiller/messages:75 ../Xchat/messages:77
+#: ../Twitter/messages:77 ../WebSearch/messages:75
+#: ../WindowsKiller/messages:75 ../Xchat/messages:77
 msgid "Top offset:"
 msgstr "Άνω μετατόπιση:"
 
@@ -446,7 +471,8 @@ msgstr "Άνω μετατόπιση:"
 #: ../Google/messages:79 ../GTG/messages:79 ../KTorrent/messages:79
 #: ../Lancelot/messages:79 ../Liferea/messages:79 ../MintMenu/messages:79
 #: ../Pidgin/messages:79 ../Quote/messages:81 ../Transmission/messages:79
-#: ../WebSearch/messages:77 ../WindowsKiller/messages:77 ../Xchat/messages:79
+#: ../Twitter/messages:79 ../WebSearch/messages:77
+#: ../WindowsKiller/messages:77 ../Xchat/messages:79
 msgid "in pixels. Use this to adjust the right position of drawings."
 msgstr "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε τη δεξιά θέση των σχεδίων."
 
@@ -455,7 +481,8 @@ msgstr "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε 
 #: ../Google/messages:81 ../GTG/messages:81 ../KTorrent/messages:81
 #: ../Lancelot/messages:81 ../Liferea/messages:81 ../MintMenu/messages:81
 #: ../Pidgin/messages:81 ../Quote/messages:83 ../Transmission/messages:81
-#: ../WebSearch/messages:79 ../WindowsKiller/messages:79 ../Xchat/messages:81
+#: ../Twitter/messages:81 ../WebSearch/messages:79
+#: ../WindowsKiller/messages:79 ../Xchat/messages:81
 msgid "Right offset:"
 msgstr "Δεξιά μετατόπιση:"
 
@@ -464,7 +491,8 @@ msgstr "Δεξιά μετατόπιση:"
 #: ../Google/messages:83 ../GTG/messages:83 ../KTorrent/messages:83
 #: ../Lancelot/messages:83 ../Liferea/messages:83 ../MintMenu/messages:83
 #: ../Pidgin/messages:83 ../Quote/messages:85 ../Transmission/messages:83
-#: ../WebSearch/messages:81 ../WindowsKiller/messages:81 ../Xchat/messages:83
+#: ../Twitter/messages:83 ../WebSearch/messages:81
+#: ../WindowsKiller/messages:81 ../Xchat/messages:83
 msgid "in pixels. Use this to adjust the bottom position of drawings."
 msgstr "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε την κάτω θέση των σχεδίων."
 
@@ -473,7 +501,8 @@ msgstr "σε pixel. Χρησιμοποιήστε τη για ρυθμίσετε 
 #: ../Google/messages:85 ../GTG/messages:85 ../KTorrent/messages:85
 #: ../Lancelot/messages:85 ../Liferea/messages:85 ../MintMenu/messages:85
 #: ../Pidgin/messages:85 ../Quote/messages:87 ../Transmission/messages:85
-#: ../WebSearch/messages:83 ../WindowsKiller/messages:83 ../Xchat/messages:85
+#: ../Twitter/messages:85 ../WebSearch/messages:83
+#: ../WindowsKiller/messages:83 ../Xchat/messages:85
 msgid "Bottom offset:"
 msgstr "Κάτω μετατόπιση:"
 
@@ -482,7 +511,8 @@ msgstr "Κάτω μετατόπιση:"
 #: ../Google/messages:87 ../GTG/messages:87 ../KTorrent/messages:87
 #: ../Lancelot/messages:87 ../Liferea/messages:87 ../MintMenu/messages:87
 #: ../Pidgin/messages:87 ../Quote/messages:89 ../Transmission/messages:87
-#: ../WebSearch/messages:85 ../WindowsKiller/messages:85 ../Xchat/messages:87
+#: ../Twitter/messages:87 ../WebSearch/messages:85
+#: ../WindowsKiller/messages:85 ../Xchat/messages:87
 msgid ""
 "Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
 "no image."
@@ -495,7 +525,8 @@ msgstr ""
 #: ../Google/messages:89 ../GTG/messages:89 ../KTorrent/messages:89
 #: ../Lancelot/messages:89 ../Liferea/messages:89 ../MintMenu/messages:89
 #: ../Pidgin/messages:89 ../Quote/messages:91 ../Transmission/messages:89
-#: ../WebSearch/messages:87 ../WindowsKiller/messages:87 ../Xchat/messages:89
+#: ../Twitter/messages:89 ../WebSearch/messages:87
+#: ../WindowsKiller/messages:87 ../Xchat/messages:89
 msgid "Foreground image:"
 msgstr "Εικόνα προσκήνιου:"
 
@@ -504,7 +535,8 @@ msgstr "Εικόνα προσκήνιου:"
 #: ../Google/messages:91 ../GTG/messages:91 ../KTorrent/messages:91
 #: ../Lancelot/messages:91 ../Liferea/messages:91 ../MintMenu/messages:91
 #: ../Pidgin/messages:91 ../Quote/messages:93 ../Transmission/messages:91
-#: ../WebSearch/messages:89 ../WindowsKiller/messages:89 ../Xchat/messages:91
+#: ../Twitter/messages:91 ../WebSearch/messages:89
+#: ../WindowsKiller/messages:89 ../Xchat/messages:91
 msgid "Foreground tansparency:"
 msgstr "Διαφάνεια προσκήνιου:"
 
@@ -514,7 +546,8 @@ msgstr "Διαφάνεια προσκήνιου:"
 #: ../Lancelot/messages:93 ../Liferea/messages:93 ../MintMenu/messages:93
 #: ../Moon/messages:89 ../Pidgin/messages:93 ../Quote/messages:95
 #: ../Screensaver_inhibitor/messages:93 ../Translator/messages:95
-#: ../Transmission/messages:93 ../WebSearch/messages:91 ../Xchat/messages:93
+#: ../Transmission/messages:93 ../Twitter/messages:93 ../WebSearch/messages:91
+#: ../Xchat/messages:93
 msgid "Configuration"
 msgstr "Διαμόρφωση"
 
@@ -541,31 +574,14 @@ msgstr ""
 msgid "Behaviour"
 msgstr "Συμπεριφορά"
 
-#: ../Calendar/messages:103 ../Calendar/messages:107 ../Calendar/messages:111
-#, fuzzy
-msgid "in s."
-msgstr "σε δευτερόλεπτα."
-
-#: ../Calendar/messages:105
-msgid "Time length of dialogues for the calendar :"
-msgstr ""
-
-#: ../Calendar/messages:109
-msgid "Time length of dialogues for events of the day :"
-msgstr ""
-
-#: ../Calendar/messages:113
-msgid "Time length of dialogues for calendar of next month :"
-msgstr ""
-
-#: ../Calendar/messages:115
+#: ../Calendar/messages:103
 #, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr "Αφήστε κενό για χρήση του προεπιλεγμένου."
 
-#: ../Calendar/messages:117
+#: ../Calendar/messages:105
 msgid "Icon custom script:"
 msgstr ""
 
@@ -618,6 +634,7 @@ msgstr ""
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
 #: ../Screensaver_inhibitor/messages:7 ../Translator/messages:7
+#: ../Twitter/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Όνομα του εικονιδίου όπως θα εμφανίζεται στη λεζάντα του στο dock:"
 
@@ -745,7 +762,8 @@ msgstr "Διάρκεια αναπήδησης:"
 msgid "Short"
 msgstr ""
 
-#: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
+#: ../GTG/messages:99 ../Pidgin/messages:109 ../Twitter/messages:99
+#: ../Xchat/messages:101
 msgid "Medium"
 msgstr ""
 
@@ -1155,10 +1173,6 @@ msgstr ""
 msgid "Vidademerda.com.br"
 msgstr ""
 
-#: ../Quote/messages:113
-msgid "Grouphug.us"
-msgstr ""
-
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
 msgstr ""
@@ -1217,19 +1231,19 @@ msgid "Shortkey to (de)inhibit the screensaver:"
 msgstr ""
 "Πλήκτρο συντόμευσης για ενεργοποίηση/απενεργοποίηση της κατάστασης εύρεσης:"
 
-#: ../Translator/Translator:434
+#: ../Translator/Translator:424
 msgid "To"
 msgstr ""
 
-#: ../Translator/Translator:453
+#: ../Translator/Translator:443
 msgid "From"
 msgstr ""
 
-#: ../Translator/Translator:473
+#: ../Translator/Translator:463
 msgid "Switch languages"
 msgstr ""
 
-#: ../Translator/Translator:487
+#: ../Translator/Translator:476
 msgid "Translate from clipboard (middle-click)"
 msgstr ""
 
@@ -1552,6 +1566,114 @@ msgstr ""
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
+#: ../Twitter/Twitter:240 ../Twitter/Twitter:274
+msgid "Oh, dear, your timeline is empty :-("
+msgstr ""
+
+#: ../Twitter/Twitter:307
+msgid "Oh, dear, you do not have direct messages :-("
+msgstr ""
+
+#: ../Twitter/Twitter:326
+#, python-format
+msgid ""
+"%s [<b>%s</b>]\n"
+"Followers: %s\n"
+"Friends: %s\n"
+"Tweets: %s\n"
+msgstr ""
+
+#: ../Twitter/Twitter:336
+#, python-format
+msgid "%s, write a reply to %s"
+msgstr ""
+
+#: ../Twitter/Twitter:346
+#, python-format
+msgid "%s, send a tweet"
+msgstr ""
+
+#: ../Twitter/Twitter:349
+#, python-format
+msgid "Your tweet has more than %d characters, please make it shorter"
+msgstr ""
+
+#: ../Twitter/Twitter:355
+#, python-format
+msgid "%s, retweet?"
+msgstr ""
+
+#: ../Twitter/Twitter:378
+msgid ""
+"Twitter Applet needs your nickname, and an authorization\n"
+"that you accept it to connect on your Twitter account"
+msgstr ""
+
+#: ../Twitter/Twitter:384
+msgid "What is your Twitter nickname?"
+msgstr ""
+
+#: ../Twitter/Twitter:396
+msgid ""
+"Twitter applet needs you to give the authorization. Authorization page was "
+"opened on your browser. As soon as you authorize it, copy the PIN number "
+"that will be shown, and close this dialog"
+msgstr ""
+
+#: ../Twitter/Twitter:399
+msgid ""
+"Twitter applet needs you to give the authorization. Copy the address bellow "
+"and access it with your browser. Copy the PIN number that will be shown as "
+"soon as you authorize"
+msgstr ""
+
+#: ../Twitter/Twitter:405
+msgid "Enter the PIN number on the authorization page"
+msgstr ""
+
+#: ../Twitter/Twitter:412
+msgid "Successfully connected with Twitter"
+msgstr ""
+
+#: ../Twitter/Twitter:424
+msgid "Direct messages"
+msgstr ""
+
+#: ../Twitter/Twitter:426
+#, python-format
+msgid "New direct messages (%d)"
+msgstr ""
+
+#: ../Twitter/Twitter:439
+msgid "Info"
+msgstr "Πληροφορίες"
+
+#: ../Twitter/Twitter:448
+msgid "Tweets"
+msgstr ""
+
+#: ../Twitter/Twitter:450
+#, python-format
+msgid "New tweets (%d)"
+msgstr ""
+
+#: ../Twitter/Twitter:464
+msgid "My tweets"
+msgstr ""
+
+#: ../Twitter/messages:95
+msgid "Size of the emblem that shows the number of new tweets, and messages:"
+msgstr ""
+
+#: ../Twitter/messages:97
+msgid "Small"
+msgstr "Μικρό"
+
+#: ../Twitter/messages:101
+#, fuzzy
+msgid "Large"
+msgstr "μεγάλο"
+
 #: ../WebSearch/messages:93
 #, fuzzy
 msgid "Search engine :"
@@ -1639,6 +1761,10 @@ msgstr ""
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
+
+#, fuzzy
+#~ msgid "in s."
+#~ msgstr "σε δευτερόλεπτα."
 
 #~ msgid "Choose one of the available themes:"
 #~ msgstr "Επιλέξτε ένα από τα διαθέσιμα θέματα :"
@@ -5763,9 +5889,6 @@ msgstr ""
 #~ msgid "Maximum size of the dock:"
 #~ msgstr "Μέγστο μέγεθος του dock:"
 
-#~ msgid "Small"
-#~ msgstr "Μικρό"
-
 #~ msgid "Full screen"
 #~ msgstr "Πλήρης οθόνη"
 
@@ -6362,9 +6485,6 @@ msgstr ""
 #~ msgid "small"
 #~ msgstr "μικρό"
 
-#~ msgid "large"
-#~ msgstr "μεγάλο"
-
 #~ msgid ""
 #~ "Number of items loaded at once. Setting a high value speeds up loading a "
 #~ "little but will hang the application for longer."
@@ -6818,9 +6938,6 @@ msgstr ""
 
 #~ msgid "Dialog duration:"
 #~ msgstr "Διάρκεια διαλόγων:"
-
-#~ msgid "Info"
-#~ msgstr "Πληροφορίες"
 
 #~ msgid "Display current conditions on the icon instead of the default one?"
 #~ msgstr "Εμφάνιση τρεχουσών συνθηκών στο εικονίδιο αντί για την προεπιλογή;"
