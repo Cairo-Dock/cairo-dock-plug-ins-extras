@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-06-20 23:29+0000\n"
+"POT-Creation-Date: 2012-04-12 00:34+0000\n"
+"PO-Revision-Date: 2012-04-12 03:33+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
-"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-07-12 04:52+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
+"X-Launchpad-Export-Date: 2012-04-13 05:35+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
+"Language: sr\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -93,9 +95,8 @@ msgstr "Prikaz"
 #: ../Moon/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
 #: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
 #: ../WindowsKiller/messages:11 ../Xchat/messages:11
-#, fuzzy
 msgid "Let empty to use the default one."
-msgstr "Ostavite nepopunjeno da bi se koristio podrazumevani naziv"
+msgstr ""
 
 #: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
 #: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
@@ -104,9 +105,8 @@ msgstr "Ostavite nepopunjeno da bi se koristio podrazumevani naziv"
 #: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13
-#, fuzzy
 msgid "Image's filename :"
-msgstr "Naziv slike:"
+msgstr ""
 
 #: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:9
@@ -152,9 +152,8 @@ msgstr "Priručnik apleta"
 #: ../Translator/messages:21 ../Transmission/messages:21
 #: ../Twitter/messages:21 ../WebSearch/messages:19
 #: ../WindowsKiller/messages:19 ../Xchat/messages:21
-#, fuzzy
 msgid "Desklet"
-msgstr "Radna površina"
+msgstr ""
 
 #: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
 #: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:19
@@ -544,9 +543,8 @@ msgid "Shortkey to pop up the menu:"
 msgstr ""
 
 #: ../Calendar/messages:95
-#, fuzzy
 msgid "Applications"
-msgstr "Akcije"
+msgstr ""
 
 #: ../Calendar/messages:97
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -589,16 +587,14 @@ msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "Torrents info"
-msgstr "Preuzmi info o disku"
+msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "middle-click"
-msgstr "Akcija na srednji klik:"
+msgstr ""
 
 #: ../Deluge/messages:95 ../KTorrent/messages:95 ../Transmission/messages:95
 msgid "Shortkey to pop up the torrents info:"
@@ -632,18 +628,16 @@ msgid "(in minutes)"
 msgstr ""
 
 #: ../Gmail/messages:93
-#, fuzzy
 msgid "Delay between refreshes:"
-msgstr "Razmak između redova:"
+msgstr ""
 
 #: ../Gmail/messages:95
 msgid "Alerts"
 msgstr ""
 
 #: ../Gmail/messages:97
-#, fuzzy
 msgid "Show alerts?"
-msgstr "Prikazati sekunde?"
+msgstr ""
 
 #: ../Gmail/messages:99
 msgid ""
@@ -673,27 +667,24 @@ msgid "Should an animation be applied to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:111
-#, fuzzy
 msgid "Show animation?"
-msgstr "Animacija ikone"
+msgstr ""
 
 #: ../Gmail/messages:113
 msgid "Which animation should the apply to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:115
-#, fuzzy
 msgid "Choose animation?"
-msgstr "Animacija ikone"
+msgstr ""
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
 msgstr ""
 
 #: ../Gmail/messages:119
-#, fuzzy
 msgid "Show dialogue?"
-msgstr "Prikaži zauzeće diska:"
+msgstr ""
 
 #: ../Gmail/messages:121
 msgid "Should the applet play a sound with the notification?"
@@ -713,9 +704,8 @@ msgid "Path to sound file:"
 msgstr "Putanja do fajla sa zvucima:"
 
 #: ../Gmail/messages:129
-#, fuzzy
 msgid "Display a counter on the icon?"
-msgstr "Prikazati ikone u meniju?"
+msgstr ""
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
@@ -726,9 +716,8 @@ msgid "How?"
 msgstr ""
 
 #: ../Gmail/messages:135
-#, fuzzy
 msgid "small emblem"
-msgstr "manji"
+msgstr ""
 
 #: ../Gmail/messages:137
 msgid "large emblem"
@@ -739,9 +728,8 @@ msgid "quickinfo"
 msgstr ""
 
 #: ../GTG/messages:95 ../Xchat/messages:97
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Trajanje dijaloga:"
+msgstr ""
 
 #: ../GTG/messages:97 ../Pidgin/messages:107 ../Xchat/messages:99
 msgid "Short"
@@ -757,9 +745,8 @@ msgid "Long"
 msgstr ""
 
 #: ../GTG/messages:103 ../Xchat/messages:105
-#, fuzzy
 msgid "Animation of the icon on receiving channel messages :"
-msgstr "Animacija trenutne ikone:"
+msgstr ""
 
 #: ../GTG/messages:105 ../Xchat/messages:95
 msgid "Display channel messages in a bubble :"
@@ -783,7 +770,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -793,9 +781,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:27 ../Moon/messages:31
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:43
-#, fuzzy
 msgid "Is detached from the dock ?"
-msgstr "Je odvojen od doka"
+msgstr ""
 
 #: ../HDDtemperature/messages:29 ../Translator/messages:45
 msgid ""
@@ -805,9 +792,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:31 ../Moon/messages:33
 #: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
-#, fuzzy
 msgid "Accessibility :"
-msgstr "Vidljivost:"
+msgstr ""
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
@@ -816,9 +802,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
-#, fuzzy
 msgid "Should be visible on all desktops ?"
-msgstr "Vidljivo na svim radnim površinama?"
+msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:51
@@ -829,9 +814,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53
-#, fuzzy
 msgid "Lock position ?"
-msgstr "Zaključati položaj?"
+msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55
@@ -840,9 +824,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
 #: ../Screensaver_inhibitor/messages:57
-#, fuzzy
 msgid "Rotation :"
-msgstr "Okretanje"
+msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
@@ -863,15 +846,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
-#, fuzzy
 msgid "Background image :"
-msgstr "Slika pozadine:"
+msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
-#, fuzzy
 msgid "Background tansparency :"
-msgstr "Providnost pozadine:"
+msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
@@ -922,24 +903,21 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
-#, fuzzy
 msgid "Foreground image :"
-msgstr "Slika prednjeg plana:"
+msgstr ""
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
-#, fuzzy
 msgid "Foreground tansparency :"
-msgstr "Providnost prednjeg plana:"
+msgstr ""
 
 #: ../HDDtemperature/messages:89
 msgid "One or more device drive path to monitor:"
 msgstr ""
 
 #: ../HDDtemperature/messages:91
-#, fuzzy
 msgid "Show maximum temperature on icon?"
-msgstr "Prikazati temperaturu grafičke kartice?"
+msgstr ""
 
 #: ../HDDtemperature/messages:93
 msgid "Time interval for checking (minutes):"
@@ -979,19 +957,16 @@ msgid ""
 msgstr ""
 
 #: ../Liferea/messages:95
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Kako iscrtati ikonu:"
+msgstr ""
 
 #: ../Liferea/messages:97
-#, fuzzy
 msgid "Number of unread messages"
-msgstr "Broj zraka:"
+msgstr ""
 
 #: ../Liferea/messages:99
-#, fuzzy
 msgid " Number of new messages"
-msgstr "Broj delova:"
+msgstr ""
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -999,9 +974,8 @@ msgid ""
 msgstr ""
 
 #: ../Moon/messages:91
-#, fuzzy
 msgid "Show the moon for all the current week?"
-msgstr "Kako iscrtati trenutnu radnu površinu:"
+msgstr ""
 
 #: ../Moon/messages:93
 msgid "You are going to see the moon from the perspective of this hemisphere"
@@ -1060,14 +1034,12 @@ msgid "Display chat messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:105
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Trajanje dijaloga:"
+msgstr ""
 
 #: ../Pidgin/messages:113
-#, fuzzy
 msgid "Animation of the icon on receiving a message:"
-msgstr "Animacija ikone:"
+msgstr ""
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid ""
@@ -1087,9 +1059,8 @@ msgid "big"
 msgstr "velik"
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Ostavite nepopunjeno da bi se koristila ista slika."
+msgstr ""
 
 #: ../Quote/messages:97
 msgid "Quote source:"
@@ -1136,9 +1107,8 @@ msgid "Inhibit for a given timelength (in minutes)"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
-#, fuzzy
 msgid "timelength"
-msgstr "Trajanje"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 msgid "Inhibit for a given timelength"
@@ -1146,9 +1116,8 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
-#, fuzzy
 msgid "Leave empty to use the default one."
-msgstr "Ostavite nepopunjeno da bi se koristio podrazumevani naziv"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:11 ../Translator/messages:13
 msgid "Image filename:"
@@ -1169,9 +1138,8 @@ msgid "0 to never stop automatically"
 msgstr ""
 
 #: ../Screensaver_inhibitor/messages:97
-#, fuzzy
 msgid "Timelength of the inhibition:"
-msgstr "Poravnavanje naslova:"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:99
 msgid "Shortkey to (de)inhibit the screensaver:"
@@ -1490,9 +1458,8 @@ msgid "In s. Set 0 for an unlimited time."
 msgstr ""
 
 #: ../Translator/messages:369
-#, fuzzy
 msgid "Time-length of the result dialog:"
-msgstr "Poravnavanje naslova:"
+msgstr ""
 
 #: ../Translator/messages:371
 msgid "Editable text widget?"
@@ -1611,19 +1578,16 @@ msgid "Size of the emblem that shows the number of new tweets, and messages:"
 msgstr ""
 
 #: ../Twitter/messages:97
-#, fuzzy
 msgid "Small"
-msgstr "mali"
+msgstr ""
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Large"
-msgstr "veliki"
+msgstr ""
 
 #: ../WebSearch/messages:93
-#, fuzzy
 msgid "Search engine :"
-msgstr "Traži na netu"
+msgstr ""
 
 #: ../WebSearch/messages:95
 msgid "Google"
@@ -1658,9 +1622,8 @@ msgid "Wikipedia"
 msgstr "Wikipedija"
 
 #: ../WebSearch/messages:111
-#, fuzzy
 msgid "ImageShack"
-msgstr "Slike"
+msgstr ""
 
 #: ../WebSearch/messages:113
 msgid "Twitter"
@@ -1671,9 +1634,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:117
-#, fuzzy
 msgid "in sub-icons."
-msgstr "u sekundama"
+msgstr ""
 
 #: ../WebSearch/messages:119
 msgid "Maximum number of results shown :"
@@ -1706,2101 +1668,3 @@ msgstr ""
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-
-#, fuzzy
-#~ msgid "in s."
-#~ msgstr "u sekundama"
-
-#~ msgid "Choose one of the available themes:"
-#~ msgstr "Odaberi jednu od raspoloživih tema:"
-
-#~ msgid "Appearance"
-#~ msgstr "Izgled"
-
-#~ msgid "Animated icons"
-#~ msgstr "Animirane ikone"
-
-#~ msgid "This plug-in provides many different animations for your icons."
-#~ msgstr "Ovaj dodatak omogućava mnogo različitih animacija za vaše ikone."
-
-#~ msgid "Wave"
-#~ msgstr "Talas"
-
-#~ msgid "Cairo-Penguin"
-#~ msgstr "Cairo-Pingvin"
-
-#~ msgid "Hey, I'm here!"
-#~ msgstr "Hej, ja sam ovde!"
-
-#~ msgid "Sorry but I'm busy right now."
-#~ msgstr "Izvini, ali sada sam zauzet."
-
-#~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
-#~ msgstr ""
-#~ "Nemam vremena da se igram sa tobom. Moram da prekopavam po svim ovim "
-#~ "ikonama."
-
-#~ msgid "Your dock is so messy! Let me clean it."
-#~ msgstr "Vaš dok je u neredu! Dozvolite da ga sredim!"
-
-#~ msgid "Wait, do you want to kill me?!"
-#~ msgstr "Sačekajte, da li želite da me ubijete?!"
-
-#~ msgid "Do you know how painful it is to be clicked on??"
-#~ msgstr "Da li znate koliko je bolno kada kliknu na vas??"
-
-#~ msgid "It's my dock now, mwahahaha!"
-#~ msgstr "Sada je ovo moj dok, hahahaha!"
-
-#~ msgid "I want to be a pirate!"
-#~ msgstr "Želim da budem pirat!"
-
-#~ msgid "You shall not pass!"
-#~ msgstr "Nećeš proći!"
-
-#~ msgid "I'm your father!"
-#~ msgstr "Ja sam tvoj otac!"
-
-#~ msgid "Wake up"
-#~ msgstr "Probudi se"
-
-#~ msgid "Keep quiet"
-#~ msgstr "Budi tih"
-
-#~ msgid "Start XPenguins"
-#~ msgstr "Pokreni XPenguins"
-
-#~ msgid "Stop XPenguins"
-#~ msgstr "Zaustavi XPenguins"
-
-#~ msgid "Zzzzz"
-#~ msgstr "Zzzzz"
-
-#~ msgid "No items yet."
-#~ msgstr "Još uvek nema stavki."
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
-#~ msgid "day(s)"
-#~ msgstr "dan(i)"
-
-#~ msgid "Empty or unreadable folder."
-#~ msgstr "Prazan ili nečitljiv folder."
-
-#~ msgid "Rename this file"
-#~ msgstr "Preimenuj ovaj fajl"
-
-#~ msgid "Delete this file"
-#~ msgstr "Obriši ovaj fajl"
-
-#~ msgid "Move this file"
-#~ msgstr "Premesti ovaj fajl"
-
-#~ msgid "Open with"
-#~ msgstr "Otvori uz pomoć"
-
-#~ msgid "Properties"
-#~ msgstr "Osobine"
-
-#~ msgid "Create a new file"
-#~ msgstr "Kreiraj novi fajl"
-
-#~ msgid "Quick launch"
-#~ msgstr "Brzi pokretač"
-
-#~ msgid "Clear recent"
-#~ msgstr "Očisti nedavne"
-
-#~ msgid "Recent Documents"
-#~ msgstr "Nedavni dokumenti"
-
-#~ msgid "Clear the list of the recently used documents?"
-#~ msgstr "Obrisati listu nedavno korišćenih dokumenata?"
-
-#~ msgid "Enter a command to launch:"
-#~ msgstr "Unesi naredbu da pokreneš:"
-
-#~ msgid "A cable has been plugged"
-#~ msgstr "Kabl je priključen"
-
-#~ msgid "A cable has been unplugged"
-#~ msgstr "Kabl je otkačen"
-
-#~ msgid "Low"
-#~ msgstr "Nizak"
-
-#~ msgid "Middle"
-#~ msgstr "Srednji"
-
-#~ msgid "Good"
-#~ msgstr "Dobar"
-
-#~ msgid ""
-#~ "Checking connection...\n"
-#~ "Please retry in a few seconds"
-#~ msgstr ""
-#~ "Proveravam vezu ...\n"
-#~ "Molim, ponovo pokušajte za par sekundi"
-
-#~ msgid "Wired Connection."
-#~ msgstr "Žična veza."
-
-#~ msgid "Interface"
-#~ msgstr "Interfejs"
-
-#~ msgid "Speed"
-#~ msgstr "Brzina"
-
-#~ msgid "Wifi enabled."
-#~ msgstr "Wifi omogućen"
-
-#~ msgid "Network ID"
-#~ msgstr "Mrežni ID"
-
-#~ msgid "Unknown"
-#~ msgstr "Nepoznat"
-
-#~ msgid "Access point"
-#~ msgstr "Tačka pristupa"
-
-#~ msgid "Signal Quality"
-#~ msgstr "Kvalitet signala"
-
-#~ msgid "Loading"
-#~ msgstr "Učitavam"
-
-#~ msgid "Activate network"
-#~ msgstr "Aktiviraj mrežu"
-
-#~ msgid "Deactivate network"
-#~ msgstr "Obustavi mrežu"
-
-#~ msgid "Deactivate wifi"
-#~ msgstr "Obustavi wifi"
-
-#~ msgid "Activate wifi"
-#~ msgstr "Omogući wifi"
-
-#~ msgid "RSSreader"
-#~ msgstr "RSSČitač"
-
-#~ msgid "Retrieving data..."
-#~ msgstr "Dobavljam podatke..."
-
-#~ msgid "Open with your web browser"
-#~ msgstr "Otvori internet čitačem"
-
-#~ msgid "Refresh"
-#~ msgstr "Osveži"
-
-#~ msgid "No data (no connection?)"
-#~ msgstr "Nema podataka (nije uspostavljena veza?)"
-
-#~ msgid "No data"
-#~ msgstr "Nema podataka"
-
-#~ msgid "Recent files"
-#~ msgstr "Nedavni fajlovi"
-
-#~ msgid "The value %s has been copied into the clipboard."
-#~ msgstr "Vrednost %s je prekopirana u klipbord."
-
-#~ msgid "Execute"
-#~ msgstr "Izvrši"
-
-#~ msgid "Open a terminal here"
-#~ msgstr "Ovde otvori terminal"
-
-#~ msgid "Zip folder"
-#~ msgstr "Zip folder"
-
-#~ msgid "Move to"
-#~ msgstr "Premesti u"
-
-#~ msgid "Copy URL"
-#~ msgstr "Kopiraj URL"
-
-#~ msgid "Open location"
-#~ msgstr "Otvori lokaciju"
-
-#~ msgid "Zip file"
-#~ msgstr "Zip fajl"
-
-#~ msgid "Mail file"
-#~ msgstr "Fajl sa poštom"
-
-#~ msgid "Pick up a directory"
-#~ msgstr "Odaberi direktorijum"
-
-#~ msgid "Files"
-#~ msgstr "Fajlovi"
-
-#~ msgid "Open"
-#~ msgstr "Otvori"
-
-#~ msgid "Open in new window"
-#~ msgstr "Otvori u novom prozoru"
-
-#~ msgid "Open file"
-#~ msgstr "Otvori fajl"
-
-#~ msgid "Mediadico"
-#~ msgstr "Mediadico"
-
-#~ msgid "Amazon"
-#~ msgstr "Amazon"
-
-#~ msgid "No result"
-#~ msgstr "Nema rezultata"
-
-#~ msgid "results"
-#~ msgstr "rezultati"
-
-#~ msgid "result"
-#~ msgstr "rezultat"
-
-#~ msgid "Uptime"
-#~ msgstr "Vreme neprekidnog rada"
-
-#~ msgid "CPU model"
-#~ msgstr "Model procesora"
-
-#~ msgid "Frequency"
-#~ msgstr "Frekvencija"
-
-#~ msgid "core(s)"
-#~ msgstr "jezgro(a)"
-
-#~ msgid "GPU model"
-#~ msgstr "Model grafičke kartice"
-
-#~ msgid "Video Ram"
-#~ msgstr "Video memorija"
-
-#~ msgid "Mb"
-#~ msgstr "Mb"
-
-#~ msgid "Driver Version"
-#~ msgstr "Verzija upravljačkog programa"
-
-#~ msgid "Core Temperature"
-#~ msgstr "Temperatura jezgra"
-
-#~ msgid "Gb"
-#~ msgstr "Gb"
-
-#~ msgid "Memory"
-#~ msgstr "Memorija"
-
-#~ msgid "Available"
-#~ msgstr "Dostupan"
-
-#~ msgid "Buffers"
-#~ msgstr "Baferi"
-
-#~ msgid "Sound Control"
-#~ msgstr "Upravljanje zvukom"
-
-#~ msgid "Set up volume:"
-#~ msgstr "Podesi glasnost:"
-
-#~ msgid "No title"
-#~ msgstr "Bez naslova"
-
-#~ msgid "years"
-#~ msgstr "godine"
-
-#~ msgid "Calendar and tasks"
-#~ msgstr "Kalendar i poslovi"
-
-#~ msgid "Alarm"
-#~ msgstr "Alarm"
-
-#~ msgid "Day"
-#~ msgstr "Dan"
-
-#~ msgid "Monday"
-#~ msgstr "Ponedeljak"
-
-#~ msgid "Tuesday"
-#~ msgstr "Utorak"
-
-#~ msgid "Wednesday"
-#~ msgstr "Sreda"
-
-#~ msgid "Thursday"
-#~ msgstr "Četvrtak"
-
-#~ msgid "Friday"
-#~ msgstr "Petak"
-
-#~ msgid "Saturday"
-#~ msgstr "Subota"
-
-#~ msgid "Sunday"
-#~ msgstr "Nedelja"
-
-#~ msgid "Week Day"
-#~ msgstr "Radnim danima"
-
-#~ msgid "Week End"
-#~ msgstr "Vikendom"
-
-#~ msgid "Month"
-#~ msgstr "Mesec"
-
-#~ msgid "Repeat every:"
-#~ msgstr "Ponovi svakih:"
-
-#~ msgid "Tea Time!"
-#~ msgstr "Vreme za čaj!"
-
-#~ msgid "Command to launch:"
-#~ msgstr "Naredbu da pokrenem:"
-
-#~ msgid "E.g.:"
-#~ msgstr "Npr:"
-
-#~ msgid "clock"
-#~ msgstr "sat"
-
-#~ msgid "Show today's tasks"
-#~ msgstr "Prikaži današnje zadatke"
-
-#~ msgid "Show this week's tasks"
-#~ msgstr "Prikaži poslove za ovu nedelju"
-
-#~ msgid "Set up time and date"
-#~ msgstr "Podesi datum i vreme"
-
-#~ msgid "Add a new task"
-#~ msgstr "Dodaj novi zadatak"
-
-#~ msgid "Delete this task"
-#~ msgstr "Obriši ovaj zadatak"
-
-#~ msgid "Don't repeat"
-#~ msgstr "Ne ponavljaj"
-
-#~ msgid "Each month"
-#~ msgstr "Svakog meseca"
-
-#~ msgid "Each year"
-#~ msgstr "Svake godine"
-
-#~ msgid "each month"
-#~ msgstr "svakog meseca"
-
-#~ msgid "each year"
-#~ msgstr "svake godine"
-
-#~ msgid "Right-click to add a new task."
-#~ msgstr "Desni klik za dodavanje novog zadatka."
-
-#~ msgid "Title"
-#~ msgstr "Naslov"
-
-#~ msgid "Text"
-#~ msgstr "Tekst"
-
-#~ msgid "Time"
-#~ msgstr "Vreme"
-
-#~ msgid "Freq."
-#~ msgstr "Frek."
-
-#~ msgid "1mn"
-#~ msgstr "1min"
-
-#~ msgid "1h"
-#~ msgstr "1h"
-
-#~ msgid "The following task was scheduled at"
-#~ msgstr "Ovaj posao je bio zakazan za"
-
-#~ msgid "Repeat this message every:"
-#~ msgstr "Ponovi ovu poruku svakih:"
-
-#~ msgid "It's time for the following task:"
-#~ msgstr "Vreme je za sledeći zadatak:"
-
-#~ msgid "This task will begin in 15 minutes:"
-#~ msgstr "Ovaj zadatak će početi za 15 minuta:"
-
-#~ msgid "Today is the following anniversary:"
-#~ msgstr "Danas je sledeća godišnjica:"
-
-#~ msgid "Tomorrow is the following anniversary:"
-#~ msgstr "Sutra je sledeća godišnjica:"
-
-#~ msgid "Configure Compiz"
-#~ msgstr "Podesi Compiz"
-
-#~ msgid "Reload WM"
-#~ msgstr "Ponovo učitaj menadžer prozora"
-
-#~ msgid "Reload Emerald"
-#~ msgstr "Ponovo učitaj Emerald"
-
-#~ msgid "dark"
-#~ msgstr "tamno"
-
-#~ msgid "clear"
-#~ msgstr "jasno"
-
-#~ msgid "futuristic"
-#~ msgstr "futuristički"
-
-#~ msgid "modern"
-#~ msgstr "moderno"
-
-#~ msgid "dialog rendering"
-#~ msgstr "iscrtavanje dijaloga"
-
-#~ msgid ""
-#~ "The text has been pasted in the clipboard.\n"
-#~ "You can retrieve it with CTRL+v."
-#~ msgstr ""
-#~ "Tekst je prebačen u klipbord.\n"
-#~ "Možete ga vratiti sa CTRL+v."
-
-#~ msgid "File"
-#~ msgstr "Fajl"
-
-#~ msgid "Click on the icon to copy the URL into the clipboard."
-#~ msgstr "Klikni na ikonu da bi iskopirao URL u klipbord."
-
-#~ msgid "Get text"
-#~ msgstr "Preuzmi tekst"
-
-#~ msgid "Remove from history"
-#~ msgstr "Ukloni iz istorijata"
-
-#~ msgid "Clear History"
-#~ msgstr "Očisti istorijat"
-
-#~ msgid "Parabolic"
-#~ msgstr "Parabolično"
-
-#~ msgid "Rainbow"
-#~ msgstr "Duga"
-
-#~ msgid "Slide"
-#~ msgstr "Diapotitiv"
-
-#~ msgid "Curve"
-#~ msgstr "Kriva"
-
-#~ msgid "Panel"
-#~ msgstr "Panel"
-
-#~ msgid "dustbin"
-#~ msgstr "Đubre"
-
-#~ msgid "The trash contains"
-#~ msgstr "U đubretu se nalazi"
-
-#~ msgid "files"
-#~ msgstr "fajlovi"
-
-#~ msgid "Show Trash (click)"
-#~ msgstr "Prikaži đubre (klik)"
-
-#~ msgid "Display dustbins information"
-#~ msgstr "Prikaži informacije o đubretu"
-
-#~ msgid "%s successfully unmounted"
-#~ msgstr "%s uspešno demontiran"
-
-#~ msgid "failed to unmount %s"
-#~ msgstr "neuspelo demontiranje %s"
-
-#~ msgid "Unmouting this volume ..."
-#~ msgstr "Demontiram ovaj diska ..."
-
-#~ msgid " file(s)"
-#~ msgstr " fajl(ovi)"
-
-#~ msgid "calculating"
-#~ msgstr "izračunavam"
-
-#~ msgid "icon effects"
-#~ msgstr "Efekti ikona"
-
-#~ msgid "Fire"
-#~ msgstr "Vatra"
-
-#~ msgid "Stars"
-#~ msgstr "Zvezde"
-
-#~ msgid "Rain"
-#~ msgstr "Kiša"
-
-#~ msgid "Snow"
-#~ msgstr "Sneg"
-
-#~ msgid "Storm"
-#~ msgstr "Oluja"
-
-#~ msgid "Firework"
-#~ msgstr "Vatromet"
-
-#~ msgid "illusion"
-#~ msgstr "Iluzija"
-
-#~ msgid "keyboard indicator"
-#~ msgstr "indikator tastature"
-
-#~ msgid "logout"
-#~ msgstr "odjava"
-
-#~ msgid "Choose in how many minutes your PC will stop:"
-#~ msgstr "Odaberite za koliko minuta će se vaš PC prestati sa radom:"
-
-#~ msgid "Lock screen"
-#~ msgstr "Zaključaj ekran"
-
-#~ msgid "Your computer will shut-down in 1 minute."
-#~ msgstr "Vaš računar će prestati sa radom za 1 minut."
-
-#~ msgid "Server address:"
-#~ msgstr "Adresa servera:"
-
-#~ msgid "Username:"
-#~ msgstr "Korisničko ime:"
-
-#~ msgid "Password:"
-#~ msgstr "Lozinka:"
-
-#~ msgid "The password will be crypted."
-#~ msgstr "Lozinka će biti šifrovana."
-
-#~ msgid "Port:"
-#~ msgstr "Port:"
-
-#~ msgid "Use a secure connection (SSL)"
-#~ msgstr "Koristi beznednu vezu (SSL)"
-
-#~ msgid "Specific mail application"
-#~ msgstr "Određeni program za e-poštu"
-
-#~ msgid "Leave empty to use the default mail application."
-#~ msgstr ""
-#~ "Ostavite nepopunjeno da bi koristili podrazumevani program za e-poštu"
-
-#~ msgid "Path to Mail directory:"
-#~ msgstr "Putanja do direktorijuma e-pošte:"
-
-#~ msgid "Please choose an account type."
-#~ msgstr "Molm, oderdite vrstu naloga."
-
-#~ msgid "New account's name"
-#~ msgstr "Novi naziv naloga"
-
-#~ msgid "Please enter a name for this account."
-#~ msgstr "Molim, unesite naziv ovog naloga."
-
-#~ msgid ""
-#~ "This account already exists.\n"
-#~ "Please choose another name for the new account."
-#~ msgstr ""
-#~ "Ovaj nalog već postoji.\n"
-#~ "Molim, odaberite drugi naziv za novi nalog."
-
-#~ msgid "Remove Account"
-#~ msgstr "Ukloni nalog"
-
-#~ msgid "unknown"
-#~ msgstr "nepoznato"
-
-#~ msgid "no subject"
-#~ msgstr "bez teme"
-
-#~ msgid "No unread mail in your mailboxes"
-#~ msgstr "Nema nepročitanih poruka u poštanskom sandučetu"
-
-#~ msgid "You have %d new mails:"
-#~ msgstr "Imate %d novih poruka:"
-
-#~ msgid "You have a new mail:"
-#~ msgstr "Imate novu poruku:"
-
-#~ msgid "mail"
-#~ msgstr "pošta"
-
-#~ msgid "Mark all emails as read"
-#~ msgstr "Označi da su sve poruke pročitane"
-
-#~ msgid "Launch %s"
-#~ msgstr "Pokreni %s"
-
-#~ msgid "Mail"
-#~ msgstr "Pošta"
-
-#~ msgid "Unknown artist"
-#~ msgstr "Nepoznat izvođač"
-
-#~ msgid "Unknown title"
-#~ msgstr "Nepoznat naslov"
-
-#~ msgid "Track"
-#~ msgstr "Numera"
-
-#~ msgid "Current song"
-#~ msgstr "Trenutna pesma"
-
-#~ msgid "Artist"
-#~ msgstr "Izvođač"
-
-#~ msgid "Album"
-#~ msgstr "Album"
-
-#~ msgid "Track n°"
-#~ msgstr "Traka br."
-
-#~ msgid "Song n°"
-#~ msgstr "Pesma br."
-
-#~ msgid "Previous"
-#~ msgstr "Prethodni"
-
-#~ msgid "Stop"
-#~ msgstr "Zaustavi"
-
-#~ msgid "Information"
-#~ msgstr "Informacije"
-
-#~ msgid "Rate this song"
-#~ msgstr "Oceni ovu pesmu"
-
-#~ msgid "Total amount of data"
-#~ msgstr "Ukupno podataka"
-
-#~ msgid "downloaded"
-#~ msgstr "preuzeto"
-
-#~ msgid "uploaded"
-#~ msgstr "poslato"
-
-#~ msgid "No battery found."
-#~ msgstr "Baterije nisu pronađene."
-
-#~ msgid "Please put your laptop on charge."
-#~ msgstr "Molim, priključite laptop na mrežu."
-
-#~ msgid "Halt"
-#~ msgstr "Zaustavi"
-
-#~ msgid "Hibernate"
-#~ msgstr "U hibernaciju"
-
-#~ msgid "Suspend"
-#~ msgstr "Obustavljanje"
-
-#~ msgid "Reboot"
-#~ msgstr "Ponovo pokreni sistem"
-
-#~ msgid "Quick Browser"
-#~ msgstr "Brzi pregledač"
-
-#~ msgid "Open this folder"
-#~ msgstr "Otvori ovaj folder"
-
-#~ msgid "Open folder"
-#~ msgstr "Otvori folder"
-
-#~ msgid "Unmounted"
-#~ msgstr "Demontiran"
-
-#~ msgid "%s is now mounted"
-#~ msgstr "%s je sada montiran"
-
-#~ msgid "%s has been connected"
-#~ msgstr "%s je povezan"
-
-#~ msgid "%s is now unmounted"
-#~ msgstr "%s je sada demontiran"
-
-#~ msgid "shortcuts"
-#~ msgstr "prečice"
-
-#~ msgid "failed to mount %s"
-#~ msgstr "neuspelo montiranje %s"
-
-#~ msgid "Failed to unmount %s"
-#~ msgstr "neuspelo demontiranje %s"
-
-#~ msgid "Sorry, this applet is not yet available for KDE."
-#~ msgstr "Izvinite, ovaj aplet još uvek nije dostupan za KDE."
-
-#~ msgid "Eject"
-#~ msgstr "Izbaci"
-
-#~ msgid "show mouse"
-#~ msgstr "prikaži miša"
-
-#~ msgid "showDesktop"
-#~ msgstr "prikažiRadnuPovršinu"
-
-#~ msgid "Show the desktop"
-#~ msgstr "Prikaži radnu površinu"
-
-#~ msgid "Change screen resolution"
-#~ msgstr "Promenite rezoluciju ekrana"
-
-#~ msgid "Move to the Desktop"
-#~ msgstr "Premesti na radnu površinu"
-
-#~ msgid "Copy to the Desktop"
-#~ msgstr "Kopiraj na radnu površinu"
-
-#~ msgid "Link to the Desktop"
-#~ msgstr "Poveži sa radnom površinom"
-
-#~ msgid "Download onto the Desktop"
-#~ msgstr "Preuzmi na radnu površinu"
-
-#~ msgid "slider"
-#~ msgstr "klizač"
-
-#~ msgid "Pause"
-#~ msgstr "Pauza"
-
-#~ msgid "Paste (drag'n'drop)"
-#~ msgstr "Prilepi (prevuci i pusti)"
-
-#~ msgid "Open (click)"
-#~ msgstr "Otvori (klik)"
-
-#~ msgid "Copy"
-#~ msgstr "Kopiraj"
-
-#~ msgid "Cut"
-#~ msgstr "Iseci"
-
-#~ msgid "Rename this item"
-#~ msgstr "Promeni naziv ovoj stavci"
-
-#~ msgid "Remove this item"
-#~ msgstr "Ukloni ovu stavku"
-
-#~ msgid "Current"
-#~ msgstr "Trenutni"
-
-#~ msgid "Rename this workspace"
-#~ msgstr "Promeni naziv ovog radnog prostora"
-
-#~ msgid ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
-#~ msgstr ""
-#~ "Ovo će premestiti sve prozore sa trenutne radne površine na onu na kju "
-#~ "ste kliknuli."
-
-#~ msgid "Windows List"
-#~ msgstr "Lista prozora"
-
-#~ msgid "New Tab"
-#~ msgstr "Novi jezičak"
-
-#~ msgid "Rename current Tab"
-#~ msgstr "Promeni naziv trenutnog jezička"
-
-#~ msgid "Close current Tab"
-#~ msgstr "Zatvori trenutni jezičak"
-
-#~ msgid "Terminal"
-#~ msgstr "Terminal"
-
-#~ msgid "Set title for this tab:"
-#~ msgstr "Postavi naslov ovog jezička:"
-
-#~ msgid "Select a color"
-#~ msgstr "Odaberi boju"
-
-#~ msgid "Paste"
-#~ msgstr "Prilepi"
-
-#~ msgid "Rename this Tab"
-#~ msgstr "Izmeni naziv ovog jezička"
-
-#~ msgid "Change this Tab's colour"
-#~ msgstr "Izmeni boju ovog jezička"
-
-#~ msgid "Close this Tab"
-#~ msgstr "Zatvori ovaj jezičak"
-
-#~ msgid "Note name : "
-#~ msgstr "Naziv napomene: "
-
-#~ msgid "Delete this note?"
-#~ msgstr "Ukloniti ovu napomenu?"
-
-#~ msgid "Search for:"
-#~ msgstr "Traži:"
-
-#~ msgid "Add a note"
-#~ msgstr "Dodaj napomenu"
-
-#~ msgid "Delete this note"
-#~ msgstr "Obriši ovu napomenu"
-
-#~ msgid "Reload notes"
-#~ msgstr "Ponovo učitaj napomenu"
-
-#~ msgid "Search"
-#~ msgstr "Pretraga"
-
-#~ msgid "Search for today's note"
-#~ msgstr "Traži današnju napomenu"
-
-#~ msgid "Search for this week's note"
-#~ msgstr "Traži ovonedeljnu napomenu"
-
-#~ msgid "Search for next week's note"
-#~ msgstr "Traži napomenu za iduću nedelju"
-
-#~ msgid "weather"
-#~ msgstr "vremenski uslovi"
-
-#~ msgid "Jan"
-#~ msgstr "jan."
-
-#~ msgid "Feb"
-#~ msgstr "feb."
-
-#~ msgid "Mar"
-#~ msgstr "mar."
-
-#~ msgid "Apr"
-#~ msgstr "apr."
-
-#~ msgid "May"
-#~ msgstr "maj."
-
-#~ msgid "Jun"
-#~ msgstr "jun."
-
-#~ msgid "Jui"
-#~ msgstr "jul."
-
-#~ msgid "Aug"
-#~ msgstr "avg."
-
-#~ msgid "Sep"
-#~ msgstr "sep."
-
-#~ msgid "Oct"
-#~ msgstr "okt."
-
-#~ msgid "Nov"
-#~ msgstr "nov."
-
-#~ msgid "Dec"
-#~ msgstr "dec."
-
-#~ msgid "Data are being retrieved, please wait a moment."
-#~ msgstr "Podaci su povraćeni, malo sačekajte, molim."
-
-#~ msgid "Reload now"
-#~ msgstr "Sada ponovo učitati"
-
-#~ msgid ""
-#~ "No data available\n"
-#~ " is your connection alive?"
-#~ msgstr ""
-#~ "Nema podataka\n"
-#~ " da li ste povezani?"
-
-#~ msgid "Temperature"
-#~ msgstr "Temperatura"
-
-#~ msgid "Wind"
-#~ msgstr "Vetar"
-
-#~ msgid "Humidity"
-#~ msgstr "Vlažnost"
-
-#~ msgid "Sunrise"
-#~ msgstr "Sunce izlazi"
-
-#~ msgid "Sunset"
-#~ msgstr "Sunce zalazi"
-
-#~ msgid "Data are being fetched, please re-try in a few seconds."
-#~ msgstr "Podaci su preuzeti, molim vas da pokušate kasnije"
-
-#~ msgid ""
-#~ "No data available\n"
-#~ "Retrying now..."
-#~ msgstr ""
-#~ "Nema podataka\n"
-#~ "Pokušavam ponovo ..."
-
-#~ msgid "Feels like"
-#~ msgstr "Nešto kao"
-
-#~ msgid "Pressure"
-#~ msgstr "Pritisak"
-
-#~ msgid "WiFi disabled."
-#~ msgstr "WiFi onemogućen."
-
-#~ msgid "wifi"
-#~ msgstr "wifi"
-
-#~ msgid "Global"
-#~ msgstr "Globalno"
-
-#~ msgid "when hovering over an icon"
-#~ msgstr "kada pređete preko ikone"
-
-#~ msgid "Effects used:"
-#~ msgstr "Efekti koji se koriste:"
-
-#~ msgid "when clicking on an launcher"
-#~ msgstr "kada kliknete na pokretač"
-
-#~ msgid "Effects used on launcher:"
-#~ msgstr "Efekti koji se koriste za pokretač:"
-
-#~ msgid "Number of times the animation will play:"
-#~ msgstr "Koliko puta će se ponoviti animacija:"
-
-#~ msgid "when clicking on an application"
-#~ msgstr "kada se klikne na program"
-
-#~ msgid "Effects used on applications:"
-#~ msgstr "Efekti koji se koriste na programe:"
-
-#~ msgid "when clicking on an applet"
-#~ msgstr "kada kliknete na aplet"
-
-#~ msgid "Effects used on applets:"
-#~ msgstr "Efekti koji se koriste na apletima:"
-
-#~ msgid "Rotation"
-#~ msgstr "Rotacija"
-
-#~ msgid "Duration of the animation:"
-#~ msgstr "Trajanje animacije:"
-
-#~ msgid "Cube"
-#~ msgstr "Kocka"
-
-#~ msgid "Random colours?"
-#~ msgstr "Slučajne boje?"
-
-#~ msgid "Ray size:"
-#~ msgstr "Veličina zraka:"
-
-#~ msgid "Ray speed:"
-#~ msgstr "Brzina zraka:"
-
-#~ msgid "Friction:"
-#~ msgstr "Trenje:"
-
-#~ msgid "Number of points on the grid in each direction:"
-#~ msgstr "Broj tačaka na polju u svim pravcima:"
-
-#~ msgid "Wave width:"
-#~ msgstr "Širina talasa:"
-
-#~ msgid "Wave amplitude:"
-#~ msgstr "Visina talasa:"
-
-#~ msgid "Pulse max zoom:"
-#~ msgstr "Maksimalni zum impulsa:"
-
-#~ msgid "Icon size for busy penguin:"
-#~ msgstr "Veličina ikone za zauzetog pingvina:"
-
-#~ msgid "Penguin transparency:"
-#~ msgstr "Providnost pingvina:"
-
-#~ msgid "in pixels."
-#~ msgstr "u pikselima,"
-
-#~ msgid "Items"
-#~ msgstr "Stavke"
-
-#~ msgid "Which items should be remembered?"
-#~ msgstr "Koje stavke treba zapamtiti?"
-
-#~ msgid "Clipboard"
-#~ msgstr "Klipbord"
-
-#~ msgid "Selection"
-#~ msgstr "Izbor"
-
-#~ msgid "Both"
-#~ msgstr "Оба"
-
-#~ msgid "Pop-up menus at mouse position?"
-#~ msgstr "Iskačući meni na poziciji miša?"
-
-#~ msgid "Enable actions?"
-#~ msgstr "Omogućiti akcije?"
-
-#~ msgid "Display actions when selecting an item in the history."
-#~ msgstr "Prikaži akcije kada odaberem stavku iz istorijata."
-
-#~ msgid "Replay actions?"
-#~ msgstr "Ponoviti akcije?"
-
-#~ msgid "Duration of the action menu:"
-#~ msgstr "Trajanje akcionog menija:"
-
-#~ msgid "Persistent items"
-#~ msgstr "Trajne stavke"
-
-#~ msgid "A list of persistent items which can be accessed with middle-click:"
-#~ msgstr "Lista trajnih stavki kojima se može pristupiti srednjim klikom:"
-
-#~ msgid "Let external applications pop up dialogs in the dock?"
-#~ msgstr "Dozvoliti pojavljivanje dijaloga ostalih programa u doku?"
-
-#~ msgid "Graph"
-#~ msgstr "Grafikon"
-
-#~ msgid "Type of graphic :"
-#~ msgstr "Vrsta grafikona:"
-
-#~ msgid "Line"
-#~ msgstr "Linija"
-
-#~ msgid "Plain"
-#~ msgstr "Običan"
-
-#~ msgid "Circle"
-#~ msgstr "Krug"
-
-#~ msgid "Plain Circle"
-#~ msgstr "Jednostavni krug"
-
-#~ msgid "No"
-#~ msgstr "Ne"
-
-#~ msgid "Specify the xml file to be used :"
-#~ msgstr "Odredi koji xml fajl će se koristiti:"
-
-#~ msgid "Font to be used by default if none is specify in the .xml"
-#~ msgstr "Font koji će se koristiti ako nije naznačen u .xml"
-
-#~ msgid "Default Font:"
-#~ msgstr "Podrazumevani font:"
-
-#~ msgid "Color to be used by default if none is specify in the .xml"
-#~ msgstr "Boja koja će se koristiti ako nije naznačena u .xml"
-
-#~ msgid "Default colour:"
-#~ msgstr "Podrazumevana boja:"
-
-#~ msgid "Space between lines:"
-#~ msgstr "Razmak između linija:"
-
-#~ msgid "Background"
-#~ msgstr "Pozadina"
-
-#~ msgid "Set the thickness to 0 for no border"
-#~ msgstr "Postavi debljinu na 0 za bez okvira"
-
-#~ msgid "Border thickness:"
-#~ msgstr "Debljina ovira:"
-
-#~ msgid "Border colour"
-#~ msgstr "Boja okvira"
-
-#~ msgid "Border colour :"
-#~ msgstr "Boja okvira:"
-
-#~ msgid "Use an image"
-#~ msgstr "Koristi sliku"
-
-#~ msgid "Draw sub-dock's content as emblems"
-#~ msgstr "Isrtaj sadržaj pod-doka kao simbol"
-
-#~ msgid "Draw sub-dock's content as stack"
-#~ msgstr "Iscrtaj sadržaj pod-doka naslagano"
-
-#~ msgid "Draw sub-dock's content inside a box"
-#~ msgstr "Iscrtaj sadržaj pod-doka u naslagano okvir"
-
-#~ msgid "Folder's path:"
-#~ msgstr "Putanja foldera:"
-
-#~ msgid "Sort files by :"
-#~ msgstr "Sortiraj fajlove po:"
-
-#~ msgid "Name"
-#~ msgstr "Naziv"
-
-#~ msgid "Date"
-#~ msgstr "Datum"
-
-#~ msgid "Size"
-#~ msgstr "Veličina"
-
-#~ msgid "Sort folders before files?"
-#~ msgstr "Sortirati foldere pre fajlova?"
-
-#~ msgid "Show hidden files?"
-#~ msgstr "Prikazati skrivene fajlove?"
-
-#~ msgid "Shortkey to show/hide the quick-launch dialog:"
-#~ msgstr "Prečica za prikaz/skrivanje dijaloga brzog-pokretača:"
-
-#~ msgid "Recent documents"
-#~ msgstr "Nedavno korišćeni dokumenti"
-
-#~ msgid "Show recent documents?"
-#~ msgstr "Prikazati nedavno korišćene dokumente?"
-
-#~ msgid "Leave blank if filter is not needed."
-#~ msgstr "Ostavite nepopunjeno ako vam nije potreban filter."
-
-#~ msgid "Wifi signal"
-#~ msgstr "Wifi signal"
-
-#~ msgid "Connexion speed"
-#~ msgstr "Brzina veze"
-
-#~ msgid "By default the first active interface is used."
-#~ msgstr "Podrazumevano se koristi prvi aktivni interfejs."
-
-#~ msgid "Connection interface to monitor:"
-#~ msgstr "Nadgledati interfejs veze:"
-
-#~ msgid "Display numeric values:"
-#~ msgstr "Prikaži brojčane vrednosti:"
-
-#~ msgid "Wifi"
-#~ msgstr "Wifi"
-
-#~ msgid "Icons"
-#~ msgstr "Ikone"
-
-#~ msgid "Zoom"
-#~ msgstr "Uvećanje"
-
-#~ msgid "Transparency"
-#~ msgstr "Providnost"
-
-#~ msgid "RSS Feed"
-#~ msgstr "RSS snabdevač"
-
-#~ msgid "URL:"
-#~ msgstr "URL:"
-
-#~ msgid "Icon animation + Dialog bubble"
-#~ msgstr "Animacija ikone + Balončići dijaloga"
-
-#~ msgid "Duration of the notification:"
-#~ msgstr "Trajanje obaveštenja:"
-
-#~ msgid "Font to be used for the title"
-#~ msgstr "Font koji će se koristiti za naslov"
-
-#~ msgid "Title font:"
-#~ msgstr "Font za naslov:"
-
-#~ msgid "Colour to be used for the title"
-#~ msgstr "Boja naslova"
-
-#~ msgid "Title colour:"
-#~ msgstr "Boja naslova:"
-
-#~ msgid "left"
-#~ msgstr "levo"
-
-#~ msgid "right"
-#~ msgstr "desno"
-
-#~ msgid "Logo"
-#~ msgstr "Logotip"
-
-#~ msgid "Display the logo?"
-#~ msgstr "Prikazati logotip?"
-
-#~ msgid "Adjust to increase/decrease the logo's size"
-#~ msgstr "Podesi povećaj/smanji dimenzije logotipa"
-
-#~ msgid "Logo size:"
-#~ msgstr "Veličina logotipa:"
-
-#~ msgid "normal"
-#~ msgstr "uobičajen"
-
-#~ msgid "Number of lines to display :"
-#~ msgstr "Broj linija za prikaz:"
-
-#~ msgid "Animations"
-#~ msgstr "Animacije"
-
-#~ msgid "Duration of the appearance animation :"
-#~ msgstr "Dužina trajanja animacije:"
-
-#~ msgid "Color of the text's frame  :"
-#~ msgstr "Boja tekstualnog okvira:"
-
-#~ msgid "Font size, relative to the dock size:"
-#~ msgstr "Veličina fonta, relativna u odnosu na veličinu doka:"
-
-#~ msgid "between 1 and 9, the higher, the bigger."
-#~ msgstr "između 1 i 9, što više, to veće."
-
-#~ msgid "Text size:"
-#~ msgstr "Veličina teksta:"
-
-#~ msgid "Outline text?"
-#~ msgstr "Tekst sa konturom?"
-
-#~ msgid "Text colour:"
-#~ msgstr "Boja teksta:"
-
-#~ msgid "Character background colour:"
-#~ msgstr "Boja pozadine znaka:"
-
-#~ msgid "Write text on the top of the dock?"
-#~ msgstr "Ispisati tekst preko doka?"
-
-#~ msgid "Favorite applications"
-#~ msgstr "Omiljeni programi"
-
-#~ msgid "FAvorite applications starting with 'a' :"
-#~ msgstr "Omiljeni programi koji počinju na 'a':"
-
-#~ msgid "Favorite application starting with 'b' :"
-#~ msgstr "Omiljeni programi koji počinju na 'b':"
-
-#~ msgid "Favorite application(s) starting with 'c' :"
-#~ msgstr "Omiljeni programi koji počinju na 'c':"
-
-#~ msgid "Favorite application(s starting with 'd' :"
-#~ msgstr "Omiljeni programi koji počinju na 'd':"
-
-#~ msgid "Favorite application(s) starting with 'e' :"
-#~ msgstr "Omiljeni programi koji počinju na 'e':"
-
-#~ msgid "Favorite application(s) starting with 'f' :"
-#~ msgstr "Omiljeni programi koji počinju na 'f':"
-
-#~ msgid "Favorite application(s) starting with 'g' :"
-#~ msgstr "Omiljeni programi koji počinju na 'g':"
-
-#~ msgid "Favorite application(s) starting with 'h' :"
-#~ msgstr "Omiljeni programi koji počinju na 'h':"
-
-#~ msgid "Favorite application(s) starting with 'i' :"
-#~ msgstr "Omiljeni programi koji počinju na 'i':"
-
-#~ msgid "Favorite application(s) starting with 'j' :"
-#~ msgstr "Omiljeni programi koji počinju na 'j':"
-
-#~ msgid "Favorite application(s) starting with 'k' :"
-#~ msgstr "Omiljeni programi koji počinju na 'k':"
-
-#~ msgid "Favorite application(s) starting with 'l' :"
-#~ msgstr "Omiljeni programi koji počinju na 'l':"
-
-#~ msgid "Favorite application(s) starting with 'm' :"
-#~ msgstr "Omiljeni programi koji počinju na 'm':"
-
-#~ msgid "Favorite application(s) starting with 'n' :"
-#~ msgstr "Omiljeni programi koji počinju na 'n':"
-
-#~ msgid "Favorite application(s) starting with 'o' :"
-#~ msgstr "Omiljeni programi koji počinju na 'o':"
-
-#~ msgid "Favorite application(s) starting with 'p' :"
-#~ msgstr "Omiljeni programi koji počinju na 'p':"
-
-#~ msgid "Favorite application(s) starting with 'q' :"
-#~ msgstr "Omiljeni programi koji počinju na 'q':"
-
-#~ msgid "Favorite application(s) starting with 'r' :"
-#~ msgstr "Omiljeni programi koji počinju na 'r':"
-
-#~ msgid "Favorite application(s) starting with 's' :"
-#~ msgstr "Omiljeni programi koji počinju na 's':"
-
-#~ msgid "Favorite application(s) starting with 't' :"
-#~ msgstr "Omiljeni programi koji počinju na 't':"
-
-#~ msgid "Favorite application(s) starting with 'u' :"
-#~ msgstr "Omiljeni programi koji počinju na 'u':"
-
-#~ msgid "Favorite application(s) starting with 'v' :"
-#~ msgstr "Omiljeni programi koji počinju na 'v':"
-
-#~ msgid "Favorite application(s) starting with 'w' :"
-#~ msgstr "Omiljeni programi koji počinju na 'w':"
-
-#~ msgid "Favorite application(s) starting with 'x' :"
-#~ msgstr "Omiljeni programi koji počinju na 'x':"
-
-#~ msgid "Favorite application(s) starting with 'y' :"
-#~ msgstr "Omiljeni programi koji počinju na 'y':"
-
-#~ msgid "Favorite application(s) starting with 'z' :"
-#~ msgstr "Omiljeni programi koji počinju na 'z':"
-
-#~ msgid "Propose some web search engines ?"
-#~ msgstr "Predloži neke internet pretraživače?"
-
-#~ msgid "Help"
-#~ msgstr "Pomoć"
-
-#~ msgid "Show CPU usage?"
-#~ msgstr "Prikazati iskorišćenje procesora?"
-
-#~ msgid "Show RAM usage ?"
-#~ msgstr "Prikazati iskorišćenje memorije?"
-
-#~ msgid "Show free memory instead of used memory?"
-#~ msgstr "Prikazati slobodnu umesto zauzete memorije?"
-
-#~ msgid "How smooth is the movement?"
-#~ msgstr "Koliko je gladak pokret?"
-
-#~ msgid "Lower limit of graphic card temperature:"
-#~ msgstr "Donja granica temperature grafičke kartice:"
-
-#~ msgid "Upper limit of graphic card temperature:"
-#~ msgstr "Gornja granica temperature grafičke kartice:"
-
-#~ msgid "in celcius."
-#~ msgstr "U Celzijusima."
-
-#~ msgid "Keep ratio?"
-#~ msgstr "Zadržati odnos?"
-
-#~ msgid "A high refresh frequency will use more CPU."
-#~ msgstr "Visoka frekvencija osvežavanja koristi više snage procesora."
-
-#~ msgid "High refresh frequency?"
-#~ msgstr "Visoka frekvencija obnavljanja?"
-
-#~ msgid "Alsa"
-#~ msgstr "Alsa"
-
-#~ msgid "Sound card:"
-#~ msgstr "Zvučna kartica:"
-
-#~ msgid "Select channel:"
-#~ msgstr "Odaberite kanal:"
-
-#~ msgid "Choose a second channel to control (optional):"
-#~ msgstr "Odaberite sledeći kanal za upravljanje (opciono):"
-
-#~ msgid "Control"
-#~ msgstr "Upravljanje"
-
-#~ msgid "Default icon:"
-#~ msgstr "Podrazumevana ikona:"
-
-#~ msgid "Broken icon:"
-#~ msgstr "Ikona za prekid"
-
-#~ msgid "Mute icon:"
-#~ msgstr "Ikona za utišano"
-
-#~ msgid "Show the date:"
-#~ msgstr "Prikaži datum:"
-
-#~ msgid "for digital format only."
-#~ msgstr "samo za digitalni format."
-
-#~ msgid "Display the time in a 24h format?"
-#~ msgstr "Prikazati vreme u 24h formatu?"
-
-#~ msgid "Timezone:"
-#~ msgstr "Vremenska zona:"
-
-#~ msgid "Default"
-#~ msgstr "Podrazumevano"
-
-#~ msgid "iCal"
-#~ msgstr "iCal"
-
-#~ msgid "Style"
-#~ msgstr "Stil"
-
-#~ msgid "Select the view :"
-#~ msgstr "Odaberite izgled:"
-
-#~ msgid "Analogue"
-#~ msgstr "Analogni"
-
-#~ msgid "Digital"
-#~ msgstr "Digitalni"
-
-#~ msgid "Analogue View"
-#~ msgstr "Analogni izgled"
-
-#~ msgid "Date text colour:"
-#~ msgstr "Boja teksta za datum:"
-
-#~ msgid "Digital View"
-#~ msgstr "Digitalni izgled"
-
-#~ msgid "Font:"
-#~ msgstr "Font:"
-
-#~ msgid "Ratio to apply on text :"
-#~ msgstr "Na tekst primeni odnos:"
-
-#~ msgid "Configure time and date"
-#~ msgstr "Podesi vreme i datum"
-
-#~ msgid "Leave empty to execute the default command."
-#~ msgstr "Ostavite nepopunjeno da bi se izvršila podrazumevana naredba."
-
-#~ msgid "Add or remove an alarm:"
-#~ msgstr "Dodaj ili ukloni alarm:"
-
-#~ msgid "Expose"
-#~ msgstr "Izloži"
-
-#~ msgid "Show desktop"
-#~ msgstr "Prikaži radnu površinu"
-
-#~ msgid "Add Emerald Configuration to sub-dock?"
-#~ msgstr "Dodati Emerald podešavanja pod-doku?"
-
-#~ msgid "Compiz Options"
-#~ msgstr "Compiz Opcije"
-
-#~ msgid "Only Current Screen?"
-#~ msgstr "Samo trenutni ekran?"
-
-#~ msgid "By default this will be Emerald."
-#~ msgstr "Podrazumevano to će biti Emerald."
-
-#~ msgid "emerald"
-#~ msgstr "emerald"
-
-#~ msgid "Leave empty to use default sub-dock view."
-#~ msgstr "Ostavite nepopunjeno da bi koristili podrazumevani izgled pod-doka."
-
-#~ msgid "Sub-dock view name:"
-#~ msgstr "Naziv izgleda pod-doka"
-
-#~ msgid "Comics"
-#~ msgstr "Stripovi"
-
-#~ msgid "Corner radius:"
-#~ msgstr "Zaobljenje uglova"
-
-#~ msgid "Border width:"
-#~ msgstr "Širina ivice:"
-
-#~ msgid "Modern"
-#~ msgstr "Moderan"
-
-#~ msgid "Tooltip"
-#~ msgstr "Oblačić"
-
-#~ msgid "Maximum upload rate:"
-#~ msgstr "Najveća brzina slanja:"
-
-#~ msgid "Sites"
-#~ msgstr "Stranice"
-
-#~ msgid "Imagebin.ca"
-#~ msgstr "Imagebin.ca"
-
-#~ msgid "VideoBin.org"
-#~ msgstr "VideoBin.org"
-
-#~ msgid "dl.free.fr"
-#~ msgstr "dl.free.fr"
-
-#~ msgid "DropBox"
-#~ msgstr "DropBox"
-
-#~ msgid "Path of the DropBox folder :"
-#~ msgstr "Putanja do DropBox foldere:"
-
-#~ msgid "Curvature of the curve in percent:"
-#~ msgstr "Zakrivljenost krive u procentima:"
-
-#~ msgid "Amplitude of the curve:"
-#~ msgstr "Amplituda krive:"
-
-#~ msgid "smaller icons"
-#~ msgstr "manje ikone"
-
-#~ msgid "normal icons"
-#~ msgstr "standardne ikone"
-
-#~ msgid "Grid"
-#~ msgstr "Mreža"
-
-#~ msgid "Space between columns:"
-#~ msgstr "Razmak između kolona:"
-
-#~ msgid "Zoom when mouse hovers an icon:"
-#~ msgstr "Uvećati kada se miš nalazi iznad ikone:"
-
-#~ msgid "Sinusoidal wave radius:"
-#~ msgstr "Sinusoidalni poluprečnik talasa:"
-
-#~ msgid "Use a linear wave rather than a sinusoidal wave?"
-#~ msgstr "Koristiti linearne umesto sinusoidalnih talasa?"
-
-#~ msgid "Display text for all icons?"
-#~ msgstr "Prikazati tekst za sve ikone?"
-
-#~ msgid "Frame"
-#~ msgstr "Okvir"
-
-#~ msgid "Draw a background?"
-#~ msgstr "Iscrtati pozadinu?"
-
-#~ msgid "First gradient colour :"
-#~ msgstr "Prva boja gradijenta?"
-
-#~ msgid "Second gradient colour :"
-#~ msgstr "Druga boja gradijenta?"
-
-#~ msgid "Top to bottom gradient?"
-#~ msgstr "Gradijent sa vrha na dole?"
-
-#~ msgid "Left to right gradient?"
-#~ msgstr "Gradijent ssa leva na desno?"
-
-#~ msgid "Border line width :"
-#~ msgstr "Širina okvirne linije:"
-
-#~ msgid "Border line colour :"
-#~ msgstr "Boja okvirne linije:"
-
-#~ msgid "Arrow width :"
-#~ msgstr "Širina strelice:"
-
-#~ msgid "Arrow height:"
-#~ msgstr "Visina strelice:"
-
-#~ msgid "Scroll bar"
-#~ msgstr "Traka klizača"
-
-#~ msgid "Color of the scroll bar's outline:"
-#~ msgstr "Boja okvira trake klizača:"
-
-#~ msgid "Color of the scroll bar's inside:"
-#~ msgstr "Boja unutrašnjosti trake klizača:"
-
-#~ msgid "Curvature:"
-#~ msgstr "Zakrivljenost:"
-
-#~ msgid "Height/width ratio:"
-#~ msgstr "Odnos visina/širina:"
-
-#~ msgid "0 represents a flat wave, 1 represents maximum wave curvature."
-#~ msgstr ""
-#~ "0 predstavlja ravan talas, 1 predstavlja maksimalnu zakrivljenost talasa."
-
-#~ msgid "Magnitude of the wave:"
-#~ msgstr "Magnituda talasa:"
-
-#~ msgid "Space between icons:"
-#~ msgstr "Razmak između ikona:"
-
-#~ msgid "Number of icons on the first row:"
-#~ msgstr "Broj ikona u prvom redu:"
-
-#~ msgid "Set transparency to 0 to not use it. This is quite slow with cairo."
-#~ msgstr ""
-#~ "Postavite na 0 ako ne želite da koristite providnost. Može da bude dosta "
-#~ "sporo pod Cairom."
-
-#~ msgid "Bow colour:"
-#~ msgstr "Boja luka:"
-
-#~ msgid "Line colour:"
-#~ msgstr "Boja linije:"
-
-#~ msgid "Image for the drag & drop animation:"
-#~ msgstr "Slika za animaciju prevlačenja i ispuštanja:"
-
-#~ msgid "Image when hovering an icon :"
-#~ msgstr "Slika kada se miš nalazi iznad ikone:"
-
-#~ msgid "Animation"
-#~ msgstr "Animacija"
-
-#~ msgid "Speed:"
-#~ msgstr "Brzina:"
-
-#~ msgid "Rotation speed :"
-#~ msgstr "Brzina obrtanja:"
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
-
-#~ msgid "Config"
-#~ msgstr "Podešavanja"
-
-#~ msgid "Display the following quick info :"
-#~ msgstr "Prikaži sledeće kratko objašnjenje:"
-
-#~ msgid "Number of files"
-#~ msgstr "Broj fajlova"
-
-#~ msgid "Total number of files"
-#~ msgstr "Ukupan broj fajlova"
-
-#~ msgid "Total weight"
-#~ msgstr "Ukupno"
-
-#~ msgid "Ask confirmation before emptying Dustbin?"
-#~ msgstr "Zahtevate potvrdu pre pražnjenja đubreta?"
-
-#~ msgid "Draw in background?"
-#~ msgstr "Iscrtati pozadinu?"
-
-#~ msgid "Colours"
-#~ msgstr "Boje"
-
-#~ msgid "Add luminance?"
-#~ msgstr "Dadati osvetljenje?"
-
-#~ msgid "Particles"
-#~ msgstr "Čestice"
-
-#~ msgid "Number of particles:"
-#~ msgstr "Broj čestica:"
-
-#~ msgid "Particle size:"
-#~ msgstr "Veličina čestice:"
-
-#~ msgid "Particle speed:"
-#~ msgstr "Brzina čestice:"
-
-#~ msgid "It particularily fits a dark wallpaper or a dark theme."
-#~ msgstr "U principu odgovara tamnoj pozadini ili tamnoj temi."
-
-#~ msgid "Number of particles per source:"
-#~ msgstr "Broj čestica po izvoru:"
-
-#~ msgid "In percentage of the icon's size."
-#~ msgstr "U procentima u odnosu na veličinu ikone."
-
-#~ msgid "Radius of the explosion:"
-#~ msgstr "Poluprečnik ekspolozije:"
-
-#~ msgid "Show the launching?"
-#~ msgstr "Prikazati pokretanje?"
-
-#~ msgid "Particle friction:"
-#~ msgstr "Trenje čestice:"
-
-#~ msgid "Animation on disappearance:"
-#~ msgstr "Animacija nestajanja:"
-
-#~ msgid "Evaporate"
-#~ msgstr "Ispariti"
-
-#~ msgid "Fade out"
-#~ msgstr "Izbleđivanje"
-
-#~ msgid "Explode"
-#~ msgstr "Esplodirati"
-
-#~ msgid "Break"
-#~ msgstr "Prekiuti"
-
-#~ msgid "Black Hole"
-#~ msgstr "Crna rupa"
-
-#~ msgid "Random"
-#~ msgstr "Nasumično"
-
-#~ msgid "Animation on appearance:"
-#~ msgstr "Animacija pri pojavljivanju:"
-
-#~ msgid "Evaporate upwards?"
-#~ msgstr "Ispariti uspravno?"
-
-#~ msgid "Explosion radius:"
-#~ msgstr "Poluprečnik eksplozije:"
-
-#~ msgid "Break the icon into cubes?"
-#~ msgstr "Razbiti ikone u kocke?"
-
-#~ msgid "Attraction of the Black Hole:"
-#~ msgstr "Jačina privlačenja crne rupe:"
-
-#~ msgid "Duration of the transition animation:"
-#~ msgstr "Trajanje prelazne animacije:"
-
-#~ msgid "Text colour"
-#~ msgstr "Boja Teksta"
-
-#~ msgid "Relative size of the text :"
-#~ msgstr "Relativna veličina teksta:"
-
-#~ msgid "Action on left-click:"
-#~ msgstr "Akcija na levi klik:"
-
-#~ msgid "User-defined command to execute for logout:"
-#~ msgstr "Korisnička naredba koja se izvršava nakon odjave:"
-
-#~ msgid "User-defined command to execute for shutdown:"
-#~ msgstr "Korisnička naredba koja se izvršava nakon isključivanja sistema:"
-
-#~ msgid "Customisation"
-#~ msgstr "Prilagođenje"
-
-#~ msgid "Check mail account on startup?"
-#~ msgstr "Proveri poštu nakon pokretanja?"
-
-#~ msgid "Show new messages' content?"
-#~ msgstr "Prikazati novi sadržaj poruke?"
-
-#~ msgid "Mail application"
-#~ msgstr "Program za e-poštu"
-
-#~ msgid "Preferred mail application to launch on left-click :"
-#~ msgstr "Na levi klik pokrenuti sledeći program za e-poštu:"
-
-#~ msgid "Amarok 2"
-#~ msgstr "Amarok 2"
-
-#~ msgid "Audacious"
-#~ msgstr "Audacious"
-
-#~ msgid "Clementine"
-#~ msgstr "Klementina"
-
-#~ msgid "Listen"
-#~ msgstr "Slušati"
-
-#~ msgid "Qmmp"
-#~ msgstr "Qmmp"
-
-#~ msgid "Rhythmbox"
-#~ msgstr "Rhythmbox"
-
-#~ msgid "Songbird"
-#~ msgstr "Songbird"
-
-#~ msgid "XMMS 2"
-#~ msgstr "XMMS 2"
-
-#~ msgid "XMMS"
-#~ msgstr "XMMS"
-
-#~ msgid "Animation when music changes:"
-#~ msgstr "Animacija kada se muzika promeni:"
-
-#~ msgid "Nothing"
-#~ msgstr "Ništa"
-
-#~ msgid "Time Elapsed"
-#~ msgstr "Proteklo vreme"
-
-#~ msgid "Time Remaining"
-#~ msgstr "Preostalo vreme"
-
-#~ msgid "Track number"
-#~ msgstr "Broj numere"
-
-#~ msgid "You need to be connected to the Internet."
-#~ msgstr "Treba da budete povezani na internet."
-
-#~ msgid "requires OpenGL."
-#~ msgstr "zahteva OpenGL."
-
-#~ msgid "Name of the image for the 'stop' icon :"
-#~ msgstr "Naziv slike za ikonu 'stop':"
-
-#~ msgid "Name of the image for the 'pause' icon :"
-#~ msgstr "Naziv slike za ikonu 'pauza':"
-
-#~ msgid "interface:"
-#~ msgstr "interfejs:"
-
-#~ msgid "Icon name:"
-#~ msgstr "Naziv ikone:"
-
-#~ msgid "'On-battery' icon filename:"
-#~ msgstr "Naziv fajla za ikonu 'Na-baterije':"
-
-#~ msgid "Icon's filename when on charge :"
-#~ msgstr "Naziv fajla za ikonu 'Na-napajanju':"
-
-#~ msgid "Effect to apply on the icon according to the charge :"
-#~ msgstr "U zavisnosti na izvor napajanja, primeniti sledeći efekat na ikonu:"
-
-#~ msgid "charge"
-#~ msgstr "napajanje"
-
-#~ msgid "Leave it empty for no sound"
-#~ msgstr "Ostavite nepopunjeno da bi bilo bez zvuka"
-
-#~ msgid "in percent."
-#~ msgstr "u procentima."
-
-#~ msgid "Battery level:"
-#~ msgstr "Napunjenost baterije:"
-
-#~ msgid "When battery level is under 4%"
-#~ msgstr "Kada su baterije napunjene manje od 4%"
-
-#~ msgid "Notification when battery charge is critical ?"
-#~ msgstr "Obaveštavanje kada je napunjenost baterija kritična?"
-
-#~ msgid "Folder"
-#~ msgstr "Folder"
-
-#~ msgid "Folder to browse :"
-#~ msgstr "Pregledati folder:"
-
-#~ msgid "List folders first?"
-#~ msgstr "Prvo izlistati foldere?"
-
-#~ msgid "Ignore case?"
-#~ msgstr "Praviti razliku između velikih i malih slova?"
-
-#~ msgid "Menu"
-#~ msgstr "Meni"
-
-#~ msgid "It can be CPU intense to load a lot of icons."
-#~ msgstr "Procesor može biti opterećen velikim brojem ikona."
-
-#~ msgid "Icon size :"
-#~ msgstr "Veličina ikona:"
-
-#~ msgid "List networks?"
-#~ msgstr "Izlistati mreže?"
-
-#~ msgid "Tree"
-#~ msgstr "Stablo"
-
-#~ msgid "Disk usage"
-#~ msgstr "Zauzeće diska"
-
-#~ msgid "Free space"
-#~ msgstr "Slobodan prostor:"
-
-#~ msgid "Used space"
-#~ msgstr "Iskorišćen prostor:"
-
-#~ msgid "Free space (in percent)"
-#~ msgstr "Slobodan prostor (u procentima)"
-
-#~ msgid "Used space (in percent)"
-#~ msgstr "Iskorišćen prostor (u procentima)"
-
-#~ msgid "In rotations per second."
-#~ msgstr "U obrtajima u sekundi."
-
-#~ msgid "Show mouse on:"
-#~ msgstr "Prikaži miša kada:"
-
-#~ msgid "Dock"
-#~ msgstr "dok"
-
-#~ msgid "Particle life time:"
-#~ msgstr "Dužina žiota čestice:"
-
-#~ msgid ""
-#~ "The higher the value, the more particles will scatter from their source."
-#~ msgstr "Viša vrednost, više čestica će biti rasuto iz izvora."
-
-#~ msgid "Scattering:"
-#~ msgstr "Rasejanje:"
-
-#~ msgid "Image when the applet is active :"
-#~ msgstr "Slika kada je aplet aktivan:"
-
-#~ msgid "Shortkey for the middle-click action:"
-#~ msgstr "Prečica za akciju srednjeg klika:"
-
-#~ msgid "open image"
-#~ msgstr "otvori sliku"
-
-#~ msgid "Effect while changing image:"
-#~ msgstr "Efekat tokom promene slike:"
-
-#~ msgid "cube"
-#~ msgstr "kocka"
-
-#~ msgid "random"
-#~ msgstr "Nasumice"
-
-#~ msgid "fast"
-#~ msgstr "brzo"
-
-#~ msgid "slow"
-#~ msgstr "sporo"
-
-#~ msgid "Choose a background colour :"
-#~ msgstr "Odaberite boju pozadine:"
-
-#~ msgid "Gives better image rendering."
-#~ msgstr "Obezbeđuje bolje  iscrtavanje slike."
-
-#~ msgid "Keep width/height ratio?"
-#~ msgstr "Zadrži odnos wisinw/širine?"
-
-#~ msgid "If the image is too small, it will be stretched."
-#~ msgstr "Ako je slika suviše mala, biće razvučena-"
-
-#~ msgid "Image for 'text' items:"
-#~ msgstr "Slika za 'text' stavke:"
-
-#~ msgid "Options"
-#~ msgstr "Opcije"
-
-#~ msgid "Sort items by:"
-#~ msgstr "Sortiraj stavke po:"
-
-#~ msgid "Type"
-#~ msgstr "Tip"
-
-#~ msgid "Use the compact mode?"
-#~ msgstr "Koristiti kompaktan mod?"
-
-#~ msgid "Preserve the ratio of the screen ?"
-#~ msgstr "Zadržati proporcije ekrana?"
-
-#~ msgid "Show desktop number on icons?"
-#~ msgstr "Prikazati broj radne površine na ikonama?"
-
-#~ msgid "Draw windows on icons?"
-#~ msgstr "Iscrtati prozore na ikonama?"
-
-#~ msgid "Draw hidden windows?"
-#~ msgstr "Iscrtati skrivene prozore?"
-
-#~ msgid "Workspace names :"
-#~ msgstr "Nazivi radnih prostora:"
-
-#~ msgid "r, g, b, a"
-#~ msgstr "r, g, b, a"
-
-#~ msgid "Internal line colour:"
-#~ msgstr "Boja unutrašnjih linija:"
-
-#~ msgid "External line size:"
-#~ msgstr "Veličina spoljašnjih linija;"
-
-#~ msgid "External line colour:"
-#~ msgstr "Boja spoljašnjih linija:"
-
-#~ msgid "Window line colour:"
-#~ msgstr "Boja linije prozora:"
-
-#~ msgid "Current desktop colour:"
-#~ msgstr "Boja trenutnoe radne površine:"
-
-#~ msgid "draw a frame"
-#~ msgstr "iscrtaj okvir"
-
-#~ msgid "horizontal"
-#~ msgstr "horizontalno"
-
-#~ msgid "vertical"
-#~ msgstr "vertikalno"
-
-#~ msgid "This is a boolean parameter. Y/N ?"
-#~ msgstr "Da li je parametar tipa boolean. Y/N ?"
-
-#~ msgid "This integer can go from 0 to 10 :"
-#~ msgstr "Ova celobrojna vrednost može biti od 0 do 10:"
-
-#~ msgid "Enter some text here :"
-#~ msgstr "Unesite ovde neki tekst:"
-
-#~ msgid "needs to restart the applet."
-#~ msgstr "potrebno je ponovo pokrenuti aplet."
-
-#~ msgid "Terminal transparency:"
-#~ msgstr "Providnost terminala:"
-
-#~ msgid "transparent"
-#~ msgstr "providno"
-
-#~ msgid "opaque"
-#~ msgstr "neprovidno"
-
-#~ msgid "Foreground colour:"
-#~ msgstr "Boja prednjeg plana:"
-
-#~ msgid "Background colour:"
-#~ msgstr "Boja pozadine:"
-
-#~ msgid "Size of the terminal (line x columns):"
-#~ msgstr "Dimenyije terminala (linija x kolona):"
-
-#~ msgid "Text colour of the content :"
-#~ msgstr "Boja teksta sadržaja:"
-
-#~ msgid "Gnote"
-#~ msgstr "Gnote"
-
-#~ msgid "Tomboy"
-#~ msgstr "Tomboy"
-
-#~ msgid "Ask for confirmation before deleting a note?"
-#~ msgstr "Potrebna je potvrda brisanja beleške?"
-
-#~ msgid "Automatically name a new note?"
-#~ msgstr "Automatski dati naziv belešci?"
-
-#~ msgid "Number of days to forecast:"
-#~ msgstr "Broj dana za prognozu:"
-
-#~ msgid "Display nights?"
-#~ msgstr "Prikazati noći?"
-
-#~ msgid "Display temperature as quick info?"
-#~ msgstr "Prikazati tempereturu kao kratku poruku?"
-
-#~ msgid "Right margin width, in pixels:"
-#~ msgstr "Širina desne mergine, u pikselima:"
-
-#~ msgid "Transparent background?"
-#~ msgstr "Providna pozadina?"
-
-#~ msgid "'No signal' icon filename:"
-#~ msgstr "Naziv fajla ikone za 'Nema signala'"
-
-#~ msgid "'Very low' icon filename:"
-#~ msgstr "Naziv fajla ikone za 'Vrlo nizak':"
-
-#~ msgid "'Low' icon filename:"
-#~ msgstr "Naziv fajla ikone za 'Nizak':"
-
-#~ msgid "'Average' icon filename:"
-#~ msgstr "Naziv fajla ikone za 'Prosečan':"
-
-#~ msgid "'Good' icon filename:"
-#~ msgstr "Naziv fajla ikone za 'Dobar':"
-
-#~ msgid "'Excellent' icon filename:"
-#~ msgstr "Naziv fajla ikone za 'Odličan':"
-
-#~ msgid "Signal Strength"
-#~ msgstr "Jačina signala"
-
-#~ msgid "Signal Strength in percent"
-#~ msgstr "Jačina signala u procentima"
-
-#~ msgid "Raw Signal Informations"
-#~ msgstr "Informacije o sirovom signalu"

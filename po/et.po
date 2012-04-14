@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-06-21 00:19+0000\n"
+"POT-Creation-Date: 2012-04-12 00:34+0000\n"
+"PO-Revision-Date: 2012-04-12 02:59+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
-"Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-07-12 04:50+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
+"X-Launchpad-Export-Date: 2012-04-13 05:35+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
+"Language: et\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -103,9 +105,8 @@ msgstr ""
 #: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13
-#, fuzzy
 msgid "Image's filename :"
-msgstr "Pildi failinim:"
+msgstr ""
 
 #: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:9
@@ -151,9 +152,8 @@ msgstr ""
 #: ../Translator/messages:21 ../Transmission/messages:21
 #: ../Twitter/messages:21 ../WebSearch/messages:19
 #: ../WindowsKiller/messages:19 ../Xchat/messages:21
-#, fuzzy
 msgid "Desklet"
-msgstr "Töölaud"
+msgstr ""
 
 #: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
 #: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:19
@@ -184,9 +184,8 @@ msgstr ""
 #: ../Pidgin/messages:27 ../Quote/messages:29 ../Translator/messages:27
 #: ../Transmission/messages:27 ../Twitter/messages:27 ../WebSearch/messages:25
 #: ../WindowsKiller/messages:25 ../Xchat/messages:27
-#, fuzzy
 msgid "Lock position?"
-msgstr "Esitlus"
+msgstr ""
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
@@ -327,9 +326,8 @@ msgstr "Alati alumine"
 #: ../Pidgin/messages:53 ../Quote/messages:55 ../Transmission/messages:53
 #: ../Twitter/messages:53 ../WebSearch/messages:51
 #: ../WindowsKiller/messages:51 ../Xchat/messages:53
-#, fuzzy
 msgid "Keep on widget layer"
-msgstr "Vidinate kiht"
+msgstr ""
 
 #: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
 #: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:51
@@ -545,9 +543,8 @@ msgid "Shortkey to pop up the menu:"
 msgstr ""
 
 #: ../Calendar/messages:95
-#, fuzzy
 msgid "Applications"
-msgstr "Tegevused"
+msgstr ""
 
 #: ../Calendar/messages:97
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -639,9 +636,8 @@ msgid "Alerts"
 msgstr ""
 
 #: ../Gmail/messages:97
-#, fuzzy
 msgid "Show alerts?"
-msgstr "Näita kerimisribasid?"
+msgstr ""
 
 #: ../Gmail/messages:99
 msgid ""
@@ -671,36 +667,32 @@ msgid "Should an animation be applied to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:111
-#, fuzzy
 msgid "Show animation?"
-msgstr "Animatsioon"
+msgstr ""
 
 #: ../Gmail/messages:113
 msgid "Which animation should the apply to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:115
-#, fuzzy
 msgid "Choose animation?"
-msgstr "Animatsioon"
+msgstr ""
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
 msgstr ""
 
 #: ../Gmail/messages:119
-#, fuzzy
 msgid "Show dialogue?"
-msgstr "Näita kettakasutust :"
+msgstr ""
 
 #: ../Gmail/messages:121
 msgid "Should the applet play a sound with the notification?"
 msgstr ""
 
 #: ../Gmail/messages:123
-#, fuzzy
 msgid "Play a sound?"
-msgstr "Mängitakse heli:"
+msgstr ""
 
 #: ../Gmail/messages:125
 msgid ""
@@ -708,9 +700,8 @@ msgid ""
 msgstr ""
 
 #: ../Gmail/messages:127
-#, fuzzy
 msgid "Path to sound file:"
-msgstr "Mängitakse heli:"
+msgstr ""
 
 #: ../Gmail/messages:129
 msgid "Display a counter on the icon?"
@@ -779,7 +770,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -800,21 +792,18 @@ msgstr ""
 
 #: ../HDDtemperature/messages:31 ../Moon/messages:33
 #: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
-#, fuzzy
 msgid "Accessibility :"
-msgstr "Nähtavus:"
+msgstr ""
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
-#, fuzzy
 msgid "On Widget Layer"
-msgstr "Vidinate kiht"
+msgstr ""
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
-#, fuzzy
 msgid "Should be visible on all desktops ?"
-msgstr "Peaks olema nähtav kõigis töölaudades?"
+msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:51
@@ -825,9 +814,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53
-#, fuzzy
 msgid "Lock position ?"
-msgstr "Esitlus"
+msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55
@@ -836,9 +824,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
 #: ../Screensaver_inhibitor/messages:57
-#, fuzzy
 msgid "Rotation :"
-msgstr "Pöörlemine:"
+msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
@@ -859,15 +846,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
-#, fuzzy
 msgid "Background image :"
-msgstr "Taustapilt:"
+msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
-#, fuzzy
 msgid "Background tansparency :"
-msgstr "Tausta läbipaistvus:"
+msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
@@ -918,15 +903,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
-#, fuzzy
 msgid "Foreground image :"
-msgstr "Esiplaani pilt:"
+msgstr ""
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
-#, fuzzy
 msgid "Foreground tansparency :"
-msgstr "Esiplaani läbipaistvus:"
+msgstr ""
 
 #: ../HDDtemperature/messages:89
 msgid "One or more device drive path to monitor:"
@@ -974,9 +957,8 @@ msgid ""
 msgstr ""
 
 #: ../Liferea/messages:95
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Näita infot"
+msgstr ""
 
 #: ../Liferea/messages:97
 msgid "Number of unread messages"
@@ -1125,9 +1107,8 @@ msgid "Inhibit for a given timelength (in minutes)"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
-#, fuzzy
 msgid "timelength"
-msgstr "Pikkus"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 msgid "Inhibit for a given timelength"
@@ -1597,19 +1578,16 @@ msgid "Size of the emblem that shows the number of new tweets, and messages:"
 msgstr ""
 
 #: ../Twitter/messages:97
-#, fuzzy
 msgid "Small"
-msgstr "väike"
+msgstr ""
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Large"
-msgstr "laeng"
+msgstr ""
 
 #: ../WebSearch/messages:93
-#, fuzzy
 msgid "Search engine :"
-msgstr "Otsing veebis"
+msgstr ""
 
 #: ../WebSearch/messages:95
 msgid "Google"
@@ -1656,9 +1634,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:117
-#, fuzzy
 msgid "in sub-icons."
-msgstr "sekundites."
+msgstr ""
 
 #: ../WebSearch/messages:119
 msgid "Maximum number of results shown :"
@@ -1691,1946 +1668,3 @@ msgstr ""
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-
-#, fuzzy
-#~ msgid "in s."
-#~ msgstr "sekundites."
-
-#~ msgid "Choose one of the available themes:"
-#~ msgstr "Vali üks saadaolevatest teemadest:"
-
-#~ msgid "Appearance"
-#~ msgstr "Välimus"
-
-#~ msgid "Animated icons"
-#~ msgstr "Animeeritud ikoonid"
-
-#~ msgid "This plug-in provides many different animations for your icons."
-#~ msgstr "See vidin pakub palju erinevaid animatsioone sinu ikoonidele."
-
-#~ msgid "Wave"
-#~ msgstr "Lainetus"
-
-#~ msgid "Spot"
-#~ msgstr "Laik"
-
-#~ msgid ""
-#~ "Add a lively Penguin in your dock !\n"
-#~ "Left click to change the animation,\n"
-#~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
-#~ msgstr ""
-#~ "Lisage lõbus Pingviin oma dokile!\n"
-#~ "Vasak klikk muudab animatsiooni,\n"
-#~ "Keskmine klikk segab teda ^_^\n"
-#~ "Tux'i pildid on võetud mängust Pingus, teisi tegelasi on saadaval või on "
-#~ "hõlpsasti lisatavad."
-
-#~ msgid "Cairo-Penguin"
-#~ msgstr "Cairo-Pingviin"
-
-#~ msgid "Hey, I'm here!"
-#~ msgstr "Tere, ma olen siin!"
-
-#~ msgid "Sorry but I'm busy right now."
-#~ msgstr "Kahju, aga ma olen praegu hõivatud."
-
-#~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
-#~ msgstr ""
-#~ "Mul pole aega sinuga mängida, ma pean kaevama ja mineerima kõik need "
-#~ "ikoonid."
-
-#~ msgid "Your dock is so messy! Let me clean it."
-#~ msgstr "Sinu dokk on nii sassis! Las ma korrastan seda."
-
-#~ msgid "Wait, do you want to kill me?!"
-#~ msgstr "Oota, kas sa tahad mind ära tappa?!"
-
-#~ msgid "Do you know how painful it is to be clicked on??"
-#~ msgstr "Kas sa tead kui valus on kui sinu peale vajutatakse??"
-
-#~ msgid "It's my dock now, mwahahaha!"
-#~ msgstr "See on minu dokk, hahaa!"
-
-#~ msgid "I want to be a pirate!"
-#~ msgstr "Ma tahan piraadiks saada!"
-
-#~ msgid "I'm your father!"
-#~ msgstr "Ma olen su isa!"
-
-#~ msgid "Wake up"
-#~ msgstr "Äratus"
-
-#~ msgid "Keep quiet"
-#~ msgstr "Ole vait"
-
-#~ msgid "Start XPenguins"
-#~ msgstr "Käivita XPenguins"
-
-#~ msgid "Stop XPenguins"
-#~ msgstr "Sule XPenguins"
-
-#~ msgid "Zzzzz"
-#~ msgstr "Zzzzz"
-
-#~ msgid "Clipboard history"
-#~ msgstr "Lõikepuhvri ajalugu"
-
-#~ msgid ""
-#~ "This plug-in lets extern applications interact on the dock.\n"
-#~ "The communication between both sides is based on Dbus"
-#~ msgstr ""
-#~ "See plugin  lubab välistel rakendustel suhelda omavahel \n"
-#~ "dokil. Suhtlus toimub mõlemas suunas läbi Dbus-i."
-
-#~ msgid "Sorry, this module couldn't be added."
-#~ msgstr "Vabandust, seda moodulit ei saanud lisada."
-
-#~ msgid "The module has been added, but couldn't be launched."
-#~ msgstr "Moodul lisati, kuid seda ei saa käivitada."
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully updated and automatically reloaded"
-#~ msgstr "Vidin '%s' uuendati edukalt ja laaditi automaatselt uuesti"
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully installed and automatically launched"
-#~ msgstr "Vidin '%s' paigaldati edukalt ja käivitati automaatselt"
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
-#~ msgid "r"
-#~ msgstr "r"
-
-#~ msgid "w"
-#~ msgstr "w"
-
-#~ msgid "N/A"
-#~ msgstr "Puudub"
-
-#~ msgid "Disks"
-#~ msgstr "Kettad"
-
-#~ msgid "System Monitor"
-#~ msgstr "Süsteemi jälgija"
-
-#~ msgid "day(s)"
-#~ msgstr "päev(ad)"
-
-#~ msgid "Folders"
-#~ msgstr "Kaustad"
-
-#~ msgid ""
-#~ "This applet imports folders inside the Dock\n"
-#~ "You can have as many instances of this applet as you want, each one with "
-#~ "a different folder.\n"
-#~ "To add a folder in your dock:\n"
-#~ " - activate the applet, open its configuration panel, and select a "
-#~ "folder\n"
-#~ " - or just drop a folder into the dock\n"
-#~ "Middle-click on the main icon opens the folder.\n"
-#~ msgstr ""
-#~ "See vidin impordib kaustu dokile\n"
-#~ "Sa võid lisada selle vidina instantse nii palju kui vaja, igaüks erineva "
-#~ "kaustaga.\n"
-#~ "Kausta lisamiseks dokile:\n"
-#~ " - aktiveeri vidin, ava selle seadistuspaneel ja lisa kaust\n"
-#~ " - või lihtsalt lohista kaust dokile.\n"
-#~ "Hiire keskmise nuppu vajutamine avab kausta.\n"
-
-#~ msgid "Open the configuration of the applet to choose a folder to import."
-#~ msgstr "Kausta importimiseks ava vidina seadistuspaneel."
-
-#~ msgid "Empty or unreadable folder."
-#~ msgstr "Tühi või loetamatu kaust."
-
-#~ msgid ""
-#~ "You're about deleting this file\n"
-#~ "  (%s)\n"
-#~ "from your hard-disk. Sure ?"
-#~ msgstr ""
-#~ "Sa oled kustutamas faili\n"
-#~ "  (%s)\n"
-#~ "oma kõvakettalt. Oled kindel?"
-
-#~ msgid ""
-#~ "Warning: could not delete this file.\n"
-#~ "Please check file permissions."
-#~ msgstr ""
-#~ "Hoiatus: ei saa kustutada faili.\n"
-#~ "Palun kontrolli faili õiguseid."
-
-#~ msgid ""
-#~ "Warning: could not rename %s.\n"
-#~ "Check file permissions \n"
-#~ "and that the new name does not already exist."
-#~ msgstr ""
-#~ "Hoiatus: ei saanud ümbernime-\n"
-#~ "tada %s.\n"
-#~ "Kontrolli faili õiguseid \n"
-#~ "ja et antud nimi ei ole kasutuses."
-
-#~ msgid "Enter a file name:"
-#~ msgstr "Sisesta faili nimi:"
-
-#~ msgid ""
-#~ "Warning: could not create %s.\n"
-#~ "Check file permissions \n"
-#~ "and that the new name does not already exist."
-#~ msgstr ""
-#~ "Hoiatus: ei saanud luua %s.\n"
-#~ "Kontrolli faili õiguseid \n"
-#~ "ja et nimi juba ei eksisteeri."
-
-#~ msgid "Open the folder"
-#~ msgstr "Ava kaust"
-
-#~ msgid "Rename this file"
-#~ msgstr "Nimet ümber see fail"
-
-#~ msgid "Delete this file"
-#~ msgstr "Kustuta see fail"
-
-#~ msgid "Move this file"
-#~ msgstr "Liiguta seda faili"
-
-#~ msgid "Open with"
-#~ msgstr "Ava koos"
-
-#~ msgid "Properties"
-#~ msgstr "Seaded"
-
-#~ msgid "Create a new file"
-#~ msgstr "Loo uus fail"
-
-#~ msgid "Create a new folder"
-#~ msgstr "Loo uus kataloog"
-
-#~ msgid ""
-#~ "Displays the common Applications menu and the Recently used files.\n"
-#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
-#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
-#~ msgstr ""
-#~ "Kuvab üldise rakenduste menüü ja hiljuti kasutatud failide nimekirja.\n"
-#~ "Töötab iga XDG-ga ühilduva menüüga (Gnome, XFCE, KDE,...)\n"
-#~ "Keskmise hiirklahv avab dialoogiakna käskude kiireks käivitamiseks (võid "
-#~ "luua ka kiirklahvi, nt ALT+F2) \n"
-#~ "Menüü kuvamiseks võite ka luua kiirklahvi (ALT+F1)"
-
-#~ msgid "Quick launch"
-#~ msgstr "Kiirkäivitus"
-
-#~ msgid "Configure menu"
-#~ msgstr "Seadete menüü"
-
-#~ msgid "Clear recent"
-#~ msgstr "Tühjenda hiljutised"
-
-#~ msgid "Recent Documents"
-#~ msgstr "Hiljutised dokumendid"
-
-#~ msgid "Clear the list of the recently used documents?"
-#~ msgstr "Tühjendan hiljuti kasutatud dokumendid?"
-
-#~ msgid "Enter a command to launch:"
-#~ msgstr "Sisesta käsk käivitamiseks:"
-
-#~ msgid "Me Menu"
-#~ msgstr "Minu menüü"
-
-#~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online "
-#~ "status, your friends."
-#~ msgstr ""
-#~ "See menüü  lubab kiiret juurdepääsu oma andmetele, võrguolekule ja "
-#~ "sõpradele."
-
-#~ msgid "It seems that the Me-Menu is not installed on your system"
-#~ msgstr "Tundub, et Me-Menu ei ole paigaldatud."
-
-#~ msgid "Messaging Menu"
-#~ msgstr "Suhtlusmenüü"
-
-#~ msgid ""
-#~ "A menu that notices you about new messages from Mail or Chat "
-#~ "applications.\n"
-#~ "It handles Evolution, Pidgin, Empathy, etc"
-#~ msgstr ""
-#~ "See menüü teavitab sind meili- ja suhtlusprogrammide uutest sõnumitest.\n"
-#~ "Siia hulka kuuluvad Evolution, Pidgin, Empathy, jne"
-
-#~ msgid "It seems that the Messaging-Menu is not installed on your system"
-#~ msgstr "Tundub, et  Messaging-Menu ei ole sinu süsteemi paigaldatud"
-
-#~ msgid "Network connection state changed to inactive."
-#~ msgstr "Võrguühenduse olek muutus mitteaktiivseks."
-
-#~ msgid "Connecting..."
-#~ msgstr "Ühendumine..."
-
-#~ msgid "Network connection is established."
-#~ msgstr "Võrguühendus loodud."
-
-#~ msgid "Network connection state changed to disconnected."
-#~ msgstr "Võrguühendus seisund muudeti lahtiühendatuks."
-
-#~ msgid "A cable has been plugged"
-#~ msgstr "Võrgukaabel ühendatud"
-
-#~ msgid "A cable has been unplugged"
-#~ msgstr "Võrgukaabel lahti ühendatud"
-
-#~ msgid "None"
-#~ msgstr "Pole"
-
-#~ msgid "Very Low"
-#~ msgstr "Väga madal"
-
-#~ msgid "Low"
-#~ msgstr "Madal"
-
-#~ msgid "Middle"
-#~ msgstr "Keskel"
-
-#~ msgid "Good"
-#~ msgstr "Hea"
-
-#~ msgid "Excellent"
-#~ msgstr "Suurepärane"
-
-#~ msgid "Not connected"
-#~ msgstr "Pole ühendatud"
-
-#~ msgid "Wired connection"
-#~ msgstr "Traadiga ühendus"
-
-#~ msgid ""
-#~ "Checking connection...\n"
-#~ "Please retry in a few seconds"
-#~ msgstr ""
-#~ "Kontrollin ühendust...\n"
-#~ "Palun proovi mõne sekundi pärast uuesti."
-
-#~ msgid "Wired Connection."
-#~ msgstr "Traadiga ühendus"
-
-#~ msgid "Interface"
-#~ msgstr "Kujundus"
-
-#~ msgid "Speed"
-#~ msgstr "Kiirus"
-
-#~ msgid "Wifi enabled."
-#~ msgstr "Wifi lubatud."
-
-#~ msgid "Network ID"
-#~ msgstr "Võrgu ID"
-
-#~ msgid "Unknown"
-#~ msgstr "Tundmatu"
-
-#~ msgid "Access point"
-#~ msgstr "Tugijaam (AP)"
-
-#~ msgid "Signal Quality"
-#~ msgstr "Signaali kvaliteet"
-
-#~ msgid "Network-Monitor"
-#~ msgstr "Võrgumonitor"
-
-#~ msgid ""
-#~ "This applet allows you to monitor your network connection(s).\n"
-#~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
-#~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
-#~ "between net speed and wifi."
-#~ msgstr ""
-#~ "See vidin lubab sul jälgida võrguühendusi.\n"
-#~ "Vidin võimaldab kuvada alla/üleslaadimiskiirusi ja wifi "
-#~ "signaalikvaliteeti.\n"
-#~ "Kui võrguhaldur töötab, siis on võimalik valida wifi võrke.\n"
-#~ "Vasak hiireklahv kuvab mõningast infot. Ikoonil kerimine võimaldab "
-#~ "vahetada võrgu kiiruse ja võrgu nime kuvamise vahel."
-
-#~ msgid "Loading"
-#~ msgstr "Laadimine"
-
-#~ msgid "Network Administration"
-#~ msgstr "Võrgu administraator"
-
-#~ msgid "Activate network"
-#~ msgstr "Lülita võrk sisse"
-
-#~ msgid "Deactivate network"
-#~ msgstr "Lülita võrk välja"
-
-#~ msgid "Deactivate wifi"
-#~ msgstr "Lülita välja wifi"
-
-#~ msgid "Activate wifi"
-#~ msgstr "Lülita wifi sisse"
-
-#~ msgid "RSSreader"
-#~ msgstr "RSS-lugeja"
-
-#~ msgid ""
-#~ "This applet is an RSS/Atom feed reader.\n"
-#~ "You can instanciate it as many times as you want.\n"
-#~ "USAGE:\n"
-#~ " - Left-click : display the complete feed lines in a dialog.\n"
-#~ " - Middle-click : refresh the feed.\n"
-#~ " - Scroll on the desklet : make the feed lines scroll.\n"
-#~ " - Drag and drop a valid URL on the icon to use it,\n"
-#~ "    or copy it and use \"Paste a new RSS Url\" in the menu.\n"
-#~ "    or edit the Configuration Panel."
-#~ msgstr ""
-#~ "See vidin on RSS/Atom uudistevoo lugeja.\n"
-#~ "Saa võid luua vidinast nii palju eksemplare kui tahad.\n"
-#~ "KASUTUS:\n"
-#~ " - Vasak hiireklahv : kuvab uudistevoo read täielikult dialoogiaknas. \n"
-#~ " - Keskmine hiireklahv : uuendab uudistevoogu.\n"
-#~ " - Kerimine vidinal : kerib uudistevoo ridu.\n"
-#~ " - Lohista ja vabasta kehtiv uudistevoo URL ikoonile,\n"
-#~ "    või kopeeri ja kasuta \"Kleebi uus RSS Url\" menüükäsku.   \n"
-#~ "    või muuda seadistuspaneeli vastaval."
-
-#~ msgid "Retrieving data..."
-#~ msgstr "Andmete tõmbamine..."
-
-#~ msgid "It doesn't seem to be a valid URL."
-#~ msgstr "Tundub, et URL pole kehtiv."
-
-#~ msgid "Paste a new RSS Url (drag and drop)"
-#~ msgstr "Kleebi uus RSS link (lohista ja vabasta ikoonile)"
-
-#~ msgid "Open with your web browser"
-#~ msgstr "Ava veebilehitsejaga"
-
-#~ msgid "Refresh"
-#~ msgstr "Uuenda"
-
-#~ msgid "Warning: couldn't retrieve data last time we tried."
-#~ msgstr "Hoiatus: Ei suutnud hankida andmeid eelmisel katsel."
-
-#~ msgid "No URL is defined."
-#~ msgstr "URL ei ole määratud."
-
-#~ msgid "No data (no connection?)"
-#~ msgstr "Pole andmeid ( pole ühendust?)"
-
-#~ msgid "Invalid data (invalid RSS/Atom feed?)"
-#~ msgstr "Vigased andmed ( vigane RSS/Atom uudistevoog?)"
-
-#~ msgid "No data"
-#~ msgstr "Andmed puuduvad"
-
-#~ msgid "No modification"
-#~ msgstr "Pole muutusi"
-
-#~ msgid "This RSS feed has been modified..."
-#~ msgstr "See RSS-voog on muudetud..."
-
-#~ msgid ""
-#~ "No URL is defined\n"
-#~ "You can define one by copying the URL in the clipboard,\n"
-#~ " and selecting \"Paste the URL\" in the menu."
-#~ msgstr ""
-#~ "URL pole määratud\n"
-#~ "Sa võid luua uue kopeerides URL-i lõikepuhvrist,\n"
-#~ "ja valides menüüst \"Kleebi URL\"."
-
-#~ msgid ""
-#~ "No data\n"
-#~ "Did you set a valid RSS feed?\n"
-#~ "Is your connection alive?"
-#~ msgstr ""
-#~ "Pole andmeid\n"
-#~ "Kas sa valisid kehtiva RSS- uudistevoo?\n"
-#~ "Kas internetiühendus on aktiivne?"
-
-#~ msgid "Recent files"
-#~ msgstr "Viimati kasutatud"
-
-#~ msgid "The value %s has been copied into the clipboard."
-#~ msgstr "Väärtus %s on kopeeritud lõikepuhvrisse."
-
-#~ msgid "Execute"
-#~ msgstr "Käivita"
-
-#~ msgid "Open a terminal here"
-#~ msgstr "Ava terminal siin"
-
-#~ msgid "Zip folder"
-#~ msgstr "Zip kaust"
-
-#~ msgid "Move to"
-#~ msgstr "Liiguta kuhu"
-
-#~ msgid "Copy URL"
-#~ msgstr "Kopeeri URL"
-
-#~ msgid "Open location"
-#~ msgstr "Ava asukoht"
-
-#~ msgid "Zip file"
-#~ msgstr "Zip fail"
-
-#~ msgid "Mail file"
-#~ msgstr "E-posti fail"
-
-#~ msgid "Pick up a directory"
-#~ msgstr "Vali kaust"
-
-#~ msgid "Files"
-#~ msgstr "Failid"
-
-#~ msgid "Open"
-#~ msgstr "Ava"
-
-#~ msgid "Open in new window"
-#~ msgstr "Ava uues aknas"
-
-#~ msgid "Open file"
-#~ msgstr "Ava fail"
-
-#~ msgid "Firefox bookmarks"
-#~ msgstr "Firefox'i järjehoidjad"
-
-#~ msgid "Mediadico"
-#~ msgstr "Mediadico"
-
-#~ msgid "Amazon"
-#~ msgstr "Amazon"
-
-#~ msgid "(F1) Match case"
-#~ msgstr "(F1) Tõstutundlik"
-
-#~ msgid "(F2) Music"
-#~ msgstr "(F2) Muusika"
-
-#~ msgid "(F3) Image"
-#~ msgstr "(F3) Pilt"
-
-#~ msgid "(F4) Video"
-#~ msgstr "(F4) Video"
-
-#~ msgid "(F5) Text"
-#~ msgstr "(F5) Tekst"
-
-#~ msgid "(F6) Html"
-#~ msgstr "(F6) Html"
-
-#~ msgid "(F7) Sources"
-#~ msgstr "(F7) Allikmaterjal"
-
-#~ msgid "No result"
-#~ msgstr "Pole tulemust"
-
-#~ msgid "results"
-#~ msgstr "tulemused"
-
-#~ msgid "result"
-#~ msgstr "tulemus"
-
-#~ msgid "Enter your search"
-#~ msgstr "Sisesta oma otsing"
-
-#~ msgid "Uptime"
-#~ msgstr "Tööaeg"
-
-#~ msgid "Activity time"
-#~ msgstr "Aktiivsusaeg"
-
-#~ msgid "CPU model"
-#~ msgstr "CPU mudel"
-
-#~ msgid "Frequency"
-#~ msgstr "Sagedus"
-
-#~ msgid "core(s)"
-#~ msgstr "tuum(i)"
-
-#~ msgid ""
-#~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
-#~ "etc.\n"
-#~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
-#~ msgstr ""
-#~ "See vidin kuvab CPU koormust, RAM-i kasutust , graafikakaardi "
-#~ "temperatuuri, jne.\n"
-#~ "Keskmise klahvi vajutus kuvab vajalikku infot. \n"
-#~ "Vasaku hiireklahvi vajutus ikoonil kuvab enim resursse kasutavad "
-#~ "programmid.\n"
-#~ "Sa võid luua vidinast mitmeid koopiaid kuvades igaühel erinevaid väärtusi."
-
-#~ msgid ""
-#~ "The acquisition of one or more data has failed.\n"
-#~ "You should remove the data that couldn't be fetched."
-#~ msgstr ""
-#~ "Ühe või enama andmete soetamine ebaõnnestus.\n"
-#~ "Sa peaksid eemaldama andmed mida ei saanud hankida."
-
-#~ msgid "Open the System-Monitor"
-#~ msgstr "Ava süsteemijälgija"
-
-#~ msgid "GPU model"
-#~ msgstr "GPU mudel"
-
-#~ msgid "Video Ram"
-#~ msgstr "Videomälu"
-
-#~ msgid "Mb"
-#~ msgstr "Mb"
-
-#~ msgid "Driver Version"
-#~ msgstr "Draiveri versioon"
-
-#~ msgid "Core Temperature"
-#~ msgstr "Tuuma temperatuur"
-
-#~ msgid "Alert! Graphic Card core temperature has reached %d°C"
-#~ msgstr "Häire! Graafikakaardi tuuma temperatuur on saavutanud %d°C"
-
-#~ msgid "Gb"
-#~ msgstr "Gb"
-
-#~ msgid "Memory"
-#~ msgstr "Mälu"
-
-#~ msgid "Available"
-#~ msgstr "Saadaval"
-
-#~ msgid "Cached"
-#~ msgstr "Puhverdatud"
-
-#~ msgid "Buffers"
-#~ msgstr "Puhvrid"
-
-#~ msgid "min"
-#~ msgstr "min"
-
-#~ msgid "max"
-#~ msgstr "maks"
-
-#~ msgid "alarm"
-#~ msgstr "alarm"
-
-#~ msgid "CPU temperature has reached %d°C"
-#~ msgstr "CPU temperatuur on tõusnud temperatuurini %d°C"
-
-#~ msgid "Fan speed has reached %d rpm"
-#~ msgstr "Ventilaatori on saavutanud kiiruse %d p/min"
-
-#~ msgid "Toons"
-#~ msgstr "Multikad"
-
-#~ msgid "This applet displays a toon that will look at your mouse."
-#~ msgstr "See vidin näitab tegelast kes jälgib sinu hiirt."
-
-#~ msgid "Set up gamma:"
-#~ msgstr "Seadista gamma"
-
-#~ msgid ""
-#~ "This applet lets you control the sound volume from the dock.\n"
-#~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
-#~ "You can also hide the dialog by clicking on it.\n"
-#~ "Middle-click to set or unset to mute, double-click to raise the channels "
-#~ "mixer.\n"
-#~ "This applet works with the Alsa sound driver."
-#~ msgstr ""
-#~ "See vidin lubab sul dokilt helitugevust seadistada.\n"
-#~ "Helitugevuse muutmiseks liiguta liugurit ülesse/alla.\n"
-#~ "Helitugevuse seadistusvidina kuvamiseks klõpsake ikoonil ( kiirklahvi "
-#~ "võimalus) \n"
-#~ "Seadistusakna varjamiseks klõpsake ikoonil.\n"
-#~ "Keskmine hiireklahv vaigistab ja taastab heli, topeltklõps kuvab kanalite "
-#~ "mikseri.\n"
-#~ "See vidin töötab Alsa helidraiveriga."
-
-#~ msgid "Sound Control"
-#~ msgstr "Heli juhtimine"
-
-#~ msgid "I couldn't open card '%s'"
-#~ msgstr "Ma ei suutnud avada '%s' kaarti"
-
-#~ msgid "Card '%s' opened but I couldn't get any info"
-#~ msgstr "Kaardi '%s' avas, kuid ma ei saanud mingit infot"
-
-#~ msgid "I couldn't open the mixer"
-#~ msgstr "Ma ei suutnud avada mikserit"
-
-#~ msgid "I couldn't attach the mixer to the card"
-#~ msgstr "Ei saanud mikserit helikaardiga ühendada."
-
-#~ msgid "I couldn't register options"
-#~ msgstr "Ma ei suutnud registreerida valikut"
-
-#~ msgid "I couldn't load the mixer"
-#~ msgstr "Ei saanud helimikserit laadida"
-
-#~ msgid "Set up volume:"
-#~ msgstr "Sea helivaljus:"
-
-#~ msgid "Adjust channels"
-#~ msgstr "Reguleeri kanaleid"
-
-#~ msgid "Unmute"
-#~ msgstr "Heli sisse"
-
-#~ msgid "Mute"
-#~ msgstr "Vaigista"
-
-#~ msgid "No title"
-#~ msgstr "Pealkirja pole"
-
-#~ msgid "years"
-#~ msgstr "aastad"
-
-#~ msgid "Calendar and tasks"
-#~ msgstr "Kalender ja ülesanded"
-
-#~ msgid "Alarm"
-#~ msgstr "Alarm"
-
-#~ msgid "Time you want to be notified:"
-#~ msgstr "Aeg, mil soovite, et teid teavitatakse:"
-
-#~ msgid "In the form xx:xx. E.g.: 20:35 for 8:35pm"
-#~ msgstr "Vormingus xx:xx. Nt. 8:35pm on 20:35"
-
-#~ msgid "Day"
-#~ msgstr "Päev"
-
-#~ msgid "Monday"
-#~ msgstr "Esmaspäev"
-
-#~ msgid "Tuesday"
-#~ msgstr "Teisipäev"
-
-#~ msgid "Wednesday"
-#~ msgstr "Kolmapäev"
-
-#~ msgid "Thursday"
-#~ msgstr "Neljapäev"
-
-#~ msgid "Friday"
-#~ msgstr "Reede"
-
-#~ msgid "Saturday"
-#~ msgstr "Laupäev"
-
-#~ msgid "Sunday"
-#~ msgstr "Pühapäev"
-
-#~ msgid "Week Day"
-#~ msgstr "Nädalapäev"
-
-#~ msgid "Week End"
-#~ msgstr "Nädala lõpp"
-
-#~ msgid "Month"
-#~ msgstr "Kuu"
-
-#~ msgid "Repeat every:"
-#~ msgstr "Korda iga:"
-
-#~ msgid "If every month, which day of the month?"
-#~ msgstr "Kui iga kuu, siis mis kuupäeval?"
-
-#~ msgid "Message you want to use to be notified:"
-#~ msgstr "Teade mida soovite teavituseks kasutada:"
-
-#~ msgid "Tea Time!"
-#~ msgstr "Teejoomise aeg!"
-
-#~ msgid "Command to launch:"
-#~ msgstr "Käsk käivitamiseks:"
-
-#~ msgid "E.g.:"
-#~ msgstr "Nt. :"
-
-#~ msgid "Search for your location :"
-#~ msgstr "Otsi oma asukoht:"
-
-#~ msgid "clock"
-#~ msgstr "kell"
-
-#~ msgid ""
-#~ "This applet displays time, date and a calandar.\n"
-#~ "2 view are available : <b>numeric</b> and <b>analogic</b>.\n"
-#~ " Analogic view is compatible with the Cairo-Clock's themes, and you can "
-#~ "detach the applet to be a perfect clone of Cairo-Clock.\n"
-#~ "It displays a <b>calendar</b> on left-click, which lets you <b>manage "
-#~ "tasks</b>.\n"
-#~ "It also supports alarms, and allows you to setup time and date.\n"
-#~ "Left-click to show/hide the calendar, Middle-click to stop a "
-#~ "notification,\n"
-#~ "Double-click on a day to edit the tasks for this day."
-#~ msgstr ""
-#~ "See vidin kuvab aega, kuupäeva ja kalendri.  \t\n"
-#~ "Kaks vaadet : <b>digitaalne</b> and <b>analoog</b>.\n"
-#~ "Analoogvaade toetab Cairo-Clock teemasid ja te võite vidina töölauale "
-#~ "lohistada nagu õiget Cairo-Clock-i.\n"
-#~ "Vasak hiireklahv kuvab <b>kalendri<b>, mis lubab sul <b>ülesandeid "
-#~ "hallata<b>.\n"
-#~ "See toetab ka meeldetuletusi ja lubab seadistada nende aega ja kuupäeva.\n"
-#~ "Vasak hiireklahv kuvab/varjab kalendri, keskmine hiireklahv peatab "
-#~ "teavituse,\n"
-#~ "Topeltklõps päeval lubab selle päeva ülesandeid redigeerida."
-
-#~ msgid ""
-#~ "No task is sheduled for today.\n"
-#~ "\n"
-#~ "You can add tasks by clicking on the applet to open the calendar, and "
-#~ "then double-clicking on a day."
-#~ msgstr ""
-#~ "Täna ülesandeid pole.\n"
-#~ "\n"
-#~ "Sa võid ülesandeid lisada klikkides vidinal avamaks kalendri ja siis "
-#~ "topeltklõpsuga soovitud päeval."
-
-#~ msgid "Show today's tasks"
-#~ msgstr "Näita tänaseid tegevusi"
-
-#~ msgid "Show this week's tasks"
-#~ msgstr "Näita selle nädala ülesandeid"
-
-#~ msgid "Set up time and date"
-#~ msgstr "Sea kellaeg ja kuupäeva"
-
-#~ msgid "Add a new task"
-#~ msgstr "Lisa uus ülesanne"
-
-#~ msgid "Delete this task"
-#~ msgstr "Kustuta see ülesanne"
-
-#~ msgid "Don't repeat"
-#~ msgstr "Ära korrda"
-
-#~ msgid "Each month"
-#~ msgstr "Igal kuul"
-
-#~ msgid "Each year"
-#~ msgstr "Igal aastal"
-
-#~ msgid "each month"
-#~ msgstr "igal kuul"
-
-#~ msgid "each year"
-#~ msgstr "igal aastal"
-
-#~ msgid "Right-click to add a new task."
-#~ msgstr "Paremklõps uue ülesande lisamiseks."
-
-#~ msgid "Title"
-#~ msgstr "Pealkiri"
-
-#~ msgid "Text"
-#~ msgstr "Tekst"
-
-#~ msgid "Time"
-#~ msgstr "Aeg"
-
-#~ msgid "Tags"
-#~ msgstr "Sildid"
-
-#~ msgid "1mn"
-#~ msgstr "1 min"
-
-#~ msgid "1h"
-#~ msgstr "1t"
-
-#~ msgid "The following task was scheduled at"
-#~ msgstr "Järgnev ülesanne oli ajastatud hetkel"
-
-#~ msgid "Repeat this message every:"
-#~ msgstr "Korda seda teadet iga:"
-
-#~ msgid "It's time for the following task:"
-#~ msgstr "On aeg järgmiseks tegevuseks:"
-
-#~ msgid "This task will begin in 15 minutes:"
-#~ msgstr "Ülesanne käivitub 15 minuti pärast:"
-
-#~ msgid "Today is the following anniversary:"
-#~ msgstr "Täna on järgmine tähtpäev:"
-
-#~ msgid "Tomorrow is the following anniversary:"
-#~ msgstr "Homme on järgmine tähtpäev:"
-
-#~ msgid "compiz-icon"
-#~ msgstr "Compiz- ikoon"
-
-#~ msgid ""
-#~ "This applet allows you to manage compiz and other windows manager\n"
-#~ "The sub-dock gives you to acces to CCSM, Emerald and some basic Compiz "
-#~ "actions.\n"
-#~ "You can bind one of these actions with the middle-click.\n"
-#~ "The configuration panel gives you some options to launch Compiz."
-#~ msgstr ""
-#~ "See vidin lubab sul hallata compiz-i ja teisi aknahaldureid. Alamdokk\n"
-#~ "annab ligipääsu CCSM-le, Emeraldile ja mõnele Compiz seadistusele.\n"
-#~ "Võite seostada keskmise hiireklikki ühele neist toimingutest.\n"
-#~ "Seadistupaneel pakub Compiz-i käivitamiseks valikuid."
-
-#~ msgid "Configure Compiz"
-#~ msgstr "Seadista Compiz-i"
-
-#~ msgid "Emerald Manager"
-#~ msgstr "Emeraldi haldur"
-
-#~ msgid "Reload WM"
-#~ msgstr "Taaskäivita aknahaldur"
-
-#~ msgid ""
-#~ "To configure Compiz, you need to install CCSM\n"
-#~ " through your package manager (Synaptic, YasT, etc)"
-#~ msgstr ""
-#~ "Compiz-i seadistamiseks paigalda CCSM oma\n"
-#~ " paketihaldurist (Synaptic,Yast, jne)"
-
-#~ msgid "Reload Emerald"
-#~ msgstr "Lae Emerald uuesti"
-
-#~ msgid "Switch Windows Manager"
-#~ msgstr "Lülita Windows Manager"
-
-#~ msgid "Switch Windows Decorator"
-#~ msgstr "Lülita Windows Decorator"
-
-#~ msgid "Toggle Show Desktop"
-#~ msgstr "Näita/varja töölaud"
-
-#~ msgid "frame&reflects"
-#~ msgstr "raam&peegeldused"
-
-#~ msgid "CD box"
-#~ msgstr "CD karp"
-
-#~ msgid "dark"
-#~ msgstr "tume"
-
-#~ msgid "clear"
-#~ msgstr "puhas"
-
-#~ msgid "futuristic"
-#~ msgstr "futuristlik"
-
-#~ msgid "3Dplane"
-#~ msgstr "3D alus"
-
-#~ msgid "comics"
-#~ msgstr "koomiks"
-
-#~ msgid "curly"
-#~ msgstr "looksulg"
-
-#~ msgid "modern"
-#~ msgstr "modernne"
-
-#~ msgid "tooltip"
-#~ msgstr "Tööriistavihje"
-
-#~ msgid ""
-#~ "Couldn't upload the file, check that your internet connection is active."
-#~ msgstr "Ei saanud faili üleslaadida, kontrolli oma internetiühendust."
-
-#~ msgid ""
-#~ "File has been uploaded.\n"
-#~ "Just press CTRL+v to paste its URL anywhere."
-#~ msgstr ""
-#~ "Fail üleslaaditud.\n"
-#~ "URL-i kopeerimiseks vajutage CTRL+V."
-
-#~ msgid ""
-#~ "Please wait for the current upload to finish before starting a new one."
-#~ msgstr ""
-#~ "Palun oodake praeguse üleslaadimise lõpetamist enne kui alustate uut."
-
-#~ msgid "Drop to share"
-#~ msgstr "Jagamiseks lohista"
-
-#~ msgid "Clear the list of the recently uploaded files?"
-#~ msgstr "Tühjenda hiljuti üleslaetud failide nimekiri?"
-
-#~ msgid ""
-#~ "The text has been pasted in the clipboard.\n"
-#~ "You can retrieve it with CTRL+v."
-#~ msgstr ""
-#~ "Tekst on kopeeritud lõikepuhvrisse.\n"
-#~ "Kleepimiseks vajutage CTRL+v."
-
-#~ msgid "Sorry, couldn't find the original file nor a preview of it."
-#~ msgstr "Vabandust, ei leidnud orginaalfaili ega selle eelvaadet."
-
-#~ msgid ""
-#~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
-#~ msgstr ""
-#~ "Üleslaetud faile pole.\n"
-#~ "Palun kaaluge ajaloo aktiveerimist, et vidin mäletaks eelmisi "
-#~ "üleslaadimisi."
-
-#~ msgid "File"
-#~ msgstr "Fail"
-
-#~ msgid "Send the clipboard's content"
-#~ msgstr "Saada lõikepuhvri sisu"
-
-#~ msgid "History"
-#~ msgstr "Ajalugu"
-
-#~ msgid "Get text"
-#~ msgstr "Hangi tekst"
-
-#~ msgid "Remove from history"
-#~ msgstr "Eemalda ajalugu"
-
-#~ msgid "Clear History"
-#~ msgstr "Puhasta ajalugu"
-
-#~ msgid "Caroussel"
-#~ msgstr "Karussell"
-
-#~ msgid "3D plane"
-#~ msgstr "3D alus"
-
-#~ msgid "Parabolic"
-#~ msgstr "Paraboolne"
-
-#~ msgid "Rainbow"
-#~ msgstr "Vikerkaar"
-
-#~ msgid "Slide"
-#~ msgstr "Slaid"
-
-#~ msgid "Curve"
-#~ msgstr "Kõver"
-
-#~ msgid "Panel"
-#~ msgstr "Paneel"
-
-#~ msgid "dustbin"
-#~ msgstr "prügikast"
-
-#~ msgid "You're about to delete all files in all dustbins. Sure ?"
-#~ msgstr "Soovid kustutada kõik failid kõikidest prügikastidest. Kindel?"
-
-#~ msgid "The trash contains"
-#~ msgstr "Prügikast sisaldab"
-
-#~ msgid "files"
-#~ msgstr "failid"
-
-#~ msgid "elements"
-#~ msgstr "elemendid"
-
-#~ msgid "Mo"
-#~ msgstr "E"
-
-#~ msgid "Show Trash (click)"
-#~ msgstr "Näita prügikasti (vajuta)"
-
-#~ msgid "Empty Trash"
-#~ msgstr "Tühjenda prügikast"
-
-#~ msgid "Display dustbins information"
-#~ msgstr "Näita prügikastide infot"
-
-#~ msgid "%s successfully unmounted"
-#~ msgstr "%s edukalt lahtihaagitud"
-
-#~ msgid " trashe(s)"
-#~ msgstr " prügi(d)"
-
-#~ msgid " file(s)"
-#~ msgstr " fail(id)"
-
-#~ msgid "calculating"
-#~ msgstr "kalkuleerin"
-
-#~ msgid "icon effects"
-#~ msgstr "Ikooniefektid"
-
-#~ msgid "This plugin adds many special effects to your icons."
-#~ msgstr "See lisandprogramm lisab palju eriefekte sinu ikoonidele."
-
-#~ msgid "Fire"
-#~ msgstr "Tuli"
-
-#~ msgid "Stars"
-#~ msgstr "Tähed"
-
-#~ msgid "Rain"
-#~ msgstr "Vihm"
-
-#~ msgid "Snow"
-#~ msgstr "Lumi"
-
-#~ msgid "Storm"
-#~ msgstr "Torm"
-
-#~ msgid "Firework"
-#~ msgstr "Tulevärk"
-
-#~ msgid "illusion"
-#~ msgstr "illusioon"
-
-#~ msgid "keyboard indicator"
-#~ msgstr "klaviatuuri indikaator"
-
-#~ msgid "logout"
-#~ msgstr "väljalogimine"
-
-#~ msgid "Log out"
-#~ msgstr "Logi välja"
-
-#~ msgid "Shut down"
-#~ msgstr "Lülita arvuti välja"
-
-#~ msgid "Lock screen"
-#~ msgstr "Ekraani lukustamine"
-
-#~ msgid "Program an automatic shut-down"
-#~ msgstr "Programm automaatselt seiskub"
-
-#~ msgid "Your computer will shut-down in 1 minute."
-#~ msgstr "Sinu arvuti sulgub 1 minutipärast"
-
-#~ msgid "Server address:"
-#~ msgstr "Serveri aadress:"
-
-#~ msgid "myHost"
-#~ msgstr "minuMasin"
-
-#~ msgid "Username:"
-#~ msgstr "Kasutajanimi:"
-
-#~ msgid "Password:"
-#~ msgstr "Salasõna:"
-
-#~ msgid "The password will be crypted."
-#~ msgstr "Salasõna krüpteeritakse."
-
-#~ msgid "Port:"
-#~ msgstr "Port:"
-
-#~ msgid "Please choose an account type."
-#~ msgstr "Palun valige konto tüüp."
-
-#~ msgid "New account's name"
-#~ msgstr "Uus konto nimi"
-
-#~ msgid "Please enter a name for this account."
-#~ msgstr "Palun sisestage nimi sellele kontole."
-
-#~ msgid ""
-#~ "This account already exists.\n"
-#~ "Please choose another name for the new account."
-#~ msgstr ""
-#~ "See konto on juba olemas.\n"
-#~ "Palun vali mõni teine nimi uuele kontole."
-
-#~ msgid "Enter a name for this account. You can give it any name you want."
-#~ msgstr "Sisestage nimi antud kontole. Võite anda talle ükskõik mis nime."
-
-#~ msgid "Remove Account"
-#~ msgstr "Eemalda konto"
-
-#~ msgid "unknown"
-#~ msgstr "tundmatu"
-
-#~ msgid "no subject"
-#~ msgstr "teema puudub"
-
-#~ msgid "You have %d new mails:"
-#~ msgstr "Sul on %d uut kirja:"
-
-#~ msgid "You have a new mail:"
-#~ msgstr "Sulle on uus kiri:"
-
-#~ msgid "mail"
-#~ msgstr "meil"
-
-#~ msgid "Launch %s"
-#~ msgstr "Käivita %s"
-
-#~ msgid "Mail"
-#~ msgstr "E-Kiri"
-
-#~ msgid "Unknown artist"
-#~ msgstr "Tundmatu esitaja"
-
-#~ msgid "Unknown title"
-#~ msgstr "Tundmatu pealkiri"
-
-#~ msgid "Track"
-#~ msgstr "Rada"
-
-#~ msgid "Current song"
-#~ msgstr "Esitatv laul"
-
-#~ msgid "Artist"
-#~ msgstr "Esitaja"
-
-#~ msgid "Album"
-#~ msgstr "Album"
-
-#~ msgid "Track n°"
-#~ msgstr "Loo n°"
-
-#~ msgid "Song n°"
-#~ msgstr "Laul n°"
-
-#~ msgid "musicPlayer"
-#~ msgstr "musikaMängija"
-
-#~ msgid "Previous"
-#~ msgstr "Eelmine"
-
-#~ msgid "Stop"
-#~ msgstr "Peata"
-
-#~ msgid "Information"
-#~ msgstr "Info"
-
-#~ msgid "Show JumpBox"
-#~ msgstr "Näita JumpBox'i"
-
-#~ msgid "Rate this song"
-#~ msgstr "Hinda seda laulu"
-
-#~ msgid "netspeed"
-#~ msgstr "netikiirus"
-
-#~ msgid "Total amount of data"
-#~ msgstr "Andmemaht kokku"
-
-#~ msgid "downloaded"
-#~ msgstr "allalaetud"
-
-#~ msgid "uploaded"
-#~ msgstr "üleslaetud"
-
-#~ msgid "Estimated charge time:"
-#~ msgstr "Hinnanguline laadimisaeg:"
-
-#~ msgid "No battery found."
-#~ msgstr "Ei leitud akut."
-
-#~ msgid "Please put your laptop on charge."
-#~ msgstr "Palun pange oma läpakas laadima."
-
-#~ msgid "Halt"
-#~ msgstr "Seiska"
-
-#~ msgid "Hibernate"
-#~ msgstr "Uinumine"
-
-#~ msgid "Suspend"
-#~ msgstr "Peata"
-
-#~ msgid "Reboot"
-#~ msgstr "Taaskäivita"
-
-#~ msgid "Quick Browser"
-#~ msgstr "Kiirbrauser"
-
-#~ msgid "Open this folder"
-#~ msgstr "Ava see kaust"
-
-#~ msgid "Open folder"
-#~ msgstr "Ava kataloog"
-
-#~ msgid "Unmounted"
-#~ msgstr "Haakimata"
-
-#~ msgid "%s is now mounted"
-#~ msgstr "%s on nüüd haagitud"
-
-#~ msgid "%s has been connected"
-#~ msgstr "%s on ühendatud"
-
-#~ msgid "%s is now unmounted"
-#~ msgstr "%s on nüüd lahtihaagitud"
-
-#~ msgid "shortcuts"
-#~ msgstr "otseteed"
-
-#~ msgid "Enter a name for this bookmark:"
-#~ msgstr "Sisestage nimi sellele järjehoidjale:"
-
-#~ msgid "Eject"
-#~ msgstr "Väljasta"
-
-#~ msgid "show mouse"
-#~ msgstr "näita hiirt"
-
-#~ msgid "showDesktop"
-#~ msgstr "näitaTöölauda"
-
-#~ msgid "Show the desktop"
-#~ msgstr "Töölaua näitamine"
-
-#~ msgid "Change screen resolution"
-#~ msgstr "Ekraani eraldusvõime muutmine"
-
-#~ msgid "Move to the Desktop"
-#~ msgstr "Pane töölauale"
-
-#~ msgid "Copy to the Desktop"
-#~ msgstr "Kopeeri töölauale"
-
-#~ msgid "slider"
-#~ msgstr "liugur"
-
-#~ msgid "Play"
-#~ msgstr "Esita"
-
-#~ msgid "Pause"
-#~ msgstr "Paus"
-
-#~ msgid "Browse images folder"
-#~ msgstr "Sirvi piltide kaustas"
-
-#~ msgid "Paste (drag'n'drop)"
-#~ msgstr "Kleebi (lohistamisega)"
-
-#~ msgid "Open (click)"
-#~ msgstr "Ava (klik)"
-
-#~ msgid "Copy"
-#~ msgstr "Kopeeri"
-
-#~ msgid "Cut"
-#~ msgstr "Lõika"
-
-#~ msgid "Rename this item"
-#~ msgstr "Nimeta ümber see element"
-
-#~ msgid "Remove this item"
-#~ msgstr "Eemalda see element"
-
-#~ msgid "Current"
-#~ msgstr "Aktiivne"
-
-#~ msgid "switcher"
-#~ msgstr "vahetaja"
-
-#~ msgid "Rename this workspace"
-#~ msgstr "Nimeta ümber see tööruum"
-
-#~ msgid "CD_APPLET_NAME"
-#~ msgstr "CD_RAKENDI_NIMI"
-
-#~ msgid "terminal"
-#~ msgstr "terminal"
-
-#~ msgid "New Tab"
-#~ msgstr "Uus sakk"
-
-#~ msgid "Terminal"
-#~ msgstr "Terminal"
-
-#~ msgid "Set title for this tab:"
-#~ msgstr "Sea pealkiri sellele sakile:"
-
-#~ msgid "Select a color"
-#~ msgstr "Vali värv"
-
-#~ msgid "Paste"
-#~ msgstr "Aseta"
-
-#~ msgid "Search for:"
-#~ msgstr "Otsitakse:"
-
-#~ msgid "Add a note"
-#~ msgstr "Lisa märkus"
-
-#~ msgid "Delete this note"
-#~ msgstr "Kustuta see märkus"
-
-#~ msgid "Search"
-#~ msgstr "Otsi"
-
-#~ msgid ""
-#~ "I couldn't get the info\n"
-#~ " Is connexion alive ?"
-#~ msgstr ""
-#~ "Ma ei saanud infot\n"
-#~ " Kas ühendus on elus ?"
-
-#~ msgid "I couldn't find this location"
-#~ msgstr "Ma ei suutnud leida seda asukohta"
-
-#~ msgid "weather"
-#~ msgstr "ilm"
-
-#~ msgid "Jan"
-#~ msgstr "Jaan"
-
-#~ msgid "Feb"
-#~ msgstr "Veebr"
-
-#~ msgid "Mar"
-#~ msgstr "Mär"
-
-#~ msgid "Apr"
-#~ msgstr "Apr"
-
-#~ msgid "May"
-#~ msgstr "Mai"
-
-#~ msgid "Jun"
-#~ msgstr "Juuni"
-
-#~ msgid "Jui"
-#~ msgstr "Juul"
-
-#~ msgid "Aug"
-#~ msgstr "Aug"
-
-#~ msgid "Sep"
-#~ msgstr "Sept"
-
-#~ msgid "Oct"
-#~ msgstr "Okt"
-
-#~ msgid "Nov"
-#~ msgstr "Nov"
-
-#~ msgid "Dec"
-#~ msgstr "Dets"
-
-#~ msgid "Reload now"
-#~ msgstr "Lae nüüd"
-
-#~ msgid ""
-#~ "No data available\n"
-#~ " is your connection alive?"
-#~ msgstr ""
-#~ "Andmed pole saadaval\n"
-#~ " on teie ühendus elus?"
-
-#~ msgid "Temperature"
-#~ msgstr "Temperatuur"
-
-#~ msgid "Precipitation probability"
-#~ msgstr "Sademete tõenäosus"
-
-#~ msgid "Wind"
-#~ msgstr "Tuul"
-
-#~ msgid "Humidity"
-#~ msgstr "Niiskus"
-
-#~ msgid "Sunrise"
-#~ msgstr "Päikesetõus"
-
-#~ msgid "Sunset"
-#~ msgstr "Päikeseloojang"
-
-#~ msgid ""
-#~ "No data available\n"
-#~ "Retrying now..."
-#~ msgstr ""
-#~ "Andmeid pole saadaval\n"
-#~ "Proovitakse uuesti nüüd ..."
-
-#~ msgid "Feels like"
-#~ msgstr "Tundub nagu"
-
-#~ msgid "Pressure"
-#~ msgstr "Õhurõhk"
-
-#~ msgid "WiFi disabled."
-#~ msgstr "WiFi keelatud."
-
-#~ msgid "wifi"
-#~ msgstr "wifi"
-
-#~ msgid "Global"
-#~ msgstr "Globaalne"
-
-#~ msgid "Rotation"
-#~ msgstr "Pööramine"
-
-#~ msgid "Cube"
-#~ msgstr "Kuup"
-
-#~ msgid "Capsule"
-#~ msgstr "Kapsel"
-
-#~ msgid "Colour of the sheen:"
-#~ msgstr "Värvi sära:"
-
-#~ msgid "Initial stretch:"
-#~ msgstr "Esialgne venitus:"
-
-#~ msgid "Horizontal stretch"
-#~ msgstr "Horisontaalne venitamine"
-
-#~ msgid "Vertical stretch"
-#~ msgstr "Verikaalne venitamine"
-
-#~ msgid "Corner stretch"
-#~ msgstr "Nurk venitamine"
-
-#~ msgid "Spring constant:"
-#~ msgstr "Vedrukonstant:"
-
-#~ msgid "Friction:"
-#~ msgstr "Hõõrdumine:"
-
-#~ msgid "in pixels."
-#~ msgstr "pikselites."
-
-#~ msgid "Items"
-#~ msgstr "Esemed"
-
-#~ msgid "Which items should be remembered?"
-#~ msgstr "Millised esemed tuleb meeles pidada?"
-
-#~ msgid "Clipboard"
-#~ msgstr "Lõikelaud"
-
-#~ msgid "Selection"
-#~ msgstr "Valik"
-
-#~ msgid "Both"
-#~ msgstr "Mõlemad"
-
-#~ msgid "Paste into Clipboard?"
-#~ msgstr "Aseta lõikelauale?"
-
-#~ msgid "Paste into Selection?"
-#~ msgstr "Kleebi valitule?"
-
-#~ msgid "Enable actions?"
-#~ msgstr "Luba tegevus?"
-
-#~ msgid "Gauge"
-#~ msgstr "Mõõdupuu"
-
-#~ msgid "Graph"
-#~ msgstr "Graafik"
-
-#~ msgid "Line"
-#~ msgstr "Rida"
-
-#~ msgid "Plain"
-#~ msgstr "Puhas"
-
-#~ msgid "Bar"
-#~ msgstr "Riba"
-
-#~ msgid "Circle"
-#~ msgstr "Ringjoon"
-
-#~ msgid "Plain Circle"
-#~ msgstr "Tavaline ring"
-
-#~ msgid "No"
-#~ msgstr "Ei"
-
-#~ msgid "Font to be used by default if none is specify in the .xml"
-#~ msgstr "Font, mida kasutatakse vaikimisi, kui ei ole täpsustatud. xml"
-
-#~ msgid "Default Font:"
-#~ msgstr "Vaikimisi font:"
-
-#~ msgid "Color to be used by default if none is specify in the .xml"
-#~ msgstr "Värv, mida kasutatakse vaikimisi, kui ei ole täpsustatud. xml"
-
-#~ msgid "Default colour:"
-#~ msgstr "Vaikimisi värv:"
-
-#~ msgid "Space between lines:"
-#~ msgstr "Ruum ridade vahel:"
-
-#~ msgid "Background"
-#~ msgstr "Tagapõhi"
-
-#~ msgid "Background first colour :"
-#~ msgstr "Tausta esimene värv:"
-
-#~ msgid "Border colour :"
-#~ msgstr "Äärise värv:"
-
-#~ msgid "Sort files by :"
-#~ msgstr "Sorteeri failisi :"
-
-#~ msgid "Name"
-#~ msgstr "Nime"
-
-#~ msgid "Date"
-#~ msgstr "Kuupäev"
-
-#~ msgid "Size"
-#~ msgstr "Suurus"
-
-#~ msgid "Show hidden files?"
-#~ msgstr "Näita peidetud failisi?"
-
-#~ msgid "Recent documents"
-#~ msgstr "Viimatised dokumendid"
-
-#~ msgid "Show recent documents?"
-#~ msgstr "Näita viimaseid dokumente?"
-
-#~ msgid "Wifi signal"
-#~ msgstr "Wifi signaal"
-
-#~ msgid "Connexion speed"
-#~ msgstr "Ühenduse kiirus"
-
-#~ msgid "Net Speed"
-#~ msgstr "Neti kiirus"
-
-#~ msgid "Wifi"
-#~ msgstr "Wifi"
-
-#~ msgid "Icons"
-#~ msgstr "Ikoonid"
-
-#~ msgid "Zoom"
-#~ msgstr "Suurendus"
-
-#~ msgid "Transparency"
-#~ msgstr "Läbipaistvus"
-
-#~ msgid "RSS Feed"
-#~ msgstr "RSS-voog"
-
-#~ msgid "URL:"
-#~ msgstr "URL:"
-
-#~ msgid "Title font:"
-#~ msgstr "Pealkirja font:"
-
-#~ msgid "Title colour:"
-#~ msgstr "Pealkirja värv:"
-
-#~ msgid "left"
-#~ msgstr "vasak"
-
-#~ msgid "right"
-#~ msgstr "parem"
-
-#~ msgid "Logo"
-#~ msgstr "Logo"
-
-#~ msgid "Logo size:"
-#~ msgstr "Logo suurus:"
-
-#~ msgid "normal"
-#~ msgstr "tavaline"
-
-#~ msgid "Animations"
-#~ msgstr "Animatsioonid"
-
-#~ msgid "Text size:"
-#~ msgstr "Teksti suurus:"
-
-#~ msgid "Text colour:"
-#~ msgstr "Teksti värv:"
-
-#~ msgid "Help"
-#~ msgstr "Abi"
-
-#~ msgid "Sound card:"
-#~ msgstr "Helikaart:"
-
-#~ msgid "Select channel:"
-#~ msgstr "Vali kanal:"
-
-#~ msgid "Control"
-#~ msgstr "Juhtimine"
-
-#~ msgid "Default icon:"
-#~ msgstr "Vaikimisi ikoon:"
-
-#~ msgid "Timezone:"
-#~ msgstr "Ajavöönd:"
-
-#~ msgid "Default"
-#~ msgstr "Vaikimisi"
-
-#~ msgid "iCal"
-#~ msgstr "iCal"
-
-#~ msgid "Style"
-#~ msgstr "Stiil"
-
-#~ msgid "Analogue"
-#~ msgstr "Analoog"
-
-#~ msgid "Digital"
-#~ msgstr "Digitaal"
-
-#~ msgid "Analogue View"
-#~ msgstr "Analoog vaade"
-
-#~ msgid "Font:"
-#~ msgstr "Font:"
-
-#~ msgid "Show desktop"
-#~ msgstr "Näita töölauda"
-
-#~ msgid "emerald"
-#~ msgstr "emerald"
-
-#~ msgid "Comics"
-#~ msgstr "Koomiks"
-
-#~ msgid "Border width:"
-#~ msgstr "Raami laius:"
-
-#~ msgid "Modern"
-#~ msgstr "Moodne"
-
-#~ msgid "Tooltip"
-#~ msgstr "Vihje"
-
-#~ msgid "Curly"
-#~ msgstr "Lokkis"
-
-#~ msgid "Sites"
-#~ msgstr "Saidid"
-
-#~ msgid "Custom"
-#~ msgstr "Kohanda"
-
-#~ msgid "Grid"
-#~ msgstr "Alusvõrk"
-
-#~ msgid "Frame"
-#~ msgstr "Raam"
-
-#~ msgid "Scroll bar"
-#~ msgstr "otsinguriba"
-
-#~ msgid "Speed:"
-#~ msgstr "Kiirus:"
-
-#~ msgid "Theme"
-#~ msgstr "Teema"
-
-#~ msgid "Config"
-#~ msgstr "Seadistus"
-
-#~ msgid "Colours"
-#~ msgstr "Värvid"
-
-#~ msgid "Particles"
-#~ msgstr "Osakesed"
-
-#~ msgid "Particle size:"
-#~ msgstr "Osakese suurus:"
-
-#~ msgid "Fade out"
-#~ msgstr "Hajumine"
-
-#~ msgid "Break"
-#~ msgstr "Eraldamine"
-
-#~ msgid "Black Hole"
-#~ msgstr "Must auk"
-
-#~ msgid "Random"
-#~ msgstr "Juhuslik"
-
-#~ msgid "Audio Player"
-#~ msgstr "Helifailide mängija"
-
-#~ msgid "Audacious"
-#~ msgstr "Audacious"
-
-#~ msgid "Banshee"
-#~ msgstr "Banshee"
-
-#~ msgid "Exaile 0.3"
-#~ msgstr "Exaile 0.3"
-
-#~ msgid "Listen"
-#~ msgstr "Kuulama"
-
-#~ msgid "XMMS 2"
-#~ msgstr "XMMS 2"
-
-#~ msgid "XMMS"
-#~ msgstr "XMMS"
-
-#~ msgid "Nothing"
-#~ msgstr "Puudub"
-
-#~ msgid "Time Elapsed"
-#~ msgstr "Aega kulunud"
-
-#~ msgid "Time Remaining"
-#~ msgstr "Aega jäänud"
-
-#~ msgid "Track number"
-#~ msgstr "Pala number"
-
-#~ msgid "Icon name:"
-#~ msgstr "Ikooni nimi:"
-
-#~ msgid "Battery level:"
-#~ msgstr "Aku tase:"
-
-#~ msgid "Folder"
-#~ msgstr "Kaust"
-
-#~ msgid "Menu"
-#~ msgstr "Menüü"
-
-#~ msgid "Tree"
-#~ msgstr "Puu"
-
-#~ msgid "Disk usage"
-#~ msgstr "Kettakasutus"
-
-#~ msgid "Free space"
-#~ msgstr "Vaba ruum"
-
-#~ msgid "Used space"
-#~ msgstr "Kasutatud ruum"
-
-#~ msgid "Free space (in percent)"
-#~ msgstr "Vaba ruum (protsentides)"
-
-#~ msgid "Used space (in percent)"
-#~ msgstr "Kasutatud ruum (protsentides)"
-
-#~ msgid "Dock"
-#~ msgstr "dokk"
-
-#~ msgid "play/pause"
-#~ msgstr "esita/paus"
-
-#~ msgid "open image"
-#~ msgstr "va pilt"
-
-#~ msgid "random"
-#~ msgstr "juhuslik"
-
-#~ msgid "fast"
-#~ msgstr "kiire"
-
-#~ msgid "Options"
-#~ msgstr "Valikud"
-
-#~ msgid "Type"
-#~ msgstr "Tüüp"
-
-#~ msgid "Display options"
-#~ msgstr "Ekraani seaded"
-
-#~ msgid "horizontal"
-#~ msgstr "rõhtne"
-
-#~ msgid "vertical"
-#~ msgstr "püstine"
-
-#~ msgid "Enter some text here :"
-#~ msgstr "Lisa siia tekst:"
-
-#~ msgid "Terminal transparency:"
-#~ msgstr "Terminali läbipaistvus:"
-
-#~ msgid "transparent"
-#~ msgstr "läbipaistev"
-
-#~ msgid "Background colour:"
-#~ msgstr "Taustavärv:"
-
-#~ msgid "Text colour of the content :"
-#~ msgstr "Teksti sisu värv:"
-
-#~ msgid "Tomboy"
-#~ msgstr "Tomboy"
-
-#~ msgid "Ask for confirmation before deleting a note?"
-#~ msgstr "Kas küsida märkme kustutamisel kinnitust?"
-
-#~ msgid "Automatically name a new note?"
-#~ msgstr "Anna märkmele automaatselt nimi?"
-
-#~ msgid "Use International System Units?"
-#~ msgstr "Kasutan rahvusvahelisi mõõtühikuid?"
-
-#~ msgid "in seconds. Set 0 to have never-ending dialogs."
-#~ msgstr "sekundites. Säti 0 kui soovid püsivat dialoogiakent."
-
-#~ msgid "Number of days to forecast:"
-#~ msgstr "Ilmaennustuse pikkus päevades:"
-
-#~ msgid "Display nights?"
-#~ msgstr "Näita ööd?"
-
-#~ msgid "Display temperature as quick info?"
-#~ msgstr "Näita temperatuuri kohta kiirinfot?"
-
-#~ msgid "Position of horizontal scrollbar"
-#~ msgstr "Horisontaalse kerimisriba asukoht:"
-
-#~ msgid ""
-#~ "This lets you right-click on the desklet to pop up the Cairo-Dock menu."
-#~ msgstr ""
-#~ "See lubab sul paremklikkata vidinal Cairo-dokki menüü esilekuvamiseks."
-
-#~ msgid "Transparent background?"
-#~ msgstr "Läbipaistev taust?"
-
-#~ msgid "Any valid URI should work."
-#~ msgstr "Iga kehtiv URI peaks sobima."
-
-#~ msgid "'No signal' icon filename:"
-#~ msgstr "'Pole signaali' ikooni failinimi:"
-
-#~ msgid "'Very low' icon filename:"
-#~ msgstr "'Väga madal' ikooni failinimi:"
-
-#~ msgid "'Low' icon filename:"
-#~ msgstr "'Madal' ikooni failinimi:"
-
-#~ msgid "'Average' icon filename:"
-#~ msgstr "'Keskmine' ikooni failinimi:"
-
-#~ msgid "'Good' icon filename:"
-#~ msgstr "'Hea' ikooni failinimi:"
-
-#~ msgid "'Excellent' icon filename:"
-#~ msgstr "'Suurepärane' ikooni failinimi:"
-
-#~ msgid "Signal Strength"
-#~ msgstr "Signaali tugevus"
-
-#~ msgid "Raw Signal Informations"
-#~ msgstr "Puhta signaali info"

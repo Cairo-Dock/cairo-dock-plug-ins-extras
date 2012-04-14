@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-06-27 10:51+0000\n"
-"Last-Translator: 安 <Unknown>\n"
+"POT-Creation-Date: 2012-04-12 00:34+0000\n"
+"PO-Revision-Date: 2012-04-12 03:31+0000\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Simplified Chinese <tigersoldi@gmail.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-07-12 04:53+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
+"X-Launchpad-Export-Date: 2012-04-13 05:36+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -115,9 +117,8 @@ msgstr "图像的文件名："
 #: ../Translator/messages:15 ../Transmission/messages:15
 #: ../Twitter/messages:15 ../WebSearch/messages:13
 #: ../WindowsKiller/messages:15 ../Xchat/messages:15
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "留空则使用默认设置"
+msgstr ""
 
 #: ../GnoMenu/messages:17 ../Calendar/messages:17 ../Cardapio/messages:17
 #: ../Deluge/messages:17 ../DiskFree/messages:17 ../Gmail/messages:11
@@ -174,9 +175,7 @@ msgstr "位置"
 msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
-msgstr ""
-"一旦锁定，桌面小工具无法通过简单地用左键拖放来移动。当然，您可以用ALT+左键来"
-"移动。"
+msgstr "一旦锁定，桌面小工具无法通过简单地用左键拖放来移动。当然，您可以用ALT+左键来移动。"
 
 #: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
 #: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:23
@@ -198,9 +197,7 @@ msgstr "锁定位置?"
 msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
-msgstr ""
-"您可以用诸如ALT+鼠标中键或ALT+左键点击来更改其大小，此功能依赖于您的窗口管理"
-"器。"
+msgstr "您可以用诸如ALT+鼠标中键或ALT+左键点击来更改其大小，此功能依赖于您的窗口管理器。"
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:27
@@ -219,11 +216,10 @@ msgstr "桌面小工具尺寸(宽×高):"
 #: ../Pidgin/messages:33 ../Quote/messages:35 ../Transmission/messages:33
 #: ../Twitter/messages:33 ../WebSearch/messages:31
 #: ../WindowsKiller/messages:31 ../Xchat/messages:33
-#, fuzzy
 msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
-msgstr "您可以用诸如ALT+左键点击来移动，此功能依赖于您的窗口管理器"
+msgstr ""
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:31
@@ -308,9 +304,8 @@ msgstr ""
 #: ../Translator/messages:51 ../Transmission/messages:49
 #: ../Twitter/messages:49 ../WebSearch/messages:47
 #: ../WindowsKiller/messages:47 ../Xchat/messages:49
-#, fuzzy
 msgid "Keep above"
-msgstr "肃静！"
+msgstr ""
 
 #: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
 #: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:47
@@ -321,9 +316,8 @@ msgstr "肃静！"
 #: ../Translator/messages:53 ../Transmission/messages:51
 #: ../Twitter/messages:51 ../WebSearch/messages:49
 #: ../WindowsKiller/messages:49 ../Xchat/messages:51
-#, fuzzy
 msgid "Keep below"
-msgstr "肃静！"
+msgstr ""
 
 #: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
 #: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:49
@@ -332,9 +326,8 @@ msgstr "肃静！"
 #: ../Pidgin/messages:53 ../Quote/messages:55 ../Transmission/messages:53
 #: ../Twitter/messages:53 ../WebSearch/messages:51
 #: ../WindowsKiller/messages:51 ../Xchat/messages:53
-#, fuzzy
 msgid "Keep on widget layer"
-msgstr "Widget层"
+msgstr ""
 
 #: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
 #: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:51
@@ -550,9 +543,8 @@ msgid "Shortkey to pop up the menu:"
 msgstr ""
 
 #: ../Calendar/messages:95
-#, fuzzy
 msgid "Applications"
-msgstr "动作"
+msgstr ""
 
 #: ../Calendar/messages:97
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -595,9 +587,8 @@ msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "Torrents info"
-msgstr "获取磁盘信息"
+msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
@@ -645,9 +636,8 @@ msgid "Alerts"
 msgstr ""
 
 #: ../Gmail/messages:97
-#, fuzzy
 msgid "Show alerts?"
-msgstr "显示信息泡泡？"
+msgstr ""
 
 #: ../Gmail/messages:99
 msgid ""
@@ -677,18 +667,16 @@ msgid "Should an animation be applied to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:111
-#, fuzzy
 msgid "Show animation?"
-msgstr "アニメーション"
+msgstr ""
 
 #: ../Gmail/messages:113
 msgid "Which animation should the apply to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:115
-#, fuzzy
 msgid "Choose animation?"
-msgstr "配置"
+msgstr ""
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
@@ -716,9 +704,8 @@ msgid "Path to sound file:"
 msgstr ""
 
 #: ../Gmail/messages:129
-#, fuzzy
 msgid "Display a counter on the icon?"
-msgstr "在图标上绘制便签内容?"
+msgstr ""
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
@@ -766,45 +753,36 @@ msgid "Display channel messages in a bubble :"
 msgstr ""
 
 #: ../GTG/messages:109
-#, fuzzy
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "桌面小工具尺寸(宽×高):"
+msgstr ""
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:29
-#, fuzzy
 msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"您可以用诸如ALT+鼠标中键或ALT+左键点击来更改其大小，此功能依赖于您的窗口管理"
-"器。"
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
-#, fuzzy
 msgid "Desklet's dimension (width x height) :"
-msgstr "桌面小工具尺寸(宽×高):"
+msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-#, fuzzy
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
-"您可以用诸如ALT+鼠标中键或ALT+左键点击来更改其大小，此功能依赖于您的窗口管理"
-"器。"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Screensaver_inhibitor/messages:31 ../Translator/messages:35
-#, fuzzy
 msgid "Desklet's position (x ; y) :"
-msgstr "桌面小工具位置(x ; y):"
+msgstr ""
 
 #: ../HDDtemperature/messages:27 ../Moon/messages:31
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:43
-#, fuzzy
 msgid "Is detached from the dock ?"
-msgstr "与dock分离?"
+msgstr ""
 
 #: ../HDDtemperature/messages:29 ../Translator/messages:45
 msgid ""
@@ -814,15 +792,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:31 ../Moon/messages:33
 #: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
-#, fuzzy
 msgid "Accessibility :"
-msgstr "可见性："
+msgstr ""
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
-#, fuzzy
 msgid "On Widget Layer"
-msgstr "切换Widget层"
+msgstr ""
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
@@ -831,19 +807,15 @@ msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:51
-#, fuzzy
 msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
 msgstr ""
-"一旦锁定，桌面小工具无法通过简单地用左键拖放来移动。当然，您可以用ALT+左键来"
-"移动。"
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53
-#, fuzzy
 msgid "Lock position ?"
-msgstr "锁定位置?"
+msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55
@@ -852,9 +824,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
 #: ../Screensaver_inhibitor/messages:57
-#, fuzzy
 msgid "Rotation :"
-msgstr "旋转:"
+msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
@@ -863,97 +834,82 @@ msgstr ""
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
 #: ../Screensaver_inhibitor/messages:63 ../Translator/messages:65
-#, fuzzy
 msgid "Choose a decoration theme for this desklet :"
-msgstr "为这个桌面小工具选择一个装饰主题:"
+msgstr ""
 
 #: ../HDDtemperature/messages:59 ../Moon/messages:61
 #: ../Screensaver_inhibitor/messages:65 ../Translator/messages:67
-#, fuzzy
 msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
-msgstr "在图画下面显示的图片，例如边框。留空则为不使用图片。"
+msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
-#, fuzzy
 msgid "Background image :"
-msgstr "背景图片:"
+msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
-#, fuzzy
 msgid "Background tansparency :"
-msgstr "背景透明度:"
+msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
-#, fuzzy
 msgid "in pixels. Use this to adjust the left position of the drawings."
-msgstr "以象素为单位。使用此设置调整图画的左边位置。"
+msgstr ""
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Screensaver_inhibitor/messages:73 ../Translator/messages:75
-#, fuzzy
 msgid "Left offset :"
-msgstr "左偏移:"
+msgstr ""
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Screensaver_inhibitor/messages:75 ../Translator/messages:77
-#, fuzzy
 msgid "in pixels. Use this to adjust the top position of the drawings."
-msgstr "以象素为单位。使用此设置调整图画的上边位置。"
+msgstr ""
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Screensaver_inhibitor/messages:77 ../Translator/messages:79
-#, fuzzy
 msgid "Top offset :"
-msgstr "顶偏移:"
+msgstr ""
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Screensaver_inhibitor/messages:79 ../Translator/messages:81
-#, fuzzy
 msgid "in pixels. Use this to adjust the right position of the drawings."
-msgstr "以象素为单位。使用此设置调整图画的右边位置。"
+msgstr ""
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Screensaver_inhibitor/messages:81 ../Translator/messages:83
-#, fuzzy
 msgid "Right offset :"
-msgstr "右偏移:"
+msgstr ""
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Screensaver_inhibitor/messages:83 ../Translator/messages:85
-#, fuzzy
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
-msgstr "以象素为单位。使用此设置调整图画的下边位置。"
+msgstr ""
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Screensaver_inhibitor/messages:85 ../Translator/messages:87
-#, fuzzy
 msgid "Bottom offset :"
-msgstr "底偏移:"
+msgstr ""
 
 #: ../HDDtemperature/messages:81 ../Moon/messages:83
 #: ../Screensaver_inhibitor/messages:87 ../Translator/messages:89
-#, fuzzy
 msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
-msgstr "在图画上面显示的图片，例如反射。留空则为不使用图片。"
+msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
-#, fuzzy
 msgid "Foreground image :"
-msgstr "前景图片:"
+msgstr ""
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
-#, fuzzy
 msgid "Foreground tansparency :"
-msgstr "前景透明度:"
+msgstr ""
 
 #: ../HDDtemperature/messages:89
 msgid "One or more device drive path to monitor:"
@@ -1001,9 +957,8 @@ msgid ""
 msgstr ""
 
 #: ../Liferea/messages:95
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "显示信息"
+msgstr ""
 
 #: ../Liferea/messages:97
 msgid "Number of unread messages"
@@ -1104,9 +1059,8 @@ msgid "big"
 msgstr ""
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "留空则使用默认设置"
+msgstr ""
 
 #: ../Quote/messages:97
 msgid "Quote source:"
@@ -1162,14 +1116,12 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
-#, fuzzy
 msgid "Leave empty to use the default one."
-msgstr "留空以使用默认图标。"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:11 ../Translator/messages:13
-#, fuzzy
 msgid "Image filename:"
-msgstr "图像的文件名："
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:15
 msgid "Image filename when the screensaver is inhibited:"
@@ -1634,9 +1586,8 @@ msgid "Large"
 msgstr ""
 
 #: ../WebSearch/messages:93
-#, fuzzy
 msgid "Search engine :"
-msgstr "在网页中搜索"
+msgstr ""
 
 #: ../WebSearch/messages:95
 msgid "Google"
@@ -1671,9 +1622,8 @@ msgid "Wikipedia"
 msgstr "维基百科"
 
 #: ../WebSearch/messages:111
-#, fuzzy
 msgid "ImageShack"
-msgstr "图像"
+msgstr ""
 
 #: ../WebSearch/messages:113
 msgid "Twitter"
@@ -1684,9 +1634,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:117
-#, fuzzy
 msgid "in sub-icons."
-msgstr "以秒为单位。"
+msgstr ""
 
 #: ../WebSearch/messages:119
 msgid "Maximum number of results shown :"
@@ -1719,1872 +1668,3 @@ msgstr ""
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-
-#, fuzzy
-#~ msgid "in s."
-#~ msgstr "以秒为单位。"
-
-#~ msgid "Choose one of the available themes:"
-#~ msgstr "选择主题:"
-
-#~ msgid "Animated icons"
-#~ msgstr "动态图标"
-
-#~ msgid "This plug-in provides many different animations for your icons."
-#~ msgstr "本插件提供了多种不同的图标动态效果"
-
-#~ msgid "Wave"
-#~ msgstr "波动特效"
-
-#~ msgid "Spot"
-#~ msgstr "点"
-
-#~ msgid ""
-#~ "Add a lively Penguin in your dock !\n"
-#~ "Left click to change the animation,\n"
-#~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
-#~ msgstr ""
-#~ "添加一个活泼的企鹅!\n"
-#~ "左键点击变化动画,\n"
-#~ "中间点击打扰它 ^_^\n"
-#~ "晚礼服的图片是从Pingus得到的,有一些其他的人物可供选择,并且能够方便的加入."
-
-#~ msgid "Hey, I'm here!"
-#~ msgstr "嘿，我在这儿！"
-
-#~ msgid "Sorry but I'm busy right now."
-#~ msgstr "对不起，我现在有点忙。"
-
-#~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
-#~ msgstr "我没功夫跟你玩，我忙着把这些图标挖出来呢。"
-
-#~ msgid "Your dock is so messy! Let me clean it."
-#~ msgstr "你的dock乱套了！我来帮你打扫一下吧。"
-
-#~ msgid "Admit my superiority on you as a penguin!"
-#~ msgstr "承认我这个企鹅比你优秀吧！"
-
-#~ msgid "Wait, do you want to kill me?!"
-#~ msgstr "不要啊~~你要杀死我么？！"
-
-#~ msgid "Do you know how painful it is to be clicked on??"
-#~ msgstr "你知道这么被点来点去多疼么？！！"
-
-#~ msgid "It's my dock now, mwahahaha!"
-#~ msgstr "现在这是我的dock啦，哇咔咔咔咔！"
-
-#~ msgid "I want to be a pirate!"
-#~ msgstr "我要成为一名伟大的海贼！"
-
-#~ msgid "You shall not pass!"
-#~ msgstr "禁止通过！"
-
-#~ msgid "I'm your father!"
-#~ msgstr "我是你父亲！"
-
-#~ msgid ""
-#~ "- Gee, Brain, what do you want to do tonight?\n"
-#~ "- The same thing we do every night, Pinky : try to take over the Dock!"
-#~ msgstr ""
-#~ "- Cortex， 我们晚做些什么？\n"
-#~ "- 跟每天晚上一样啊，Minus。占据这个Dock！"
-
-#~ msgid "For Aiur!"
-#~ msgstr "为了Aiur！"
-
-#~ msgid "Wake up"
-#~ msgstr "醒醒！"
-
-#~ msgid "Start XPenguins"
-#~ msgstr "启动XPenguins"
-
-#~ msgid "Stop XPenguins"
-#~ msgstr "停止XPenguins"
-
-#~ msgid "Zzzzz"
-#~ msgstr "Zzzzz"
-
-#~ msgid "No items yet."
-#~ msgstr "目前无项目"
-
-#~ msgid "Clipboard history"
-#~ msgstr "剪贴板历史"
-
-#~ msgid ""
-#~ "No persistent items.\n"
-#~ "You can add some by drag and dropping some text on the icon."
-#~ msgstr "无持久项目"
-
-#~ msgid ""
-#~ "This plug-in lets extern applications interact on the dock.\n"
-#~ "The communication between both sides is based on Dbus"
-#~ msgstr ""
-#~ "这个插件使外部程序能够与dock交换数据.\n"
-#~ "两侧数据的交换利用的是Dbus."
-
-#~ msgid "Sorry, this module couldn't be added."
-#~ msgstr "对不起,这个模块无法添加."
-
-#~ msgid "The module has been added, but couldn't be launched."
-#~ msgstr "这个模块已经被添加,但是无法启动."
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully updated and automatically reloaded"
-#~ msgstr "这个小程序'%s'已经成功升级并且自动重启."
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully installed and automatically launched"
-#~ msgstr "这个小程序'%s'已经成功安装并且自动启动."
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
-#~ msgid "System Monitor"
-#~ msgstr "系统监视器"
-
-#~ msgid "day(s)"
-#~ msgstr "日"
-
-#~ msgid ""
-#~ "This applet allows you to write texts and monitor your system\n"
-#~ "with a \"text style desklet\".\n"
-#~ "USAGE:\n"
-#~ "  - NEED TO BE DETACHED FROM THE DOCK TO WORK !\n"
-#~ "  - Middle-clic to reload values"
-#~ msgstr ""
-#~ "这个小程序使你能够输入文本并且利用一个文本式的平台监视你的系统.\n"
-#~ "用法:\n"
-#~ "       -需要脱离Dock进行工作!\n"
-#~ "       -中键点击,刷新数值"
-
-#~ msgid "It doesn't seem to be a valid XML file."
-#~ msgstr "似乎不是合法的XML文件"
-
-#~ msgid "Folders"
-#~ msgstr "邮件夹"
-
-#~ msgid "Open the configuration of the applet to choose a folder to import."
-#~ msgstr "打开这个小程序的配置页面以选择要导入的文件夹."
-
-#~ msgid "Empty or unreadable folder."
-#~ msgstr "空的或者无法读取的文件夹."
-
-#~ msgid ""
-#~ "You're about deleting this file\n"
-#~ "  (%s)\n"
-#~ "from your hard-disk. Sure ?"
-#~ msgstr ""
-#~ "将从您得硬盘上删除如下文件，确认？\n"
-#~ "  (%s)"
-
-#~ msgid ""
-#~ "Warning: could not delete this file.\n"
-#~ "Please check file permissions."
-#~ msgstr ""
-#~ "注意：无法删除此文件\n"
-#~ "请检查您是否有写权限。"
-
-#~ msgid ""
-#~ "Warning: could not rename %s.\n"
-#~ "Check file permissions \n"
-#~ "and that the new name does not already exist."
-#~ msgstr ""
-#~ "注意：无法重命名%s\n"
-#~ "请检查您是否有写权限，\n"
-#~ " 或是已存在同名文件。"
-
-#~ msgid "Enter a file name:"
-#~ msgstr "输入文件名："
-
-#~ msgid "Open the folder"
-#~ msgstr "打开文件夹"
-
-#~ msgid "Rename this file"
-#~ msgstr "重命名此文件"
-
-#~ msgid "Delete this file"
-#~ msgstr "删除此文件"
-
-#~ msgid "Move this file"
-#~ msgstr "移动该文件"
-
-#~ msgid "Open with"
-#~ msgstr "打开方式"
-
-#~ msgid "Properties"
-#~ msgstr "属性..."
-
-#~ msgid "Create a new file"
-#~ msgstr "创建新文件"
-
-#~ msgid "Create a new folder"
-#~ msgstr "创建新文件夹"
-
-#~ msgid ""
-#~ "Displays the common Applications menu and the Recently used files.\n"
-#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
-#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
-#~ msgstr ""
-#~ "显示常用程序菜单以及最近访问的文件.\n"
-#~ "与任何XDG兼容的菜单(Gnome, XFCE, KDE, ...)都可以兼容使用\n"
-#~ "中键打开对话框,以快速启动任何命令(你能够为它设置快捷键, 如 ALT + F2)\n"
-#~ "你也能够为弹出菜单设置快捷键(如 ALT+F1)"
-
-#~ msgid "Quick launch"
-#~ msgstr "快速启动"
-
-#~ msgid "Configure menu"
-#~ msgstr "设置菜单"
-
-#~ msgid "Clear recent"
-#~ msgstr "清除最近打开的文档记录"
-
-#~ msgid "Recent Documents"
-#~ msgstr "最近的文档"
-
-#~ msgid "Clear the list of the recently used documents?"
-#~ msgstr "清除最近使用的文档列表？"
-
-#~ msgid "Enter a command to launch:"
-#~ msgstr "输入命令并启动"
-
-#~ msgid "Me Menu"
-#~ msgstr "Me Menu"
-
-#~ msgid ""
-#~ "A menu that lets you access quickly to your information, your online "
-#~ "status, your friends."
-#~ msgstr "能够让你快速获取你的信息,在线状态,朋友状态的菜单."
-
-#~ msgid "It seems that the Me-Menu is not installed on your system"
-#~ msgstr "Me-Menu未在您的系统上安装"
-
-#~ msgid "Messaging Menu"
-#~ msgstr "消息菜单"
-
-#~ msgid ""
-#~ "A menu that notices you about new messages from Mail or Chat "
-#~ "applications.\n"
-#~ "It handles Evolution, Pidgin, Empathy, etc"
-#~ msgstr ""
-#~ "可以提醒你新邮件或者新信息的菜单.\n"
-#~ "能够处理Evolution, Pidgin, Empathy等."
-
-#~ msgid "It seems that the Messaging-Menu is not installed on your system"
-#~ msgstr "Messaging-Menu未在您的系统上安装."
-
-#~ msgid "Network connection state changed to inactive."
-#~ msgstr "网络链接进入不活动状态"
-
-#~ msgid "Connecting..."
-#~ msgstr "连接中..."
-
-#~ msgid "Network connection is established."
-#~ msgstr "网络连接建立"
-
-#~ msgid "Network connection state changed to disconnected."
-#~ msgstr "网络连接断开"
-
-#~ msgid "A cable has been plugged"
-#~ msgstr "网线插入"
-
-#~ msgid "A cable has been unplugged"
-#~ msgstr "网线拔出"
-
-#~ msgid "None"
-#~ msgstr "无"
-
-#~ msgid "Very Low"
-#~ msgstr "很低"
-
-#~ msgid "Low"
-#~ msgstr "低"
-
-#~ msgid "Middle"
-#~ msgstr "中等"
-
-#~ msgid "Good"
-#~ msgstr "良好"
-
-#~ msgid "Excellent"
-#~ msgstr "很好"
-
-#~ msgid "Not connected"
-#~ msgstr "未连接"
-
-#~ msgid "Wired connection"
-#~ msgstr "有线连接"
-
-#~ msgid ""
-#~ "Checking connection...\n"
-#~ "Please retry in a few seconds"
-#~ msgstr ""
-#~ "检查连接中...\n"
-#~ "请几秒钟后重试"
-
-#~ msgid "Wired Connection."
-#~ msgstr "有线连接."
-
-#~ msgid "Interface"
-#~ msgstr "网络接口"
-
-#~ msgid "Speed"
-#~ msgstr "速率"
-
-#~ msgid "Wifi enabled."
-#~ msgstr "Wifi使用中."
-
-#~ msgid "Network ID"
-#~ msgstr "网络 ID"
-
-#~ msgid "Unknown"
-#~ msgstr "未知"
-
-#~ msgid "Access point"
-#~ msgstr "接入点"
-
-#~ msgid "Signal Quality"
-#~ msgstr "信号质量"
-
-#~ msgid "Network-Monitor"
-#~ msgstr "网络监视器"
-
-#~ msgid ""
-#~ "This applet allows you to monitor your network connection(s).\n"
-#~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
-#~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
-#~ "between net speed and wifi."
-#~ msgstr ""
-#~ "这个小程序使你能够监视你的网络连接.\n"
-#~ "能够显示下载/上传速率和wifi信号质量.\n"
-#~ "如果你在运行network-manager, 同时还可以让你选择当前的wifi网络.\n"
-#~ "左键弹出信息,在图标上滑动滚轮显示网络和wifi速率."
-
-#~ msgid "Loading"
-#~ msgstr "载入"
-
-#~ msgid "Check for Wireless Extension"
-#~ msgstr "检查无线扩展"
-
-#~ msgid "Network Administration"
-#~ msgstr "网络管理"
-
-#~ msgid "Activate network"
-#~ msgstr "连接"
-
-#~ msgid "Deactivate network"
-#~ msgstr "断开"
-
-#~ msgid "Deactivate wifi"
-#~ msgstr "断开wifi"
-
-#~ msgid "Activate wifi"
-#~ msgstr "连接wifi"
-
-#~ msgid "RSSreader"
-#~ msgstr "RSSreader"
-
-#~ msgid "Retrieving data..."
-#~ msgstr "正在获取数据..."
-
-#~ msgid "It doesn't seem to be a valid URL."
-#~ msgstr "不是正确的地址."
-
-#~ msgid "Paste a new RSS Url (drag and drop)"
-#~ msgstr "拷贝新的RSS地址(拖拽)"
-
-#~ msgid "Open with your web browser"
-#~ msgstr "用网页浏览器打开..."
-
-#~ msgid "Warning: couldn't retrieve data last time we tried."
-#~ msgstr "警告: 无法获取数据"
-
-#~ msgid "No URL is defined."
-#~ msgstr "无网址"
-
-#~ msgid "No data (no connection?)"
-#~ msgstr "无数据(检查是否连接)"
-
-#~ msgid "Invalid data (invalid RSS/Atom feed?)"
-#~ msgstr "错误数据(错误的RSS/Atom feed?)"
-
-#~ msgid "No data"
-#~ msgstr "无数据"
-
-#~ msgid "This RSS feed has been modified..."
-#~ msgstr "这个RSS feed已经被修改..."
-
-#~ msgid ""
-#~ "No URL is defined\n"
-#~ "You can define one by copying the URL in the clipboard,\n"
-#~ " and selecting \"Paste the URL\" in the menu."
-#~ msgstr ""
-#~ "未定义网址.\n"
-#~ "你可以复制网址到剪切板,并且选择菜单中的\"拷贝网址\""
-
-#~ msgid ""
-#~ "No data\n"
-#~ "Did you set a valid RSS feed?\n"
-#~ "Is your connection alive?"
-#~ msgstr ""
-#~ "无数据\n"
-#~ "检查是否设置正确的RSS feed?\n"
-#~ "检查连接是否正常?"
-
-#~ msgid "Open parent folder"
-#~ msgstr "打开父目录"
-
-#~ msgid "Delete this event"
-#~ msgstr "删除该事件"
-
-#~ msgid "Document"
-#~ msgstr "文档"
-
-#~ msgid "Audio"
-#~ msgstr "音频"
-
-#~ msgid "Video"
-#~ msgstr "视频"
-
-#~ msgid "Web"
-#~ msgstr "Web"
-
-#~ msgid "Other"
-#~ msgstr "其它"
-
-#~ msgid "Top Results"
-#~ msgstr "热门结果"
-
-#~ msgid "Look for events"
-#~ msgstr "查找事件"
-
-#~ msgid "Last access"
-#~ msgstr "上次访问"
-
-#~ msgid "Browse and search in recent events"
-#~ msgstr "在最近事件中浏览和查找"
-
-#~ msgid "Recent files"
-#~ msgstr "最近打开的文件"
-
-#~ msgid "Delete today's events"
-#~ msgstr "删除今天的事件"
-
-#~ msgid "Delete all events"
-#~ msgstr "删除所有事件"
-
-#~ msgid "The value %s has been copied into the clipboard."
-#~ msgstr "%s拷贝到了剪切板."
-
-#~ msgid "Execute"
-#~ msgstr "执行"
-
-#~ msgid "Open a terminal here"
-#~ msgstr "打开终端.."
-
-#~ msgid "Zip folder"
-#~ msgstr "Zip文件夹"
-
-#~ msgid "Move to"
-#~ msgstr "移动到..."
-
-#~ msgid "Copy URL"
-#~ msgstr "复制 URL"
-
-#~ msgid "Open location"
-#~ msgstr "打开地址"
-
-#~ msgid "Zip file"
-#~ msgstr "Zip文件"
-
-#~ msgid "Mail file"
-#~ msgstr "邮件文件"
-
-#~ msgid "Pick up a directory"
-#~ msgstr "选择地址.."
-
-#~ msgid "Files"
-#~ msgstr "文件"
-
-#~ msgid "Open"
-#~ msgstr "打开"
-
-#~ msgid "Open in new window"
-#~ msgstr "在新窗口中打开..."
-
-#~ msgid "Open file"
-#~ msgstr "打开文件..."
-
-#~ msgid "Firefox bookmarks"
-#~ msgstr "Firefox书签"
-
-#~ msgid "Amazon"
-#~ msgstr "Amazon"
-
-#~ msgid "results"
-#~ msgstr "结果"
-
-#~ msgid "result"
-#~ msgstr "结果"
-
-#~ msgid "Enter your search"
-#~ msgstr "键入您的搜索"
-
-#~ msgid "Uptime"
-#~ msgstr "运行时间"
-
-#~ msgid "Activity time"
-#~ msgstr "活动时间"
-
-#~ msgid "CPU model"
-#~ msgstr "CPU 型号"
-
-#~ msgid "Frequency"
-#~ msgstr "频率"
-
-#~ msgid "core(s)"
-#~ msgstr "核"
-
-#~ msgid "Open the System-Monitor"
-#~ msgstr "打开系统监视器"
-
-#~ msgid "GPU model"
-#~ msgstr "GPU 型号"
-
-#~ msgid "Mb"
-#~ msgstr "Mb"
-
-#~ msgid "Alert! Graphic Card core temperature has reached %d°C"
-#~ msgstr "警告！显卡内部温度已经达到 %d°C"
-
-#~ msgid "Gb"
-#~ msgstr "Gb"
-
-#~ msgid "Memory"
-#~ msgstr "内存"
-
-#~ msgid "Available"
-#~ msgstr "可用"
-
-#~ msgid "Buffers"
-#~ msgstr "缓冲区"
-
-#~ msgid "min"
-#~ msgstr "最小"
-
-#~ msgid "max"
-#~ msgstr "最大"
-
-#~ msgid "CPU temperature has reached %d°C"
-#~ msgstr "CPU 温度已达到 %d°C"
-
-#~ msgid "Fan speed has reached %d rpm"
-#~ msgstr "风扇转速已达到 %d rpm"
-
-#~ msgid "Set up gamma:"
-#~ msgstr "设置Gamma值："
-
-#~ msgid "I couldn't open card '%s'"
-#~ msgstr "无法打开声卡'%s'"
-
-#~ msgid "Card '%s' opened but I couldn't get any info"
-#~ msgstr "声卡'%s'已打开但无法获取信息。"
-
-#~ msgid "I couldn't open the mixer"
-#~ msgstr "无法打开混音器。"
-
-#~ msgid "I couldn't attach the mixer to the card"
-#~ msgstr "无法连接混音器至声卡"
-
-#~ msgid "I couldn't register options"
-#~ msgstr "无法注册选项"
-
-#~ msgid "I couldn't load the mixer"
-#~ msgstr "无法载入混音器"
-
-#~ msgid "Set up volume:"
-#~ msgstr "设置音量："
-
-#~ msgid "Adjust channels"
-#~ msgstr "调整通道"
-
-#~ msgid "Alarm"
-#~ msgstr "闹钟"
-
-#~ msgid "Day"
-#~ msgstr "天"
-
-#~ msgid "Monday"
-#~ msgstr "星期一"
-
-#~ msgid "Tuesday"
-#~ msgstr "星期二"
-
-#~ msgid "Wednesday"
-#~ msgstr "星期三"
-
-#~ msgid "Thursday"
-#~ msgstr "星期四"
-
-#~ msgid "Friday"
-#~ msgstr "星期五"
-
-#~ msgid "Saturday"
-#~ msgstr "星期六"
-
-#~ msgid "Sunday"
-#~ msgstr "星期日"
-
-#~ msgid "Week Day"
-#~ msgstr "星期"
-
-#~ msgid "Week End"
-#~ msgstr "周末"
-
-#~ msgid "Month"
-#~ msgstr "月"
-
-#~ msgid "Search for your location :"
-#~ msgstr "查询您的位置"
-
-#~ msgid "Set up time and date"
-#~ msgstr "设置时间和日期"
-
-#~ msgid "Title"
-#~ msgstr "标题"
-
-#~ msgid "Configure Compiz"
-#~ msgstr "配置Compiz"
-
-#~ msgid "Emerald Manager"
-#~ msgstr "Emerald主题管理器"
-
-#~ msgid "Reload WM"
-#~ msgstr "重新载入窗口管理器"
-
-#~ msgid "Exposition"
-#~ msgstr "展示"
-
-#~ msgid "Reload Emerald"
-#~ msgstr "重新加载Emerald"
-
-#~ msgid "Switch Windows Manager"
-#~ msgstr "切换窗口管理器"
-
-#~ msgid "Switch Windows Decorator"
-#~ msgstr "切换窗口装饰器"
-
-#~ msgid "Toggle Exposition Mode"
-#~ msgstr "切换展示模式"
-
-#~ msgid "Toggle Show Desktop"
-#~ msgstr "切换显示桌面"
-
-#~ msgid "scotch sellotape"
-#~ msgstr "磨砂"
-
-#~ msgid "frame with sellotape"
-#~ msgstr "磨砂镜框"
-
-#~ msgid "CD box"
-#~ msgstr "CD盒"
-
-#~ msgid "Caroussel"
-#~ msgstr "链子"
-
-#~ msgid "3D plane"
-#~ msgstr "3D 面板"
-
-#~ msgid "Parabolic"
-#~ msgstr "抛物线"
-
-#~ msgid "Rainbow"
-#~ msgstr "彩虹"
-
-#~ msgid "Slide"
-#~ msgstr "滑动"
-
-#~ msgid "Curve"
-#~ msgstr "曲线"
-
-#~ msgid "Panel"
-#~ msgstr "面板"
-
-#~ msgid "dustbin"
-#~ msgstr "“回收站”插件"
-
-#~ msgid ""
-#~ "This applet manages the dustbin\n"
-#~ "You can threw files and unmount disks by drag-and-dropping them on the "
-#~ "icon.\n"
-#~ "Middle-click on the icon will empty the dustbin."
-#~ msgstr ""
-#~ "该插件管理回收站，您可以直接把文件拖进回收站；如果把已加载(mount)的磁盘图"
-#~ "标拖进回收站，则会卸载它(umount)。\n"
-#~ "在图标上按鼠标中键，将清空回收站。"
-
-#~ msgid "You're about to delete all files in all dustbins. Sure ?"
-#~ msgstr "您将删除全部回收站中的所有文件。确定?"
-
-#~ msgid "The trash contains"
-#~ msgstr "回收站中包含"
-
-#~ msgid "files"
-#~ msgstr "个文件"
-
-#~ msgid "Mo"
-#~ msgstr "MB"
-
-#~ msgid "Ko"
-#~ msgstr "KB"
-
-#~ msgid "Counting total size and files number..."
-#~ msgstr "正在计算文件数量和大小..."
-
-#~ msgid "Show Trash (click)"
-#~ msgstr "打开回收站"
-
-#~ msgid "Empty Trash"
-#~ msgstr "清空回收站"
-
-#~ msgid "Display dustbins information"
-#~ msgstr "显示回收站信息"
-
-#~ msgid "%s successfully unmounted"
-#~ msgstr "%s已经卸载"
-
-#~ msgid "failed to unmount %s"
-#~ msgstr "卸载%s失败"
-
-#~ msgid "Unmouting this volume ..."
-#~ msgstr "正在卸载..."
-
-#~ msgid " trashe(s)"
-#~ msgstr " 垃圾"
-
-#~ msgid " file(s)"
-#~ msgstr " 文件"
-
-#~ msgid "calculating"
-#~ msgstr "正在计算"
-
-#~ msgid "logout"
-#~ msgstr "“退出”插件"
-
-#~ msgid "Lock screen"
-#~ msgstr "锁住屏幕"
-
-#~ msgid "Program an automatic shut-down"
-#~ msgstr "安排一次自动关机"
-
-#~ msgid "Remove Account"
-#~ msgstr "移除账户"
-
-#~ msgid "No unread mail in your mailboxes"
-#~ msgstr "您的邮箱中没有未读邮件"
-
-#~ msgid ""
-#~ "A problem occured\n"
-#~ "If '%s' is not your usual mail application,\n"
-#~ "you can change it in the configuration panel of this module"
-#~ msgstr ""
-#~ "出现问题\n"
-#~ "如果“%s”不是您日常使用的邮件程序，您可以在此模块的配置面板中进行更改"
-
-#~ msgid "Refresh a mail account"
-#~ msgstr "移除邮件账号"
-
-#~ msgid "Track"
-#~ msgstr "音轨"
-
-#~ msgid "Artist"
-#~ msgstr "艺术家"
-
-#~ msgid "Album"
-#~ msgstr "专辑"
-
-#~ msgid "Previous"
-#~ msgstr "上一首"
-
-#~ msgid "Play/Pause"
-#~ msgstr "再生/一時停止"
-
-#~ msgid "Next"
-#~ msgstr "次へ"
-
-#~ msgid "Stop"
-#~ msgstr "停止"
-
-#~ msgid "Information"
-#~ msgstr "信息"
-
-#~ msgid "Show JumpBox"
-#~ msgstr "显示JumpBox"
-
-#~ msgid "Toggle Shuffle"
-#~ msgstr "乱序"
-
-#~ msgid "Toggle Repeat"
-#~ msgstr "重复"
-
-#~ msgid "Total amount of data"
-#~ msgstr "数据总量"
-
-#~ msgid "downloaded"
-#~ msgstr "已下载"
-
-#~ msgid "uploaded"
-#~ msgstr "已上传"
-
-#~ msgid "Re-check interface"
-#~ msgstr "重新检查网卡"
-
-#~ msgid "Unmounted"
-#~ msgstr "卸载"
-
-#~ msgid "%s is now mounted"
-#~ msgstr "%s 挂载成功"
-
-#~ msgid "%s has been connected"
-#~ msgstr "%s 链接成功"
-
-#~ msgid "%s is now unmounted"
-#~ msgstr "%s已经成功卸载"
-
-#~ msgid "shortcuts"
-#~ msgstr "“快捷方式”插件"
-
-#~ msgid ""
-#~ "An applet that let you access quickly to all of your shortcuts.\n"
-#~ "It can manage disks, network points, and Nautilus bookmarks (even if you "
-#~ "don't have Nautilus).\n"
-#~ "Drag and drop a folder on the main icon or the sub-dock to add a "
-#~ "bookmark.\n"
-#~ "Middle-click on the main icon to show your home folder.\n"
-#~ "Middle-click on a mounting point icon to (un)mount is quickly.\n"
-#~ "The applet can also display valuable information about your disks, like "
-#~ "free space, type, etc."
-#~ msgstr ""
-#~ "通过该插件，您可以快速访问所有快捷方式。\n"
-#~ "它可以管理磁盘、网络挂载点，以及 Nautilus 文件管理器的书签（即使您没有安装"
-#~ "Nautilus）。\n"
-#~ "将文件夹拖到该“快捷方式”图标或者子 dock 上，就可以创建一个书签。\n"
-#~ "在图标上点击鼠标中键，即显示您的主目录。\n"
-#~ "在一个挂载点的图标上点鼠标中键，可以将其迅速卸载。\n"
-#~ "该插件还可以显示磁盘信息，比如类型、剩余空间等。"
-
-#~ msgid "failed to mount %s"
-#~ msgstr "%s 挂载失败"
-
-#~ msgid "Failed to unmount %s"
-#~ msgstr "卸载%s失败"
-
-#~ msgid "Sorry, this applet is not yet available for KDE."
-#~ msgstr "对不起，该插件暂时不支持 KDE。"
-
-#~ msgid "No disks or bookmarks were found."
-#~ msgstr "没找到磁盘或书签。"
-
-#~ msgid "Enter a name for this bookmark:"
-#~ msgstr "为该书签命名："
-
-#~ msgid "Rename this bookmark"
-#~ msgstr "重命名该书签"
-
-#~ msgid "Remove this bookmark"
-#~ msgstr "移除此书签"
-
-#~ msgid "Eject"
-#~ msgstr "弹出"
-
-#~ msgid "Only folders can be bookmarked."
-#~ msgstr "只有文件夹可以成为书签。"
-
-#~ msgid "show mouse"
-#~ msgstr "显示鼠标"
-
-#~ msgid "showDesktop"
-#~ msgstr "showDesktop 插件"
-
-#~ msgid "Show the desktop"
-#~ msgstr "显示桌面"
-
-#~ msgid "Change screen resolution"
-#~ msgstr "更改屏幕分辨率"
-
-#~ msgid "Move to the Desktop"
-#~ msgstr "移到桌面"
-
-#~ msgid "Copy to the Desktop"
-#~ msgstr "复制到桌面"
-
-#~ msgid "Link to the Desktop"
-#~ msgstr "链接到桌面"
-
-#~ msgid "Download onto the Desktop"
-#~ msgstr "下载到桌面"
-
-#~ msgid "Play"
-#~ msgstr "播放"
-
-#~ msgid "Pause"
-#~ msgstr "暂停"
-
-#~ msgid "Open current image"
-#~ msgstr "打开当前图片"
-
-#~ msgid "Browse images folder"
-#~ msgstr "浏览图片文件夹"
-
-#~ msgid "Copy"
-#~ msgstr "复制"
-
-#~ msgid "switcher"
-#~ msgstr "桌面切换器插件"
-
-#~ msgid "New Tab"
-#~ msgstr "新建标签"
-
-#~ msgid "Rename current Tab"
-#~ msgstr "更名当前标签"
-
-#~ msgid "Close current Tab"
-#~ msgstr "关闭当前标签"
-
-#~ msgid "Terminal"
-#~ msgstr "终端"
-
-#~ msgid "Set title for this tab:"
-#~ msgstr "设置此标签标题:"
-
-#~ msgid "Select a color"
-#~ msgstr "选择颜色"
-
-#~ msgid "Paste"
-#~ msgstr "粘贴"
-
-#~ msgid "Rename this Tab"
-#~ msgstr "更名此标签"
-
-#~ msgid "Change this Tab's colour"
-#~ msgstr "变更此标签颜色"
-
-#~ msgid "Close this Tab"
-#~ msgstr "关闭此标签"
-
-#~ msgid "Note name : "
-#~ msgstr "便签名称: "
-
-#~ msgid "Search for:"
-#~ msgstr "搜索:"
-
-#~ msgid "Search for tag:"
-#~ msgstr "搜索标签:"
-
-#~ msgid "Add a note"
-#~ msgstr "添加便签"
-
-#~ msgid "Delete this note"
-#~ msgstr "删除此便签"
-
-#~ msgid "Reload notes"
-#~ msgstr "相关便签:"
-
-#~ msgid "Search"
-#~ msgstr "搜索"
-
-#~ msgid "Search for today's note"
-#~ msgstr "搜索今日便签"
-
-#~ msgid "Search for this week's note"
-#~ msgstr "搜索本周便签"
-
-#~ msgid "Search for next week's note"
-#~ msgstr "搜索下周便签"
-
-#~ msgid "Reset marks"
-#~ msgstr "重置标记"
-
-#~ msgid ""
-#~ "I couldn't get the info\n"
-#~ " Is connexion alive ?"
-#~ msgstr ""
-#~ "无法获取信息，\n"
-#~ "请检查互联网连接?"
-
-#~ msgid "I couldn't find this location"
-#~ msgstr "我无法找到这个位置"
-
-#~ msgid "Jan"
-#~ msgstr "1月"
-
-#~ msgid "Feb"
-#~ msgstr "2月"
-
-#~ msgid "Mar"
-#~ msgstr "3月"
-
-#~ msgid "Apr"
-#~ msgstr "4月"
-
-#~ msgid "May"
-#~ msgstr "5月"
-
-#~ msgid "Jun"
-#~ msgstr "6月"
-
-#~ msgid "Jui"
-#~ msgstr "7月"
-
-#~ msgid "Aug"
-#~ msgstr "8月"
-
-#~ msgid "Sep"
-#~ msgstr "9月"
-
-#~ msgid "Oct"
-#~ msgstr "10月"
-
-#~ msgid "Nov"
-#~ msgstr "11月"
-
-#~ msgid "Dec"
-#~ msgstr "12月"
-
-#~ msgid "Reload now"
-#~ msgstr "重新载入"
-
-#~ msgid ""
-#~ "No data available\n"
-#~ " is your connection alive?"
-#~ msgstr "无数据。请检查互联网连接"
-
-#~ msgid "Temperature"
-#~ msgstr "气温"
-
-#~ msgid "Precipitation probability"
-#~ msgstr "冰雹概率"
-
-#~ msgid "Wind"
-#~ msgstr "风"
-
-#~ msgid "Humidity"
-#~ msgstr "湿度"
-
-#~ msgid "Sunrise"
-#~ msgstr "日出"
-
-#~ msgid "Sunset"
-#~ msgstr "日落"
-
-#~ msgid "Feels like"
-#~ msgstr "体感温度"
-
-#~ msgid "Pressure"
-#~ msgstr "气压"
-
-#~ msgid "WiFi disabled."
-#~ msgstr "Wifi已禁用。"
-
-#~ msgid "Delay between animation changes :"
-#~ msgstr "动画间隔时间："
-
-#~ msgid "Penguin transparency:"
-#~ msgstr "企鹅透明度："
-
-#~ msgid "Let the penguin wander everywhere in the dock?"
-#~ msgstr "允许企鹅在dock的任何地方漫步？"
-
-#~ msgid "in pixels."
-#~ msgstr "以点为单位。"
-
-#~ msgid "Let external applications pop up dialogs in the dock?"
-#~ msgstr "令外部应用程序的弹出对话框出现在dock上？"
-
-#~ msgid "Let external applications reboot the dock?"
-#~ msgstr "允许外部应用程序重启dock？"
-
-#~ msgid "Let external applications show/hide desklets?"
-#~ msgstr "令外部应用程序显示/隐藏桌面小应用程序？"
-
-#~ msgid "Type of graphic :"
-#~ msgstr "图表类型:"
-
-#~ msgid "Line"
-#~ msgstr "折线图"
-
-#~ msgid "Plain"
-#~ msgstr "平面图"
-
-#~ msgid "Bar"
-#~ msgstr "柱状图"
-
-#~ msgid "Circle"
-#~ msgstr "圆环图"
-
-#~ msgid "Plain Circle"
-#~ msgstr "平面圆环图"
-
-#~ msgid "High value's colour :"
-#~ msgstr "高信号强度颜色:"
-
-#~ msgid "Low value's colour :"
-#~ msgstr "低信号强度颜色:"
-
-#~ msgid "Background colour of the graphic :"
-#~ msgstr "图表背景色:"
-
-#~ msgid "No"
-#~ msgstr "否"
-
-#~ msgid "On icon"
-#~ msgstr "在图标上"
-
-#~ msgid "On label"
-#~ msgstr "在标签上"
-
-#~ msgid "Leave empty to use the default."
-#~ msgstr "留空则使用默认值。"
-
-#~ msgid "Sort files by :"
-#~ msgstr "排序依据："
-
-#~ msgid "Sort folders before files?"
-#~ msgstr "文件夹在前？"
-
-#~ msgid "User command to display a system monitor:"
-#~ msgstr "显示系统监视器的用户命令:"
-
-#~ msgid "Effect to apply on the icon according to strength :"
-#~ msgstr "依据信号强度对图标施加效果:"
-
-#~ msgid "Zoom"
-#~ msgstr "缩放"
-
-#~ msgid "Transparency"
-#~ msgstr "透明度"
-
-#~ msgid "Draw Bar"
-#~ msgstr "绘制状态条"
-
-#~ msgid "Top List"
-#~ msgstr "占用率列表"
-
-#~ msgid "Number of programs to display in the top list:"
-#~ msgstr "占用率列表上显示的程序数目:"
-
-#~ msgid "The first colour of the gradient used to display the top list."
-#~ msgstr "用于显示CPU占用率列表的渐变色的第一种颜色。"
-
-#~ msgid "Top list start colour:"
-#~ msgstr "占用率列表的起始颜色:"
-
-#~ msgid "The second colour of the gradient used to display the top list."
-#~ msgstr "用于显示CPU占用率列表的渐变色的第二种颜色。"
-
-#~ msgid "Top list stop colour:"
-#~ msgstr "占用率列表的结束颜色:"
-
-#~ msgid "Delay between top list refreshes:"
-#~ msgstr "占用率列表刷新时间间隔:"
-
-#~ msgid "Leave empty to use the default sound card."
-#~ msgstr "留空则使用默认声卡。"
-
-#~ msgid "Alsa"
-#~ msgstr "Alsa"
-
-#~ msgid "Sound card:"
-#~ msgstr "控制的声卡："
-
-#~ msgid "Select channel:"
-#~ msgstr "选择控制的通道："
-
-#~ msgid "Leave empty to use the default command."
-#~ msgstr "保持为空以使用默认的命令。"
-
-#~ msgid "Specific command to run to show an advanced sound mixer:"
-#~ msgstr "指定显示高级混音器的命令："
-
-#~ msgid "Control"
-#~ msgstr "控制"
-
-#~ msgid "Shortkey to show/hide the sound control dialog:"
-#~ msgstr "用于显示/隐藏音量控制对话框的快捷键："
-
-#~ msgid "Hide the scale when mouse leaves the desklet?"
-#~ msgstr "鼠标离开桌面提示时，隐藏刻度？"
-
-#~ msgid "Display volume :"
-#~ msgstr "显示音量："
-
-#~ msgid "Effect to apply to the icon when adjusting volume:"
-#~ msgstr "根据音量置于图标的效果："
-
-#~ msgid "Default icon:"
-#~ msgstr "默认图标："
-
-#~ msgid "Broken icon:"
-#~ msgstr "毁坏的图标："
-
-#~ msgid "Mute icon:"
-#~ msgstr "静音图标："
-
-#~ msgid "for digital format only."
-#~ msgstr "数字时钟专用。"
-
-#~ msgid ""
-#~ "if not, then the applet will update the time once a minute, saving CPU "
-#~ "power."
-#~ msgstr "如果为否，则小应用程序将一分钟更新时间一次，以节省CPU。"
-
-#~ msgid "Show seconds?"
-#~ msgstr "显示秒针？"
-
-#~ msgid "Timezone:"
-#~ msgstr "时区"
-
-#~ msgid "Default"
-#~ msgstr "默认"
-
-#~ msgid "Style"
-#~ msgstr "风格"
-
-#~ msgid ""
-#~ "The analogue view is based on CairoClock; otherwise it will be displayed "
-#~ "in digital format."
-#~ msgstr "指针时钟基于CairoClock；否则将以数字时钟显示。"
-
-#~ msgid "List of available themes for analogue display:"
-#~ msgstr "可用的表盘主题列表:"
-
-#~ msgid "Configure time and date"
-#~ msgstr "设置时间和日期"
-
-#~ msgid "Leave empty to execute the default command."
-#~ msgstr "留空以执行默认的命令。"
-
-#~ msgid "Specific command to run:"
-#~ msgstr "指定运行的命令："
-
-#~ msgid ""
-#~ "Except when switching to another WM, you must activate the Dbus plugin in "
-#~ "Compiz along with the plugin corresponding to the desired action."
-#~ msgstr ""
-#~ "除非要切换至其他窗口管理器，您必须启用Dbus插件，并根据您需要的动作启用相应"
-#~ "插件"
-
-#~ msgid "Switch WM"
-#~ msgstr "切换窗口管理器"
-
-#~ msgid "Expose"
-#~ msgstr "展示"
-
-#~ msgid ""
-#~ "This command will be used to launch the system WM. Leave blank to use the "
-#~ "default."
-#~ msgstr "此命令用于载入系统窗口管理器；留空则使用默认窗口管理器。"
-
-#~ msgid "Custom command for system's Windows Manager:"
-#~ msgstr "系统窗口管理器自定义命令："
-
-#~ msgid ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
-#~ "quit Compiz from the dock."
-#~ msgstr ""
-#~ "如果Compiz异常退出，Cairo-Dock将自动重启之。那时，您必须从dock上退出"
-#~ "Compiz。"
-
-#~ msgid "Auto-reload Compiz?"
-#~ msgstr "自动重载Compiz？"
-
-#~ msgid ""
-#~ "If the decorator quits unexpectedly, Cairo-Dock will restart it. ou must "
-#~ "then quit Compiz from the dock."
-#~ msgstr ""
-#~ "如果窗口装饰器异常退出，Cairo-Dock将自动重启之。那时，您必须从dock上退出"
-#~ "Compiz"
-
-#~ msgid "Auto-reload the Decorator?"
-#~ msgstr "自动重载装饰器？"
-
-#~ msgid "Load Compiz with options on startup."
-#~ msgstr "小应用程序启动的时候载入包括设置的Compiz。"
-
-#~ msgid "Force Compiz settings on startup?"
-#~ msgstr "启动时强制使用Compiz设置？"
-
-#~ msgid ""
-#~ "This will prevent the CSSM or Emerald icons appearing in the taskbar. The "
-#~ "corresponding sub-dock's icons will then behave as a launcher and an "
-#~ "application."
-#~ msgstr ""
-#~ "这将避免CSSM或Emerald的图标出现在任务栏上。子dock上相应的图标将取代它们实"
-#~ "现起动器和应用程序的功能"
-
-#~ msgid ""
-#~ "Display two icons for Compiz Exposition & Widget Layer plug-ins in the "
-#~ "applet's sub-dock. Otherwise they will be available in the menu."
-#~ msgstr ""
-#~ "在小应用程序的子dock中显示Compiz展示和Widget层插件。否则，它们将位于菜单"
-#~ "中。"
-
-#~ msgid "Add Exposition & Widget Layer to sub-dock?"
-#~ msgstr "在子dock上添加展示和Widget层图标？"
-
-#~ msgid "Compiz Options"
-#~ msgstr "Compiz首选项"
-
-#~ msgid ""
-#~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a "
-#~ "bit slow when binding textures, that's why this option gives a heavy "
-#~ "performance increase with Nvidia cards."
-#~ msgstr ""
-#~ "使用严格绑定时，纹理在它们启用时被绑定；而使用松散绑定时，仅在创建时启用。"
-#~ "Nvidia驱动在纹理绑定的时候有些慢。所以使用此选项时，Nvidia显卡的用户会感到"
-#~ "性能影响。"
-
-#~ msgid "Use Loose Binding?"
-#~ msgstr "使用松散绑定？"
-
-#~ msgid "Only use these options if you know what you're doing.?"
-#~ msgstr "仅当你了解这些选项时方可使用。"
-
-#~ msgid "Use Indirect Rendering?"
-#~ msgstr "使用间接渲染？"
-
-#~ msgid "Useful when using two or more separate X screens."
-#~ msgstr "当使用双头显示或多个X屏幕时有用。"
-
-#~ msgid "Only Current Screen?"
-#~ msgstr "仅使用当前屏幕？"
-
-#~ msgid "By default this will be Emerald."
-#~ msgstr "默认为Emerald。"
-
-#~ msgid "Choose your Window Decorator:"
-#~ msgstr "选择您的窗口装饰器："
-
-#~ msgid "emerald"
-#~ msgstr "emerald"
-
-#~ msgid "gtk-window-decorator"
-#~ msgstr "gtk窗口装饰器"
-
-#~ msgid "kde-window-decorator"
-#~ msgstr "kde窗口装饰器"
-
-#~ msgid "heliodor"
-#~ msgstr "heliodor"
-
-#~ msgid "Leave empty to use default sub-dock view."
-#~ msgstr "留空以使用默认的子dock视图。"
-
-#~ msgid "Sub-dock view name:"
-#~ msgstr "子dock使用的视图名称:"
-
-#~ msgid "'Default' icon image name:"
-#~ msgstr "“默认”图标的图片名称:"
-
-#~ msgid "'Broken' icon image name:"
-#~ msgstr "“破损”图标的图片名称:"
-
-#~ msgid "'Other WM' icon image name:"
-#~ msgstr "'其它窗口管理器'图标使用的图片名称："
-
-#~ msgid "'Settings' icon image name:"
-#~ msgstr "'设置'图标使用的图片名称："
-
-#~ msgid "'Emerald' icon image name:"
-#~ msgstr "'emerald'图标使用的图片名称："
-
-#~ msgid "'Reload' icon image name:"
-#~ msgstr "'重新载入'图标使用的图片名称："
-
-#~ msgid "'Exhibition' icon image name:"
-#~ msgstr "'展示'图标使用的图片名称："
-
-#~ msgid "'Widget Layer' icon image name:"
-#~ msgstr "'widget层'图标使用的图片名称："
-
-#~ msgid "Corner radius:"
-#~ msgstr "角弧度:"
-
-#~ msgid "Info-bubbles"
-#~ msgstr "情報を通知する吹き出し"
-
-#~ msgid "Inclinated Plane"
-#~ msgstr "斜板"
-
-#~ msgid "The lower the value, the lower the point of view on the plane."
-#~ msgstr "越低，则视点相对于板平面越低。"
-
-#~ msgid "Height of the vanishing point:"
-#~ msgstr "消失点高度:"
-
-#~ msgid "The lower the value, the flatter the curve will appear."
-#~ msgstr "取值越低，曲线越平。"
-
-#~ msgid "Curvature of the curve in percent:"
-#~ msgstr "曲线弧度，以百分比表示:"
-
-#~ msgid "Amplitude of the curve:"
-#~ msgstr "曲线波幅。"
-
-#~ msgid "Space between columns:"
-#~ msgstr "列间隙:"
-
-#~ msgid "Space between rows:"
-#~ msgstr "行间隔:"
-
-#~ msgid "Sinusoidal wave radius:"
-#~ msgstr "正弦曲线半径:"
-
-#~ msgid "Use a linear wave rather than a sinusoidal wave?"
-#~ msgstr "使用线性波替代正弦曲线?"
-
-#~ msgid "Display text for all icons?"
-#~ msgstr "为所有图标显示文本?"
-
-#~ msgid "Draw a background?"
-#~ msgstr "绘制背景?"
-
-#~ msgid "Top to bottom gradient?"
-#~ msgstr "由上至下渐变?"
-
-#~ msgid "Left to right gradient?"
-#~ msgstr "由左至右渐变?"
-
-#~ msgid "Border line width :"
-#~ msgstr "边线宽度:"
-
-#~ msgid "Arrow width :"
-#~ msgstr "箭头宽度:"
-
-#~ msgid "Arrow height:"
-#~ msgstr "箭头高度:"
-
-#~ msgid "The higher this value, the sooner the parabola will be curved."
-#~ msgstr "取值越高，抛物线越陡"
-
-#~ msgid "Curvature:"
-#~ msgstr "弧度:"
-
-#~ msgid "The parabola will be restricted to a rectangle of this proportion."
-#~ msgstr "抛物线将受限于此比例"
-
-#~ msgid "Height/width ratio:"
-#~ msgstr "高宽比:"
-
-#~ msgid "0 represents a flat wave, 1 represents maximum wave curvature."
-#~ msgstr "0意味着无波，1意味着大波。"
-
-#~ msgid "Magnitude of the wave:"
-#~ msgstr "波幅:"
-
-#~ msgid "Space between icons and their captions:"
-#~ msgstr "图标及其标签之间的空隙:"
-
-#~ msgid "Draw captions while unfolding?"
-#~ msgstr "展开时绘制标签"
-
-#~ msgid "Space between icons:"
-#~ msgstr "图标间隔:"
-
-#~ msgid ""
-#~ "0 represents a flat wave, 1 means the wave is identical to other views."
-#~ msgstr "0意味着平波，1意味着与其它视图一样"
-
-#~ msgid "Number of icons on the first row:"
-#~ msgstr "第一行的图标数:"
-
-#~ msgid ""
-#~ "in degrees. The lower the value, the narrower the cone. 180° represents a "
-#~ "wide open cone."
-#~ msgstr "以角度为单位，取值越小则锥体越窄。180°意味着圆锥是完全开放的。"
-
-#~ msgid "Cone width:"
-#~ msgstr "锥形宽度:"
-
-#~ msgid "Set transparency to 0 to not use it. This is quite slow with cairo."
-#~ msgstr "将透明度设为0则不使用此颜色。在使用cairo时很慢。"
-
-#~ msgid "Bow colour:"
-#~ msgstr "弓形颜色:"
-
-#~ msgid "Line colour:"
-#~ msgstr "直线颜色:"
-
-#~ msgid "Theme"
-#~ msgstr "主题"
-
-#~ msgid "Name of the image to overwrite the theme's empty image :"
-#~ msgstr "用于覆盖主题空回收站的图片名称:"
-
-#~ msgid "Name of the image to overwrite the theme's full image :"
-#~ msgstr "用于覆盖主题满回收站的图片名称:"
-
-#~ msgid "Config"
-#~ msgstr "配置"
-
-#~ msgid "Display the following quick info :"
-#~ msgstr "显示以下快捷信息:"
-
-#~ msgid "Total number of files"
-#~ msgstr "文件总数"
-
-#~ msgid "Total weight"
-#~ msgstr "总重"
-
-#~ msgid "Ask confirmation before emptying Dustbin?"
-#~ msgstr "在清空前需要确认吗？"
-
-#~ msgid "User-defined command to execute for logout:"
-#~ msgstr "用户指定执行的注销命令:"
-
-#~ msgid ""
-#~ "This will be available when middle-clicking. Leave empty to execute the "
-#~ "default command, which depends on your distribution. In some cases the "
-#~ "command to shutdown is the same as the one to log out."
-#~ msgstr ""
-#~ "中键单击时使用。留空则使用默认命令，该命令取决于您所使用的发行版。有时关机"
-#~ "和注销是同一个命令。"
-
-#~ msgid "User-defined command to execute for shutdown:"
-#~ msgstr "用户指定执行的关机命令:"
-
-#~ msgid "Customisation"
-#~ msgstr "个性化"
-
-#~ msgid "Name of the file for the \"no mail\" image :"
-#~ msgstr "“无邮件”图像文件名:"
-
-#~ msgid "Name of the file for the \"has mail\" image :"
-#~ msgstr "“有邮件”图像文件名:"
-
-#~ msgid "Name of the file for the \"new mail\" sound :"
-#~ msgstr "“新邮件”声音文件名:"
-
-#~ msgid "The new account will be created with the specified type and name."
-#~ msgstr "新账户将用指定类型和名称创建。"
-
-#~ msgid "Add an account with specified type and name:"
-#~ msgstr "用指定类型和名称增加一个账户:"
-
-#~ msgid "Audio Player"
-#~ msgstr "播放器"
-
-#~ msgid "Player to control:"
-#~ msgstr "控制的播放器："
-
-#~ msgid "Audacious"
-#~ msgstr "Audacious"
-
-#~ msgid "Banshee"
-#~ msgstr "Banshee"
-
-#~ msgid "Exaile"
-#~ msgstr "Exaile"
-
-#~ msgid "XMMS"
-#~ msgstr "XMMS"
-
-#~ msgid ""
-#~ "This will prevent the player icon appearing in the taskbar. The applet's "
-#~ "icon will then behave as a launcher, an application and an applet."
-#~ msgstr ""
-#~ "这将阻止播放器的图标显示于任务栏。小程序的图标将具有启动器、应用程序和小程"
-#~ "序的功能。"
-
-#~ msgid "Steal the player's icon from the taskbar?"
-#~ msgstr "由任务栏窃取播放器图标？"
-
-#~ msgid "Action on music change"
-#~ msgstr "歌曲更换时的动作"
-
-#~ msgid "Animation when music changes:"
-#~ msgstr "音乐切换时的动画:"
-
-#~ msgid "Information to display on the icon :"
-#~ msgstr "图标上显示的信息:"
-
-#~ msgid "Nothing"
-#~ msgstr "无"
-
-#~ msgid "Time Elapsed"
-#~ msgstr "已播放时间"
-
-#~ msgid "Track number"
-#~ msgstr "第N°首"
-
-#~ msgid "Name of the image for the 'play' icon :"
-#~ msgstr "“播放”图标的图片名称:"
-
-#~ msgid "Name of the image for the 'stop' icon :"
-#~ msgstr "“停止”图标的图片名称:"
-
-#~ msgid "Name of the image for the 'pause' icon :"
-#~ msgstr "“暂停”图标的图片名称:"
-
-#~ msgid "By default this will be 'eth0'."
-#~ msgstr "默认为“eth0”。"
-
-#~ msgid "interface:"
-#~ msgstr "网卡:"
-
-#~ msgid "List drives and volumes?"
-#~ msgstr "列出驱动器与卷标?"
-
-#~ msgid "List networks?"
-#~ msgstr "列出网络?"
-
-#~ msgid "GTK bookmarks, that are used by Nautilus for exemple."
-#~ msgstr "GTK书签，由Nautilus之类程序使用。"
-
-#~ msgid "List bookmarks?"
-#~ msgstr "列出书签?"
-
-#~ msgid "Scan sub direcotries?"
-#~ msgstr "扫描子目录?"
-
-#~ msgid "Randomly browse files?"
-#~ msgstr "随机浏览文件?"
-
-#~ msgid "Display image name as quickinfo?"
-#~ msgstr "在快捷信息中显示图片名称?"
-
-#~ msgid ""
-#~ "This will prevent the dock from freezing during image loading, but works "
-#~ "only with OpenGL."
-#~ msgstr "这可以防止dock在转入图片时无法响应，但不能在cairo模式下使用。"
-
-#~ msgid "Use another thread to load images?"
-#~ msgstr "使用另一个线程载入图片?"
-
-#~ msgid "play/pause"
-#~ msgstr "播放/暂停"
-
-#~ msgid "open image"
-#~ msgstr "打开图片"
-
-#~ msgid "Sliding delay:"
-#~ msgstr "切换间隔:"
-
-#~ msgid "Effect while changing image:"
-#~ msgstr "图片切换效果:"
-
-#~ msgid "fade"
-#~ msgstr "渐隐"
-
-#~ msgid "blank fade"
-#~ msgstr "空白渐隐"
-
-#~ msgid "fade in/out"
-#~ msgstr "淡入淡出"
-
-#~ msgid "side kick"
-#~ msgstr "插袋效果"
-
-#~ msgid "slideshow"
-#~ msgstr "幻灯效果"
-
-#~ msgid "grow up"
-#~ msgstr "生长"
-
-#~ msgid "shrink"
-#~ msgstr "凋落"
-
-#~ msgid "cube"
-#~ msgstr "立方体"
-
-#~ msgid "random"
-#~ msgstr "随机"
-
-#~ msgid "Number of steps for transitions:"
-#~ msgstr "转换步数:"
-
-#~ msgid ""
-#~ "Set the transparency channel to 0 if you just don't want to have a "
-#~ "background."
-#~ msgstr "如果您不想使用背景，可将透明度通道设置为0。"
-
-#~ msgid "Choose a background colour :"
-#~ msgstr "选择背景色:"
-
-#~ msgid "Gives better image rendering."
-#~ msgstr "优化图像渲染"
-
-#~ msgid "Keep width/height ratio?"
-#~ msgstr "维持纵横比?"
-
-#~ msgid "If the image is too small, it will be stretched."
-#~ msgstr "如果图片太小，将进行放大。"
-
-#~ msgid "Force the image to fill the icon/desklet?"
-#~ msgstr "强制图片充填图标/桌面小工具?"
-
-#~ msgid ""
-#~ "These options allow you to prevent some files from displaying in stacks "
-#~ "based on their type (video, image, etc.)"
-#~ msgstr ""
-#~ "此选项允许您根据文件的类型（影像、图片等），使特定的文件不在stack中显示"
-
-#~ msgid "Filter files on MIME type?"
-#~ msgstr "根据MIME类型过滤文件"
-
-#~ msgid "Here you can specify a list of MIME types to ignore:"
-#~ msgstr "在此指定不显示的文件MIME类型列表:"
-
-#~ msgid "r, g, b, a"
-#~ msgstr "红, 绿, 蓝, 阿尔法"
-
-#~ msgid "Name of the icon as it will appear in its label in cairo-dock :"
-#~ msgstr "显示于cairo-dock标签上的此图标的名称:"
-
-#~ msgid "needs to restart the applet."
-#~ msgstr "需要重启小应用程序。"
-
-#~ msgid "Terminal transparency:"
-#~ msgstr "终端透明度:"
-
-#~ msgid ""
-#~ "When the terminal is in a dialog. When it is in a desklet, you can just "
-#~ "resize the desklet as usual."
-#~ msgstr ""
-#~ "当终端在对话框中时。当位于桌面小工具中时，您可以如平常一样改变桌面小工具的"
-#~ "大小。"
-
-#~ msgid "Size of the terminal (line x columns):"
-#~ msgstr "终端尺寸(行×列):"
-
-#~ msgid ""
-#~ "Write the date format you usually use in your notes. The syntax is the "
-#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
-#~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
-#~ msgstr ""
-#~ "写下您便签平时使用的日期格式。语法为'strftime'的一种: %d表示日，%m表示月, "
-#~ "%y表示年（2位数字）等。如使用默认的（%d/%m/%y）格式，则留空。"
-
-#~ msgid "Date format to search for :"
-#~ msgstr "搜索使用的日期格式:"
-
-#~ msgid ""
-#~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some "
-#~ "error message like <<No marshaller for signature of signal "
-#~ "'NoteDeleted'>> in the terminal."
-#~ msgstr ""
-#~ "如果您使用了某些tomboy的版本，便签的删除可能不会自动通知。仅当您在终端中发"
-#~ "现类似<<No marshaller for signature of signal 'NoteDeleted'>>的错误的时"
-#~ "候，启用此项目"
-
-#~ msgid "Emulate the 'NoteDeleted' signal?"
-#~ msgstr "模拟“删除便签”信号?"
-
-#~ msgid "Leave empty to use the name of the city."
-#~ msgstr "留空则使用城市名称。"
-
-#~ msgid "Code for your location:"
-#~ msgstr "您的位置代码:"
-
-#~ msgid "Use International System Units?"
-#~ msgstr "使用国际单位?"
-
-#~ msgid "in seconds. Set 0 to have never-ending dialogs."
-#~ msgstr "以秒为单位。设为0则对话框不自动消失。"
-
-#~ msgid "Display current conditions on the icon instead of the default one?"
-#~ msgstr "以当前情况图标取代默认图标?"
-
-#~ msgid "Number of days to forecast:"
-#~ msgstr "预报天数:"
-
-#~ msgid "Display nights?"
-#~ msgstr "显示夜晚情况?"
-
-#~ msgid "Display temperature as quick info?"
-#~ msgstr "以快速信息显示温度?"
-
-#~ msgid "Render desklet in 3D?"
-#~ msgstr "以3D渲染桌面小应用?"
-
-#~ msgid "URI to load in weblet"
-#~ msgstr "weblet载入的URI"
-
-#~ msgid "Show scrollbars?"
-#~ msgstr "显示卷轴"
-
-#~ msgid "Horizontal scroll of the browser in pixels"
-#~ msgstr "以点为单位的浏览器水平卷轴位置"
-
-#~ msgid "Position of horizontal scrollbar"
-#~ msgstr "水平卷轴位置"
-
-#~ msgid "Vertical scroll of the browser in pixels"
-#~ msgstr "以点为单位的浏览器垂直卷轴位置"
-
-#~ msgid "Position of vertical scrollbar in pixel"
-#~ msgstr "垂直卷轴位置"
-
-#~ msgid ""
-#~ "Time before reloading the weblet URI, in seconds. Zero means never reload."
-#~ msgstr "重载URI的时间间隔，以秒为单位。为0则不重载"
-
-#~ msgid "'No signal' icon filename:"
-#~ msgstr "用于“无信号”图标的图片名称:"
-
-#~ msgid "'Very low' icon filename:"
-#~ msgstr "用于“信号很弱”图标的图片名称:"
-
-#~ msgid "'Low' icon filename:"
-#~ msgstr "用于“信号弱”图标的图片名称:"
-
-#~ msgid "'Average' icon filename:"
-#~ msgstr "用于“信号中等”图标的图片名称:"
-
-#~ msgid "'Good' icon filename:"
-#~ msgstr "用于“信号良好”图标的图片名称:"
-
-#~ msgid "'Excellent' icon filename:"
-#~ msgstr "用于“信号很好”图标的图片名称:"
-
-#~ msgid ""
-#~ "Allow you to overwrite applet's default command line and launch your "
-#~ "wireless configuration interface."
-#~ msgstr "允许您启动自己的无线配置界面以替代默认命令行。"
-
-#~ msgid "Alternative command line to launch Wireless Configuration :"
-#~ msgstr "载入无线配置界面替代命令:"
-
-#~ msgid "Signal Strength"
-#~ msgstr "信号强度"
-
-#~ msgid "Signal Strength in percent"
-#~ msgstr "信号强度百分比"
-
-#~ msgid "Raw Signal Informations"
-#~ msgstr "原始信号信息"
-
-#~ msgid "Overwrite the default label with the connection point name?"
-#~ msgstr "以接入点名称替代默认标签"

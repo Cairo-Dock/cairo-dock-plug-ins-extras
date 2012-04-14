@@ -7,20 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-06-20 23:28+0000\n"
+"POT-Creation-Date: 2012-04-12 00:34+0000\n"
+"PO-Revision-Date: 2012-04-12 03:03+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Cairo-Dock\n"
-"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-07-12 04:52+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
+"X-Launchpad-Export-Date: 2012-04-13 05:36+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "X-Poedit-Country: SWEDEN\n"
+"Language: sv\n"
 "X-Poedit-Language: Swedish\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -95,9 +97,8 @@ msgstr "Uteseende"
 #: ../Moon/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
 #: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
 #: ../WindowsKiller/messages:11 ../Xchat/messages:11
-#, fuzzy
 msgid "Let empty to use the default one."
-msgstr "Lämna tomt för att använda standardkortet."
+msgstr ""
 
 #: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
 #: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
@@ -106,9 +107,8 @@ msgstr "Lämna tomt för att använda standardkortet."
 #: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13
-#, fuzzy
 msgid "Image's filename :"
-msgstr "Ange ett filnamn:"
+msgstr ""
 
 #: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:9
@@ -119,9 +119,8 @@ msgstr "Ange ett filnamn:"
 #: ../Translator/messages:15 ../Transmission/messages:15
 #: ../Twitter/messages:15 ../WebSearch/messages:13
 #: ../WindowsKiller/messages:15 ../Xchat/messages:15
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Lämna tomt för att använda standardnamnet"
+msgstr ""
 
 #: ../GnoMenu/messages:17 ../Calendar/messages:17 ../Cardapio/messages:17
 #: ../Deluge/messages:17 ../DiskFree/messages:17 ../Gmail/messages:11
@@ -165,9 +164,8 @@ msgstr "Desklet"
 #: ../Pidgin/messages:23 ../Quote/messages:25 ../Translator/messages:23
 #: ../Transmission/messages:23 ../Twitter/messages:23 ../WebSearch/messages:21
 #: ../WindowsKiller/messages:21 ../Xchat/messages:23
-#, fuzzy
 msgid "Position"
-msgstr "Exposition"
+msgstr ""
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:21
@@ -224,12 +222,10 @@ msgstr "Storlek på Desklet (bredd x höjd):"
 #: ../Pidgin/messages:33 ../Quote/messages:35 ../Transmission/messages:33
 #: ../Twitter/messages:33 ../WebSearch/messages:31
 #: ../WindowsKiller/messages:31 ../Xchat/messages:33
-#, fuzzy
 msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
-"Beroende på din fönsterhanterare, kan du flytta appleten med ALT+vänsterklick"
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:31
@@ -260,9 +256,8 @@ msgstr ""
 #: ../Pidgin/messages:39 ../Quote/messages:41 ../Translator/messages:39
 #: ../Transmission/messages:39 ../Twitter/messages:39 ../WebSearch/messages:37
 #: ../WindowsKiller/messages:37 ../Xchat/messages:39
-#, fuzzy
 msgid "Rotation:"
-msgstr "Information"
+msgstr ""
 
 #: ../GnoMenu/messages:41 ../Calendar/messages:41 ../Cardapio/messages:41
 #: ../Deluge/messages:41 ../DiskFree/messages:41 ../Gmail/messages:37
@@ -315,9 +310,8 @@ msgstr ""
 #: ../Translator/messages:51 ../Transmission/messages:49
 #: ../Twitter/messages:49 ../WebSearch/messages:47
 #: ../WindowsKiller/messages:47 ../Xchat/messages:49
-#, fuzzy
 msgid "Keep above"
-msgstr "Var tyst"
+msgstr ""
 
 #: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
 #: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:47
@@ -328,9 +322,8 @@ msgstr "Var tyst"
 #: ../Translator/messages:53 ../Transmission/messages:51
 #: ../Twitter/messages:51 ../WebSearch/messages:49
 #: ../WindowsKiller/messages:49 ../Xchat/messages:51
-#, fuzzy
 msgid "Keep below"
-msgstr "Var tyst"
+msgstr ""
 
 #: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
 #: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:49
@@ -339,9 +332,8 @@ msgstr "Var tyst"
 #: ../Pidgin/messages:53 ../Quote/messages:55 ../Transmission/messages:53
 #: ../Twitter/messages:53 ../WebSearch/messages:51
 #: ../WindowsKiller/messages:51 ../Xchat/messages:53
-#, fuzzy
 msgid "Keep on widget layer"
-msgstr "Widgetlager"
+msgstr ""
 
 #: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
 #: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:51
@@ -374,9 +366,8 @@ msgstr ""
 #: ../Translator/messages:61 ../Transmission/messages:59
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:57 ../Xchat/messages:59
-#, fuzzy
 msgid "Decorations"
-msgstr "Aktiviteter"
+msgstr ""
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:57
@@ -426,9 +417,8 @@ msgstr ""
 #: ../Pidgin/messages:69 ../Quote/messages:71 ../Transmission/messages:69
 #: ../Twitter/messages:69 ../WebSearch/messages:67
 #: ../WindowsKiller/messages:67 ../Xchat/messages:69
-#, fuzzy
 msgid "Background transparency:"
-msgstr "Pingvinens genomskinlighet:"
+msgstr ""
 
 #: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
 #: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:67
@@ -529,9 +519,8 @@ msgstr ""
 #: ../Pidgin/messages:89 ../Quote/messages:91 ../Transmission/messages:89
 #: ../Twitter/messages:89 ../WebSearch/messages:87
 #: ../WindowsKiller/messages:87 ../Xchat/messages:89
-#, fuzzy
 msgid "Foreground image:"
-msgstr "öppna bild"
+msgstr ""
 
 #: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
 #: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:87
@@ -540,9 +529,8 @@ msgstr "öppna bild"
 #: ../Pidgin/messages:91 ../Quote/messages:93 ../Transmission/messages:91
 #: ../Twitter/messages:91 ../WebSearch/messages:89
 #: ../WindowsKiller/messages:89 ../Xchat/messages:91
-#, fuzzy
 msgid "Foreground tansparency:"
-msgstr "Pingvinens genomskinlighet:"
+msgstr ""
 
 #: ../GnoMenu/messages:93 ../Calendar/messages:93 ../Cardapio/messages:93
 #: ../Deluge/messages:93 ../DiskFree/messages:93 ../Gmail/messages:89
@@ -561,9 +549,8 @@ msgid "Shortkey to pop up the menu:"
 msgstr ""
 
 #: ../Calendar/messages:95
-#, fuzzy
 msgid "Applications"
-msgstr "Aktiviteter"
+msgstr ""
 
 #: ../Calendar/messages:97
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -655,9 +642,8 @@ msgid "Alerts"
 msgstr ""
 
 #: ../Gmail/messages:97
-#, fuzzy
 msgid "Show alerts?"
-msgstr "Visa infobubbla?"
+msgstr ""
 
 #: ../Gmail/messages:99
 msgid ""
@@ -687,18 +673,16 @@ msgid "Should an animation be applied to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:111
-#, fuzzy
 msgid "Show animation?"
-msgstr "Visa information"
+msgstr ""
 
 #: ../Gmail/messages:113
 msgid "Which animation should the apply to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:115
-#, fuzzy
 msgid "Choose animation?"
-msgstr "Konfiguration"
+msgstr ""
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
@@ -713,9 +697,8 @@ msgid "Should the applet play a sound with the notification?"
 msgstr ""
 
 #: ../Gmail/messages:123
-#, fuzzy
 msgid "Play a sound?"
-msgstr "Använd ljud:"
+msgstr ""
 
 #: ../Gmail/messages:125
 msgid ""
@@ -723,14 +706,12 @@ msgid ""
 msgstr ""
 
 #: ../Gmail/messages:127
-#, fuzzy
 msgid "Path to sound file:"
-msgstr "Använd ljud:"
+msgstr ""
 
 #: ../Gmail/messages:129
-#, fuzzy
 msgid "Display a counter on the icon?"
-msgstr "Visa noteringens innehåll på ikonen?"
+msgstr ""
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
@@ -778,45 +759,36 @@ msgid "Display channel messages in a bubble :"
 msgstr ""
 
 #: ../GTG/messages:109
-#, fuzzy
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "Storlek på Desklet (bredd x höjd):"
+msgstr ""
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:29
-#, fuzzy
 msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"Beroende på din fönsterhanterare, kan du ändra storlek med ALT+mellanklick "
-"eller ALT+vänsterklick"
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
-#, fuzzy
 msgid "Desklet's dimension (width x height) :"
-msgstr "Storlek på Desklet (bredd x höjd):"
+msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-#, fuzzy
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
-"Beroende på din fönsterhanterare, kan du ändra storlek med ALT+mellanklick "
-"eller ALT+vänsterklick"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Screensaver_inhibitor/messages:31 ../Translator/messages:35
-#, fuzzy
 msgid "Desklet's position (x ; y) :"
-msgstr "Deskletens position (x, y):"
+msgstr ""
 
 #: ../HDDtemperature/messages:27 ../Moon/messages:31
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:43
-#, fuzzy
 msgid "Is detached from the dock ?"
-msgstr "Koppla loss från dockan?"
+msgstr ""
 
 #: ../HDDtemperature/messages:29 ../Translator/messages:45
 msgid ""
@@ -831,9 +803,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
-#, fuzzy
 msgid "On Widget Layer"
-msgstr "Växla widgetlager"
+msgstr ""
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
@@ -842,19 +813,15 @@ msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:51
-#, fuzzy
 msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
 msgstr ""
-"En låst desklet kan inte flyttas genom att klicka och dra med du kan alltid "
-"använda ALT+vänsterklick."
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53
-#, fuzzy
 msgid "Lock position ?"
-msgstr "Lås position?"
+msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55
@@ -863,9 +830,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
 #: ../Screensaver_inhibitor/messages:57
-#, fuzzy
 msgid "Rotation :"
-msgstr "Information"
+msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
@@ -886,15 +852,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
-#, fuzzy
 msgid "Background image :"
-msgstr "öppna bild"
+msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
-#, fuzzy
 msgid "Background tansparency :"
-msgstr "Pingvinens genomskinlighet:"
+msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
@@ -945,15 +909,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
-#, fuzzy
 msgid "Foreground image :"
-msgstr "öppna bild"
+msgstr ""
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
-#, fuzzy
 msgid "Foreground tansparency :"
-msgstr "Pingvinens genomskinlighet:"
+msgstr ""
 
 #: ../HDDtemperature/messages:89
 msgid "One or more device drive path to monitor:"
@@ -1001,9 +963,8 @@ msgid ""
 msgstr ""
 
 #: ../Liferea/messages:95
-#, fuzzy
 msgid "Show in the icon:"
-msgstr "Visa information"
+msgstr ""
 
 #: ../Liferea/messages:97
 msgid "Number of unread messages"
@@ -1019,9 +980,8 @@ msgid ""
 msgstr ""
 
 #: ../Moon/messages:91
-#, fuzzy
 msgid "Show the moon for all the current week?"
-msgstr "Hur ska aktivt skrivbord visas:"
+msgstr ""
 
 #: ../Moon/messages:93
 msgid "You are going to see the moon from the perspective of this hemisphere"
@@ -1162,14 +1122,12 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
-#, fuzzy
 msgid "Leave empty to use the default one."
-msgstr "Lämna tomt för att använda standardkortet."
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:11 ../Translator/messages:13
-#, fuzzy
 msgid "Image filename:"
-msgstr "Ange ett filnamn:"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:15
 msgid "Image filename when the screensaver is inhibited:"
@@ -1630,14 +1588,12 @@ msgid "Small"
 msgstr ""
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Large"
-msgstr "ladda"
+msgstr ""
 
 #: ../WebSearch/messages:93
-#, fuzzy
 msgid "Search engine :"
-msgstr "Sök på webben"
+msgstr ""
 
 #: ../WebSearch/messages:95
 msgid "Google"
@@ -1684,9 +1640,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:117
-#, fuzzy
 msgid "in sub-icons."
-msgstr "i sekunder."
+msgstr ""
 
 #: ../WebSearch/messages:119
 msgid "Maximum number of results shown :"
@@ -1719,1617 +1674,3 @@ msgstr ""
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-
-#, fuzzy
-#~ msgid "in s."
-#~ msgstr "i sekunder."
-
-#~ msgid "Choose one of the available themes:"
-#~ msgstr "Välj ett tema:"
-
-#~ msgid "Animated icons"
-#~ msgstr "Animerade ikoner"
-
-#~ msgid "This plug-in provides many different animations for your icons."
-#~ msgstr ""
-#~ "Detta plugin tillhandahåller många olika animeringar till dina ikoner."
-
-#~ msgid "Wave"
-#~ msgstr "Våg"
-
-#~ msgid "Spot"
-#~ msgstr "Spot"
-
-#~ msgid ""
-#~ "Add a lively Penguin in your dock !\n"
-#~ "Left click to change the animation,\n"
-#~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
-#~ msgstr ""
-#~ "Lägg till en livfull Pingvin till din docka!\n"
-#~ "Vänsterklicka för att ändra animering,\n"
-#~ "Mittenklicka för att störa honom ^_^\n"
-#~ "Bilder på tux är tagna från Pingus, några andra karaktärer\n"
-#~ "finns tillgängliga eller kan enkelt bli tillagda."
-
-#~ msgid "Hey, I'm here!"
-#~ msgstr "Hallå, här är jag!"
-
-#~ msgid "Sorry but I'm busy right now."
-#~ msgstr "Tyvärr, jag är upptagen nu."
-
-#~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
-#~ msgstr ""
-#~ "Jag har inte tid att leka med dig. Jag måste gräva och bryta alla dessa "
-#~ "ikoner."
-
-#~ msgid "Your dock is so messy! Let me clean it."
-#~ msgstr "Din docka är en röra! Låt mig städa upp åt dig."
-
-#~ msgid "Admit my superiority on you as a penguin!"
-#~ msgstr "Erkänn att jag är överlägsen dig!"
-
-#~ msgid "Wait, do you want to kill me?!"
-#~ msgstr "Vänta lite, försöker du döda mig?!"
-
-#~ msgid "Do you know how painful it is to be clicked on??"
-#~ msgstr "Har du en aning om hur ont det gör när du klickar på mig?"
-
-#~ msgid "It's my dock now, mwahahaha!"
-#~ msgstr "Det är min docka nu, mwahahaha!"
-
-#~ msgid "I want to be a pirate!"
-#~ msgstr "Jag vill bli pirat!"
-
-#~ msgid "You shall not pass!"
-#~ msgstr "Du får inte passera!"
-
-#~ msgid "I'm your father!"
-#~ msgstr "Jag är din fader!"
-
-#~ msgid ""
-#~ "- Gee, Brain, what do you want to do tonight?\n"
-#~ "- The same thing we do every night, Pinky : try to take over the Dock!"
-#~ msgstr ""
-#~ "- Vad ska vi göra ikväll Cortex?\n"
-#~ "- Samma om varje kväll, Minus. Försöka ta över dockan!"
-
-#~ msgid "For Aiur!"
-#~ msgstr "För Auir!"
-
-#~ msgid "Wake up"
-#~ msgstr "Vakna"
-
-#~ msgid "Start XPenguins"
-#~ msgstr "Starta XPenguins"
-
-#~ msgid "Stop XPenguins"
-#~ msgstr "Stoppa XPenguins"
-
-#~ msgid "Zzzzz"
-#~ msgstr "Zzzzz"
-
-#~ msgid "No items yet."
-#~ msgstr "Inga urklipp än."
-
-#~ msgid ""
-#~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
-#~ "It supports clipboard and mouse selection, predefined actions, and "
-#~ "persistent items.\n"
-#~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
-#~ msgstr ""
-#~ "Detta applet håller koll på dina urklipp och markeringar,\n"
-#~ "så att du kan återkalla dem fort. Det är en kopia av det välkända "
-#~ "programmet Klipper.\n"
-#~ "Det stödjer urklipp och markeringar, förinställda handlingar, och "
-#~ "ihållande punkter.\n"
-#~ "Vänsterklicka för en lista med historik,\n"
-#~ "Släpp text på ikonen för att skapa ihållande punkter, och mittenklicka "
-#~ "för att återkalla dem."
-
-#~ msgid "Clipboard history"
-#~ msgstr "Klippbordshistorik"
-
-#~ msgid ""
-#~ "No persistent items.\n"
-#~ "You can add some by drag and dropping some text on the icon."
-#~ msgstr ""
-#~ "Inga ihållande punkter.\n"
-#~ "Du kan lägga till punkter genom att dra och släppa lite text på ikonen."
-
-#~ msgid ""
-#~ "This plug-in lets extern applications interact on the dock.\n"
-#~ "The communication between both sides is based on Dbus"
-#~ msgstr ""
-#~ "Detta plugin låter externa program interagera på dockan.\n"
-#~ "Kommunikationen mellan båda sidorna baseras på Dbus."
-
-#~ msgid "Sorry, this module couldn't be added."
-#~ msgstr "Tyvärr, denna modul kunde inte läggas till."
-
-#~ msgid "The module has been added, but couldn't be launched."
-#~ msgstr "Modulen har lagts till, men kunde inte startas."
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully updated and automatically reloaded"
-#~ msgstr ""
-#~ "Appleten '%s' har blivit framgångsrikt uppdaterat och automatiskt "
-#~ "omstartat."
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully installed and automatically launched"
-#~ msgstr ""
-#~ "Appleten '%s' har blivit framgångsrikt installerat och automatiskt "
-#~ "startat."
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
-#~ msgid "N/A"
-#~ msgstr "Ej tillgänglig"
-
-#~ msgid "Disks"
-#~ msgstr "Diskar"
-
-#~ msgid "System Monitor"
-#~ msgstr "Systemövervakare"
-
-#~ msgid "day(s)"
-#~ msgstr "dag(ar)"
-
-#~ msgid ""
-#~ "This applet allows you to write texts and monitor your system\n"
-#~ "with a \"text style desklet\".\n"
-#~ "USAGE:\n"
-#~ "  - NEED TO BE DETACHED FROM THE DOCK TO WORK !\n"
-#~ "  - Middle-clic to reload values"
-#~ msgstr ""
-#~ "Detta applet låter dig skriva texter och övervaka ditt\n"
-#~ "system med ett \"text style desklet\".\n"
-#~ "ANVÄNDNING:\n"
-#~ "  - BEHÖVER FRÅNSKILJAS FRÅN DOCKAN FÖR ATT FUNGERA!\n"
-#~ "  - Mittenklicka för att läsa om värden"
-
-#~ msgid "Folders"
-#~ msgstr "Mappar"
-
-#~ msgid "Empty or unreadable folder."
-#~ msgstr "Tom eller oläsbar mapp"
-
-#~ msgid ""
-#~ "You're about deleting this file\n"
-#~ "  (%s)\n"
-#~ "from your hard-disk. Sure ?"
-#~ msgstr ""
-#~ "Du är på väg att radera följande fil:\n"
-#~ "  (%s)\n"
-#~ "från din hårddisk, Säker på det?"
-
-#~ msgid ""
-#~ "Warning: could not delete this file.\n"
-#~ "Please check file permissions."
-#~ msgstr ""
-#~ "Varning: kunde inte radera filen.\n"
-#~ "Kontrollera att du har skrivrättigheter för den."
-
-#~ msgid ""
-#~ "Warning: could not rename %s.\n"
-#~ "Check file permissions \n"
-#~ "and that the new name does not already exist."
-#~ msgstr ""
-#~ "Varning: kunde inte byta namn på %s.\n"
-#~ "Kontrollera att du har skrivrättigheter för filen\n"
-#~ "och att namnet inte redan existerar."
-
-#~ msgid ""
-#~ "Warning: could not create %s.\n"
-#~ "Check file permissions \n"
-#~ "and that the new name does not already exist."
-#~ msgstr ""
-#~ "Varning!:kunde inte skapa: %s.\n"
-#~ "Kontrollera fil-rättigheter \n"
-#~ "och att det nya namnet inte redan finns"
-
-#~ msgid "Open the folder"
-#~ msgstr "Öppna mappen"
-
-#~ msgid "Rename this file"
-#~ msgstr "Byt namn på filen"
-
-#~ msgid "Delete this file"
-#~ msgstr "Ta bort denna fil"
-
-#~ msgid "Move this file"
-#~ msgstr "Flytta denna fil"
-
-#~ msgid "Open with"
-#~ msgstr "Öppna med"
-
-#~ msgid "Properties"
-#~ msgstr "Inställningar"
-
-#~ msgid "Create a new file"
-#~ msgstr "Skapa en ny fil"
-
-#~ msgid "Create a new folder"
-#~ msgstr "Skapa en ny mapp"
-
-#~ msgid ""
-#~ "Displays the common Applications menu and the Recently used files.\n"
-#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
-#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
-#~ msgstr ""
-#~ "Visar den vanliga Program listan och de tidigare använda filerna.\n"
-#~ "Det är kompatibelt med alla XDG kompatibla menyer (Gnome, XFCE, "
-#~ "KDE, ...)\n"
-#~ "Mittenklicka för att öppna en dialog för att snabbt köra ett kommando(du "
-#~ "kan sätta upp en tangentkombination för det, t ex Alt+F2)\n"
-#~ "Du kan också sätta upp en tangentkombination för att visa menyn(t ex Alt"
-#~ "+F1)"
-
-#~ msgid "Quick launch"
-#~ msgstr "Snabbstart"
-
-#~ msgid "Configure menu"
-#~ msgstr "Konfigurera menyn"
-
-#~ msgid "Clear recent"
-#~ msgstr "Rensa Tidigare"
-
-#~ msgid "Recent Documents"
-#~ msgstr "Tidigare använda dokument"
-
-#~ msgid "Me Menu"
-#~ msgstr "Mig-meny"
-
-#~ msgid "Messaging Menu"
-#~ msgstr "Meddelandemeny"
-
-#~ msgid "Network connection state changed to inactive."
-#~ msgstr "Nätverkanslutningsstatus ändrades till inaktiv."
-
-#~ msgid "Connecting..."
-#~ msgstr "Ansluter..."
-
-#~ msgid "Network connection is established."
-#~ msgstr "Nätverksanslutning etablerad"
-
-#~ msgid "Network connection state changed to disconnected."
-#~ msgstr "Nätverksanslutningsstatusen ändrades till frånkopplad"
-
-#~ msgid "A cable has been plugged"
-#~ msgstr "En kabel har kopplats in"
-
-#~ msgid "A cable has been unplugged"
-#~ msgstr "En kapel har kopplats från"
-
-#~ msgid "None"
-#~ msgstr "Ingen"
-
-#~ msgid "Very Low"
-#~ msgstr "Mycket låg"
-
-#~ msgid "Low"
-#~ msgstr "Låg"
-
-#~ msgid "Middle"
-#~ msgstr "Sådär"
-
-#~ msgid "Good"
-#~ msgstr "Bra"
-
-#~ msgid "Excellent"
-#~ msgstr "Mycket bra"
-
-#~ msgid "Not connected"
-#~ msgstr "Inte ansluten"
-
-#~ msgid "Wired connection"
-#~ msgstr "Kabelburen anslutning"
-
-#~ msgid ""
-#~ "Checking connection...\n"
-#~ "Please retry in a few seconds"
-#~ msgstr ""
-#~ "Testar anslutning...\n"
-#~ "Var god försök igen om ett par sekunder"
-
-#~ msgid "Wired Connection."
-#~ msgstr "Kabelburen anslutning."
-
-#~ msgid "Interface"
-#~ msgstr "Gränssnitt"
-
-#~ msgid "Speed"
-#~ msgstr "Hastighet"
-
-#~ msgid "Wifi enabled."
-#~ msgstr "Wifi aktiverat"
-
-#~ msgid "Network ID"
-#~ msgstr "Nätverks ID"
-
-#~ msgid "Unknown"
-#~ msgstr "Okänt"
-
-#~ msgid "Access point"
-#~ msgstr "Accesspunkt"
-
-#~ msgid "Signal Quality"
-#~ msgstr "Signalstyrka"
-
-#~ msgid "Network-Monitor"
-#~ msgstr "Nätverksövervakare"
-
-#~ msgid ""
-#~ "This applet allows you to monitor your network connection(s).\n"
-#~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
-#~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
-#~ "between net speed and wifi."
-#~ msgstr ""
-#~ "Detta applet låter dig övervaka dina närverksanslutningar.\n"
-#~ "Det kan visa nerladdnings/uppladdnings hastigheterna och signalstyrkan på "
-#~ "det trådlösa nätverket.\n"
-#~ "Vänsterklicka för att visa lite information, scrolla på ikonen för att "
-#~ "skifta mellan hastighet och wifi."
-
-#~ msgid "Loading"
-#~ msgstr "Laddar"
-
-#~ msgid "Check for Wireless Extension"
-#~ msgstr "Leta efter trådlösa nätverk"
-
-#~ msgid "Network Administration"
-#~ msgstr "Nätverksadministration"
-
-#~ msgid "Activate network"
-#~ msgstr "Aktivera nätverk"
-
-#~ msgid "Deactivate network"
-#~ msgstr "Avaktivera nätverk"
-
-#~ msgid "Deactivate wifi"
-#~ msgstr "Avaktivera wifi"
-
-#~ msgid "Activate wifi"
-#~ msgstr "Aktivera wifi"
-
-#~ msgid "RSSreader"
-#~ msgstr "RSSläsare"
-
-#~ msgid "Retrieving data..."
-#~ msgstr "Hämtar data..."
-
-#~ msgid "Open with your web browser"
-#~ msgstr "Öppna med din webbläsare"
-
-#~ msgid "No data (no connection?)"
-#~ msgstr "Ingen data (ingen anslutning?)"
-
-#~ msgid "No data"
-#~ msgstr "Ingen data"
-
-#~ msgid ""
-#~ "No data\n"
-#~ "Did you set a valid RSS feed?\n"
-#~ "Is your connection alive?"
-#~ msgstr ""
-#~ "Ingen data\n"
-#~ "Skrev du in en gilltig RSS feed?\n"
-#~ "Fungerar din internetanslutning"
-
-#~ msgid "Recent files"
-#~ msgstr "Senaste filer"
-
-#~ msgid "Execute"
-#~ msgstr "Utför"
-
-#~ msgid "Open a terminal here"
-#~ msgstr "Öppna en terminal här"
-
-#~ msgid "Move to"
-#~ msgstr "Flytta till"
-
-#~ msgid "Copy URL"
-#~ msgstr "Kopiera URL"
-
-#~ msgid "Files"
-#~ msgstr "Filer"
-
-#~ msgid "Open"
-#~ msgstr "Öppna"
-
-#~ msgid "Open in new window"
-#~ msgstr "Öppna i nytt fönster"
-
-#~ msgid "Open file"
-#~ msgstr "Öppna fil"
-
-#~ msgid "Firefox bookmarks"
-#~ msgstr "Firefox bokmärken"
-
-#~ msgid "(F2) Music"
-#~ msgstr "(F2) Musik"
-
-#~ msgid "(F3) Image"
-#~ msgstr "(F3) Bild"
-
-#~ msgid "(F4) Video"
-#~ msgstr "(F4) Video"
-
-#~ msgid "(F5) Text"
-#~ msgstr "(F5) Text"
-
-#~ msgid "(F6) Html"
-#~ msgstr "(F6) Html"
-
-#~ msgid "No result"
-#~ msgstr "Inga resultat"
-
-#~ msgid "results"
-#~ msgstr "resultat"
-
-#~ msgid "result"
-#~ msgstr "resultat"
-
-#~ msgid "Uptime"
-#~ msgstr "Upptid"
-
-#~ msgid "Frequency"
-#~ msgstr "Frekvens"
-
-#~ msgid "Video Ram"
-#~ msgstr "Grafikminne"
-
-#~ msgid "Mb"
-#~ msgstr "Mb"
-
-#~ msgid "Gb"
-#~ msgstr "Gb"
-
-#~ msgid "Memory"
-#~ msgstr "Minne"
-
-#~ msgid "Available"
-#~ msgstr "Tillgängligt"
-
-#~ msgid "Cached"
-#~ msgstr "Mellanlagrat"
-
-#~ msgid "min"
-#~ msgstr "min"
-
-#~ msgid "Set up gamma:"
-#~ msgstr "Justera gamma:"
-
-#~ msgid "I couldn't open card '%s'"
-#~ msgstr "Kunde inte öppna kortet '%s'"
-
-#~ msgid "Card '%s' opened but I couldn't get any info"
-#~ msgstr "Kortet '%s' är öppet men kan inte hitta någon information"
-
-#~ msgid "I couldn't open the mixer"
-#~ msgstr "Kunde inte öppna mixern"
-
-#~ msgid "I couldn't attach the mixer to the card"
-#~ msgstr "Kunde inte ansluta mixern till kortet"
-
-#~ msgid "I couldn't register options"
-#~ msgstr "Kunde inte registrera alternativ"
-
-#~ msgid "I couldn't load the mixer"
-#~ msgstr "Kunde inte ladda mixern"
-
-#~ msgid "Set up volume:"
-#~ msgstr "Volymkontroll:"
-
-#~ msgid "Adjust channels"
-#~ msgstr "Justera kanaler"
-
-#~ msgid "Unmute"
-#~ msgstr "Aktivera ljud"
-
-#~ msgid "Mute"
-#~ msgstr "Tyst"
-
-#~ msgid "No title"
-#~ msgstr "Ingen titel"
-
-#~ msgid "Alarm"
-#~ msgstr "Alarm"
-
-#~ msgid "Day"
-#~ msgstr "Dag"
-
-#~ msgid "Monday"
-#~ msgstr "Måndag"
-
-#~ msgid "Tuesday"
-#~ msgstr "Tisdag"
-
-#~ msgid "Wednesday"
-#~ msgstr "Onsdag"
-
-#~ msgid "Thursday"
-#~ msgstr "Torsdag"
-
-#~ msgid "Friday"
-#~ msgstr "Fredag"
-
-#~ msgid "Saturday"
-#~ msgstr "Lördag"
-
-#~ msgid "Sunday"
-#~ msgstr "Söndag"
-
-#~ msgid "Week Day"
-#~ msgstr "Veckodag"
-
-#~ msgid "Week End"
-#~ msgstr "Helg"
-
-#~ msgid "Month"
-#~ msgstr "Månad"
-
-#~ msgid "Set up time and date"
-#~ msgstr "Justera datum och tid"
-
-#~ msgid "Configure Compiz"
-#~ msgstr "Konfigurera Compiz"
-
-#~ msgid "Emerald Manager"
-#~ msgstr "Emerald Manager"
-
-#~ msgid "Reload WM"
-#~ msgstr "Starta om fönsterhanteraren"
-
-#~ msgid "Reload Emerald"
-#~ msgstr "Starta om Emerald"
-
-#~ msgid "Switch Windows Manager"
-#~ msgstr "Byt fönsterhanterare"
-
-#~ msgid "Switch Windows Decorator"
-#~ msgstr "Byt fönsterdekorator"
-
-#~ msgid "Toggle Exposition Mode"
-#~ msgstr "Växla expositionsläge"
-
-#~ msgid "Toggle Show Desktop"
-#~ msgstr "Växla visning av skrivbord"
-
-#~ msgid "scotch sellotape"
-#~ msgstr "tejp"
-
-#~ msgid "frame with sellotape"
-#~ msgstr "tejpad ram"
-
-#~ msgid "CD box"
-#~ msgstr "CD fodral"
-
-#~ msgid "Caroussel"
-#~ msgstr "Karussel"
-
-#~ msgid "Parabolic"
-#~ msgstr "Parabol"
-
-#~ msgid "Rainbow"
-#~ msgstr "Regnbåge"
-
-#~ msgid "Slide"
-#~ msgstr "Rutnät"
-
-#~ msgid "Curve"
-#~ msgstr "Kurva"
-
-#~ msgid "You're about to delete all files in all dustbins. Sure ?"
-#~ msgstr "Alla papperskorgar kommer att tömmas. Är du säker?"
-
-#~ msgid "Empty Trash"
-#~ msgstr "Töm Papperskorg"
-
-#~ msgid "%s successfully unmounted"
-#~ msgstr "%s har nu avmonterats"
-
-#~ msgid "failed to unmount %s"
-#~ msgstr "kunde inte avmontera %s"
-
-#~ msgid " trashe(s)"
-#~ msgstr " papperskorg(ar)"
-
-#~ msgid " file(s)"
-#~ msgstr " fil(er)"
-
-#~ msgid "calculating"
-#~ msgstr "beräknar"
-
-#~ msgid "Track"
-#~ msgstr "Spår"
-
-#~ msgid "Previous"
-#~ msgstr "Föregående"
-
-#~ msgid "Stop"
-#~ msgstr "Stopp"
-
-#~ msgid "Show JumpBox"
-#~ msgstr "Visa JumpBox"
-
-#~ msgid "Toggle Shuffle"
-#~ msgstr "Växla blanda"
-
-#~ msgid "Toggle Repeat"
-#~ msgstr "Växla repetera"
-
-#~ msgid "Total amount of data"
-#~ msgstr "Total mängd data"
-
-#~ msgid "downloaded"
-#~ msgstr "hämtatHämtat:"
-
-#~ msgid "uploaded"
-#~ msgstr "skickatSkickat:"
-
-#~ msgid "Re-check interface"
-#~ msgstr "Kontrollera gränssnitt igen"
-
-#~ msgid ""
-#~ "Laptop on Battery.\n"
-#~ " Battery charged at:"
-#~ msgstr ""
-#~ "Dator kör på batteri.\n"
-#~ " Batteriladdning:"
-
-#~ msgid "Estimated time with charge:"
-#~ msgstr "Beräknad laddningstid:"
-
-#~ msgid ""
-#~ "Laptop on Charge.\n"
-#~ " Battery charged at:"
-#~ msgstr ""
-#~ "Batteriet laddas.\n"
-#~ " Batteriladdning:"
-
-#~ msgid "Estimated charge time:"
-#~ msgstr "Uppskattad laddningstid:"
-
-#~ msgid "No battery found."
-#~ msgstr "Hittade inget batteri."
-
-#~ msgid ""
-#~ "PowerManager.\n"
-#~ "Battery charge seems to be low"
-#~ msgstr ""
-#~ "Energihanterare.\n"
-#~ "Batterinivån verkar vara låg"
-
-#~ msgid "Please put your laptop on charge."
-#~ msgstr "Var vänlig ladda ditt batteri."
-
-#~ msgid ""
-#~ "PowerManager.\n"
-#~ "Your battery is now charged"
-#~ msgstr ""
-#~ "Energihanterare.\n"
-#~ "Batteriet är nu uppladdat"
-
-#~ msgid "Set up power management"
-#~ msgstr "Konfigurera energialternativ"
-
-#~ msgid "Halt"
-#~ msgstr "Stanna"
-
-#~ msgid "Hibernate"
-#~ msgstr "Viloläge"
-
-#~ msgid "Suspend"
-#~ msgstr "Vänteläge"
-
-#~ msgid "Reboot"
-#~ msgstr "Starta om"
-
-#~ msgid "Unmounted"
-#~ msgstr "Avmonterad"
-
-#~ msgid "%s is now unmounted"
-#~ msgstr "%s har nu avmonterats"
-
-#~ msgid "Remove this bookmark"
-#~ msgstr "Ta bort bokmärket"
-
-#~ msgid "Play"
-#~ msgstr "Spela"
-
-#~ msgid "Pause"
-#~ msgstr "Pausa"
-
-#~ msgid "Open current image"
-#~ msgstr "Öppna aktuell bild"
-
-#~ msgid "Browse images folder"
-#~ msgstr "Bläddra i bildkatalog"
-
-#~ msgid "Set new name for this item:"
-#~ msgstr "Nytt namn:"
-
-#~ msgid "Paste (drag'n'drop)"
-#~ msgstr "Klistra in (dra-och-släpp)"
-
-#~ msgid "Clear the stack"
-#~ msgstr "Töm stacken"
-
-#~ msgid "Copy"
-#~ msgstr "Kopiera"
-
-#~ msgid "Cut"
-#~ msgstr "Klipp ut"
-
-#~ msgid "Rename this item"
-#~ msgstr "Byt namn"
-
-#~ msgid "Remove this item"
-#~ msgstr "Ta bort"
-
-#~ msgid "Current"
-#~ msgstr "Aktuell"
-
-#~ msgid "Desktop"
-#~ msgstr "Skrivbord"
-
-#~ msgid "Add a workspace"
-#~ msgstr "Lägg till skrivbord"
-
-#~ msgid "Remove last workspace"
-#~ msgstr "Ta bort sista skrivbordet"
-
-#~ msgid "New Tab"
-#~ msgstr "Ny flik"
-
-#~ msgid "Rename current Tab"
-#~ msgstr "Byt namn på flik"
-
-#~ msgid "Close current Tab"
-#~ msgstr "Stäng flik"
-
-#~ msgid "Terminal"
-#~ msgstr "Terminal"
-
-#~ msgid "Set title for this tab:"
-#~ msgstr "Titel för flik:"
-
-#~ msgid "Select a color"
-#~ msgstr "Välj färg"
-
-#~ msgid "Paste"
-#~ msgstr "Klistra in"
-
-#~ msgid "Rename this Tab"
-#~ msgstr "Byt namn"
-
-#~ msgid "Change this Tab's colour"
-#~ msgstr "Byt färg"
-
-#~ msgid "Close this Tab"
-#~ msgstr "Stäng denna flik"
-
-#~ msgid "Note name : "
-#~ msgstr "Antekningsnamn: "
-
-#~ msgid "Search for:"
-#~ msgstr "Sök efter:"
-
-#~ msgid "Search for tag:"
-#~ msgstr "Sök efter nyckelord:"
-
-#~ msgid "Add a note"
-#~ msgstr "<b>Kompiskommentar</b>: %s"
-
-#~ msgid "Delete this note"
-#~ msgstr "Ta bort anteckning"
-
-#~ msgid "Reload notes"
-#~ msgstr "Ladda om anteckningar"
-
-#~ msgid "Search"
-#~ msgstr "Sök"
-
-#~ msgid "Search for today's note"
-#~ msgstr "Sök efter dagens anteckningar"
-
-#~ msgid "Search for this week's note"
-#~ msgstr "Sök efter denna veckas anteckningar"
-
-#~ msgid "Search for next week's note"
-#~ msgstr "Sök efter nästa veckas anteckningar"
-
-#~ msgid "Reset marks"
-#~ msgstr "Återställ markeringar"
-
-#~ msgid ""
-#~ "I couldn't get the info\n"
-#~ " Is connexion alive ?"
-#~ msgstr ""
-#~ "Kunde inte hämta information\n"
-#~ "Är du ansluten till Internet?"
-
-#~ msgid "Reload now"
-#~ msgstr "Uppdatera nu"
-
-#~ msgid ""
-#~ "No data available\n"
-#~ " is your connection alive?"
-#~ msgstr ""
-#~ "Inga data hittades\n"
-#~ "Är du ansluten till Internet?"
-
-#~ msgid "Temperature"
-#~ msgstr "Temperatur"
-
-#~ msgid "Precipitation probability"
-#~ msgstr "Risk för nederbörd"
-
-#~ msgid "Wind"
-#~ msgstr "Vind"
-
-#~ msgid "Humidity"
-#~ msgstr "Luftfuktighet"
-
-#~ msgid "Sunrise"
-#~ msgstr "Soluppgång"
-
-#~ msgid "Sunset"
-#~ msgstr "Solnedgång"
-
-#~ msgid "Feels like"
-#~ msgstr "upplevd"
-
-#~ msgid "Pressure"
-#~ msgstr "Tryck"
-
-#~ msgid "WiFi disabled."
-#~ msgstr "Wifi inaktiverat."
-
-#~ msgid "Delay between animation changes :"
-#~ msgstr "Tid mellan animeringsändringar:"
-
-#~ msgid "Let the penguin wander everywhere in the dock?"
-#~ msgstr "Tillåt pingvinen att vandra överallt?"
-
-#~ msgid "in pixels."
-#~ msgstr "i pixlar."
-
-#~ msgid "Let external applications pop up dialogs in the dock?"
-#~ msgstr "Tillåt externa program att visa dialoger i dockan?"
-
-#~ msgid "Let external applications reboot the dock?"
-#~ msgstr "Tillåt externa program att starta om dockan?"
-
-#~ msgid "Let external applications show/hide desklets?"
-#~ msgstr "Tillåt externa program att visa/dölja desklets?"
-
-#~ msgid "Let external applications reload applets?"
-#~ msgstr "Tillåt externa program att starta om applets?"
-
-#~ msgid "No"
-#~ msgstr "Nej"
-
-#~ msgid "On icon"
-#~ msgstr "På ikonen"
-
-#~ msgid "On label"
-#~ msgstr "På etikett"
-
-#~ msgid "Name"
-#~ msgstr "Namn"
-
-#~ msgid "Date"
-#~ msgstr "Datum"
-
-#~ msgid "Zoom"
-#~ msgstr "Zoom"
-
-#~ msgid "Transparency"
-#~ msgstr "Transparens"
-
-#~ msgid "Draw Bar"
-#~ msgstr "Visa stapel"
-
-#~ msgid "Number of programs to display in the top list:"
-#~ msgstr "Antal program att visa:"
-
-#~ msgid "The first colour of the gradient used to display the top list."
-#~ msgstr "Startfärgen för färgtoning i topplistan."
-
-#~ msgid "Top list start colour:"
-#~ msgstr "Startfärg för topplistan:"
-
-#~ msgid "The second colour of the gradient used to display the top list."
-#~ msgstr "Slutfärgen för färgtoning i topplistan."
-
-#~ msgid "Top list stop colour:"
-#~ msgstr "Slutfärg för topplistan:"
-
-#~ msgid "Alsa"
-#~ msgstr "Alsa"
-
-#~ msgid "Sound card:"
-#~ msgstr "Ljudkort som ska kontrolleras:"
-
-#~ msgid "Select channel:"
-#~ msgstr "Välj kanal att kontrollera:"
-
-#~ msgid "Specific command to run to show an advanced sound mixer:"
-#~ msgstr "Kommando som ska köras för att visa avancerad ljudmixer:"
-
-#~ msgid "Control"
-#~ msgstr "Kontroll"
-
-#~ msgid "Shortkey to show/hide the sound control dialog:"
-#~ msgstr "Tangentkombination för att visa/dölja konfigurationsdialog"
-
-#~ msgid "Hide the scale when mouse leaves the desklet?"
-#~ msgstr "Dölj skalan när musen lämnar deskleten?"
-
-#~ msgid "Display volume :"
-#~ msgstr "Visa volym:"
-
-#~ msgid "Effect to apply to the icon when adjusting volume:"
-#~ msgstr "Volymeffekt på ikonen:"
-
-#~ msgid "Default icon:"
-#~ msgstr "Standard ikon:"
-
-#~ msgid "Broken icon:"
-#~ msgstr "Bruten ikon:"
-
-#~ msgid "Mute icon:"
-#~ msgstr "Tysta ikon:"
-
-#~ msgid "Show seconds?"
-#~ msgstr "Visa sekunder?"
-
-#~ msgid "Timezone:"
-#~ msgstr "Tidszon:"
-
-#~ msgid "Style"
-#~ msgstr "Stil"
-
-#~ msgid "List of available themes for analogue display:"
-#~ msgstr "Teman för analogic:"
-
-#~ msgid "Configure time and date"
-#~ msgstr "Justera datum och tid"
-
-#~ msgid "Leave empty to execute the default command."
-#~ msgstr "Lämna tomt för att utföra standardkommandot."
-
-#~ msgid ""
-#~ "Except when switching to another WM, you must activate the Dbus plugin in "
-#~ "Compiz along with the plugin corresponding to the desired action."
-#~ msgstr ""
-#~ "För att kunna byta till en annan fönsterhanterare, måste du aktivera Dbus "
-#~ "i Compiz och dessutom den applet som ska användas."
-
-#~ msgid "Switch WM"
-#~ msgstr "Byt fönsterhanterare"
-
-#~ msgid "Expose"
-#~ msgstr "Expose"
-
-#~ msgid ""
-#~ "This command will be used to launch the system WM. Leave blank to use the "
-#~ "default."
-#~ msgstr ""
-#~ "Kommando som start systemets fönsterhanterare. Lämna tomt för att använda "
-#~ "standardkommandot."
-
-#~ msgid "Custom command for system's Windows Manager:"
-#~ msgstr "Anpassat kommando för att starta fönsterhanteraren:"
-
-#~ msgid ""
-#~ "If Compiz quits unexpectedly, Cairo-Dock will restart it. You must then "
-#~ "quit Compiz from the dock."
-#~ msgstr ""
-#~ "Om Compiz stängs ner, startas den om av Cairo-Dock. Om det händer, måste "
-#~ "du avsluta Compiz från dockan."
-
-#~ msgid "Auto-reload Compiz?"
-#~ msgstr "Starta om Compiz automatiskt?"
-
-#~ msgid ""
-#~ "If the decorator quits unexpectedly, Cairo-Dock will restart it. ou must "
-#~ "then quit Compiz from the dock."
-#~ msgstr ""
-#~ "Om fönsterdekoratören stängs ner, startas den om av Cairo-Dock. Om det "
-#~ "händer, måste du avsluta Compiz från dockan."
-
-#~ msgid "Auto-reload the Decorator?"
-#~ msgstr "Starta om dekoratören automatiskt?"
-
-#~ msgid "Load Compiz with options on startup."
-#~ msgstr "Starta Compiz med alternativ när appleten startas."
-
-#~ msgid "Force Compiz settings on startup?"
-#~ msgstr "Tvinga Compizinställningar vid start?"
-
-#~ msgid ""
-#~ "This will prevent the CSSM or Emerald icons appearing in the taskbar. The "
-#~ "corresponding sub-dock's icons will then behave as a launcher and an "
-#~ "application."
-#~ msgstr ""
-#~ "Gör att CSSM och Emerald ikonen inte visas i aktivitetsfältet. Sub-"
-#~ "dockans ikoner används då för att starta."
-
-#~ msgid "Steal the application's icon from the taskbar?"
-#~ msgstr "Stjäl programmets ikon från aktivitetsfältet?"
-
-#~ msgid ""
-#~ "Display two icons for Compiz Exposition & Widget Layer plug-ins in the "
-#~ "applet's sub-dock. Otherwise they will be available in the menu."
-#~ msgstr ""
-#~ "Visa ikoner för Compiz Exposition och Widgetlager i sub-dockan. Annars "
-#~ "visas de i menyn."
-
-#~ msgid "Add Exposition & Widget Layer to sub-dock?"
-#~ msgstr "Lägg till Exposition och Widgetlager till sub-dockan?"
-
-#~ msgid "Compiz Options"
-#~ msgstr "Inställningar för Compiz"
-
-#~ msgid ""
-#~ "With strict binding, textures are bound whenever they are enabled. With "
-#~ "loose binding they are enabled when created. The Nvidia driver seems a "
-#~ "bit slow when binding textures, that's why this option gives a heavy "
-#~ "performance increase with Nvidia cards."
-#~ msgstr ""
-#~ "Med strikt bindning, binds texturer när de aktivers, med lös bindning "
-#~ "binds de när de skapas. nVidias drivare är lite långsam när den binder "
-#~ "texturer så denna inställning kan snabba upp hastigheten ganska mycket "
-#~ "för nVidia."
-
-#~ msgid "Use Loose Binding?"
-#~ msgstr "Använd lös bindning?"
-
-#~ msgid "Only use these options if you know what you're doing.?"
-#~ msgstr "Använd inställningarna bara om du känner till dem."
-
-#~ msgid "Use Indirect Rendering?"
-#~ msgstr "Använd indirekt rendering?"
-
-#~ msgid "Useful when using two or more separate X screens."
-#~ msgstr "Användbart om du har flera separate X fönster"
-
-#~ msgid "Only Current Screen?"
-#~ msgstr "Endast aktivt skrivbord?"
-
-#~ msgid "By default this will be Emerald."
-#~ msgstr "Emerald används som standard."
-
-#~ msgid "Choose your Window Decorator:"
-#~ msgstr "Välj fönsterhanterare:"
-
-#~ msgid "emerald"
-#~ msgstr "emerald"
-
-#~ msgid "gtk-window-decorator"
-#~ msgstr "gtk-window-decorator"
-
-#~ msgid "kde-window-decorator"
-#~ msgstr "kde-window-decorator"
-
-#~ msgid "heliodor"
-#~ msgstr "heliodor"
-
-#~ msgid "Leave empty to use default sub-dock view."
-#~ msgstr "Lämna tomt för att använda standard sub-docka."
-
-#~ msgid "Sub-dock view name:"
-#~ msgstr "Namn på vy för sub-dockan:"
-
-#~ msgid "'Default' icon image name:"
-#~ msgstr "Bild för standard:"
-
-#~ msgid "'Broken' icon image name:"
-#~ msgstr "Bild för bruten:"
-
-#~ msgid "'Other WM' icon image name:"
-#~ msgstr "Bild för annan fönsterhanterare:"
-
-#~ msgid "'Settings' icon image name:"
-#~ msgstr "Bild för inställningar:"
-
-#~ msgid "'Emerald' icon image name:"
-#~ msgstr "Bild för emerald:"
-
-#~ msgid "'Reload' icon image name:"
-#~ msgstr "Bild för ladda om:"
-
-#~ msgid "'Exhibition' icon image name:"
-#~ msgstr "Bild för exposition:"
-
-#~ msgid "'Widget Layer' icon image name:"
-#~ msgstr "Bild för widget layer:"
-
-#~ msgid "Corner radius:"
-#~ msgstr "Hörnradie:"
-
-#~ msgid "Info-bubbles"
-#~ msgstr "Infobubblor"
-
-#~ msgid "Inclinated Plane"
-#~ msgstr "Sluttande plan"
-
-#~ msgid "The lower the value, the lower the point of view on the plane."
-#~ msgstr "Ju lägre värde, desto mer horisontellt är planet."
-
-#~ msgid "Height of the vanishing point:"
-#~ msgstr "Höjd på flyktpunkten:"
-
-#~ msgid "The lower the value, the flatter the curve will appear."
-#~ msgstr "Ju lägre värde, desto plattare kurva."
-
-#~ msgid "Curvature of the curve in percent:"
-#~ msgstr "Kurvans böjning i procent:"
-
-#~ msgid "Amplitude of the curve:"
-#~ msgstr "Kurvans amplitud."
-
-#~ msgid "Space between columns:"
-#~ msgstr "Avstånd mellan kolumner:"
-
-#~ msgid "Space between rows:"
-#~ msgstr "Avstånd mellan rader:"
-
-#~ msgid "Sinusoidal wave radius:"
-#~ msgstr "Sinusvågens radie:"
-
-#~ msgid "Use a linear wave rather than a sinusoidal wave?"
-#~ msgstr "Använd linjär våg istället för sinusformad?"
-
-#~ msgid "Display text for all icons?"
-#~ msgstr "Visa text för alla ikoner?"
-
-#~ msgid "Draw a background?"
-#~ msgstr "Rita bakgrund?"
-
-#~ msgid "Top to bottom gradient?"
-#~ msgstr "Uppifrån och ner?"
-
-#~ msgid "Left to right gradient?"
-#~ msgstr "Vänster till höger?"
-
-#~ msgid "Border line width :"
-#~ msgstr "Linjebredd för ram:"
-
-#~ msgid "Arrow width :"
-#~ msgstr "Pilens bredd:"
-
-#~ msgid "Arrow height:"
-#~ msgstr "Pilens höjd:"
-
-#~ msgid "The higher this value, the sooner the parabola will be curved."
-#~ msgstr "Ju högre värde, desto tidigare börjar parabolens kurvatur."
-
-#~ msgid "Curvature:"
-#~ msgstr "Kurva:"
-
-#~ msgid "The parabola will be restricted to a rectangle of this proportion."
-#~ msgstr "Parabolen begränsas av en rektangel med dessa dimensioner."
-
-#~ msgid "Height/width ratio:"
-#~ msgstr "Förhållande höjd/bredd:"
-
-#~ msgid "0 represents a flat wave, 1 represents maximum wave curvature."
-#~ msgstr "0 betyder att vågen är helt platt, 1 betyder vågens maxvärde."
-
-#~ msgid "Magnitude of the wave:"
-#~ msgstr "Vågens styrka:"
-
-#~ msgid "Space between icons and their captions:"
-#~ msgstr "Avstånd mellan ikon och etikett:"
-
-#~ msgid "Draw captions while unfolding?"
-#~ msgstr "Visa etiketter under animering?"
-
-#~ msgid "Space between icons:"
-#~ msgstr "Avstånd mellan ikoner:"
-
-#~ msgid ""
-#~ "0 represents a flat wave, 1 means the wave is identical to other views."
-#~ msgstr ""
-#~ "0 betyder at vågen är helt platt. 1 betyder att vågen är identisk med "
-#~ "andra vyer."
-
-#~ msgid "Number of icons on the first row:"
-#~ msgstr "Antal ikoner på första raden:"
-
-#~ msgid ""
-#~ "in degrees. The lower the value, the narrower the cone. 180° represents a "
-#~ "wide open cone."
-#~ msgstr ""
-#~ "i grader. Ju lägre värde, desto smalare kon. 180° betyder att konen är "
-#~ "vidöppen."
-
-#~ msgid "Cone width:"
-#~ msgstr "Konens bredd:"
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
-
-#~ msgid "Name of the image to overwrite the theme's empty image :"
-#~ msgstr "Bild för papperskorgen när den är tom:"
-
-#~ msgid "Name of the image to overwrite the theme's full image :"
-#~ msgstr "Bild för papperskorgen när den inte är tom:"
-
-#~ msgid "Config"
-#~ msgstr "Konfigurera"
-
-#~ msgid "Display the following quick info :"
-#~ msgstr "Visa följande snabbinformation:"
-
-#~ msgid "Total number of files"
-#~ msgstr "Totalt antal filer"
-
-#~ msgid "Total weight"
-#~ msgstr "Total storlek"
-
-#~ msgid "User-defined command to execute for logout:"
-#~ msgstr "Eget kommando att köra vid utloggning:"
-
-#~ msgid "Customisation"
-#~ msgstr "Inställningar"
-
-#~ msgid "Audio Player"
-#~ msgstr "Ljudspelare"
-
-#~ msgid "Player to control:"
-#~ msgstr "Spelare som ska kontrolleras:"
-
-#~ msgid "Audacious"
-#~ msgstr "Audacious"
-
-#~ msgid "Banshee"
-#~ msgstr "Banshee"
-
-#~ msgid "Exaile"
-#~ msgstr "Exaile"
-
-#~ msgid "XMMS"
-#~ msgstr "XMMS"
-
-#~ msgid ""
-#~ "This will prevent the player icon appearing in the taskbar. The applet's "
-#~ "icon will then behave as a launcher, an application and an applet."
-#~ msgstr ""
-#~ "Gör att spelarens ikon inte visas i aktivitetsfältet. Appletens ikon "
-#~ "används istället för att styra programmet."
-
-#~ msgid "Steal the player's icon from the taskbar?"
-#~ msgstr "Stjäl spelarens ikon från aktivitetsfältet?"
-
-#~ msgid "Action on music change"
-#~ msgstr "Aktivitet vid musikbyte:"
-
-#~ msgid "Animation when music changes:"
-#~ msgstr "Animering när musiken ändras:"
-
-#~ msgid "Information to display on the icon :"
-#~ msgstr "Information att visa på ikonen:"
-
-#~ msgid "Nothing"
-#~ msgstr "inget"
-
-#~ msgid "Time Elapsed"
-#~ msgstr "Använd tid"
-
-#~ msgid "Track number"
-#~ msgstr "Spårnummer"
-
-#~ msgid "Name of the image for the 'play' icon :"
-#~ msgstr "Bild för spela upp:"
-
-#~ msgid "Name of the image for the 'stop' icon :"
-#~ msgstr "Bild för stop:"
-
-#~ msgid "Name of the image for the 'pause' icon :"
-#~ msgstr "Bild för pausa:"
-
-#~ msgid "By default this will be 'eth0'."
-#~ msgstr "Standard är 'eth0'."
-
-#~ msgid "interface:"
-#~ msgstr "gränssnitt:"
-
-#~ msgid "Icon name:"
-#~ msgstr "Ikonetikett:"
-
-#~ msgid "'On-battery' icon filename:"
-#~ msgstr "Ikon när datorn körs på batteri:"
-
-#~ msgid "Icon's filename when on charge :"
-#~ msgstr "Ikon när batteriet laddasi"
-
-#~ msgid "Effect to apply on the icon according to the charge :"
-#~ msgstr "Effekt för laddningsnivå:"
-
-#~ msgid "Leave it empty for no sound"
-#~ msgstr "Lämna tomt om du inte vill spela upp ett ljud"
-
-#~ msgid "in percent."
-#~ msgstr "i procent."
-
-#~ msgid "Battery level:"
-#~ msgstr "Batterinivå:"
-
-#~ msgid "When battery level is under 4%"
-#~ msgstr "När laddningsnivån är under 4%"
-
-#~ msgid "List drives and volumes?"
-#~ msgstr "Visa diskar och volymer?"
-
-#~ msgid "List networks?"
-#~ msgstr "Visa nätverk?"
-
-#~ msgid "GTK bookmarks, that are used by Nautilus for exemple."
-#~ msgstr "GTK bokmärken. Används av t ex Nautilus."
-
-#~ msgid "List bookmarks?"
-#~ msgstr "Visa bokmärken?"
-
-#~ msgid "Scan sub direcotries?"
-#~ msgstr "Sök i underkataloger?"
-
-#~ msgid "Randomly browse files?"
-#~ msgstr "Sök efter filer slumpmässigt?"
-
-#~ msgid "play/pause"
-#~ msgstr "spela/pausa"
-
-#~ msgid "Sliding delay:"
-#~ msgstr "Paus mellan bilder:"
-
-#~ msgid "Effect while changing image:"
-#~ msgstr "Effekt när bilden byts:"
-
-#~ msgid "fade"
-#~ msgstr "tona"
-
-#~ msgid "blank fade"
-#~ msgstr "tona till blank"
-
-#~ msgid "fade in/out"
-#~ msgstr "tona in ut"
-
-#~ msgid "side kick"
-#~ msgstr "sidokick"
-
-#~ msgid "slideshow"
-#~ msgstr "slideshow"
-
-#~ msgid "grow up"
-#~ msgstr "väx uppåt"
-
-#~ msgid "shrink"
-#~ msgstr "krymp neråt"
-
-#~ msgid "random"
-#~ msgstr "slumpmässig"
-
-#~ msgid ""
-#~ "Set the transparency channel to 0 if you just don't want to have a "
-#~ "background."
-#~ msgstr "Sätt alfakanalen till 0 om du inte vill visa någon bakgrund."
-
-#~ msgid "Choose a background colour :"
-#~ msgstr "Välj bakgrundsfärg:"
-
-#~ msgid "Gives better image rendering."
-#~ msgstr "Ger bättre bildrendering."
-
-#~ msgid "Keep width/height ratio?"
-#~ msgstr "Behåll ursprungligt bildförhållande?"
-
-#~ msgid "If the image is too small, it will be stretched."
-#~ msgstr "Om bilden är för liten, förstoras den automatiskt."
-
-#~ msgid "Force the image to fill the icon/desklet?"
-#~ msgstr "Repetera bilden för att fylla hela dockan?"
-
-#~ msgid "They are items created by dropping a text into the Stack."
-#~ msgstr "Objekt som skapas när text släpps i stacken."
-
-#~ msgid "Image for 'text' items:"
-#~ msgstr "Bild för textobjekt:"
-
-#~ msgid "These are items created by dropping a URL into the Stack."
-#~ msgstr "Objekt som skapas när URL:er släpps i stacken."
-
-#~ msgid "Image for 'URL' items:"
-#~ msgstr "Bild för URL-objekt:"
-
-#~ msgid "Options"
-#~ msgstr "Alternativ"
-
-#~ msgid ""
-#~ "These options allow you to prevent some files from displaying in stacks "
-#~ "based on their type (video, image, etc.)"
-#~ msgstr ""
-#~ "Gör att du kan utesluta vissa filtyper från att visas i stacken (video, "
-#~ "bilder, etc...)"
-
-#~ msgid "Filter files on MIME type?"
-#~ msgstr "Filtrera filer efter MIME typ?"
-
-#~ msgid "E.g. image, text, video, audio, application..."
-#~ msgstr "T ex bilder, video, ljud, program..."
-
-#~ msgid "Here you can specify a list of MIME types to ignore:"
-#~ msgstr "MIME typer som skall undvikas:"
-
-#~ msgid "Sort items by:"
-#~ msgstr "Sortera efter:"
-
-#~ msgid "Type"
-#~ msgstr "Typ"
-
-#~ msgid "Manual order"
-#~ msgstr "Manuell sortering"
-
-#~ msgid ""
-#~ "All desktops will be drawn on the main icon. Otherwise a sub-dock will "
-#~ "contain all desktops."
-#~ msgstr ""
-#~ "Markera för att visa alla skrivbord på huvudikonen, avmarkera för att "
-#~ "visa skrivbord i en sub-docka."
-
-#~ msgid "Map wallpaper to icons?"
-#~ msgstr "Visa skrivbordsbakgrund på ikonen?"
-
-#~ msgid "Show desktop number on icons?"
-#~ msgstr "Visa skrivbordsnummer på ikonen?"
-
-#~ msgid "Draw windows on icons?"
-#~ msgstr "Visa fönsterinnehåll på ikonen?"
-
-#~ msgid "Display options"
-#~ msgstr "Visningsalternativ"
-
-#~ msgid "r, g, b, a"
-#~ msgstr "r, g, b, a"
-
-#~ msgid "Internal line colour:"
-#~ msgstr "Färg på inre linjer:"
-
-#~ msgid "External line size:"
-#~ msgstr "Storlek på yttre linje:"
-
-#~ msgid "External line colour:"
-#~ msgstr "Färg på yttre linje:"
-
-#~ msgid "Window line colour:"
-#~ msgstr "Färg på fönsterlinje:"
-
-#~ msgid "Current desktop colour:"
-#~ msgstr "Färg för aktivt skrivbord:"
-
-#~ msgid "draw a frame"
-#~ msgstr "rita en ram"
-
-#~ msgid "fill"
-#~ msgstr "fyll"
-
-#~ msgid "fill others"
-#~ msgstr "fyll övriga"
-
-#~ msgid "Icon to use in expanded mode if wallpaper is not mapped:"
-#~ msgstr ""
-#~ "Ikon som ska användas i expanderat läge om om du inte visar "
-#~ "skrivbordsbakgrunden:"
-
-#~ msgid "In expanded mode, render the desklet in 3D?"
-#~ msgstr "I expanderat läge, visa deskleten i 3D?"
-
-#~ msgid "Name of the icon as it will appear in its label in cairo-dock :"
-#~ msgstr "Ikonens etikett:"
-
-#~ msgid "needs to restart the applet."
-#~ msgstr "behöver starta om appleten."
-
-#~ msgid "Terminal transparency:"
-#~ msgstr "Genomskinlighet för terminalfönstret:"
-
-#~ msgid ""
-#~ "When the terminal is in a dialog. When it is in a desklet, you can just "
-#~ "resize the desklet as usual."
-#~ msgstr ""
-#~ "När terminalen visas i ett fönster. När den är i en desklet, kan du ändra "
-#~ "storlek som vanligt."
-
-#~ msgid "Size of the terminal (line x columns):"
-#~ msgstr "Storlek på terminal (rader x kolumner):"
-
-#~ msgid ""
-#~ "Write the date format you usually use in your notes. The syntax is the "
-#~ "one of 'strftime' : %d for the day, %m for the month, %y for the year (2 "
-#~ "digits), etc. Leave it blank to use the default one (%d/%m/%y)."
-#~ msgstr ""
-#~ "Ange datumformat som du oftast använder. Syntax är samma som för "
-#~ "'strftime': %d för dag, %m för månad, %y för år (2 siffror) etc. Lämna "
-#~ "tomt för att använda standardformatet (%d/%m/%y)."
-
-#~ msgid "Date format to search for :"
-#~ msgstr "Datumformat att söka efter:"
-
-#~ msgid ""
-#~ "Depending on your tomboy's version, the note deletion may not be "
-#~ "automatically notified to us. Only check this box if you notice some "
-#~ "error message like <<No marshaller for signature of signal "
-#~ "'NoteDeleted'>> in the terminal."
-#~ msgstr ""
-#~ "beroende på vilken version av Tomboy du har, kanske inte borttagning av "
-#~ "anteckningar alltid upptäcks. Markera bara rutan om du ser meddelanden "
-#~ "som <<No marshaller for signature of signal 'NoteDeleted'>> i ett "
-#~ "terminalfönster."
-
-#~ msgid "Emulate the 'NoteDeleted' signal?"
-#~ msgstr "Emulera 'NoteDeleted' meddelanden?"
-
-#~ msgid "Leave empty to use the name of the city."
-#~ msgstr "Lämna tomt för att använda namnet på staden."
-
-#~ msgid "Code for your location:"
-#~ msgstr "Kod för din geografiska plats:"
-
-#~ msgid "Use International System Units?"
-#~ msgstr "Använd internationella enheter?"
-
-#~ msgid "in seconds. Set 0 to have never-ending dialogs."
-#~ msgstr "i sekunder. Ange 0 om du vill stänga dialoger manuellt."
-
-#~ msgid "Display current conditions on the icon instead of the default one?"
-#~ msgstr "Visa aktuellt väder på ikonen istället för standardbilden?"
-
-#~ msgid "Number of days to forecast:"
-#~ msgstr "Antal dagar med väderprognoser:"
-
-#~ msgid "Display nights?"
-#~ msgstr "Visa även nattväder?"
-
-#~ msgid "Display temperature as quick info?"
-#~ msgstr "Visa temperaturen som snabbinformation?"
-
-#~ msgid "Render desklet in 3D?"
-#~ msgstr "Använd 3D för Desklet?"
-
-#~ msgid "Signal Strength"
-#~ msgstr "Signalstyrka"
-
-#~ msgid "Signal Strength in percent"
-#~ msgstr "Signalstyrka i procent"
-
-#~ msgid "Overwrite the default label with the connection point name?"
-#~ msgstr "Visa anslutningsnamnet på etiketten?"

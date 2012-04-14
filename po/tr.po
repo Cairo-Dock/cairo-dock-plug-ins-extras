@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-06-20 23:27+0000\n"
+"POT-Creation-Date: 2012-04-12 00:34+0000\n"
+"PO-Revision-Date: 2012-04-12 03:34+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-07-12 04:52+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
+"X-Launchpad-Export-Date: 2012-04-13 05:36+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
+"Language: tr\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -93,9 +95,8 @@ msgstr ""
 #: ../Moon/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
 #: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
 #: ../WindowsKiller/messages:11 ../Xchat/messages:11
-#, fuzzy
 msgid "Let empty to use the default one."
-msgstr "Varsayılanı kullanmak için boş bırakınız."
+msgstr ""
 
 #: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
 #: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
@@ -104,9 +105,8 @@ msgstr "Varsayılanı kullanmak için boş bırakınız."
 #: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13
-#, fuzzy
 msgid "Image's filename :"
-msgstr "Görüntü dosyaadı:"
+msgstr ""
 
 #: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:9
@@ -152,9 +152,8 @@ msgstr ""
 #: ../Translator/messages:21 ../Transmission/messages:21
 #: ../Twitter/messages:21 ../WebSearch/messages:19
 #: ../WindowsKiller/messages:19 ../Xchat/messages:21
-#, fuzzy
 msgid "Desklet"
-msgstr "Masaüstü"
+msgstr ""
 
 #: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
 #: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:19
@@ -185,9 +184,8 @@ msgstr ""
 #: ../Pidgin/messages:27 ../Quote/messages:29 ../Translator/messages:27
 #: ../Transmission/messages:27 ../Twitter/messages:27 ../WebSearch/messages:25
 #: ../WindowsKiller/messages:25 ../Xchat/messages:27
-#, fuzzy
 msgid "Lock position?"
-msgstr "Sergi"
+msgstr ""
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
@@ -515,9 +513,8 @@ msgstr ""
 #: ../Pidgin/messages:89 ../Quote/messages:91 ../Transmission/messages:89
 #: ../Twitter/messages:89 ../WebSearch/messages:87
 #: ../WindowsKiller/messages:87 ../Xchat/messages:89
-#, fuzzy
 msgid "Foreground image:"
-msgstr "Arkaplan görüntüsü:"
+msgstr ""
 
 #: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
 #: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:87
@@ -526,9 +523,8 @@ msgstr "Arkaplan görüntüsü:"
 #: ../Pidgin/messages:91 ../Quote/messages:93 ../Transmission/messages:91
 #: ../Twitter/messages:91 ../WebSearch/messages:89
 #: ../WindowsKiller/messages:89 ../Xchat/messages:91
-#, fuzzy
 msgid "Foreground tansparency:"
-msgstr "Arkaplan şeffaflığı:"
+msgstr ""
 
 #: ../GnoMenu/messages:93 ../Calendar/messages:93 ../Cardapio/messages:93
 #: ../Deluge/messages:93 ../DiskFree/messages:93 ../Gmail/messages:89
@@ -547,9 +543,8 @@ msgid "Shortkey to pop up the menu:"
 msgstr ""
 
 #: ../Calendar/messages:95
-#, fuzzy
 msgid "Applications"
-msgstr "Dekorasyonlar"
+msgstr ""
 
 #: ../Calendar/messages:97
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -564,11 +559,10 @@ msgid "Behaviour"
 msgstr ""
 
 #: ../Calendar/messages:103
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
-msgstr "Varsayılanı kullanmak için boş bırakınız."
+msgstr ""
 
 #: ../Calendar/messages:105
 msgid "Icon custom script:"
@@ -593,9 +587,8 @@ msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "Torrents info"
-msgstr "Disk bilgisi al"
+msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
@@ -635,9 +628,8 @@ msgid "(in minutes)"
 msgstr ""
 
 #: ../Gmail/messages:93
-#, fuzzy
 msgid "Delay between refreshes:"
-msgstr "canlandırma değişimleri arası gecikme :"
+msgstr ""
 
 #: ../Gmail/messages:95
 msgid "Alerts"
@@ -683,9 +675,8 @@ msgid "Which animation should the apply to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:115
-#, fuzzy
 msgid "Choose animation?"
-msgstr "Canlandırmanın süresi :"
+msgstr ""
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
@@ -713,9 +704,8 @@ msgid "Path to sound file:"
 msgstr ""
 
 #: ../Gmail/messages:129
-#, fuzzy
 msgid "Display a counter on the icon?"
-msgstr "Menüde simgeler gösterilsin mi?"
+msgstr ""
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
@@ -738,9 +728,8 @@ msgid "quickinfo"
 msgstr ""
 
 #: ../GTG/messages:95 ../Xchat/messages:97
-#, fuzzy
 msgid "Bubbles duration :"
-msgstr "Zıplama süresi:"
+msgstr ""
 
 #: ../GTG/messages:97 ../Pidgin/messages:107 ../Xchat/messages:99
 msgid "Short"
@@ -781,7 +770,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -802,9 +792,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:31 ../Moon/messages:33
 #: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
-#, fuzzy
 msgid "Accessibility :"
-msgstr "Görünürlük:"
+msgstr ""
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
@@ -825,9 +814,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53
-#, fuzzy
 msgid "Lock position ?"
-msgstr "Sergi"
+msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55
@@ -836,9 +824,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
 #: ../Screensaver_inhibitor/messages:57
-#, fuzzy
 msgid "Rotation :"
-msgstr "Döndürme:"
+msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
@@ -859,15 +846,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
-#, fuzzy
 msgid "Background image :"
-msgstr "Arkaplan görüntüsü:"
+msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
-#, fuzzy
 msgid "Background tansparency :"
-msgstr "Arkaplan şeffaflığı:"
+msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
@@ -918,15 +903,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
-#, fuzzy
 msgid "Foreground image :"
-msgstr "Arkaplan görüntüsü:"
+msgstr ""
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
-#, fuzzy
 msgid "Foreground tansparency :"
-msgstr "Arkaplan şeffaflığı:"
+msgstr ""
 
 #: ../HDDtemperature/messages:89
 msgid "One or more device drive path to monitor:"
@@ -1051,9 +1034,8 @@ msgid "Display chat messages in a bubble?"
 msgstr ""
 
 #: ../Pidgin/messages:105
-#, fuzzy
 msgid "Bubbles duration:"
-msgstr "Zıplama süresi:"
+msgstr ""
 
 #: ../Pidgin/messages:113
 msgid "Animation of the icon on receiving a message:"
@@ -1077,9 +1059,8 @@ msgid "big"
 msgstr ""
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Varsayılanı kullanmak için boş bırakınız."
+msgstr ""
 
 #: ../Quote/messages:97
 msgid "Quote source:"
@@ -1126,9 +1107,8 @@ msgid "Inhibit for a given timelength (in minutes)"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
-#, fuzzy
 msgid "timelength"
-msgstr "Uzunluk"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 msgid "Inhibit for a given timelength"
@@ -1158,9 +1138,8 @@ msgid "0 to never stop automatically"
 msgstr ""
 
 #: ../Screensaver_inhibitor/messages:97
-#, fuzzy
 msgid "Timelength of the inhibition:"
-msgstr "Canlandırmanın süresi :"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:99
 msgid "Shortkey to (de)inhibit the screensaver:"
@@ -1607,9 +1586,8 @@ msgid "Large"
 msgstr ""
 
 #: ../WebSearch/messages:93
-#, fuzzy
 msgid "Search engine :"
-msgstr "İnternette ara"
+msgstr ""
 
 #: ../WebSearch/messages:95
 msgid "Google"
@@ -1656,9 +1634,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:117
-#, fuzzy
 msgid "in sub-icons."
-msgstr "saniye olarak."
+msgstr ""
 
 #: ../WebSearch/messages:119
 msgid "Maximum number of results shown :"
@@ -1691,1248 +1668,3 @@ msgstr ""
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-
-#, fuzzy
-#~ msgid "in s."
-#~ msgstr "saniye olarak."
-
-#~ msgid "Choose one of the available themes:"
-#~ msgstr "Uygun temalardan birini seçiniz:"
-
-#~ msgid "Appearance"
-#~ msgstr "Görünüm"
-
-#~ msgid "Animated icons"
-#~ msgstr "Canlandırmalı simgeler"
-
-#~ msgid "This plug-in provides many different animations for your icons."
-#~ msgstr "Bu eklenti simgeleriniz için bir çok farklı canlandırma ekler."
-
-#~ msgid "Wave"
-#~ msgstr "Dalgalanma"
-
-#~ msgid "Spot"
-#~ msgstr "Benek"
-
-#~ msgid ""
-#~ "Add a lively Penguin in your dock !\n"
-#~ "Left click to change the animation,\n"
-#~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
-#~ msgstr ""
-#~ "Dock'unuz için hareketli bir penguen ekleyin !\n"
-#~ "Animasyonları değiştirmek için sol tıkla\n"
-#~ "Onu karıştırmak için orta-tıkla ^ ^\n"
-#~ "Tux şekilleri pingus'tan alınır,eldeki bazı diğer karakterler kolayca "
-#~ "eklenebilir."
-
-#~ msgid "Cairo-Penguin"
-#~ msgstr "Cairo-Pengueni"
-
-#~ msgid "Hey, I'm here!"
-#~ msgstr "Hey, buradayım !"
-
-#~ msgid "Sorry but I'm busy right now."
-#~ msgstr "Üzgünüm ama şu anda meşgulüm."
-
-#~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
-#~ msgstr ""
-#~ "Gösteriniz için süre ayarlamadım, gözatmak zorundayım ve bunlar "
-#~ "simgelerin hepsi."
-
-#~ msgid "Your dock is so messy! Let me clean it."
-#~ msgstr "Dock'unuz o kadar dağınık ki ! Onu temizlemem için izin ver."
-
-#~ msgid "Admit my superiority on you as a penguin!"
-#~ msgstr "Penguen gibi  üstünlüklerimin olduğunu kabul et !"
-
-#~ msgid "Wait, do you want to kill me?!"
-#~ msgstr "Bekle, beni öldürmek mi istiyorsun?!"
-
-#~ msgid "Do you know how painful it is to be clicked on??"
-#~ msgstr "Üzerinde tıklamanın ne kadar acı olduğunu bilir misin ??"
-
-#~ msgid "It's my dock now, mwahahaha!"
-#~ msgstr "O şimdi benim dock'um,mwahahaha !"
-
-#~ msgid "I want to be a pirate!"
-#~ msgstr "Korsan olmak istiyorum !"
-
-#~ msgid "You shall not pass!"
-#~ msgstr "Buradan geçemezsin !"
-
-#~ msgid "I'm your father!"
-#~ msgstr "Ben senin babanım !"
-
-#~ msgid ""
-#~ "- Gee, Brain, what do you want to do tonight?\n"
-#~ "- The same thing we do every night, Pinky : try to take over the Dock!"
-#~ msgstr "-Vay be,zeka,bu gece ne yapmayı istedin?"
-
-#~ msgid "For Aiur!"
-#~ msgstr "Aiur için !"
-
-#~ msgid "Wake up"
-#~ msgstr "Uyan"
-
-#~ msgid "Keep quiet"
-#~ msgstr "Sessiz ol"
-
-#~ msgid "Start XPenguins"
-#~ msgstr "XPenguins'i çalıştır"
-
-#~ msgid "Stop XPenguins"
-#~ msgstr "XPenguins'i durdur"
-
-#~ msgid "Zzzzz"
-#~ msgstr "Zzzzz"
-
-#~ msgid "No items yet."
-#~ msgstr "Henüz öğe yok."
-
-#~ msgid "Clipboard history"
-#~ msgstr "Pano geçmişi"
-
-#~ msgid "Sorry, this module couldn't be added."
-#~ msgstr "Üzgünüm, bu kip eklenemedi."
-
-#~ msgid "The module has been added, but couldn't be launched."
-#~ msgstr "Kip eklendi, fakat başlatılamadı."
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully updated and automatically reloaded"
-#~ msgstr ""
-#~ "'%s' ugulamacığı başarıyla güncellendi ve otomatik olarak yeniden "
-#~ "yüklendi."
-
-#~ msgid ""
-#~ "The applet '%s' has been succefully installed and automatically launched"
-#~ msgstr "'%s' uygulamacığı başarıyla kuruldu ve otomatik olarak başlatıldı."
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
-#~ msgid "System Monitor"
-#~ msgstr "Sistem Gözlemcisi"
-
-#~ msgid "day(s)"
-#~ msgstr "gün(ler)"
-
-#~ msgid "Folders"
-#~ msgstr "Dizinler"
-
-#~ msgid "Empty or unreadable folder."
-#~ msgstr "Boş yada okunamaayan dizin."
-
-#~ msgid "Enter a file name:"
-#~ msgstr "Bir dizin adı girin:"
-
-#~ msgid ""
-#~ "Displays the common Applications menu and the Recently used files.\n"
-#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
-#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
-#~ msgstr ""
-#~ "Genel Uygulamalar menüsünü ve Son kullanılan dosyaları gösterir.\n"
-#~ "Herhangi XDG uyumlu menü ile uyumludur (Gnome, XFCE, KDE, ...)\n"
-#~ "Herhangi bir komutu kolayca başlatmak üzere iletişim kutusunu açmak için "
-#~ "orta-tuşa tıklayın (bunun için bir kısayol tuşu atayabilirsiniz, ALT+F2 "
-#~ "gibi)\n"
-#~ "Ayrıca açılır menü için de kısayol tuşu atayabilirsiniz (ALT+F1 gibi)"
-
-#~ msgid "Quick launch"
-#~ msgstr "Hızlı başlat"
-
-#~ msgid "Configure menu"
-#~ msgstr "Yapılandırma menüsü"
-
-#~ msgid "Clear recent"
-#~ msgstr "Son kullanılanı temizle"
-
-#~ msgid "Recent Documents"
-#~ msgstr "Son Kullanılan Belgeler"
-
-#~ msgid "Clear the list of the recently used documents?"
-#~ msgstr "Son kullanılan belgelerin listesi temizlensin mi ?"
-
-#~ msgid "Enter a command to launch:"
-#~ msgstr "Çalıştırmak istediğiniz komutu giriniz :"
-
-#~ msgid "Network connection state changed to inactive."
-#~ msgstr "Ağ bağlantısı aktif değil."
-
-#~ msgid "Connecting..."
-#~ msgstr "Bağlanıyor..."
-
-#~ msgid "Network connection is established."
-#~ msgstr "Ağ bağlantısı kuruldu."
-
-#~ msgid "A cable has been plugged"
-#~ msgstr "Bir kablo takıldı"
-
-#~ msgid "A cable has been unplugged"
-#~ msgstr "Kablo çıkartıldı"
-
-#~ msgid "None"
-#~ msgstr "Hiçbiri"
-
-#~ msgid "Very Low"
-#~ msgstr "Çok Düşük"
-
-#~ msgid "Low"
-#~ msgstr "Düşük"
-
-#~ msgid "Middle"
-#~ msgstr "Orta"
-
-#~ msgid "Good"
-#~ msgstr "İyi"
-
-#~ msgid "Excellent"
-#~ msgstr "Mükemmel"
-
-#~ msgid "Not connected"
-#~ msgstr "Bağlı değil"
-
-#~ msgid "Wired connection"
-#~ msgstr "Kablolu bağlantı"
-
-#~ msgid ""
-#~ "Checking connection...\n"
-#~ "Please retry in a few seconds"
-#~ msgstr ""
-#~ "Bağlantıyı kontrol ediyor...\n"
-#~ "Lütfen birkaç saniye sonra tekrar deneyiniz"
-
-#~ msgid "Wired Connection."
-#~ msgstr "Kablolu bağlantı."
-
-#~ msgid "Interface"
-#~ msgstr "Arayüz"
-
-#~ msgid "Speed"
-#~ msgstr "Hız"
-
-#~ msgid "Wifi enabled."
-#~ msgstr "Kablosuz bağlantı ektinleştirildi."
-
-#~ msgid "Network ID"
-#~ msgstr "Ağ Kimliği"
-
-#~ msgid "Unknown"
-#~ msgstr "Bilinmeyen"
-
-#~ msgid "Access point"
-#~ msgstr "Erişim noktası"
-
-#~ msgid "Signal Quality"
-#~ msgstr "Sinyal Kalitesi"
-
-#~ msgid "Network-Monitor"
-#~ msgstr "Ağ-Gözlemci"
-
-#~ msgid ""
-#~ "This applet allows you to monitor your network connection(s).\n"
-#~ "It can display the download/upload speeds and the wifi signal quality.\n"
-#~ "If you have network-manager running, it can also let you choose the "
-#~ "current wifi network.\n"
-#~ "Left-click to pop-up some info,Scroll on the icon to switch the display "
-#~ "between net speed and wifi."
-#~ msgstr ""
-#~ "Bu uygulamacık ağ bağlantı(ları)nızı göstermeye yarar.\n"
-#~ "İndirme/yükleme hızlarını ve wifi sinyal kalitesini de gösterebilir.\n"
-#~ "Eğer ağ- yöneticiniz çalışıyorsa, size mevcut wifi ağını seçmenize de "
-#~ "olanak sağlar.\n"
-#~ "Açılır pencereye bazı bilgiler için sol-tıklayın, net net ve wifi "
-#~ "hızlarını birlikte göstermek için simge üzerine sürükleyin."
-
-#~ msgid "Loading"
-#~ msgstr "Yükleniyor"
-
-#~ msgid "Check for Wireless Extension"
-#~ msgstr "Kablosuz Bağlantı Eklentisini Kontrol Et"
-
-#~ msgid "Network Administration"
-#~ msgstr "Ağ Yönetimi"
-
-#~ msgid "Activate network"
-#~ msgstr "Ağı Etkinleştir"
-
-#~ msgid "Deactivate network"
-#~ msgstr "Ağı etkisizleştir"
-
-#~ msgid "Deactivate wifi"
-#~ msgstr "Kablosuz ağı etkisizleştir"
-
-#~ msgid "Activate wifi"
-#~ msgstr "Kablosuz ağı etkinleştir"
-
-#~ msgid "RSSreader"
-#~ msgstr "Akış okuyucu"
-
-#~ msgid "Retrieving data..."
-#~ msgstr "Veri alınıyor ..."
-
-#~ msgid "It doesn't seem to be a valid URL."
-#~ msgstr "Geçerli bir URL görünmüyor."
-
-#~ msgid "Paste a new RSS Url (drag and drop)"
-#~ msgstr "Yeni bir RSS web adresi yapıştır (sürükle ve bırak)"
-
-#~ msgid "Open with your web browser"
-#~ msgstr "Web tarayıcınız ile açınız"
-
-#~ msgid "Warning: couldn't retrieve data last time we tried."
-#~ msgstr "Uyarı: son deneyişimizde veriye ulaşılamadı."
-
-#~ msgid "No URL is defined."
-#~ msgstr "Tanımlı URL yok."
-
-#~ msgid "No data (no connection?)"
-#~ msgstr "Veri yok (bağlantı yok ?)"
-
-#~ msgid "Invalid data (invalid RSS/Atom feed?)"
-#~ msgstr "Geçersiz veri (geçersiz RSS/Atom beslemesi?)"
-
-#~ msgid "No data"
-#~ msgstr "Veri yok"
-
-#~ msgid "This RSS feed has been modified..."
-#~ msgstr "Bu akış kaynağı değiştirildi..."
-
-#~ msgid ""
-#~ "No URL is defined\n"
-#~ "You can define one by copying the URL in the clipboard,\n"
-#~ " and selecting \"Paste the URL\" in the menu."
-#~ msgstr ""
-#~ "Hiçbir URL belirlenmedi\n"
-#~ "URL'yi panoya kopyalayarak ve menüden \"URL'yi yapıştır\"ı\n"
-#~ " seçerek bir tane belirleyebilirsiniz,"
-
-#~ msgid ""
-#~ "No data\n"
-#~ "Did you set a valid RSS feed?\n"
-#~ "Is your connection alive?"
-#~ msgstr ""
-#~ "Veri yok\n"
-#~ "Geçerli bir RSS beslemesi ayarladınız mı?\n"
-#~ "Bağlantınız sağlam mı?"
-
-#~ msgid "Recent files"
-#~ msgstr "Son dosyalar"
-
-#~ msgid "The value %s has been copied into the clipboard."
-#~ msgstr "%s değeri panoya kopyalandı."
-
-#~ msgid "Execute"
-#~ msgstr "Çalıştır"
-
-#~ msgid "Open a terminal here"
-#~ msgstr "Burada uçbirim aç"
-
-#~ msgid "Zip folder"
-#~ msgstr "Zip dizini"
-
-#~ msgid "Move to"
-#~ msgstr "Taşı"
-
-#~ msgid "Copy URL"
-#~ msgstr "Web Adresini Kopyala"
-
-#~ msgid "Zip file"
-#~ msgstr "Zip dosyası"
-
-#~ msgid "Mail file"
-#~ msgstr "Dosyayı postala"
-
-#~ msgid "Pick up a directory"
-#~ msgstr "Bir dizin seçin."
-
-#~ msgid "Files"
-#~ msgstr "Dosyalar"
-
-#~ msgid "Open"
-#~ msgstr "Aç"
-
-#~ msgid "Open in new window"
-#~ msgstr "Yeni pencerede aç"
-
-#~ msgid "Open file"
-#~ msgstr "Dosya aç"
-
-#~ msgid "Firefox bookmarks"
-#~ msgstr "Firefox yer imleri"
-
-#~ msgid "Mediadico"
-#~ msgstr "Mediadico"
-
-#~ msgid "Amazon"
-#~ msgstr "Amazon"
-
-#~ msgid "(F2) Music"
-#~ msgstr "(F2) Müzik"
-
-#~ msgid "(F3) Image"
-#~ msgstr "(F3) Resim"
-
-#~ msgid "(F4) Video"
-#~ msgstr "(F4) Video"
-
-#~ msgid "(F5) Text"
-#~ msgstr "(F5) Metin"
-
-#~ msgid "(F6) Html"
-#~ msgstr "(F6) Html"
-
-#~ msgid "(F7) Sources"
-#~ msgstr "Kaynaklar"
-
-#~ msgid "No result"
-#~ msgstr "Sonuç yok"
-
-#~ msgid "results"
-#~ msgstr "sonuçlar"
-
-#~ msgid "result"
-#~ msgstr "sonuç"
-
-#~ msgid "Enter your search"
-#~ msgstr "Aramanızı girin"
-
-#~ msgid "Activity time"
-#~ msgstr "Faaliyet süresi"
-
-#~ msgid "CPU model"
-#~ msgstr "İşlemci modeli"
-
-#~ msgid "Frequency"
-#~ msgstr "Sıklık"
-
-#~ msgid "core(s)"
-#~ msgstr "çekirdek(ler)"
-
-#~ msgid ""
-#~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
-#~ "etc.\n"
-#~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
-#~ msgstr ""
-#~ "Bu uygulamacık size CPU yükü, RAM kullanımı, grafik kartları sıcaklığı, "
-#~ "vb gösterir.\n"
-#~ "Bazı önemli bilgileri almak için simgeye orta tuşla tıklayın.\n"
-#~ "En çok kaynak kullanan programların bir listesini almak için simgeye sol "
-#~ "tıklayın.\n"
-#~ "Bu uygulamacığı her seferinde farklı değerler göstermesi için birçok kez "
-#~ "yineleyebilirsiniz."
-
-#~ msgid "GPU model"
-#~ msgstr "Ekran kartı modeli"
-
-#~ msgid "Video Ram"
-#~ msgstr "Video Belleği"
-
-#~ msgid "Mb"
-#~ msgstr "Mb"
-
-#~ msgid "Driver Version"
-#~ msgstr "Sürücü Versiyonu"
-
-#~ msgid "Core Temperature"
-#~ msgstr "Çekirdek Sıcaklığı"
-
-#~ msgid "Alert! Graphic Card core temperature has reached %d°C"
-#~ msgstr "Uyarı ! Grafik Kartı çekirdek sıcaklığı %d°C 'ye ulaştı"
-
-#~ msgid "Gb"
-#~ msgstr "Gb"
-
-#~ msgid "Memory"
-#~ msgstr "Bellek"
-
-#~ msgid "Buffers"
-#~ msgstr "Arabellekler"
-
-#~ msgid "Apply current luminosity on startup"
-#~ msgstr "Başlangıçta son parlaklığı uygula"
-
-#~ msgid "Set up gamma:"
-#~ msgstr "Gama ayarla:"
-
-#~ msgid "I couldn't open card '%s'"
-#~ msgstr "'%s' kartı açamadım"
-
-#~ msgid "Card '%s' opened but I couldn't get any info"
-#~ msgstr "'%s' kartı açıldı ama herhangi bir bilgi alamadım"
-
-#~ msgid "I couldn't open the mixer"
-#~ msgstr "Karıştırıcıyı açamadım"
-
-#~ msgid "I couldn't attach the mixer to the card"
-#~ msgstr "Karıştırıcıyı karta ekleyemedim"
-
-#~ msgid "I couldn't register options"
-#~ msgstr "Seçenekleri kayıt edemedim"
-
-#~ msgid "I couldn't load the mixer"
-#~ msgstr "Karıştırıcıyı yükleyemedim"
-
-#~ msgid "Set up volume:"
-#~ msgstr "Sesi ayarla :"
-
-#~ msgid "Adjust channels"
-#~ msgstr "Kanalları ayarla"
-
-#~ msgid "Monday"
-#~ msgstr "Pazartesi"
-
-#~ msgid "Tuesday"
-#~ msgstr "Salı"
-
-#~ msgid "Wednesday"
-#~ msgstr "Çarşamba"
-
-#~ msgid "Thursday"
-#~ msgstr "Perşembe"
-
-#~ msgid "Friday"
-#~ msgstr "Cuma"
-
-#~ msgid "Saturday"
-#~ msgstr "Cumartesi"
-
-#~ msgid "Sunday"
-#~ msgstr "Pazar"
-
-#~ msgid "Search for your location :"
-#~ msgstr "Konumunuzu arayın :"
-
-#~ msgid "clock"
-#~ msgstr "saat"
-
-#~ msgid "Set up time and date"
-#~ msgstr "Saat ve tarihi ayarla"
-
-#~ msgid "Title"
-#~ msgstr "Başlık"
-
-#~ msgid "Text"
-#~ msgstr "Metin"
-
-#~ msgid "Configure Compiz"
-#~ msgstr "Compiz Yapılandırması"
-
-#~ msgid "Emerald Manager"
-#~ msgstr "Emerald Yönetici"
-
-#~ msgid "Reload WM"
-#~ msgstr "WM'yi yeniden yükle"
-
-#~ msgid ""
-#~ "To configure Compiz, you need to install CCSM\n"
-#~ " through your package manager (Synaptic, YasT, etc)"
-#~ msgstr ""
-#~ "Compiz'i yapılandırmak için CCSM'yi kurmanız gerekir.\n"
-#~ " paket yöneticinizden (Synaptic, YasT, vb)"
-
-#~ msgid "Reload Emerald"
-#~ msgstr "Emerald'ı yeniden yükle"
-
-#~ msgid "Switch Windows Manager"
-#~ msgstr "Pencere Yöneticisini Değiştir"
-
-#~ msgid "CD box"
-#~ msgstr "CD kutusu"
-
-#~ msgid "dark"
-#~ msgstr "koyu"
-
-#~ msgid "clear"
-#~ msgstr "temizle"
-
-#~ msgid "futuristic"
-#~ msgstr "yenilikçi"
-
-#~ msgid "board"
-#~ msgstr "pano"
-
-#~ msgid "modern"
-#~ msgstr "çağdaş"
-
-#~ msgid ""
-#~ "Please wait for the current upload to finish before starting a new one."
-#~ msgstr ""
-#~ "Yeni bir tanesini başlatmadan önce lütfen mevcut veri yüklemenin "
-#~ "bitmesini bekleyin."
-
-#~ msgid "Clear the list of the recently uploaded files?"
-#~ msgstr "Son gönderilen dosyaların listesi temizlensin mi?"
-
-#~ msgid ""
-#~ "The text has been pasted in the clipboard.\n"
-#~ "You can retrieve it with CTRL+v."
-#~ msgstr ""
-#~ "Metin panoya yapıştırılmış.\n"
-#~ "Onu CTRL+v ile geri alabilirsiniz."
-
-#~ msgid ""
-#~ "The URL has been stored in the clipboard.\n"
-#~ "Just use 'CTRL+v' to paste it anywhere."
-#~ msgstr ""
-#~ "URL panoda kayıt altına alınmış.\n"
-#~ "Onu herhangi bir yere yapıştırmak için sadece 'CTRL+v'."
-
-#~ msgid ""
-#~ "No uploaded file available\n"
-#~ ".Just drag'n drop a file on the icon to upload it"
-#~ msgstr ""
-#~ "Hiçbir yüklenmiş dosya mevcut değil\n"
-#~ "Yüklemek için bir dosyayı simgeye sürükleyip bırakın."
-
-#~ msgid ""
-#~ "The current URL has been stored in the clipboard.\n"
-#~ "Just use 'CTRL+v' to paste it anywhere."
-#~ msgstr ""
-#~ "Mevcut URL panoda kayıt altına alınmış.\n"
-#~ "Onu herhangi bir yere yapıştırmak için sadece 'CTRL+v'."
-
-#~ msgid "File"
-#~ msgstr "Dosya"
-
-#~ msgid "Click on the icon to copy the URL into the clipboard."
-#~ msgstr "URLyi panoya kopyalamak için simgeye tıklayınız."
-
-#~ msgid "Send the clipboard's content"
-#~ msgstr "Panonun içeriğini gönder"
-
-#~ msgid "Get text"
-#~ msgstr "Metni alın"
-
-#~ msgid "Remove from history"
-#~ msgstr "Geçmişten çıkar"
-
-#~ msgid "Clear History"
-#~ msgstr "Geçmişi Temizle"
-
-#~ msgid "Caroussel"
-#~ msgstr "Atlı Karınca"
-
-#~ msgid "Rainbow"
-#~ msgstr "Gökkuşağı"
-
-#~ msgid "dustbin"
-#~ msgstr "çöp"
-
-#~ msgid "You're about to delete all files in all dustbins. Sure ?"
-#~ msgstr "Tüm çöplerdeki tüm dosyaları silmek üzeresiniz. Emin misiniz?"
-
-#~ msgid "Empty Trash"
-#~ msgstr "Çöpü Sil"
-
-#~ msgid "Display dustbins information"
-#~ msgstr "Çöp kovası bilgisini göster"
-
-#~ msgid "%s successfully unmounted"
-#~ msgstr "%s şimdi bağlı değil"
-
-#~ msgid "failed to unmount %s"
-#~ msgstr "%s'in bağını kaldırma başarısız"
-
-#~ msgid " trashe(s)"
-#~ msgstr " çöp(ler)"
-
-#~ msgid " file(s)"
-#~ msgstr " dosya(lar)"
-
-#~ msgid "calculating"
-#~ msgstr "hesaplanıyor"
-
-#~ msgid "icon effects"
-#~ msgstr "simge canlandırmaları"
-
-#~ msgid "Fire"
-#~ msgstr "Ateş"
-
-#~ msgid "Stars"
-#~ msgstr "Yıldızlar"
-
-#~ msgid "Rain"
-#~ msgstr "Yağmur"
-
-#~ msgid "Snow"
-#~ msgstr "Kar"
-
-#~ msgid "Storm"
-#~ msgstr "Fırtına"
-
-#~ msgid "Firework"
-#~ msgstr "Havai fişek"
-
-#~ msgid "illusion"
-#~ msgstr "yanılsama"
-
-#~ msgid "keyboard indicator"
-#~ msgstr "klavye göstergesi"
-
-#~ msgid "logout"
-#~ msgstr "çık"
-
-#~ msgid "Choose in how many minutes your PC will stop:"
-#~ msgstr "Kaç dakika içinde PC'nzin duracağını seçin:"
-
-#~ msgid "Lock screen"
-#~ msgstr "Ekranı kilitle"
-
-#~ msgid "Your computer will shut-down in 1 minute."
-#~ msgstr "Bilgisayarınız 1 dakika içerisinde kapanacak."
-
-#~ msgid "Please choose an account type."
-#~ msgstr "Lütfen bir hesap türü seçiniz."
-
-#~ msgid "New account's name"
-#~ msgstr "Yeni hesabın adı"
-
-#~ msgid "Please enter a name for this account."
-#~ msgstr "Lütfen bu hesap için bir ad giriniz."
-
-#~ msgid ""
-#~ "This account already exists.\n"
-#~ "Please choose another name for the new account."
-#~ msgstr ""
-#~ "Bu hesap zaten var.\n"
-#~ "Lütfen yeni hesap için başka ad seçiniz."
-
-#~ msgid "Enter a name for this account. You can give it any name you want."
-#~ msgstr ""
-#~ "Bu hesap için bir ad giriniz. İstediğiniz herhangi bir ad verebilirsiniz."
-
-#~ msgid "Remove Account"
-#~ msgstr "Hesabı Sil"
-
-#~ msgid "unknown"
-#~ msgstr "bilinmeyen"
-
-#~ msgid "no subject"
-#~ msgstr "konu yok"
-
-#~ msgid "No unread mail in your mailboxes"
-#~ msgstr "posta kutularınızda okunmamış posta yok"
-
-#~ msgid "You have %d new mails:"
-#~ msgstr "%d yeni postanız var :"
-
-#~ msgid "You have a new mail:"
-#~ msgstr "Bir yeni postanız var :"
-
-#~ msgid "mail"
-#~ msgstr "e-posta"
-
-#~ msgid "Refresh a mail account"
-#~ msgstr "Posta hesabını yenile"
-
-#~ msgid "Mark all emails as read"
-#~ msgstr "Tüm postaları okundu olarak işaretle"
-
-#~ msgid "Launch %s"
-#~ msgstr "%s başlat"
-
-#~ msgid "Mail"
-#~ msgstr "Posta"
-
-#~ msgid "Unknown artist"
-#~ msgstr "Bilinmeyen sanatçı"
-
-#~ msgid "Unknown title"
-#~ msgstr "Bilinmeyen başlık"
-
-#~ msgid "Track"
-#~ msgstr "Parça"
-
-#~ msgid "Current song"
-#~ msgstr "Geçerli şarkı"
-
-#~ msgid "Artist"
-#~ msgstr "Sanatçı"
-
-#~ msgid "Album"
-#~ msgstr "Albüm"
-
-#~ msgid "Track n°"
-#~ msgstr "Parça n°"
-
-#~ msgid "There is no media playing."
-#~ msgstr "Oynayan herhangi bir medya yok."
-
-#~ msgid "musicPlayer"
-#~ msgstr "müzikÇalar"
-
-#~ msgid "Find opened player"
-#~ msgstr "Açık oynatıcı bul"
-
-#~ msgid "Previous"
-#~ msgstr "Önceki"
-
-#~ msgid "Stop"
-#~ msgstr "Durdur"
-
-#~ msgid "Information"
-#~ msgstr "Bilgi"
-
-#~ msgid "Show JumpBox"
-#~ msgstr "JumpBox Göster"
-
-#~ msgid "Rate this song"
-#~ msgstr "Bu şarkıyı derecelendir"
-
-#~ msgid "Total amount of data"
-#~ msgstr "Toplam veri miktarı"
-
-#~ msgid "downloaded"
-#~ msgstr "İndirilen"
-
-#~ msgid "uploaded"
-#~ msgstr "gönderilen"
-
-#~ msgid "Re-check interface"
-#~ msgstr "Arayüzü tekrar-kontrol et"
-
-#~ msgid "Estimated charge time:"
-#~ msgstr "Tahmini şarj süresi:"
-
-#~ msgid "No battery found."
-#~ msgstr "Batarya bulunamadı."
-
-#~ msgid ""
-#~ "PowerManager.\n"
-#~ "Battery charge seems to be low"
-#~ msgstr ""
-#~ "GüçYönetimi.\n"
-#~ "Batarya şarjı düşük görünüyor"
-
-#~ msgid "Please put your laptop on charge."
-#~ msgstr "Lütfen dizüstünüzü şarja takınız."
-
-#~ msgid "Set up power management"
-#~ msgstr "Güç yönetimini ayarlayınız"
-
-#~ msgid "Reboot"
-#~ msgstr "Yeniden Başlat"
-
-#~ msgid "Open this folder"
-#~ msgstr "Bu dizini aç"
-
-#~ msgid "Open folder"
-#~ msgstr "Dizin aç"
-
-#~ msgid "%s is now unmounted"
-#~ msgstr "%s şimdi bağlı değil"
-
-#~ msgid "shortcuts"
-#~ msgstr "kısayollar"
-
-#~ msgid "Remove this bookmark"
-#~ msgstr "Bu yer imini kaldır"
-
-#~ msgid "show mouse"
-#~ msgstr "fareyi göster"
-
-#~ msgid "showDesktop"
-#~ msgstr "masaüstünüGöster"
-
-#~ msgid "Change screen resolution"
-#~ msgstr "Ekran çözünürlüğünü değiştir"
-
-#~ msgid "Play"
-#~ msgstr "Yürüt"
-
-#~ msgid "Pause"
-#~ msgstr "Duraklat"
-
-#~ msgid "Open current image"
-#~ msgstr "Mevcut görüntüyü aç"
-
-#~ msgid "Browse images folder"
-#~ msgstr "Görüntü dizinini aç"
-
-#~ msgid "stack"
-#~ msgstr "yığın"
-
-#~ msgid "Clear the stack?"
-#~ msgstr "Yığın temizlensin mi?"
-
-#~ msgid "Set new name for this item:"
-#~ msgstr "Bu öğe için yeni ad ayarlayın :"
-
-#~ msgid "Paste (drag'n'drop)"
-#~ msgstr "Yapıştır (sürükle bırak)"
-
-#~ msgid "Clear the stack"
-#~ msgstr "Yığını temizle"
-
-#~ msgid "Open (click)"
-#~ msgstr "Aç (Tıkla)"
-
-#~ msgid "Copy"
-#~ msgstr "Kopya"
-
-#~ msgid "Cut"
-#~ msgstr "Kes"
-
-#~ msgid "Rename this item"
-#~ msgstr "Bu öğeyi yeniden adlandrırın"
-
-#~ msgid "Remove this item"
-#~ msgstr "Bu ögeyi kaldır"
-
-#~ msgid "Current"
-#~ msgstr "Geçerli"
-
-#~ msgid "Rename this workspace"
-#~ msgstr "Bu çalışma alanını yeniden adlandırın"
-
-#~ msgid "Add a workspace"
-#~ msgstr "Bir masaüstü ekleyin"
-
-#~ msgid "Remove last workspace"
-#~ msgstr "Son masaüstünü kaldır"
-
-#~ msgid "Move current workspace to this workspace"
-#~ msgstr "Geçerli masaüstünü bu masasütüne taşı"
-
-#~ msgid ""
-#~ "This will move all windows from the current desktop to the one you "
-#~ "clicked on."
-#~ msgstr "Bu geçerli masaüstündeki tüm pencereleri tıkladığınıza taşır."
-
-#~ msgid "Windows List"
-#~ msgstr "Pencereler Listesi"
-
-#~ msgid "CD_APPLET_NAME"
-#~ msgstr "CD_APPLET_NAME"
-
-#~ msgid ""
-#~ "Useful description\n"
-#~ "and manual"
-#~ msgstr ""
-#~ "Yararlı açıklamalar\n"
-#~ "ve kılavuz"
-
-#~ msgid "New Tab"
-#~ msgstr "Yeni Sekme"
-
-#~ msgid "Rename current Tab"
-#~ msgstr "Geçerli Sekmeyi yeniden adlandır"
-
-#~ msgid "Close current Tab"
-#~ msgstr "Geçerli Sekmeyi kapat"
-
-#~ msgid "Terminal"
-#~ msgstr "Uçbirim"
-
-#~ msgid "Set title for this tab:"
-#~ msgstr "Bu sekme için başlık ayarla :"
-
-#~ msgid "Select a color"
-#~ msgstr "Bir renk seç"
-
-#~ msgid "You can recall the Terminal desklet by typing %s"
-#~ msgstr ""
-#~ "Uçbirim masaüstü uygulamacığını %s yazarak yeniden çalıştırabilirsiniz"
-
-#~ msgid "Paste"
-#~ msgstr "Yapıştır"
-
-#~ msgid "Rename this Tab"
-#~ msgstr "Bu Sekmeyi yeniden adlandır"
-
-#~ msgid "Change this Tab's colour"
-#~ msgstr "Bu Sekmen'nin rengini değiştir"
-
-#~ msgid "Close this Tab"
-#~ msgstr "Bu sekmeyi kapat"
-
-#~ msgid "Note name : "
-#~ msgstr "Notun adı : "
-
-#~ msgid "Delete this note?"
-#~ msgstr "Bu notu sil?"
-
-#~ msgid "Search for:"
-#~ msgstr "Ara :"
-
-#~ msgid "Search for tag:"
-#~ msgstr "Etiket için ara :"
-
-#~ msgid "Add a note"
-#~ msgstr "Bir not ekle"
-
-#~ msgid "Delete this note"
-#~ msgstr "Bu notu sil"
-
-#~ msgid "Reload notes"
-#~ msgstr "Notları yeniden yükle"
-
-#~ msgid "Search"
-#~ msgstr "Arama"
-
-#~ msgid "Search for tag"
-#~ msgstr "Tanımlama bilgisi ara"
-
-#~ msgid "Search for today's note"
-#~ msgstr "Bu günün notunu ara"
-
-#~ msgid "Search for this week's note"
-#~ msgstr "Bu haftanın notunu ara"
-
-#~ msgid "Search for next week's note"
-#~ msgstr "Sonraki haftanın notunu ara"
-
-#~ msgid "Reset marks"
-#~ msgstr "İşaretleri temizle"
-
-#~ msgid "I couldn't find this location"
-#~ msgstr "Bu konumu bulamadım"
-
-#~ msgid "weather"
-#~ msgstr "hava"
-
-#~ msgid "Jan"
-#~ msgstr "Oca"
-
-#~ msgid "Feb"
-#~ msgstr "Şub"
-
-#~ msgid "Mar"
-#~ msgstr "Mar"
-
-#~ msgid "Apr"
-#~ msgstr "Nis"
-
-#~ msgid "May"
-#~ msgstr "May"
-
-#~ msgid "Jun"
-#~ msgstr "Haz"
-
-#~ msgid "Jui"
-#~ msgstr "Tem"
-
-#~ msgid "Aug"
-#~ msgstr "Ağu"
-
-#~ msgid "Sep"
-#~ msgstr "Eyl"
-
-#~ msgid "Oct"
-#~ msgstr "Eki"
-
-#~ msgid "Nov"
-#~ msgstr "Kas"
-
-#~ msgid "Dec"
-#~ msgstr "Ara"
-
-#~ msgid "Data are being retrieved, please wait a moment."
-#~ msgstr "Veri alınıyor, lütfen biraz bekleyin."
-
-#~ msgid "Reload now"
-#~ msgstr "Şimdi yeniden yükle"
-
-#~ msgid "Temperature"
-#~ msgstr "Sıcaklık"
-
-#~ msgid "Precipitation probability"
-#~ msgstr "Yağış ihtimali"
-
-#~ msgid "Wind"
-#~ msgstr "Rüzgar"
-
-#~ msgid "Humidity"
-#~ msgstr "Nem"
-
-#~ msgid "Sunrise"
-#~ msgstr "GünDoğumu"
-
-#~ msgid "Sunset"
-#~ msgstr "GünBatımı"
-
-#~ msgid "Data are being fetched, please re-try in a few seconds."
-#~ msgstr "Veri alınıyor, lütfen birkaç saniye içinde yeniden deneyiniz."
-
-#~ msgid ""
-#~ "No data available\n"
-#~ "Retrying now..."
-#~ msgstr ""
-#~ "Mevcut veri yok\n"
-#~ "Şimdi yeniden deneniyor ..."
-
-#~ msgid "Pressure"
-#~ msgstr "Basınç"
-
-#~ msgid "Weblets"
-#~ msgstr "İnternet uygulamacıkları"
-
-#~ msgid "WiFi disabled."
-#~ msgstr "Kablosuz devredışı."
-
-#~ msgid "Global"
-#~ msgstr "Evrensel"
-
-#~ msgid "when hovering over an icon"
-#~ msgstr "bir simge vurgulanırken"
-
-#~ msgid "Effects used:"
-#~ msgstr "Kullanılan canlandırmalar :"
-
-#~ msgid "when clicking on an launcher"
-#~ msgstr "bir başlatıcı tıklanırken"
-
-#~ msgid "Effects used on launcher:"
-#~ msgstr "Başlatıcıda kullanılan canlandırmalar:"
-
-#~ msgid "Number of times the animation will play:"
-#~ msgstr "Canlandırmanın kaç kez oynayacağı:"
-
-#~ msgid "when clicking on an application"
-#~ msgstr "Bir uygulamaya tıklarken"
-
-#~ msgid "Effects used on applications:"
-#~ msgstr "Uygulamalarda kullanılan canlandırmalar:"
-
-#~ msgid "when clicking on an applet"
-#~ msgstr "bir uygulamacık tıklandığında"
-
-#~ msgid "Effects used on applets:"
-#~ msgstr "Uygulamacıklarda kullanılan canlandırmalar:"
-
-#~ msgid "Rotation"
-#~ msgstr "Dönüş"
-
-#~ msgid "Cube"
-#~ msgstr "Küp"
-
-#~ msgid "Colour of the sheen:"
-#~ msgstr "Parlaklığın rengi:"
-
-#~ msgid "Halo colour:"
-#~ msgstr "Hale rengi:"
-
-#~ msgid "Rays"
-#~ msgstr "Işınlar"
-
-#~ msgid "Random colours?"
-#~ msgstr "Rastgele renkler ?"
-
-#~ msgid "Ray size:"
-#~ msgstr "Işın boyutu:"
-
-#~ msgid "Ray speed:"
-#~ msgstr "Işın hızı:"
-
-#~ msgid "Initial stretch:"
-#~ msgstr "İlk gerilme:"
-
-#~ msgid "Horizontal stretch"
-#~ msgstr "Yatay gerilme"
-
-#~ msgid "Vertical stretch"
-#~ msgstr "Dikey gerilme"
-
-#~ msgid "Wave width:"
-#~ msgstr "Dalga genişliği:"
-
-#~ msgid "Icon size for busy penguin:"
-#~ msgstr "Meşgul penguen için simge boyutu:"
-
-#~ msgid "Penguin transparency:"
-#~ msgstr "Pengusen şeffaflığı"
-
-#~ msgid "in pixels."
-#~ msgstr "pikselde."
-
-#~ msgid "Default colour:"
-#~ msgstr "Varsayılan renk:"
-
-#~ msgid "Use this to increase the space between the lines"
-#~ msgstr "Çizgiler arasındaki boşluğu artırmak için bunu kullanın"
-
-#~ msgid "Background"
-#~ msgstr "Arkaplan"
-
-#~ msgid "Background first colour :"
-#~ msgstr "Arkaplan birinci rengi :"
-
-#~ msgid "Background second colour:"
-#~ msgstr "Arkaplan ikinci rengi :"
-
-#~ msgid "Border thickness:"
-#~ msgstr "Kenar kalınlığı:"
-
-#~ msgid "Border colour"
-#~ msgstr "Kenar rengi"
-
-#~ msgid "Border colour :"
-#~ msgstr "Kenar rengi"
-
-#~ msgid "Command to use for configuring the menu:"
-#~ msgstr "Menüyü yapılandırmada kullanılan komut:"
-
-#~ msgid "Leave blank if filter is not needed."
-#~ msgstr "Eğer filtre gerekli değilse boş bırakın."
-
-#~ msgid "Display numeric values:"
-#~ msgstr "Sayısal değerleri göster:"
-
-#~ msgid "Default icon:"
-#~ msgstr "Varsayılan simge:"
-
-#~ msgid "Modern"
-#~ msgstr "çağdaş"
-
-#~ msgid "Space between icons:"
-#~ msgstr "Simgeler arasındaki boşluk:"
-
-#~ msgid "Position of horizontal scrollbar"
-#~ msgstr "Yatay kaydırma çubuğunun konumu"
-
-#~ msgid "'No signal' icon filename:"
-#~ msgstr "'Sinyal yok' simgesi dosya adı:"
-
-#~ msgid "'Very low' icon filename:"
-#~ msgstr "'Çok düşük' simge dosya adı:"
-
-#~ msgid "'Low' icon filename:"
-#~ msgstr "'Düşük' simge dosya adı:"
-
-#~ msgid "'Average' icon filename:"
-#~ msgstr "'Ortalama' simge dosya adı:"
-
-#~ msgid "'Good' icon filename:"
-#~ msgstr "'iyi' simge dosya adı:"
-
-#~ msgid "'Excellent' icon filename:"
-#~ msgstr "'Mükemmel' simge dosya adı:"
-
-#~ msgid "Signal Strength"
-#~ msgstr "Sinyal Gücü"
-
-#~ msgid "Signal Strength in percent"
-#~ msgstr "Yüzde olarak Sinyal Gücü"

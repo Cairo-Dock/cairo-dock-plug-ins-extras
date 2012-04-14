@@ -7,32 +7,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2011-06-21 00:09+0000\n"
+"POT-Creation-Date: 2012-04-12 00:34+0000\n"
+"PO-Revision-Date: 2012-04-12 03:31+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-07-12 04:51+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
+"X-Launchpad-Export-Date: 2012-04-13 05:35+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
+"Language: hu\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
+"A GnoMenu nincs telepítve. Telepítse, mielőtt használja a kisalkalmazást."
 
 #: ../GnoMenu/GnoMenu:138
 msgid "GnoMenu's settings"
-msgstr ""
+msgstr "A GnoMenu beállításai"
 
 #: ../GnoMenu/GnoMenu:141
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:119
 #: ../MintMenu/MintMenu:154
 msgid "Edit Menus"
-msgstr ""
+msgstr "Menük szerkesztése"
 
 #: ../GnoMenu/messages:1 ../Calendar/messages:1 ../Cardapio/messages:1
 #: ../Deluge/messages:1 ../DiskFree/messages:1 ../Gmail/messages:1
@@ -115,9 +118,8 @@ msgstr ""
 #: ../Translator/messages:15 ../Transmission/messages:15
 #: ../Twitter/messages:15 ../WebSearch/messages:13
 #: ../WindowsKiller/messages:15 ../Xchat/messages:15
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Hagyja üresen az alapértelmezés használatához."
+msgstr ""
 
 #: ../GnoMenu/messages:17 ../Calendar/messages:17 ../Cardapio/messages:17
 #: ../Deluge/messages:17 ../DiskFree/messages:17 ../Gmail/messages:11
@@ -151,9 +153,8 @@ msgstr ""
 #: ../Translator/messages:21 ../Transmission/messages:21
 #: ../Twitter/messages:21 ../WebSearch/messages:19
 #: ../WindowsKiller/messages:19 ../Xchat/messages:21
-#, fuzzy
 msgid "Desklet"
-msgstr "Asztal"
+msgstr ""
 
 #: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
 #: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:19
@@ -162,9 +163,8 @@ msgstr "Asztal"
 #: ../Pidgin/messages:23 ../Quote/messages:25 ../Translator/messages:23
 #: ../Transmission/messages:23 ../Twitter/messages:23 ../WebSearch/messages:21
 #: ../WindowsKiller/messages:21 ../Xchat/messages:23
-#, fuzzy
 msgid "Position"
-msgstr "Forgatás"
+msgstr ""
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:21
@@ -305,9 +305,8 @@ msgstr "Normál"
 #: ../Translator/messages:51 ../Transmission/messages:49
 #: ../Twitter/messages:49 ../WebSearch/messages:47
 #: ../WindowsKiller/messages:47 ../Xchat/messages:49
-#, fuzzy
 msgid "Keep above"
-msgstr "Maradj csöndben!"
+msgstr ""
 
 #: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
 #: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:47
@@ -318,9 +317,8 @@ msgstr "Maradj csöndben!"
 #: ../Translator/messages:53 ../Transmission/messages:51
 #: ../Twitter/messages:51 ../WebSearch/messages:49
 #: ../WindowsKiller/messages:49 ../Xchat/messages:51
-#, fuzzy
 msgid "Keep below"
-msgstr "Maradj csöndben!"
+msgstr ""
 
 #: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
 #: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:49
@@ -363,9 +361,8 @@ msgstr "Látható legyen minden asztalon?"
 #: ../Translator/messages:61 ../Transmission/messages:59
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:57 ../Xchat/messages:59
-#, fuzzy
 msgid "Decorations"
-msgstr "Információ"
+msgstr ""
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:57
@@ -490,11 +487,8 @@ msgstr "Jobb oldali eltolás:"
 #: ../Pidgin/messages:83 ../Quote/messages:85 ../Transmission/messages:83
 #: ../Twitter/messages:83 ../WebSearch/messages:81
 #: ../WindowsKiller/messages:81 ../Xchat/messages:83
-#, fuzzy
 msgid "in pixels. Use this to adjust the bottom position of drawings."
 msgstr ""
-"pixelekben. Ezzel állíthatja be a rajzok felső oldalhoz viszonyított "
-"helyzetét."
 
 #: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
 #: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:81
@@ -555,9 +549,8 @@ msgid "Shortkey to pop up the menu:"
 msgstr ""
 
 #: ../Calendar/messages:95
-#, fuzzy
 msgid "Applications"
-msgstr "Animációk:"
+msgstr ""
 
 #: ../Calendar/messages:97
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -572,11 +565,10 @@ msgid "Behaviour"
 msgstr "Viselkedés"
 
 #: ../Calendar/messages:103
-#, fuzzy
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
-msgstr "Hagyja üresen az alapértelmezés használatához."
+msgstr ""
 
 #: ../Calendar/messages:105
 msgid "Icon custom script:"
@@ -586,24 +578,25 @@ msgstr ""
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
 msgstr ""
+"Nincs telepítve a Cardapio. Telepítenie kell, mielőtt használni tudná a "
+"kisalkalmazást."
 
 #: ../Deluge/Deluge:166
 msgid "Deluge is not running, or is not responding to us."
-msgstr ""
+msgstr "A Deluge nem fut vagy nem válaszol."
 
 #: ../Deluge/Deluge:287 ../Transmission/Transmission:395
 msgid "Pause all torrents"
-msgstr ""
+msgstr "Az összes torrent megállítása"
 
 #: ../Deluge/Deluge:292 ../Transmission/Transmission:400
 msgid "Resume all torrents"
-msgstr ""
+msgstr "Az összes torrent folytatása"
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
-#, fuzzy
 msgid "Torrents info"
-msgstr "Lemezinformációk beszerzése"
+msgstr ""
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
@@ -690,9 +683,8 @@ msgid "Which animation should the apply to the icon?"
 msgstr ""
 
 #: ../Gmail/messages:115
-#, fuzzy
 msgid "Choose animation?"
-msgstr "Beállítás"
+msgstr ""
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
@@ -720,9 +712,8 @@ msgid "Path to sound file:"
 msgstr ""
 
 #: ../Gmail/messages:129
-#, fuzzy
 msgid "Display a counter on the icon?"
-msgstr "Megjelenjenek az ikonok a menüben?"
+msgstr ""
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
@@ -787,7 +778,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -813,15 +805,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
-#, fuzzy
 msgid "On Widget Layer"
-msgstr "Szerkentyű réteg"
+msgstr ""
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
-#, fuzzy
 msgid "Should be visible on all desktops ?"
-msgstr "Látható legyen minden asztalon?"
+msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:51
@@ -832,9 +822,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53
-#, fuzzy
 msgid "Lock position ?"
-msgstr "Forgatás"
+msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55
@@ -843,9 +832,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
 #: ../Screensaver_inhibitor/messages:57
-#, fuzzy
 msgid "Rotation :"
-msgstr "Forgatás:"
+msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
@@ -866,70 +854,53 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
-#, fuzzy
 msgid "Background image :"
-msgstr "Háttérkép:"
+msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
-#, fuzzy
 msgid "Background tansparency :"
-msgstr "Háttér átlátszósága:"
+msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
-#, fuzzy
 msgid "in pixels. Use this to adjust the left position of the drawings."
 msgstr ""
-"pixelekben. Ezzel állíthatja be a rajzok bal oldalhoz viszonyított helyzetét."
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Screensaver_inhibitor/messages:73 ../Translator/messages:75
-#, fuzzy
 msgid "Left offset :"
-msgstr "Bal oldali eltolás"
+msgstr ""
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Screensaver_inhibitor/messages:75 ../Translator/messages:77
-#, fuzzy
 msgid "in pixels. Use this to adjust the top position of the drawings."
 msgstr ""
-"pixelekben. Ezzel állíthatja be a rajzok felső oldalhoz viszonyított "
-"helyzetét."
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Screensaver_inhibitor/messages:77 ../Translator/messages:79
-#, fuzzy
 msgid "Top offset :"
-msgstr "Felső eltolás:"
+msgstr ""
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Screensaver_inhibitor/messages:79 ../Translator/messages:81
-#, fuzzy
 msgid "in pixels. Use this to adjust the right position of the drawings."
 msgstr ""
-"pixelekben. Ezzel állíthatja be a rajzok jobb oldalhoz viszonyított "
-"helyzetét."
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Screensaver_inhibitor/messages:81 ../Translator/messages:83
-#, fuzzy
 msgid "Right offset :"
-msgstr "Jobb oldali eltolás:"
+msgstr ""
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Screensaver_inhibitor/messages:83 ../Translator/messages:85
-#, fuzzy
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
 msgstr ""
-"pixelekben. Ezzel állíthatja be a rajzok felső oldalhoz viszonyított "
-"helyzetét."
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Screensaver_inhibitor/messages:85 ../Translator/messages:87
-#, fuzzy
 msgid "Bottom offset :"
-msgstr "Alsó eltolás:"
+msgstr ""
 
 #: ../HDDtemperature/messages:81 ../Moon/messages:83
 #: ../Screensaver_inhibitor/messages:87 ../Translator/messages:89
@@ -940,15 +911,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
-#, fuzzy
 msgid "Foreground image :"
-msgstr "Előtér kép:"
+msgstr ""
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
-#, fuzzy
 msgid "Foreground tansparency :"
-msgstr "Előtér átlátszósága:"
+msgstr ""
 
 #: ../HDDtemperature/messages:89
 msgid "One or more device drive path to monitor:"
@@ -988,12 +957,14 @@ msgstr ""
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
-msgstr ""
+msgstr "Az összes torrent felföggesztése"
 
 #: ../Lancelot/Lancelot:86
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr ""
+"Nincs telepítve a Lancelot. Telepítenie kell, mielőtt használni tudná a "
+"kisalkalmazást."
 
 #: ../Liferea/messages:95
 msgid "Show in the icon:"
@@ -1011,6 +982,8 @@ msgstr ""
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr ""
+"Nincs telepítve a MintMenu. Telepítenie kell, mielőtt használni tudná a "
+"kisalkalmazást."
 
 #: ../Moon/messages:91
 msgid "Show the moon for all the current week?"
@@ -1034,27 +1007,29 @@ msgstr ""
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
-msgstr ""
+msgstr "Társalgások"
 
 #: ../Pidgin/Pidgin:421
 msgid "Change your status"
-msgstr ""
+msgstr "Állapot megváltoztatása"
 
 #: ../Pidgin/Pidgin:436
 msgid "Set your status message"
-msgstr ""
+msgstr "Állapotüzenet beállítása"
 
 #: ../Pidgin/Pidgin:441 ../Xchat/Xchat:270
 msgid "Silent mode"
-msgstr ""
+msgstr "Csendes mód"
 
 #: ../Pidgin/Pidgin:445 ../Xchat/Xchat:274
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
+"A kisalkalmazás csendes módra állítása (nincs felugró ablak új üzenet "
+"érkezésekor)."
 
 #: ../Pidgin/Pidgin:456
 msgid "Enter your new status message:"
-msgstr ""
+msgstr "Adja meg az új állapotüzenetet:"
 
 #: ../Pidgin/messages:95 ../Pidgin/messages:99
 msgid "Parameters"
@@ -1098,9 +1073,8 @@ msgid "big"
 msgstr "nagy"
 
 #: ../Quote/messages:7
-#, fuzzy
 msgid "Let empty to display the current site's name."
-msgstr "Hagyja üresen az alapértelmezés használatához."
+msgstr ""
 
 #: ../Quote/messages:97
 msgid "Quote source:"
@@ -1147,9 +1121,8 @@ msgid "Inhibit for a given timelength (in minutes)"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
-#, fuzzy
 msgid "timelength"
-msgstr "Hossz"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 msgid "Inhibit for a given timelength"
@@ -1188,19 +1161,19 @@ msgstr ""
 
 #: ../Translator/Translator:424
 msgid "To"
-msgstr ""
+msgstr "Hova"
 
 #: ../Translator/Translator:443
 msgid "From"
-msgstr ""
+msgstr "Honnan"
 
 #: ../Translator/Translator:463
 msgid "Switch languages"
-msgstr ""
+msgstr "Nyelvek felcserélése"
 
 #: ../Translator/Translator:476
 msgid "Translate from clipboard (middle-click)"
-msgstr ""
+msgstr "Fordítás a vágólapról (középső egérgomb)"
 
 #: ../Translator/messages:97
 msgid "Languages"
@@ -1508,16 +1481,18 @@ msgstr ""
 
 #: ../Transmission/Transmission:186
 msgid "Transmission is not running, or is not responding to us."
-msgstr ""
+msgstr "A Transmission nem fut vagy nem válaszol."
 
 #: ../Transmission/Transmission:193
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
+"Nem érkezett adat a Transmissiontól. Az 1.9 vagy frissebb verzió használata "
+"szükséges."
 
 #: ../Transmission/Transmission:353
 msgid "You have to enable the Web client in the Transmisison's settings."
-msgstr ""
+msgstr "Engedélyeznie kell a webes felületet a Transmission beállításaiban."
 
 #: ../Twitter/Twitter:240 ../Twitter/Twitter:274
 msgid "Oh, dear, your timeline is empty :-("
@@ -1627,9 +1602,8 @@ msgid "Large"
 msgstr ""
 
 #: ../WebSearch/messages:93
-#, fuzzy
 msgid "Search engine :"
-msgstr "Keresés az interneten"
+msgstr ""
 
 #: ../WebSearch/messages:95
 msgid "Google"
@@ -1676,9 +1650,8 @@ msgid "Digg"
 msgstr ""
 
 #: ../WebSearch/messages:117
-#, fuzzy
 msgid "in sub-icons."
-msgstr "másodpercekben."
+msgstr ""
 
 #: ../WebSearch/messages:119
 msgid "Maximum number of results shown :"
@@ -1706,1365 +1679,8 @@ msgstr ""
 
 #: ../Xchat/Xchat:257
 msgid "Channels"
-msgstr ""
+msgstr "Csatornák"
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
-msgstr ""
-
-#, fuzzy
-#~ msgid "in s."
-#~ msgstr "másodpercekben."
-
-#~ msgid "Choose one of the available themes:"
-#~ msgstr "Válasszon ki egyet az elérhető témákból:"
-
-#~ msgid "Appearance"
-#~ msgstr "Megjelenés"
-
-#~ msgid "Animated icons"
-#~ msgstr "Ikonanimációk"
-
-#~ msgid "This plug-in provides many different animations for your icons."
-#~ msgstr "Ez a bővítmény számos különböző animációt biztosít az ikonjainak."
-
-#~ msgid "Wave"
-#~ msgstr "Hullámzás"
-
-#~ msgid "Spot"
-#~ msgstr "Reflektorfény"
-
-#~ msgid ""
-#~ "Add a lively Penguin in your dock !\n"
-#~ "Left click to change the animation,\n"
-#~ "Middle-click to disturb him ^_^\n"
-#~ "Tux images are taken from Pingus, some other characters are available or "
-#~ "can be added easily."
-#~ msgstr ""
-#~ "Adjon hozzá egy élő pingvint a dokkhoz!\n"
-#~ "Az animáció megváltoztatásához kattintson rajta bal egérgombbal,\n"
-#~ "a megzavarásához pedig a középső egérgombbal.\n"
-#~ "Tux képei a Pingusból származnak, további karakterek érhetők el, vagy "
-#~ "adhatók hozzá könnyedén."
-
-#~ msgid "Hey, I'm here!"
-#~ msgstr "Hé, itt vagyok!"
-
-#~ msgid "Sorry but I'm busy right now."
-#~ msgstr "Bocs, de épp nem érek rá."
-
-#~ msgid ""
-#~ "I don't have time to play with you, I have to dig and mine all these "
-#~ "icons."
-#~ msgstr ""
-#~ "Nincs időm veled játszani, fel kell ásnom és aláaknáznom ezeket az "
-#~ "ikonokat."
-
-#~ msgid "Your dock is so messy! Let me clean it."
-#~ msgstr "A dokkod olyan piszkos! Hadd takarítsam ki."
-
-#~ msgid "Admit my superiority on you as a penguin!"
-#~ msgstr "Ismerd el, hogy pingvinként fölényben vagyok!"
-
-#~ msgid "Wait, do you want to kill me?!"
-#~ msgstr "Várj csak, meg akarsz ölni?!"
-
-#~ msgid "Do you know how painful it is to be clicked on??"
-#~ msgstr "Tudod te, hogy milyen fájdalmas, ha rádkattintanak???"
-
-#~ msgid "It's my dock now, mwahahaha!"
-#~ msgstr "Mostantól ez az én dokkom, hahahaha!"
-
-#~ msgid "I want to be a pirate!"
-#~ msgstr "Kalóz szeretnék lenni!"
-
-#~ msgid "You shall not pass!"
-#~ msgstr "Itt úgysem jutsz át!"
-
-#~ msgid "I'm your father!"
-#~ msgstr "Én vagyok az apád!"
-
-#~ msgid ""
-#~ "- Gee, Brain, what do you want to do tonight?\n"
-#~ "- The same thing we do every night, Pinky : try to take over the Dock!"
-#~ msgstr ""
-#~ "- Jé, Brain, mit csinálunk ma este?\n"
-#~ "- Ugyanazt, amit minden este, Pinky. Megpróbáljuk átvenni a hatalmat a "
-#~ "dokk felett!"
-
-#~ msgid "For Aiur!"
-#~ msgstr "Auirért!"
-
-#~ msgid "Wake up"
-#~ msgstr "Kelj fel!"
-
-#~ msgid "Start XPenguins"
-#~ msgstr "XPenguins indítása"
-
-#~ msgid "Stop XPenguins"
-#~ msgstr "XPenguins leállítása"
-
-#~ msgid "Zzzzz"
-#~ msgstr "Zzzzz"
-
-#~ msgid "No items yet."
-#~ msgstr "A vágólap üres."
-
-#~ msgid ""
-#~ "This applet keeps a trace of the clipboard and mouse selection,\n"
-#~ "so that you can recall them quickly. It's a clone of the well-know "
-#~ "Klipper.\n"
-#~ "It supports clipboard and mouse selection, predefined actions, and "
-#~ "persistent items.\n"
-#~ "Left-click to popup the clipboard and mouse selection history,\n"
-#~ "Drop text on the icon to create persistent items, and middle-clck to "
-#~ "recall them."
-#~ msgstr ""
-#~ "Ez a kisalkalmazás tárolja a vágólap tartalmát és az "
-#~ "egérkiválasztásokat,\n"
-#~ "így gyorsan előhívhatja azokat. Ez a kisalkalmazás a jól ismert Klipper "
-#~ "klónja.\n"
-#~ "Támogatja a vágólapot és az egérkiválasztásokat, előre meghatározott "
-#~ "cselekvéseket, és az állandó elemeket.\n"
-#~ "Bal egérgombbal kattintva megjelenik a vágólap és az egérkiválasztás "
-#~ "előzménye,\n"
-#~ "Állandó elem létrehozásához húzzon szöveget az ikonra, amit középső "
-#~ "egérgombbal hívhat elő."
-
-#~ msgid ""
-#~ "No persistent items.\n"
-#~ "You can add some by drag and dropping some text on the icon."
-#~ msgstr ""
-#~ "Nincsenek állandó elemek.\n"
-#~ "Új elem hozzáadásához húzza a kijelölt szöveget az ikonra."
-
-#~ msgid ""
-#~ "This plug-in lets extern applications interact on the dock.\n"
-#~ "The communication between both sides is based on Dbus"
-#~ msgstr ""
-#~ "Ez a beépülő modul megjeleníti a külső alkalmazásokat is a dokkon.\n"
-#~ "A két oldal közötti kommunikáció DBus-on keresztül zajlik."
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
-#~ msgid "System Monitor"
-#~ msgstr "Rendszerfigyelő"
-
-#~ msgid "day(s)"
-#~ msgstr "nap(ok)"
-
-#~ msgid ""
-#~ "Displays the common Applications menu and the Recently used files.\n"
-#~ "It is compatible with any XDG compliant menu (Gnome, XFCE, KDE, ...)\n"
-#~ "Middle-click to open a dialog to quickly launch any command (you can set "
-#~ "up a shortkey for it, like ALT+F2)\n"
-#~ "You can also set up a shortkey to pop up the menu (like ALT+F1)"
-#~ msgstr ""
-#~ "Megjeleníti a megszokott Alkalmazások menüt és a legutóbbi "
-#~ "dokumentumokat.\n"
-#~ "Kompatibilis minden, az XDG-specifikációnak megfelelő menüvel (Gnome,"
-#~ "XFCE, KDE, ...)\n"
-#~ "A középső egérgomb megnyitja a gyorsindító párbeszédablakot (beállíthat "
-#~ "rá egy billentyű-kombinációt is, például ALT+F2)\n"
-#~ "Beállíthat gyorsbillentyűt a menü megnyitására is (például ALT+F1)"
-
-#~ msgid "Quick launch"
-#~ msgstr "Gyorsindítás"
-
-#~ msgid "Configure menu"
-#~ msgstr "Menüszerkesztő"
-
-#~ msgid "Clear recent"
-#~ msgstr "Legutóbbi dokumentumok törlése..."
-
-#~ msgid "Recent Documents"
-#~ msgstr "Legutóbbi dokumentumok"
-
-#~ msgid "Clear the list of the recently used documents?"
-#~ msgstr "Törli a legutóbbi dokumentumok listáját?"
-
-#~ msgid "Enter a command to launch:"
-#~ msgstr "Írja be a futtatandó parancsot:"
-
-#~ msgid "None"
-#~ msgstr "Nincs"
-
-#~ msgid "Very Low"
-#~ msgstr "Nagyon alacsony"
-
-#~ msgid "Low"
-#~ msgstr "Alacsony"
-
-#~ msgid "Middle"
-#~ msgstr "Közepes"
-
-#~ msgid "Good"
-#~ msgstr "Jó"
-
-#~ msgid "Excellent"
-#~ msgstr "Kiváló"
-
-#~ msgid "Not connected"
-#~ msgstr "Nincs kapcsolat"
-
-#~ msgid "Wired connection"
-#~ msgstr "Vezetékes kapcsolat"
-
-#~ msgid ""
-#~ "Checking connection...\n"
-#~ "Please retry in a few seconds"
-#~ msgstr ""
-#~ "Kapcsolat ellenőrzése...\n"
-#~ "Kérem próbálja meg pár másodperc múlva"
-
-#~ msgid "Wired Connection."
-#~ msgstr "Vezetékes kapcsolat."
-
-#~ msgid "Interface"
-#~ msgstr "Csatoló"
-
-#~ msgid "Speed"
-#~ msgstr "Sebesség"
-
-#~ msgid "Wifi enabled."
-#~ msgstr "Vezeték nélküli kapcsolat engedélyezve."
-
-#~ msgid "Network ID"
-#~ msgstr "Hálózati azonosító"
-
-#~ msgid "Unknown"
-#~ msgstr "Ismeretlen"
-
-#~ msgid "Access point"
-#~ msgstr "Hozzáférési pont"
-
-#~ msgid "Signal Quality"
-#~ msgstr "Jelminőség"
-
-#~ msgid "Network-Monitor"
-#~ msgstr "Hálózatfigyelő"
-
-#~ msgid "Loading"
-#~ msgstr "Betöltés"
-
-#~ msgid "Check for Wireless Extension"
-#~ msgstr "Vezeték nélküli kiterjesztés ellenőrzése"
-
-#~ msgid "Network Administration"
-#~ msgstr "Hálózatfelügyelet"
-
-#~ msgid "RSSreader"
-#~ msgstr "Hírolvasó"
-
-#~ msgid "Retrieving data..."
-#~ msgstr "Adatok letöltése..."
-
-#~ msgid "It doesn't seem to be a valid URL."
-#~ msgstr "Az URL-cím érvénytelennek tűnik."
-
-#~ msgid "Paste a new RSS Url (drag and drop)"
-#~ msgstr "Új hírforrás URL-címének beillesztése (fogd és vidd módszer)"
-
-#~ msgid "Open with your web browser"
-#~ msgstr "Megnyitás webböngészővel"
-
-#~ msgid "No URL is defined."
-#~ msgstr "Nincs megadva hivatkozás."
-
-#~ msgid "No data (no connection?)"
-#~ msgstr "Nincs adat (nincs kapcsolat?)"
-
-#~ msgid "Invalid data (invalid RSS/Atom feed?)"
-#~ msgstr "Érvénytelen adat (érvénytelen RSS/Atom forrás?)"
-
-#~ msgid "No data"
-#~ msgstr "Nincs adat"
-
-#~ msgid "This RSS feed has been modified..."
-#~ msgstr "Ez a hírforrás megváltozott..."
-
-#~ msgid ""
-#~ "No URL is defined\n"
-#~ "You can define one by copying the URL in the clipboard,\n"
-#~ " and selecting \"Paste the URL\" in the menu."
-#~ msgstr ""
-#~ "Nincs URL-cím megadva\n"
-#~ "Megadhat egy URL-címet, ha a vágólapra másolja azt.\n"
-#~ " és kiválasztja az \"URL-cm beillesztése\"\n"
-#~ " menüpontot."
-
-#~ msgid ""
-#~ "No data\n"
-#~ "Did you set a valid RSS feed?\n"
-#~ "Is your connection alive?"
-#~ msgstr ""
-#~ "Nincs adat\n"
-#~ "Érvényes hírforrást adott meg?\n"
-#~ "Van internetkapcsolata?"
-
-#~ msgid "Recent files"
-#~ msgstr "Legutóbbi fájlok"
-
-#~ msgid "The value %s has been copied into the clipboard."
-#~ msgstr "A(z) %s érték a vágólapra került."
-
-#~ msgid "Execute"
-#~ msgstr "Végrehajtás"
-
-#~ msgid "Open a terminal here"
-#~ msgstr "Terminál megnyitása itt"
-
-#~ msgid "Zip folder"
-#~ msgstr "Könyvtár tömörítése"
-
-#~ msgid "Move to"
-#~ msgstr "Áthelyezés"
-
-#~ msgid "Copy URL"
-#~ msgstr "URL-cím másolása"
-
-#~ msgid "Open location"
-#~ msgstr "Hely megnyitása"
-
-#~ msgid "Zip file"
-#~ msgstr "Fájl tömörítése"
-
-#~ msgid "Mail file"
-#~ msgstr "Fájl küldése"
-
-#~ msgid "Pick up a directory"
-#~ msgstr "Könyvtár felvétele"
-
-#~ msgid "Files"
-#~ msgstr "Fájlok"
-
-#~ msgid "Open"
-#~ msgstr "Megnyitás"
-
-#~ msgid "Open in new window"
-#~ msgstr "Megnyitás új ablakban"
-
-#~ msgid "Open file"
-#~ msgstr "Fájl megnyitása"
-
-#~ msgid "Firefox bookmarks"
-#~ msgstr "Firefox könyvjelzők"
-
-#~ msgid "Mediadico"
-#~ msgstr "Mediadico"
-
-#~ msgid "Amazon"
-#~ msgstr "Amazon"
-
-#~ msgid "(F1) Match case"
-#~ msgstr "(F1) Kis- és nagybetűk egyeztetése"
-
-#~ msgid "(F2) Music"
-#~ msgstr "(F2) Zene"
-
-#~ msgid "(F3) Image"
-#~ msgstr "(F3) Kép"
-
-#~ msgid "(F4) Video"
-#~ msgstr "(F4) Video"
-
-#~ msgid "(F5) Text"
-#~ msgstr "(F5) Szöveg"
-
-#~ msgid "(F6) Html"
-#~ msgstr "(F6) HTML"
-
-#~ msgid "(F7) Sources"
-#~ msgstr "(F7) Források"
-
-#~ msgid "No result"
-#~ msgstr "Nincs találat"
-
-#~ msgid "results"
-#~ msgstr "találatok"
-
-#~ msgid "result"
-#~ msgstr "találat"
-
-#~ msgid "Enter your search"
-#~ msgstr "Írja be a keresőszavakat"
-
-#~ msgid "Uptime"
-#~ msgstr "Rendszer működési ideje"
-
-#~ msgid "Activity time"
-#~ msgstr "Működési idő"
-
-#~ msgid "CPU model"
-#~ msgstr "Processzortípus"
-
-#~ msgid "Frequency"
-#~ msgstr "Frekvencia"
-
-#~ msgid "core(s)"
-#~ msgstr "mag(ok)"
-
-#~ msgid ""
-#~ "This applet shows you the CPU load, RAM usage, graphic card temperature, "
-#~ "etc.\n"
-#~ "Middle click on the icon to get some valuable info.\n"
-#~ "Left click on the icon to get a list of the most ressources using "
-#~ "programs.\n"
-#~ "You can instanciate this applet several times to show different values "
-#~ "each time."
-#~ msgstr ""
-#~ "A processzorterhelést, memóriahasználatot, videokártya hőmérsékletét, "
-#~ "stb. mutató kisalkalmazás.\n"
-#~ "Ha középső egérgombbal kattint az ikonra, némi értékes információhoz "
-#~ "juthat.\n"
-#~ "Ha bal egérgombbal kattint az ikonra, megkapja a legtöbb erőforrást "
-#~ "használó programok listáját.\n"
-#~ "Több példányt létrehozva a kisalkalmazásokból mindegyiket más érték "
-#~ "mutatására állíthatja be."
-
-#~ msgid ""
-#~ "The acquisition of one or more data has failed.\n"
-#~ "You should remove the data that couldn't be fetched."
-#~ msgstr ""
-#~ "Egy vagy több adat beszerzése meghiúsult.\n"
-#~ "Távolítsa el az adatokat, amiket nem lehet betölteni."
-
-#~ msgid "GPU model"
-#~ msgstr "GPU típus"
-
-#~ msgid "Video Ram"
-#~ msgstr "Video RAM"
-
-#~ msgid "Mb"
-#~ msgstr "Mb"
-
-#~ msgid "Driver Version"
-#~ msgstr "Illesztőprogram-verzió"
-
-#~ msgid "Core Temperature"
-#~ msgstr "Processzor-hőmérséklet"
-
-#~ msgid "Alert! Graphic Card core temperature has reached %d°C"
-#~ msgstr "Figyelem! A videokártya hőmérséklete elérte a %d°C-ot!"
-
-#~ msgid "Gb"
-#~ msgstr "Gb"
-
-#~ msgid "Memory"
-#~ msgstr "Memória"
-
-#~ msgid "Cached"
-#~ msgstr "Gyorsítótárazott"
-
-#~ msgid "Buffers"
-#~ msgstr "Pufferek"
-
-#~ msgid "This applet displays a toon that will look at your mouse."
-#~ msgstr ""
-#~ "Ez a kisalkalmazás megjelenít egy rajzfigurát, ami az egerét figyeli."
-
-#~ msgid ""
-#~ "Setup the luminosity of your screen directly from your dock.\n"
-#~ "Scroll up/down to increase/decrease the luminosity\n"
-#~ "Left-click to open a dialog to setup the luminosity\n"
-#~ "Middle-click to set it up for each color.\n"
-#~ "You can also define a luminosity value that will be applied automatically "
-#~ "on startup."
-#~ msgstr ""
-#~ "Állítsa be közvetlenül a dokkról a kijelző fényerejét.\n"
-#~ "Felfelé/lefelé görgetéssel növelheti/csökkentheti a fényerőt.\n"
-#~ "Bal kattintásra megnyílik egy párbeszédablak a fényerő beállítására.\n"
-#~ "Középső kattintással színenként állíthatja be.\n"
-#~ "Beállíthatja az induláskor használt alapértelmezett fényerőt is."
-
-#~ msgid "Apply current luminosity on startup"
-#~ msgstr "Jelenlegi fényesség használata indításkor"
-
-#~ msgid "Set up gamma:"
-#~ msgstr "Gamma beállítása"
-
-#~ msgid ""
-#~ "This applet lets you control the sound volume from the dock.\n"
-#~ "Scroll up/down on the icon to increase/decrease the volume.\n"
-#~ "Click on icon to show/hide volume control (you can bind a keyboard "
-#~ "shortcut for it)\n"
-#~ "You can also hide the dialog by clicking on it.\n"
-#~ "Middle-click to set or unset to mute, double-click to raise the channels "
-#~ "mixer.\n"
-#~ "This applet works with the Alsa sound driver."
-#~ msgstr ""
-#~ "Ezzel a kisalkalmazással közvetlenül a dokkról szabályozhatja a "
-#~ "hangerőt.\n"
-#~ "Az ikonon felfelé/lefelé görgetéssel növelheti/csökkentheti a hangerőt.\n"
-#~ "Kattintással nyithatja meg vagy rejtheti el a hangerőszabályzót, vagy "
-#~ "hozzárendelhet egy gyorsbillentyűt.\n"
-#~ "A párbeszédablakra kattintva elrejtheti azt.\n"
-#~ "Némításhoz kattintson rajta középső gombbal, a csatorna keverőjének "
-#~ "megnyitásához kattintson duplán.\n"
-#~ "Ez a kisalkalmazás az Alsa hangkártya-meghajtóval működik."
-
-#~ msgid "I couldn't open card '%s'"
-#~ msgstr "Nem sikerült megnyitni a(z) '%s' kártyát"
-
-#~ msgid "Card '%s' opened but I couldn't get any info"
-#~ msgstr ""
-#~ "A(z) '%s' kártya meg van nyitva, de nem férek hozzá semmilyen "
-#~ "információhoz."
-
-#~ msgid "I couldn't open the mixer"
-#~ msgstr "Nem sikerült megnyitni a keverőt"
-
-#~ msgid "I couldn't attach the mixer to the card"
-#~ msgstr "Nem sikerült csatolni a keverőt a hangkártyához"
-
-#~ msgid "I couldn't register options"
-#~ msgstr "Nem sikerült regisztrálni a beállításokat"
-
-#~ msgid "I couldn't load the mixer"
-#~ msgstr "Nem sikerült betölteni a keverőt"
-
-#~ msgid "Set up volume:"
-#~ msgstr "Hangerőbeállítás:"
-
-#~ msgid "Adjust channels"
-#~ msgstr "Csatornák beállítása"
-
-#~ msgid "Monday"
-#~ msgstr "Hétfő"
-
-#~ msgid "Tuesday"
-#~ msgstr "Kedd"
-
-#~ msgid "Wednesday"
-#~ msgstr "Szerda"
-
-#~ msgid "Thursday"
-#~ msgstr "Csütörtök"
-
-#~ msgid "Friday"
-#~ msgstr "Péntek"
-
-#~ msgid "Saturday"
-#~ msgstr "Szombat"
-
-#~ msgid "Sunday"
-#~ msgstr "Vasárnap"
-
-#~ msgid "Search for your location :"
-#~ msgstr "Az Ön helyzetének meghatározása:"
-
-#~ msgid "clock"
-#~ msgstr "óra"
-
-#~ msgid "Set up time and date"
-#~ msgstr "Idő és dátum beállítása"
-
-#~ msgid "Add a new task"
-#~ msgstr "Új feladat hozzáadása"
-
-#~ msgid "Each year"
-#~ msgstr "Minden évben"
-
-#~ msgid "each month"
-#~ msgstr "minden hónapban"
-
-#~ msgid "each year"
-#~ msgstr "minden évben"
-
-#~ msgid "Title"
-#~ msgstr "Cím"
-
-#~ msgid "Text"
-#~ msgstr "Szöveg"
-
-#~ msgid ""
-#~ "This applet allows you to manage compiz and other windows manager\n"
-#~ "The sub-dock gives you to acces to CCSM, Emerald and some basic Compiz "
-#~ "actions.\n"
-#~ "You can bind one of these actions with the middle-click.\n"
-#~ "The configuration panel gives you some options to launch Compiz."
-#~ msgstr ""
-#~ "Ezzel a kisalkalmazással kezelheti a Compizt és más ablakkezelőket.\n"
-#~ "Az aldokk hozzáférést biztosít Önnek a CCSM-hez, Emeraldhot, és a Compiz "
-#~ "néhány alapszintű műveletéhez.\n"
-#~ "Ezek egyikét hozzárendelheti a középső kattintáshoz.\n"
-#~ "A beállítópanel ad Önnek néhány opciót a Compiz indításához."
-
-#~ msgid "Configure Compiz"
-#~ msgstr "Compiz beállítása"
-
-#~ msgid "Emerald Manager"
-#~ msgstr "Emerald ablakdíszítő"
-
-#~ msgid "Reload WM"
-#~ msgstr "Ablakkezelő újraindítása"
-
-#~ msgid ""
-#~ "To configure Compiz, you need to install CCSM\n"
-#~ " through your package manager (Synaptic, YasT, etc)"
-#~ msgstr ""
-#~ "A Compiz testreszabásához telepítenie kell a CCSM-et\n"
-#~ " a csomagkezelő segítségével (Synaptic, YasR, stb)"
-
-#~ msgid "Reload Emerald"
-#~ msgstr "Emerald újraindítása"
-
-#~ msgid "Switch Windows Manager"
-#~ msgstr "Ablakkezelő cseréje"
-
-#~ msgid "Switch Windows Decorator"
-#~ msgstr "Ablakdíszítő cseréje"
-
-#~ msgid "Toggle Widget Layer"
-#~ msgstr "Váltás szerkentyűnézetre"
-
-#~ msgid "dark"
-#~ msgstr "sötétt"
-
-#~ msgid "clear"
-#~ msgstr "tisztaf"
-
-#~ msgid "futuristic"
-#~ msgstr "futurisztikus"
-
-#~ msgid ""
-#~ "Couldn't upload the file, check that your internet connection is active."
-#~ msgstr ""
-#~ "Nem sikerült feltölteni a fájlt, ellenőrizze az internetkapcsolatát."
-
-#~ msgid ""
-#~ "File has been uploaded.\n"
-#~ "Just press CTRL+v to paste its URL anywhere."
-#~ msgstr ""
-#~ "A fájl sikeresen feltöltve.\n"
-#~ "A CTRL+v megnyomásával illesztheti be az URL-címét."
-
-#~ msgid ""
-#~ "Please wait for the current upload to finish before starting a new one."
-#~ msgstr ""
-#~ "Kérem várjon, amíg a jelenlegi feltöltés befejeződik, mielőtt újat indít."
-
-#~ msgid "Clear the list of the recently uploaded files?"
-#~ msgstr "Törli a legutóbb feltöltött fájlok listáját?"
-
-#~ msgid ""
-#~ "The text has been pasted in the clipboard.\n"
-#~ "You can retrieve it with CTRL+v."
-#~ msgstr ""
-#~ "A szöveg a vágólapra került.\n"
-#~ "A CTRL+v megnyomásával érheti el."
-
-#~ msgid "Sorry, couldn't find the original file nor a preview of it."
-#~ msgstr "Sajnálom, nem található sem az eredeti fájl, sem az előnézete."
-
-#~ msgid ""
-#~ "The URL has been stored in the clipboard.\n"
-#~ "Just use 'CTRL+v' to paste it anywhere."
-#~ msgstr ""
-#~ "Az URL-cím a vágólapra került.\n"
-#~ "A 'CTRL+v' megnyomásával illesztheti be."
-
-#~ msgid ""
-#~ "No uploaded file available\n"
-#~ ".Just drag'n drop a file on the icon to upload it"
-#~ msgstr ""
-#~ "Nincs elérhető feltöltött fájl.\n"
-#~ "Fájl feltöltéséhez húzza azt egyszerűen az ikonra."
-
-#~ msgid ""
-#~ "No uploaded file available.\n"
-#~ "Consider activating the history if you want the applet to remember "
-#~ "previous uploads."
-#~ msgstr ""
-#~ "Nincs feltöltött fájl.\n"
-#~ "Kapcsolja be az előzményeket, ha azt akarja, hogy a kisalkalmazás "
-#~ "emlékezzen a korábbi feltöltésekre."
-
-#~ msgid ""
-#~ "The current URL has been stored in the clipboard.\n"
-#~ "Just use 'CTRL+v' to paste it anywhere."
-#~ msgstr ""
-#~ "A jelenlegi URL-cím tárolásra került a vágólapon.\n"
-#~ "Használja a 'CTRL+V' billentyű-kombinációt a beillesztéshez."
-
-#~ msgid ""
-#~ "The current URL has been stored into the selection.\n"
-#~ "Just middle-click to paste it anywhere."
-#~ msgstr ""
-#~ "A jelenlegi URL-cím tárolásra került a a kijelölésben.\n"
-#~ "Középső egérgombbal kattintva illesztheti be."
-
-#~ msgid "File"
-#~ msgstr "Fájl"
-
-#~ msgid "Click on the icon to copy the URL into the clipboard."
-#~ msgstr "Kattintson az ikonra az URL-cím vágólapra másolásához."
-
-#~ msgid "Remove from history"
-#~ msgstr "Eltávolítás az előzményekből"
-
-#~ msgid "Clear History"
-#~ msgstr "Előzmények törlése"
-
-#~ msgid "Caroussel"
-#~ msgstr "Áttekintő"
-
-#~ msgid "3D plane"
-#~ msgstr "3D-s panel"
-
-#~ msgid "Parabolic"
-#~ msgstr "Parabolikus"
-
-#~ msgid "Rainbow"
-#~ msgstr "Szivárvány"
-
-#~ msgid "Slide"
-#~ msgstr "Csúszka"
-
-#~ msgid "Curve"
-#~ msgstr "Görbe"
-
-#~ msgid ""
-#~ "This module adds different views to your dock.\n"
-#~ "Any dock or sub-dock can be displayed with the view of your choice.\n"
-#~ "Currently, 3D-plane, Caroussel, Parabolic, Rainbow, Slide, and Curve "
-#~ "views are provided."
-#~ msgstr ""
-#~ "Ez a modul különböző nézeteket ad a dokkjához.\n"
-#~ "Bármelyik vagy aldokk úgy jelenik meg, ahogy Ön szeretné.\n"
-#~ "Jelenleg a 3D-s panel, az Áttekintő, a Parabolikus, a  Szivárvány, a "
-#~ "Csúszka és a Görbe nézetek érhetőek el."
-
-#~ msgid ""
-#~ "This plug-in displays an animated indicator when you drop something into "
-#~ "the dock."
-#~ msgstr ""
-#~ "Ez a kisalkalmazás megjelenít egy animált jelzőt, amikor valamit a dokkra "
-#~ "dob."
-
-#~ msgid "dustbin"
-#~ msgstr "lomtár"
-
-#~ msgid "You're about to delete all files in all dustbins. Sure ?"
-#~ msgstr "Biztosan töröl minden fájl a lomtárból?"
-
-#~ msgid "Empty Trash"
-#~ msgstr "Kuka ürítése"
-
-#~ msgid "%s successfully unmounted"
-#~ msgstr "%s leválasztva."
-
-#~ msgid "failed to unmount %s"
-#~ msgstr "%s leválasztása sikertelen"
-
-#~ msgid " trashe(s)"
-#~ msgstr " kuka"
-
-#~ msgid " file(s)"
-#~ msgstr " fájl(ok)"
-
-#~ msgid "calculating"
-#~ msgstr "számító"
-
-#~ msgid ""
-#~ "This applet provides functions for a better integration into a GNOME "
-#~ "environnement.\n"
-#~ "It is auto-activated, so you don't need to activate it.\n"
-#~ "It is designed for old Gnome version (prior to 2.22)."
-#~ msgstr ""
-#~ "Ez a kisalkalmazás biztosítja a jobb integrációt a GNOME környezetbe.\n"
-#~ "Nincs szükség az aktiválására, automatikusan aktiválódik.\n"
-#~ "A Gnome 2.22-nél régebbi kiadásokhoz készült."
-
-#~ msgid ""
-#~ "This applet provides functions for a better integration into a GNOME "
-#~ "environnement.\n"
-#~ "It is auto-activated, so you don't need to activate it.\n"
-#~ "It is designed for the a GNOME version >= 2.22"
-#~ msgstr ""
-#~ "Ez a kisalkalmazás biztosítja a jobb integrációt a GNOME környezetbe.\n"
-#~ "Nincs szükség az aktiválására, automatikusan aktiválódik.\n"
-#~ "A GNOME  2.22 és újabb kiadásokhoz készült."
-
-#~ msgid "icon effects"
-#~ msgstr "ikoneffektusok"
-
-#~ msgid "Fire"
-#~ msgstr "Tűz"
-
-#~ msgid "Stars"
-#~ msgstr "Csillagok"
-
-#~ msgid "Rain"
-#~ msgstr "Eső"
-
-#~ msgid "Snow"
-#~ msgstr "HóesésV"
-
-#~ msgid "Storm"
-#~ msgstr "Vihar"
-
-#~ msgid "Firework"
-#~ msgstr "Tűzijáték"
-
-#~ msgid "illusion"
-#~ msgstr "szemfényvesztés"
-
-#~ msgid ""
-#~ "This applet provides functions for a better integration into a KDE "
-#~ "environnement.\n"
-#~ "It is auto-activated, so you don't need to activate it.\n"
-#~ "It is designed for KDE4"
-#~ msgstr ""
-#~ "Ez a kisalkalmazás biztosítja a jobb integrációt a KDE környezetbe.\n"
-#~ "Nincs szükség az aktiválására, automatikusan aktiválódik.\n"
-#~ "A KDE4-hez készült."
-
-#~ msgid "keyboard indicator"
-#~ msgstr "billentyűzetjelző"
-
-#~ msgid "logout"
-#~ msgstr "kijelentkezés"
-
-#~ msgid "Your computer will shut-down in 1 minute."
-#~ msgstr "A számítógép 1 perc múlva leáll."
-
-#~ msgid "Please choose an account type."
-#~ msgstr "Kérem válasszon ki egy fióktípust."
-
-#~ msgid "New account's name"
-#~ msgstr "Új fiók neve"
-
-#~ msgid "Please enter a name for this account."
-#~ msgstr "Kérem adja meg a fiók nevét."
-
-#~ msgid ""
-#~ "This account already exists.\n"
-#~ "Please choose another name for the new account."
-#~ msgstr ""
-#~ "Ez a fiók már létezik.\n"
-#~ "Kérem válasszon másik nevet az új fióknak."
-
-#~ msgid "Remove Account"
-#~ msgstr "Fiók eltávolítása"
-
-#~ msgid "unknown"
-#~ msgstr "ismeretlen"
-
-#~ msgid "no subject"
-#~ msgstr "nincs tárgy"
-
-#~ msgid "No unread mail in your mailboxes"
-#~ msgstr "Nincs olvasatlan levél a postafiókjában"
-
-#~ msgid "You have %d new mails:"
-#~ msgstr "%d új levele érkezett:"
-
-#~ msgid "You have a new mail:"
-#~ msgstr "Egy új levele érkezett:"
-
-#~ msgid "mail"
-#~ msgstr "levél"
-
-#~ msgid "Mark all emails as read"
-#~ msgstr "Összes levél megjelölése olvasottnak"
-
-#~ msgid "Launch %s"
-#~ msgstr "%s indítása"
-
-#~ msgid "Mail"
-#~ msgstr "Levél"
-
-#~ msgid "Unknown artist"
-#~ msgstr "Ismeretlen előadó"
-
-#~ msgid "Unknown title"
-#~ msgstr "Ismeretlen cím"
-
-#~ msgid "Track"
-#~ msgstr "Szám"
-
-#~ msgid "Current song"
-#~ msgstr "Aktuális szám"
-
-#~ msgid "Artist"
-#~ msgstr "Előadó"
-
-#~ msgid "Album"
-#~ msgstr "Album"
-
-#~ msgid "There is no media playing."
-#~ msgstr "Nincs lejátszás."
-
-#~ msgid "musicPlayer"
-#~ msgstr "Zenelejátszó"
-
-#~ msgid "Find opened player"
-#~ msgstr "Megnyitott lejátszó keresése"
-
-#~ msgid "Previous"
-#~ msgstr "Előző"
-
-#~ msgid "Stop"
-#~ msgstr "Leállítás"
-
-#~ msgid "Toggle Shuffle"
-#~ msgstr "Keverés bekapcsolása"
-
-#~ msgid "Toggle Repeat"
-#~ msgstr "Ismétlés bekapcsolása"
-
-#~ msgid "Rate this song"
-#~ msgstr "Szám értékelése"
-
-#~ msgid "Total amount of data"
-#~ msgstr "Teljes adatmennyiség"
-
-#~ msgid "downloaded"
-#~ msgstr "letöltve"
-
-#~ msgid "uploaded"
-#~ msgstr "feltöltve"
-
-#~ msgid "No battery found."
-#~ msgstr "Nem található akkumulátor.E"
-
-#~ msgid ""
-#~ "PowerManager.\n"
-#~ "Battery charge seems to be low"
-#~ msgstr ""
-#~ "Energiakezelő.\n"
-#~ "Az akkumulátor töltöttsége alacsony"
-
-#~ msgid "Please put your laptop on charge."
-#~ msgstr "Kérem csatlakoztassa a töltőt."
-
-#~ msgid "Set up power management"
-#~ msgstr "Energiakezelés beállítása"
-
-#~ msgid "Halt"
-#~ msgstr "Leállítás"
-
-#~ msgid "Hibernate"
-#~ msgstr "Hibernálás"
-
-#~ msgid "Suspend"
-#~ msgstr "Felfüggesztés"
-
-#~ msgid "Reboot"
-#~ msgstr "Újraindítás"
-
-#~ msgid "Quick Browser"
-#~ msgstr "Gyorsböngésző"
-
-#~ msgid "Open this folder"
-#~ msgstr "Könyvtár megnyitása"
-
-#~ msgid "Open folder"
-#~ msgstr "Könyvtár megnyitása"
-
-#~ msgid "Unmounted"
-#~ msgstr "Lecsatolva"
-
-#~ msgid "%s is now unmounted"
-#~ msgstr "%s leválasztva."
-
-#~ msgid "Remove this bookmark"
-#~ msgstr "Könyvjelző eltávolítása"
-
-#~ msgid "show mouse"
-#~ msgstr "Egér mutatása"
-
-#~ msgid "showDesktop"
-#~ msgstr "Asztal megjelenítés"
-
-#~ msgid "Play"
-#~ msgstr "Indítás"
-
-#~ msgid "Pause"
-#~ msgstr "Szünet"
-
-#~ msgid "Open current image"
-#~ msgstr "Aktuális kép megnyitása"
-
-#~ msgid "Set new name for this item:"
-#~ msgstr "Elem új nevének megadása:"
-
-#~ msgid "Paste (drag'n'drop)"
-#~ msgstr "Beillesztés (\"fogd és vidd\")"
-
-#~ msgid "Open (click)"
-#~ msgstr "Megnyitás (kattintson)"
-
-#~ msgid "Copy"
-#~ msgstr "Másolás"
-
-#~ msgid "Cut"
-#~ msgstr "Kivágás"
-
-#~ msgid "Rename this item"
-#~ msgstr "Elem átnevezése"
-
-#~ msgid "Remove this item"
-#~ msgstr "Elem eltávolítása"
-
-#~ msgid "Current"
-#~ msgstr "Jelenlegi"
-
-#~ msgid "Rename this workspace"
-#~ msgstr "Munkaterület átnevezése"
-
-#~ msgid "Add a workspace"
-#~ msgstr "Asztal hozzáadása"
-
-#~ msgid "Windows List"
-#~ msgstr "Ablaklista"
-
-#~ msgid "New Tab"
-#~ msgstr "Új lap"
-
-#~ msgid "Rename current Tab"
-#~ msgstr "Aktuális lap átnevezése"
-
-#~ msgid "Close current Tab"
-#~ msgstr "Aktuális lap bezárása"
-
-#~ msgid "Terminal"
-#~ msgstr "Terminál"
-
-#~ msgid "Set title for this tab:"
-#~ msgstr "Adja meg a lap címét:"
-
-#~ msgid "Select a color"
-#~ msgstr "Válasszon egy színt"
-
-#~ msgid "You can recall the Terminal desklet by typing %s"
-#~ msgstr "Visszahívhatja a terminál-deskletet a(z) %s begépelésével."
-
-#~ msgid "Paste"
-#~ msgstr "Beillesztés"
-
-#~ msgid "Rename this Tab"
-#~ msgstr "Lap átnevezése"
-
-#~ msgid "Change this Tab's colour"
-#~ msgstr "Lap színének megváltoztatása"
-
-#~ msgid "Close this Tab"
-#~ msgstr "Lap bezárása"
-
-#~ msgid "Note name : "
-#~ msgstr "Jegyzet neve: "
-
-#~ msgid "Delete this note?"
-#~ msgstr "Törli ezt a jegyzetet?"
-
-#~ msgid "Search for:"
-#~ msgstr "Keresés:"
-
-#~ msgid "Search for tag:"
-#~ msgstr "Keresés címkére:"
-
-#~ msgid "Add a note"
-#~ msgstr "Jegyzet hozzáadása"
-
-#~ msgid "Delete this note"
-#~ msgstr "Jegyzet törlése"
-
-#~ msgid "Reload notes"
-#~ msgstr "Jegyzetek újratöltése"
-
-#~ msgid "Search"
-#~ msgstr "Keresés"
-
-#~ msgid "Search for tag"
-#~ msgstr "Címke keresése"
-
-#~ msgid "Search for today's note"
-#~ msgstr "Keresés a mai jegyzetekre"
-
-#~ msgid "Search for this week's note"
-#~ msgstr "Keresés a heti jegyzetekre"
-
-#~ msgid "Search for next week's note"
-#~ msgstr "Keresés a jövő heti jegyzetekre"
-
-#~ msgid "weather"
-#~ msgstr "időjárás"
-
-#~ msgid "Jan"
-#~ msgstr "Jan"
-
-#~ msgid "Feb"
-#~ msgstr "Feb"
-
-#~ msgid "Mar"
-#~ msgstr "Márc"
-
-#~ msgid "Apr"
-#~ msgstr "Ápr"
-
-#~ msgid "May"
-#~ msgstr "Máj"
-
-#~ msgid "Jun"
-#~ msgstr "Jún"
-
-#~ msgid "Jui"
-#~ msgstr "Júl"
-
-#~ msgid "Aug"
-#~ msgstr "Aug"
-
-#~ msgid "Sep"
-#~ msgstr "Szept"
-
-#~ msgid "Oct"
-#~ msgstr "Okt"
-
-#~ msgid "Nov"
-#~ msgstr "Nov"
-
-#~ msgid "Dec"
-#~ msgstr "Dec"
-
-#~ msgid "Temperature"
-#~ msgstr "Hőmérséklet"
-
-#~ msgid "Precipitation probability"
-#~ msgstr "Csapadék valószínűsége"
-
-#~ msgid "Wind"
-#~ msgstr "Szél"
-
-#~ msgid "Humidity"
-#~ msgstr "Páratartalom"
-
-#~ msgid "Sunrise"
-#~ msgstr "Napfelkelte"
-
-#~ msgid "Sunset"
-#~ msgstr "Napnyugta"
-
-#~ msgid "Pressure"
-#~ msgstr "Légnyomás"
-
-#~ msgid "Weblets"
-#~ msgstr "Webletek"
-
-#~ msgid "WiFi disabled."
-#~ msgstr "Wifi kikapcsolva."
-
-#~ msgid "Global"
-#~ msgstr "Globális"
-
-#~ msgid "Effects used:"
-#~ msgstr "Használt effektek:"
-
-#~ msgid "Cube"
-#~ msgstr "Kocka"
-
-#~ msgid "Rays"
-#~ msgstr "Sugarak"
-
-#~ msgid "Random colours?"
-#~ msgstr "Véletlenszerű színek?"
-
-#~ msgid "Ray size:"
-#~ msgstr "Sugarak mérete:"
-
-#~ msgid "Ray speed:"
-#~ msgstr "Sugarak sebessége:"
-
-#~ msgid "Initial stretch:"
-#~ msgstr "Kiinduló nyújtás"
-
-#~ msgid "Horizontal stretch"
-#~ msgstr "Vízszintes nyújtás"
-
-#~ msgid "Vertical stretch"
-#~ msgstr "Függőleges nyújtás"
-
-#~ msgid "in pixels."
-#~ msgstr "pixelekben."
-
-#~ msgid "Clipboard"
-#~ msgstr "Vágólap"
-
-#~ msgid "Selection"
-#~ msgstr "Kijelölés"
-
-#~ msgid "Both"
-#~ msgstr "Mindkettő"
-
-#~ msgid "Enable actions?"
-#~ msgstr "Műveletek engedélyezése?"
-
-#~ msgid "Replay actions?"
-#~ msgstr "Műveletek ismétlése?"
-
-#~ msgid "Line"
-#~ msgstr "Vonal"
-
-#~ msgid "Circle"
-#~ msgstr "Kör"
-
-#~ msgid "Plain Circle"
-#~ msgstr "Sima kör"
-
-#~ msgid "Background colour of the graphic :"
-#~ msgstr "A grafikon háttérszíne:"
-
-#~ msgid "No"
-#~ msgstr "Nem"
-
-#~ msgid "On icon"
-#~ msgstr "Ikonon"
-
-#~ msgid "On label"
-#~ msgstr "Címkén"
-
-#~ msgid "Default colour:"
-#~ msgstr "Alapértelmeett szín"
-
-#~ msgid "Background"
-#~ msgstr "Háttér"
-
-#~ msgid "Border colour"
-#~ msgstr "Keretszín"
-
-#~ msgid "Shortkey to show/hide the quick-launch dialog:"
-#~ msgstr "Gyorsbillentyű a gyorsindító megjelenítéséhez/elrejtéséhez:"
-
-#~ msgid "Recent documents"
-#~ msgstr "Legutóbbi dokumentumok"
-
-#~ msgid "Show recent documents?"
-#~ msgstr "Megjelenítse a legutóbbi dokumentumokat?"
-
-#~ msgid "Icons"
-#~ msgstr "Ikonok"
-
-#~ msgid "Zoom"
-#~ msgstr "Nagyítás"
-
-#~ msgid "Transparency"
-#~ msgstr "Átlátszóság"
-
-#~ msgid "Leave empty to use the title of the RSS feed."
-#~ msgstr "Hagyja üresen a hírforrás címének használatához."
-
-#~ msgid "RSS Feed"
-#~ msgstr "RSS-hírforrás"
-
-#~ msgid "URL:"
-#~ msgstr "URL-cím:"
-
-#~ msgid "Font to be used for the title"
-#~ msgstr "b"
-
-#~ msgid "left"
-#~ msgstr "bal"
-
-#~ msgid "right"
-#~ msgstr "jobb"
-
-#~ msgid "Feed lines colour:"
-#~ msgstr "Hírvonalak színe:"
-
-#~ msgid "Space between 2 feed lines:"
-#~ msgstr "Két hírvonal közötti hely:"
-
-#~ msgid "Logo"
-#~ msgstr "Logó"
-
-#~ msgid "Logo size:"
-#~ msgstr "Logó mérete:"
-
-#~ msgid "normal"
-#~ msgstr "közepes"
-
-#~ msgid "Number of lines to display :"
-#~ msgstr "Megjelenítendő sorok száma:"
-
-#~ msgid "Colours"
-#~ msgstr "Színek"
-
-#~ msgid "Black Hole"
-#~ msgstr "Fekete lyuk"
-
-#~ msgid "Random"
-#~ msgstr "Véletlenszerű"
-
-#~ msgid "Customisation"
-#~ msgstr "Testreszabás"
-
-#~ msgid "Mail application"
-#~ msgstr "Levelező alkalmazás"
-
-#~ msgid "Audio Player"
-#~ msgstr "Zenelejátszó"
-
-#~ msgid "Amarok 2"
-#~ msgstr "Amarok 2"
-
-#~ msgid "Audacious"
-#~ msgstr "Audacious"
-
-#~ msgid "Banshee"
-#~ msgstr "Banshee"
-
-#~ msgid "Exaile"
-#~ msgstr "Exaile"
-
-#~ msgid "Listen"
-#~ msgstr "Listen"
-
-#~ msgid "QuodLibet"
-#~ msgstr "QuodLibet"
-
-#~ msgid "Rhythmbox"
-#~ msgstr "Rhythmbox"
-
-#~ msgid "Songbird"
-#~ msgstr "Songbird"
-
-#~ msgid "XMMS 2"
-#~ msgstr "XMMS 2"
-
-#~ msgid "XMMS"
-#~ msgstr "XMMS"
-
-#~ msgid "Nothing"
-#~ msgstr "Semmi"
-
-#~ msgid "Time Elapsed"
-#~ msgstr "Eltelt idő"
-
-#~ msgid "Time Remaining"
-#~ msgstr "Hátralévő idő"
-
-#~ msgid "requires OpenGL."
-#~ msgstr "OpenGL szükséges."
-
-#~ msgid "Gnote"
-#~ msgstr "Gnote"
-
-#~ msgid "Signal Strength"
-#~ msgstr "Jelerősség"
-
-#~ msgid "Signal Strength in percent"
-#~ msgstr "Jelerősség százalékban"
+msgstr "Üzenetküldési csatorna váltása a középső egérgombbal"
