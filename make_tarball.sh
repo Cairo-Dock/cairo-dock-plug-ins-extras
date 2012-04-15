@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="2.4.0~2"
+read -p "What's the version? (e.g. 3.0.0) " VERSION
 NAME="cairo-dock-plug-ins-extras"
 
 FULLNAME="${NAME}_${VERSION}"
