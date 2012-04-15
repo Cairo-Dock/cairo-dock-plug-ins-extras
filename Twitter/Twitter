@@ -202,32 +202,43 @@ class Applet(CDApplet):
 
   def play_alert_sound(self):
     os.popen('aplay %s' % os.path.abspath("./data/alert.wav"))
+  
+  def animate_icon(self, animation):
+    if len(animation) == 0:
+      animation = 'default'
+    self.icon.DemandsAttention(True, animation)
+
+  def send_alert(self):
+    if self.config['sound']:
+      self.play_alert_sound()
+    if self.config['animation']:
+      self.animate_icon(self.config['animation_type'])
 
   # Twitter methods
 
   # This method is a callback that is called as soon as a new entry arrives on the stream
   # The method is passed as parameter when creating the instance for the TwitterStreamAPI
   # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_entry_into_stream_callback)
-  # TODO: Make configurable the alerts, sound, animation, etc
   def on_receive_new_entry_into_stream_callback(self, entry):
     if 'user' in entry:                                                                     # tweet
       if not entry['user']['screen_name'] == self.user.screen_name:                         # not sent by the own user
         logp("Inserting new tweet on the stream Queue: %s" % entry)
         self.tweet_stream.put(entry)                                                        # put the new tweet on the stream queue
         self.refresh_emblem_counter()
-        self.play_alert_sound()
+        if self.config['alert']:                                                            # user wants alert?
+          self.send_alert()
     elif 'direct_message' in entry:                                                         # direct messages
       if not entry['direct_message']['sender']['screen_name'] == self.user.screen_name:     # not sent by the own user
         logp("Inserting new message on the message Queue: %s" % entry)
         self.message_stream.put(entry)                                                      # put the new message on the message queue
         self.refresh_emblem_counter()
-        self.play_alert_sound()
+        if self.config['alert']:                                                            # user wants alert?
+          self.send_alert()
 
   def show_user_timeline(self):
     self.inform_start_of_waiting_process()
     
     timeline = self.api.user_timeline()
-    print timeline[0]
     if len(timeline) > 0:
       ut_menu = menu.Menu(self.icon)                                                        # callback not set since there is no action when clicking ...
       for status in timeline:                                                               # ... on the menu generated from this list
@@ -508,6 +519,10 @@ class Applet(CDApplet):
 
   def get_config(self, keyfile):
     self.config['emblem_size'] = keyfile.get('Configuration', 'emblem_size')
+    self.config['alert'] = keyfile.getboolean('Configuration', 'alert')
+    self.config['sound'] = keyfile.getboolean('Configuration', 'sound')
+    self.config['animation'] = keyfile.getboolean('Configuration', 'animation')
+    self.config['animation_type'] = keyfile.get('Configuration', 'animation_type')
 
   def reload(self):
     self.refresh_emblem_counter()
@@ -548,8 +563,16 @@ class Applet(CDApplet):
         logp("Retweeting")
         self.api.retweet(self.retweet_tweet_id)
 
+  # If there is nothing to be seen, the left click opens the dialog to write a tweet
+  # Otherwise we check if there is something new, likely to be what the user wants
+  # to see quickly
   def on_click(self, key):
-    self.ask_for_tweet()
+    if not self.tweet_stream.empty():
+      self.show_new_tweets()
+    elif not self.message_stream.empty():
+      self.show_new_direct_messages()
+    else:
+      self.ask_for_tweet()
 
   def on_middle_click(self):
     self.show_home_timeline()

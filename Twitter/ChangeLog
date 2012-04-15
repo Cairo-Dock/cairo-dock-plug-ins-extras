@@ -1,3 +1,4 @@
+0.2.2: (April/15/2012): Configurable notifications.
 0.2.1: (March/22/2012): Added user timeline.
 0.2: (March/19/2012): Possible to retweet tweets. Tweets being shown with standard menu.
 0.1.4: (March/18/2012): Alerts for new direct messages arriving on the stream, possible to answer them. Organizing the menus for new/all tweets, and messages. Play alert sound when tweet/message arrives on the stream.
