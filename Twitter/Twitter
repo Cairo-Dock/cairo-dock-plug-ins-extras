@@ -124,13 +124,13 @@ class TwitterAPI(API):
   def __init__(self, access_key, access_secret):
     API.__init__(self, access_key, access_secret)
     
-    self.update_url               = 'http://twitter.com/statuses/update.json'
-    self.home_timeline_url        = 'http://twitter.com/statuses/home_timeline.json'
+    self.update_url               = 'https://api.twitter.com/1/statuses/update.json'
+    self.home_timeline_url        = 'https://api.twitter.com/1/statuses/home_timeline.json'
     self.direct_messages_url      = 'https://api.twitter.com/1/direct_messages.json'
     self.new_direct_messages_url  = 'https://api.twitter.com/1/direct_messages/new.json'
     self.verify_credentials_url   = 'https://api.twitter.com/1/account/verify_credentials.json'
-    self.user_timeline_url        = 'http://api.twitter.com/1/statuses/user_timeline.json'
-    self.retweet_url_prefix       = 'http://api.twitter.com/1/statuses/retweet/'            # lacks the id of the tweet to be retweeted
+    self.user_timeline_url        = 'https://api.twitter.com/1/statuses/user_timeline.json'
+    self.retweet_url_prefix       = 'https://api.twitter.com/1/statuses/retweet/'            # lacks the id of the tweet to be retweeted
     
   def dispatch(self, url, mode, parameters={}):
     oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
