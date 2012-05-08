@@ -15,8 +15,6 @@
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
 
-
-
 from CDApplet import CDApplet
 
 import glib # used for timer
@@ -26,15 +24,10 @@ import re # used to read Gmail headers at authentication
 import libxml2 # used to parse XML content from Gmail inbox
 import os # used to find paths and to launch 'aplay'
 import sys # used to find relative paths
+import webbrowser
 
 import SVGmaker # home-made module to edit SVG counter emblem
 import gtk # used for Menu class displaying inbox
-
-
-
-
-
-
 
 class Menu(gtk.Menu):
 
@@ -54,7 +47,7 @@ class Menu(gtk.Menu):
             menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
             menu_item.get_children()[0].set_markup(string)
             menu_item.url = mail['link']
-            menu_item.connect('activate', self.open_mail)
+            menu_item.connect('activate', self.open_mail, mail)
             self.append(menu_item)
             menu_item.show()
             # add a separator if mail is not last in list
@@ -65,19 +58,14 @@ class Menu(gtk.Menu):
 
         self.show()
 
-
-
-
-    def open_mail(self, mail=None):
+    def open_mail(self, menu, mail=None):
 
         """ Opens the mail URL """
-
-        os.popen('x-www-browser https://mail.google.com/mail')
-
-
-
-
-
+        try:
+          link = mail['link']
+          webbrowser.open(link)
+        except webbrowser.Error:
+          os.popen('x-www-browser https://mail.google.com/mail')
 
 class Gmail(CDApplet):
 
@@ -97,9 +85,6 @@ class Gmail(CDApplet):
         self.wav = os.path.abspath("./snd/pop.wav")
         self.rep = False # used not to run more than one loop
         CDApplet.__init__(self)
-
-
-
 
     def get_config(self, keyfile):
 
@@ -129,9 +114,6 @@ class Gmail(CDApplet):
             self.update_display()
         if self.flag == 'error':
             self.error('')
-
-
-
 
     def check_subscription(self):
 
@@ -177,9 +159,6 @@ class Gmail(CDApplet):
             self.check_mail()
             self.repeat()
 
-
-
-
     def add_subscription(self, request=None):
 
         """
@@ -209,9 +188,6 @@ class Gmail(CDApplet):
             file.close()
             # run subscription check as double check
             self.check_subscription()
-
-
-
 
     def check_mail(self):
 
@@ -252,15 +228,11 @@ class Gmail(CDApplet):
 
         return True
 
-
-
-
     def get_inbox(self, xml_data):
 
         """
             Counts the unreade messages from the XML inbox content.
         """
-
 
         inbox = []
 
@@ -282,9 +254,6 @@ class Gmail(CDApplet):
         except:
             self.error("WARNING: there was an error reading XML content.")
             return None
-
-
-
 
     def request_gmail(self):
 
@@ -343,9 +312,6 @@ class Gmail(CDApplet):
 
         return handle
 
-
-
-
     def update_display(self):
 
         """
@@ -389,9 +355,6 @@ class Gmail(CDApplet):
                 # set icon with emblem
                 self.icon.SetIcon(self.svgpath)
 
-
-
-
     def error(self, message):
 
         """
@@ -421,9 +384,6 @@ class Gmail(CDApplet):
         self.flag = 'error'
         # show dialogue
         self.icon.ShowDialog(message, 4)
-
-
-
 
     def send_alert(self):
 
@@ -466,9 +426,6 @@ class Gmail(CDApplet):
                 # restore default sound file if custom is corrupted
                 self.wav = os.path.abspath("./snd/pop.wav")
 
-
-
-
     def repeat(self):
 
         """
@@ -481,9 +438,6 @@ class Gmail(CDApplet):
         # start timer loop
         glib.timeout_add(self.config['update'], self.check_mail)
 
-
-
-
     def begin(self):
 
         """
@@ -493,9 +447,6 @@ class Gmail(CDApplet):
         self.icon.SetLabel("Gmail")
         # the applet will not enter the loop until a subscription is found
         self.check_subscription()
-
-
-
 
     def on_answer_dialog(self, key, content):
 
@@ -526,9 +477,6 @@ class Gmail(CDApplet):
             else:
                 self.error("Sorry, there was no input!")
 
-
-
-
     def on_build_menu(self):
 
         """
@@ -548,9 +496,6 @@ class Gmail(CDApplet):
         "id" : 2,
         "tooltip" : "Check Gmail inbox now if you can't wait."}])
 
-
-
-
     def on_menu_select(self, iNumEntry):
 
         """
@@ -565,9 +510,6 @@ class Gmail(CDApplet):
             #should not happen. Kept in case more menu-items need be appended.
             pass
 
-
-
-
     def on_click(self, iState):
 
         """
@@ -581,9 +523,6 @@ class Gmail(CDApplet):
             m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
                     button=1, activate_time=0)
 
-
-
-
     def on_middle_click(self):
     
         """
@@ -591,12 +530,6 @@ class Gmail(CDApplet):
         """
         
         self.check_mail()
-        
-        
-        
-
-
-
 
     def get_xy(self, m, data):
 
@@ -629,9 +562,6 @@ class Gmail(CDApplet):
             y = iconPosY + (iconHeight / 2)
 
         return (x, y, True)
-
-
-
 
 if __name__ == "__main__":
     gmail = Gmail()
