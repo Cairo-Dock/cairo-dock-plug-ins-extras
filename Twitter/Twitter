@@ -27,154 +27,19 @@
 # To see the received direct messages right-click on the icon -> Twitter -> [New] direct messages. You can reply any of them by left-clicking on it.
 # To see some user's info right-click on the icon -> Twitter -> Info
 
-import os, webbrowser, simplejson, threading, Queue, urllib2
-from oauth import oauth
-from util import *
+import os, webbrowser, Queue
 
-from http import post, get #, stream
-import emblem, menu
-from message import DirectMessage, Tweet
+from networks import Networks                                                   # networks.py
+from user import User                                                           # user.py
+import emblem, menu                                                             # emblem.py, menu.py
+from message import DirectMessage, Tweet                                        # message.py
+from util import *                                                              # util.py
 
 from CDApplet import CDApplet, _
-# TODO import ConfigParser later conver files to config syntax
 
-class TwitterOauth:
-  def __init__(self):
-    self.request_token_url  = 'https://twitter.com/oauth/request_token'
-    self.access_token_url   = 'https://twitter.com/oauth/access_token'
-    self.authorize_url      = 'https://twitter.com/oauth/authorize'
-
-    consumer_key, consumer_secret = read_consumer_key_and_secret()
-    self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
-    self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
-    self.request_token = None
-    self.access_token = None
-    
-  def get_authorization_url(self):
-    self.request_token = self.get_unauthorized_request_token()
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               token = self.request_token,
-                                                               http_url = self.authorize_url)
-    oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
-    return oauth_request.to_url()
-
-  def get_unauthorized_request_token(self):
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url = self.request_token_url)
-    oauth_request.sign_request(self.signature_method, self.consumer, None)
-    url = oauth_request.to_url()
-    response = get(url)
-    token = oauth.OAuthToken.from_string(response)
-    return token
-
-  # Exchange request token for access token
-  def get_access_token_and_secret(self, pin):
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               http_url = self.access_token_url,
-                                                               verifier = pin,
-                                                               token = self.request_token)
-    oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
-    url = oauth_request.to_url()
-    response = get(url)
-    self.access_token = oauth.OAuthToken.from_string(response)                      # create both .key and .secret attributes
-    return self.access_token.key, self.access_token.secret
-    
-# TODO: Check also the possible inheritance with TwitterOauth
-class API():
-  def __init__(self, access_key, access_secret):
-    self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
-    consumer_key, consumer_secret = read_consumer_key_and_secret()
-    self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
-    self.access_token = oauth.OAuthToken(access_key, access_secret)
-
-class TwitterStreamAPI(API):
-  def __init__(self, access_key, access_secret, callback):
-    API.__init__(self, access_key, access_secret)
-
-    self.user_stream_url = "https://userstream.twitter.com/2/user.json"
-    self.callback = callback                                                        # called as soon as a new entry on the stream appears
-    thread = threading.Thread(target=self.tweet_streaming)                          # keep checking for new entries on the stream
-    thread.start()                                                                  # run, forrest run
-
-  def tweet_streaming(self):
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                               token = self.access_token,
-                                                               http_url = self.user_stream_url)
-    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-
-    url = oauth_request.to_url()
-    req = urllib2.urlopen(url)
-   
-    buffer = ''
-    while True:
-      chunk = req.read(1)                                               # read character per character from the connection ...
-      if not chunk:
-        break
-
-      buffer += chunk
-      tweets = buffer.split("\n",1)                                     # ... until find the end of a tweet marked with a '\n'
-      if len(tweets) > 1:
-        content = tweets[0]
-        if "text" in content:
-          content = simplejson.loads(content)
-          logp("Received from Twitter Stream: %s" % content)
-          self.callback(content)                                        # at the moment this method is called 'on_receive_new_entry_into_stream_callback'
-        buffer = tweets[1]
- 
-class TwitterAPI(API):
-  def __init__(self, access_key, access_secret):
-    API.__init__(self, access_key, access_secret)
-    
-    self.update_url               = 'https://api.twitter.com/1/statuses/update.json'
-    self.home_timeline_url        = 'https://api.twitter.com/1/statuses/home_timeline.json'
-    self.direct_messages_url      = 'https://api.twitter.com/1/direct_messages.json'
-    self.new_direct_messages_url  = 'https://api.twitter.com/1/direct_messages/new.json'
-    self.verify_credentials_url   = 'https://api.twitter.com/1/account/verify_credentials.json'
-    self.user_timeline_url        = 'https://api.twitter.com/1/statuses/user_timeline.json'
-    self.retweet_url_prefix       = 'https://api.twitter.com/1/statuses/retweet/'            # lacks the id of the tweet to be retweeted
-    
-  def dispatch(self, url, mode, parameters={}):
-    oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                             token = self.access_token,
-                                                             http_url = url,
-                                                             parameters = parameters,
-                                                             http_method = mode)
-    oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-    if mode == "GET":
-      url = oauth_request.to_url()
-      response = get(url) 
-      return simplejson.loads(response)
-    elif mode == "POST":
-      header = oauth_request.to_header()
-      post(url, parameters, header)  
-      
-  def tweet(self, message):                                                                 # popularly "send a tweet"
-    self.dispatch(self.update_url, "POST", {'status':message})
-    
-  def retweet(self, tweet_id):
-    url = "%s%s.json" % (self.retweet_url_prefix, tweet_id)
-    self.dispatch(url, "POST")
-
-  def new_direct_message(self, message, destinatary):
-    self.dispatch(self.new_direct_messages_url, "POST", {'text':message, 'screen_name':destinatary})
-
-  def home_timeline(self):
-    return self.dispatch(self.home_timeline_url, "GET")
-  
-  #TODO: Use it.
-  def user_timeline(self):
-    return self.dispatch(self.user_timeline_url, "GET")
-
-  def direct_messages(self):
-    return self.dispatch(self.direct_messages_url, "GET")
-
-  def verify_credentials(self):
-    return self.dispatch(self.verify_credentials_url, "GET")
-
-class User:
-  def __init__(self, screen_name="", access_key="", access_secret=""):
-    self.screen_name = screen_name
-    self.access_key = access_key
-    self.access_secret = access_secret
+# Twitter ----> Networks |----> twitter  ---> Oauth, TwitterAPI, TwitterStreamAPI
+#                        |
+#                        |----> identica ---> Oauth, IdenticaAPI
 
 class Applet(CDApplet):
 
@@ -187,7 +52,7 @@ class Applet(CDApplet):
   def refresh_emblem_counter(self):
     counter = self.tweet_stream.qsize() + self.message_stream.qsize()
     if counter > 0:
-      self.emblem.update(counter)                                                 # create the emblem with the counter
+      self.emblem.update(counter)                                                               # create the emblem with the counter
       self.icon.SetIcon(self.emblem.emblem)
     else:
       self.icon.SetIcon(os.path.abspath("./icon"))  
@@ -221,14 +86,14 @@ class Applet(CDApplet):
   # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_entry_into_stream_callback)
   def on_receive_new_entry_into_stream_callback(self, entry):
     if 'user' in entry:                                                                     # tweet
-      if not entry['user']['screen_name'] == self.user.screen_name:                         # not sent by the own user
+      if not entry['user']['screen_name'] == self.twitter.user.screen_name:                         # not sent by the own user
         logp("Inserting new tweet on the stream Queue: %s" % entry)
         self.tweet_stream.put(entry)                                                        # put the new tweet on the stream queue
         self.refresh_emblem_counter()
         if self.config['alert']:                                                            # user wants alert?
           self.send_alert()
     elif 'direct_message' in entry:                                                         # direct messages
-      if not entry['direct_message']['sender']['screen_name'] == self.user.screen_name:     # not sent by the own user
+      if not entry['direct_message']['sender']['screen_name'] == self.twitter.user.screen_name:     # not sent by the own user
         logp("Inserting new message on the message Queue: %s" % entry)
         self.message_stream.put(entry)                                                      # put the new message on the message queue
         self.refresh_emblem_counter()
@@ -238,7 +103,7 @@ class Applet(CDApplet):
   def show_user_timeline(self):
     self.inform_start_of_waiting_process()
     
-    timeline = self.api.user_timeline()
+    timeline = self.twitter_api.user_timeline()
     if len(timeline) > 0:
       ut_menu = menu.Menu(self.icon)                                                        # callback not set since there is no action when clicking ...
       for status in timeline:                                                               # ... on the menu generated from this list
@@ -272,7 +137,7 @@ class Applet(CDApplet):
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
     
-    timeline = self.api.home_timeline()
+    timeline = self.twitter_api.home_timeline()
     if len(timeline) > 0:
       ht_menu = menu.Menu(self.icon, self.on_tweet_list_menu_clicked)
       for status in timeline:
@@ -305,7 +170,7 @@ class Applet(CDApplet):
   def show_direct_messages(self):
     self.inform_start_of_waiting_process()
 
-    messages = self.api.direct_messages()
+    messages = self.twitter_api.direct_messages()
     if len(messages) > 0:
       dm_menu = menu.Menu(self.icon, self.on_direct_messages_list_menu_clicked)
       for status in messages:
@@ -328,99 +193,143 @@ class Applet(CDApplet):
 
   def tweet(self, message):                                                         # popularly "send a tweet"
     self.inform_start_of_waiting_process()
-    self.api.update_status(message)
+    self.twitter_api.update_status(message)
     self.inform_end_of_waiting_process()
 
   def show_credentials(self):
     self.inform_start_of_waiting_process()
-    credentials = self.api.verify_credentials()
+    credentials = self.twitter_api.verify_credentials()
     message = _("%s [<b>%s</b>]\nFollowers: %s\nFriends: %s\nTweets: %s\n") % (credentials['name'], credentials['screen_name'], credentials['followers_count'], credentials['friends_count'], credentials['statuses_count'])
     dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
 
-  # Applet methods
+  # Dialogs for some kind of input
 
   def ask_for_direct_message_reply(self, destinatary):
     dialog = {'buttons':'ok;cancel'}
     widget = {'widget-type':'text-entry', 'nb-chars':self.tweet_length + 1}         # 140 characters max, a direct message
-    self.show_popup_message((_("%s, write a reply to %s")) % (self.user.screen_name, destinatary), dialog, widget)
+    self.show_popup_message((_("%s, write a reply to %s")) % (self.twitter.user.screen_name, destinatary), dialog, widget)
     self.dialog_type = self.responding_sending_direct_message_reply
     self.replying_direct_message_to = destinatary
+    
+  def responding_sending_direct_message_reply(self, content):
+    logp("Sending a direct message '%s'" % content)
+    self.twitter_api.new_direct_message(content, self.replying_direct_message_to)
 
-  # Opens the dialog to be filled with the tweet and also
-  # informs about tweet longer than 140 characters
+  # Opens the dialog to be filled with the tweet and also informs about tweet longer than 140 characters
   def ask_for_tweet(self, default="", warning=False):
     dialog = {'buttons':'ok;cancel'}
     widget = {'widget-type':'text-entry', 'nb-chars':self.tweet_length + 1, 'initial-value':default}  # 140 characters max, a tweet :)
     if not warning:
-      message = _("%s, send a tweet") % self.user.screen_name
+      message = _("%s, send a tweet") % self.twitter.user.screen_name
       self.dialog_type = self.responding_tweet
     else:                                                                                             # user entered more than 140 characters
       message = _("Your tweet has more than %d characters, please make it shorter") % self.tweet_length
       self.dialog_type = self.responding_tweet
     self.show_popup_message(message, dialog, widget)
     
+  def responding_to_tweet(self, content):
+    if len(content) > self.tweet_length:
+      self.ask_for_tweet(content, warning=True)
+    else:
+      logp("Sending a tweet '%s'" % content)
+      self.twitter_api.tweet(content)
+      self.identica_api.tweet(content)
+    
   def ask_for_retweet(self, tweet_id):
     dialog = {'buttons':'ok;cancel'}
-    self.show_popup_message((_("%s, retweet?")) % self.user.screen_name, dialog)
+    self.show_popup_message((_("%s, retweet?")) % self.twitter.user.screen_name, dialog)
     self.dialog_type = self.responding_retweet
     self.retweet_tweet_id = tweet_id
+    
+  def responding_to_retweet(self):
+    logp("Retweeting")
+    self.twitter_api.retweet(self.retweet_tweet_id)
 
-  # TODO: Implement it as a config file using screen_name as section index
-  def read_user_data(self):
-    """Read the users file formated as Screen Name<space>Access Key<space>Access Secret"""
-    found = False
-    if os.path.exists(self.user_file):
-      if os.path.getsize(self.user_file) > 0:
-        f = open(self.user_file, "rb")
-        data = f.read()
-        self.user.screen_name, self.user.access_key, self.user.access_secret = data.split()   # split the line by space token
-        f.close()
-        found = True
-    return found
-
-  def write_user_data(self):
-    f = open(self.user_file, 'w')
-    f.write("%s %s %s" % (self.user.screen_name, self.user.access_key, self.user.access_secret))
-    f.close()
+  # Dialogs for the initial wizard to authorize the user
+  # Initial Information -> Ask for screen name (username) -> Ask for authorization (open browser) -> Insert PIN -> Succesful connected
 
   def show_initial_informations(self):
-    message = _("Twitter Applet needs your nickname, and an authorization\nthat you accept it to connect on your Twitter account")
+    if not self.adding_identica:
+      message = _("Twitter Applet needs your nickname, and an authorization\nthat you accept it to connect on your Twitter account")
+    else:
+      message = _("Identi.ca Applet needs your nickname, and an authorization\nthat you accept it to connect on your Identi.ca account")
     dialog = {'buttons':'next'}
     self.show_popup_message(message, dialog)
     self.dialog_type = self.responding_initial_informations
+    
+  def responding_to_initial_informations(self):
+    self.ask_for_screen_name()
 
   def ask_for_screen_name(self):
-    message = _("What is your Twitter nickname?")
+    if not self.adding_identica:
+      message = _("What is your Twitter nickname?")
+    else:
+      message = _("What is your Identi.ca nickname?")
     dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_screen_name
 
+  def responding_to_screen_name(self, content):
+    logp("Receiving screen name '%s'" % content)
+    if not self.adding_identica:
+      self.twitter.user.screen_name = content
+    else:
+      self.identica.user.screen_name = content
+    self.ask_for_authorization()
+
   def ask_for_authorization(self):
-    authorization_url = self.twitter_auth.get_authorization_url()
+    if not self.adding_identica:
+      authorization_url = self.twitter_auth.get_authorization_url()
+      network = "Twitter"
+    else:
+      authorization_url = self.identica_auth.get_authorization_url()
+      network = "Identi.ca"
     logp("Opening the auth URL '%s'" % authorization_url)
     dialog = {'buttons':'next'}
     try:
       webbrowser.open(authorization_url)
-      message = _("Twitter applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and close this dialog")
+      message = _("%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog" % network)
       self.show_popup_message(message, dialog)
     except webbrowser.Error:    
-      message = _("Twitter applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize")
+      message = _("%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize" % network)
       widget = {'widget-type':'text-entry', 'initial-value':authorization_url}
       self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_authorization
 
+  def responding_to_authorization(self):
+    logp("Asking for PIN")
+    self.ask_for_pin_number()                                                           # ask for the PIN number received when acessed the auth URL
+
   def ask_for_pin_number(self):
-    message = _("Enter the PIN number on the authorization page")
+    message = _("Enter the PIN number shown on the authorization page")
     dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_pin
-
-  def show_popup_successful_connection(self):
-    self.show_popup_message(_("Successfully connected with Twitter"))
+    
+  def responding_to_pin(self, content):
+    logp("Receiving PIN: %s" % content)
+    if not self.adding_identica:
+      self.twitter.user.access_key, self.twitter.user.access_secret = self.twitter_auth.get_access_token_and_secret(content)
+      logp("Writing user data")
+      self.twitter.user.write()                                                           # writing user's access token and access secret to be ...
+      self.twitter_api = self.twitter.get_api(self.on_receive_new_entry_into_stream_callback)     # ... used here, check twitter.py method get_api
+      if self.twitter_api:
+        self.show_popup_message(_("Successfully connected with Twitter"))
+      else:
+        logm("A problem has occurred while getting access to Twitter API")
+    else:
+      self.identica.user.access_key, self.identica.user.access_secret = self.identica_auth.get_access_token_and_secret(content)
+      logp("Writing user data")
+      self.identica.user.write()                                                           # writing user's access token and access secret to be ...
+      self.identica_api = self.identica.get_api()                                          # ... used here, check identica.py method get_api
+      if self.identica_api:
+        self.show_popup_message(_("Successfully connected with Identi.ca"))
+      else:
+        logm("A problem has occurred while getting access to the Identi.ca API")
 
   def show_popup_message(self, message, dialog={}, widget={}):
     dialog_attributes = {'message':message}
@@ -428,6 +337,8 @@ class Applet(CDApplet):
     dialog_attributes.update(dialog)
     widget_attributes.update(widget)
     self.icon.PopupDialog (dialog_attributes, widget_attributes)
+
+  # Menus
 
   def build_direct_messages_menu(self):
     direct_messages_menu = []
@@ -477,14 +388,37 @@ class Applet(CDApplet):
         'icon'  : os.path.abspath("./data/tweet.png")
     })
     self.icon.AddMenuItems(user_timeline_menu)
+    
+  def build_identica_menu(self):
+    identica_menu = []
+    menu = {
+        'type'  : CDApplet.MENU_SUB_MENU,
+        'label' : _("Identi.ca"),
+        'id'    : self.identica_menu_id,
+        'icon'  : os.path.abspath("./data/identica.png")
+    }
+    sub_menu = {
+        'type'  : CDApplet.MENU_ENTRY,
+        'label' : _("Add"),
+        'id'    : self.add_identica_menu_id,
+        'menu'  : self.identica_menu_id
+    }
+    identica_menu.append (menu)
+    identica_menu.append (sub_menu)
+    self.icon.AddMenuItems(identica_menu)
 
   def __init__(self):
-    self.user = User()
-    self.user_file = os.path.abspath(os.path.join(os.getcwd(),'..','..','.twitter_users'))      # ~/.config/cairo-dock/.twitter_users
-    self.twitter_auth = TwitterOauth()
     
-    self.api = None
-    self.stream_api = None
+    self.networks = Networks()
+    
+    self.twitter = self.networks.twitter()
+    self.twitter_auth = self.twitter.Oauth()
+    self.twitter_api = None
+
+    self.identica = self.networks.identica()
+    self.identica_auth = self.identica.Oauth()
+    self.identica_api = None
+    self.adding_identica = False
     
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
     self.responding_success, self.responding_tweet, self.responding_initial_informations,
@@ -497,6 +431,8 @@ class Applet(CDApplet):
     self.credentials_menu_id      = 2000
     self.tweets_menu_id           = 3000
     self.user_timeline_menu_id    = 4000
+    self.identica_menu_id         = 5000
+    self.add_identica_menu_id     = 5001
     
     self.tweet_length             = 140
     
@@ -508,14 +444,14 @@ class Applet(CDApplet):
   # Inherited methods from CDApplet
   def begin(self):
     logp("Looking for user ...")
-    if not self.read_user_data():                                                                     # first time for the user
+    if self.twitter.user.read():                                                                      # first time for the user
+      logp("User '%s' found" % self.twitter.user.screen_name)
+      self.twitter_api = self.twitter.get_api(self.on_receive_new_entry_into_stream_callback)         # pass stream api callback, kind of ugly it yet
+      if self.identica.user.read():
+        self.identica_api = self.identica.get_api()
+    else:                                                                                             # user not found
       logm("User not found")
       self.show_initial_informations()                                                                # start the wizard
-    else:                                                                                             # user not found
-      logp("User '%s' found" % self.user.screen_name)
-      self.api = TwitterAPI(self.user.access_key, self.user.access_secret)                            # getting control over the api
-      # setting the callback to receive the data of every entry on the stream
-      self.stream_api = TwitterStreamAPI(self.user.access_key, self.user.access_secret, self.on_receive_new_entry_into_stream_callback)
 
   def get_config(self, keyfile):
     self.config['emblem_size'] = keyfile.get('Configuration', 'emblem_size')
@@ -532,36 +468,19 @@ class Applet(CDApplet):
   def on_answer_dialog(self, key, content):
     if (key == 0 or key == -1):                                                                       # ... and pressed Ok or Enter
       if self.dialog_type == self.responding_initial_informations:
-        self.ask_for_screen_name()
+        self.responding_to_initial_informations()
       elif self.dialog_type == self.responding_screen_name:                                           # user typed screen name ...
-        logp("Receiving screen name '%s'" % content)
-        self.user.screen_name = content
-        self.ask_for_authorization()
+        self.responding_to_screen_name(content)
       elif self.dialog_type == self.responding_authorization:
-        logp("Asking for PIN")
-        self.ask_for_pin_number()                                                     # ask for the PIN number received when acessed the auth URL
-      elif self.dialog_type == self.responding_pin:                                   # user typed the PIN number
-        logp("Receiving PIN: %s" % content)
-        self.user.access_key, self.user.access_secret = self.twitter_auth.get_access_token_and_secret(content)
-        logp("Writing user data")
-        self.write_user_data()                                                        # writing the new users data
-        self.api = TwitterAPI(self.user.access_key, self.user.access_secret)          # getting control over the api
-        if self.api:
-          self.show_popup_successful_connection()
-        else:
-          logm("A problem has occurred while getting access to the API")
+        self.responding_to_authorization()
+      elif self.dialog_type == self.responding_pin:                                                   # user typed the PIN number
+        self.responding_to_pin(content)
       elif self.dialog_type == self.responding_tweet:
-        if len(content) > self.tweet_length:
-            self.ask_for_tweet(content, True)
-        else:
-          logp("Sending a tweet '%s'" % content)
-          self.api.tweet(content)
+        self.responding_to_tweet(content)
       elif self.dialog_type == self.responding_sending_direct_message_reply:
-        logp("Sending a direct message '%s'" % content)
-        self.api.new_direct_message(content, self.replying_direct_message_to)
+        self.responding_to_sending_direct_message_reply(content)
       elif self.dialog_type == self.responding_retweet:
-        logp("Retweeting")
-        self.api.retweet(self.retweet_tweet_id)
+        self.responding_to_retweet()
 
   # If there is nothing to be seen, the left click opens the dialog to write a tweet
   # Otherwise we check if there is something new, likely to be what the user wants
@@ -582,6 +501,8 @@ class Applet(CDApplet):
     self.build_user_timeline_menu()
     self.build_direct_messages_menu()
     self.build_tweets_menu()
+    if not self.identica_api:
+      self.build_identica_menu()
 
   def on_menu_select(self, selected_menu):
     if selected_menu == self.direct_messages_menu_id:
@@ -598,6 +519,9 @@ class Applet(CDApplet):
         self.show_new_tweets()                                                        # show new tweets
     elif selected_menu == self.user_timeline_menu_id:
       self.show_user_timeline()
+    elif selected_menu == self.add_identica_menu_id:
+      self.adding_identica = True
+      self.show_initial_informations()
 
 if __name__ == '__main__':
   Applet().run()

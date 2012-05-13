@@ -15,17 +15,12 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #  GNU General Public License for more details.
 
-# Can be either a Tweet or a Direct Message
-class Message:
-  def __init__(self, text, sender):
-    self.text = text
-    self.sender = sender
-    
-class DirectMessage(Message):
-  def __init__(self, text, sender):
-    Message.__init__(self, text, sender)
+class Networks:
 
-class Tweet(Message):
-  def __init__(self, text, sender, uid):
-    Message.__init__(self, text, sender)
-    self.uid = uid                                                                          # it is going to be used to retweet this Tweet
+  def twitter(self):
+    from twitter import Twitter
+    return Twitter()
+  
+  def identica(self):
+    from identica import Identica
+    return Identica()
