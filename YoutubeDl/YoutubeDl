@@ -1,0 +1,56 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# YoutubeDl, plugin for Cairo-Dock. Download Youtube videos.
+# Copyright 2012 Brian Whitelock
+# Based on DiskFree, from Xavier Nayrac, modified by brianw, based on 
+# demo.py by Fabounet.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# multiprocessing and queue are used to run and communicate with the background
+# downloader process.
+import multiprocessing, Queue
+
+# the defind python file for the cairo-dock and user interface.
+from YoutubeDlPlugin import YoutubeDlPlugin
+# the defind python file for the background downloader
+from myYoutubeDownloader import YoutubeDownloader
+
+# we need a queue to pass the work (urls) to the downloader
+work_queue = multiprocessing.Queue(1)
+# a queue to pass the results of the downloader process
+result_queue = multiprocessing.Queue(2)
+#currentFilename_queue = multiprocessing.Queue(1)
+
+# create the background downloader
+downloadManager = YoutubeDownloader(work_queue, result_queue)
+# Uncomment the following line to trace debug actions in the console.
+#downloadManager.debug()
+# start the background downloader
+downloadManager.start()
+ 
+# create the front end plugin interface
+plugin = YoutubeDlPlugin(work_queue, result_queue)
+# Uncomment the following line to trace debug actions in the console.
+#plugin.debug()
+# start the front end plugin interface
+plugin.run()
+
+# try to end the background downloader
+downloadManager.join(1)
+#If the downloader is still active then terminate it
+if downloadManager.is_alive():
+    downloadManager.terminate()
+    downloadManager.join(1)
