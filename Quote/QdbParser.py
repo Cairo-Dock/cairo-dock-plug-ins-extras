@@ -9,6 +9,7 @@ class QdbParser(SGMLParser):
 
     def reset(self):                              
         SGMLParser.reset(self)
+        self.name = "Qdb.us"
         self.url = "http://www.qdb.us/random"
         self.quote = []
         self.inside_span_element = False                                            # indica se o parser esta dentro de <span></span> tag

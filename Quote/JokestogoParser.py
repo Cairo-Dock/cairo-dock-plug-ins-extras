@@ -9,6 +9,7 @@ class JokestogoParser(SGMLParser):
 
     def reset(self):                              
         SGMLParser.reset(self)
+        self.name = "Jokes2go.com"
         self.url = "http://www.jokes2go.com/cgi-perl/randjoke.cgi?type=j"
         self.quote = []
         self.inside_pre_element = False                                             # indica se o parser esta dentro de <pre></pre> tag

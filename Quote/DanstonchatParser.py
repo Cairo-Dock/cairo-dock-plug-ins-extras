@@ -9,6 +9,7 @@ class DanstonchatParser(SGMLParser):
 
 	def reset(self):                              
 		SGMLParser.reset(self)
+		self.name = "Danstonchat.com"
 		self.url = "http://danstonchat.com/random.html"
 		self.quote = []
 		self.inside_div_element = False                                             # indica se o parser esta dentro de <span></span> tag

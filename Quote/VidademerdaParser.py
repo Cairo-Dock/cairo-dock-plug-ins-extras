@@ -9,6 +9,7 @@ class VidademerdaParser(SGMLParser):
 
     def reset(self):
         SGMLParser.reset(self)
+        self.name = "Vidademerda.com.br"
         self.url = "http://vidademerda.com.br/aleatorias"
         self.quote = []
         self.author = []

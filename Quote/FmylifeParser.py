@@ -5,12 +5,11 @@
 
 from sgmllib import SGMLParser
 
-class ViedemerdeParser(SGMLParser):
+class FmylifeParser(SGMLParser):
 
   def reset(self):
     SGMLParser.reset(self)
-    self.name = "Viedemerde.fr"
-    self.url = "http://www.viedemerde.fr/aleatoire"
+    self.url = "http://www.fmylife.com/random"
     self.quote = []                                         # list of quotes to be filled
     self.inside_div_element = False                         # indicates if the parser is inside the <div></div> tag
     self.inside_div_p_element = False
@@ -18,7 +17,7 @@ class ViedemerdeParser(SGMLParser):
 
   def start_div(self, attrs):
     for name, value in attrs:
-      if name == "class" and value == "post article":       # <div class="post article">...</dt>
+      if name == "class" and value == "post article":       # <div class="post article">...</div>
         self.inside_div_element = True
 
   def end_div(self):

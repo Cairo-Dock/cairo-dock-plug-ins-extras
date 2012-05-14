@@ -9,6 +9,7 @@ class QuotationspageParser(SGMLParser):
 
     def reset(self):
         SGMLParser.reset(self)
+        self.name = "Quotationspage.com"
         self.url = "http://www.quotationspage.com/qotd.html"
         self.quote = []
         self.author = []

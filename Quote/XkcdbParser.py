@@ -9,6 +9,7 @@ class XkcdbParser(SGMLParser):
 
     def reset(self):                              
         SGMLParser.reset(self)
+        self.name = "Xkcdb.com"
         self.url = "http://www.xkcdb.com/?random"
         self.quote = []
         self.inside_span_element = False                                               # indica se o parser esta dentro de <p></p> tag

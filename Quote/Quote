@@ -46,9 +46,12 @@ from DanstonchatParser import DanstonchatParser                         # Dansto
 from JokestogoParser import JokestogoParser                             # Jokes2go.com
 from VidademerdaParser import VidademerdaParser                         # Vidademerda.com.br
 from ViedemerdeParser import ViedemerdeParser                           # Viedemerde.fr
+from FmylifeParser import FmylifeParser                                 # Fmylife.com
+from VitadimerdaParser import VitadimerdaParser                         # VitadimerdaParser.it
+from HundredblaguesParser import HundredblaguesParser                   # HundredblaguesParser.com
 
-# quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6, viedemerde = 7
-quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda, viedemerde = range(8)  
+# quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6, viedemerde = 7, fmylife = 8, vitadimerda = 9, hundredblagues = 10
+quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda, viedemerde, fmylife, vitadimerda, hundredblagues = range(11)  
 
 class AgentOpener(FancyURLopener):
   """Masked user-agent otherwise the access would be forbidden"""
@@ -62,22 +65,28 @@ class Interface:
     self.quote = []                                                     # List of quotes of the current source
 
   def fetch(self):
-    if (self.source == quotationspage):
+    if self.source == quotationspage:
       parser = QuotationspageParser()                                   # QuotationspageParser.py
-    elif (self.source == bash):
+    elif self.source == bash:
       parser = BashParser()                                             # BashParser.py
-    elif (self.source == xkcdb):
+    elif self.source == xkcdb:
       parser = XkcdbParser()                                            # XkcdbParser.py
-    elif (self.source == qdb):
+    elif self.source == qdb:
       parser = QdbParser()                                              # QdbParser.py
-    elif (self.source == danstonchat):
+    elif self.source == danstonchat:
       parser = DanstonchatParser()                                      # DanstonchatParser.py
-    elif (self.source == jokestogo):
+    elif self.source == jokestogo:
       parser = JokestogoParser()
-    elif (self.source == vidademerda):                                  # VidademerdaParser.py
+    elif self.source == vidademerda:                                    # VidademerdaParser.py
       parser = VidademerdaParser()
-    else:                                                               # ViedemerdeParser.py
-      parser = ViedemerdeParser()
+    elif self.source == viedemerde:
+      parser = ViedemerdeParser()                                       # ViedemerdeParser.py
+    elif self.source == fmylife:                                                               
+      parser = FmylifeParser()                                          # FmylifeParser.py
+    elif self.source == vitadimerda:
+      parser = VitadimerdaParser()                                      # VitadimerdaParser.py
+    else:
+      parser = HundredblaguesParser()
 
     opener = AgentOpener()                                              # opens the web connection with masked user-agent
 
@@ -88,13 +97,14 @@ class Interface:
     else:
       parser.parse(page.read())                                         # feed the parser with the page's content
       page.close()                                                      # close the page connection
-      
+            
       # Handle different kind of returns from the parser. It is necessary because some sources return quotes with extra
       # characters that we need to filter here. Some come with extra '', others come with linebreaks, etc.
+      
       if (self.source == quotationspage):  
         self.quote = parser.quote
         self.author = parser.author
-      elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat or self.source == viedemerde):
+      elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues]:
         self.quote = filter(None, parser.quote)                         # remove the '' from the array
       elif self.source == jokestogo:                                    # jokestogo
         self.quote = filter(self.linebreak, parser.quote)               # remove linebreak from the array
@@ -116,7 +126,8 @@ class Applet(CDApplet):
     self.copy_current_quote_key = 0
     self.go_next_quote_key = 1
     self.source = quotationspage
-    self.cSiteNames = ['Quotationspage.com','Bash.org','Xkcdb.com','Qdb.us','Danstonchat.com','Jokes2go.com','Vidademerda.com.br', 'Viedemerde.fr']
+    self.names = ["Quotationspage.com","Bash.org","Xkcdb.com","Qdb.us","Danstonchat.com","Jokes2go.com",
+                    "Vidademerda.com.br","Viedemerde.fr","Fmylife.com", "Vitadimerda.it", "100blagues.com"]
     
     CDApplet.__init__(self)                                             # call high-level init
   
@@ -141,7 +152,7 @@ class Applet(CDApplet):
   def show_quote(self):
     if (self.source == quotationspage):
       self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # quote[x] ~ author[x]
-    elif (self.source == bash or self.source == xkcdb or self.source == qdb or self.source == danstonchat or self.source == viedemerde):
+    elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues]:
       try:                                                              # check if it is possible to show the already stored quotes
         current = self.quotes.next()
       except StopIteration:                                             # all were already shown
@@ -162,14 +173,14 @@ class Applet(CDApplet):
   def inform_end_of_waiting_process(self):
     self.icon.SetQuickInfo("")
   
-  def _display_site_name(self):
+  def display_source_name(self):
     if self.config['default title'] == "":
-      self.icon.SetLabel(self.cSiteNames[self.source])
+      self.icon.SetLabel(self.names[self.source])
   
   # Inherited methods from CDApplet
   def begin(self):
     self.get_quotes_from_web()
-    self._display_site_name()
+    self.display_source_name()
 
   def get_config(self, keyfile):
     self.source = keyfile.getint('Configuration', 'source')             # get the source of quotations
@@ -177,7 +188,7 @@ class Applet(CDApplet):
 
   def reload(self):
     self.get_quotes_from_web()                                          # refresh the quotations
-    self._display_site_name()
+    self.display_source_name()
 
   # Callbacks
   def on_click(self, key):
