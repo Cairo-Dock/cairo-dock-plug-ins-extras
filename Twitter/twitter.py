@@ -18,27 +18,29 @@
 from oauth import oauth
 import simplejson, threading, urllib2
 
+from network import Network
 from user import User
 from http import post, get #, stream
 from util import *
 
-class Twitter:
+class Twitter(Network):
   def __init__(self):
-    self.name = "twitter"
+    Network.__init__(self, "twitter")
     self.user = User(network=self.name)
+    self.auth = self.Oauth()
+    self.api = None
     
   def get_api(self, stream_api_callback):
-    # start StreamAPI and return the instance of TwitterAPI
-    if self.user_exists():
+    if self.user.exists():
+      logp("User '%s' found for Twitter" % self.user.screen_name)
       logp("Getting Twitter API")
       self.TwitterStreamAPI(self.user.access_key, self.user.access_secret, stream_api_callback)
-      return self.TwitterAPI(self.user.access_key, self.user.access_secret)
+      self.api = self.TwitterAPI(self.user.access_key, self.user.access_secret)
+      return True
     else:
+      logm("A problem has occurred while getting access to Twitter API")
       return False
       
-  def user_exists(self):
-    return self.user.access_secret and self.user.access_secret
-  
   class Oauth():
     def __init__(self):
       self.request_token_url  = 'https://twitter.com/oauth/request_token'

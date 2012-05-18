@@ -18,10 +18,14 @@
 import ConfigParser
 
 def logp (string):
-    print "[+] Twitter: %s" % string
+  print "[+] Twitter: %s" % string
 
 def logm (string):
-    print "[-] Twitter: %s" % string
+  print "[-] Twitter: %s" % string
+
+def camelcase(string):
+  """ capitalizes only first character of a string """
+  return string[0].capitalize() + string[1:]
 
 # Read the user's consumer key and secret necessary for the requests
 def read_consumer_key_and_secret(network="twitter"):
@@ -32,11 +36,3 @@ def read_consumer_key_and_secret(network="twitter"):
     return config.get(network, 'consumer_key'), config.get(network, 'consumer_secret')
   except configparser.Error:
     logm("It was not possible to read the consumer key and secret for '%s', check the .keys.cgf file" % network)
-#		try:
-#			f = open('.keys')
-#			data = f.read()
-#			f.close()
-#		except IOError:
-#			logm("It was not possible to read the consumer key and secret, check the .keys file")
-#		else:
-#			return data.split()

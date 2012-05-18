@@ -27,10 +27,15 @@
 # To see the received direct messages right-click on the icon -> Twitter -> [New] direct messages. You can reply any of them by left-clicking on it.
 # To see some user's info right-click on the icon -> Twitter -> Info
 
+# TODO: Change icon someway when Identi.ca is added.
+#       Try to fix someway that ugly hack "if not adding_identica:", dammit!
+#       Add more possibilties to the Identi.ca API
+
 import os, webbrowser, Queue
 
 from networks import Networks                                                   # networks.py
-from user import User                                                           # user.py
+from twitter import Twitter
+from identica import Identica
 import emblem, menu                                                             # emblem.py, menu.py
 from message import DirectMessage, Tweet                                        # message.py
 from util import *                                                              # util.py
@@ -55,7 +60,7 @@ class Applet(CDApplet):
       self.emblem.update(counter)                                                               # create the emblem with the counter
       self.icon.SetIcon(self.emblem.emblem)
     else:
-      self.icon.SetIcon(os.path.abspath("./icon"))  
+      self.set_visual_for_active_networks()
     
   def refresh_emblem_size(self):
     if self.config['emblem_size'] == "Small":
@@ -103,7 +108,7 @@ class Applet(CDApplet):
   def show_user_timeline(self):
     self.inform_start_of_waiting_process()
     
-    timeline = self.twitter_api.user_timeline()
+    timeline = self.twitter.api.user_timeline()
     if len(timeline) > 0:
       ut_menu = menu.Menu(self.icon)                                                        # callback not set since there is no action when clicking ...
       for status in timeline:                                                               # ... on the menu generated from this list
@@ -137,7 +142,7 @@ class Applet(CDApplet):
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
     
-    timeline = self.twitter_api.home_timeline()
+    timeline = self.twitter.api.home_timeline()
     if len(timeline) > 0:
       ht_menu = menu.Menu(self.icon, self.on_tweet_list_menu_clicked)
       for status in timeline:
@@ -170,7 +175,7 @@ class Applet(CDApplet):
   def show_direct_messages(self):
     self.inform_start_of_waiting_process()
 
-    messages = self.twitter_api.direct_messages()
+    messages = self.twitter.api.direct_messages()
     if len(messages) > 0:
       dm_menu = menu.Menu(self.icon, self.on_direct_messages_list_menu_clicked)
       for status in messages:
@@ -191,14 +196,9 @@ class Applet(CDApplet):
   def on_tweet_list_menu_clicked(self, widget):
     self.ask_for_retweet(widget.get_label())                                        # label contains the id of the tweet needed to retweet it
 
-  def tweet(self, message):                                                         # popularly "send a tweet"
-    self.inform_start_of_waiting_process()
-    self.twitter_api.update_status(message)
-    self.inform_end_of_waiting_process()
-
   def show_credentials(self):
     self.inform_start_of_waiting_process()
-    credentials = self.twitter_api.verify_credentials()
+    credentials = self.twitter.api.verify_credentials()
     message = _("%s [<b>%s</b>]\nFollowers: %s\nFriends: %s\nTweets: %s\n") % (credentials['name'], credentials['screen_name'], credentials['followers_count'], credentials['friends_count'], credentials['statuses_count'])
     dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
@@ -215,27 +215,29 @@ class Applet(CDApplet):
     
   def responding_sending_direct_message_reply(self, content):
     logp("Sending a direct message '%s'" % content)
-    self.twitter_api.new_direct_message(content, self.replying_direct_message_to)
+    self.twitter.api.new_direct_message(content, self.replying_direct_message_to)
 
   # Opens the dialog to be filled with the tweet and also informs about tweet longer than 140 characters
   def ask_for_tweet(self, default="", warning=False):
-    dialog = {'buttons':'ok;cancel'}
-    widget = {'widget-type':'text-entry', 'nb-chars':self.tweet_length + 1, 'initial-value':default}  # 140 characters max, a tweet :)
     if not warning:
-      message = _("%s, send a tweet") % self.twitter.user.screen_name
-      self.dialog_type = self.responding_tweet
+      message = _("%s, send a tweet" % (self.twitter.user.screen_name or self.identica.user.screen_name))
     else:                                                                                             # user entered more than 140 characters
       message = _("Your tweet has more than %d characters, please make it shorter") % self.tweet_length
-      self.dialog_type = self.responding_tweet
+    dialog = {'buttons':'ok;cancel'}
+    widget = {'widget-type':'text-entry', 'nb-chars':self.tweet_length + 1, 'initial-value':default}  # 140 characters max, a tweet :)
+    self.dialog_type = self.responding_tweet
     self.show_popup_message(message, dialog, widget)
     
   def responding_to_tweet(self, content):
     if len(content) > self.tweet_length:
       self.ask_for_tweet(content, warning=True)
     else:
-      logp("Sending a tweet '%s'" % content)
-      self.twitter_api.tweet(content)
-      self.identica_api.tweet(content)
+      if self.twitter.api:
+        logp("Sending a tweet with Twitter '%s'" % content)
+        self.twitter.api.tweet(content)
+      if self.identica.api:
+        logp("Sending a tweet with Identi.ca '%s'" % content)
+        self.identica.api.tweet(content)
     
   def ask_for_retweet(self, tweet_id):
     dialog = {'buttons':'ok;cancel'}
@@ -245,16 +247,18 @@ class Applet(CDApplet):
     
   def responding_to_retweet(self):
     logp("Retweeting")
-    self.twitter_api.retweet(self.retweet_tweet_id)
+    self.twitter.api.retweet(self.retweet_tweet_id)
 
   # Dialogs for the initial wizard to authorize the user
   # Initial Information -> Ask for screen name (username) -> Ask for authorization (open browser) -> Insert PIN -> Succesful connected
+  
+  def show_inexistence_of_networks(self):
+    message = _("This applet supports Twitter, and Identi.ca.\nRight-click -> Add account -> Twitter.\nRight-click -> Add account -> Identi.ca.")
+    self.show_popup_message(message)
 
   def show_initial_informations(self):
-    if not self.adding_identica:
-      message = _("Twitter Applet needs your nickname, and an authorization\nthat you accept it to connect on your Twitter account")
-    else:
-      message = _("Identi.ca Applet needs your nickname, and an authorization\nthat you accept it to connect on your Identi.ca account")
+    name = camelcase(self.new_network.name)
+    message = _("%s Applet needs your nickname, and an authorization\nthat you accept it to connect on your %s account" % (name, name))
     dialog = {'buttons':'next'}
     self.show_popup_message(message, dialog)
     self.dialog_type = self.responding_initial_informations
@@ -263,10 +267,7 @@ class Applet(CDApplet):
     self.ask_for_screen_name()
 
   def ask_for_screen_name(self):
-    if not self.adding_identica:
-      message = _("What is your Twitter nickname?")
-    else:
-      message = _("What is your Identi.ca nickname?")
+    message = _("What is your %s nickname?" % camelcase(self.new_network.name))
     dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
@@ -274,27 +275,19 @@ class Applet(CDApplet):
 
   def responding_to_screen_name(self, content):
     logp("Receiving screen name '%s'" % content)
-    if not self.adding_identica:
-      self.twitter.user.screen_name = content
-    else:
-      self.identica.user.screen_name = content
+    self.new_network.user.screen_name = content
     self.ask_for_authorization()
 
   def ask_for_authorization(self):
-    if not self.adding_identica:
-      authorization_url = self.twitter_auth.get_authorization_url()
-      network = "Twitter"
-    else:
-      authorization_url = self.identica_auth.get_authorization_url()
-      network = "Identi.ca"
+    authorization_url = self.new_network.auth.get_authorization_url()
     logp("Opening the auth URL '%s'" % authorization_url)
     dialog = {'buttons':'next'}
     try:
       webbrowser.open(authorization_url)
-      message = _("%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog" % network)
+      message = _("%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog" % camelcase(self.new_network.name))
       self.show_popup_message(message, dialog)
     except webbrowser.Error:    
-      message = _("%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize" % network)
+      message = _("%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize" % camelcase(self.new_network.name))
       widget = {'widget-type':'text-entry', 'initial-value':authorization_url}
       self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_authorization
@@ -312,24 +305,15 @@ class Applet(CDApplet):
     
   def responding_to_pin(self, content):
     logp("Receiving PIN: %s" % content)
-    if not self.adding_identica:
-      self.twitter.user.access_key, self.twitter.user.access_secret = self.twitter_auth.get_access_token_and_secret(content)
-      logp("Writing user data")
-      self.twitter.user.write()                                                           # writing user's access token and access secret to be ...
-      self.twitter_api = self.twitter.get_api(self.on_receive_new_entry_into_stream_callback)     # ... used here, check twitter.py method get_api
-      if self.twitter_api:
+    self.new_network.user.access_key, self.new_network.user.access_secret = self.new_network.auth.get_access_token_and_secret(content)
+    self.new_network.user.write()                                                               # writing user's access token and access secret to be ...
+    if isinstance(self.new_network, Twitter):
+      if self.new_network.get_api(self.on_receive_new_entry_into_stream_callback):              # ... used here, check twitter.py method get_api
         self.show_popup_message(_("Successfully connected with Twitter"))
-      else:
-        logm("A problem has occurred while getting access to Twitter API")
     else:
-      self.identica.user.access_key, self.identica.user.access_secret = self.identica_auth.get_access_token_and_secret(content)
-      logp("Writing user data")
-      self.identica.user.write()                                                           # writing user's access token and access secret to be ...
-      self.identica_api = self.identica.get_api()                                          # ... used here, check identica.py method get_api
-      if self.identica_api:
+      if self.new_network.get_api():                                                            # ... used here, check identica.py method get_api
         self.show_popup_message(_("Successfully connected with Identi.ca"))
-      else:
-        logm("A problem has occurred while getting access to the Identi.ca API")
+    self.set_visual_for_active_networks()
 
   def show_popup_message(self, message, dialog={}, widget={}):
     dialog_attributes = {'message':message}
@@ -388,70 +372,96 @@ class Applet(CDApplet):
         'icon'  : os.path.abspath("./data/tweet.png")
     })
     self.icon.AddMenuItems(user_timeline_menu)
+
+  def build_add_twitter_and_identica_account_menus(self):
+    self.icon.AddMenuItems([self.build_add_account_menu(),self.build_add_twitter_account_menu(),self.build_add_identica_account_menu()])
     
-  def build_identica_menu(self):
-    identica_menu = []
-    menu = {
+  def build_add_only_twitter_account_menu(self):
+    self.icon.AddMenuItems([self.build_add_account_menu(),self.build_add_twitter_account_menu()])
+    
+  def build_add_only_identica_account_menu(self):
+    self.icon.AddMenuItems([self.build_add_account_menu(),self.build_add_identica_account_menu()])
+
+  def build_add_account_menu(self):
+    add_account_menu = {
         'type'  : CDApplet.MENU_SUB_MENU,
-        'label' : _("Identi.ca"),
-        'id'    : self.identica_menu_id,
-        'icon'  : os.path.abspath("./data/identica.png")
+        'label' : _("Add account"),
+        'id'    : self.add_account_menu_id
     }
-    sub_menu = {
+    return add_account_menu
+
+  def build_add_twitter_account_menu(self):
+    twitter_menu = {
         'type'  : CDApplet.MENU_ENTRY,
-        'label' : _("Add"),
-        'id'    : self.add_identica_menu_id,
-        'menu'  : self.identica_menu_id
+        'label' : _("Twitter"),
+        'id'    : self.add_twitter_account_menu_id,
+        'icon'  : os.path.abspath("./data/twitter.png"),
+        'menu'  : self.add_account_menu_id
     }
-    identica_menu.append (menu)
-    identica_menu.append (sub_menu)
-    self.icon.AddMenuItems(identica_menu)
+    return twitter_menu
+
+  def build_add_identica_account_menu(self):
+    identica_menu = {
+        'type'  : CDApplet.MENU_ENTRY,
+        'label' : _("Identi.ca"),
+        'id'    : self.add_identica_account_menu_id,
+        'icon'  : os.path.abspath("./data/identica.png"),
+        'menu'  : self.add_account_menu_id
+    }
+    return identica_menu
+    
+  def set_visual_for_active_networks(self):
+    if self.twitter.api:
+      if self.identica.api:
+        self.icon.SetLabel("Twitter and Identi.ca")
+        self.icon.SetIcon(os.path.abspath("./data/twitter_and_identica.png"))
+    else:
+      if self.identica.api:
+        self.icon.SetLabel("Identi.ca")
+        self.icon.SetIcon(os.path.abspath("./data/identica.png"))
 
   def __init__(self):
     
-    self.networks = Networks()
+    # TODO: Rename class, and file
+    self.interface = Networks()
     
-    self.twitter = self.networks.twitter()
-    self.twitter_auth = self.twitter.Oauth()
-    self.twitter_api = None
-
-    self.identica = self.networks.identica()
-    self.identica_auth = self.identica.Oauth()
-    self.identica_api = None
-    self.adding_identica = False
+    self.twitter = self.interface.twitter()
+    self.identica = self.interface.identica()
+    
+    # self.networks = []  # self.twitter, self.identica
     
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
     self.responding_success, self.responding_tweet, self.responding_initial_informations,
     self.responding_sending_direct_message_reply, self.responding_retweet) = range(8)
     self.dialog_type = None
     
-    self.emblem = emblem.Emblem()                                                                     # emblem maker, see emblem.py
+    self.emblem = emblem.Emblem()                                                                       # emblem maker, see emblem.py
 
     self.direct_messages_menu_id  = 1000
     self.credentials_menu_id      = 2000
     self.tweets_menu_id           = 3000
     self.user_timeline_menu_id    = 4000
-    self.identica_menu_id         = 5000
-    self.add_identica_menu_id     = 5001
+    
+    self.add_account_menu_id              = 5000
+    self.add_identica_account_menu_id     = 5001
+    self.add_twitter_account_menu_id      = 5002
     
     self.tweet_length             = 140
     
     self.tweet_stream   = Queue.Queue()
     self.message_stream = Queue.Queue()
 
-    CDApplet.__init__(self)                                                                           # call CDApplet interface init
+    CDApplet.__init__(self)                                                                             # call CDApplet interface init
 
   # Inherited methods from CDApplet
   def begin(self):
     logp("Looking for user ...")
-    if self.twitter.user.read():                                                                      # first time for the user
-      logp("User '%s' found" % self.twitter.user.screen_name)
-      self.twitter_api = self.twitter.get_api(self.on_receive_new_entry_into_stream_callback)         # pass stream api callback, kind of ugly it yet
-      if self.identica.user.read():
-        self.identica_api = self.identica.get_api()
-    else:                                                                                             # user not found
+    if self.twitter.get_api(self.on_receive_new_entry_into_stream_callback):                            # pass stream api callback, ugly yet!
+      self.identica.get_api()
+    elif not self.identica.get_api():
       logm("User not found")
-      self.show_initial_informations()                                                                # start the wizard
+      self.show_inexistence_of_networks()   
+    self.set_visual_for_active_networks()
 
   def get_config(self, keyfile):
     self.config['emblem_size'] = keyfile.get('Configuration', 'emblem_size')
@@ -497,12 +507,20 @@ class Applet(CDApplet):
     self.show_home_timeline()
 
   def on_build_menu(self):
-    self.build_credentials_menu()
-    self.build_user_timeline_menu()
-    self.build_direct_messages_menu()
-    self.build_tweets_menu()
-    if not self.identica_api:
-      self.build_identica_menu()
+    if self.twitter.api:
+      self.build_credentials_menu()
+      self.build_user_timeline_menu()
+      self.build_direct_messages_menu()
+      self.build_tweets_menu()
+      if self.identica.api:
+        logp("All accounts added")
+      else:
+        self.build_add_only_identica_account_menu()
+    else:
+      if self.identica.api:
+        self.build_add_only_twitter_account_menu()
+      else:
+        self.build_add_twitter_and_identica_account_menus()  
 
   def on_menu_select(self, selected_menu):
     if selected_menu == self.direct_messages_menu_id:
@@ -519,8 +537,11 @@ class Applet(CDApplet):
         self.show_new_tweets()                                                        # show new tweets
     elif selected_menu == self.user_timeline_menu_id:
       self.show_user_timeline()
-    elif selected_menu == self.add_identica_menu_id:
-      self.adding_identica = True
+    elif selected_menu == self.add_identica_account_menu_id:
+      self.new_network = self.identica
+      self.show_initial_informations()
+    elif selected_menu == self.add_twitter_account_menu_id:
+      self.new_network = self.twitter
       self.show_initial_informations()
 
 if __name__ == '__main__':

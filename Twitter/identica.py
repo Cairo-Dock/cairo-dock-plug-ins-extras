@@ -18,24 +18,27 @@
 from oauth import oauth
 import urllib2, urllib
 
+from network import Network
 from user import User
 from http import post, get
 from util import *
 
-class Identica:
+class Identica(Network):
   def __init__(self):
-    self.name = "identica"
+    Network.__init__(self, "identica")
     self.user = User(network=self.name)
+    self.auth = self.Oauth()
+    self.api = None
     
   def get_api(self):
-    if self.user_exists():
+    if self.user.exists():
+      logp("User '%s' found for Identi.ca" % self.user.screen_name)
       logp("Getting Identi.ca API")
-      return self.IdenticaAPI(self.user.access_key, self.user.access_secret)
+      self.api = self.IdenticaAPI(self.user.access_key, self.user.access_secret)
+      return True
     else:
+      logm("A problem has occurred while getting access to Identi.ca API")
       return False
-      
-  def user_exists(self):
-    return self.user.access_secret and self.user.access_secret
     
   class Oauth:
     def __init__(self):
@@ -87,9 +90,6 @@ class Identica:
       consumer_key, consumer_secret = read_consumer_key_and_secret("identica")
       self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
       self.access_token = oauth.OAuthToken(access_key, access_secret)
-      print "=================="
-      print self.access_token
-      print "=================="
       
       self.update_url = 'http://identi.ca/api/statuses/update.json'
 
@@ -100,7 +100,7 @@ class Identica:
                                                                parameters = parameters,
                                                                http_method = mode)
       oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-      print oauth_request.to_url()
+#      logp(oauth_request.to_url())
       if mode == "GET":
         url = oauth_request.to_url()
         response = get(url) 

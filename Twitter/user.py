@@ -17,13 +17,16 @@
 
 import os
 
+from util import *
+
 class User:
   def __init__(self, screen_name="", access_key="", access_secret="", network="twitter"):
     self.screen_name = screen_name
     self.access_key = access_key
     self.access_secret = access_secret
-    self.user_file = os.path.abspath(os.path.join(os.getcwd(),'..','..','.%s_users' % network))      # ~/.config/cairo-dock/.twitter_users
-    
+    self.network = network
+    self.user_file = os.path.abspath(os.path.join(os.getcwd(),'..','..','.%s_users' % self.network))      # ~/.config/cairo-dock/.twitter_users
+  
   # TODO: Implement it as a config file using screen_name as section index
   def read(self):
     """Read the users file formated as Screen Name<space>Access Key<space>Access Secret"""
@@ -32,13 +35,17 @@ class User:
       if os.path.getsize(self.user_file) > 0:
         f = open(self.user_file, "rb")
         data = f.read()
-        self.screen_name, self.access_key, self.access_secret = data.split()                    # split the line by space token
+        self.screen_name, self.access_key, self.access_secret = data.split()                              # split the line by space token
         f.close()
         found = True
     return found
 
   def write(self):
+    logp("Writing user data for %s" % self.network)
     f = open(self.user_file, 'w')
     f.write("%s %s %s" % (self.screen_name, self.access_key, self.access_secret))
     f.close()
+    
+  def exists(self):
+    return self.read()
 
