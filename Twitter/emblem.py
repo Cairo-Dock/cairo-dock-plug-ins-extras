@@ -33,7 +33,7 @@ class Emblem:
     svg = open(self.emblem, 'w')
     svg.write(self.draw())
     svg.close()
-    
+
   def set_size_small(self):
     self.size = self.size_small
 
@@ -227,7 +227,7 @@ class Emblem:
     </g>
   </g>
 </svg>"""
-    formated_counter = str('%02d' % self.counter)
+    formated_counter = str('%02s' % self.counter)
     return emblem_string.format(formated_counter)     # replaces the '{0}' on the triple-quoted http://stackoverflow.com/questions/3877623/in-python-can-you-have-variables-within-triple-quotes-if-so-how
     
   def draw_medium(self):
@@ -406,7 +406,7 @@ class Emblem:
     </g>
   </g>
 </svg>"""
-    formated_counter = str('%02d' % self.counter)
+    formated_counter = str('%02s' % self.counter)
     return emblem_string.format(formated_counter)     # replaces the '{0}' on the triple-quoted http://stackoverflow.com/questions/3877623/in-python-can-you-have-variables-within-triple-quotes-if-so-how
     
   def draw_large(self):
@@ -584,5 +584,5 @@ class Emblem:
     </g>
   </g>
 </svg>"""
-    formated_counter = str('%02d' % self.counter)
+    formated_counter = str('%02s' % self.counter)
     return emblem_string.format(formated_counter)     # replaces the '{0}' on the triple-quoted http://stackoverflow.com/questions/3877623/in-python-can-you-have-variables-within-triple-quotes-if-so-how

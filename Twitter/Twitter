@@ -15,20 +15,14 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #  GNU General Public License for more details.
 
-# This applet provides Cairo-Dock an interface with Twitter
+# This applet provides Cairo-Dock with an interface with Twitter
 
-# On the first time, the applet is going to ask your nickname and authorization to connect with Twitter.
-# The applet is going to open your browser with the authorization page
-# As soon as you authorize it, a PIN number will be shown on the page, copy this number
-# Paste this number on the next dialog box will be shown.
-# The plugin is going to inform that you are successfully connected.
-
+# This applet supports both Twitter, and Identi.ca. You can send tweets, direct messages, see your timeline, retweet, and answer direct messages. It will alert you when there are new tweets, and directed messages. On the first time, you need to choose which network to add, once at a time by right-click -> Add account -> Twitter or Identi.ca. The applet is going to ask your nickname and authorization to connect on the networks. The network authorization page will be open. As soon as you authorize it, a PIN number will be shown on the page, copy this number\nPaste this number on the next dialog box will be shown. The plugin is going to inform that you are successfully connected.
 # To see the received tweets right-click on the icon -> Twitter -> [New] tweets. You can retweet any of them by left-clicking on it.
 # To see the received direct messages right-click on the icon -> Twitter -> [New] direct messages. You can reply any of them by left-clicking on it.
 # To see some user's info right-click on the icon -> Twitter -> Info
 
-# TODO: Change icon someway when Identi.ca is added.
-#       Try to fix someway that ugly hack "if not adding_identica:", dammit!
+# TODO:
 #       Add more possibilties to the Identi.ca API
 
 import os, webbrowser, Queue
@@ -253,6 +247,8 @@ class Applet(CDApplet):
   # Initial Information -> Ask for screen name (username) -> Ask for authorization (open browser) -> Insert PIN -> Succesful connected
   
   def show_inexistence_of_networks(self):
+    self.emblem.update("!!!")                                                               # create the emblem with and alert mark
+    self.icon.SetIcon(self.emblem.emblem)
     message = _("This applet supports Twitter, and Identi.ca.\nRight-click -> Add account -> Twitter.\nRight-click -> Add account -> Identi.ca.")
     self.show_popup_message(message)
 
@@ -309,11 +305,12 @@ class Applet(CDApplet):
     self.new_network.user.write()                                                               # writing user's access token and access secret to be ...
     if isinstance(self.new_network, Twitter):
       if self.new_network.get_api(self.on_receive_new_entry_into_stream_callback):              # ... used here, check twitter.py method get_api
-        self.show_popup_message(_("Successfully connected with Twitter"))
+        message = _("Successfully connected with Twitter")
     else:
       if self.new_network.get_api():                                                            # ... used here, check identica.py method get_api
-        self.show_popup_message(_("Successfully connected with Identi.ca"))
+        message = _("Successfully connected with Identi.ca")
     self.set_visual_for_active_networks()
+    self.show_popup_message(message)
 
   def show_popup_message(self, message, dialog={}, widget={}):
     dialog_attributes = {'message':message}
