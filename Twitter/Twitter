@@ -407,8 +407,12 @@ class Applet(CDApplet):
     }
     return identica_menu
     
+  def any_active_network(self):
+    return self.twitter.api or self.identica.api
+        
   def set_visual_for_active_networks(self):
     if self.twitter.api:
+      self.icon.SetIcon(os.path.abspath("./icon"))                                  # overwrite the alert mark "!!!"
       if self.identica.api:
         self.icon.SetLabel("Twitter and Identi.ca")
         self.icon.SetIcon(os.path.abspath("./data/twitter_and_identica.png"))
@@ -498,7 +502,8 @@ class Applet(CDApplet):
     elif not self.message_stream.empty():
       self.show_new_direct_messages()
     else:
-      self.ask_for_tweet()
+      if self.any_active_network():
+        self.ask_for_tweet()
 
   def on_middle_click(self):
     self.show_home_timeline()
