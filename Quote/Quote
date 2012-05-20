@@ -19,7 +19,7 @@
 # such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr,
 # Jokes2go.com, and Vidademerda.com.br
 
-import gobject, gtk, urllib, itertools
+import gtk, urllib, itertools
 from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
@@ -31,7 +31,7 @@ from CDApplet import CDApplet, _
 # 1.1 - For specific parts on the creation of the parser, refer to BashParser, some documentation is there
 # 2 - Import it "from MyWebSiteParser (module name) import MyWebSiteParser (class name)"
 # 3 - Add one identificator for the parser, for example, "quotationspage" = 1. Look that we already have
-#     seven parsers = range(8). For each new one you add, you have  increment the parameter on the range method
+#     many parsers. For each new one you add, you have  increment the parameter on the range method
 # 4 - On the fetch method, add a new block
 #     elif (self.source == mywebsite):
 #       parser = MyNewWebSiteParser
@@ -49,9 +49,10 @@ from ViedemerdeParser import ViedemerdeParser                           # Viedem
 from FmylifeParser import FmylifeParser                                 # Fmylife.com
 from VitadimerdaParser import VitadimerdaParser                         # VitadimerdaParser.it
 from HundredblaguesParser import HundredblaguesParser                   # HundredblaguesParser.com
+from ChucknorrisfactsfrParser import ChucknorrisfactsfrParser           # Chucknorrisfacts.fr
 
-# quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6, viedemerde = 7, fmylife = 8, vitadimerda = 9, hundredblagues = 10
-quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda, viedemerde, fmylife, vitadimerda, hundredblagues = range(11)  
+# quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6, viedemerde = 7, fmylife = 8, vitadimerda = 9, hundredblagues = 10, chucknorrisfactsfr = 11
+quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr = range(12)  
 
 class AgentOpener(FancyURLopener):
   """Masked user-agent otherwise the access would be forbidden"""
@@ -76,17 +77,19 @@ class Interface:
     elif self.source == danstonchat:
       parser = DanstonchatParser()                                      # DanstonchatParser.py
     elif self.source == jokestogo:
-      parser = JokestogoParser()
-    elif self.source == vidademerda:                                    # VidademerdaParser.py
-      parser = VidademerdaParser()
+      parser = JokestogoParser()                                        # JokestogoParser.py
+    elif self.source == vidademerda:                                    
+      parser = VidademerdaParser()                                      # VidademerdaParser.py
     elif self.source == viedemerde:
       parser = ViedemerdeParser()                                       # ViedemerdeParser.py
     elif self.source == fmylife:                                                               
       parser = FmylifeParser()                                          # FmylifeParser.py
     elif self.source == vitadimerda:
       parser = VitadimerdaParser()                                      # VitadimerdaParser.py
-    else:
-      parser = HundredblaguesParser()
+    elif self.source == hundredblagues:
+      parser = HundredblaguesParser()                                   # HundredblaguesParser.py
+    else:                                                               
+      parser = ChucknorrisfactsfrParser()
 
     opener = AgentOpener()                                              # opens the web connection with masked user-agent
 
@@ -101,10 +104,10 @@ class Interface:
       # Handle different kind of returns from the parser. It is necessary because some sources return quotes with extra
       # characters that we need to filter here. Some come with extra '', others come with linebreaks, etc.
       
-      if (self.source == quotationspage):  
+      if self.source == quotationspage:
         self.quote = parser.quote
         self.author = parser.author
-      elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues]:
+      elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr]:
         self.quote = filter(None, parser.quote)                         # remove the '' from the array
       elif self.source == jokestogo:                                    # jokestogo
         self.quote = filter(self.linebreak, parser.quote)               # remove linebreak from the array
@@ -127,7 +130,7 @@ class Applet(CDApplet):
     self.go_next_quote_key = 1
     self.source = quotationspage
     self.names = ["Quotationspage.com","Bash.org","Xkcdb.com","Qdb.us","Danstonchat.com","Jokes2go.com",
-                    "Vidademerda.com.br","Viedemerde.fr","Fmylife.com", "Vitadimerda.it", "100blagues.com"]
+                    "Vidademerda.com.br","Viedemerde.fr","Fmylife.com", "Vitadimerda.it", "100blagues.com", "Chucknorrisfacts.fr"]
     
     CDApplet.__init__(self)                                             # call high-level init
   
@@ -152,7 +155,7 @@ class Applet(CDApplet):
   def show_quote(self):
     if (self.source == quotationspage):
       self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # quote[x] ~ author[x]
-    elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues]:
+    elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr]:
       try:                                                              # check if it is possible to show the already stored quotes
         current = self.quotes.next()
       except StopIteration:                                             # all were already shown
