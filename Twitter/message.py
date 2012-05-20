@@ -17,15 +17,16 @@
 
 # Can be either a Tweet or a Direct Message
 class Message:
-  def __init__(self, text, sender):
+  def __init__(self, text, sender, network):
     self.text = text
     self.sender = sender
+    self.network = network
     
 class DirectMessage(Message):
-  def __init__(self, text, sender):
-    Message.__init__(self, text, sender)
+  def __init__(self, text, sender, network):
+    Message.__init__(self, text, sender, network)
 
 class Tweet(Message):
-  def __init__(self, text, sender, uid):
-    Message.__init__(self, text, sender)
+  def __init__(self, text, sender, uid, network):
+    Message.__init__(self, text, sender, network)
     self.uid = uid                                                                          # it is going to be used to retweet this Tweet
