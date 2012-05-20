@@ -16,7 +16,7 @@
 #  GNU General Public License for more details.
 
 from oauth import oauth
-import urllib2, urllib
+import simplejson
 
 from network import Network
 from user import User
@@ -91,7 +91,8 @@ class Identica(Network):
       self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
       self.access_token = oauth.OAuthToken(access_key, access_secret)
       
-      self.update_url = 'http://identi.ca/api/statuses/update.json'
+      self.update_url         = 'http://identi.ca/api/statuses/update.json'
+      self.home_timeline_url  = 'http://identi.ca/api/statuses/home_timeline.json'
 
     def dispatch(self, url, mode, parameters={}):
       oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -100,7 +101,6 @@ class Identica(Network):
                                                                parameters = parameters,
                                                                http_method = mode)
       oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
-#      logp(oauth_request.to_url())
       if mode == "GET":
         url = oauth_request.to_url()
         response = get(url) 
@@ -111,3 +111,6 @@ class Identica(Network):
 
     def tweet(self, message):                                                                 # popularly "send a tweet"
       self.dispatch(self.update_url, "POST", {'status':message})
+      
+    def home_timeline(self):
+      return self.dispatch(self.home_timeline_url, "GET")

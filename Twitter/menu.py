@@ -28,7 +28,7 @@ class Menu(gtk.Menu):
         item.set_label(message.sender)                                                # used to track who sent the message in order to reply it.
       elif isinstance(message, Tweet):
         item.set_label(message.uid)                                                   # used to retweet the tweet
-      item.set_image(gtk.image_new_from_file(os.path.abspath("./data/message_small.png")))
+      item.set_image(gtk.image_new_from_file(os.path.abspath("./data/message_%s.png" % message.network)))
       text = "<b>%s</b>\n%s" % (message.sender, message.text)
       item.get_children()[0].set_markup(text)
       if self.callback:                                                               # for tweets posted by the user, there is not callback to be set

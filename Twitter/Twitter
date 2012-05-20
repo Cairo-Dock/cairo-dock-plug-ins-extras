@@ -22,12 +22,11 @@
 # To see the received direct messages right-click on the icon -> Twitter -> [New] direct messages. You can reply any of them by left-clicking on it.
 # To see some user's info right-click on the icon -> Twitter -> Info
 
-# TODO:
-#       Add more possibilties to the Identi.ca API
+# TODO: Add more methods to the Identi.ca API
 
 import os, webbrowser, Queue
 
-from networks import Networks                                                   # networks.py
+from interface import Interface                                                 # interface.py
 from twitter import Twitter
 from identica import Identica
 import emblem, menu                                                             # emblem.py, menu.py
@@ -36,9 +35,9 @@ from util import *                                                              
 
 from CDApplet import CDApplet, _
 
-# Twitter ----> Networks |----> twitter  ---> Oauth, TwitterAPI, TwitterStreamAPI
-#                        |
-#                        |----> identica ---> Oauth, IdenticaAPI
+# Twitter ----> Interface |----> twitter  ---> Oauth, TwitterAPI, TwitterStreamAPI
+#                         |
+#                         |----> identica ---> Oauth, IdenticaAPI
 
 class Applet(CDApplet):
 
@@ -54,7 +53,7 @@ class Applet(CDApplet):
       self.emblem.update(counter)                                                               # create the emblem with the counter
       self.icon.SetIcon(self.emblem.emblem)
     else:
-      self.set_visual_for_active_networks()
+      self.update_visual_for_active_networks()
     
   def refresh_emblem_size(self):
     if self.config['emblem_size'] == "Small":
@@ -109,7 +108,7 @@ class Applet(CDApplet):
         text = status['text']
         sender = status['user']['name']
         uid = status['id_str']
-        ut_menu.add(Tweet(text, sender, uid))
+        ut_menu.add(Tweet(text, sender, uid, self.twitter.name))
       ut_menu.pop_up()
     else:
       message = _("Oh, dear, your timeline is empty :-(")
@@ -127,7 +126,7 @@ class Applet(CDApplet):
       text = tweet['text']
       sender = tweet['user']['name']
       uid = tweet['id_str']
-      nt_menu.add(Tweet(text, sender, uid))
+      nt_menu.add(Tweet(text, sender, uid, self.twitter.name))
     nt_menu.pop_up()
     
     self.refresh_emblem_counter() 
@@ -135,20 +134,21 @@ class Applet(CDApplet):
 
   def show_home_timeline(self):
     self.inform_start_of_waiting_process()
+   
+    home_timeline_menu = menu.Menu(self.icon, self.on_tweet_list_menu_clicked)
     
-    timeline = self.twitter.api.home_timeline()
-    if len(timeline) > 0:
-      ht_menu = menu.Menu(self.icon, self.on_tweet_list_menu_clicked)
-      for status in timeline:
-        text = status['text']
-        sender = status['user']['screen_name']
-        uid = status['id_str']
-        ht_menu.add(Tweet(text, sender, uid))
-      ht_menu.pop_up()
-    else:
-      message = _("Oh, dear, your timeline is empty :-(")
-      dialog = {'use-markup':True}
-      self.show_popup_message(message, dialog)
+    for network in self.networks:
+      timeline = network.api.home_timeline()
+      if len(timeline) > 0:
+        for status in timeline:
+          text = status['text']
+          sender = status['user']['screen_name']
+          if network == self.twitter:
+            uid = status['id_str']
+          else:
+            uid = str(status['statusnet_conversation_id'])
+          home_timeline_menu.add(Tweet(text, sender, uid, network.name))
+        home_timeline_menu.pop_up()                                                         # pop-uped up twice?
       
     self.inform_end_of_waiting_process()
 
@@ -160,7 +160,7 @@ class Applet(CDApplet):
       direct_message = self.message_stream.get()
       text = direct_message['direct_message']['text']
       sender = direct_message['direct_message']['sender']['screen_name']
-      dm_menu.add(DirectMessage(text, sender))
+      dm_menu.add(DirectMessage(text, sender, self.twitter.name))
     dm_menu.pop_up()
 
     self.refresh_emblem_counter()
@@ -175,7 +175,7 @@ class Applet(CDApplet):
       for status in messages:
         text = status['text']
         sender = status['sender']['screen_name']
-        dm_menu.add(DirectMessage(text, sender))
+        dm_menu.add(DirectMessage(text, sender, self.twitter.name))
       dm_menu.pop_up()
     else:
       dialog = {'use-markup':True}
@@ -226,12 +226,9 @@ class Applet(CDApplet):
     if len(content) > self.tweet_length:
       self.ask_for_tweet(content, warning=True)
     else:
-      if self.twitter.api:
-        logp("Sending a tweet with Twitter '%s'" % content)
-        self.twitter.api.tweet(content)
-      if self.identica.api:
-        logp("Sending a tweet with Identi.ca '%s'" % content)
-        self.identica.api.tweet(content)
+      for network in self.networks:
+        logp("Sending a tweet with %s '%s'" % (network.name, content))
+        network.api.tweet(content)
     
   def ask_for_retweet(self, tweet_id):
     dialog = {'buttons':'ok;cancel'}
@@ -309,7 +306,8 @@ class Applet(CDApplet):
     else:
       if self.new_network.get_api():                                                            # ... used here, check identica.py method get_api
         message = _("Successfully connected with Identi.ca")
-    self.set_visual_for_active_networks()
+    self.update_active_networks()
+    self.update_visual_for_active_networks()
     self.show_popup_message(message)
 
   def show_popup_message(self, message, dialog={}, widget={}):
@@ -407,10 +405,16 @@ class Applet(CDApplet):
     }
     return identica_menu
     
-  def any_active_network(self):
-    return self.twitter.api or self.identica.api
+  def any_network_is_active(self):
+    return len(self.networks) > 0
+    
+  def update_active_networks(self):
+    if self.twitter.api:
+      self.networks.append(self.twitter)
+    if self.identica.api:
+      self.networks.append(self.identica)
         
-  def set_visual_for_active_networks(self):
+  def update_visual_for_active_networks(self):
     if self.twitter.api:
       self.icon.SetIcon(os.path.abspath("./icon"))                                  # overwrite the alert mark "!!!"
       if self.identica.api:
@@ -423,20 +427,19 @@ class Applet(CDApplet):
 
   def __init__(self):
     
-    # TODO: Rename class, and file
-    self.interface = Networks()
+    self.interface = Interface()
     
     self.twitter = self.interface.twitter()
     self.identica = self.interface.identica()
     
-    # self.networks = []  # self.twitter, self.identica
+    self.networks = []                                                                        # active networks
     
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
     self.responding_success, self.responding_tweet, self.responding_initial_informations,
     self.responding_sending_direct_message_reply, self.responding_retweet) = range(8)
     self.dialog_type = None
     
-    self.emblem = emblem.Emblem()                                                                       # emblem maker, see emblem.py
+    self.emblem = emblem.Emblem()                                                             # emblem maker, see emblem.py
 
     self.direct_messages_menu_id  = 1000
     self.credentials_menu_id      = 2000
@@ -462,7 +465,8 @@ class Applet(CDApplet):
     elif not self.identica.get_api():
       logm("User not found")
       self.show_inexistence_of_networks()   
-    self.set_visual_for_active_networks()
+    self.update_active_networks()
+    self.update_visual_for_active_networks()
 
   def get_config(self, keyfile):
     self.config['emblem_size'] = keyfile.get('Configuration', 'emblem_size')
@@ -502,7 +506,7 @@ class Applet(CDApplet):
     elif not self.message_stream.empty():
       self.show_new_direct_messages()
     else:
-      if self.any_active_network():
+      if self.any_network_is_active():
         self.ask_for_tweet()
 
   def on_middle_click(self):

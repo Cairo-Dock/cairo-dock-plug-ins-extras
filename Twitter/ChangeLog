@@ -1,3 +1,4 @@
+0.4.1 (May/20/2012): Added home timeline on Identi.ca.
 0.4: (May/18/2012): Fully supporting individually account log-in. Code improvements, refactoring, and bug fixes.
 0.3: (May/13/2012): Added support to Identi.ca! Many code changes, refactoring, and improving.
 0.2.2: (April/15/2012): Configurable notifications.
