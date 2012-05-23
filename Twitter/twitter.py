@@ -150,18 +150,16 @@ class Twitter(Network):
         header = oauth_request.to_header()
         post(url, parameters, header)  
 
-    # TODO: If an user tries to post the same tweet twice on a short period of time,
+    # If an user tries to post the same tweet twice on a short period of time,
     # twitter is not going to allow, and a error 403 is thrown.
-    # This method should return True based on something like:
-    # try:
-    #   self.dispatch(self.update_url, "POST", {'status':message})
-    # except urllib2.HTTPError, err:
-    #   if err.code == 403:
-    #     return False
-    #   else:
-    #     return True
     def tweet(self, message):                                                                 # popularly "send a tweet"
-      self.dispatch(self.update_url, "POST", {'status':message})
+      try:
+        self.dispatch(self.update_url, "POST", {'status':message})
+      except urllib2.HTTPError, err:
+        if err.code == 403:
+          return False
+        else:
+          return True
       
     def retweet(self, tweet_id):
       url = "%s%s.json" % (self.retweet_url_prefix, tweet_id)

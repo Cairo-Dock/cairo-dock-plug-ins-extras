@@ -80,8 +80,7 @@ class Applet(CDApplet):
   # Twitter methods
 
   # This method is a callback that is called as soon as a new entry arrives on the stream
-  # The method is passed as parameter when creating the instance for the TwitterStreamAPI
-  # TwitterStreamAPI(access_key, access_secret, self.on_receive_new_entry_into_stream_callback)
+  # The method is passed as parameter when creating the instance of the twitter API, with get_api method.
   def on_receive_new_entry_into_stream_callback(self, entry):
     if 'user' in entry:                                                                     # tweet
       if not entry['user']['screen_name'] == self.twitter.user.screen_name:                         # not sent by the own user
@@ -228,7 +227,8 @@ class Applet(CDApplet):
     else:
       for network in self.networks:
         logp("Sending a tweet with %s '%s'" % (network.name, content))
-        network.api.tweet(content)
+        if not network.api.tweet(content):
+          self.show_popup_message(_("Problem to send this tweet on %s, I think you already tried to send the same one few minutes ago" % network.name))
     
   def ask_for_retweet(self, tweet_id):
     dialog = {'buttons':'ok;cancel'}
