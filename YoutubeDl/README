@@ -1,0 +1,29 @@
+This is an applet to Download Youtube videos
+
+Summary:
+This Youtube video downloader allows users to drag and drop video URLs onto the YoutubeDl icon and have the videos downloaded.
+
+This is a work in progress so feel free to report any bugs and/or suggestions.
+
+License:
+GPL, see COPYING.
+
+Details:
+This applet allows a user to drag Youtube links from the Youtube website and 
+drop them on the icon to download. The backend downloader is based on 
+youtube-dl.py.  If you have python-tk installed on your system saving and 
+loading url lists will be done using a graphical dialog box, otherwise you 
+need to set the directory path in the configuration and just enter the filename
+in the popup box.  If you have pynotify installed on your system you have the 
+option of letting the notification area of your desktop handle the alerts, 
+otherwise alerts will be done using the cairo-dock popup messages. You can 
+turn this feature on or off under the configuration.  Currently the url list 
+is not editable from the dock but if you save the list to a file you can edit 
+with a text editor then load the list back into the plugin. Downloading can 
+be paused from the context menu of the icon and you can choose to have 
+downloads start automatically in the configuration area.  The left click button
+on the mouse brings up the current url list and the middle button can be 
+configured for different actions.
+
+Contact:
+Brian @ mycompostpile@yahoo.ca

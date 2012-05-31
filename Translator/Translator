@@ -490,4 +490,4 @@ class Applet(CDApplet):
 		self.translate(text, self.source.abbrv, self.destination.abbrv)
 
 if __name__ == '__main__':
-	Applet().run()
+	CDApplet.run()
