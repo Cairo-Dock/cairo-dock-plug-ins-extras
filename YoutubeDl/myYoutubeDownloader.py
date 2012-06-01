@@ -84,7 +84,11 @@ class YoutubeDownloader(multiprocessing.Process):
                 self.useTitle = self.__config.get('Download Options', 'useTitle')
 
                 if not videos_directory:
-                    videos_directory = os.path.abspath(os.path.expanduser("~")+"/Videos")
+                    p = subprocess.Popen(["xdg-user-dir","VIDEOS"],stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=False)
+                    directoryName, errors = p.communicate()
+                    directoryName=directoryName.rstrip()
+                    videos_directory = os.path.abspath(directoryName)
+
                 if not (videos_directory == os.path.abspath('.')):
                     os.chdir(videos_directory)
                 if doDebug:
