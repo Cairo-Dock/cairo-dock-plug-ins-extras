@@ -7,43 +7,28 @@ try:
         # define options for opening or saving a file
         file_opt = options = {}
         options['defaultextension'] = 'txt' # couldn't figure out how this works
-        options['filetypes'] = [('all files', '.*'), ('text files', '.txt')]
+        options['filetypes'] = [('text files', '.txt'), ('all files', '.*')]
         options['initialdir'] = initialDirectory
-        #options['initialfile'] = initialDirectory
         options['title'] = 'Please select a url list file to open'
         options['parent'] = rootDialog
-        #fileName = tkFileDialog.askopenfilename(parent=rootDialog,title='Please select file to open')
         fileName = tkFileDialog.askopenfilename(**file_opt)
         rootDialog.destroy()
         return fileName
 
-    def saveUrlFilename():
+    def saveUrlFilename(initialDirectory):
         rootDialog = Tkinter.Tk()
-        fileName = tkFileDialog.asksaveasfilename(parent=rootDialog,title='Please select file to open')
+        file_opt = options = {}
+        options['defaultextension'] = 'txt' # couldn't figure out how this works
+        options['filetypes'] = [('text files', '.txt'), ('all files', '.*')]
+        options['initialdir'] = initialDirectory
+        options['title'] = 'Please select a url list file to save'
+        options['parent'] = rootDialog
+        fileName = tkFileDialog.askopenfilename(**file_opt)
         rootDialog.destroy()
         return fileName
 
 except ImportError:
-    def openUrlFilename():
+    def openUrlFilename(initialDirectory):
         return None
-    def saveUrlFilename():
+    def saveUrlFilename(initialDirectory):
         return None
-    #from PopupDialogTypes import *
-
-    #def openUrlFilename(master):
-        #master.PopupDialog( {"message" : "Enter filename to open:",  
-            #"buttons" : "ok;cancel",  
-            #"icon" : "gtk-stock-edit"},  
-            #{"widget-type" : "text-entry",  
-            #"visible" : False} )
-        #master.currentDialog = PopupDialogTypes.infoDialog
-        #return None
-
-    #def saveUrlFilename(master):
-        #master.PopupDialog( {"message" : "Enter filename to open:",  
-            #"buttons" : "ok;cancel",  
-            #"icon" : "gtk-stock-edit"},  
-            #{"widget-type" : "text-entry",  
-            #"visible" : False} )
-        #master.currentDialog = PopupDialogTypes.infoDialog
-        #return None
