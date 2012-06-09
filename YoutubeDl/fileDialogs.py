@@ -23,7 +23,7 @@ try:
         options['initialdir'] = initialDirectory
         options['title'] = 'Please select a url list file to save'
         options['parent'] = rootDialog
-        fileName = tkFileDialog.askopenfilename(**file_opt)
+        fileName = tkFileDialog.asksaveasfilename(**file_opt)
         rootDialog.destroy()
         return fileName
 

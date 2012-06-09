@@ -29,6 +29,7 @@ import userAlerts as alerts
 
 # if tkinter is available use it otherwise use popup messages.
 import fileDialogs as dialogs
+from urlListEdit import urlListEditor
 
 # all constant types are placed in one file and used as needed.
 from constantTypes import PopupTypes
@@ -37,9 +38,7 @@ from constantTypes import menuEntries
 class Applet(CDApplet):
 
 	def __init__(self):
-	    #super(YoutubeDlPlugin, self).__init__()
 	    self.__interval = 60000 # 1 minute (in millisecondes)
-	    #self.__config = Configuration(os.path.basename(os.path.abspath(".")))
 	    self.__timerId = None
             self.work_queue = multiprocessing.Queue(1)
             self.result_queue = multiprocessing.Queue(2)
@@ -73,7 +72,6 @@ class Applet(CDApplet):
             else:
 	        self.icon.SetQuickInfo('')
             if self.__showStatusOnIcon:
-                #self.icon.SetLabel(self.resultSummary)
                 self.icon.SetLabel("YoutubeDl")
             self.reload()
 	    self.__setTimer()
@@ -94,7 +92,6 @@ class Applet(CDApplet):
 
             tempString = '          Current Download' + endingCharacter
             if self.activeDownload:
-                #tempString = tempString + '\n      -> '.join(self.urlList[0]) + endingCharacter
                 tempString = tempString + '\n      -> '.join(self.urlList[0]) 
                 rangeStart = 1
             else:
@@ -122,18 +119,27 @@ class Applet(CDApplet):
                  "values" : tempString})
             else:
                 self.icon.PopupDialog( {"message" : tempString,
-                "icon" : "gtk-stock-edit"},
+                "icon" : "gtk-edit"},
                 {"visible" : True,
                  "multi-lines" : True,
                  "editable" : False, })
             self.currentDialog = PopupTypes.infoDialog
+
+        def editURLs(self):
+            urlEdit=urlListEditor(self.urlList).run()
+            if urlEdit:
+                self.urlList[:] = urlEdit
+            else:
+                if urlEdit is None:
+                    self.icon.PopupDialog( {"message" : "python-tk not installed, Editing not possible",
+                    "icon" : "gtk-dialog-info"},
+                    {"visible" : True,
+                     "multi-lines" : True,
+                     "editable" : False, })
+                    self.currentDialog = PopupTypes.infoDialog
 	    return True
 
 	def on_middle_click(self):
-	    """
-	    I set my icon always vissible flag
-	    """
-	    #super(YoutubeDlPlugin, self).onMiddleClick()
             if self.__actionOnMiddleClick == 'Open Video Folder':
                 subprocess.call(['xdg-open',self.__videos_directory], shell=False)
             else:
@@ -273,6 +279,10 @@ class Applet(CDApplet):
                     {"label": "Clear current URL list", 
                      "icon" : "gtk-delete",
                      "id"   : menuEntries.clearURLs })
+                    items.append(
+                    {"label": "Edit current URL list", 
+                     "icon" : "gtk-edit",
+                     "id"   : menuEntries.editURLs })
             if len(self.urlList) == 0:
                 items.append(
                 {"label": "Load URL list from file", 
@@ -305,6 +315,8 @@ class Applet(CDApplet):
              "icon" : "gtk-delete"},  
              {"visible" : True } )
                 self.currentDialog = PopupTypes.delList
+            elif iNumEntry == menuEntries.editURLs:
+                self.editURLs()
             elif iNumEntry == menuEntries.saveURLs:
                 self.saveURLs()
             elif iNumEntry == menuEntries.loadURLs:
@@ -441,15 +453,16 @@ class Applet(CDApplet):
 
         def debug(self):
             """
-            Call me one time in the beginning of your script. If you are running Cairo-Dock
-            from a console window, you'll be able to see what I'm doing.
+            Call me one time in the beginning of your script. 
+            If you are running Cairo-Dock from a console window, 
+            you'll be able to see what I'm doing.
             """
             self.__debugMode = True
 
 
 	def get_config(self, keyfile):
 	    """
-	    I reload the configuration.
+	    Reload the configuration.
 	    """
 	    interval = keyfile.getint('User Interface', 'interval')
 	    self.__interval = interval * 1000 # convert in millisecondes.
@@ -479,7 +492,7 @@ class Applet(CDApplet):
 	
 	def __setTimer(self):
 	    """
-	    I set the time between two checks.
+	    Set the time between two checks.
 	    """
 	    self.__removeTimer()
 	    #self.__timerId = timeout_add(self.__interval, self.doUpdate)
@@ -487,7 +500,7 @@ class Applet(CDApplet):
 		
 	def __removeTimer(self):
 	    """
-	    I properly remove the timer.
+	    Properly remove the timer.
 	    """
 	    if self.__timerId != None:
 	    	gobject.source_remove(self.__timerId)
