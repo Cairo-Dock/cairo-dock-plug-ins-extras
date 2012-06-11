@@ -1,5 +1,5 @@
 class PopupTypes:
-    (infoDialog, confirmAbort, saveListFilename, getListFilename, delList, showUrlList) = range(0, 6)
+    (infoDialog, confirmAbort, saveListFilename, getListFilename, delList, showUrlList, urlManualEntry) = range(7)
 
 class menuEntries:
     (abortDownload, saveURLs, loadURLs, pauseDownload, enableDownload, clearURLs, editURLs) = range(7)

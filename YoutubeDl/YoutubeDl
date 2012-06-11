@@ -85,45 +85,57 @@ class Applet(CDApplet):
                 self.downloadManager.join(1)
 	
 	def on_click(self, iState):
-	    if self.useListView and (len(self.urlList) > self.urlListExceeds):
-	        endingCharacter = ';'
-            else:
-	        endingCharacter = '\n'
+	    if len(self.urlList) > 0:
+	        if self.useListView and (len(self.urlList) > self.urlListExceeds):
+	            endingCharacter = ';'
+                else:
+	            endingCharacter = '\n'
 
-            tempString = '          Current Download' + endingCharacter
-            if self.activeDownload:
-                tempString = tempString + '\n      -> '.join(self.urlList[0]) 
-                rangeStart = 1
+                tempString = '          Current Download' + endingCharacter
+                if self.activeDownload:
+                    tempString = tempString + '\n      -> '.join(self.urlList[0]) 
+                    rangeStart = 1
+                else:
+                    tempString = tempString + '    -> None' + endingCharacter
+                    rangeStart = 0
+                tempString = tempString + '\n          Current URL List' + endingCharacter
+                if len(self.urlList) > rangeStart:
+                    tempList = list()
+                    for item in range(rangeStart,len(self.urlList)):
+                        tempList.append('\n      -> '.join(self.urlList[item]))
+                    self.messageDebug(tempString)
+                    tempString = tempString + endingCharacter.join(tempList)
+                    self.messageDebug(tempString)
+                else:
+                    tempString = tempString + '    -> Empty'
+                    self.messageDebug(tempString)
+	        if self.useListView and (len(self.urlList) > self.urlListExceeds):
+                    self.icon.PopupDialog( {"message" : "Youtube Download URL List",
+                    "buttons" : "ok",  
+                    "icon" : "gtk-stock-edit"},
+                    {"visible" : True,
+                     "widget-type" : "list",
+                     "multi-lines" : True,
+                     "editable" : False,
+                     "values" : tempString})
+                else:
+                    self.icon.PopupDialog( {"message" : tempString,
+                    "icon" : "gtk-edit"},
+                    {"visible" : True,
+                     "multi-lines" : True,
+                     "editable" : False, })
+                self.currentDialog = PopupTypes.infoDialog
             else:
-                tempString = tempString + '    -> None' + endingCharacter
-                rangeStart = 0
-            tempString = tempString + '\n          Current URL List' + endingCharacter
-            if len(self.urlList) > rangeStart:
-                tempList = list()
-                for item in range(rangeStart,len(self.urlList)):
-                    tempList.append('\n      -> '.join(self.urlList[item]))
-                self.messageDebug(tempString)
-                tempString = tempString + endingCharacter.join(tempList)
-                self.messageDebug(tempString)
-            else:
-                tempString = tempString + '    -> Empty'
-                self.messageDebug(tempString)
-	    if self.useListView and (len(self.urlList) > self.urlListExceeds):
-                self.icon.PopupDialog( {"message" : "Youtube Download URL List",
-                "buttons" : "ok",  
-                "icon" : "gtk-stock-edit"},
-                {"visible" : True,
-                 "widget-type" : "list",
-                 "multi-lines" : True,
-                 "editable" : False,
-                 "values" : tempString})
-            else:
-                self.icon.PopupDialog( {"message" : tempString,
-                "icon" : "gtk-edit"},
-                {"visible" : True,
-                 "multi-lines" : True,
-                 "editable" : False, })
-            self.currentDialog = PopupTypes.infoDialog
+                dialog_attributes = {
+                        'message'    : "Please enter URL:",
+                        'use-markup' : True,
+                        'buttons'    : 'ok;cancel' }
+                widget_attributes = {
+                        'widget-type'   : 'text-entry',
+                        'initial-value' : "",
+                        'multi-lines'   : False}
+                self.icon.PopupDialog (dialog_attributes, widget_attributes)
+                self.currentDialog = PopupTypes.urlManualEntry
 
         def editURLs(self):
             urlEdit=urlListEditor(self.urlList).run()
@@ -363,6 +375,10 @@ class Applet(CDApplet):
                 if button == 0:
                     fileName = os.path.abspath(self.__urlList_directory + "/" + userResponse)
                     self.readTheList(fileName)
+            elif self.currentDialog == PopupTypes.urlManualEntry:
+                self.messageDebug("onAnswerDialog: URL Manual Entry: "+str(button)+" "+str(userResponse))
+                if button == 0:
+                    self.on_drop_data(userResponse)
             elif self.currentDialog == PopupTypes.infoDialog:
                 self.messageDebug("onAnswerDialog: info dialog : "+str(button)+" "+str(userResponse))
             elif self.currentDialog == PopupTypes.showUrlList:

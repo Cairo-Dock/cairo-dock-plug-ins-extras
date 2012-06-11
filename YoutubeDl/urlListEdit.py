@@ -1,7 +1,7 @@
 #!/usr/bin/env python
  
 try:
-    from Tkinter.junk import *
+    from Tkinter import *
     import tkFont
 
     class  urlListEditor(Frame):
