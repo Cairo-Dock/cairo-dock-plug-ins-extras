@@ -35,6 +35,9 @@ from urlListEdit import urlListEditor
 from constantTypes import PopupTypes
 from constantTypes import menuEntries
 
+#Get the clipboard text
+from getClipboardText import getClipboardText
+
 class Applet(CDApplet):
 
 	def __init__(self):
@@ -71,8 +74,6 @@ class Applet(CDApplet):
 	        self.icon.SetQuickInfo(str(self.result[0]))
             else:
 	        self.icon.SetQuickInfo('')
-            if self.__showStatusOnIcon:
-                self.icon.SetLabel("YoutubeDl")
             self.reload()
 	    self.__setTimer()
 
@@ -126,13 +127,18 @@ class Applet(CDApplet):
                      "editable" : False, })
                 self.currentDialog = PopupTypes.infoDialog
             else:
+                self.urlManualEntry()
+
+
+        def urlManualEntry(self):
+                defaultText = getClipboardText()
                 dialog_attributes = {
                         'message'    : "Please enter URL:",
                         'use-markup' : True,
                         'buttons'    : 'ok;cancel' }
                 widget_attributes = {
                         'widget-type'   : 'text-entry',
-                        'initial-value' : "",
+                        'initial-value' : defaultText,
                         'multi-lines'   : False}
                 self.icon.PopupDialog (dialog_attributes, widget_attributes)
                 self.currentDialog = PopupTypes.urlManualEntry
@@ -153,10 +159,18 @@ class Applet(CDApplet):
 
 	def on_middle_click(self):
             if self.__actionOnMiddleClick == 'Open Video Folder':
-                subprocess.call(['xdg-open',self.__videos_directory], shell=False)
+                if self.validVideoDirectory:
+                    subprocess.call(['xdg-open',self.__videos_directory], shell=False)
+                else:
+                    tempString = "Error: Video Directory not writable.\n Please make sure directory is valid and writable"
+                    self.icon.PopupDialog( {"message" : tempString,
+                    "icon" : "gtk-stock-edit"},
+                    {"visible" : True,
+                     "multi-lines" : True,
+                     "editable" : False, })
+                    self.currentDialog = PopupTypes.infoDialog
             else:
                 alerts.doUserAlert(self,self.resultSummary,4)
-                    
             return True
 	
 	def reload(self):
@@ -276,11 +290,23 @@ class Applet(CDApplet):
         def on_build_menu(self):
             self.messageDebug("onBuildMenu: context menu called")
             items = []
+            if self.validVideoDirectory:
+                if self.__actionOnMiddleClick == 'Open Video Folder':
+                    items.append(
+                    {"label": _("Open Video Folder") + " (" + _("middle-click") + ")",
+                     "icon" : "gtk-open",
+                     "id"   : menuEntries.openVideoFolder })
+                else:
+                    items.append(
+                    {"label": _("Show Download Status") + " (" + _("middle-click") + ")",
+                     "icon" : "gtk-info",
+                     "id"   : menuEntries.showDownloadStatus })
             if self.activeDownload:
                 items.append(
                 {"label": "Abort current download",
                  "icon" : "gtk-cancel",
-                 "id"   : menuEntries.abortDownload })
+                 "id"   : menuEntries.abortDownload,
+                 "tooltip" : _("Send abort signal to the downloader. There may be a delay") })
             if len(self.urlList) > 0:
                 items.append(
                 {"label": "Save current URL list", 
@@ -300,6 +326,11 @@ class Applet(CDApplet):
                 {"label": "Load URL list from file", 
                  "icon" : "gtk-open", 
                  "id"   : menuEntries.loadURLs })
+            if getClipboardText():
+                items.append(
+                {"label": "Add URL from clipboard", 
+                 "icon" : "gtk-edit", 
+                 "id"   : menuEntries.clipboardURL })
             if self.__startDownloads:
                 items.append(
                 {"label": "Pause Downloading", 
@@ -333,6 +364,12 @@ class Applet(CDApplet):
                 self.saveURLs()
             elif iNumEntry == menuEntries.loadURLs:
                 self.loadURLs()
+            elif iNumEntry == menuEntries.clipboardURL:
+                self.urlManualEntry()
+            elif iNumEntry == menuEntries.openVideoFolder:
+                subprocess.call(['xdg-open',self.__videos_directory], shell=False)
+            elif iNumEntry == menuEntries.showDownloadStatus:
+                alerts.doUserAlert(self,self.resultSummary,4)
             elif iNumEntry == menuEntries.pauseDownload:
                 self.__startDownloads = False
                 message = "Downloading Paused"
@@ -360,7 +397,6 @@ class Applet(CDApplet):
                     self.work_queue.put('Abort')
                     self.result = ['Aborting','Aborting','Aborting','Aborting']
 	            self.icon.SetQuickInfo(str(self.result[0]))
-                    self.__startDownloads = False
             elif self.currentDialog == PopupTypes.delList:
                 self.messageDebug("onAnswerDialog: confirm delete: "+str(button)+" "+str(userResponse))
                 if button == 0:
@@ -480,21 +516,21 @@ class Applet(CDApplet):
 	    """
 	    Reload the configuration.
 	    """
-	    interval = keyfile.getint('User Interface', 'interval')
+	    interval = keyfile.getint('Configuration', 'interval')
 	    self.__interval = interval * 1000 # convert in millisecondes.
-	    self.__startDownloads = keyfile.getboolean('User Interface', 'startDownloads')
-	    self.__showAlertStartDownloads = keyfile.getboolean('User Interface', 'showAlertStartDownloads')
-	    self.__showAlertDownloadComplete = keyfile.getboolean('User Interface', 'showAlertDownloadComplete')
-	    self.__showAlertDownloadAbort = keyfile.getboolean('User Interface', 'showAlertDownloadAbort')
-	    self.__showAlertAddURL = keyfile.getboolean('User Interface', 'showAlertAddURL')
-	    self.usePynotify = keyfile.getboolean('User Interface', 'usePynotify')
-	    self.useListView = keyfile.getboolean('User Interface', 'useListView')
-	    self.urlListExceeds = keyfile.getint('User Interface', 'urlListExceeds')
-	    self.__actionOnMiddleClick = keyfile.get('User Interface', 'actionOnMiddleClick')
-	    self.__showProgressOnIcon = keyfile.getboolean('User Interface', 'showProgressOnIcon')
-	    self.__showStatusOnIcon = keyfile.getboolean('User Interface', 'showStatusOnIcon')
-	    self.__videos_directory = keyfile.get('User Interface', 'videos_directory')
-	    self.__urlList_directory = keyfile.get('User Interface', 'urlList_directory')
+	    self.__startDownloads = keyfile.getboolean('Configuration', 'startDownloads')
+	    self.__showAlertStartDownloads = keyfile.getboolean('Configuration', 'showAlertStartDownloads')
+	    self.__showAlertDownloadComplete = keyfile.getboolean('Configuration', 'showAlertDownloadComplete')
+	    self.__showAlertDownloadAbort = keyfile.getboolean('Configuration', 'showAlertDownloadAbort')
+	    self.__showAlertAddURL = keyfile.getboolean('Configuration', 'showAlertAddURL')
+	    self.usePynotify = keyfile.getboolean('Configuration', 'usePynotify')
+	    self.useListView = keyfile.getboolean('Configuration', 'useListView')
+	    self.urlListExceeds = keyfile.getint('Configuration', 'urlListExceeds')
+	    self.__actionOnMiddleClick = keyfile.get('Configuration', 'actionOnMiddleClick')
+	    self.__showProgressOnIcon = keyfile.getboolean('Configuration', 'showProgressOnIcon')
+	    self.__showStatusOnIcon = keyfile.getboolean('Configuration', 'showStatusOnIcon')
+	    self.__videos_directory = keyfile.get('Configuration', 'videos_directory')
+	    self.__urlList_directory = keyfile.get('Configuration', 'urlList_directory')
 	    self.__setTimer()
 
             if not self.__videos_directory:
