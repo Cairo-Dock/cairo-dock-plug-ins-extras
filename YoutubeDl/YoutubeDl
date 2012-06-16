@@ -74,6 +74,8 @@ class Applet(CDApplet):
 	        self.icon.SetQuickInfo(str(self.result[0]))
             else:
 	        self.icon.SetQuickInfo('')
+            # Uncomment the following line to trace debug actions in the console.
+            #self.debug()
             self.reload()
 	    self.__setTimer()
 
@@ -501,7 +503,7 @@ class Applet(CDApplet):
             Write debug message to console.
             """
             if self.__debugMode:
-                print '<%s : %s>' % (self.__name, message)
+                print '<%s : %s>' % (self.cAppletName, message)
 
         def debug(self):
             """

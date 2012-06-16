@@ -97,7 +97,7 @@ class YoutubeDownloader(multiprocessing.Process):
             except Queue.Empty:
                 time.sleep(1)
 
-    def debug():
+    def debug(self):
         global doDebug
         doDebug = True
 
