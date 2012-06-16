@@ -71,7 +71,7 @@ class YoutubeDownloader(multiprocessing.Process):
             try:
                 url = self.work_queue.get()
                 self.__config.refresh()
-                videos_directory = self.__config.get('User Interface', 'videos_directory')
+                videos_directory = self.__config.get('Configuration', 'videos_directory')
                 self.useFormat = self.__config.get('Download Options', 'useFormat')
                 self.videoFormat = self.__config.get('Download Options', 'videoFormat')
                 self.maxVideoFormat = self.__config.get('Download Options', 'maxVideoFormat')
@@ -97,7 +97,7 @@ class YoutubeDownloader(multiprocessing.Process):
             except Queue.Empty:
                 time.sleep(1)
 
-    def debug():
+    def debug(self):
         global doDebug
         doDebug = True
 

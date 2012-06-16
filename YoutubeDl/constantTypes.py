@@ -2,7 +2,7 @@ class PopupTypes:
     (infoDialog, confirmAbort, saveListFilename, getListFilename, delList, showUrlList, urlManualEntry) = range(7)
 
 class menuEntries:
-    (abortDownload, saveURLs, loadURLs, pauseDownload, enableDownload, clearURLs, editURLs) = range(7)
+    (abortDownload, saveURLs, loadURLs, pauseDownload, enableDownload, clearURLs, editURLs, clipboardURL, openVideoFolder, showDownloadStatus) = range(10)
 
 class youtube:
     videoFormats = {"H264 - MP4 at 480p":'18',
