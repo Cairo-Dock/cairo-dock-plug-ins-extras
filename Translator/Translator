@@ -36,7 +36,7 @@ from sgmllib import SGMLParser
 from urllib import FancyURLopener
 from util import log
 
-from CDApplet import CDApplet, _, _
+from CDApplet import CDApplet, _
 
 class AgentOpener(FancyURLopener):
 	"""Masked user-agent otherwise the access would be forbidden"""
