@@ -15,7 +15,7 @@
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
 
-from CDApplet import CDApplet
+from CDApplet import CDApplet, _
 
 import glib # used for timer
 import base64 # used to encrypt and decrypt messaging accounts' passwords
@@ -131,12 +131,14 @@ class Gmail(CDApplet):
             sub = file.read()
             file.close()
         except:
-            self.error("There is no subscription to any Gmail account.")
+            message = _("There is no subscription to any Gmail account.")
+            self.error(message)
             return
 
         # check if there was any data
         if len(sub) < 1:
-            self.error("There is no subscription to any Gmail account.")
+            message = _("There is no subscription to any Gmail account.")
+            self.error(message)
             return
 
         # if so process the data
@@ -144,7 +146,8 @@ class Gmail(CDApplet):
 
         # check if the data is correct
         if len(account) != 2:
-            self.error("There is no subscription to any Gmail account.")
+            message = _("There is no subscription to any Gmail account.")
+            self.error(message)
             return
 
         # then process the data into account
@@ -170,14 +173,16 @@ class Gmail(CDApplet):
             # set dialogue flag to 'username'
             self.flag = 'username'
             # prompt for username
-            self.icon.PopupDialog({"message" : "Please, enter your Gmail username:", "buttons" : "ok;cancel"},
+            message = _("Please, enter your Gmail username:")
+            self.icon.PopupDialog({"message" : message, "buttons" : "ok;cancel"},
                     {"widget-type" : "text-entry"})
         # if requesting new password:
         elif request == 'password':
             # set dialogue flag to 'password'
             self.flag = 'password'
             # prompt for password
-            self.icon.PopupDialog({"message" : "Please, enter your Gmail password:", "buttons" : "ok;cancel"},
+            message = _("Please, enter your Gmail password:")
+            self.icon.PopupDialog({"message" : message, "buttons" : "ok;cancel"},
                     {"widget-type" : "text-entry", "visible" : False})
         # default request is to encrypt username and password
         else:
@@ -252,7 +257,8 @@ class Gmail(CDApplet):
                     inbox.append(mail)
             return inbox
         except:
-            self.error("WARNING: there was an error reading XML content.")
+            message = _("WARNING: there was an error reading XML content.")
+            self.error(message)
             return None
 
     def request_gmail(self):
@@ -273,7 +279,8 @@ class Gmail(CDApplet):
 
         if not hasattr(error, 'code') or error.code != 401:
             # we got an error - but not a 401 error
-            self.error("WARNING: Gmail applet failed to connect to Gmail atom feed.")
+            message = _("WARNING: Gmail applet failed to connect to Gmail atom feed.")
+            self.error(message)
             return None
 
         # get the www-authenticate line from the headers
@@ -287,15 +294,16 @@ class Gmail(CDApplet):
 
         # make sure scheme and realm was found
         if not matchobject:
-            m = "WARNING: Gmail atom feed is badly formed: " + authline
+            message = _("WARNING: Gmail atom feed is badly formed: ")
+            m = message + authline
             self.error(m)
             return None
 
         # check what scheme we have
         scheme = matchobject.group(1)
         if scheme.lower() != 'basic':
-            return self.error('WARNING: Gmail Applet is not equiped for authentication \
-                    other than BASIC.')
+            message = _("WARNING: Gmail Applet is not equipped for authentication other than BASIC.")
+            return self.error(message)
 
         # authenticate and get inbox content
         username = self.account['username']
@@ -307,7 +315,8 @@ class Gmail(CDApplet):
             handle = urllib2.urlopen(request)
         except IOError, error:
             # here we shouldn't fail if the username/password is right
-            self.error("WARNING: Gmail username or password may be wrong.")
+            message = _("WARNING: Gmail username or password may be wrong.")
+            self.error(message)
             return None
 
         return handle
@@ -416,7 +425,8 @@ class Gmail(CDApplet):
                     s = 's'
             else:
                     s = ''
-            self.icon.ShowDialog("You have "+str(self.account['count'])+" new email%s." % s, 3)
+            message = _("You have %s new email%s") % (str(self.account['count']), s)
+            self.icon.ShowDialog(message, 3)
 
         # check whether user wants a sound
         if self.config['sound'] == True:
@@ -475,7 +485,8 @@ class Gmail(CDApplet):
                     # to be made in future).
                     pass
             else:
-                self.error("Sorry, there was no input!")
+                message = _("Sorry, there was no input!")
+                self.error(message)
 
     def on_build_menu(self):
 
@@ -483,18 +494,23 @@ class Gmail(CDApplet):
             Appends items to right-click menu.
         """
 
+        message_add_label = _("Add or change subscription")
+        message_add_tooltip = _("Use this to add or change your Gmail account details.")
+        message_middle_click = _("middle-click")
+        message_check_label = _("Check inbox now")
+        message_check_tooltip = _("Check Gmail inbox now if you can't wait.")
         self.icon.AddMenuItems([{"widget-type" : CDApplet.MENU_ENTRY,
-        "label": "Add or change subscription",
+        "label": message_add_label,
         "icon" : "gtk-add",
         "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 1,
-        "tooltip" : "Use this to add or change your Gmail account details."},
+        "tooltip" : message_add_tooltip},
         {"widget-type" : CDApplet.MENU_ENTRY,
-        "label": "Check inbox now" + " (middle-click)",
+        "label": message_check_label + " (" + message_middle_click + ")",
         "icon" : "gtk-refresh",
         "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 2,
-        "tooltip" : "Check Gmail inbox now if you can't wait."}])
+        "tooltip" : message_check_tooltip}])
 
     def on_menu_select(self, iNumEntry):
 
