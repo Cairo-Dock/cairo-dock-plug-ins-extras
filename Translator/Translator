@@ -275,7 +275,7 @@ class Applet(CDApplet):
 			
 			dialog_attributes = {
 				'use-markup' : True,
-				'buttons'    : 'gtk-clear;stock_refresh;cancel',
+				'buttons'    : 'gtk-clear;gtk-refresh;gtk-cancel',
 				'time-length': self.config['dialog time'] + len(message) / 20 }
 			if self.config['dialog editable']:
 				dialog_attributes['message'] = "Translated from <b>%s</b> to <b>%s</b>:" % (self.source.name, self.destination.name)
