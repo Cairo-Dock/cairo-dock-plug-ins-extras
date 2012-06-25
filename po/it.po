@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
 "POT-Creation-Date: 2012-04-12 00:34+0000\n"
-"PO-Revision-Date: 2012-04-12 03:24+0000\n"
-"Last-Translator: Mattia Tavernini <maathias@interfree.it>\n"
+"PO-Revision-Date: 2012-06-08 07:34+0000\n"
+"Last-Translator: Wonderfulheart <Unknown>\n"
 "Language-Team: Italian <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-13 05:35+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-06-09 05:56+0000\n"
+"X-Generator: Launchpad (build 15376)\n"
 "Language: it\n"
 
 #: ../GnoMenu/GnoMenu:100
@@ -621,7 +621,7 @@ msgstr "Riavvia tutti i torrent"
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Transmission/Transmission:405
 msgid "Torrents info"
-msgstr ""
+msgstr "Informazioni sui torrent"
 
 #: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
@@ -660,7 +660,7 @@ msgstr "Mostra sempre l'icona, anche quando la dock è nascosta?"
 
 #: ../Gmail/messages:91
 msgid "(in minutes)"
-msgstr ""
+msgstr "in minuti"
 
 #: ../Gmail/messages:93
 msgid "Delay between refreshes:"
@@ -680,59 +680,63 @@ msgid ""
 "\"different\" will do so whenever the number of emails changes; \"superior\" "
 "will notify you whenever it increases (default)."
 msgstr ""
+"\"sempre\" ti informerà ogni volta che il numero di email è diverso da 0; "
+"\"diverso\" lo farà ogni volta che il numero delle email cambia; "
+"\"superiore\" lo farà ogni volta che esse aumentano (predefinito)."
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
-msgstr ""
+msgstr "In quali condizioni?"
 
 #: ../Gmail/messages:103
 msgid "superior"
-msgstr ""
+msgstr "superiore"
 
 #: ../Gmail/messages:105
 msgid "always"
-msgstr ""
+msgstr "sempre"
 
 #: ../Gmail/messages:107
 msgid "different"
-msgstr ""
+msgstr "diverso"
 
 #: ../Gmail/messages:109
 msgid "Should an animation be applied to the icon?"
-msgstr ""
+msgstr "Dovrebbe essere applicata un'animazione all'icona?"
 
 #: ../Gmail/messages:111
 msgid "Show animation?"
-msgstr ""
+msgstr "Mostro l'animazione?"
 
 #: ../Gmail/messages:113
 msgid "Which animation should the apply to the icon?"
-msgstr ""
+msgstr "Quale animazione dovrebbe essere applicata all'icona?"
 
 #: ../Gmail/messages:115
 msgid "Choose animation?"
-msgstr ""
+msgstr "Scegliere l'animazione?"
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr ""
+msgstr "L'applet dovrebbe visualizzare una finestra di dialogo con l'avviso?"
 
 #: ../Gmail/messages:119
 msgid "Show dialogue?"
-msgstr ""
+msgstr "Mostro il dialogo?"
 
 #: ../Gmail/messages:121
 msgid "Should the applet play a sound with the notification?"
-msgstr ""
+msgstr "L'applet dovrebbe emettere un suono con l'avviso?"
 
 #: ../Gmail/messages:123
 msgid "Play a sound?"
-msgstr ""
+msgstr "Emettere un suono?"
 
 #: ../Gmail/messages:125
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
+"Diversi file sono disponibili in ~/.config/cairo-dock/third-party/Gmail/snd/"
 
 #: ../Gmail/messages:127
 msgid "Path to sound file:"
@@ -740,27 +744,28 @@ msgstr "Percorso per il file sonoro:"
 
 #: ../Gmail/messages:129
 msgid "Display a counter on the icon?"
-msgstr ""
+msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
 msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:133
 msgid "How?"
-msgstr ""
+msgstr "Come?"
 
 #: ../Gmail/messages:135
 msgid "small emblem"
-msgstr ""
+msgstr "emblema piccolo"
 
 #: ../Gmail/messages:137
 msgid "large emblem"
-msgstr ""
+msgstr "emblema grande"
 
 #: ../Gmail/messages:139
 msgid "quickinfo"
-msgstr ""
+msgstr "informazione"
 
 #: ../GTG/messages:95 ../Xchat/messages:97
 msgid "Bubbles duration :"
@@ -797,48 +802,53 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 msgid "Desklet's dimension (width x height) :"
-msgstr ""
+msgstr "Dimensione della desklet (larghezza x altezza):"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
 msgid ""
 "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
+"In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Screensaver_inhibitor/messages:31 ../Translator/messages:35
 msgid "Desklet's position (x ; y) :"
-msgstr ""
+msgstr "Posizione della desklet (x ; y):"
 
 #: ../HDDtemperature/messages:27 ../Moon/messages:31
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:43
 msgid "Is detached from the dock ?"
-msgstr ""
+msgstr "È staccato dalla dock?"
 
 #: ../HDDtemperature/messages:29 ../Translator/messages:45
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=utility)"
 msgstr ""
+"per il \"livello widget\" di Compiz Fusion, impostare il comportamento in "
+"Compiz a: (class=Cairo-dock & type=utility)"
 
 #: ../HDDtemperature/messages:31 ../Moon/messages:33
 #: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
 msgid "Accessibility :"
-msgstr ""
+msgstr "Accessibilità:"
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
 msgid "On Widget Layer"
-msgstr ""
+msgstr "A Livello Widget"
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
 msgid "Should be visible on all desktops ?"
-msgstr ""
+msgstr "Dovrebbe essere visibile su ogni Scrivania?"
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:51
@@ -846,31 +856,34 @@ msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
 msgstr ""
+"Se bloccata, la desklet non può essere spostata trascinandola semplicemente "
+"con il tasto sinistro del mouse. Naturalmente è possibile ancora spostarla "
+"con ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53
 msgid "Lock position ?"
-msgstr ""
+msgstr "Blocco la posizione?"
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55
 msgid "in degrees."
-msgstr ""
+msgstr "in gradi."
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
 #: ../Screensaver_inhibitor/messages:57
 msgid "Rotation :"
-msgstr ""
+msgstr "Rotazione:"
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
 msgid "Choose the 'personnal' one to define your own decorations below."
-msgstr ""
+msgstr "Scegline uno 'personale' per definire le proprie decorazioni."
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
 #: ../Screensaver_inhibitor/messages:63 ../Translator/messages:65
 msgid "Choose a decoration theme for this desklet :"
-msgstr ""
+msgstr "Scegli un tema decorativo per questa desklet:"
 
 #: ../HDDtemperature/messages:59 ../Moon/messages:61
 #: ../Screensaver_inhibitor/messages:65 ../Translator/messages:67
@@ -878,56 +891,58 @@ msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
 msgstr ""
+"È un'immagine che verrà visualizzata sotto i disegni, come una cornice ad "
+"esempio. Lascia vuoto per non utilizzarla."
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
 msgid "Background image :"
-msgstr ""
+msgstr "Immagine di sfondo:"
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
 msgid "Background tansparency :"
-msgstr ""
+msgstr "Trasparenza dello sfondo:"
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
 msgid "in pixels. Use this to adjust the left position of the drawings."
-msgstr ""
+msgstr "in pixel. Consente di regolare la posizione di sinistra dei disegni."
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Screensaver_inhibitor/messages:73 ../Translator/messages:75
 msgid "Left offset :"
-msgstr ""
+msgstr "Compensazione a sinistra:"
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Screensaver_inhibitor/messages:75 ../Translator/messages:77
 msgid "in pixels. Use this to adjust the top position of the drawings."
-msgstr ""
+msgstr "in pixel. Consente di regolare la posizione superiore dei disegni."
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Screensaver_inhibitor/messages:77 ../Translator/messages:79
 msgid "Top offset :"
-msgstr ""
+msgstr "Compensazione superiore:"
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Screensaver_inhibitor/messages:79 ../Translator/messages:81
 msgid "in pixels. Use this to adjust the right position of the drawings."
-msgstr ""
+msgstr "in pixel. Consente di regolare la posizione di destra dei disegni."
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Screensaver_inhibitor/messages:81 ../Translator/messages:83
 msgid "Right offset :"
-msgstr ""
+msgstr "Compensazione a destra:"
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Screensaver_inhibitor/messages:83 ../Translator/messages:85
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
-msgstr ""
+msgstr "in pixel. Consente di regolare la posizione inferiore dei disegni."
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Screensaver_inhibitor/messages:85 ../Translator/messages:87
 msgid "Bottom offset :"
-msgstr ""
+msgstr "Compensazione inferiore:"
 
 #: ../HDDtemperature/messages:81 ../Moon/messages:83
 #: ../Screensaver_inhibitor/messages:87 ../Translator/messages:89
@@ -935,52 +950,56 @@ msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
 msgstr ""
+"È un'immagine che verrà visualizzata sotto i disegni, come un riflesso per "
+"esempio. Lascia vuoto per non utilizzarla."
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
 msgid "Foreground image :"
-msgstr ""
+msgstr "Immagine in primo piano:"
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
 msgid "Foreground tansparency :"
-msgstr ""
+msgstr "Trasparenza del primo piano:"
 
 #: ../HDDtemperature/messages:89
 msgid "One or more device drive path to monitor:"
-msgstr ""
+msgstr "Uno o più percorsi dei drive da monitorare:"
 
 #: ../HDDtemperature/messages:91
 msgid "Show maximum temperature on icon?"
-msgstr ""
+msgstr "Mostro la temperatura massima sull'icona?"
 
 #: ../HDDtemperature/messages:93
 msgid "Time interval for checking (minutes):"
-msgstr ""
+msgstr "Frequenza di controllo (in minuti):"
 
 #: ../HDDtemperature/messages:95
 msgid "It should conform to units used by hddtemp daemon"
-msgstr ""
+msgstr "Dovrebbe essere conforme alle unità utilizzate dal demone hddtemp"
 
 #: ../HDDtemperature/messages:97
 msgid "Alert temperature value (°C by default)"
-msgstr ""
+msgstr "Unità di misura della temperatura di allarme (predefinito è in °C)"
 
 #: ../HDDtemperature/messages:99
 msgid "0 for permanent show"
-msgstr ""
+msgstr "0 per mostrarlo permanentemente"
 
 #: ../HDDtemperature/messages:101
 msgid "Pop up bubble duration (in seconds)"
-msgstr ""
+msgstr "Durata della visualizzazione (in secondi)"
 
 #: ../HDDtemperature/messages:103
 msgid "Port number to listen to hddtemp daemon (7634 by default)"
 msgstr ""
+"Numero della porta in ascolto del demone hddtemp (predefinita è la 7634)"
 
 #: ../HDDtemperature/messages:105
 msgid "Separator between fields used by hddtemp daemon ( | by default)"
 msgstr ""
+"Separatore fra le voci usate dal demone hddtemp (predefinito è la 'pipe' | )"
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -1014,23 +1033,23 @@ msgstr ""
 
 #: ../Moon/messages:91
 msgid "Show the moon for all the current week?"
-msgstr ""
+msgstr "Mostro la luna per tutta la settimana corrente?"
 
 #: ../Moon/messages:93
 msgid "You are going to see the moon from the perspective of this hemisphere"
-msgstr ""
+msgstr "Stai osservando la luna dalla prospettiva di questo emisfero"
 
 #: ../Moon/messages:95
 msgid "Hemisphere:"
-msgstr ""
+msgstr "Emisfero:"
 
 #: ../Moon/messages:97
 msgid "North"
-msgstr ""
+msgstr "Nord"
 
 #: ../Moon/messages:99
 msgid "South"
-msgstr ""
+msgstr "Sud"
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
@@ -1137,23 +1156,23 @@ msgstr "Vidademerda.com.br"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
-msgstr ""
+msgstr "Il salvaschermo è attualmente disabilitato"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:79
 msgid "Disable the screensaver"
-msgstr ""
+msgstr "Disabilita il salvaschermo"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:185
 msgid "Inhibit for a given timelength (in minutes)"
-msgstr ""
+msgstr "Inibiscilo per un certo periodo (in minuti)"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
 msgid "timelength"
-msgstr ""
+msgstr "durata"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 msgid "Inhibit for a given timelength"
-msgstr ""
+msgstr "Inibiscilo per un certo periodo"
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
@@ -1166,25 +1185,27 @@ msgstr "Percorso dell'immagine:"
 
 #: ../Screensaver_inhibitor/messages:15
 msgid "Image filename when the screensaver is inhibited:"
-msgstr ""
+msgstr "Percorso dell'immagine durante l'inibizione del salvaschermo:"
 
 #: ../Screensaver_inhibitor/messages:35
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=Utility)"
 msgstr ""
+"per il \"livello widget\" di Compiz Fusion, imposta il comportamento di "
+"Compiz in: (class=Cairo-dock & type=Utility)"
 
 #: ../Screensaver_inhibitor/messages:95
 msgid "0 to never stop automatically"
-msgstr ""
+msgstr "0 per non fermarsi mai automaticamente"
 
 #: ../Screensaver_inhibitor/messages:97
 msgid "Timelength of the inhibition:"
-msgstr ""
+msgstr "Durata dell'inibizione:"
 
 #: ../Screensaver_inhibitor/messages:99
 msgid "Shortkey to (de)inhibit the screensaver:"
-msgstr ""
+msgstr "Scorciatoria per inibire/attivare il salvaschermo:"
 
 #: ../Translator/Translator:424
 msgid "To"
@@ -1240,7 +1261,7 @@ msgstr "Bielorusso"
 
 #: ../Translator/messages:115 ../Translator/messages:245
 msgid "Bengali"
-msgstr ""
+msgstr "Bengali"
 
 #: ../Translator/messages:117 ../Translator/messages:247
 msgid "Bulgarian"
@@ -1252,11 +1273,11 @@ msgstr "Catalano"
 
 #: ../Translator/messages:121
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Chinese (simplified)"
 
 #: ../Translator/messages:123
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Chinese (traditional)"
 
 #: ../Translator/messages:125 ../Translator/messages:255
 msgid "Croatian"
@@ -1312,7 +1333,7 @@ msgstr "Greco"
 
 #: ../Translator/messages:151 ../Translator/messages:281
 msgid "Gujarati"
-msgstr ""
+msgstr "Gujarati"
 
 #: ../Translator/messages:153 ../Translator/messages:283
 msgid "Haitian"
@@ -1352,7 +1373,7 @@ msgstr "Giapponese"
 
 #: ../Translator/messages:171 ../Translator/messages:301
 msgid "Kannada"
-msgstr ""
+msgstr "Kannada"
 
 #: ../Translator/messages:173 ../Translator/messages:303
 msgid "Korean"
@@ -1360,7 +1381,7 @@ msgstr "Coreano"
 
 #: ../Translator/messages:175 ../Translator/messages:305
 msgid "Latin"
-msgstr ""
+msgstr "Latin"
 
 #: ../Translator/messages:177 ../Translator/messages:307
 msgid "Latvian"
@@ -1432,11 +1453,11 @@ msgstr "Svedese"
 
 #: ../Translator/messages:211 ../Translator/messages:341
 msgid "Tamil"
-msgstr ""
+msgstr "Tamil"
 
 #: ../Translator/messages:213 ../Translator/messages:343
 msgid "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #: ../Translator/messages:215 ../Translator/messages:345
 msgid "Thai"
@@ -1472,11 +1493,11 @@ msgstr "Traduci in:"
 
 #: ../Translator/messages:251
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "Simplified Chinese"
 
 #: ../Translator/messages:253
 msgid "Traditional Chinese"
-msgstr ""
+msgstr "Traditional Chinese"
 
 #: ../Translator/messages:359
 msgid "Shortkeys"
@@ -1523,11 +1544,11 @@ msgstr "Devi attivare il client Web nelle impostazioni di Transmission."
 
 #: ../Twitter/Twitter:240 ../Twitter/Twitter:274
 msgid "Oh, dear, your timeline is empty :-("
-msgstr ""
+msgstr "Oh, caro/a, la timeline è vuota :-("
 
 #: ../Twitter/Twitter:307
 msgid "Oh, dear, you do not have direct messages :-("
-msgstr ""
+msgstr "Oh, caro/a, non hai messaggi diretti :-("
 
 #: ../Twitter/Twitter:326
 #, python-format
@@ -1537,36 +1558,42 @@ msgid ""
 "Friends: %s\n"
 "Tweets: %s\n"
 msgstr ""
+"%s [<b>%s</b>]\n"
+"Seguaci: %s\n"
+"Amici: %s\n"
+"Cinguettìi: %s\n"
 
 #: ../Twitter/Twitter:336
 #, python-format
 msgid "%s, write a reply to %s"
-msgstr ""
+msgstr "%s, scrivi una risposta a %s"
 
 #: ../Twitter/Twitter:346
 #, python-format
 msgid "%s, send a tweet"
-msgstr ""
+msgstr "%s, invia un cinguettìo"
 
 #: ../Twitter/Twitter:349
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
-msgstr ""
+msgstr "Il tuo cinguettìo supera i %d caratteri, per favore sii più breve"
 
 #: ../Twitter/Twitter:355
 #, python-format
 msgid "%s, retweet?"
-msgstr ""
+msgstr "%s, ricinguetti?"
 
 #: ../Twitter/Twitter:378
 msgid ""
 "Twitter Applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your Twitter account"
 msgstr ""
+"L'Applet Twitter necessita del tuo nickname e di un'autorizzazione\n"
+"nella quale accetti di connetterti sul tuo account Twitter"
 
 #: ../Twitter/Twitter:384
 msgid "What is your Twitter nickname?"
-msgstr ""
+msgstr "Qual'è il tuo nickname su Twitter?"
 
 #: ../Twitter/Twitter:396
 msgid ""
@@ -1574,6 +1601,9 @@ msgid ""
 "opened on your browser. As soon as you authorize it, copy the PIN number "
 "that will be shown, and close this dialog"
 msgstr ""
+"L'Applet Twitter necessita che tu dia l'autorizzazione. La pagina di "
+"autorizzazione è stata aperta nel tuo browser. Non appena autorizzato, copia "
+"il numero PIN che verrà mostrato e chiudi questa finestra di dialogo"
 
 #: ../Twitter/Twitter:399
 msgid ""
@@ -1581,23 +1611,26 @@ msgid ""
 "and access it with your browser. Copy the PIN number that will be shown as "
 "soon as you authorize"
 msgstr ""
+"L'Applet Twitter necessita che tu dia l'autorizzazione. Copia l'indirizzo "
+"sottostante e accedi con il tuo browser. Copia il numero PIN che verrà "
+"mostrato non appena autorizzati"
 
 #: ../Twitter/Twitter:405
 msgid "Enter the PIN number on the authorization page"
-msgstr ""
+msgstr "Inserire il numero PIN nella pagina di autorizzazione"
 
 #: ../Twitter/Twitter:412
 msgid "Successfully connected with Twitter"
-msgstr ""
+msgstr "Collegamento a Twitter avvenuto con successo"
 
 #: ../Twitter/Twitter:424
 msgid "Direct messages"
-msgstr ""
+msgstr "Messaggi diretti"
 
 #: ../Twitter/Twitter:426
 #, python-format
 msgid "New direct messages (%d)"
-msgstr ""
+msgstr "Nuovo messaggio diretto (%d)"
 
 #: ../Twitter/Twitter:439
 msgid "Info"
@@ -1605,20 +1638,21 @@ msgstr "Info"
 
 #: ../Twitter/Twitter:448
 msgid "Tweets"
-msgstr ""
+msgstr "Cinguettìi"
 
 #: ../Twitter/Twitter:450
 #, python-format
 msgid "New tweets (%d)"
-msgstr ""
+msgstr "Nuovi cinguettìi (%d)"
 
 #: ../Twitter/Twitter:464
 msgid "My tweets"
-msgstr ""
+msgstr "I miei cinguettìi"
 
 #: ../Twitter/messages:95
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
 msgstr ""
+"Dimensione dell'emblema che mostra il numero dei nuovi cinguettìi e messaggi:"
 
 #: ../Twitter/messages:97
 msgid "Small"
@@ -1626,7 +1660,7 @@ msgstr "Piccolo"
 
 #: ../Twitter/messages:101
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"
