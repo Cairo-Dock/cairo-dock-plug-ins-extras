@@ -6,20 +6,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2012-04-12 00:34+0000\n"
 "PO-Revision-Date: 2012-05-24 17:41+0000\n"
 "Last-Translator: Eduardo Mucelli Rezende Oliveira <edumucelli@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2012-05-25 04:52+0000\n"
 "X-Generator: Launchpad (build 15288)\n"
-"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -202,8 +200,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
-"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
+"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:27
@@ -227,8 +225,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte "
-"direita/inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
+"inferior da tela."
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:31
@@ -613,7 +611,7 @@ msgstr "Continuar todos os torrents"
 msgid "Torrents info"
 msgstr "Informação dos torrents"
 
-#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
+#: ../Deluge/Deluge:297 ../Gmail/Gmail:499 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 #: ../Transmission/Transmission:405
 msgid "middle-click"
@@ -635,6 +633,64 @@ msgstr "em minutos"
 #: ../DiskFree/messages:99
 msgid "Time between two file system's checking :"
 msgstr "Tempo entre verificações do sistema de arquivos:"
+
+#: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
+msgid "There is no subscription to any Gmail account."
+msgstr ""
+
+#: ../Gmail/Gmail:176
+msgid "Please, enter your Gmail username:"
+msgstr ""
+
+#: ../Gmail/Gmail:184
+msgid "Please, enter your Gmail password:"
+msgstr ""
+
+#: ../Gmail/Gmail:260
+msgid "WARNING: there was an error reading XML content."
+msgstr ""
+
+#: ../Gmail/Gmail:282
+msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
+msgstr ""
+
+#: ../Gmail/Gmail:297
+msgid "WARNING: Gmail atom feed is badly formed: "
+msgstr ""
+
+#: ../Gmail/Gmail:305
+msgid ""
+"WARNING: Gmail Applet is not equipped for authentication other than BASIC."
+msgstr ""
+
+#: ../Gmail/Gmail:318
+msgid "WARNING: Gmail username or password may be wrong."
+msgstr ""
+
+#: ../Gmail/Gmail:428
+#, python-format
+msgid "You have %s new email%s"
+msgstr ""
+
+#: ../Gmail/Gmail:488
+msgid "Sorry, there was no input!"
+msgstr ""
+
+#: ../Gmail/Gmail:497
+msgid "Add or change subscription"
+msgstr ""
+
+#: ../Gmail/Gmail:498
+msgid "Use this to add or change your Gmail account details."
+msgstr ""
+
+#: ../Gmail/Gmail:500
+msgid "Check inbox now"
+msgstr ""
+
+#: ../Gmail/Gmail:501
+msgid "Check Gmail inbox now if you can't wait."
+msgstr ""
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
 #: ../Screensaver_inhibitor/messages:7 ../Translator/messages:7
@@ -706,8 +762,7 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr ""
-"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:119
 msgid "Show dialogue?"
@@ -717,7 +772,7 @@ msgstr "Mostrar caixa de diálogo?"
 msgid "Should the applet play a sound with the notification?"
 msgstr "O mini-aplicativo deve tocar um som com a notificação?"
 
-#: ../Gmail/messages:123
+#: ../Gmail/messages:123 ../Twitter/messages:107
 msgid "Play a sound?"
 msgstr "Tocar som?"
 
@@ -798,8 +853,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -1126,6 +1180,28 @@ msgstr "Jokes2go.com"
 #: ../Quote/messages:111
 msgid "Vidademerda.com.br"
 msgstr "Vidademerda.com.br"
+
+#: ../Quote/messages:113
+#, fuzzy
+msgid "Viedemerde.fr"
+msgstr "Vidademerda.com.br"
+
+#: ../Quote/messages:115
+msgid "Fmylife.com"
+msgstr ""
+
+#: ../Quote/messages:117
+#, fuzzy
+msgid "Vitadimerda.it"
+msgstr "Vidademerda.com.br"
+
+#: ../Quote/messages:119
+msgid "100blagues.com"
+msgstr ""
+
+#: ../Quote/messages:121
+msgid "Chucknorrisfacts.fr"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
@@ -1514,15 +1590,15 @@ msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 "Você tem que habilitar o cliente Web nas configurações do Transmission."
 
-#: ../Twitter/Twitter:240 ../Twitter/Twitter:274
+#: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
 msgstr "Oh, sua linha do tempo está vazia :-("
 
-#: ../Twitter/Twitter:307
+#: ../Twitter/Twitter:181
 msgid "Oh, dear, you do not have direct messages :-("
 msgstr "Oh, você não tem mensagens diretas :-("
 
-#: ../Twitter/Twitter:326
+#: ../Twitter/Twitter:195
 #, python-format
 msgid ""
 "%s [<b>%s</b>]\n"
@@ -1535,92 +1611,128 @@ msgstr ""
 "Amigos: %s\n"
 "Tweets: %s\n"
 
-#: ../Twitter/Twitter:336
+#: ../Twitter/Twitter:205
 #, python-format
 msgid "%s, write a reply to %s"
 msgstr "%s, escreva uma resposta para %s"
 
-#: ../Twitter/Twitter:346
+#: ../Twitter/Twitter:216
 #, python-format
 msgid "%s, send a tweet"
 msgstr "%s, envie um tweet"
 
-#: ../Twitter/Twitter:349
+#: ../Twitter/Twitter:218
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
 msgstr "Seu tweet tem mais de %d caracteres, por favor, deixe-o mais curto"
 
-#: ../Twitter/Twitter:355
+#: ../Twitter/Twitter:231
+#, python-format
+msgid ""
+"Problem to send this tweet on %s, I think you already tried to send the same "
+"one few minutes ago"
+msgstr ""
+
+#: ../Twitter/Twitter:235
 #, python-format
 msgid "%s, retweet?"
 msgstr "%s, retweetar?"
 
-#: ../Twitter/Twitter:378
+#: ../Twitter/Twitter:249
 msgid ""
-"Twitter Applet needs your nickname, and an authorization\n"
-"that you accept it to connect on your Twitter account"
+"This applet supports Twitter, and Identi.ca.\n"
+"Right-click -> Add account -> Twitter.\n"
+"Right-click -> Add account -> Identi.ca."
+msgstr ""
+
+#: ../Twitter/Twitter:254
+#, fuzzy, python-format
+msgid ""
+"%s Applet needs your nickname, and an authorization\n"
+"that you accept it to connect on your %s account"
 msgstr ""
 "O mini-aplicativo Twitter precisa do seu nome de usuário e de uma "
 "autorização\n"
 "que você aceita que ele se conecte a sua conta do Twitter."
 
-#: ../Twitter/Twitter:384
-msgid "What is your Twitter nickname?"
+#: ../Twitter/Twitter:263
+#, fuzzy, python-format
+msgid "What is your %s nickname?"
 msgstr "Qual é seu nome de usuário do Twitter?"
 
-#: ../Twitter/Twitter:396
+#: ../Twitter/Twitter:280
+#, fuzzy, python-format
 msgid ""
-"Twitter applet needs you to give the authorization. Authorization page was "
-"opened on your browser. As soon as you authorize it, copy the PIN number "
-"that will be shown, and close this dialog"
+"%s applet needs you to give the authorization. Authorization page was opened "
+"on your browser. As soon as you authorize it, copy the PIN number that will "
+"be shown, and go to the next dialog"
 msgstr ""
 "O mini-aplicativo Twitter precisa que você o autorize. Uma página de "
 "autorização será aberta no seu navegador. Assim que você autorizá-lo, copie "
 "o código PIN que será mostrado e feche esta caixa de diálogo."
 
-#: ../Twitter/Twitter:399
+#: ../Twitter/Twitter:283
+#, fuzzy, python-format
 msgid ""
-"Twitter applet needs you to give the authorization. Copy the address bellow "
-"and access it with your browser. Copy the PIN number that will be shown as "
-"soon as you authorize"
+"%s applet needs you to give the authorization. Copy the address bellow and "
+"access it with your browser. Copy the PIN number that will be shown as soon "
+"as you authorize"
 msgstr ""
 "O mini-aplicativo Twitter precisa que você o autorize. Copie o endereço "
 "abaixo e acesse-o com seu navegador. Copiei o código PIN que será mostrado "
 "assim que você der a autorização."
 
-#: ../Twitter/Twitter:405
-msgid "Enter the PIN number on the authorization page"
+#: ../Twitter/Twitter:293
+#, fuzzy
+msgid "Enter the PIN number shown on the authorization page"
 msgstr "Digite o código PIN mostrado na página de autorização"
 
-#: ../Twitter/Twitter:412
+#: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
 msgstr "Conectado ao Twitter com sucesso"
 
-#: ../Twitter/Twitter:424
+#: ../Twitter/Twitter:308
+#, fuzzy
+msgid "Successfully connected with Identi.ca"
+msgstr "Conectado ao Twitter com sucesso"
+
+#: ../Twitter/Twitter:325
 msgid "Direct messages"
 msgstr "Mensagens diretas"
 
-#: ../Twitter/Twitter:426
+#: ../Twitter/Twitter:327
 #, python-format
 msgid "New direct messages (%d)"
 msgstr "Novas mensagens diretas (%d)"
 
-#: ../Twitter/Twitter:439
+#: ../Twitter/Twitter:340
 msgid "Info"
 msgstr "Informação"
 
-#: ../Twitter/Twitter:448
+#: ../Twitter/Twitter:349
 msgid "Tweets"
 msgstr "Tweets"
 
-#: ../Twitter/Twitter:450
+#: ../Twitter/Twitter:351
 #, python-format
 msgid "New tweets (%d)"
 msgstr "Novos tweets (%d)"
 
-#: ../Twitter/Twitter:464
+#: ../Twitter/Twitter:365
 msgid "My tweets"
 msgstr "Meus tweets"
+
+#: ../Twitter/Twitter:383
+msgid "Add account"
+msgstr ""
+
+#: ../Twitter/Twitter:391 ../WebSearch/messages:113
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../Twitter/Twitter:401
+msgid "Identi.ca"
+msgstr ""
 
 #: ../Twitter/messages:95
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
@@ -1633,6 +1745,35 @@ msgstr "Pequeno"
 #: ../Twitter/messages:101
 msgid "Large"
 msgstr "Grande"
+
+#: ../Twitter/messages:103
+msgid "Alert when you receive a new tweet or message?"
+msgstr ""
+
+#: ../Twitter/messages:105
+#, fuzzy
+msgid "Should the applet play a sound as a notification?"
+msgstr "O mini-aplicativo deve tocar um som com a notificação?"
+
+#: ../Twitter/messages:109
+#, fuzzy
+msgid "Should the applet animate the icon as a notification?"
+msgstr "O mini-aplicativo deve tocar um som com a notificação?"
+
+#: ../Twitter/messages:111
+#, fuzzy
+msgid "Icon animation?"
+msgstr "Mostrar animação?"
+
+#: ../Twitter/messages:113
+#, fuzzy
+msgid "Which animation should apply to the icon?"
+msgstr "Qual animação aplicar no ícone?"
+
+#: ../Twitter/messages:115
+#, fuzzy
+msgid "Choose animation:"
+msgstr "Escolha animação?"
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"
@@ -1673,10 +1814,6 @@ msgstr "Wikipédia"
 #: ../WebSearch/messages:111
 msgid "ImageShack"
 msgstr "ImageShack"
-
-#: ../WebSearch/messages:113
-msgid "Twitter"
-msgstr "Twitter"
 
 #: ../WebSearch/messages:115
 msgid "Digg"

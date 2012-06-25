@@ -7,22 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2012-04-12 00:34+0000\n"
 "PO-Revision-Date: 2012-04-12 03:12+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2012-04-13 05:36+0000\n"
 "X-Generator: Launchpad (build 15070)\n"
-"Language: es\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -394,8 +392,7 @@ msgstr ""
 #: ../Twitter/messages:63 ../WebSearch/messages:61
 #: ../WindowsKiller/messages:61 ../Xchat/messages:63
 msgid "Choose a decoration theme for this desklet:"
-msgstr ""
-"Seleccione un tema de decoración para este complemento del escritorio:"
+msgstr "Seleccione un tema de decoración para este complemento del escritorio:"
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
 #: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:61
@@ -459,8 +456,7 @@ msgstr "Desplazamiento izquierdo:"
 #: ../Twitter/messages:75 ../WebSearch/messages:73
 #: ../WindowsKiller/messages:73 ../Xchat/messages:75
 msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición superior de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición superior de los dibujos."
 
 #: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
 #: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:73
@@ -480,8 +476,7 @@ msgstr "Desplazamiento superior:"
 #: ../Twitter/messages:79 ../WebSearch/messages:77
 #: ../WindowsKiller/messages:77 ../Xchat/messages:79
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
 
 #: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
 #: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:77
@@ -501,8 +496,7 @@ msgstr "Desplazamiento derecho:"
 #: ../Twitter/messages:83 ../WebSearch/messages:81
 #: ../WindowsKiller/messages:81 ../Xchat/messages:83
 msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
 
 #: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
 #: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:81
@@ -612,7 +606,7 @@ msgstr ""
 msgid "Torrents info"
 msgstr ""
 
-#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
+#: ../Deluge/Deluge:297 ../Gmail/Gmail:499 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 #: ../Transmission/Transmission:405
 msgid "middle-click"
@@ -633,6 +627,64 @@ msgstr ""
 
 #: ../DiskFree/messages:99
 msgid "Time between two file system's checking :"
+msgstr ""
+
+#: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
+msgid "There is no subscription to any Gmail account."
+msgstr ""
+
+#: ../Gmail/Gmail:176
+msgid "Please, enter your Gmail username:"
+msgstr ""
+
+#: ../Gmail/Gmail:184
+msgid "Please, enter your Gmail password:"
+msgstr ""
+
+#: ../Gmail/Gmail:260
+msgid "WARNING: there was an error reading XML content."
+msgstr ""
+
+#: ../Gmail/Gmail:282
+msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
+msgstr ""
+
+#: ../Gmail/Gmail:297
+msgid "WARNING: Gmail atom feed is badly formed: "
+msgstr ""
+
+#: ../Gmail/Gmail:305
+msgid ""
+"WARNING: Gmail Applet is not equipped for authentication other than BASIC."
+msgstr ""
+
+#: ../Gmail/Gmail:318
+msgid "WARNING: Gmail username or password may be wrong."
+msgstr ""
+
+#: ../Gmail/Gmail:428
+#, python-format
+msgid "You have %s new email%s"
+msgstr ""
+
+#: ../Gmail/Gmail:488
+msgid "Sorry, there was no input!"
+msgstr ""
+
+#: ../Gmail/Gmail:497
+msgid "Add or change subscription"
+msgstr ""
+
+#: ../Gmail/Gmail:498
+msgid "Use this to add or change your Gmail account details."
+msgstr ""
+
+#: ../Gmail/Gmail:500
+msgid "Check inbox now"
+msgstr ""
+
+#: ../Gmail/Gmail:501
+msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
@@ -712,7 +764,7 @@ msgstr ""
 msgid "Should the applet play a sound with the notification?"
 msgstr ""
 
-#: ../Gmail/messages:123
+#: ../Gmail/messages:123 ../Twitter/messages:107
 msgid "Play a sound?"
 msgstr ""
 
@@ -792,8 +844,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -1114,6 +1165,26 @@ msgstr ""
 
 #: ../Quote/messages:111
 msgid "Vidademerda.com.br"
+msgstr ""
+
+#: ../Quote/messages:113
+msgid "Viedemerde.fr"
+msgstr ""
+
+#: ../Quote/messages:115
+msgid "Fmylife.com"
+msgstr ""
+
+#: ../Quote/messages:117
+msgid "Vitadimerda.it"
+msgstr ""
+
+#: ../Quote/messages:119
+msgid "100blagues.com"
+msgstr ""
+
+#: ../Quote/messages:121
+msgid "Chucknorrisfacts.fr"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
@@ -1500,15 +1571,15 @@ msgstr ""
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
-#: ../Twitter/Twitter:240 ../Twitter/Twitter:274
+#: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
 msgstr ""
 
-#: ../Twitter/Twitter:307
+#: ../Twitter/Twitter:181
 msgid "Oh, dear, you do not have direct messages :-("
 msgstr ""
 
-#: ../Twitter/Twitter:326
+#: ../Twitter/Twitter:195
 #, python-format
 msgid ""
 "%s [<b>%s</b>]\n"
@@ -1517,82 +1588,116 @@ msgid ""
 "Tweets: %s\n"
 msgstr ""
 
-#: ../Twitter/Twitter:336
+#: ../Twitter/Twitter:205
 #, python-format
 msgid "%s, write a reply to %s"
 msgstr ""
 
-#: ../Twitter/Twitter:346
+#: ../Twitter/Twitter:216
 #, python-format
 msgid "%s, send a tweet"
 msgstr ""
 
-#: ../Twitter/Twitter:349
+#: ../Twitter/Twitter:218
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
 msgstr ""
 
-#: ../Twitter/Twitter:355
+#: ../Twitter/Twitter:231
+#, python-format
+msgid ""
+"Problem to send this tweet on %s, I think you already tried to send the same "
+"one few minutes ago"
+msgstr ""
+
+#: ../Twitter/Twitter:235
 #, python-format
 msgid "%s, retweet?"
 msgstr ""
 
-#: ../Twitter/Twitter:378
+#: ../Twitter/Twitter:249
 msgid ""
-"Twitter Applet needs your nickname, and an authorization\n"
-"that you accept it to connect on your Twitter account"
+"This applet supports Twitter, and Identi.ca.\n"
+"Right-click -> Add account -> Twitter.\n"
+"Right-click -> Add account -> Identi.ca."
 msgstr ""
 
-#: ../Twitter/Twitter:384
-msgid "What is your Twitter nickname?"
-msgstr ""
-
-#: ../Twitter/Twitter:396
+#: ../Twitter/Twitter:254
+#, python-format
 msgid ""
-"Twitter applet needs you to give the authorization. Authorization page was "
-"opened on your browser. As soon as you authorize it, copy the PIN number "
-"that will be shown, and close this dialog"
+"%s Applet needs your nickname, and an authorization\n"
+"that you accept it to connect on your %s account"
 msgstr ""
 
-#: ../Twitter/Twitter:399
+#: ../Twitter/Twitter:263
+#, python-format
+msgid "What is your %s nickname?"
+msgstr ""
+
+#: ../Twitter/Twitter:280
+#, python-format
 msgid ""
-"Twitter applet needs you to give the authorization. Copy the address bellow "
-"and access it with your browser. Copy the PIN number that will be shown as "
-"soon as you authorize"
+"%s applet needs you to give the authorization. Authorization page was opened "
+"on your browser. As soon as you authorize it, copy the PIN number that will "
+"be shown, and go to the next dialog"
 msgstr ""
 
-#: ../Twitter/Twitter:405
-msgid "Enter the PIN number on the authorization page"
+#: ../Twitter/Twitter:283
+#, python-format
+msgid ""
+"%s applet needs you to give the authorization. Copy the address bellow and "
+"access it with your browser. Copy the PIN number that will be shown as soon "
+"as you authorize"
 msgstr ""
 
-#: ../Twitter/Twitter:412
+#: ../Twitter/Twitter:293
+msgid "Enter the PIN number shown on the authorization page"
+msgstr ""
+
+#: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
 msgstr ""
 
-#: ../Twitter/Twitter:424
+#: ../Twitter/Twitter:308
+msgid "Successfully connected with Identi.ca"
+msgstr ""
+
+#: ../Twitter/Twitter:325
 msgid "Direct messages"
 msgstr ""
 
-#: ../Twitter/Twitter:426
+#: ../Twitter/Twitter:327
 #, python-format
 msgid "New direct messages (%d)"
 msgstr ""
 
-#: ../Twitter/Twitter:439
+#: ../Twitter/Twitter:340
 msgid "Info"
 msgstr "Información"
 
-#: ../Twitter/Twitter:448
+#: ../Twitter/Twitter:349
 msgid "Tweets"
 msgstr ""
 
-#: ../Twitter/Twitter:450
+#: ../Twitter/Twitter:351
 #, python-format
 msgid "New tweets (%d)"
 msgstr ""
 
-#: ../Twitter/Twitter:464
+#: ../Twitter/Twitter:365
 msgid "My tweets"
+msgstr ""
+
+#: ../Twitter/Twitter:383
+msgid "Add account"
+msgstr ""
+
+#: ../Twitter/Twitter:391 ../WebSearch/messages:113
+msgid "Twitter"
+msgstr ""
+
+#: ../Twitter/Twitter:401
+msgid "Identi.ca"
 msgstr ""
 
 #: ../Twitter/messages:95
@@ -1606,6 +1711,31 @@ msgstr ""
 #: ../Twitter/messages:101
 msgid "Large"
 msgstr ""
+
+#: ../Twitter/messages:103
+msgid "Alert when you receive a new tweet or message?"
+msgstr ""
+
+#: ../Twitter/messages:105
+msgid "Should the applet play a sound as a notification?"
+msgstr ""
+
+#: ../Twitter/messages:109
+msgid "Should the applet animate the icon as a notification?"
+msgstr ""
+
+#: ../Twitter/messages:111
+msgid "Icon animation?"
+msgstr ""
+
+#: ../Twitter/messages:113
+msgid "Which animation should apply to the icon?"
+msgstr ""
+
+#: ../Twitter/messages:115
+#, fuzzy
+msgid "Choose animation:"
+msgstr "Configuración:"
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"
@@ -1645,10 +1775,6 @@ msgstr "Wikipedia"
 
 #: ../WebSearch/messages:111
 msgid "ImageShack"
-msgstr ""
-
-#: ../WebSearch/messages:113
-msgid "Twitter"
 msgstr ""
 
 #: ../WebSearch/messages:115

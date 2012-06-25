@@ -7,20 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2012-04-12 00:34+0000\n"
 "PO-Revision-Date: 2012-04-23 19:54+0000\n"
 "Last-Translator: milboy <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2012-04-24 05:12+0000\n"
 "X-Generator: Launchpad (build 15135)\n"
-"Language: sk\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu nie je nainštalované. Prosím nainštalujte ho pred spustením tohto "
 "apletu."
@@ -609,7 +607,7 @@ msgstr "Spustiť všetky torrenty"
 msgid "Torrents info"
 msgstr "Informácia o torente"
 
-#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
+#: ../Deluge/Deluge:297 ../Gmail/Gmail:499 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 #: ../Transmission/Transmission:405
 msgid "middle-click"
@@ -632,6 +630,64 @@ msgstr "v minútach"
 #: ../DiskFree/messages:99
 msgid "Time between two file system's checking :"
 msgstr "Čas medzi kontrolou dvoch systémových súborov:"
+
+#: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
+msgid "There is no subscription to any Gmail account."
+msgstr ""
+
+#: ../Gmail/Gmail:176
+msgid "Please, enter your Gmail username:"
+msgstr ""
+
+#: ../Gmail/Gmail:184
+msgid "Please, enter your Gmail password:"
+msgstr ""
+
+#: ../Gmail/Gmail:260
+msgid "WARNING: there was an error reading XML content."
+msgstr ""
+
+#: ../Gmail/Gmail:282
+msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
+msgstr ""
+
+#: ../Gmail/Gmail:297
+msgid "WARNING: Gmail atom feed is badly formed: "
+msgstr ""
+
+#: ../Gmail/Gmail:305
+msgid ""
+"WARNING: Gmail Applet is not equipped for authentication other than BASIC."
+msgstr ""
+
+#: ../Gmail/Gmail:318
+msgid "WARNING: Gmail username or password may be wrong."
+msgstr ""
+
+#: ../Gmail/Gmail:428
+#, python-format
+msgid "You have %s new email%s"
+msgstr ""
+
+#: ../Gmail/Gmail:488
+msgid "Sorry, there was no input!"
+msgstr ""
+
+#: ../Gmail/Gmail:497
+msgid "Add or change subscription"
+msgstr ""
+
+#: ../Gmail/Gmail:498
+msgid "Use this to add or change your Gmail account details."
+msgstr ""
+
+#: ../Gmail/Gmail:500
+msgid "Check inbox now"
+msgstr ""
+
+#: ../Gmail/Gmail:501
+msgid "Check Gmail inbox now if you can't wait."
+msgstr ""
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
 #: ../Screensaver_inhibitor/messages:7 ../Translator/messages:7
@@ -713,7 +769,7 @@ msgstr "Zobraziť dialóg?"
 msgid "Should the applet play a sound with the notification?"
 msgstr "Môže applet prehrať zvuk s oznámením?"
 
-#: ../Gmail/messages:123
+#: ../Gmail/messages:123 ../Twitter/messages:107
 msgid "Play a sound?"
 msgstr "Prehrať zvuk?"
 
@@ -796,8 +852,7 @@ msgstr "Rozmer deskletu (šírka x výška):"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "V závislosti od správcu okien môžete pohybovať pomocou ALT + ľavé klinutie"
 
@@ -1131,6 +1186,28 @@ msgstr "Jokes2go.com"
 #: ../Quote/messages:111
 msgid "Vidademerda.com.br"
 msgstr "Vidademerda.com.br"
+
+#: ../Quote/messages:113
+#, fuzzy
+msgid "Viedemerde.fr"
+msgstr "Vidademerda.com.br"
+
+#: ../Quote/messages:115
+msgid "Fmylife.com"
+msgstr ""
+
+#: ../Quote/messages:117
+#, fuzzy
+msgid "Vitadimerda.it"
+msgstr "Vidademerda.com.br"
+
+#: ../Quote/messages:119
+msgid "100blagues.com"
+msgstr ""
+
+#: ../Quote/messages:121
+msgid "Chucknorrisfacts.fr"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
@@ -1519,15 +1596,15 @@ msgstr ""
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr "Povoľte webového klienta v nastaveniach Transmision."
 
-#: ../Twitter/Twitter:240 ../Twitter/Twitter:274
+#: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
 msgstr "Ach miláčik, tvoj čas vypršal :-("
 
-#: ../Twitter/Twitter:307
+#: ../Twitter/Twitter:181
 msgid "Oh, dear, you do not have direct messages :-("
 msgstr "Ach miláčik, nemáš priame správy :-("
 
-#: ../Twitter/Twitter:326
+#: ../Twitter/Twitter:195
 #, python-format
 msgid ""
 "%s [<b>%s</b>]\n"
@@ -1540,90 +1617,126 @@ msgstr ""
 "Priatelia: %s\n"
 "Tweets: %s\n"
 
-#: ../Twitter/Twitter:336
+#: ../Twitter/Twitter:205
 #, python-format
 msgid "%s, write a reply to %s"
 msgstr "%s, napíšte odpoveď na %s"
 
-#: ../Twitter/Twitter:346
+#: ../Twitter/Twitter:216
 #, python-format
 msgid "%s, send a tweet"
 msgstr "%s, poslať štebot"
 
-#: ../Twitter/Twitter:349
+#: ../Twitter/Twitter:218
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
 msgstr "Váš štebot má viac ako %d znakov, prosím skrátiť"
 
-#: ../Twitter/Twitter:355
+#: ../Twitter/Twitter:231
+#, python-format
+msgid ""
+"Problem to send this tweet on %s, I think you already tried to send the same "
+"one few minutes ago"
+msgstr ""
+
+#: ../Twitter/Twitter:235
 #, python-format
 msgid "%s, retweet?"
 msgstr ""
 
-#: ../Twitter/Twitter:378
+#: ../Twitter/Twitter:249
 msgid ""
-"Twitter Applet needs your nickname, and an authorization\n"
-"that you accept it to connect on your Twitter account"
+"This applet supports Twitter, and Identi.ca.\n"
+"Right-click -> Add account -> Twitter.\n"
+"Right-click -> Add account -> Identi.ca."
+msgstr ""
+
+#: ../Twitter/Twitter:254
+#, fuzzy, python-format
+msgid ""
+"%s Applet needs your nickname, and an authorization\n"
+"that you accept it to connect on your %s account"
 msgstr ""
 "Aplet Twitter požaduje vaše meno a povolenie\n"
 "že súhlasíte s pripojením na váš Twiter účet"
 
-#: ../Twitter/Twitter:384
-msgid "What is your Twitter nickname?"
+#: ../Twitter/Twitter:263
+#, fuzzy, python-format
+msgid "What is your %s nickname?"
 msgstr "Aká je vaša prezývka na Twitteri ?"
 
-#: ../Twitter/Twitter:396
+#: ../Twitter/Twitter:280
+#, fuzzy, python-format
 msgid ""
-"Twitter applet needs you to give the authorization. Authorization page was "
-"opened on your browser. As soon as you authorize it, copy the PIN number "
-"that will be shown, and close this dialog"
+"%s applet needs you to give the authorization. Authorization page was opened "
+"on your browser. As soon as you authorize it, copy the PIN number that will "
+"be shown, and go to the next dialog"
 msgstr ""
 "Aplet Twitter potrebuje overenie. Stránka pre overenie sa otvorí vo vašom "
 "prehliadači. Akonáhle si ju povolíte, skopírujte zobrazený PIN kód a "
 "zatvorte tento dialóg"
 
-#: ../Twitter/Twitter:399
+#: ../Twitter/Twitter:283
+#, fuzzy, python-format
 msgid ""
-"Twitter applet needs you to give the authorization. Copy the address bellow "
-"and access it with your browser. Copy the PIN number that will be shown as "
-"soon as you authorize"
+"%s applet needs you to give the authorization. Copy the address bellow and "
+"access it with your browser. Copy the PIN number that will be shown as soon "
+"as you authorize"
 msgstr ""
 "Aplet Twitter vyžaduje overenie. Skopírujte adresu nižšie a vložte do vášho "
 "prehliadača. Skopírujte zobrazený PIN po overení"
 
-#: ../Twitter/Twitter:405
-msgid "Enter the PIN number on the authorization page"
+#: ../Twitter/Twitter:293
+#, fuzzy
+msgid "Enter the PIN number shown on the authorization page"
 msgstr "Vložte PIN do overovacej stránky"
 
-#: ../Twitter/Twitter:412
+#: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
 msgstr "Pripojenie na Twitter bolo úspešné"
 
-#: ../Twitter/Twitter:424
+#: ../Twitter/Twitter:308
+#, fuzzy
+msgid "Successfully connected with Identi.ca"
+msgstr "Pripojenie na Twitter bolo úspešné"
+
+#: ../Twitter/Twitter:325
 msgid "Direct messages"
 msgstr "Priame správy"
 
-#: ../Twitter/Twitter:426
+#: ../Twitter/Twitter:327
 #, python-format
 msgid "New direct messages (%d)"
 msgstr "Nová priama správa (%d)"
 
-#: ../Twitter/Twitter:439
+#: ../Twitter/Twitter:340
 msgid "Info"
 msgstr "Informácia"
 
-#: ../Twitter/Twitter:448
+#: ../Twitter/Twitter:349
 msgid "Tweets"
 msgstr "Tweets"
 
-#: ../Twitter/Twitter:450
+#: ../Twitter/Twitter:351
 #, python-format
 msgid "New tweets (%d)"
 msgstr "Nový tweets (%d)"
 
-#: ../Twitter/Twitter:464
+#: ../Twitter/Twitter:365
 msgid "My tweets"
 msgstr "Môj tweets"
+
+#: ../Twitter/Twitter:383
+msgid "Add account"
+msgstr ""
+
+#: ../Twitter/Twitter:391 ../WebSearch/messages:113
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../Twitter/Twitter:401
+msgid "Identi.ca"
+msgstr ""
 
 #: ../Twitter/messages:95
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
@@ -1636,6 +1749,35 @@ msgstr "Malý"
 #: ../Twitter/messages:101
 msgid "Large"
 msgstr "Veľký"
+
+#: ../Twitter/messages:103
+msgid "Alert when you receive a new tweet or message?"
+msgstr ""
+
+#: ../Twitter/messages:105
+#, fuzzy
+msgid "Should the applet play a sound as a notification?"
+msgstr "Môže applet prehrať zvuk s oznámením?"
+
+#: ../Twitter/messages:109
+#, fuzzy
+msgid "Should the applet animate the icon as a notification?"
+msgstr "Môže applet prehrať zvuk s oznámením?"
+
+#: ../Twitter/messages:111
+#, fuzzy
+msgid "Icon animation?"
+msgstr "Zobraziť animáciu?"
+
+#: ../Twitter/messages:113
+#, fuzzy
+msgid "Which animation should apply to the icon?"
+msgstr "Animácia, ktorá by mala použitá na ikonu?"
+
+#: ../Twitter/messages:115
+#, fuzzy
+msgid "Choose animation:"
+msgstr "Vybrať animáciu?"
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"
@@ -1676,10 +1818,6 @@ msgstr "Wikipédia"
 #: ../WebSearch/messages:111
 msgid "ImageShack"
 msgstr "ImageShack"
-
-#: ../WebSearch/messages:113
-msgid "Twitter"
-msgstr "Twitter"
 
 #: ../WebSearch/messages:115
 msgid "Digg"

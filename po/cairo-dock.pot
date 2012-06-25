@@ -573,7 +573,7 @@ msgstr ""
 msgid "Torrents info"
 msgstr ""
 
-#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
+#: ../Deluge/Deluge:297 ../Gmail/Gmail:499 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 #: ../Transmission/Transmission:405
 msgid "middle-click"
@@ -593,6 +593,63 @@ msgstr ""
 
 #: ../DiskFree/messages:99
 msgid "Time between two file system's checking :"
+msgstr ""
+
+#: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
+msgid "There is no subscription to any Gmail account."
+msgstr ""
+
+#: ../Gmail/Gmail:176
+msgid "Please, enter your Gmail username:"
+msgstr ""
+
+#: ../Gmail/Gmail:184
+msgid "Please, enter your Gmail password:"
+msgstr ""
+
+#: ../Gmail/Gmail:260
+msgid "WARNING: there was an error reading XML content."
+msgstr ""
+
+#: ../Gmail/Gmail:282
+msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
+msgstr ""
+
+#: ../Gmail/Gmail:297
+msgid "WARNING: Gmail atom feed is badly formed: "
+msgstr ""
+
+#: ../Gmail/Gmail:305
+msgid "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
+msgstr ""
+
+#: ../Gmail/Gmail:318
+msgid "WARNING: Gmail username or password may be wrong."
+msgstr ""
+
+#: ../Gmail/Gmail:428
+#, python-format
+msgid "You have %s new email%s"
+msgstr ""
+
+#: ../Gmail/Gmail:488
+msgid "Sorry, there was no input!"
+msgstr ""
+
+#: ../Gmail/Gmail:497
+msgid "Add or change subscription"
+msgstr ""
+
+#: ../Gmail/Gmail:498
+msgid "Use this to add or change your Gmail account details."
+msgstr ""
+
+#: ../Gmail/Gmail:500
+msgid "Check inbox now"
+msgstr ""
+
+#: ../Gmail/Gmail:501
+msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
@@ -669,7 +726,7 @@ msgstr ""
 msgid "Should the applet play a sound with the notification?"
 msgstr ""
 
-#: ../Gmail/messages:123
+#: ../Gmail/messages:123 ../Twitter/messages:107
 msgid "Play a sound?"
 msgstr ""
 
@@ -1058,6 +1115,26 @@ msgstr ""
 msgid "Vidademerda.com.br"
 msgstr ""
 
+#: ../Quote/messages:113
+msgid "Viedemerde.fr"
+msgstr ""
+
+#: ../Quote/messages:115
+msgid "Fmylife.com"
+msgstr ""
+
+#: ../Quote/messages:117
+msgid "Vitadimerda.it"
+msgstr ""
+
+#: ../Quote/messages:119
+msgid "100blagues.com"
+msgstr ""
+
+#: ../Quote/messages:121
+msgid "Chucknorrisfacts.fr"
+msgstr ""
+
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
 msgstr ""
@@ -1439,15 +1516,15 @@ msgstr ""
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
-#: ../Twitter/Twitter:240 ../Twitter/Twitter:274
+#: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
 msgstr ""
 
-#: ../Twitter/Twitter:307
+#: ../Twitter/Twitter:181
 msgid "Oh, dear, you do not have direct messages :-("
 msgstr ""
 
-#: ../Twitter/Twitter:326
+#: ../Twitter/Twitter:195
 #, python-format
 msgid ""
 "%s [<b>%s</b>]\n"
@@ -1456,76 +1533,108 @@ msgid ""
 "Tweets: %s\n"
 msgstr ""
 
-#: ../Twitter/Twitter:336
+#: ../Twitter/Twitter:205
 #, python-format
 msgid "%s, write a reply to %s"
 msgstr ""
 
-#: ../Twitter/Twitter:346
+#: ../Twitter/Twitter:216
 #, python-format
 msgid "%s, send a tweet"
 msgstr ""
 
-#: ../Twitter/Twitter:349
+#: ../Twitter/Twitter:218
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
 msgstr ""
 
-#: ../Twitter/Twitter:355
+#: ../Twitter/Twitter:231
+#, python-format
+msgid "Problem to send this tweet on %s, I think you already tried to send the same one few minutes ago"
+msgstr ""
+
+#: ../Twitter/Twitter:235
 #, python-format
 msgid "%s, retweet?"
 msgstr ""
 
-#: ../Twitter/Twitter:378
+#: ../Twitter/Twitter:249
 msgid ""
-"Twitter Applet needs your nickname, and an authorization\n"
-"that you accept it to connect on your Twitter account"
+"This applet supports Twitter, and Identi.ca.\n"
+"Right-click -> Add account -> Twitter.\n"
+"Right-click -> Add account -> Identi.ca."
 msgstr ""
 
-#: ../Twitter/Twitter:384
-msgid "What is your Twitter nickname?"
+#: ../Twitter/Twitter:254
+#, python-format
+msgid ""
+"%s Applet needs your nickname, and an authorization\n"
+"that you accept it to connect on your %s account"
 msgstr ""
 
-#: ../Twitter/Twitter:396
-msgid "Twitter applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and close this dialog"
+#: ../Twitter/Twitter:263
+#, python-format
+msgid "What is your %s nickname?"
 msgstr ""
 
-#: ../Twitter/Twitter:399
-msgid "Twitter applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize"
+#: ../Twitter/Twitter:280
+#, python-format
+msgid "%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog"
 msgstr ""
 
-#: ../Twitter/Twitter:405
-msgid "Enter the PIN number on the authorization page"
+#: ../Twitter/Twitter:283
+#, python-format
+msgid "%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize"
 msgstr ""
 
-#: ../Twitter/Twitter:412
+#: ../Twitter/Twitter:293
+msgid "Enter the PIN number shown on the authorization page"
+msgstr ""
+
+#: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
 msgstr ""
 
-#: ../Twitter/Twitter:424
+#: ../Twitter/Twitter:308
+msgid "Successfully connected with Identi.ca"
+msgstr ""
+
+#: ../Twitter/Twitter:325
 msgid "Direct messages"
 msgstr ""
 
-#: ../Twitter/Twitter:426
+#: ../Twitter/Twitter:327
 #, python-format
 msgid "New direct messages (%d)"
 msgstr ""
 
-#: ../Twitter/Twitter:439
+#: ../Twitter/Twitter:340
 msgid "Info"
 msgstr ""
 
-#: ../Twitter/Twitter:448
+#: ../Twitter/Twitter:349
 msgid "Tweets"
 msgstr ""
 
-#: ../Twitter/Twitter:450
+#: ../Twitter/Twitter:351
 #, python-format
 msgid "New tweets (%d)"
 msgstr ""
 
-#: ../Twitter/Twitter:464
+#: ../Twitter/Twitter:365
 msgid "My tweets"
+msgstr ""
+
+#: ../Twitter/Twitter:383
+msgid "Add account"
+msgstr ""
+
+#: ../Twitter/Twitter:391 ../WebSearch/messages:113
+msgid "Twitter"
+msgstr ""
+
+#: ../Twitter/Twitter:401
+msgid "Identi.ca"
 msgstr ""
 
 #: ../Twitter/messages:95
@@ -1538,6 +1647,30 @@ msgstr ""
 
 #: ../Twitter/messages:101
 msgid "Large"
+msgstr ""
+
+#: ../Twitter/messages:103
+msgid "Alert when you receive a new tweet or message?"
+msgstr ""
+
+#: ../Twitter/messages:105
+msgid "Should the applet play a sound as a notification?"
+msgstr ""
+
+#: ../Twitter/messages:109
+msgid "Should the applet animate the icon as a notification?"
+msgstr ""
+
+#: ../Twitter/messages:111
+msgid "Icon animation?"
+msgstr ""
+
+#: ../Twitter/messages:113
+msgid "Which animation should apply to the icon?"
+msgstr ""
+
+#: ../Twitter/messages:115
+msgid "Choose animation:"
 msgstr ""
 
 #: ../WebSearch/messages:93
@@ -1578,10 +1711,6 @@ msgstr ""
 
 #: ../WebSearch/messages:111
 msgid "ImageShack"
-msgstr ""
-
-#: ../WebSearch/messages:113
-msgid "Twitter"
 msgstr ""
 
 #: ../WebSearch/messages:115
