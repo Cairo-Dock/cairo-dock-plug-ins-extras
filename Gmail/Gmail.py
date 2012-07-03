@@ -420,12 +420,11 @@ class Gmail(CDApplet):
 
         # check whether user wants a dialogue
         if self.config['dia'] == True:
-            # checking our grammar ;)
+            # checking our grammar ;) # we have at least one new email
             if self.account['count'] > 1:
-                    s = 's'
+                message = _("You have %s new emails") % (str(self.account['count']))
             else:
-                    s = ''
-            message = _("You have %s new email%s") % (str(self.account['count']), s)
+                message = _("You have 1 new email")
             self.icon.ShowDialog(message, 3)
 
         # check whether user wants a sound

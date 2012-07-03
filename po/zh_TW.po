@@ -596,7 +596,7 @@ msgstr ""
 msgid "Torrents info"
 msgstr ""
 
-#: ../Deluge/Deluge:297 ../Gmail/Gmail:499 ../KTorrent/KTorrent:328
+#: ../Deluge/Deluge:297 ../Gmail/Gmail:498 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 #: ../Transmission/Transmission:405
 msgid "middle-click"
@@ -652,28 +652,32 @@ msgstr ""
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 
-#: ../Gmail/Gmail:428
+#: ../Gmail/Gmail:425
 #, python-format
-msgid "You have %s new email%s"
+msgid "You have %s new emails"
 msgstr ""
 
-#: ../Gmail/Gmail:488
+#: ../Gmail/Gmail:427
+msgid "You have 1 new email"
+msgstr ""
+
+#: ../Gmail/Gmail:487
 msgid "Sorry, there was no input!"
 msgstr ""
 
-#: ../Gmail/Gmail:497
+#: ../Gmail/Gmail:496
 msgid "Add or change subscription"
 msgstr ""
 
-#: ../Gmail/Gmail:498
+#: ../Gmail/Gmail:497
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 
-#: ../Gmail/Gmail:500
+#: ../Gmail/Gmail:499
 msgid "Check inbox now"
 msgstr ""
 
-#: ../Gmail/Gmail:501
+#: ../Gmail/Gmail:500
 msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
