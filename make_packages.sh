@@ -32,22 +32,7 @@ else
 	done;
 	
 	# build language tree
-	f="locale"
-	name="cairo-dock-plugins-extra"
-	echo "make $f"
-	mkdir $f
-	
-	for p in po/*.po; do
-		pofile=${p:3}
-		lang=${pofile/.po/}  # filtrer "en" ?...
-		mkdir -p $f/${lang}/LC_MESSAGES
-		msgfmt -o $f/${lang}/LC_MESSAGES/${name}.mo $p
-	done;
-	
-	tar cfz "$f.tar.gz" $f
-	mkdir "FTP/$f"
-	mv "$f.tar.gz" "FTP/$f"
-	rm -rf $f
+	./make_locale.sh 1
 fi
 
 exit 0
