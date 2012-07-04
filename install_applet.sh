@@ -13,24 +13,21 @@ CAIRO_DOCK_PLUG_INS_EXTRAS_HOME="$HOME/.config/cairo-dock/third-party"
 
 	rm -rf $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/tmp_last_modif
 	mkdir $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/tmp_last_modif
+	rm -rf $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/po
 
-	for i in `ls --hide=DOWNLOAD --hide=demos --hide=FTP --hide=tmp_last_modif $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH`;do
-		if test -d $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/$i; then # seulement les dossiers
-			if [ "$i" = "po" ]; then
-				i="locale"
-			fi
-			if test -f $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i/last-modif ;then # backup des last-modif's
+	# cd $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH
+	./make_locale.sh 0
+
+	for i in `ls --hide=DOWNLOAD --hide=demos --hide=FTP --hide=tmp_last_modif --hide=po $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH`;do
+		if test -d $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/$i; then # only dir dossiers
+			if test -f $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i/last-modif ;then # backup of last-modif's files
 				mkdir $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/tmp_last_modif/$i
 				cp $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i/last-modif $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/tmp_last_modif/$i/last-modif
 			fi
 			rm -rf $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i
-			if [ "$i" = "locale" ]; then
-				ln -s $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/po $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i # liens symboliques
-			else
-				ln -s $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/$i $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i # liens symboliques
-			fi
+			ln -s $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/$i $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i # symlinks
 			# cp ln -s $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/$i $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i
-			if test -f $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/tmp_last_modif/$i/last-modif ;then # backup des last-modif's
+			if test -f $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/tmp_last_modif/$i/last-modif ;then # backup of last-modif's files
 				cp $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/tmp_last_modif/$i/last-modif $CAIRO_DOCK_PLUG_INS_EXTRAS_HOME/$i/last-modif
 			fi
 		fi

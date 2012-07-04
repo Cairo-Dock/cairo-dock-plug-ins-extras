@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # build language tree
-NEXT=$1 # 1 = packages => FTP | 2 = tarball => cairo-dock-plug-ins-extras_VERSION
+NEXT=$1 # 0 = locale | 1 = packages => FTP | 2 = tarball => cairo-dock-plug-ins-extras_VERSION
 DIR="$2"
 f="locale"
 name="cairo-dock-plugins-extra"
@@ -26,6 +26,6 @@ if test $NEXT -eq 1; then
 	rm -rf $f
 elif test $NEXT -eq 2 -a "$DIR" != ""; then
 	mv $f "$DIR"
-else
+elif test $NEXT -ne 0; then
 	echo "No end option"
 fi
