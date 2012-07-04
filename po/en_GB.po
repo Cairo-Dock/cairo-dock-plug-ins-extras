@@ -7,20 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2012-07-03 10:24+0000\n"
+"POT-Creation-Date: 2012-07-04 10:37+0200\n"
 "PO-Revision-Date: 2012-04-12 03:35+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2012-07-04 04:44+0000\n"
 "X-Generator: Launchpad (build 15544)\n"
-"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is not installed. Please install it before you run this applet."
 
@@ -46,6 +45,7 @@ msgstr "Edit Menus"
 #: ../Screensaver_inhibitor/messages:1 ../Screensaver_inhibitor/messages:3
 #: ../Translator/messages:1 ../Transmission/messages:1 ../Twitter/messages:1
 #: ../WebSearch/messages:1 ../WindowsKiller/messages:1 ../Xchat/messages:1
+#: ../YoutubeDl/messages:1
 msgid "Icon"
 msgstr "Icon"
 
@@ -67,6 +67,7 @@ msgstr ""
 #: ../Quote/messages:5 ../Screensaver_inhibitor/messages:5
 #: ../Translator/messages:5 ../Transmission/messages:5 ../Twitter/messages:5
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
+#: ../YoutubeDl/messages:13
 msgid "Name of the dock it belongs to:"
 msgstr "Name of the dock it belongs to:"
 
@@ -75,7 +76,7 @@ msgstr "Name of the dock it belongs to:"
 #: ../GTG/messages:7 ../HDDtemperature/messages:7 ../KTorrent/messages:7
 #: ../Lancelot/messages:7 ../MintMenu/messages:7 ../Pidgin/messages:7
 #: ../Quote/messages:9 ../Transmission/messages:7 ../WebSearch/messages:5
-#: ../WindowsKiller/messages:7 ../Xchat/messages:7
+#: ../WindowsKiller/messages:7 ../Xchat/messages:7 ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its label in the dock :"
 msgstr "Name of the icon as it will appear in its caption in the dock:"
 
@@ -95,7 +96,7 @@ msgstr "Display"
 #: ../Lancelot/messages:11 ../Liferea/messages:11 ../MintMenu/messages:11
 #: ../Moon/messages:11 ../Pidgin/messages:11 ../Quote/messages:13
 #: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
-#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+#: ../WindowsKiller/messages:11 ../Xchat/messages:11 ../YoutubeDl/messages:9
 msgid "Let empty to use the default one."
 msgstr "Leave empty to use the default one."
 
@@ -105,7 +106,7 @@ msgstr "Leave empty to use the default one."
 #: ../Lancelot/messages:13 ../Liferea/messages:13 ../MintMenu/messages:13
 #: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
-#: ../WindowsKiller/messages:13 ../Xchat/messages:13
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13 ../YoutubeDl/messages:11
 msgid "Image's filename :"
 msgstr "Image filename:"
 
@@ -129,7 +130,7 @@ msgstr "Set to 0 to use the default applet size"
 #: ../Quote/messages:19 ../Screensaver_inhibitor/messages:19
 #: ../Translator/messages:17 ../Transmission/messages:17
 #: ../Twitter/messages:17 ../WebSearch/messages:15
-#: ../WindowsKiller/messages:17 ../Xchat/messages:17
+#: ../WindowsKiller/messages:17 ../Xchat/messages:17 ../YoutubeDl/messages:5
 msgid "Desired icon size for this applet"
 msgstr "Desired icon size for this applet"
 
@@ -141,6 +142,7 @@ msgstr "Desired icon size for this applet"
 #: ../Quote/messages:21 ../Screensaver_inhibitor/messages:21
 #: ../Translator/messages:19 ../Transmission/messages:19
 #: ../Twitter/messages:19 ../WebSearch/messages:17 ../Xchat/messages:19
+#: ../YoutubeDl/messages:17
 msgid "Applet's Handbook"
 msgstr "Applet's Handbook"
 
@@ -152,7 +154,7 @@ msgstr "Applet's Handbook"
 #: ../Quote/messages:23 ../Screensaver_inhibitor/messages:23
 #: ../Translator/messages:21 ../Transmission/messages:21
 #: ../Twitter/messages:21 ../WebSearch/messages:19
-#: ../WindowsKiller/messages:19 ../Xchat/messages:21
+#: ../WindowsKiller/messages:19 ../Xchat/messages:21 ../YoutubeDl/messages:19
 msgid "Desklet"
 msgstr "Desklet"
 
@@ -301,7 +303,7 @@ msgstr "Visibility:"
 #: ../Quote/messages:49 ../Screensaver_inhibitor/messages:39
 #: ../Translator/messages:49 ../Transmission/messages:47
 #: ../Twitter/messages:47 ../WebSearch/messages:45
-#: ../WindowsKiller/messages:45 ../Xchat/messages:47
+#: ../WindowsKiller/messages:45 ../Xchat/messages:47 ../YoutubeDl/messages:35
 msgid "Normal"
 msgstr "Normal"
 
@@ -313,7 +315,7 @@ msgstr "Normal"
 #: ../Quote/messages:51 ../Screensaver_inhibitor/messages:41
 #: ../Translator/messages:51 ../Transmission/messages:49
 #: ../Twitter/messages:49 ../WebSearch/messages:47
-#: ../WindowsKiller/messages:47 ../Xchat/messages:49
+#: ../WindowsKiller/messages:47 ../Xchat/messages:49 ../YoutubeDl/messages:37
 msgid "Keep above"
 msgstr "Keep above"
 
@@ -325,7 +327,7 @@ msgstr "Keep above"
 #: ../Quote/messages:53 ../Screensaver_inhibitor/messages:43
 #: ../Translator/messages:53 ../Transmission/messages:51
 #: ../Twitter/messages:51 ../WebSearch/messages:49
-#: ../WindowsKiller/messages:49 ../Xchat/messages:51
+#: ../WindowsKiller/messages:49 ../Xchat/messages:51 ../YoutubeDl/messages:39
 msgid "Keep below"
 msgstr "Keep below"
 
@@ -347,7 +349,7 @@ msgstr "Keep on widget layer"
 #: ../Quote/messages:57 ../Screensaver_inhibitor/messages:47
 #: ../Translator/messages:57 ../Transmission/messages:55
 #: ../Twitter/messages:55 ../WebSearch/messages:53
-#: ../WindowsKiller/messages:53 ../Xchat/messages:55
+#: ../WindowsKiller/messages:53 ../Xchat/messages:55 ../YoutubeDl/messages:43
 msgid "Reserve space"
 msgstr "Reserve space"
 
@@ -369,7 +371,7 @@ msgstr "Should be visible on all desktops?"
 #: ../Quote/messages:61 ../Screensaver_inhibitor/messages:59
 #: ../Translator/messages:61 ../Transmission/messages:59
 #: ../Twitter/messages:59 ../WebSearch/messages:57
-#: ../WindowsKiller/messages:57 ../Xchat/messages:59
+#: ../WindowsKiller/messages:57 ../Xchat/messages:59 ../YoutubeDl/messages:55
 msgid "Decorations"
 msgstr "Decorations"
 
@@ -546,7 +548,7 @@ msgstr "Foreground tansparency:"
 #: ../Moon/messages:89 ../Pidgin/messages:93 ../Quote/messages:95
 #: ../Screensaver_inhibitor/messages:93 ../Translator/messages:95
 #: ../Transmission/messages:93 ../Twitter/messages:93 ../WebSearch/messages:91
-#: ../Xchat/messages:93
+#: ../Xchat/messages:93 ../YoutubeDl/messages:89
 msgid "Configuration"
 msgstr "Configuration"
 
@@ -605,7 +607,8 @@ msgstr ""
 
 #: ../Deluge/Deluge:297 ../Gmail/Gmail:498 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
-#: ../Transmission/Transmission:405
+#: ../Transmission/Transmission:405 ../YoutubeDl/YoutubeDl:298
+#: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
 msgstr ""
 
@@ -694,7 +697,7 @@ msgstr ""
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Name of the icon as it will appear in its caption in the dock:"
 
-#: ../Gmail/messages:13
+#: ../Gmail/messages:13 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
 msgstr "Always display the icon, even when the dock is hidden?"
 
@@ -833,6 +836,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:29
+#: ../YoutubeDl/messages:21
 msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
@@ -840,26 +844,30 @@ msgstr ""
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
+#: ../YoutubeDl/messages:23
 msgid "Desklet's dimension (width x height) :"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+#: ../YoutubeDl/messages:25
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Screensaver_inhibitor/messages:31 ../Translator/messages:35
+#: ../YoutubeDl/messages:27
 msgid "Desklet's position (x ; y) :"
 msgstr ""
 
 #: ../HDDtemperature/messages:27 ../Moon/messages:31
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:43
+#: ../YoutubeDl/messages:29
 msgid "Is detached from the dock ?"
 msgstr ""
 
 #: ../HDDtemperature/messages:29 ../Translator/messages:45
+#: ../YoutubeDl/messages:31
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=utility)"
@@ -867,53 +875,59 @@ msgstr ""
 
 #: ../HDDtemperature/messages:31 ../Moon/messages:33
 #: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
+#: ../YoutubeDl/messages:33
 msgid "Accessibility :"
 msgstr ""
 
 #: ../HDDtemperature/messages:39 ../Moon/messages:41
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:55
+#: ../YoutubeDl/messages:41
 msgid "On Widget Layer"
 msgstr ""
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:49 ../Translator/messages:59
+#: ../YoutubeDl/messages:45
 msgid "Should be visible on all desktops ?"
 msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
-#: ../Screensaver_inhibitor/messages:51
+#: ../Screensaver_inhibitor/messages:51 ../YoutubeDl/messages:47
 msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
 msgstr ""
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
-#: ../Screensaver_inhibitor/messages:53
+#: ../Screensaver_inhibitor/messages:53 ../YoutubeDl/messages:49
 msgid "Lock position ?"
 msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
-#: ../Screensaver_inhibitor/messages:55
+#: ../Screensaver_inhibitor/messages:55 ../YoutubeDl/messages:51
 msgid "in degrees."
 msgstr ""
 
 #: ../HDDtemperature/messages:51 ../Moon/messages:53
-#: ../Screensaver_inhibitor/messages:57
+#: ../Screensaver_inhibitor/messages:57 ../YoutubeDl/messages:53
 msgid "Rotation :"
 msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:63
+#: ../YoutubeDl/messages:57
 msgid "Choose the 'personnal' one to define your own decorations below."
 msgstr ""
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
 #: ../Screensaver_inhibitor/messages:63 ../Translator/messages:65
+#: ../YoutubeDl/messages:59
 msgid "Choose a decoration theme for this desklet :"
 msgstr ""
 
 #: ../HDDtemperature/messages:59 ../Moon/messages:61
 #: ../Screensaver_inhibitor/messages:65 ../Translator/messages:67
+#: ../YoutubeDl/messages:61
 msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
@@ -921,56 +935,67 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
+#: ../YoutubeDl/messages:63
 msgid "Background image :"
 msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
+#: ../YoutubeDl/messages:65
 msgid "Background tansparency :"
 msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:73
+#: ../YoutubeDl/messages:67
 msgid "in pixels. Use this to adjust the left position of the drawings."
 msgstr ""
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Screensaver_inhibitor/messages:73 ../Translator/messages:75
+#: ../YoutubeDl/messages:69
 msgid "Left offset :"
 msgstr ""
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Screensaver_inhibitor/messages:75 ../Translator/messages:77
+#: ../YoutubeDl/messages:71
 msgid "in pixels. Use this to adjust the top position of the drawings."
 msgstr ""
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Screensaver_inhibitor/messages:77 ../Translator/messages:79
+#: ../YoutubeDl/messages:73
 msgid "Top offset :"
 msgstr ""
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Screensaver_inhibitor/messages:79 ../Translator/messages:81
+#: ../YoutubeDl/messages:75
 msgid "in pixels. Use this to adjust the right position of the drawings."
 msgstr ""
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Screensaver_inhibitor/messages:81 ../Translator/messages:83
+#: ../YoutubeDl/messages:77
 msgid "Right offset :"
 msgstr ""
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Screensaver_inhibitor/messages:83 ../Translator/messages:85
+#: ../YoutubeDl/messages:79
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
 msgstr ""
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Screensaver_inhibitor/messages:85 ../Translator/messages:87
+#: ../YoutubeDl/messages:81
 msgid "Bottom offset :"
 msgstr ""
 
 #: ../HDDtemperature/messages:81 ../Moon/messages:83
 #: ../Screensaver_inhibitor/messages:87 ../Translator/messages:89
+#: ../YoutubeDl/messages:83
 msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
@@ -978,11 +1003,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:91
+#: ../YoutubeDl/messages:85
 msgid "Foreground image :"
 msgstr ""
 
 #: ../HDDtemperature/messages:85 ../Moon/messages:87
 #: ../Screensaver_inhibitor/messages:91 ../Translator/messages:93
+#: ../YoutubeDl/messages:87
 msgid "Foreground tansparency :"
 msgstr ""
 
@@ -1816,4 +1843,294 @@ msgstr ""
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
+msgstr ""
+
+#: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:101
+msgid "Open Video Folder"
+msgstr ""
+
+#: ../YoutubeDl/YoutubeDl:303
+msgid "Show Download Status"
+msgstr ""
+
+#: ../YoutubeDl/YoutubeDl:311
+msgid "Send abort signal to the downloader. There may be a delay"
+msgstr ""
+
+#: ../YoutubeDl/messages:3
+#, fuzzy
+msgid "Set to 0 to use the default applet size"
+msgstr "Set to 0 to use the default applet size"
+
+#: ../YoutubeDl/messages:91
+msgid "Otherwise use right click and enable downloads"
+msgstr ""
+
+#: ../YoutubeDl/messages:93
+msgid "Start downloading videos imediately? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:95
+msgid "in secondds"
+msgstr ""
+
+#: ../YoutubeDl/messages:97
+msgid "Time between updates:"
+msgstr ""
+
+#: ../YoutubeDl/messages:99
+msgid "Action on middle click:"
+msgstr ""
+
+#: ../YoutubeDl/messages:103
+msgid "Show Status"
+msgstr ""
+
+#: ../YoutubeDl/messages:105
+msgid "Otherwise just use middle click to monitor status"
+msgstr ""
+
+#: ../YoutubeDl/messages:107
+msgid "Show download progress on icon? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:109
+msgid ""
+"Otherwise just show the plugin name and use middle click to monitor status"
+msgstr ""
+
+#: ../YoutubeDl/messages:111
+msgid "Show download status in icon label when hovering over icon? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:113
+msgid "Notification selections"
+msgstr ""
+
+#: ../YoutubeDl/messages:115
+msgid "Otherwise quietly start to the next download"
+msgstr ""
+
+#: ../YoutubeDl/messages:117
+msgid "Show a pop-up message when starting downloads? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:119
+msgid "Otherwise quietly move finish the download"
+msgstr ""
+
+#: ../YoutubeDl/messages:121
+msgid "Show a pop-up message when download is complete? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:123
+msgid "Otherwise quietly abort the download"
+msgstr ""
+
+#: ../YoutubeDl/messages:125
+msgid "Show a pop-up message when download is aborted? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:127
+msgid "Otherwise just quietly add the url to the list"
+msgstr ""
+
+#: ../YoutubeDl/messages:129
+msgid "Show a pop-up message when adding url to queue list? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:131
+msgid ""
+"if pynotify is installed a system notification message will appear, "
+"otherwise the standard dock dialogue messages will be used."
+msgstr ""
+
+#: ../YoutubeDl/messages:133
+msgid "Attempt to use desktop notifications instead of dock messages? :"
+msgstr ""
+
+#: ../YoutubeDl/messages:135
+msgid ""
+"This is usefull if you have long lists of urls to view when you left click "
+"on the icon. Otherwise the standard dialogue message is fine."
+msgstr ""
+
+#: ../YoutubeDl/messages:137
+msgid "Use list view when URL list exceeds specified number?:"
+msgstr ""
+
+#: ../YoutubeDl/messages:139
+msgid ""
+"When the number of URLS exceed this number switch to list view instead of a "
+"regular dialogue"
+msgstr ""
+
+#: ../YoutubeDl/messages:141
+msgid "Use list view when number of URLs exceed:"
+msgstr ""
+
+#: ../YoutubeDl/messages:143
+msgid "Directory Setup"
+msgstr ""
+
+#: ../YoutubeDl/messages:145
+msgid ""
+"The path to save the videos to. Leave it empty to use the default one "
+"(currently in the users Videos directory)."
+msgstr ""
+
+#: ../YoutubeDl/messages:147
+msgid "Save videos to this directory:"
+msgstr ""
+
+#: ../YoutubeDl/messages:149
+msgid ""
+"The path to save the URL list to. Leave it empty to use the default one "
+"(currently in the users home directory)."
+msgstr ""
+
+#: ../YoutubeDl/messages:151
+msgid "Save URL List to this directory:"
+msgstr ""
+
+#: ../YoutubeDl/messages:153
+msgid "Download Options"
+msgstr ""
+
+#: ../YoutubeDl/messages:155
+msgid "Set the download options that will be used for the youtubedl backend"
+msgstr ""
+
+#: ../YoutubeDl/messages:157
+msgid "Resume partially downloaded files"
+msgstr ""
+
+#: ../YoutubeDl/messages:159
+msgid "Resume download (--continue)?"
+msgstr ""
+
+#: ../YoutubeDl/messages:161
+msgid "Ignore errors during download and continue processing."
+msgstr ""
+
+#: ../YoutubeDl/messages:163
+msgid "Ignore errors (--ignore-errors)?"
+msgstr ""
+
+#: ../YoutubeDl/messages:165
+msgid "If file exists fo not attempt to over write the file."
+msgstr ""
+
+#: ../YoutubeDl/messages:167
+msgid "No overwrite (--no-overwrites)?"
+msgstr ""
+
+#: ../YoutubeDl/messages:169
+msgid "Use the title of the video in the file name used to download the video"
+msgstr ""
+
+#: ../YoutubeDl/messages:171
+msgid "Use title (--title)?"
+msgstr ""
+
+#: ../YoutubeDl/messages:173
+msgid "Which download format to use:"
+msgstr ""
+
+#: ../YoutubeDl/messages:175
+msgid "Specify the video format"
+msgstr ""
+
+#: ../YoutubeDl/messages:177
+msgid "Limit the maximum quality"
+msgstr ""
+
+#: ../YoutubeDl/messages:179
+msgid "Download default format"
+msgstr ""
+
+#: ../YoutubeDl/messages:181
+msgid "Specify the video format (quality) in which to download the video."
+msgstr ""
+
+#: ../YoutubeDl/messages:183
+msgid "Video format (--format):"
+msgstr ""
+
+#: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
+msgid "H264 - MP4 at 480p"
+msgstr ""
+
+#: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
+msgid "H264 - MP4 at 720p"
+msgstr ""
+
+#: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
+msgid "H264 - MP4 at 1080p"
+msgstr ""
+
+#: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
+msgid "H264 - FLV at 360p"
+msgstr ""
+
+#: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
+msgid "H264 - FLV at 480p"
+msgstr ""
+
+#: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
+msgid "H263 - FLV at 240p"
+msgstr ""
+
+#: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
+msgid "Webm at 480p"
+msgstr ""
+
+#: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
+msgid "Webm at 720p"
+msgstr ""
+
+#: ../YoutubeDl/messages:201 ../YoutubeDl/messages:223
+msgid "3GP video"
+msgstr ""
+
+#: ../YoutubeDl/messages:203
+msgid "Limit the maximum quality of the videos to download."
+msgstr ""
+
+#: ../YoutubeDl/messages:205
+msgid "Maximum quality (--max-quality):"
+msgstr ""
+
+#: ../YoutubeDl/messages:225
+msgid "Download the default format."
+msgstr ""
+
+#: ../YoutubeDl/messages:227
+msgid ""
+"Some videos require an account to be downloaded, mostly because they're "
+"flagged as mature content."
+msgstr ""
+
+#: ../YoutubeDl/messages:229
+msgid "Use the Username and Passwrod authentication process."
+msgstr ""
+
+#: ../YoutubeDl/messages:231
+msgid "Username/Password"
+msgstr ""
+
+#: ../YoutubeDl/messages:233
+msgid "Specify the youtube account username UserName."
+msgstr ""
+
+#: ../YoutubeDl/messages:235
+msgid "Username:"
+msgstr ""
+
+#: ../YoutubeDl/messages:237
+msgid "Like the username, specifies the account password."
+msgstr ""
+
+#: ../YoutubeDl/messages:239
+msgid "Password:"
 msgstr ""
