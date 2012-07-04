@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2012-07-03 10:24+0000\n"
 "PO-Revision-Date: 2012-06-08 07:34+0000\n"
 "Last-Translator: Wonderfulheart <Unknown>\n"
 "Language-Team: Italian <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-06-09 05:56+0000\n"
-"X-Generator: Launchpad (build 15376)\n"
+"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
+"X-Generator: Launchpad (build 15544)\n"
+"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -201,8 +203,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
-"+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
+"Alt+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:27
@@ -578,7 +580,8 @@ msgstr ""
 
 #: ../Calendar/messages:99
 msgid "Command to execute on dropping a file onto the calendar-icon:"
-msgstr "Comando da eseguire quando si rilascia un file nell'icona-calendario:"
+msgstr ""
+"Comando da eseguire quando si rilascia un file nell'icona-calendario:"
 
 #: ../Calendar/messages:101
 msgid "Behaviour"
@@ -740,8 +743,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"sempre\" ti informerà ogni volta che il numero di email è diverso da 0; "
-"\"diverso\" lo farà ogni volta che il numero delle email cambia; \"superiore"
-"\" lo farà ogni volta che esse aumentano (predefinito)."
+"\"diverso\" lo farà ogni volta che il numero delle email cambia; "
+"\"superiore\" lo farà ogni volta che esse aumentano (predefinito)."
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
@@ -807,7 +810,8 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:133
 msgid "How?"
@@ -860,8 +864,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
-"+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
@@ -870,7 +874,8 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1212,18 +1217,16 @@ msgid "Vidademerda.com.br"
 msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:113
-#, fuzzy
 msgid "Viedemerde.fr"
-msgstr "Vidademerda.com.br"
+msgstr ""
 
 #: ../Quote/messages:115
 msgid "Fmylife.com"
 msgstr ""
 
 #: ../Quote/messages:117
-#, fuzzy
 msgid "Vitadimerda.it"
-msgstr "Vidademerda.com.br"
+msgstr ""
 
 #: ../Quote/messages:119
 msgid "100blagues.com"
@@ -1677,54 +1680,44 @@ msgid ""
 msgstr ""
 
 #: ../Twitter/Twitter:254
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s Applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
-"L'Applet Twitter necessita del tuo nickname e di un'autorizzazione\n"
-"nella quale accetti di connetterti sul tuo account Twitter"
 
 #: ../Twitter/Twitter:263
-#, fuzzy, python-format
+#, python-format
 msgid "What is your %s nickname?"
-msgstr "Qual'è il tuo nickname su Twitter?"
+msgstr ""
 
 #: ../Twitter/Twitter:280
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s applet needs you to give the authorization. Authorization page was opened "
 "on your browser. As soon as you authorize it, copy the PIN number that will "
 "be shown, and go to the next dialog"
 msgstr ""
-"L'Applet Twitter necessita che tu dia l'autorizzazione. La pagina di "
-"autorizzazione è stata aperta nel tuo browser. Non appena autorizzato, copia "
-"il numero PIN che verrà mostrato e chiudi questa finestra di dialogo"
 
 #: ../Twitter/Twitter:283
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s applet needs you to give the authorization. Copy the address bellow and "
 "access it with your browser. Copy the PIN number that will be shown as soon "
 "as you authorize"
 msgstr ""
-"L'Applet Twitter necessita che tu dia l'autorizzazione. Copia l'indirizzo "
-"sottostante e accedi con il tuo browser. Copia il numero PIN che verrà "
-"mostrato non appena autorizzati"
 
 #: ../Twitter/Twitter:293
-#, fuzzy
 msgid "Enter the PIN number shown on the authorization page"
-msgstr "Inserire il numero PIN nella pagina di autorizzazione"
+msgstr ""
 
 #: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
 msgstr "Collegamento a Twitter avvenuto con successo"
 
 #: ../Twitter/Twitter:308
-#, fuzzy
 msgid "Successfully connected with Identi.ca"
-msgstr "Collegamento a Twitter avvenuto con successo"
+msgstr ""
 
 #: ../Twitter/Twitter:325
 msgid "Direct messages"
@@ -1782,29 +1775,24 @@ msgid "Alert when you receive a new tweet or message?"
 msgstr ""
 
 #: ../Twitter/messages:105
-#, fuzzy
 msgid "Should the applet play a sound as a notification?"
-msgstr "L'applet dovrebbe emettere un suono con l'avviso?"
+msgstr ""
 
 #: ../Twitter/messages:109
-#, fuzzy
 msgid "Should the applet animate the icon as a notification?"
-msgstr "L'applet dovrebbe emettere un suono con l'avviso?"
+msgstr ""
 
 #: ../Twitter/messages:111
-#, fuzzy
 msgid "Icon animation?"
-msgstr "Mostro l'animazione?"
+msgstr ""
 
 #: ../Twitter/messages:113
-#, fuzzy
 msgid "Which animation should apply to the icon?"
-msgstr "Quale animazione dovrebbe essere applicata all'icona?"
+msgstr ""
 
 #: ../Twitter/messages:115
-#, fuzzy
 msgid "Choose animation:"
-msgstr "Scegliere l'animazione?"
+msgstr ""
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"

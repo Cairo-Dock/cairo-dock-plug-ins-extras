@@ -7,19 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2012-07-03 10:24+0000\n"
 "PO-Revision-Date: 2012-04-12 03:28+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh_TW@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-13 05:36+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-07-04 04:44+0000\n"
+"X-Generator: Launchpad (build 15544)\n"
+"Language: \n"
 "X-Poedit-Bookmarks: 1393,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -174,9 +176,7 @@ msgstr "位置"
 msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
-msgstr ""
-"假如鎖定了，桌面小工具就不能夠簡單的用拖動的方式移動。然而您還是可以用 ALT + "
-"左鍵拖動 的方式來移動。"
+msgstr "假如鎖定了，桌面小工具就不能夠簡單的用拖動的方式移動。然而您還是可以用 ALT + 左鍵拖動 的方式來移動。"
 
 #: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
 #: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:23
@@ -198,9 +198,7 @@ msgstr "鎖定位置？"
 msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
-msgstr ""
-"以您的視窗管理員設定為主，您也可以改變尺寸例如以 ALT + 滑鼠中鍵點擊 或者是 "
-"ALT + 左鍵點擊。"
+msgstr "以您的視窗管理員設定為主，您也可以改變尺寸例如以 ALT + 滑鼠中鍵點擊 或者是 ALT + 左鍵點擊。"
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:27
@@ -222,9 +220,7 @@ msgstr "桌面小工具的尺寸(寬 x 高)："
 msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
-msgstr ""
-"放置在您的視窗管理員當中，您也可以利用 ALT+滑鼠左鍵 來移動它， 負值的計算是從"
-"螢幕的右下方開始。"
+msgstr "放置在您的視窗管理員當中，您也可以利用 ALT+滑鼠左鍵 來移動它， 負值的計算是從螢幕的右下方開始。"
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:31
@@ -246,8 +242,7 @@ msgstr "桌面小工具的位置( X軸 ; Y軸 )："
 msgid ""
 "You can quickly rotate the desklet with the mouse, by dragging the little "
 "buttons on its left and top sides."
-msgstr ""
-"在桌面面板程式左上方的小按鈕，您可以用滑鼠拖動它來快速的旋轉桌面面板程式。"
+msgstr "在桌面面板程式左上方的小按鈕，您可以用滑鼠拖動它來快速的旋轉桌面面板程式。"
 
 #: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
 #: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:35
@@ -838,7 +833,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -1727,9 +1723,8 @@ msgid "Which animation should apply to the icon?"
 msgstr ""
 
 #: ../Twitter/messages:115
-#, fuzzy
 msgid "Choose animation:"
-msgstr "設置"
+msgstr ""
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"

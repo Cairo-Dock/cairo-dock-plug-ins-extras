@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-04-13 08:14+0000\n"
+"POT-Creation-Date: 2012-07-03 10:24+0000\n"
+"PO-Revision-Date: 2012-06-26 20:19+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-14 05:02+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
+"X-Generator: Launchpad (build 15544)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -643,36 +645,41 @@ msgstr "Tijd tussen twee controles van het bestandssysteem :"
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
-msgstr ""
+msgstr "U heeft geen abonnement bij geen enkel Gmail-account."
 
 #: ../Gmail/Gmail:176
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Voer a.u.b. uw Gmail-gebruikersnaam in:"
 
 #: ../Gmail/Gmail:184
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Voer a.u.b. uw Gmail-wachtwoord in:"
 
 #: ../Gmail/Gmail:260
 msgid "WARNING: there was an error reading XML content."
 msgstr ""
+"WAARSCHUWING: er is een fout opgetreden bij het lezen van de XML-content."
 
 #: ../Gmail/Gmail:282
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
+"WAARSCHUWING: Gmail-applet kon geen verbinding maken met Gmail-atomfeed."
 
 #: ../Gmail/Gmail:297
 msgid "WARNING: Gmail atom feed is badly formed: "
-msgstr ""
+msgstr "WAARSCHUWING: Gmail-atomfeed is onjuist opgebouwd: "
 
 #: ../Gmail/Gmail:305
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
+"WAARSCHUWING: Gmail-applet heeft alleen mogelijkheden voor "
+"basisauthenticatie."
 
 #: ../Gmail/Gmail:318
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
+"WAARSCHUWIING: Gmail-gebruikersnaam of -wachtwoord zijn mogelijk onjuist."
 
 #: ../Gmail/Gmail:425
 #, python-format
@@ -685,23 +692,24 @@ msgstr ""
 
 #: ../Gmail/Gmail:487
 msgid "Sorry, there was no input!"
-msgstr ""
+msgstr "Sorry, er was geen invoer!"
 
 #: ../Gmail/Gmail:496
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Abonnement toevoegen of wijzigen"
 
 #: ../Gmail/Gmail:497
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
+"Gebruik dit om uw Gmail-accountdetails te wijzigen of iets toe te voegen."
 
 #: ../Gmail/Gmail:499
 msgid "Check inbox now"
-msgstr ""
+msgstr "Postvak IN nu controleren"
 
 #: ../Gmail/Gmail:500
 msgid "Check Gmail inbox now if you can't wait."
-msgstr ""
+msgstr "Controleer Postvak IN nu, als u niet kunt wachten."
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
 #: ../Screensaver_inhibitor/messages:7 ../Translator/messages:7
@@ -868,7 +876,8 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1216,26 +1225,24 @@ msgid "Vidademerda.com.br"
 msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:113
-#, fuzzy
 msgid "Viedemerde.fr"
-msgstr "Vidademerda.com.br"
+msgstr "Viedemerde.fr"
 
 #: ../Quote/messages:115
 msgid "Fmylife.com"
-msgstr ""
+msgstr "Fmylife.com"
 
 #: ../Quote/messages:117
-#, fuzzy
 msgid "Vitadimerda.it"
-msgstr "Vidademerda.com.br"
+msgstr "Vitadimerda.it"
 
 #: ../Quote/messages:119
 msgid "100blagues.com"
-msgstr ""
+msgstr "100blagues.com"
 
 #: ../Quote/messages:121
 msgid "Chucknorrisfacts.fr"
-msgstr ""
+msgstr "Chucknorrisfacts.fr"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
@@ -1669,6 +1676,8 @@ msgid ""
 "Problem to send this tweet on %s, I think you already tried to send the same "
 "one few minutes ago"
 msgstr ""
+"Er is een probleem om deze tweet op %s te versturen, volgens mij heeft u "
+"dezelfde tweet een paar minuten gelden ook proberen te versturen"
 
 #: ../Twitter/Twitter:235
 #, python-format
@@ -1681,56 +1690,57 @@ msgid ""
 "Right-click -> Add account -> Twitter.\n"
 "Right-click -> Add account -> Identi.ca."
 msgstr ""
+"Dit applet ondersteunt Twitter en Identi.ca.\n"
+"Klik met recht-> Account toevoegen -> Twitter.\n"
+"Klik met recht-> Account toevoegen -> Identi.ca."
 
 #: ../Twitter/Twitter:254
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s Applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
-"Het Twitter-applet heeft u Twitternaam nodig, en een autorisatie\n"
-"om verbinding te mogen maken met uw Twitteraccount"
+"Het %s-applet heeft u Twitter-naam nodig, en een autorisatie\n"
+"om verbinding te mogen maken met uw %s-account"
 
 #: ../Twitter/Twitter:263
-#, fuzzy, python-format
+#, python-format
 msgid "What is your %s nickname?"
-msgstr "Wat is uw Twitternaam?"
+msgstr "Wat is uw %s-naam?"
 
 #: ../Twitter/Twitter:280
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s applet needs you to give the authorization. Authorization page was opened "
 "on your browser. As soon as you authorize it, copy the PIN number that will "
 "be shown, and go to the next dialog"
 msgstr ""
-"Twitter-applet vraagt om uw autorisatie. Autorisatiepagina werd geopend in "
-"uw browser. Zodra u de autorisatie heeft gedaan, kopieer dan de pincode die "
-"getoond wordt en sluit deze dialoog."
+"Het %s-applet vraagt om uw autorisatie. Autorisatiepagina werd geopend in uw "
+"browser. Zodra u de autorisatie heeft gegeven, kopieer dan de pincode die "
+"getoond wordt en ga naar de volgende dialoog."
 
 #: ../Twitter/Twitter:283
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s applet needs you to give the authorization. Copy the address bellow and "
 "access it with your browser. Copy the PIN number that will be shown as soon "
 "as you authorize"
 msgstr ""
-"Twitter-applet vraagt om uw autorisatie. Kopieer het adres hieronder en open "
-"het in uw browser. Kopieer de pincode die getoond wordt nadat u autorisatie "
+"%s-applet vraagt om uw autorisatie. Kopieer het adres hieronder en open het "
+"in uw browser. Kopieer de pincode die getoond wordt nadat u autorisatie "
 "heeft gegeven."
 
 #: ../Twitter/Twitter:293
-#, fuzzy
 msgid "Enter the PIN number shown on the authorization page"
-msgstr "Voer de pincode in op de autorisatiepagina"
+msgstr "Voer de pincode in die getoond wordt op de autorisatiepagina"
 
 #: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
 msgstr "Succesvol verbonden met Twitter"
 
 #: ../Twitter/Twitter:308
-#, fuzzy
 msgid "Successfully connected with Identi.ca"
-msgstr "Succesvol verbonden met Twitter"
+msgstr "Succesvol verbonden met Identi.ca"
 
 #: ../Twitter/Twitter:325
 msgid "Direct messages"
@@ -1760,7 +1770,7 @@ msgstr "Mijn tweets"
 
 #: ../Twitter/Twitter:383
 msgid "Add account"
-msgstr ""
+msgstr "Account toevoegen"
 
 #: ../Twitter/Twitter:391 ../WebSearch/messages:113
 msgid "Twitter"
@@ -1768,7 +1778,7 @@ msgstr "Twitter"
 
 #: ../Twitter/Twitter:401
 msgid "Identi.ca"
-msgstr ""
+msgstr "Identi.ca"
 
 #: ../Twitter/messages:95
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
@@ -1785,32 +1795,27 @@ msgstr "Groot"
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
-msgstr ""
+msgstr "Waarschuwing geven, wanneer u een nieuwe tweet of bericht ontvangt?"
 
 #: ../Twitter/messages:105
-#, fuzzy
 msgid "Should the applet play a sound as a notification?"
-msgstr "Moet het applet een geluid afspelen bij de waarschuwing?"
+msgstr "Moet het applet een geluid afspelen bij een waarschuwing?"
 
 #: ../Twitter/messages:109
-#, fuzzy
 msgid "Should the applet animate the icon as a notification?"
-msgstr "Moet het applet een geluid afspelen bij de waarschuwing?"
+msgstr "Moet het applet een pictogramanimatie afspelen bij een waarschuwing?"
 
 #: ../Twitter/messages:111
-#, fuzzy
 msgid "Icon animation?"
-msgstr "Animatie tonen?"
+msgstr "Pictogramanimatie?"
 
 #: ../Twitter/messages:113
-#, fuzzy
 msgid "Which animation should apply to the icon?"
 msgstr "Welke animatie moet er toegepast worden op het pictogram?"
 
 #: ../Twitter/messages:115
-#, fuzzy
 msgid "Choose animation:"
-msgstr "Animatie kiezen?"
+msgstr "Selecteer een animatie:"
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"

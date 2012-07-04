@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-06-24 21:03+0000\n"
+"POT-Creation-Date: 2012-07-03 10:24+0000\n"
+"PO-Revision-Date: 2012-06-26 21:15+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-06-25 05:20+0000\n"
-"X-Generator: Launchpad (build 15482)\n"
+"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
+"X-Generator: Launchpad (build 15544)\n"
+"Language: uk\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu не встановлено. Встановіть до того, як використовувати додаток."
 
@@ -380,7 +382,8 @@ msgstr "Оформлення"
 #: ../Twitter/messages:61 ../WebSearch/messages:59
 #: ../WindowsKiller/messages:59 ../Xchat/messages:61
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr "Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
+msgstr ""
+"Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
 #: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:59
@@ -634,36 +637,36 @@ msgstr "Інтервал між перевірками файлових сист
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
-msgstr ""
+msgstr "Не знайдено підписок на облікові записи Gmail."
 
 #: ../Gmail/Gmail:176
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Будь ласка, введіть ваше ім'я на Gmail:"
 
 #: ../Gmail/Gmail:184
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Будь ласка, введіть ваш пароль від Gmail:"
 
 #: ../Gmail/Gmail:260
 msgid "WARNING: there was an error reading XML content."
-msgstr ""
+msgstr "Увага: сталася помилка при читанні вмісту XML."
 
 #: ../Gmail/Gmail:282
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
-msgstr ""
+msgstr "Увага: додатку Gmail не вдалося зєднатися зі стрічкою Gmail atom."
 
 #: ../Gmail/Gmail:297
 msgid "WARNING: Gmail atom feed is badly formed: "
-msgstr ""
+msgstr "Увага: Стрічки новин Gmail atom погано сформовані: "
 
 #: ../Gmail/Gmail:305
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
-msgstr ""
+msgstr "Увага: Додаток Gmail не обладнаний аутентифікацією крім BASIC."
 
 #: ../Gmail/Gmail:318
 msgid "WARNING: Gmail username or password may be wrong."
-msgstr ""
+msgstr "Увага: Ім’я чи пароль до Gmail можуть бути невірними."
 
 #: ../Gmail/Gmail:425
 #, python-format
@@ -676,23 +679,24 @@ msgstr ""
 
 #: ../Gmail/Gmail:487
 msgid "Sorry, there was no input!"
-msgstr ""
+msgstr "Вибачте, але нічого не було введено!"
 
 #: ../Gmail/Gmail:496
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Додати чи змінити підписку"
 
 #: ../Gmail/Gmail:497
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
+"Використовуйте це щоб додати чи змінити дані вашого облікового запису Gmail"
 
 #: ../Gmail/Gmail:499
 msgid "Check inbox now"
-msgstr ""
+msgstr "Перевірити вхідну пошту"
 
 #: ../Gmail/Gmail:500
 msgid "Check Gmail inbox now if you can't wait."
-msgstr ""
+msgstr "Якщо терпцю немає, то можете перевірити скриньку Gmai прямо зараз."
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
 #: ../Screensaver_inhibitor/messages:7 ../Translator/messages:7
@@ -727,8 +731,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"постійна\" сповіщати якщо є хоч один лист; якщо кількість листів "
-"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась"
-"\" (типово)"
+"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась\" "
+"(типово)"
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
@@ -856,7 +860,8 @@ msgstr "Розмір десклету (ширина х висота)"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В залежності від вашого віконного менеджера, ви можете переміщувати його з "
 "допомогою ALT+ліве клацання"
@@ -876,8 +881,8 @@ msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=utility)"
 msgstr ""
-"для \"шару віджетів\" CompizFusion, встановіть поведінку: (class=Cairo-dock "
-"і type=utility)"
+"для шару віджетів CompizFusion, встановіть поведінку: (клас=Cairo-dock та "
+"тип=utility)"
 
 #: ../HDDtemperature/messages:31 ../Moon/messages:33
 #: ../Screensaver_inhibitor/messages:37 ../Translator/messages:47
@@ -1053,33 +1058,33 @@ msgstr "Призупинити всі торенти"
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr ""
-"Lancelot не встановлено. Встановіть його до того, як використовувати аплет."
+"Lancelot не встановлено. Встановіть його до того, як використовувати додаток."
 
 #: ../Liferea/messages:95
 msgid "Show in the icon:"
-msgstr ""
+msgstr "Показувати на значку:"
 
 #: ../Liferea/messages:97
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Кількість непрочитаних повідомлень"
 
 #: ../Liferea/messages:99
 msgid " Number of new messages"
-msgstr ""
+msgstr " Кількість нових повідомлень"
 
 #: ../MintMenu/MintMenu:145
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr ""
-"MintMenu не встановлено. Встановіть його до того, як використовувати аплет."
+"MintMenu не встановлено. Встановіть його до того, як використовувати додаток."
 
 #: ../Moon/messages:91
 msgid "Show the moon for all the current week?"
-msgstr ""
+msgstr "Показувати місяць на протязі тижня?"
 
 #: ../Moon/messages:93
 msgid "You are going to see the moon from the perspective of this hemisphere"
-msgstr ""
+msgstr "Ви будете бачити місяць так, як він бачиться у цій півкулі."
 
 #: ../Moon/messages:95
 msgid "Hemisphere:"
@@ -1087,15 +1092,15 @@ msgstr "Півкуля:"
 
 #: ../Moon/messages:97
 msgid "North"
-msgstr ""
+msgstr "Північна"
 
 #: ../Moon/messages:99
 msgid "South"
-msgstr ""
+msgstr "Південна"
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
-msgstr "Розмови"
+msgstr "Бесіди"
 
 #: ../Pidgin/Pidgin:421
 msgid "Change your status"
@@ -1112,11 +1117,11 @@ msgstr "Тихий режим"
 #: ../Pidgin/Pidgin:445 ../Xchat/Xchat:274
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
-"Перемикнути аплет в тихий режим (без інформування про нові повідомлення)"
+"Перемикнути додаток в тихий режим (без інформування про нові повідомлення)"
 
 #: ../Pidgin/Pidgin:456
 msgid "Enter your new status message:"
-msgstr "Введіть повідомлення статусу"
+msgstr "Введіть повідомлення статусу:"
 
 #: ../Pidgin/messages:95 ../Pidgin/messages:99
 msgid "Parameters"
@@ -1128,11 +1133,11 @@ msgstr "Виберіть тему :"
 
 #: ../Pidgin/messages:101
 msgid "Display conversation messages in a bubble?"
-msgstr ""
+msgstr "Показувати повідомлення бесіди у хмарці?"
 
 #: ../Pidgin/messages:103
 msgid "Display chat messages in a bubble?"
-msgstr ""
+msgstr "Показувати повідомлення сату у хмарках?"
 
 #: ../Pidgin/messages:105
 msgid "Bubbles duration:"
@@ -1140,16 +1145,17 @@ msgstr "Тривалість хмарки:"
 
 #: ../Pidgin/messages:113
 msgid "Animation of the icon on receiving a message:"
-msgstr ""
+msgstr "Анімація значка при прийомі повідомлень:"
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid ""
 "This is the number of messages that you can recall by scrolling on the icon."
 msgstr ""
+"Це кількість повідомлень яку ви можете продивитись прокручуючи на значку."
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Size of the history :"
-msgstr ""
+msgstr "Розмір історії повідомлень :"
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
 msgid "none"
@@ -1161,11 +1167,11 @@ msgstr "великий"
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
-msgstr ""
+msgstr "Залиште порожнім, щоб відображати назву поточного сайту."
 
 #: ../Quote/messages:97
 msgid "Quote source:"
-msgstr ""
+msgstr "Джерело цитат:"
 
 #: ../Quote/messages:99
 msgid "Quotationspage.com"
@@ -1196,46 +1202,44 @@ msgid "Vidademerda.com.br"
 msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:113
-#, fuzzy
 msgid "Viedemerde.fr"
-msgstr "Vidademerda.com.br"
+msgstr "Viedemerde.fr"
 
 #: ../Quote/messages:115
 msgid "Fmylife.com"
-msgstr ""
+msgstr "Fmylife.com"
 
 #: ../Quote/messages:117
-#, fuzzy
 msgid "Vitadimerda.it"
-msgstr "Vidademerda.com.br"
+msgstr "Vitadimerda.it"
 
 #: ../Quote/messages:119
 msgid "100blagues.com"
-msgstr ""
+msgstr "100blagues.com"
 
 #: ../Quote/messages:121
 msgid "Chucknorrisfacts.fr"
-msgstr ""
+msgstr "Chucknorrisfacts.fr"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
-msgstr ""
+msgstr "Заставка зараз вимкнена"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:79
 msgid "Disable the screensaver"
-msgstr ""
+msgstr "Вимкнути заставку"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:185
 msgid "Inhibit for a given timelength (in minutes)"
-msgstr ""
+msgstr "Вимкнути на цей проміжок часу (в хвилинах)"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
 msgid "timelength"
-msgstr ""
+msgstr "проміжок часу"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
 msgid "Inhibit for a given timelength"
-msgstr ""
+msgstr "Стримати на цей проміжок часу"
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
@@ -1244,29 +1248,31 @@ msgstr "Залиште порожнім, щоб використовувати �
 
 #: ../Screensaver_inhibitor/messages:11 ../Translator/messages:13
 msgid "Image filename:"
-msgstr "Назва файлу зображення:"
+msgstr "Ім’я зображення:"
 
 #: ../Screensaver_inhibitor/messages:15
 msgid "Image filename when the screensaver is inhibited:"
-msgstr ""
+msgstr "Файл зображення, коли заставка стримана:"
 
 #: ../Screensaver_inhibitor/messages:35
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=Utility)"
 msgstr ""
+"для шару віджетів CompizFusion, встановіть поведінку в  Compiz на "
+"(клас=Cairo-dock та тип=utility)"
 
 #: ../Screensaver_inhibitor/messages:95
 msgid "0 to never stop automatically"
-msgstr ""
+msgstr "0, щоб не зупиняти автоматично"
 
 #: ../Screensaver_inhibitor/messages:97
 msgid "Timelength of the inhibition:"
-msgstr ""
+msgstr "Тривалість стиримування:"
 
 #: ../Screensaver_inhibitor/messages:99
 msgid "Shortkey to (de)inhibit the screensaver:"
-msgstr ""
+msgstr "Комбінація для вкл/викл стримування заставки:"
 
 #: ../Translator/Translator:424
 msgid "To"
@@ -1278,7 +1284,7 @@ msgstr "Від"
 
 #: ../Translator/Translator:463
 msgid "Switch languages"
-msgstr "Перемикнути мову"
+msgstr "Змінити мову"
 
 #: ../Translator/Translator:476
 msgid "Translate from clipboard (middle-click)"
@@ -1290,7 +1296,7 @@ msgstr "Мови"
 
 #: ../Translator/messages:99
 msgid "Translate from:"
-msgstr ""
+msgstr "Перекласти з:"
 
 #: ../Translator/messages:101 ../Translator/messages:231
 msgid "Afrikaans"
@@ -1550,7 +1556,7 @@ msgstr "Ідиш"
 
 #: ../Translator/messages:229
 msgid "Translate to:"
-msgstr ""
+msgstr "Перекласти на:"
 
 #: ../Translator/messages:251
 msgid "Simplified Chinese"
@@ -1566,11 +1572,11 @@ msgstr "Комбінації клавіш"
 
 #: ../Translator/messages:361
 msgid "Shortkey to start translating from (read):"
-msgstr ""
+msgstr "Комбінація клавіш, щоб почати перекладати з (читати):"
 
 #: ../Translator/messages:363
 msgid "Shortkey to start translating to (write):"
-msgstr ""
+msgstr "Комбінація клавіш, щоб почати перекладати на (писати):"
 
 #: ../Translator/messages:365
 msgid "Dialog"
@@ -1578,15 +1584,15 @@ msgstr "Діалогове вікно"
 
 #: ../Translator/messages:367
 msgid "In s. Set 0 for an unlimited time."
-msgstr ""
+msgstr "В секундах. Встановіть 0 для необмеженого часу."
 
 #: ../Translator/messages:369
 msgid "Time-length of the result dialog:"
-msgstr ""
+msgstr "Тривалість виводу вікна результату:"
 
 #: ../Translator/messages:371
 msgid "Editable text widget?"
-msgstr ""
+msgstr "Доступний для редагування текстовий віджет?"
 
 #: ../Transmission/Transmission:186
 msgid "Transmission is not running, or is not responding to us."
@@ -1605,11 +1611,11 @@ msgstr "Необхідно включити веб клієнт а налашт�
 
 #: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
-msgstr ""
+msgstr "О, серце, ваша стрічка новин порожня :-("
 
 #: ../Twitter/Twitter:181
 msgid "Oh, dear, you do not have direct messages :-("
-msgstr ""
+msgstr "О. серце, у вас нема прямих поідомлень :-("
 
 #: ../Twitter/Twitter:195
 #, python-format
@@ -1619,21 +1625,25 @@ msgid ""
 "Friends: %s\n"
 "Tweets: %s\n"
 msgstr ""
+"%s [<b>%s</b>]\n"
+"Фоловерів: %s\n"
+"Друзів: %s\n"
+"Твітів: %s\n"
 
 #: ../Twitter/Twitter:205
 #, python-format
 msgid "%s, write a reply to %s"
-msgstr ""
+msgstr "%s, відповісти для %s"
 
 #: ../Twitter/Twitter:216
 #, python-format
 msgid "%s, send a tweet"
-msgstr ""
+msgstr "%s, відправити твіт"
 
 #: ../Twitter/Twitter:218
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
-msgstr ""
+msgstr "Ваш твіт містить більше ніж %d символів, будь-ласка вкоротіть його"
 
 #: ../Twitter/Twitter:231
 #, python-format
@@ -1641,11 +1651,13 @@ msgid ""
 "Problem to send this tweet on %s, I think you already tried to send the same "
 "one few minutes ago"
 msgstr ""
+"Проблема при надсиланні твіту на %s, я думаю, що ви намагалися відправити те "
+"саме кілька хвилин назад"
 
 #: ../Twitter/Twitter:235
 #, python-format
 msgid "%s, retweet?"
-msgstr ""
+msgstr "%s, ретвітнути?"
 
 #: ../Twitter/Twitter:249
 msgid ""
@@ -1653,6 +1665,9 @@ msgid ""
 "Right-click -> Add account -> Twitter.\n"
 "Right-click -> Add account -> Identi.ca."
 msgstr ""
+"Цей додаток підтримує Twitter і Identi.ca.\n"
+"Правий клік -> Додати обліковий запис -> Твітер.\n"
+"Правий клік -> Додати обліковий запис -> Identi.ca."
 
 #: ../Twitter/Twitter:254
 #, python-format
@@ -1660,11 +1675,13 @@ msgid ""
 "%s Applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
+"%s додаток потребує ваш нік і авторизацію\n"
+"яку ви приймаєте коли він з'єднується з обліковим записом %s"
 
 #: ../Twitter/Twitter:263
 #, python-format
 msgid "What is your %s nickname?"
-msgstr ""
+msgstr "Який твій %s нік?"
 
 #: ../Twitter/Twitter:280
 #, python-format
@@ -1673,6 +1690,8 @@ msgid ""
 "on your browser. As soon as you authorize it, copy the PIN number that will "
 "be shown, and go to the next dialog"
 msgstr ""
+"%s додаток потребує авторизації. Сторінка авторизації була відкрита у вікні "
+"браузера. Скопіюйте показаний там пін-код і переходьте до наступного діалогу"
 
 #: ../Twitter/Twitter:283
 #, python-format
@@ -1681,27 +1700,29 @@ msgid ""
 "access it with your browser. Copy the PIN number that will be shown as soon "
 "as you authorize"
 msgstr ""
+"%s додаток потребує авторизації. Скопіюйте посилання, щоб отримати доступ "
+"через браузер. Скопіюйте пін-код який буде показаний на сторінці авторизації"
 
 #: ../Twitter/Twitter:293
 msgid "Enter the PIN number shown on the authorization page"
-msgstr ""
+msgstr "Введіть Пін-Код показаний на сторінці авторизації"
 
 #: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
-msgstr ""
+msgstr "Встановлено зв’язок з Твітером"
 
 #: ../Twitter/Twitter:308
 msgid "Successfully connected with Identi.ca"
-msgstr ""
+msgstr "Встановлено зв’язок з Identi.ca"
 
 #: ../Twitter/Twitter:325
 msgid "Direct messages"
-msgstr ""
+msgstr "Пряме повідомлення"
 
 #: ../Twitter/Twitter:327
 #, python-format
 msgid "New direct messages (%d)"
-msgstr ""
+msgstr "Нове пряме повідомлення (%d)"
 
 #: ../Twitter/Twitter:340
 msgid "Info"
@@ -1709,73 +1730,68 @@ msgstr "Інформація"
 
 #: ../Twitter/Twitter:349
 msgid "Tweets"
-msgstr ""
+msgstr "Твіти"
 
 #: ../Twitter/Twitter:351
 #, python-format
 msgid "New tweets (%d)"
-msgstr ""
+msgstr "Нові твіти (%d)"
 
 #: ../Twitter/Twitter:365
 msgid "My tweets"
-msgstr ""
+msgstr "Мої твіти"
 
 #: ../Twitter/Twitter:383
 msgid "Add account"
-msgstr ""
+msgstr "Додати обліковий запис"
 
 #: ../Twitter/Twitter:391 ../WebSearch/messages:113
 msgid "Twitter"
-msgstr ""
+msgstr "Твіттер"
 
 #: ../Twitter/Twitter:401
 msgid "Identi.ca"
-msgstr ""
+msgstr "Identi.ca"
 
 #: ../Twitter/messages:95
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
-msgstr ""
+msgstr "Розмір емблеми яка показує кількість твітів і повідомлень:"
 
 #: ../Twitter/messages:97
 msgid "Small"
-msgstr "Малий"
+msgstr "Мала"
 
 #: ../Twitter/messages:101
 msgid "Large"
-msgstr ""
+msgstr "Велика"
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
-msgstr ""
+msgstr "Сповіщати, коли ви отримуєте новий твіт або повідомлення?"
 
 #: ../Twitter/messages:105
-#, fuzzy
 msgid "Should the applet play a sound as a notification?"
-msgstr "Чи повинен додаток відтворювати звук при сповіщенні?"
+msgstr "Чи повинен додаток сповіщати програванням звуку?"
 
 #: ../Twitter/messages:109
-#, fuzzy
 msgid "Should the applet animate the icon as a notification?"
-msgstr "Чи повинен додаток відтворювати звук при сповіщенні?"
+msgstr "Чи повинен додаток сповіщати анімацією значка?"
 
 #: ../Twitter/messages:111
-#, fuzzy
 msgid "Icon animation?"
-msgstr "Показувати анмацію?"
+msgstr "Анімувати значок?"
 
 #: ../Twitter/messages:113
-#, fuzzy
 msgid "Which animation should apply to the icon?"
-msgstr "Який тип анімації застосовувати до значка?"
+msgstr "Яку анімацію застосовувати до значка?"
 
 #: ../Twitter/messages:115
-#, fuzzy
 msgid "Choose animation:"
-msgstr "Вибрати анімацію?"
+msgstr "Вибрати анімацію:"
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"
-msgstr ""
+msgstr "Пошукова система :"
 
 #: ../WebSearch/messages:95
 msgid "Google"
@@ -1783,7 +1799,7 @@ msgstr "Google"
 
 #: ../WebSearch/messages:97
 msgid "Bing"
-msgstr ""
+msgstr "Bing"
 
 #: ../WebSearch/messages:99
 msgid "Yahoo!"
@@ -1791,19 +1807,19 @@ msgstr "Yahoo!"
 
 #: ../WebSearch/messages:101
 msgid "Teoma"
-msgstr ""
+msgstr "Teoma"
 
 #: ../WebSearch/messages:103
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: ../WebSearch/messages:105
 msgid "Webshots"
-msgstr ""
+msgstr "Webshots"
 
 #: ../WebSearch/messages:107
 msgid "Flickr"
-msgstr ""
+msgstr "Flickr"
 
 #: ../WebSearch/messages:109
 msgid "Wikipedia"
@@ -1811,39 +1827,41 @@ msgstr "Вікіпедія"
 
 #: ../WebSearch/messages:111
 msgid "ImageShack"
-msgstr ""
+msgstr "ImageShack"
 
 #: ../WebSearch/messages:115
 msgid "Digg"
-msgstr ""
+msgstr "Digg"
 
 #: ../WebSearch/messages:117
 msgid "in sub-icons."
-msgstr ""
+msgstr "в суб-значку."
 
 #: ../WebSearch/messages:119
 msgid "Maximum number of results shown :"
-msgstr ""
+msgstr "Максимальна кількість результатів:"
 
 #: ../WebSearch/messages:121
 msgid "Show the current page as the icon label ?"
-msgstr ""
+msgstr "Показати поточну сторінку в якості підпису значка ?"
 
 #: ../WebSearch/messages:123
 msgid ""
 "Show the description of the result instead of its URL in the sub-icons ?"
-msgstr ""
+msgstr "Показувати опис результату замість його посилання в суб-значку ?"
 
 #: ../WebSearch/messages:125
 msgid ""
 "for slow connections, disable will result in significantly faster fetching."
-msgstr ""
+msgstr "при повільному з'єднанні, відключення може пришвидшити вибірки."
 
 #: ../WebSearch/messages:127
 msgid ""
 "Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
 "and Digg searches ?"
 msgstr ""
+"Ввімкнути попередній перегляд для пошуку по Youtube, Webshots, Flickr, "
+"ImageShack, Twitter, та Digg ?"
 
 #: ../Xchat/Xchat:257
 msgid "Channels"

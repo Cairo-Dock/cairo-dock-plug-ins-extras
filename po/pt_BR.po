@@ -6,18 +6,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2012-07-03 10:24+0000\n"
 "PO-Revision-Date: 2012-05-24 17:41+0000\n"
 "Last-Translator: Eduardo Mucelli Rezende Oliveira <edumucelli@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-05-25 04:52+0000\n"
-"X-Generator: Launchpad (build 15288)\n"
+"X-Launchpad-Export-Date: 2012-07-04 04:44+0000\n"
+"X-Generator: Launchpad (build 15544)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -200,8 +202,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
-"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
+"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:27
@@ -225,8 +227,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
-"inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte "
+"direita/inferior da tela."
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:31
@@ -766,7 +768,8 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr ""
+"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:119
 msgid "Show dialogue?"
@@ -857,7 +860,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -1186,18 +1190,16 @@ msgid "Vidademerda.com.br"
 msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:113
-#, fuzzy
 msgid "Viedemerde.fr"
-msgstr "Vidademerda.com.br"
+msgstr ""
 
 #: ../Quote/messages:115
 msgid "Fmylife.com"
 msgstr ""
 
 #: ../Quote/messages:117
-#, fuzzy
 msgid "Vitadimerda.it"
-msgstr "Vidademerda.com.br"
+msgstr ""
 
 #: ../Quote/messages:119
 msgid "100blagues.com"
@@ -1650,55 +1652,44 @@ msgid ""
 msgstr ""
 
 #: ../Twitter/Twitter:254
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s Applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
-"O mini-aplicativo Twitter precisa do seu nome de usuário e de uma "
-"autorização\n"
-"que você aceita que ele se conecte a sua conta do Twitter."
 
 #: ../Twitter/Twitter:263
-#, fuzzy, python-format
+#, python-format
 msgid "What is your %s nickname?"
-msgstr "Qual é seu nome de usuário do Twitter?"
+msgstr ""
 
 #: ../Twitter/Twitter:280
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s applet needs you to give the authorization. Authorization page was opened "
 "on your browser. As soon as you authorize it, copy the PIN number that will "
 "be shown, and go to the next dialog"
 msgstr ""
-"O mini-aplicativo Twitter precisa que você o autorize. Uma página de "
-"autorização será aberta no seu navegador. Assim que você autorizá-lo, copie "
-"o código PIN que será mostrado e feche esta caixa de diálogo."
 
 #: ../Twitter/Twitter:283
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s applet needs you to give the authorization. Copy the address bellow and "
 "access it with your browser. Copy the PIN number that will be shown as soon "
 "as you authorize"
 msgstr ""
-"O mini-aplicativo Twitter precisa que você o autorize. Copie o endereço "
-"abaixo e acesse-o com seu navegador. Copiei o código PIN que será mostrado "
-"assim que você der a autorização."
 
 #: ../Twitter/Twitter:293
-#, fuzzy
 msgid "Enter the PIN number shown on the authorization page"
-msgstr "Digite o código PIN mostrado na página de autorização"
+msgstr ""
 
 #: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
 msgstr "Conectado ao Twitter com sucesso"
 
 #: ../Twitter/Twitter:308
-#, fuzzy
 msgid "Successfully connected with Identi.ca"
-msgstr "Conectado ao Twitter com sucesso"
+msgstr ""
 
 #: ../Twitter/Twitter:325
 msgid "Direct messages"
@@ -1755,29 +1746,24 @@ msgid "Alert when you receive a new tweet or message?"
 msgstr ""
 
 #: ../Twitter/messages:105
-#, fuzzy
 msgid "Should the applet play a sound as a notification?"
-msgstr "O mini-aplicativo deve tocar um som com a notificação?"
+msgstr ""
 
 #: ../Twitter/messages:109
-#, fuzzy
 msgid "Should the applet animate the icon as a notification?"
-msgstr "O mini-aplicativo deve tocar um som com a notificação?"
+msgstr ""
 
 #: ../Twitter/messages:111
-#, fuzzy
 msgid "Icon animation?"
-msgstr "Mostrar animação?"
+msgstr ""
 
 #: ../Twitter/messages:113
-#, fuzzy
 msgid "Which animation should apply to the icon?"
-msgstr "Qual animação aplicar no ícone?"
+msgstr ""
 
 #: ../Twitter/messages:115
-#, fuzzy
 msgid "Choose animation:"
-msgstr "Escolha animação?"
+msgstr ""
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"

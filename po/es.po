@@ -7,20 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2012-07-03 10:24+0000\n"
 "PO-Revision-Date: 2012-04-12 03:12+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-13 05:36+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
+"X-Generator: Launchpad (build 15544)\n"
+"Language: es\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -392,7 +394,8 @@ msgstr ""
 #: ../Twitter/messages:63 ../WebSearch/messages:61
 #: ../WindowsKiller/messages:61 ../Xchat/messages:63
 msgid "Choose a decoration theme for this desklet:"
-msgstr "Seleccione un tema de decoración para este complemento del escritorio:"
+msgstr ""
+"Seleccione un tema de decoración para este complemento del escritorio:"
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
 #: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:61
@@ -456,7 +459,8 @@ msgstr "Desplazamiento izquierdo:"
 #: ../Twitter/messages:75 ../WebSearch/messages:73
 #: ../WindowsKiller/messages:73 ../Xchat/messages:75
 msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr "en Píxeles. Use esto para ajustar la posición superior de los dibujos."
+msgstr ""
+"en Píxeles. Use esto para ajustar la posición superior de los dibujos."
 
 #: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
 #: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:73
@@ -476,7 +480,8 @@ msgstr "Desplazamiento superior:"
 #: ../Twitter/messages:79 ../WebSearch/messages:77
 #: ../WindowsKiller/messages:77 ../Xchat/messages:79
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr "en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
+msgstr ""
+"en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
 
 #: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
 #: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:77
@@ -496,7 +501,8 @@ msgstr "Desplazamiento derecho:"
 #: ../Twitter/messages:83 ../WebSearch/messages:81
 #: ../WindowsKiller/messages:81 ../Xchat/messages:83
 msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr "en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
+msgstr ""
+"en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
 
 #: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
 #: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:81
@@ -848,7 +854,8 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:33
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
@@ -1737,9 +1744,8 @@ msgid "Which animation should apply to the icon?"
 msgstr ""
 
 #: ../Twitter/messages:115
-#, fuzzy
 msgid "Choose animation:"
-msgstr "Configuración:"
+msgstr ""
 
 #: ../WebSearch/messages:93
 msgid "Search engine :"
