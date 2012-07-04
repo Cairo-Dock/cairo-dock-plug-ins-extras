@@ -434,7 +434,12 @@ action_add("CairoBzr.GENERATE_REPORT", action_none, "", "gtk-refresh");
 
 
 	public override void begin () {
-		Process.spawn_command_line_sync ("pwd", out this.sAppletDirectory); // SpawnError
+		try {
+			Process.spawn_command_line_sync ("pwd", out this.sAppletDirectory); // SpawnError
+		}
+		catch (Error e) {
+			print ("[CairoBzr] Error when trying to check applet dir : %s\n", e.message);
+		}
 		this.sAppletDirectory = this.sAppletDirectory.substring (0, this.sAppletDirectory.length - 1);
 		this.sEmblemBusy = "/icons/emblem-important.svg";
 		reload ();
@@ -499,12 +504,12 @@ public class CDAppletVala : CDApplet {
 
 
 	public void set_emblem_busy () {
-		try { this.icon.SetEmblem (this.sAppletDirectory + "/icons/emblem-important.svg", CDApplet.EMBLEM_TOP_RIGHT + CDApplet.EMBLEM_PERSISTENT); }
+		try { this.icon.SetEmblem (this.sAppletDirectory + "/icons/emblem-important.svg", CDApplet.EmblemPosition.EMBLEM_TOP_RIGHT + CDApplet.EmblemModifier.EMBLEM_PERSISTENT); }
 		catch (Error e) {}
 	}
 
 	public void set_emblem_none () {
-		try { this.icon.SetEmblem ("", CDApplet.EMBLEM_TOP_RIGHT); }
+		try { this.icon.SetEmblem ("", CDApplet.EmblemPosition.EMBLEM_TOP_RIGHT); }
 		catch (Error e) {}
 	}
 
