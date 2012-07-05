@@ -558,6 +558,14 @@ msgstr "Konfigurácia"
 msgid "Shortkey to pop up the menu:"
 msgstr "Klávesová skratka pre zobrazenie ponuky:"
 
+#: ../GnoMenu/messages:98
+msgid ""
+"This applet allows you to have the <b>GnoMenu menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you access to the preferences window.\n"
+"<u>Note:</u> you need to install GnoMenu."
+msgstr ""
+
 #: ../Calendar/messages:95
 msgid "Applications"
 msgstr "Aplikácie"
@@ -586,12 +594,30 @@ msgstr ""
 msgid "Icon custom script:"
 msgstr "Vlastný skript ikony:"
 
+#: ../Calendar/messages:108
+msgid ""
+"This applet will display the current date.\n"
+"Left Click displays the calendar\n"
+"Middle Click launches a calendar application of your choice\n"
+"Scroll Up displays the calendar of the next month\n"
+"Scroll Down displays the events of the day\n"
+"Dropping a file on the icon launches the calendar application and import it."
+msgstr ""
+
 #: ../Cardapio/Cardapio:45
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
 msgstr ""
 "Cardapio nie je nainštalované. Prosím nainštalujte ho red spustením thto "
 "apletu."
+
+#: ../Cardapio/messages:98
+msgid ""
+"This applet allows you to have the <b>Cardapio menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you edit the menus.<u>Note:</u> you need to install "
+"Cardapio."
+msgstr ""
 
 #: ../Deluge/Deluge:166
 msgid "Deluge is not running, or is not responding to us."
@@ -621,6 +647,19 @@ msgstr "kliknutie stredným tlačítkom"
 msgid "Shortkey to pop up the torrents info:"
 msgstr "Klávesová skratka na informáciu o torente"
 
+#: ../Deluge/messages:98
+msgid ""
+"This applet allows you to <b>control Deluge</b> from the Dock (You need to "
+"install <i>deluged</i>, which is the daemon used to communicate between the "
+"Dock and Deluge).\n"
+"It can display the <b>download rate</b> on the icon.\n"
+"<b>Middle-click</b> on the icon gives you information about the current "
+"torrents (you can bind a shortkey for this action).\n"
+"<b>Right-click</b> on the icon allows you to pause/start all the torrents.\n"
+"<b>Drop a torrent file</b> on the icon to add it to the list and start "
+"downloading it immediately."
+msgstr ""
+
 #: ../DiskFree/messages:95
 msgid ""
 "View available file system's space as Giga (checked) or Mega (unchecked) :"
@@ -634,6 +673,12 @@ msgstr "v minútach"
 #: ../DiskFree/messages:99
 msgid "Time between two file system's checking :"
 msgstr "Čas medzi kontrolou dvoch systémových súborov:"
+
+#: ../DiskFree/messages:102
+#, fuzzy
+msgid "View available file system's free space."
+msgstr ""
+"Zobraziť dostupné miesto ako Giga (zaškrtnuté) alebo Mega (nezaškrtnuté):"
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
@@ -815,6 +860,18 @@ msgstr "Veľký znak"
 msgid "quickinfo"
 msgstr "rýchle info"
 
+#: ../Gmail/messages:142
+msgid "This applet will notify you of new emails on a single Gmail account."
+msgstr ""
+
+#: ../Google/messages:94
+msgid ""
+"This applet provides an interface to Google search engine.\n"
+"Left click on the main icon to open the search dialog.\n"
+"Each result will be shown as a sub-icon.\n"
+"Left-click to open the result in the default Web Browser."
+msgstr ""
+
 #: ../GTG/messages:95 ../Xchat/messages:97
 msgid "Bubbles duration :"
 msgstr "čas trvania buliny:"
@@ -843,6 +900,14 @@ msgstr "Zobraziť kanálové správy v bubline :"
 #: ../GTG/messages:109
 msgid "Post-it's initial dimension (width x height) :"
 msgstr "Počiatočné rozmery (šírka x výška):"
+
+#: ../GTG/messages:112
+msgid ""
+"This applet integrates GTG into your dock.\n"
+"It can display tasks,\n"
+"Create a new task on middle-click,Create a post-it from a task category.\n"
+"The icon will also control the window of GTG like a normal application icon."
+msgstr ""
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:29
@@ -1070,15 +1135,41 @@ msgstr "Číslo portu používaného hddtemp démonom (štandardne 7634)"
 msgid "Separator between fields used by hddtemp daemon ( | by default)"
 msgstr "Oddeľovač medzi poliami používaných hddtemp daemon ( | predvolene)"
 
+#: ../HDDtemperature/messages:108
+msgid ""
+"This applet shows maximal temperature of your hard disk drives \n"
+" getting values from 'hddtemp' daemon (see: man hddtemp). \n"
+" Left-click shows more information about HD drives."
+msgstr ""
+
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
 msgstr "Pozastaviť všetky torrenty"
+
+#: ../KTorrent/messages:98
+msgid ""
+"This applet allows you to <b>control KTorrent</b> from the Dock.\n"
+"It can display the <b>download rate</b> on the icon.\n"
+"<b>Middle-click</b> on the icon gives you information about the current "
+"torrents (you can bind a shortkey for this action).\n"
+"<b>Right-click</b> on the icon allows you to pause/start all the torrents.\n"
+"<b>Drop a torrent file</b> on the icon to add it to the list and start "
+"downloading it immediately."
+msgstr ""
 
 #: ../Lancelot/Lancelot:86
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr ""
 "Lancelot nie je naištalovaný. Prosím nainštalujte ho pred spustením apletu."
+
+#: ../Lancelot/messages:98
+msgid ""
+"This applet allows you to have the <b>Lancelot menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you access to the preferences window.\n"
+"<u>Note:</u> you need to install Lancelot."
+msgstr ""
 
 #: ../Liferea/messages:95
 msgid "Show in the icon:"
@@ -1092,12 +1183,24 @@ msgstr "Počet neprečítaných správ"
 msgid " Number of new messages"
 msgstr " Počet nových správ"
 
+#: ../Liferea/messages:102
+msgid "This applets makes an interface with Liferea"
+msgstr ""
+
 #: ../MintMenu/MintMenu:145
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "MintMenu nie je nainštalované. Prosím nainštalujte ho pred spustením tohto "
 "apletu."
+
+#: ../MintMenu/messages:98
+msgid ""
+"This applet allows you to have the <b>Mint menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you access to the preferences window.\n"
+"<u>Note:</u> you need to install MintMenu."
+msgstr ""
 
 #: ../Moon/messages:91
 msgid "Show the moon for all the current week?"
@@ -1118,6 +1221,12 @@ msgstr "Sever"
 #: ../Moon/messages:99
 msgid "South"
 msgstr "Juh"
+
+#: ../Moon/messages:102
+msgid ""
+"This applet displays the moon phases and its informations for the current "
+"day, or week from the Northern or Southern hemisphere"
+msgstr ""
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
@@ -1184,6 +1293,17 @@ msgstr "žiadny"
 msgid "big"
 msgstr "veľký"
 
+#: ../Pidgin/messages:124
+msgid ""
+"This applet integrates Pidgin into your dock.\n"
+"It can display new messages,\n"
+"you select a conversation from the menu on right-click,\n"
+"write a message on middle-click,\n"
+"and display the messages history by scrolling on the icon\n"
+"The icon will also control the window of Pidgin like a normal application "
+"icon."
+msgstr ""
+
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
 msgstr "Nechajte prázdne pre zobrazenie aktuálneho názvu siete."
@@ -1240,6 +1360,15 @@ msgstr ""
 msgid "Chucknorrisfacts.fr"
 msgstr ""
 
+#: ../Quote/messages:124
+msgid ""
+"This applet provides a \"Quote of the day\" feature from some internet "
+"sources such as:\n"
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
+msgstr ""
+
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
 msgstr "Šetrič obrazovky je aktuálne zakázaný"
@@ -1292,6 +1421,13 @@ msgstr "Časová dĺžka pre potlačenie:"
 #: ../Screensaver_inhibitor/messages:99
 msgid "Shortkey to (de)inhibit the screensaver:"
 msgstr "Klávesová skratka pre (povolenie) potlačenie šetriča obrazovky:"
+
+#: ../Screensaver_inhibitor/messages:102
+msgid ""
+"A small applet to <b>inhibit the screensaver</b>.\n"
+"This is especially useful when watching videos on Internet.\n"
+"<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
+msgstr ""
 
 #: ../Translator/Translator:424
 msgid "To"
@@ -1613,6 +1749,22 @@ msgstr "Časová dĺžka pre výsledný dialóg:"
 msgid "Editable text widget?"
 msgstr "Upraviteľný text widgetu?"
 
+#: ../Translator/messages:374
+msgid ""
+"This applet translates single words, complete sentences, or web pages.\n"
+"To use it, either click on the icon or press the shortkey, then enter your "
+"text and press Enter. The translated text will be shown in a popup and be "
+"available in the clipboard, just press Ctrl+v to have it.\n"
+"You can also drop some text onto the icon, or translate the current "
+"clipboard content (middle-click).\n"
+"You can select the languages you want to translate from/to through the menu, "
+"or in the config window of the applet. Shortkeys can be configured too.\n"
+"By default:\n"
+" - If you want to translate something you are reading in the foreign "
+"language, press Ctrl + Alt + R\n"
+" - If you are writing something in your native language, press Ctrl + Alt + W"
+msgstr ""
+
 #: ../Transmission/Transmission:186
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission nie je spustený, alebo neodpovedá."
@@ -1626,6 +1778,17 @@ msgstr ""
 #: ../Transmission/Transmission:353
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr "Povoľte webového klienta v nastaveniach Transmision."
+
+#: ../Transmission/messages:98
+msgid ""
+"This applet allows you to <b>control Transmission</b> from the Dock.\n"
+"It can display the <b>download rate</b> on the icon.\n"
+"<b>Middle-click</b> on the icon gives you information about the current "
+"torrents (you can bind a shortkey for this action).\n"
+"<b>Right-click</b> on the icon allows you to pause/start all the torrents.\n"
+"<b>Drop a torrent file</b> on the icon to add it to the list and start "
+"downloading it immediately."
+msgstr ""
 
 #: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
@@ -1796,6 +1959,21 @@ msgstr ""
 msgid "Choose animation:"
 msgstr ""
 
+#: ../Twitter/messages:118
+msgid ""
+"This applet supports both Twitter, and Identi.ca. You can send tweets, "
+"direct messages, see your timeline, retweet, and answer direct messages. It "
+"will alert you when there are new tweets, and directed messages.\n"
+"On the first time, you need to choose which network to add, once at a time "
+"by right-click -> Add account -> Twitter or Identi.ca. The applet is going "
+"to ask your nickname and authorization to connect on the networks.\n"
+"The network authorization page will be open.\n"
+"As soon as you authorize it, a PIN number will be shown on the page, copy "
+"this number\n"
+"Paste this number on the next dialog box will be shown.\n"
+"The plugin is going to inform that you are successfully connected."
+msgstr ""
+
 #: ../WebSearch/messages:93
 msgid "Search engine :"
 msgstr "Vyhľadávač:"
@@ -1871,6 +2049,37 @@ msgstr ""
 "Povoliť náhľad pre vyhľadávače Youtube, Webshots, Flickr, ImageShack, "
 "Twitter, a Digg ?"
 
+#: ../WebSearch/messages:130
+msgid ""
+"This applet provides an interface to some search engines such as\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
+"ImageShack, and Twitter.\n"
+"To choose the search engine you can\n"
+" (1) Right-click on the main icon -> WebSearch -> (Choose the engine)\n"
+" (2) Right-click -> Configure this applet -> Configuration -> Search engine\n"
+" (3) Scroll up or down over the icon (applicable only for the first search)\n"
+"You can search in three ways\n"
+" (1) Middle-click on the main icon\n"
+" (2) Left-click on main icon (right after choosing a new engine)\n"
+"Type your query and validate. Each result will be shown as a sub-icon.\n"
+"Left-click to open the the result in the default Web Browser\n"
+"Middle-click on the sub-icon of any result to show its description\n"
+"Scroll up to fetch the next results\n"
+"Scroll down to fetch the previous results\n"
+"Left-click on the main icon to show search stats"
+msgstr ""
+
+#: ../WindowsKiller/messages:92
+msgid ""
+"WindowsKiller is able to kill problematic windows easily.\n"
+"Left Click on its icon and simply select window that cause trouble to kill "
+"it.\n"
+" (select the dock in order to cancel)\n"
+"Middle Click will give you some informations like the pid,\n"
+" the command to launch this application, the uptime and the class(es) of "
+"this window."
+msgstr ""
+
 #: ../Xchat/Xchat:257
 msgid "Channels"
 msgstr "Kanály"
@@ -1878,6 +2087,17 @@ msgstr "Kanály"
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr "Prepnúť kanál, ktorý bude posielať správy stredným-kliknutím."
+
+#: ../Xchat/messages:116
+msgid ""
+"This applet integrates Xchat and Xchat-gnome into your dock.\n"
+"It can display new messages,\n"
+"you select a channel from the menu on right-click,\n"
+"write a message on middle-click,\n"
+"and display the messages history by scrolling on the icon\n"
+"The icon will also control the window of xchat like a normal application "
+"icon."
+msgstr ""
 
 #: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:101
 msgid "Open Video Folder"
@@ -2177,4 +2397,25 @@ msgstr ""
 
 #: ../YoutubeDl/messages:239
 msgid "Password:"
+msgstr ""
+
+#: ../YoutubeDl/messages:242
+msgid ""
+"This applet allows a user to drag Youtube links from the Youtube website and "
+"drop them on the icon to download. The backend downloader is based on "
+"youtube-dl.py.\n"
+"\n"
+"Only one video will be downloaded at a time and each url will be added to a "
+"list. When the video is downloaded or aborted the url will be removed from "
+"the list. The list can be saved to a file and loaded again for future use.\n"
+"\n"
+"The middle mouse button can be configured to open the video folder or to "
+"show download status.\n"
+"\n"
+"Right clicking allows various options depending on what is happening at that "
+"time. If your video foler is not valid or not writeable then you can't "
+"download until it is corrected.\n"
+"\n"
+"If there are no videos in the list left clicking on the icon allows you to "
+"enter a url. Otherwise the url list will be displayed."
 msgstr ""

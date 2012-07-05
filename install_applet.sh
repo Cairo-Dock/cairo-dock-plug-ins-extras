@@ -17,6 +17,7 @@ CAIRO_DOCK_PLUG_INS_EXTRAS_HOME="$HOME/.config/cairo-dock/third-party"
 
 	# cd $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH
 	./make_locale.sh 0
+	rm -rf locale.bak
 
 	for i in `ls --hide=DOWNLOAD --hide=demos --hide=FTP --hide=tmp_last_modif --hide=po $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH`;do
 		if test -d $DIR/$CAIRO_DOCK_PLUG_INS_EXTRAS_LP_BRANCH/$i; then # only dir dossiers
