@@ -37,6 +37,12 @@ TR_STATUS_DOWNLOAD     = (1<<2)
 TR_STATUS_SEED         = (1<<3)
 TR_STATUS_STOPPED      = (1<<4)
 
+# Quick-info enum
+INFO_NONE           = 0
+INFO_DL_SPEED       = 1
+INFO_PERCENT        = 2
+INFO_PERCENT_NUMBER = 3
+
 def format_bytes(x):
 	unit=''
 	if x < 1024:
@@ -97,46 +103,85 @@ class Applet(CDApplet):
 				print "*** iSessionID:",self.iSessionID
 		except :
 			return
-		
+	
 	def update_data(self):
 		# if connection closed, start trying
 		if self.iSessionID == 0: # if connection closed
 			if self.iSidTryConnect == 0: # start trying to connect.
 				self.iSidTryConnect = timeout_add(2000,self.try_connect)
 			self.iSidGetData = 0  # and stop listening for sessions's data
+			self.icon.AddDataRenderer('', 0, '')
 			self.icon.SetQuickInfo('')
 			return False
 		
-		# get sessions's data
-		data = self._request ("session-stats", {} )  # Request arguments: none
-		
-		# if no result, start trying to reconnect.
-		if data == None or data['result'] != 'success':  # no data from transmission
-			print "no data from Transmission, it may have shut down."
-			if self.iSidTryConnect == 0: # start trying to connect.
-				self.iSidTryConnect = timeout_add(2000,self.try_connect)
-			self.iSidGetData = 0  # and stop listening for sessions's data
-			self.icon.SetQuickInfo('')
-			return False
-		
-		# display the new data
-		rate = data['arguments']['downloadSpeed']
-		unit=''
-		if rate < 100:
-			rate = 0
-		rate,unit = format_bytes(rate)
-		
-		form = ''
-		if rate == 0:
-			form = ".0f"
-		elif rate < 10:
-			form = ".2f"
-		elif rate < 100:
-			form = ".1f"
-		else:
-			form = ".0f"
+		if self.config['quick-info'] == INFO_DL_SPEED:  # display download speed
+			# get sessions's data
+			data = self._request ("session-stats", {} )  # Request arguments: none
 			
-		self.icon.SetQuickInfo(format(rate,form)+unit)
+			# if no result, start trying to reconnect.
+			if data == None or data['result'] != 'success':  # no data from transmission
+				print "no data from Transmission, it may have shut down."
+				if self.iSidTryConnect == 0: # start trying to connect.
+					self.iSidTryConnect = timeout_add(2000,self.try_connect)
+				self.iSidGetData = 0  # and stop listening for sessions's data
+				self.icon.AddDataRenderer('', 0, '')
+				self.icon.SetQuickInfo('')
+				return False
+			
+			# display the new data
+			rate = data['arguments']['downloadSpeed']
+			unit=''
+			if rate < 100:
+				rate = 0
+			rate,unit = format_bytes(rate)
+			
+			form = ''
+			if rate == 0:
+				form = ".0f"
+			elif rate < 10:
+				form = ".2f"
+			elif rate < 100:
+				form = ".1f"
+			else:
+				form = ".0f"
+				
+			self.icon.SetQuickInfo(format(rate,form)+unit)
+			
+		if self.config['quick-info'] == INFO_PERCENT or self.config['quick-info'] == INFO_PERCENT_NUMBER or self.config['progressbar']:  # display percent or percent+number of active torrents or progress as a progressbar
+			# get torrents data
+			data = self._request ("torrent-get", { "ids": "recently-active",
+				"fields": [ "percentDone" ] } )
+			
+			# if no result, start trying to reconnect.
+			if data == None or data['result'] != 'success':  # no data from transmission
+				print "no data from Transmission, it may have shut down."
+				if self.iSidTryConnect == 0: # start trying to connect.
+					self.iSidTryConnect = timeout_add(2000,self.try_connect)
+				self.iSidGetData = 0  # and stop listening for sessions's data
+				self.icon.AddDataRenderer('', 0, '')
+				self.icon.SetQuickInfo('')
+				return False
+				
+			percent = 0.
+			n = 0
+			for value in data['arguments']['torrents']:
+				percent = percent + value['percentDone']
+				n = n + 1
+			
+			if n != 0:
+				percent = percent / n
+				if self.config['progressbar']:
+					self.icon.RenderValues([percent])
+				if self.config['quick-info'] == INFO_PERCENT:
+					self.icon.SetQuickInfo(format(percent*100,".0f")+'%')
+				elif self.config['quick-info'] == INFO_PERCENT_NUMBER:
+					self.icon.SetQuickInfo(format(percent*100,".0f")+'% ('+format(n,"d")+')')
+			else:  # no active torrent
+				if self.icon.RenderValues([percent]):
+					self.icon.RenderValues([0])
+				if self.config['quick-info'] == INFO_PERCENT or self.config['quick-info'] == INFO_PERCENT_NUMBER:
+					self.icon.SetQuickInfo('')
+		
 		return True
 		
 	def try_connect(self):
@@ -149,6 +194,8 @@ class Applet(CDApplet):
 			if self.iSidGetData == 0:  # start listening for session's data
 				self.iSidGetData = timeout_add(2000,self.update_data)
 			self.iSidTryConnect = 0  # and stop connecting
+			if self.config['progressbar']:  # add a progress bar if required
+				self.icon.AddDataRenderer('progressbar', 1, '')
 			return False
 		else:  # else, keep trying to connect
 			return True
@@ -196,7 +243,7 @@ class Applet(CDApplet):
 		n = 0
 		for value in data['arguments']['torrents']:
 			info += "<b>"+html_escape(value['name'])+"</b>:\n"
-			info += "  progress: "+format(value['percentDone']*100,".1f")+'%'
+			info += "  progress: <b>"+format(value['percentDone']*100,".1f")+'%</b>'
 			state = value['status']
 			if state == TR_STATUS_STOPPED:
 				info += " <i>(paused)</i>\n"
@@ -292,6 +339,8 @@ class Applet(CDApplet):
 			self.config['password'] 	= keyfile.get('Configuration', 'password')
 		
 		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+		self.config['quick-info'] 	= keyfile.getint('Configuration', 'quick-info')
+		self.config['progressbar'] 	= keyfile.getboolean('Configuration', 'progressbar')
 		
 		bLocal = keyfile.getboolean('Configuration', 'local')
 		if bLocal:
@@ -321,8 +370,6 @@ class Applet(CDApplet):
 		print "*** end of transmission applet"
 	
 	def begin(self):
-		self.icon.BindShortkey([self.config['shortkey']])
-		
 		# control the appli
 		process = os.popen("pgrep transmission-gtk").read().rstrip()
 		if process != '':
@@ -367,14 +414,23 @@ class Applet(CDApplet):
 		# start the connection timer.
 		if self.iSidTryConnect == 0:
 			self.iSidTryConnect = timeout_add(2000,self.try_connect)
+		
+		# bind the shortkey to the torrents info dialog
+		self.icon.BindShortkey([self.config['shortkey']])
+		
 	
 	def reload(self):
+		# re-bind the shortkey
 		self.icon.BindShortkey([self.config['shortkey']])
+		# set or remove the progress bar
+		if self.config['progressbar']:
+			self.icon.AddDataRenderer('progressbar', 1, '')
+		else:
+			self.icon.AddDataRenderer('', 0, '')
 	
 	##### callbacks #####
 	
 	def on_click(self,iState):
-		print "*** click"
 		Xid = self.icon.Get("Xid")
 		if Xid != 0:
 			print "show window..."
