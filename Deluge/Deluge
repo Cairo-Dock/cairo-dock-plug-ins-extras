@@ -40,6 +40,12 @@ from math import sqrt
 from gobject import timeout_add
 from CDApplet import CDApplet, _
 
+# Quick-info enum
+INFO_NONE           = 0
+INFO_DL_SPEED       = 1
+INFO_PERCENT        = 2
+INFO_PERCENT_NUMBER = 3
+
 def format_bytes(x):
 	unit=''
 	if x < 1024:
@@ -116,6 +122,8 @@ class Applet(CDApplet):
 	def on_connect_success(self,result):
 		print "*** connected to Deluge!"
 		self.bConnected = True
+		if self.config['progressbar']:  # add a progress bar if required
+			self.icon.AddDataRenderer('progressbar', 1, '')
 		if self.iSidGetData == 0:
 			self.iSidGetData = timeout_add (2000, self.update_data)
 	
@@ -123,6 +131,8 @@ class Applet(CDApplet):
 		print "*** Disconnected from deluge daemon"
 		self.bConnected = False
 		self.icon.SetQuickInfo("")
+		if self.config['progressbar']:
+			self.icon.AddDataRenderer('', 0, '')
 		if not self.bExit:  # we didn't get disconnected because the applet was stopped -> try to reconnect
 			if self.iSidTryConnect == 0:
 				self.iSidTryConnect = timeout_add(2000,self.try_connect)
@@ -134,11 +144,15 @@ class Applet(CDApplet):
 			self.iSidGetData = 0
 			return False
 		
-		client.core.get_session_status(["payload_download_rate"]).addCallback(self.on_got_data,'payload_download_rate')
+		if self.config['quick-info'] == INFO_DL_SPEED:  # display download speed
+			client.core.get_session_status(["payload_download_rate"]).addCallback(self.on_got_dl_rate,'payload_download_rate')
+		
+		if self.config['quick-info'] == INFO_PERCENT or self.config['quick-info'] == INFO_PERCENT_NUMBER or self.config['progressbar']:  # display percent or percent+number of active torrents or progress as a progressbar
+			client.core.get_torrents_status({},['progress','paused']).addCallback(self.on_got_progress)
 		
 		return True
 	
-	def on_got_data(self,value,key):
+	def on_got_dl_rate(self,value,key):
 		rate=value[key]
 		unit=''
 		if rate < 100:
@@ -156,7 +170,29 @@ class Applet(CDApplet):
 			form = ".0f"
 			
 		self.icon.SetQuickInfo(format(rate,form)+unit)
-		
+	
+	def on_got_progress(self,status):
+		n = 0
+		percent = 0.
+		for id, value in status.items():
+			if not value['paused']:
+				percent = percent + value['progress']
+				n = n + 1
+		if n != 0:
+			percent = percent / n / 100.
+			if self.config['progressbar']:
+				self.icon.RenderValues([percent])
+			if self.config['quick-info'] == INFO_PERCENT:
+				self.icon.SetQuickInfo(format(percent*100,".0f")+'%')
+			elif self.config['quick-info'] == INFO_PERCENT_NUMBER:
+				self.icon.SetQuickInfo(format(percent*100,".0f")+'% ('+format(n,"d")+')')
+		else:  # no active torrent
+			if self.config['progressbar']:
+				self.icon.RenderValues([0])
+			if self.config['quick-info'] == INFO_PERCENT or self.config['quick-info'] == INFO_PERCENT_NUMBER:
+				self.icon.SetQuickInfo('')
+
+	
 	# Torrents info
 	
 	def show_torrents_info(self):
@@ -236,11 +272,14 @@ class Applet(CDApplet):
 	##### applet definition #####
 	
 	def get_config(self,keyfile):
+		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
+		self.config['quick-info'] 	= keyfile.getint('Configuration', 'quick-info')
+		self.config['progressbar'] 	= keyfile.getboolean('Configuration', 'progressbar')
+		
 		self.config['server'] 		= keyfile.get('Configuration', 'server')
 		self.config['port'] 		= keyfile.getint('Configuration', 'port')
 		self.config['user'] 		= keyfile.get('Configuration', 'user')
 		self.config['password'] 	= keyfile.get('Configuration', 'password')
-		self.config['shortkey'] 	= keyfile.get('Configuration', 'shortkey')
 		if self.config['server'] == '':
 			self.config['server'] = '127.0.0.1'
 		if self.config['port'] == 0:
@@ -262,6 +301,13 @@ class Applet(CDApplet):
 	
 	def reload(self):
 		self.icon.BindShortkey([self.config['shortkey']])
+		# set or remove the progress bar
+		if self.config['progressbar']:
+			self.icon.AddDataRenderer('progressbar', 1, '')
+		else:
+			self.icon.AddDataRenderer('', 0, '')
+		if self.config['quick-info'] == INFO_NONE:
+			self.icon.SetQuickInfo('')
 		
 	##### callbacks #####
 	
