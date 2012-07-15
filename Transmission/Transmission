@@ -177,7 +177,7 @@ class Applet(CDApplet):
 				elif self.config['quick-info'] == INFO_PERCENT_NUMBER:
 					self.icon.SetQuickInfo(format(percent*100,".0f")+'% ('+format(n,"d")+')')
 			else:  # no active torrent
-				if self.icon.RenderValues([percent]):
+				if self.config['progressbar']:
 					self.icon.RenderValues([0])
 				if self.config['quick-info'] == INFO_PERCENT or self.config['quick-info'] == INFO_PERCENT_NUMBER:
 					self.icon.SetQuickInfo('')
@@ -427,6 +427,8 @@ class Applet(CDApplet):
 			self.icon.AddDataRenderer('progressbar', 1, '')
 		else:
 			self.icon.AddDataRenderer('', 0, '')
+		if self.config['quick-info'] == INFO_NONE:
+			self.icon.SetQuickInfo('')
 	
 	##### callbacks #####
 	
