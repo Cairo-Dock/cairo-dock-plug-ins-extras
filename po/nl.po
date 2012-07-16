@@ -628,26 +628,26 @@ msgid ""
 "Cardapio."
 msgstr ""
 
-#: ../Deluge/Deluge:166
+#: ../Deluge/Deluge:202
 msgid "Deluge is not running, or is not responding to us."
 msgstr "Deluge is niet actief, of reageert niet op ons."
 
-#: ../Deluge/Deluge:287 ../Transmission/Transmission:395
+#: ../Deluge/Deluge:333 ../Transmission/Transmission:453
 msgid "Pause all torrents"
 msgstr "Alle torrents pauzeren"
 
-#: ../Deluge/Deluge:292 ../Transmission/Transmission:400
+#: ../Deluge/Deluge:338 ../Transmission/Transmission:458
 msgid "Resume all torrents"
 msgstr "Alle torrents hervatten"
 
-#: ../Deluge/Deluge:297 ../KTorrent/KTorrent:328
-#: ../Transmission/Transmission:405
+#: ../Deluge/Deluge:343 ../KTorrent/KTorrent:328
+#: ../Transmission/Transmission:463
 msgid "Torrents info"
 msgstr "Torrent-info"
 
-#: ../Deluge/Deluge:297 ../Gmail/Gmail:498 ../KTorrent/KTorrent:328
+#: ../Deluge/Deluge:343 ../Gmail/Gmail:498 ../KTorrent/KTorrent:328
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
-#: ../Transmission/Transmission:405 ../YoutubeDl/YoutubeDl:298
+#: ../Transmission/Transmission:463 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
 msgstr "middelklikken"
@@ -656,7 +656,32 @@ msgstr "middelklikken"
 msgid "Shortkey to pop up the torrents info:"
 msgstr "Sneltoets voor de torrent-info:"
 
-#: ../Deluge/messages:98
+#: ../Deluge/messages:97 ../Transmission/messages:97
+#, fuzzy
+msgid "Show as quick-info:"
+msgstr "snel-info"
+
+#: ../Deluge/messages:99 ../Transmission/messages:99
+msgid "None"
+msgstr ""
+
+#: ../Deluge/messages:101 ../Transmission/messages:101
+msgid "Download speed"
+msgstr ""
+
+#: ../Deluge/messages:103 ../Transmission/messages:103
+msgid "Percentage done"
+msgstr ""
+
+#: ../Deluge/messages:105 ../Transmission/messages:105
+msgid "Percentage + number of active torrents"
+msgstr ""
+
+#: ../Deluge/messages:107 ../Transmission/messages:107
+msgid "Show the percentage done as a progress bar"
+msgstr ""
+
+#: ../Deluge/messages:110
 msgid ""
 "This applet allows you to <b>control Deluge</b> from the Dock (You need to "
 "install <i>deluged</i>, which is the daemon used to communicate between the "
@@ -1797,23 +1822,23 @@ msgid ""
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
 
-#: ../Transmission/Transmission:186
+#: ../Transmission/Transmission:233
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission is niet actief, of reageert niet op ons."
 
-#: ../Transmission/Transmission:193
+#: ../Transmission/Transmission:240
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
 "Kon geen data verkrijgen van Transmission. U heeft Transmission 1.9 of hoger "
 "nodig."
 
-#: ../Transmission/Transmission:353
+#: ../Transmission/Transmission:400
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 "U dient de Webclient in de voorkeuren van Transmisison in te schakelen."
 
-#: ../Transmission/messages:98
+#: ../Transmission/messages:110
 msgid ""
 "This applet allows you to <b>control Transmission</b> from the Dock.\n"
 "It can display the <b>download rate</b> on the icon.\n"
