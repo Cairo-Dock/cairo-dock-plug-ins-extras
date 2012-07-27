@@ -19,93 +19,16 @@
 
 
 icon_command="$1"
-
-rm -f .day
-if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
-	bash icon.sh
-else
-	bash "$icon_command"
-fi
-ARG=$2
-
-# sometime there is a bug with: 10-02
-if [ "$ARG" = "" ]; then
-	MIN=`date +%M`
-	case "$MIN" in
-		"01")
-			MIN=1
-		;;
-		"02")
-			MIN=2
-		;;
-		"03")
-			MIN=3
-		;;
-		"04")
-			MIN=4
-		;;
-		"05")
-			MIN=5
-		;;
-		"06")
-			MIN=6
-		;;
-		"07")
-			MIN=7
-		;;
-		"08")
-			MIN=8
-		;;
-		"09")
-			MIN=9
-		;;
-	esac
-
-	SEC=`date +%S`
-	case "$SEC" in
-		"00")
-			SEC=0
-		;;
-		"01")
-			SEC=1
-		;;
-		"02")
-			SEC=2
-		;;
-		"03")
-			SEC=3
-		;;
-		"04")
-			SEC=4
-		;;
-		"05")
-			SEC=5
-		;;
-		"06")
-			SEC=6
-		;;
-		"07")
-			SEC=7
-		;;
-		"08")
-			SEC=8
-		;;
-		"09")
-			SEC=9
-		;;
-	esac
-
-	ARG=$(((23-`date +%H`)*3600+(59-$MIN)*60+60-$SEC)) # 00:00:01
-fi
-# echo "We wait for $ARG sec."
-
+ARG=10
+bash icon.sh
 sleep $ARG
-rm -f .day # force the reload
-if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
-	bash icon.sh
-else
-	bash "$icon_command"
-fi
 
-# updated 24h later
-bash update_calendar.sh "$icon_command" 86400
+while [ 1 ]; do
+	date_TODAY=`date '+%Y%m%d'`
+	read displaydate < .day
+	if [ $date_TODAY != $displaydate ]; then
+		bash icon.sh	
+	fi
+	sleep $ARG
+done
+

@@ -130,20 +130,22 @@ cp $CONF_FILE $CONF_FILE.bak
 # Generate fresh calendar icon
 get_ALL_conf_params
 rm -f .day
-if test `ps aux | grep -c "[u]pdate_calendar"` -gt 1; then
-	killall update_calendar.sh
-fi
-(bash update_calendar.sh "$icon_command" &)
-
+#if test `ps aux | grep -c "[u]pdate_calendar"` -gt 1; then
+#	killall update_calendar.sh
+#fi
+ps -ef | grep update_calendar.sh | grep -v grep | awk '{ system("sudo kill -9 "$2)}'
+bash update_calendar.sh "$icon_command" &
 exit
 }
 
 #############################################################################################################
 end() {
 rm -f .day
-if test `ps aux | grep -c "update_calendar"` -gt 1; then
-	killall update_calendar.sh
-fi
+echo "spot end" > ~/calendar.output
+#if test `ps aux | grep -c "update_calendar"` -gt 1; then
+#	killall update_calendar.sh
+#fi
+ps -ef | grep update_calendar.sh | grep -v grep | awk '{ system("sudo kill -9 "$2)}'
 }
 
 #############################################################################################################
