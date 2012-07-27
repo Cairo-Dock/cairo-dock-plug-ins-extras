@@ -19,16 +19,21 @@
 
 
 icon_command="$1"
-ARG=10
-bash icon.sh
-sleep $ARG
+
+if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
+	icon_command="icon.sh"
+fi
+
+ARG=120
+bash "$icon_command"
+date_OLD=`date '+%Y%m%d'`
 
 while [ 1 ]; do
-	date_TODAY=`date '+%Y%m%d'`
-	read displaydate < .day
-	if [ $date_TODAY != $displaydate ]; then
-		bash icon.sh	
-	fi
 	sleep $ARG
+	date_NOW=`date '+%Y%m%d'`
+	if [ "$date_NOW" != "$date_OLD" ]; then
+		date_OLD=`date '+%Y%m%d'`
+		bash "$icon_command"
+	fi
 done
 
