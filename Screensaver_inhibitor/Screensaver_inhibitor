@@ -25,7 +25,7 @@ import dbus
 from gobject import timeout_add, source_remove
 
 def isProcessRunning(app):
-	result = popen("ps -ef | grep %s | grep -v grep" % app).read().rstrip()
+	result = popen("ps euf | grep %s | grep -v grep" % app).read().rstrip()
 	return (result != None and result != "")
 
 ####################
