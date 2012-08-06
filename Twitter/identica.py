@@ -112,14 +112,14 @@ class Identica(Network):
 
     # If an user tries to post the same tweet twice on a short period of time,
     # twitter is not going to allow, and a error 401 is thrown.
-    def tweet(self, message):                                                                 # popularly "send a tweet"
+    def tweet(self, message):                                                           # popularly "send a tweet"
       try:
         self.dispatch(self.update_url, "POST", {'status':message})
       except HTTPError, err: # urllib2
         if err.code == 401:
           return False
-        else:
-          return True
+      else:
+        return True
       
     def home_timeline(self):
       return self.dispatch(self.home_timeline_url, "GET")

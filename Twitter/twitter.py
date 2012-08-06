@@ -152,14 +152,14 @@ class Twitter(Network):
 
     # If an user tries to post the same tweet twice on a short period of time,
     # twitter is not going to allow, and a error 403 is thrown.
-    def tweet(self, message):                                                                 # popularly "send a tweet"
+    def tweet(self, message):                                                              # popularly "send a tweet"
       try:
         self.dispatch(self.update_url, "POST", {'status':message})
       except urllib2.HTTPError, err:
         if err.code == 403:
           return False
-        else:
-          return True
+      else:
+        return True
       
     def retweet(self, tweet_id):
       url = "%s%s.json" % (self.retweet_url_prefix, tweet_id)
