@@ -158,7 +158,7 @@ class Applet(CDApplet):
 	
 	def get_config(self,keyfile):
 		self.config['shortkey'] 		= keyfile.get('Configuration', 'shortkey')
-		self.config['timelength'] 		= keyfile.getint('Configuration', 'timelength')
+		self.config['timelength'] 		= keyfile.getint('Configuration', 'timelength int')
 		self.config['icon'] 			= keyfile.get('Icon', 'icon')
 		self.config['icon-inhib'] 		= keyfile.get('Icon', 'icon-inhib')
 		
@@ -182,7 +182,7 @@ class Applet(CDApplet):
 	def on_middle_click(self):
 		dialog_attributes = {
 			"icon" : "same icon",
-			"message" : _("Inhibit for a given timelength (in minutes)"),
+			"message" : _("Inhibit for a given time (in minutes)"),
 			"buttons" : "ok;cancel"}
 		widget_attributes = {
 			"widget-type" : "scale",
@@ -195,7 +195,7 @@ class Applet(CDApplet):
 	
 	def on_build_menu(self):
 		items = [ {
-				"label": "%s (%s)" % (_("Inhibit for a given timelength"), _("middle-click")),
+				"label": "%s (%s)" % (_("Inhibit for a given time"), _("middle-click")),
 				"icon" : "gtk-execute",
 				"id"   : 1
 			}]
