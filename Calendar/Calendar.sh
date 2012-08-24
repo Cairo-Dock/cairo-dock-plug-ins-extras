@@ -125,7 +125,7 @@ exit
 }
 
 kill_other_processes() {
-	ps ux | grep "update_calendar.sh"| grep "bash" | awk '{ system("pkill -15 -P "$2" && kill -15 "$2)}'
+	ps -u $USER -wwo pid,cmd | grep " bash update_calendar.sh"| grep -v "grep" | awk '{ system("pkill -15 -P "$1" && kill -15 "$1)}'
 }
 
 #############################################################################################################
