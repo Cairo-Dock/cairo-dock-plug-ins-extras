@@ -124,13 +124,17 @@ fi
 exit
 }
 
+kill_other_processes() {
+	ps ux | grep "update_calendar.sh"| grep "bash" | awk '{ system("pkill -15 -P "$2" && kill -15 "$2)}'
+}
+
 #############################################################################################################
 begin() {
 cp $CONF_FILE $CONF_FILE.bak
 # Generate fresh calendar icon
 get_ALL_conf_params
 
-ps -euf | grep update_calendar.sh | grep -v grep | awk '{ system("kill -9 "$2)}'
+kill_other_processes
 
 bash update_calendar.sh "$icon_command" &
 exit
@@ -138,7 +142,7 @@ exit
 
 #############################################################################################################
 end() {
-ps -euf | grep update_calendar.sh | grep -v grep | awk '{ system("kill -9 "$2)}'
+kill_other_processes
 }
 
 #############################################################################################################
