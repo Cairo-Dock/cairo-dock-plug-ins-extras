@@ -33,7 +33,7 @@ DBusGMainLoop(set_as_default=True)
 
 class AgentOpener(FancyURLopener):
     """Masked user-agent otherwise the access would be forbidden"""
-    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+    version = 'Chrome/15.0.860.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/15.0.860.0'
 
 class Link:
     identification = 0
