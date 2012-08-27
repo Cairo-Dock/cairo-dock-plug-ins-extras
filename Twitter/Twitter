@@ -213,7 +213,7 @@ class Applet(CDApplet):
   # Opens the dialog to be filled with the tweet and also informs about tweet longer than 140 characters
   def ask_for_tweet(self, default="", warning=False):
     if not warning:
-      message = _("%s, send a tweet" % (self.twitter.user.screen_name or self.identica.user.screen_name))
+      message = _("%s, send a tweet") % (self.twitter.user.screen_name or self.identica.user.screen_name)
     else:                                                                                             # user entered more than 140 characters
       message = _("Your tweet has more than %d characters, please make it shorter") % self.tweet_length
     dialog = {'buttons':'ok;cancel'}
@@ -228,7 +228,7 @@ class Applet(CDApplet):
       for network in self.networks:
         logp("Sending a tweet with %s '%s'" % (network.name, content))
         if not network.api.tweet(content):
-          self.show_popup_message(_("Problem to send this tweet on %s, I think you already tried to send the same one few minutes ago" % network.name))
+          self.show_popup_message(_("Problem to send this tweet on %s, I think you already tried to send the same one few minutes ago") % network.name)
     
   def ask_for_retweet(self, tweet_id):
     dialog = {'buttons':'ok;cancel'}
@@ -251,7 +251,7 @@ class Applet(CDApplet):
 
   def show_initial_informations(self):
     name = camelcase(self.new_network.name)
-    message = _("%s Applet needs your nickname, and an authorization\nthat you accept it to connect on your %s account" % (name, name))
+    message = _("%s Applet needs your nickname, and an authorization\nthat you accept it to connect on your %s account") % (name, name)
     dialog = {'buttons':'next'}
     self.show_popup_message(message, dialog)
     self.dialog_type = self.responding_initial_informations
@@ -260,7 +260,7 @@ class Applet(CDApplet):
     self.ask_for_screen_name()
 
   def ask_for_screen_name(self):
-    message = _("What is your %s nickname?" % camelcase(self.new_network.name))
+    message = _("What is your %s nickname?") % camelcase(self.new_network.name)
     dialog = {'buttons':'next'}
     widget = {'widget-type':'text-entry'}
     self.show_popup_message(message, dialog, widget)
@@ -277,10 +277,10 @@ class Applet(CDApplet):
     dialog = {'buttons':'next'}
     try:
       webbrowser.open(authorization_url)
-      message = _("%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog" % camelcase(self.new_network.name))
+      message = _("%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog") % camelcase(self.new_network.name)
       self.show_popup_message(message, dialog)
     except webbrowser.Error:    
-      message = _("%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize" % camelcase(self.new_network.name))
+      message = _("%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize") % camelcase(self.new_network.name)
       widget = {'widget-type':'text-entry', 'initial-value':authorization_url}
       self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_authorization
@@ -324,7 +324,7 @@ class Applet(CDApplet):
     if self.message_stream.empty():
       label = _("Direct messages")
     else:
-      label = _("New direct messages (%d)" % self.message_stream.qsize())
+      label = _("New direct messages (%d)") % self.message_stream.qsize()
     direct_messages_menu.append ({
         'type'  : CDApplet.MENU_ENTRY,
         'label' : label,
@@ -348,7 +348,7 @@ class Applet(CDApplet):
     if self.tweet_stream.empty():
       label = _("Tweets")
     else:
-      label = _("New tweets (%d)" % self.tweet_stream.qsize())
+      label = _("New tweets (%d)") % self.tweet_stream.qsize()
     tweets_menu.append ({
         'type'  : CDApplet.MENU_ENTRY,
         'label' : label,
