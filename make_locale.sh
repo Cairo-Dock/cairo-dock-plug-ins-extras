@@ -5,10 +5,9 @@ NEXT=$1 # 0 = locale | 1 = packages => FTP | 2 = tarball => cairo-dock-plug-ins-
 DIR="$2"
 f="locale"
 name="cairo-dock-plugins-extra"
-echo "make $f"
 
 if test -e $f; then
-	mv -v $f $f.bak
+	mv $f $f.bak
 fi
 mkdir $f
 
