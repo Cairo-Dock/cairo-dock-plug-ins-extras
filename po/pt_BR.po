@@ -6,18 +6,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-05-24 17:41+0000\n"
-"Last-Translator: Eduardo Mucelli Rezende Oliveira <edumucelli@gmail.com>\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-09-28 19:39+0000\n"
+"Last-Translator: Fredson N Sousa <fnsousas@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:44+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-09-29 05:04+0000\n"
+"X-Generator: Launchpad (build 16049)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -191,8 +193,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
-"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
+"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
@@ -216,8 +218,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
-"inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte "
+"direita/inferior da tela."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:29
@@ -640,9 +642,8 @@ msgid "Shortkey to pop up the torrents info:"
 msgstr "Atalho para mostrar as informações dos torrents:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
-#, fuzzy
 msgid "Show as quick-info:"
-msgstr "Informação rápida"
+msgstr ""
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
@@ -691,9 +692,8 @@ msgid "Time between two file system's checking :"
 msgstr "Tempo entre verificações do sistema de arquivos:"
 
 #: ../DiskFree/messages:100
-#, fuzzy
 msgid "View available file system's free space."
-msgstr "Veja espaço disponível como Giga (marcado) ou Mega (desmarcado):"
+msgstr ""
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
@@ -827,7 +827,8 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr ""
+"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
@@ -941,7 +942,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1370,9 +1372,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
@@ -2118,9 +2120,8 @@ msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Defina 0 para usar o tamanho padrão do mini-aplicativo."
+msgstr ""
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
@@ -2131,32 +2132,28 @@ msgid "Start downloading videos imediately? :"
 msgstr ""
 
 #: ../YoutubeDl/messages:93
-#, fuzzy
 msgid "in secondds"
-msgstr "nos sub-ícones."
+msgstr ""
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
 msgstr ""
 
 #: ../YoutubeDl/messages:97
-#, fuzzy
 msgid "Action on middle click:"
-msgstr "Clique com o botão do meio"
+msgstr ""
 
 #: ../YoutubeDl/messages:101
-#, fuzzy
 msgid "Show Status"
-msgstr "Mostrar alertas?"
+msgstr ""
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
 msgstr ""
 
 #: ../YoutubeDl/messages:105
-#, fuzzy
 msgid "Show download progress on icon? :"
-msgstr "Mostrar a temperatura máxima no ícone?"
+msgstr ""
 
 #: ../YoutubeDl/messages:107
 msgid ""
@@ -2238,24 +2235,20 @@ msgid "Directory Setup"
 msgstr ""
 
 #: ../YoutubeDl/messages:143
-#, fuzzy
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
-"O caminho do script que gera o ícone. Deixe vazio para usar o script padrão."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
 msgstr ""
 
 #: ../YoutubeDl/messages:147
-#, fuzzy
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
-"O caminho do script que gera o ícone. Deixe vazio para usar o script padrão."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
@@ -2279,43 +2272,44 @@ msgstr ""
 
 #: ../YoutubeDl/messages:159
 msgid "Ignore errors during download and continue processing."
-msgstr ""
+msgstr "Ignorar erros durante o processo de download e continuar."
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr ""
+msgstr "Ignorar erros (--ignorar-erros)?"
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
-msgstr ""
+msgstr "Se o arquivo existir, não substitua."
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr ""
+msgstr "Não substituir (--não-substituir)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
-msgstr ""
+msgid ""
+"Use the title of the video in the file name used to download the video"
+msgstr "Usar o título do vídeo para nomear o arquivo baixado."
 
 #: ../YoutubeDl/messages:169
 msgid "Use title (--title)?"
-msgstr ""
+msgstr "Usar título (--título)?"
 
 #: ../YoutubeDl/messages:171
 msgid "Which download format to use:"
-msgstr ""
+msgstr "Escolha o formato do vídeo:"
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr ""
+msgstr "Especifique o formato do vídeo"
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
-msgstr ""
+msgstr "Limitar a qualidade máxima"
 
 #: ../YoutubeDl/messages:177
 msgid "Download default format"
-msgstr ""
+msgstr "Baixar no formato padrão"
 
 #: ../YoutubeDl/messages:179
 msgid "Specify the video format (quality) in which to download the video."
@@ -2363,45 +2357,47 @@ msgstr ""
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
-msgstr ""
+msgstr "Limite máximo da qualidade dos vídeos para download"
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr ""
+msgstr "Qualidade máxima (--max-qualidade):"
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
-msgstr ""
+msgstr "Baixar no formato padrão"
 
 #: ../YoutubeDl/messages:225
 msgid ""
 "Some videos require an account to be downloaded, mostly because they're "
 "flagged as mature content."
 msgstr ""
+"Alguns vídeos requerem uma conta para ser baixado, principalmente porque "
+"estão sinalizados como conteúdo adulto."
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr ""
+msgstr "Digite seu Nome de usuário e Senha para continuar a autenticação"
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Usuário/Senha"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
-msgstr ""
+msgstr "Digite o Nome de usuário e Senha do seu canal youtube"
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Nome do Usuário"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
-msgstr ""
+msgstr "Este é seu Nome de usuário, digite a senha"
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Senha"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2423,6 +2419,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Manual deste mini-aplicativo"

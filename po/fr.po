@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-07-03 12:20+0000\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-10-06 00:27+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Cairo-Dock <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-10-07 04:44+0000\n"
+"X-Generator: Launchpad (build 16061)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu n'est pas installé. Merci de l'installer avant de lancer cette "
 "applet."
@@ -427,7 +429,8 @@ msgstr "Transparence du fond :"
 #: ../Twitter/messages:69 ../WebSearch/messages:67
 #: ../WindowsKiller/messages:69 ../Xchat/messages:69
 msgid "in pixels. Use this to adjust the left position of drawings."
-msgstr "en pixels. Utilisez-le pour ajuster la position à gauche des dessins."
+msgstr ""
+"en pixels. Utilisez-le pour ajuster la position à gauche des dessins."
 
 #: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
 #: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:67
@@ -467,7 +470,8 @@ msgstr "Décalage en haut :"
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr "en pixels. Utilisez-le pour ajuster la position à droite des dessins."
+msgstr ""
+"en pixels. Utilisez-le pour ajuster la position à droite des dessins."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:75
@@ -556,6 +560,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
+"Cette applet vous permet d’intégrer <b>GnoMenu</b> à l’intérieur du dock.\n"
+"Cliquez sur l’icône pour afficher le menu.\n"
+"Un click à droite permet d’accéder aux préférences.\n"
+"<u>Note:</u> vous devez installer GnoMenu."
 
 #: ../Calendar/messages:93
 msgid "Applications"
@@ -596,6 +604,15 @@ msgid ""
 "Scroll Down displays the events of the day\n"
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
+"Cette applet affichera la date courante.\n"
+" - Un clic gauche affiche le calendrier.\n"
+" - Un clic du milieu lance l'application de gestion du calendrier de votre "
+"choix.\n"
+" - Un mouvement de roulette vers le haut affiche le calendrier du prochain "
+"mois.\n"
+" - Un mouvement de roulette vers le bas affiche l'événement du jour.\n"
+" - Déposer un fichier sur l'icône lance l'application de gestion du "
+"calendrier afin d'importer ce fichier."
 
 #: ../Cardapio/Cardapio:45
 msgid ""
@@ -611,6 +628,10 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
+"Cette applet permet d'obtenir un <b>menu Cardapio</b> dans votre dock.\n"
+"Cliquez sur l'icône pour afficher le menu.\n"
+"Le clic droit vous permettra d'éditer les menus.\n"
+"<u>Remarque :</u> vous devez installez Cardapio."
 
 #: ../Deluge/Deluge:202
 msgid "Deluge is not running, or is not responding to us."
@@ -641,29 +662,28 @@ msgid "Shortkey to pop up the torrents info:"
 msgstr "Raccourcis clavier pour afficher les informations des torrents :"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
-#, fuzzy
 msgid "Show as quick-info:"
-msgstr "Étiquette"
+msgstr "Afficher comme info rapide :"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Aucun"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Vitesse de téléchargement"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "Pourcentage réalisé"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Pourcentage + Nombre de torrents actifs"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Afficher le pourcentage réalisé avec une barre de progression"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -693,10 +713,8 @@ msgid "Time between two file system's checking :"
 msgstr "Temps entre deux vérification du système de fichiers"
 
 #: ../DiskFree/messages:100
-#, fuzzy
 msgid "View available file system's free space."
-msgstr ""
-"Voir l'espace disponible sur le disque en Go (coché) ou en Mo (décoché)"
+msgstr "Affichez l'espace disponible du système de fichiers"
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
@@ -840,8 +858,8 @@ msgstr "Choisir une animation :"
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
 msgstr ""
-"Est-ce que l'applet doit afficher une boîte de dialogue avec la "
-"notification ?"
+"Est-ce que l'applet doit afficher une boîte de dialogue avec la notification "
+"?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
@@ -859,8 +877,8 @@ msgstr "Jouer un son ?"
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
-"Plusieurs fichiers sont disponibles dans ~/.config/cairo-dock/third-party/"
-"Gmail/snd/"
+"Plusieurs fichiers sont disponibles dans ~/.config/cairo-dock/third-"
+"party/Gmail/snd/"
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
@@ -942,6 +960,12 @@ msgid ""
 "Create a new task on middle-click,Create a post-it from a task category.\n"
 "The icon will also control the window of GTG like a normal application icon."
 msgstr ""
+"Cette applet vous permet d’intégrer <b>GTG</b> à l’intérieur du dock.\n"
+"Elle permet d’afficher les tâches.\n"
+"Créez une nouvelle tâche par un clic au milieu, créez un post-it a partir "
+"d'une catégorie.\n"
+"L’icône permet aussi de contrôler le programme GTG comme s'il s’agissait "
+"d'une simple application."
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:27
@@ -962,7 +986,8 @@ msgstr "Dimension du desklet (largeur x hauteur) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "En fonction de votre gestionnaire de fenêtres, vous pouvez déplacer avec ALT "
 "+ clic gauche par exemple."
@@ -1178,7 +1203,8 @@ msgstr "Le numéro de port d'écoute pour le démon hddtemp (7634 par défaut)"
 
 #: ../HDDtemperature/messages:103
 msgid "Separator between fields used by hddtemp daemon ( | by default)"
-msgstr "Séparateur des champs utilisés par le démon hddtemp (« | » par défaut)"
+msgstr ""
+"Séparateur des champs utilisés par le démon hddtemp (« | » par défaut)"
 
 #: ../HDDtemperature/messages:106
 msgid ""
@@ -1186,6 +1212,9 @@ msgid ""
 " getting values from 'hddtemp' daemon (see: man hddtemp). \n"
 " Left-click shows more information about HD drives."
 msgstr ""
+"Cette applet vous montre la température maximale de vos disques durs\n"
+" en obtenant les valeurs grâce au service 'hddtmp' (voir: man hddtemp). \n"
+" Un click à gauche vous montre plus d'information sur vos disques."
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -1216,6 +1245,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
+"Cette applet vous permet d’intégrer <b>Lancelot</b> à l’intérieur du dock.\n"
+"Cliquez sur l’icône pour afficher le menu.\n"
+"Un click à droite permet d’accéder aux préférences.\n"
+"<u>Note:</u> vous devez installer Lancelot."
 
 #: ../Liferea/messages:93
 msgid "Show in the icon:"
@@ -1231,7 +1264,7 @@ msgstr " Le nombre de nouveaux messages"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
-msgstr ""
+msgstr "Cette applets s'interface avec Liferea"
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -1247,6 +1280,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
+"Cette applet vous permet d’intégrer <b>MintMenu</b> à l’intérieur du dock.\n"
+"Cliquez sur l’icône pour afficher le menu.\n"
+"Un click à droite permet d’accéder aux préférences.\n"
+"<u>Note:</u> vous devez installer MintMenu."
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
@@ -1273,6 +1310,8 @@ msgid ""
 "This applet displays the moon phases and its informations for the current "
 "day, or week from the Northern or Southern hemisphere"
 msgstr ""
+"Cette applet afficher les phases de la lune et les informations pour la "
+"journée en cour ou la semaine pour l’hémisphère Nord ou Sud."
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
@@ -1310,7 +1349,8 @@ msgstr "Choisir un thème :"
 
 #: ../Pidgin/messages:99
 msgid "Display conversation messages in a bubble?"
-msgstr "Afficher les messages de la conversation dans une bulle de dialogue ?"
+msgstr ""
+"Afficher les messages de la conversation dans une bulle de dialogue ?"
 
 #: ../Pidgin/messages:101
 msgid "Display chat messages in a bubble?"
@@ -1414,10 +1454,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
+"Cette applet offre des \"Citation du jour\" a partir de plusieurs sources "
+"internet telle que:\n"
+"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, et Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
@@ -1428,18 +1473,16 @@ msgid "Disable the screensaver"
 msgstr "Désactiver l'écran de veille"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:185
-#, fuzzy
 msgid "Inhibit for a given time (in minutes)"
-msgstr "Inhiber pendant un intervalle de temps donné (en minutes)"
+msgstr "Inhibition pour un temps donné (en minutes)"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
 msgid "timelength"
 msgstr "Durée"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
-#, fuzzy
 msgid "Inhibit for a given time"
-msgstr "Inhiber pendant un intervalle de temps donné"
+msgstr "Inhibition pour un temps donné"
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
@@ -1463,14 +1506,12 @@ msgstr ""
 "à : (class=Cairo-dock & type=Utility)"
 
 #: ../Screensaver_inhibitor/messages:93
-#, fuzzy
 msgid "(in minutes). 0 to never stop automatically"
-msgstr "0 pour ne jamais arrêter automatiquement"
+msgstr "(en minutes). 0 pour ne jamais l'arrêter automatiquement"
 
 #: ../Screensaver_inhibitor/messages:95
-#, fuzzy
 msgid "How long should last the inhibition:"
-msgstr "Intervalle de temps de l'inhibition :"
+msgstr "Combien de temps doit durer l'inhibition :"
 
 #: ../Screensaver_inhibitor/messages:97
 msgid "Shortkey to (de)inhibit the screensaver:"
@@ -1482,6 +1523,9 @@ msgid ""
 "This is especially useful when watching videos on Internet.\n"
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
+"Une petite applet pour <b>inhiber l'écran de veille</b>.\n"
+"C'est spécialement intéressant pour visionner des vidéos sur Internet.\n"
+"Un <b>clic</b> sur l'icône (dés)inhibe l'écran de veille."
 
 #: ../Translator/Translator:424
 msgid "To"
@@ -1929,9 +1973,9 @@ msgid ""
 "be shown, and go to the next dialog"
 msgstr ""
 "L'applet %s a besoin de vous pour accepter les autorisations. La page "
-"d'autorisation a été ouverte dans ​​votre navigateur. Une fois l'autorisation "
-"acceptée, copiez le code PIN qui y sera affiché et aller dans la boîte de "
-"dialogue suivante."
+"d'autorisation a été ouverte dans ​​votre navigateur. Une fois "
+"l'autorisation acceptée, copiez le code PIN qui y sera affiché et aller dans "
+"la boîte de dialogue suivante."
 
 #: ../Twitter/Twitter:283
 #, python-format
@@ -2188,9 +2232,8 @@ msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Laissez à 0 pour avoir la taille par défaut des applets"
+msgstr ""
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
@@ -2201,32 +2244,28 @@ msgid "Start downloading videos imediately? :"
 msgstr ""
 
 #: ../YoutubeDl/messages:93
-#, fuzzy
 msgid "in secondds"
-msgstr "dans un sous-dock."
+msgstr ""
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
 msgstr ""
 
 #: ../YoutubeDl/messages:97
-#, fuzzy
 msgid "Action on middle click:"
-msgstr "clic du milieu"
+msgstr ""
 
 #: ../YoutubeDl/messages:101
-#, fuzzy
 msgid "Show Status"
-msgstr "Afficher les alertes ?"
+msgstr "Afficher l’état"
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
 msgstr ""
 
 #: ../YoutubeDl/messages:105
-#, fuzzy
 msgid "Show download progress on icon? :"
-msgstr "Afficher la température maximale sur l'icône ?"
+msgstr ""
 
 #: ../YoutubeDl/messages:107
 msgid ""
@@ -2308,26 +2347,20 @@ msgid "Directory Setup"
 msgstr ""
 
 #: ../YoutubeDl/messages:143
-#, fuzzy
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
-"Chemin vers le script pour générer l'icône. Laisser vide pour utiliser le "
-"script par défaut."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
 msgstr ""
 
 #: ../YoutubeDl/messages:147
-#, fuzzy
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
-"Chemin vers le script pour générer l'icône. Laisser vide pour utiliser le "
-"script par défaut."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
@@ -2366,7 +2399,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2495,6 +2529,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Manuel de l'applet"

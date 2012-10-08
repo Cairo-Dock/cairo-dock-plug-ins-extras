@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-06-26 21:15+0000\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-09-20 21:55+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-09-21 04:48+0000\n"
+"X-Generator: Launchpad (build 15985)\n"
+"Language: uk\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu не встановлено. Встановіть до того, як використовувати додаток."
 
@@ -371,7 +373,8 @@ msgstr "Оформлення"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr "Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
+msgstr ""
+"Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:57
@@ -553,10 +556,14 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
+"Цей додаток дозволяє мати <b>меню GnoMenu</b> на панелі.\n"
+"Натисніть на іконку, щоб викликати меню.\n"
+"Правий клік мишкою дозволяє викликати вікно налаштувань.\n"
+"<u>Примітка:</u> потрібно встановити GnoMenu."
 
 #: ../Calendar/messages:93
 msgid "Applications"
-msgstr "Програми"
+msgstr "Додатки"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
@@ -592,6 +599,12 @@ msgid ""
 "Scroll Down displays the events of the day\n"
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
+"Цей додаток показує поточну дату.\n"
+"Ліве клацання показує календар\n"
+"Середнє клацання запускає календар на ваш вибір\n"
+"Прокручування вгору показує календар на наступний місяць\n"
+"Прокручування вниз показує події дня\n"
+"Перетягування файлу на іконку запускає додаток календар і імпортує файл."
 
 #: ../Cardapio/Cardapio:45
 msgid ""
@@ -606,6 +619,10 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
+"Цей додаток дозволяє мати  <b>меню Cardapio</b> на вашій панелі.\n"
+"Середнє клацання, щоб викликати меню.\n"
+"Правий клік, щоб редагувати меню.<u>Примітка:</u> ви повинні встановити "
+"Cardapio."
 
 #: ../Deluge/Deluge:202
 msgid "Deluge is not running, or is not responding to us."
@@ -636,29 +653,28 @@ msgid "Shortkey to pop up the torrents info:"
 msgstr "Комбінаця клавіш для виклику інформації про торент:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
-#, fuzzy
 msgid "Show as quick-info:"
-msgstr "короткі відомості"
+msgstr "Показати швидку інформацію:"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Відсутня"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Швидкість завантаження"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "Відсотків виконано"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Відсотки + кількість активних торентів"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Показувати відсоток виконання на прогресбарі"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -672,6 +688,15 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Цей додаток дозволяє <b>керувати Deluge</b> з панелі (Необхідно встановити "
+"демон <i>deluged</i>, який служить для обміну даними між панеллю і Deluge).\n"
+"Він може показувати <b>швидкість завантаження</b> на іконці.\n"
+"<b>Середнє клацання</b> на іконці надає інформацію про поточні торренти "
+"(можна прив'язати комбінацію клавіш на цю дію).\n"
+"<b>Праве клацання</b> на іконці дозволяє зупиняти/відновлювати всі "
+"торренти.\n"
+"<b>Перетягування торрент файлу</b> на іконку дозволяє додати торрент до "
+"списку і розпочати завантаження негайно."
 
 #: ../DiskFree/messages:93
 msgid ""
@@ -689,11 +714,8 @@ msgid "Time between two file system's checking :"
 msgstr "Інтервал між перевірками файлових систем :"
 
 #: ../DiskFree/messages:100
-#, fuzzy
 msgid "View available file system's free space."
-msgstr ""
-"Показувати вільне місце в Гігабайтах (відмічено) чи в Мегабайтах (не "
-"відмічено) :"
+msgstr "Переглянути вільний простір файлової системи."
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
@@ -731,11 +753,11 @@ msgstr "Увага: Ім’я чи пароль до Gmail можуть бути
 #: ../Gmail/Gmail:425
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "Ви отримали %s нових листів"
 
 #: ../Gmail/Gmail:427
 msgid "You have 1 new email"
-msgstr ""
+msgstr "Ви отримали 1 новий лист"
 
 #: ../Gmail/Gmail:487
 msgid "Sorry, there was no input!"
@@ -791,8 +813,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"постійна\" сповіщати якщо є хоч один лист; якщо кількість листів "
-"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась"
-"\" (типово)"
+"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась\" "
+"(типово)"
 
 #: ../Gmail/messages:99
 msgid "On which condition?"
@@ -878,6 +900,7 @@ msgstr "короткі відомості"
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
+"Цей додаток буде сповіщати вас про нові листи вашого облікового запису Gmail."
 
 #: ../Google/messages:92
 msgid ""
@@ -886,6 +909,10 @@ msgid ""
 "Each result will be shown as a sub-icon.\n"
 "Left-click to open the result in the default Web Browser."
 msgstr ""
+"Цей додаток дозволяє гуглити прямо з панелі.\n"
+"Лівий клік по головній іконці відкриває діалог пошуку.\n"
+"Результати показуються як суб-іконки.\n"
+"Лівий клік відкриває результат у вікні браузера."
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
@@ -923,6 +950,10 @@ msgid ""
 "Create a new task on middle-click,Create a post-it from a task category.\n"
 "The icon will also control the window of GTG like a normal application icon."
 msgstr ""
+"Цей додаток інтегрує GTG на вашу панель.\n"
+"він може відображати завдання,\n"
+"Створювати нові середнім клацанням і потім групувати їх у категорії.\n"
+"Іконка буде також контролювати вікно GTG як звичайну іконку програми."
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:27
@@ -943,7 +974,8 @@ msgstr "Розмір десклету (ширина х висота)"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В залежності від вашого віконного менеджера, ви можете переміщувати його з "
 "допомогою ALT+ліве клацання"
@@ -1160,6 +1192,9 @@ msgid ""
 " getting values from 'hddtemp' daemon (see: man hddtemp). \n"
 " Left-click shows more information about HD drives."
 msgstr ""
+"Цей додаток показує максимальну температуру жорстких дисків \n"
+" отримуючи інформацію від демона 'hddtemp' (дивись: man hddtemp). \n"
+" Ліве клацання відображає більше інформації про жорсткі диски."
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -1175,6 +1210,14 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Цей додаток дозволяє  <b>керувати KTorrent</b> з панелі.\n"
+"Він може показувати <b>швидкість завантаження</b> на іконці.\n"
+"<b>Середне клацання</b> по іконці надає інформацію про поточні торенти (на "
+"цю дію можна прив'язати комбінацію клавіш).\n"
+"<b>Праве клацання</b> по іконці дозволяє призупиняти/відновлювати всі "
+"торенти.\n"
+"<b>Перетягування торент файлу</b> на іконку додає торент до списку і починає "
+"завантажувати негайно."
 
 #: ../Lancelot/Lancelot:86
 msgid ""
@@ -1189,6 +1232,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
+"Цей додаток дозволяє мати на вашій панелі <b>меню Lancelot</b>.\n"
+"Клацніть по іконці, щоб викликати меню.\n"
+"Праве клацання надає доступ до вікна налаштувань.\n"
+"<u>Примітка:</u> необхідно встановити Lancelot."
 
 #: ../Liferea/messages:93
 msgid "Show in the icon:"
@@ -1204,7 +1251,7 @@ msgstr " Кількість нових повідомлень"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
-msgstr ""
+msgstr "Цей додаток дозволяє взаємодіяти з Liferea"
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -1219,6 +1266,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
+"Цей додаток дозволяє мати на вашій панелі  <b>меню Mint</b>.\n"
+"Клацніть по іконці, щоб викликати меню.\n"
+"Праве клацання надає доступ до вікна налаштувань.\n"
+"<u>Примітка:</u> необхідно встановити меню Mint."
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
@@ -1245,6 +1296,8 @@ msgid ""
 "This applet displays the moon phases and its informations for the current "
 "day, or week from the Northern or Southern hemisphere"
 msgstr ""
+"Цей додаток відображає фази місяця та інформацію на поточний день або "
+"тиждень з Північної або Південної півкулі"
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
@@ -1323,6 +1376,12 @@ msgid ""
 "The icon will also control the window of Pidgin like a normal application "
 "icon."
 msgstr ""
+"Цей додаток інтегрує у вашу панель  Pidgin .\n"
+"він може відображати нові повідомлення,\n"
+"ви можете вибирати розмови з меню правим клацанням,\n"
+"писати повідомлення середнім клацанням,\n"
+"і передивлюватися історію повідомлень з допомогою скролінгу\n"
+"Іконка буде також контролювати вікна Pidgin як звичайну іконку програми."
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
@@ -1384,10 +1443,14 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
+"Додаток \"Цитата дня\" вміє працювати з такими інтернет-ресурсами як:\n"
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
@@ -1398,18 +1461,16 @@ msgid "Disable the screensaver"
 msgstr "Вимкнути заставку"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:185
-#, fuzzy
 msgid "Inhibit for a given time (in minutes)"
-msgstr "Вимкнути на цей проміжок часу (в хвилинах)"
+msgstr "Тривалість стримування заставки (в хвилинах)"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
 msgid "timelength"
 msgstr "проміжок часу"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
-#, fuzzy
 msgid "Inhibit for a given time"
-msgstr "Стримати на цей проміжок часу"
+msgstr "Тривалість стримування"
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
@@ -1433,14 +1494,12 @@ msgstr ""
 "(клас=Cairo-dock та тип=utility)"
 
 #: ../Screensaver_inhibitor/messages:93
-#, fuzzy
 msgid "(in minutes). 0 to never stop automatically"
-msgstr "0, щоб не зупиняти автоматично"
+msgstr "(в хвилинах). 0 постійне стримування"
 
 #: ../Screensaver_inhibitor/messages:95
-#, fuzzy
 msgid "How long should last the inhibition:"
-msgstr "Тривалість стиримування:"
+msgstr "Як довго має тривати стримування:"
 
 #: ../Screensaver_inhibitor/messages:97
 msgid "Shortkey to (de)inhibit the screensaver:"
@@ -1452,6 +1511,9 @@ msgid ""
 "This is especially useful when watching videos on Internet.\n"
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
+"Невеликий додаток <b>стримування заставки</b>.\n"
+"Особливо корисний при перегляді відео з інтернету.\n"
+"<b>Клацніть</b> для стримування/не стримування заставки."
 
 #: ../Translator/Translator:424
 msgid "To"
@@ -1788,6 +1850,20 @@ msgid ""
 "language, press Ctrl + Alt + R\n"
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
+"Цей додаток перекладає слова, цілі речення чи веб-сторінки.\n"
+"Щоб скористатися ним, клацніть на іконці або натсніть комбінацію клавіш, "
+"виділіть текс та натисніть Enter. Перекладений текст буде відображатися у "
+"спливаючому вікні і доступний у буфері обміну, jпросто натисніть Ctrl+v щоб "
+"вставити текст.\n"
+"Ви також можете перетягнути текст на іконку, або перекласти вмість буферу "
+"обміну (середнім клацанням).\n"
+"Ви також можете вибрати мови для перекладу з якої  і на яку fчерез меню або "
+"в налаштуваннях вікна додатку. Комбінації клавіш також доступні для "
+"налаштування.\n"
+"Типово:\n"
+" - Якщо ви хочете перекласти те, що ви читаєте на іноземній мові, натисніть "
+"Ctrl + Alt + R\n"
+" - IЯкщо ви пишете щось на своїй рідній мові, натисніть Ctrl + Alt + W"
 
 #: ../Transmission/Transmission:233
 msgid "Transmission is not running, or is not responding to us."
@@ -1814,6 +1890,14 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Цей додаток дозволяє <b>керувати Transmission</b> з панелі.\n"
+"Він може показувати <b>швидкість завантаження</b> на іконці.\n"
+"<b>Середнє клацання</b> на іконці надає інформацію про поточні торренти "
+"(можна прив'язати комбінацію клавіш на цю дію).\n"
+"<b>Праве клацання</b> на іконці дозволяє зупиняти/відновлювати всі "
+"торренти.\n"
+"<b>Перетягування торрент файлу</b> на іконку дозволяє додати торрент до "
+"списку і розпочати завантаження негайно."
 
 #: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
@@ -2009,6 +2093,18 @@ msgid ""
 "Paste this number on the next dialog box will be shown.\n"
 "The plugin is going to inform that you are successfully connected."
 msgstr ""
+"Цей додато підтримує як Twitter так і Identi.ca. Ви зможете відправляти "
+"твіти, прямі повідомлення, продивлятися новини, ретвітити, і відповідати на "
+"прямі повідомлення. Він сповістить вас коли з'являться нові твіти і прямі "
+"повідомлення.\n"
+"На сам перед, вам необхідно вказати мережу яку необхідно додати, клацнувши "
+"правою клавішею -> Додати обліковий запис -> Twitter чи Identi.ca. Додаток "
+"запитає ваш нік і дозвіл на приєднання до мережі.\n"
+"Буде відкрита сторінка авторизації в мережі.\n"
+"Якщо ви дозволяєте це, то на сторінці буде показаний PIN код, скопіюйте цей "
+"номер\n"
+"Вставте це номер на наступній сторінці.\n"
+"Плагін повідомить вас про успішне підключення."
 
 #: ../WebSearch/messages:91
 msgid "Search engine :"
@@ -2103,6 +2199,25 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Цей додаток надає інтерфейс доступу до деяких пошукових систем, таких як\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
+"ImageShack, and Twitter.\n"
+"Для вибору пошукової системи ви можете використати\n"
+" (1) Праве клацання на головній іконці -> Веб пошук-> (Вибрати пошуковик)\n"
+" (2) Праве клацання -> Налаштування додатку -> Налаштування -> Пошукова "
+"система\n"
+" (3) Скролінг вгору чи вниз на іконці (застосовується лише для першого "
+"пошуку)\n"
+"Ви можете шукати кількома способами\n"
+" (1) Середне клацання на головній іконці\n"
+" (2) Ліве клацання на головній іконці (одразу після вибору пошуковика)\n"
+"Введіть свій запит і перевірте. Кожен результат буде показаний як суб-"
+"іконка.\n"
+"Ліве клацання відкриє результати у типовому браузері\n"
+"Середне клацання на суб-іконці будь-якого результату покаже його опис\n"
+"Скрол вгору покаже наступні результати\n"
+"Скрол вниз покаже попередні результати\n"
+"Ліве клацання на головній іконці покаже статистику пошуку."
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2114,6 +2229,12 @@ msgid ""
 " the command to launch this application, the uptime and the class(es) of "
 "this window."
 msgstr ""
+"WindowsKiller здатний легко вбивати проблематичні вікна.\n"
+"Клацніть лівою клавішею по іконці і просто виберіть вікно, яке завдяє "
+"неприємності, щоб вбити його.\n"
+" (щоб скасувати, клацніть на панелі)\n"
+"Середне клацання надасть деяку інформацію, таку як pid процесу,\n"
+" команду для запуску програми, час роботи і клас(и) цього вікна."
 
 #: ../Xchat/Xchat:257
 msgid "Channels"
@@ -2134,306 +2255,322 @@ msgid ""
 "The icon will also control the window of xchat like a normal application "
 "icon."
 msgstr ""
+"Цей додаток інтегрує на вашу панель Xchat і Xchat-gnome.\n"
+"Він може показувати повідомлення,\n"
+"обраного вами каналу через меню правим клацанням,\n"
+"писати повідомлення по середньому клацанню,\n"
+"і показувати історію повідомлень з допомогою прокручування на іконці\n"
+"Іконка буде керувати вікном xchat як звичайною іконкою програми."
 
 #: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
-msgstr ""
+msgstr "Відкрити папку з відео"
 
 #: ../YoutubeDl/YoutubeDl:303
 msgid "Show Download Status"
-msgstr ""
+msgstr "Показати статус завантаження"
 
 #: ../YoutubeDl/YoutubeDl:311
 msgid "Send abort signal to the downloader. There may be a delay"
-msgstr ""
+msgstr "Надіслати завантажувачу сигнал припинити. Там можлива затримка"
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Встановіть 0, щоб використовувати типовий розмір додатку."
+msgstr "Встановіть 0 , щоб використовувати типовий розмір додатку"
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
 msgstr ""
+"В іншому випадку скористайтесь правим клацанням і ввімкніть завантаження"
 
 #: ../YoutubeDl/messages:91
 msgid "Start downloading videos imediately? :"
-msgstr ""
+msgstr "Відразу розпочати завантаження відео?:"
 
 #: ../YoutubeDl/messages:93
-#, fuzzy
 msgid "in secondds"
-msgstr "в суб-значку."
+msgstr "в секундах"
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
-msgstr ""
+msgstr "Час між оновленнями:"
 
 #: ../YoutubeDl/messages:97
-#, fuzzy
 msgid "Action on middle click:"
-msgstr "клацання середньою кнопкою"
+msgstr "Дія на середне клацання:"
 
 #: ../YoutubeDl/messages:101
-#, fuzzy
 msgid "Show Status"
-msgstr "Показувати попередження?"
+msgstr "Показати статус"
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
 msgstr ""
+"В іншому випадку скористайтесь середнім клацанням, щоб контролювати стан"
 
 #: ../YoutubeDl/messages:105
-#, fuzzy
 msgid "Show download progress on icon? :"
-msgstr "Показувати максимальну температуру на значку?"
+msgstr "Показувати стан завантаження на іконці?"
 
 #: ../YoutubeDl/messages:107
 msgid ""
 "Otherwise just show the plugin name and use middle click to monitor status"
 msgstr ""
+"В іншому випадку просто покажіть ім'я плагіну і використовуючи середнє "
+"клацання контролюйте стан"
 
 #: ../YoutubeDl/messages:109
 msgid "Show download status in icon label when hovering over icon? :"
 msgstr ""
+"Показувати статус завантаження у підписі при наведенні курсора на іконку?:"
 
 #: ../YoutubeDl/messages:111
 msgid "Notification selections"
-msgstr ""
+msgstr "Вибір сповіщень"
 
 #: ../YoutubeDl/messages:113
 msgid "Otherwise quietly start to the next download"
-msgstr ""
+msgstr "В іншому випадку спокійно розпочинати наступне завантаження"
 
 #: ../YoutubeDl/messages:115
 msgid "Show a pop-up message when starting downloads? :"
-msgstr ""
+msgstr "Показувати спливаюче повідомлення при початку завантаження?:"
 
 #: ../YoutubeDl/messages:117
 msgid "Otherwise quietly move finish the download"
-msgstr ""
+msgstr "В іншому випадку спокійно пересуватися до закінчення завантаження"
 
 #: ../YoutubeDl/messages:119
 msgid "Show a pop-up message when download is complete? :"
-msgstr ""
+msgstr "Показувати спливаюче повідомлення при завершенні завантаження?:"
 
 #: ../YoutubeDl/messages:121
 msgid "Otherwise quietly abort the download"
-msgstr ""
+msgstr "В іншому випадку спокійно перервати завантаження"
 
 #: ../YoutubeDl/messages:123
 msgid "Show a pop-up message when download is aborted? :"
-msgstr ""
+msgstr "Показувати спливаюче повідомлення коли завантаження перерване?:"
 
 #: ../YoutubeDl/messages:125
 msgid "Otherwise just quietly add the url to the list"
-msgstr ""
+msgstr "В іншому випадку спокійно додавати посилання до списку"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr ""
+msgstr "Показувати спливаюче повідомлення при додаванні посилання у чергу?:"
 
 #: ../YoutubeDl/messages:129
 msgid ""
 "if pynotify is installed a system notification message will appear, "
 "otherwise the standard dock dialogue messages will be used."
 msgstr ""
+"якщо pynotify встановлений то з'являться  системні сповіщення, в іншому "
+"випадку будуть використовуватися типові сповіщення панелі.."
 
 #: ../YoutubeDl/messages:131
 msgid "Attempt to use desktop notifications instead of dock messages? :"
 msgstr ""
+"Спробувати використовувати сповіщення стільниці замість сповіщень панелі?:"
 
 #: ../YoutubeDl/messages:133
 msgid ""
 "This is usefull if you have long lists of urls to view when you left click "
 "on the icon. Otherwise the standard dialogue message is fine."
 msgstr ""
+"Це корисно коли ви маєте довгий список адрес для перегляду коли ви клацаєте "
+"лівою клавішею. В іншому випадку підійде типовий діалог повідомлення."
 
 #: ../YoutubeDl/messages:135
 msgid "Use list view when URL list exceeds specified number?:"
 msgstr ""
+"Використовувати список, якщо перелік посилань перевищує вказану кількість?:"
 
 #: ../YoutubeDl/messages:137
 msgid ""
 "When the number of URLS exceed this number switch to list view instead of a "
 "regular dialogue"
 msgstr ""
+"Коли кількість посилань перевищує вказане число, перемикати в режим списку "
+"замість регулярного діалогу"
 
 #: ../YoutubeDl/messages:139
 msgid "Use list view when number of URLs exceed:"
-msgstr ""
+msgstr "Використовувати список, коли кількість посилань перевищує:"
 
 #: ../YoutubeDl/messages:141
 msgid "Directory Setup"
-msgstr ""
+msgstr "Каталог встановлення"
 
 #: ../YoutubeDl/messages:143
-#, fuzzy
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
-"Шлях до скрипта створення значка. Залиште порожнім щоб використовувати "
-"типовий."
+"Шлях для збереження відео. Залиште порожнім, щоб використовувати типовий (в "
+"даний час це тека Відео в каталозі користувача)."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
-msgstr ""
+msgstr "Зберегти відео до цієї теки:"
 
 #: ../YoutubeDl/messages:147
-#, fuzzy
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
-"Шлях до скрипта створення значка. Залиште порожнім щоб використовувати "
-"типовий."
+"Шлях для збереження списку посилань. Залиште порожнім, щоб використовувати "
+"типовий (на даний час це домашня тека користувача)"
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
-msgstr ""
+msgstr "Зберегти список посилань до цієї теки:"
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "Параметри завантаження"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
 msgstr ""
+"Встановити параметри завантаження, які буде використовувати бекенд youtubedl"
 
 #: ../YoutubeDl/messages:155
 msgid "Resume partially downloaded files"
-msgstr ""
+msgstr "Відновлення частково завантажених файлів"
 
 #: ../YoutubeDl/messages:157
 msgid "Resume download (--continue)?"
-msgstr ""
+msgstr "Відновити завантаження (--continue)?"
 
 #: ../YoutubeDl/messages:159
 msgid "Ignore errors during download and continue processing."
-msgstr ""
+msgstr "Ігнорувати помилки під час завантаження і продовжувати обробку"
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr ""
+msgstr "Ігнорувати помилки (--ignore-errors)?"
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
-msgstr ""
+msgstr "Якщо файл існує, не намагайтеся замінити файл."
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr ""
+msgstr "Не перезаписувати (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
-msgstr ""
+msgid ""
+"Use the title of the video in the file name used to download the video"
+msgstr "Використовувати назву відео в імені файлу, при  завантаженні відео"
 
 #: ../YoutubeDl/messages:169
 msgid "Use title (--title)?"
-msgstr ""
+msgstr "Використовувати назву (--title)?"
 
 #: ../YoutubeDl/messages:171
 msgid "Which download format to use:"
-msgstr ""
+msgstr "Який формат використовувати при завантаженні:"
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr ""
+msgstr "Вкажіть формат відео"
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
-msgstr ""
+msgstr "Обмеження максимальної якості"
 
 #: ../YoutubeDl/messages:177
 msgid "Download default format"
-msgstr ""
+msgstr "Завантажувати типовий формат"
 
 #: ../YoutubeDl/messages:179
 msgid "Specify the video format (quality) in which to download the video."
-msgstr ""
+msgstr "Вкажіть формат відео (якість) для завантаження відео."
 
 #: ../YoutubeDl/messages:181
 msgid "Video format (--format):"
-msgstr ""
+msgstr "Формат відео (--format):"
 
 #: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
 msgid "H264 - MP4 at 480p"
-msgstr ""
+msgstr "H264 - MP4 в 480p"
 
 #: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
 msgid "H264 - MP4 at 720p"
-msgstr ""
+msgstr "H264 - MP4 в 720p"
 
 #: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
 msgid "H264 - MP4 at 1080p"
-msgstr ""
+msgstr "H264 - MP4 в 1080p"
 
 #: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
 msgid "H264 - FLV at 360p"
-msgstr ""
+msgstr "H264 - FLV в 360p"
 
 #: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
 msgid "H264 - FLV at 480p"
-msgstr ""
+msgstr "H264 - FLV в 480p"
 
 #: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
 msgid "H263 - FLV at 240p"
-msgstr ""
+msgstr "H263 - FLV в 240p"
 
 #: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
 msgid "Webm at 480p"
-msgstr ""
+msgstr "Webm в 480p"
 
 #: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
 msgid "Webm at 720p"
-msgstr ""
+msgstr "Webm в 720p"
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr ""
+msgstr "3GP відео"
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
-msgstr ""
+msgstr "Обмежити максимальну якість відео для скачування."
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr ""
+msgstr "Максимальна якість (--max-quality):"
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
-msgstr ""
+msgstr "Типовий формат для завантаження."
 
 #: ../YoutubeDl/messages:225
 msgid ""
 "Some videos require an account to be downloaded, mostly because they're "
 "flagged as mature content."
 msgstr ""
+"Деякі відео потребують для завантаження обліковий запис, в основному тому, "
+"що вони позначені як відео для дорослих."
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr ""
+msgstr "Використовуйте ім'я користувача і пароль в процесі аутентифікації."
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Ім'я користувача/Пароль"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
-msgstr ""
+msgstr "Вкажіть ім'я користувача облікового запису YouTube."
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Ім'я користувача:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
-msgstr ""
+msgstr "Вказується ім’я користувача як і пароль облікового запису."
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Пароль:"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2455,6 +2592,21 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Інструкція по додаткам"
+"Цей додаток дозволяє користувачеві перетягнути посилання на відео з сайту "
+"Youtube і кинути його на іконку для завантаження . Бекенд завантажувача "
+"базується на youtube-dl.py.\n"
+"\n"
+"Одночасно може завантажуватися лише одне відео і наступні посилання будуть "
+"додаватися до списку. Завершені і перервані завантаження будуть видалятися "
+"зі списку. Цей список може бути збережений у файл і завантажений знову для "
+"подальшого використання.\n"
+"\n"
+"Середню клавішу миші можна налаштувати для відкривання відео чи теки з "
+"відео, або ж для відображення статусу завантаження.\n"
+"\n"
+"Праве клацання передбачає різні дії в залежності від обставин. Якщо папки "
+"для завантаження відео не існує або вона не доступна для запису, то ви не "
+"зможете почати завантаження поки не виправите це.\n"
+"\n"
+"Якщо у списку немає відео то ліве клацання на іконці дозволяє ввести "
+"посилання. В іншому випадку буде відображатися список посилань."

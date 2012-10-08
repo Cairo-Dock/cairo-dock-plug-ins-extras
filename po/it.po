@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-06-08 07:34+0000\n"
-"Last-Translator: Wonderfulheart <Unknown>\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-09-14 07:05+0000\n"
+"Last-Translator: Andrea Bernini <andrea.bernini@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-09-15 05:08+0000\n"
+"X-Generator: Launchpad (build 15944)\n"
+"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -69,7 +71,7 @@ msgstr "Applet"
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
 #: ../YoutubeDl/messages:13
 msgid "Name of the dock it belongs to:"
-msgstr "Nome della dock al quale appartiene:"
+msgstr "Nome della dock alla quale appartiene:"
 
 #: ../GnoMenu/messages:7 ../Calendar/messages:7 ../Cardapio/messages:7
 #: ../Deluge/messages:7 ../DiskFree/messages:7 ../Google/messages:7
@@ -192,8 +194,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
-"+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
+"Alt+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
@@ -272,7 +274,7 @@ msgstr "Visibilità"
 #: ../Twitter/messages:41 ../WebSearch/messages:39
 #: ../WindowsKiller/messages:41 ../Xchat/messages:41
 msgid "Is detached from the dock"
-msgstr "E' staccata dalla dock?"
+msgstr "È staccata dalla dock?"
 
 #: ../GnoMenu/messages:43 ../Calendar/messages:43 ../Cardapio/messages:43
 #: ../Deluge/messages:43 ../DiskFree/messages:43 ../Gmail/messages:39
@@ -396,8 +398,8 @@ msgstr "Scegli un tema decorativo per questa desklet:"
 msgid ""
 "Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
 msgstr ""
-"E' un'immagine che viene mostrata sotto i disegni, come un motivo ad "
-"esempio. Lasciare vuoto per non utilizzarne."
+"È un'immagine che viene mostrata sotto i disegni, ad esempio una cornice. "
+"Lasciare vuoto per non utilizzarne."
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
 #: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:61
@@ -518,8 +520,8 @@ msgid ""
 "Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
 "no image."
 msgstr ""
-"E' un'immagine che viene mostrata sopra i disegni, come un riflesso ad "
-"esempio. Lasciare vuoto per non utilizzarne."
+"È un'immagine che viene mostrata sopra i disegni, ad esempio un riflesso. "
+"Lasciare vuoto per non utilizzarne."
 
 #: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
 #: ../Deluge/messages:87 ../DiskFree/messages:87 ../Gmail/messages:83
@@ -529,7 +531,7 @@ msgstr ""
 #: ../Twitter/messages:87 ../WebSearch/messages:85
 #: ../WindowsKiller/messages:87 ../Xchat/messages:87
 msgid "Foreground image:"
-msgstr "Immagine in superficie:"
+msgstr "Immagine di primo piano:"
 
 #: ../GnoMenu/messages:89 ../Calendar/messages:89 ../Cardapio/messages:89
 #: ../Deluge/messages:89 ../DiskFree/messages:89 ../Gmail/messages:85
@@ -564,6 +566,11 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
+"Questa applet ti permette di avere il <b>Menu GnoMenu</b> nella tua dock.\n"
+"Clic sull'icona per avere il menu a comparsa.\n"
+"Clic destro del mouse ti consente di accedere alle preferenze della "
+"finestra.\n"
+"<u>Nota:</u> necessita dell'installazione di GnoMenu."
 
 #: ../Calendar/messages:93
 msgid "Applications"
@@ -572,12 +579,12 @@ msgstr "Applicazioni"
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
-"Comando per eseguire la tua applicazione-calendario preferita (clic "
+"Comando per eseguire la tua applicazione del calendario preferita (clic "
 "centrale):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
-msgstr "Comando da eseguire quando si rilascia un file nell'icona-calendario:"
+msgstr "Comando da eseguire rilasciando un file sull'icona del calendario:"
 
 #: ../Calendar/messages:99
 msgid "Behaviour"
@@ -588,12 +595,12 @@ msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
-"Il percorso dello script per generare un icona. Lasciare vuoto per "
-"utilizzare quello di default."
+"Il percorso dello script per generare un'icona. Lasciare vuoto per "
+"utilizzare quello predefinito."
 
 #: ../Calendar/messages:103
 msgid "Icon custom script:"
-msgstr "Script per icone personalizzate:"
+msgstr "Script per l'icona personalizzata:"
 
 #: ../Calendar/messages:106
 msgid ""
@@ -604,6 +611,13 @@ msgid ""
 "Scroll Down displays the events of the day\n"
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
+"Questa applet visualizzerà la data odierna.\n"
+"Clic sinistro del mouse per visualizzare il calendario\n"
+"Clic centrale del mouse lancia un'applicazione del calendario di tua scelta\n"
+"Lo scorrimento verso l'alto visualizza il calendario del mese successivo\n"
+"Lo scorrimento verso il basso visualizza gli eventi del giorno\n"
+"Rilasciando un file sull'icona lancia l'applicazione del calendario e lo "
+"importa."
 
 #: ../Cardapio/Cardapio:45
 msgid ""
@@ -619,6 +633,10 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
+"Questa applet ti permette di avere il <b>Menu Cardapio</b> nella tua dock.\n"
+"Clic sull'icona per avere il menu a comparsa.\n"
+"Clic destro del mouse ti consente di modificare i menu. <u>Nota:</u> "
+"necessita dell'installazione di Cardapio."
 
 #: ../Deluge/Deluge:202
 msgid "Deluge is not running, or is not responding to us."
@@ -649,17 +667,16 @@ msgid "Shortkey to pop up the torrents info:"
 msgstr "Scorciatoia per mostrare le informazioni sui torrent:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
-#, fuzzy
 msgid "Show as quick-info:"
-msgstr "informazione"
+msgstr ""
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Nessuno"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Velocità Download"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
@@ -667,7 +684,7 @@ msgstr ""
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Percentuale + numero di torrent attivi"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
@@ -685,6 +702,16 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Questa applet ti permette di <b>controllare Deluge</b> dalla Dock (Necessita "
+"dell'installazione di <i>deluged</i>, il quale è un demone usato per "
+"comunicare tra la Dock e Deluge).\n"
+"Puoi visualizzare la <b>velocità di scaricamento</b> sull'icona.\n"
+"<b>Clic centrale del mouse</b> sull'icona restituisce informazioni sui "
+"torrent attuali (puoi associare una scorciatoia per questa azione).\n"
+"<b>Clic destro del mouse</b> sull'icona ti consente di mettere in pausa o "
+"avviare tutti i torrent.\n"
+"<b>Rilasciare un file torrent</b> sull'icona per aggiungerlo alla lista di "
+"scaricamento ed iniziare immediatamente il download."
 
 #: ../DiskFree/messages:93
 msgid ""
@@ -702,79 +729,82 @@ msgid "Time between two file system's checking :"
 msgstr "Tempo trascorso tra due controlli sul file system:"
 
 #: ../DiskFree/messages:100
-#, fuzzy
 msgid "View available file system's free space."
-msgstr ""
-"Mostra lo spazio sul file system come Giga (selezionato)  o Mega "
-"(deselezionato):"
+msgstr "Visualizza lo spazio libero disponibile nel file system."
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
-msgstr ""
+msgstr "Non vi sono registrazioni per nessun account Gmail."
 
 #: ../Gmail/Gmail:176
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Per favore, inserisci il tuo nome utente Gmail:"
 
 #: ../Gmail/Gmail:184
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Per favore, inserisci la tua password Gmail:"
 
 #: ../Gmail/Gmail:260
 msgid "WARNING: there was an error reading XML content."
-msgstr ""
+msgstr "ATTENZIONE: c'è stato un errore di lettura del contenuto XML."
 
 #: ../Gmail/Gmail:282
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
+"ATTENZIONE: l'applet Gmail non è riuscita a connettersi al feed Gmail atom."
 
 #: ../Gmail/Gmail:297
 msgid "WARNING: Gmail atom feed is badly formed: "
-msgstr ""
+msgstr "ATTENZIONE: il feed Gmail atom è mal formato: "
 
 #: ../Gmail/Gmail:305
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
+"ATTENZIONE: l'Applet Gmail non è fornita di autenticazione diversa da quella "
+"di BASE."
 
 #: ../Gmail/Gmail:318
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
+"ATTENZIONE: il nome utente o la password Gmail potrebbero essere errate."
 
 #: ../Gmail/Gmail:425
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "Hai %s nuove email"
 
 #: ../Gmail/Gmail:427
 msgid "You have 1 new email"
-msgstr ""
+msgstr "Hai una nuova email"
 
 #: ../Gmail/Gmail:487
 msgid "Sorry, there was no input!"
-msgstr ""
+msgstr "Spiacente, non c'è stato nessun input!"
 
 #: ../Gmail/Gmail:496
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Aggiungere o modificare la registrazione"
 
 #: ../Gmail/Gmail:497
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
+"Utilizzare questa opzione per aggiungere o modificare i dettagli "
+"dell'account Gmail."
 
 #: ../Gmail/Gmail:499
 msgid "Check inbox now"
-msgstr ""
+msgstr "Controlla la posta in arrivo adesso"
 
 #: ../Gmail/Gmail:500
 msgid "Check Gmail inbox now if you can't wait."
-msgstr ""
+msgstr "Se non puoi attendere, controlla la posta in arrivo di Gmail adesso."
 
 #: ../Gmail/messages:7 ../Liferea/messages:7 ../Moon/messages:7
 #: ../Screensaver_inhibitor/messages:7 ../Translator/messages:7
 #: ../Twitter/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
-msgstr "Nome dell'icona come apparirà sull'etichetta nella dock:"
+msgstr "Nome dell'icona come apparirà sulla didascalia nella dock:"
 
 #: ../Gmail/messages:13 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -790,11 +820,11 @@ msgstr "Ritardo tra gli aggiornamenti"
 
 #: ../Gmail/messages:93
 msgid "Alerts"
-msgstr "Allerte"
+msgstr "Avvisi"
 
 #: ../Gmail/messages:95
 msgid "Show alerts?"
-msgstr "Mostra allerte?"
+msgstr "Mostro gli avvisi?"
 
 #: ../Gmail/messages:97
 msgid ""
@@ -803,8 +833,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"sempre\" ti informerà ogni volta che il numero di email è diverso da 0; "
-"\"diverso\" lo farà ogni volta che il numero delle email cambia; \"superiore"
-"\" lo farà ogni volta che esse aumentano (predefinito)."
+"\"diverso\" lo farà ogni volta che il numero delle email cambia; "
+"\"superiore\" lo farà ogni volta che esse aumentano (predefinito)."
 
 #: ../Gmail/messages:99
 msgid "On which condition?"
@@ -870,7 +900,8 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -891,6 +922,7 @@ msgstr "informazione"
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
+"Questa applet ti informerà delle nuove email su un unico account Gmail."
 
 #: ../Google/messages:92
 msgid ""
@@ -899,6 +931,11 @@ msgid ""
 "Each result will be shown as a sub-icon.\n"
 "Left-click to open the result in the default Web Browser."
 msgstr ""
+"Questa applet fornisce un'interfaccia per il motore di ricerca Google.\n"
+"Clic sinistro del mouse sull'icona principale per aprire il dialogo di "
+"ricerca.\n"
+"Ciascun risultato sarà mostrato come una sotto-icona.\n"
+"Clic sinistro del mouse per aprire il risultato nel Web Browser predefinito."
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
@@ -936,6 +973,12 @@ msgid ""
 "Create a new task on middle-click,Create a post-it from a task category.\n"
 "The icon will also control the window of GTG like a normal application icon."
 msgstr ""
+"Questa applet integra GTG nella tua dock.\n"
+"Puoi visualizzare i task,\n"
+"Creare un nuovo task al clic centrale del mouse, creare un post-it da una "
+"categoria di task.\n"
+"L'icona controllerà anche la finestra di GTG come una normale icona di "
+"un'applicazione."
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:27
@@ -944,8 +987,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
-"+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:29
@@ -956,7 +999,8 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1172,6 +1216,9 @@ msgid ""
 " getting values from 'hddtemp' daemon (see: man hddtemp). \n"
 " Left-click shows more information about HD drives."
 msgstr ""
+"Questa applet mostra la temperatura massima dei tuoi hard disk \n"
+" rilevando i valori dal demone 'hddtemp' (vedi le pagine man di hddtemp). \n"
+" Clic sinistro del mouse mostra ulteriori informazioni sugli hard disk."
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -1187,6 +1234,14 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Questa applet ti permette di <b>controllare KTorrent</b> dalla Dock.\n"
+"Puoi visualizzare la <b>velocità di scaricamento</b> sull'icona.\n"
+"<b>Clic centrale del mouse</b> sull'icona restituisce le informazioni sui "
+"torrent attuali (puoi associare una scorciatoia per questa azione).\n"
+"<b>Clic destro del mouse</b> sull'icona ti permette di mettere in pausa o "
+"avviare tutti i torrent.\n"
+"<b>Rilascia un file torrent</b> sull'icona per aggiungerlo alla lista di "
+"scaricamento e iniziare immediatamente il suo download."
 
 #: ../Lancelot/Lancelot:86
 msgid ""
@@ -1202,6 +1257,11 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
+"Questa applet ti permette di avere il <b>Menu Lancelot</b> nella tua dock.\n"
+"Clic sull'icona per avere il menu a comparsa.\n"
+"Clic destro del mouse ti consente di accedere alle preferenze della "
+"finestra.\n"
+"<u>Nota:</u> necessita dell'installazione di Lancelot."
 
 #: ../Liferea/messages:93
 msgid "Show in the icon:"
@@ -1217,7 +1277,7 @@ msgstr " Numero dei nuovi messaggi"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
-msgstr ""
+msgstr "Questa applet crea un'interfaccia con Liferea"
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -1233,6 +1293,11 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
+"Questa applet ti permette di avere il <b>Menu Mint</b> nella tua dock.\n"
+"Clic sull'icona per avere il menu a comparsa.\n"
+"Clic destro del mouse ti consente di accedere alle preferenze della "
+"finestra.\n"
+"<u>Nota:</u> necessita dell'installazione di MintMenu."
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
@@ -1259,6 +1324,8 @@ msgid ""
 "This applet displays the moon phases and its informations for the current "
 "day, or week from the Northern or Southern hemisphere"
 msgstr ""
+"Questa applet mostra le fasi lunari e le relative informazioni per il giorno "
+"corrente o settimanalmente, dall'emisfero Nord o da quello Sud"
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
@@ -1337,6 +1404,14 @@ msgid ""
 "The icon will also control the window of Pidgin like a normal application "
 "icon."
 msgstr ""
+"Questa applet integra Pidgin nella tua dock.\n"
+"Puoi visualizzare i nuovi messaggi,\n"
+"selezionare una conversazione dal menu facendo clic destro del mouse,\n"
+"scrivere un messaggio facendo clic centrale del mouse,\n"
+"e visualizzare lo storico dei messaggi scorrendo con la rotellina del mouse "
+"sull'icona.\n"
+"L'icona controllerà anche la finestra di Pidgin come una normale icona di "
+"un'applicazione."
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
@@ -1376,32 +1451,37 @@ msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:111
 msgid "Viedemerde.fr"
-msgstr ""
+msgstr "Viedemerde.fr"
 
 #: ../Quote/messages:113
 msgid "Fmylife.com"
-msgstr ""
+msgstr "Fmylife.com"
 
 #: ../Quote/messages:115
 msgid "Vitadimerda.it"
-msgstr ""
+msgstr "Vitadimerda.it"
 
 #: ../Quote/messages:117
 msgid "100blagues.com"
-msgstr ""
+msgstr "100blagues.com"
 
 #: ../Quote/messages:119
 msgid "Chucknorrisfacts.fr"
-msgstr ""
+msgstr "Chucknorrisfacts.fr"
 
 #: ../Quote/messages:122
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
+"Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
+"fonti internet quali:\n"
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
@@ -1412,18 +1492,16 @@ msgid "Disable the screensaver"
 msgstr "Disabilita il salvaschermo"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:185
-#, fuzzy
 msgid "Inhibit for a given time (in minutes)"
-msgstr "Inibiscilo per un certo periodo (in minuti)"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
 msgid "timelength"
 msgstr "durata"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
-#, fuzzy
 msgid "Inhibit for a given time"
-msgstr "Inibiscilo per un certo periodo"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
@@ -1447,14 +1525,12 @@ msgstr ""
 "Compiz in: (class=Cairo-dock & type=Utility)"
 
 #: ../Screensaver_inhibitor/messages:93
-#, fuzzy
 msgid "(in minutes). 0 to never stop automatically"
-msgstr "0 per non fermarsi mai automaticamente"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:95
-#, fuzzy
 msgid "How long should last the inhibition:"
-msgstr "Durata dell'inibizione:"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:97
 msgid "Shortkey to (de)inhibit the screensaver:"
@@ -1466,6 +1542,9 @@ msgid ""
 "This is especially useful when watching videos on Internet.\n"
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
+"Una piccola applet per <b>inibire il salvaschermo</b>.\n"
+"Questa è particolarmente utile quando guardiamo i video su internet.\n"
+"<b>Clic</b> sull'icona per inibire/abilitare il salvaschermo."
 
 #: ../Translator/Translator:424
 msgid "To"
@@ -1802,6 +1881,20 @@ msgid ""
 "language, press Ctrl + Alt + R\n"
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
+"Questa applet traduce singole parole, frasi complete o pagine web.\n"
+"Per usarla, clicca sull'icona o premi la scorciatoia, dopodiché scrivi il "
+"tuo testo e premi Invio. Il testo tradotto sarà mostrato in una finestra a "
+"comparsa e sarà disponibile negli appunti (clipboard) premendo Ctrl+v per "
+"ricopiarlo.\n"
+"Puoi anche rilasciare del testo sull'icona o tradurre il contenuto della "
+"clipboard attuale (clic centrale).\n"
+"Puoi selezionare le lingue in cui vuoi tradurre attraverso il menu o dalla "
+"finestra di configurazione dell'applet. Possono essere configurate anche "
+"delle scorciatoie.\n"
+"Predefinite:\n"
+" - Se vuoi tradurre qualcosa che stai leggendo in una lingua straniera, "
+"premi Ctrl + Alt + R\n"
+" - Se stai scrivendo qualcosa nella tua madre lingua, premi Ctrl + Alt + W"
 
 #: ../Transmission/Transmission:233
 msgid "Transmission is not running, or is not responding to us."
@@ -1828,6 +1921,14 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Questa applet ti permette di <b>controllare Transmission</b> dalla Dock.\n"
+"Puoi visualizzare la <b>velocità di scaricamento</b> sull'icona.\n"
+"<b>Clic centrale del mouse</b> sull'icona restituisce le informazioni sui "
+"torrent attuali (puoi associare una scorciatoia per questa azione).\n"
+"<b>Clic destro del mouse</b> sull'icona ti permette di mettere in pausa o "
+"avviare tutti i torrent.\n"
+"<b>Rilascia un file torrent</b> sull'icona per aggiungerlo alla lista di "
+"scaricamento e iniziare immediatamente il suo download."
 
 #: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
@@ -1871,6 +1972,8 @@ msgid ""
 "Problem to send this tweet on %s, I think you already tried to send the same "
 "one few minutes ago"
 msgstr ""
+"Problema nell'invio di questo cinguettìo su %s, penso che hai già provato ad "
+"inviarne uno uguale pochi minuti fa"
 
 #: ../Twitter/Twitter:235
 #, python-format
@@ -1883,6 +1986,9 @@ msgid ""
 "Right-click -> Add account -> Twitter.\n"
 "Right-click -> Add account -> Identi.ca."
 msgstr ""
+"Questa applet supporta Twitter e Identi.ca.\n"
+"Clic destro -> Aggiungi account -> Twitter.\n"
+"Clic destro -> Aggiungi account -> Identi.ca."
 
 #: ../Twitter/Twitter:254
 #, python-format
@@ -1890,11 +1996,13 @@ msgid ""
 "%s Applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
+"L'applet %s necessita del tuo nickname e di un'autorizzazione\n"
+"che devi accettare per connetterti al tuo account %s"
 
 #: ../Twitter/Twitter:263
 #, python-format
 msgid "What is your %s nickname?"
-msgstr ""
+msgstr "Qual'è il tuo nickname %s ?"
 
 #: ../Twitter/Twitter:280
 #, python-format
@@ -1903,6 +2011,9 @@ msgid ""
 "on your browser. As soon as you authorize it, copy the PIN number that will "
 "be shown, and go to the next dialog"
 msgstr ""
+"L'applet %s neccessita che tu dia l'autorizzazione. La pagina di "
+"autorizzazione è stata aperta sul tuo browser. Autorizzala quanto prima, "
+"copia il numero PIN che verrà mostrato e vai al successivo dialogo"
 
 #: ../Twitter/Twitter:283
 #, python-format
@@ -1911,10 +2022,13 @@ msgid ""
 "access it with your browser. Copy the PIN number that will be shown as soon "
 "as you authorize"
 msgstr ""
+"L'applet %s neccessita che tu dia l'autorizzazione. Copia l'indirizzo qui "
+"sotto e accedi con il tuo browser. Copia il numero PIN che verrà mostrato e "
+"autorizzala al più presto"
 
 #: ../Twitter/Twitter:293
 msgid "Enter the PIN number shown on the authorization page"
-msgstr ""
+msgstr "Inserisci il numero PIN mostrato nella pagina di autorizzazione"
 
 #: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
@@ -1922,7 +2036,7 @@ msgstr "Collegamento a Twitter avvenuto con successo"
 
 #: ../Twitter/Twitter:308
 msgid "Successfully connected with Identi.ca"
-msgstr ""
+msgstr "Connesso con successo ad Identi.ca"
 
 #: ../Twitter/Twitter:325
 msgid "Direct messages"
@@ -1952,7 +2066,7 @@ msgstr "I miei cinguettìi"
 
 #: ../Twitter/Twitter:383
 msgid "Add account"
-msgstr ""
+msgstr "Aggiungi un account"
 
 #: ../Twitter/Twitter:391 ../WebSearch/messages:111
 msgid "Twitter"
@@ -1960,7 +2074,7 @@ msgstr "Twitter"
 
 #: ../Twitter/Twitter:401
 msgid "Identi.ca"
-msgstr ""
+msgstr "Identi.ca"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
@@ -1977,27 +2091,27 @@ msgstr "Grande"
 
 #: ../Twitter/messages:101
 msgid "Alert when you receive a new tweet or message?"
-msgstr ""
+msgstr "Ti avviso quando viene ricevuto un nuovo cinguettìo o un messaggio?"
 
 #: ../Twitter/messages:103
 msgid "Should the applet play a sound as a notification?"
-msgstr ""
+msgstr "L'applet dovrebbe eseguire un suono ad ogni nuova notificazione?"
 
 #: ../Twitter/messages:107
 msgid "Should the applet animate the icon as a notification?"
-msgstr ""
+msgstr "L'applet dovrebbe animare l'icona ad ogni nuova notificazione?"
 
 #: ../Twitter/messages:109
 msgid "Icon animation?"
-msgstr ""
+msgstr "Animazione dell'icona?"
 
 #: ../Twitter/messages:111
 msgid "Which animation should apply to the icon?"
-msgstr ""
+msgstr "Quale animazione dovrei applicare all'icona?"
 
 #: ../Twitter/messages:113
 msgid "Choose animation:"
-msgstr ""
+msgstr "Scegli l'animazione:"
 
 #: ../Twitter/messages:116
 msgid ""
@@ -2013,6 +2127,20 @@ msgid ""
 "Paste this number on the next dialog box will be shown.\n"
 "The plugin is going to inform that you are successfully connected."
 msgstr ""
+"Questa applet supporta sia Twitter che Identi.ca. È possibile inviare i "
+"cinguettìi (tweet), i messaggi diretti, vedere la linea temporale (timeline) "
+"nonché rispondere ai messaggi diretti. Ti avviserà quando ci sono i nuovi "
+"tweet e i nuovi messaggi diretti.\n"
+"La prima volta è necessario scegliere quale rete aggiungere, poi di volta in "
+"volta tasto destro del mouse -> Aggiungi account -> Twitter o Identi.ca. "
+"L'applet ti chiede il tuo nickname e l'autorizzazione per la connessione "
+"sulle reti.\n"
+"Sarà aperta la pagina di autorizzazione della rete.\n"
+"Non appena autorizzati ti verrà mostrato nella pagina un numero PIN e "
+"copiane il numero\n"
+"Incolla questo numero nella successiva finestra di dialogo che ti sarà "
+"mostrata.\n"
+"Il plugin ti informerà che ti sei collegato correttamente."
 
 #: ../WebSearch/messages:91
 msgid "Search engine :"
@@ -2110,6 +2238,28 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Questa applet fornisce un'interfaccia ad alcuni motori di ricerca come\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
+"ImageShack e Twitter.\n"
+"Per scegliere il motore di ricerca è possibile fare:\n"
+" (1) Clic destro sull'icona principale -> WebSearch -> (Scegli il motore)\n"
+" (2) Clic destro del mouse -> Configura questa applet -> Configurazione -> "
+"Motore di ricerca\n"
+" (3) Scorrere con la rotellina del mouse verso l'alto o verso il basso sopra "
+"l'icona (applicabile solo per la prima ricerca)\n"
+"È possibile cercare in tre modi:\n"
+" (1) Clic centrale del mouse sull'icona principale\n"
+" (2) Clic sinistro del mouse sull'icona principale (subito dopo la scelta di "
+"un nuovo motore)\n"
+"Digitare la domanda e confermare. Ogni risultato viene mostrato come una "
+"sotto-icona.\n"
+"Clic sinistro del mouse per aprire il risultato nel Web Browser predefinito\n"
+"Clic centrale del mouse sulla sotto-cona di un risultato per mostrare la sua "
+"descrizione\n"
+"Scorrere verso l'alto per rilevare i risultati successivi\n"
+"Scorrere verso il basso per rilevare i risultati precedenti\n"
+"Clic sinistro del mouse sull'icona principale per visualizzare le "
+"statistiche di ricerca"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2121,6 +2271,14 @@ msgid ""
 " the command to launch this application, the uptime and the class(es) of "
 "this window."
 msgstr ""
+"WindowsKiller è in grado con facilità di uccidere (kill) le finestre aventi "
+"aluni problemi.\n"
+"Clic sinistro del mouse sulla sua icona e selezionare semplicemente la "
+"finestra che causa problemi per ucciderla.\n"
+" (selezionare la dock per annullare)\n"
+"Clic centrale del mouse ti darà alcune informazioni come il pid,\n"
+" il comando per lanciare questa applicazione, l'uptime e la classe(i) di "
+"questa finestra."
 
 #: ../Xchat/Xchat:257
 msgid "Channels"
@@ -2140,306 +2298,329 @@ msgid ""
 "The icon will also control the window of xchat like a normal application "
 "icon."
 msgstr ""
+"Questa applet integra Xchat e Xchat-gnome nella tua dock.\n"
+"È possibile visualizzare i nuovi messaggi,\n"
+"puoi selezionare un canale dal menu con il clic destro del mouse,\n"
+"scrivere un messaggio con il clic centrale del mouse\n"
+"e visualizzare la cronologia dei messaggi scorrendo sull'icona.\n"
+"Dall'icona sarà inoltre possibile controllare la finestra di xchat come "
+"un'icona di una normale applicazione."
 
 #: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
-msgstr ""
+msgstr "Apri la Cartella Video"
 
 #: ../YoutubeDl/YoutubeDl:303
 msgid "Show Download Status"
-msgstr ""
+msgstr "Mostra lo Stato del Download"
 
 #: ../YoutubeDl/YoutubeDl:311
 msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
+"Invia un segnale di interruzione al downloader. Potrebbe esserci un ritardo."
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Imposta a 0 per usare la dimensione predefinita dell'applet"
+msgstr "Imposta a 0 per usare la dimensione predefinita dell'applet"
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
-msgstr ""
+msgstr "Altrimenti utilizza il tasto destro del mouse e attiva i download"
 
 #: ../YoutubeDl/messages:91
 msgid "Start downloading videos imediately? :"
-msgstr ""
+msgstr "Iniziare a scaricare i video immediatamente? :"
 
 #: ../YoutubeDl/messages:93
-#, fuzzy
 msgid "in secondds"
-msgstr "nelle sotto-icone."
+msgstr "in secondi"
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
-msgstr ""
+msgstr "Intervallo fra gli aggiornamenti:"
 
 #: ../YoutubeDl/messages:97
-#, fuzzy
 msgid "Action on middle click:"
-msgstr "clic centrale"
+msgstr "Azione al clic centrale del mouse:"
 
 #: ../YoutubeDl/messages:101
-#, fuzzy
 msgid "Show Status"
-msgstr "Mostra allerte?"
+msgstr "Mostra lo stato"
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
 msgstr ""
+"Altrimenti basta usare il tasto centrale del mouse per monitorare lo stato"
 
 #: ../YoutubeDl/messages:105
-#, fuzzy
 msgid "Show download progress on icon? :"
-msgstr "Mostro la temperatura massima sull'icona?"
+msgstr "Mostro l'avanzamento del download sull'icona?:"
 
 #: ../YoutubeDl/messages:107
 msgid ""
 "Otherwise just show the plugin name and use middle click to monitor status"
 msgstr ""
+"Altrimenti mostra solo il nome del plugin e usa il tasto centrale del mouse "
+"per monitorare lo stato"
 
 #: ../YoutubeDl/messages:109
 msgid "Show download status in icon label when hovering over icon? :"
 msgstr ""
+"Mostro lo stato del download nell'etichetta dell'icona quando si sorvola su "
+"di essa?:"
 
 #: ../YoutubeDl/messages:111
 msgid "Notification selections"
-msgstr ""
+msgstr "Notifica delle selezioni"
 
 #: ../YoutubeDl/messages:113
 msgid "Otherwise quietly start to the next download"
-msgstr ""
+msgstr "Altrimenti iniziare tranquillamente al prossimo download"
 
 #: ../YoutubeDl/messages:115
 msgid "Show a pop-up message when starting downloads? :"
-msgstr ""
+msgstr "Mostro un messaggio a comparsa all'avvio dei download?:"
 
 #: ../YoutubeDl/messages:117
 msgid "Otherwise quietly move finish the download"
-msgstr ""
+msgstr "Altrimenti spostare tranquillamente il download alla fine"
 
 #: ../YoutubeDl/messages:119
 msgid "Show a pop-up message when download is complete? :"
-msgstr ""
+msgstr "Mostro un messaggio a comparsa quando il download è completo?:"
 
 #: ../YoutubeDl/messages:121
 msgid "Otherwise quietly abort the download"
-msgstr ""
+msgstr "Altrimenti semplicemente interrompi il download"
 
 #: ../YoutubeDl/messages:123
 msgid "Show a pop-up message when download is aborted? :"
-msgstr ""
+msgstr "Mostro un messaggio a comparsa quando il download viene interrotto?:"
 
 #: ../YoutubeDl/messages:125
 msgid "Otherwise just quietly add the url to the list"
-msgstr ""
+msgstr "Altrimenti semplicemente aggiungi solo l'URL alla lista"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
 msgstr ""
+"Mostro un messaggio a comparsa quando si aggiunge un URL alla coda della "
+"lista?:"
 
 #: ../YoutubeDl/messages:129
 msgid ""
 "if pynotify is installed a system notification message will appear, "
 "otherwise the standard dock dialogue messages will be used."
 msgstr ""
+"Se è installato pynotify apparirà un messaggio di notifica di sistema, "
+"altrimenti saranno utilizzati i messaggi di dialogo standard della dock."
 
 #: ../YoutubeDl/messages:131
 msgid "Attempt to use desktop notifications instead of dock messages? :"
 msgstr ""
+"Provo ad usare le notifiche del desktop invece dei messaggi della dock?:"
 
 #: ../YoutubeDl/messages:133
 msgid ""
 "This is usefull if you have long lists of urls to view when you left click "
 "on the icon. Otherwise the standard dialogue message is fine."
 msgstr ""
+"Questo è utile se hai lunghe liste di URL da visualizzare facendo clic "
+"sinistro sull'icona. Altrimenti è meglio il messaggio di dialogo standard."
 
 #: ../YoutubeDl/messages:135
 msgid "Use list view when URL list exceeds specified number?:"
 msgstr ""
+"Usare la vista ad elenco quando una lista di URL eccede il numero "
+"specificato?:"
 
 #: ../YoutubeDl/messages:137
 msgid ""
 "When the number of URLS exceed this number switch to list view instead of a "
 "regular dialogue"
 msgstr ""
+"Quando il numero delle URL eccede questo numero commuta alla vista ad elenco "
+"piuttosto che al dialogo regolare"
 
 #: ../YoutubeDl/messages:139
 msgid "Use list view when number of URLs exceed:"
-msgstr ""
+msgstr "Usa la vista ad elenco quando il numero delle URL eccede:"
 
 #: ../YoutubeDl/messages:141
 msgid "Directory Setup"
-msgstr ""
+msgstr "Impostazione Directory"
 
 #: ../YoutubeDl/messages:143
-#, fuzzy
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
-"Il percorso dello script per generare un icona. Lasciare vuoto per "
-"utilizzare quello di default."
+"Il percorso in cui salvare il video. Lascia vuoto per usare quello "
+"predefinito (attualmente nella directory Video degli utenti)."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
-msgstr ""
+msgstr "Salva i video in questa directory:"
 
 #: ../YoutubeDl/messages:147
-#, fuzzy
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
-"Il percorso dello script per generare un icona. Lasciare vuoto per "
-"utilizzare quello di default."
+"Il percorso dove salvare l'elenco delle URL. Lascia vuoto per utilizzare "
+"quello predefinito (attualmente nella directory Home degli utenti)."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
-msgstr ""
+msgstr "Salva l'elenco delle URL in questa directory:"
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "Opzioni di Download"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
 msgstr ""
+"Imposta le opzioni di download che saranno utilizzate per il backend "
+"youtubedl"
 
 #: ../YoutubeDl/messages:155
 msgid "Resume partially downloaded files"
-msgstr ""
+msgstr "Riprendi il download dei file parzialmente scaricati"
 
 #: ../YoutubeDl/messages:157
 msgid "Resume download (--continue)?"
-msgstr ""
+msgstr "Riprendo il download (--continue)?"
 
 #: ../YoutubeDl/messages:159
 msgid "Ignore errors during download and continue processing."
-msgstr ""
+msgstr "Ignora gli errori durante il download e continua l'elaborazione."
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr ""
+msgstr "Ignoro gli errori (--ignore-errors)?"
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
-msgstr ""
+msgstr "Se il file esiste non provare a sovrascriverlo."
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr ""
+msgstr "Non sovrascrivere (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
-msgstr ""
+msgid ""
+"Use the title of the video in the file name used to download the video"
+msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
 
 #: ../YoutubeDl/messages:169
 msgid "Use title (--title)?"
-msgstr ""
+msgstr "Uso il titolo (--title)?"
 
 #: ../YoutubeDl/messages:171
 msgid "Which download format to use:"
-msgstr ""
+msgstr "Formato per il download da utilizzare:"
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr ""
+msgstr "Specifica il formato del video"
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
-msgstr ""
+msgstr "Limita la qualità massima"
 
 #: ../YoutubeDl/messages:177
 msgid "Download default format"
-msgstr ""
+msgstr "Formato predefinito per il download"
 
 #: ../YoutubeDl/messages:179
 msgid "Specify the video format (quality) in which to download the video."
-msgstr ""
+msgstr "Specifica il formato nel quale scaricare il video (qualità)."
 
 #: ../YoutubeDl/messages:181
 msgid "Video format (--format):"
-msgstr ""
+msgstr "Formato del video (--format):"
 
 #: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
 msgid "H264 - MP4 at 480p"
-msgstr ""
+msgstr "H264 - MP4 a 480p"
 
 #: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
 msgid "H264 - MP4 at 720p"
-msgstr ""
+msgstr "H264 - MP4 a 720p"
 
 #: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
 msgid "H264 - MP4 at 1080p"
-msgstr ""
+msgstr "H264 - MP4 a 1080p"
 
 #: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
 msgid "H264 - FLV at 360p"
-msgstr ""
+msgstr "H264 - FLV a 360p"
 
 #: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
 msgid "H264 - FLV at 480p"
-msgstr ""
+msgstr "H264 - FLV a 480p"
 
 #: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
 msgid "H263 - FLV at 240p"
-msgstr ""
+msgstr "H263 - FLV a 240p"
 
 #: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
 msgid "Webm at 480p"
-msgstr ""
+msgstr "Webm a 480p"
 
 #: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
 msgid "Webm at 720p"
-msgstr ""
+msgstr "Webm a 720p"
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr ""
+msgstr "Video 3GP"
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
-msgstr ""
+msgstr "Limite della qualità massima dei video da scaricare."
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr ""
+msgstr "Qualità massima (--max-quality):"
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
-msgstr ""
+msgstr "Scarica nel formato predefinito."
 
 #: ../YoutubeDl/messages:225
 msgid ""
 "Some videos require an account to be downloaded, mostly because they're "
 "flagged as mature content."
 msgstr ""
+"Alcuni video richiedono un account per essere scaricati, soprattutto perché "
+"sono contrassegnati come contenuti per adulti."
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
 msgstr ""
+"Utilizza il processo di autenticazione del Nome Utente e della Password."
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Nome Utente/Password"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
-msgstr ""
+msgstr "Specificare il nome utente di youtube."
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Nome Utente:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
-msgstr ""
+msgstr "Come il Nome Utente, specifica la password dell'account."
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Password:"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2461,6 +2642,22 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Manuale Applet"
+"Questa applet consente all'utente di trascinare i link Youtube dal sito "
+"Youtube e rilasciarli sull'icona per scaricare. Il backend di scaricamento è "
+"basato su youtube-dl.py.\n"
+"\n"
+"Verrà scaricato un solo video alla volta e ciascun URL verrà aggiunto alla "
+"lista. Quando il video viene scaricato o interrotto l'URL verrà rimosso "
+"dalla lista. La lista può essere salvata in un file e caricata nuovamente "
+"per un uso futuro.\n"
+"\n"
+"Il pulsante centrale del mouse può essere configurato per aprire la cartella "
+"video o per mostrare lo stato del download.\n"
+"\n"
+"Clic destro consente varie opzioni a seconda di ciò che sta accadendo in "
+"quel momento. Se la tua cartella video non è valida o non è scrivibile non "
+"potrai scaricare fino a quando non verrà corretta.\n"
+"\n"
+"Se non ci sono video nella lista, cliccando con il tasto sinistro sull'icona "
+"ti permette di inserire una URL. Altrimenti sarà visualizzato l'elenco delle "
+"URL."

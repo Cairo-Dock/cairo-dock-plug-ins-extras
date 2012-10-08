@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-04-23 19:54+0000\n"
-"Last-Translator: Milan Slovák <Unknown>\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-09-10 02:57+0000\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
-"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-09-11 05:05+0000\n"
+"X-Generator: Launchpad (build 15924)\n"
+"Language: sk\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu nie je nainštalované. Prosím nainštalujte ho pred spustením tohto "
 "apletu."
@@ -636,9 +638,8 @@ msgid "Shortkey to pop up the torrents info:"
 msgstr "Klávesová skratka na informáciu o torente"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
-#, fuzzy
 msgid "Show as quick-info:"
-msgstr "rýchle info"
+msgstr ""
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
@@ -688,10 +689,8 @@ msgid "Time between two file system's checking :"
 msgstr "Čas medzi kontrolou dvoch systémových súborov:"
 
 #: ../DiskFree/messages:100
-#, fuzzy
 msgid "View available file system's free space."
 msgstr ""
-"Zobraziť dostupné miesto ako Giga (zaškrtnuté) alebo Mega (nezaškrtnuté):"
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
@@ -941,7 +940,8 @@ msgstr "Rozmer deskletu (šírka x výška):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "V závislosti od správcu okien môžete pohybovať pomocou ALT + ľavé klinutie"
 
@@ -1377,9 +1377,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
@@ -1391,18 +1391,16 @@ msgid "Disable the screensaver"
 msgstr "Zakázať šetrič obrazovky"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:185
-#, fuzzy
 msgid "Inhibit for a given time (in minutes)"
-msgstr "Zakázané pre danú časovú dĺžku (v minútach)"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
 msgid "timelength"
 msgstr "Dĺžka času"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
-#, fuzzy
 msgid "Inhibit for a given time"
-msgstr "Zakázané pre danú časovú dĺžku"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
@@ -1426,14 +1424,12 @@ msgstr ""
 "(class=Cairo-dock & type=utility)"
 
 #: ../Screensaver_inhibitor/messages:93
-#, fuzzy
 msgid "(in minutes). 0 to never stop automatically"
-msgstr "0 pre vypnutie automatického zastavenia"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:95
-#, fuzzy
 msgid "How long should last the inhibition:"
-msgstr "Časová dĺžka pre potlačenie:"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:97
 msgid "Shortkey to (de)inhibit the screensaver:"
@@ -2129,9 +2125,8 @@ msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Nastavte na 0 pre použitie predvolenej veľkosti appletu"
+msgstr ""
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
@@ -2142,32 +2137,28 @@ msgid "Start downloading videos imediately? :"
 msgstr ""
 
 #: ../YoutubeDl/messages:93
-#, fuzzy
 msgid "in secondds"
-msgstr "v čiastkových ikonách."
+msgstr ""
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
 msgstr ""
 
 #: ../YoutubeDl/messages:97
-#, fuzzy
 msgid "Action on middle click:"
-msgstr "kliknutie stredným tlačítkom"
+msgstr ""
 
 #: ../YoutubeDl/messages:101
-#, fuzzy
 msgid "Show Status"
-msgstr "Zobraziť upozornenia?"
+msgstr ""
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
 msgstr ""
 
 #: ../YoutubeDl/messages:105
-#, fuzzy
 msgid "Show download progress on icon? :"
-msgstr "Zobraziť maximálnu teplotu na ikone?"
+msgstr ""
 
 #: ../YoutubeDl/messages:107
 msgid ""
@@ -2249,26 +2240,20 @@ msgid "Directory Setup"
 msgstr ""
 
 #: ../YoutubeDl/messages:143
-#, fuzzy
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
-"Cesta ku skriptu na vytváranie ikony. Nechajte prázdne pre použitie "
-"predvoleného."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
 msgstr ""
 
 #: ../YoutubeDl/messages:147
-#, fuzzy
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
-"Cesta ku skriptu na vytváranie ikony. Nechajte prázdne pre použitie "
-"predvoleného."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
@@ -2307,7 +2292,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2436,6 +2422,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Príručka appletov"

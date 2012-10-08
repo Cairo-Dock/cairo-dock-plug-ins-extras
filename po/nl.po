@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-06-26 20:19+0000\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-09-15 09:57+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-09-16 04:44+0000\n"
+"X-Generator: Launchpad (build 15944)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -559,6 +561,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
+"Met dit applet kunt u het <b>GnoMenu--menu</b> in uw dock plaatsen.\n"
+"Klik op het pictogram om het menu te tonen.\n"
+"Met een rechtermuisklik krijgt u toegang tot het voorkeurenvenster.\n"
+"<u>Let op:</u> u dient GnoMenu geïnstalleerd te hebben."
 
 #: ../Calendar/messages:93
 msgid "Applications"
@@ -567,7 +573,7 @@ msgstr "Toepassingen"
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
-"Opdracht om uw favoriete agendabeheertoepassing te starten (middelklik):"
+"Opdracht om de agendabeheertoepassing te starten van uw keuze (middelklik):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
@@ -600,6 +606,13 @@ msgid ""
 "Scroll Down displays the events of the day\n"
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
+"Dit applet zal de huidige datum weergeven.\n"
+"Klik met links om de agenda te tonen\n"
+"Een middelklik start de agendabeheertoepassing van uw keuze\n"
+"Scrol omhoog voor de agenda van volgende maand\n"
+"Scrol omlaag voor de gebeurtenissen van vandaag\n"
+"Het laten vallen van een bestand op het pictogram, zal de "
+"agendabeheertoepassing openen en deze zal het bestand importeren."
 
 #: ../Cardapio/Cardapio:45
 msgid ""
@@ -615,6 +628,10 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
+"Met dit applet kunt u het <b>Cardapio-menu</b> in uw dock plaatsen.\n"
+"Klik op het pictogram om het menu te tonen.\n"
+"Met een rechtermuisklik kunt u de menu's bewerken.\n"
+"<u>Let op:</u> u dient Cardapio geïnstalleerd te hebben."
 
 #: ../Deluge/Deluge:202
 msgid "Deluge is not running, or is not responding to us."
@@ -645,29 +662,28 @@ msgid "Shortkey to pop up the torrents info:"
 msgstr "Sneltoets voor de torrent-info:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
-#, fuzzy
 msgid "Show as quick-info:"
-msgstr "snel-info"
+msgstr "Tonen als snel-info:"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Geen"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Downloadsnelheid"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "Percentage gereed"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Percentage + aantal actieve torrents"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Percentage gereed tonen als voortgangsbalk"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -681,6 +697,16 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient "
+"<i>deluged</i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de "
+"communicatie tussen het dock en Deluge).\n"
+"Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
+"<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
+"(u kunt hier een sneltoets voor instellen).\n"
+"<b>Rechtermuisklik</b> op het pictogram geeft u de mogelijkheid om alle "
+"torrents te pauzeren/starten.\n"
+"<b>Laat een torrent-bestand vallen</b> op het pictogram om het aan de lijst "
+"toe te voegen en het downloaden direct te starten."
 
 #: ../DiskFree/messages:93
 msgid ""
@@ -698,11 +724,8 @@ msgid "Time between two file system's checking :"
 msgstr "Tijd tussen twee controles van het bestandssysteem :"
 
 #: ../DiskFree/messages:100
-#, fuzzy
 msgid "View available file system's free space."
-msgstr ""
-"Beschikbare bestandsruimte systeem tonen als Giga (ingeschakeld) of Mega "
-"(uitgeschakeld) :"
+msgstr "Bekijk vrije ruimte systeembestand."
 
 #: ../Gmail/Gmail:134 ../Gmail/Gmail:140 ../Gmail/Gmail:149
 msgid "There is no subscription to any Gmail account."
@@ -745,11 +768,11 @@ msgstr ""
 #: ../Gmail/Gmail:425
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "U heeft %s nieuwe e-mails"
 
 #: ../Gmail/Gmail:427
 msgid "You have 1 new email"
-msgstr ""
+msgstr "U heeft 1 nieuwe e-mail"
 
 #: ../Gmail/Gmail:487
 msgid "Sorry, there was no input!"
@@ -866,7 +889,7 @@ msgstr ""
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
-msgstr "Pad geluid :"
+msgstr "Pad naar geluidsbestand:"
 
 #: ../Gmail/messages:127
 msgid "Display a counter on the icon?"
@@ -895,6 +918,7 @@ msgstr "snel-info"
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
+"Dit applet zal u waarschuwen, bij nieuwe e-mails van één enkel Gmail-account."
 
 #: ../Google/messages:92
 msgid ""
@@ -903,6 +927,10 @@ msgid ""
 "Each result will be shown as a sub-icon.\n"
 "Left-click to open the result in the default Web Browser."
 msgstr ""
+"Dit applet voorziet in een interface voor Google-zoekmachine.\n"
+"Klik met links op het hoofdpictogram om de zoekdialoog te openen.\n"
+"Elk resultaat zal getoond worden als een sub-pictogram.\n"
+"Klik met links om het resultaat in de standaardwebbrowser te openen."
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
@@ -940,6 +968,12 @@ msgid ""
 "Create a new task on middle-click,Create a post-it from a task category.\n"
 "The icon will also control the window of GTG like a normal application icon."
 msgstr ""
+"Dit applet integreert GTG in uw dock.\n"
+"Het kan taken laten zien,\n"
+"Maak een nieuwe taak aan met een middelklik en maak een post-it van een "
+"taakcategorie.\n"
+"Het pictogram kan het GTG-venster beheren zoals een normale "
+"toepassingspictogram."
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:27
@@ -960,7 +994,8 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1181,6 +1216,10 @@ msgid ""
 " getting values from 'hddtemp' daemon (see: man hddtemp). \n"
 " Left-click shows more information about HD drives."
 msgstr ""
+"Dit applet toont de maximale temperatuur van uw harde schijven \n"
+" waarden woorden verkregen van de 'hddtemp' daemon (zie: handleiding "
+"hddtemp). \n"
+" Klik met links voor meer informatie over de harde schijven.."
 
 #: ../KTorrent/KTorrent:323
 msgid "Suspend all torrents"
@@ -1196,6 +1235,14 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Dit applet laat u <b>KTorrent</b> beheren vanuit het dock.\n"
+"Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
+"<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
+"(u kunt hier een sneltoets voor instellen).\n"
+"<b>Rechtermuisklik</b> op het pictogram geeft u de mogelijkheid om alle "
+"torrents te pauzeren/starten.\n"
+"<b>Laat een torrent-bestand vallen</b> op het pictogram om het aan de lijst "
+"toe te voegen en het downloaden direct te starten."
 
 #: ../Lancelot/Lancelot:86
 msgid ""
@@ -1211,6 +1258,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
+"Met dit applet kunt u het <b>Lancelot-menu</b> in uw dock plaatsen.\n"
+"Klik op het pictogram om het menu te tonen.\n"
+"Met een rechtermuisklik krijgt u toegang tot het voorkeurenvenster.\n"
+"<u>Let op:</u> u dient Lancelot geïnstalleerd te hebben."
 
 #: ../Liferea/messages:93
 msgid "Show in the icon:"
@@ -1226,7 +1277,7 @@ msgstr " Aantal nieuwe berichten"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
-msgstr ""
+msgstr "Dit applet voorziet in een interface voor Liferea"
 
 #: ../MintMenu/MintMenu:145
 msgid ""
@@ -1242,6 +1293,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
+"Met dit applet kunt u het <b>Mint--menu</b> in uw dock plaatsen.\n"
+"Klik op het pictogram om het menu te tonen.\n"
+"Met een rechtermuisklik krijgt u toegang tot het voorkeurenvenster.\n"
+"<u>Let op:</u> u dient MintMenu geïnstalleerd te hebben."
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
@@ -1268,6 +1323,8 @@ msgid ""
 "This applet displays the moon phases and its informations for the current "
 "day, or week from the Northern or Southern hemisphere"
 msgstr ""
+"Dit applet toont de maanstanden en informatie voor de huidige dag of week op "
+"het Noordelijk of Zuidelijk halfrond."
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
@@ -1347,6 +1404,13 @@ msgid ""
 "The icon will also control the window of Pidgin like a normal application "
 "icon."
 msgstr ""
+"Dit applet integreert Pidgin in uw dock.\n"
+"Het kan nieuwe berichten laten zien,\n"
+"een conversatie selecteren uit het menu met een rechtermuisklik,\n"
+"een bericht schrijven bij een middelklik,\n"
+"de berichtgeschiedenis tonen door te scrollen op het pictogram\n"
+"Het pictogram kan het Pidgin-venster beheren zoals een normale "
+"toepassingspictogram."
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
@@ -1408,10 +1472,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
+"Dit applet laat u een \"Citaat van de dag\" zien, verkregen van sommige "
+"internetbronnen zoals:\n"
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, en Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
 msgid "Screensaver is currently disabled"
@@ -1422,18 +1491,16 @@ msgid "Disable the screensaver"
 msgstr "Schermbeveiliging uitschakelen"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:185
-#, fuzzy
 msgid "Inhibit for a given time (in minutes)"
-msgstr "Inschakelen na een bepaalde tijdsduur (in minuten)"
+msgstr "Voor een bepaalde tijd blokkeren (in minuten)"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:192
 msgid "timelength"
 msgstr "tijdsduur"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:198
-#, fuzzy
 msgid "Inhibit for a given time"
-msgstr "Inschakelen na een bepaalde tijdsduur"
+msgstr "Voor een bepaalde tijd blokkeren"
 
 #: ../Screensaver_inhibitor/messages:9 ../Screensaver_inhibitor/messages:13
 #: ../Translator/messages:11
@@ -1447,7 +1514,7 @@ msgstr "Bestandsnaam afbeelding:"
 #: ../Screensaver_inhibitor/messages:15
 msgid "Image filename when the screensaver is inhibited:"
 msgstr ""
-"Afbeeldingsbestandsnaam wanneer de schermbeveiliging wordt ingeschakeld:"
+"Afbeeldingsbestandsnaam wanneer de schermbeveiliging wordt geblokkeerd:"
 
 #: ../Screensaver_inhibitor/messages:33
 msgid ""
@@ -1458,18 +1525,16 @@ msgstr ""
 "(class=Cairo-dock & type=Utility)"
 
 #: ../Screensaver_inhibitor/messages:93
-#, fuzzy
 msgid "(in minutes). 0 to never stop automatically"
-msgstr "0 om nooit automatisch te stoppen"
+msgstr "(in minuten). 0 om nooit automatisch te stoppen"
 
 #: ../Screensaver_inhibitor/messages:95
-#, fuzzy
 msgid "How long should last the inhibition:"
-msgstr "Tijdsduur vooraf aan de inschakeling:"
+msgstr "Hoe lang moet de blokkering duren:"
 
 #: ../Screensaver_inhibitor/messages:97
 msgid "Shortkey to (de)inhibit the screensaver:"
-msgstr "Sneltoets om de schermbeveiliging in- of uit te schakelen:"
+msgstr "Sneltoets om de schermbeveiliging te (de)blokkeren:"
 
 #: ../Screensaver_inhibitor/messages:100
 msgid ""
@@ -1477,6 +1542,9 @@ msgid ""
 "This is especially useful when watching videos on Internet.\n"
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
+"Een klein applet om de <b>schermbeveiliging</b> te blokkeren.\n"
+"Dit is vooral handig wanneer u video's op het internet bekijkt.\n"
+"<b>Klik</b> op het pictogram om de schermbeveiliging te (de)blokkeren."
 
 #: ../Translator/Translator:424
 msgid "To"
@@ -1813,6 +1881,21 @@ msgid ""
 "language, press Ctrl + Alt + R\n"
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
+"Dit applet vertaalt enkele woorden, complete zinnen, of websites.\n"
+"Klik op het pictogram of druk op de sneltoets om het te openen, voer daaarna "
+"uw tekst in en druk op Enter. De vertaalde tekst zal getoond worden in een "
+"pop-upvenster en zal beschikbaar zijn in het klembord, druk eenvoudigweg op "
+"Ctrl+v om het te plakken.\n"
+"U kunt ook tekst naar het pictogram verslepen, of de huidige klembordinhoud "
+"vertalen (middelklik).\n"
+"U kunt de taal, die u wilt vertalen en waarnaar, selecteren in het menu, of "
+"in het configuratievenster van het applet. U kunt hiervoor ook sneltoetsen "
+"instellen.\n"
+"Standaardsneltoetsen:\n"
+" - Wanneer u iets wilt vertalen vanuit een vreemde taal, druk dan op Ctrl + "
+"Alt + R\n"
+" - Wanneer u iets wilt vertalen vanuit uw eigen taal, druk dan op Ctrl + Alt "
+"+ W"
 
 #: ../Transmission/Transmission:233
 msgid "Transmission is not running, or is not responding to us."
@@ -1840,6 +1923,14 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Dit applet laat u <b>Transmission</b> beheren vanuit het dock.\n"
+"Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
+"<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
+"(u kunt hier een sneltoets voor instellen).\n"
+"<b>Rechtermuisklik</b> op het pictogram geeft u de mogelijkheid om alle "
+"torrents te pauzeren/starten.\n"
+"<b>Laat een torrent-bestand vallen</b> op het pictogram om het aan de lijst "
+"toe te voegen en het downloaden direct te starten."
 
 #: ../Twitter/Twitter:113
 msgid "Oh, dear, your timeline is empty :-("
@@ -2038,6 +2129,19 @@ msgid ""
 "Paste this number on the next dialog box will be shown.\n"
 "The plugin is going to inform that you are successfully connected."
 msgstr ""
+"Dit applet ondersteunt Twitter en Identi.ca. U kunt hiermee tweets en "
+"privéberichten versturen, uw tijdlijn bekijken, retweeten en privéberichten "
+"beantwoorden.. Het zal een melding geven wanneer u nieuwe tweets en "
+"privéberichten ontvangen heeft.\n"
+"Wanneer u het applet voor de eerst keer opent, dient u een netwerk te "
+"selecteren door met rechts te klikken -> Account toevoegen -> Twitter of "
+"Identi.ca. Dit applet zal om uw  aanmeldgegevens en autorisatie vragen om "
+"verbinding te kunnen maken met één van de netwerken.\n"
+"De autorisatiepagina zal dan geopend worden.\n"
+"Zodra u de autorisatie heeft gegeven, kopieer dan de pincode die getoond "
+"wordt.\n"
+"Plak dit nummer in de getoonde dialoog.\n"
+"De plug-in zal een melding geven dat u succesvol verbonden bent."
 
 #: ../WebSearch/messages:91
 msgid "Search engine :"
@@ -2136,6 +2240,27 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Dit applet voorziet in een interface voor sommige zoekmachines, zoals:\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
+"ImageShack, en Twitter.\n"
+"Om een zoekmachine te selecteren:\n"
+" (1) Klikt u met rechts op het hoofdpictogram -> WebSearch -> (Selecteer de "
+"zoekmachine)\n"
+" (2) Klikt u met rechts -> Dit applet configureren -> Configuratie -> "
+"Zoekmachine\n"
+" (3) Scrolt u op/neer op het pictogram (alleen mogelijk bij eerste "
+"zoekactie)\n"
+"U kunt op drie manieren zoeken:\n"
+" (1) Middelklik op het hoofdpictogram\n"
+" (2) Klik met links op het hoofdpictogram (meteen nadat u een nieuwe "
+"zoekmachine heeft geselecteerd)\n"
+"Typ uw zoekopdracht in en valideer. Elk resultaat zal getoond worden als een "
+"sub-pictogram.\n"
+"Klik met links om het resultaat in de standaardwebbrowser te openen\n"
+"Middelklik op het sub-pictogram van een resultaat om omschrijving te tonen\n"
+"Scrol omhoog voor de volgende resultaten\n"
+"Scrol omlaag voor de vorige resultaten\n"
+"Klik met rlinks op het hoofdpictogram om zoekstatus te tonen"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2147,6 +2272,13 @@ msgid ""
 " the command to launch this application, the uptime and the class(es) of "
 "this window."
 msgstr ""
+"WindowsKiller kan alle problematische vensters gedwongen sluiten.\n"
+"Klik met links op het pictogram selecteer het venster om gedwongen te "
+"sluiten.\n"
+" (selecteer he dock om dit te annuleren)\n"
+"Een middelklik geeft u enige informatie zoals het pid,\n"
+" de opdracht om deze toepassing te starten, hoelang deze actief is en de "
+"klasse(n) van dit venster."
 
 #: ../Xchat/Xchat:257
 msgid "Channels"
@@ -2168,306 +2300,331 @@ msgid ""
 "The icon will also control the window of xchat like a normal application "
 "icon."
 msgstr ""
+"Dit applet integreert Xchat en Xchat-gnome in uw dock.\n"
+"Het kan nieuwe berichten laten zien,\n"
+"een kanaal selecteren uit het menu met een rechtermuisklik,\n"
+"een bericht schrijven bij een middelklik,\n"
+"de berichtgeschiedenis tonen door te scrollen op het pictogram\n"
+"Het pictogram kan het Xchat-venster beheren zoals een normale "
+"toepassingspictogram."
 
 #: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
-msgstr ""
+msgstr "Videomap openen"
 
 #: ../YoutubeDl/YoutubeDl:303
 msgid "Show Download Status"
-msgstr ""
+msgstr "Downloadstatus tonen"
 
 #: ../YoutubeDl/YoutubeDl:311
 msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
+"Verstuur sgnaal om download af te breken. Mogelijk treedt er een vertraging "
+"op"
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Stel in op 0 om de standaardgrootte van het applet te gebruiken"
+msgstr "Instellen op 0 om standaardappletgrootte te gebruiken"
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
-msgstr ""
+msgstr "Gebruik anders een rechterklik en schakel downloads in"
 
 #: ../YoutubeDl/messages:91
 msgid "Start downloading videos imediately? :"
-msgstr ""
+msgstr "Downloaden video's direct starten? :"
 
 #: ../YoutubeDl/messages:93
-#, fuzzy
 msgid "in secondds"
-msgstr "in sub-pictogrammen."
+msgstr "in seconden"
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
-msgstr ""
+msgstr "Tijd tussen updates:"
 
 #: ../YoutubeDl/messages:97
-#, fuzzy
 msgid "Action on middle click:"
-msgstr "middelklikken"
+msgstr "Actie bij middelklik:"
 
 #: ../YoutubeDl/messages:101
-#, fuzzy
 msgid "Show Status"
-msgstr "Waarchuwingen tonen?"
+msgstr "Status tonen"
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
-msgstr ""
+msgstr "Gebruik anders een middelklik om de status te bekijken"
 
 #: ../YoutubeDl/messages:105
-#, fuzzy
 msgid "Show download progress on icon? :"
-msgstr "Maximum temperatuur op pictogram tonen?"
+msgstr "Voortgang download op pictogram tonen? :"
 
 #: ../YoutubeDl/messages:107
 msgid ""
 "Otherwise just show the plugin name and use middle click to monitor status"
 msgstr ""
+"Toon anders alleen de plug-innaam en gebruik een middelklik om de status te "
+"bekijken"
 
 #: ../YoutubeDl/messages:109
 msgid "Show download status in icon label when hovering over icon? :"
 msgstr ""
+"Downloadstatus tonen in pictogramlabel wanneer muis over het pictogram heen "
+"beweegt? :"
 
 #: ../YoutubeDl/messages:111
 msgid "Notification selections"
-msgstr ""
+msgstr "Waarschuwingsselecties"
 
 #: ../YoutubeDl/messages:113
 msgid "Otherwise quietly start to the next download"
-msgstr ""
+msgstr "Start anders in stilte de volgende download"
 
 #: ../YoutubeDl/messages:115
 msgid "Show a pop-up message when starting downloads? :"
-msgstr ""
+msgstr "Pop-upbericht tonen bij starten van downloads? :"
 
 #: ../YoutubeDl/messages:117
 msgid "Otherwise quietly move finish the download"
-msgstr ""
+msgstr "Verplaats anders in stilte de voltooide download"
 
 #: ../YoutubeDl/messages:119
 msgid "Show a pop-up message when download is complete? :"
-msgstr ""
+msgstr "Pop-upbericht tonen wanneer download is voltooid? :"
 
 #: ../YoutubeDl/messages:121
 msgid "Otherwise quietly abort the download"
-msgstr ""
+msgstr "Breek anders in stilte de download af"
 
 #: ../YoutubeDl/messages:123
 msgid "Show a pop-up message when download is aborted? :"
-msgstr ""
+msgstr "Pop-upbericht tonen wanneer download wordt afgebroken? :"
 
 #: ../YoutubeDl/messages:125
 msgid "Otherwise just quietly add the url to the list"
-msgstr ""
+msgstr "Voeg anders in stilte de url aan de lijst toe"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
 msgstr ""
+"Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
 "if pynotify is installed a system notification message will appear, "
 "otherwise the standard dock dialogue messages will be used."
 msgstr ""
+"Als pynotify is geïnstalleerd zal er een systeemmelding getoond worden, "
+"anders zullen de standaard dock-berichten gebruikt worden."
 
 #: ../YoutubeDl/messages:131
 msgid "Attempt to use desktop notifications instead of dock messages? :"
-msgstr ""
+msgstr "Systeemmeldingen gebruiken in plaats van dock-berichten? :"
 
 #: ../YoutubeDl/messages:133
 msgid ""
 "This is usefull if you have long lists of urls to view when you left click "
 "on the icon. Otherwise the standard dialogue message is fine."
 msgstr ""
+"Dit is handig wanneer u een lange lijst url's moet bekijken, nadat u met "
+"links op het pictogram heeft geklikt. Anders is het standaardbericht goed."
 
 #: ../YoutubeDl/messages:135
 msgid "Use list view when URL list exceeds specified number?:"
 msgstr ""
+"Lijstweergave gebruiken wanneer URL-lijst boven een bepaald getal uitkomt?:"
 
 #: ../YoutubeDl/messages:137
 msgid ""
 "When the number of URLS exceed this number switch to list view instead of a "
 "regular dialogue"
 msgstr ""
+"Wanneer URL-lijst boven dit getal uitkomt, schakelen dan over naar "
+"lijstweergave"
 
 #: ../YoutubeDl/messages:139
 msgid "Use list view when number of URLs exceed:"
-msgstr ""
+msgstr "Lijstweergave gebruiken wanneer URL-lijst boven dit getal uitkomt:"
 
 #: ../YoutubeDl/messages:141
 msgid "Directory Setup"
-msgstr ""
+msgstr "Locatie instellen"
 
 #: ../YoutubeDl/messages:143
-#, fuzzy
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
-"Het pad naar een script om een pictogram aan te maken. Laat leeg om de "
-"standaardwaarde te gebruiken."
+"Het pad naar de locatie waar de video's opgeslagen moeten worden. Laat leeg "
+"om de standaardwaarde te gebruiken (momenteel is dit in de videomap van de "
+"gebruiker)."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
-msgstr ""
+msgstr "Video's opslaan in deze map:"
 
 #: ../YoutubeDl/messages:147
-#, fuzzy
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
-"Het pad naar een script om een pictogram aan te maken. Laat leeg om de "
-"standaardwaarde te gebruiken."
+"Het pad naar de locatie waar de URL-lijst opgeslagen moet worden. Laat leeg "
+"om de standaardwaarde te gebruiken (momenteel is dit in de Persoonlijke map "
+"van de gebruiker)."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
-msgstr ""
+msgstr "URL-lijst opslaan in deze map:"
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "Downloadopties"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
 msgstr ""
+"Downloadopties instellen die gebruikt zullen gaan worden voor het youtubedl-"
+"backend"
 
 #: ../YoutubeDl/messages:155
 msgid "Resume partially downloaded files"
-msgstr ""
+msgstr "Deels gedownloade bestanden hervatten"
 
 #: ../YoutubeDl/messages:157
 msgid "Resume download (--continue)?"
-msgstr ""
+msgstr "Download hervatten (--continue)?"
 
 #: ../YoutubeDl/messages:159
 msgid "Ignore errors during download and continue processing."
-msgstr ""
+msgstr "Negeer fouten tijdens de download en ga door."
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr ""
+msgstr "Fouten negeren (--ignore-errors)?"
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
-msgstr ""
+msgstr "Indien bestand reeds bestaat, dan bestand niet overschrijven."
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr ""
+msgstr "Niet overschrijven (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
+"Titel van de video die is gedownload, gebruiken in de bestandsnaam van de "
+"video"
 
 #: ../YoutubeDl/messages:169
 msgid "Use title (--title)?"
-msgstr ""
+msgstr "Titel gebruiken (--title)?"
 
 #: ../YoutubeDl/messages:171
 msgid "Which download format to use:"
-msgstr ""
+msgstr "Welk downloadformaat wilt u gebruiken:"
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr ""
+msgstr "Specificeer het videoformaat"
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
-msgstr ""
+msgstr "Limiteer de maximum kwaliteit"
 
 #: ../YoutubeDl/messages:177
 msgid "Download default format"
-msgstr ""
+msgstr "Download standaardformaat"
 
 #: ../YoutubeDl/messages:179
 msgid "Specify the video format (quality) in which to download the video."
 msgstr ""
+"Specificeer het videoformaat (kwaliteit) waarin de video gedownload moet "
+"worden."
 
 #: ../YoutubeDl/messages:181
 msgid "Video format (--format):"
-msgstr ""
+msgstr "Videoformaat (--format):"
 
 #: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
 msgid "H264 - MP4 at 480p"
-msgstr ""
+msgstr "H264 - MP4 bij 480p"
 
 #: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
 msgid "H264 - MP4 at 720p"
-msgstr ""
+msgstr "H264 - MP4 bij 720p"
 
 #: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
 msgid "H264 - MP4 at 1080p"
-msgstr ""
+msgstr "H264 - MP4 bij 1080p"
 
 #: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
 msgid "H264 - FLV at 360p"
-msgstr ""
+msgstr "H264 - FLV bij 360p"
 
 #: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
 msgid "H264 - FLV at 480p"
-msgstr ""
+msgstr "H264 - FLV bij 480p"
 
 #: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
 msgid "H263 - FLV at 240p"
-msgstr ""
+msgstr "H263 - FLV bij 240p"
 
 #: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
 msgid "Webm at 480p"
-msgstr ""
+msgstr "Webm bij 480p"
 
 #: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
 msgid "Webm at 720p"
-msgstr ""
+msgstr "Webm bij 720p"
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr ""
+msgstr "3GP-video"
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
-msgstr ""
+msgstr "Limiteer de maximum kwaliteit van de te downloaden video's."
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr ""
+msgstr "Maximum kwaliteit (--max-quality):"
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
-msgstr ""
+msgstr "Download het standaardformaat."
 
 #: ../YoutubeDl/messages:225
 msgid ""
 "Some videos require an account to be downloaded, mostly because they're "
 "flagged as mature content."
 msgstr ""
+"Voor sommige video's  heeft u een account om die te kunnen downloaden, omdat "
+"de video's dan gelabeld zijn voor volwassenen."
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr ""
+msgstr "Authenticatie gebruikersnaam en wachtwoord gebruiken"
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Gebruikersnaam/wachtwoord"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
-msgstr ""
+msgstr "Geef gebruikersnaam voor youtube-account aan."
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Gebruikersnaam:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
-msgstr ""
+msgstr "Geef wachtwoord voor youtube-account aan."
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Wachtwoord:"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2489,6 +2646,21 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Applet's handleiding"
+"Met dit applet kunt u Youtube-links van de Youtube-website verslepen naar "
+"het pictogram om deze links te downloaden. Het downloaden is gebaseerd op "
+"youtube-dl.py.\n"
+"\n"
+"Er wordt één video per keer gedownload en elke url zal toegevoegd worden aan "
+"een lijst. Wanneer de video is gedownload of de download wordt afgebroken, "
+"dan zal de url uit de lijst verwijderd worden. De lijst kan opgeslagen "
+"worden in een bestand voor toekomstig gebruik.\n"
+"De middelste muisknop kan ingesteld worden om de videomap te openen of de "
+"downloadstatus te tonen.\n"
+"\n"
+"Met een rechtermuisklik ziet u verschillende opties afhankelijk van wat er "
+"op dat moment gebeurt. Indien uw videomap niet geldig of beschrijfbaar is, "
+"kunt u niets downloaden totdat dit is gecorrigeerd.\n"
+"\n"
+"Indien er geen video's in de lijst staan, dan kunt u een url invoeren door "
+"met links te klikken op het pictogram . Anders zal de url-lijst getoond "
+"worden."

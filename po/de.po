@@ -8,18 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-07-03 12:03+0000\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-09-10 03:06+0000\n"
 "Last-Translator: Daniel Winzen <d@winzen4.de>\n"
 "Language-Team: German <de@li.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:43+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-09-11 05:05+0000\n"
+"X-Generator: Launchpad (build 15924)\n"
+"Language: de\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu ist nicht installiert. Bitte installieren Sie es, bevor Sie dieses "
 "Applet ausführen."
@@ -655,11 +657,11 @@ msgstr ""
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Download-Geschwindigkeit"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "Prozent abgeschlossen"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
@@ -755,7 +757,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:499
 msgid "Check inbox now"
-msgstr ""
+msgstr "Posteingang jetzt überprüfen"
 
 #: ../Gmail/Gmail:500
 msgid "Check Gmail inbox now if you can't wait."
@@ -941,7 +943,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -991,12 +994,12 @@ msgstr ""
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:51 ../YoutubeDl/messages:47
 msgid "Lock position ?"
-msgstr ""
+msgstr "Position sperren?"
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:53 ../YoutubeDl/messages:49
 msgid "in degrees."
-msgstr ""
+msgstr "in Grad."
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:55 ../YoutubeDl/messages:51
@@ -1033,7 +1036,7 @@ msgstr "Hintergrundbild :"
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:69
 #: ../YoutubeDl/messages:63
 msgid "Background tansparency :"
-msgstr ""
+msgstr "Hintergrundtransparenz:"
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:71
@@ -1190,11 +1193,11 @@ msgstr ""
 
 #: ../Liferea/messages:95
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Anzahl ungelesener Nachrichten"
 
 #: ../Liferea/messages:97
 msgid " Number of new messages"
-msgstr ""
+msgstr " Anzahl neuer Nachrichten"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
@@ -1379,9 +1382,9 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
@@ -1426,9 +1429,8 @@ msgstr ""
 "auf : (class=Cairo-dock & type=Utility)"
 
 #: ../Screensaver_inhibitor/messages:93
-#, fuzzy
 msgid "(in minutes). 0 to never stop automatically"
-msgstr "0 um nie automatisch zu Stoppen"
+msgstr ""
 
 #: ../Screensaver_inhibitor/messages:95
 msgid "How long should last the inhibition:"
@@ -1893,11 +1895,11 @@ msgstr ""
 
 #: ../Twitter/Twitter:305
 msgid "Successfully connected with Twitter"
-msgstr ""
+msgstr "Erfolgreich mit Twitter verbunden"
 
 #: ../Twitter/Twitter:308
 msgid "Successfully connected with Identi.ca"
-msgstr ""
+msgstr "Erfolgreich mit Identi.ca verbunden"
 
 #: ../Twitter/Twitter:325
 msgid "Direct messages"
@@ -1990,7 +1992,7 @@ msgstr ""
 
 #: ../WebSearch/messages:91
 msgid "Search engine :"
-msgstr ""
+msgstr "Suchmaschine:"
 
 #: ../WebSearch/messages:93
 msgid "Google"
@@ -2113,20 +2115,19 @@ msgstr ""
 
 #: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
-msgstr ""
+msgstr "Videoordner öffnen"
 
 #: ../YoutubeDl/YoutubeDl:303
 msgid "Show Download Status"
-msgstr ""
+msgstr "Download-Status anzeigen"
 
 #: ../YoutubeDl/YoutubeDl:311
 msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "Tragen Sie 0 ein, um die standardmäßige Appletgröße zu verwenden"
+msgstr ""
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
@@ -2138,21 +2139,19 @@ msgstr ""
 
 #: ../YoutubeDl/messages:93
 msgid "in secondds"
-msgstr ""
+msgstr "in Sekunden"
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
-msgstr ""
+msgstr "Zeit zwischen Aktualisierungen:"
 
 #: ../YoutubeDl/messages:97
-#, fuzzy
 msgid "Action on middle click:"
-msgstr "Mittelklick"
+msgstr ""
 
 #: ../YoutubeDl/messages:101
-#, fuzzy
 msgid "Show Status"
-msgstr "Warnungen anzeigen?"
+msgstr "Status anzeigen"
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
@@ -2160,7 +2159,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:105
 msgid "Show download progress on icon? :"
-msgstr ""
+msgstr "Download-Vortschritt im Symbol anzeigen? :"
 
 #: ../YoutubeDl/messages:107
 msgid ""
@@ -2249,7 +2248,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
-msgstr ""
+msgstr "Videos in diesem Ordner speichern:"
 
 #: ../YoutubeDl/messages:147
 msgid ""
@@ -2263,7 +2262,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "Download-Optionen"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
@@ -2283,7 +2282,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr ""
+msgstr "Fehler ignorieren (--ignore-errors)?"
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
@@ -2291,10 +2290,11 @@ msgstr ""
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr ""
+msgstr "Nicht überschreiben (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2307,7 +2307,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr ""
+msgstr "Das Videoformat angeben"
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
@@ -2323,43 +2323,43 @@ msgstr ""
 
 #: ../YoutubeDl/messages:181
 msgid "Video format (--format):"
-msgstr ""
+msgstr "Videoformat (--format):"
 
 #: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
 msgid "H264 - MP4 at 480p"
-msgstr ""
+msgstr "H264 - MP4 bei 480p"
 
 #: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
 msgid "H264 - MP4 at 720p"
-msgstr ""
+msgstr "H264 - MP4 bei 720p"
 
 #: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
 msgid "H264 - MP4 at 1080p"
-msgstr ""
+msgstr "H264 - MP4 bei 1080p"
 
 #: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
 msgid "H264 - FLV at 360p"
-msgstr ""
+msgstr "H264 - FLV bei 360p"
 
 #: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
 msgid "H264 - FLV at 480p"
-msgstr ""
+msgstr "H264 - FLV bei 480p"
 
 #: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
 msgid "H263 - FLV at 240p"
-msgstr ""
+msgstr "H263 - FLV bei 240p"
 
 #: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
 msgid "Webm at 480p"
-msgstr ""
+msgstr "Webm bei 480p"
 
 #: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
 msgid "Webm at 720p"
-msgstr ""
+msgstr "Webm bei 720p"
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr ""
+msgstr "3GP Video"
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
@@ -2367,7 +2367,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr ""
+msgstr "Maximum Qualität (--max-quality):"
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
@@ -2385,7 +2385,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Benutzername/Passwort"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
@@ -2393,7 +2393,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Benutzername:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
@@ -2401,7 +2401,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Passwort:"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2423,6 +2423,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "Handbuch des Applets"

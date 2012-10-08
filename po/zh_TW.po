@@ -7,19 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-04-12 03:28+0000\n"
+"POT-Creation-Date: 2012-09-09 22:43+0000\n"
+"PO-Revision-Date: 2012-09-10 02:27+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh_TW@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-07-04 04:44+0000\n"
-"X-Generator: Launchpad (build 15544)\n"
+"X-Launchpad-Export-Date: 2012-09-11 05:05+0000\n"
+"X-Generator: Launchpad (build 15924)\n"
+"Language: \n"
 "X-Poedit-Bookmarks: 1393,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:138
@@ -165,9 +167,7 @@ msgstr "位置"
 msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
-msgstr ""
-"假如鎖定了，桌面小工具就不能夠簡單的用拖動的方式移動。然而您還是可以用 ALT + "
-"左鍵拖動 的方式來移動。"
+msgstr "假如鎖定了，桌面小工具就不能夠簡單的用拖動的方式移動。然而您還是可以用 ALT + 左鍵拖動 的方式來移動。"
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:21
@@ -189,9 +189,7 @@ msgstr "鎖定位置？"
 msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
-msgstr ""
-"以您的視窗管理員設定為主，您也可以改變尺寸例如以 ALT + 滑鼠中鍵點擊 或者是 "
-"ALT + 左鍵點擊。"
+msgstr "以您的視窗管理員設定為主，您也可以改變尺寸例如以 ALT + 滑鼠中鍵點擊 或者是 ALT + 左鍵點擊。"
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
@@ -213,9 +211,7 @@ msgstr "桌面小工具的尺寸(寬 x 高)："
 msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
-msgstr ""
-"放置在您的視窗管理員當中，您也可以利用 ALT+滑鼠左鍵 來移動它， 負值的計算是從"
-"螢幕的右下方開始。"
+msgstr "放置在您的視窗管理員當中，您也可以利用 ALT+滑鼠左鍵 來移動它， 負值的計算是從螢幕的右下方開始。"
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:29
@@ -237,8 +233,7 @@ msgstr "桌面小工具的位置( X軸 ; Y軸 )："
 msgid ""
 "You can quickly rotate the desklet with the mouse, by dragging the little "
 "buttons on its left and top sides."
-msgstr ""
-"在桌面面板程式左上方的小按鈕，您可以用滑鼠拖動它來快速的旋轉桌面面板程式。"
+msgstr "在桌面面板程式左上方的小按鈕，您可以用滑鼠拖動它來快速的旋轉桌面面板程式。"
 
 #: ../GnoMenu/messages:37 ../Calendar/messages:37 ../Cardapio/messages:37
 #: ../Deluge/messages:37 ../DiskFree/messages:37 ../Gmail/messages:33
@@ -920,7 +915,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1344,9 +1340,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:73
@@ -2082,9 +2078,8 @@ msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
 
 #: ../YoutubeDl/messages:3
-#, fuzzy
 msgid "Set to 0 to use the default applet size"
-msgstr "設定為 0 使用預設的大小。"
+msgstr ""
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
@@ -2250,7 +2245,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2379,6 +2375,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet's Handbook"
-#~ msgstr "此面板程式的簡易說明"
