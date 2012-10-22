@@ -47,10 +47,10 @@ fi
 #############################################################################################################
 on_click() {
 
-which cal > /dev/null
+which ncal > /dev/null
 if [ $? -eq 0 ]; then
 	#dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.applet.ShowDialog  string:"`cal -h`" int32:$time_dialog_cal_today
-	MESSAGE="<tt>`cal -h`</tt>"
+	MESSAGE="<tt>`ncal -hC`</tt>"
 	python -c "import dbus; message=\"\"\"$MESSAGE\"\"\"; print dbus.Bus().call_blocking(
 		\"$DBUS_NAME\",
 		\"$DBUS_PATH\",
@@ -79,9 +79,9 @@ on_scroll_icon() {
 if [ $1 -eq 1 ]; then
 	# Scroll UP
 
-	which cal > /dev/null
+	which ncal > /dev/null
 	if [ $? -eq 0 ]; then
-		MESSAGE="<tt>`cal -h -3`</tt>"
+		MESSAGE="<tt>`ncal -h3C`</tt>"
 		python -c "import dbus; message=\"\"\"$MESSAGE\"\"\"; print dbus.Bus().call_blocking(
 			\"$DBUS_NAME\",
 			\"$DBUS_PATH\",
