@@ -48,21 +48,20 @@ class Applet(CDApplet):
 	
 	def _guess_method(self):
 		bus = dbus.SessionBus()
-		if 'org.gnome.SessionManager' in bus.list_names():
+		if isProcessRunning("xscreensaver"):  # xscreensaver first, because it's not present on the bus, so if it's running, it means we actually use it.
+			self.ss_method = "xscreensaver"
+		elif 'org.freedesktop.ScreenSaver' in bus.list_names():  # the standard
+			self.ss_method = "Freedesktop"
+		elif 'org.gnome.SessionManager' in bus.list_names():  # then the gnome things; this one is present on the bus even if we don't use it.
 			self.ss_method = "Gnome"
 			self.pm_method = "Gnome"
+		elif isProcessRunning("gnome-screensaver"):  # for old versions of Gnome
+			self.ss_method = "gnome-screensaver"
+		
+		if 'org.freedesktop.PowerManagement.Inhibit' in bus.list_names():
+			self.pm_method = "Freedesktop"
 		else:
-			if 'org.freedesktop.ScreenSaver' in bus.list_names():
-				self.ss_method = "Freedesktop"
-			elif isProcessRunning("xscreensaver"):
-				self.ss_method = "xscreensaver"
-			elif isProcessRunning("gnome-screensaver"):
-				self.ss_method = "gnome-screensaver"
-			
-			if 'org.freedesktop.PowerManagement.Inhibit' in bus.list_names():
-				self.pm_method = "Freedesktop"
-			else:
-				self.pm_method = "dpms"
+			self.pm_method = "dpms"
 	
 	def _update_icon(self):
 		if self.inhibited:
