@@ -7,20 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2012-09-09 22:43+0000\n"
 "PO-Revision-Date: 2012-09-14 07:05+0000\n"
 "Last-Translator: Andrea Bernini <andrea.bernini@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2012-09-15 05:08+0000\n"
 "X-Generator: Launchpad (build 15944)\n"
-"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -194,8 +192,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
-"Alt+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
+"+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
@@ -656,7 +654,7 @@ msgid "Torrents info"
 msgstr "Informazioni sui torrent"
 
 #: ../Deluge/Deluge:343 ../Gmail/Gmail:498 ../KTorrent/KTorrent:328
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:198
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:197
 #: ../Transmission/Transmission:463 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
@@ -833,8 +831,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"sempre\" ti informerà ogni volta che il numero di email è diverso da 0; "
-"\"diverso\" lo farà ogni volta che il numero delle email cambia; "
-"\"superiore\" lo farà ogni volta che esse aumentano (predefinito)."
+"\"diverso\" lo farà ogni volta che il numero delle email cambia; \"superiore"
+"\" lo farà ogni volta che esse aumentano (predefinito)."
 
 #: ../Gmail/messages:99
 msgid "On which condition?"
@@ -900,8 +898,7 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr ""
-"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -987,8 +984,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
-"ALT+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
+"+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:29
@@ -999,8 +996,7 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1473,33 +1469,33 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
 "fonti internet quali:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com e Chucknorrisfacts.fr."
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:73
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:72
 msgid "Screensaver is currently disabled"
 msgstr "Il salvaschermo è attualmente disabilitato"
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:79
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:78
 msgid "Disable the screensaver"
 msgstr "Disabilita il salvaschermo"
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:185
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:184
 msgid "Inhibit for a given time (in minutes)"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:192
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:191
 msgid "timelength"
 msgstr "durata"
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:198
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:197
 msgid "Inhibit for a given time"
 msgstr ""
 
@@ -2509,8 +2505,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Non sovrascrivere (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
 
 #: ../YoutubeDl/messages:169

@@ -590,7 +590,7 @@ msgid "Torrents info"
 msgstr ""
 
 #: ../Deluge/Deluge:343 ../Gmail/Gmail:498 ../KTorrent/KTorrent:328
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:198
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:197
 #: ../Transmission/Transmission:463 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
@@ -1294,23 +1294,23 @@ msgid ""
 " Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:73
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:72
 msgid "Screensaver is currently disabled"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:79
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:78
 msgid "Disable the screensaver"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:185
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:184
 msgid "Inhibit for a given time (in minutes)"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:192
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:191
 msgid "timelength"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:198
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:197
 msgid "Inhibit for a given time"
 msgstr ""
 
