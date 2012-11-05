@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-core\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-08-21 12:39+0000\n"
-"Last-Translator: Ohadcn <Unknown>\n"
+"POT-Creation-Date: 2012-11-03 02:14+0000\n"
+"PO-Revision-Date: 2012-11-03 04:43+0000\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
-"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-09-10 04:50+0000\n"
-"X-Generator: Launchpad (build 15924)\n"
+"X-Launchpad-Export-Date: 2012-11-04 05:07+0000\n"
+"X-Generator: Launchpad (build 16218)\n"
+"Language: he\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr "GnoMenu לא מותקן על המחשב שלך, נא התקן לפני הרצת יישומון זה"
 
 #: ../GnoMenu/GnoMenu:138
@@ -247,7 +249,7 @@ msgstr ""
 #: ../Transmission/messages:37 ../Twitter/messages:37 ../WebSearch/messages:35
 #: ../WindowsKiller/messages:37 ../Xchat/messages:37
 msgid "Rotation:"
-msgstr "הטיה:"
+msgstr "סיבוב:"
 
 #: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
 #: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:35
@@ -826,32 +828,32 @@ msgstr "בחר הנפשה:"
 
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr ""
+msgstr "להציג תיבת דו-שיח עם התראות?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
-msgstr ""
+msgstr "להציג תיבת דו-שיח?"
 
 #: ../Gmail/messages:119
 msgid "Should the applet play a sound with the notification?"
-msgstr ""
+msgstr "להשמיע צליל עם ההתראות?"
 
 #: ../Gmail/messages:121 ../Twitter/messages:105
 msgid "Play a sound?"
-msgstr ""
+msgstr "להשמיע צליל?"
 
 #: ../Gmail/messages:123
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
-msgstr ""
+msgstr "חלק מהקבצים זמינים ב~/.config/cairo-dock/third-party/Gmail/snd/"
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
-msgstr ""
+msgstr "קובץ קול:"
 
 #: ../Gmail/messages:127
 msgid "Display a counter on the icon?"
-msgstr ""
+msgstr "להציג מונה על הסמל?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
@@ -859,7 +861,7 @@ msgstr ""
 
 #: ../Gmail/messages:131
 msgid "How?"
-msgstr ""
+msgstr "איך?"
 
 #: ../Gmail/messages:133
 msgid "small emblem"
@@ -891,16 +893,16 @@ msgstr ""
 
 #: ../GTG/messages:95 ../Pidgin/messages:105 ../Xchat/messages:97
 msgid "Short"
-msgstr ""
+msgstr "קצר"
 
 #: ../GTG/messages:97 ../Pidgin/messages:107 ../Twitter/messages:97
 #: ../Xchat/messages:99
 msgid "Medium"
-msgstr ""
+msgstr "בינוני"
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Long"
-msgstr ""
+msgstr "ארוך"
 
 #: ../GTG/messages:101 ../Xchat/messages:103
 msgid "Animation of the icon on receiving channel messages :"
@@ -939,7 +941,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -965,7 +968,7 @@ msgstr ""
 #: ../Screensaver_inhibitor/messages:35 ../Translator/messages:45
 #: ../YoutubeDl/messages:31
 msgid "Accessibility :"
-msgstr ""
+msgstr "נגישות:"
 
 #: ../HDDtemperature/messages:37 ../Moon/messages:39
 #: ../Screensaver_inhibitor/messages:43 ../Translator/messages:53
@@ -1182,7 +1185,7 @@ msgstr ""
 
 #: ../Liferea/messages:97
 msgid " Number of new messages"
-msgstr ""
+msgstr " מספר ההודעות החדשות"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
@@ -1215,11 +1218,11 @@ msgstr ""
 
 #: ../Moon/messages:95
 msgid "North"
-msgstr ""
+msgstr "צפון"
 
 #: ../Moon/messages:97
 msgid "South"
-msgstr ""
+msgstr "דרום"
 
 #: ../Moon/messages:100
 msgid ""
@@ -1229,11 +1232,11 @@ msgstr ""
 
 #: ../Pidgin/Pidgin:407
 msgid "Conversations"
-msgstr ""
+msgstr "שיחות"
 
 #: ../Pidgin/Pidgin:421
 msgid "Change your status"
-msgstr ""
+msgstr "שנה את המצב שלך"
 
 #: ../Pidgin/Pidgin:436
 msgid "Set your status message"
@@ -1241,7 +1244,7 @@ msgstr ""
 
 #: ../Pidgin/Pidgin:441 ../Xchat/Xchat:270
 msgid "Silent mode"
-msgstr ""
+msgstr "מצב שקט"
 
 #: ../Pidgin/Pidgin:445 ../Xchat/Xchat:274
 msgid "Switch the applet to silent mode (no pop-up on new message)."
@@ -1253,7 +1256,7 @@ msgstr ""
 
 #: ../Pidgin/messages:93 ../Pidgin/messages:97
 msgid "Parameters"
-msgstr ""
+msgstr "פרמטרים"
 
 #: ../Pidgin/messages:95
 msgid "Choose a theme :"
@@ -1282,15 +1285,15 @@ msgstr ""
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid "Size of the history :"
-msgstr ""
+msgstr "גודל ההיסטוריה:"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "none"
-msgstr ""
+msgstr "אף אחד מאלה"
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
 msgid "big"
-msgstr ""
+msgstr "גדול"
 
 #: ../Pidgin/messages:122
 msgid ""
@@ -1309,7 +1312,7 @@ msgstr ""
 
 #: ../Quote/messages:95
 msgid "Quote source:"
-msgstr ""
+msgstr "מקור הציטוטים:"
 
 #: ../Quote/messages:97
 msgid "Quotationspage.com"
@@ -1317,55 +1320,55 @@ msgstr ""
 
 #: ../Quote/messages:99
 msgid "Bash.org"
-msgstr ""
+msgstr "Bash.org"
 
 #: ../Quote/messages:101
 msgid "Xkcdb.com"
-msgstr ""
+msgstr "Xkcdb.com"
 
 #: ../Quote/messages:103
 msgid "Qdb.us"
-msgstr ""
+msgstr "Qdb.us"
 
 #: ../Quote/messages:105
 msgid "Danstonchat.com"
-msgstr ""
+msgstr "Danstonchat.com"
 
 #: ../Quote/messages:107
 msgid "Jokes2go.com"
-msgstr ""
+msgstr "Jokes2go.com"
 
 #: ../Quote/messages:109
 msgid "Vidademerda.com.br"
-msgstr ""
+msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:111
 msgid "Viedemerde.fr"
-msgstr ""
+msgstr "Viedemerde.fr"
 
 #: ../Quote/messages:113
 msgid "Fmylife.com"
-msgstr ""
+msgstr "Fmylife.com"
 
 #: ../Quote/messages:115
 msgid "Vitadimerda.it"
-msgstr ""
+msgstr "Vitadimerda.it"
 
 #: ../Quote/messages:117
 msgid "100blagues.com"
-msgstr ""
+msgstr "100blagues.com"
 
 #: ../Quote/messages:119
 msgid "Chucknorrisfacts.fr"
-msgstr ""
+msgstr "Chucknorrisfacts.fr"
 
 #: ../Quote/messages:122
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:72
@@ -1428,15 +1431,15 @@ msgstr ""
 
 #: ../Translator/Translator:424
 msgid "To"
-msgstr ""
+msgstr "אל"
 
 #: ../Translator/Translator:443
 msgid "From"
-msgstr ""
+msgstr "מ־"
 
 #: ../Translator/Translator:463
 msgid "Switch languages"
-msgstr ""
+msgstr "החלפת שפה"
 
 #: ../Translator/Translator:476
 msgid "Translate from clipboard (middle-click)"
@@ -1444,95 +1447,95 @@ msgstr ""
 
 #: ../Translator/messages:95
 msgid "Languages"
-msgstr ""
+msgstr "שפות"
 
 #: ../Translator/messages:97
 msgid "Translate from:"
-msgstr ""
+msgstr "תרגם מ:"
 
 #: ../Translator/messages:99 ../Translator/messages:229
 msgid "Afrikaans"
-msgstr ""
+msgstr "אפריקאנס"
 
 #: ../Translator/messages:101 ../Translator/messages:231
 msgid "Albanian"
-msgstr ""
+msgstr "אלבנית"
 
 #: ../Translator/messages:103 ../Translator/messages:233
 msgid "Arabic"
-msgstr ""
+msgstr "ערבית"
 
 #: ../Translator/messages:105 ../Translator/messages:235
 msgid "Armenian"
-msgstr ""
+msgstr "ארמנית"
 
 #: ../Translator/messages:107 ../Translator/messages:237
 msgid "Azerbaijani"
-msgstr ""
+msgstr "אזרית"
 
 #: ../Translator/messages:109 ../Translator/messages:239
 msgid "Basque"
-msgstr ""
+msgstr "בסקית"
 
 #: ../Translator/messages:111 ../Translator/messages:241
 msgid "Belarusian"
-msgstr ""
+msgstr "בלרוסית"
 
 #: ../Translator/messages:113 ../Translator/messages:243
 msgid "Bengali"
-msgstr ""
+msgstr "בנגלית"
 
 #: ../Translator/messages:115 ../Translator/messages:245
 msgid "Bulgarian"
-msgstr ""
+msgstr "בולגרית"
 
 #: ../Translator/messages:117 ../Translator/messages:247
 msgid "Catalan"
-msgstr ""
+msgstr "קטלנית"
 
 #: ../Translator/messages:119
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "סינית מפושטת"
 
 #: ../Translator/messages:121
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "סינית מסורתית"
 
 #: ../Translator/messages:123 ../Translator/messages:253
 msgid "Croatian"
-msgstr ""
+msgstr "קרואטית"
 
 #: ../Translator/messages:125 ../Translator/messages:255
 msgid "Czech"
-msgstr ""
+msgstr "צ'כית"
 
 #: ../Translator/messages:127 ../Translator/messages:257
 msgid "Danish"
-msgstr ""
+msgstr "דנית"
 
 #: ../Translator/messages:129 ../Translator/messages:259
 msgid "Dutch"
-msgstr ""
+msgstr "הולנדית"
 
 #: ../Translator/messages:131 ../Translator/messages:261
 msgid "English"
-msgstr ""
+msgstr "אנגלית"
 
 #: ../Translator/messages:133 ../Translator/messages:263
 msgid "Estonian"
-msgstr ""
+msgstr "אסטונית"
 
 #: ../Translator/messages:135 ../Translator/messages:265
 msgid "Filipino"
-msgstr ""
+msgstr "פיליפינית"
 
 #: ../Translator/messages:137 ../Translator/messages:267
 msgid "Finnish"
-msgstr ""
+msgstr "פינית"
 
 #: ../Translator/messages:139 ../Translator/messages:269
 msgid "French"
-msgstr ""
+msgstr "צרפתית"
 
 #: ../Translator/messages:141 ../Translator/messages:271
 msgid "Galician"
@@ -1540,15 +1543,15 @@ msgstr ""
 
 #: ../Translator/messages:143 ../Translator/messages:273
 msgid "Georgian"
-msgstr ""
+msgstr "גאורגית"
 
 #: ../Translator/messages:145 ../Translator/messages:275
 msgid "German"
-msgstr ""
+msgstr "גרמנית"
 
 #: ../Translator/messages:147 ../Translator/messages:277
 msgid "Greek"
-msgstr ""
+msgstr "יוונית"
 
 #: ../Translator/messages:149 ../Translator/messages:279
 msgid "Gujarati"
@@ -1556,171 +1559,171 @@ msgstr ""
 
 #: ../Translator/messages:151 ../Translator/messages:281
 msgid "Haitian"
-msgstr ""
+msgstr "האיטית"
 
 #: ../Translator/messages:153 ../Translator/messages:283
 msgid "Hebrew"
-msgstr ""
+msgstr "עברית"
 
 #: ../Translator/messages:155 ../Translator/messages:285
 msgid "Hindi"
-msgstr ""
+msgstr "הינדית"
 
 #: ../Translator/messages:157 ../Translator/messages:287
 msgid "Hungarian"
-msgstr ""
+msgstr "הונגרית"
 
 #: ../Translator/messages:159 ../Translator/messages:289
 msgid "Icelandic"
-msgstr ""
+msgstr "איסלנדית"
 
 #: ../Translator/messages:161 ../Translator/messages:291
 msgid "Indonesian"
-msgstr ""
+msgstr "אינדונזית"
 
 #: ../Translator/messages:163 ../Translator/messages:293
 msgid "Irish"
-msgstr ""
+msgstr "אירית"
 
 #: ../Translator/messages:165 ../Translator/messages:295
 msgid "Italian"
-msgstr ""
+msgstr "איטלקית"
 
 #: ../Translator/messages:167 ../Translator/messages:297
 msgid "Japanese"
-msgstr ""
+msgstr "יפנית"
 
 #: ../Translator/messages:169 ../Translator/messages:299
 msgid "Kannada"
-msgstr ""
+msgstr "קאנאדה"
 
 #: ../Translator/messages:171 ../Translator/messages:301
 msgid "Korean"
-msgstr ""
+msgstr "קוריאנית"
 
 #: ../Translator/messages:173 ../Translator/messages:303
 msgid "Latin"
-msgstr ""
+msgstr "לטינית"
 
 #: ../Translator/messages:175 ../Translator/messages:305
 msgid "Latvian"
-msgstr ""
+msgstr "לטבית"
 
 #: ../Translator/messages:177 ../Translator/messages:307
 msgid "Lithuanian"
-msgstr ""
+msgstr "ליטאית"
 
 #: ../Translator/messages:179 ../Translator/messages:309
 msgid "Macedonian"
-msgstr ""
+msgstr "מקדונית"
 
 #: ../Translator/messages:181 ../Translator/messages:311
 msgid "Malay"
-msgstr ""
+msgstr "מאלאית"
 
 #: ../Translator/messages:183 ../Translator/messages:313
 msgid "Maltese"
-msgstr ""
+msgstr "מלטזית"
 
 #: ../Translator/messages:185 ../Translator/messages:315
 msgid "Norwegian"
-msgstr ""
+msgstr "נורבגית"
 
 #: ../Translator/messages:187 ../Translator/messages:317
 msgid "Persian"
-msgstr ""
+msgstr "פרסית"
 
 #: ../Translator/messages:189 ../Translator/messages:319
 msgid "Polish"
-msgstr ""
+msgstr "פולנית"
 
 #: ../Translator/messages:191 ../Translator/messages:321
 msgid "Portuguese"
-msgstr ""
+msgstr "פורטוגזית"
 
 #: ../Translator/messages:193 ../Translator/messages:323
 msgid "Romanian"
-msgstr ""
+msgstr "רומנית"
 
 #: ../Translator/messages:195 ../Translator/messages:325
 msgid "Russian"
-msgstr ""
+msgstr "רוסית"
 
 #: ../Translator/messages:197 ../Translator/messages:327
 msgid "Serbian"
-msgstr ""
+msgstr "סרבית"
 
 #: ../Translator/messages:199 ../Translator/messages:329
 msgid "Slovak"
-msgstr ""
+msgstr "סלובקית"
 
 #: ../Translator/messages:201 ../Translator/messages:331
 msgid "Slovenian"
-msgstr ""
+msgstr "סלובנית"
 
 #: ../Translator/messages:203 ../Translator/messages:333
 msgid "Spanish"
-msgstr ""
+msgstr "ספרדית"
 
 #: ../Translator/messages:205 ../Translator/messages:335
 msgid "Swahili"
-msgstr ""
+msgstr "סווהילית"
 
 #: ../Translator/messages:207 ../Translator/messages:337
 msgid "Swedish"
-msgstr ""
+msgstr "שוודית"
 
 #: ../Translator/messages:209 ../Translator/messages:339
 msgid "Tamil"
-msgstr ""
+msgstr "טמילית"
 
 #: ../Translator/messages:211 ../Translator/messages:341
 msgid "Telugu"
-msgstr ""
+msgstr "טלוגו"
 
 #: ../Translator/messages:213 ../Translator/messages:343
 msgid "Thai"
-msgstr ""
+msgstr "תאילנדית"
 
 #: ../Translator/messages:215 ../Translator/messages:345
 msgid "Turkish"
-msgstr ""
+msgstr "טורקית"
 
 #: ../Translator/messages:217 ../Translator/messages:347
 msgid "Ukrainian"
-msgstr ""
+msgstr "אוקראינית"
 
 #: ../Translator/messages:219 ../Translator/messages:349
 msgid "Urdu"
-msgstr ""
+msgstr "אורדו"
 
 #: ../Translator/messages:221 ../Translator/messages:351
 msgid "Vietnamese"
-msgstr ""
+msgstr "וייטנאמית"
 
 #: ../Translator/messages:223 ../Translator/messages:353
 msgid "Welsh"
-msgstr ""
+msgstr "וולשית"
 
 #: ../Translator/messages:225 ../Translator/messages:355
 msgid "Yiddish"
-msgstr ""
+msgstr "יידיש"
 
 #: ../Translator/messages:227
 msgid "Translate to:"
-msgstr ""
+msgstr "תרגם ל:"
 
 #: ../Translator/messages:249
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "סינית מפושטת"
 
 #: ../Translator/messages:251
 msgid "Traditional Chinese"
-msgstr ""
+msgstr "סינית מסורתית"
 
 #: ../Translator/messages:357
 msgid "Shortkeys"
-msgstr ""
+msgstr "קיצורי מקשים"
 
 #: ../Translator/messages:359
 msgid "Shortkey to start translating from (read):"
@@ -1732,7 +1735,7 @@ msgstr ""
 
 #: ../Translator/messages:363
 msgid "Dialog"
-msgstr ""
+msgstr "תיבת דו־שיח"
 
 #: ../Translator/messages:365
 msgid "In s. Set 0 for an unlimited time."
@@ -1888,11 +1891,11 @@ msgstr ""
 
 #: ../Twitter/Twitter:340
 msgid "Info"
-msgstr ""
+msgstr "מידע"
 
 #: ../Twitter/Twitter:349
 msgid "Tweets"
-msgstr ""
+msgstr "ציוצים"
 
 #: ../Twitter/Twitter:351
 #, python-format
@@ -1905,15 +1908,15 @@ msgstr ""
 
 #: ../Twitter/Twitter:383
 msgid "Add account"
-msgstr ""
+msgstr "הוסף חשבון"
 
 #: ../Twitter/Twitter:391 ../WebSearch/messages:111
 msgid "Twitter"
-msgstr ""
+msgstr "טוויטר"
 
 #: ../Twitter/Twitter:401
 msgid "Identi.ca"
-msgstr ""
+msgstr "Identi.ca"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
@@ -1921,11 +1924,11 @@ msgstr ""
 
 #: ../Twitter/messages:95
 msgid "Small"
-msgstr ""
+msgstr "קטן"
 
 #: ../Twitter/messages:99
 msgid "Large"
-msgstr ""
+msgstr "גדול"
 
 #: ../Twitter/messages:101
 msgid "Alert when you receive a new tweet or message?"
@@ -1972,15 +1975,15 @@ msgstr ""
 
 #: ../WebSearch/messages:93
 msgid "Google"
-msgstr ""
+msgstr "גוגל"
 
 #: ../WebSearch/messages:95
 msgid "Bing"
-msgstr ""
+msgstr "בינג"
 
 #: ../WebSearch/messages:97
 msgid "Yahoo!"
-msgstr ""
+msgstr "יאהו!"
 
 #: ../WebSearch/messages:99
 msgid "Teoma"
@@ -1988,7 +1991,7 @@ msgstr ""
 
 #: ../WebSearch/messages:101
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: ../WebSearch/messages:103
 msgid "Webshots"
@@ -1996,19 +1999,19 @@ msgstr ""
 
 #: ../WebSearch/messages:105
 msgid "Flickr"
-msgstr ""
+msgstr "Flickr"
 
 #: ../WebSearch/messages:107
 msgid "Wikipedia"
-msgstr ""
+msgstr "ויקיפדיה"
 
 #: ../WebSearch/messages:109
 msgid "ImageShack"
-msgstr ""
+msgstr "ImageShack"
 
 #: ../WebSearch/messages:113
 msgid "Digg"
-msgstr ""
+msgstr "Digg"
 
 #: ../WebSearch/messages:115
 msgid "in sub-icons."
@@ -2071,7 +2074,7 @@ msgstr ""
 
 #: ../Xchat/Xchat:257
 msgid "Channels"
-msgstr ""
+msgstr "ערוצים"
 
 #: ../Xchat/Xchat:261
 msgid "Switch the channel you'll send message to with the middle-click."
@@ -2237,7 +2240,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "אפשרויות הורדה"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
@@ -2268,7 +2271,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2367,7 +2371,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "שם משתמש:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
@@ -2375,7 +2379,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "סיסמה:"
 
 #: ../YoutubeDl/messages:240
 msgid ""

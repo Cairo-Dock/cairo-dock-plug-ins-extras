@@ -7,21 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2012-11-03 02:14+0000\n"
 "PO-Revision-Date: 2012-09-10 02:03+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-09-11 05:05+0000\n"
-"X-Generator: Launchpad (build 15924)\n"
+"X-Launchpad-Export-Date: 2012-11-04 05:07+0000\n"
+"X-Generator: Launchpad (build 16218)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
-msgstr ""
-"GnoMenu がインストールされていません。このアプレットを実行する前にまずインス"
-"トールしてください。"
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
+msgstr "GnoMenu がインストールされていません。このアプレットを実行する前にまずインストールしてください。"
 
 #: ../GnoMenu/GnoMenu:138
 msgid "GnoMenu's settings"
@@ -167,9 +167,8 @@ msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
 msgstr ""
-"固定した場合、デスクレットはマウスの左ボタンだけを押しながらのドラッグでは移"
-"動出来なくなりますが、その場合でも ALT + 左クリックを使用すれば移動は可能で"
-"す。"
+"固定した場合、デスクレットはマウスの左ボタンだけを押しながらのドラッグでは移動出来なくなりますが、その場合でも ALT + "
+"左クリックを使用すれば移動は可能です。"
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:21
@@ -191,9 +190,7 @@ msgstr "位置を固定？"
 msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
-msgstr ""
-"使用中のウィンドウ・マネージャによって異なりますが、例えば ALT + 中クリック、"
-"または ALT + 左クリックでサイズ変更できます。"
+msgstr "使用中のウィンドウ・マネージャによって異なりますが、例えば ALT + 中クリック、または ALT + 左クリックでサイズ変更できます。"
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:25
@@ -216,8 +213,7 @@ msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
-"使用中のウィンドウ・マネージャによって異なりますが、例えば ALT + 左クリックで"
-"移動させることができます... 負の値は画面の右下から数えられます。"
+"使用中のウィンドウ・マネージャによって異なりますが、例えば ALT + 左クリックで移動させることができます... 負の値は画面の右下から数えられます。"
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:29
@@ -239,9 +235,7 @@ msgstr "デスクレットの位置（X ; Y） :"
 msgid ""
 "You can quickly rotate the desklet with the mouse, by dragging the little "
 "buttons on its left and top sides."
-msgstr ""
-"デスクレットの左側や上側にある小さなボタンをマウスでドラッグして、デスクレッ"
-"トを素早く回転させることができます。"
+msgstr "デスクレットの左側や上側にある小さなボタンをマウスでドラッグして、デスクレットを素早く回転させることができます。"
 
 #: ../GnoMenu/messages:37 ../Calendar/messages:37 ../Cardapio/messages:37
 #: ../Deluge/messages:37 ../DiskFree/messages:37 ../Gmail/messages:33
@@ -371,8 +365,7 @@ msgstr "装飾"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr ""
-"自分の装飾を定義するには以下で 'Custom decorations' を選択してください。"
+msgstr "自分の装飾を定義するには以下で 'Custom decorations' を選択してください。"
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:57
@@ -393,9 +386,7 @@ msgstr "このデスクレットの装飾テーマの選択 :"
 #: ../WindowsKiller/messages:63 ../Xchat/messages:63
 msgid ""
 "Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
-msgstr ""
-"例えば外枠のように、描画物の背後に表示する画像です。画像を使用しない場合は空"
-"欄のままにしてください。"
+msgstr "例えば外枠のように、描画物の背後に表示する画像です。画像を使用しない場合は空欄のままにしてください。"
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
 #: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:61
@@ -507,9 +498,7 @@ msgstr "下方向のオフセット :"
 msgid ""
 "Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
 "no image."
-msgstr ""
-"例えばテカリ表現のように、描画物の手前に表示する画像です。画像を使用しない場"
-"合は空欄のままにしてください。"
+msgstr "例えばテカリ表現のように、描画物の手前に表示する画像です。画像を使用しない場合は空欄のままにしてください。"
 
 #: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
 #: ../Deluge/messages:87 ../DiskFree/messages:87 ../Gmail/messages:83
@@ -594,9 +583,7 @@ msgstr ""
 #: ../Cardapio/Cardapio:45
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
-msgstr ""
-"Cardapio がインストールされていません。このアプレットを実行する前にまずインス"
-"トールしてください。"
+msgstr "Cardapio がインストールされていません。このアプレットを実行する前にまずインストールしてください。"
 
 #: ../Cardapio/messages:96
 msgid ""
@@ -930,7 +917,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1153,9 +1141,7 @@ msgstr ""
 #: ../Lancelot/Lancelot:86
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
-msgstr ""
-"Lancelot がインストールされていません。このアプレットを実行する前にまずインス"
-"トールしてください。"
+msgstr "Lancelot がインストールされていません。このアプレットを実行する前にまずインストールしてください。"
 
 #: ../Lancelot/messages:96
 msgid ""
@@ -1184,9 +1170,7 @@ msgstr ""
 #: ../MintMenu/MintMenu:145
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
-msgstr ""
-"MintMenu がインストールされていません。このアプレットを実行する前にまずインス"
-"トールしてください。"
+msgstr "MintMenu がインストールされていません。このアプレットを実行する前にまずインストールしてください。"
 
 #: ../MintMenu/messages:96
 msgid ""
@@ -1240,9 +1224,7 @@ msgstr "サイレントモード"
 
 #: ../Pidgin/Pidgin:445 ../Xchat/Xchat:274
 msgid "Switch the applet to silent mode (no pop-up on new message)."
-msgstr ""
-"アプレットをサイレントモードに切り替えます（新着メッセージのポップアップな"
-"し）。"
+msgstr "アプレットをサイレントモードに切り替えます（新着メッセージのポップアップなし）。"
 
 #: ../Pidgin/Pidgin:456
 msgid "Enter your new status message:"
@@ -1360,9 +1342,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:72
@@ -1766,9 +1748,7 @@ msgstr "Transmission は実行されていないか、または応答があり�
 #: ../Transmission/Transmission:240
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
-msgstr ""
-"Transmission からデータの取得ができませんでした。Transmission 1.9 以上が必要"
-"です。"
+msgstr "Transmission からデータの取得ができませんでした。Transmission 1.9 以上が必要です。"
 
 #: ../Transmission/Transmission:400
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2267,7 +2247,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
