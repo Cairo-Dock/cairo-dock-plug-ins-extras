@@ -23,7 +23,11 @@
 import sys
 sys.argv[0] = "/usr/lib/linuxmint/mintMenu/mintMenu.py"
 import gtk
-import gnomeapplet
+try:
+	import gnomeapplet
+except:
+	import mateapplet as gnomeapplet
+	
 import subprocess
 from CDApplet import CDApplet, _
 sys.path.append("/usr/lib/linuxmint/mintMenu")
