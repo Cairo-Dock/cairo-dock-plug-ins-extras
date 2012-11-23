@@ -3,6 +3,7 @@
 # This is a part of the third-party applets for Cairo-Dock
 #
 # Copyright : (C) 2010 by ppmt and Tofe
+#             (C) 2012 by Matthieu Baerts (matttbe) and the Cairo-Dock team
 # E-mail : ppmt@glx-dock.org and chris.chapuis@gmail.com
 #
 #
@@ -20,396 +21,25 @@
 ####################
 ### dependancies ###
 ####################
-import sys
-import os.path
 import datetime
 import subprocess
-import ConfigParser
 import gobject
-import glib
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop
-from CDApplet import _
+from CDApplet import CDApplet, _
 
-#### transparent gtk window with text
-import gtk
-from gtk import gdk
-import cairo
-import pango
-
+# we support both 0.2 and 0.3 versions but we need to detect which one is available.
 bIsGTG3 = True
 
+#### transparent gtk window with text
+from postit import TransparentPostIt
 
 # the postit function:
 def add_PostIt(task_text):
 	postit = TransparentPostIt()
 	postit.set_text(task_text)
 
-class TransparentPostIt(gtk.Window):
-	def __init__(self):
-		super(TransparentPostIt, self).__init__()
-
-		self.set_title(_('GTG PostIt'))
-		self.resize(200, 100)
-		# Tell GTK+ that we want to draw the windows background ourself.
-		# If we don't do this then GTK+ will clear the window to the
-		# opaque theme default color, which isn't what we want.
-		self.set_app_paintable(True)
-		# The X server sends us an expose event when the window becomes
-		# visible on screen. It means we need to draw the contents.	On a
-		# composited desktop expose is normally only sent when the window
-		# is put on the screen. On a non-composited desktop it can be
-		# sent whenever the window is uncovered by another.
-		#
-		# The screen-changed event means the display to which we are
-		# drawing changed. GTK+ supports migration of running
-		# applications between X servers, which might not support the
-		# same features, so we need to check each time.		 
-		self.connect('expose-event', self.expose)
-		self.connect('screen-changed', self.screen_changed)
-		# toggle title bar on click - we add the mask to tell 
-		# X we are interested in this event
-		self.set_decorated(False)
-		self.add_events(gdk.BUTTON_PRESS_MASK)
-		self.connect('button-press-event', self.clicked)
-
-		self.supports_alpha = False
-		
-		# initialize for the current display
-		self.screen_changed(self)
-
-		sw = gtk.ScrolledWindow()
-		sw.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
-		self.textview = gtk.TextView()
-		self.textview.set_wrap_mode(gtk.WRAP_WORD)
-		self.textview.set_editable(False)
-		self.textbuffer = self.textview.get_buffer()
-		sw.add(self.textview)
-
-		# to make it transparent:
-		# 1 - be called when the textview widget gets realized:
-		#      textview.connect("expose-event", textview_expose)
-		self.textview.connect("expose-event", self.textview_expose)
-		# 2 - in the expose callback, get the window corresponding to the drawing:
-		#      textview_window = textview.get_window(gtk.TEXT_WINDOW_WIDGET) or
-		#      textview_window = textview.get_window(gtk.TEXT_WINDOW_TEXT)
-		# 3 - use cairo (like in expose) to draw the background of the gdk.Window
-
-		self.add(sw)
-		self.show_all()
-
-	def clicked(self, widget, event):
-			# toggle window manager frames
-			widget.set_decorated(not widget.get_decorated())
-
-	# This is called when we need to draw the windows contents
-	def expose(self, widget, event):
-		cr = widget.window.cairo_create()
-
-		if self.supports_alpha == True:
-				cr.set_source_rgba(1.0, 1.0, 0.0, 0.2) # Transparent
-		else:
-				cr.set_source_rgb(1.0, 1.0, 0.0) # Opaque yellow
-
-		# Draw the background
-		cr.set_operator(cairo.OPERATOR_SOURCE)
-		cr.paint()
-
-		return False
-
-	# This is called when we need to draw the windows contents
-	def textview_expose(self, widget, event):
-		# print "-- GTG applet -- textview_expose called --"
-		self.textview_window_text = self.textview.get_window(gtk.TEXT_WINDOW_TEXT)
-		cr = self.textview_window_text.cairo_create()
-
-		if self.supports_alpha == True:
-				cr.set_source_rgba(1.0, 1.0, 0.0, 0.5) # Yellow Transparent
-		else:
-				cr.set_source_rgb(1.0, 1.0, 0.0) # Opaque yellow
-
-		# Draw the background
-		cr.set_operator(cairo.OPERATOR_SOURCE)
-		cr.paint()
-
-		return False
-
-	def screen_changed(self, widget, old_screen=None):
-			
-			# To check if the display supports alpha channels, get the colormap
-			screen = widget.get_screen()
-			colormap = screen.get_rgba_colormap()
-			if colormap == None:
-					print 'Your screen does not support alpha channels!'
-					colormap = screen.get_rgb_colormap()
-					self.supports_alpha = False
-			else:
-					print 'Your screen supports alpha channels!'
-					self.supports_alpha = True
-			
-			# Now we have a colormap appropriate for the screen, use it
-			widget.set_colormap(colormap)
-			
-			return False
-	
-	def set_text(self,task_text):
-		self.textbuffer.set_text(task_text)
-
-applet_name = os.path.basename(os.path.abspath("."))  # the name of the applet must the same as the folder.
 DBusGMainLoop(set_as_default=True)
-
-##################################
-### callbacks on the main icon ###
-##################################
-def _try_connect():
-	myApplet.connect_to_gtg()
-	if myApplet.gtg == None:  # still not connected.
-		myApplet.iNbTries += 1
-		if myApplet.iNbTries == 5:  # give up after 5 tries.
-			myApplet.icon.ShowDialog(_("Couldn't connect to GTG :-(\nDid you install it?"),4)
-			myApplet.iSidConnect = 0
-			return False
-		return True
-	else:  # connection established.
-		myApplet.iSidConnect = 0
-		return False
-
-def action_on_click(iState):
-	if myApplet.gtg == None:  # not connected
-		if myApplet.iSidConnect == 0:  # and not in the process either
-			try:
-				subprocess.Popen(myApplet.cClass)
-			except OSError:
-				myApplet.icon.ShowDialog(_("Couldn't launch ")+myApplet.cClass,5)
-				return
-			myApplet.iNbTries = 0
-			myApplet.iSidConnect = gobject.timeout_add(1000,_try_connect)
-		else:  # Connection in progress
-			myApplet.icon.ShowDialog(_("Connecting to gtg, please wait ..."),4)
-	else:  # let's show he window.
-		if myApplet.bHasFocus:  # the windows exists and has the focus
-			#myApplet.icon.ShowAppli(False)  # We minimise it.
-			if bIsGTG3:
-				myApplet.gtg.IconifyTaskBrowser()  # We minimise it.
-			else:
-				myApplet.gtg.hide_task_browser()  # We minimise it.
-		else:  # either it doesn't exist or it doesn't have the focus.
-			try:
-				if bIsGTG3:
-					myApplet.gtg.ShowTaskBrowser()
-				else:
-					myApplet.gtg.show_task_browser()   
-				task_due(5)
-				#myApplet.icon.DemandsAttention(False,"")
-			except dbus.DBusException: 
-				print "gtg exited without telling us !" #so let's try to reconnect
-				myApplet.gtg = None
-				myApplet.connect_to_gtg()
-				if myApplet.gtg == None:  
-					print "seems gtg is not running"
-					p=subprocess.Popen("gtg")
-					status=p.wait()
-					myApplet.iNbTries = 0
-					myApplet.iSidConnect = gobject.timeout_add(1000,_try_connect)
-				else:
-					if bIsGTG3:
-						myApplet.gtg.ShowTaskBrowser()
-					else:
-						myApplet.gtg.show_task_browser()
-					#myApplet.icon.DemandsAttention("False","")
-					task_due(5)
-
-def action_on_middle_click():
-	if myApplet.gtg == None:
-		return	
-	myApplet.icon.AskText(_("Create a new task"), "");
-
-def _add_menu (menu_items, title, menu_id, current_menu_id, subtask_len, task_list_len):
-	if (subtask_len > 0):
-		menu_item_type = 1
-	else:
-		menu_item_type = 0
-
-	menu_items.extend([{"type": menu_item_type,
-										 "label" : title,
-										 "menu": menu_id,
-										 "id": current_menu_id}])
-	if (subtask_len > 0):
-		menu_items.extend([{"type": 0,
-											 "label" : _("Open category's task"),
-											 "menu": current_menu_id,
-											 "id": task_list_len+current_menu_id}])
-		menu_items.extend([{"type": 0,
-											 "label" : _("Create post-it from this category"),
-											 "menu": current_menu_id,
-											 "id": 2*task_list_len+current_menu_id}])
-		menu_items.extend([{"type": 2,
-											 "menu": current_menu_id}])
-
-def action_on_build_menu():
-	if (myApplet.gtg == None):
-		return
-	menu_items = []
-	menu_ids = {};
-	tasks_with_parents_not_found = []
-	current_menu_id = 1;
-	task_list = myApplet.list_tasks()
-	for task_item in task_list:
-		id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = task_item
-		menu_ids[str(id)] = current_menu_id
-		#print id, title
-		if (len(subtask) > 0):
-			menu_item_type=1
-		else:
-			menu_item_type=0
-
-		if (len(parents) == 0):
-			menu_items.extend([{"type": menu_item_type,
-			                   "label" : title,
-			                   "menu": -1,
-			                   "id": current_menu_id}])
-			if (len(subtask) > 0):
-				menu_items.extend([{"type": 0,
-													 "label" : _("Open category's task"),
-													 "menu": current_menu_id,
-													 "id": len(task_list)+current_menu_id}])
-				menu_items.extend([{"type": 0,
-													 "label" : _("Create post-it from this category"),
-													 "menu": current_menu_id,
-													 "id": 2*len(task_list)+current_menu_id}])
-				menu_items.extend([{"type": 2,
-													 "menu": current_menu_id}])
-		else:
-			parents_not_found = []
-			for item_parent in parents:
-				# it's possible to receive the child before its parent...
-				if item_parent not in menu_ids:
-					parents_not_found.append (item_parent)
-				else:
-					_add_menu (menu_items, title, menu_ids[item_parent], current_menu_id, len (subtask), len (task_list))
-			if len (parents_not_found) > 0:
-				tasks_with_parents_not_found.append({'task':task_item, 'id':current_menu_id, 'parents_not_found':parents_not_found})
-		current_menu_id=current_menu_id+1
-
-	# recheck if we didn't found parent of some tasks
-	i = len (task_list) # to avoid infinite loop? but should not happen except if there is a bug in GTG... (wrong info in parent)
-	while (len (tasks_with_parents_not_found) > 0 and i > 0):
-		for package in tasks_with_parents_not_found: # task + id + parents not found
-			id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = package['task']
-
-			for item_parent in package['parents_not_found']:
-				# it's possible to receive the child before its parent...
-				if item_parent in menu_ids: # we found the parent
-					_add_menu (menu_items, title, menu_ids[item_parent], package['id'], len (subtask), len (task_list))
-					package['parents_not_found'].remove (item_parent)
-			if (len (package['parents_not_found']) == 0): # we found all parents
-				tasks_with_parents_not_found.remove (package)
-			i = i - 1
-
-	myApplet.icon.AddMenuItems(menu_items)
-
-def task_due(duration):
-	#task_title=[]
-	duetasks=""
-	task_list=myApplet.list_tasks()
-	for task_item in task_list:
-		id,status,title,duedate,startdate,donedate,tags,text,subtask,parents=task_item 
-		today=str(datetime.date.today())
-		if (duedate <= today and duedate != "" or duedate == "now"):
-			if (duedate == today):
-				duetasks=duetasks+_("The task: ") + title + _(" is due today") + "\n"
-			if (duedate == "now"):
-				duetasks=duetasks+_("The task: ") + title + _(" is due NOW") + "\n"
-			if (duedate < today):
-				duetasks=duetasks+_("The task: ") + title + _(" was due on ") + duedate + "\n"
-			myApplet.icon.ShowDialog(duetasks,duration)
-			#myApplet.icon.DemandsAttention("True","")
-
-def build_postit_from_task(postit_text, depth, id, mapping_task_id):
-	# get the task item
-	task_item=mapping_task_id[id]
-	id,status,title,duedate,startdate,donedate,tags,text,subtask,parents=task_item 
-
-	extended_postit_text=postit_text
-
-	# add some space at the beginning
-	if (depth>0):
-		for i in range(depth):
-			extended_postit_text+=' '
-		extended_postit_text+='`- '
-
-  # add the text itself
-	extended_postit_text+=title
-	extended_postit_text+='\n'
-
-	# for all the children, do the same at depth+3
-	for child_task in subtask:
-		extended_postit_text=build_postit_from_task(extended_postit_text, depth+3, child_task, mapping_task_id)
-	
-	return extended_postit_text
-
-def action_on_menu_select(iMenuID):
-	print ">>> menu select",iMenuID
-	task_list=myApplet.list_tasks()
-	
-	if (iMenuID > len(task_list) and iMenuID < 2*len(task_list) ):
-		iMenuID=iMenuID-len(task_list)
-		
-	if (iMenuID < len(task_list)):
-		task_item=task_list[iMenuID-1]
-		id,status,title,duedate,startdate,donedate,tags,text,subtask,parents=task_item
-		if bIsGTG3:
-			myApplet.gtg.OpenTaskEditor(id);
-		else:
-			myApplet.gtg.open_task_editor(id)
-	else:
-		# task_item=task_list[iMenuID-2*len(task_list)-1]
-		# prepare a mapping helper for the recursion
-		mapping_task_id={}
-		for task_item in task_list:
-			mapping_task_id[task_item[0]]=task_item
-		postit_text=""
-		postit_text=build_postit_from_task(postit_text, 0, task_list[iMenuID-2*len(task_list)-1][0], mapping_task_id)
-		add_PostIt(postit_text)
-
-def action_on_scroll(bDirectionUp):
-	print ">>> scroll",bDirectionUp,myApplet.iNbMsg
-	
-def action_on_answer(answer):
-	print ">>> answer :",answer
-	if answer == None or answer == '':
-		return
-	if bIsGTG3:
-		myApplet.gtg.OpenNewTask(answer, "");
-	else:
-		myApplet.gtg.open_new_task(answer,"");
-
-def action_on_change_focus(has_focus):
-	myApplet.bHasFocus = has_focus
-	if has_focus:
-		print ">>> got focus"
-
-def action_on_click_sub_icon(int32,String): # needs to replace the argument :)
-	print ">>> click on sub_icon "
-
-	
-
-
-
-
-###############################
-### callbacks on the applet ###
-###############################
-def action_on_stop():
-	print ">>> our module is stopped"
-	myApplet.end()
-	loop.quit()
-
-def action_on_reload(bConfigHasChanged):
-	print ">>> our module is reloaded"
-	if bConfigHasChanged:
-		print ">>>  and our config has changed"
-		myApplet.get_config()
 
 #########################
 ### Events from gtg ###
@@ -417,25 +47,23 @@ def action_on_reload(bConfigHasChanged):
 
 #This is where you put the event coming from GTG (signals)
 def action_on_due_task():
-	print "A task is due!!!!"
+	pass
+	#print "A task is due!!!!"
 
 ####################
 ### Applet class ###
 ####################
-class Applet:
+class Applet(CDApplet):
 	def __init__(self):
-		self.icon = None
-		self.config = {}
-		self.cConfFile = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/"+applet_name+"/"+applet_name+".conf")  # path to the conf file of our applet.
 		self.gtg = None
 		self.iSidConnect = 0
 		self.iNbTries = 0
-		self.bHasFocus = False
 		self.cClass = ''
+		self.bHasFocus = False
+		# call high-level init
+		CDApplet.__init__(self)
 	
-	def get_config(self):
-		keyfile = ConfigParser.RawConfigParser()
-		keyfile.read(self.cConfFile)
+	def get_config(self,keyfile):
 		self.config['remind message'] = keyfile.getboolean('Configuration', 'remind message')
 		self.config['msg animation'] = keyfile.get('Configuration', 'msg animation')
 		duration = keyfile.getint('Configuration', 'duration')
@@ -449,46 +77,19 @@ class Applet:
 			self.config['duration'] = 4
 	
 	def begin(self):
-		self.connect_to_dock()
 		self.connect_to_gtg()
-		#path = os.popen("which gtg").read().rstrip()
-		#print ">>> path to gtg : "+path
 		self.cClass = 'gtg'
-		print ">>> class of the appli : "+self.cClass
+		# print ">>> class of the appli : "+self.cClass
 		self.icon.ControlAppli(self.cClass) #removed following fabounet advice
 	
 	def end(self):
 		self.disconnect_from_gtg()
 	
-	def connect_to_dock(self):
-		# get our applet on the bus.
-		applet_path = "/org/cairodock/CairoDock/"+applet_name  # path where our object is stored on the bus.
-		bus = dbus.SessionBus()
-		# icon represents our applet and also our icon inside the dock or a desklet.
-		applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
-		self.icon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")  
-		# sub_icons represents the list o f icons contained in our sub-dock,
-		sub_icons_object = bus.get_object("org.cairodock.CairoDock", applet_path+"/sub_icons")
-		self.sub_icons = dbus.Interface(sub_icons_object, "org.cairodock.CairoDock.subapplet")  
-
-		# connect to signals.
-		self.icon.connect_to_signal("on_click", action_on_click)  # user left-clicks on our icon.
-		self.icon.connect_to_signal("on_middle_click", action_on_middle_click)  # user middle-clicks on our icon.
-		self.icon.connect_to_signal("on_build_menu", action_on_build_menu)  # user right-clicks on our applet (which builds the menu)
-		self.icon.connect_to_signal("on_menu_select", action_on_menu_select)  # user selects an entry of this menu.
-		self.icon.connect_to_signal("on_scroll", action_on_scroll)  # user scroll up or down on our icon.
-		self.icon.connect_to_signal("on_answer", action_on_answer)  # user answer a question.
-		self.icon.connect_to_signal("on_change_focus", action_on_change_focus)  # user (un)focuses the gtg window.
-		self.icon.connect_to_signal("on_stop_module", action_on_stop)  # user deactivate our applet (or the DBus plug-in, or when the Cairo-Dock is stopped).
-		self.icon.connect_to_signal("on_reload_module", action_on_reload)  # user changes something in our config, or when the desklet is resized (with no change in the config).
-		self.sub_icons.connect_to_signal("on_click_sub_icon", action_on_click_sub_icon)  # user click on sub_icon
-		
-	
 	def connect_to_gtg(self):
 		# register a new plug-in in gtg.
 		global bIsGTG3
 		gtgbus = dbus.SessionBus()
-		print ">> connecting to GTG..."
+		# print ">> connecting to GTG..."
 		try:
 			gtgproxy = gtgbus.get_object('org.gnome.GTG', '/org/gnome/GTG')
 		except dbus.DBusException:
@@ -505,16 +106,15 @@ class Applet:
 			## TODO SIGNALS... ?
 		else:
 			self.gtg = dbus.Interface(gtgproxy, 'org.GTG')
-			self.gtg.connect_to_signal("due_task", action_on_due_task)  
-		#print "HELLO SIGNAL"
-		task_due(0)
+			self.gtg.connect_to_signal("due_task", action_on_due_task)
+		self.task_due(0)
 	
 	def disconnect_from_gtg(self):
 		if self.gtg == None:
 				return
 	
 	def list_tasks(self):
-		list_task=[]
+		list_task = []
 		if bIsGTG3:
 			gtg_tasks = self.gtg.GetTasksFiltered(['active']) ## ([]) => all ## , 'workable' => without categories
 		else:
@@ -525,24 +125,244 @@ class Applet:
 				task_content = t["id"],t["status"],t["title"],t["duedate"],t["startdate"],t["donedate"],t["tags"],t["text"],t["subtask"],t["parents"]
 				list_task.append(task_content)
 		else: #it is certainly 0.2.x ==> no parents
-			subtask_parents={}
+			subtask_parents = {}
 			for t in gtg_tasks:
 				task_content = t["id"],t["status"],t["title"],t["duedate"],t["startdate"],t["donedate"],t["tags"],t["text"],t["subtask"],subtask_parents.get(t["id"],[])
 				for subtask in t["subtask"]:
-					subtask_parents[subtask]=[t["id"]]
+					subtask_parents[subtask] = [t["id"]]
 				list_task.append(task_content)
 
 		return list_task
+
+	##################################
+	### callbacks on the main icon ###
+	##################################
+	def _try_connect(self):
+		self.connect_to_gtg()
+		if self.gtg == None:  # still not connected.
+			self.iNbTries += 1
+			if self.iNbTries == 5:  # give up after 5 tries.
+				self.icon.ShowDialog(_("Couldn't connect to GTG :-(\nDid you install it?"),4)
+				self.iSidConnect = 0
+				return False
+			return True
+		else:  # connection established.
+			self.iSidConnect = 0
+			return False
+
+	def on_click(self,iState):
+		if self.gtg == None:  # not connected
+			if self.iSidConnect == 0:  # and not in the process either
+				try:
+					subprocess.Popen(self.cClass)
+				except OSError:
+					self.icon.ShowDialog(_("Couldn't launch ")+self.cClass,5)
+					return
+				self.iNbTries = 0
+				self.iSidConnect = gobject.timeout_add(1000,self._try_connect)
+			else:  # Connection in progress
+				self.icon.ShowDialog(_("Connecting to gtg, please wait ..."),4)
+		else:  # let's show he window.
+			if self.bHasFocus:  # the windows exists and has the focus
+				#self.icon.ShowAppli(False)  # We minimise it.
+				if bIsGTG3:
+					self.gtg.IconifyTaskBrowser()  # We minimise it.
+				else:
+					self.gtg.hide_task_browser()  # We minimise it.
+			else:  # either it doesn't exist or it doesn't have the focus.
+				try:
+					if bIsGTG3:
+						self.gtg.ShowTaskBrowser()
+					else:
+						self.gtg.show_task_browser()   
+					self.task_due(5)
+					#self.icon.DemandsAttention(False,"")
+				except dbus.DBusException: 
+					print "gtg exited without telling us !" #so let's try to reconnect
+					self.gtg = None
+					self.connect_to_gtg()
+					if self.gtg == None:  
+						print "seems gtg is not running"
+						p = subprocess.Popen("gtg")
+						status = p.wait()
+						self.iNbTries = 0
+						self.iSidConnect = gobject.timeout_add(1000,self._try_connect)
+					else:
+						if bIsGTG3:
+							self.gtg.ShowTaskBrowser()
+						else:
+							self.gtg.show_task_browser()
+						#self.icon.DemandsAttention("False","")
+						self.task_due(5)
+
+	def on_middle_click(self):
+		if self.gtg == None:
+			return	
+		self.icon.AskText(_("Create a new task"), "");
+
+	def _add_menu (self, menu_items, title, menu_id, current_menu_id, subtask_len, task_list_len):
+		if (subtask_len > 0):
+			menu_item_type = 1
+		else:
+			menu_item_type = 0
+
+		menu_items.extend([{"type": menu_item_type,
+											 "label" : title,
+											 "menu": menu_id,
+											 "id": current_menu_id}])
+		if (subtask_len > 0):
+			menu_items.extend([{"type": 0,
+												 "label" : _("Open category's task"),
+												 "menu": current_menu_id,
+												 "id": task_list_len+current_menu_id}])
+			menu_items.extend([{"type": 0,
+												 "label" : _("Create post-it from this category"),
+												 "menu": current_menu_id,
+												 "id": 2*task_list_len+current_menu_id}])
+			menu_items.extend([{"type": 2,
+												 "menu": current_menu_id}])
+
+	def on_build_menu(self):
+		if (self.gtg == None):
+			return
+		menu_items = []
+		menu_ids = {};
+		tasks_with_parents_not_found = []
+		current_menu_id = 1;
+		task_list = self.list_tasks()
+		for task_item in task_list:
+			id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = task_item
+			menu_ids[str(id)] = current_menu_id
+			#print id, title
+			if (len(subtask) > 0):
+				menu_item_type=1
+			else:
+				menu_item_type=0
+
+			if (len(parents) == 0):
+				menu_items.extend([{"type": menu_item_type,
+								   "label" : title,
+								   "menu": -1,
+								   "id": current_menu_id}])
+				if (len(subtask) > 0):
+					menu_items.extend([{"type": 0,
+														 "label" : _("Open category's task"),
+														 "menu": current_menu_id,
+														 "id": len(task_list)+current_menu_id}])
+					menu_items.extend([{"type": 0,
+														 "label" : _("Create post-it from this category"),
+														 "menu": current_menu_id,
+														 "id": 2*len(task_list)+current_menu_id}])
+					menu_items.extend([{"type": 2,
+														 "menu": current_menu_id}])
+			else:
+				parents_not_found = []
+				for item_parent in parents:
+					# it's possible to receive the child before its parent...
+					if item_parent not in menu_ids:
+						parents_not_found.append (item_parent)
+					else:
+						self._add_menu (menu_items, title, menu_ids[item_parent], current_menu_id, len (subtask), len (task_list))
+				if len (parents_not_found) > 0:
+					tasks_with_parents_not_found.append({'task':task_item, 'id':current_menu_id, 'parents_not_found':parents_not_found})
+			current_menu_id = current_menu_id + 1
+
+		# recheck if we didn't found parent of some tasks
+		i = len (task_list) # to avoid infinite loop? but should not happen except if there is a bug in GTG... (wrong info in parent)
+		while (len (tasks_with_parents_not_found) > 0 and i > 0):
+			for package in tasks_with_parents_not_found: # task + id + parents not found
+				id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = package['task']
+
+				for item_parent in package['parents_not_found']:
+					# it's possible to receive the child before its parent...
+					if item_parent in menu_ids: # we found the parent
+						self._add_menu (menu_items, title, menu_ids[item_parent], package['id'], len (subtask), len (task_list))
+						package['parents_not_found'].remove (item_parent)
+				if (len (package['parents_not_found']) == 0): # we found all parents
+					tasks_with_parents_not_found.remove (package)
+				i = i - 1
+
+		self.icon.AddMenuItems(menu_items)
+
+	def task_due(self, duration):
+		#task_title=[]
+		duetasks = ""
+		task_list = self.list_tasks()
+		for task_item in task_list:
+			id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = task_item 
+			today = str(datetime.date.today())
+			if (duedate <= today and duedate != "" or duedate == "now"):
+				if (duedate == today):
+					duetasks=duetasks + _("The task: ") + title + _(" is due today") + "\n"
+				if (duedate == "now"):
+					duetasks=duetasks + _("The task: ") + title + _(" is due NOW") + "\n"
+				if (duedate < today):
+					duetasks = duetasks + _("The task: ") + title + _(" was due on ") + duedate + "\n"
+				self.icon.ShowDialog(duetasks,duration)
+				#self.icon.DemandsAttention("True","")
+
+	def build_postit_from_task(self, postit_text, depth, id, mapping_task_id):
+		# get the task item
+		task_item = mapping_task_id[id]
+		id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = task_item 
+
+		extended_postit_text = postit_text
+
+		# add some space at the beginning
+		if (depth > 0):
+			for i in range(depth):
+				extended_postit_text += ' '
+			extended_postit_text += '`- '
+
+	  # add the text itself
+		extended_postit_text += title
+		extended_postit_text += '\n'
+
+		# for all the children, do the same at depth+3
+		for child_task in subtask:
+			extended_postit_text = self.build_postit_from_task(extended_postit_text, depth+3, child_task, mapping_task_id)
+		
+		return extended_postit_text
+
+	def on_menu_select(self,iMenuID):
+		# print ">>> menu select",iMenuID
+		task_list = self.list_tasks()
+		
+		if (iMenuID > len(task_list) and iMenuID < 2*len(task_list) ):
+			iMenuID = iMenuID - len(task_list)
+			
+		if (iMenuID < len(task_list)):
+			task_item = task_list [iMenuID-1]
+			id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = task_item
+			if bIsGTG3:
+				self.gtg.OpenTaskEditor(id);
+			else:
+				self.gtg.open_task_editor(id)
+		else:
+			# task_item=task_list[iMenuID-2*len(task_list)-1]
+			# prepare a mapping helper for the recursion
+			mapping_task_id = {}
+			for task_item in task_list:
+				mapping_task_id[task_item[0]] = task_item
+			postit_text = ""
+			postit_text = self.build_postit_from_task(postit_text, 0, task_list[iMenuID - 2 * len(task_list) - 1][0], mapping_task_id)
+			add_PostIt(postit_text)
+		
+	def on_answer_dialog(self,button, answer):
+		#print ">>> answer :",answer
+		if answer == None or answer == '':
+			return
+		if bIsGTG3:
+			self.gtg.OpenNewTask(answer, "");
+		else:
+			self.gtg.open_new_task(answer,"");
+
+	def on_change_focus(self,has_focus):
+		self.bHasFocus = has_focus
 
 
 ############
 ### main ###
 ############
 if __name__ == '__main__':
-	myApplet = Applet()
-	myApplet.get_config()
-	myApplet.begin()
-	loop = gobject.MainLoop()
-	loop.run()
-	print ">>> bye"
-	sys.exit(0)
+	Applet().run()
