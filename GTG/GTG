@@ -197,7 +197,7 @@ class Applet(CDApplet):
 
 	def on_middle_click(self):
 		if self.gtg == None:
-			return	
+			return
 		self.icon.AskText(_("Create a new task"), "");
 
 	def _add_menu (self, menu_items, title, menu_id, current_menu_id, subtask_len, task_list_len):
@@ -224,11 +224,13 @@ class Applet(CDApplet):
 
 	def on_build_menu(self):
 		if (self.gtg == None):
-			return
+			self.connect_to_gtg() # maybe GTG has been installed after (or gtg was launched with a delay at startup).
+			if (self.gtg == None):
+				return
 		menu_items = []
-		menu_ids = {};
+		menu_ids = {}
 		tasks_with_parents_not_found = []
-		current_menu_id = 1;
+		current_menu_id = 1
 		task_list = self.list_tasks()
 		for task_item in task_list:
 			id,status,title,duedate,startdate,donedate,tags,text,subtask,parents = task_item
