@@ -221,13 +221,11 @@ class Applet(CDApplet):
 				else:
 					msg = message
 				self.icon.ShowDialog(msg,max(2,len(msg)/self.config['duration']))
-			if self.config['msg animation'] != '':
-				try:
-					self.icon.DemandsAttention(True, self.config['msg animation'])
-				except dbus.DBusException:
-					self.bDemandsAttentionAvailable = False
-				if not self.bDemandsAttentionAvailable:
-					self.icon.Animate(self.config['msg animation'], 1e6)
+			if self.config['animation type'] != 0:
+				if self.config['animation type'] == 1:
+					self.icon.Animate(self.config['msg animation'],10000)
+				elif self.config['animation type'] == 2:
+					self.icon.DemandsAttention(True,self.config['msg animation'])
 		
 		if self.config['history'] != 0:  # on insere le message dans l'historique.
 			self.pMsgList.insert(0,message)
@@ -257,13 +255,11 @@ class Applet(CDApplet):
 		if update_type == 4:  # PURPLE_CONV_UPDATE_UNSEEN
 			iNbUnread = self.iNbUnread
 			self.update_nb_unread_msg()
-			if iNbUnread != 0 and self.iNbUnread == 0 and self.config['msg animation'] != '':
-				try:
+			if iNbUnread != 0 and self.iNbUnread == 0 and self.config['animation type'] != 0:
+				if self.config['animation type'] == 1:
+					self.icon.Animate('',0)
+				else:
 					self.icon.DemandsAttention(False,'')
-				except dbus.DBusException:
-					self.bDemandsAttentionAvailable = False
-				if not self.bDemandsAttentionAvailable:
-					self.icon.Animate('', 0)
 				self.iCurrentMsg = -1
 		if self.iCurrentGuiConv == 0:
 			self.iCurrentGuiConv = conv
@@ -341,7 +337,11 @@ class Applet(CDApplet):
 		self.config['cTheme'] 			= re.sub('\[[0-9]\]','',self.config['cTheme'])
 		self.config['im message'] 		= keyfile.getboolean('Configuration', 'im message')
 		self.config['chat message'] 	= keyfile.getboolean('Configuration', 'chat message')
+		self.config['animation type'] 	= keyfile.get('Configuration', 'animation type')
 		self.config['msg animation'] 	= keyfile.get('Configuration', 'msg animation')
+		if self.config['msg animation'] == '':
+			self.config['msg animation'] = 'default'
+		
 		duration 						= keyfile.getint('Configuration', 'duration')
 		if duration == 0:
 			self.config['duration'] 	= 16
