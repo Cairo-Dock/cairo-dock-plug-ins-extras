@@ -139,8 +139,6 @@ class Applet(CDApplet):
 			if rate == 0:
 				form = ".0f"
 			elif rate < 10:
-				form = ".2f"
-			elif rate < 100:
 				form = ".1f"
 			else:
 				form = ".0f"
