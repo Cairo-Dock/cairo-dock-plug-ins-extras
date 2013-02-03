@@ -21,6 +21,8 @@
 ####################
 ### dependancies ###
 ####################
+from __future__ import print_function
+
 import datetime
 import subprocess
 import gobject
@@ -93,14 +95,14 @@ class Applet(CDApplet):
 		try:
 			gtgproxy = gtgbus.get_object('org.gnome.GTG', '/org/gnome/GTG')
 		except dbus.DBusException:
-			print ">>> GTG 0.3 is not available"
+			print(">>> GTG 0.3 is not available")
 			try:
 				gtgproxy = gtgbus.get_object('org.GTG', '/org/GTG')
 			except dbus.DBusException:
-				print ">>> GTG 0.2 and 0.3 are not available on the bus"
+				print(">>> GTG 0.2 and 0.3 are not available on the bus")
 				return
 			bIsGTG3 = False
-			print ">>> ... but GTG 0.2 is available"
+			print(">>> ... but GTG 0.2 is available")
 		if bIsGTG3:
 			self.gtg = dbus.Interface(gtgproxy, 'org.gnome.GTG')
 			## TODO SIGNALS... ?
@@ -178,11 +180,11 @@ class Applet(CDApplet):
 					self.task_due(5)
 					#self.icon.DemandsAttention(False,"")
 				except dbus.DBusException: 
-					print "gtg exited without telling us !" #so let's try to reconnect
+					print("gtg exited without telling us !") #so let's try to reconnect
 					self.gtg = None
 					self.connect_to_gtg()
 					if self.gtg == None:  
-						print "seems gtg is not running"
+						print("seems gtg is not running")
 						p = subprocess.Popen("gtg")
 						status = p.wait()
 						self.iNbTries = 0

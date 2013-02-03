@@ -20,11 +20,16 @@
 # Each result will be shown as a sub-icon.
 # Left-click to open the result in the default Web Browser.
 
-import gobject, dbus, os, urllib, gtk, ConfigParser, webbrowser
+import gobject, dbus, os, gtk, webbrowser
 from dbus.mainloop.glib import DBusGMainLoop
 from dbus import glib
 from sgmllib import SGMLParser
-from urllib import FancyURLopener
+try:
+    import configparser # python 3
+    from urllib.request import FancyURLopener
+except:
+    import ConfigParser # python 2
+    from urllib import FancyURLopener
 from util import log
 
 from GoogleParser import GoogleParser

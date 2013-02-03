@@ -18,6 +18,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from __future__ import print_function
+
 import gobject
 import os
 from copy import deepcopy
@@ -53,23 +55,23 @@ class Applet(CDApplet):
 		self.config['refresh'] 		= keyfile.getint('Configuration', 'refresh') # in milliseconds.
 		self.config['myLabel']	= keyfile.get('Icon', 'name')
 		self.setTimer() # I (re)start the timer each times the config has been retrieved
-		print applet_name + " : Config retrieved + Timer started"
+		print(applet_name + " : Config retrieved + Timer started")
 
 
 	def begin(self):
 		"""
 		Note : This is launched after get_config()
 		"""
-		print applet_name + " has been started."
+		print(applet_name + " has been started.")
 
 
 	def reload(self):
-		print applet_name + " reloaded."
+		print(applet_name + " reloaded.")
 
 
 	def end(self):
 		self.removeTimer()
-		print applet_name + " : Bye bye."
+		print(applet_name + " : Bye bye.")
 
 
 
@@ -90,7 +92,7 @@ class Applet(CDApplet):
 			self.__iNbCores = 1
 		else:
 			self.__iNbCores = len(cpuPct) - 1
-		print 'Number of cores : ' + str(self.__iNbCores)
+		print('Number of cores : ' + str(self.__iNbCores))
 		if self.__iNbCores != 1 :
 			i = 1
 			lSubIcons = []
@@ -139,7 +141,7 @@ class Applet(CDApplet):
 				self.__bClearLabel = True
 				self.__iTotalAverageTime += 1
 				self.__fTotalAverageCpu += float(self.__strDisplayValue)
-				print applet_name + ' Total time : ' + str(self.__iTotalAverageTime * self.config['refresh']/1000) + '  -  Average :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%'
+				print(applet_name + ' Total time : ' + str(self.__iTotalAverageTime * self.config['refresh']/1000) + '  -  Average :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%')
 				self.icon.SetLabel(\
 				'Average Result :\n' + \
 				'Global Cpu :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%  (' + \
@@ -188,19 +190,19 @@ class Applet(CDApplet):
 	##### Callbacks #####
 
 	def on_click(self,iState):
-		print applet_name + "  >>> left clic"
+		print(applet_name + "  >>> left clic")
 
 
 	def on_middle_click(self):
 		if self.__bAverageMode:
-			print applet_name + "  >>> middle clic > Stop average mode"
+			print(applet_name + "  >>> middle clic > Stop average mode")
 			self.__bAverageMode = False
 			self.__iTotalAverageTime = 0
 			self.__fTotalAverageCpu = .0
 			# Swap the icons
 			self.icon.SetIcon("~/.config/cairo-dock/third-party/"+applet_name+"/icon")
 		else:
-			print applet_name + "  >>> middle clic > Start average mode"
+			print(applet_name + "  >>> middle clic > Start average mode")
 			self.__bAverageMode = True
 			self.__iTotalAverageTime = 1
 			self.__fTotalAverageCpu = float(self.__strDisplayValue)
@@ -210,9 +212,9 @@ class Applet(CDApplet):
 	
 	def on_scroll(self,bScrollUp):
 		if bScrollUp:
-			print applet_name + " scroll up !"
+			print(applet_name + " scroll up !")
 		else:
-			print applet_name + " scroll down !"
+			print(applet_name + " scroll down !")
 
 ############
 ### Main ###

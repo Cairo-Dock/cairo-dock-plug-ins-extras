@@ -18,9 +18,14 @@
 # This applet displays the moon phases and its informations for the current day or week
 # from the Northern or Southern hemisphere
 
-import urllib, datetime, os, re
+import datetime, os, re
 from sgmllib import SGMLParser
-from urllib import FancyURLopener
+try: # python 3
+	import urllib.parse
+	from urllib.request import FancyURLopener
+except: # python 2
+	import urllib
+	from urllib import FancyURLopener
 
 from util import log
 from CDApplet import CDApplet, _
@@ -41,7 +46,10 @@ class Interface:
 	def fetch(self):
 		parser = MoonCalendarParser()
 		opener = AgentOpener()													  	# opens the web connection with masked user-agent
-		params = urllib.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
+		try: # python 3
+			params = urllib.parse.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
+		except: # python 2
+			params = urllib.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
 
 		try:
 			page = opener.open(parser.url, params)
@@ -121,7 +129,7 @@ class Applet(CDApplet):
 	def __init__(self):
 
 		self.show_week_moon = False
-		self.north, self.south = range(2)
+		self.north, self.south = list(range(2))
 		self.hemisphere = self.north
 		self.information = ""
 		self.week_information = []

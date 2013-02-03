@@ -18,6 +18,8 @@
 ####################
 ### dependancies ###
 ####################
+from __future__ import print_function
+
 from CDApplet import CDApplet, _
 from gobject import timeout_add
 from os import popen
@@ -58,7 +60,7 @@ def decode_item(next, token):
             data.append(decode_item(next, tok))
             tok = next()
         if token == "d":
-            data = dict(zip(data[0::2], data[1::2]))
+            data = dict(list(zip(data[0::2], data[1::2])))
     else:
         raise ValueError
     return data
@@ -66,7 +68,7 @@ def decode_item(next, token):
 def decode(text):
     try:
         src = tokenize(text)
-        data = decode_item(src.next, src.next())
+        data = decode_item(src.__next__, next(src))
         for token in src: # look for more tokens
             raise SyntaxError("trailing junk")
     except (AttributeError, ValueError, StopIteration):
@@ -130,12 +132,12 @@ class Applet(CDApplet):
 		self.tors[tor] = iface
 	
 	def on_torrent_added(self, tor):
-		print '*** torrent added:',tor
+		print('*** torrent added:',tor)
 		self._add_torrent(tor)
 		self.update_data()
 	
 	def on_torrent_removed(self, tor):
-		print '*** torrent removed:',tor
+		print('*** torrent removed:',tor)
 		del self.tors[tor]
 		self.update_data()
 	
@@ -143,11 +145,11 @@ class Applet(CDApplet):
 		self.tors.clear()
 		torrents_list = self.ktorrent.torrents()
 		for tor in torrents_list:
-			print ' + ',tor
+			print(' + ',tor)
 			self._add_torrent(tor)
 	
 	def on_name_owner_changed(self,connection_name):
-		print "on_name_owner_changed:",connection_name
+		print("on_name_owner_changed:",connection_name)
 		if len(connection_name) == 0:
 			self.ktorrent = None  # the update_data loop will stop by itself then.
 			self.tors.clear()
@@ -173,7 +175,7 @@ class Applet(CDApplet):
 		
 		# iterate through torrents to get the total dl rate.
 		rate = 0
-		for tor in self.tors.itervalues():
+		for tor in self.tors.values():
 			rate += tor.downloadSpeed()  ### or is it a property ?...
 		#print 'total dl rate: ',rate
 		
@@ -198,11 +200,11 @@ class Applet(CDApplet):
 		return True
 	
 	def show_torrents_info(self):
-		print "show torrents info..."
+		print("show torrents info...")
 		# iterate through torrents.
 		info = ""
 		n = 0
-		for tor in self.tors.itervalues():
+		for tor in self.tors.values():
 			info += "<b>"+html_escape(tor.name())+"</b>:\n"
 			stats = tor.stats()
 			s = "".join(chr(b) for b in stats)
@@ -214,7 +216,7 @@ class Applet(CDApplet):
 			info += "  progress: "+format(percent,".1f")+'%'
 			
 			state = stats['status']
-			print 'state:',state
+			print('state:',state)
 			info += ' <i>('+state+')</i>\n'
 			
 			if state != 'Paused' and state != 'Stopped':
@@ -251,10 +253,10 @@ class Applet(CDApplet):
 				else:
 					info += " <i>(finished)</i>\n"
 			
-			print 'num_peers:',stats['num_peers']
+			print('num_peers:',stats['num_peers'])
 			info += "  nb peers: "+str(stats['leechers_connected_to'])+", nb seeds: "+str(stats['seeders_connected_to'])+"\n"
 			
-			print 'ratio:',tor.shareRatio()
+			print('ratio:',tor.shareRatio())
 			ul = stats['bytes_uploaded']
 			if dl != 0:
 				ratio = float(ul) / float(dl)
@@ -288,7 +290,7 @@ class Applet(CDApplet):
 		self.config['shortkey'] = keyfile.get('Configuration', 'shortkey')
 	
 	def end(self):
-		print "*** end of KTorrent"
+		print("*** end of KTorrent")
 	
 	def begin(self):
 		self.bus = dbus.SessionBus()
@@ -339,7 +341,7 @@ class Applet(CDApplet):
 			self.show_torrents_info()
 	
 	def on_drop_data(self,cReceivedData):
-		print "*** received",cReceivedData
+		print("*** received",cReceivedData)
 		if self.ktorrent != None:
 			self.ktorrent.load(cReceivedData,'')
 		else:

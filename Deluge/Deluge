@@ -18,6 +18,9 @@
 ####################
 ### dependancies ###
 ####################
+
+from __future__ import print_function
+
 try:
 	# Merge GLib's main loop with Twister's one
 	from twisted.internet import glib2reactor
@@ -30,9 +33,9 @@ try:
 	from deluge.log import setupLogger
 	import deluge.component
 	setupLogger()
-except ImportError, e:
-	print e
-	print "This applet is designed to be used with Deluge 1.2 or later, make sure it is installed."
+except ImportError as e:
+	print(e)
+	print("This applet is designed to be used with Deluge 1.2 or later, make sure it is installed.")
 	exit()
 import subprocess
 from os import popen
@@ -120,7 +123,7 @@ class Applet(CDApplet):
 			self.iSidTryConnect = timeout_add(2000,self.try_connect)
 	
 	def on_connect_success(self,result):
-		print "*** connected to Deluge!"
+		print("*** connected to Deluge!")
 		self.bConnected = True
 		if self.config['progressbar']:  # add a progress bar if required
 			self.icon.AddDataRenderer('progressbar', 1, '')
@@ -128,7 +131,7 @@ class Applet(CDApplet):
 			self.iSidGetData = timeout_add (2000, self.update_data)
 	
 	def daemon_disconnect_callback(self):
-		print "*** Disconnected from deluge daemon"
+		print("*** Disconnected from deluge daemon")
 		self.bConnected = False
 		self.icon.SetQuickInfo("")
 		if self.config['progressbar']:
@@ -174,7 +177,7 @@ class Applet(CDApplet):
 	def on_got_progress(self,status):
 		n = 0
 		percent = 0.
-		for id, value in status.items():
+		for id, value in list(status.items()):
 			if not value['paused']:
 				percent = percent + value['progress']
 				n = n + 1
@@ -204,7 +207,7 @@ class Applet(CDApplet):
 	def on_got_torrents_status(self,status):
 		info = ""
 		n = 0
-		for id, value in status.items():
+		for id, value in list(status.items()):
 			info += "<b>"+html_escape(value['name'])+"</b>:\n"
 			info += "  progress: "+format(value['progress'],".1f")+'%'
 			if value['paused']:
@@ -286,7 +289,7 @@ class Applet(CDApplet):
 			self.config['port'] = 58846
 		
 	def end(self):
-		print "*** end of Deluge applet"
+		print("*** end of Deluge applet")
 		self.bExit = True  # to not try to reconnect when we get the 'disconnected' signal
 		client.disconnect()
 		reactor.stop()
@@ -319,7 +322,7 @@ class Applet(CDApplet):
 			else:
 				self.icon.ActOnAppli("show")
 		else:  # Deluge not started, or in the systray.
-			print "launch Deluge..."
+			print("launch Deluge...")
 			if not self.bConnected:
 				subprocess.Popen('deluged')
 			subprocess.Popen(self.cClass)
@@ -356,7 +359,7 @@ class Applet(CDApplet):
 			self.show_torrents_info()
 		
 	def on_drop_data(self,cReceivedData):
-		print "*** received: "+cReceivedData
+		print("*** received: "+cReceivedData)
 		if self.bConnected:
 			client.core.add_torrent_url(str(cReceivedData),None)
 		else:

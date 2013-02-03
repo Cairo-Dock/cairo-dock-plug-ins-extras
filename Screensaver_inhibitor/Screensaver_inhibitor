@@ -19,6 +19,8 @@
 ####################
 ### dependancies ###
 ####################
+from __future__ import print_function
+
 from CDApplet import CDApplet, _
 from os import popen
 import dbus
@@ -78,7 +80,7 @@ class Applet(CDApplet):
 			self.icon.SetLabel(_("Disable the screensaver"))
 	
 	def _deactivate_ss(self):
-		print " deactivate the screensaver for one more minute"
+		print(" deactivate the screensaver for one more minute")
 		if self.ss_method == "xscreensaver":
 			popen("xscreensaver-command -deactivate")
 		elif self.ss_method == "gnome-screensaver":
@@ -150,7 +152,7 @@ class Applet(CDApplet):
 			source_remove(self.sid_auto_deinhibit)
 			self.sid_auto_deinhibit = 0
 		if self.inhibited and timelength > 0:  # is now inhibited, we'll de-inhibit it in a given time.
-			print "we'll stop inhibiting in %dmn" % timelength
+			print("we'll stop inhibiting in %dmn" % timelength)
 			self.sid_auto_deinhibit = timeout_add(timelength*60*1000, self._auto_deinhibit)
 	
 	##### applet definition #####

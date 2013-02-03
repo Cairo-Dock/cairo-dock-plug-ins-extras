@@ -17,6 +17,8 @@
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
 
+from __future__ import print_function
+
 #### transparent gtk window with text
 import gtk
 from gtk import gdk
@@ -121,11 +123,11 @@ class TransparentPostIt(gtk.Window):
 			screen = widget.get_screen()
 			colormap = screen.get_rgba_colormap()
 			if colormap == None:
-					print 'Your screen does not support alpha channels!'
+					print('Your screen does not support alpha channels!')
 					colormap = screen.get_rgb_colormap()
 					self.supports_alpha = False
 			else:
-					print 'Your screen supports alpha channels!'
+					print('Your screen supports alpha channels!')
 					self.supports_alpha = True
 			
 			# Now we have a colormap appropriate for the screen, use it

@@ -82,18 +82,18 @@ class Applet(CDApplet):
             try:                                                                    
                 self.icon.ActOnAppli("show")                                           # bring the window to the foreground
             except:                                                                 # if liferea is in the notification area, its window is actually closed, so we must re-open it
-                subprocess.Popen("liferea-bin")                                         # ... so it is necessary to recall the application
+                subprocess.Popen("liferea")                                         # ... so it is necessary to recall the application
         else:
             self.icon.ActOnAppli("minimize")                                              # take the window to the background
 
     def show_icon_information(self):
         if self.config_info == self.show_number_of_unread_msgs:
-            self.icon.SetQuickInfo(unicode(self.number_of_unread_msgs))
+            self.icon.SetQuickInfo(str(self.number_of_unread_msgs))
         elif self.config_info == self.show_number_of_new_msgs:
-            self.icon.SetQuickInfo(unicode(self.number_of_new_msgs))
+            self.icon.SetQuickInfo(str(self.number_of_new_msgs))
     
     def bind_to_liferea_window(self):
-        self.icon.ControlAppli("liferea-bin")
+        self.icon.ControlAppli("liferea")
 
     def build_status_menu(self):
         status_menu = []

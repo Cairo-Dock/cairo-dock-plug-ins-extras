@@ -52,7 +52,7 @@ else
 
 	# end
 	rm -r "$FULLNAME"
-	echo "The tarball is available: $FULLNAME.tar.gz and $FULLNAME_python2.tar.gz"
+	echo -e "These tarballs are available:\n\t* $FULLNAME.tar.gz\n\t* ${FULLNAME}_python2.tar.gz"
 
 	read -p "Do you want to sign these tarballs? (Y/n) " SIGN
 	if [ "$SIGN" != "n" ] && [ "$SIGN" != "N" ] ; then

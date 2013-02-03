@@ -19,9 +19,12 @@
 # such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr,
 # Jokes2go.com, and Vidademerda.com.br
 
-import gtk, urllib, itertools
+import gtk, itertools
 from sgmllib import SGMLParser
-from urllib import FancyURLopener
+try:
+    from urllib.request import FancyURLopener
+except:
+    from urllib import FancyURLopener
 from util import log
 
 from CDApplet import CDApplet, _
@@ -52,7 +55,7 @@ from HundredblaguesParser import HundredblaguesParser                   # Hundre
 from ChucknorrisfactsfrParser import ChucknorrisfactsfrParser           # Chucknorrisfacts.fr
 
 # quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6, viedemerde = 7, fmylife = 8, vitadimerda = 9, hundredblagues = 10, chucknorrisfactsfr = 11
-quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr = range(12)  
+quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr = list(range(12))  
 
 class AgentOpener(FancyURLopener):
   """Masked user-agent otherwise the access would be forbidden"""
@@ -108,9 +111,9 @@ class Interface:
         self.quote = parser.quote
         self.author = parser.author
       elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr]:
-        self.quote = filter(None, parser.quote)                         # remove the '' from the array
+        self.quote = [_f for _f in parser.quote if _f]                         # remove the '' from the array
       elif self.source == jokestogo:                                    # jokestogo
-        self.quote = filter(self.linebreak, parser.quote)               # remove linebreak from the array
+        self.quote = list(filter(self.linebreak, parser.quote))               # remove linebreak from the array
       else:                                                             # vidademerda
         self.quote = [''.join(parser.quote)]
         self.author = parser.author
@@ -154,19 +157,19 @@ class Applet(CDApplet):
 
   def show_quote(self):
     if (self.source == quotationspage):
-      self.quotation = "\"%s\" ~ %s" % (self.quotes.next(), self.authors.next()) # quote[x] ~ author[x]
+      self.quotation = "\"%s\" ~ %s" % (next(self.quotes), next(self.authors)) # quote[x] ~ author[x]
     elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr]:
       try:                                                              # check if it is possible to show the already stored quotes
-        current = self.quotes.next()
+        current = next(self.quotes)
       except StopIteration:                                             # all were already shown
         self.get_quotes_from_web()                                      # fetch more
-        current = self.quotes.next()                                    # get the first
+        current = next(self.quotes)                                    # get the first
       self.quotation = "%s" % current
     elif (self.source == jokestogo):                                    # jokestogo provides only one quote per request ...
       self.quotation = "%s" % self.quotes.next().rstrip()                 
       self.get_quotes_from_web()                                        # ... so it is necessary to request it again
     else:                                     
-      self.quotation = "%s ~ %s" % (self.quotes.next(), self.authors.next())  # vidademerda  provides only one quote per request ...
+      self.quotation = "%s ~ %s" % (next(self.quotes), next(self.authors))  # vidademerda  provides only one quote per request ...
       self.get_quotes_from_web()                                        # ... so it is necessary to request it again
     self.icon.PopupDialog({'message':self.quotation, "buttons":"stock_copy;go-next;cancel"}, {})
 

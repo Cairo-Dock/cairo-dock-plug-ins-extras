@@ -16,6 +16,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+from __future__ import print_function
+
 import os.path
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop
@@ -50,7 +53,7 @@ class CairoDockPlugin(object):
 		try:
 			dbusObject = bus.get_object(CAIRO_SERVICE, self.__path)
 		except dbus.DBusException:
-			print "<%s can't be found on the bus, exit>" % (self.__name)
+			print("<%s can't be found on the bus, exit>" % (self.__name))
 			sys.exit(1)
 		self.__plugin = dbus.Interface(dbusObject, CAIRO_APPLET)
 	
@@ -106,7 +109,7 @@ class CairoDockPlugin(object):
 		I write message to console if I have permission to do this.
 		"""
 		if self.__debugMode:
-			print '<%s : %s>' % (self.__name, message)
+			print('<%s : %s>' % (self.__name, message))
 
 	def setLabel(self, label):
 		"""

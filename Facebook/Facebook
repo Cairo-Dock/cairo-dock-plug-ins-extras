@@ -23,6 +23,8 @@
 ### dependancies ###
 ####################
 
+from __future__ import print_function
+
 from CDApplet import CDApplet, _
 import glib
 import gtk
@@ -361,7 +363,7 @@ class FaceBook(CDApplet):
 		if fblist != []:
 			pass
 		else:
-			print '...Facebook Applet could not connect to the Internet. Trying later.'
+			print('...Facebook Applet could not connect to the Internet. Trying later.')
 			self.error()
 			return False
 		# then it omits friend request details and feeds the result into a the "self.fb" dictionary
@@ -400,7 +402,7 @@ class FaceBook(CDApplet):
 		# but first it needs to know whether the cairo-dock process still exists
 		master = self.findcairo()
 		# test log
-		print "...updating Facebook Applet"
+		print("...updating Facebook Applet")
 		# now the process can fetch information from Facebook
 		# since the findcairo() method should have terminated the program
 		# in case cairo-dock does not exist, there is no need to check again
@@ -468,7 +470,7 @@ class FaceBook(CDApplet):
 			return True
 		except:
 			# test log
-			print "...Facebook Applet can't find cairo-dock...byebye!"
+			print("...Facebook Applet can't find cairo-dock...byebye!")
 			sys.exit()
 	
 	def repeat(self):
@@ -517,7 +519,7 @@ class FaceBook(CDApplet):
 		# response to dialgoue 1 requesting installation
 		elif self.dialog_type == 11:
 			if key == 0:
-				print "answer is yes"
+				print("answer is yes")
 				# the dialog_type is not reset till installation is complete
 				# to prevent other dialogues to stand in the way
 				# while type == 11, fbcmd_steps() will keep iterating

@@ -20,6 +20,7 @@
 ####################
 ### dependancies ###
 ####################
+from __future__ import print_function
 import os.path
 import gobject
 import glib
@@ -69,7 +70,7 @@ class Applet(CDApplet):
 	### Private Methods ###
 	
 	def on_name_owner_changed(self,connection_name):
-		print "on_name_owner_changed:",connection_name
+		print("on_name_owner_changed:",connection_name)
 		if len(connection_name) == 0:
 			self.purple = None
 			self.cStatus = STATUS[1]
@@ -301,11 +302,11 @@ class Applet(CDApplet):
 		#### ajouter un embleme...
 		
 	def on_buddy_signed_on(self, name):
-		print ">>> buddy signed on (",name,")"
+		print(">>> buddy signed on (",name,")")
 		### ajouter une sous-icone...
 		
 	def on_buddy_signed_off(self, name):
-		print ">>> buddy signed off (",name,")"
+		print(">>> buddy signed off (",name,")")
 		### retirer la sous-icone...
 		
 	def on_signing_on(self, conn):
@@ -369,13 +370,13 @@ class Applet(CDApplet):
 		Xid = self.icon.Get("Xid")
 		if Xid != 0:
 			if self.purple is None:
-				print "We couldn't connect to Pidgin. Check that Dbus is active in Pidgin."
+				print("We couldn't connect to Pidgin. Check that Dbus is active in Pidgin.")
 				return
 			if self.iCurrentGuiConv == 0:
 				convs = self.purple.PurpleGetConversations()
 				self.iCurrentGuiConv = convs[0]
 			if self.iCurrentGuiConv != 0:
-				print "present conv "+str(self.iCurrentGuiConv)
+				print("present conv "+str(self.iCurrentGuiConv))
 				self.icon.ActOnAppli("show") # we have to do that due to a bug in Pidgin (http://developer.pidgin.im/ticket/12534)
 				self.purple.PurpleConversationPresent(self.iCurrentGuiConv)  # on ne peut pas recuperer la conversation courante de l'IHM en regardant laquelle a le focus, car elles ne l'ont que lorsque la fenetre a le focus.
 		else:

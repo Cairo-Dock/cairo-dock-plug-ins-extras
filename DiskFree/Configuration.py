@@ -16,7 +16,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from ConfigParser import RawConfigParser
+
+from __future__ import print_function
+
+try:
+	import ConfigParser # python 2
+except:
+	import configparser # python 3
 from os.path import isfile
 from os.path import expanduser
 import sys
@@ -43,7 +49,7 @@ class Configuration(RawConfigParser):
 			self.nameOfPlugin = nameOfPlugin
 			self.refresh()
 		else:
-			print "%s n'existe pas ! Fin du programme." % (nameOfPlugin)
+			print("%s n'existe pas ! Fin du programme." % (nameOfPlugin))
 			sys.exit(1)
 	
 	def refresh(self):

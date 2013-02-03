@@ -26,6 +26,8 @@
 ### REV : 21/01/2010
 
 ### import ###
+from __future__ import print_function
+
 import sys
 import gobject
 import glib
@@ -43,7 +45,7 @@ bus = dbus.SessionBus()
 try:
 	applet_object = bus.get_object("org.cairodock.CairoDock", applet_path)
 except dbus.DBusException:
-	print ">>> module '"+applet_name+"' can't be found on the bus, exit."
+	print(">>> module '"+applet_name+"' can't be found on the bus, exit.")
 	sys.exit(2)
 myIcon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet") 
 
@@ -54,47 +56,47 @@ myIcon = dbus.Interface(applet_object, "org.cairodock.CairoDock.applet")
 ### callbacks ###
 def action_on_click(iState):
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_click").read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 	
 def action_on_middle_click():
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_middle_click").read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 
 def action_on_scroll_icon(bUpOrDown):
 	if bUpOrDown:
 		return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_scroll_icon 0").read().rstrip()
-		print return_from_bash
+		print(return_from_bash)
 	else:
 		return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_scroll_icon 1").read().rstrip()
-		print return_from_bash
+		print(return_from_bash)
 
 def action_on_drop_data(sDataName):
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_drop_data " + sDataName).read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 
 def action_on_init():
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_init").read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 	
 def action_on_stop():
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_stop").read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 	
 def action_on_reload(bConfigHasChanged):
 	if bConfigHasChanged:
 		return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_reload").read().rstrip()
-		print return_from_bash
+		print(return_from_bash)
 
 def action_on_build_menu():
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_build_menu").read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 def action_on_menu_select(iNumEntry):
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_menu_select " + str(iNumEntry)).read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 	
 def action_on_answer(sDataName):
 	return_from_bash = os.popen("cd " + app_folder + " && ./" + applet_name + ".pl " + " action_on_answer " + sDataName).read().rstrip()
-	print return_from_bash
+	print(return_from_bash)
 	
 ### init ###
 def init():

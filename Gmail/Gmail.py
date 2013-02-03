@@ -19,7 +19,10 @@ from CDApplet import CDApplet, _
 
 import glib # used for timer
 import base64 # used to encrypt and decrypt messaging accounts' passwords
-import urllib2 # used to connect to Gmail
+try: # used to connect to Gmail
+	import urllib.request # python 3
+except:
+	import urllib2 # python 2
 import re # used to read Gmail headers at authentication
 import libxml2 # used to parse XML content from Gmail inbox
 import os # used to find paths and to launch 'aplay'
@@ -66,6 +69,12 @@ class Menu(gtk.Menu):
           webbrowser.open(link)
         except webbrowser.Error:
           os.popen('x-www-browser https://mail.google.com/mail')
+
+def urlopen (request):
+    try:
+        return urllib.request.urlopen(request)
+    except:
+        return urllib2.urlopen(request)
 
 class Gmail(CDApplet):
 
@@ -268,12 +277,15 @@ class Gmail(CDApplet):
         """
 
         gmailfeed = 'https://mail.google.com/mail/feed/atom/'
-        request = urllib2.Request(gmailfeed)
+        try:
+            request = urllib.request.Request(gmailfeed)
+        except:
+            request = urllib2.Request(gmailfeed)
 
         # connect to Gmail
         try:
-            handle = urllib2.urlopen(request)
-        except IOError, error:
+            handle = urlopen(request)
+        except IOError as error:
             # here we will need "fail" as we receive a 401 error to get access
             pass
 
@@ -312,8 +324,8 @@ class Gmail(CDApplet):
         authheader = "Basic %s" % base64string
         request.add_header("Authorization", authheader)
         try:
-            handle = urllib2.urlopen(request)
-        except IOError, error:
+            handle = urlopen(request)
+        except IOError as error:
             # here we shouldn't fail if the username/password is right
             message = _("WARNING: Gmail username or password may be wrong.")
             self.error(message)
