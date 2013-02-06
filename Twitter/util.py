@@ -15,13 +15,18 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #  GNU General Public License for more details.
 
-import ConfigParser
+from __future__ import print_function
+
+try:
+  import configparser as ConfigParser
+except:
+  import ConfigParser
 
 def logp (string):
-  print "[+] Twitter: %s" % string
+  print("[+] Twitter: %s" % string)
 
 def logm (string):
-  print "[-] Twitter: %s" % string
+  print("[-] Twitter: %s" % string)
 
 def camelcase(string):
   """ capitalizes only first character of a string """

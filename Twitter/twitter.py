@@ -16,7 +16,19 @@
 #  GNU General Public License for more details.
 
 from oauth import oauth
-import simplejson, threading, urllib2
+import simplejson, threading
+try:
+  import urllib.request, urllib.error
+  def urllib2Request():
+    return urllib.request
+  def urllib2Error():
+    return urllib.error
+except:
+  import urllib2
+  def urllib2Request():
+    return urllib2
+  def urllib2Error():
+    return urllib2
 
 from network import Network
 from user import User
@@ -105,7 +117,7 @@ class Twitter(Network):
       oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
 
       url = oauth_request.to_url()
-      req = urllib2.urlopen(url)
+      req = urllib2Request().urlopen(url)
      
       buffer = ''
       while True:
@@ -155,7 +167,7 @@ class Twitter(Network):
     def tweet(self, message):                                                              # popularly "send a tweet"
       try:
         self.dispatch(self.update_url, "POST", {'status':message})
-      except urllib2.HTTPError, err:
+      except urllib2Error().HTTPError as err:
         if err.code == 403:
           return False
       else:

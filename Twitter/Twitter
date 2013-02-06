@@ -24,7 +24,11 @@
 
 # TODO: Add more methods to the Identi.ca API
 
-import os, webbrowser, Queue
+import os, webbrowser
+try:
+  import queue
+except:
+  import Queue as queue
 
 from interface import Interface                                                 # interface.py
 from twitter import Twitter
@@ -436,7 +440,7 @@ class Applet(CDApplet):
     
     (self.responding_screen_name, self.responding_authorization, self.responding_pin,
     self.responding_success, self.responding_tweet, self.responding_initial_informations,
-    self.responding_sending_direct_message_reply, self.responding_retweet) = range(8)
+    self.responding_sending_direct_message_reply, self.responding_retweet) = list(range(8))
     self.dialog_type = None
     
     self.emblem = emblem.Emblem()                                                             # emblem maker, see emblem.py
@@ -452,8 +456,8 @@ class Applet(CDApplet):
     
     self.tweet_length             = 140
     
-    self.tweet_stream   = Queue.Queue()
-    self.message_stream = Queue.Queue()
+    self.tweet_stream   = queue.Queue()
+    self.message_stream = queue.Queue()
 
     CDApplet.__init__(self)                                                                             # call CDApplet interface init
 

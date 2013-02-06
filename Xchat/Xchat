@@ -19,10 +19,11 @@
 ####################
 ### dependancies ###
 ####################
+from __future__ import print_function
+
 import sys
 import os.path
 import subprocess
-import ConfigParser
 import gobject
 import glib
 import dbus
@@ -57,12 +58,12 @@ class Applet(CDApplet):
 	### Private Methods ###
 	
 	def on_name_owner_changed(self,connection_name):
-		print "on_name_owner_changed:",connection_name
+		print("on_name_owner_changed:",connection_name)
 		if len(connection_name) == 0:
 			self.xchat = None
 			self.remote = None
 		else:
-			print ">> connecting to xchat..."
+			print(">> connecting to xchat...")
 			# get the xchat remote object on the bus
 			bus_object = self.bus.get_object(connection_name, self.object_path)
 			self.remote = dbus.Interface(bus_object, self.iface_name)
@@ -71,11 +72,11 @@ class Applet(CDApplet):
 				"Cairo-Dock applet",
 				"Cairo-Dock applet",
 				"1.0")
-			print ">>> path :" + path
+			print(">>> path :" + path)
 			# get the plug-in object on the bus.
 			proxy = self.bus.get_object('org.xchat.service', path)
 			self.xchat = dbus.Interface(proxy, 'org.xchat.plugin')
-			print ">>> connected to " + self.xchat.GetInfo("network") + " (" + self.xchat.GetInfo("server") + ") as " + self.xchat.GetInfo("nick")
+			print(">>> connected to " + self.xchat.GetInfo("network") + " (" + self.xchat.GetInfo("server") + ") as " + self.xchat.GetInfo("nick"))
 			# connect to signals.
 			#self.HookServerId = self.xchat.HookServer('PART', 0, 0)  # 0 <=> normal priority, 0 <=> let it pass (PRIVMSG, NOTICE, PART, etc)
 			self.HookCmdId = self.xchat.HookCommand("cairo-dock", 0, "pouic pouic", 0)  # 0 <=> normal priority, 0 <=> let it pass
@@ -117,7 +118,7 @@ class Applet(CDApplet):
 	def on_command_catched(self,words, words_eol, hook_id, ctx_id):
 		if self.HookCmdId != hook_id:
 			return
-		print ">>> CMD :" + words_eol[1]
+		print(">>> CMD :" + words_eol[1])
 		self.icon.ShowDialog("Yes, Master ?",4)
 
 	def on_server_event(self, words, words_eol, hook_id, ctx_id):
@@ -126,7 +127,7 @@ class Applet(CDApplet):
 		if self.bSilentMode:
 			return
 		msg = words_eol[1]
-		print ">>> EVENT :" + msg
+		print(">>> EVENT :" + msg)
 		if self.config['channel message']:
 			self.icon.ShowDialog(msg,max(1,len(msg)/self.config['duration']))
 		if self.config['animation type'] == 1:
@@ -140,7 +141,7 @@ class Applet(CDApplet):
 		if len(words) < 2:
 			return
 		msg = words[1]
-		print ">>> PRINT :" + msg
+		print(">>> PRINT :" + msg)
 		if not self.bHasFocus:  # si l'utilisateur n'est pas devant xchat, on le notifie du message.
 			if not self.bSilentMode:
 				if self.config['channel message']:
@@ -163,7 +164,7 @@ class Applet(CDApplet):
 				self.iCurrentMsg = min(self.iNbMsg-1, self.iCurrentMsg+1)  # on l'insere au debut donc ca decale le message courant.
 		
 	def on_unload_event():  # ne semble pas appele lorsque xchat quitte :-(
-		print ">>> xchat quits"
+		print(">>> xchat quits")
 		del self.xchat
 		self.xchat = None
 		del self.pMsgList
@@ -197,21 +198,21 @@ class Applet(CDApplet):
 		# control the appli
 		process = os.popen("pgrep xchat-gnome").read().rstrip()
 		if process != '':
-			print "xchat-gnome is already running"
+			print("xchat-gnome is already running")
 			self.cClass = 'xchat-gnome'
 		else:
 			process = os.popen("pgrep xchat").read().rstrip()
 			if process != '':
-				print "xchat is already running"
+				print("xchat is already running")
 				self.cClass = 'xchat'
 			else:
 				path = os.popen("which xchat-gnome").read().rstrip()
-				print ">>> path to xchat-gnome : "+path
+				print(">>> path to xchat-gnome : "+path)
 				if path == '':
 					self.cClass = 'xchat'
 				else:
 					self.cClass = 'xchat-gnome'
-		print ">>> class of the appli : "+self.cClass
+		print(">>> class of the appli : "+self.cClass)
 		self.icon.ControlAppli(self.cClass)
 	
 	def end(self):
@@ -288,16 +289,16 @@ class Applet(CDApplet):
 			chans = self.list_channels()
 			channel=''
 			channel=chans[iNumEntry-2]
-			print ">>> channel " + channel
+			print(">>> channel " + channel)
 			ctx = self.xchat.FindContext('', channel)
 			if ctx == 0:
-				print "channel not found"
+				print("channel not found")
 				return
 			self.xchat.SetContext(ctx)
 			self.xchat.Command("GUI FOCUS")  # pour donner le focus a l'onglet correspondant a notre contexte.
 	
 	def on_scroll(self,bDirectionUp):
-		print ">>> scroll",bDirectionUp,self.iNbMsg
+		print(">>> scroll",bDirectionUp,self.iNbMsg)
 		if self.iNbMsg != 0 :
 			if bDirectionUp:
 				self.iCurrentMsg += 1
@@ -312,7 +313,7 @@ class Applet(CDApplet):
 		
 	def on_answer_dialog(self,button,answer):
 		if button == 0 or button == -1:  # ok or Enter
-			print ">>> answer :",answer
+			print(">>> answer :",answer)
 			if answer == None or answer == '':
 				return
 			self.xchat.Command("say "+answer);
@@ -320,7 +321,7 @@ class Applet(CDApplet):
 	def on_change_focus(self,has_focus):
 		self.bHasFocus = has_focus
 		if has_focus:
-			print ">>> got focus"
+			print(">>> got focus")
 			if self.iNbUnread > 0 and self.config['animation type'] != 0:
 				if self.config['animation type'] == 1:
 					self.icon.Animate('',0)

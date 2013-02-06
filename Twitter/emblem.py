@@ -25,7 +25,7 @@ class Emblem:
   def __init__(self):
     self.emblem = os.path.abspath(os.path.join(os.getcwd(), './emblem.svg'))
     self.counter = 0
-    self.size_small, self.size_medium, self.size_large = range(3)
+    self.size_small, self.size_medium, self.size_large = list(range(3))
     self.size = self.size_medium
 
   def update(self, counter):

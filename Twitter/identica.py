@@ -16,7 +16,10 @@
 #  GNU General Public License for more details.
 
 from oauth import oauth
-from urllib2 import HTTPError
+try:
+  from urllib.error import HTTPError
+except:
+  from urllib2 import HTTPError
 import simplejson
 
 from network import Network
@@ -115,7 +118,7 @@ class Identica(Network):
     def tweet(self, message):                                                           # popularly "send a tweet"
       try:
         self.dispatch(self.update_url, "POST", {'status':message})
-      except HTTPError, err: # urllib2
+      except HTTPError as err: # urllib2
         if err.code == 401:
           return False
       else:
