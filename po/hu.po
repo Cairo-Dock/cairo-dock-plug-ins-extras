@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2013-02-06 14:33+0000\n"
 "PO-Revision-Date: 2012-09-10 02:22+0000\n"
 "Last-Translator: Gergely Szarka <szarka.honved@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-04 05:07+0000\n"
-"X-Generator: Launchpad (build 16218)\n"
+"X-Launchpad-Export-Date: 2013-02-07 05:06+0000\n"
+"X-Generator: Launchpad (build 16477)\n"
+"Language: hu\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "A GnoMenu nincs telepítve. Telepítse, mielőtt használja a kisalkalmazást."
 
@@ -169,8 +171,8 @@ msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
 msgstr ""
-"Ha zárolva van, a deskletet nem lehet a bal egérgombbal áthelyezni. Az ALT"
-"+bal egérgomb kombinációt kell használni."
+"Ha zárolva van, a deskletet nem lehet a bal egérgombbal áthelyezni. Az "
+"ALT+bal egérgomb kombinációt kell használni."
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:23
@@ -971,7 +973,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1070,8 +1073,8 @@ msgstr "Háttér áttetszősége:"
 #: ../YoutubeDl/messages:65
 msgid "in pixels. Use this to adjust the left position of the drawings."
 msgstr ""
-"pixelekben. Ezzel állíthatja be a rajzok bal oldalhoz viszonyított helyzetét."
-"be"
+"pixelekben. Ezzel állíthatja be a rajzok bal oldalhoz viszonyított "
+"helyzetét.be"
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:73
@@ -1326,9 +1329,8 @@ msgid "No"
 msgstr ""
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
-#, fuzzy
 msgid "Simple animation"
-msgstr "Animáció megjelenítése?"
+msgstr ""
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
@@ -1426,9 +1428,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
@@ -1874,9 +1876,8 @@ msgid "Time remaining: Unknown"
 msgstr ""
 
 #: ../Transmission/Transmission:292
-#, fuzzy
 msgid "Finished"
-msgstr "Finn"
+msgstr ""
 
 #: ../Transmission/Transmission:296
 msgid "Number of peers:"
@@ -1887,9 +1888,8 @@ msgid "and seeds:"
 msgstr ""
 
 #: ../Transmission/Transmission:299
-#, fuzzy
 msgid "Ratio:"
-msgstr "Forgatás:"
+msgstr ""
 
 #: ../Transmission/Transmission:303
 msgid "No torrent in the list"
@@ -2064,9 +2064,8 @@ msgid "Large"
 msgstr "Nagy"
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Notifications"
-msgstr "Alkalmazások"
+msgstr ""
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
@@ -2077,9 +2076,8 @@ msgid "Should the applet play a sound as a notification?"
 msgstr ""
 
 #: ../Twitter/messages:107
-#, fuzzy
 msgid "Play a sound"
-msgstr "Hang lejátszása?"
+msgstr ""
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
@@ -2414,7 +2412,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2543,12 +2542,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet"
-#~ msgstr "Kisalkalmazás"
-
-#~ msgid "Let empty to use the default one."
-#~ msgstr "Hagyja üresen az alapértelmezés használatához."
-
-#~ msgid "Leave empty to use the default one."
-#~ msgstr "Hagyja üresen az alapértelmezés használatához."

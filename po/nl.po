@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-09-15 09:57+0000\n"
+"POT-Creation-Date: 2013-02-06 14:33+0000\n"
+"PO-Revision-Date: 2013-02-08 18:46+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-04 05:07+0000\n"
-"X-Generator: Launchpad (build 16218)\n"
+"X-Launchpad-Export-Date: 2013-02-09 05:08+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -90,7 +92,7 @@ msgstr "Naam van pictogram zoals zichtbaar op het label in het dock :"
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -698,9 +700,9 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient <i>deluged</"
-"i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de communicatie "
-"tussen het dock en Deluge).\n"
+"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient "
+"<i>deluged</i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de "
+"communicatie tussen het dock en Deluge).\n"
 "Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
 "<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
 "(u kunt hier een sneltoets voor instellen).\n"
@@ -932,6 +934,8 @@ msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
+"Kon geen verbinding maken met GTG :-(\n"
+"Controleer of het geïnstalleerd is?"
 
 #: ../GTG/GTG:161
 msgid "Couldn't launch "
@@ -939,35 +943,35 @@ msgstr ""
 
 #: ../GTG/GTG:166
 msgid "Connecting to gtg, please wait ..."
-msgstr ""
+msgstr "Verbinding maken met GTG, een moment geduld a.u.b…"
 
 #: ../GTG/GTG:203
 msgid "Create a new task"
-msgstr ""
+msgstr "Nieuwe taak aanmaken"
 
 #: ../GTG/GTG:217 ../GTG/GTG:253
 msgid "Open category's task"
-msgstr ""
+msgstr "Categorietaak openen"
 
 #: ../GTG/GTG:221 ../GTG/GTG:257
 msgid "Create post-it from this category"
-msgstr ""
+msgstr "Post-it aanmaken van deze categorie"
 
 #: ../GTG/GTG:300 ../GTG/GTG:302 ../GTG/GTG:304
 msgid "The task: "
-msgstr ""
+msgstr "De taak: "
 
 #: ../GTG/GTG:300
 msgid " is due today"
-msgstr ""
+msgstr " verloopt vandaag"
 
 #: ../GTG/GTG:302
 msgid " is due NOW"
-msgstr ""
+msgstr " verloopt NU"
 
 #: ../GTG/GTG:304
 msgid " was due on "
-msgstr ""
+msgstr " is verlopen op "
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
@@ -1008,7 +1012,7 @@ msgstr ""
 "Dit applet integreert GTG in uw dock.\n"
 "Het kan taken laten zien,\n"
 "Maak een nieuwe taak aan met een middelklik en maak een post-it van een "
-"taakcategorie.\n"
+"categorietaak.\n"
 "Het pictogram kan het GTG-venster beheren zoals een normale "
 "toepassingspictogram."
 
@@ -1031,7 +1035,8 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1408,28 +1413,24 @@ msgid "Bubbles duration:"
 msgstr "Tijdsduur van de ballonnen:"
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
-#, fuzzy
 msgid "Animate the icon when receiving channel messages"
-msgstr "Animatie van het pictogram bij het ontvangen van kanaal-berichten :"
+msgstr "Het pictogram animeren bij het ontvangen van kanaal-berichten"
 
 #: ../Pidgin/messages:113 ../Xchat/messages:105
-#, fuzzy
 msgid "No"
-msgstr "Geen"
+msgstr "Nee"
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
-#, fuzzy
 msgid "Simple animation"
-msgstr "Animatie tonen?"
+msgstr "Eenvoudige animatie"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
-msgstr ""
+msgstr "Vraagt aandacht"
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
-#, fuzzy
 msgid "Animation of the icon"
-msgstr "Animatie van het pictogram bij het ontvangen van een bericht:"
+msgstr "Animatie van het pictogram"
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid ""
@@ -1528,15 +1529,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dit applet laat u een \"Citaat van de dag\" zien, verkregen van sommige "
 "internetbronnen zoals:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, en Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, en Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
 msgid "Screensaver is currently disabled"
@@ -1957,82 +1958,79 @@ msgstr ""
 
 #: ../Transmission/Transmission:257
 msgid "Progress:"
-msgstr ""
+msgstr "Voortgang:"
 
 #: ../Transmission/Transmission:260
 msgid "paused"
-msgstr ""
+msgstr "gepauzeerd"
 
 #: ../Transmission/Transmission:262
 msgid "checking"
-msgstr ""
+msgstr "controle"
 
 #: ../Transmission/Transmission:264
 msgid "waiting for check"
-msgstr ""
+msgstr "wachten op controle"
 
 #: ../Transmission/Transmission:266
 msgid "seeding"
-msgstr ""
+msgstr "seeden"
 
 #: ../Transmission/Transmission:270
 msgid "Time remaining:"
-msgstr ""
+msgstr "Resterende tijd:"
 
 #: ../Transmission/Transmission:276
 msgid "days"
-msgstr ""
+msgstr "dagen"
 
 #: ../Transmission/Transmission:278 ../Transmission/Transmission:284
 msgid "h"
-msgstr ""
+msgstr "u"
 
 #: ../Transmission/Transmission:286
 msgid "min"
-msgstr ""
+msgstr "min"
 
 #: ../Transmission/Transmission:287
 msgid "sec"
-msgstr ""
+msgstr "sec"
 
 #: ../Transmission/Transmission:290
 msgid "Time remaining: Unknown"
-msgstr ""
+msgstr "Resterende tijd: onbekend"
 
 #: ../Transmission/Transmission:292
-#, fuzzy
 msgid "Finished"
-msgstr "Fins"
+msgstr "Voltooid"
 
 #: ../Transmission/Transmission:296
-#, fuzzy
 msgid "Number of peers:"
-msgstr " Aantal nieuwe berichten"
+msgstr "Aantal peers:"
 
 #: ../Transmission/Transmission:296
 msgid "and seeds:"
-msgstr ""
+msgstr "en seeds:"
 
 #: ../Transmission/Transmission:299
-#, fuzzy
 msgid "Ratio:"
-msgstr "Draaiing :"
+msgstr "Verhouding:"
 
 #: ../Transmission/Transmission:303
 msgid "No torrent in the list"
-msgstr ""
+msgstr "Geen torrent in de lijst"
 
 #: ../Transmission/Transmission:308
 msgid "Total amount of data:"
-msgstr ""
+msgstr "Totale hoeveelheid data:"
 
 #: ../Transmission/Transmission:317
 msgid "Received:"
-msgstr ""
+msgstr "Ontvangen:"
 
 #: ../Transmission/Transmission:325
 msgid "Sent:"
-msgstr ""
+msgstr "Verzonden:"
 
 #: ../Transmission/Transmission:411
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2218,9 +2216,8 @@ msgid "Large"
 msgstr "Groot"
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Notifications"
-msgstr "Waarschuwingsselecties"
+msgstr "Notificaties"
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
@@ -2231,18 +2228,16 @@ msgid "Should the applet play a sound as a notification?"
 msgstr "Moet het applet een geluid afspelen bij een waarschuwing?"
 
 #: ../Twitter/messages:107
-#, fuzzy
 msgid "Play a sound"
-msgstr "Geluid afspelen?"
+msgstr "Een geluid afspelen"
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
 msgstr "Moet het applet een pictogramanimatie afspelen bij een waarschuwing?"
 
 #: ../Twitter/messages:111
-#, fuzzy
 msgid "Animate the icon"
-msgstr "In het pictogram tonen:"
+msgstr "Het pictogram animeren"
 
 #: ../Twitter/messages:113
 msgid "Which animation should apply to the icon?"
@@ -2542,7 +2537,8 @@ msgstr "Voeg anders in stilte de url aan de lijst toe"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr "Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
+msgstr ""
+"Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
@@ -2646,7 +2642,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Niet overschrijven (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 "Titel van de video die is gedownload, gebruiken in de bestandsnaam van de "
 "video"
@@ -2799,21 +2796,3 @@ msgstr ""
 "Indien er geen video's in de lijst staan, dan kunt u een url invoeren door "
 "met links te klikken op het pictogram . Anders zal de url-lijst getoond "
 "worden."
-
-#~ msgid "Applet"
-#~ msgstr "Applet"
-
-#~ msgid "Name of the icon as it will appear in its label in the dock :"
-#~ msgstr "Naam van pictogram zoals zichtbaar op het label in het dock :"
-
-#~ msgid "Let empty to use the default one."
-#~ msgstr "Laat leeg om standaardwaarde te gebruiken."
-
-#~ msgid "Image's filename :"
-#~ msgstr "Bestandsnaam afbeelding :"
-
-#~ msgid "Leave empty to use the default one."
-#~ msgstr "Laat leeg om standaardwaarde te gebruiken."
-
-#~ msgid "Icon animation?"
-#~ msgstr "Pictogramanimatie?"

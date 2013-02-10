@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-09-20 21:55+0000\n"
+"POT-Creation-Date: 2013-02-06 14:33+0000\n"
+"PO-Revision-Date: 2013-02-09 08:21+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-04 05:07+0000\n"
-"X-Generator: Launchpad (build 16218)\n"
+"X-Launchpad-Export-Date: 2013-02-10 05:01+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
+"Language: uk\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu не встановлено. Встановіть до того, як використовувати додаток."
 
@@ -89,7 +91,7 @@ msgstr "Ім'я значка, як воно буде відображено в �
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Типово"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -374,7 +376,8 @@ msgstr "Оформлення"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr "Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
+msgstr ""
+"Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:59
@@ -807,8 +810,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"постійна\" сповіщати якщо є хоч один лист; якщо кількість листів "
-"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась"
-"\" (типово)"
+"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась\" "
+"(типово)"
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
@@ -924,7 +927,7 @@ msgstr ""
 
 #: ../GTG/GTG:203
 msgid "Create a new task"
-msgstr ""
+msgstr "Створити нове завдання"
 
 #: ../GTG/GTG:217 ../GTG/GTG:253
 msgid "Open category's task"
@@ -936,7 +939,7 @@ msgstr ""
 
 #: ../GTG/GTG:300 ../GTG/GTG:302 ../GTG/GTG:304
 msgid "The task: "
-msgstr ""
+msgstr "Звдання: "
 
 #: ../GTG/GTG:300
 msgid " is due today"
@@ -1010,7 +1013,8 @@ msgstr "Розмір десклету (ширина х висота)"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В залежності від вашого віконного менеджера, ви можете переміщувати його з "
 "допомогою ALT+ліве клацання"
@@ -1380,28 +1384,24 @@ msgid "Bubbles duration:"
 msgstr "Тривалість хмарки:"
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
-#, fuzzy
 msgid "Animate the icon when receiving channel messages"
-msgstr "Анімація значка при отриманні нових повідомлень :"
+msgstr ""
 
 #: ../Pidgin/messages:113 ../Xchat/messages:105
-#, fuzzy
 msgid "No"
-msgstr "Відсутня"
+msgstr ""
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
-#, fuzzy
 msgid "Simple animation"
-msgstr "Показувати анмацію?"
+msgstr ""
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
 msgstr ""
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
-#, fuzzy
 msgid "Animation of the icon"
-msgstr "Анімація значка при прийомі повідомлень:"
+msgstr ""
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid ""
@@ -1498,14 +1498,14 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Додаток \"Цитата дня\" вміє працювати з такими інтернет-ресурсами як:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
 msgid "Screensaver is currently disabled"
@@ -1967,23 +1967,20 @@ msgid "Time remaining: Unknown"
 msgstr ""
 
 #: ../Transmission/Transmission:292
-#, fuzzy
 msgid "Finished"
-msgstr "Фінська"
+msgstr ""
 
 #: ../Transmission/Transmission:296
-#, fuzzy
 msgid "Number of peers:"
-msgstr " Кількість нових повідомлень"
+msgstr ""
 
 #: ../Transmission/Transmission:296
 msgid "and seeds:"
 msgstr ""
 
 #: ../Transmission/Transmission:299
-#, fuzzy
 msgid "Ratio:"
-msgstr "Обертання:"
+msgstr ""
 
 #: ../Transmission/Transmission:303
 msgid "No torrent in the list"
@@ -2181,9 +2178,8 @@ msgid "Large"
 msgstr "Велика"
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Notifications"
-msgstr "Вибір сповіщень"
+msgstr ""
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
@@ -2194,18 +2190,16 @@ msgid "Should the applet play a sound as a notification?"
 msgstr "Чи повинен додаток сповіщати програванням звуку?"
 
 #: ../Twitter/messages:107
-#, fuzzy
 msgid "Play a sound"
-msgstr "Відтворювати звук?"
+msgstr ""
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
 msgstr "Чи повинен додаток сповіщати анімацією значка?"
 
 #: ../Twitter/messages:111
-#, fuzzy
 msgid "Animate the icon"
-msgstr "Показувати на значку:"
+msgstr ""
 
 #: ../Twitter/messages:113
 msgid "Which animation should apply to the icon?"
@@ -2596,7 +2590,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Не перезаписувати (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Використовувати назву відео в імені файлу, при  завантаженні відео"
 
 #: ../YoutubeDl/messages:169
@@ -2745,21 +2740,3 @@ msgstr ""
 "\n"
 "Якщо у списку немає відео то ліве клацання на іконці дозволяє ввести "
 "посилання. В іншому випадку буде відображатися список посилань."
-
-#~ msgid "Applet"
-#~ msgstr "Додаток"
-
-#~ msgid "Name of the icon as it will appear in its label in the dock :"
-#~ msgstr "Ім'я значка, як воно буде відображено в підписі на панелі:"
-
-#~ msgid "Let empty to use the default one."
-#~ msgstr "Залиште порожнім, щоб використовувати типове."
-
-#~ msgid "Image's filename :"
-#~ msgstr "Ім'я зображення:"
-
-#~ msgid "Leave empty to use the default one."
-#~ msgstr "Залиште порожнім, щоб використовувати типове."
-
-#~ msgid "Icon animation?"
-#~ msgstr "Анімувати значок?"

@@ -6,18 +6,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2013-02-06 14:33+0000\n"
 "PO-Revision-Date: 2012-10-28 23:54+0000\n"
 "Last-Translator: Fredson N Sousa <fnsousas@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-04 05:07+0000\n"
-"X-Generator: Launchpad (build 16218)\n"
+"X-Launchpad-Export-Date: 2013-02-07 05:06+0000\n"
+"X-Generator: Launchpad (build 16477)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -194,8 +196,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
-"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
+"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:27
@@ -219,8 +221,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
-"inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte "
+"direita/inferior da tela."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:31
@@ -822,7 +824,8 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr ""
+"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:119
 msgid "Show dialogue?"
@@ -978,7 +981,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1316,18 +1320,16 @@ msgid "Bubbles duration:"
 msgstr ""
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
-#, fuzzy
 msgid "Animate the icon when receiving channel messages"
-msgstr "Animação do ícone ao receber mensagens no canal:"
+msgstr ""
 
 #: ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "No"
 msgstr ""
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
-#, fuzzy
 msgid "Simple animation"
-msgstr "Mostrar animação?"
+msgstr ""
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
@@ -1425,9 +1427,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
@@ -1871,23 +1873,20 @@ msgid "Time remaining: Unknown"
 msgstr ""
 
 #: ../Transmission/Transmission:292
-#, fuzzy
 msgid "Finished"
-msgstr "Finlandês"
+msgstr ""
 
 #: ../Transmission/Transmission:296
-#, fuzzy
 msgid "Number of peers:"
-msgstr " Número de mensagens novas"
+msgstr ""
 
 #: ../Transmission/Transmission:296
 msgid "and seeds:"
 msgstr ""
 
 #: ../Transmission/Transmission:299
-#, fuzzy
 msgid "Ratio:"
-msgstr "Rotação :"
+msgstr ""
 
 #: ../Transmission/Transmission:303
 msgid "No torrent in the list"
@@ -2067,9 +2066,8 @@ msgid "Large"
 msgstr "Grande"
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Notifications"
-msgstr "Aplicativos"
+msgstr ""
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
@@ -2080,18 +2078,16 @@ msgid "Should the applet play a sound as a notification?"
 msgstr ""
 
 #: ../Twitter/messages:107
-#, fuzzy
 msgid "Play a sound"
-msgstr "Tocar som?"
+msgstr ""
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
 msgstr ""
 
 #: ../Twitter/messages:111
-#, fuzzy
 msgid "Animate the icon"
-msgstr "Mostrar no ícone:"
+msgstr ""
 
 #: ../Twitter/messages:113
 msgid "Which animation should apply to the icon?"
@@ -2421,7 +2417,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Não substituir (--não-substituir)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Usar o título do vídeo para nomear o arquivo baixado."
 
 #: ../YoutubeDl/messages:169
@@ -2552,18 +2549,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "Applet"
-#~ msgstr "Miniaplicativo"
-
-#~ msgid "Name of the icon as it will appear in its label in the dock :"
-#~ msgstr "Nome do ícone que aparecerá em seu rótulo no dock."
-
-#~ msgid "Let empty to use the default one."
-#~ msgstr "Deixe em branco para usar o padrão."
-
-#~ msgid "Image's filename :"
-#~ msgstr "Nome do arquivo de Imagem :"
-
-#~ msgid "Leave empty to use the default one."
-#~ msgstr "Deixe em branco para usar o padrão."

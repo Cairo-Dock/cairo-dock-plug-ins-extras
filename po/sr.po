@@ -1,38 +1,38 @@
-# Serbian translation for cairo-dock-plug-ins
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the cairo-dock-plug-ins package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
-#
+# Саша Петровић <salepetronije@gmail.com>, 2012, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: cairo-dock-plug-ins\n"
+"Project-Id-Version: to\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-09-10 02:01+0000\n"
-"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
-"Language-Team: Serbian <sr@li.org>\n"
-"Language: sr\n"
+"POT-Creation-Date: 2013-02-06 14:33+0000\n"
+"PO-Revision-Date: 2013-02-06 22:13+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-04 05:07+0000\n"
-"X-Generator: Launchpad (build 16218)\n"
+"X-Launchpad-Export-Date: 2013-02-07 05:06+0000\n"
+"X-Generator: Launchpad (build 16477)\n"
+"Language: sr\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
+"ГномИзборник није уграђен. Молим, уградите га пре него покренете ово "
+"програмче."
 
 #: ../GnoMenu/GnoMenu:138
 msgid "GnoMenu's settings"
-msgstr ""
+msgstr "Поставке ГномИзборника"
 
 #: ../GnoMenu/GnoMenu:141
 msgid "About"
-msgstr ""
+msgstr "О програму"
 
 #: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:118
 #: ../MintMenu/MintMenu:160
 msgid "Edit Menus"
-msgstr ""
+msgstr "Уреди изборнике"
 
 #: ../GnoMenu/messages:1 ../GnoMenu/messages:3 ../Calendar/messages:1
 #: ../Calendar/messages:3 ../Cardapio/messages:1 ../Cardapio/messages:3
@@ -52,7 +52,7 @@ msgstr ""
 #: ../WindowsKiller/messages:3 ../Xchat/messages:1 ../Xchat/messages:3
 #: ../YoutubeDl/messages:1
 msgid "Icon"
-msgstr "Ikona"
+msgstr "Икона"
 
 #: ../GnoMenu/messages:5 ../Calendar/messages:5 ../Cardapio/messages:5
 #: ../Deluge/messages:5 ../DiskFree/messages:5 ../Gmail/messages:5
@@ -64,7 +64,7 @@ msgstr "Ikona"
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
 #: ../YoutubeDl/messages:13
 msgid "Name of the dock it belongs to:"
-msgstr "Naziv doka kom pripada:"
+msgstr "Назив дока ком припада:"
 
 #: ../GnoMenu/messages:7 ../Calendar/messages:7 ../Cardapio/messages:7
 #: ../Deluge/messages:7 ../DiskFree/messages:7 ../Gmail/messages:7
@@ -76,7 +76,7 @@ msgstr "Naziv doka kom pripada:"
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
 #: ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
-msgstr ""
+msgstr "Назив иконе који ће се јављати као натпис у доку:"
 
 #: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Cardapio/messages:9
 #: ../Deluge/messages:9 ../DiskFree/messages:9 ../Gmail/messages:9
@@ -88,7 +88,7 @@ msgstr ""
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Подразумевано"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -98,7 +98,7 @@ msgstr ""
 #: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
 #: ../WindowsKiller/messages:11 ../Xchat/messages:11
 msgid "Display"
-msgstr "Prikaz"
+msgstr "Приказ"
 
 #: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
 #: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
@@ -109,7 +109,7 @@ msgstr "Prikaz"
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13 ../YoutubeDl/messages:11
 msgid "Image filename:"
-msgstr "Naziv slike:"
+msgstr "Назив слике:"
 
 #: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:11
@@ -121,7 +121,7 @@ msgstr "Naziv slike:"
 #: ../Twitter/messages:15 ../WebSearch/messages:13
 #: ../WindowsKiller/messages:15 ../Xchat/messages:15
 msgid "Set to 0 to use the default applet size"
-msgstr "Postavite 0 da bi koristili podrazumevanu veličinu apleta"
+msgstr "Поставите 0 да би користили подразумевану величину програмчета"
 
 #: ../GnoMenu/messages:17 ../Calendar/messages:17 ../Cardapio/messages:17
 #: ../Deluge/messages:17 ../DiskFree/messages:17 ../Gmail/messages:13
@@ -133,7 +133,7 @@ msgstr "Postavite 0 da bi koristili podrazumevanu veličinu apleta"
 #: ../Twitter/messages:17 ../WebSearch/messages:15
 #: ../WindowsKiller/messages:17 ../Xchat/messages:17 ../YoutubeDl/messages:5
 msgid "Desired icon size for this applet"
-msgstr "Željena veličina ikone ovog apleta"
+msgstr "Жељена величина иконе овог програмчета"
 
 #: ../GnoMenu/messages:19 ../Calendar/messages:19 ../Cardapio/messages:19
 #: ../Deluge/messages:19 ../DiskFree/messages:19 ../Gmail/messages:17
@@ -145,7 +145,7 @@ msgstr "Željena veličina ikone ovog apleta"
 #: ../Twitter/messages:19 ../WebSearch/messages:17
 #: ../WindowsKiller/messages:19 ../Xchat/messages:19 ../YoutubeDl/messages:17
 msgid "Desklet"
-msgstr ""
+msgstr "Справица радне површи"
 
 #: ../GnoMenu/messages:21 ../Calendar/messages:21 ../Cardapio/messages:21
 #: ../Deluge/messages:21 ../DiskFree/messages:21 ../Gmail/messages:19
@@ -155,7 +155,7 @@ msgstr ""
 #: ../Transmission/messages:21 ../Twitter/messages:21 ../WebSearch/messages:19
 #: ../WindowsKiller/messages:21 ../Xchat/messages:21
 msgid "Position"
-msgstr "Položaj"
+msgstr "Положај"
 
 #: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
 #: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:21
@@ -168,6 +168,8 @@ msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
 msgstr ""
+"Ако је закључана, справица површи не може бити просто померена превлачењем "
+"левим кликом миша. И даље може бити померена уз помоћ МЕЊА + леви клик."
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:23
@@ -177,7 +179,7 @@ msgstr ""
 #: ../Transmission/messages:25 ../Twitter/messages:25 ../WebSearch/messages:23
 #: ../WindowsKiller/messages:25 ../Xchat/messages:25
 msgid "Lock position?"
-msgstr "Zaključati položaj?"
+msgstr "Закључати положај?"
 
 #: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
 #: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:25
@@ -190,6 +192,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
+"У зависности од вашег управника прозора, можете бити у могућности да "
+"промените величину уз помоћ МЕЊА + средњи клик или МЕЊА + леви клик."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:27
@@ -199,7 +203,7 @@ msgstr ""
 #: ../Twitter/messages:29 ../WebSearch/messages:27
 #: ../WindowsKiller/messages:29 ../Xchat/messages:29
 msgid "Desklet dimensions (width x height):"
-msgstr ""
+msgstr "Величина справица површи (ширина х висина):"
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:29
@@ -212,6 +216,9 @@ msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
+"У зависности од вашег управника прозора, можете бити у могућности да "
+"померате ово уз помоћ МЕЊА + леви клик.. Негативне предности се узимају од "
+"стране екрана десно/доле"
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:31
@@ -221,7 +228,7 @@ msgstr ""
 #: ../Twitter/messages:33 ../WebSearch/messages:31
 #: ../WindowsKiller/messages:33 ../Xchat/messages:33
 msgid "Desklet position (x, y):"
-msgstr ""
+msgstr "Положај справица површи (x, y):"
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:33
@@ -234,6 +241,8 @@ msgid ""
 "You can quickly rotate the desklet with the mouse, by dragging the little "
 "buttons on its left and top sides."
 msgstr ""
+"Можете брзо окретати справицу површи мишем, вучењем малих дугмади на њиховој "
+"левој и горњој страни."
 
 #: ../GnoMenu/messages:37 ../Calendar/messages:37 ../Cardapio/messages:37
 #: ../Deluge/messages:37 ../DiskFree/messages:37 ../Gmail/messages:35
@@ -243,7 +252,7 @@ msgstr ""
 #: ../Transmission/messages:37 ../Twitter/messages:37 ../WebSearch/messages:35
 #: ../WindowsKiller/messages:37 ../Xchat/messages:37
 msgid "Rotation:"
-msgstr "Okretanje"
+msgstr "Обртање:"
 
 #: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
 #: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:37
@@ -253,7 +262,7 @@ msgstr "Okretanje"
 #: ../Transmission/messages:39 ../Twitter/messages:39 ../WebSearch/messages:37
 #: ../WindowsKiller/messages:39 ../Xchat/messages:39
 msgid "Visibility"
-msgstr "Vidljivost"
+msgstr "Видљивост"
 
 #: ../GnoMenu/messages:41 ../Calendar/messages:41 ../Cardapio/messages:41
 #: ../Deluge/messages:41 ../DiskFree/messages:41 ../Gmail/messages:39
@@ -263,7 +272,7 @@ msgstr "Vidljivost"
 #: ../Twitter/messages:41 ../WebSearch/messages:39
 #: ../WindowsKiller/messages:41 ../Xchat/messages:41
 msgid "Is detached from the dock"
-msgstr "Je odvojen od doka"
+msgstr "Је одвојен од дока"
 
 #: ../GnoMenu/messages:43 ../Calendar/messages:43 ../Cardapio/messages:43
 #: ../Deluge/messages:43 ../DiskFree/messages:43 ../Gmail/messages:41
@@ -273,7 +282,7 @@ msgstr "Je odvojen od doka"
 #: ../Twitter/messages:43 ../WebSearch/messages:41
 #: ../WindowsKiller/messages:43 ../Xchat/messages:43
 msgid "Visibility:"
-msgstr "Vidljivost:"
+msgstr "Видљивост:"
 
 #: ../GnoMenu/messages:45 ../Calendar/messages:45 ../Cardapio/messages:45
 #: ../Deluge/messages:45 ../DiskFree/messages:45 ../Gmail/messages:43
@@ -285,7 +294,7 @@ msgstr "Vidljivost:"
 #: ../Twitter/messages:45 ../WebSearch/messages:43
 #: ../WindowsKiller/messages:45 ../Xchat/messages:45 ../YoutubeDl/messages:33
 msgid "Normal"
-msgstr "Uobičajen"
+msgstr "уобичајенa"
 
 #: ../GnoMenu/messages:47 ../Calendar/messages:47 ../Cardapio/messages:47
 #: ../Deluge/messages:47 ../DiskFree/messages:47 ../Gmail/messages:45
@@ -297,7 +306,7 @@ msgstr "Uobičajen"
 #: ../Twitter/messages:47 ../WebSearch/messages:45
 #: ../WindowsKiller/messages:47 ../Xchat/messages:47 ../YoutubeDl/messages:35
 msgid "Keep above"
-msgstr "Zadrži iznad"
+msgstr "задржавај изнад"
 
 #: ../GnoMenu/messages:49 ../Calendar/messages:49 ../Cardapio/messages:49
 #: ../Deluge/messages:49 ../DiskFree/messages:49 ../Gmail/messages:47
@@ -309,7 +318,7 @@ msgstr "Zadrži iznad"
 #: ../Twitter/messages:49 ../WebSearch/messages:47
 #: ../WindowsKiller/messages:49 ../Xchat/messages:49 ../YoutubeDl/messages:37
 msgid "Keep below"
-msgstr "Zadrži ispod"
+msgstr "задржавај испод"
 
 #: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
 #: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:49
@@ -319,7 +328,7 @@ msgstr "Zadrži ispod"
 #: ../Twitter/messages:51 ../WebSearch/messages:49
 #: ../WindowsKiller/messages:51 ../Xchat/messages:51
 msgid "Keep on widget layer"
-msgstr ""
+msgstr "држи на слоју справица"
 
 #: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
 #: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:51
@@ -331,7 +340,7 @@ msgstr ""
 #: ../Twitter/messages:53 ../WebSearch/messages:51
 #: ../WindowsKiller/messages:53 ../Xchat/messages:53 ../YoutubeDl/messages:41
 msgid "Reserve space"
-msgstr "Obezbedi prostor"
+msgstr "чувај простор"
 
 #: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
 #: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:53
@@ -341,7 +350,7 @@ msgstr "Obezbedi prostor"
 #: ../Twitter/messages:55 ../WebSearch/messages:53
 #: ../WindowsKiller/messages:55 ../Xchat/messages:55
 msgid "Should be visible on all desktops?"
-msgstr "Vidljivo na svim radnim površinama?"
+msgstr "Видљиво на свим радним просторима?"
 
 #: ../GnoMenu/messages:57 ../Calendar/messages:57 ../Cardapio/messages:57
 #: ../Deluge/messages:57 ../DiskFree/messages:57 ../Gmail/messages:55
@@ -353,7 +362,7 @@ msgstr "Vidljivo na svim radnim površinama?"
 #: ../Twitter/messages:57 ../WebSearch/messages:55
 #: ../WindowsKiller/messages:57 ../Xchat/messages:57 ../YoutubeDl/messages:53
 msgid "Decorations"
-msgstr "Ukrašavanja"
+msgstr "Украшавања"
 
 #: ../GnoMenu/messages:59 ../Calendar/messages:59 ../Cardapio/messages:59
 #: ../Deluge/messages:59 ../DiskFree/messages:59 ../Gmail/messages:57
@@ -363,7 +372,7 @@ msgstr "Ukrašavanja"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr ""
+msgstr "Одаберите „Прилагођена украшавања“ за опис ваших украшавања испод."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:59
@@ -373,7 +382,7 @@ msgstr ""
 #: ../Twitter/messages:61 ../WebSearch/messages:59
 #: ../WindowsKiller/messages:61 ../Xchat/messages:61
 msgid "Choose a decoration theme for this desklet:"
-msgstr ""
+msgstr "Одаберите тему украшавања за ову справицу површи:"
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
 #: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:61
@@ -385,6 +394,8 @@ msgstr ""
 msgid ""
 "Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
 msgstr ""
+"Слика која се приказује испод цртежа, тј оквира. Оставите празно за приказ "
+"без слике."
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
 #: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:63
@@ -394,7 +405,7 @@ msgstr ""
 #: ../Twitter/messages:65 ../WebSearch/messages:63
 #: ../WindowsKiller/messages:65 ../Xchat/messages:65
 msgid "Background image:"
-msgstr "Slika pozadine:"
+msgstr "Слика позадине:"
 
 #: ../GnoMenu/messages:67 ../Calendar/messages:67 ../Cardapio/messages:67
 #: ../Deluge/messages:67 ../DiskFree/messages:67 ../Gmail/messages:65
@@ -404,7 +415,7 @@ msgstr "Slika pozadine:"
 #: ../Twitter/messages:67 ../WebSearch/messages:65
 #: ../WindowsKiller/messages:67 ../Xchat/messages:67
 msgid "Background transparency:"
-msgstr "Providnost pozadine:"
+msgstr "Провидност позадине:"
 
 #: ../GnoMenu/messages:69 ../Calendar/messages:69 ../Cardapio/messages:69
 #: ../Deluge/messages:69 ../DiskFree/messages:69 ../Gmail/messages:67
@@ -414,7 +425,7 @@ msgstr "Providnost pozadine:"
 #: ../Twitter/messages:69 ../WebSearch/messages:67
 #: ../WindowsKiller/messages:69 ../Xchat/messages:69
 msgid "in pixels. Use this to adjust the left position of drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово за подешавање левог положаја цртежа."
 
 #: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
 #: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:69
@@ -424,7 +435,7 @@ msgstr ""
 #: ../Twitter/messages:71 ../WebSearch/messages:69
 #: ../WindowsKiller/messages:71 ../Xchat/messages:71
 msgid "Left offset:"
-msgstr ""
+msgstr "Лево одстојање:"
 
 #: ../GnoMenu/messages:73 ../Calendar/messages:73 ../Cardapio/messages:73
 #: ../Deluge/messages:73 ../DiskFree/messages:73 ../Gmail/messages:71
@@ -434,7 +445,7 @@ msgstr ""
 #: ../Twitter/messages:73 ../WebSearch/messages:71
 #: ../WindowsKiller/messages:73 ../Xchat/messages:73
 msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово да подесите горњи положај цртежа."
 
 #: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
 #: ../Deluge/messages:75 ../DiskFree/messages:75 ../Gmail/messages:73
@@ -444,7 +455,7 @@ msgstr ""
 #: ../Twitter/messages:75 ../WebSearch/messages:73
 #: ../WindowsKiller/messages:75 ../Xchat/messages:75
 msgid "Top offset:"
-msgstr ""
+msgstr "Вршно одстојање:"
 
 #: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
 #: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:75
@@ -454,7 +465,7 @@ msgstr ""
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово за подешавање десног положаја цртежа."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:77
@@ -464,7 +475,7 @@ msgstr ""
 #: ../Twitter/messages:79 ../WebSearch/messages:77
 #: ../WindowsKiller/messages:79 ../Xchat/messages:79
 msgid "Right offset:"
-msgstr ""
+msgstr "Десно одстојање:"
 
 #: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
 #: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:79
@@ -474,7 +485,7 @@ msgstr ""
 #: ../Twitter/messages:81 ../WebSearch/messages:79
 #: ../WindowsKiller/messages:81 ../Xchat/messages:81
 msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово за подешавање положаја цртежа на дну."
 
 #: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
 #: ../Deluge/messages:83 ../DiskFree/messages:83 ../Gmail/messages:81
@@ -484,7 +495,7 @@ msgstr ""
 #: ../Twitter/messages:83 ../WebSearch/messages:81
 #: ../WindowsKiller/messages:83 ../Xchat/messages:83
 msgid "Bottom offset:"
-msgstr ""
+msgstr "Одстојање од доње ивице:"
 
 #: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
 #: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:83
@@ -497,6 +508,8 @@ msgid ""
 "Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
 "no image."
 msgstr ""
+"Слика која се приказује изнад цртежа, тј одраз. Оставите празно за приказ "
+"без слике."
 
 #: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
 #: ../Deluge/messages:87 ../DiskFree/messages:87 ../Gmail/messages:85
@@ -506,7 +519,7 @@ msgstr ""
 #: ../Twitter/messages:87 ../WebSearch/messages:85
 #: ../WindowsKiller/messages:87 ../Xchat/messages:87
 msgid "Foreground image:"
-msgstr "Slika prednjeg plana:"
+msgstr "Слика предњег плана:"
 
 #: ../GnoMenu/messages:89 ../Calendar/messages:89 ../Cardapio/messages:89
 #: ../Deluge/messages:89 ../DiskFree/messages:89 ../Gmail/messages:87
@@ -516,7 +529,7 @@ msgstr "Slika prednjeg plana:"
 #: ../Twitter/messages:89 ../WebSearch/messages:87
 #: ../WindowsKiller/messages:89 ../Xchat/messages:89
 msgid "Foreground tansparency:"
-msgstr "Providnost prednjeg plana:"
+msgstr "Провидност предњег плана:"
 
 #: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
 #: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:89
@@ -527,12 +540,12 @@ msgstr "Providnost prednjeg plana:"
 #: ../Transmission/messages:91 ../Twitter/messages:91 ../WebSearch/messages:89
 #: ../Xchat/messages:91 ../YoutubeDl/messages:87
 msgid "Configuration"
-msgstr "Podešavanje"
+msgstr "Поставке"
 
 #: ../GnoMenu/messages:93 ../Cardapio/messages:93 ../Lancelot/messages:93
 #: ../MintMenu/messages:93
 msgid "Shortkey to pop up the menu:"
-msgstr ""
+msgstr "Пречица за искакање изборника:"
 
 #: ../GnoMenu/messages:96
 msgid ""
@@ -541,32 +554,38 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
+"Ово програмче вам омогућава да имате <b>Гномизборник</b> у вашем доку.\n"
+"Клик на икону за искакање изборника.\n"
+"Десни клик вам омогућава приступ прозору с поставкама.\n"
+"<u>Примедба:</u> Требате уградити Гномизборник."
 
 #: ../Calendar/messages:93
 msgid "Applications"
-msgstr ""
+msgstr "Програми"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
+"Наредба за покретање вашег омиљеног програма за календар (средњи клик):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
-msgstr ""
+msgstr "Наредба која се извршава при спуштању датотеке на икону календара:"
 
 #: ../Calendar/messages:99
 msgid "Behaviour"
-msgstr "Ponašanje"
+msgstr "Понашање"
 
 #: ../Calendar/messages:101
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
+"Путања до скрипте за стварање иконе. Оставите празно за коришћење задате."
 
 #: ../Calendar/messages:103
 msgid "Icon custom script:"
-msgstr ""
+msgstr "Прилагођена скрипта за икону:"
 
 #: ../Calendar/messages:106
 msgid ""
@@ -577,11 +596,18 @@ msgid ""
 "Scroll Down displays the events of the day\n"
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
+"Ово програмче ће приказати текући датум. \n"
+"Леви клик приказује календар\n"
+"средњи клик покреће програм за календар по вашем избору\n"
+"Премицање навише приказује календар за следећи месец\n"
+"Премицање наниже приказује дневне догађаје\n"
+"Спуштање датотеке на икону покреће програм за календар ради њеног увоза."
 
 #: ../Cardapio/Cardapio:45
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
 msgstr ""
+"Кардапио није уграђен. Молим, уградите га пре покретања овог програмчета."
 
 #: ../Cardapio/messages:96
 msgid ""
@@ -590,58 +616,62 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
+"Ово програмче вам омогућава да имате <b>Кардапио изборник</b> у вашем доку.\n"
+"Клик на икону за искакање изборника.\n"
+"Десни клик вам омогућава уређивање изборника.<u>Примедба:</u>требате "
+"уградити Кардапио."
 
 #: ../Deluge/Deluge:205
 msgid "Deluge is not running, or is not responding to us."
-msgstr ""
+msgstr "Делуге није покренут, или не даје одзив."
 
 #: ../Deluge/Deluge:336 ../Transmission/Transmission:464
 msgid "Pause all torrents"
-msgstr ""
+msgstr "Застани са свим торентима"
 
 #: ../Deluge/Deluge:341 ../Transmission/Transmission:469
 msgid "Resume all torrents"
-msgstr ""
+msgstr "Настави са свим торентима"
 
 #: ../Deluge/Deluge:346 ../KTorrent/KTorrent:330
 #: ../Transmission/Transmission:474
 msgid "Torrents info"
-msgstr ""
+msgstr "Подаци о торенту"
 
 #: ../Deluge/Deluge:346 ../Gmail/Gmail:510 ../KTorrent/KTorrent:330
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:199
 #: ../Transmission/Transmission:474 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
-msgstr ""
+msgstr "средњи клик"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
-msgstr ""
+msgstr "Пречица за искакање података о торенту:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
 msgid "Show as quick-info:"
-msgstr ""
+msgstr "Прикажи као брзе поруке:"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "ништа"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "брзину преузимања"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "проценат урађеног"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "проценат + број покренутих торената"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Прикажи проценат одрађеног као траку напретка"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -655,105 +685,121 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Ово програмче вам омогућава <b>управљање Делугом</b> из дока (трабате "
+"уградити <i>deluged</i>, који је домар коришћен да буде посредник између "
+"дока и Делуге).\n"
+"Може приказати <b>Брзину преузимања</b> на икони.\n"
+"<b>Средњи клик</b> на икони вам даје податке о тренутним торентима (можете "
+"задати пречицу за ову радњу).\n"
+"<b>Десни клик</b> на икону вам омогућава заустављање/покретање свих "
+"торената.\n"
+"<b>Спустите торент датотеку</b> на икону за његово додавање на списак и "
+"почетак преузимања одмах."
 
 #: ../DiskFree/messages:93
 msgid ""
 "View available file system's space as Giga (checked) or Mega (unchecked) :"
 msgstr ""
+"Преглед доступног простора система датотека као Гига (означено) или Мега "
+"(без ознаке) :"
 
 #: ../DiskFree/messages:95
 msgid "in minutes"
-msgstr ""
+msgstr "у минутима"
 
 #: ../DiskFree/messages:97
 msgid "Time between two file system's checking :"
-msgstr ""
+msgstr "Време између две провере система датотекa :"
 
 #: ../DiskFree/messages:100
 msgid "View available file system's free space."
-msgstr ""
+msgstr "Преглед доступног слободног простора система датотека."
 
 #: ../Gmail/Gmail:143 ../Gmail/Gmail:149 ../Gmail/Gmail:158
 msgid "There is no subscription to any Gmail account."
-msgstr ""
+msgstr "Нема захтева за претплатом на налог Г-поште."
 
 #: ../Gmail/Gmail:185
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Молим, унесите ваше корисничко име Г-поште:"
 
 #: ../Gmail/Gmail:193
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Молим,несите вашу лозинку Г-поште:"
 
 #: ../Gmail/Gmail:269
 msgid "WARNING: there was an error reading XML content."
-msgstr ""
+msgstr "Упозорење: десила се грешка приликом читања XML садржаја."
 
 #: ../Gmail/Gmail:294
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
+"Упозорење: Г-пошта програмче није успело да се повеже са атом доводом Г-"
+"поште."
 
 #: ../Gmail/Gmail:309
 msgid "WARNING: Gmail atom feed is badly formed: "
-msgstr ""
+msgstr "УПОЗОРЕЊЕ: атом довод Г-поште је лоше обликован: "
 
 #: ../Gmail/Gmail:317
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
+"УПОЗОРЕЊЕ: програмче Г-поште није опремљено за препознавање осим ОСНОВНОГ."
 
 #: ../Gmail/Gmail:330
 msgid "WARNING: Gmail username or password may be wrong."
-msgstr ""
+msgstr "УПОЗОРЕЊЕ: можда је погрешно корисничко име или лозинка Г-поште."
 
 #: ../Gmail/Gmail:437
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "Имате %s нових порука"
 
 #: ../Gmail/Gmail:439
 msgid "You have 1 new email"
-msgstr ""
+msgstr "Имате 1 нову поруку"
 
 #: ../Gmail/Gmail:499
 msgid "Sorry, there was no input!"
-msgstr ""
+msgstr "Извините, није било уноса!"
 
 #: ../Gmail/Gmail:508
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Додај или измени претплату"
 
 #: ../Gmail/Gmail:509
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
+"Користите ово за додавање или измену вашех појединости налога Г-поште."
 
 #: ../Gmail/Gmail:511
 msgid "Check inbox now"
-msgstr ""
+msgstr "Провери пријемно сандуче сада"
 
 #: ../Gmail/Gmail:512
 msgid "Check Gmail inbox now if you can't wait."
-msgstr ""
+msgstr "Проверите пријемно сандуче сада ако не желите чекати."
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
-msgstr ""
+msgstr "Увек прикажи икону, чак и кад је док скривен?"
 
 #: ../Gmail/messages:91
 msgid "(in minutes)"
-msgstr ""
+msgstr "(у минутима)"
 
 #: ../Gmail/messages:93
 msgid "Delay between refreshes:"
-msgstr ""
+msgstr "Размак између освежавања:"
 
 #: ../Gmail/messages:95
 msgid "Alerts"
-msgstr ""
+msgstr "Упозорења"
 
 #: ../Gmail/messages:97
 msgid "Show alerts?"
-msgstr ""
+msgstr "Приказивати упозорења?"
 
 #: ../Gmail/messages:99
 msgid ""
@@ -761,91 +807,96 @@ msgid ""
 "\"different\" will do so whenever the number of emails changes; \"superior\" "
 "will notify you whenever it increases (default)."
 msgstr ""
+"„увек“ ће вас обавештавати кад год број електронских порука није 0; "
+"„различито“ ће то радити кад год се број порука промени; „врхунски“ ће Вас "
+"обавештавати кад год број порука порасте (задато)."
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
-msgstr ""
+msgstr "При којим условима?"
 
 #: ../Gmail/messages:103
 msgid "superior"
-msgstr ""
+msgstr "врхунски"
 
 #: ../Gmail/messages:105
 msgid "always"
-msgstr ""
+msgstr "увек"
 
 #: ../Gmail/messages:107
 msgid "different"
-msgstr ""
+msgstr "различито"
 
 #: ../Gmail/messages:109
 msgid "Should an animation be applied to the icon?"
-msgstr ""
+msgstr "Да ли применити анимацију на иконици?"
 
 #: ../Gmail/messages:111
 msgid "Show animation?"
-msgstr ""
+msgstr "Приказивати анимацију?"
 
 #: ../Gmail/messages:113
 msgid "Which animation should the apply to the icon?"
-msgstr ""
+msgstr "Која анимација треба бити примењена на икони?"
 
 #: ../Gmail/messages:115
 msgid "Choose animation?"
-msgstr ""
+msgstr "Одабрати анимацију?"
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr ""
+msgstr "Да ли прозорче треба приказивати прозорче за потврду са анимацијом?"
 
 #: ../Gmail/messages:119
 msgid "Show dialogue?"
-msgstr ""
+msgstr "Прикажи прозорче?"
 
 #: ../Gmail/messages:121
 msgid "Should the applet play a sound with the notification?"
-msgstr ""
+msgstr "Да ли прозорче треба да пушта обавештајни звук на ново обавештење?"
 
 #: ../Gmail/messages:123
 msgid "Play a sound?"
-msgstr ""
+msgstr "Пуштати звук?"
 
 #: ../Gmail/messages:125
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
+"Неколико датотека је доступно у ~/.config/cairo-dock/third-party/Gmail/snd/"
 
 #: ../Gmail/messages:127
 msgid "Path to sound file:"
-msgstr "Putanja do fajla sa zvucima:"
+msgstr "Путања до звучне датотеке:"
 
 #: ../Gmail/messages:129
 msgid "Display a counter on the icon?"
-msgstr ""
+msgstr "Прикажи бројач на икони?"
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr ""
+msgstr "Да ли  желите да ознака буде приказана као натпис са брзим порукама?"
 
 #: ../Gmail/messages:133
 msgid "How?"
-msgstr ""
+msgstr "Како?"
 
 #: ../Gmail/messages:135
 msgid "small emblem"
-msgstr ""
+msgstr "мала ознака"
 
 #: ../Gmail/messages:137
 msgid "large emblem"
-msgstr ""
+msgstr "велика ознака"
 
 #: ../Gmail/messages:139
 msgid "quickinfo"
-msgstr ""
+msgstr "Брза обавештења"
 
 #: ../Gmail/messages:142
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
+"Ово програмче ће вас обавештавати о новим порукама на једном налогу Г-поште."
 
 #: ../Google/messages:92
 msgid ""
@@ -854,36 +905,42 @@ msgid ""
 "Each result will be shown as a sub-icon.\n"
 "Left-click to open the result in the default Web Browser."
 msgstr ""
+"Ово програмче обезбеђује сучеље за Гуглов погон претраге.\n"
+"Леви клик на главну икону за отварање прозорчета претраге.\n"
+"Сваки излаз ће бити приказан као подикона.\n"
+"Леви клик отвара излаз у подразумеваном веб прегледнику."
 
 #: ../GTG/GTG:147
 msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
+"Нисам успео да се повежем са ГТГ:-(\n"
+"Да ли сте га уградили?"
 
 #: ../GTG/GTG:161
 msgid "Couldn't launch "
-msgstr ""
+msgstr "Мисам успео да покренем "
 
 #: ../GTG/GTG:166
 msgid "Connecting to gtg, please wait ..."
-msgstr ""
+msgstr "Повезујем се са гтг, молим, сачекајте ..."
 
 #: ../GTG/GTG:203
 msgid "Create a new task"
-msgstr ""
+msgstr "Направите нови задатак"
 
 #: ../GTG/GTG:217 ../GTG/GTG:253
 msgid "Open category's task"
-msgstr ""
+msgstr "Отвори врсту овог задатка"
 
 #: ../GTG/GTG:221 ../GTG/GTG:257
 msgid "Create post-it from this category"
-msgstr ""
+msgstr "Направите објаву из ове врсте"
 
 #: ../GTG/GTG:300 ../GTG/GTG:302 ../GTG/GTG:304
 msgid "The task: "
-msgstr ""
+msgstr "Задатак: "
 
 #: ../GTG/GTG:300
 msgid " is due today"
@@ -899,32 +956,32 @@ msgstr ""
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
-msgstr ""
+msgstr "Трајање мехура :"
 
 #: ../GTG/messages:95 ../Pidgin/messages:105 ../Xchat/messages:97
 msgid "Short"
-msgstr ""
+msgstr "кратко"
 
 #: ../GTG/messages:97 ../Pidgin/messages:107 ../Twitter/messages:97
 #: ../Xchat/messages:99
 msgid "Medium"
-msgstr ""
+msgstr "средње"
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Long"
-msgstr ""
+msgstr "дуго"
 
 #: ../GTG/messages:101
 msgid "Animation of the icon on receiving channel messages :"
-msgstr ""
+msgstr "Анимација иконе при пријему порука канала :"
 
 #: ../GTG/messages:103 ../Xchat/messages:93
 msgid "Display channel messages in a bubble :"
-msgstr ""
+msgstr "Приказуј поруке канала у мехуру :"
 
 #: ../GTG/messages:107
 msgid "Post-it's initial dimension (width x height) :"
-msgstr ""
+msgstr "Поставите његове почетне размере (ширина х висина) :"
 
 #: ../GTG/messages:110
 msgid ""
@@ -933,6 +990,10 @@ msgid ""
 "Create a new task on middle-click,Create a post-it from a task category.\n"
 "The icon will also control the window of GTG like a normal application icon."
 msgstr ""
+"Ово програмче обједињује ГТГ у Ваш док.\n"
+"Може приказивати задатке.\n"
+"Направите нови задатак средњим кликом, направите објаву из врста задатака.\n"
+"Икона ће такође управљати прозором ГТГ-а као уобичајена икона програма."
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Screensaver_inhibitor/messages:21 ../Translator/messages:27
@@ -941,30 +1002,36 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
+"У зависности од вашег управника прозора, можете бити у могућности да "
+"промените величину уз помоћ МЕЊА + средњи клик или МЕЊА + леви клик, на "
+"пример."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:29
 #: ../YoutubeDl/messages:21
 msgid "Desklet's dimension (width x height) :"
-msgstr ""
+msgstr "Величина справица површи (ширина х висина) :"
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
+"У зависности од вашег управника прозора, можете бити у могућности да "
+"промените величину уз помоћ МЕЊА + средњи клик или МЕЊА + леви клик"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:33
 #: ../YoutubeDl/messages:25
 msgid "Desklet's position (x ; y) :"
-msgstr ""
+msgstr "Положај справица површи (x, y) :"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:41
 #: ../YoutubeDl/messages:27
 msgid "Is detached from the dock ?"
-msgstr ""
+msgstr "Је одвојена од дока ?"
 
 #: ../HDDtemperature/messages:27 ../Translator/messages:43
 #: ../YoutubeDl/messages:29
@@ -972,24 +1039,26 @@ msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=utility)"
 msgstr ""
+"За слој справица Компиз споја (CompizFuzion), поставити понашање у Kомпизу: "
+"(class=Cairo-dock & type=Utility)"
 
 #: ../HDDtemperature/messages:29 ../Moon/messages:31
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:45
 #: ../YoutubeDl/messages:31
 msgid "Accessibility :"
-msgstr ""
+msgstr "Приступачност :"
 
 #: ../HDDtemperature/messages:37 ../Moon/messages:39
 #: ../Screensaver_inhibitor/messages:41 ../Translator/messages:53
 #: ../YoutubeDl/messages:39
 msgid "On Widget Layer"
-msgstr ""
+msgstr "На слоју справица"
 
 #: ../HDDtemperature/messages:41 ../Moon/messages:43
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:57
 #: ../YoutubeDl/messages:43
 msgid "Should be visible on all desktops ?"
-msgstr ""
+msgstr "Треба бити видљива на свим радним просторима ?"
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:47 ../YoutubeDl/messages:45
@@ -997,33 +1066,35 @@ msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
 msgstr ""
+"Ако је закључана, справица површи не може бити просто померена превлачењем "
+"левим кликом миша. И даље може бити померена уз помоћ МЕЊА + леви клик."
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:49 ../YoutubeDl/messages:47
 msgid "Lock position ?"
-msgstr ""
+msgstr "Закључати положај ?"
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:51 ../YoutubeDl/messages:49
 msgid "in degrees."
-msgstr ""
+msgstr "у степенима."
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:53 ../YoutubeDl/messages:51
 msgid "Rotation :"
-msgstr ""
+msgstr "Обртање :"
 
 #: ../HDDtemperature/messages:53 ../Moon/messages:55
 #: ../Screensaver_inhibitor/messages:57 ../Translator/messages:61
 #: ../YoutubeDl/messages:55
 msgid "Choose the 'personnal' one to define your own decorations below."
-msgstr ""
+msgstr "Одаберите „Прилагођена украшавања“ за опис ваших украшавања испод."
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:59 ../Translator/messages:63
 #: ../YoutubeDl/messages:57
 msgid "Choose a decoration theme for this desklet :"
-msgstr ""
+msgstr "Одаберите тему украшавања за ову справицу површи :"
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:65
@@ -1032,66 +1103,68 @@ msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
 msgstr ""
+"Ово је слика која ће бити приказана испод цртежа, на пример као оквир. "
+"Оставите празно ако не желите да користите."
 
 #: ../HDDtemperature/messages:59 ../Moon/messages:61
 #: ../Screensaver_inhibitor/messages:63 ../Translator/messages:67
 #: ../YoutubeDl/messages:61
 msgid "Background image :"
-msgstr ""
+msgstr "Слика за позадину :"
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:65 ../Translator/messages:69
 #: ../YoutubeDl/messages:63
 msgid "Background tansparency :"
-msgstr ""
+msgstr "Провидност позадине :"
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:71
 #: ../YoutubeDl/messages:65
 msgid "in pixels. Use this to adjust the left position of the drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово да подесите леви положај цртежа."
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:73
 #: ../YoutubeDl/messages:67
 msgid "Left offset :"
-msgstr ""
+msgstr "Лево одстојање :"
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:75
 #: ../YoutubeDl/messages:69
 msgid "in pixels. Use this to adjust the top position of the drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово да подесите горњи положај цртежа."
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Screensaver_inhibitor/messages:73 ../Translator/messages:77
 #: ../YoutubeDl/messages:71
 msgid "Top offset :"
-msgstr ""
+msgstr "Горње одстојање :"
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Screensaver_inhibitor/messages:75 ../Translator/messages:79
 #: ../YoutubeDl/messages:73
 msgid "in pixels. Use this to adjust the right position of the drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово да подесите десни положај цртежа."
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Screensaver_inhibitor/messages:77 ../Translator/messages:81
 #: ../YoutubeDl/messages:75
 msgid "Right offset :"
-msgstr ""
+msgstr "Десно одстојање :"
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Screensaver_inhibitor/messages:79 ../Translator/messages:83
 #: ../YoutubeDl/messages:77
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
-msgstr ""
+msgstr "у тачкама. Користите ово да подесите доњи положај цртежа."
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Screensaver_inhibitor/messages:81 ../Translator/messages:85
 #: ../YoutubeDl/messages:79
 msgid "Bottom offset :"
-msgstr ""
+msgstr "Доње одстојање :"
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Screensaver_inhibitor/messages:83 ../Translator/messages:87
@@ -1100,54 +1173,58 @@ msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
 msgstr ""
+"Ово је слика која ће бити приказана изнад цртежа, као на пример одраз. "
+"Оставите празно ако не желите да користите."
 
 #: ../HDDtemperature/messages:81 ../Moon/messages:83
 #: ../Screensaver_inhibitor/messages:85 ../Translator/messages:89
 #: ../YoutubeDl/messages:83
 msgid "Foreground image :"
-msgstr ""
+msgstr "Слика за предњи план :"
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:87 ../Translator/messages:91
 #: ../YoutubeDl/messages:85
 msgid "Foreground tansparency :"
-msgstr ""
+msgstr "Провидност предњег плана :"
 
 #: ../HDDtemperature/messages:87
 msgid "One or more device drive path to monitor:"
-msgstr ""
+msgstr "Једна, или више путања уређаја за надгледање:"
 
 #: ../HDDtemperature/messages:89
 msgid "Show maximum temperature on icon?"
-msgstr ""
+msgstr "Да ли приказивати највећу температуру на икони?"
 
 #: ../HDDtemperature/messages:91
 msgid "Time interval for checking (minutes):"
-msgstr ""
+msgstr "Временско раздобље провере (у минутима):"
 
 #: ../HDDtemperature/messages:93
 msgid "It should conform to units used by hddtemp daemon"
-msgstr ""
+msgstr "Требало би имати облик јединица коришћених од hddtemp домара"
 
 #: ../HDDtemperature/messages:95
 msgid "Alert temperature value (°C by default)"
-msgstr ""
+msgstr "Вредност вредности температуре за упозоравање (°C као задато)"
 
 #: ../HDDtemperature/messages:97
 msgid "0 for permanent show"
-msgstr ""
+msgstr "0 за непрекидни приказ"
 
 #: ../HDDtemperature/messages:99
 msgid "Pop up bubble duration (in seconds)"
-msgstr ""
+msgstr "Трајање искакања мехура (у секундама)"
 
 #: ../HDDtemperature/messages:101
 msgid "Port number to listen to hddtemp daemon (7634 by default)"
-msgstr ""
+msgstr "Број прикључника за слушање hddtemp домара (7634 је предодређено)"
 
 #: ../HDDtemperature/messages:103
 msgid "Separator between fields used by hddtemp daemon ( | by default)"
 msgstr ""
+"Раздвојник између поља коришћених од стране hddtemp домара ( | је "
+"предодређен)"
 
 #: ../HDDtemperature/messages:106
 msgid ""
@@ -1155,10 +1232,13 @@ msgid ""
 " getting values from 'hddtemp' daemon (see: man hddtemp). \n"
 " Left-click shows more information about HD drives."
 msgstr ""
+"Ово програмче приказује највећу температуру ваших чврстих дискова \n"
+" добијајући вредности од „hddtemp“ домара (погледајте: man hddtemp). \n"
+" Леви клик приказује више података о уређајима чврстих дискова."
 
 #: ../KTorrent/KTorrent:325
 msgid "Suspend all torrents"
-msgstr ""
+msgstr "Зауставите све торенте"
 
 #: ../KTorrent/messages:96
 msgid ""
@@ -1170,11 +1250,20 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Ово програче вам омогућава <b>управљање Кторентом</b> из дока.\n"
+"Може приказивати <b>брзину пријема</b> на икони.\n"
+"<b>Средњи клик</b> на икони Вам даје податке о тренутним торентима (можете "
+"задати прчицу за ову радњу).\n"
+"<b>Дсни клик</b> на икони Вам омогућава да застанете/наставите са свим "
+"торентима.\n"
+"<b>Спустите датотеку торента</b> на икону за његово додавање на списак и "
+"почните са преузимањем одмах."
 
 #: ../Lancelot/Lancelot:85
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr ""
+"Ланселот није уграђен. Молим, уградите га пре покретања овог програмчета."
 
 #: ../Lancelot/messages:96
 msgid ""
@@ -1183,27 +1272,34 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
+"Ово програмче вам омогућава да имате <b>Изборник Ланселота</b> у вашем "
+"доку.\n"
+"Клик на икону за искакање изборника.\n"
+"Десни клик вам омогућава приступ прозору с поставкама.\n"
+"<u>Примедба:</u> Требате уградити Ланселот."
 
 #: ../Liferea/messages:93
 msgid "Show in the icon:"
-msgstr ""
+msgstr "Прикажи у иконици:"
 
 #: ../Liferea/messages:95
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Број непрочитаних порука"
 
 #: ../Liferea/messages:97
 msgid " Number of new messages"
-msgstr ""
+msgstr " Број нових порука"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
-msgstr ""
+msgstr "Ово програмче чини сучеље за Лифреу"
 
 #: ../MintMenu/MintMenu:151
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr ""
+"Минт Изборник није уграђен. Молим, уградите га пре него покренете ово "
+"програмче."
 
 #: ../MintMenu/messages:96
 msgid ""
@@ -1212,113 +1308,121 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
+"Ово програмче вам омогућава да имате <b>Минт Изборник</b> у вашем доку.\n"
+"Клик на икону за искакање изборника.\n"
+"Десни клик вам омогућава приступ прозору с поставкама.\n"
+"<u>Примедба:</u> Требате уградити Минт Изборник."
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
-msgstr ""
+msgstr "Да ли приказивати месец за целу ову седмицу?"
 
 #: ../Moon/messages:91
 msgid "You are going to see the moon from the perspective of this hemisphere"
-msgstr ""
+msgstr "Видећете месец из погледа са ове земљине полулопте"
 
 #: ../Moon/messages:93
 msgid "Hemisphere:"
-msgstr ""
+msgstr "Полулопта:"
 
 #: ../Moon/messages:95
 msgid "North"
-msgstr ""
+msgstr "Север"
 
 #: ../Moon/messages:97
 msgid "South"
-msgstr ""
+msgstr "Југ"
 
 #: ../Moon/messages:100
 msgid ""
 "This applet displays the moon phases and its informations for the current "
 "day, or week from the Northern or Southern hemisphere"
 msgstr ""
+"Ово програмче приказује месечеве мене и њене податке за садашњи дан или "
+"седмицу за северну или јужну земљину полулопту"
 
 #: ../Pidgin/Pidgin:408
 msgid "Conversations"
-msgstr ""
+msgstr "Разговори"
 
 #: ../Pidgin/Pidgin:422
 msgid "Change your status"
-msgstr ""
+msgstr "Измените ваше стање"
 
 #: ../Pidgin/Pidgin:437
 msgid "Set your status message"
-msgstr ""
+msgstr "Поставите своју поруку стања"
 
 #: ../Pidgin/Pidgin:442 ../Xchat/Xchat:278
 msgid "Silent mode"
-msgstr ""
+msgstr "Тихи начин"
 
 #: ../Pidgin/Pidgin:446 ../Xchat/Xchat:282
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
+"Пребаците програмче на тихи начин рада (без искакања при новим порукама)."
 
 #: ../Pidgin/Pidgin:457
 msgid "Enter your new status message:"
-msgstr ""
+msgstr "Унесит Вашу нову поруку стања:"
 
 #: ../Pidgin/messages:93 ../Pidgin/messages:97
 msgid "Parameters"
-msgstr "Parametri"
+msgstr "Одреднице"
 
 #: ../Pidgin/messages:95
 msgid "Choose a theme :"
-msgstr ""
+msgstr "Одаберите тему :"
 
 #: ../Pidgin/messages:99
 msgid "Display conversation messages in a bubble?"
-msgstr ""
+msgstr "Да ли приказивати поруке разговора у мехуру?"
 
 #: ../Pidgin/messages:101
 msgid "Display chat messages in a bubble?"
-msgstr ""
+msgstr "Да ли приказивати поруке ћаскања у мехуру?"
 
 #: ../Pidgin/messages:103
 msgid "Bubbles duration:"
-msgstr ""
+msgstr "Трајање мехура:"
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
 msgid "Animate the icon when receiving channel messages"
-msgstr ""
+msgstr "Оживите икону при пријему порука канала"
 
 #: ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "No"
-msgstr ""
+msgstr "Не"
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid "Simple animation"
-msgstr ""
+msgstr "Просто оживљавање"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
-msgstr ""
+msgstr "Захтева пажњу"
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
 msgid "Animation of the icon"
-msgstr ""
+msgstr "Анимација на икони"
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid ""
 "This is the number of messages that you can recall by scrolling on the icon."
 msgstr ""
+"Ово је број порука којих се можете присетити приликом премицања по икони."
 
 #: ../Pidgin/messages:123 ../Xchat/messages:115
 msgid "Size of the history :"
-msgstr ""
+msgstr "Величина историје :"
 
 #: ../Pidgin/messages:125 ../Xchat/messages:117
 msgid "none"
-msgstr "nikakvo"
+msgstr "без"
 
 #: ../Pidgin/messages:127 ../Xchat/messages:119
 msgid "big"
-msgstr "velik"
+msgstr "велика"
 
 #: ../Pidgin/messages:130
 msgid ""
@@ -1330,113 +1434,126 @@ msgid ""
 "The icon will also control the window of Pidgin like a normal application "
 "icon."
 msgstr ""
+"Ово програмче обједињује Пиџин у Ваш док.\n"
+"Може приказивати нове поруке.\n"
+"Ви изаберете разговор из приручног изборника на десни клик,\n"
+"пишете поруку на средњи клик,\n"
+"и приказује вам историју порука премицањем на икони\n"
+"Икона ће такође управљати прозором Пиџина као обична икона програма."
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
-msgstr ""
+msgstr "Оставите празно за приказ тренутног имена странице."
 
 #: ../Quote/messages:95
 msgid "Quote source:"
-msgstr ""
+msgstr "Цитирај извор:"
 
 #: ../Quote/messages:97
 msgid "Quotationspage.com"
-msgstr ""
+msgstr "Quotationspage.com"
 
 #: ../Quote/messages:99
 msgid "Bash.org"
-msgstr ""
+msgstr "Bash.org"
 
 #: ../Quote/messages:101
 msgid "Xkcdb.com"
-msgstr ""
+msgstr "Xkcdb.com"
 
 #: ../Quote/messages:103
 msgid "Qdb.us"
-msgstr ""
+msgstr "Qdb.us"
 
 #: ../Quote/messages:105
 msgid "Danstonchat.com"
-msgstr ""
+msgstr "Danstonchat.com"
 
 #: ../Quote/messages:107
 msgid "Jokes2go.com"
-msgstr ""
+msgstr "Jokes2go.com"
 
 #: ../Quote/messages:109
 msgid "Vidademerda.com.br"
-msgstr ""
+msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:111
 msgid "Viedemerde.fr"
-msgstr ""
+msgstr "Viedemerde.fr"
 
 #: ../Quote/messages:113
 msgid "Fmylife.com"
-msgstr ""
+msgstr "Fmylife.com"
 
 #: ../Quote/messages:115
 msgid "Vitadimerda.it"
-msgstr ""
+msgstr "Vitadimerda.it"
 
 #: ../Quote/messages:117
 msgid "100blagues.com"
-msgstr ""
+msgstr "100blagues.com"
 
 #: ../Quote/messages:119
 msgid "Chucknorrisfacts.fr"
-msgstr ""
+msgstr "Chucknorrisfacts.fr"
 
 #: ../Quote/messages:122
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
+"Ово програмче вам омогућава „навод дана“ са неких извора на интернету, као "
+"што су:\n"
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, и Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
 msgid "Screensaver is currently disabled"
-msgstr ""
+msgstr "Чувар екрана је тренутно онемогућен"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:80
 msgid "Disable the screensaver"
-msgstr ""
+msgstr "Онемогући чувара екрана"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:186
 msgid "Inhibit for a given time (in minutes)"
-msgstr ""
+msgstr "Спречи за одређено време (у минутима)"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:193
 msgid "timelength"
-msgstr ""
+msgstr "време трајања"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:199
 msgid "Inhibit for a given time"
-msgstr ""
+msgstr "Спречи за одређено време"
 
 #: ../Screensaver_inhibitor/messages:13
 msgid "Image filename when the screensaver is inhibited:"
-msgstr ""
+msgstr "Назив слике кад је чувар екрана спречен:"
 
 #: ../Screensaver_inhibitor/messages:31
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=Utility)"
 msgstr ""
+"За слој справица Компиз споја (CompizFuzion), поставити понашање у Kомпизу: "
+"(class=Cairo-dock & type=Utility)"
 
 #: ../Screensaver_inhibitor/messages:91
 msgid "(in minutes). 0 to never stop automatically"
-msgstr ""
+msgstr "(у минутима). 0 да никад не прекида самостално"
 
 #: ../Screensaver_inhibitor/messages:93
 msgid "How long should last the inhibition:"
-msgstr ""
+msgstr "Колико треба да траје онемогућавање:"
 
 #: ../Screensaver_inhibitor/messages:95
 msgid "Shortkey to (de)inhibit the screensaver:"
-msgstr ""
+msgstr "Пречица за о(не)могућавање чувара екрана:"
 
 #: ../Screensaver_inhibitor/messages:98
 msgid ""
@@ -1444,326 +1561,329 @@ msgid ""
 "This is especially useful when watching videos on Internet.\n"
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
+"Мало програмче за <b>онемогућавање чувара екрана</b>.\n"
+"Ово је нароито корисно при гледању вдеа са интернета.\n"
+"<b>Клик</b> на икону за омогућавање/онемогућавање чувара екрана."
 
 #: ../Translator/Translator:433
 msgid "To"
-msgstr ""
+msgstr "Прима"
 
 #: ../Translator/Translator:452
 msgid "From"
-msgstr ""
+msgstr "Шаље"
 
 #: ../Translator/Translator:472
 msgid "Switch languages"
-msgstr ""
+msgstr "Промени језике"
 
 #: ../Translator/Translator:485
 msgid "Translate from clipboard (middle-click)"
-msgstr ""
+msgstr "Преведи из оставе исечака (middle-click)"
 
 #: ../Translator/messages:95
 msgid "Languages"
-msgstr ""
+msgstr "Језици"
 
 #: ../Translator/messages:97
 msgid "Translate from:"
-msgstr ""
+msgstr "Преведи са језика:"
 
 #: ../Translator/messages:99 ../Translator/messages:229
 msgid "Afrikaans"
-msgstr ""
+msgstr "Афрички"
 
 #: ../Translator/messages:101 ../Translator/messages:231
 msgid "Albanian"
-msgstr ""
+msgstr "Албански"
 
 #: ../Translator/messages:103 ../Translator/messages:233
 msgid "Arabic"
-msgstr ""
+msgstr "Арапски"
 
 #: ../Translator/messages:105 ../Translator/messages:235
 msgid "Armenian"
-msgstr ""
+msgstr "Јерменски"
 
 #: ../Translator/messages:107 ../Translator/messages:237
 msgid "Azerbaijani"
-msgstr ""
+msgstr "Азербејџански"
 
 #: ../Translator/messages:109 ../Translator/messages:239
 msgid "Basque"
-msgstr ""
+msgstr "Баскијски"
 
 #: ../Translator/messages:111 ../Translator/messages:241
 msgid "Belarusian"
-msgstr ""
+msgstr "Белоруски"
 
 #: ../Translator/messages:113 ../Translator/messages:243
 msgid "Bengali"
-msgstr ""
+msgstr "Бенгалски"
 
 #: ../Translator/messages:115 ../Translator/messages:245
 msgid "Bulgarian"
-msgstr ""
+msgstr "Бугарски"
 
 #: ../Translator/messages:117 ../Translator/messages:247
 msgid "Catalan"
-msgstr ""
+msgstr "Каталонски"
 
 #: ../Translator/messages:119
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Кинески (поједностављен)"
 
 #: ../Translator/messages:121
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Кинески (традиционални)"
 
 #: ../Translator/messages:123 ../Translator/messages:253
 msgid "Croatian"
-msgstr ""
+msgstr "Хрватски"
 
 #: ../Translator/messages:125 ../Translator/messages:255
 msgid "Czech"
-msgstr ""
+msgstr "Чешки"
 
 #: ../Translator/messages:127 ../Translator/messages:257
 msgid "Danish"
-msgstr ""
+msgstr "Дански"
 
 #: ../Translator/messages:129 ../Translator/messages:259
 msgid "Dutch"
-msgstr ""
+msgstr "Холандски"
 
 #: ../Translator/messages:131 ../Translator/messages:261
 msgid "English"
-msgstr ""
+msgstr "Енглески"
 
 #: ../Translator/messages:133 ../Translator/messages:263
 msgid "Estonian"
-msgstr ""
+msgstr "Естонски"
 
 #: ../Translator/messages:135 ../Translator/messages:265
 msgid "Filipino"
-msgstr ""
+msgstr "Филипински"
 
 #: ../Translator/messages:137 ../Translator/messages:267
 msgid "Finnish"
-msgstr ""
+msgstr "Фински"
 
 #: ../Translator/messages:139 ../Translator/messages:269
 msgid "French"
-msgstr ""
+msgstr "Француски"
 
 #: ../Translator/messages:141 ../Translator/messages:271
 msgid "Galician"
-msgstr ""
+msgstr "Галицијски"
 
 #: ../Translator/messages:143 ../Translator/messages:273
 msgid "Georgian"
-msgstr ""
+msgstr "Грузијски"
 
 #: ../Translator/messages:145 ../Translator/messages:275
 msgid "German"
-msgstr ""
+msgstr "Германски"
 
 #: ../Translator/messages:147 ../Translator/messages:277
 msgid "Greek"
-msgstr ""
+msgstr "Грчки"
 
 #: ../Translator/messages:149 ../Translator/messages:279
 msgid "Gujarati"
-msgstr ""
+msgstr "Гуџарати"
 
 #: ../Translator/messages:151 ../Translator/messages:281
 msgid "Haitian"
-msgstr ""
+msgstr "Хаићански"
 
 #: ../Translator/messages:153 ../Translator/messages:283
 msgid "Hebrew"
-msgstr ""
+msgstr "Јеврејски"
 
 #: ../Translator/messages:155 ../Translator/messages:285
 msgid "Hindi"
-msgstr ""
+msgstr "Хинду"
 
 #: ../Translator/messages:157 ../Translator/messages:287
 msgid "Hungarian"
-msgstr ""
+msgstr "Мађарски"
 
 #: ../Translator/messages:159 ../Translator/messages:289
 msgid "Icelandic"
-msgstr ""
+msgstr "Исландски"
 
 #: ../Translator/messages:161 ../Translator/messages:291
 msgid "Indonesian"
-msgstr ""
+msgstr "Индонежански"
 
 #: ../Translator/messages:163 ../Translator/messages:293
 msgid "Irish"
-msgstr ""
+msgstr "Ирски"
 
 #: ../Translator/messages:165 ../Translator/messages:295
 msgid "Italian"
-msgstr ""
+msgstr "Италијански"
 
 #: ../Translator/messages:167 ../Translator/messages:297
 msgid "Japanese"
-msgstr ""
+msgstr "Јапански"
 
 #: ../Translator/messages:169 ../Translator/messages:299
 msgid "Kannada"
-msgstr ""
+msgstr "Канадски"
 
 #: ../Translator/messages:171 ../Translator/messages:301
 msgid "Korean"
-msgstr ""
+msgstr "Корејски"
 
 #: ../Translator/messages:173 ../Translator/messages:303
 msgid "Latin"
-msgstr ""
+msgstr "Латински"
 
 #: ../Translator/messages:175 ../Translator/messages:305
 msgid "Latvian"
-msgstr ""
+msgstr "Летонски"
 
 #: ../Translator/messages:177 ../Translator/messages:307
 msgid "Lithuanian"
-msgstr ""
+msgstr "Литвански"
 
 #: ../Translator/messages:179 ../Translator/messages:309
 msgid "Macedonian"
-msgstr ""
+msgstr "Македонски"
 
 #: ../Translator/messages:181 ../Translator/messages:311
 msgid "Malay"
-msgstr ""
+msgstr "Малајски"
 
 #: ../Translator/messages:183 ../Translator/messages:313
 msgid "Maltese"
-msgstr ""
+msgstr "Малтешки"
 
 #: ../Translator/messages:185 ../Translator/messages:315
 msgid "Norwegian"
-msgstr ""
+msgstr "Норвешки"
 
 #: ../Translator/messages:187 ../Translator/messages:317
 msgid "Persian"
-msgstr ""
+msgstr "Персијски"
 
 #: ../Translator/messages:189 ../Translator/messages:319
 msgid "Polish"
-msgstr ""
+msgstr "Пољски"
 
 #: ../Translator/messages:191 ../Translator/messages:321
 msgid "Portuguese"
-msgstr ""
+msgstr "Португалски"
 
 #: ../Translator/messages:193 ../Translator/messages:323
 msgid "Romanian"
-msgstr ""
+msgstr "Румунски"
 
 #: ../Translator/messages:195 ../Translator/messages:325
 msgid "Russian"
-msgstr ""
+msgstr "Руски"
 
 #: ../Translator/messages:197 ../Translator/messages:327
 msgid "Serbian"
-msgstr ""
+msgstr "Српски"
 
 #: ../Translator/messages:199 ../Translator/messages:329
 msgid "Slovak"
-msgstr ""
+msgstr "Словачки"
 
 #: ../Translator/messages:201 ../Translator/messages:331
 msgid "Slovenian"
-msgstr ""
+msgstr "Словеначки"
 
 #: ../Translator/messages:203 ../Translator/messages:333
 msgid "Spanish"
-msgstr ""
+msgstr "Шпански"
 
 #: ../Translator/messages:205 ../Translator/messages:335
 msgid "Swahili"
-msgstr ""
+msgstr "Свахили"
 
 #: ../Translator/messages:207 ../Translator/messages:337
 msgid "Swedish"
-msgstr ""
+msgstr "Шведски"
 
 #: ../Translator/messages:209 ../Translator/messages:339
 msgid "Tamil"
-msgstr ""
+msgstr "Тамил"
 
 #: ../Translator/messages:211 ../Translator/messages:341
 msgid "Telugu"
-msgstr ""
+msgstr "Телугу"
 
 #: ../Translator/messages:213 ../Translator/messages:343
 msgid "Thai"
-msgstr ""
+msgstr "Тајландски"
 
 #: ../Translator/messages:215 ../Translator/messages:345
 msgid "Turkish"
-msgstr ""
+msgstr "Турски"
 
 #: ../Translator/messages:217 ../Translator/messages:347
 msgid "Ukrainian"
-msgstr ""
+msgstr "Украински"
 
 #: ../Translator/messages:219 ../Translator/messages:349
 msgid "Urdu"
-msgstr ""
+msgstr "Урду"
 
 #: ../Translator/messages:221 ../Translator/messages:351
 msgid "Vietnamese"
-msgstr ""
+msgstr "Вијетнамски"
 
 #: ../Translator/messages:223 ../Translator/messages:353
 msgid "Welsh"
-msgstr ""
+msgstr "Велшки"
 
 #: ../Translator/messages:225 ../Translator/messages:355
 msgid "Yiddish"
-msgstr ""
+msgstr "јидишки"
 
 #: ../Translator/messages:227
 msgid "Translate to:"
-msgstr ""
+msgstr "Преведи на језик:"
 
 #: ../Translator/messages:249
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "Поједностаљени кинески"
 
 #: ../Translator/messages:251
 msgid "Traditional Chinese"
-msgstr ""
+msgstr "Кинески традиционални"
 
 #: ../Translator/messages:357
 msgid "Shortkeys"
-msgstr ""
+msgstr "Пречице тастатуре"
 
 #: ../Translator/messages:359
 msgid "Shortkey to start translating from (read):"
-msgstr ""
+msgstr "Пречица за почетак превођења од (читање):"
 
 #: ../Translator/messages:361
 msgid "Shortkey to start translating to (write):"
-msgstr ""
+msgstr "Пречица за почетак превођења на (писање):"
 
 #: ../Translator/messages:363
 msgid "Dialog"
-msgstr ""
+msgstr "Прозорче"
 
 #: ../Translator/messages:365
 msgid "In s. Set 0 for an unlimited time."
-msgstr ""
+msgstr "У секундама. 0 за неограничено време."
 
 #: ../Translator/messages:367
 msgid "Time-length of the result dialog:"
-msgstr ""
+msgstr "Временско трајање излазног прозора:"
 
 #: ../Translator/messages:369
 msgid "Editable text widget?"
-msgstr ""
+msgstr "Уређујуће текст справице?"
 
 #: ../Translator/messages:372
 msgid ""
@@ -1780,63 +1900,78 @@ msgid ""
 "language, press Ctrl + Alt + R\n"
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
+"Ово програмче преводи речи, реченице, или веб странице.\n"
+"Да би га користили, или кликните на икону, или притисните пречицу, затим "
+"унесите Ваш текст, и притисните Врати. Преведени текст ће бити приказан у "
+"искачућем прозору и биће доступан у остави исечака, само притисните Ктрл+в "
+"да би га добавили.\n"
+"Можете такође и спустити нешто текста на икону, или превести тренутни "
+"садржај списка исечака (средњи клик).\n"
+"Можете изабрати језике са којих и у које елите преводити кроз изборник, или "
+"у прозору поставки програмчета. Такође, и пречице се могу подешавати.\n"
+"Предодређено:\n"
+" - Ако желите превести нешто што читате на страном језику, притисните "
+"Ктрл+Мења+Р\n"
+" - Ако пишете нешто на Вашем језику, притисните Ктрл+Мења+Њ"
 
 #: ../Transmission/Transmission:244
 msgid "Transmission is not running, or is not responding to us."
-msgstr ""
+msgstr "Трансмисија није покренута, или не даје одзив."
 
 #: ../Transmission/Transmission:251
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
+"Нисам успео да добавим податке из трансмисије. Потребна Вам је Трансмисија "
+"1.9 или изнад."
 
 #: ../Transmission/Transmission:257
 msgid "Progress:"
-msgstr ""
+msgstr "Напредак:"
 
 #: ../Transmission/Transmission:260
 msgid "paused"
-msgstr ""
+msgstr "застанак"
 
 #: ../Transmission/Transmission:262
 msgid "checking"
-msgstr ""
+msgstr "проверавам"
 
 #: ../Transmission/Transmission:264
 msgid "waiting for check"
-msgstr ""
+msgstr "чекам проверу"
 
 #: ../Transmission/Transmission:266
 msgid "seeding"
-msgstr ""
+msgstr "сејем"
 
 #: ../Transmission/Transmission:270
 msgid "Time remaining:"
-msgstr ""
+msgstr "Преостало време:"
 
 #: ../Transmission/Transmission:276
 msgid "days"
-msgstr ""
+msgstr "дана"
 
 #: ../Transmission/Transmission:278 ../Transmission/Transmission:284
 msgid "h"
-msgstr ""
+msgstr "h"
 
 #: ../Transmission/Transmission:286
 msgid "min"
-msgstr ""
+msgstr "мин"
 
 #: ../Transmission/Transmission:287
 msgid "sec"
-msgstr ""
+msgstr "сек."
 
 #: ../Transmission/Transmission:290
 msgid "Time remaining: Unknown"
-msgstr ""
+msgstr "Преостало време:непознато"
 
 #: ../Transmission/Transmission:292
 msgid "Finished"
-msgstr ""
+msgstr "Завршено"
 
 #: ../Transmission/Transmission:296
 msgid "Number of peers:"
@@ -1847,29 +1982,28 @@ msgid "and seeds:"
 msgstr ""
 
 #: ../Transmission/Transmission:299
-#, fuzzy
 msgid "Ratio:"
-msgstr "Okretanje"
+msgstr "Однос размене:"
 
 #: ../Transmission/Transmission:303
 msgid "No torrent in the list"
-msgstr ""
+msgstr "Нема торената на списку"
 
 #: ../Transmission/Transmission:308
 msgid "Total amount of data:"
-msgstr ""
+msgstr "Укупна количина података:"
 
 #: ../Transmission/Transmission:317
 msgid "Received:"
-msgstr ""
+msgstr "Примљено:"
 
 #: ../Transmission/Transmission:325
 msgid "Sent:"
-msgstr ""
+msgstr "Послато:"
 
 #: ../Transmission/Transmission:411
 msgid "You have to enable the Web client in the Transmisison's settings."
-msgstr ""
+msgstr "Морате омогућити веб клијента у поставкама Трансмисије."
 
 #: ../Transmission/messages:108
 msgid ""
@@ -1881,14 +2015,22 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"Ово програче вам омогућава <b>управљање Трансмисијом</b> из дока.\n"
+"Може приказивати <b>брзину пријема</b> на икони.\n"
+"<b>Средњи клик</b> на икони Вам даје податке о тренутним торентима (можете "
+"задати пречицу за ову радњу).\n"
+"<b>Десни клик</b> на икони Вам омогућава да застанете/наставите са свим "
+"торентима.\n"
+"<b>Спустите датотеку торента</b> на икону за његово додавање на списак и "
+"почните са преузимањем одмах."
 
 #: ../Twitter/Twitter:117
 msgid "Oh, dear, your timeline is empty :-("
-msgstr ""
+msgstr "О, срце, ваша временска линија је празна :-("
 
 #: ../Twitter/Twitter:185
 msgid "Oh, dear, you do not have direct messages :-("
-msgstr ""
+msgstr "О, срце, немате непосредних порука :-("
 
 #: ../Twitter/Twitter:199
 #, python-format
@@ -1898,21 +2040,25 @@ msgid ""
 "Friends: %s\n"
 "Tweets: %s\n"
 msgstr ""
+"%s [<b>%s</b>]\n"
+"Пратиоци:%s\n"
+"Пријатељи: %s\n"
+"Цвркутања: %s\n"
 
 #: ../Twitter/Twitter:209
 #, python-format
 msgid "%s, write a reply to %s"
-msgstr ""
+msgstr "%s, одговори %s"
 
 #: ../Twitter/Twitter:220
 #, python-format
 msgid "%s, send a tweet"
-msgstr ""
+msgstr "%s, пошаљи цвркутање"
 
 #: ../Twitter/Twitter:222
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
-msgstr ""
+msgstr "Ваш цвркут има више од %d знакова, молим, скратите га"
 
 #: ../Twitter/Twitter:235
 #, python-format
@@ -1920,11 +2066,13 @@ msgid ""
 "Problem to send this tweet on %s, I think you already tried to send the same "
 "one few minutes ago"
 msgstr ""
+"Потешкоћа са слањем цвркута на %s, мислим да сте већ покушали да пошаљете "
+"исти пре пар минута"
 
 #: ../Twitter/Twitter:239
 #, python-format
 msgid "%s, retweet?"
-msgstr ""
+msgstr "%s, одцвркутати?"
 
 #: ../Twitter/Twitter:253
 msgid ""
@@ -1932,6 +2080,9 @@ msgid ""
 "Right-click -> Add account -> Twitter.\n"
 "Right-click -> Add account -> Identi.ca."
 msgstr ""
+"Ово програмче подржава Twitter, и Identi.ca.\n"
+"Десни клик -> Додај налог -> Twitter.\n"
+"Десни клик -> Додај налог -> Identi.ca."
 
 #: ../Twitter/Twitter:258
 #, python-format
@@ -1939,11 +2090,13 @@ msgid ""
 "%s Applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
+"Програмче %s захтева Ваш надимак, и овлашћење\n"
+"да га прихватите за повезивање на Ваш %s налог"
 
 #: ../Twitter/Twitter:267
 #, python-format
 msgid "What is your %s nickname?"
-msgstr ""
+msgstr "Који је Ваш %s надимак?"
 
 #: ../Twitter/Twitter:284
 #, python-format
@@ -1952,6 +2105,9 @@ msgid ""
 "on your browser. As soon as you authorize it, copy the PIN number that will "
 "be shown, and go to the next dialog"
 msgstr ""
+"Програмче %s захтева да му дате овлашћења. Страница пријаве је отворена у "
+"Вашем прегледнику. Кад се пријавите, умножите ЛИБ број који ће бити "
+"приказан, и идите на следеће прозорче"
 
 #: ../Twitter/Twitter:287
 #, python-format
@@ -1960,101 +2116,103 @@ msgid ""
 "access it with your browser. Copy the PIN number that will be shown as soon "
 "as you authorize"
 msgstr ""
+"Програмче %s захтева да му дате овлашћења. Страница пријаве је отворена у "
+"Вашем прегледнику. Кад се пријавите, множите ЛИБ број који ће бити приказан"
 
 #: ../Twitter/Twitter:297
 msgid "Enter the PIN number shown on the authorization page"
-msgstr ""
+msgstr "Унесите ЛИБ приказан на страници пријаве"
 
 #: ../Twitter/Twitter:309
 msgid "Successfully connected with Twitter"
-msgstr ""
+msgstr "Успешно сам повезан на Twitter"
 
 #: ../Twitter/Twitter:312
 msgid "Successfully connected with Identi.ca"
-msgstr ""
+msgstr "Успешно сам повезан на Identi.ca"
 
 #: ../Twitter/Twitter:329
 msgid "Direct messages"
-msgstr ""
+msgstr "Непосредне поруке"
 
 #: ../Twitter/Twitter:331
 #, python-format
 msgid "New direct messages (%d)"
-msgstr ""
+msgstr "Нова непосредна порука (%d)"
 
 #: ../Twitter/Twitter:344
 msgid "Info"
-msgstr "Informacije"
+msgstr "Порука"
 
 #: ../Twitter/Twitter:353
 msgid "Tweets"
-msgstr ""
+msgstr "Цвркутања"
 
 #: ../Twitter/Twitter:355
 #, python-format
 msgid "New tweets (%d)"
-msgstr ""
+msgstr "Нови цвркут (%d)"
 
 #: ../Twitter/Twitter:369
 msgid "My tweets"
-msgstr ""
+msgstr "Моја цвркутања"
 
 #: ../Twitter/Twitter:387
 msgid "Add account"
-msgstr ""
+msgstr "Додај налог"
 
 #: ../Twitter/Twitter:395 ../WebSearch/messages:111
 msgid "Twitter"
-msgstr ""
+msgstr "Твитер"
 
 #: ../Twitter/Twitter:405
 msgid "Identi.ca"
-msgstr ""
+msgstr "Иденти.ка"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
 msgstr ""
+"Величина приказа ознаке која приказује број нових цвркутања и порука:"
 
 #: ../Twitter/messages:95
 msgid "Small"
-msgstr ""
+msgstr "мала"
 
 #: ../Twitter/messages:99
 msgid "Large"
-msgstr ""
+msgstr "велика"
 
 #: ../Twitter/messages:101
-#, fuzzy
 msgid "Notifications"
-msgstr "Okretanje"
+msgstr "Обавештења"
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
-msgstr ""
+msgstr "Да ли упозоравати када се прими ново цвркутање или порука?"
 
 #: ../Twitter/messages:105
 msgid "Should the applet play a sound as a notification?"
-msgstr ""
+msgstr "Да ли да програмче свира при обавештењима?"
 
 #: ../Twitter/messages:107
 msgid "Play a sound"
-msgstr ""
+msgstr "Пусти звук"
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
-msgstr ""
+msgstr "Да ли да програмче анимира икону при обавештењима?"
 
 #: ../Twitter/messages:111
 msgid "Animate the icon"
-msgstr ""
+msgstr "Оживи икону"
 
 #: ../Twitter/messages:113
 msgid "Which animation should apply to the icon?"
-msgstr ""
+msgstr "Коју анимацију треба применити на икону?"
 
 #: ../Twitter/messages:115
 msgid "Choose animation:"
-msgstr ""
+msgstr "Изаберите радњу:"
 
 #: ../Twitter/messages:118
 msgid ""
@@ -2070,78 +2228,91 @@ msgid ""
 "Paste this number on the next dialog box will be shown.\n"
 "The plugin is going to inform that you are successfully connected."
 msgstr ""
+"Ово програмче подржава Twitter и Identi.ca. Можете слати цвркутања, "
+"непосредне поруке, видети вашу временску линију, одцвркутавати, и одговарати "
+"на непосредне поруке. Оно ће Вас упозорити кад има нових цвркута, и "
+"непосредних порука.\n"
+"При првом покретању, требате изабрати коју мрежу ћете додати, десни клик -> "
+"додај налог -> Twitter или Identi.ca. Програмче ће тражити Ваш надимак и "
+"овлашћење за повезивање са мрежама.\n"
+"Мрежна страница за пријаву ће се отворити.\n"
+"Чим се пријавите, ЛИБ број ће се приказати на страници, умножите тај број\n"
+"Налепите број у следеће прозорче попуне које ће се приказати.\n"
+"Прикључак ће Вас обавестити да сте се успешно провезали."
 
 #: ../WebSearch/messages:91
 msgid "Search engine :"
-msgstr ""
+msgstr "Погон претраге :"
 
 #: ../WebSearch/messages:93
 msgid "Google"
-msgstr "Google"
+msgstr "Гугл"
 
 #: ../WebSearch/messages:95
 msgid "Bing"
-msgstr ""
+msgstr "Бинг"
 
 #: ../WebSearch/messages:97
 msgid "Yahoo!"
-msgstr "Yahoo"
+msgstr "Јаху!"
 
 #: ../WebSearch/messages:99
 msgid "Teoma"
-msgstr ""
+msgstr "Теома"
 
 #: ../WebSearch/messages:101
 msgid "Youtube"
-msgstr ""
+msgstr "Јутуба"
 
 #: ../WebSearch/messages:103
 msgid "Webshots"
-msgstr ""
+msgstr "Вебшотс"
 
 #: ../WebSearch/messages:105
 msgid "Flickr"
-msgstr ""
+msgstr "Фликр"
 
 #: ../WebSearch/messages:107
 msgid "Wikipedia"
-msgstr "Wikipedija"
+msgstr "Викпедија"
 
 #: ../WebSearch/messages:109
 msgid "ImageShack"
-msgstr ""
+msgstr "ImageShack"
 
 #: ../WebSearch/messages:113
 msgid "Digg"
-msgstr ""
+msgstr "Диг"
 
 #: ../WebSearch/messages:115
 msgid "in sub-icons."
-msgstr ""
+msgstr "у подиконицама."
 
 #: ../WebSearch/messages:117
 msgid "Maximum number of results shown :"
-msgstr ""
+msgstr "Највећи број резултата :"
 
 #: ../WebSearch/messages:119
 msgid "Show the current page as the icon label ?"
-msgstr ""
+msgstr "Прикажи тренутну страницу као натпис иконе ?"
 
 #: ../WebSearch/messages:121
 msgid ""
 "Show the description of the result instead of its URL in the sub-icons ?"
-msgstr ""
+msgstr "Прикажи опис излаза уместо његове адресе у под-иконама ?"
 
 #: ../WebSearch/messages:123
 msgid ""
 "for slow connections, disable will result in significantly faster fetching."
-msgstr ""
+msgstr "за слабије везе, онемогући ће дати знатно брже добављање."
 
 #: ../WebSearch/messages:125
 msgid ""
 "Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
 "and Digg searches ?"
 msgstr ""
+"Омогући преглед умањених сличица за Јутубу, Вебшотс, Фликр, Имиџшек, Цвркут, "
+"и Копај претраге ?"
 
 #: ../WebSearch/messages:128
 msgid ""
@@ -2162,6 +2333,25 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Ово програмче обезбеђује сучеље за неке погоне претраге као што су\n"
+"Гугл, Бинг, Јаху!, Јутуба, Вебшотс, Фликр, Викпедија, Имиџшак, и Твитер.\n"
+"Да би одабрали погон претраге, можете\n"
+" (1) Десни клик на главну икону -> Веб претрага -> (изаберите погон "
+"претраге)\n"
+" (2) Десни клик -> Подесите ово програмче -> Поставке -> Изаберите погон "
+"претраге\n"
+" (3) Премичите навише или наниже над иконом (применљиво само за прву "
+"претрагу)\n"
+"Можете претраживати на три начина\n"
+" (1) Средњи клик на главну икону\n"
+" (2) Леви клик на главну икону (одмах након одабира погона пртраге)\n"
+"Укуцајте Ваш упит, и потврдите. Сваки излаз ће се приказивати као под-"
+"икона.\n"
+"Леви клик за отварање излаза у подразумваном веб прегледнику\n"
+"Средњи клик на под-икону било ког излаза за приказ његовог описа\n"
+"Премицање навише за добављање наредних излаза\n"
+"Премицање наниже за добављање претходних излаза\n"
+"Леви клик на главну икону  за приказ статистике претраге"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2173,14 +2363,20 @@ msgid ""
 " the command to launch this application, the uptime and the class(es) of "
 "this window."
 msgstr ""
+"Убица прозора је у стању да убије непослушан прозор лако.\n"
+"Леви клик на његову икону, и једноставно изаберите прозор који прави "
+"потешкоће да би га убили.\n"
+" (изаберите док да би отказали радњу)\n"
+"Средњи клик ће Вам дати неке податке као што су pid,\n"
+" наредбу која покреће овај програм, време будности, и разред(е) тог прозора."
 
 #: ../Xchat/Xchat:265
 msgid "Channels"
-msgstr ""
+msgstr "Канали"
 
 #: ../Xchat/Xchat:269
 msgid "Switch the channel you'll send message to with the middle-click."
-msgstr ""
+msgstr "Промените канал на који ћете послати поруку на средњи клик."
 
 #: ../Xchat/messages:122
 msgid ""
@@ -2192,295 +2388,320 @@ msgid ""
 "The icon will also control the window of xchat like a normal application "
 "icon."
 msgstr ""
+"Ово програмче обједињује Иксчет и Иксчет-Гном у Ваш док.\n"
+"Може приказати поруке,\n"
+"ви изаберете канал из изборника на десни клик,\n"
+"пише поруку на средњи клик,\n"
+"и приказује историју порука премицањем на икони\n"
+"Икона ће такођ управљати прозором Иксчета као обичном иконом програма."
 
 #: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
-msgstr ""
+msgstr "Отвори видео фасциклу"
 
 #: ../YoutubeDl/YoutubeDl:303
 msgid "Show Download Status"
-msgstr ""
+msgstr "_Прикажи преузимања"
 
 #: ../YoutubeDl/YoutubeDl:311
 msgid "Send abort signal to the downloader. There may be a delay"
-msgstr ""
+msgstr "Пошаљи знак отказивања преузимачу. Може доћи до одлагања"
 
 #: ../YoutubeDl/messages:3
 msgid "Set to 0 to use the default applet size"
-msgstr ""
+msgstr "Поставите 0 да би користили подразумевану величину програмчета"
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
-msgstr ""
+msgstr "У супротном, користите десни клик и омогућите преузимања"
 
 #: ../YoutubeDl/messages:91
 msgid "Start downloading videos imediately? :"
-msgstr ""
+msgstr "Да почнем одмах са преузимањем видеа? :"
 
 #: ../YoutubeDl/messages:93
 msgid "in secondds"
-msgstr ""
+msgstr "у секундама"
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
-msgstr ""
+msgstr "Врме између два освежавања:"
 
 #: ../YoutubeDl/messages:97
 msgid "Action on middle click:"
-msgstr ""
+msgstr "Радња на средњи клик:"
 
 #: ../YoutubeDl/messages:101
 msgid "Show Status"
-msgstr ""
+msgstr "Прикажи _стање"
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
-msgstr ""
+msgstr "У супротном само употребите средњи клик за праћење стања"
 
 #: ../YoutubeDl/messages:105
 msgid "Show download progress on icon? :"
-msgstr ""
+msgstr "Прикажи напредак преузимања на икони :"
 
 #: ../YoutubeDl/messages:107
 msgid ""
 "Otherwise just show the plugin name and use middle click to monitor status"
 msgstr ""
+"У супротном, само прикажи назив прикључка и користи средњи клик за праћење "
+"стања"
 
 #: ../YoutubeDl/messages:109
 msgid "Show download status in icon label when hovering over icon? :"
 msgstr ""
+"Приказати стање преузимања на натпису иконе при надношењу преко иконе? :"
 
 #: ../YoutubeDl/messages:111
 msgid "Notification selections"
-msgstr ""
+msgstr "Одабир обавештавања"
 
 #: ../YoutubeDl/messages:113
 msgid "Otherwise quietly start to the next download"
-msgstr ""
+msgstr "У супротном, тихо крени на следеће прузимање"
 
 #: ../YoutubeDl/messages:115
 msgid "Show a pop-up message when starting downloads? :"
-msgstr ""
+msgstr "Приказуј икачућу поруку при покретању преузимања? :"
 
 #: ../YoutubeDl/messages:117
 msgid "Otherwise quietly move finish the download"
-msgstr ""
+msgstr "У супротном, тихо крени на следеће прузимање"
 
 #: ../YoutubeDl/messages:119
 msgid "Show a pop-up message when download is complete? :"
-msgstr ""
+msgstr "Прикажи искачућу поруку кад је преузимање завршено? :"
 
 #: ../YoutubeDl/messages:121
 msgid "Otherwise quietly abort the download"
-msgstr ""
+msgstr "У супротном тихо напусти преузимање"
 
 #: ../YoutubeDl/messages:123
 msgid "Show a pop-up message when download is aborted? :"
-msgstr ""
+msgstr "Прикажи искачуће прозорче кад се преузимање обустави? :"
 
 #: ../YoutubeDl/messages:125
 msgid "Otherwise just quietly add the url to the list"
-msgstr ""
+msgstr "У супротном, само тихо додај адресу списку"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr ""
+msgstr "Прикажи искачућу поруку при додавању адресе на списак заказаног? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
 "if pynotify is installed a system notification message will appear, "
 "otherwise the standard dock dialogue messages will be used."
 msgstr ""
+"ако је pynotify уграђен, порука обавештења система ће се појавити, у "
+"супротном ће обични прозори порука дока бити коришћени."
 
 #: ../YoutubeDl/messages:131
 msgid "Attempt to use desktop notifications instead of dock messages? :"
 msgstr ""
+"Да ли да покушам да користим обавештења окружења уместо порука дока? :"
 
 #: ../YoutubeDl/messages:133
 msgid ""
 "This is usefull if you have long lists of urls to view when you left click "
 "on the icon. Otherwise the standard dialogue message is fine."
 msgstr ""
+"Ово је корисно ако имате дуг списак адреса за преглед кад кликнете левим "
+"кликом на икону. У супротном обично прозорче поруке је у реду."
 
 #: ../YoutubeDl/messages:135
 msgid "Use list view when URL list exceeds specified number?:"
-msgstr ""
+msgstr "Користи преглед списка за адресе кад списак пређе одређени број?:"
 
 #: ../YoutubeDl/messages:137
 msgid ""
 "When the number of URLS exceed this number switch to list view instead of a "
 "regular dialogue"
 msgstr ""
+"Кад број адреса пређе овај број пређи на преглед списка уместо на обичан "
+"прозор"
 
 #: ../YoutubeDl/messages:139
 msgid "Use list view when number of URLs exceed:"
-msgstr ""
+msgstr "Користи преглед списка кад број адреса пређе:"
 
 #: ../YoutubeDl/messages:141
 msgid "Directory Setup"
-msgstr ""
+msgstr "Поставке фасцикле"
 
 #: ../YoutubeDl/messages:143
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
+"Путања за чување видеа. Оставите празно ако желите да користите "
+"подразумевану (тренутно у корисничкој фасцикли видеа)."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
-msgstr ""
+msgstr "Сачувај видео у овој фасцикли:"
 
 #: ../YoutubeDl/messages:147
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
+"Путања за чување списка адреса. Оставите празно за коришћење подразумеване "
+"(тренутно у личној фасцикли корисника)."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
-msgstr ""
+msgstr "Сачувај адресе у овој фасцикли:"
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "Могућности преузимања"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
 msgstr ""
+"Подеси могућности преузимања које ће бити коришћене за youtubedl позадинца"
 
 #: ../YoutubeDl/messages:155
 msgid "Resume partially downloaded files"
-msgstr ""
+msgstr "Настави преузимање делимично преузетих датотека"
 
 #: ../YoutubeDl/messages:157
 msgid "Resume download (--continue)?"
-msgstr ""
+msgstr "Настави преузимање (--continue)?"
 
 #: ../YoutubeDl/messages:159
 msgid "Ignore errors during download and continue processing."
-msgstr ""
+msgstr "Занемари грешке приликом преузимања, и настави обраду."
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr ""
+msgstr "Занемари грешке (--ignore-errors)?"
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
-msgstr ""
+msgstr "Ако датотека постоји, не покушавај да је препишеш."
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr ""
+msgstr "Не преписуј (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
+"Користи наслов видеа у имену датотеке који се користио за преузимање видеа"
 
 #: ../YoutubeDl/messages:169
 msgid "Use title (--title)?"
-msgstr ""
+msgstr "Користи наслов (--title)?"
 
 #: ../YoutubeDl/messages:171
 msgid "Which download format to use:"
-msgstr ""
+msgstr "Који облик преузимања користити:"
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr ""
+msgstr "Изаберите видео облик"
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
-msgstr ""
+msgstr "Ограничи  квалитет"
 
 #: ../YoutubeDl/messages:177
 msgid "Download default format"
-msgstr ""
+msgstr "Преузми у предодређеном облику"
 
 #: ../YoutubeDl/messages:179
 msgid "Specify the video format (quality) in which to download the video."
-msgstr ""
+msgstr "Одредите облик видеа (квалитет) у који ће се видео преузимати."
 
 #: ../YoutubeDl/messages:181
 msgid "Video format (--format):"
-msgstr ""
+msgstr "Облик видеа (--format):"
 
 #: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
 msgid "H264 - MP4 at 480p"
-msgstr ""
+msgstr "H264 - MP4 на 480p"
 
 #: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
 msgid "H264 - MP4 at 720p"
-msgstr ""
+msgstr "H264 - MP4 на 720p"
 
 #: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
 msgid "H264 - MP4 at 1080p"
-msgstr ""
+msgstr "H264 - MP4 на 1080p"
 
 #: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
 msgid "H264 - FLV at 360p"
-msgstr ""
+msgstr "H264 - FLV на 360p"
 
 #: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
 msgid "H264 - FLV at 480p"
-msgstr ""
+msgstr "H264 - FLV на 480p"
 
 #: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
 msgid "H263 - FLV at 240p"
-msgstr ""
+msgstr "H263 - FLV на 240p"
 
 #: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
 msgid "Webm at 480p"
-msgstr ""
+msgstr "Вебм на 480p"
 
 #: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
 msgid "Webm at 720p"
-msgstr ""
+msgstr "Вебм на 720p"
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr ""
+msgstr "3ГП видео"
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
-msgstr ""
+msgstr "Ограничите највећи квалитет видеа за преузимање."
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr ""
+msgstr "Највећи квалитет (--max-quality):"
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
-msgstr ""
+msgstr "Преузми у предодређеном облику."
 
 #: ../YoutubeDl/messages:225
 msgid ""
 "Some videos require an account to be downloaded, mostly because they're "
 "flagged as mature content."
 msgstr ""
+"За преузимање неких видео клипова је потребан налог, углавном зато што су "
+"означена као садржај за одрасле."
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr ""
+msgstr "Користите поступак пријаве корисничким именом и лозинком."
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Корисничко име/лозинка"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
-msgstr ""
+msgstr "Одредите корисничко име налога на Јутуби."
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Корисничко име:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
-msgstr ""
+msgstr "Уз корисничко име, одређује лозинку налога."
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Лозинка:"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2502,3 +2723,21 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
+"Ово програмче вам омогућује да превлачите Јутуба везе са веб призора Јутуба "
+"и да их спуштате на икону за преузимање. Позадинац преузимања је заснован на "
+"youtube-dl.py.\n"
+"\n"
+"Само по један видео ће бити преузиман и свака адреса ће бити додавана на "
+"списак. Кад с видео преузме, или откаже се  преузимање, адреса ће бити "
+"уклоњена са списка. Списак може бити сачуван у датотеку и поново учитан за "
+"за каснију употребу.\n"
+"\n"
+"Средње дугме миша може бити подешено да отвара фасциклу видеа, или да "
+"приказује стање преузимања.\n"
+"\n"
+"Десни клик даје бројне могућности у зависности од тога шта се тренутно "
+"дешава. Ако ваша фасцикла видеа није исправна или није уписива, онда не "
+"можете преузимати док се т не исправи.\n"
+"\n"
+"Ако нема видеа на списку, леви клик на икону дозвољава да унесете адресу. У "
+"супротном, списак адреса ће бити приказан."
