@@ -213,9 +213,9 @@ class Applet(CDApplet):
 			request = urllib_request.Request(self.url, query, headers)
 			response = urllib_request.urlopen(request, timeout=20)
 			return response.read()
-		except urllib2Error.HTTPError as error:
+		except urllib_error.HTTPError as error:
 			print("HTTP error:",error.filename, error.code, error.msg)
-		except urllib2Error.URLError as error:
+		except urllib_error.URLError as error:
 			print("URL error:",error.reason)
 		except httplib.BadStatusLine as error:
 			print("bad status error:",error.line)
