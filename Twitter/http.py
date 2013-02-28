@@ -5,22 +5,16 @@
 # Author: Eduardo Mucelli Rezende Oliveira
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
 
-try:
+try:  # python 3
   import urllib.request, urllib.error, urllib.parse
-  def urllib2Request():
-    return urllib.request
-  def urllib2Error():
-    return urllib.error
-  def urllibParse():
-    return urllib.parse
-except:
+  urllib_request = urllib.request
+  urllib_error = urllib.error
+  urllib_parse = urllib.parse
+except:  # python 2
   import urllib2, urllib
-  def urllib2Request():
-    return urllib2
-  def urllib2Error():
-    return urllib2
-  def urllibParse():
-    return urllib
+  urllib_request = urllib2
+  urllib_error = urllib2
+  urllib_parse = urllib
 from util import logp, logm
 
 # HTTP GET
@@ -28,10 +22,10 @@ def get(url, tries = 0):
   while True:
     try:
       logp("GET: Trying to connect to %s" % url)
-      request = urllib2Request().Request(url)
-      response = urllib2Request().urlopen(request)
+      request = urllib_request.Request(url)
+      response = urllib_request.urlopen(request)
       return response.read()
-    except urllib2Error().HTTPError:
+    except urllib_error.HTTPError:
       tries += 1
       if tries > 3:
         raise
@@ -41,11 +35,11 @@ def post(url, params, header, tries = 0):
   while True:
     try:
       logp("POST: Trying to connect to %s" % url)
-      data = urllibParse().urlencode(params)
-      request = urllib2Request().Request(url, data, headers=header)
-      response = urllib2Request().urlopen(request)
+      data = urllib_parse.urlencode(params)
+      request = urllib_request.Request(url, data, headers=header)
+      response = urllib_request.urlopen(request)
       return response.read()
-    except urllib2Error().HTTPError:
+    except urllib_error.HTTPError:
       tries += 1
       if tries > 3:
         raise

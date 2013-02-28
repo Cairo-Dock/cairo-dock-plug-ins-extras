@@ -31,18 +31,14 @@ import os.path
 from gobject import timeout_add
 from CDApplet import CDApplet, _
 
-try:
+try: # python3
 	import http.client as httplib, urllib.request, urllib.error
-	def urllib2Request():
-		return urllib.request
-	def urllib2Error():
-		return urllib.error
-except:
+	urllib_request = urllib.request
+	urllib_error = urllib.error
+except: # python2
 	import httplib, urllib2
-	def urllib2Request():
-		return urllib2
-	def urllib2Error():
-		return urllib2
+	urllib_request = urllib2
+	urllib_error = urllib2
 
 TR_STATUS_CHECK_WAIT   = (1<<0)
 TR_STATUS_CHECK        = (1<<1)
@@ -106,10 +102,10 @@ class Applet(CDApplet):
 	# The headers will contain our session ID.
 	def get_session_id(self):
 		query = json.dumps({'method': 'session-get', 'arguments': {}})
-		request = urllib2Request().Request(self.url, query, {})
+		request = urllib_request.Request(self.url, query, {})
 		try:
-			response = urllib2Request().urlopen(request, timeout=30)
-		except urllib2Error().HTTPError as error:
+			response = urllib_request.urlopen(request, timeout=30)
+		except urllib_error.HTTPError as error:
 			#~ aerror_data = error.read()
 			if error.code == 409:
 				self.iSessionID = error.headers['X-Transmission-Session-Id']
@@ -214,8 +210,8 @@ class Applet(CDApplet):
 	def _http_query(self, query):
 		headers = {'x-transmission-session-id': self.iSessionID}
 		try:
-			request = urllib2Request().Request(self.url, query, headers)
-			response = urllib2Request().urlopen(request, timeout=20)
+			request = urllib_request.Request(self.url, query, headers)
+			response = urllib_request.urlopen(request, timeout=20)
 			return response.read()
 		except urllib2Error.HTTPError as error:
 			print("HTTP error:",error.filename, error.code, error.msg)
@@ -415,12 +411,12 @@ class Applet(CDApplet):
 		
 		# set authentication
 		if self.config['user'] and self.config['password']:
-			password_manager = urllib2Request().HTTPPasswordMgrWithDefaultRealm()
+			password_manager = urllib_request.HTTPPasswordMgrWithDefaultRealm()
 			password_manager.add_password(realm=None, uri=self.url, user=self.config['user'], passwd=self.config['password'])
-			opener = urllib2Request().build_opener(
-				urllib2Request().HTTPBasicAuthHandler(password_manager),
-				urllib2Request().HTTPDigestAuthHandler(password_manager) )
-			urllib2Request().install_opener(opener)
+			opener = urllib_request.build_opener(
+				urllib_request.HTTPBasicAuthHandler(password_manager),
+				urllib_request.HTTPDigestAuthHandler(password_manager) )
+			urllib_request.install_opener(opener)
 		
 		# start the connection timer.
 		if self.iSidTryConnect == 0:

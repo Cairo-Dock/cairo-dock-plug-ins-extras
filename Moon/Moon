@@ -21,10 +21,10 @@
 import datetime, os, re
 from sgmllib import SGMLParser
 try: # python 3
-	import urllib.parse
+	from urllib.parse import urlencode
 	from urllib.request import FancyURLopener
 except: # python 2
-	import urllib
+	from urllib import urlencode
 	from urllib import FancyURLopener
 
 from util import log
@@ -46,11 +46,8 @@ class Interface:
 	def fetch(self):
 		parser = MoonCalendarParser()
 		opener = AgentOpener()													  	# opens the web connection with masked user-agent
-		try: # python 3
-			params = urllib.parse.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
-		except: # python 2
-			params = urllib.urlencode({'year': self.year, 'month': self.month, 'day': self.day})
-
+		params = urlencode({'year': self.year, 'month': self.month, 'day': self.day})
+		
 		try:
 			page = opener.open(parser.url, params)
 		except IOError:

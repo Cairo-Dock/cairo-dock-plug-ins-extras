@@ -33,11 +33,11 @@
 
 import os, gtk, webbrowser
 from sgmllib import SGMLParser
-try:
-	import configparser # python 3
+try: # python 3
+	from configparser import RawConfigParser
 	from urllib.request import FancyURLopener
-except:
-	import ConfigParser # python 2
+except: # python 2
+	from ConfigParser import RawConfigParser
 	from urllib import FancyURLopener
 
 from util import log
@@ -372,10 +372,7 @@ class Applet(CDApplet):
 	
 	def _update_conf_file(self):
 		log ("update "+self.cConfFile)
-		try:
-			keyfile = configparser.RawConfigParser() # python 3
-		except:
-			keyfile = ConfigParser.RawConfigParser() # python 2
+		keyfile = RawConfigParser()
 		keyfile.read(self.cConfFile)
 		keyfile.set('Configuration', 'source', self.config['slang'])
 		keyfile.set('Configuration', 'destination', self.config['dlang'])

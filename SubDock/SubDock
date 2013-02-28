@@ -20,9 +20,9 @@ from __future__ import print_function
 import sys
 import os.path
 try:
-	import configparser # python 3
+	from configparser import RawConfigParser # python 3
 except:
-	import ConfigParser # python 2
+	from ConfigParser import RawConfigParser # python 2
 import random
 import gobject
 import glib
@@ -163,10 +163,7 @@ class Applet:
 		
     
 	def get_config(self):
-		try:
-			keyfile = configparser.RawConfigParser() # python 3
-		except:
-			keyfile = ConfigParser.RawConfigParser() # python 2
+		keyfile = RawConfigParser()
 		keyfile.read(self.conf_file)
 		#self.config['cTheme']         = keyfile.get('Configuration', 'theme')
 		#self.config['iMaxValue']     = keyfile.getint('Configuration', 'max value')

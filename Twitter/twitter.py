@@ -17,18 +17,14 @@
 
 from oauth import oauth
 import simplejson, threading
-try:
+try:  # python 3
   import urllib.request, urllib.error
-  def urllib2Request():
-    return urllib.request
-  def urllib2Error():
-    return urllib.error
-except:
-  import urllib2
-  def urllib2Request():
-    return urllib2
-  def urllib2Error():
-    return urllib2
+  urllib_request = urllib.request
+  urllib_error = urllib.error
+except:  # python 2
+  import urllib2, urllib
+  urllib_request = urllib2
+  urllib_error = urllib2
 
 from network import Network
 from user import User
@@ -117,7 +113,7 @@ class Twitter(Network):
       oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
 
       url = oauth_request.to_url()
-      req = urllib2Request().urlopen(url)
+      req = urllib_request.urlopen(url)
      
       buffer = ''
       while True:
@@ -167,7 +163,7 @@ class Twitter(Network):
     def tweet(self, message):                                                              # popularly "send a tweet"
       try:
         self.dispatch(self.update_url, "POST", {'status':message})
-      except urllib2Error().HTTPError as err:
+      except urllib_error.HTTPError as err:
         if err.code == 403:
           return False
       else:
