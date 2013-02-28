@@ -20,9 +20,9 @@ from CDApplet import CDApplet, _
 import glib # used for timer
 import base64 # used to encrypt and decrypt messaging accounts' passwords
 try: # used to connect to Gmail
-	import urllib.request as _urllib # python 3
+    import urllib.request as _urllib # python 3
 except:
-	import urllib2 as _urllib # python 2
+    import urllib2 as _urllib # python 2
 import re # used to read Gmail headers at authentication
 import libxml2 # used to parse XML content from Gmail inbox
 import os # used to find paths and to launch 'aplay'
@@ -134,13 +134,13 @@ class Gmail(CDApplet):
             sub = file.read()
             file.close()
         except:
-            message = _("There is no subscription to any Gmail account.")
+            message = _("Please fill in your Gmail account.")
             self.error(message)
             return
 
         # check if there was any data
         if len(sub) < 1:
-            message = _("There is no subscription to any Gmail account.")
+            message = _("Please fill in your Gmail account.")
             self.error(message)
             return
 
@@ -149,7 +149,7 @@ class Gmail(CDApplet):
 
         # check if the data is correct
         if len(account) != 2:
-            message = _("There is no subscription to any Gmail account.")
+            message = _("Please fill in your Gmail account.")
             self.error(message)
             return
 
@@ -158,12 +158,9 @@ class Gmail(CDApplet):
             'password': account[1],
             'count': 0,
             'diff': 0}
-
-        if self.rep == True:
-            pass
-        else:
-            self.check_mail()
-            self.repeat()
+        
+        self.check_mail()
+        self.repeat()
 
     def add_subscription(self, request=None):
 
@@ -177,7 +174,7 @@ class Gmail(CDApplet):
             self.flag = 'username'
             # prompt for username
             message = _("Please, enter your Gmail username:")
-            self.icon.PopupDialog({"message" : message, "buttons" : "ok;cancel"},
+            self.icon.PopupDialog({"message" : message, "buttons" : "gtk-go-forward-ltr.png;cancel"},
                     {"widget-type" : "text-entry"})
         # if requesting new password:
         elif request == 'password':
@@ -196,19 +193,28 @@ class Gmail(CDApplet):
             file.close()
             # run subscription check as double check
             self.check_subscription()
-
-    def check_mail(self):
+    
+    
+    def check_mail_loop(self):
+        self.check_mail()
+        return True
+    
+    def check_mail(self, animate=False):  # animate is False by default, to not stop a demand of attention
 
         """
-            Checks for new mail and requests notifications.
+        Checks for new mail and requests notifications.
         """
+        if animate:
+            self.icon.Animate('busy',100)
 
         # fetch inbox content from Gmail
         data = self.request_gmail()
 
         # check if there is any content
         if data == None:
-            return True
+            if animate:
+                self.icon.Animate('',0)
+            return
 
         # unpack and store XML
         xml = data.read()
@@ -216,9 +222,12 @@ class Gmail(CDApplet):
         # reading inbox
         self.account['inbox'] = self.get_inbox(xml)
 
+        if animate:
+            self.icon.Animate('',0)
+
         # check if mail count could be retrieved
         if self.account['inbox'] == None:
-            return True
+            return 
 
         # parse inbox content to find number of new mails
         count = len(self.account['inbox'])
@@ -233,8 +242,8 @@ class Gmail(CDApplet):
         # send notifications if there is new mail
         if self.account['count'] > 0:
             self.send_alert()
-
-        return True
+        elif self.config['anim'] == True:  # no unread message, stop the previous animation
+            self.icon.DemandsAttention(False, '')
 
     def get_inbox(self, xml_data):
 
@@ -447,11 +456,12 @@ class Gmail(CDApplet):
            Timer for postman to check messages.
            Will continue as long as check_messages returns True
         """
-
+        if self.rep == True:
+            pass
         # set flag to tell the loop is running
         self.rep = True
         # start timer loop
-        glib.timeout_add(self.config['update'], self.check_mail)
+        glib.timeout_add(self.config['update'], self.check_mail_loop)
 
     def begin(self):
 
@@ -459,7 +469,7 @@ class Gmail(CDApplet):
             First method ran by CairoDock when applet is launched.
         """
 
-        self.icon.SetLabel("Gmail")
+        ###self.icon.SetLabel("Gmail")
         # the applet will not enter the loop until a subscription is found
         self.check_subscription()
 
@@ -515,6 +525,7 @@ class Gmail(CDApplet):
         "icon" : "gtk-refresh",
         "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 2,
+        "sensitive" : (len(self.account) > 0),
         "tooltip" : message_check_tooltip}])
 
     def on_menu_select(self, iNumEntry):
@@ -526,7 +537,7 @@ class Gmail(CDApplet):
         if iNumEntry == 1:
             self.add_subscription('username')
         elif iNumEntry == 2:
-            self.check_mail()
+            self.check_mail(True)
         else:
             #should not happen. Kept in case more menu-items need be appended.
             pass
@@ -536,13 +547,16 @@ class Gmail(CDApplet):
         """
             Launches Gmail in default browser or application.
         """
-
-        if self.account['count'] < 1:
-            self.check_mail()
+        
+        if len(self.account) == 0:  # no account -> start subscription
+            self.add_subscription('username')
         else:
-            m = Menu(self.account['inbox'])
-            m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
-                    button=1, activate_time=0)
+            if self.account['count'] < 1:  # no message -> check now
+                self.check_mail(True)
+            else:  # some message(s) -> show the inbox
+                m = Menu(self.account['inbox'])
+                m.popup(parent_menu_shell=None, parent_menu_item=None, func=self.get_xy, data=(400, 400),
+                        button=1, activate_time=0)
 
     def on_middle_click(self):
     
@@ -550,7 +564,7 @@ class Gmail(CDApplet):
             Check for new mails now.
         """
         
-        self.check_mail()
+        self.check_mail(True)
 
     def get_xy(self, m, data):
 
