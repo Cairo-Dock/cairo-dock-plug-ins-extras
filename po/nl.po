@@ -7,20 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-02-06 14:33+0000\n"
 "PO-Revision-Date: 2013-02-08 18:46+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-02-09 05:08+0000\n"
 "X-Generator: Launchpad (build 16482)\n"
-"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -640,22 +638,22 @@ msgstr ""
 msgid "Deluge is not running, or is not responding to us."
 msgstr "Deluge is niet actief, of reageert niet op ons."
 
-#: ../Deluge/Deluge:336 ../Transmission/Transmission:464
+#: ../Deluge/Deluge:336 ../Transmission/Transmission:460
 msgid "Pause all torrents"
 msgstr "Alle torrents pauzeren"
 
-#: ../Deluge/Deluge:341 ../Transmission/Transmission:469
+#: ../Deluge/Deluge:341 ../Transmission/Transmission:465
 msgid "Resume all torrents"
 msgstr "Alle torrents hervatten"
 
 #: ../Deluge/Deluge:346 ../KTorrent/KTorrent:330
-#: ../Transmission/Transmission:474
+#: ../Transmission/Transmission:470
 msgid "Torrents info"
 msgstr "Torrent-info"
 
-#: ../Deluge/Deluge:346 ../Gmail/Gmail:510 ../KTorrent/KTorrent:330
+#: ../Deluge/Deluge:346 ../Gmail/Gmail:504 ../KTorrent/KTorrent:330
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:199
-#: ../Transmission/Transmission:474 ../YoutubeDl/YoutubeDl:298
+#: ../Transmission/Transmission:470 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
 msgstr "middelklikken"
@@ -700,9 +698,9 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient "
-"<i>deluged</i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de "
-"communicatie tussen het dock en Deluge).\n"
+"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient <i>deluged</"
+"i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de communicatie "
+"tussen het dock en Deluge).\n"
 "Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
 "<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
 "(u kunt hier een sneltoets voor instellen).\n"
@@ -730,71 +728,71 @@ msgstr "Tijd tussen twee controles van het bestandssysteem :"
 msgid "View available file system's free space."
 msgstr "Bekijk vrije ruimte systeembestand."
 
-#: ../Gmail/Gmail:143 ../Gmail/Gmail:149 ../Gmail/Gmail:158
+#: ../Gmail/Gmail:137 ../Gmail/Gmail:143 ../Gmail/Gmail:152
 msgid "There is no subscription to any Gmail account."
 msgstr "U heeft geen abonnement bij geen enkel Gmail-account."
 
-#: ../Gmail/Gmail:185
+#: ../Gmail/Gmail:179
 msgid "Please, enter your Gmail username:"
 msgstr "Voer a.u.b. uw Gmail-gebruikersnaam in:"
 
-#: ../Gmail/Gmail:193
+#: ../Gmail/Gmail:187
 msgid "Please, enter your Gmail password:"
 msgstr "Voer a.u.b. uw Gmail-wachtwoord in:"
 
-#: ../Gmail/Gmail:269
+#: ../Gmail/Gmail:263
 msgid "WARNING: there was an error reading XML content."
 msgstr ""
 "WAARSCHUWING: er is een fout opgetreden bij het lezen van de XML-content."
 
-#: ../Gmail/Gmail:294
+#: ../Gmail/Gmail:288
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 "WAARSCHUWING: Gmail-applet kon geen verbinding maken met Gmail-atomfeed."
 
-#: ../Gmail/Gmail:309
+#: ../Gmail/Gmail:303
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr "WAARSCHUWING: Gmail-atomfeed is onjuist opgebouwd: "
 
-#: ../Gmail/Gmail:317
+#: ../Gmail/Gmail:311
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 "WAARSCHUWING: Gmail-applet heeft alleen mogelijkheden voor "
 "basisauthenticatie."
 
-#: ../Gmail/Gmail:330
+#: ../Gmail/Gmail:324
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 "WAARSCHUWIING: Gmail-gebruikersnaam of -wachtwoord zijn mogelijk onjuist."
 
-#: ../Gmail/Gmail:437
+#: ../Gmail/Gmail:431
 #, python-format
 msgid "You have %s new emails"
 msgstr "U heeft %s nieuwe e-mails"
 
-#: ../Gmail/Gmail:439
+#: ../Gmail/Gmail:433
 msgid "You have 1 new email"
 msgstr "U heeft 1 nieuwe e-mail"
 
-#: ../Gmail/Gmail:499
+#: ../Gmail/Gmail:493
 msgid "Sorry, there was no input!"
 msgstr "Sorry, er was geen invoer!"
 
-#: ../Gmail/Gmail:508
+#: ../Gmail/Gmail:502
 msgid "Add or change subscription"
 msgstr "Abonnement toevoegen of wijzigen"
 
-#: ../Gmail/Gmail:509
+#: ../Gmail/Gmail:503
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 "Gebruik dit om uw Gmail-accountdetails te wijzigen of iets toe te voegen."
 
-#: ../Gmail/Gmail:511
+#: ../Gmail/Gmail:505
 msgid "Check inbox now"
 msgstr "Postvak IN nu controleren"
 
-#: ../Gmail/Gmail:512
+#: ../Gmail/Gmail:506
 msgid "Check Gmail inbox now if you can't wait."
 msgstr "Controleer Postvak IN nu, als u niet kunt wachten."
 
@@ -1035,8 +1033,7 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1529,15 +1526,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dit applet laat u een \"Citaat van de dag\" zien, verkregen van sommige "
 "internetbronnen zoals:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, en Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, en Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
 msgid "Screensaver is currently disabled"
@@ -1594,19 +1591,19 @@ msgstr ""
 "Dit is vooral handig wanneer u video's op het internet bekijkt.\n"
 "<b>Klik</b> op het pictogram om de schermbeveiliging te (de)blokkeren."
 
-#: ../Translator/Translator:433
+#: ../Translator/Translator:430
 msgid "To"
 msgstr "Aan"
 
-#: ../Translator/Translator:452
+#: ../Translator/Translator:449
 msgid "From"
 msgstr "Van"
 
-#: ../Translator/Translator:472
+#: ../Translator/Translator:469
 msgid "Switch languages"
 msgstr "Taal wisselen"
 
-#: ../Translator/Translator:485
+#: ../Translator/Translator:482
 msgid "Translate from clipboard (middle-click)"
 msgstr "Vertalen vanaf klembord (middelklik)"
 
@@ -1945,94 +1942,94 @@ msgstr ""
 " - Wanneer u iets wilt vertalen vanuit uw eigen taal, druk dan op Ctrl + Alt "
 "+ W"
 
-#: ../Transmission/Transmission:244
+#: ../Transmission/Transmission:240
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission is niet actief, of reageert niet op ons."
 
-#: ../Transmission/Transmission:251
+#: ../Transmission/Transmission:247
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
 "Kon geen data verkrijgen van Transmission. U heeft Transmission 1.9 of hoger "
 "nodig."
 
-#: ../Transmission/Transmission:257
+#: ../Transmission/Transmission:253
 msgid "Progress:"
 msgstr "Voortgang:"
 
-#: ../Transmission/Transmission:260
+#: ../Transmission/Transmission:256
 msgid "paused"
 msgstr "gepauzeerd"
 
-#: ../Transmission/Transmission:262
+#: ../Transmission/Transmission:258
 msgid "checking"
 msgstr "controle"
 
-#: ../Transmission/Transmission:264
+#: ../Transmission/Transmission:260
 msgid "waiting for check"
 msgstr "wachten op controle"
 
-#: ../Transmission/Transmission:266
+#: ../Transmission/Transmission:262
 msgid "seeding"
 msgstr "seeden"
 
-#: ../Transmission/Transmission:270
+#: ../Transmission/Transmission:266
 msgid "Time remaining:"
 msgstr "Resterende tijd:"
 
-#: ../Transmission/Transmission:276
+#: ../Transmission/Transmission:272
 msgid "days"
 msgstr "dagen"
 
-#: ../Transmission/Transmission:278 ../Transmission/Transmission:284
+#: ../Transmission/Transmission:274 ../Transmission/Transmission:280
 msgid "h"
 msgstr "u"
 
-#: ../Transmission/Transmission:286
+#: ../Transmission/Transmission:282
 msgid "min"
 msgstr "min"
 
-#: ../Transmission/Transmission:287
+#: ../Transmission/Transmission:283
 msgid "sec"
 msgstr "sec"
 
-#: ../Transmission/Transmission:290
+#: ../Transmission/Transmission:286
 msgid "Time remaining: Unknown"
 msgstr "Resterende tijd: onbekend"
 
-#: ../Transmission/Transmission:292
+#: ../Transmission/Transmission:288
 msgid "Finished"
 msgstr "Voltooid"
 
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:292
 msgid "Number of peers:"
 msgstr "Aantal peers:"
 
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:292
 msgid "and seeds:"
 msgstr "en seeds:"
 
-#: ../Transmission/Transmission:299
+#: ../Transmission/Transmission:295
 msgid "Ratio:"
 msgstr "Verhouding:"
 
-#: ../Transmission/Transmission:303
+#: ../Transmission/Transmission:299
 msgid "No torrent in the list"
 msgstr "Geen torrent in de lijst"
 
-#: ../Transmission/Transmission:308
+#: ../Transmission/Transmission:304
 msgid "Total amount of data:"
 msgstr "Totale hoeveelheid data:"
 
-#: ../Transmission/Transmission:317
+#: ../Transmission/Transmission:313
 msgid "Received:"
 msgstr "Ontvangen:"
 
-#: ../Transmission/Transmission:325
+#: ../Transmission/Transmission:321
 msgid "Sent:"
 msgstr "Verzonden:"
 
-#: ../Transmission/Transmission:411
+#: ../Transmission/Transmission:407
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 "U dient de Webclient in de voorkeuren van Transmisison in te schakelen."
@@ -2065,22 +2062,16 @@ msgid "Oh, dear, you do not have direct messages :-("
 msgstr "Oeps, u heeft geen berichten :-("
 
 #: ../Twitter/Twitter:199
-#, python-format
-msgid ""
-"%s [<b>%s</b>]\n"
-"Followers: %s\n"
-"Friends: %s\n"
-"Tweets: %s\n"
+msgid "Followers"
 msgstr ""
-"%s [<b>%s</b>]\n"
-"Volgers: %s\n"
-"Vrienden %s\n"
-"Tweets: %s\n"
 
-#: ../Twitter/Twitter:209
-#, python-format
-msgid "%s, write a reply to %s"
-msgstr "%s, %s beantwoorden"
+#: ../Twitter/Twitter:199
+msgid "Friends"
+msgstr ""
+
+#: ../Twitter/Twitter:199 ../Twitter/Twitter:353
+msgid "Tweets"
+msgstr "Tweets"
 
 #: ../Twitter/Twitter:220
 #, python-format
@@ -2117,9 +2108,9 @@ msgstr ""
 "Klik met recht-> Account toevoegen -> Identi.ca."
 
 #: ../Twitter/Twitter:258
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"%s Applet needs your nickname, and an authorization\n"
+"The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
 "Het %s-applet heeft u Twitter-naam nodig, en een autorisatie\n"
@@ -2176,10 +2167,6 @@ msgstr "Nieuwe privéberichten (%d)"
 #: ../Twitter/Twitter:344
 msgid "Info"
 msgstr "Info"
-
-#: ../Twitter/Twitter:353
-msgid "Tweets"
-msgstr "Tweets"
 
 #: ../Twitter/Twitter:355
 #, python-format
@@ -2537,8 +2524,7 @@ msgstr "Voeg anders in stilte de url aan de lijst toe"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr ""
-"Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
+msgstr "Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
@@ -2642,8 +2628,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Niet overschrijven (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr ""
 "Titel van de video die is gedownload, gebruiken in de bestandsnaam van de "
 "video"
@@ -2796,3 +2781,18 @@ msgstr ""
 "Indien er geen video's in de lijst staan, dan kunt u een url invoeren door "
 "met links te klikken op het pictogram . Anders zal de url-lijst getoond "
 "worden."
+
+#, fuzzy
+#~ msgid ""
+#~ "%s [<b>%s</b>]\n"
+#~ "%s: %s\n"
+#~ "%s: %s\n"
+#~ "%s: %s\n"
+#~ msgstr ""
+#~ "%s [<b>%s</b>]\n"
+#~ "Volgers: %s\n"
+#~ "Vrienden %s\n"
+#~ "Tweets: %s\n"
+
+#~ msgid "%s, write a reply to %s"
+#~ msgstr "%s, %s beantwoorden"

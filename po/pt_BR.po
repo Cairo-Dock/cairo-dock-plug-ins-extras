@@ -6,20 +6,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-02-06 14:33+0000\n"
 "PO-Revision-Date: 2012-10-28 23:54+0000\n"
 "Last-Translator: Fredson N Sousa <fnsousas@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-02-07 05:06+0000\n"
 "X-Generator: Launchpad (build 16477)\n"
-"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -196,8 +194,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
-"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
+"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:27
@@ -221,8 +219,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte "
-"direita/inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
+"inferior da tela."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:31
@@ -620,22 +618,22 @@ msgstr ""
 msgid "Deluge is not running, or is not responding to us."
 msgstr "Deluge não está rodando, ou nos respondendo."
 
-#: ../Deluge/Deluge:336 ../Transmission/Transmission:464
+#: ../Deluge/Deluge:336 ../Transmission/Transmission:460
 msgid "Pause all torrents"
 msgstr "Pausar todos os torrents"
 
-#: ../Deluge/Deluge:341 ../Transmission/Transmission:469
+#: ../Deluge/Deluge:341 ../Transmission/Transmission:465
 msgid "Resume all torrents"
 msgstr "Continuar todos os torrents"
 
 #: ../Deluge/Deluge:346 ../KTorrent/KTorrent:330
-#: ../Transmission/Transmission:474
+#: ../Transmission/Transmission:470
 msgid "Torrents info"
 msgstr "Informação dos torrents"
 
-#: ../Deluge/Deluge:346 ../Gmail/Gmail:510 ../KTorrent/KTorrent:330
+#: ../Deluge/Deluge:346 ../Gmail/Gmail:504 ../KTorrent/KTorrent:330
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:199
-#: ../Transmission/Transmission:474 ../YoutubeDl/YoutubeDl:298
+#: ../Transmission/Transmission:470 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
 msgstr "Clique com o botão do meio"
@@ -698,65 +696,65 @@ msgstr "Tempo entre verificações do sistema de arquivos:"
 msgid "View available file system's free space."
 msgstr ""
 
-#: ../Gmail/Gmail:143 ../Gmail/Gmail:149 ../Gmail/Gmail:158
+#: ../Gmail/Gmail:137 ../Gmail/Gmail:143 ../Gmail/Gmail:152
 msgid "There is no subscription to any Gmail account."
 msgstr ""
 
-#: ../Gmail/Gmail:185
+#: ../Gmail/Gmail:179
 msgid "Please, enter your Gmail username:"
 msgstr ""
 
-#: ../Gmail/Gmail:193
+#: ../Gmail/Gmail:187
 msgid "Please, enter your Gmail password:"
 msgstr ""
 
-#: ../Gmail/Gmail:269
+#: ../Gmail/Gmail:263
 msgid "WARNING: there was an error reading XML content."
 msgstr ""
 
-#: ../Gmail/Gmail:294
+#: ../Gmail/Gmail:288
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 
-#: ../Gmail/Gmail:309
+#: ../Gmail/Gmail:303
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr ""
 
-#: ../Gmail/Gmail:317
+#: ../Gmail/Gmail:311
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 
-#: ../Gmail/Gmail:330
+#: ../Gmail/Gmail:324
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 
-#: ../Gmail/Gmail:437
+#: ../Gmail/Gmail:431
 #, python-format
 msgid "You have %s new emails"
 msgstr ""
 
-#: ../Gmail/Gmail:439
+#: ../Gmail/Gmail:433
 msgid "You have 1 new email"
 msgstr ""
 
-#: ../Gmail/Gmail:499
+#: ../Gmail/Gmail:493
 msgid "Sorry, there was no input!"
 msgstr ""
 
-#: ../Gmail/Gmail:508
+#: ../Gmail/Gmail:502
 msgid "Add or change subscription"
 msgstr ""
 
-#: ../Gmail/Gmail:509
+#: ../Gmail/Gmail:503
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 
-#: ../Gmail/Gmail:511
+#: ../Gmail/Gmail:505
 msgid "Check inbox now"
 msgstr ""
 
-#: ../Gmail/Gmail:512
+#: ../Gmail/Gmail:506
 msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
@@ -824,8 +822,7 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr ""
-"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:119
 msgid "Show dialogue?"
@@ -981,8 +978,7 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1427,9 +1423,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
@@ -1481,19 +1477,19 @@ msgid ""
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
 
-#: ../Translator/Translator:433
+#: ../Translator/Translator:430
 msgid "To"
 msgstr "Para"
 
-#: ../Translator/Translator:452
+#: ../Translator/Translator:449
 msgid "From"
 msgstr "De"
 
-#: ../Translator/Translator:472
+#: ../Translator/Translator:469
 msgid "Switch languages"
 msgstr "Trocar idiomas"
 
-#: ../Translator/Translator:485
+#: ../Translator/Translator:482
 msgid "Translate from clipboard (middle-click)"
 msgstr "Traduzir da área de transferência (clique com o botão do meio)"
 
@@ -1817,94 +1813,94 @@ msgid ""
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
 
-#: ../Transmission/Transmission:244
+#: ../Transmission/Transmission:240
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission não está rodando, ou nos respondendo."
 
-#: ../Transmission/Transmission:251
+#: ../Transmission/Transmission:247
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
 "Não foi possível obter os dados do Transmission. Você precisa do "
 "Transmission 1.9 ou superior."
 
-#: ../Transmission/Transmission:257
+#: ../Transmission/Transmission:253
 msgid "Progress:"
 msgstr ""
 
-#: ../Transmission/Transmission:260
+#: ../Transmission/Transmission:256
 msgid "paused"
 msgstr ""
 
-#: ../Transmission/Transmission:262
+#: ../Transmission/Transmission:258
 msgid "checking"
 msgstr ""
 
-#: ../Transmission/Transmission:264
+#: ../Transmission/Transmission:260
 msgid "waiting for check"
 msgstr ""
 
-#: ../Transmission/Transmission:266
+#: ../Transmission/Transmission:262
 msgid "seeding"
 msgstr ""
 
-#: ../Transmission/Transmission:270
+#: ../Transmission/Transmission:266
 msgid "Time remaining:"
 msgstr ""
 
-#: ../Transmission/Transmission:276
+#: ../Transmission/Transmission:272
 msgid "days"
 msgstr ""
 
-#: ../Transmission/Transmission:278 ../Transmission/Transmission:284
+#: ../Transmission/Transmission:274 ../Transmission/Transmission:280
 msgid "h"
 msgstr ""
 
-#: ../Transmission/Transmission:286
+#: ../Transmission/Transmission:282
 msgid "min"
 msgstr ""
 
-#: ../Transmission/Transmission:287
+#: ../Transmission/Transmission:283
 msgid "sec"
 msgstr ""
 
-#: ../Transmission/Transmission:290
+#: ../Transmission/Transmission:286
 msgid "Time remaining: Unknown"
 msgstr ""
 
-#: ../Transmission/Transmission:292
+#: ../Transmission/Transmission:288
 msgid "Finished"
 msgstr ""
 
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:292
 msgid "Number of peers:"
 msgstr ""
 
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:292
 msgid "and seeds:"
 msgstr ""
 
-#: ../Transmission/Transmission:299
+#: ../Transmission/Transmission:295
 msgid "Ratio:"
 msgstr ""
 
-#: ../Transmission/Transmission:303
+#: ../Transmission/Transmission:299
 msgid "No torrent in the list"
 msgstr ""
 
-#: ../Transmission/Transmission:308
+#: ../Transmission/Transmission:304
 msgid "Total amount of data:"
 msgstr ""
 
-#: ../Transmission/Transmission:317
+#: ../Transmission/Transmission:313
 msgid "Received:"
 msgstr ""
 
-#: ../Transmission/Transmission:325
+#: ../Transmission/Transmission:321
 msgid "Sent:"
 msgstr ""
 
-#: ../Transmission/Transmission:411
+#: ../Transmission/Transmission:407
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 "Você tem que habilitar o cliente Web nas configurações do Transmission."
@@ -1929,22 +1925,16 @@ msgid "Oh, dear, you do not have direct messages :-("
 msgstr "Oh, você não tem mensagens diretas :-("
 
 #: ../Twitter/Twitter:199
-#, python-format
-msgid ""
-"%s [<b>%s</b>]\n"
-"Followers: %s\n"
-"Friends: %s\n"
-"Tweets: %s\n"
+msgid "Followers"
 msgstr ""
-"%s [<b>%s</b>]\n"
-"Seguidores: %s\n"
-"Amigos: %s\n"
-"Tweets: %s\n"
 
-#: ../Twitter/Twitter:209
-#, python-format
-msgid "%s, write a reply to %s"
-msgstr "%s, escreva uma resposta para %s"
+#: ../Twitter/Twitter:199
+msgid "Friends"
+msgstr ""
+
+#: ../Twitter/Twitter:199 ../Twitter/Twitter:353
+msgid "Tweets"
+msgstr "Tweets"
 
 #: ../Twitter/Twitter:220
 #, python-format
@@ -1978,7 +1968,7 @@ msgstr ""
 #: ../Twitter/Twitter:258
 #, python-format
 msgid ""
-"%s Applet needs your nickname, and an authorization\n"
+"The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
 
@@ -2027,10 +2017,6 @@ msgstr "Novas mensagens diretas (%d)"
 #: ../Twitter/Twitter:344
 msgid "Info"
 msgstr "Informação"
-
-#: ../Twitter/Twitter:353
-msgid "Tweets"
-msgstr "Tweets"
 
 #: ../Twitter/Twitter:355
 #, python-format
@@ -2417,8 +2403,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Não substituir (--não-substituir)?"
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr "Usar o título do vídeo para nomear o arquivo baixado."
 
 #: ../YoutubeDl/messages:169
@@ -2549,3 +2534,18 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "%s [<b>%s</b>]\n"
+#~ "%s: %s\n"
+#~ "%s: %s\n"
+#~ "%s: %s\n"
+#~ msgstr ""
+#~ "%s [<b>%s</b>]\n"
+#~ "Seguidores: %s\n"
+#~ "Amigos: %s\n"
+#~ "Tweets: %s\n"
+
+#~ msgid "%s, write a reply to %s"
+#~ msgstr "%s, escreva uma resposta para %s"

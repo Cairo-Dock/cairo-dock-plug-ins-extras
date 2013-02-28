@@ -7,22 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-02-06 14:33+0000\n"
 "PO-Revision-Date: 2013-01-10 13:47+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-02-07 05:06+0000\n"
 "X-Generator: Launchpad (build 16477)\n"
-"Language: es\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu no está instalado. Instálelo antes de ejecutar esta miniaplicación."
 
@@ -389,8 +387,7 @@ msgstr ""
 #: ../Twitter/messages:61 ../WebSearch/messages:59
 #: ../WindowsKiller/messages:61 ../Xchat/messages:61
 msgid "Choose a decoration theme for this desklet:"
-msgstr ""
-"Seleccione un tema de decoración para este complemento del escritorio:"
+msgstr "Seleccione un tema de decoración para este complemento del escritorio:"
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
 #: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:61
@@ -454,8 +451,7 @@ msgstr "Desplazamiento izquierdo:"
 #: ../Twitter/messages:73 ../WebSearch/messages:71
 #: ../WindowsKiller/messages:73 ../Xchat/messages:73
 msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición superior de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición superior de los dibujos."
 
 #: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
 #: ../Deluge/messages:75 ../DiskFree/messages:75 ../Gmail/messages:73
@@ -475,8 +471,7 @@ msgstr "Desplazamiento superior:"
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:77
@@ -496,8 +491,7 @@ msgstr "Desplazamiento derecho:"
 #: ../Twitter/messages:81 ../WebSearch/messages:79
 #: ../WindowsKiller/messages:81 ../Xchat/messages:81
 msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
 
 #: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
 #: ../Deluge/messages:83 ../DiskFree/messages:83 ../Gmail/messages:81
@@ -621,22 +615,22 @@ msgstr ""
 msgid "Deluge is not running, or is not responding to us."
 msgstr "Deluge no está en ejecución, o no responde."
 
-#: ../Deluge/Deluge:336 ../Transmission/Transmission:464
+#: ../Deluge/Deluge:336 ../Transmission/Transmission:460
 msgid "Pause all torrents"
 msgstr "Pausar todos los torrents"
 
-#: ../Deluge/Deluge:341 ../Transmission/Transmission:469
+#: ../Deluge/Deluge:341 ../Transmission/Transmission:465
 msgid "Resume all torrents"
 msgstr "Reanudar todos los torrents"
 
 #: ../Deluge/Deluge:346 ../KTorrent/KTorrent:330
-#: ../Transmission/Transmission:474
+#: ../Transmission/Transmission:470
 msgid "Torrents info"
 msgstr "Información de torrents"
 
-#: ../Deluge/Deluge:346 ../Gmail/Gmail:510 ../KTorrent/KTorrent:330
+#: ../Deluge/Deluge:346 ../Gmail/Gmail:504 ../KTorrent/KTorrent:330
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:199
-#: ../Transmission/Transmission:474 ../YoutubeDl/YoutubeDl:298
+#: ../Transmission/Transmission:470 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
 msgstr "clic central"
@@ -699,65 +693,65 @@ msgstr ""
 msgid "View available file system's free space."
 msgstr ""
 
-#: ../Gmail/Gmail:143 ../Gmail/Gmail:149 ../Gmail/Gmail:158
+#: ../Gmail/Gmail:137 ../Gmail/Gmail:143 ../Gmail/Gmail:152
 msgid "There is no subscription to any Gmail account."
 msgstr "No hay ninguna suscripción a una cuenta de Gmail."
 
-#: ../Gmail/Gmail:185
+#: ../Gmail/Gmail:179
 msgid "Please, enter your Gmail username:"
 msgstr "Introduzca su nombre de usuario de Gmail:"
 
-#: ../Gmail/Gmail:193
+#: ../Gmail/Gmail:187
 msgid "Please, enter your Gmail password:"
 msgstr "Introduzca su contraseña de Gmail:"
 
-#: ../Gmail/Gmail:269
+#: ../Gmail/Gmail:263
 msgid "WARNING: there was an error reading XML content."
 msgstr "AVISO: hubo un error al leer el contenido XML."
 
-#: ../Gmail/Gmail:294
+#: ../Gmail/Gmail:288
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 
-#: ../Gmail/Gmail:309
+#: ../Gmail/Gmail:303
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr ""
 
-#: ../Gmail/Gmail:317
+#: ../Gmail/Gmail:311
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 
-#: ../Gmail/Gmail:330
+#: ../Gmail/Gmail:324
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 
-#: ../Gmail/Gmail:437
+#: ../Gmail/Gmail:431
 #, python-format
 msgid "You have %s new emails"
 msgstr "Tiene %s mensajes nuevos"
 
-#: ../Gmail/Gmail:439
+#: ../Gmail/Gmail:433
 msgid "You have 1 new email"
 msgstr "Tiene un mensaje nuevo"
 
-#: ../Gmail/Gmail:499
+#: ../Gmail/Gmail:493
 msgid "Sorry, there was no input!"
 msgstr ""
 
-#: ../Gmail/Gmail:508
+#: ../Gmail/Gmail:502
 msgid "Add or change subscription"
 msgstr "Añadir o cambiar suscripción"
 
-#: ../Gmail/Gmail:509
+#: ../Gmail/Gmail:503
 msgid "Use this to add or change your Gmail account details."
 msgstr "Use esto para añadir o cambiar sus detalles de cuenta de Gmail."
 
-#: ../Gmail/Gmail:511
+#: ../Gmail/Gmail:505
 msgid "Check inbox now"
 msgstr ""
 
-#: ../Gmail/Gmail:512
+#: ../Gmail/Gmail:506
 msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
@@ -977,8 +971,7 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1418,9 +1411,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
@@ -1472,19 +1465,19 @@ msgid ""
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
 
-#: ../Translator/Translator:433
+#: ../Translator/Translator:430
 msgid "To"
 msgstr ""
 
-#: ../Translator/Translator:452
+#: ../Translator/Translator:449
 msgid "From"
 msgstr ""
 
-#: ../Translator/Translator:472
+#: ../Translator/Translator:469
 msgid "Switch languages"
 msgstr ""
 
-#: ../Translator/Translator:485
+#: ../Translator/Translator:482
 msgid "Translate from clipboard (middle-click)"
 msgstr ""
 
@@ -1808,92 +1801,92 @@ msgid ""
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
 
-#: ../Transmission/Transmission:244
+#: ../Transmission/Transmission:240
 msgid "Transmission is not running, or is not responding to us."
 msgstr ""
 
-#: ../Transmission/Transmission:251
+#: ../Transmission/Transmission:247
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
 
-#: ../Transmission/Transmission:257
+#: ../Transmission/Transmission:253
 msgid "Progress:"
 msgstr ""
 
-#: ../Transmission/Transmission:260
+#: ../Transmission/Transmission:256
 msgid "paused"
 msgstr ""
 
-#: ../Transmission/Transmission:262
+#: ../Transmission/Transmission:258
 msgid "checking"
 msgstr ""
 
-#: ../Transmission/Transmission:264
+#: ../Transmission/Transmission:260
 msgid "waiting for check"
 msgstr ""
 
-#: ../Transmission/Transmission:266
+#: ../Transmission/Transmission:262
 msgid "seeding"
 msgstr ""
 
-#: ../Transmission/Transmission:270
+#: ../Transmission/Transmission:266
 msgid "Time remaining:"
 msgstr ""
 
-#: ../Transmission/Transmission:276
+#: ../Transmission/Transmission:272
 msgid "days"
 msgstr ""
 
-#: ../Transmission/Transmission:278 ../Transmission/Transmission:284
+#: ../Transmission/Transmission:274 ../Transmission/Transmission:280
 msgid "h"
 msgstr ""
 
-#: ../Transmission/Transmission:286
+#: ../Transmission/Transmission:282
 msgid "min"
 msgstr ""
 
-#: ../Transmission/Transmission:287
+#: ../Transmission/Transmission:283
 msgid "sec"
 msgstr ""
 
-#: ../Transmission/Transmission:290
+#: ../Transmission/Transmission:286
 msgid "Time remaining: Unknown"
 msgstr ""
 
-#: ../Transmission/Transmission:292
+#: ../Transmission/Transmission:288
 msgid "Finished"
 msgstr ""
 
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:292
 msgid "Number of peers:"
 msgstr ""
 
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:292
 msgid "and seeds:"
 msgstr ""
 
-#: ../Transmission/Transmission:299
+#: ../Transmission/Transmission:295
 msgid "Ratio:"
 msgstr ""
 
-#: ../Transmission/Transmission:303
+#: ../Transmission/Transmission:299
 msgid "No torrent in the list"
 msgstr ""
 
-#: ../Transmission/Transmission:308
+#: ../Transmission/Transmission:304
 msgid "Total amount of data:"
 msgstr ""
 
-#: ../Transmission/Transmission:317
+#: ../Transmission/Transmission:313
 msgid "Received:"
 msgstr ""
 
-#: ../Transmission/Transmission:325
+#: ../Transmission/Transmission:321
 msgid "Sent:"
 msgstr ""
 
-#: ../Transmission/Transmission:411
+#: ../Transmission/Transmission:407
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
@@ -1917,17 +1910,15 @@ msgid "Oh, dear, you do not have direct messages :-("
 msgstr ""
 
 #: ../Twitter/Twitter:199
-#, python-format
-msgid ""
-"%s [<b>%s</b>]\n"
-"Followers: %s\n"
-"Friends: %s\n"
-"Tweets: %s\n"
+msgid "Followers"
 msgstr ""
 
-#: ../Twitter/Twitter:209
-#, python-format
-msgid "%s, write a reply to %s"
+#: ../Twitter/Twitter:199
+msgid "Friends"
+msgstr ""
+
+#: ../Twitter/Twitter:199 ../Twitter/Twitter:353
+msgid "Tweets"
 msgstr ""
 
 #: ../Twitter/Twitter:220
@@ -1962,7 +1953,7 @@ msgstr ""
 #: ../Twitter/Twitter:258
 #, python-format
 msgid ""
-"%s Applet needs your nickname, and an authorization\n"
+"The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
 
@@ -2011,10 +2002,6 @@ msgstr ""
 #: ../Twitter/Twitter:344
 msgid "Info"
 msgstr "Información"
-
-#: ../Twitter/Twitter:353
-msgid "Tweets"
-msgstr ""
 
 #: ../Twitter/Twitter:355
 #, python-format
@@ -2398,8 +2385,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169

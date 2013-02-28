@@ -196,7 +196,7 @@ class Applet(CDApplet):
   def show_credentials(self):
     self.inform_start_of_waiting_process()
     credentials = self.twitter.api.verify_credentials()
-    message = _("%s [<b>%s</b>]\nFollowers: %s\nFriends: %s\nTweets: %s\n") % (credentials['name'], credentials['screen_name'], credentials['followers_count'], credentials['friends_count'], credentials['statuses_count'])
+    message = "%s [<b>%s</b>]\n%s: %s\n%s: %s\n%s: %s\n" % (credentials['name'], credentials['screen_name'], _('Followers'), credentials['followers_count'], _('Friends'), credentials['friends_count'], _('Tweets'), credentials['statuses_count'])
     dialog = {'use-markup':True}
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
@@ -206,7 +206,7 @@ class Applet(CDApplet):
   def ask_for_direct_message_reply(self, destinatary):
     dialog = {'buttons':'ok;cancel'}
     widget = {'widget-type':'text-entry', 'nb-chars':self.tweet_length + 1}         # 140 characters max, a direct message
-    self.show_popup_message((_("%s, write a reply to %s")) % (self.twitter.user.screen_name, destinatary), dialog, widget)
+    self.show_popup_message("%s, write a reply to %s" % (self.twitter.user.screen_name, destinatary), dialog, widget)
     self.dialog_type = self.responding_sending_direct_message_reply
     self.replying_direct_message_to = destinatary
     
@@ -255,7 +255,7 @@ class Applet(CDApplet):
 
   def show_initial_informations(self):
     name = camelcase(self.new_network.name)
-    message = _("%s Applet needs your nickname, and an authorization\nthat you accept it to connect on your %s account") % (name, name)
+    message = _("The applet needs your nickname, and an authorization\nthat you accept it to connect on your %s account") % name
     dialog = {'buttons':'next'}
     self.show_popup_message(message, dialog)
     self.dialog_type = self.responding_initial_informations
