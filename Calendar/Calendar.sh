@@ -51,13 +51,13 @@ which ncal > /dev/null
 if [ $? -eq 0 ]; then
 	#dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.applet.ShowDialog  string:"`cal -h`" int32:$time_dialog_cal_today
 	MESSAGE="<tt>`ncal -hC`</tt>"
-	python -c "import dbus; message=\"\"\"$MESSAGE\"\"\"; print dbus.Bus().call_blocking(
+	python -c "from __future__ import print_function; import dbus; message=\"\"\"$MESSAGE\"\"\"; print (dbus.Bus().call_blocking(
 		\"$DBUS_NAME\",
 		\"$DBUS_PATH\",
 		\"$DBUS_INTERFACE.applet\",
 		'PopupDialog',
 		'a{sv}a{sv}',
-		({'message': message, 'use-markup':True},{},))"
+		({'message': message, 'use-markup':True},{},)))"
 else
 	echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
 	call ShowDialog "string:\"ERROR: 'cal' isn't installed\"" "int32:5"
@@ -82,13 +82,13 @@ if [ $1 -eq 1 ]; then
 	which ncal > /dev/null
 	if [ $? -eq 0 ]; then
 		MESSAGE="<tt>`ncal -h3C`</tt>"
-		python -c "import dbus; message=\"\"\"$MESSAGE\"\"\"; print dbus.Bus().call_blocking(
+		python -c "from __future__ import print_function; import dbus; message=\"\"\"$MESSAGE\"\"\"; print (dbus.Bus().call_blocking(
 			\"$DBUS_NAME\",
 			\"$DBUS_PATH\",
 			\"$DBUS_INTERFACE.applet\",
 			'PopupDialog',
 			'a{sv}a{sv}',
-			({'message': message, 'use-markup':True},{},))"
+			({'message': message, 'use-markup':True},{},)))"
 	else
 		echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
 		call ShowDialog "string:\"ERROR: 'cal' isn't installed\"" "int32:5"

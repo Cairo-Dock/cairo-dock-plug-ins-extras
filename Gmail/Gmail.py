@@ -17,20 +17,28 @@
 
 from CDApplet import CDApplet, _
 
-import glib # used for timer
+try:
+    import glib # used for timer
+    import gtk # used for Menu class displaying inbox
+    import libxml2 # used to parse XML content from Gmail inbox
+except:
+    from gi.repository import GLib as glib
+    from gi.repository import Gtk as gtk
+    from gi.repository import Gdk as gdk
+    from lxml import etree
+
 import base64 # used to encrypt and decrypt messaging accounts' passwords
+
 try: # used to connect to Gmail
     import urllib.request as _urllib # python 3
 except:
     import urllib2 as _urllib # python 2
 import re # used to read Gmail headers at authentication
-import libxml2 # used to parse XML content from Gmail inbox
 import os # used to find paths and to launch 'aplay'
 import sys # used to find relative paths
 import webbrowser
 
 import SVGmaker # home-made module to edit SVG counter emblem
-import gtk # used for Menu class displaying inbox
 
 class Menu(gtk.Menu):
 
@@ -47,7 +55,10 @@ class Menu(gtk.Menu):
             menu_item = gtk.ImageMenuItem()
             # the true label is set after with set_markup()
             menu_item.set_label('')
-            menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
+            try:
+                menu_item.set_image(gtk.image_new_from_file('./img/menu-gmail.png'))
+            except:
+                menu_item.set_image(gtk.Image.new_from_file('./img/menu-gmail.png'))
             menu_item.get_children()[0].set_markup(string)
             menu_item.url = mail['link']
             menu_item.connect('activate', self.open_mail, mail)
@@ -145,7 +156,7 @@ class Gmail(CDApplet):
             return
 
         # if so process the data
-        account = base64.b64decode(sub.strip('\n')).split('\n')
+        account = base64.b64decode(sub.strip('\n')).decode().split('\n')
 
         # check if the data is correct
         if len(account) != 2:
@@ -174,7 +185,7 @@ class Gmail(CDApplet):
             self.flag = 'username'
             # prompt for username
             message = _("Please, enter your Gmail username:")
-            self.icon.PopupDialog({"message" : message, "buttons" : "gtk-go-forward-ltr.png;cancel"},
+            self.icon.PopupDialog({"message" : message, "buttons" : "gtk-go-forward-ltr;cancel"},
                     {"widget-type" : "text-entry"})
         # if requesting new password:
         elif request == 'password':
@@ -254,19 +265,32 @@ class Gmail(CDApplet):
         inbox = []
 
         try:
-            tree = libxml2.parseDoc(xml_data)
-            path = tree.xpathNewContext()
-            path.xpathRegisterNs('purl', 'http://purl.org/atom/ns#')
-            entries = path.xpathEval('//purl:entry')
-            if len(entries) > 0:
-                for entry in entries:
-                    path.setContextNode(entry)
-                    mail = {}
-                    mail['title'] = path.xpathEval('purl:title')[0].content
-                    mail['summary'] = path.xpathEval('purl:summary')[0].content
-                    mail['link'] = path.xpathEval('purl:link')[0].prop('href')
-                    mail['author'] = path.xpathEval('purl:author/purl:name')[0].content
-                    inbox.append(mail)
+            try:
+                tree = libxml2.parseDoc(xml_data)
+                path = tree.xpathNewContext()
+                path.xpathRegisterNs('purl', 'http://purl.org/atom/ns#')
+                entries = path.xpathEval('//purl:entry')
+                if len(entries) > 0:
+                    for entry in entries:
+                        path.setContextNode(entry)
+                        mail = {}
+                        mail['title'] = path.xpathEval('purl:title')[0].content
+                        mail['summary'] = path.xpathEval('purl:summary')[0].content
+                        mail['link'] = path.xpathEval('purl:link')[0].prop('href')
+                        mail['author'] = path.xpathEval('purl:author/purl:name')[0].content
+                        inbox.append(mail)
+            except:
+                tree = etree.fromstring(xml_data)
+                namespaces = {'purl':'http://purl.org/atom/ns#'}
+                entries = tree.xpath('purl:entry', namespaces = namespaces)
+                if len(entries) > 0:
+                    for entry in entries:
+                        mail = {}
+                        mail['title'] = entry.xpath('purl:title', namespaces = namespaces)[0].text
+                        mail['summary'] = entry.xpath('purl:summary', namespaces = namespaces)[0].text
+                        mail['link'] = entry.xpath('purl:link', namespaces = namespaces)[0].get('href')
+                        mail['author'] = entry.xpath('purl:author/purl:name', namespaces = namespaces)[0].text
+                        inbox.append(mail)
             return inbox
         except:
             message = _("WARNING: there was an error reading XML content.")
@@ -280,17 +304,15 @@ class Gmail(CDApplet):
         """
 
         gmailfeed = 'https://mail.google.com/mail/feed/atom/'
-        try:
-            request = _urllib.Request(gmailfeed)
-        except:
-            request = _urllib.Request(gmailfeed)
+        request = _urllib.Request(gmailfeed)
 
         # connect to Gmail
+        error = None
         try:
             handle = _urllib.urlopen(request)
-        except IOError as error:
+        except IOError as err:
             # here we will need "fail" as we receive a 401 error to get access
-            pass
+            error = err
 
         if not hasattr(error, 'code') or error.code != 401:
             # we got an error - but not a 401 error
@@ -321,9 +343,9 @@ class Gmail(CDApplet):
             return self.error(message)
 
         # authenticate and get inbox content
-        username = self.account['username']
-        password = self.account['password']
-        base64string = base64.encodestring('%s:%s' % (username, password))[:-1]
+        account = ('%s:%s' % (self.account['username'], self.account['password'])).encode('ascii')
+        
+        base64string = base64.encodestring(account)[:-1].decode()
         authheader = "Basic %s" % base64string
         request.add_header("Authorization", authheader)
         try:
@@ -578,11 +600,19 @@ class Gmail(CDApplet):
         iconPosY = icondata['y']
 
         # get menu geometry
-        menuWidth, menuHeight = m.size_request()
+        try:
+            menuWidth, menuHeight = m.size_request()
+            screenHeight = gtk.gdk.screen_height()
+        except:
+            window = m.get_parent_window()
+            menuWidth = window.get_width()
+            menuHeight = window.get_height()
+            screen = gdk.Screen.get_default()
+            screenHeight = screen.get_height()
 
         # adapt to container and orientation
         if iconContainer == 1:  # Then it's a desklet, always oriented in a bottom-like way.
-            if iconPosY['y'] < (gtk.gdk.screen_height() / 2):
+            if iconPosY['y'] < (screenHeight / 2):
                 iconOrientation = 1
             else:
                 iconOrientation = 0
