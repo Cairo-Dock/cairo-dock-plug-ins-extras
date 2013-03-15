@@ -57,7 +57,7 @@ class Applet(CDApplet):
 		bottom = False
 		icon_x = 0
 		icon_y = 0
-		window_width, window_height = self.cardapiomenu.view.get_window_size()
+		window_width, window_height = self.cardapiomenu._view.get_window_size()
 		if orientation == CDApplet.BOTTOM or orientation == CDApplet.TOP:  # horizontal dock
 			icon_x = x - w/2
 			if self.bMenuHasBeenShown and icon_x + window_width >= gtk.gdk.screen_width():  # Cardapio has a very weird window placement, so we do the opposite weird operation.
@@ -93,7 +93,7 @@ class Applet(CDApplet):
 	def begin(self):
 		if (not dependancies_ok):
 			return
-		self.cardapiomenu = Cardapio(show = Cardapio.DONT_SHOW)  # launch in the background
+		self.cardapiomenu = Cardapio(show = Constants.DONT_SHOW)  # launch in the background
 		#self.cardapiomenu.window.set_decorated(False)  # no more needed
 		
 		self.icon.BindShortkey([self.config['shortkey']])
