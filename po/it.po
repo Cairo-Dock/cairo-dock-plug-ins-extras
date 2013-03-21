@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-10-21 03:20+0000\n"
-"Last-Translator: Wonderfulheart <Unknown>\n"
+"POT-Creation-Date: 2013-02-28 01:22+0000\n"
+"PO-Revision-Date: 2013-02-28 07:18+0000\n"
+"Last-Translator: Fabounet <fabounet03@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-02-07 05:06+0000\n"
-"X-Generator: Launchpad (build 16477)\n"
+"X-Launchpad-Export-Date: 2013-03-01 04:53+0000\n"
+"X-Generator: Launchpad (build 16514)\n"
+"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -195,8 +197,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
-"+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
+"Alt+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:27
@@ -828,8 +830,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"sempre\" ti informerà ogni volta che il numero di email è diverso da 0; "
-"\"diverso\" lo farà ogni volta che il numero delle email cambia; \"superiore"
-"\" lo farà ogni volta che esse aumentano (predefinito)."
+"\"diverso\" lo farà ogni volta che il numero delle email cambia; "
+"\"superiore\" lo farà ogni volta che esse aumentano (predefinito)."
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
@@ -895,7 +897,8 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:133
 msgid "How?"
@@ -1023,8 +1026,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
-"+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:29
@@ -1035,7 +1038,8 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1524,15 +1528,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
 "fonti internet quali:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com e Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
 msgid "Screensaver is currently disabled"
@@ -2103,13 +2107,11 @@ msgstr ""
 "Clic destro -> Aggiungi account -> Identi.ca."
 
 #: ../Twitter/Twitter:258
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
-"L'applet %s necessita del tuo nickname e di un'autorizzazione\n"
-"che devi accettare per connetterti al tuo account %s"
 
 #: ../Twitter/Twitter:267
 #, python-format
@@ -2625,7 +2627,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Non sovrascrivere (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
 
 #: ../YoutubeDl/messages:169
@@ -2776,18 +2779,6 @@ msgstr ""
 "Se non ci sono video nella lista, cliccando con il tasto sinistro sull'icona "
 "ti permette di inserire una URL. Altrimenti sarà visualizzato l'elenco delle "
 "URL."
-
-#, fuzzy
-#~ msgid ""
-#~ "%s [<b>%s</b>]\n"
-#~ "%s: %s\n"
-#~ "%s: %s\n"
-#~ "%s: %s\n"
-#~ msgstr ""
-#~ "%s [<b>%s</b>]\n"
-#~ "Seguaci: %s\n"
-#~ "Amici: %s\n"
-#~ "Tweet: %s\n"
 
 #~ msgid "%s, write a reply to %s"
 #~ msgstr "%s, scrivi una risposta a %s"

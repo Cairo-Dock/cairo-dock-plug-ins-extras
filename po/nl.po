@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-02-08 18:46+0000\n"
+"POT-Creation-Date: 2013-02-28 01:22+0000\n"
+"PO-Revision-Date: 2013-03-16 08:45+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-02-09 05:08+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2013-03-17 05:03+0000\n"
+"X-Generator: Launchpad (build 16532)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -574,7 +576,7 @@ msgstr "Toepassingen"
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
-"Opdracht om de agendabeheertoepassing te starten van uw keuze (middelklik):"
+"Opdracht om de agendabeheertoepassing van uw keuze te starten (middelklik):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
@@ -613,7 +615,7 @@ msgstr ""
 "Scrol omhoog voor de agenda van volgende maand\n"
 "Scrol omlaag voor de gebeurtenissen van vandaag\n"
 "Het laten vallen van een bestand op het pictogram, zal de "
-"agendabeheertoepassing openen en deze zal het bestand importeren."
+"agendabeheertoepassing openen en het bestand zal geïmporteerd worden."
 
 #: ../Cardapio/Cardapio:45
 msgid ""
@@ -698,9 +700,9 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient <i>deluged</"
-"i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de communicatie "
-"tussen het dock en Deluge).\n"
+"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient "
+"<i>deluged</i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de "
+"communicatie tussen het dock en Deluge).\n"
 "Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
 "<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
 "(u kunt hier een sneltoets voor instellen).\n"
@@ -937,7 +939,7 @@ msgstr ""
 
 #: ../GTG/GTG:161
 msgid "Couldn't launch "
-msgstr ""
+msgstr "Kon de volgende toepassing niet starten "
 
 #: ../GTG/GTG:166
 msgid "Connecting to gtg, please wait ..."
@@ -1033,7 +1035,8 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1526,15 +1529,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dit applet laat u een \"Citaat van de dag\" zien, verkregen van sommige "
 "internetbronnen zoals:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, en Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, en Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
 msgid "Screensaver is currently disabled"
@@ -2063,11 +2066,11 @@ msgstr "Oeps, u heeft geen berichten :-("
 
 #: ../Twitter/Twitter:199
 msgid "Followers"
-msgstr ""
+msgstr "Volgers"
 
 #: ../Twitter/Twitter:199
 msgid "Friends"
-msgstr ""
+msgstr "Vrienden"
 
 #: ../Twitter/Twitter:199 ../Twitter/Twitter:353
 msgid "Tweets"
@@ -2108,18 +2111,18 @@ msgstr ""
 "Klik met recht-> Account toevoegen -> Identi.ca."
 
 #: ../Twitter/Twitter:258
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
-"Het %s-applet heeft u Twitter-naam nodig, en een autorisatie\n"
-"om verbinding te mogen maken met uw %s-account"
+"Het applet heeft uw bijnaam nodig en een autorisatie\n"
+"waarmee u toestemt om verbinding te maken met uw %s-account"
 
 #: ../Twitter/Twitter:267
 #, python-format
 msgid "What is your %s nickname?"
-msgstr "Wat is uw %s-naam?"
+msgstr "Wat is uw %s-bijnaam?"
 
 #: ../Twitter/Twitter:284
 #, python-format
@@ -2250,16 +2253,16 @@ msgid ""
 msgstr ""
 "Dit applet ondersteunt Twitter en Identi.ca. U kunt hiermee tweets en "
 "privéberichten versturen, uw tijdlijn bekijken, retweeten en privéberichten "
-"beantwoorden.. Het zal een melding geven wanneer u nieuwe tweets en "
+"beantwoorden. Het zal een melding geven wanneer u nieuwe tweets en "
 "privéberichten ontvangen heeft.\n"
 "Wanneer u het applet voor de eerst keer opent, dient u een netwerk te "
 "selecteren door met rechts te klikken -> Account toevoegen -> Twitter of "
-"Identi.ca. Dit applet zal om uw  aanmeldgegevens en autorisatie vragen om "
-"verbinding te kunnen maken met één van de netwerken.\n"
+"Identi.ca. Het applet zal vervolgens om uw  aanmeldgegevens en autorisatie "
+"vragen om verbinding te kunnen maken met één van de netwerken.\n"
 "De autorisatiepagina zal dan geopend worden.\n"
-"Zodra u de autorisatie heeft gegeven, kopieer dan de pincode die getoond "
-"wordt.\n"
-"Plak dit nummer in de getoonde dialoog.\n"
+"Kopieer dan de pincode die getoond wordt zodra u de autorisatie heeft "
+"gegeven.\n"
+"Plak dit nummer daarna in de getoonde dialoog.\n"
 "De plug-in zal een melding geven dat u succesvol verbonden bent."
 
 #: ../WebSearch/messages:91
@@ -2359,7 +2362,7 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
-"Dit applet voorziet in een interface voor sommige zoekmachines, zoals:\n"
+"Dit applet voorziet in een interface voor diverse zoekmachines, zoals:\n"
 "Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
 "ImageShack, en Twitter.\n"
 "Om een zoekmachine te selecteren:\n"
@@ -2392,9 +2395,9 @@ msgid ""
 "this window."
 msgstr ""
 "WindowsKiller kan alle problematische vensters gedwongen sluiten.\n"
-"Klik met links op het pictogram selecteer het venster om gedwongen te "
+"Klik met links op het pictogram selecteer het venster dat u gedwongen wilt "
 "sluiten.\n"
-" (selecteer he dock om dit te annuleren)\n"
+" (selecteer het dock om dit te annuleren)\n"
 "Een middelklik geeft u enige informatie zoals het pid,\n"
 " de opdracht om deze toepassing te starten, hoelang deze actief is en de "
 "klasse(n) van dit venster."
@@ -2524,7 +2527,8 @@ msgstr "Voeg anders in stilte de url aan de lijst toe"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr "Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
+msgstr ""
+"Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
@@ -2628,7 +2632,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Niet overschrijven (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 "Titel van de video die is gedownload, gebruiken in de bestandsnaam van de "
 "video"
@@ -2781,18 +2786,3 @@ msgstr ""
 "Indien er geen video's in de lijst staan, dan kunt u een url invoeren door "
 "met links te klikken op het pictogram . Anders zal de url-lijst getoond "
 "worden."
-
-#, fuzzy
-#~ msgid ""
-#~ "%s [<b>%s</b>]\n"
-#~ "%s: %s\n"
-#~ "%s: %s\n"
-#~ "%s: %s\n"
-#~ msgstr ""
-#~ "%s [<b>%s</b>]\n"
-#~ "Volgers: %s\n"
-#~ "Vrienden %s\n"
-#~ "Tweets: %s\n"
-
-#~ msgid "%s, write a reply to %s"
-#~ msgstr "%s, %s beantwoorden"

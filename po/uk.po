@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-02-09 08:21+0000\n"
+"POT-Creation-Date: 2013-02-28 01:22+0000\n"
+"PO-Revision-Date: 2013-03-15 05:26+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-02-10 05:01+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2013-03-16 06:04+0000\n"
+"X-Generator: Launchpad (build 16532)\n"
+"Language: uk\n"
 
 #: ../GnoMenu/GnoMenu:100
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu не встановлено. Встановіть до того, як використовувати додаток."
 
@@ -374,7 +376,8 @@ msgstr "Оформлення"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr "Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
+msgstr ""
+"Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:59
@@ -807,8 +810,8 @@ msgid ""
 "will notify you whenever it increases (default)."
 msgstr ""
 "\"постійна\" сповіщати якщо є хоч один лист; якщо кількість листів "
-"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась"
-"\" (типово)"
+"\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась\" "
+"(типово)"
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
@@ -913,14 +916,16 @@ msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
+"Не вдається приєднатися до GTG :-(\n"
+"Ви його встановили?"
 
 #: ../GTG/GTG:161
 msgid "Couldn't launch "
-msgstr ""
+msgstr "Не вдалося запустити "
 
 #: ../GTG/GTG:166
 msgid "Connecting to gtg, please wait ..."
-msgstr ""
+msgstr "З’єднання з gtg, зачекайте будь-ласка..."
 
 #: ../GTG/GTG:203
 msgid "Create a new task"
@@ -928,11 +933,11 @@ msgstr "Створити нове завдання"
 
 #: ../GTG/GTG:217 ../GTG/GTG:253
 msgid "Open category's task"
-msgstr ""
+msgstr "Відкрити категорії завдань"
 
 #: ../GTG/GTG:221 ../GTG/GTG:257
 msgid "Create post-it from this category"
-msgstr ""
+msgstr "Створити липку нотатку з цієї категорії"
 
 #: ../GTG/GTG:300 ../GTG/GTG:302 ../GTG/GTG:304
 msgid "The task: "
@@ -940,15 +945,15 @@ msgstr "Звдання: "
 
 #: ../GTG/GTG:300
 msgid " is due today"
-msgstr ""
+msgstr " зробити сьогодні"
 
 #: ../GTG/GTG:302
 msgid " is due NOW"
-msgstr ""
+msgstr " зробити негайно"
 
 #: ../GTG/GTG:304
 msgid " was due on "
-msgstr ""
+msgstr " повинно бути зроблене на "
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
@@ -1010,7 +1015,8 @@ msgstr "Розмір десклету (ширина х висота)"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В залежності від вашого віконного менеджера, ви можете переміщувати його з "
 "допомогою ALT+ліве клацання"
@@ -1381,23 +1387,23 @@ msgstr "Тривалість хмарки:"
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
 msgid "Animate the icon when receiving channel messages"
-msgstr ""
+msgstr "Анімувати іконку при отриманні повідомлення з каналу"
 
 #: ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "No"
-msgstr ""
+msgstr "Ні"
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid "Simple animation"
-msgstr ""
+msgstr "Проста анімація"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
-msgstr ""
+msgstr "Вимагає уваги"
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
 msgid "Animation of the icon"
-msgstr ""
+msgstr "Анімація іконки"
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid ""
@@ -1494,14 +1500,14 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Додаток \"Цитата дня\" вміє працювати з такими інтернет-ресурсами як:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:74
 msgid "Screensaver is currently disabled"
@@ -1920,79 +1926,79 @@ msgstr ""
 
 #: ../Transmission/Transmission:253
 msgid "Progress:"
-msgstr ""
+msgstr "Поступ:"
 
 #: ../Transmission/Transmission:256
 msgid "paused"
-msgstr ""
+msgstr "призупинено"
 
 #: ../Transmission/Transmission:258
 msgid "checking"
-msgstr ""
+msgstr "перевірка"
 
 #: ../Transmission/Transmission:260
 msgid "waiting for check"
-msgstr ""
+msgstr "очікування перевірки"
 
 #: ../Transmission/Transmission:262
 msgid "seeding"
-msgstr ""
+msgstr "сідування"
 
 #: ../Transmission/Transmission:266
 msgid "Time remaining:"
-msgstr ""
+msgstr "Залишилось часу:"
 
 #: ../Transmission/Transmission:272
 msgid "days"
-msgstr ""
+msgstr "днів"
 
 #: ../Transmission/Transmission:274 ../Transmission/Transmission:280
 msgid "h"
-msgstr ""
+msgstr "г"
 
 #: ../Transmission/Transmission:282
 msgid "min"
-msgstr ""
+msgstr "хв"
 
 #: ../Transmission/Transmission:283
 msgid "sec"
-msgstr ""
+msgstr "с"
 
 #: ../Transmission/Transmission:286
 msgid "Time remaining: Unknown"
-msgstr ""
+msgstr "Залишилося часу: Невідомо"
 
 #: ../Transmission/Transmission:288
 msgid "Finished"
-msgstr ""
+msgstr "Завершено"
 
 #: ../Transmission/Transmission:292
 msgid "Number of peers:"
-msgstr ""
+msgstr "Кількіть пірів:"
 
 #: ../Transmission/Transmission:292
 msgid "and seeds:"
-msgstr ""
+msgstr "і сідів:"
 
 #: ../Transmission/Transmission:295
 msgid "Ratio:"
-msgstr ""
+msgstr "Коефіцієнт:"
 
 #: ../Transmission/Transmission:299
 msgid "No torrent in the list"
-msgstr ""
+msgstr "Список торентів порожній"
 
 #: ../Transmission/Transmission:304
 msgid "Total amount of data:"
-msgstr ""
+msgstr "Загальний об’єм даних:"
 
 #: ../Transmission/Transmission:313
 msgid "Received:"
-msgstr ""
+msgstr "Отримано:"
 
 #: ../Transmission/Transmission:321
 msgid "Sent:"
-msgstr ""
+msgstr "Надіслано:"
 
 #: ../Transmission/Transmission:407
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2027,11 +2033,11 @@ msgstr "О. серце, у вас нема прямих поідомлень :-(
 
 #: ../Twitter/Twitter:199
 msgid "Followers"
-msgstr ""
+msgstr "Прихильники"
 
 #: ../Twitter/Twitter:199
 msgid "Friends"
-msgstr ""
+msgstr "Друзі"
 
 #: ../Twitter/Twitter:199 ../Twitter/Twitter:353
 msgid "Tweets"
@@ -2072,13 +2078,13 @@ msgstr ""
 "Правий клік -> Додати обліковий запис -> Identi.ca."
 
 #: ../Twitter/Twitter:258
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
-"%s додаток потребує ваш нік і авторизацію\n"
-"яку ви приймаєте коли він з'єднується з обліковим записом %s"
+"Цей додаток потребує ваш нік, і авторизацію\n"
+"для підключення до вашого акаунту %s"
 
 #: ../Twitter/Twitter:267
 #, python-format
@@ -2165,7 +2171,7 @@ msgstr "Велика"
 
 #: ../Twitter/messages:101
 msgid "Notifications"
-msgstr ""
+msgstr "Сповіщення"
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
@@ -2177,7 +2183,7 @@ msgstr "Чи повинен додаток сповіщати програван
 
 #: ../Twitter/messages:107
 msgid "Play a sound"
-msgstr ""
+msgstr "Відтворити звук"
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
@@ -2185,7 +2191,7 @@ msgstr "Чи повинен додаток сповіщати анімацією
 
 #: ../Twitter/messages:111
 msgid "Animate the icon"
-msgstr ""
+msgstr "Анімувати іконку"
 
 #: ../Twitter/messages:113
 msgid "Which animation should apply to the icon?"
@@ -2576,7 +2582,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Не перезаписувати (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Використовувати назву відео в імені файлу, при  завантаженні відео"
 
 #: ../YoutubeDl/messages:169
@@ -2725,18 +2732,3 @@ msgstr ""
 "\n"
 "Якщо у списку немає відео то ліве клацання на іконці дозволяє ввести "
 "посилання. В іншому випадку буде відображатися список посилань."
-
-#, fuzzy
-#~ msgid ""
-#~ "%s [<b>%s</b>]\n"
-#~ "%s: %s\n"
-#~ "%s: %s\n"
-#~ "%s: %s\n"
-#~ msgstr ""
-#~ "%s [<b>%s</b>]\n"
-#~ "Фоловерів: %s\n"
-#~ "Друзів: %s\n"
-#~ "Твітів: %s\n"
-
-#~ msgid "%s, write a reply to %s"
-#~ msgstr "%s, відповісти для %s"
