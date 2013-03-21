@@ -19,7 +19,12 @@
 ### dependancies ###
 ####################
 import sys
-import gtk
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk as gtk
+
 from CDApplet import *
 sys.path.append("/usr/lib/cardapio")
 dependancies_ok = True

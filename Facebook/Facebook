@@ -26,8 +26,14 @@
 from __future__ import print_function
 
 from CDApplet import CDApplet, _
-import glib
-import gtk
+
+try:
+	import glib
+	import gtk
+except:
+	from gi.repository import GLib as glib
+	from gi.repository import Gtk as gtk
+
 import os
 import subprocess
 from subprocess import PIPE

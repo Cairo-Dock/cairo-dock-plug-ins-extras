@@ -19,7 +19,13 @@
 # such as Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.fr,
 # Jokes2go.com, and Vidademerda.com.br
 
-import gtk, itertools
+import itertools
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk as gtk
+
 from sgmllib import SGMLParser
 try:
     from urllib.request import FancyURLopener

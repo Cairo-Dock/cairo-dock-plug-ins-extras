@@ -24,7 +24,13 @@ from __future__ import print_function
 from CDApplet import CDApplet, _
 from os import popen
 import dbus
-from gobject import timeout_add, source_remove
+
+try:
+	from gobject import timeout_add, source_remove
+except:
+	from gi.repository.GObject import timeout_add, source_remove
+
+
 
 def isProcessRunning(app):
 	result = popen("ps euf | grep %s | grep -v grep" % app).read().rstrip()

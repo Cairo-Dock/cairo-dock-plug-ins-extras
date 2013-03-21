@@ -18,7 +18,12 @@
 
 from CairoDockPlugin import CairoDockPlugin
 import os
-import gobject
+
+try:
+	import gobject
+except:
+	from gi.repository import GObject as gobject
+
 from Configuration import Configuration
 
 class DiskFreePlugin(CairoDockPlugin):

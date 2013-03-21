@@ -20,10 +20,16 @@
 from __future__ import print_function
 
 #### transparent gtk window with text
-import gtk
-from gtk import gdk
-import cairo
-import pango
+try:
+	import gtk
+	from gtk import gdk
+	import cairo
+	import pango
+except:
+	from gi.repository import Gtk as gtk
+	from gi.repository import Gdk as gdk
+	from gi.repository import cairo
+	from gi.repository import Pango as pango
 
 # translations
 from CDApplet import _

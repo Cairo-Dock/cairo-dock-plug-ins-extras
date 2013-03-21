@@ -40,7 +40,12 @@ except ImportError as e:
 import subprocess
 from os import popen
 from math import sqrt
-from gobject import timeout_add
+
+try:
+	from gobject import timeout_add
+except:
+	from gi.repository.GObject import timeout_add
+
 from CDApplet import CDApplet, _
 
 # Quick-info enum

@@ -17,7 +17,11 @@
 # http://www.gnu.org/licenses/licenses.html#GPL
 #
 
-import gobject
+try:
+	import gobject
+except:
+	from gi.repository import GObject as gobject
+
 from Configuration import Configuration
 from CDApplet import CDApplet, _
 import os, subprocess

@@ -31,9 +31,16 @@
 #        * Press Ctrl + Alt + W, type the text, and press Enter
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
-import os, gtk, webbrowser
-from sgmllib import SGMLParser
-try: # python 3
+import os, webbrowser
+from sgmllib import SGMLParser ## need to be ported to python 3...
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk
+	from gi.repository import Gdk
+
+try:
 	from configparser import RawConfigParser
 	from urllib.request import FancyURLopener
 except: # python 2
@@ -221,13 +228,21 @@ class Applet(CDApplet):
 
 	# Clipboard operations
 	def set_to_clipboard(self, sentence):
-		clipboard = gtk.clipboard_get()                               # get the clipboard
+		try:
+			clipboard = gtk.clipboard_get()                               # get the clipboard
+		except:
+			clipboard = Gtk.Clipboard.get()
 		clipboard.set_text(sentence)                                  # set the clipboard the translated text
 
 	def get_from_clipboard(self):
-		clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)      # selected with the mouse
-		if not clipboard:                                             # nothing was selected with mouse
-			clipboard = gtk.clipboard_get()                             # checks for something copied to the clipboard
+		try:
+			clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)                           # selected with the mouse
+			if not clipboard:                                             # nothing was selected with mouse
+				clipboard = gtk.clipboard_get()                             # checks for something copied to the clipboard
+		except:
+			clipboard = Gtk.Clipboard.get(Gdk.SELECTION_PRIMARY)
+			if not clipboard:                                             # nothing was selected with mouse
+				clipboard = Gtk.Clipboard.get()                             # checks for something copied to the clipboard
 		return clipboard.wait_for_text()
 
 	# Icon information

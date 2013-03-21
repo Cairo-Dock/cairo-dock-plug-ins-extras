@@ -28,7 +28,12 @@ except ImportError:
 from os import popen
 import subprocess
 import os.path
-from gobject import timeout_add
+
+try:
+	from gobject import timeout_add
+except:
+	from gi.repository.GObject import timeout_add
+
 from CDApplet import CDApplet, _
 
 try: # python3

@@ -24,7 +24,12 @@ from __future__ import print_function
 # (it changes the current path, and it has a horrible mix of hard-coded paths and run-time paths).
 import sys
 sys.argv[0] = "/usr/lib/linuxmint/mintMenu/mintMenu.py"
-import gtk
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk as gtk
+
 try:
 	import gnomeapplet
 except:

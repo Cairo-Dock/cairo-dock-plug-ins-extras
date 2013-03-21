@@ -19,7 +19,12 @@
 ### dependancies ###
 ####################
 import sys
-import gtk
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk as gtk
+
 import subprocess
 sys.path.append("/usr/share/pyshared")
 from CDApplet import *

@@ -5,7 +5,13 @@
 # Author: Eduardo Mucelli Rezende Oliveira
 # E-mail: edumucelli@gmail.com or eduardom@dcc.ufmg.br
 
-import gtk, os
+import os
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk as gtk
+
 from message import DirectMessage, Tweet
 
 class Menu(gtk.Menu):

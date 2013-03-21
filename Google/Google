@@ -20,7 +20,14 @@
 # Each result will be shown as a sub-icon.
 # Left-click to open the result in the default Web Browser.
 
-import gobject, dbus, os, gtk, webbrowser
+try:
+	import gtk
+	import gobject
+except:
+	from gi.repository import Gtk as gtk
+	from gi.repository import GObject as gobject
+
+import dbus, os, webbrowser
 from dbus.mainloop.glib import DBusGMainLoop
 from dbus import glib
 from sgmllib import SGMLParser

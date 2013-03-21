@@ -25,7 +25,12 @@ from __future__ import print_function
 
 import datetime
 import subprocess
-import gobject
+
+try:
+	import gobject
+except:
+	from gi.repository import GObject as gobject
+
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop
 from CDApplet import CDApplet, _

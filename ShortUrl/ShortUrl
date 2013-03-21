@@ -29,9 +29,16 @@
 from __future__ import print_function
 
 import sys
-import gobject
-import glib
-import gtk
+
+try:
+	import glib
+	import gobject
+	import gtk
+except:
+	from gi.repository import GLib as glib
+	from gi.repository import GObject as gobject
+	from gi.repository import Gtk as gtk
+
 import dbus
 import os.path
 from dbus.mainloop.glib import DBusGMainLoop

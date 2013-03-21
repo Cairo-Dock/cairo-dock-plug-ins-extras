@@ -23,7 +23,10 @@ import os.path
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop
 import sys
-import gobject
+try:
+	import gobject
+except:
+	from gi.repository import GObject as gobject
 
 CAIRO_SERVICE = 'org.cairodock.CairoDock'
 CAIRO_APPLET = 'org.cairodock.CairoDock.applet'

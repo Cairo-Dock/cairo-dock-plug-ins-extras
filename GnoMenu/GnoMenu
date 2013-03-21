@@ -19,7 +19,12 @@
 ### dependancies ###
 ####################
 import gettext
-import gtk
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk as gtk
+
 import sys
 import os
 import subprocess

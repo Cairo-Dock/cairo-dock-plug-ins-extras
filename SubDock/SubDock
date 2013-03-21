@@ -24,10 +24,20 @@ try:
 except:
 	from ConfigParser import RawConfigParser # python 2
 import random
-import gobject
-import glib
+
+try:
+	import glib
+	import gobject
+	import gtk
+	import wnck
+except:
+	from gi.repository import GLib as glib
+	from gi.repository import GObject as gobject
+	from gi.repository import Gtk as gtk
+	from gi.repository import Wnck as wnck
+
 import dbus
-import gtk, wnck, os,pynotify,shutil
+import os, shutil
 from dbus.mainloop.glib import DBusGMainLoop
 
 ##################################
@@ -155,10 +165,10 @@ class Applet:
 		self.config = {}
 		self.conf_file = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/"+applet_name+"/"+applet_name+".conf") # path to the conf file of our applet.
 		#self.count = 10
-		pynotify.init('someName')
+		#pynotify.init('someName')
 		imageURI = "/usr/share/cairo-dock/cairo-dock.svg"
 		message = "Wellcome to this applet better version! "
-		n = pynotify.Notification("cairo-dock",message ,imageURI)
+		#n = pynotify.Notification("cairo-dock",message ,imageURI)
 		n.show()
 		
     
