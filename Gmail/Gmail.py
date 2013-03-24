@@ -156,7 +156,7 @@ class Gmail(CDApplet):
             return
 
         # if so process the data
-        account = base64.b64decode(sub.strip('\n')).decode().split('\n')
+        account = base64.b64decode(sub.strip('\n').encode('ascii')).decode().split('\n')
 
         # check if the data is correct
         if len(account) != 2:
