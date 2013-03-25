@@ -107,7 +107,6 @@ class Gmail(CDApplet):
         """
 
         self.config['notify'] = keyfile.getboolean('Configuration', 'NOTIFY')
-        self.config['when'] = keyfile.get('Configuration', 'WHEN')
         self.config['anim'] = keyfile.getboolean('Configuration', 'ANIM')
         self.config['how'] = keyfile.get('Configuration', 'HOW')
         self.config['dia'] = keyfile.getboolean('Configuration', 'DIA')
@@ -442,15 +441,9 @@ class Gmail(CDApplet):
             return
 
         # check whether conditions are met
-        if self.config['when'] == 'always':
-            pass
-        elif self.config['when'] == 'different' and self.account['diff'] != 0:
-            pass
-        elif self.config['when'] == 'superior' and self.account['diff'] > 0:
-            pass
-        else:
+        if self.account['diff'] <= 0:
             return
-
+        
         # check whether user wants an effect on the icon
         if self.config['anim'] == True:
             self.icon.DemandsAttention(True, self.config['how'])
