@@ -48,7 +48,7 @@ class Menu(gtk.Menu):
         # get all mail from inbox
         for mail in inbox:
             # check if mail has subject / title
-            if len(mail['title']) == 0:
+            if mail['title'] == None or len(mail['title']) == 0:
                 mail['title'] = '<i>(No Subject)</i>'
             # create markups
             string = '<b>'+mail['author']+':</b>\n'+mail['title']
