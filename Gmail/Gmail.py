@@ -199,7 +199,7 @@ class Gmail(CDApplet):
             # open, encode and write to subscription file
             file = open(self.subpath, 'w')
             file.write(base64.b64encode(str(self.account['username']+ \
-            '\n'+self.account['password'])))
+            '\n'+self.account['password']).encode('ascii')))
             file.close()
             # run subscription check as double check
             self.check_subscription()
