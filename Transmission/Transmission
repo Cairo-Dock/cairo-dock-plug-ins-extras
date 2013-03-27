@@ -340,6 +340,9 @@ class Applet(CDApplet):
 	def resume_all_torrents(self):
 		self._request('torrent-start', {})  # same as above
 	
+	def close_session(self):
+		self._request('session-close', {})
+	
 	##### applet definition #####
 	
 	def get_config(self,keyfile):
@@ -476,6 +479,11 @@ class Applet(CDApplet):
 					"icon" : "gtk-info",
 					"menu" : CDApplet.MAIN_MENU_ID,
 					"id"   : 3
+				}, {
+					"label": _("Quit"),
+					"icon" : "gtk-quit",
+					"menu" : CDApplet.MAIN_MENU_ID,
+					"id"   : 4
 				} ]
 			self.icon.AddMenuItems(items)
 		
@@ -486,6 +494,8 @@ class Applet(CDApplet):
 			client.core.resume_all_torrents()
 		elif iNumEntry == 3:
 			self.show_torrents_info()
+		elif iNumEntry == 4:
+			self.close_session()
 	
 	def on_drop_data(self,cReceivedData):
 		print("*** received",cReceivedData)
