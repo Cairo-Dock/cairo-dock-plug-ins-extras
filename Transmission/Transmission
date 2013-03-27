@@ -107,7 +107,7 @@ class Applet(CDApplet):
 	# The headers will contain our session ID.
 	def get_session_id(self):
 		query = json.dumps({'method': 'session-get', 'arguments': {}})
-		request = urllib_request.Request(self.url, query, {})
+		request = urllib_request.Request(self.url, query.encode('UTF-8'), {})
 		try:
 			response = urllib_request.urlopen(request, timeout=30)
 		except urllib_error.HTTPError as error:
@@ -215,7 +215,7 @@ class Applet(CDApplet):
 	def _http_query(self, query):
 		headers = {'x-transmission-session-id': self.iSessionID}
 		try:
-			request = urllib_request.Request(self.url, query, headers)
+			request = urllib_request.Request(self.url, query.encode('UTF-8'), headers)
 			response = urllib_request.urlopen(request, timeout=20)
 			return response.read()
 		except urllib_error.HTTPError as error:
@@ -232,7 +232,7 @@ class Applet(CDApplet):
 		query = json.dumps({'method': method, 'arguments': arguments})
 		http_data = self._http_query(query)
 		try:
-			return json.loads(http_data)
+			return json.loads(http_data.decode('UTF-8'))
 		except :
 			#~ print('Error: ' + str(e))
 			self.iSessionID = 0
