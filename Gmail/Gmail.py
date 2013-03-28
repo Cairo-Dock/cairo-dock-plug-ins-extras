@@ -209,6 +209,13 @@ class Gmail(CDApplet):
         self.check_mail()
         return True
     
+    def new_mail(self):
+        try:
+          link = 'https://mail.google.com/mail/#compose'
+          webbrowser.open(link)
+        except webbrowser.Error:
+          os.popen('x-www-browser '+link)
+    
     def check_mail(self, animate=False):  # animate is False by default, to not stop a demand of attention
 
         """
@@ -529,6 +536,7 @@ class Gmail(CDApplet):
         message_middle_click = _("middle-click")
         message_check_label = _("Check inbox now")
         message_check_tooltip = _("Check Gmail inbox now if you can't wait.")
+        message_new_mail = _("Write a mail")
         self.icon.AddMenuItems([{"widget-type" : CDApplet.MENU_ENTRY,
         "label": message_add_label,
         "icon" : "gtk-add",
@@ -541,7 +549,12 @@ class Gmail(CDApplet):
         "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 2,
         "sensitive" : (len(self.account) > 0),
-        "tooltip" : message_check_tooltip}])
+        "tooltip" : message_check_tooltip},
+        {"widget-type" : CDApplet.MENU_ENTRY,
+        "label": message_new_mail,
+        "icon" : "gtk-new",
+        "menu" : CDApplet.MAIN_MENU_ID,
+        "id" : 3}])
 
     def on_menu_select(self, iNumEntry):
 
@@ -553,9 +566,8 @@ class Gmail(CDApplet):
             self.add_subscription('username')
         elif iNumEntry == 2:
             self.check_mail(True)
-        else:
-            #should not happen. Kept in case more menu-items need be appended.
-            pass
+        elif iNumEntry == 3:
+            self.new_mail()
 
     def on_click(self, iState):
 
