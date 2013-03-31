@@ -344,7 +344,7 @@ class Applet(CDApplet):
 		self.config['cTheme'] 			= re.sub('\[[0-9]\]','',self.config['cTheme'])
 		self.config['im message'] 		= keyfile.getboolean('Configuration', 'im message')
 		self.config['chat message'] 	= keyfile.getboolean('Configuration', 'chat message')
-		self.config['animation type'] 	= keyfile.get('Configuration', 'animation type')
+		self.config['animation type'] 	= keyfile.getint('Configuration', 'animation type')
 		self.config['msg animation'] 	= keyfile.get('Configuration', 'msg animation')
 		if self.config['msg animation'] == '':
 			self.config['msg animation'] = 'default'

@@ -1,5 +1,6 @@
 #!/usr/bin/python
-
+# twisted and deluge are currently not available for python3
+#
 # This is a part of the external applets for Cairo-Dock
 # Copyright : (C) 2011 by Fabounet
 # E-mail : fabounet@glx-dock.org
