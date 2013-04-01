@@ -32,7 +32,7 @@
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
 import os, webbrowser
-from sgmllib import SGMLParser ## need to be ported to python 3...
+#from sgmllib import SGMLParser ## need to be ported to python 3...
 
 try:
 	import gtk
@@ -40,12 +40,16 @@ except:
 	from gi.repository import Gtk
 	from gi.repository import Gdk
 
-try:
+try:  # python3
 	from configparser import RawConfigParser
 	from urllib.request import FancyURLopener
-except: # python 2
+	from html.parser import HTMLParser
+	strict=False
+except:  # python 2
 	from ConfigParser import RawConfigParser
 	from urllib import FancyURLopener
+	from HTMLParser import HTMLParser
+	strict=True
 
 from util import log
 
@@ -55,94 +59,34 @@ class AgentOpener(FancyURLopener):
 	"""Masked user-agent otherwise the access would be forbidden"""
 	version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
 
-class TranslatorParser(SGMLParser):
+class TranslatorParser(HTMLParser):
 	def reset(self):                              
-		SGMLParser.reset(self)
-	
-		# sentences
+		HTMLParser.reset(self)
+		self.inside_result = False
 		self.translated_content = ""
-		self.inside_a_element = 0                                                 # indicates if the parser is between <span></span> tag
-	   
-		# dictionary
-		self.dictionary = {}                                                      # dictionary: category <-> list of translated words
-		self.inside_div = 0                                                       # True if we're inside a <div> tag
-		self.current_type = ""                                                    # current category of translated words
-		self.result_content = False                                               # True if we're inside the "gt-res-content" div
-		self.result_translit = False                                              # True if we're inside the "res-translit" div
-		self.result_dict = False                                                  # True if we're inside the "gt-res-dict" div
-		self.merge = False                                                        # True if we have to merge several words into one with a simple quote.
-
-	# sentences
-	def start_span(self, attrs):
-		for name, value in attrs:
-			if name == "id" and value == "result_box":                              # <span id="result_box">translated text</span>
-				self.inside_a_element = 1
 	
-	def end_span(self):
-		self.inside_a_element = 0
-
-	# dictionary
-	def start_div(self, attrs):
-		if self.inside_div != 0:
-			self.inside_div += 1
-		for name, value in attrs:
-			if name == "id":
-				if value == "gt-res-content":
-					self.inside_div = 1
-					self.result_content = True
-					self.result_translit = False
-					self.result_dict = False
-				elif value == "res-translit":
-					self.inside_div = 1
-					self.result_content = False
-					self.result_translit = True
-					self.result_dict = False
-				elif value == "gt-res-dict":                                          # <div id="gt-res-dict">translated text</div>
-					self.inside_div = 1
-					self.result_content = False
-					self.result_translit = False
-					self.result_dict = True
-					self.current_type = None
-
-	def end_div(self):
-		if self.inside_div != 0:                                                  # if we're inside a div
-			self.inside_div -= 1                                                    # then decrease the div counter
-			if self.inside_div == 0:                                                # if we reach 0, then we're not inside a div any more
-				self.result_content = False
-				self.result_translit = False
-				self.result_dict = False
-
+	# sentences
+	def handle_starttag(self, tag, attrs):
+		if tag == 'span':
+			for name, value in attrs:
+				if name == "id" and value == "result_box":  # <span id="result_box">translated text</span>
+					self.inside_result = True
+	
+	def handle_endtag(self, tag):
+		if tag == 'span':
+			self.inside_result = False
+	
 	def handle_data(self, text):
 		# sentences
-		if self.inside_a_element:                                                 # we're inside the tag ...
-			self.translated_content = text                                          # ... grab the text!
-		# dictionary
-		if self.inside_div:
-			if self.result_dict:
-				if text in ('noun','verb','adverb','adjective','interjection'):
-					self.current_type = text
-					self.dictionary[self.current_type] = []
-			elif self.result_translit or self.result_content:
-				if not self.current_type:
-					self.current_type = 'result'
-					self.dictionary[self.current_type] = ['result']
-			
-			if self.current_type:                                                   # any category found, append in the dictionary
-			  # the parser separates a word that has a "'" inside.
-			  # this is bad, so we'll merge the different parts of such words.
-				if text == "'":
-					self.merge = True
-				else:
-					if self.merge:                                                      # merge this piece of text with the previous one.
-						prev_text = self.dictionary[self.current_type].pop()              # removes and returns the last item in the list
-						self.dictionary[self.current_type].append(prev_text+"'"+text)     # merge the new text with the previous one and the "'".
-						self.merge = False
-					else:                                                               # just append the word to the list of translations.
-						self.dictionary[self.current_type].append(text)
+		if self.inside_result:                                                 # we're inside the tag ...
+			if self.translated_content != "":  # the data can be separated in several parts if they contain "'"
+				self.translated_content += "'"
+			self.translated_content += text                                          # ... grab the text!
 
 	def parse(self, page):
-		self.feed(page)                                                           # feed the parser with the page's html
+		self.feed((page.decode('utf-8')))                                                           # feed the parser with the page's html
 		self.close()                                                              # cya soon!
+
 
 class Interface:                                                              # TODO: Create an interface to support Bing Translator
 	""" Create a interface between the Applet and Parser
@@ -150,49 +94,51 @@ class Interface:                                                              # 
 		access the parser to get the context of the Google Translator for this text"""
 	def __init__(self, text_to_be_translated):
 		self.text_to_be_translated = text_to_be_translated
-		self.dictionary = {}
-		self.interjections = []
-		
+	
 	def translate_it(self, source, destination):
-		parser = TranslatorParser()                                                     # create the parser
+		if not strict:
+			parser = TranslatorParser(strict=False)                                                     # create the parser
+		else:
+			parser = TranslatorParser()
 		opener = AgentOpener()                                                          # opens the web connection with masked user-agent
 		url = "http://translate.google.com/?sl=%s&tl=%s&q=%s" % (source, destination, self.adjust(self.text_to_be_translated))
 		try:
-			page = opener.open(url)                                                       # get the HTML
+			page = opener.open(url,)                                                       # get the HTML
 		except IOError:
 			log ("Problem to open the remote translator, check the text to be translated")
 		else:
 			parser.parse(page.read())                                                     # feed the parser to get the specific content: translated text
 			page.close()                                                                  # lets close the page connection
-			self.text_to_be_translated, self.dictionary = parser.translated_content, parser.dictionary  # from the parser, we get the translated content
-		return self.text_to_be_translated, self.dictionary
+			self.text_to_be_translated = parser.translated_content  # from the parser, we get the translated content
+		return self.text_to_be_translated
 
 	def adjust(self, text):
 		"""Clean up the text removing spaces, linebreaks, and encodes it with utf-8"""
 		log ("Text to be translated before adjust: %s" % (self.text_to_be_translated))
 		self.text_to_be_translated = self.text_to_be_translated.strip().replace(os.linesep, ' ').replace(' ', '%20').encode('utf-8')
 		log ("Text to be translated after adjust: %s" % (self.text_to_be_translated))
-		return self.text_to_be_translated
+		return self.text_to_be_translated.decode('utf-8')
 
 class Language:
 	def __init__(self, name, abbrv):
-		self.name = name
-		self.abbrv = abbrv
+		self.name = bytes.decode(name)
+		self.abbrv = bytes.decode(abbrv)
 
 class Applet(CDApplet):
-
+	DIALOG_QUERY = 0
+	DIALOG_RESULT = 1
+	
 	def __init__(self):
 		# define internal variables
 		self.translated_text = ""
 		self.text_to_be_translated = ""
 		self.source = None                                              # get it from configuration file
-		self.sources = []                                               # list of possible source languages
+		self.languages = []                                               # list of possible source languages
 		self.destination = None                                         # get it from configuration file
-		self.destinations = []                                          # list of possible resulting languages
 		# self.favorites = []                                           # TODO list of favorite languages
 		self.new_translation_key = 0                                    # there are 3 buttons, cancel = 2, new = 1 ...
 		self.edit_translation_key = 1                                   # ... and edit
-		self.dialog_type = 0	                                          # dialog we are displaying to the user
+		self.dialog_type = self.DIALOG_QUERY	                                          # dialog we are displaying to the user
 		
 		(self.destination_language_menu_id, self.source_language_menu_id,
 		self.switch_languages_menu_id, self.clipboard_menu_id) = list(range(1000, 5000, 1000)) # 1000, 2000, 3000, 4000
@@ -209,8 +155,7 @@ class Applet(CDApplet):
 		for line in f:
 			splited = line.split()                                      # split the line by space token
 			name, abbrv = splited[0], splited[1]
-			self.sources.append(Language(name, abbrv))                  # e.g, Language("English", "en")
-			self.destinations.append(Language(name, abbrv))             # e.g, Language("Portuguese", "pt")
+			self.languages.append(Language(name, abbrv))                  # e.g, Language("English", "en")
 
   # ask the user for the text to be translated
 	def ask_text(self, default=""):
@@ -224,15 +169,16 @@ class Applet(CDApplet):
 			'initial-value' : default,
 			'multi-lines'   : self.config['dialog editable'] }
 		self.icon.PopupDialog (dialog_attributes, widget_attributes)
-		self.dialog_type = 0
+		self.dialog_type = self.DIALOG_QUERY
 
 	# Clipboard operations
 	def set_to_clipboard(self, sentence):
 		try:
 			clipboard = gtk.clipboard_get()                               # get the clipboard
+			clipboard.set_text(sentence)
 		except:
-			clipboard = Gtk.Clipboard.get()
-		clipboard.set_text(sentence)                                  # set the clipboard the translated text
+			clipboard = Gtk.Clipboard.get(Gdk.SELECTION_PRIMARY)
+			clipboard.set_text(sentence, -1)
 
 	def get_from_clipboard(self):
 		try:
@@ -272,55 +218,35 @@ class Applet(CDApplet):
 			self.inform_start_of_waiting_process()
 			
 			interface = Interface(sentence)                                             # feeds the translator with the sentence to be translated
-			translated, dictionary = interface.translate_it(source, destination)        # translated text, and its dictionary
-			if len(sentence.split()) == 1:                                              # if it is just one word it means that the dictionary was returned
-				message = ""
-				
-				for category, words in dictionary.items():
-					if category == 'result':                                                # we write this category first.
-						message = "%s\n\n" % "\n".join(words[1:]) + message
-						if self.config['dialog editable']:
-							message = ("[%s]\n" % category) + message
-						else:
-							message = ("<i><u>%s</u></i>\n" % category) + message
-					else:                                                                   # the other categories can be displayed in any order.
-						if self.config['dialog editable']:
-							message += "[%s]\n" % category 
-						else:
-							message += "<i><u>%s</u></i>\n" % category 
-						message += "%s\n\n" % "\n".join(words[1:])                            # array of words with category name as the first position, chop
-				log("Translated with dictionary %s" % message)
-			else:                                                                       # sentence, only the translation was returned
-				message = translated
-				log ("Translated sentence %s" % message)
+			translated = interface.translate_it(source, destination)                    # translated text
+			log ("Translated sentence %s" % translated)
 			
 			dialog_attributes = {
 				'use-markup' : True,
 				'buttons'    : 'gtk-clear;gtk-refresh;gtk-cancel',
-				'time-length': self.config['dialog time'] + len(message) / 20 }
+				'time-length': self.config['dialog time'] + len(translated) / 20 }
 			if self.config['dialog editable']:
 				dialog_attributes['message'] = "Translated from <b>%s</b> to <b>%s</b>:" % (self.source.name, self.destination.name)
 				widget_attributes = {
 					'widget-type'   : 'text-entry',
-					'initial-value' : message,
+					'initial-value' : translated,
 					'multi-lines'   : True }
 			else:
-				dialog_attributes['message'] = message
+				dialog_attributes['message'] = translated
 				widget_attributes = {}
 			self.icon.PopupDialog (dialog_attributes, widget_attributes )
-			self.dialog_type = 1
+			self.dialog_type = self.DIALOG_RESULT
 			
 			self.set_to_clipboard(translated)                                           # set the result to the clipboard
-																						                                      # only the first word when it is a dictionary
 			self.inform_end_of_waiting_process()
 
 	def set_read_mode(self):
-		self.source = self.sources[self.config['slang']]
-		self.destination = self.sources[self.config['dlang']]
+		self.source = self.languages[self.config['slang']]
+		self.destination = self.languages[self.config['dlang']]
 
 	def set_write_mode(self):
-		self.source = self.sources[self.config['dlang']]
-		self.destination = self.sources[self.config['slang']]
+		self.source = self.languages[self.config['dlang']]
+		self.destination = self.languages[self.config['slang']]
 	
 	# Applet methods
 	
@@ -334,12 +260,12 @@ class Applet(CDApplet):
 		self.config['default title'] 	  = keyfile.get('Icon', 'name')                             # icon's label set by the user.
 
 	def begin(self):
-		# parse the .languages file to get the available languages (in self.sources)
+		# parse the .languages file to get the available languages (in self.languages)
 		self.read_languages_file()
 		
 		# set the initial source and destination.
-		self.source = self.sources[self.config['slang']]
-		self.destination = self.destinations[self.config['dlang']]                          # first set the destination language ...
+		self.source = self.languages[self.config['slang']]
+		self.destination = self.languages[self.config['dlang']]                          # first set the destination language ...
 		self.inform_current_destination_language()                                          # ... and show it
 
 		# bind the shortkeys.
@@ -347,8 +273,8 @@ class Applet(CDApplet):
 		
 	def reload(self):
 		# update the current source and destination
-		self.source = self.sources[self.config['slang']]
-		self.destination = self.destinations[self.config['dlang']]                          # first set the destination language ...
+		self.source = self.languages[self.config['slang']]
+		self.destination = self.languages[self.config['dlang']]                          # first set the destination language ...
 		
 		self.inform_current_destination_language()                                          # ... and show it
 		
@@ -374,7 +300,7 @@ class Applet(CDApplet):
 	# apenas funcionar como ShowDialog (exibindo mensagem). Portanto, o 'content' vem com 
 	# o valor igual ao do 'key' e nao como a string contida no campo de texto
 	def on_answer_dialog(self, key, content):
-		if self.dialog_type == 0:                                               # dialog popped by the user, he entered the text and pressed Enter/Escape
+		if self.dialog_type == self.DIALOG_QUERY:                                               # dialog popped by the user, he entered the text and pressed Enter/Escape
 			if (key == 0 or key == CDApplet.DIALOG_KEY_ENTER) and content:        # ok or Enter
 				self.text_to_be_translated = content
 				self.translate(content, self.source.abbrv, self.destination.abbrv)  # what to be translated, the source and destination languages
@@ -394,14 +320,14 @@ class Applet(CDApplet):
 
 	def _switch_destination_language(self, index):
 		self.config['dlang'] = index
-		self.destination = self.destinations[index]
+		self.destination = self.languages[index]
 		log ("Switched destination from menu: %s" % self.destination.name)
 		self._update_conf_file()
 		self.inform_current_destination_language()
 
 	def _switch_source_language(self, index):
 		self.config['slang'] = index
-		self.source = self.sources[index]
+		self.source = self.languages[index]
 		log ("Switched source from menu: %s" % self.source.name)
 		self._update_conf_file()
 		self.inform_current_source_language()
@@ -426,7 +352,7 @@ class Applet(CDApplet):
 			self._switch_destination_language(selected_menu - self.destination_language_menu_id - 1)
 
 	def on_scroll(self, scroll_up):
-		max_index = len(self.destinations) - 1
+		max_index = len(self.languages) - 1
 		scroll_destination_language = self.config['dlang']
 		if scroll_up:
 			scroll_destination_language -= 1
@@ -447,7 +373,7 @@ class Applet(CDApplet):
 								 'id'    : sub_menu_id,
 								 'icon'  : sub_menu_icon }]
 		index = sub_menu_id + 1
-		for language in self.destinations:
+		for language in self.languages:
 			destination_sub_menu.append({
 				'type'  : CDApplet.MENU_ENTRY,                                        # normal entry
 				'label' : language.name,
@@ -466,7 +392,7 @@ class Applet(CDApplet):
 							'id'    : sub_menu_id,
 							'icon'  : sub_menu_icon }]
 		index = sub_menu_id + 1
-		for language in self.sources:
+		for language in self.languages:
 			source_sub_menu.append({
 				'type'  : CDApplet.MENU_ENTRY,                                        # normal entry
 				'label' : language.name,
@@ -481,11 +407,11 @@ class Applet(CDApplet):
 		index = self.switch_languages_menu_id
 		tooltip = "%s to %s" % (self.destination.name, self.source.name)
 		return [{ 'type'   : CDApplet.MENU_ENTRY,                                 # normal entry
-				      'label'  : _('Switch languages'),
-				      'menu'   : CDApplet.MAIN_MENU_ID,                               # belongs to the main menu
-				      'id'     : index,
-				      'icon'   : menu_icon,
-				      'tooltip': tooltip }]
+			'label'  : _('Switch languages'),
+			'menu'   : CDApplet.MAIN_MENU_ID,                               # belongs to the main menu
+			'id'     : index,
+			'icon'   : menu_icon,
+			'tooltip': tooltip }]
 
 	def on_build_menu(self):
 		items = []
