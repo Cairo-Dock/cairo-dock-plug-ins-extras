@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
 "POT-Creation-Date: 2013-02-28 01:22+0000\n"
-"PO-Revision-Date: 2012-09-10 03:06+0000\n"
-"Last-Translator: Daniel Winzen <d@winzen4.de>\n"
+"PO-Revision-Date: 2013-04-03 18:50+0000\n"
+"Last-Translator: Michael Konrad <Nephelyn@arcor.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-01 04:53+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-04-04 05:30+0000\n"
+"X-Generator: Launchpad (build 16546)\n"
 "Language: de\n"
 
 #: ../GnoMenu/GnoMenu:100
@@ -93,7 +93,7 @@ msgstr "Name des Symbols, so wie es als Beschriftung im Dock erscheint:"
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Vorgabewert"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -561,7 +561,7 @@ msgstr "Einstellungen"
 #: ../GnoMenu/messages:93 ../Cardapio/messages:93 ../Lancelot/messages:93
 #: ../MintMenu/messages:93
 msgid "Shortkey to pop up the menu:"
-msgstr ""
+msgstr "Tastenkürzel um das Menü aufklappen zu lassen :"
 
 #: ../GnoMenu/messages:96
 msgid ""
@@ -570,6 +570,11 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
+"Dieses Applet erlaubt ihnen, das <b>GnoMenu menu</b> innerhalb ihres Docks "
+"zu haben.\n"
+"Klicken Sie auf das Symbol, um das Menü aufklappen zu lassen.\n"
+"Ein Rechtsklick gibt ihnen den Zugriff auf das Voreinstellungsfenster.\n"
+"<u>Anmerkung :</u> Sie müssen GnoMenu dafür installieren."
 
 #: ../Calendar/messages:93
 msgid "Applications"
@@ -578,10 +583,13 @@ msgstr "Anwendungen"
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
+"Befehl, um ihre bevorzugte Kalenderanwendung zu starten (Mittelklick) :"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
 msgstr ""
+"Befehl, der ausgeführt werden soll, wenn eine Datei auf der Kalendersymbol "
+"fallengelassen wird :"
 
 #: ../Calendar/messages:99
 msgid "Behaviour"
@@ -592,10 +600,12 @@ msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
+"Der Pfad zu einem Skript, um ein Symbol zu generieren. Leer lassen, um das "
+"voreingestellte zu verwenden."
 
 #: ../Calendar/messages:103
 msgid "Icon custom script:"
-msgstr ""
+msgstr "Selbsterstelltes Symbolskript :"
 
 #: ../Calendar/messages:106
 msgid ""
@@ -606,6 +616,13 @@ msgid ""
 "Scroll Down displays the events of the day\n"
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
+"Dieses Applet wird das augenblickliche Datum anzeigen.\n"
+"Linksklick zeigt den Kalender an.\n"
+"Mittelklick startet eine Kalenderanwendung ihrer Wahl.\n"
+"Mausrad-nach-oben zeigt den Kalender des kommenden Monats an.\n"
+"Mausrad-nach-unten zeigt die Ereignisse des Tages an.\n"
+"Das Fallenlassen einer Datei auf dem Symbol startet die Kalenderanwendung "
+"und importiert diese Datei."
 
 #: ../Cardapio/Cardapio:45
 msgid ""
@@ -621,6 +638,11 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
+"Dieses Applet erlaubt ihnen, das <b>Cardapio-Menü</b> in ihrem Dock zu "
+"haben.\n"
+"Klicken Sie auf das Symbol, um das Menü aufklappen zu lassen.\n"
+"Ein Rechtsklick lässt Sie die Menüs editieren. <u>Anmerkung :</u> Sie müssen "
+"Cardapio dafür installieren."
 
 #: ../Deluge/Deluge:205
 msgid "Deluge is not running, or is not responding to us."
@@ -648,15 +670,15 @@ msgstr "Mittelklick"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
-msgstr ""
+msgstr "Tastenkürzel, um die Torrent-Informationen aufklappen zu lassen :"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
 msgid "Show as quick-info:"
-msgstr ""
+msgstr "Als Schnellinfo zeigen"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Keine"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
@@ -668,11 +690,11 @@ msgstr "Prozent abgeschlossen"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Prozentanteil + Anzahl der aktiven Torrents"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Den bisher erledigten Prozentanteil als Fortschrittsbalken anzeigen"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -698,11 +720,11 @@ msgstr "in Minuten"
 
 #: ../DiskFree/messages:97
 msgid "Time between two file system's checking :"
-msgstr ""
+msgstr "Zeit zwischen den Dateisystemüberprüfungen:"
 
 #: ../DiskFree/messages:100
 msgid "View available file system's free space."
-msgstr ""
+msgstr "Anzeigen des freien Speichers auf den verfügbaren Dateisystemen."
 
 #: ../Gmail/Gmail:137 ../Gmail/Gmail:143 ../Gmail/Gmail:152
 msgid "There is no subscription to any Gmail account."

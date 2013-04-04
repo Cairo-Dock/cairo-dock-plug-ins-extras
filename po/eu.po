@@ -1,41 +1,40 @@
-# Cairo-dock translation file Brazilian Portuguese version.
-# Copyright (C) 2009 Cairo-Dock project
-# This file is distributed under the same license as the Cairo-Dock package.
-# Eduardo Mucelli <edumucelli@gmail.com>, 2009.
+# Basque translation for cairo-dock-plug-ins
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the cairo-dock-plug-ins package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.1.0-alpha\n"
+"Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
 "POT-Creation-Date: 2013-02-28 01:22+0000\n"
-"PO-Revision-Date: 2013-03-21 06:24+0000\n"
-"Last-Translator: Fredson N Sousa <fnsousas@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2013-03-28 11:28+0000\n"
+"Last-Translator: Asier Sarasua Garmendia <Unknown>\n"
+"Language-Team: Basque <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-22 05:02+0000\n"
-"X-Generator: Launchpad (build 16532)\n"
-"Language: \n"
+"X-Launchpad-Export-Date: 2013-03-29 04:40+0000\n"
+"X-Generator: Launchpad (build 16546)\n"
+"Language: eu\n"
 
 #: ../GnoMenu/GnoMenu:100
 msgid ""
 "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
-"GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
-"aplicativo."
 
 #: ../GnoMenu/GnoMenu:138
 msgid "GnoMenu's settings"
-msgstr "Configurações do GnoMenu"
+msgstr "GnoMenu-ren ezarpenak"
 
 #: ../GnoMenu/GnoMenu:141
 msgid "About"
-msgstr "Sobre"
+msgstr "Honi buruz"
 
 #: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:118
 #: ../MintMenu/MintMenu:160
 msgid "Edit Menus"
-msgstr "Editar Menus"
+msgstr "Editatu menuak"
 
 #: ../GnoMenu/messages:1 ../GnoMenu/messages:3 ../Calendar/messages:1
 #: ../Calendar/messages:3 ../Cardapio/messages:1 ../Cardapio/messages:3
@@ -55,7 +54,7 @@ msgstr "Editar Menus"
 #: ../WindowsKiller/messages:3 ../Xchat/messages:1 ../Xchat/messages:3
 #: ../YoutubeDl/messages:1
 msgid "Icon"
-msgstr "Ícone"
+msgstr "Ikonoa"
 
 #: ../GnoMenu/messages:5 ../Calendar/messages:5 ../Cardapio/messages:5
 #: ../Deluge/messages:5 ../DiskFree/messages:5 ../Gmail/messages:5
@@ -67,7 +66,7 @@ msgstr "Ícone"
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
 #: ../YoutubeDl/messages:13
 msgid "Name of the dock it belongs to:"
-msgstr "Nome do dock ao qual ele pertence:"
+msgstr "Zein dockean dagoen:"
 
 #: ../GnoMenu/messages:7 ../Calendar/messages:7 ../Cardapio/messages:7
 #: ../Deluge/messages:7 ../DiskFree/messages:7 ../Gmail/messages:7
@@ -79,7 +78,7 @@ msgstr "Nome do dock ao qual ele pertence:"
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
 #: ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
-msgstr "Nome do ícone que aparecerá em seu rótulo no dock."
+msgstr "Ikonoaren izena, dockaren epigrafean agertu den eran:"
 
 #: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Cardapio/messages:9
 #: ../Deluge/messages:9 ../DiskFree/messages:9 ../Gmail/messages:9
@@ -91,7 +90,7 @@ msgstr "Nome do ícone que aparecerá em seu rótulo no dock."
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Lehenetsia"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -101,7 +100,7 @@ msgstr ""
 #: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
 #: ../WindowsKiller/messages:11 ../Xchat/messages:11
 msgid "Display"
-msgstr "Vídeo"
+msgstr "Bistaratu"
 
 #: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
 #: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
@@ -112,7 +111,7 @@ msgstr "Vídeo"
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13 ../YoutubeDl/messages:11
 msgid "Image filename:"
-msgstr "Nome do arquivo de Imagem :"
+msgstr "Irudiaren fitxategi-izena:"
 
 #: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:11
@@ -124,7 +123,7 @@ msgstr "Nome do arquivo de Imagem :"
 #: ../Twitter/messages:15 ../WebSearch/messages:13
 #: ../WindowsKiller/messages:15 ../Xchat/messages:15
 msgid "Set to 0 to use the default applet size"
-msgstr "Defina 0 para usar o tamanho padrão do mini-aplicativo."
+msgstr "Ezarri 0 balioa appletaren tamaina lehenetsia erabiltzeko"
 
 #: ../GnoMenu/messages:17 ../Calendar/messages:17 ../Cardapio/messages:17
 #: ../Deluge/messages:17 ../DiskFree/messages:17 ../Gmail/messages:13
@@ -136,7 +135,7 @@ msgstr "Defina 0 para usar o tamanho padrão do mini-aplicativo."
 #: ../Twitter/messages:17 ../WebSearch/messages:15
 #: ../WindowsKiller/messages:17 ../Xchat/messages:17 ../YoutubeDl/messages:5
 msgid "Desired icon size for this applet"
-msgstr "Ícone desejado para o mini-aplicativo"
+msgstr "Ikono-tamaina applet honetarako"
 
 #: ../GnoMenu/messages:19 ../Calendar/messages:19 ../Cardapio/messages:19
 #: ../Deluge/messages:19 ../DiskFree/messages:19 ../Gmail/messages:17
@@ -148,7 +147,7 @@ msgstr "Ícone desejado para o mini-aplicativo"
 #: ../Twitter/messages:19 ../WebSearch/messages:17
 #: ../WindowsKiller/messages:19 ../Xchat/messages:19 ../YoutubeDl/messages:17
 msgid "Desklet"
-msgstr "Desklet"
+msgstr "Deskletak"
 
 #: ../GnoMenu/messages:21 ../Calendar/messages:21 ../Cardapio/messages:21
 #: ../Deluge/messages:21 ../DiskFree/messages:21 ../Gmail/messages:19
@@ -158,7 +157,7 @@ msgstr "Desklet"
 #: ../Transmission/messages:21 ../Twitter/messages:21 ../WebSearch/messages:19
 #: ../WindowsKiller/messages:21 ../Xchat/messages:21
 msgid "Position"
-msgstr "Posição"
+msgstr "Kokapena"
 
 #: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
 #: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:21
@@ -171,9 +170,8 @@ msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
 msgstr ""
-"Se bloqueado, o desklet não pode ser movido simplesmente arrastando-o com o "
-"botão esquerdo do mouse. É claro que você ainda pode movê-lo com ALT+Clique "
-"do botão esquerdo."
+"Blokeatuta badago, deskleta ezin da mugitu saguaren ezkerreko botoiarekin "
+"arrastatuz. Hala ere, Alt + ezkerreko klik ekintzaren bidez mugi daiteke."
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:23
@@ -183,7 +181,7 @@ msgstr ""
 #: ../Transmission/messages:25 ../Twitter/messages:25 ../WebSearch/messages:23
 #: ../WindowsKiller/messages:25 ../Xchat/messages:25
 msgid "Lock position?"
-msgstr "Bloquear posição ?"
+msgstr "Blokeatu kokapena?"
 
 #: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
 #: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:25
@@ -196,8 +194,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
-"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Zure leiho-kudeatzailearen arabera, horren tamaina aldatu ahal izango duzu "
+"Alt + erdiko klik edo Alt + ezkerreko klik erabiliz."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:27
@@ -207,7 +205,7 @@ msgstr ""
 #: ../Twitter/messages:29 ../WebSearch/messages:27
 #: ../WindowsKiller/messages:29 ../Xchat/messages:29
 msgid "Desklet dimensions (width x height):"
-msgstr "Dimensão do Desklet (largura x altura) :"
+msgstr "Deskletaren dimentsioak (zabalera x altuera):"
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:29
@@ -220,9 +218,9 @@ msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
-"Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte "
-"direita/inferior da tela."
+"Zure leiho-kudeatzailearen arabera, horren tamaina aldatu ahal izango duzu "
+"Alt + ezkerreko klik erabiliz. Balio negatiboak pantailaren "
+"eskuin/behealdetik zenbatzen dira."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:31
@@ -232,7 +230,7 @@ msgstr ""
 #: ../Twitter/messages:33 ../WebSearch/messages:31
 #: ../WindowsKiller/messages:33 ../Xchat/messages:33
 msgid "Desklet position (x, y):"
-msgstr "Posição do Desklet (x ; y) :"
+msgstr "Deskletaren kokapena (x, y):"
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:33
@@ -245,8 +243,8 @@ msgid ""
 "You can quickly rotate the desklet with the mouse, by dragging the little "
 "buttons on its left and top sides."
 msgstr ""
-"Você pode facilmente rotacionar o desklet com o mouse, arrastando os "
-"pequenos botões em seu lado esquerdo e superior."
+"Deskleta saguarekin azkar bira dezakezu, goiko eta ezkerreko ertzetan dituen "
+"gezi txikiak arrastatuz"
 
 #: ../GnoMenu/messages:37 ../Calendar/messages:37 ../Cardapio/messages:37
 #: ../Deluge/messages:37 ../DiskFree/messages:37 ../Gmail/messages:35
@@ -256,7 +254,7 @@ msgstr ""
 #: ../Transmission/messages:37 ../Twitter/messages:37 ../WebSearch/messages:35
 #: ../WindowsKiller/messages:37 ../Xchat/messages:37
 msgid "Rotation:"
-msgstr "Rotação :"
+msgstr "Biraketa:"
 
 #: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
 #: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:37
@@ -266,7 +264,7 @@ msgstr "Rotação :"
 #: ../Transmission/messages:39 ../Twitter/messages:39 ../WebSearch/messages:37
 #: ../WindowsKiller/messages:39 ../Xchat/messages:39
 msgid "Visibility"
-msgstr "Visibilidade"
+msgstr "Ikusgaitasuna"
 
 #: ../GnoMenu/messages:41 ../Calendar/messages:41 ../Cardapio/messages:41
 #: ../Deluge/messages:41 ../DiskFree/messages:41 ../Gmail/messages:39
@@ -276,7 +274,7 @@ msgstr "Visibilidade"
 #: ../Twitter/messages:41 ../WebSearch/messages:39
 #: ../WindowsKiller/messages:41 ../Xchat/messages:41
 msgid "Is detached from the dock"
-msgstr "Esta separado do dock ?"
+msgstr "Docketik askatuta dago"
 
 #: ../GnoMenu/messages:43 ../Calendar/messages:43 ../Cardapio/messages:43
 #: ../Deluge/messages:43 ../DiskFree/messages:43 ../Gmail/messages:41
@@ -286,7 +284,7 @@ msgstr "Esta separado do dock ?"
 #: ../Twitter/messages:43 ../WebSearch/messages:41
 #: ../WindowsKiller/messages:43 ../Xchat/messages:43
 msgid "Visibility:"
-msgstr "Visibilidade :"
+msgstr "Ikusgaitasuna:"
 
 #: ../GnoMenu/messages:45 ../Calendar/messages:45 ../Cardapio/messages:45
 #: ../Deluge/messages:45 ../DiskFree/messages:45 ../Gmail/messages:43
@@ -298,7 +296,7 @@ msgstr "Visibilidade :"
 #: ../Twitter/messages:45 ../WebSearch/messages:43
 #: ../WindowsKiller/messages:45 ../Xchat/messages:45 ../YoutubeDl/messages:33
 msgid "Normal"
-msgstr "Normal"
+msgstr "Arrunta"
 
 #: ../GnoMenu/messages:47 ../Calendar/messages:47 ../Cardapio/messages:47
 #: ../Deluge/messages:47 ../DiskFree/messages:47 ../Gmail/messages:45
@@ -310,7 +308,7 @@ msgstr "Normal"
 #: ../Twitter/messages:47 ../WebSearch/messages:45
 #: ../WindowsKiller/messages:47 ../Xchat/messages:47 ../YoutubeDl/messages:35
 msgid "Keep above"
-msgstr "Manter acima"
+msgstr "Mantendu gainean"
 
 #: ../GnoMenu/messages:49 ../Calendar/messages:49 ../Cardapio/messages:49
 #: ../Deluge/messages:49 ../DiskFree/messages:49 ../Gmail/messages:47
@@ -322,7 +320,7 @@ msgstr "Manter acima"
 #: ../Twitter/messages:49 ../WebSearch/messages:47
 #: ../WindowsKiller/messages:49 ../Xchat/messages:49 ../YoutubeDl/messages:37
 msgid "Keep below"
-msgstr "Manter abaixo"
+msgstr "Mantendu azpian"
 
 #: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
 #: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:49
@@ -332,7 +330,7 @@ msgstr "Manter abaixo"
 #: ../Twitter/messages:51 ../WebSearch/messages:49
 #: ../WindowsKiller/messages:51 ../Xchat/messages:51
 msgid "Keep on widget layer"
-msgstr "No Wiget Layer"
+msgstr "Mantendu widgeten geruzan"
 
 #: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
 #: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:51
@@ -344,7 +342,7 @@ msgstr "No Wiget Layer"
 #: ../Twitter/messages:53 ../WebSearch/messages:51
 #: ../WindowsKiller/messages:53 ../Xchat/messages:53 ../YoutubeDl/messages:41
 msgid "Reserve space"
-msgstr "Reservar espaço"
+msgstr "Gorde tokia"
 
 #: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
 #: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:53
@@ -354,7 +352,7 @@ msgstr "Reservar espaço"
 #: ../Twitter/messages:55 ../WebSearch/messages:53
 #: ../WindowsKiller/messages:55 ../Xchat/messages:55
 msgid "Should be visible on all desktops?"
-msgstr "Deve ser visível em todas as Áreas de trabalho ?"
+msgstr "Mahaigain guztietan ikusgai?"
 
 #: ../GnoMenu/messages:57 ../Calendar/messages:57 ../Cardapio/messages:57
 #: ../Deluge/messages:57 ../DiskFree/messages:57 ../Gmail/messages:55
@@ -366,7 +364,7 @@ msgstr "Deve ser visível em todas as Áreas de trabalho ?"
 #: ../Twitter/messages:57 ../WebSearch/messages:55
 #: ../WindowsKiller/messages:57 ../Xchat/messages:57 ../YoutubeDl/messages:53
 msgid "Decorations"
-msgstr "Decorações"
+msgstr "Dekorazioak"
 
 #: ../GnoMenu/messages:59 ../Calendar/messages:59 ../Cardapio/messages:59
 #: ../Deluge/messages:59 ../DiskFree/messages:59 ../Gmail/messages:57
@@ -377,8 +375,8 @@ msgstr "Decorações"
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
 msgstr ""
-"Escolha \"Decorações personalizadas\" para definir sua própria decoração "
-"abaixo."
+"Hautatu 'Dekorazio pertsonalizatuak' azpian zure dekorazio propioa "
+"definitzeko."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:59
@@ -388,7 +386,7 @@ msgstr ""
 #: ../Twitter/messages:61 ../WebSearch/messages:59
 #: ../WindowsKiller/messages:61 ../Xchat/messages:61
 msgid "Choose a decoration theme for this desklet:"
-msgstr "Escolha um tema de decoração para este desklet :"
+msgstr "Hautatu dekorazio-gai bat desklet honetarako:"
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
 #: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:61
@@ -400,8 +398,8 @@ msgstr "Escolha um tema de decoração para este desklet :"
 msgid ""
 "Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
 msgstr ""
-"Esta é uma imagem que será mostrada abaixo dos desenhos, como, por exemplo, "
-"uma moldura. Deixe vazio para não usar."
+"Marrazkien azpian erakutsiko den irudia, markoa alegia. Utzi hutsik irudirik "
+"ez erabiltzeko."
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
 #: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:63
@@ -411,7 +409,7 @@ msgstr ""
 #: ../Twitter/messages:65 ../WebSearch/messages:63
 #: ../WindowsKiller/messages:65 ../Xchat/messages:65
 msgid "Background image:"
-msgstr "Imagem de fundo:"
+msgstr "Atzeko planoko irudia:"
 
 #: ../GnoMenu/messages:67 ../Calendar/messages:67 ../Cardapio/messages:67
 #: ../Deluge/messages:67 ../DiskFree/messages:67 ../Gmail/messages:65
@@ -421,7 +419,7 @@ msgstr "Imagem de fundo:"
 #: ../Twitter/messages:67 ../WebSearch/messages:65
 #: ../WindowsKiller/messages:67 ../Xchat/messages:67
 msgid "Background transparency:"
-msgstr "Transparência do fundo :"
+msgstr "Atzeko planoren gardentasuna:"
 
 #: ../GnoMenu/messages:69 ../Calendar/messages:69 ../Cardapio/messages:69
 #: ../Deluge/messages:69 ../DiskFree/messages:69 ../Gmail/messages:67
@@ -431,7 +429,7 @@ msgstr "Transparência do fundo :"
 #: ../Twitter/messages:69 ../WebSearch/messages:67
 #: ../WindowsKiller/messages:69 ../Xchat/messages:69
 msgid "in pixels. Use this to adjust the left position of drawings."
-msgstr "em píxeis. Use isto para ajustar a posição esquerda dos desenhos."
+msgstr "pixeletan. Erabili hau marrazkien ezker kokapena zehazteko."
 
 #: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
 #: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:69
@@ -441,7 +439,7 @@ msgstr "em píxeis. Use isto para ajustar a posição esquerda dos desenhos."
 #: ../Twitter/messages:71 ../WebSearch/messages:69
 #: ../WindowsKiller/messages:71 ../Xchat/messages:71
 msgid "Left offset:"
-msgstr "Deslocamento à esquerda :"
+msgstr "Ezker desplazamendua:"
 
 #: ../GnoMenu/messages:73 ../Calendar/messages:73 ../Cardapio/messages:73
 #: ../Deluge/messages:73 ../DiskFree/messages:73 ../Gmail/messages:71
@@ -451,7 +449,7 @@ msgstr "Deslocamento à esquerda :"
 #: ../Twitter/messages:73 ../WebSearch/messages:71
 #: ../WindowsKiller/messages:73 ../Xchat/messages:73
 msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr "em píxeis."
+msgstr "pixeletan. Erabili hau marrazkien goiko kokapena zehazteko."
 
 #: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
 #: ../Deluge/messages:75 ../DiskFree/messages:75 ../Gmail/messages:73
@@ -461,7 +459,7 @@ msgstr "em píxeis."
 #: ../Twitter/messages:75 ../WebSearch/messages:73
 #: ../WindowsKiller/messages:75 ../Xchat/messages:75
 msgid "Top offset:"
-msgstr "Deslocamento superior :"
+msgstr "Goiko desplazamendua:"
 
 #: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
 #: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:75
@@ -471,7 +469,7 @@ msgstr "Deslocamento superior :"
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr "em píxeis. Use isto para ajustar a posição direita dos desenhos."
+msgstr "pixeletan. Erabili hau marrazkien eskuin kokapena zehazteko."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:77
@@ -481,7 +479,7 @@ msgstr "em píxeis. Use isto para ajustar a posição direita dos desenhos."
 #: ../Twitter/messages:79 ../WebSearch/messages:77
 #: ../WindowsKiller/messages:79 ../Xchat/messages:79
 msgid "Right offset:"
-msgstr "Deslocamento à direita :"
+msgstr "Eskuin desplazamendua:"
 
 #: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
 #: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:79
@@ -491,7 +489,7 @@ msgstr "Deslocamento à direita :"
 #: ../Twitter/messages:81 ../WebSearch/messages:79
 #: ../WindowsKiller/messages:81 ../Xchat/messages:81
 msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr "em píxeis. Use isto para ajustar a posição inferior dos desenhos."
+msgstr "pixeletan. Erabili hau marrazkien beheko kokapena zehazteko."
 
 #: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
 #: ../Deluge/messages:83 ../DiskFree/messages:83 ../Gmail/messages:81
@@ -501,7 +499,7 @@ msgstr "em píxeis. Use isto para ajustar a posição inferior dos desenhos."
 #: ../Twitter/messages:83 ../WebSearch/messages:81
 #: ../WindowsKiller/messages:83 ../Xchat/messages:83
 msgid "Bottom offset:"
-msgstr "Posição inferior :"
+msgstr "Beheko desplazamendua:"
 
 #: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
 #: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:83
@@ -514,8 +512,8 @@ msgid ""
 "Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
 "no image."
 msgstr ""
-"Esta é uma imagem que será mostrada abaixo dos desenhos, como, por exemplo, "
-"um reflexo. Deixe vazio para não usar."
+"Marrazkien gainean erakutsiko den irudia, isla alegia. Utzi hutsik irudirik "
+"ez erabiltzeko."
 
 #: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
 #: ../Deluge/messages:87 ../DiskFree/messages:87 ../Gmail/messages:85
@@ -525,7 +523,7 @@ msgstr ""
 #: ../Twitter/messages:87 ../WebSearch/messages:85
 #: ../WindowsKiller/messages:87 ../Xchat/messages:87
 msgid "Foreground image:"
-msgstr "Imagem de frente :"
+msgstr "Lehen planoko irudia:"
 
 #: ../GnoMenu/messages:89 ../Calendar/messages:89 ../Cardapio/messages:89
 #: ../Deluge/messages:89 ../DiskFree/messages:89 ../Gmail/messages:87
@@ -535,7 +533,7 @@ msgstr "Imagem de frente :"
 #: ../Twitter/messages:89 ../WebSearch/messages:87
 #: ../WindowsKiller/messages:89 ../Xchat/messages:89
 msgid "Foreground tansparency:"
-msgstr "Transparência da frente :"
+msgstr "Lehen planoren gardentasuna:"
 
 #: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
 #: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:89
@@ -546,12 +544,12 @@ msgstr "Transparência da frente :"
 #: ../Transmission/messages:91 ../Twitter/messages:91 ../WebSearch/messages:89
 #: ../Xchat/messages:91 ../YoutubeDl/messages:87
 msgid "Configuration"
-msgstr "Configuração"
+msgstr "Konfigurazioa"
 
 #: ../GnoMenu/messages:93 ../Cardapio/messages:93 ../Lancelot/messages:93
 #: ../MintMenu/messages:93
 msgid "Shortkey to pop up the menu:"
-msgstr "Atalho para mostrar menu:"
+msgstr ""
 
 #: ../GnoMenu/messages:96
 msgid ""
@@ -563,33 +561,29 @@ msgstr ""
 
 #: ../Calendar/messages:93
 msgid "Applications"
-msgstr "Aplicativos"
+msgstr "Aplikazioak"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
-"Comando para executar sua aplicação favorita de calendário (click com o "
-"botão do meio):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
 msgstr ""
-"Comando a ser executado quando soltar um arquivo no ícone do calendário:"
 
 #: ../Calendar/messages:99
 msgid "Behaviour"
-msgstr "Comportamento"
+msgstr "Portaera"
 
 #: ../Calendar/messages:101
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
-"O caminho do script que gera o ícone. Deixe vazio para usar o script padrão."
 
 #: ../Calendar/messages:103
 msgid "Icon custom script:"
-msgstr "Script de ícone personalizado:"
+msgstr ""
 
 #: ../Calendar/messages:106
 msgid ""
@@ -605,8 +599,6 @@ msgstr ""
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
 msgstr ""
-"Cardapio não está instalado. Por favor instale-o antes de rodar este mini-"
-"aplicativo."
 
 #: ../Cardapio/messages:96
 msgid ""
@@ -618,31 +610,31 @@ msgstr ""
 
 #: ../Deluge/Deluge:205
 msgid "Deluge is not running, or is not responding to us."
-msgstr "Deluge não está rodando, ou nos respondendo."
+msgstr ""
 
 #: ../Deluge/Deluge:336 ../Transmission/Transmission:460
 msgid "Pause all torrents"
-msgstr "Pausar todos os torrents"
+msgstr ""
 
 #: ../Deluge/Deluge:341 ../Transmission/Transmission:465
 msgid "Resume all torrents"
-msgstr "Continuar todos os torrents"
+msgstr ""
 
 #: ../Deluge/Deluge:346 ../KTorrent/KTorrent:330
 #: ../Transmission/Transmission:470
 msgid "Torrents info"
-msgstr "Informação dos torrents"
+msgstr ""
 
 #: ../Deluge/Deluge:346 ../Gmail/Gmail:504 ../KTorrent/KTorrent:330
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:199
 #: ../Transmission/Transmission:470 ../YoutubeDl/YoutubeDl:298
 #: ../YoutubeDl/YoutubeDl:303
 msgid "middle-click"
-msgstr "Clique com o botão do meio"
+msgstr "erdiko klika"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Atalho para mostrar as informações dos torrents:"
+msgstr ""
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
 msgid "Show as quick-info:"
@@ -650,11 +642,11 @@ msgstr ""
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Bat ere ez"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Deskargaren abiadura"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
@@ -684,15 +676,15 @@ msgstr ""
 #: ../DiskFree/messages:93
 msgid ""
 "View available file system's space as Giga (checked) or Mega (unchecked) :"
-msgstr "Veja espaço disponível como Giga (marcado) ou Mega (desmarcado):"
+msgstr ""
 
 #: ../DiskFree/messages:95
 msgid "in minutes"
-msgstr "em minutos"
+msgstr ""
 
 #: ../DiskFree/messages:97
 msgid "Time between two file system's checking :"
-msgstr "Tempo entre verificações do sistema de arquivos:"
+msgstr ""
 
 #: ../DiskFree/messages:100
 msgid "View available file system's free space."
@@ -762,23 +754,23 @@ msgstr ""
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
-msgstr "Sempre mostrar o ícone, mesmo quando o dock estiver oculto?"
+msgstr ""
 
 #: ../Gmail/messages:91
 msgid "(in minutes)"
-msgstr "(em minutos)"
+msgstr ""
 
 #: ../Gmail/messages:93
 msgid "Delay between refreshes:"
-msgstr "Atraso entre a(s) recarga(s):"
+msgstr ""
 
 #: ../Gmail/messages:95
 msgid "Alerts"
-msgstr "Alertas"
+msgstr ""
 
 #: ../Gmail/messages:97
 msgid "Show alerts?"
-msgstr "Mostrar alertas?"
+msgstr ""
 
 #: ../Gmail/messages:99
 msgid ""
@@ -786,92 +778,87 @@ msgid ""
 "\"different\" will do so whenever the number of emails changes; \"superior\" "
 "will notify you whenever it increases (default)."
 msgstr ""
-"\"sempre\" notificará você toda vez que o número de e-mails não for 0; "
-"\"diferente\" fará sempre que o número de e-mails mudar; \"superior\" fará "
-"sempre que o número de e-mails aumentar (padrão)."
 
 #: ../Gmail/messages:101
 msgid "On which condition?"
-msgstr "Em que condição?"
+msgstr ""
 
 #: ../Gmail/messages:103
 msgid "superior"
-msgstr "superior"
+msgstr ""
 
 #: ../Gmail/messages:105
 msgid "always"
-msgstr "sempre"
+msgstr ""
 
 #: ../Gmail/messages:107
 msgid "different"
-msgstr "diferente"
+msgstr ""
 
 #: ../Gmail/messages:109
 msgid "Should an animation be applied to the icon?"
-msgstr "Animação no ícone?"
+msgstr ""
 
 #: ../Gmail/messages:111
 msgid "Show animation?"
-msgstr "Mostrar animação?"
+msgstr ""
 
 #: ../Gmail/messages:113
 msgid "Which animation should the apply to the icon?"
-msgstr "Qual animação aplicar no ícone?"
+msgstr ""
 
 #: ../Gmail/messages:115
 msgid "Choose animation?"
-msgstr "Escolha animação?"
+msgstr ""
 
 #: ../Gmail/messages:117
 msgid "Should the applet display a dialogue box with the notification?"
 msgstr ""
-"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:119
 msgid "Show dialogue?"
-msgstr "Mostrar caixa de diálogo?"
+msgstr ""
 
 #: ../Gmail/messages:121
 msgid "Should the applet play a sound with the notification?"
-msgstr "O mini-aplicativo deve tocar um som com a notificação?"
+msgstr ""
 
 #: ../Gmail/messages:123
 msgid "Play a sound?"
-msgstr "Tocar som?"
+msgstr ""
 
 #: ../Gmail/messages:125
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
-"Vários arquivos disponíveis em ~/.config/cairo-dock/third-party/Gmail/snd/"
 
 #: ../Gmail/messages:127
 msgid "Path to sound file:"
-msgstr "Caminho do arquivo de som:"
+msgstr ""
 
 #: ../Gmail/messages:129
 msgid "Display a counter on the icon?"
-msgstr "Mostrar um contador no ícone?"
+msgstr ""
 
 #: ../Gmail/messages:131
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Você quer que seja mostrado um emblema, ou uma informação rápida?"
+msgstr ""
 
 #: ../Gmail/messages:133
 msgid "How?"
-msgstr "Como?"
+msgstr ""
 
 #: ../Gmail/messages:135
 msgid "small emblem"
-msgstr "emblema pequeno"
+msgstr ""
 
 #: ../Gmail/messages:137
 msgid "large emblem"
-msgstr "emblema grande"
+msgstr ""
 
 #: ../Gmail/messages:139
 msgid "quickinfo"
-msgstr "Informação rápida"
+msgstr ""
 
 #: ../Gmail/messages:142
 msgid "This applet will notify you of new emails on a single Gmail account."
@@ -929,32 +916,32 @@ msgstr ""
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
-msgstr "Duração da caixa de diálogo em bolha:"
+msgstr ""
 
 #: ../GTG/messages:95 ../Pidgin/messages:105 ../Xchat/messages:97
 msgid "Short"
-msgstr "Rápido"
+msgstr ""
 
 #: ../GTG/messages:97 ../Pidgin/messages:107 ../Twitter/messages:97
 #: ../Xchat/messages:99
 msgid "Medium"
-msgstr "Médio"
+msgstr ""
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Long"
-msgstr "Longo"
+msgstr ""
 
 #: ../GTG/messages:101
 msgid "Animation of the icon on receiving channel messages :"
-msgstr "Animação do ícone ao receber mensagens no canal:"
+msgstr ""
 
 #: ../GTG/messages:103 ../Xchat/messages:93
 msgid "Display channel messages in a bubble :"
-msgstr "Mostrar mensagens do canal numa caixa de diálogo bolha:"
+msgstr ""
 
 #: ../GTG/messages:107
 msgid "Post-it's initial dimension (width x height) :"
-msgstr "Dimensão inicial do Post-it (largura x altura):"
+msgstr ""
 
 #: ../GTG/messages:110
 msgid ""
@@ -995,7 +982,7 @@ msgstr ""
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:41
 #: ../YoutubeDl/messages:27
 msgid "Is detached from the dock ?"
-msgstr "Está separado do dock?"
+msgstr ""
 
 #: ../HDDtemperature/messages:27 ../Translator/messages:43
 #: ../YoutubeDl/messages:29
@@ -1008,19 +995,19 @@ msgstr ""
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:45
 #: ../YoutubeDl/messages:31
 msgid "Accessibility :"
-msgstr "Acessibilidade:"
+msgstr ""
 
 #: ../HDDtemperature/messages:37 ../Moon/messages:39
 #: ../Screensaver_inhibitor/messages:41 ../Translator/messages:53
 #: ../YoutubeDl/messages:39
 msgid "On Widget Layer"
-msgstr "Na camada do Widget"
+msgstr ""
 
 #: ../HDDtemperature/messages:41 ../Moon/messages:43
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:57
 #: ../YoutubeDl/messages:43
 msgid "Should be visible on all desktops ?"
-msgstr "Deve ser visível em todas as áreas de trabalho?"
+msgstr ""
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:47 ../YoutubeDl/messages:45
@@ -1037,12 +1024,12 @@ msgstr ""
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:51 ../YoutubeDl/messages:49
 msgid "in degrees."
-msgstr "em gráus."
+msgstr ""
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:53 ../YoutubeDl/messages:51
 msgid "Rotation :"
-msgstr "Rotação:"
+msgstr ""
 
 #: ../HDDtemperature/messages:53 ../Moon/messages:55
 #: ../Screensaver_inhibitor/messages:57 ../Translator/messages:61
@@ -1068,61 +1055,61 @@ msgstr ""
 #: ../Screensaver_inhibitor/messages:63 ../Translator/messages:67
 #: ../YoutubeDl/messages:61
 msgid "Background image :"
-msgstr "Imagem de fundo :"
+msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:65 ../Translator/messages:69
 #: ../YoutubeDl/messages:63
 msgid "Background tansparency :"
-msgstr "Transparência de fundo:"
+msgstr ""
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:71
 #: ../YoutubeDl/messages:65
 msgid "in pixels. Use this to adjust the left position of the drawings."
-msgstr "em píxeis. Use isto para ajustar a posição esquerda dos desenhos."
+msgstr ""
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:73
 #: ../YoutubeDl/messages:67
 msgid "Left offset :"
-msgstr "Deslocamento à esquerda:"
+msgstr ""
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:75
 #: ../YoutubeDl/messages:69
 msgid "in pixels. Use this to adjust the top position of the drawings."
-msgstr "em píxeis. Use isto para ajustar a posição superior dos desenhos."
+msgstr ""
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Screensaver_inhibitor/messages:73 ../Translator/messages:77
 #: ../YoutubeDl/messages:71
 msgid "Top offset :"
-msgstr "Deslocamento superior :"
+msgstr ""
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Screensaver_inhibitor/messages:75 ../Translator/messages:79
 #: ../YoutubeDl/messages:73
 msgid "in pixels. Use this to adjust the right position of the drawings."
-msgstr "em píxeis. Use isto para ajustar a posição direita dos desenhos."
+msgstr ""
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Screensaver_inhibitor/messages:77 ../Translator/messages:81
 #: ../YoutubeDl/messages:75
 msgid "Right offset :"
-msgstr "Deslocamento à direita :"
+msgstr ""
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Screensaver_inhibitor/messages:79 ../Translator/messages:83
 #: ../YoutubeDl/messages:77
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
-msgstr "em píxeis. Use isto para ajustar a posição inferior dos desenhos."
+msgstr ""
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Screensaver_inhibitor/messages:81 ../Translator/messages:85
 #: ../YoutubeDl/messages:79
 msgid "Bottom offset :"
-msgstr "Deslocamento inferior :"
+msgstr ""
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Screensaver_inhibitor/messages:83 ../Translator/messages:87
@@ -1136,13 +1123,13 @@ msgstr ""
 #: ../Screensaver_inhibitor/messages:85 ../Translator/messages:89
 #: ../YoutubeDl/messages:83
 msgid "Foreground image :"
-msgstr "Imagem frontal:"
+msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:87 ../Translator/messages:91
 #: ../YoutubeDl/messages:85
 msgid "Foreground tansparency :"
-msgstr "Transparência frontal :"
+msgstr ""
 
 #: ../HDDtemperature/messages:87
 msgid "One or more device drive path to monitor:"
@@ -1150,7 +1137,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:89
 msgid "Show maximum temperature on icon?"
-msgstr "Mostrar a temperatura máxima no ícone?"
+msgstr ""
 
 #: ../HDDtemperature/messages:91
 msgid "Time interval for checking (minutes):"
@@ -1189,7 +1176,7 @@ msgstr ""
 
 #: ../KTorrent/KTorrent:325
 msgid "Suspend all torrents"
-msgstr "Suspender todos os torrents"
+msgstr ""
 
 #: ../KTorrent/messages:96
 msgid ""
@@ -1206,8 +1193,6 @@ msgstr ""
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr ""
-"Lancelot não está instalado. Por favor instale-o antes de rodar este mini-"
-"aplicativo."
 
 #: ../Lancelot/messages:96
 msgid ""
@@ -1219,15 +1204,15 @@ msgstr ""
 
 #: ../Liferea/messages:93
 msgid "Show in the icon:"
-msgstr "Mostrar no ícone:"
+msgstr ""
 
 #: ../Liferea/messages:95
 msgid "Number of unread messages"
-msgstr "Número de mensagens não lidas"
+msgstr ""
 
 #: ../Liferea/messages:97
 msgid " Number of new messages"
-msgstr " Número de mensagens novas"
+msgstr ""
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
@@ -1237,8 +1222,6 @@ msgstr ""
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr ""
-"MintMenu não está instalado. Por favor instale-o antes de rodar este mini-"
-"aplicativo."
 
 #: ../MintMenu/messages:96
 msgid ""
@@ -1250,23 +1233,23 @@ msgstr ""
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
-msgstr "Mostrar a lua todos os dias da semana atual?"
+msgstr ""
 
 #: ../Moon/messages:91
 msgid "You are going to see the moon from the perspective of this hemisphere"
-msgstr "Você verá a lua da perspectiva deste hemisfério"
+msgstr ""
 
 #: ../Moon/messages:93
 msgid "Hemisphere:"
-msgstr "Hemisfério:"
+msgstr ""
 
 #: ../Moon/messages:95
 msgid "North"
-msgstr "Norte"
+msgstr ""
 
 #: ../Moon/messages:97
 msgid "South"
-msgstr "Sul"
+msgstr ""
 
 #: ../Moon/messages:100
 msgid ""
@@ -1276,36 +1259,35 @@ msgstr ""
 
 #: ../Pidgin/Pidgin:408
 msgid "Conversations"
-msgstr "Conversas"
+msgstr ""
 
 #: ../Pidgin/Pidgin:422
 msgid "Change your status"
-msgstr "Modifique seu status"
+msgstr ""
 
 #: ../Pidgin/Pidgin:437
 msgid "Set your status message"
-msgstr "Defina sua mensagem de status"
+msgstr ""
 
 #: ../Pidgin/Pidgin:442 ../Xchat/Xchat:278
 msgid "Silent mode"
-msgstr "Modo silencioso"
+msgstr ""
 
 #: ../Pidgin/Pidgin:446 ../Xchat/Xchat:282
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
-"Alterne o aplicativo para modo silencioso (sem pop-up, ou novas mensagens)."
 
 #: ../Pidgin/Pidgin:457
 msgid "Enter your new status message:"
-msgstr "Entre sua nova mensagem de status:"
+msgstr ""
 
 #: ../Pidgin/messages:93 ../Pidgin/messages:97
 msgid "Parameters"
-msgstr "Parâmetros"
+msgstr ""
 
 #: ../Pidgin/messages:95
 msgid "Choose a theme :"
-msgstr "Escolha um tema:"
+msgstr ""
 
 #: ../Pidgin/messages:99
 msgid "Display conversation messages in a bubble?"
@@ -1350,11 +1332,11 @@ msgstr ""
 
 #: ../Pidgin/messages:125 ../Xchat/messages:117
 msgid "none"
-msgstr "nenhum"
+msgstr ""
 
 #: ../Pidgin/messages:127 ../Xchat/messages:119
 msgid "big"
-msgstr "grande"
+msgstr ""
 
 #: ../Pidgin/messages:130
 msgid ""
@@ -1369,39 +1351,39 @@ msgstr ""
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
-msgstr "Deixe vazio para mostrar o nome do site atual."
+msgstr ""
 
 #: ../Quote/messages:95
 msgid "Quote source:"
-msgstr "Fonte das frases:"
+msgstr ""
 
 #: ../Quote/messages:97
 msgid "Quotationspage.com"
-msgstr "Quotationspage.com"
+msgstr ""
 
 #: ../Quote/messages:99
 msgid "Bash.org"
-msgstr "Bash.org"
+msgstr ""
 
 #: ../Quote/messages:101
 msgid "Xkcdb.com"
-msgstr "Xkcdb.com"
+msgstr ""
 
 #: ../Quote/messages:103
 msgid "Qdb.us"
-msgstr "Qdb.us"
+msgstr ""
 
 #: ../Quote/messages:105
 msgid "Danstonchat.com"
-msgstr "Danstonchat.com"
+msgstr ""
 
 #: ../Quote/messages:107
 msgid "Jokes2go.com"
-msgstr "Jokes2go.com"
+msgstr ""
 
 #: ../Quote/messages:109
 msgid "Vidademerda.com.br"
-msgstr "Vidademerda.com.br"
+msgstr ""
 
 #: ../Quote/messages:111
 msgid "Viedemerde.fr"
@@ -1446,7 +1428,7 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:193
 msgid "timelength"
-msgstr "Tempo de duração"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:199
 msgid "Inhibit for a given time"
@@ -1483,323 +1465,323 @@ msgstr ""
 
 #: ../Translator/Translator:430
 msgid "To"
-msgstr "Para"
+msgstr ""
 
 #: ../Translator/Translator:449
 msgid "From"
-msgstr "De"
+msgstr ""
 
 #: ../Translator/Translator:469
 msgid "Switch languages"
-msgstr "Trocar idiomas"
+msgstr ""
 
 #: ../Translator/Translator:482
 msgid "Translate from clipboard (middle-click)"
-msgstr "Traduzir da área de transferência (clique com o botão do meio)"
+msgstr ""
 
 #: ../Translator/messages:95
 msgid "Languages"
-msgstr "Idiomas"
+msgstr ""
 
 #: ../Translator/messages:97
 msgid "Translate from:"
-msgstr "Traduzir do:"
+msgstr ""
 
 #: ../Translator/messages:99 ../Translator/messages:229
 msgid "Afrikaans"
-msgstr "Africano"
+msgstr ""
 
 #: ../Translator/messages:101 ../Translator/messages:231
 msgid "Albanian"
-msgstr "Albanês"
+msgstr ""
 
 #: ../Translator/messages:103 ../Translator/messages:233
 msgid "Arabic"
-msgstr "Árabe"
+msgstr ""
 
 #: ../Translator/messages:105 ../Translator/messages:235
 msgid "Armenian"
-msgstr "Arménio"
+msgstr ""
 
 #: ../Translator/messages:107 ../Translator/messages:237
 msgid "Azerbaijani"
-msgstr "Azerbaijano"
+msgstr ""
 
 #: ../Translator/messages:109 ../Translator/messages:239
 msgid "Basque"
-msgstr "Basco"
+msgstr ""
 
 #: ../Translator/messages:111 ../Translator/messages:241
 msgid "Belarusian"
-msgstr "Bielorrusso"
+msgstr ""
 
 #: ../Translator/messages:113 ../Translator/messages:243
 msgid "Bengali"
-msgstr "Bengali"
+msgstr ""
 
 #: ../Translator/messages:115 ../Translator/messages:245
 msgid "Bulgarian"
-msgstr "Búlgaro"
+msgstr ""
 
 #: ../Translator/messages:117 ../Translator/messages:247
 msgid "Catalan"
-msgstr "Calalão"
+msgstr ""
 
 #: ../Translator/messages:119
 msgid "Chinese (simplified)"
-msgstr "Chinês (simplificado)"
+msgstr ""
 
 #: ../Translator/messages:121
 msgid "Chinese (traditional)"
-msgstr "Chinês (tradicional)"
+msgstr ""
 
 #: ../Translator/messages:123 ../Translator/messages:253
 msgid "Croatian"
-msgstr "Croata"
+msgstr ""
 
 #: ../Translator/messages:125 ../Translator/messages:255
 msgid "Czech"
-msgstr "Tcheco"
+msgstr ""
 
 #: ../Translator/messages:127 ../Translator/messages:257
 msgid "Danish"
-msgstr "Dinamarquês"
+msgstr ""
 
 #: ../Translator/messages:129 ../Translator/messages:259
 msgid "Dutch"
-msgstr "Holandês"
+msgstr ""
 
 #: ../Translator/messages:131 ../Translator/messages:261
 msgid "English"
-msgstr "Inglês"
+msgstr ""
 
 #: ../Translator/messages:133 ../Translator/messages:263
 msgid "Estonian"
-msgstr "Estoniano"
+msgstr ""
 
 #: ../Translator/messages:135 ../Translator/messages:265
 msgid "Filipino"
-msgstr "Filipino"
+msgstr ""
 
 #: ../Translator/messages:137 ../Translator/messages:267
 msgid "Finnish"
-msgstr "Finlandês"
+msgstr ""
 
 #: ../Translator/messages:139 ../Translator/messages:269
 msgid "French"
-msgstr "Francês"
+msgstr ""
 
 #: ../Translator/messages:141 ../Translator/messages:271
 msgid "Galician"
-msgstr "Galêgo"
+msgstr ""
 
 #: ../Translator/messages:143 ../Translator/messages:273
 msgid "Georgian"
-msgstr "Georgiano"
+msgstr ""
 
 #: ../Translator/messages:145 ../Translator/messages:275
 msgid "German"
-msgstr "Alemão"
+msgstr ""
 
 #: ../Translator/messages:147 ../Translator/messages:277
 msgid "Greek"
-msgstr "Grego"
+msgstr ""
 
 #: ../Translator/messages:149 ../Translator/messages:279
 msgid "Gujarati"
-msgstr "Gujerati"
+msgstr ""
 
 #: ../Translator/messages:151 ../Translator/messages:281
 msgid "Haitian"
-msgstr "Haitiano"
+msgstr ""
 
 #: ../Translator/messages:153 ../Translator/messages:283
 msgid "Hebrew"
-msgstr "Hebraico"
+msgstr ""
 
 #: ../Translator/messages:155 ../Translator/messages:285
 msgid "Hindi"
-msgstr "Hindi"
+msgstr ""
 
 #: ../Translator/messages:157 ../Translator/messages:287
 msgid "Hungarian"
-msgstr "Húngaro"
+msgstr ""
 
 #: ../Translator/messages:159 ../Translator/messages:289
 msgid "Icelandic"
-msgstr "Islandês"
+msgstr ""
 
 #: ../Translator/messages:161 ../Translator/messages:291
 msgid "Indonesian"
-msgstr "Indonésio"
+msgstr ""
 
 #: ../Translator/messages:163 ../Translator/messages:293
 msgid "Irish"
-msgstr "Irlandês"
+msgstr ""
 
 #: ../Translator/messages:165 ../Translator/messages:295
 msgid "Italian"
-msgstr "Italiano"
+msgstr ""
 
 #: ../Translator/messages:167 ../Translator/messages:297
 msgid "Japanese"
-msgstr "Japonês"
+msgstr ""
 
 #: ../Translator/messages:169 ../Translator/messages:299
 msgid "Kannada"
-msgstr "Kannada"
+msgstr ""
 
 #: ../Translator/messages:171 ../Translator/messages:301
 msgid "Korean"
-msgstr "Coreano"
+msgstr ""
 
 #: ../Translator/messages:173 ../Translator/messages:303
 msgid "Latin"
-msgstr "Latim"
+msgstr ""
 
 #: ../Translator/messages:175 ../Translator/messages:305
 msgid "Latvian"
-msgstr "Letão"
+msgstr ""
 
 #: ../Translator/messages:177 ../Translator/messages:307
 msgid "Lithuanian"
-msgstr "Lituano"
+msgstr ""
 
 #: ../Translator/messages:179 ../Translator/messages:309
 msgid "Macedonian"
-msgstr "Macedônio"
+msgstr ""
 
 #: ../Translator/messages:181 ../Translator/messages:311
 msgid "Malay"
-msgstr "Malaio"
+msgstr ""
 
 #: ../Translator/messages:183 ../Translator/messages:313
 msgid "Maltese"
-msgstr "Maltês"
+msgstr ""
 
 #: ../Translator/messages:185 ../Translator/messages:315
 msgid "Norwegian"
-msgstr "Norueguês"
+msgstr ""
 
 #: ../Translator/messages:187 ../Translator/messages:317
 msgid "Persian"
-msgstr "Persa"
+msgstr ""
 
 #: ../Translator/messages:189 ../Translator/messages:319
 msgid "Polish"
-msgstr "Polonês"
+msgstr ""
 
 #: ../Translator/messages:191 ../Translator/messages:321
 msgid "Portuguese"
-msgstr "Português"
+msgstr ""
 
 #: ../Translator/messages:193 ../Translator/messages:323
 msgid "Romanian"
-msgstr "Romeno"
+msgstr ""
 
 #: ../Translator/messages:195 ../Translator/messages:325
 msgid "Russian"
-msgstr "Russo"
+msgstr ""
 
 #: ../Translator/messages:197 ../Translator/messages:327
 msgid "Serbian"
-msgstr "Sérvio"
+msgstr ""
 
 #: ../Translator/messages:199 ../Translator/messages:329
 msgid "Slovak"
-msgstr "Eslovaco"
+msgstr ""
 
 #: ../Translator/messages:201 ../Translator/messages:331
 msgid "Slovenian"
-msgstr "Esloveno"
+msgstr ""
 
 #: ../Translator/messages:203 ../Translator/messages:333
 msgid "Spanish"
-msgstr "Espanhol"
+msgstr ""
 
 #: ../Translator/messages:205 ../Translator/messages:335
 msgid "Swahili"
-msgstr "Suaíli"
+msgstr ""
 
 #: ../Translator/messages:207 ../Translator/messages:337
 msgid "Swedish"
-msgstr "Sueco"
+msgstr ""
 
 #: ../Translator/messages:209 ../Translator/messages:339
 msgid "Tamil"
-msgstr "Tâmil"
+msgstr ""
 
 #: ../Translator/messages:211 ../Translator/messages:341
 msgid "Telugu"
-msgstr "Telugu"
+msgstr ""
 
 #: ../Translator/messages:213 ../Translator/messages:343
 msgid "Thai"
-msgstr "Tailandês"
+msgstr ""
 
 #: ../Translator/messages:215 ../Translator/messages:345
 msgid "Turkish"
-msgstr "Turco"
+msgstr ""
 
 #: ../Translator/messages:217 ../Translator/messages:347
 msgid "Ukrainian"
-msgstr "Ucraniano"
+msgstr ""
 
 #: ../Translator/messages:219 ../Translator/messages:349
 msgid "Urdu"
-msgstr "Urdu"
+msgstr ""
 
 #: ../Translator/messages:221 ../Translator/messages:351
 msgid "Vietnamese"
-msgstr "Vietnamita"
+msgstr ""
 
 #: ../Translator/messages:223 ../Translator/messages:353
 msgid "Welsh"
-msgstr "Galês"
+msgstr ""
 
 #: ../Translator/messages:225 ../Translator/messages:355
 msgid "Yiddish"
-msgstr "Ídiche"
+msgstr ""
 
 #: ../Translator/messages:227
 msgid "Translate to:"
-msgstr "Traduzir para:"
+msgstr ""
 
 #: ../Translator/messages:249
 msgid "Simplified Chinese"
-msgstr "Chinês simplificado"
+msgstr ""
 
 #: ../Translator/messages:251
 msgid "Traditional Chinese"
-msgstr "Chinês tradicional"
+msgstr ""
 
 #: ../Translator/messages:357
 msgid "Shortkeys"
-msgstr "Atalhos"
+msgstr ""
 
 #: ../Translator/messages:359
 msgid "Shortkey to start translating from (read):"
-msgstr "Atalho para traduzir do (língua que você está lendo)"
+msgstr ""
 
 #: ../Translator/messages:361
 msgid "Shortkey to start translating to (write):"
-msgstr "Atalho para traduzir para (língua que você quer escrever)"
+msgstr ""
 
 #: ../Translator/messages:363
 msgid "Dialog"
-msgstr "Caixa de Diálogo"
+msgstr ""
 
 #: ../Translator/messages:365
 msgid "In s. Set 0 for an unlimited time."
-msgstr "Em segundos. Deixe 0 para tempo ilimitado."
+msgstr ""
 
 #: ../Translator/messages:367
 msgid "Time-length of the result dialog:"
-msgstr "Tempo de duração da caixa de diálogo resultante:"
+msgstr ""
 
 #: ../Translator/messages:369
 msgid "Editable text widget?"
-msgstr "Habilitar widget de texto?"
+msgstr ""
 
 #: ../Translator/messages:372
 msgid ""
@@ -1819,14 +1801,12 @@ msgstr ""
 
 #: ../Transmission/Transmission:240
 msgid "Transmission is not running, or is not responding to us."
-msgstr "Transmission não está rodando, ou nos respondendo."
+msgstr ""
 
 #: ../Transmission/Transmission:247
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
-"Não foi possível obter os dados do Transmission. Você precisa do "
-"Transmission 1.9 ou superior."
 
 #: ../Transmission/Transmission:253
 msgid "Progress:"
@@ -1907,7 +1887,6 @@ msgstr ""
 #: ../Transmission/Transmission:407
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
-"Você tem que habilitar o cliente Web nas configurações do Transmission."
 
 #: ../Transmission/messages:108
 msgid ""
@@ -1922,11 +1901,11 @@ msgstr ""
 
 #: ../Twitter/Twitter:117
 msgid "Oh, dear, your timeline is empty :-("
-msgstr "Oh, sua linha do tempo está vazia :-("
+msgstr ""
 
 #: ../Twitter/Twitter:185
 msgid "Oh, dear, you do not have direct messages :-("
-msgstr "Oh, você não tem mensagens diretas :-("
+msgstr ""
 
 #: ../Twitter/Twitter:199
 msgid "Followers"
@@ -1938,17 +1917,17 @@ msgstr ""
 
 #: ../Twitter/Twitter:199 ../Twitter/Twitter:353
 msgid "Tweets"
-msgstr "Tweets"
+msgstr ""
 
 #: ../Twitter/Twitter:220
 #, python-format
 msgid "%s, send a tweet"
-msgstr "%s, envie um tweet"
+msgstr ""
 
 #: ../Twitter/Twitter:222
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
-msgstr "Seu tweet tem mais de %d caracteres, por favor, deixe-o mais curto"
+msgstr ""
 
 #: ../Twitter/Twitter:235
 #, python-format
@@ -1960,7 +1939,7 @@ msgstr ""
 #: ../Twitter/Twitter:239
 #, python-format
 msgid "%s, retweet?"
-msgstr "%s, retweetar?"
+msgstr ""
 
 #: ../Twitter/Twitter:253
 msgid ""
@@ -2003,7 +1982,7 @@ msgstr ""
 
 #: ../Twitter/Twitter:309
 msgid "Successfully connected with Twitter"
-msgstr "Conectado ao Twitter com sucesso"
+msgstr ""
 
 #: ../Twitter/Twitter:312
 msgid "Successfully connected with Identi.ca"
@@ -2011,25 +1990,25 @@ msgstr ""
 
 #: ../Twitter/Twitter:329
 msgid "Direct messages"
-msgstr "Mensagens diretas"
+msgstr ""
 
 #: ../Twitter/Twitter:331
 #, python-format
 msgid "New direct messages (%d)"
-msgstr "Novas mensagens diretas (%d)"
+msgstr ""
 
 #: ../Twitter/Twitter:344
 msgid "Info"
-msgstr "Informação"
+msgstr ""
 
 #: ../Twitter/Twitter:355
 #, python-format
 msgid "New tweets (%d)"
-msgstr "Novos tweets (%d)"
+msgstr ""
 
 #: ../Twitter/Twitter:369
 msgid "My tweets"
-msgstr "Meus tweets"
+msgstr ""
 
 #: ../Twitter/Twitter:387
 msgid "Add account"
@@ -2037,7 +2016,7 @@ msgstr ""
 
 #: ../Twitter/Twitter:395 ../WebSearch/messages:111
 msgid "Twitter"
-msgstr "Twitter"
+msgstr ""
 
 #: ../Twitter/Twitter:405
 msgid "Identi.ca"
@@ -2045,15 +2024,15 @@ msgstr ""
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
-msgstr "Tamanho do emblema que mostra o número de tweets e mensanges:"
+msgstr ""
 
 #: ../Twitter/messages:95
 msgid "Small"
-msgstr "Pequeno"
+msgstr ""
 
 #: ../Twitter/messages:99
 msgid "Large"
-msgstr "Grande"
+msgstr ""
 
 #: ../Twitter/messages:101
 msgid "Notifications"
@@ -2104,77 +2083,75 @@ msgstr ""
 
 #: ../WebSearch/messages:91
 msgid "Search engine :"
-msgstr "Máquina de busca:"
+msgstr ""
 
 #: ../WebSearch/messages:93
 msgid "Google"
-msgstr "Google"
+msgstr ""
 
 #: ../WebSearch/messages:95
 msgid "Bing"
-msgstr "Bing"
+msgstr ""
 
 #: ../WebSearch/messages:97
 msgid "Yahoo!"
-msgstr "Yahoo!"
+msgstr ""
 
 #: ../WebSearch/messages:99
 msgid "Teoma"
-msgstr "Teoma"
+msgstr ""
 
 #: ../WebSearch/messages:101
 msgid "Youtube"
-msgstr "Youtube"
+msgstr ""
 
 #: ../WebSearch/messages:103
 msgid "Webshots"
-msgstr "Webshots"
+msgstr ""
 
 #: ../WebSearch/messages:105
 msgid "Flickr"
-msgstr "Flickr"
+msgstr ""
 
 #: ../WebSearch/messages:107
 msgid "Wikipedia"
-msgstr "Wikipédia"
+msgstr ""
 
 #: ../WebSearch/messages:109
 msgid "ImageShack"
-msgstr "ImageShack"
+msgstr ""
 
 #: ../WebSearch/messages:113
 msgid "Digg"
-msgstr "Digg"
+msgstr ""
 
 #: ../WebSearch/messages:115
 msgid "in sub-icons."
-msgstr "nos sub-ícones."
+msgstr ""
 
 #: ../WebSearch/messages:117
 msgid "Maximum number of results shown :"
-msgstr "Número máximo de resultados mostrados:"
+msgstr ""
 
 #: ../WebSearch/messages:119
 msgid "Show the current page as the icon label ?"
-msgstr "Mostrar a página atual como uma etiqueta no ícone?"
+msgstr ""
 
 #: ../WebSearch/messages:121
 msgid ""
 "Show the description of the result instead of its URL in the sub-icons ?"
-msgstr "Mostrar, no sub-ícone, a descrição do resultado ao invés da URL?"
+msgstr ""
 
 #: ../WebSearch/messages:123
 msgid ""
 "for slow connections, disable will result in significantly faster fetching."
-msgstr "para conexões lentas, desabilitar resultará em busca mais rápida."
+msgstr ""
 
 #: ../WebSearch/messages:125
 msgid ""
 "Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
 "and Digg searches ?"
 msgstr ""
-"Habilitar previsão com thumb para buscas no Youtube, Webshots, Flickr, "
-"ImageShack, Twitter, and Digg?"
 
 #: ../WebSearch/messages:128
 msgid ""
@@ -2209,12 +2186,11 @@ msgstr ""
 
 #: ../Xchat/Xchat:265
 msgid "Channels"
-msgstr "Canais"
+msgstr ""
 
 #: ../Xchat/Xchat:269
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
-"Alterne de canal que você mandará a mensagem, clicando com o botão do meio."
 
 #: ../Xchat/messages:122
 msgid ""
@@ -2392,44 +2368,44 @@ msgstr ""
 
 #: ../YoutubeDl/messages:159
 msgid "Ignore errors during download and continue processing."
-msgstr "Ignorar erros durante o processo de download e continuar."
+msgstr ""
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr "Ignorar erros (--ignorar-erros)?"
+msgstr ""
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
-msgstr "Se o arquivo existir, não substitua."
+msgstr ""
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr "Não substituir (--não-substituir)?"
+msgstr ""
 
 #: ../YoutubeDl/messages:167
 msgid ""
 "Use the title of the video in the file name used to download the video"
-msgstr "Usar o título do vídeo para nomear o arquivo baixado."
+msgstr ""
 
 #: ../YoutubeDl/messages:169
 msgid "Use title (--title)?"
-msgstr "Usar título (--título)?"
+msgstr ""
 
 #: ../YoutubeDl/messages:171
 msgid "Which download format to use:"
-msgstr "Escolha o formato do vídeo:"
+msgstr ""
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr "Especifique o formato do vídeo"
+msgstr ""
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
-msgstr "Limitar a qualidade máxima"
+msgstr ""
 
 #: ../YoutubeDl/messages:177
 msgid "Download default format"
-msgstr "Baixar no formato padrão"
+msgstr ""
 
 #: ../YoutubeDl/messages:179
 msgid "Specify the video format (quality) in which to download the video."
@@ -2473,51 +2449,49 @@ msgstr ""
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr "Vídeo 3GP"
+msgstr ""
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
-msgstr "Limite máximo da qualidade dos vídeos para download"
+msgstr ""
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr "Qualidade máxima (--max-qualidade):"
+msgstr ""
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
-msgstr "Baixar no formato padrão"
+msgstr ""
 
 #: ../YoutubeDl/messages:225
 msgid ""
 "Some videos require an account to be downloaded, mostly because they're "
 "flagged as mature content."
 msgstr ""
-"Alguns vídeos requerem uma conta para ser baixado, principalmente porque "
-"estão sinalizados como conteúdo adulto."
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr "Digite seu Nome de usuário e Senha para continuar a autenticação"
+msgstr ""
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr "Usuário/Senha"
+msgstr ""
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
-msgstr "Digite o Nome de usuário e Senha do seu canal youtube"
+msgstr ""
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr "Nome do Usuário"
+msgstr ""
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
-msgstr "Este é seu Nome de usuário, digite a senha"
+msgstr ""
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr "Senha"
+msgstr ""
 
 #: ../YoutubeDl/messages:240
 msgid ""
