@@ -205,6 +205,10 @@ class Applet(CDApplet):
 		else:
 			self.config['duration'] = 4
 		self.config['history'] = keyfile.getint('Configuration', 'history')
+		channels = keyfile.get('Configuration', 'mute channels').split(';')
+		for channel in channels:
+			self.pChanSilentMode[channel] = True
+		self.bSilentMode = keyfile.getboolean('Configuration', 'mute all')
 	
 	def begin(self):
 		# connect to xchat
