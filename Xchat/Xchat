@@ -59,6 +59,8 @@ class Applet(CDApplet):
 		self.bHasFocus = False
 		self.cClass = ''
 		self.bSilentMode = False
+		self.pChanSilentMode = {}
+		self.pChansList = []
 		CDApplet.__init__(self)
 	
 	### Private Methods ###
@@ -107,6 +109,13 @@ class Applet(CDApplet):
 			self.icon.SetQuickInfo(format(n,"d"))
 		else:
 			self.icon.SetQuickInfo('')
+
+	def get_silent_mode_for_channel (self, cName, bCheckWithSharp):
+		if cName in self.pChanSilentMode:
+			return self.pChanSilentMode[cName]
+		if bCheckWithSharp and '#'+cName in self.pChanSilentMode:
+			return self.pChanSilentMode['#'+cName]
+		return False
 	
 	#~ def list_channels_and_users(self):
 		#~ channels = self.xchat.ListGet ("channels")
@@ -146,11 +155,12 @@ class Applet(CDApplet):
 			return
 		if len(words) < 2:
 			return
-		msg = words[1]
 		#print(">>> PRINT :" + msg)
 		if not self.bHasFocus:  # si l'utilisateur n'est pas devant xchat, on le notifie du message.
-			if not self.bSilentMode:
+			self.xchat.SetContext(ctx_id) # needed for GetInfo
+			if not self.bSilentMode and not self.get_silent_mode_for_channel (self.xchat.GetInfo("channel"), True):
 				if self.config['channel message']:
+					msg = words[0][3:] + ": " + words[1] # author (without strange chars): msg
 					if self.iCurrentMsg != -1:
 						msg = self.pMsgList[self.iCurrentMsg]+"\n------------------------------------------\n"+msg
 					self.icon.ShowDialog(msg,max(2,len(msg)/self.config['duration']))
@@ -273,28 +283,48 @@ class Applet(CDApplet):
 			"menu" : 0,
 			"id"   : 1,
 			"tooltip" : _("Switch the channel you'll send message to with the middle-click.")}]
+
+		items.append({"type" : 1,  # 1 = sub-menu
+			"label": _("Silent mode"),
+			"icon" : "gtk-disconnect",
+			"menu" : 0,
+			"id"   : 2,
+			"tooltip" : _("Switch the applet to silent mode (no pop-up on new message).")})
 		
-		chans = self.list_channels()
-		i=2
-		for c in chans:
+		self.pChansList = self.list_channels()
+		i=3
+		for c in self.pChansList:
 			items.append({"label": c, "id" : i, "menu" : 1})
 			i += 1
-		
+
 		items.append({"type" : 3,  # 3 = check-box
-			"label": _("Silent mode"),
-			"menu" : 0,
-			"id"   : 100,
+			"label": _("All channels"),
+			"menu" : 2,
+			"id"   : i,
 			"state": self.bSilentMode,
 			"tooltip" : _("Switch the applet to silent mode (no pop-up on new message).")})
+
+		for c in self.pChansList:
+			i += 1
+			items.append({"type" : 3,  # 3 = check-box
+				"label": c,
+				"menu" : 2,
+				"id"   : i,
+				"state": self.get_silent_mode_for_channel (c, False)})
+
 		self.icon.AddMenuItems(items)
 	
 	def on_menu_select(self,iNumEntry):
-		if iNumEntry == 100:
+		iSilentId = len (self.pChansList) + 2 # two submenu before
+		if iNumEntry == iSilentId: # silent all channels
 			self.bSilentMode = not self.bSilentMode
+		elif iNumEntry > iSilentId: # silent a channel
+			channel = ''
+			channel = self.pChansList[iNumEntry - iSilentId - 2]
+			self.pChanSilentMode[channel] = not self.get_silent_mode_for_channel (channel, False)
 		else:
-			chans = self.list_channels()
 			channel=''
-			channel=chans[iNumEntry-2]
+			channel=self.pChansList[iNumEntry-3]
 			#print(">>> channel " + channel)
 			ctx = self.xchat.FindContext('', channel)
 			if ctx == 0:
