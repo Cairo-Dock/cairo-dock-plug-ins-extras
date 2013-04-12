@@ -48,7 +48,7 @@ class Menu(gtk.Menu):
         # get all mail from inbox
         for mail in inbox:
             # check if mail has subject / title
-            if len(mail['title']) == 0:
+            if mail['title'] == None or len(mail['title']) == 0:
                 mail['title'] = '<i>(No Subject)</i>'
             # create markups
             string = '<b>'+mail['author']+':</b>\n'+mail['title']
@@ -107,7 +107,6 @@ class Gmail(CDApplet):
         """
 
         self.config['notify'] = keyfile.getboolean('Configuration', 'NOTIFY')
-        self.config['when'] = keyfile.get('Configuration', 'WHEN')
         self.config['anim'] = keyfile.getboolean('Configuration', 'ANIM')
         self.config['how'] = keyfile.get('Configuration', 'HOW')
         self.config['dia'] = keyfile.getboolean('Configuration', 'DIA')
@@ -156,7 +155,7 @@ class Gmail(CDApplet):
             return
 
         # if so process the data
-        account = base64.b64decode(sub.strip('\n')).decode().split('\n')
+        account = base64.b64decode(sub.strip('\n').encode('ascii')).decode().split('\n')
 
         # check if the data is correct
         if len(account) != 2:
@@ -200,7 +199,7 @@ class Gmail(CDApplet):
             # open, encode and write to subscription file
             file = open(self.subpath, 'w')
             file.write(base64.b64encode(str(self.account['username']+ \
-            '\n'+self.account['password'])))
+            '\n'+self.account['password']).encode('ascii')))
             file.close()
             # run subscription check as double check
             self.check_subscription()
@@ -209,6 +208,13 @@ class Gmail(CDApplet):
     def check_mail_loop(self):
         self.check_mail()
         return True
+    
+    def new_mail(self):
+        try:
+          link = 'https://mail.google.com/mail/#compose'
+          webbrowser.open(link)
+        except webbrowser.Error:
+          os.popen('x-www-browser '+link)
     
     def check_mail(self, animate=False):  # animate is False by default, to not stop a demand of attention
 
@@ -442,15 +448,9 @@ class Gmail(CDApplet):
             return
 
         # check whether conditions are met
-        if self.config['when'] == 'always':
-            pass
-        elif self.config['when'] == 'different' and self.account['diff'] != 0:
-            pass
-        elif self.config['when'] == 'superior' and self.account['diff'] > 0:
-            pass
-        else:
+        if self.account['diff'] <= 0:
             return
-
+        
         # check whether user wants an effect on the icon
         if self.config['anim'] == True:
             self.icon.DemandsAttention(True, self.config['how'])
@@ -536,6 +536,7 @@ class Gmail(CDApplet):
         message_middle_click = _("middle-click")
         message_check_label = _("Check inbox now")
         message_check_tooltip = _("Check Gmail inbox now if you can't wait.")
+        message_new_mail = _("Write a mail")
         self.icon.AddMenuItems([{"widget-type" : CDApplet.MENU_ENTRY,
         "label": message_add_label,
         "icon" : "gtk-add",
@@ -548,7 +549,12 @@ class Gmail(CDApplet):
         "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 2,
         "sensitive" : (len(self.account) > 0),
-        "tooltip" : message_check_tooltip}])
+        "tooltip" : message_check_tooltip},
+        {"widget-type" : CDApplet.MENU_ENTRY,
+        "label": message_new_mail,
+        "icon" : "gtk-new",
+        "menu" : CDApplet.MAIN_MENU_ID,
+        "id" : 3}])
 
     def on_menu_select(self, iNumEntry):
 
@@ -560,9 +566,8 @@ class Gmail(CDApplet):
             self.add_subscription('username')
         elif iNumEntry == 2:
             self.check_mail(True)
-        else:
-            #should not happen. Kept in case more menu-items need be appended.
-            pass
+        elif iNumEntry == 3:
+            self.new_mail()
 
     def on_click(self, iState):
 

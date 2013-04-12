@@ -183,7 +183,7 @@ class Applet(CDApplet):
 	
 	def get_config(self,keyfile):
 		self.config['channel message'] = keyfile.getboolean('Configuration', 'channel message')
-		self.config['animation type'] = keyfile.get('Configuration', 'animation type')
+		self.config['animation type'] = keyfile.getint('Configuration', 'animation type')
 		self.config['msg animation'] = keyfile.get('Configuration', 'msg animation')
 		if self.config['msg animation'] == '':
 			self.config['msg animation'] = 'default'
