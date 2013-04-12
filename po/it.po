@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
 "POT-Creation-Date: 2013-02-28 01:22+0000\n"
-"PO-Revision-Date: 2013-02-28 07:18+0000\n"
-"Last-Translator: Fabounet <fabounet03@gmail.com>\n"
+"PO-Revision-Date: 2013-03-26 12:17+0000\n"
+"Last-Translator: Wonderfulheart <Unknown>\n"
 "Language-Team: Italian <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-01 04:53+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-03-27 04:45+0000\n"
+"X-Generator: Launchpad (build 16540)\n"
 "Language: it\n"
 
 #: ../GnoMenu/GnoMenu:100
@@ -92,7 +92,7 @@ msgstr "Nome dell'icona come apparirà sulla didascalia nella dock:"
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Predefinito"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -569,7 +569,7 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
-"Questa applet ti permette di avere il <b>Menu GnoMenu</b> nella tua dock.\n"
+"Quest'applet ti permette di avere il <b>Menu GnoMenu</b> nella tua dock.\n"
 "Clic sull'icona per avere il menu a comparsa.\n"
 "Clic destro del mouse ti consente di accedere alle preferenze della "
 "finestra.\n"
@@ -636,7 +636,7 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
-"Questa applet ti permette di avere il <b>Menu Cardapio</b> nella tua dock.\n"
+"Quest'applet ti permette di avere il <b>Menu Cardapio</b> nella tua dock.\n"
 "Clic sull'icona per avere il menu a comparsa.\n"
 "Clic destro del mouse ti consente di modificare i menu. <u>Nota:</u> "
 "necessita dell'installazione di Cardapio."
@@ -705,7 +705,7 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Questa applet ti permette di <b>controllare Deluge</b> dalla Dock (Necessita "
+"Quest'applet ti permette di <b>controllare Deluge</b> dalla Dock (Necessita "
 "dell'installazione di <i>deluged</i>, il quale è un demone usato per "
 "comunicare tra la Dock e Deluge).\n"
 "Puoi visualizzare la <b>velocità di scaricamento</b> sull'icona.\n"
@@ -939,42 +939,44 @@ msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
+"Impossibile connettersi a GTG :-(\n"
+"Desideri installarlo?"
 
 #: ../GTG/GTG:161
 msgid "Couldn't launch "
-msgstr ""
+msgstr "Impossibile avviare "
 
 #: ../GTG/GTG:166
 msgid "Connecting to gtg, please wait ..."
-msgstr ""
+msgstr "Connessione a gtg, attendi per favore ..."
 
 #: ../GTG/GTG:203
 msgid "Create a new task"
-msgstr ""
+msgstr "Crea una nuova attività"
 
 #: ../GTG/GTG:217 ../GTG/GTG:253
 msgid "Open category's task"
-msgstr ""
+msgstr "Apri un'attività della categoria"
 
 #: ../GTG/GTG:221 ../GTG/GTG:257
 msgid "Create post-it from this category"
-msgstr ""
+msgstr "Crea un post-it da questa categoria"
 
 #: ../GTG/GTG:300 ../GTG/GTG:302 ../GTG/GTG:304
 msgid "The task: "
-msgstr ""
+msgstr "L'attività: "
 
 #: ../GTG/GTG:300
 msgid " is due today"
-msgstr ""
+msgstr " scade oggi"
 
 #: ../GTG/GTG:302
 msgid " is due NOW"
-msgstr ""
+msgstr " scade ADESSO"
 
 #: ../GTG/GTG:304
 msgid " was due on "
-msgstr ""
+msgstr " è scaduta il "
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
@@ -1273,7 +1275,7 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Questa applet ti permette di <b>controllare KTorrent</b> dalla Dock.\n"
+"Quest'applet ti permette di <b>controllare KTorrent</b> dalla Dock.\n"
 "Puoi visualizzare la <b>velocità di scaricamento</b> sull'icona.\n"
 "<b>Clic centrale del mouse</b> sull'icona restituisce le informazioni sui "
 "torrent attuali (puoi associare una scorciatoia per questa azione).\n"
@@ -1296,7 +1298,7 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
-"Questa applet ti permette di avere il <b>Menu Lancelot</b> nella tua dock.\n"
+"Quest'applet ti permette di avere il <b>Menu Lancelot</b> nella tua dock.\n"
 "Clic sull'icona per avere il menu a comparsa.\n"
 "Clic destro del mouse ti consente di accedere alle preferenze della "
 "finestra.\n"
@@ -1332,7 +1334,7 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
-"Questa applet ti permette di avere il <b>Menu Mint</b> nella tua dock.\n"
+"Quest'applet ti permette di avere il <b>Menu Mint</b> nella tua dock.\n"
 "Clic sull'icona per avere il menu a comparsa.\n"
 "Clic destro del mouse ti consente di accedere alle preferenze della "
 "finestra.\n"
@@ -1412,23 +1414,23 @@ msgstr "Durata delle notifiche:"
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
 msgid "Animate the icon when receiving channel messages"
-msgstr ""
+msgstr "Anima l'icona alla ricezione di messaggi dal canale"
 
 #: ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid "Simple animation"
-msgstr ""
+msgstr "Animazione semplice"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
-msgstr ""
+msgstr "Richiesta di attenzione"
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
 msgid "Animation of the icon"
-msgstr ""
+msgstr "Animazione dell'icona"
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid ""
@@ -1955,79 +1957,79 @@ msgstr ""
 
 #: ../Transmission/Transmission:253
 msgid "Progress:"
-msgstr ""
+msgstr "Avanzamento:"
 
 #: ../Transmission/Transmission:256
 msgid "paused"
-msgstr ""
+msgstr "in pausa"
 
 #: ../Transmission/Transmission:258
 msgid "checking"
-msgstr ""
+msgstr "verifica"
 
 #: ../Transmission/Transmission:260
 msgid "waiting for check"
-msgstr ""
+msgstr "in attesa di verifica"
 
 #: ../Transmission/Transmission:262
 msgid "seeding"
-msgstr ""
+msgstr "seeding"
 
 #: ../Transmission/Transmission:266
 msgid "Time remaining:"
-msgstr ""
+msgstr "Tempo rimanente:"
 
 #: ../Transmission/Transmission:272
 msgid "days"
-msgstr ""
+msgstr "giorni"
 
 #: ../Transmission/Transmission:274 ../Transmission/Transmission:280
 msgid "h"
-msgstr ""
+msgstr "h"
 
 #: ../Transmission/Transmission:282
 msgid "min"
-msgstr ""
+msgstr "min"
 
 #: ../Transmission/Transmission:283
 msgid "sec"
-msgstr ""
+msgstr "sec"
 
 #: ../Transmission/Transmission:286
 msgid "Time remaining: Unknown"
-msgstr ""
+msgstr "Tempo rimanente: Sconosciuto"
 
 #: ../Transmission/Transmission:288
 msgid "Finished"
-msgstr ""
+msgstr "Completato"
 
 #: ../Transmission/Transmission:292
 msgid "Number of peers:"
-msgstr ""
+msgstr "Numero di peer:"
 
 #: ../Transmission/Transmission:292
 msgid "and seeds:"
-msgstr ""
+msgstr "e seed:"
 
 #: ../Transmission/Transmission:295
 msgid "Ratio:"
-msgstr ""
+msgstr "Proporzioni:"
 
 #: ../Transmission/Transmission:299
 msgid "No torrent in the list"
-msgstr ""
+msgstr "Nessun torrent nell'elenco"
 
 #: ../Transmission/Transmission:304
 msgid "Total amount of data:"
-msgstr ""
+msgstr "Ammontare totale dei dati:"
 
 #: ../Transmission/Transmission:313
 msgid "Received:"
-msgstr ""
+msgstr "Ricevuti:"
 
 #: ../Transmission/Transmission:321
 msgid "Sent:"
-msgstr ""
+msgstr "Inviati:"
 
 #: ../Transmission/Transmission:407
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2043,7 +2045,7 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Questa applet ti permette di <b>controllare Transmission</b> dalla Dock.\n"
+"Quest'applet ti permette di <b>controllare Transmission</b> dalla Dock.\n"
 "Puoi visualizzare la <b>velocità di scaricamento</b> sull'icona.\n"
 "<b>Clic centrale del mouse</b> sull'icona restituisce le informazioni sui "
 "torrent attuali (puoi associare una scorciatoia per questa azione).\n"
@@ -2062,11 +2064,11 @@ msgstr "Oh, caro/a, non hai messaggi diretti :-("
 
 #: ../Twitter/Twitter:199
 msgid "Followers"
-msgstr ""
+msgstr "Seguaci"
 
 #: ../Twitter/Twitter:199
 msgid "Friends"
-msgstr ""
+msgstr "Amici"
 
 #: ../Twitter/Twitter:199 ../Twitter/Twitter:353
 msgid "Tweets"
@@ -2112,6 +2114,8 @@ msgid ""
 "The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
+"L'applet ha bisogno del tuo nickname, e di una autorizzazione\n"
+"di consenso alla connesione al tuo account %s"
 
 #: ../Twitter/Twitter:267
 #, python-format
@@ -2201,7 +2205,7 @@ msgstr "Grande"
 
 #: ../Twitter/messages:101
 msgid "Notifications"
-msgstr ""
+msgstr "Notifiche"
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
@@ -2213,7 +2217,7 @@ msgstr "L'applet dovrebbe eseguire un suono ad ogni nuova notificazione?"
 
 #: ../Twitter/messages:107
 msgid "Play a sound"
-msgstr ""
+msgstr "Riproduci un suono"
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
@@ -2221,7 +2225,7 @@ msgstr "L'applet dovrebbe animare l'icona ad ogni nuova notificazione?"
 
 #: ../Twitter/messages:111
 msgid "Animate the icon"
-msgstr ""
+msgstr "Anima l'icona"
 
 #: ../Twitter/messages:113
 msgid "Which animation should apply to the icon?"
@@ -2779,6 +2783,3 @@ msgstr ""
 "Se non ci sono video nella lista, cliccando con il tasto sinistro sull'icona "
 "ti permette di inserire una URL. Altrimenti sarà visualizzato l'elenco delle "
 "URL."
-
-#~ msgid "%s, write a reply to %s"
-#~ msgstr "%s, scrivi una risposta a %s"

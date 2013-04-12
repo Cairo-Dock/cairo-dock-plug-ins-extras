@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
 "POT-Creation-Date: 2013-02-28 01:22+0000\n"
-"PO-Revision-Date: 2013-02-28 07:36+0000\n"
-"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"PO-Revision-Date: 2013-03-30 14:13+0000\n"
+"Last-Translator: Milan Slovák <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-01 04:53+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-03-31 05:31+0000\n"
+"X-Generator: Launchpad (build 16546)\n"
 "Language: sk\n"
 
 #: ../GnoMenu/GnoMenu:100
@@ -92,7 +92,7 @@ msgstr "Názov ikony, ktorá sa objaví na štítku v docku :"
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Predvolené"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -642,27 +642,27 @@ msgstr "Klávesová skratka na informáciu o torente"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
 msgid "Show as quick-info:"
-msgstr ""
+msgstr "Zobraziť ako rýchle info:"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Žiadne"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Rýchlosť sťahovania"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "Dokončené v percentách"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Percentá + počet aktívnych torentov"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Zobraziť v percentách ako ukazovateľ"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -693,23 +693,23 @@ msgstr "Čas medzi kontrolou dvoch systémových súborov:"
 
 #: ../DiskFree/messages:100
 msgid "View available file system's free space."
-msgstr ""
+msgstr "Zobraziť voľné miesto v súborovom systéme."
 
 #: ../Gmail/Gmail:137 ../Gmail/Gmail:143 ../Gmail/Gmail:152
 msgid "There is no subscription to any Gmail account."
-msgstr ""
+msgstr "Neexistuje žiadny predvolený Gmail účet."
 
 #: ../Gmail/Gmail:179
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Prosím vložte používateľské meno pre Gmail:"
 
 #: ../Gmail/Gmail:187
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Prosím vložte heslo pre Gmail:"
 
 #: ../Gmail/Gmail:263
 msgid "WARNING: there was an error reading XML content."
-msgstr ""
+msgstr "UPOZORNENIE: došlo ku chybe počas čítania obsahu XML."
 
 #: ../Gmail/Gmail:288
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
@@ -726,16 +726,16 @@ msgstr ""
 
 #: ../Gmail/Gmail:324
 msgid "WARNING: Gmail username or password may be wrong."
-msgstr ""
+msgstr "UPOZORNENIE: Gmail používateľské meno alebo heslo nie je správne."
 
 #: ../Gmail/Gmail:431
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "Máte %s nových správ"
 
 #: ../Gmail/Gmail:433
 msgid "You have 1 new email"
-msgstr ""
+msgstr "Máte jednu novú správu"
 
 #: ../Gmail/Gmail:493
 msgid "Sorry, there was no input!"
@@ -743,11 +743,11 @@ msgstr ""
 
 #: ../Gmail/Gmail:502
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Pridať alebo zmeniť odoberanie"
 
 #: ../Gmail/Gmail:503
 msgid "Use this to add or change your Gmail account details."
-msgstr ""
+msgstr "Slúži na pridávanie alebo zmenu Gmail účtu."
 
 #: ../Gmail/Gmail:505
 msgid "Check inbox now"
@@ -886,6 +886,8 @@ msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
+"Nedá sa pripojiť ku GTG :-(\n"
+"Je nainštalovaný?"
 
 #: ../GTG/GTG:161
 msgid "Couldn't launch "
@@ -897,11 +899,11 @@ msgstr ""
 
 #: ../GTG/GTG:203
 msgid "Create a new task"
-msgstr ""
+msgstr "Vytvoriť novú úlohu"
 
 #: ../GTG/GTG:217 ../GTG/GTG:253
 msgid "Open category's task"
-msgstr ""
+msgstr "Otvoriť kategórie úloh"
 
 #: ../GTG/GTG:221 ../GTG/GTG:257
 msgid "Create post-it from this category"
@@ -909,7 +911,7 @@ msgstr ""
 
 #: ../GTG/GTG:300 ../GTG/GTG:302 ../GTG/GTG:304
 msgid "The task: "
-msgstr ""
+msgstr "Úloha: "
 
 #: ../GTG/GTG:300
 msgid " is due today"
@@ -2542,6 +2544,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "%s, write a reply to %s"
-#~ msgstr "%s, napíšte odpoveď na %s"

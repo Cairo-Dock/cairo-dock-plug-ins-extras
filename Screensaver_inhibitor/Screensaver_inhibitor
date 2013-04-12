@@ -60,6 +60,12 @@ class Applet(CDApplet):
 			self.ss_method = "xscreensaver"
 		elif 'org.freedesktop.ScreenSaver' in bus.list_names():  # the standard
 			self.ss_method = "Freedesktop"
+			self.fd_object = '/org/freedesktop/ScreenSaver'
+			proxy = bus.get_object('org.freedesktop.ScreenSaver', self.fd_object)
+			iface = dbus.Interface(proxy, "org.freedesktop.DBus.Introspectable")
+			self.fd_is_new_object = 'Inhibit' in iface.Introspect()
+			if not self.fd_is_new_object:
+				self.fd_object = '/ScreenSaver' # old object path
 		elif 'org.gnome.SessionManager' in bus.list_names():  # then the gnome things; this one is present on the bus even if we don't use it.
 			self.ss_method = "Gnome"
 			self.pm_method = "Gnome"
@@ -114,7 +120,9 @@ class Applet(CDApplet):
 				self.ss_cookie = proxy.Inhibit("Cairo-Dock", dbus.UInt32(0), "Disable the screensaver", dbus.UInt32(8))
 		elif self.ss_method == "Freedesktop":
 			bus = dbus.SessionBus()
-			proxy = bus.get_object('org.freedesktop.ScreenSaver', '/ScreenSaver')
+			proxy = bus.get_object('org.freedesktop.ScreenSaver', self.fd_object)
+			if self.fd_is_new_object:
+				proxy = dbus.Interface(proxy, "org.freedesktop.ScreenSaver") ## try to do that in C language :D
 			if self.inhibited:
 				if self.ss_cookie != None:
 					proxy.UnInhibit(self.ss_cookie)
