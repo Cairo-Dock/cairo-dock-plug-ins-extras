@@ -33,7 +33,7 @@ except:
 
 
 def isProcessRunning(app):
-	result = popen("ps euf | grep %s | grep -v grep" % app).read().rstrip()
+	result = popen("ps -u $USER -wwo pid,cmd | grep %s | grep -v grep" % app).read().rstrip()
 	return (result != None and result != "")
 
 ####################
