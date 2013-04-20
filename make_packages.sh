@@ -29,6 +29,12 @@ else
 		# place it in its folder.
 		mkdir "FTP/$f"
 		mv "$f.tar.gz" "FTP/$f"
+
+		# add preview
+		cp "$f/preview" "FTP/$f"
+
+		# add description
+		grep "^description *= *" "$f/auto-load.conf" | sed "s/.*= *//g" > "FTP/$f/readme"
 	done;
 	
 	# build language tree
