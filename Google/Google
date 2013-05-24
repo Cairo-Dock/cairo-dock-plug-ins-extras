@@ -21,11 +21,11 @@
 # Left-click to open the result in the default Web Browser.
 
 try:
-	import gtk
-	import gobject
+    import gtk
+    import gobject
 except:
-	from gi.repository import Gtk as gtk
-	from gi.repository import GObject as gobject
+    from gi.repository import Gtk as gtk
+    from gi.repository import GObject as gobject
 
 import dbus, os, webbrowser
 from dbus.mainloop.glib import DBusGMainLoop
@@ -166,10 +166,10 @@ class Applet:
        	self.icon.SetQuickInfo(str(self.page_of_displayed_links))
 
     # Since the previous results are already stored in self.links, it is necessary just to 
-	# select its correct interval that starts with the first link of the previous page.
-	# An easier approach would be to query the engine again with page-1 but it would result
-	# more queries to the page, consequently it has some drawbacks such as increasing the 
-	# probability of forbidden mechanized access, more bandwith, etc.
+    # select its correct interval that starts with the first link of the previous page.
+    # An easier approach would be to query the engine again with page-1 but it would result
+    # more queries to the page, consequently it has some drawbacks such as increasing the 
+    # probability of forbidden mechanized access, more bandwith, etc.
     def fetch_previous_resulting_page(self):
         if self.page_of_displayed_links > 1:											# there is no previous page from the first one
             self.page_of_displayed_links -= 1										    # one page back
