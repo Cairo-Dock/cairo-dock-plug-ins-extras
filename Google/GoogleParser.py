@@ -23,8 +23,9 @@ class GoogleParser(SGMLParser):
     
     def end_h3(self):
         self.inside_h3_element = False
-        self.descriptions.append(self.current_description_piece)                    # adiciona o conteudo completo da tag
-        self.current_description_piece = ""                                         # reinicia o armazenador do conteudo
+        if len(self.urls) > len(self.descriptions) or self.current_description_piece: # add a description only if there is a url which doesn't have a description and if this description is not empty
+            self.descriptions.append(self.current_description_piece)                  # adiciona o conteudo completo da tag
+            self.current_description_piece = ""                                       # reinicia o armazenador do conteudo
 
     def start_a(self, attrs):
         if self.inside_h3_element:
