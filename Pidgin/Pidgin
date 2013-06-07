@@ -291,7 +291,7 @@ class Applet(CDApplet):
 	def on_buddy_typing_stopped(self, account,name):
 		# print ">>> buddy stopped typing : ",name
 		#self.set_status_icon()
-		self.icon.SetEmblem(None, CDApplet.EMBLEM_TOP_LEFT)  # remove the emblem at the top left position
+		self.icon.SetEmblem("", CDApplet.EMBLEM_TOP_LEFT)  # remove the emblem at the top left position
 	
 	#def on_buddy_icon_changed(self, name):
 		## print ">>> buddy icon changed : ",name
