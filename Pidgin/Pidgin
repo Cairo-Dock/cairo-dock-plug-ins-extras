@@ -119,9 +119,12 @@ class Applet(CDApplet):
 		convs = self.purple.PurpleGetConversations()  # PurpleGetIms, PurpleGetChats
 		for conv in convs:
 			if conv != exception:
-				count = self.purple.PurpleConversationGetData(conv, "unseen-count")
-				if count and count > 0:
-					n += count
+				try:
+					count = self.purple.PurpleConversationGetData(conv, "unseen-count")
+					if count and count > 0:
+						n += count
+				except:
+					pass
 		return n
 	
 	def set_nb_unread_msg(self,n):
