@@ -11,11 +11,12 @@ class Engine
 	require './lib/Link.rb'
 	require './lib/Exceptions.rb'
 
-	attr_accessor :name, :stats, :links, :base_url, :query_url
+	attr_accessor :name, :stats, :links, :base_url, :query_url, :user_agent
 
 	def initialize
 		self.links =[]
 		self.stats = ""
+		self.user_agent = "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11"
 	end
 
 	def connect

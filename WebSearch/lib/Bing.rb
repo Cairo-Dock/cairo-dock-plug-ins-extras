@@ -16,12 +16,12 @@ class Bing < Engine
 	# Fetch links from Bing. Since Bing does not provide an in-url way to fetch more links than the 10
 	# as Google does (&num=amount_to_fetch), this method will be called every time that 10 new results need to be shown
 	def retrieve_links(query, offset = 1)
-		bing = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&first=#{offset}")))
+		bing = Nokogiri::HTML(open(URI.encode("#{self.query_url}#{query}&first=#{offset}"), "User-Agent" => self.user_agent))
 		self.stats = retrieve_bing_result_stats(bing, query)
-		(bing/"h3").search("a[@onmousedown]").each do |raw_link|
-			url = raw_link['href']
-			description = raw_link.inner_text
-			self.links << Link.new(url, description)
+		(bing/"div[@class=sb_tlst]/h3/a").each do |raw_link|
+		  url = raw_link['href']
+		  description = raw_link.inner_text
+		  self.links << Link.new(url, description)
 		end
 		self.links
 	end
