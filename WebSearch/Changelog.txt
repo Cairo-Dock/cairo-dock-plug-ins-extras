@@ -1,3 +1,4 @@
+1.4.7: (June/15/2013): Fixed Flickr.
 1.4.6: (June/14/2013): Fixing Google and Bing search. Removed Webshots and Twitter. Webshots closed :( its doors and Twitter changed its search to something really hard to fetch.
 1.4.3: (January/31/2012): Fixing Youtube search. Fixing a problem when opening URLs.
 1.4.2: (November/17/2011): Simplifying the dependencies. Fixing Wikipedia search.
