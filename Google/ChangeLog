@@ -1,1 +1,8 @@
+0.0.4:(May/24/2013): (matttbe):
+	add a description only if there is a url which doesn't have a description and if this description is not empty
+	Parser: if the URL starts with '/url', we have a link formatted by Google
+	  parse this link again to remove all chars added/modified by Google
+	  if the link start with '/'(...), we have a link to another Google tool: e.g. '/images?q=' => added 'google.com' before this link
+	  + check if descriptions are not missing
+	Fixed typo with indentations (tab instead of spaces)
 0.0.1:(December/9/2010): Support to Google search.
