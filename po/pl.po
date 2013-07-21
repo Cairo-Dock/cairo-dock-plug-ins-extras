@@ -7,34 +7,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-02-28 01:22+0000\n"
 "PO-Revision-Date: 2012-04-01 20:37+0000\n"
 "Last-Translator: Andrzej Król <andrzej.krol@poczta.onet.eu>\n"
 "Language-Team: Polish <pl@li.org>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-03-01 04:53+0000\n"
 "X-Generator: Launchpad (build 16514)\n"
-"Language: pl\n"
 
-#: ../GnoMenu/GnoMenu:100
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+#: ../GnoMenu/GnoMenu:105
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu nie jest zainstalowane. Należy je zainstalować przed uruchomieniem "
 "tego apletu"
 
-#: ../GnoMenu/GnoMenu:138
+#: ../GnoMenu/GnoMenu:143
 msgid "GnoMenu's settings"
 msgstr "Ustawienia GnoMenu"
 
-#: ../GnoMenu/GnoMenu:141
+#: ../GnoMenu/GnoMenu:146
 msgid "About"
 msgstr "O programie"
 
-#: ../GnoMenu/GnoMenu:144 ../Cardapio/Cardapio:110 ../Lancelot/Lancelot:118
-#: ../MintMenu/MintMenu:160
+#: ../GnoMenu/GnoMenu:149 ../Cardapio/Cardapio:115 ../Lancelot/Lancelot:123
+#: ../MintMenu/MintMenu:165
 msgid "Edit Menus"
 msgstr "Edytuj menu"
 
@@ -140,7 +138,7 @@ msgid "Desired icon size for this applet"
 msgstr "Pożądany rozmiar ikony dla tego apletu"
 
 #: ../GnoMenu/messages:19 ../Calendar/messages:19 ../Cardapio/messages:19
-#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Gmail/messages:17
+#: ../Deluge/messages:19 ../DiskFree/messages:19 ../Gmail/messages:25
 #: ../Google/messages:19 ../GTG/messages:19 ../HDDtemperature/messages:15
 #: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
 #: ../MintMenu/messages:19 ../Moon/messages:19 ../Pidgin/messages:19
@@ -152,7 +150,7 @@ msgid "Desklet"
 msgstr ""
 
 #: ../GnoMenu/messages:21 ../Calendar/messages:21 ../Cardapio/messages:21
-#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Gmail/messages:19
+#: ../Deluge/messages:21 ../DiskFree/messages:21 ../Gmail/messages:27
 #: ../Google/messages:21 ../GTG/messages:21 ../KTorrent/messages:21
 #: ../Lancelot/messages:21 ../Liferea/messages:21 ../MintMenu/messages:21
 #: ../Pidgin/messages:21 ../Quote/messages:23 ../Translator/messages:21
@@ -162,7 +160,7 @@ msgid "Position"
 msgstr "Położenie"
 
 #: ../GnoMenu/messages:23 ../Calendar/messages:23 ../Cardapio/messages:23
-#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:21
+#: ../Deluge/messages:23 ../DiskFree/messages:23 ../Gmail/messages:29
 #: ../Google/messages:23 ../GTG/messages:23 ../KTorrent/messages:23
 #: ../Lancelot/messages:23 ../Liferea/messages:23 ../MintMenu/messages:23
 #: ../Pidgin/messages:23 ../Quote/messages:25 ../Translator/messages:23
@@ -177,7 +175,7 @@ msgstr ""
 "lewo klik."
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
-#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:23
+#: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:31
 #: ../Google/messages:25 ../GTG/messages:25 ../KTorrent/messages:25
 #: ../Lancelot/messages:25 ../Liferea/messages:25 ../MintMenu/messages:25
 #: ../Pidgin/messages:25 ../Quote/messages:27 ../Translator/messages:25
@@ -187,7 +185,7 @@ msgid "Lock position?"
 msgstr "Zablokować pozycję?"
 
 #: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
-#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:25
+#: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:33
 #: ../Google/messages:27 ../GTG/messages:27 ../GTG/messages:105
 #: ../KTorrent/messages:27 ../Lancelot/messages:27 ../Liferea/messages:27
 #: ../MintMenu/messages:27 ../Pidgin/messages:27 ../Quote/messages:29
@@ -201,7 +199,7 @@ msgstr ""
 "środkowy przycisk myszy lub Alt + lewo klik."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
-#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:27
+#: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:35
 #: ../Google/messages:29 ../GTG/messages:29 ../KTorrent/messages:29
 #: ../Lancelot/messages:29 ../Liferea/messages:29 ../MintMenu/messages:29
 #: ../Pidgin/messages:29 ../Quote/messages:31 ../Transmission/messages:29
@@ -211,7 +209,7 @@ msgid "Desklet dimensions (width x height):"
 msgstr "Wymiary deskleta (szerokość x wysokość):"
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
-#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:29
+#: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:37
 #: ../Google/messages:31 ../GTG/messages:31 ../KTorrent/messages:31
 #: ../Lancelot/messages:31 ../Liferea/messages:31 ../MintMenu/messages:31
 #: ../Pidgin/messages:31 ../Quote/messages:33 ../Transmission/messages:31
@@ -225,7 +223,7 @@ msgstr ""
 "klik. Ujemne wartości są liczone od prawej/dolnej części ekranu"
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
-#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:31
+#: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:39
 #: ../Google/messages:33 ../GTG/messages:33 ../KTorrent/messages:33
 #: ../Lancelot/messages:33 ../Liferea/messages:33 ../MintMenu/messages:33
 #: ../Pidgin/messages:33 ../Quote/messages:35 ../Transmission/messages:33
@@ -235,7 +233,7 @@ msgid "Desklet position (x, y):"
 msgstr "Pozycja deskleta (x, y):"
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
-#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:33
+#: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:41
 #: ../Google/messages:35 ../GTG/messages:35 ../KTorrent/messages:35
 #: ../Lancelot/messages:35 ../Liferea/messages:35 ../MintMenu/messages:35
 #: ../Pidgin/messages:35 ../Quote/messages:37 ../Translator/messages:35
@@ -249,7 +247,7 @@ msgstr ""
 "jego górnej lewej stronie."
 
 #: ../GnoMenu/messages:37 ../Calendar/messages:37 ../Cardapio/messages:37
-#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Gmail/messages:35
+#: ../Deluge/messages:37 ../DiskFree/messages:37 ../Gmail/messages:43
 #: ../Google/messages:37 ../GTG/messages:37 ../KTorrent/messages:37
 #: ../Lancelot/messages:37 ../Liferea/messages:37 ../MintMenu/messages:37
 #: ../Pidgin/messages:37 ../Quote/messages:39 ../Translator/messages:37
@@ -259,7 +257,7 @@ msgid "Rotation:"
 msgstr ""
 
 #: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
-#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:37
+#: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:45
 #: ../Google/messages:39 ../GTG/messages:39 ../KTorrent/messages:39
 #: ../Lancelot/messages:39 ../Liferea/messages:39 ../MintMenu/messages:39
 #: ../Pidgin/messages:39 ../Quote/messages:41 ../Translator/messages:39
@@ -269,7 +267,7 @@ msgid "Visibility"
 msgstr "Widoczność"
 
 #: ../GnoMenu/messages:41 ../Calendar/messages:41 ../Cardapio/messages:41
-#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Gmail/messages:39
+#: ../Deluge/messages:41 ../DiskFree/messages:41 ../Gmail/messages:47
 #: ../Google/messages:41 ../GTG/messages:41 ../KTorrent/messages:41
 #: ../Lancelot/messages:41 ../Liferea/messages:41 ../MintMenu/messages:41
 #: ../Pidgin/messages:41 ../Quote/messages:43 ../Transmission/messages:41
@@ -279,7 +277,7 @@ msgid "Is detached from the dock"
 msgstr "Jest oddzielony od doku"
 
 #: ../GnoMenu/messages:43 ../Calendar/messages:43 ../Cardapio/messages:43
-#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Gmail/messages:41
+#: ../Deluge/messages:43 ../DiskFree/messages:43 ../Gmail/messages:49
 #: ../Google/messages:43 ../GTG/messages:43 ../KTorrent/messages:43
 #: ../Lancelot/messages:43 ../Liferea/messages:43 ../MintMenu/messages:43
 #: ../Pidgin/messages:43 ../Quote/messages:45 ../Transmission/messages:43
@@ -289,7 +287,7 @@ msgid "Visibility:"
 msgstr "Widoczność:"
 
 #: ../GnoMenu/messages:45 ../Calendar/messages:45 ../Cardapio/messages:45
-#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Gmail/messages:43
+#: ../Deluge/messages:45 ../DiskFree/messages:45 ../Gmail/messages:51
 #: ../Google/messages:45 ../GTG/messages:45 ../HDDtemperature/messages:31
 #: ../KTorrent/messages:45 ../Lancelot/messages:45 ../Liferea/messages:45
 #: ../MintMenu/messages:45 ../Moon/messages:33 ../Pidgin/messages:45
@@ -301,7 +299,7 @@ msgid "Normal"
 msgstr "Normalny"
 
 #: ../GnoMenu/messages:47 ../Calendar/messages:47 ../Cardapio/messages:47
-#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Gmail/messages:45
+#: ../Deluge/messages:47 ../DiskFree/messages:47 ../Gmail/messages:53
 #: ../Google/messages:47 ../GTG/messages:47 ../HDDtemperature/messages:33
 #: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
 #: ../MintMenu/messages:47 ../Moon/messages:35 ../Pidgin/messages:47
@@ -313,7 +311,7 @@ msgid "Keep above"
 msgstr "Wyświetlaj na wierzchu"
 
 #: ../GnoMenu/messages:49 ../Calendar/messages:49 ../Cardapio/messages:49
-#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Gmail/messages:47
+#: ../Deluge/messages:49 ../DiskFree/messages:49 ../Gmail/messages:55
 #: ../Google/messages:49 ../GTG/messages:49 ../HDDtemperature/messages:35
 #: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
 #: ../MintMenu/messages:49 ../Moon/messages:37 ../Pidgin/messages:49
@@ -325,7 +323,7 @@ msgid "Keep below"
 msgstr "Wyświetlaj pod spodem"
 
 #: ../GnoMenu/messages:51 ../Calendar/messages:51 ../Cardapio/messages:51
-#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:49
+#: ../Deluge/messages:51 ../DiskFree/messages:51 ../Gmail/messages:57
 #: ../Google/messages:51 ../GTG/messages:51 ../KTorrent/messages:51
 #: ../Lancelot/messages:51 ../Liferea/messages:51 ../MintMenu/messages:51
 #: ../Pidgin/messages:51 ../Quote/messages:53 ../Transmission/messages:51
@@ -335,7 +333,7 @@ msgid "Keep on widget layer"
 msgstr "Wyświetlaj na warstwie widżetów"
 
 #: ../GnoMenu/messages:53 ../Calendar/messages:53 ../Cardapio/messages:53
-#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:51
+#: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:59
 #: ../Google/messages:53 ../GTG/messages:53 ../HDDtemperature/messages:39
 #: ../KTorrent/messages:53 ../Lancelot/messages:53 ../Liferea/messages:53
 #: ../MintMenu/messages:53 ../Moon/messages:41 ../Pidgin/messages:53
@@ -347,7 +345,7 @@ msgid "Reserve space"
 msgstr "Zarezerwuj miejsce"
 
 #: ../GnoMenu/messages:55 ../Calendar/messages:55 ../Cardapio/messages:55
-#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:53
+#: ../Deluge/messages:55 ../DiskFree/messages:55 ../Gmail/messages:61
 #: ../Google/messages:55 ../GTG/messages:55 ../KTorrent/messages:55
 #: ../Lancelot/messages:55 ../Liferea/messages:55 ../MintMenu/messages:55
 #: ../Pidgin/messages:55 ../Quote/messages:57 ../Transmission/messages:55
@@ -357,7 +355,7 @@ msgid "Should be visible on all desktops?"
 msgstr "Powinien być widoczny na wszystkich pulpitach?"
 
 #: ../GnoMenu/messages:57 ../Calendar/messages:57 ../Cardapio/messages:57
-#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Gmail/messages:55
+#: ../Deluge/messages:57 ../DiskFree/messages:57 ../Gmail/messages:63
 #: ../Google/messages:57 ../GTG/messages:57 ../HDDtemperature/messages:51
 #: ../KTorrent/messages:57 ../Lancelot/messages:57 ../Liferea/messages:57
 #: ../MintMenu/messages:57 ../Moon/messages:53 ../Pidgin/messages:57
@@ -369,18 +367,17 @@ msgid "Decorations"
 msgstr "Dekoracje"
 
 #: ../GnoMenu/messages:59 ../Calendar/messages:59 ../Cardapio/messages:59
-#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Gmail/messages:57
+#: ../Deluge/messages:59 ../DiskFree/messages:59 ../Gmail/messages:65
 #: ../Google/messages:59 ../GTG/messages:59 ../KTorrent/messages:59
 #: ../Lancelot/messages:59 ../Liferea/messages:59 ../MintMenu/messages:59
 #: ../Pidgin/messages:59 ../Quote/messages:61 ../Transmission/messages:59
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr ""
-"Wybierz 'własne dekoracje' dla określenia własnych dekoracji poniżej."
+msgstr "Wybierz 'własne dekoracje' dla określenia własnych dekoracji poniżej."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
-#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:59
+#: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:67
 #: ../Google/messages:61 ../GTG/messages:61 ../KTorrent/messages:61
 #: ../Lancelot/messages:61 ../Liferea/messages:61 ../MintMenu/messages:61
 #: ../Pidgin/messages:61 ../Quote/messages:63 ../Transmission/messages:61
@@ -390,7 +387,7 @@ msgid "Choose a decoration theme for this desklet:"
 msgstr "Wybierz motyw dekoracji dla tego deskletu:"
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
-#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:61
+#: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:69
 #: ../Google/messages:63 ../GTG/messages:63 ../KTorrent/messages:63
 #: ../Lancelot/messages:63 ../Liferea/messages:63 ../MintMenu/messages:63
 #: ../Pidgin/messages:63 ../Quote/messages:65 ../Transmission/messages:63
@@ -403,7 +400,7 @@ msgstr ""
 "Pozostaw puste dla braku obrazu."
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
-#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:63
+#: ../Deluge/messages:65 ../DiskFree/messages:65 ../Gmail/messages:71
 #: ../Google/messages:65 ../GTG/messages:65 ../KTorrent/messages:65
 #: ../Lancelot/messages:65 ../Liferea/messages:65 ../MintMenu/messages:65
 #: ../Pidgin/messages:65 ../Quote/messages:67 ../Transmission/messages:65
@@ -413,7 +410,7 @@ msgid "Background image:"
 msgstr "Obraz tła:"
 
 #: ../GnoMenu/messages:67 ../Calendar/messages:67 ../Cardapio/messages:67
-#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Gmail/messages:65
+#: ../Deluge/messages:67 ../DiskFree/messages:67 ../Gmail/messages:73
 #: ../Google/messages:67 ../GTG/messages:67 ../KTorrent/messages:67
 #: ../Lancelot/messages:67 ../Liferea/messages:67 ../MintMenu/messages:67
 #: ../Pidgin/messages:67 ../Quote/messages:69 ../Transmission/messages:67
@@ -423,7 +420,7 @@ msgid "Background transparency:"
 msgstr "Przezroczystość tła:"
 
 #: ../GnoMenu/messages:69 ../Calendar/messages:69 ../Cardapio/messages:69
-#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Gmail/messages:67
+#: ../Deluge/messages:69 ../DiskFree/messages:69 ../Gmail/messages:75
 #: ../Google/messages:69 ../GTG/messages:69 ../KTorrent/messages:69
 #: ../Lancelot/messages:69 ../Liferea/messages:69 ../MintMenu/messages:69
 #: ../Pidgin/messages:69 ../Quote/messages:71 ../Transmission/messages:69
@@ -433,7 +430,7 @@ msgid "in pixels. Use this to adjust the left position of drawings."
 msgstr "W pikselach. Użyj tego ay dostosować lewą pozycję rysunku."
 
 #: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
-#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:69
+#: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:77
 #: ../Google/messages:71 ../GTG/messages:71 ../KTorrent/messages:71
 #: ../Lancelot/messages:71 ../Liferea/messages:71 ../MintMenu/messages:71
 #: ../Pidgin/messages:71 ../Quote/messages:73 ../Transmission/messages:71
@@ -443,7 +440,7 @@ msgid "Left offset:"
 msgstr "Przesunięcie w lewo:"
 
 #: ../GnoMenu/messages:73 ../Calendar/messages:73 ../Cardapio/messages:73
-#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Gmail/messages:71
+#: ../Deluge/messages:73 ../DiskFree/messages:73 ../Gmail/messages:79
 #: ../Google/messages:73 ../GTG/messages:73 ../KTorrent/messages:73
 #: ../Lancelot/messages:73 ../Liferea/messages:73 ../MintMenu/messages:73
 #: ../Pidgin/messages:73 ../Quote/messages:75 ../Transmission/messages:73
@@ -453,7 +450,7 @@ msgid "in pixels. Use this to adjust the top position of drawings."
 msgstr "W pikselach. Użyj tego ay dostosować górną pozycję rysunku."
 
 #: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
-#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Gmail/messages:73
+#: ../Deluge/messages:75 ../DiskFree/messages:75 ../Gmail/messages:81
 #: ../Google/messages:75 ../GTG/messages:75 ../KTorrent/messages:75
 #: ../Lancelot/messages:75 ../Liferea/messages:75 ../MintMenu/messages:75
 #: ../Pidgin/messages:75 ../Quote/messages:77 ../Transmission/messages:75
@@ -463,7 +460,7 @@ msgid "Top offset:"
 msgstr ""
 
 #: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
-#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:75
+#: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:83
 #: ../Google/messages:77 ../GTG/messages:77 ../KTorrent/messages:77
 #: ../Lancelot/messages:77 ../Liferea/messages:77 ../MintMenu/messages:77
 #: ../Pidgin/messages:77 ../Quote/messages:79 ../Transmission/messages:77
@@ -473,7 +470,7 @@ msgid "in pixels. Use this to adjust the right position of drawings."
 msgstr ""
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
-#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:77
+#: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:85
 #: ../Google/messages:79 ../GTG/messages:79 ../KTorrent/messages:79
 #: ../Lancelot/messages:79 ../Liferea/messages:79 ../MintMenu/messages:79
 #: ../Pidgin/messages:79 ../Quote/messages:81 ../Transmission/messages:79
@@ -483,7 +480,7 @@ msgid "Right offset:"
 msgstr "Przesunięcie w prawo:"
 
 #: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
-#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:79
+#: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:87
 #: ../Google/messages:81 ../GTG/messages:81 ../KTorrent/messages:81
 #: ../Lancelot/messages:81 ../Liferea/messages:81 ../MintMenu/messages:81
 #: ../Pidgin/messages:81 ../Quote/messages:83 ../Transmission/messages:81
@@ -493,7 +490,7 @@ msgid "in pixels. Use this to adjust the bottom position of drawings."
 msgstr "W pikselach. Użyj tego aby dostosować dolną pozycję rysunku."
 
 #: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
-#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Gmail/messages:81
+#: ../Deluge/messages:83 ../DiskFree/messages:83 ../Gmail/messages:89
 #: ../Google/messages:83 ../GTG/messages:83 ../KTorrent/messages:83
 #: ../Lancelot/messages:83 ../Liferea/messages:83 ../MintMenu/messages:83
 #: ../Pidgin/messages:83 ../Quote/messages:85 ../Transmission/messages:83
@@ -503,7 +500,7 @@ msgid "Bottom offset:"
 msgstr "Przesunięcie w dół:"
 
 #: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
-#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:83
+#: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:91
 #: ../Google/messages:85 ../GTG/messages:85 ../KTorrent/messages:85
 #: ../Lancelot/messages:85 ../Liferea/messages:85 ../MintMenu/messages:85
 #: ../Pidgin/messages:85 ../Quote/messages:87 ../Transmission/messages:85
@@ -515,7 +512,7 @@ msgid ""
 msgstr ""
 
 #: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
-#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Gmail/messages:85
+#: ../Deluge/messages:87 ../DiskFree/messages:87 ../Gmail/messages:93
 #: ../Google/messages:87 ../GTG/messages:87 ../KTorrent/messages:87
 #: ../Lancelot/messages:87 ../Liferea/messages:87 ../MintMenu/messages:87
 #: ../Pidgin/messages:87 ../Quote/messages:89 ../Transmission/messages:87
@@ -525,7 +522,7 @@ msgid "Foreground image:"
 msgstr ""
 
 #: ../GnoMenu/messages:89 ../Calendar/messages:89 ../Cardapio/messages:89
-#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Gmail/messages:87
+#: ../Deluge/messages:89 ../DiskFree/messages:89 ../Gmail/messages:95
 #: ../Google/messages:89 ../GTG/messages:89 ../KTorrent/messages:89
 #: ../Lancelot/messages:89 ../Liferea/messages:89 ../MintMenu/messages:89
 #: ../Pidgin/messages:89 ../Quote/messages:91 ../Transmission/messages:89
@@ -535,7 +532,7 @@ msgid "Foreground tansparency:"
 msgstr ""
 
 #: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
-#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:89
+#: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:97
 #: ../GTG/messages:91 ../HDDtemperature/messages:85 ../KTorrent/messages:91
 #: ../Lancelot/messages:91 ../Liferea/messages:91 ../MintMenu/messages:91
 #: ../Moon/messages:87 ../Pidgin/messages:91 ../Quote/messages:93
@@ -595,7 +592,7 @@ msgid ""
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
 
-#: ../Cardapio/Cardapio:45
+#: ../Cardapio/Cardapio:50
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
 msgstr ""
@@ -610,28 +607,32 @@ msgid ""
 "Cardapio."
 msgstr ""
 
-#: ../Deluge/Deluge:205
+#: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
 msgstr "Deluge nie jest uruchomione lub nie odpowiada"
 
-#: ../Deluge/Deluge:336 ../Transmission/Transmission:460
+#: ../Deluge/Deluge:345 ../Transmission/Transmission:468
 msgid "Pause all torrents"
 msgstr ""
 
-#: ../Deluge/Deluge:341 ../Transmission/Transmission:465
+#: ../Deluge/Deluge:350 ../Transmission/Transmission:473
 msgid "Resume all torrents"
 msgstr "Wznów wszystkie torrenty"
 
-#: ../Deluge/Deluge:346 ../KTorrent/KTorrent:330
-#: ../Transmission/Transmission:470
+#: ../Deluge/Deluge:355 ../KTorrent/KTorrent:335
+#: ../Transmission/Transmission:478
 msgid "Torrents info"
 msgstr ""
 
-#: ../Deluge/Deluge:346 ../Gmail/Gmail:504 ../KTorrent/KTorrent:330
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:199
-#: ../Transmission/Transmission:470 ../YoutubeDl/YoutubeDl:298
-#: ../YoutubeDl/YoutubeDl:303
+#: ../Deluge/Deluge:355 ../Gmail/Gmail:536 ../KTorrent/KTorrent:335
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:213
+#: ../Transmission/Transmission:478 ../YoutubeDl/YoutubeDl:302
+#: ../YoutubeDl/YoutubeDl:307
 msgid "middle-click"
+msgstr ""
+
+#: ../Deluge/Deluge:360 ../Transmission/Transmission:483
+msgid "Quit"
 msgstr ""
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
@@ -692,177 +693,178 @@ msgstr ""
 msgid "View available file system's free space."
 msgstr ""
 
-#: ../Gmail/Gmail:137 ../Gmail/Gmail:143 ../Gmail/Gmail:152
-msgid "There is no subscription to any Gmail account."
+#: ../Gmail/Gmail:52
+msgid "No Subject"
 msgstr ""
 
-#: ../Gmail/Gmail:179
+#: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
+msgid "Please fill in your Gmail account."
+msgstr ""
+
+#: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
 msgstr ""
 
-#: ../Gmail/Gmail:187
+#: ../Gmail/Gmail:194
 msgid "Please, enter your Gmail password:"
 msgstr ""
 
-#: ../Gmail/Gmail:263
+#: ../Gmail/Gmail:302
 msgid "WARNING: there was an error reading XML content."
 msgstr ""
 
-#: ../Gmail/Gmail:288
+#: ../Gmail/Gmail:325
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 
-#: ../Gmail/Gmail:303
+#: ../Gmail/Gmail:340
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr ""
 
-#: ../Gmail/Gmail:311
+#: ../Gmail/Gmail:348
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 
-#: ../Gmail/Gmail:324
+#: ../Gmail/Gmail:361
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 
-#: ../Gmail/Gmail:431
+#: ../Gmail/Gmail:462
 #, python-format
 msgid "You have %s new emails"
 msgstr ""
 
-#: ../Gmail/Gmail:433
+#: ../Gmail/Gmail:464
 msgid "You have 1 new email"
 msgstr ""
 
-#: ../Gmail/Gmail:493
+#: ../Gmail/Gmail:525
 msgid "Sorry, there was no input!"
 msgstr ""
 
-#: ../Gmail/Gmail:502
+#: ../Gmail/Gmail:534
 msgid "Add or change subscription"
 msgstr ""
 
-#: ../Gmail/Gmail:503
+#: ../Gmail/Gmail:535
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 
-#: ../Gmail/Gmail:505
+#: ../Gmail/Gmail:537
 msgid "Check inbox now"
 msgstr ""
 
-#: ../Gmail/Gmail:506
+#: ../Gmail/Gmail:538
 msgid "Check Gmail inbox now if you can't wait."
+msgstr ""
+
+#: ../Gmail/Gmail:539
+msgid "Write a mail"
 msgstr ""
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
 msgstr ""
 
-#: ../Gmail/messages:91
-msgid "(in minutes)"
+#: ../Gmail/messages:17 ../Pidgin/messages:113 ../Xchat/messages:105
+msgid "No"
 msgstr ""
 
-#: ../Gmail/messages:93
-msgid "Delay between refreshes:"
+#: ../Gmail/messages:19
+msgid "With default background"
 msgstr ""
 
-#: ../Gmail/messages:95
-msgid "Alerts"
+#: ../Gmail/messages:21
+msgid "With custom background"
 msgstr ""
 
-#: ../Gmail/messages:97
-msgid "Show alerts?"
+#: ../Gmail/messages:23
+msgid "Background color to add in this case"
 msgstr ""
 
 #: ../Gmail/messages:99
-msgid ""
-"\"always\" will notify you whenever the number of emails is not 0; "
-"\"different\" will do so whenever the number of emails changes; \"superior\" "
-"will notify you whenever it increases (default)."
+msgid "(in minutes)"
 msgstr ""
 
 #: ../Gmail/messages:101
-msgid "On which condition?"
+msgid "Delay between refreshes:"
 msgstr ""
 
 #: ../Gmail/messages:103
-msgid "superior"
+msgid "Alerts"
 msgstr ""
 
 #: ../Gmail/messages:105
-msgid "always"
+msgid "Show alerts?"
 msgstr ""
 
 #: ../Gmail/messages:107
-msgid "different"
-msgstr ""
-
-#: ../Gmail/messages:109
 msgid "Should an animation be applied to the icon?"
 msgstr ""
 
-#: ../Gmail/messages:111
+#: ../Gmail/messages:109
 msgid "Show animation?"
 msgstr ""
 
-#: ../Gmail/messages:113
+#: ../Gmail/messages:111
 msgid "Which animation should the apply to the icon?"
 msgstr ""
 
-#: ../Gmail/messages:115
+#: ../Gmail/messages:113
 msgid "Choose animation?"
 msgstr ""
 
-#: ../Gmail/messages:117
+#: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
 msgstr ""
 
-#: ../Gmail/messages:119
+#: ../Gmail/messages:117
 msgid "Show dialogue?"
 msgstr ""
 
-#: ../Gmail/messages:121
+#: ../Gmail/messages:119
 msgid "Should the applet play a sound with the notification?"
 msgstr ""
 
-#: ../Gmail/messages:123
+#: ../Gmail/messages:121
 msgid "Play a sound?"
 msgstr ""
 
-#: ../Gmail/messages:125
+#: ../Gmail/messages:123
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
 
-#: ../Gmail/messages:127
+#: ../Gmail/messages:125
 msgid "Path to sound file:"
 msgstr ""
 
-#: ../Gmail/messages:129
+#: ../Gmail/messages:127
 msgid "Display a counter on the icon?"
 msgstr ""
 
-#: ../Gmail/messages:131
+#: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
 msgstr ""
 
-#: ../Gmail/messages:133
+#: ../Gmail/messages:131
 msgid "How?"
 msgstr ""
 
-#: ../Gmail/messages:135
+#: ../Gmail/messages:133
 msgid "small emblem"
 msgstr ""
 
-#: ../Gmail/messages:137
+#: ../Gmail/messages:135
 msgid "large emblem"
 msgstr ""
 
-#: ../Gmail/messages:139
+#: ../Gmail/messages:137
 msgid "quickinfo"
 msgstr ""
 
-#: ../Gmail/messages:142
+#: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
 
@@ -874,45 +876,45 @@ msgid ""
 "Left-click to open the result in the default Web Browser."
 msgstr ""
 
-#: ../GTG/GTG:147
+#: ../GTG/GTG:152
 msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
 
-#: ../GTG/GTG:161
+#: ../GTG/GTG:166
 msgid "Couldn't launch "
 msgstr ""
 
-#: ../GTG/GTG:166
+#: ../GTG/GTG:171
 msgid "Connecting to gtg, please wait ..."
 msgstr ""
 
-#: ../GTG/GTG:203
+#: ../GTG/GTG:208
 msgid "Create a new task"
 msgstr ""
 
-#: ../GTG/GTG:217 ../GTG/GTG:253
+#: ../GTG/GTG:222 ../GTG/GTG:258
 msgid "Open category's task"
 msgstr ""
 
-#: ../GTG/GTG:221 ../GTG/GTG:257
+#: ../GTG/GTG:226 ../GTG/GTG:262
 msgid "Create post-it from this category"
 msgstr ""
 
-#: ../GTG/GTG:300 ../GTG/GTG:302 ../GTG/GTG:304
+#: ../GTG/GTG:305 ../GTG/GTG:307 ../GTG/GTG:309
 msgid "The task: "
 msgstr ""
 
-#: ../GTG/GTG:300
+#: ../GTG/GTG:305
 msgid " is due today"
 msgstr ""
 
-#: ../GTG/GTG:302
+#: ../GTG/GTG:307
 msgid " is due NOW"
 msgstr ""
 
-#: ../GTG/GTG:304
+#: ../GTG/GTG:309
 msgid " was due on "
 msgstr ""
 
@@ -970,8 +972,7 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1176,7 +1177,7 @@ msgid ""
 " Left-click shows more information about HD drives."
 msgstr ""
 
-#: ../KTorrent/KTorrent:325
+#: ../KTorrent/KTorrent:330
 msgid "Suspend all torrents"
 msgstr "Wstrzymaj wszystkie torrenty"
 
@@ -1191,7 +1192,7 @@ msgid ""
 "downloading it immediately."
 msgstr ""
 
-#: ../Lancelot/Lancelot:85
+#: ../Lancelot/Lancelot:90
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr ""
@@ -1222,7 +1223,7 @@ msgstr ""
 msgid "This applets makes an interface with Liferea"
 msgstr ""
 
-#: ../MintMenu/MintMenu:151
+#: ../MintMenu/MintMenu:156
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr ""
@@ -1263,28 +1264,29 @@ msgid ""
 "day, or week from the Northern or Southern hemisphere"
 msgstr ""
 
-#: ../Pidgin/Pidgin:408
+#: ../Pidgin/Pidgin:417
 msgid "Conversations"
 msgstr "Rozmowy"
 
-#: ../Pidgin/Pidgin:422
+#: ../Pidgin/Pidgin:431
 msgid "Change your status"
 msgstr "Zmień swój status"
 
-#: ../Pidgin/Pidgin:437
+#: ../Pidgin/Pidgin:446
 msgid "Set your status message"
 msgstr "Ustaw swój status"
 
-#: ../Pidgin/Pidgin:442 ../Xchat/Xchat:278
+#: ../Pidgin/Pidgin:451 ../Xchat/Xchat:292
 msgid "Silent mode"
 msgstr "Tryb wyciszony"
 
-#: ../Pidgin/Pidgin:446 ../Xchat/Xchat:282
+#: ../Pidgin/Pidgin:455 ../Xchat/Xchat:296 ../Xchat/Xchat:309
+#: ../Xchat/messages:123 ../Xchat/messages:127
 msgid "Switch the applet to silent mode (no pop-up on new message)."
 msgstr ""
 "Przełącz aplet w tryb wyciszony (żadnych pop-upów przy nowej wiadomości)"
 
-#: ../Pidgin/Pidgin:457
+#: ../Pidgin/Pidgin:466
 msgid "Enter your new status message:"
 msgstr "Wprowadź nowy status:"
 
@@ -1310,10 +1312,6 @@ msgstr ""
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
 msgid "Animate the icon when receiving channel messages"
-msgstr ""
-
-#: ../Pidgin/messages:113 ../Xchat/messages:105
-msgid "No"
 msgstr ""
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
@@ -1416,28 +1414,28 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:74
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Screensaver is currently disabled"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:80
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:186
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:200
 msgid "Inhibit for a given time (in minutes)"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:193
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:207
 msgid "timelength"
 msgstr ""
 
-#: ../Screensaver_inhibitor/Screensaver_inhibitor:199
+#: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 msgid "Inhibit for a given time"
 msgstr ""
 
@@ -1470,19 +1468,19 @@ msgid ""
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
 
-#: ../Translator/Translator:430
+#: ../Translator/Translator:371
 msgid "To"
 msgstr "Do"
 
-#: ../Translator/Translator:449
+#: ../Translator/Translator:390
 msgid "From"
 msgstr "Od"
 
-#: ../Translator/Translator:469
+#: ../Translator/Translator:410
 msgid "Switch languages"
 msgstr ""
 
-#: ../Translator/Translator:482
+#: ../Translator/Translator:423
 msgid "Translate from clipboard (middle-click)"
 msgstr "Przetłumacz ze schowka (środkowy klawisz myszy)"
 
@@ -1806,94 +1804,94 @@ msgid ""
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
 
-#: ../Transmission/Transmission:240
+#: ../Transmission/Transmission:245
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission nie jest uruchomiony lub nie odpowiada."
 
-#: ../Transmission/Transmission:247
+#: ../Transmission/Transmission:252
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
 "Nie udało się pobrać danych z Transmission. Wymagana jest wersja 1.9 lub "
 "wyższa"
 
-#: ../Transmission/Transmission:253
+#: ../Transmission/Transmission:258
 msgid "Progress:"
 msgstr ""
 
-#: ../Transmission/Transmission:256
+#: ../Transmission/Transmission:261
 msgid "paused"
 msgstr ""
 
-#: ../Transmission/Transmission:258
+#: ../Transmission/Transmission:263
 msgid "checking"
 msgstr ""
 
-#: ../Transmission/Transmission:260
+#: ../Transmission/Transmission:265
 msgid "waiting for check"
 msgstr ""
 
-#: ../Transmission/Transmission:262
+#: ../Transmission/Transmission:267
 msgid "seeding"
 msgstr ""
 
-#: ../Transmission/Transmission:266
+#: ../Transmission/Transmission:271
 msgid "Time remaining:"
 msgstr ""
 
-#: ../Transmission/Transmission:272
+#: ../Transmission/Transmission:277
 msgid "days"
 msgstr ""
 
-#: ../Transmission/Transmission:274 ../Transmission/Transmission:280
+#: ../Transmission/Transmission:279 ../Transmission/Transmission:285
 msgid "h"
 msgstr ""
 
-#: ../Transmission/Transmission:282
+#: ../Transmission/Transmission:287
 msgid "min"
 msgstr ""
 
-#: ../Transmission/Transmission:283
+#: ../Transmission/Transmission:288
 msgid "sec"
 msgstr ""
 
-#: ../Transmission/Transmission:286
+#: ../Transmission/Transmission:291
 msgid "Time remaining: Unknown"
 msgstr ""
 
-#: ../Transmission/Transmission:288
+#: ../Transmission/Transmission:293
 msgid "Finished"
 msgstr ""
 
-#: ../Transmission/Transmission:292
+#: ../Transmission/Transmission:297
 msgid "Number of peers:"
 msgstr ""
 
-#: ../Transmission/Transmission:292
+#: ../Transmission/Transmission:297
 msgid "and seeds:"
 msgstr ""
 
-#: ../Transmission/Transmission:295
+#: ../Transmission/Transmission:300
 msgid "Ratio:"
 msgstr ""
 
-#: ../Transmission/Transmission:299
+#: ../Transmission/Transmission:304
 msgid "No torrent in the list"
 msgstr ""
 
-#: ../Transmission/Transmission:304
+#: ../Transmission/Transmission:309
 msgid "Total amount of data:"
 msgstr ""
 
-#: ../Transmission/Transmission:313
+#: ../Transmission/Transmission:318
 msgid "Received:"
 msgstr ""
 
-#: ../Transmission/Transmission:321
+#: ../Transmission/Transmission:326
 msgid "Sent:"
 msgstr ""
 
-#: ../Transmission/Transmission:407
+#: ../Transmission/Transmission:415
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
@@ -2023,7 +2021,7 @@ msgstr ""
 msgid "Add account"
 msgstr ""
 
-#: ../Twitter/Twitter:395 ../WebSearch/messages:111
+#: ../Twitter/Twitter:395
 msgid "Twitter"
 msgstr ""
 
@@ -2115,58 +2113,52 @@ msgid "Youtube"
 msgstr ""
 
 #: ../WebSearch/messages:103
-msgid "Webshots"
-msgstr ""
-
-#: ../WebSearch/messages:105
 msgid "Flickr"
 msgstr ""
 
-#: ../WebSearch/messages:107
+#: ../WebSearch/messages:105
 msgid "Wikipedia"
 msgstr ""
 
-#: ../WebSearch/messages:109
+#: ../WebSearch/messages:107
 msgid "ImageShack"
 msgstr ""
 
-#: ../WebSearch/messages:113
+#: ../WebSearch/messages:109
 msgid "Digg"
 msgstr ""
 
-#: ../WebSearch/messages:115
+#: ../WebSearch/messages:111
 msgid "in sub-icons."
 msgstr ""
 
-#: ../WebSearch/messages:117
+#: ../WebSearch/messages:113
 msgid "Maximum number of results shown :"
 msgstr ""
 
-#: ../WebSearch/messages:119
+#: ../WebSearch/messages:115
 msgid "Show the current page as the icon label ?"
 msgstr ""
 
-#: ../WebSearch/messages:121
+#: ../WebSearch/messages:117
 msgid ""
 "Show the description of the result instead of its URL in the sub-icons ?"
 msgstr ""
 
-#: ../WebSearch/messages:123
+#: ../WebSearch/messages:119
 msgid ""
 "for slow connections, disable will result in significantly faster fetching."
 msgstr ""
 
-#: ../WebSearch/messages:125
+#: ../WebSearch/messages:121
 msgid ""
-"Enable thumbnail preview for Youtube, Webshots, Flickr, ImageShack, Twitter, "
-"and Digg searches ?"
+"Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
 
-#: ../WebSearch/messages:128
+#: ../WebSearch/messages:124
 msgid ""
 "This applet provides an interface to some search engines such as\n"
-"Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
-"ImageShack, and Twitter.\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, and ImageShack.\n"
 "To choose the search engine you can\n"
 " (1) Right-click on the main icon -> WebSearch -> (Choose the engine)\n"
 " (2) Right-click -> Configure this applet -> Configuration -> Search engine\n"
@@ -2193,15 +2185,33 @@ msgid ""
 "this window."
 msgstr ""
 
-#: ../Xchat/Xchat:265
+#: ../Xchat/Xchat:285
 msgid "Channels"
 msgstr "Kanały"
 
-#: ../Xchat/Xchat:269
+#: ../Xchat/Xchat:289
 msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
-#: ../Xchat/messages:122
+#: ../Xchat/Xchat:305
+#, fuzzy
+msgid "All channels"
+msgstr "Kanały"
+
+#: ../Xchat/messages:121
+#, fuzzy
+msgid "Silent Mode"
+msgstr "Tryb wyciszony"
+
+#: ../Xchat/messages:125
+msgid "Enable the silent mode at startup:"
+msgstr ""
+
+#: ../Xchat/messages:129
+msgid "Enable the silent mode for a specific channel at startup:"
+msgstr ""
+
+#: ../Xchat/messages:132
 msgid ""
 "This applet integrates Xchat and Xchat-gnome into your dock.\n"
 "It can display new messages,\n"
@@ -2212,15 +2222,15 @@ msgid ""
 "icon."
 msgstr ""
 
-#: ../YoutubeDl/YoutubeDl:298 ../YoutubeDl/messages:99
+#: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
 msgstr ""
 
-#: ../YoutubeDl/YoutubeDl:303
+#: ../YoutubeDl/YoutubeDl:307
 msgid "Show Download Status"
 msgstr ""
 
-#: ../YoutubeDl/YoutubeDl:311
+#: ../YoutubeDl/YoutubeDl:315
 msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
 
@@ -2392,8 +2402,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
