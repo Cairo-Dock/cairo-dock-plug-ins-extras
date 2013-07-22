@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2013-07-21 16:32+0000\n"
 "PO-Revision-Date: 2013-03-26 12:17+0000\n"
 "Last-Translator: Wonderfulheart <Unknown>\n"
 "Language-Team: Italian <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-27 04:45+0000\n"
-"X-Generator: Launchpad (build 16540)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:42+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
+"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -195,8 +197,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
-"+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
+"Alt+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:35
@@ -742,9 +744,8 @@ msgid "No Subject"
 msgstr ""
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
-#, fuzzy
 msgid "Please fill in your Gmail account."
-msgstr "Per favore, inserisci il tuo nome utente Gmail:"
+msgstr ""
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
@@ -898,7 +899,8 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -1028,8 +1030,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
-"+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:29
@@ -1040,7 +1042,8 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1526,15 +1529,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
 "fonti internet quali:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com e Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Screensaver is currently disabled"
@@ -2326,15 +2329,11 @@ msgstr ""
 "aumento di velocità nella ricerca."
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
-"Abilita l'anteprima thumbnail per le ricerche su YouTube, Webshots, Flickr, "
-"ImageShack, Twitter e Digg?"
 
 #: ../WebSearch/messages:124
-#, fuzzy
 msgid ""
 "This applet provides an interface to some search engines such as\n"
 "Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, and ImageShack.\n"
@@ -2352,28 +2351,6 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
-"Questa applet fornisce un'interfaccia ad alcuni motori di ricerca come\n"
-"Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
-"ImageShack e Twitter.\n"
-"Per scegliere il motore di ricerca è possibile fare:\n"
-" (1) Clic destro sull'icona principale -> WebSearch -> (Scegli il motore)\n"
-" (2) Clic destro del mouse -> Configura questa applet -> Configurazione -> "
-"Motore di ricerca\n"
-" (3) Scorrere con la rotellina del mouse verso l'alto o verso il basso sopra "
-"l'icona (applicabile solo per la prima ricerca)\n"
-"È possibile cercare in tre modi:\n"
-" (1) Clic centrale del mouse sull'icona principale\n"
-" (2) Clic sinistro del mouse sull'icona principale (subito dopo la scelta di "
-"un nuovo motore)\n"
-"Digitare la domanda e confermare. Ogni risultato viene mostrato come una "
-"sotto-icona.\n"
-"Clic sinistro del mouse per aprire il risultato nel Web Browser predefinito\n"
-"Clic centrale del mouse sulla sotto-cona di un risultato per mostrare la sua "
-"descrizione\n"
-"Scorrere verso l'alto per rilevare i risultati successivi\n"
-"Scorrere verso il basso per rilevare i risultati precedenti\n"
-"Clic sinistro del mouse sull'icona principale per visualizzare le "
-"statistiche di ricerca"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2403,14 +2380,12 @@ msgid "Switch the channel you'll send message to with the middle-click."
 msgstr "Cambia il canale al quale spedire messaggi con clic centrale."
 
 #: ../Xchat/Xchat:305
-#, fuzzy
 msgid "All channels"
-msgstr "Canali"
+msgstr ""
 
 #: ../Xchat/messages:121
-#, fuzzy
 msgid "Silent Mode"
-msgstr "Modalità silenziosa"
+msgstr ""
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
@@ -2641,7 +2616,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Non sovrascrivere (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
 
 #: ../YoutubeDl/messages:169
@@ -2792,30 +2768,3 @@ msgstr ""
 "Se non ci sono video nella lista, cliccando con il tasto sinistro sull'icona "
 "ti permette di inserire una URL. Altrimenti sarà visualizzato l'elenco delle "
 "URL."
-
-#~ msgid "There is no subscription to any Gmail account."
-#~ msgstr "Non vi sono registrazioni per nessun account Gmail."
-
-#~ msgid ""
-#~ "\"always\" will notify you whenever the number of emails is not 0; "
-#~ "\"different\" will do so whenever the number of emails changes; \"superior"
-#~ "\" will notify you whenever it increases (default)."
-#~ msgstr ""
-#~ "\"sempre\" ti informerà ogni volta che il numero di email è diverso da 0; "
-#~ "\"diverso\" lo farà ogni volta che il numero delle email cambia; "
-#~ "\"superiore\" lo farà ogni volta che esse aumentano (predefinito)."
-
-#~ msgid "On which condition?"
-#~ msgstr "In quali condizioni?"
-
-#~ msgid "superior"
-#~ msgstr "superiore"
-
-#~ msgid "always"
-#~ msgstr "sempre"
-
-#~ msgid "different"
-#~ msgstr "diverso"
-
-#~ msgid "Webshots"
-#~ msgstr "Webshots"

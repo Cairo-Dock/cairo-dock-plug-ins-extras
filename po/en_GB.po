@@ -7,19 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-07-21 18:11+0200\n"
-"PO-Revision-Date: 2012-09-10 02:16+0000\n"
-"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"POT-Creation-Date: 2013-07-21 16:32+0000\n"
+"PO-Revision-Date: 2013-07-21 18:03+0000\n"
+"Last-Translator: Anthony Harrington <untaintableangel@ubuntu.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-01 04:53+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is not installed. Please install it before you run this applet."
 
@@ -90,7 +91,7 @@ msgstr "Name of the icon as it will appear in its caption in the dock:"
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -546,7 +547,7 @@ msgstr "Configuration"
 #: ../GnoMenu/messages:93 ../Cardapio/messages:93 ../Lancelot/messages:93
 #: ../MintMenu/messages:93
 msgid "Shortkey to pop up the menu:"
-msgstr ""
+msgstr "Shortkey to pop up the menu:"
 
 #: ../GnoMenu/messages:96
 msgid ""
@@ -555,18 +556,23 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
+"This applet allows you to have the <b>GnoMenu menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you access to the preferences window.\n"
+"<u>Note:</u> you need to install GnoMenu."
 
 #: ../Calendar/messages:93
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
+"Command to launch your favourite calendar application (middle click):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
-msgstr ""
+msgstr "Command to execute on dropping a file onto the calendar-icon:"
 
 #: ../Calendar/messages:99
 msgid "Behaviour"
@@ -577,10 +583,12 @@ msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
+"The path to a script to generate an icon. Leave it empty to use the default "
+"one."
 
 #: ../Calendar/messages:103
 msgid "Icon custom script:"
-msgstr ""
+msgstr "Icon custom script:"
 
 #: ../Calendar/messages:106
 msgid ""
@@ -591,11 +599,18 @@ msgid ""
 "Scroll Down displays the events of the day\n"
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
+"This applet will display the current date.\n"
+"Left Click displays the calendar\n"
+"Middle Click launches a calendar application of your choice\n"
+"Scroll Up displays the calendar of the next month\n"
+"Scroll Down displays the events of the day\n"
+"Dropping a file on the icon launches the calendar application and import it."
 
 #: ../Cardapio/Cardapio:50
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
 msgstr ""
+"Cardapio is not installed. Please install it before you run this applet."
 
 #: ../Cardapio/messages:96
 msgid ""
@@ -604,6 +619,10 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
+"This applet allows you to have the <b>Cardapio menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you edit the menus.<u>Note:</u> you need to install "
+"Cardapio."
 
 #: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
@@ -620,46 +639,46 @@ msgstr "Resume all torrents"
 #: ../Deluge/Deluge:355 ../KTorrent/KTorrent:335
 #: ../Transmission/Transmission:478
 msgid "Torrents info"
-msgstr ""
+msgstr "Torrents info"
 
 #: ../Deluge/Deluge:355 ../Gmail/Gmail:536 ../KTorrent/KTorrent:335
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Transmission/Transmission:478 ../YoutubeDl/YoutubeDl:302
 #: ../YoutubeDl/YoutubeDl:307
 msgid "middle-click"
-msgstr ""
+msgstr "middle-click"
 
 #: ../Deluge/Deluge:360 ../Transmission/Transmission:483
 msgid "Quit"
-msgstr ""
+msgstr "Quit"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
-msgstr ""
+msgstr "Shortkey to pop up the torrents info:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
 msgid "Show as quick-info:"
-msgstr ""
+msgstr "Show as quick-info:"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Download speed"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "Percentage done"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Percentage + number of active torrents"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Show the percentage done as a progress bar"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -673,93 +692,105 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"This applet allows you to <b>control Deluge</b> from the Dock (You need to "
+"install <i>deluged</i>, which is the daemon used to communicate between the "
+"Dock and Deluge).\n"
+"It can display the <b>download rate</b> on the icon.\n"
+"<b>Middle-click</b> on the icon gives you information about the current "
+"torrents (you can bind a shortkey for this action).\n"
+"<b>Right-click</b> on the icon allows you to pause/start all the torrents.\n"
+"<b>Drop a torrent file</b> on the icon to add it to the list and start "
+"downloading it immediately."
 
 #: ../DiskFree/messages:93
 msgid ""
 "View available file system's space as Giga (checked) or Mega (unchecked) :"
 msgstr ""
+"View available space on the filesystem as Giga (checked) or Mega (unchecked) "
+":"
 
 #: ../DiskFree/messages:95
 msgid "in minutes"
-msgstr ""
+msgstr "in minutes"
 
 #: ../DiskFree/messages:97
 msgid "Time between two file system's checking :"
-msgstr ""
+msgstr "Time between checking two filesystems :"
 
 #: ../DiskFree/messages:100
 msgid "View available file system's free space."
-msgstr ""
+msgstr "View available free space on the filesystem."
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "No Subject"
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
 msgid "Please fill in your Gmail account."
-msgstr ""
+msgstr "Please fill in your Gmail account."
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Please, enter your Gmail username:"
 
 #: ../Gmail/Gmail:194
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Please, enter your Gmail password:"
 
 #: ../Gmail/Gmail:302
 msgid "WARNING: there was an error reading XML content."
-msgstr ""
+msgstr "WARNING: there was an error reading XML content."
 
 #: ../Gmail/Gmail:325
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
-msgstr ""
+msgstr "WARNING: Gmail applet failed to connect to Gmail atom feed."
 
 #: ../Gmail/Gmail:340
 msgid "WARNING: Gmail atom feed is badly formed: "
-msgstr ""
+msgstr "WARNING: Gmail atom feed is badly formed: "
 
 #: ../Gmail/Gmail:348
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
+"WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 
 #: ../Gmail/Gmail:361
 msgid "WARNING: Gmail username or password may be wrong."
-msgstr ""
+msgstr "WARNING: Gmail username or password may be wrong."
 
 #: ../Gmail/Gmail:462
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "You have %s new e-mails"
 
 #: ../Gmail/Gmail:464
 msgid "You have 1 new email"
-msgstr ""
+msgstr "You have 1 new e-mail"
 
 #: ../Gmail/Gmail:525
 msgid "Sorry, there was no input!"
-msgstr ""
+msgstr "Sorry, there was no input!"
 
 #: ../Gmail/Gmail:534
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Add or change subscription"
 
 #: ../Gmail/Gmail:535
 msgid "Use this to add or change your Gmail account details."
-msgstr ""
+msgstr "Use this to add or change your Gmail account details."
 
 #: ../Gmail/Gmail:537
 msgid "Check inbox now"
-msgstr ""
+msgstr "Check inbox now"
 
 #: ../Gmail/Gmail:538
 msgid "Check Gmail inbox now if you can't wait."
-msgstr ""
+msgstr "Check Gmail inbox now if you can't wait."
 
 #: ../Gmail/Gmail:539
 msgid "Write a mail"
-msgstr ""
+msgstr "Write an e-mail"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -767,23 +798,23 @@ msgstr "Always display the icon, even when the dock is hidden?"
 
 #: ../Gmail/messages:17 ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "With default background"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "With custom background"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
-msgstr ""
+msgstr "Background colour to add in this case"
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
-msgstr ""
+msgstr "(in minutes)"
 
 #: ../Gmail/messages:101
 msgid "Delay between refreshes:"
@@ -791,48 +822,49 @@ msgstr "Delay between refreshes:"
 
 #: ../Gmail/messages:103
 msgid "Alerts"
-msgstr ""
+msgstr "Alerts"
 
 #: ../Gmail/messages:105
 msgid "Show alerts?"
-msgstr ""
+msgstr "Show alerts?"
 
 #: ../Gmail/messages:107
 msgid "Should an animation be applied to the icon?"
-msgstr ""
+msgstr "Should an animation be applied to the icon?"
 
 #: ../Gmail/messages:109
 msgid "Show animation?"
-msgstr ""
+msgstr "Show animation?"
 
 #: ../Gmail/messages:111
 msgid "Which animation should the apply to the icon?"
-msgstr ""
+msgstr "Which animation should be applied to the icon?"
 
 #: ../Gmail/messages:113
 msgid "Choose animation?"
-msgstr ""
+msgstr "Choose animation?"
 
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr ""
+msgstr "Should the applet display a dialogue box with the notification?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
-msgstr ""
+msgstr "Show dialogue?"
 
 #: ../Gmail/messages:119
 msgid "Should the applet play a sound with the notification?"
-msgstr ""
+msgstr "Should the applet play a sound with the notification?"
 
 #: ../Gmail/messages:121
 msgid "Play a sound?"
-msgstr ""
+msgstr "Play a sound?"
 
 #: ../Gmail/messages:123
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
+"Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
@@ -840,31 +872,32 @@ msgstr "Path to sound file:"
 
 #: ../Gmail/messages:127
 msgid "Display a counter on the icon?"
-msgstr ""
+msgstr "Display a counter on the icon?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr ""
+msgstr "Do you want an emblem or a quick-info label to be displayed?"
 
 #: ../Gmail/messages:131
 msgid "How?"
-msgstr ""
+msgstr "How?"
 
 #: ../Gmail/messages:133
 msgid "small emblem"
-msgstr ""
+msgstr "small emblem"
 
 #: ../Gmail/messages:135
 msgid "large emblem"
-msgstr ""
+msgstr "large emblem"
 
 #: ../Gmail/messages:137
 msgid "quickinfo"
-msgstr ""
+msgstr "quickinfo"
 
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
+"This applet will notify you of new e-mails on a single Gmail account."
 
 #: ../Google/messages:92
 msgid ""
@@ -873,77 +906,83 @@ msgid ""
 "Each result will be shown as a sub-icon.\n"
 "Left-click to open the result in the default Web Browser."
 msgstr ""
+"This applet provides an interface to Google search engine.\n"
+"Left click on the main icon to open the search dialogue.\n"
+"Each result will be shown as a sub-icon.\n"
+"Left-click to open the result in the default Web Browser."
 
 #: ../GTG/GTG:152
 msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
+"Couldn't connect to GTG :-(\n"
+"Did you install it?"
 
 #: ../GTG/GTG:166
 msgid "Couldn't launch "
-msgstr ""
+msgstr "Couldn't launch "
 
 #: ../GTG/GTG:171
 msgid "Connecting to gtg, please wait ..."
-msgstr ""
+msgstr "Connecting to gtg, please wait ..."
 
 #: ../GTG/GTG:208
 msgid "Create a new task"
-msgstr ""
+msgstr "Create a new task"
 
 #: ../GTG/GTG:222 ../GTG/GTG:258
 msgid "Open category's task"
-msgstr ""
+msgstr "Open category's task"
 
 #: ../GTG/GTG:226 ../GTG/GTG:262
 msgid "Create post-it from this category"
-msgstr ""
+msgstr "Create post-it from this category"
 
 #: ../GTG/GTG:305 ../GTG/GTG:307 ../GTG/GTG:309
 msgid "The task: "
-msgstr ""
+msgstr "The task: "
 
 #: ../GTG/GTG:305
 msgid " is due today"
-msgstr ""
+msgstr " is due today"
 
 #: ../GTG/GTG:307
 msgid " is due NOW"
-msgstr ""
+msgstr " is due NOW"
 
 #: ../GTG/GTG:309
 msgid " was due on "
-msgstr ""
+msgstr " was due on "
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
-msgstr ""
+msgstr "Bubbles duration :"
 
 #: ../GTG/messages:95 ../Pidgin/messages:105 ../Xchat/messages:97
 msgid "Short"
-msgstr ""
+msgstr "Short"
 
 #: ../GTG/messages:97 ../Pidgin/messages:107 ../Twitter/messages:97
 #: ../Xchat/messages:99
 msgid "Medium"
-msgstr ""
+msgstr "Medium"
 
 #: ../GTG/messages:99 ../Pidgin/messages:109 ../Xchat/messages:101
 msgid "Long"
-msgstr ""
+msgstr "Long"
 
 #: ../GTG/messages:101
 msgid "Animation of the icon on receiving channel messages :"
-msgstr ""
+msgstr "Animation of the icon on receiving channel messages :"
 
 #: ../GTG/messages:103 ../Xchat/messages:93
 msgid "Display channel messages in a bubble :"
-msgstr ""
+msgstr "Display channel messages in a bubble :"
 
 #: ../GTG/messages:107
 msgid "Post-it's initial dimension (width x height) :"
-msgstr ""
+msgstr "Post-it's initial dimension (width x height) :"
 
 #: ../GTG/messages:110
 msgid ""
@@ -952,6 +991,10 @@ msgid ""
 "Create a new task on middle-click,Create a post-it from a task category.\n"
 "The icon will also control the window of GTG like a normal application icon."
 msgstr ""
+"This applet integrates GTG into your dock.\n"
+"It can display tasks,\n"
+"Create a new task on middle-click,Create a post-it from a task category.\n"
+"The icon will also control the window of GTG like a normal application icon."
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Screensaver_inhibitor/messages:21 ../Translator/messages:27
@@ -960,30 +1003,34 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
+"Depending on your WindowManager, you can resize it with ALT + middle_click "
+"or ALT + left_click for exemple."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Screensaver_inhibitor/messages:23 ../Translator/messages:29
 #: ../YoutubeDl/messages:21
 msgid "Desklet's dimension (width x height) :"
-msgstr ""
+msgstr "Desklet's dimension (width x height) :"
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:33
 #: ../YoutubeDl/messages:25
 msgid "Desklet's position (x ; y) :"
-msgstr ""
+msgstr "Desklet's position (x ; y) :"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:41
 #: ../YoutubeDl/messages:27
 msgid "Is detached from the dock ?"
-msgstr ""
+msgstr "Is detached from the dock ?"
 
 #: ../HDDtemperature/messages:27 ../Translator/messages:43
 #: ../YoutubeDl/messages:29
@@ -991,24 +1038,26 @@ msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=utility)"
 msgstr ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=utility)"
 
 #: ../HDDtemperature/messages:29 ../Moon/messages:31
 #: ../Screensaver_inhibitor/messages:33 ../Translator/messages:45
 #: ../YoutubeDl/messages:31
 msgid "Accessibility :"
-msgstr ""
+msgstr "Accessibility :"
 
 #: ../HDDtemperature/messages:37 ../Moon/messages:39
 #: ../Screensaver_inhibitor/messages:41 ../Translator/messages:53
 #: ../YoutubeDl/messages:39
 msgid "On Widget Layer"
-msgstr ""
+msgstr "On Widget Layer"
 
 #: ../HDDtemperature/messages:41 ../Moon/messages:43
 #: ../Screensaver_inhibitor/messages:45 ../Translator/messages:57
 #: ../YoutubeDl/messages:43
 msgid "Should be visible on all desktops ?"
-msgstr ""
+msgstr "Should be visible on all desktops ?"
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Screensaver_inhibitor/messages:47 ../YoutubeDl/messages:45
@@ -1016,33 +1065,35 @@ msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
 msgstr ""
+"If locked, the desklet can't be moved by simply dragging it with the left "
+"mouse button. Of course you can still move it with ALT + left_click."
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Screensaver_inhibitor/messages:49 ../YoutubeDl/messages:47
 msgid "Lock position ?"
-msgstr ""
+msgstr "Lock position ?"
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Screensaver_inhibitor/messages:51 ../YoutubeDl/messages:49
 msgid "in degrees."
-msgstr ""
+msgstr "in degrees."
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Screensaver_inhibitor/messages:53 ../YoutubeDl/messages:51
 msgid "Rotation :"
-msgstr ""
+msgstr "Rotation :"
 
 #: ../HDDtemperature/messages:53 ../Moon/messages:55
 #: ../Screensaver_inhibitor/messages:57 ../Translator/messages:61
 #: ../YoutubeDl/messages:55
 msgid "Choose the 'personnal' one to define your own decorations below."
-msgstr ""
+msgstr "Choose the 'personal' one to define your own decorations below."
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Screensaver_inhibitor/messages:59 ../Translator/messages:63
 #: ../YoutubeDl/messages:57
 msgid "Choose a decoration theme for this desklet :"
-msgstr ""
+msgstr "Choose a decoration theme for this desklet :"
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
 #: ../Screensaver_inhibitor/messages:61 ../Translator/messages:65
@@ -1051,66 +1102,68 @@ msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
 msgstr ""
+"It's an image that will be displayed below the drawings, like a frame for "
+"example. Leave empty to not use any."
 
 #: ../HDDtemperature/messages:59 ../Moon/messages:61
 #: ../Screensaver_inhibitor/messages:63 ../Translator/messages:67
 #: ../YoutubeDl/messages:61
 msgid "Background image :"
-msgstr ""
+msgstr "Background image :"
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Screensaver_inhibitor/messages:65 ../Translator/messages:69
 #: ../YoutubeDl/messages:63
 msgid "Background tansparency :"
-msgstr ""
+msgstr "Background tansparency :"
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Screensaver_inhibitor/messages:67 ../Translator/messages:71
 #: ../YoutubeDl/messages:65
 msgid "in pixels. Use this to adjust the left position of the drawings."
-msgstr ""
+msgstr "in pixels. Use this to adjust the left position of the drawings."
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Screensaver_inhibitor/messages:69 ../Translator/messages:73
 #: ../YoutubeDl/messages:67
 msgid "Left offset :"
-msgstr ""
+msgstr "Left offset :"
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Screensaver_inhibitor/messages:71 ../Translator/messages:75
 #: ../YoutubeDl/messages:69
 msgid "in pixels. Use this to adjust the top position of the drawings."
-msgstr ""
+msgstr "in pixels. Use this to adjust the top position of the drawings."
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Screensaver_inhibitor/messages:73 ../Translator/messages:77
 #: ../YoutubeDl/messages:71
 msgid "Top offset :"
-msgstr ""
+msgstr "Top offset :"
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Screensaver_inhibitor/messages:75 ../Translator/messages:79
 #: ../YoutubeDl/messages:73
 msgid "in pixels. Use this to adjust the right position of the drawings."
-msgstr ""
+msgstr "in pixels. Use this to adjust the right position of the drawings."
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Screensaver_inhibitor/messages:77 ../Translator/messages:81
 #: ../YoutubeDl/messages:75
 msgid "Right offset :"
-msgstr ""
+msgstr "Right offset :"
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Screensaver_inhibitor/messages:79 ../Translator/messages:83
 #: ../YoutubeDl/messages:77
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
-msgstr ""
+msgstr "in pixels. Use this to adjust the bottom position of the drawings."
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Screensaver_inhibitor/messages:81 ../Translator/messages:85
 #: ../YoutubeDl/messages:79
 msgid "Bottom offset :"
-msgstr ""
+msgstr "Bottom offset :"
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Screensaver_inhibitor/messages:83 ../Translator/messages:87
@@ -1119,54 +1172,56 @@ msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
 msgstr ""
+"It's an image that will be displayed above the drawings, like a reflection "
+"for example. Leave empty to not use any."
 
 #: ../HDDtemperature/messages:81 ../Moon/messages:83
 #: ../Screensaver_inhibitor/messages:85 ../Translator/messages:89
 #: ../YoutubeDl/messages:83
 msgid "Foreground image :"
-msgstr ""
+msgstr "Foreground image :"
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Screensaver_inhibitor/messages:87 ../Translator/messages:91
 #: ../YoutubeDl/messages:85
 msgid "Foreground tansparency :"
-msgstr ""
+msgstr "Foreground tansparency :"
 
 #: ../HDDtemperature/messages:87
 msgid "One or more device drive path to monitor:"
-msgstr ""
+msgstr "One or more device drive path(s) to monitor:"
 
 #: ../HDDtemperature/messages:89
 msgid "Show maximum temperature on icon?"
-msgstr ""
+msgstr "Show maximum temperature on icon?"
 
 #: ../HDDtemperature/messages:91
 msgid "Time interval for checking (minutes):"
-msgstr ""
+msgstr "Time interval for checking (minutes):"
 
 #: ../HDDtemperature/messages:93
 msgid "It should conform to units used by hddtemp daemon"
-msgstr ""
+msgstr "It should conform to units used by hddtemp daemon"
 
 #: ../HDDtemperature/messages:95
 msgid "Alert temperature value (°C by default)"
-msgstr ""
+msgstr "Alert temperature value (°C by default)"
 
 #: ../HDDtemperature/messages:97
 msgid "0 for permanent show"
-msgstr ""
+msgstr "0 for permanent show"
 
 #: ../HDDtemperature/messages:99
 msgid "Pop up bubble duration (in seconds)"
-msgstr ""
+msgstr "Pop-up bubble duration (in seconds)"
 
 #: ../HDDtemperature/messages:101
 msgid "Port number to listen to hddtemp daemon (7634 by default)"
-msgstr ""
+msgstr "Port number to listen to hddtemp daemon (7634 by default)"
 
 #: ../HDDtemperature/messages:103
 msgid "Separator between fields used by hddtemp daemon ( | by default)"
-msgstr ""
+msgstr "Separator between fields used by hddtemp daemon ( | by default)"
 
 #: ../HDDtemperature/messages:106
 msgid ""
@@ -1174,6 +1229,9 @@ msgid ""
 " getting values from 'hddtemp' daemon (see: man hddtemp). \n"
 " Left-click shows more information about HD drives."
 msgstr ""
+"This applet shows the maximum temperature of your hard disk drives,\n"
+" getting values from 'hddtemp' daemon (see: man hddtemp). \n"
+" Left-click shows more information about HDDs."
 
 #: ../KTorrent/KTorrent:330
 msgid "Suspend all torrents"
@@ -1189,11 +1247,19 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"This applet allows you to <b>control KTorrent</b> from the Dock.\n"
+"It can display the <b>download rate</b> on the icon.\n"
+"<b>Middle-click</b> on the icon gives you information about the current "
+"torrents (you can bind a shortkey for this action).\n"
+"<b>Right-click</b> on the icon allows you to pause/start all the torrents.\n"
+"<b>Drop a torrent file</b> on the icon to add it to the list and start "
+"downloading it immediately."
 
 #: ../Lancelot/Lancelot:90
 msgid ""
 "Lancelot is not installed. Please install it before you run this applet."
 msgstr ""
+"Lancelot is not installed. Please install it before you run this applet."
 
 #: ../Lancelot/messages:96
 msgid ""
@@ -1202,27 +1268,32 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
+"This applet allows you to have the <b>Lancelot menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you access to the preferences window.\n"
+"<u>Note:</u> you need to install Lancelot."
 
 #: ../Liferea/messages:93
 msgid "Show in the icon:"
-msgstr ""
+msgstr "Show in the icon:"
 
 #: ../Liferea/messages:95
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Number of unread messages"
 
 #: ../Liferea/messages:97
 msgid " Number of new messages"
-msgstr ""
+msgstr " Number of new messages"
 
 #: ../Liferea/messages:100
 msgid "This applets makes an interface with Liferea"
-msgstr ""
+msgstr "This applet interfaces with Liferea"
 
 #: ../MintMenu/MintMenu:156
 msgid ""
 "MintMenu is not installed. Please install it before you run this applet."
 msgstr ""
+"MintMenu is not installed. Please install it before you run this applet."
 
 #: ../MintMenu/messages:96
 msgid ""
@@ -1231,57 +1302,64 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
+"This applet allows you to have the <b>Mint menu</b> inside your dock.\n"
+"Click on the icon to popup the menu.\n"
+"Right-click lets you access to the preferences window.\n"
+"<u>Note:</u> you need to install MintMenu."
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
-msgstr ""
+msgstr "Show the moon for all the current week?"
 
 #: ../Moon/messages:91
 msgid "You are going to see the moon from the perspective of this hemisphere"
 msgstr ""
+"You are going to see the moon from the perspective of this hemisphere"
 
 #: ../Moon/messages:93
 msgid "Hemisphere:"
-msgstr ""
+msgstr "Hemisphere:"
 
 #: ../Moon/messages:95
 msgid "North"
-msgstr ""
+msgstr "North"
 
 #: ../Moon/messages:97
 msgid "South"
-msgstr ""
+msgstr "South"
 
 #: ../Moon/messages:100
 msgid ""
 "This applet displays the moon phases and its informations for the current "
 "day, or week from the Northern or Southern hemisphere"
 msgstr ""
+"This applet displays the moon phases and its informations for the current "
+"day, or week from the Northern or Southern hemisphere"
 
 #: ../Pidgin/Pidgin:417
 msgid "Conversations"
-msgstr ""
+msgstr "Conversations"
 
 #: ../Pidgin/Pidgin:431
 msgid "Change your status"
-msgstr ""
+msgstr "Change your status"
 
 #: ../Pidgin/Pidgin:446
 msgid "Set your status message"
-msgstr ""
+msgstr "Set your status message"
 
 #: ../Pidgin/Pidgin:451 ../Xchat/Xchat:292
 msgid "Silent mode"
-msgstr ""
+msgstr "Silent mode"
 
 #: ../Pidgin/Pidgin:455 ../Xchat/Xchat:296 ../Xchat/Xchat:309
 #: ../Xchat/messages:123 ../Xchat/messages:127
 msgid "Switch the applet to silent mode (no pop-up on new message)."
-msgstr ""
+msgstr "Switch the applet to silent mode (no pop-up on new message)."
 
 #: ../Pidgin/Pidgin:466
 msgid "Enter your new status message:"
-msgstr ""
+msgstr "Enter your new status message:"
 
 #: ../Pidgin/messages:93 ../Pidgin/messages:97
 msgid "Parameters"
@@ -1289,44 +1367,45 @@ msgstr "Parameters"
 
 #: ../Pidgin/messages:95
 msgid "Choose a theme :"
-msgstr ""
+msgstr "Choose a theme :"
 
 #: ../Pidgin/messages:99
 msgid "Display conversation messages in a bubble?"
-msgstr ""
+msgstr "Display conversation messages in a bubble?"
 
 #: ../Pidgin/messages:101
 msgid "Display chat messages in a bubble?"
-msgstr ""
+msgstr "Display chat messages in a bubble?"
 
 #: ../Pidgin/messages:103
 msgid "Bubbles duration:"
-msgstr ""
+msgstr "Bubbles duration:"
 
 #: ../Pidgin/messages:111 ../Xchat/messages:103
 msgid "Animate the icon when receiving channel messages"
-msgstr ""
+msgstr "Animate the icon when receiving channel messages"
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid "Simple animation"
-msgstr ""
+msgstr "Simple animation"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
-msgstr ""
+msgstr "Demands attention"
 
 #: ../Pidgin/messages:119 ../Xchat/messages:111
 msgid "Animation of the icon"
-msgstr ""
+msgstr "Animation of the icon"
 
 #: ../Pidgin/messages:121 ../Xchat/messages:113
 msgid ""
 "This is the number of messages that you can recall by scrolling on the icon."
 msgstr ""
+"This is the number of messages that can be recalled by scrolling on the icon."
 
 #: ../Pidgin/messages:123 ../Xchat/messages:115
 msgid "Size of the history :"
-msgstr ""
+msgstr "Size of the history :"
 
 #: ../Pidgin/messages:125 ../Xchat/messages:117
 msgid "none"
@@ -1346,113 +1425,127 @@ msgid ""
 "The icon will also control the window of Pidgin like a normal application "
 "icon."
 msgstr ""
+"This applet integrates Pidgin into your dock.\n"
+"It can display new messages,\n"
+"you select a conversation from the menu on right-click,\n"
+"write a message on middle-click,\n"
+"and display the messages history by scrolling on the icon\n"
+"The icon will also control the window of Pidgin like a normal application "
+"icon."
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
-msgstr ""
+msgstr "Let empty to display the current site's name."
 
 #: ../Quote/messages:95
 msgid "Quote source:"
-msgstr ""
+msgstr "Quote source:"
 
 #: ../Quote/messages:97
 msgid "Quotationspage.com"
-msgstr ""
+msgstr "Quotationspage.com"
 
 #: ../Quote/messages:99
 msgid "Bash.org"
-msgstr ""
+msgstr "Bash.org"
 
 #: ../Quote/messages:101
 msgid "Xkcdb.com"
-msgstr ""
+msgstr "Xkcdb.com"
 
 #: ../Quote/messages:103
 msgid "Qdb.us"
-msgstr ""
+msgstr "Qdb.us"
 
 #: ../Quote/messages:105
 msgid "Danstonchat.com"
-msgstr ""
+msgstr "Danstonchat.com"
 
 #: ../Quote/messages:107
 msgid "Jokes2go.com"
-msgstr ""
+msgstr "Jokes2go.com"
 
 #: ../Quote/messages:109
 msgid "Vidademerda.com.br"
-msgstr ""
+msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:111
 msgid "Viedemerde.fr"
-msgstr ""
+msgstr "Viedemerde.fr"
 
 #: ../Quote/messages:113
 msgid "Fmylife.com"
-msgstr ""
+msgstr "Fmylife.com"
 
 #: ../Quote/messages:115
 msgid "Vitadimerda.it"
-msgstr ""
+msgstr "Vitadimerda.it"
 
 #: ../Quote/messages:117
 msgid "100blagues.com"
-msgstr ""
+msgstr "100blagues.com"
 
 #: ../Quote/messages:119
 msgid "Chucknorrisfacts.fr"
-msgstr ""
+msgstr "Chucknorrisfacts.fr"
 
 #: ../Quote/messages:122
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
+"This applet provides a \"Quote of the day\" feature from some internet "
+"sources such as:\n"
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Screensaver is currently disabled"
-msgstr ""
+msgstr "Screensaver is currently disabled"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
-msgstr ""
+msgstr "Disable the screensaver"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:200
 msgid "Inhibit for a given time (in minutes)"
-msgstr ""
+msgstr "Inhibit for a given time (in minutes)"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:207
 msgid "timelength"
-msgstr ""
+msgstr "duration"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 msgid "Inhibit for a given time"
-msgstr ""
+msgstr "Inhibit for a given time"
 
 #: ../Screensaver_inhibitor/messages:13
 msgid "Image filename when the screensaver is inhibited:"
-msgstr ""
+msgstr "Image filename when the screensaver is inhibited:"
 
 #: ../Screensaver_inhibitor/messages:31
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=Utility)"
 msgstr ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=Utility)"
 
 #: ../Screensaver_inhibitor/messages:91
 msgid "(in minutes). 0 to never stop automatically"
-msgstr ""
+msgstr "(in minutes). 0 to never stop automatically"
 
 #: ../Screensaver_inhibitor/messages:93
 msgid "How long should last the inhibition:"
-msgstr ""
+msgstr "How long the inhibition should last:"
 
 #: ../Screensaver_inhibitor/messages:95
 msgid "Shortkey to (de)inhibit the screensaver:"
-msgstr ""
+msgstr "Shortkey to (un)inhibit the screensaver:"
 
 #: ../Screensaver_inhibitor/messages:98
 msgid ""
@@ -1460,326 +1553,329 @@ msgid ""
 "This is especially useful when watching videos on Internet.\n"
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 msgstr ""
+"A small applet to <b>inhibit the screensaver</b>.\n"
+"This is especially useful when watching videos on Internet.\n"
+"<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
 
 #: ../Translator/Translator:371
 msgid "To"
-msgstr ""
+msgstr "To"
 
 #: ../Translator/Translator:390
 msgid "From"
-msgstr ""
+msgstr "From"
 
 #: ../Translator/Translator:410
 msgid "Switch languages"
-msgstr ""
+msgstr "Switch languages"
 
 #: ../Translator/Translator:423
 msgid "Translate from clipboard (middle-click)"
-msgstr ""
+msgstr "Translate from clipboard (middle-click)"
 
 #: ../Translator/messages:95
 msgid "Languages"
-msgstr ""
+msgstr "Languages"
 
 #: ../Translator/messages:97
 msgid "Translate from:"
-msgstr ""
+msgstr "Translate from:"
 
 #: ../Translator/messages:99 ../Translator/messages:229
 msgid "Afrikaans"
-msgstr ""
+msgstr "Afrikaans"
 
 #: ../Translator/messages:101 ../Translator/messages:231
 msgid "Albanian"
-msgstr ""
+msgstr "Albanian"
 
 #: ../Translator/messages:103 ../Translator/messages:233
 msgid "Arabic"
-msgstr ""
+msgstr "Arabic"
 
 #: ../Translator/messages:105 ../Translator/messages:235
 msgid "Armenian"
-msgstr ""
+msgstr "Armenian"
 
 #: ../Translator/messages:107 ../Translator/messages:237
 msgid "Azerbaijani"
-msgstr ""
+msgstr "Azerbaijani"
 
 #: ../Translator/messages:109 ../Translator/messages:239
 msgid "Basque"
-msgstr ""
+msgstr "Basque"
 
 #: ../Translator/messages:111 ../Translator/messages:241
 msgid "Belarusian"
-msgstr ""
+msgstr "Belarusian"
 
 #: ../Translator/messages:113 ../Translator/messages:243
 msgid "Bengali"
-msgstr ""
+msgstr "Bengali"
 
 #: ../Translator/messages:115 ../Translator/messages:245
 msgid "Bulgarian"
-msgstr ""
+msgstr "Bulgarian"
 
 #: ../Translator/messages:117 ../Translator/messages:247
 msgid "Catalan"
-msgstr ""
+msgstr "Catalan"
 
 #: ../Translator/messages:119
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Chinese (simplified)"
 
 #: ../Translator/messages:121
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Chinese (traditional)"
 
 #: ../Translator/messages:123 ../Translator/messages:253
 msgid "Croatian"
-msgstr ""
+msgstr "Croatian"
 
 #: ../Translator/messages:125 ../Translator/messages:255
 msgid "Czech"
-msgstr ""
+msgstr "Czech"
 
 #: ../Translator/messages:127 ../Translator/messages:257
 msgid "Danish"
-msgstr ""
+msgstr "Danish"
 
 #: ../Translator/messages:129 ../Translator/messages:259
 msgid "Dutch"
-msgstr ""
+msgstr "Dutch"
 
 #: ../Translator/messages:131 ../Translator/messages:261
 msgid "English"
-msgstr ""
+msgstr "English (UK)"
 
 #: ../Translator/messages:133 ../Translator/messages:263
 msgid "Estonian"
-msgstr ""
+msgstr "Estonian"
 
 #: ../Translator/messages:135 ../Translator/messages:265
 msgid "Filipino"
-msgstr ""
+msgstr "Filipino"
 
 #: ../Translator/messages:137 ../Translator/messages:267
 msgid "Finnish"
-msgstr ""
+msgstr "Finnish"
 
 #: ../Translator/messages:139 ../Translator/messages:269
 msgid "French"
-msgstr ""
+msgstr "French"
 
 #: ../Translator/messages:141 ../Translator/messages:271
 msgid "Galician"
-msgstr ""
+msgstr "Galician"
 
 #: ../Translator/messages:143 ../Translator/messages:273
 msgid "Georgian"
-msgstr ""
+msgstr "Georgian"
 
 #: ../Translator/messages:145 ../Translator/messages:275
 msgid "German"
-msgstr ""
+msgstr "German"
 
 #: ../Translator/messages:147 ../Translator/messages:277
 msgid "Greek"
-msgstr ""
+msgstr "Greek"
 
 #: ../Translator/messages:149 ../Translator/messages:279
 msgid "Gujarati"
-msgstr ""
+msgstr "Gujarati"
 
 #: ../Translator/messages:151 ../Translator/messages:281
 msgid "Haitian"
-msgstr ""
+msgstr "Haitian"
 
 #: ../Translator/messages:153 ../Translator/messages:283
 msgid "Hebrew"
-msgstr ""
+msgstr "Hebrew"
 
 #: ../Translator/messages:155 ../Translator/messages:285
 msgid "Hindi"
-msgstr ""
+msgstr "Hindi"
 
 #: ../Translator/messages:157 ../Translator/messages:287
 msgid "Hungarian"
-msgstr ""
+msgstr "Hungarian"
 
 #: ../Translator/messages:159 ../Translator/messages:289
 msgid "Icelandic"
-msgstr ""
+msgstr "Icelandic"
 
 #: ../Translator/messages:161 ../Translator/messages:291
 msgid "Indonesian"
-msgstr ""
+msgstr "Indonesian"
 
 #: ../Translator/messages:163 ../Translator/messages:293
 msgid "Irish"
-msgstr ""
+msgstr "Irish"
 
 #: ../Translator/messages:165 ../Translator/messages:295
 msgid "Italian"
-msgstr ""
+msgstr "Italian"
 
 #: ../Translator/messages:167 ../Translator/messages:297
 msgid "Japanese"
-msgstr ""
+msgstr "Japanese"
 
 #: ../Translator/messages:169 ../Translator/messages:299
 msgid "Kannada"
-msgstr ""
+msgstr "Kannada"
 
 #: ../Translator/messages:171 ../Translator/messages:301
 msgid "Korean"
-msgstr ""
+msgstr "Korean"
 
 #: ../Translator/messages:173 ../Translator/messages:303
 msgid "Latin"
-msgstr ""
+msgstr "Latin"
 
 #: ../Translator/messages:175 ../Translator/messages:305
 msgid "Latvian"
-msgstr ""
+msgstr "Latvian"
 
 #: ../Translator/messages:177 ../Translator/messages:307
 msgid "Lithuanian"
-msgstr ""
+msgstr "Lithuanian"
 
 #: ../Translator/messages:179 ../Translator/messages:309
 msgid "Macedonian"
-msgstr ""
+msgstr "Macedonian"
 
 #: ../Translator/messages:181 ../Translator/messages:311
 msgid "Malay"
-msgstr ""
+msgstr "Malay"
 
 #: ../Translator/messages:183 ../Translator/messages:313
 msgid "Maltese"
-msgstr ""
+msgstr "Maltese"
 
 #: ../Translator/messages:185 ../Translator/messages:315
 msgid "Norwegian"
-msgstr ""
+msgstr "Norwegian"
 
 #: ../Translator/messages:187 ../Translator/messages:317
 msgid "Persian"
-msgstr ""
+msgstr "Persian"
 
 #: ../Translator/messages:189 ../Translator/messages:319
 msgid "Polish"
-msgstr ""
+msgstr "Polish"
 
 #: ../Translator/messages:191 ../Translator/messages:321
 msgid "Portuguese"
-msgstr ""
+msgstr "Portuguese"
 
 #: ../Translator/messages:193 ../Translator/messages:323
 msgid "Romanian"
-msgstr ""
+msgstr "Romanian"
 
 #: ../Translator/messages:195 ../Translator/messages:325
 msgid "Russian"
-msgstr ""
+msgstr "Russian"
 
 #: ../Translator/messages:197 ../Translator/messages:327
 msgid "Serbian"
-msgstr ""
+msgstr "Serbian"
 
 #: ../Translator/messages:199 ../Translator/messages:329
 msgid "Slovak"
-msgstr ""
+msgstr "Slovak"
 
 #: ../Translator/messages:201 ../Translator/messages:331
 msgid "Slovenian"
-msgstr ""
+msgstr "Slovenian"
 
 #: ../Translator/messages:203 ../Translator/messages:333
 msgid "Spanish"
-msgstr ""
+msgstr "Spanish"
 
 #: ../Translator/messages:205 ../Translator/messages:335
 msgid "Swahili"
-msgstr ""
+msgstr "Swahili"
 
 #: ../Translator/messages:207 ../Translator/messages:337
 msgid "Swedish"
-msgstr ""
+msgstr "Swedish"
 
 #: ../Translator/messages:209 ../Translator/messages:339
 msgid "Tamil"
-msgstr ""
+msgstr "Tamil"
 
 #: ../Translator/messages:211 ../Translator/messages:341
 msgid "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #: ../Translator/messages:213 ../Translator/messages:343
 msgid "Thai"
-msgstr ""
+msgstr "Thai"
 
 #: ../Translator/messages:215 ../Translator/messages:345
 msgid "Turkish"
-msgstr ""
+msgstr "Turkish"
 
 #: ../Translator/messages:217 ../Translator/messages:347
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ukrainian"
 
 #: ../Translator/messages:219 ../Translator/messages:349
 msgid "Urdu"
-msgstr ""
+msgstr "Urdu"
 
 #: ../Translator/messages:221 ../Translator/messages:351
 msgid "Vietnamese"
-msgstr ""
+msgstr "Vietnamese"
 
 #: ../Translator/messages:223 ../Translator/messages:353
 msgid "Welsh"
-msgstr ""
+msgstr "Welsh"
 
 #: ../Translator/messages:225 ../Translator/messages:355
 msgid "Yiddish"
-msgstr ""
+msgstr "Yiddish"
 
 #: ../Translator/messages:227
 msgid "Translate to:"
-msgstr ""
+msgstr "Translate to:"
 
 #: ../Translator/messages:249
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "Simplified Chinese"
 
 #: ../Translator/messages:251
 msgid "Traditional Chinese"
-msgstr ""
+msgstr "Traditional Chinese"
 
 #: ../Translator/messages:357
 msgid "Shortkeys"
-msgstr ""
+msgstr "Shortkeys"
 
 #: ../Translator/messages:359
 msgid "Shortkey to start translating from (read):"
-msgstr ""
+msgstr "Shortkey to start translating from (read):"
 
 #: ../Translator/messages:361
 msgid "Shortkey to start translating to (write):"
-msgstr ""
+msgstr "Shortkey to start translating to (write):"
 
 #: ../Translator/messages:363
 msgid "Dialog"
-msgstr ""
+msgstr "Dialogue"
 
 #: ../Translator/messages:365
 msgid "In s. Set 0 for an unlimited time."
-msgstr ""
+msgstr "In secs. Set to 0 for an unlimited time."
 
 #: ../Translator/messages:367
 msgid "Time-length of the result dialog:"
-msgstr ""
+msgstr "Duration of the result dialogue:"
 
 #: ../Translator/messages:369
 msgid "Editable text widget?"
-msgstr ""
+msgstr "Editable text widget?"
 
 #: ../Translator/messages:372
 msgid ""
@@ -1796,95 +1892,108 @@ msgid ""
 "language, press Ctrl + Alt + R\n"
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
+"This applet translates single words, complete sentences, or web pages.\n"
+"To use it, either click on the icon or press the shortkey, then enter your "
+"text and press Enter. The translated text will be shown in a popup and be "
+"available in the clipboard, just press Ctrl+v to have it.\n"
+"You can also drop some text onto the icon, or translate the current "
+"clipboard content (middle-click).\n"
+"You can select the languages you want to translate from/to through the menu, "
+"or in the config window of the applet. Shortkeys can be configured too.\n"
+"By default:\n"
+" - If you want to translate something you are reading in the foreign "
+"language, press Ctrl + Alt + R\n"
+" - If you are writing something in your native language, press Ctrl + Alt + W"
 
 #: ../Transmission/Transmission:245
 msgid "Transmission is not running, or is not responding to us."
-msgstr ""
+msgstr "Transmission is not running, or is not responding to us."
 
 #: ../Transmission/Transmission:252
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
+"Couldn't get data from Transmission. You need Transmission 1.9 or above."
 
 #: ../Transmission/Transmission:258
 msgid "Progress:"
-msgstr ""
+msgstr "Progress:"
 
 #: ../Transmission/Transmission:261
 msgid "paused"
-msgstr ""
+msgstr "paused"
 
 #: ../Transmission/Transmission:263
 msgid "checking"
-msgstr ""
+msgstr "checking"
 
 #: ../Transmission/Transmission:265
 msgid "waiting for check"
-msgstr ""
+msgstr "waiting for check"
 
 #: ../Transmission/Transmission:267
 msgid "seeding"
-msgstr ""
+msgstr "seeding"
 
 #: ../Transmission/Transmission:271
 msgid "Time remaining:"
-msgstr ""
+msgstr "Time remaining:"
 
 #: ../Transmission/Transmission:277
 msgid "days"
-msgstr ""
+msgstr "days"
 
 #: ../Transmission/Transmission:279 ../Transmission/Transmission:285
 msgid "h"
-msgstr ""
+msgstr "h"
 
 #: ../Transmission/Transmission:287
 msgid "min"
-msgstr ""
+msgstr "min"
 
 #: ../Transmission/Transmission:288
 msgid "sec"
-msgstr ""
+msgstr "sec(s)"
 
 #: ../Transmission/Transmission:291
 msgid "Time remaining: Unknown"
-msgstr ""
+msgstr "Time remaining: Unknown"
 
 #: ../Transmission/Transmission:293
 msgid "Finished"
-msgstr ""
+msgstr "Finished"
 
 #: ../Transmission/Transmission:297
 msgid "Number of peers:"
-msgstr ""
+msgstr "Number of peers:"
 
 #: ../Transmission/Transmission:297
 msgid "and seeds:"
-msgstr ""
+msgstr "and seeds:"
 
 #: ../Transmission/Transmission:300
 msgid "Ratio:"
-msgstr ""
+msgstr "Ratio:"
 
 #: ../Transmission/Transmission:304
 msgid "No torrent in the list"
-msgstr ""
+msgstr "No torrent in the list"
 
 #: ../Transmission/Transmission:309
 msgid "Total amount of data:"
-msgstr ""
+msgstr "Total amount of data:"
 
 #: ../Transmission/Transmission:318
 msgid "Received:"
-msgstr ""
+msgstr "Received:"
 
 #: ../Transmission/Transmission:326
 msgid "Sent:"
-msgstr ""
+msgstr "Sent:"
 
 #: ../Transmission/Transmission:415
 msgid "You have to enable the Web client in the Transmisison's settings."
-msgstr ""
+msgstr "You have to enable the Web client in the Transmisison's settings."
 
 #: ../Transmission/messages:108
 msgid ""
@@ -1896,36 +2005,43 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
+"This applet allows you to <b>control Transmission</b> from the Dock.\n"
+"It can display the <b>download rate</b> on the icon.\n"
+"<b>Middle-click</b> on the icon gives you information about the current "
+"torrents (you can bind a shortkey for this action).\n"
+"<b>Right-click</b> on the icon allows you to pause/start all the torrents.\n"
+"<b>Drop a torrent file</b> on the icon to add it to the list and start "
+"downloading it immediately."
 
 #: ../Twitter/Twitter:117
 msgid "Oh, dear, your timeline is empty :-("
-msgstr ""
+msgstr "Oh, dear, your timeline is empty :-("
 
 #: ../Twitter/Twitter:185
 msgid "Oh, dear, you do not have direct messages :-("
-msgstr ""
+msgstr "Oh, dear, you do not have direct messages :-("
 
 #: ../Twitter/Twitter:199
 msgid "Followers"
-msgstr ""
+msgstr "Followers"
 
 #: ../Twitter/Twitter:199
 msgid "Friends"
-msgstr ""
+msgstr "Friends"
 
 #: ../Twitter/Twitter:199 ../Twitter/Twitter:353
 msgid "Tweets"
-msgstr ""
+msgstr "Tweets"
 
 #: ../Twitter/Twitter:220
 #, python-format
 msgid "%s, send a tweet"
-msgstr ""
+msgstr "%s, send a tweet"
 
 #: ../Twitter/Twitter:222
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
-msgstr ""
+msgstr "Your tweet has more than %d characters, please make it shorter"
 
 #: ../Twitter/Twitter:235
 #, python-format
@@ -1933,11 +2049,13 @@ msgid ""
 "Problem to send this tweet on %s, I think you already tried to send the same "
 "one few minutes ago"
 msgstr ""
+"Problem to send this tweet on %s, I think you already tried to send the same "
+"one few minutes ago"
 
 #: ../Twitter/Twitter:239
 #, python-format
 msgid "%s, retweet?"
-msgstr ""
+msgstr "%s, retweet?"
 
 #: ../Twitter/Twitter:253
 msgid ""
@@ -1945,6 +2063,9 @@ msgid ""
 "Right-click -> Add account -> Twitter.\n"
 "Right-click -> Add account -> Identi.ca."
 msgstr ""
+"This applet supports Twitter, and Identi.ca.\n"
+"Right-click -> Add account -> Twitter.\n"
+"Right-click -> Add account -> Identi.ca."
 
 #: ../Twitter/Twitter:258
 #, python-format
@@ -1952,11 +2073,13 @@ msgid ""
 "The applet needs your nickname, and an authorization\n"
 "that you accept it to connect on your %s account"
 msgstr ""
+"The applet needs your nickname, and authorisation\n"
+"that you permit it to connect on your %s account"
 
 #: ../Twitter/Twitter:267
 #, python-format
 msgid "What is your %s nickname?"
-msgstr ""
+msgstr "What is your %s nickname?"
 
 #: ../Twitter/Twitter:284
 #, python-format
@@ -1965,6 +2088,9 @@ msgid ""
 "on your browser. As soon as you authorize it, copy the PIN number that will "
 "be shown, and go to the next dialog"
 msgstr ""
+"%s applet needs you to give the authorisation. The authorisation page was "
+"opened on your browser. As soon as you authorise it, copy the PIN number "
+"that will be shown, and go to the next dialogue."
 
 #: ../Twitter/Twitter:287
 #, python-format
@@ -1973,27 +2099,30 @@ msgid ""
 "access it with your browser. Copy the PIN number that will be shown as soon "
 "as you authorize"
 msgstr ""
+"%s applet needs you to give the authorisation. Copy the address below and "
+"access it with your browser. Copy the PIN number that will be shown as soon "
+"as you authorise."
 
 #: ../Twitter/Twitter:297
 msgid "Enter the PIN number shown on the authorization page"
-msgstr ""
+msgstr "Enter the PIN number shown on the authorisation page"
 
 #: ../Twitter/Twitter:309
 msgid "Successfully connected with Twitter"
-msgstr ""
+msgstr "Successfully connected with Twitter"
 
 #: ../Twitter/Twitter:312
 msgid "Successfully connected with Identi.ca"
-msgstr ""
+msgstr "Successfully connected with Identi.ca"
 
 #: ../Twitter/Twitter:329
 msgid "Direct messages"
-msgstr ""
+msgstr "Direct messages"
 
 #: ../Twitter/Twitter:331
 #, python-format
 msgid "New direct messages (%d)"
-msgstr ""
+msgstr "New direct messages (%d)"
 
 #: ../Twitter/Twitter:344
 msgid "Info"
@@ -2002,67 +2131,68 @@ msgstr "Info"
 #: ../Twitter/Twitter:355
 #, python-format
 msgid "New tweets (%d)"
-msgstr ""
+msgstr "New tweets (%d)"
 
 #: ../Twitter/Twitter:369
 msgid "My tweets"
-msgstr ""
+msgstr "My tweets"
 
 #: ../Twitter/Twitter:387
 msgid "Add account"
-msgstr ""
+msgstr "Add account"
 
 #: ../Twitter/Twitter:395
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: ../Twitter/Twitter:405
 msgid "Identi.ca"
-msgstr ""
+msgstr "Identi.ca"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
 msgstr ""
+"Size of the emblem that shows the number of new tweets, and messages:"
 
 #: ../Twitter/messages:95
 msgid "Small"
-msgstr ""
+msgstr "Small"
 
 #: ../Twitter/messages:99
 msgid "Large"
-msgstr ""
+msgstr "Large"
 
 #: ../Twitter/messages:101
 msgid "Notifications"
-msgstr ""
+msgstr "Notifications"
 
 #: ../Twitter/messages:103
 msgid "Alert when you receive a new tweet or message?"
-msgstr ""
+msgstr "Alert when you receive a new tweet or message?"
 
 #: ../Twitter/messages:105
 msgid "Should the applet play a sound as a notification?"
-msgstr ""
+msgstr "Should the applet play a sound as a notification?"
 
 #: ../Twitter/messages:107
 msgid "Play a sound"
-msgstr ""
+msgstr "Play a sound"
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
-msgstr ""
+msgstr "Should the applet animate the icon as a notification?"
 
 #: ../Twitter/messages:111
 msgid "Animate the icon"
-msgstr ""
+msgstr "Animate the icon"
 
 #: ../Twitter/messages:113
 msgid "Which animation should apply to the icon?"
-msgstr ""
+msgstr "Which animation should be applied to the icon?"
 
 #: ../Twitter/messages:115
 msgid "Choose animation:"
-msgstr ""
+msgstr "Choose animation:"
 
 #: ../Twitter/messages:118
 msgid ""
@@ -2078,10 +2208,21 @@ msgid ""
 "Paste this number on the next dialog box will be shown.\n"
 "The plugin is going to inform that you are successfully connected."
 msgstr ""
+"This applet supports both Twitter, and Identi.ca. You can send tweets, "
+"direct messages, see your timeline, retweet, and answer direct messages. It "
+"will alert you when there are new tweets, and directed messages.\n"
+"On the first run, you need to choose which network to add, once at a time by "
+"right-clicking -> Add account -> Twitter or Identi.ca. The applet is going "
+"to ask for your nickname and authorisation to connect on the networks.\n"
+"The network authorisation page will be open.\n"
+"As soon as you authorise it, a PIN number will be shown on the page; copy "
+"this number.\n"
+"Paste this number on the next dialogue box.\n"
+"The plugin will inform you that you are successfully connected."
 
 #: ../WebSearch/messages:91
 msgid "Search engine :"
-msgstr ""
+msgstr "Search engine :"
 
 #: ../WebSearch/messages:93
 msgid "Google"
@@ -2089,7 +2230,7 @@ msgstr "Google"
 
 #: ../WebSearch/messages:95
 msgid "Bing"
-msgstr ""
+msgstr "Bing"
 
 #: ../WebSearch/messages:97
 msgid "Yahoo!"
@@ -2097,15 +2238,15 @@ msgstr "Yahoo!"
 
 #: ../WebSearch/messages:99
 msgid "Teoma"
-msgstr ""
+msgstr "Teoma"
 
 #: ../WebSearch/messages:101
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: ../WebSearch/messages:103
 msgid "Flickr"
-msgstr ""
+msgstr "Flickr"
 
 #: ../WebSearch/messages:105
 msgid "Wikipedia"
@@ -2113,38 +2254,41 @@ msgstr "Wikipedia"
 
 #: ../WebSearch/messages:107
 msgid "ImageShack"
-msgstr ""
+msgstr "ImageShack"
 
 #: ../WebSearch/messages:109
 msgid "Digg"
-msgstr ""
+msgstr "Digg"
 
 #: ../WebSearch/messages:111
 msgid "in sub-icons."
-msgstr ""
+msgstr "in sub-icons."
 
 #: ../WebSearch/messages:113
 msgid "Maximum number of results shown :"
-msgstr ""
+msgstr "Maximum number of results shown :"
 
 #: ../WebSearch/messages:115
 msgid "Show the current page as the icon label ?"
-msgstr ""
+msgstr "Show the current page as the icon label ?"
 
 #: ../WebSearch/messages:117
 msgid ""
 "Show the description of the result instead of its URL in the sub-icons ?"
 msgstr ""
+"Show the description of the result instead of its URL in the sub-icons ?"
 
 #: ../WebSearch/messages:119
 msgid ""
 "for slow connections, disable will result in significantly faster fetching."
 msgstr ""
+"for slow connections, disable will result in significantly faster fetching."
 
 #: ../WebSearch/messages:121
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
+"Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 
 #: ../WebSearch/messages:124
 msgid ""
@@ -2164,6 +2308,21 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"This applet provides an interface to some search engines such as\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, and ImageShack.\n"
+"To choose the search engine you can\n"
+" (1) Right-click on the main icon -> WebSearch -> (Choose the engine)\n"
+" (2) Right-click -> Configure this applet -> Configuration -> Search engine\n"
+" (3) Scroll up or down over the icon (applicable only for the first search)\n"
+"You can search in three ways\n"
+" (1) Middle-click on the main icon\n"
+" (2) Left-click on main icon (right after choosing a new engine)\n"
+"Type your query and validate. Each result will be shown as a sub-icon.\n"
+"Left-click to open the the result in the default Web Browser\n"
+"Middle-click on the sub-icon of any result to show its description\n"
+"Scroll up to fetch the next results\n"
+"Scroll down to fetch the previous results\n"
+"Left-click on the main icon to show search stats"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2175,30 +2334,37 @@ msgid ""
 " the command to launch this application, the uptime and the class(es) of "
 "this window."
 msgstr ""
+"WindowsKiller is able to kill problematic windows easily.\n"
+"Left Click on its icon and simply select window that cause trouble to kill "
+"it.\n"
+" (select the dock in order to cancel)\n"
+"Middle Click will give you some informations like the pid,\n"
+" the command to launch this application, the uptime and the class(es) of "
+"this window."
 
 #: ../Xchat/Xchat:285
 msgid "Channels"
-msgstr ""
+msgstr "Channels"
 
 #: ../Xchat/Xchat:289
 msgid "Switch the channel you'll send message to with the middle-click."
-msgstr ""
+msgstr "Switch the channel you'll send the message to with the middle-click."
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
-msgstr ""
+msgstr "All channels"
 
 #: ../Xchat/messages:121
 msgid "Silent Mode"
-msgstr ""
+msgstr "Silent Mode"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
-msgstr ""
+msgstr "Enable silent mode at startup:"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
-msgstr ""
+msgstr "Enable silent mode for a specific channel at startup:"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2210,295 +2376,316 @@ msgid ""
 "The icon will also control the window of xchat like a normal application "
 "icon."
 msgstr ""
+"This applet integrates Xchat and Xchat-gnome into your dock.\n"
+"It can display new messages:\n"
+"you select a channel from the menu on right-click,\n"
+"write a message on middle-click,\n"
+"and display the messages history by scrolling on the icon.\n"
+"The icon will also control the window of xchat like a normal application "
+"icon."
 
 #: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
-msgstr ""
+msgstr "Open Video Folder"
 
 #: ../YoutubeDl/YoutubeDl:307
 msgid "Show Download Status"
-msgstr ""
+msgstr "Show Download Status"
 
 #: ../YoutubeDl/YoutubeDl:315
 msgid "Send abort signal to the downloader. There may be a delay"
-msgstr ""
+msgstr "Send abort signal to the downloader. There may be a delay"
 
 #: ../YoutubeDl/messages:3
 msgid "Set to 0 to use the default applet size"
-msgstr ""
+msgstr "Set to 0 to use the default applet size"
 
 #: ../YoutubeDl/messages:89
 msgid "Otherwise use right click and enable downloads"
-msgstr ""
+msgstr "Otherwise use right click and enable downloads"
 
 #: ../YoutubeDl/messages:91
 msgid "Start downloading videos imediately? :"
-msgstr ""
+msgstr "Start downloading videos immediately? :"
 
 #: ../YoutubeDl/messages:93
 msgid "in secondds"
-msgstr ""
+msgstr "in seconds"
 
 #: ../YoutubeDl/messages:95
 msgid "Time between updates:"
-msgstr ""
+msgstr "Time between updates:"
 
 #: ../YoutubeDl/messages:97
 msgid "Action on middle click:"
-msgstr ""
+msgstr "Action on middle click:"
 
 #: ../YoutubeDl/messages:101
 msgid "Show Status"
-msgstr ""
+msgstr "Show Status"
 
 #: ../YoutubeDl/messages:103
 msgid "Otherwise just use middle click to monitor status"
-msgstr ""
+msgstr "Otherwise just use middle-click to monitor status"
 
 #: ../YoutubeDl/messages:105
 msgid "Show download progress on icon? :"
-msgstr ""
+msgstr "Show download progress on icon? :"
 
 #: ../YoutubeDl/messages:107
 msgid ""
 "Otherwise just show the plugin name and use middle click to monitor status"
 msgstr ""
+"Otherwise just show the plugin name and use middle-click to monitor status"
 
 #: ../YoutubeDl/messages:109
 msgid "Show download status in icon label when hovering over icon? :"
-msgstr ""
+msgstr "Show download status in icon label when hovering over icon? :"
 
 #: ../YoutubeDl/messages:111
 msgid "Notification selections"
-msgstr ""
+msgstr "Notification selections"
 
 #: ../YoutubeDl/messages:113
 msgid "Otherwise quietly start to the next download"
-msgstr ""
+msgstr "Otherwise quietly start to the next download"
 
 #: ../YoutubeDl/messages:115
 msgid "Show a pop-up message when starting downloads? :"
-msgstr ""
+msgstr "Show a pop-up message when starting downloads? :"
 
 #: ../YoutubeDl/messages:117
 msgid "Otherwise quietly move finish the download"
-msgstr ""
+msgstr "Otherwise quietly finish the download"
 
 #: ../YoutubeDl/messages:119
 msgid "Show a pop-up message when download is complete? :"
-msgstr ""
+msgstr "Show a pop-up message when download is complete? :"
 
 #: ../YoutubeDl/messages:121
 msgid "Otherwise quietly abort the download"
-msgstr ""
+msgstr "Otherwise quietly abort the download"
 
 #: ../YoutubeDl/messages:123
 msgid "Show a pop-up message when download is aborted? :"
-msgstr ""
+msgstr "Show a pop-up message when download is aborted? :"
 
 #: ../YoutubeDl/messages:125
 msgid "Otherwise just quietly add the url to the list"
-msgstr ""
+msgstr "Otherwise just quietly add the url to the list"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr ""
+msgstr "Show a pop-up message when adding url to queue list? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
 "if pynotify is installed a system notification message will appear, "
 "otherwise the standard dock dialogue messages will be used."
 msgstr ""
+"if pynotify is installed, a system notification message will appear, "
+"otherwise the standard dock dialogue messages will be used."
 
 #: ../YoutubeDl/messages:131
 msgid "Attempt to use desktop notifications instead of dock messages? :"
-msgstr ""
+msgstr "Attempt to use desktop notifications instead of dock messages? :"
 
 #: ../YoutubeDl/messages:133
 msgid ""
 "This is usefull if you have long lists of urls to view when you left click "
 "on the icon. Otherwise the standard dialogue message is fine."
 msgstr ""
+"This is useful if you have long lists of urls to view when you left-click on "
+"the icon. Otherwise, the standard dialogue message is fine."
 
 #: ../YoutubeDl/messages:135
 msgid "Use list view when URL list exceeds specified number?:"
-msgstr ""
+msgstr "Use list view when URL list exceeds specified number?:"
 
 #: ../YoutubeDl/messages:137
 msgid ""
 "When the number of URLS exceed this number switch to list view instead of a "
 "regular dialogue"
 msgstr ""
+"When the number of URLS exceed this number switch to list view instead of a "
+"regular dialogue"
 
 #: ../YoutubeDl/messages:139
 msgid "Use list view when number of URLs exceed:"
-msgstr ""
+msgstr "Use list view when number of URLs exceed:"
 
 #: ../YoutubeDl/messages:141
 msgid "Directory Setup"
-msgstr ""
+msgstr "Directory Setup"
 
 #: ../YoutubeDl/messages:143
 msgid ""
 "The path to save the videos to. Leave it empty to use the default one "
 "(currently in the users Videos directory)."
 msgstr ""
+"The path to save the videos to. Leave it empty to use the default one "
+"(currently in the user's Videos directory)."
 
 #: ../YoutubeDl/messages:145
 msgid "Save videos to this directory:"
-msgstr ""
+msgstr "Save videos to this directory:"
 
 #: ../YoutubeDl/messages:147
 msgid ""
 "The path to save the URL list to. Leave it empty to use the default one "
 "(currently in the users home directory)."
 msgstr ""
+"The path to save the URL list to. Leave it empty to use the default one "
+"(currently in the user's home directory)."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
-msgstr ""
+msgstr "Save URL List to this directory:"
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "Download Options"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
-msgstr ""
+msgstr "Set the download options that will be used for the youtubedl backend"
 
 #: ../YoutubeDl/messages:155
 msgid "Resume partially downloaded files"
-msgstr ""
+msgstr "Resume partially downloaded files"
 
 #: ../YoutubeDl/messages:157
 msgid "Resume download (--continue)?"
-msgstr ""
+msgstr "Resume download (--continue)?"
 
 #: ../YoutubeDl/messages:159
 msgid "Ignore errors during download and continue processing."
-msgstr ""
+msgstr "Ignore errors during download and continue processing."
 
 #: ../YoutubeDl/messages:161
 msgid "Ignore errors (--ignore-errors)?"
-msgstr ""
+msgstr "Ignore errors (--ignore-errors)?"
 
 #: ../YoutubeDl/messages:163
 msgid "If file exists fo not attempt to over write the file."
-msgstr ""
+msgstr "If file exists, do not attempt to overwrite the file."
 
 #: ../YoutubeDl/messages:165
 msgid "No overwrite (--no-overwrites)?"
-msgstr ""
+msgstr "No overwrite (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
-msgstr ""
+msgid ""
+"Use the title of the video in the file name used to download the video"
+msgstr "Use the title of the video in the filename"
 
 #: ../YoutubeDl/messages:169
 msgid "Use title (--title)?"
-msgstr ""
+msgstr "Use title (--title)?"
 
 #: ../YoutubeDl/messages:171
 msgid "Which download format to use:"
-msgstr ""
+msgstr "Which download format to use:"
 
 #: ../YoutubeDl/messages:173
 msgid "Specify the video format"
-msgstr ""
+msgstr "Specify the video format"
 
 #: ../YoutubeDl/messages:175
 msgid "Limit the maximum quality"
-msgstr ""
+msgstr "Limit the maximum quality"
 
 #: ../YoutubeDl/messages:177
 msgid "Download default format"
-msgstr ""
+msgstr "Download default format"
 
 #: ../YoutubeDl/messages:179
 msgid "Specify the video format (quality) in which to download the video."
-msgstr ""
+msgstr "Specify the video format (quality) in which to download the video."
 
 #: ../YoutubeDl/messages:181
 msgid "Video format (--format):"
-msgstr ""
+msgstr "Video format (--format):"
 
 #: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
 msgid "H264 - MP4 at 480p"
-msgstr ""
+msgstr "H264 - MP4 at 480p"
 
 #: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
 msgid "H264 - MP4 at 720p"
-msgstr ""
+msgstr "H264 - MP4 at 720p"
 
 #: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
 msgid "H264 - MP4 at 1080p"
-msgstr ""
+msgstr "H264 - MP4 at 1080p"
 
 #: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
 msgid "H264 - FLV at 360p"
-msgstr ""
+msgstr "H264 - FLV at 360p"
 
 #: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
 msgid "H264 - FLV at 480p"
-msgstr ""
+msgstr "H264 - FLV at 480p"
 
 #: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
 msgid "H263 - FLV at 240p"
-msgstr ""
+msgstr "H263 - FLV at 240p"
 
 #: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
 msgid "Webm at 480p"
-msgstr ""
+msgstr "Webm at 480p"
 
 #: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
 msgid "Webm at 720p"
-msgstr ""
+msgstr "Webm at 720p"
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr ""
+msgstr "3GP video"
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
-msgstr ""
+msgstr "Limit the maximum quality of the videos to download."
 
 #: ../YoutubeDl/messages:203
 msgid "Maximum quality (--max-quality):"
-msgstr ""
+msgstr "Maximum quality (--max-quality):"
 
 #: ../YoutubeDl/messages:223
 msgid "Download the default format."
-msgstr ""
+msgstr "Download the default format."
 
 #: ../YoutubeDl/messages:225
 msgid ""
 "Some videos require an account to be downloaded, mostly because they're "
 "flagged as mature content."
 msgstr ""
+"Some videos require an account to be downloaded, mostly because they're "
+"flagged as mature content."
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr ""
+msgstr "Use the Username and Password authentication process."
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Username/Password"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
-msgstr ""
+msgstr "Specify the youtube account username UserName."
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Username:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
-msgstr ""
+msgstr "Just as with the username, specify the account password."
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Password:"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2520,3 +2707,20 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
+"This applet allows a user to drag Youtube links from the Youtube website and "
+"drop them on the icon to download. The backend downloader is based on "
+"youtube-dl.py.\n"
+"\n"
+"Only one video will be downloaded at a time and each url will be added to a "
+"list. When the video is downloaded or aborted, the url will be removed from "
+"the list. The list can be saved to a file and loaded again for future use.\n"
+"\n"
+"The middle mouse button can be configured to open the video folder or to "
+"show download status.\n"
+"\n"
+"Right clicking allows various options depending on what is happening at that "
+"time. If your video foler is not valid or not writeable then you can't "
+"download until it is corrected.\n"
+"\n"
+"If there are no videos in the list, left clicking on the icon allows you to "
+"enter a url. Otherwise, the url list will be displayed."

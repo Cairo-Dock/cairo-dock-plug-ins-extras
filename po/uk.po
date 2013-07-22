@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2013-07-21 16:32+0000\n"
 "PO-Revision-Date: 2013-03-15 05:26+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-16 06:04+0000\n"
-"X-Generator: Launchpad (build 16532)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
+"Language: uk\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu не встановлено. Встановіть до того, як використовувати додаток."
 
@@ -374,7 +376,8 @@ msgstr "Оформлення"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr "Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
+msgstr ""
+"Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:67
@@ -726,9 +729,8 @@ msgid "No Subject"
 msgstr ""
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
-#, fuzzy
 msgid "Please fill in your Gmail account."
-msgstr "Будь ласка, введіть ваше ім'я на Gmail:"
+msgstr ""
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
@@ -1015,7 +1017,8 @@ msgstr "Розмір десклету (ширина х висота)"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В залежності від вашого віконного менеджера, ви можете переміщувати його з "
 "допомогою ALT+ліве клацання"
@@ -1496,14 +1499,14 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Додаток \"Цитата дня\" вміє працювати з такими інтернет-ресурсами як:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Screensaver is currently disabled"
@@ -2287,15 +2290,11 @@ msgid ""
 msgstr "при повільному з'єднанні, відключення може пришвидшити вибірки."
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
-"Ввімкнути попередній перегляд для пошуку по Youtube, Webshots, Flickr, "
-"ImageShack, Twitter, та Digg ?"
 
 #: ../WebSearch/messages:124
-#, fuzzy
 msgid ""
 "This applet provides an interface to some search engines such as\n"
 "Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, and ImageShack.\n"
@@ -2313,25 +2312,6 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
-"Цей додаток надає інтерфейс доступу до деяких пошукових систем, таких як\n"
-"Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, "
-"ImageShack, and Twitter.\n"
-"Для вибору пошукової системи ви можете використати\n"
-" (1) Праве клацання на головній іконці -> Веб пошук-> (Вибрати пошуковик)\n"
-" (2) Праве клацання -> Налаштування додатку -> Налаштування -> Пошукова "
-"система\n"
-" (3) Скролінг вгору чи вниз на іконці (застосовується лише для першого "
-"пошуку)\n"
-"Ви можете шукати кількома способами\n"
-" (1) Середне клацання на головній іконці\n"
-" (2) Ліве клацання на головній іконці (одразу після вибору пошуковика)\n"
-"Введіть свій запит і перевірте. Кожен результат буде показаний як суб-"
-"іконка.\n"
-"Ліве клацання відкриє результати у типовому браузері\n"
-"Середне клацання на суб-іконці будь-якого результату покаже його опис\n"
-"Скрол вгору покаже наступні результати\n"
-"Скрол вниз покаже попередні результати\n"
-"Ліве клацання на головній іконці покаже статистику пошуку."
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2360,14 +2340,12 @@ msgstr ""
 "Середнє клацання, щоб перемикнути канал, до якого надсилаєте повідомлення."
 
 #: ../Xchat/Xchat:305
-#, fuzzy
 msgid "All channels"
-msgstr "Канали"
+msgstr ""
 
 #: ../Xchat/messages:121
-#, fuzzy
 msgid "Silent Mode"
-msgstr "Тихий режим"
+msgstr ""
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
@@ -2592,7 +2570,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Не перезаписувати (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Використовувати назву відео в імені файлу, при  завантаженні відео"
 
 #: ../YoutubeDl/messages:169
@@ -2741,30 +2720,3 @@ msgstr ""
 "\n"
 "Якщо у списку немає відео то ліве клацання на іконці дозволяє ввести "
 "посилання. В іншому випадку буде відображатися список посилань."
-
-#~ msgid "There is no subscription to any Gmail account."
-#~ msgstr "Не знайдено підписок на облікові записи Gmail."
-
-#~ msgid ""
-#~ "\"always\" will notify you whenever the number of emails is not 0; "
-#~ "\"different\" will do so whenever the number of emails changes; \"superior"
-#~ "\" will notify you whenever it increases (default)."
-#~ msgstr ""
-#~ "\"постійна\" сповіщати якщо є хоч один лист; якщо кількість листів "
-#~ "\"змінилась\" з останньої перевірки; якщо кількість листів \"збільшилась"
-#~ "\" (типово)"
-
-#~ msgid "On which condition?"
-#~ msgstr "Якщо кількість листів:"
-
-#~ msgid "superior"
-#~ msgstr "збільшилась"
-
-#~ msgid "always"
-#~ msgstr "постійна"
-
-#~ msgid "different"
-#~ msgstr "змінилась"
-
-#~ msgid "Webshots"
-#~ msgstr "Webshots"

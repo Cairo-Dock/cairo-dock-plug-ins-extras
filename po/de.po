@@ -8,18 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-04-11 15:12+0000\n"
-"Last-Translator: Michael Konrad <Nephelyn@arcor.de>\n"
+"POT-Creation-Date: 2013-07-21 16:32+0000\n"
+"PO-Revision-Date: 2013-06-18 16:29+0000\n"
+"Last-Translator: Tim Schulz <timschulz1998@yahoo.de>\n"
 "Language-Team: German <de@li.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-04-12 05:31+0000\n"
-"X-Generator: Launchpad (build 16564)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:42+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
+"Language: de\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu ist nicht installiert. Bitte installieren Sie es, bevor Sie dieses "
 "Applet ausführen."
@@ -30,7 +32,7 @@ msgstr "GnoMenu's Einstellungen"
 
 #: ../GnoMenu/GnoMenu:146
 msgid "About"
-msgstr "Über"
+msgstr "Info"
 
 #: ../GnoMenu/GnoMenu:149 ../Cardapio/Cardapio:115 ../Lancelot/Lancelot:123
 #: ../MintMenu/MintMenu:165
@@ -67,7 +69,7 @@ msgstr "Symbol"
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
 #: ../YoutubeDl/messages:13
 msgid "Name of the dock it belongs to:"
-msgstr "Name des Docks, zu dem es gehört :"
+msgstr "Name des Docks, zu dem es gehört:"
 
 #: ../GnoMenu/messages:7 ../Calendar/messages:7 ../Cardapio/messages:7
 #: ../Deluge/messages:7 ../DiskFree/messages:7 ../Gmail/messages:7
@@ -79,7 +81,7 @@ msgstr "Name des Docks, zu dem es gehört :"
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
 #: ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
-msgstr "Name des Symbols, so wie es als Beschriftung im Dock erscheint :"
+msgstr "Name des Symbols, so wie es als Beschriftung im Dock erscheint:"
 
 #: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Cardapio/messages:9
 #: ../Deluge/messages:9 ../DiskFree/messages:9 ../Gmail/messages:9
@@ -112,7 +114,7 @@ msgstr "Anzeige"
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13 ../YoutubeDl/messages:11
 msgid "Image filename:"
-msgstr "Name der Bilddatei :"
+msgstr "Name der Bilddatei:"
 
 #: ../GnoMenu/messages:15 ../Calendar/messages:15 ../Cardapio/messages:15
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:11
@@ -171,9 +173,9 @@ msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
 msgstr ""
-"Falls verriegelt, kann das Desklet nicht durch einfaches ziehen und ablegen "
-"mit der linken Maustaste verschoben werden. Es lässt sich immer noch "
-"mithilfe von ALT+Linksklick bewegen."
+"Falls gesperrt, kann das Desklet nicht durch einfaches Ziehen und Ablegen "
+"mit der linken Maustaste verschoben werden. Es lässt sich nur bei gedrückter "
+"Alt-Taste bewegen."
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../Deluge/messages:25 ../DiskFree/messages:25 ../Gmail/messages:31
@@ -183,7 +185,7 @@ msgstr ""
 #: ../Transmission/messages:25 ../Twitter/messages:25 ../WebSearch/messages:23
 #: ../WindowsKiller/messages:25 ../Xchat/messages:25
 msgid "Lock position?"
-msgstr "Position sperren ?"
+msgstr "Position sperren?"
 
 #: ../GnoMenu/messages:27 ../Calendar/messages:27 ../Cardapio/messages:27
 #: ../Deluge/messages:27 ../DiskFree/messages:27 ../Gmail/messages:33
@@ -196,8 +198,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Abhängig von ihrem Fenstermanager können Sie die Größe mithilfe von ALT"
-"+Mittelklick oder ALT+Linksklick verändern."
+"Abhängig von Ihrem Fensterverwalter können Sie Größenänderungen durch "
+"Linksklick oder Mittelklick bei gedrückter Alt-Taste ausführen."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:35
@@ -207,7 +209,7 @@ msgstr ""
 #: ../Twitter/messages:29 ../WebSearch/messages:27
 #: ../WindowsKiller/messages:29 ../Xchat/messages:29
 msgid "Desklet dimensions (width x height):"
-msgstr "Desklet-Abmessungen (Breite x Höhe) :"
+msgstr "Abmessungen des Desklets (Breite x Höhe):"
 
 #: ../GnoMenu/messages:31 ../Calendar/messages:31 ../Cardapio/messages:31
 #: ../Deluge/messages:31 ../DiskFree/messages:31 ../Gmail/messages:37
@@ -220,8 +222,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
-"Abhängig von ihrem Fenstermanager ist es ihnen möglich, es mit mithilfe von "
-"ALT+Linksklick zu bewegen. Negativwerte werden von der rechten, unteren Ecke "
+"Abhängig von Ihrem Fenstermanager ist es Ihnen möglich, es mit mithilfe von "
+"ALT+Linksklick zu bewegen. Negativwerte werden von der rechten unteren Ecke "
 "aus gezählt."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
@@ -232,7 +234,7 @@ msgstr ""
 #: ../Twitter/messages:33 ../WebSearch/messages:31
 #: ../WindowsKiller/messages:33 ../Xchat/messages:33
 msgid "Desklet position (x, y):"
-msgstr "Desklet-Position (x, y) :"
+msgstr "Desklet-Position (x, y):"
 
 #: ../GnoMenu/messages:35 ../Calendar/messages:35 ../Cardapio/messages:35
 #: ../Deluge/messages:35 ../DiskFree/messages:35 ../Gmail/messages:41
@@ -256,7 +258,7 @@ msgstr ""
 #: ../Transmission/messages:37 ../Twitter/messages:37 ../WebSearch/messages:35
 #: ../WindowsKiller/messages:37 ../Xchat/messages:37
 msgid "Rotation:"
-msgstr "Rotation :"
+msgstr "Rotation:"
 
 #: ../GnoMenu/messages:39 ../Calendar/messages:39 ../Cardapio/messages:39
 #: ../Deluge/messages:39 ../DiskFree/messages:39 ../Gmail/messages:45
@@ -286,7 +288,7 @@ msgstr "Ist vom Dock abgelöst"
 #: ../Twitter/messages:43 ../WebSearch/messages:41
 #: ../WindowsKiller/messages:43 ../Xchat/messages:43
 msgid "Visibility:"
-msgstr "Sichtbarkeit :"
+msgstr "Sichtbarkeit:"
 
 #: ../GnoMenu/messages:45 ../Calendar/messages:45 ../Cardapio/messages:45
 #: ../Deluge/messages:45 ../DiskFree/messages:45 ../Gmail/messages:51
@@ -354,7 +356,7 @@ msgstr "Platz reservieren"
 #: ../Twitter/messages:55 ../WebSearch/messages:53
 #: ../WindowsKiller/messages:55 ../Xchat/messages:55
 msgid "Should be visible on all desktops?"
-msgstr "Soll es auf allen Arbeitsflächen sichtbar sein ?"
+msgstr "Soll es auf allen Arbeitsflächen sichtbar sein?"
 
 #: ../GnoMenu/messages:57 ../Calendar/messages:57 ../Cardapio/messages:57
 #: ../Deluge/messages:57 ../DiskFree/messages:57 ../Gmail/messages:63
@@ -377,8 +379,8 @@ msgstr "Dekorationen"
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
 msgstr ""
-"Wählen Sie  »Benutzerdefinierte Dekorationen« um unten ihre eigenen "
-"Dekorationen festzulegen."
+"Wählen Sie \"Benutzerdefinierte Dekorationen\", um unten Ihre eigenen "
+"Dekorationen zu definieren."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../Deluge/messages:61 ../DiskFree/messages:61 ../Gmail/messages:67
@@ -388,7 +390,7 @@ msgstr ""
 #: ../Twitter/messages:61 ../WebSearch/messages:59
 #: ../WindowsKiller/messages:61 ../Xchat/messages:61
 msgid "Choose a decoration theme for this desklet:"
-msgstr "Wählen Sie ein Dekorationsthema für dieses Desklet :"
+msgstr "Wählen Sie ein Dekorationsthema für dieses Desklet:"
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
 #: ../Deluge/messages:63 ../DiskFree/messages:63 ../Gmail/messages:69
@@ -400,7 +402,7 @@ msgstr "Wählen Sie ein Dekorationsthema für dieses Desklet :"
 msgid ""
 "Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
 msgstr ""
-"Bild als Hintergrund für Darstellungen, z.B. ein Rahmen. Leer lassen, um "
+"Bild als Hintergrund für Darstellungen, z. B. einen Rahmen. Leer lassen, um "
 "kein Bild zu verwenden."
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
@@ -411,7 +413,7 @@ msgstr ""
 #: ../Twitter/messages:65 ../WebSearch/messages:63
 #: ../WindowsKiller/messages:65 ../Xchat/messages:65
 msgid "Background image:"
-msgstr "Hintergrundbild :"
+msgstr "Hintergrundbild:"
 
 #: ../GnoMenu/messages:67 ../Calendar/messages:67 ../Cardapio/messages:67
 #: ../Deluge/messages:67 ../DiskFree/messages:67 ../Gmail/messages:73
@@ -421,7 +423,7 @@ msgstr "Hintergrundbild :"
 #: ../Twitter/messages:67 ../WebSearch/messages:65
 #: ../WindowsKiller/messages:67 ../Xchat/messages:67
 msgid "Background transparency:"
-msgstr "Hintergrund-Transparenz :"
+msgstr "Hintergrund-Transparenz:"
 
 #: ../GnoMenu/messages:69 ../Calendar/messages:69 ../Cardapio/messages:69
 #: ../Deluge/messages:69 ../DiskFree/messages:69 ../Gmail/messages:75
@@ -442,7 +444,7 @@ msgstr ""
 #: ../Twitter/messages:71 ../WebSearch/messages:69
 #: ../WindowsKiller/messages:71 ../Xchat/messages:71
 msgid "Left offset:"
-msgstr "Linker Versatz :"
+msgstr "Linker Versatz:"
 
 #: ../GnoMenu/messages:73 ../Calendar/messages:73 ../Cardapio/messages:73
 #: ../Deluge/messages:73 ../DiskFree/messages:73 ../Gmail/messages:79
@@ -464,7 +466,7 @@ msgstr ""
 #: ../Twitter/messages:75 ../WebSearch/messages:73
 #: ../WindowsKiller/messages:75 ../Xchat/messages:75
 msgid "Top offset:"
-msgstr "Oberer Versatz :"
+msgstr "Oberer Versatz:"
 
 #: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
 #: ../Deluge/messages:77 ../DiskFree/messages:77 ../Gmail/messages:83
@@ -486,7 +488,7 @@ msgstr ""
 #: ../Twitter/messages:79 ../WebSearch/messages:77
 #: ../WindowsKiller/messages:79 ../Xchat/messages:79
 msgid "Right offset:"
-msgstr "Rechter Versatz :"
+msgstr "Rechter Versatz:"
 
 #: ../GnoMenu/messages:81 ../Calendar/messages:81 ../Cardapio/messages:81
 #: ../Deluge/messages:81 ../DiskFree/messages:81 ../Gmail/messages:87
@@ -508,7 +510,7 @@ msgstr ""
 #: ../Twitter/messages:83 ../WebSearch/messages:81
 #: ../WindowsKiller/messages:83 ../Xchat/messages:83
 msgid "Bottom offset:"
-msgstr "Unterer Versatz :"
+msgstr "Unterer Versatz:"
 
 #: ../GnoMenu/messages:85 ../Calendar/messages:85 ../Cardapio/messages:85
 #: ../Deluge/messages:85 ../DiskFree/messages:85 ../Gmail/messages:91
@@ -521,7 +523,7 @@ msgid ""
 "Image to be displayed above the drawings, e.g. a reflection. Leave empty for "
 "no image."
 msgstr ""
-"Bild zum Darstellen über der Zeichnung, z.B. eine Reflektion. Leer lassen, "
+"Bild zum Darstellen über der Zeichnung, z. B. eine Reflektion. Leer lassen, "
 "um kein Bild zu verwenden."
 
 #: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
@@ -532,7 +534,7 @@ msgstr ""
 #: ../Twitter/messages:87 ../WebSearch/messages:85
 #: ../WindowsKiller/messages:87 ../Xchat/messages:87
 msgid "Foreground image:"
-msgstr "Vordergrundbild :"
+msgstr "Vordergrundbild:"
 
 #: ../GnoMenu/messages:89 ../Calendar/messages:89 ../Cardapio/messages:89
 #: ../Deluge/messages:89 ../DiskFree/messages:89 ../Gmail/messages:95
@@ -542,7 +544,7 @@ msgstr "Vordergrundbild :"
 #: ../Twitter/messages:89 ../WebSearch/messages:87
 #: ../WindowsKiller/messages:89 ../Xchat/messages:89
 msgid "Foreground tansparency:"
-msgstr "Vordergrundtransparenz :"
+msgstr "Vordergrundtransparenz:"
 
 #: ../GnoMenu/messages:91 ../Calendar/messages:91 ../Cardapio/messages:91
 #: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:97
@@ -558,7 +560,7 @@ msgstr "Konfiguration"
 #: ../GnoMenu/messages:93 ../Cardapio/messages:93 ../Lancelot/messages:93
 #: ../MintMenu/messages:93
 msgid "Shortkey to pop up the menu:"
-msgstr "Tastenkürzel um das Menü aufklappen zu lassen :"
+msgstr "Tastenkürzel um das Menü aufklappen zu lassen:"
 
 #: ../GnoMenu/messages:96
 msgid ""
@@ -567,10 +569,10 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
-"Dieses Applet erlaubt ihnen, das <b>GnoMenu menu</b> innerhalb ihres Docks "
+"Dieses Applet erlaubt Ihnen, das <b>GnoMenu menu</b> innerhalb Ihres Docks "
 "zu haben.\n"
 "Klicken Sie auf das Symbol, um das Menü aufklappen zu lassen.\n"
-"Ein Rechtsklick gibt ihnen den Zugriff auf das Voreinstellungsfenster.\n"
+"Ein Rechtsklick gibt Ihnen den Zugriff auf das Voreinstellungsfenster.\n"
 "<u>Anmerkung :</u> Sie müssen GnoMenu dafür installieren."
 
 #: ../Calendar/messages:93
@@ -580,13 +582,13 @@ msgstr "Anwendungen"
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
 msgstr ""
-"Befehl, um ihre bevorzugte Kalenderanwendung zu starten (Mittelklick) :"
+"Befehl, um Ihre bevorzugte Kalenderanwendung zu starten (Mittelklick):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
 msgstr ""
 "Befehl, der ausgeführt werden soll, wenn eine Datei auf der Kalendersymbol "
-"fallengelassen wird :"
+"fallengelassen wird:"
 
 #: ../Calendar/messages:99
 msgid "Behaviour"
@@ -602,7 +604,7 @@ msgstr ""
 
 #: ../Calendar/messages:103
 msgid "Icon custom script:"
-msgstr "Selbsterstelltes Symbolskript :"
+msgstr "Selbsterstelltes Symbolskript:"
 
 #: ../Calendar/messages:106
 msgid ""
@@ -615,7 +617,7 @@ msgid ""
 msgstr ""
 "Dieses Applet wird das augenblickliche Datum anzeigen.\n"
 "Linksklick zeigt den Kalender an.\n"
-"Mittelklick startet eine Kalenderanwendung ihrer Wahl.\n"
+"Mittelklick startet eine Kalenderanwendung Ihrer Wahl.\n"
 "Mausrad-nach-oben zeigt den Kalender des kommenden Monats an.\n"
 "Mausrad-nach-unten zeigt die Ereignisse des Tages an.\n"
 "Das Fallenlassen einer Datei auf dem Symbol startet die Kalenderanwendung "
@@ -635,7 +637,7 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
-"Dieses Applet erlaubt ihnen, das <b>Cardapio-Menü</b> in ihrem Dock zu "
+"Dieses Applet erlaubt Ihnen, das <b>Cardapio-Menü</b> in Ihrem Dock zu "
 "haben.\n"
 "Klicken Sie auf das Symbol, um das Menü aufklappen zu lassen.\n"
 "Ein Rechtsklick lässt Sie die Menüs editieren. <u>Anmerkung :</u> Sie müssen "
@@ -671,7 +673,7 @@ msgstr ""
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
-msgstr "Tastenkürzel, um die Torrent-Informationen aufklappen zu lassen :"
+msgstr "Tastenkürzel, um die Torrent-Informationen aufklappen zu lassen:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
 msgid "Show as quick-info:"
@@ -709,14 +711,14 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dieses Applet erlaubt ihnen <b>Deluge vom Dock aus zu steuern</b> (Sie "
+"Dieses Applet erlaubt Ihnen, <b>Deluge vom Dock aus zu steuern</b> (Sie "
 "müssen <i>deluged</i> installieren, welcher der Dämon ist, der für die "
 "Kommunikation zwischen dem Dock und Deluge benutzt wird).\n"
 "Es kann die <b>Download-Rate</b> auf dem Icon abbilden.\n"
-"Ein <b>Mittelklick</b> auf das Symbol gibt ihnen Informationen über die "
+"Ein <b>Mittelklick</b> auf das Symbol gibt Ihnen Informationen über die "
 "derzeitigen Torrents (Sie können einen Kurzbefehl für diese Aktion "
 "festlegen).\n"
-"Ein <b>Rechtsklick</b> auf das Symbol erlaubt ihnen, alle Torrents zu "
+"Ein <b>Rechtsklick</b> auf das Symbol erlaubt Ihnen, alle Torrents zu "
 "pausieren oder zu starten.\n"
 "Lassen Sie eine Torrentdatei auf dem Symbol fallen, um sie zu der Liste "
 "hinzuzufügen und sie sofort herunterzuladen."
@@ -726,7 +728,7 @@ msgid ""
 "View available file system's space as Giga (checked) or Mega (unchecked) :"
 msgstr ""
 "Den zur Verfügung stehenden Festplattenplatz des Dateisystems als Giga "
-"(gewählt) oder Mega (nicht gewählt) darstellen :"
+"(gewählt) oder Mega (nicht gewählt) darstellen:"
 
 #: ../DiskFree/messages:95
 msgid "in minutes"
@@ -745,37 +747,36 @@ msgid "No Subject"
 msgstr ""
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
-#, fuzzy
 msgid "Please fill in your Gmail account."
-msgstr "Bitte geben Sie Ihren Gmail-Benutzernamen ein :"
+msgstr ""
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
-msgstr "Bitte geben Sie Ihren Gmail-Benutzernamen ein :"
+msgstr "Bitte geben Sie Ihren Gmail-Benutzernamen ein:"
 
 #: ../Gmail/Gmail:194
 msgid "Please, enter your Gmail password:"
-msgstr "Bitte geben Sie Ihr Gmail-Passwort ein :"
+msgstr "Bitte geben Sie Ihr Gmail-Passwort ein:"
 
 #: ../Gmail/Gmail:302
 msgid "WARNING: there was an error reading XML content."
-msgstr "WARNUNG : Beim Lesen des XML-Inhalts ist ein Fehler aufgetreten."
+msgstr "WARNUNG: Beim Lesen des XML-Inhalts ist ein Fehler aufgetreten."
 
 #: ../Gmail/Gmail:325
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
-"WARNUNG : Das Gmail-Applet konnte sich nicht mit dem Gmail-Atom-Feed "
+"WARNUNG: Das Gmail-Applet konnte sich nicht mit dem Gmail-Atom-Feed "
 "verbinden."
 
 #: ../Gmail/Gmail:340
 msgid "WARNING: Gmail atom feed is badly formed: "
-msgstr "WARNUNG : Der Gmail-Atom-Feed besitzt eine schlechte Form : "
+msgstr "WARNUNG: Der Gmail-Atom-Feed besitzt eine schlechte Form: "
 
 #: ../Gmail/Gmail:348
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
-"WARNUNG : Das Gmail-Applet ist nicht für eine andere Authentifizierung als "
+"WARNUNG: Das Gmail-Applet ist nicht für eine andere Authentifizierung als "
 "BASIC ausgerüstet."
 
 #: ../Gmail/Gmail:361
@@ -802,7 +803,7 @@ msgstr "Mitgliedschaft hinzufügen oder verändern"
 #: ../Gmail/Gmail:535
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
-"Benutzen Sie dies, um Details ihres Gmail-Kontos hinzuzufügen oder zu "
+"Benutzen Sie dies, um Details Ihres Gmail-Kontos hinzuzufügen oder zu "
 "verändern."
 
 #: ../Gmail/Gmail:537
@@ -895,20 +896,20 @@ msgstr ""
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
-msgstr "Pfad zur Audiodatei :"
+msgstr "Pfad zur Audio-Datei:"
 
 #: ../Gmail/messages:127
 msgid "Display a counter on the icon?"
-msgstr "Einen Zähler auf dem Symbol anzeigen ?"
+msgstr "Einen Zähler auf dem Symbol anzeigen?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
 msgstr ""
-"Möchten Sie ein Emblem oder einen Schnellinfo-Aufkleber anzeigen lassen ?"
+"Möchten Sie ein Emblem oder einen Schnellinfo-Aufkleber anzeigen lassen?"
 
 #: ../Gmail/messages:131
 msgid "How?"
-msgstr "Wie ?"
+msgstr "Wie?"
 
 #: ../Gmail/messages:133
 msgid "small emblem"
@@ -1046,7 +1047,8 @@ msgstr "Abmessungen des Desklets (Breite x Höhe) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Anhängig von ihrem Fenstermanager können Sie es mit ALT + Linksklick bewegen."
 
@@ -1294,8 +1296,8 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu steuern.</"
-"b>\n"
+"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu "
+"steuern.</b>\n"
 "Es kann die <b>Download-Rate</b> auf dem Symbol abbilden.\n"
 "Ein <b>Mittelklick</b> auf das Symbol gibt ihnen Informationen über die "
 "derzeitigen Torrents (Sie können dieser Aktion einen Kurzbefehl zuweisen).\n"
@@ -1548,15 +1550,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dieses Applet stellt eine \"Zitat des Tages\" Funktion aus einigen "
 "Internetquellen bereit, wie z.B. :\n"
-"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Screensaver is currently disabled"
@@ -2356,15 +2358,11 @@ msgstr ""
 "schnelleren Abruf resultieren."
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
-"Miniaturbild-Vorschau für YouTube-, Webshots-, Flickr-, ImageShack-, "
-"Twitter-, und Digg-Suchen einschalten ?"
 
 #: ../WebSearch/messages:124
-#, fuzzy
 msgid ""
 "This applet provides an interface to some search engines such as\n"
 "Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, and ImageShack.\n"
@@ -2382,27 +2380,6 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
-"Dieses Applet stellt eine Schnittstelle für manche Suchengines bereit wie :\n"
-"Google, Bing, Teoma, Yahoo!, YouTube, Webshots, Flickr, Wikipedia, "
-"ImageShack und Twitter.\n"
-"Um die richtige Suchengine zu wählen, können Sie :\n"
-"(1) Rechtsklick auf das Hauptsymbol -> WebSearch -> (Die Engine wählen)\n"
-"(2) Rechtsklick -> Dieses Applet konfigurieren -> Konfiguration -> "
-"Suchengine\n"
-"(3) Auf dem Symbol hoch- oder runterscrollen (Nur bei der ersten Suche "
-"anwendbar)\n"
-"Sie können auf drei Arten suchen :\n"
-"(1) Mittelklick auf das Hauptsymbol.\n"
-"(2) Linksklick auf das Hauptsymbol (direkt nach der Wahl einer neuen "
-"Engine).\n"
-"Geben Sie ihre Suchanfrage ein und bestätigen Sie sie. Jedes Ergebnis wird "
-"als Untersymbol angezeigt.\n"
-"Linksklick, um das Ergebnis in voreingestellten Webbrowser zu öffnen.\n"
-"Mittelklick auf das Untersymbol jedes Ergebnisses, um seine Beschreibung "
-"anzuzeigen.\n"
-"Hochscrollen, um die nächsten Ergebnisse abzurufen.\n"
-"Runterscrollen, um die bisherigen Ergebnisse abzurufen.\n"
-"Linksklick auf das Hauptsymbol, um die Suchstatistiken anzuzeigen."
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2432,14 +2409,12 @@ msgstr ""
 "Wechseln Sie den Kanal über den Mittelklick, zu dem Sie Nachrichten senden."
 
 #: ../Xchat/Xchat:305
-#, fuzzy
 msgid "All channels"
-msgstr "Kanäle"
+msgstr ""
 
 #: ../Xchat/messages:121
-#, fuzzy
 msgid "Silent Mode"
-msgstr "Stiller Modus"
+msgstr ""
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
@@ -2673,7 +2648,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Nicht überschreiben (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 "Den Titel des Videos im Dateinamen benutzen, der zum Download des Videos "
 "verwendet wurde."
@@ -2766,7 +2742,8 @@ msgstr ""
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr "Bitte benutzen Sie den Anmeldename und Passwort Autorisierungsprozess."
+msgstr ""
+"Bitte benutzen Sie den Anmeldename und Passwort Autorisierungsprozess."
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
@@ -2786,7 +2763,7 @@ msgstr "Wie der Benutzername legt dies das Kontopasswort fest."
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr "Passwort :"
+msgstr "Passwort:"
 
 #: ../YoutubeDl/messages:240
 msgid ""
@@ -2809,8 +2786,8 @@ msgid ""
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
 "Dieses Applet erlaubt einem Benutzer, YouTube-Links von der YouTube-Webseite "
-"zu herunter zu ziehen und sie auf dem Symbol zum Download fallen zu lassen. "
-"Der Backend-Downloader basiert auf der Datei youtube-dl.py.\n"
+"herunter zu ziehen und sie auf dem Symbol zum Download fallen zu lassen. Der "
+"Backend-Downloader basiert auf der Datei youtube-dl.py.\n"
 "\n"
 "Es wird jedes Mal nur ein Video heruntergeladen und jede URL wird zu einer "
 "Liste hinzugefügt. Wenn das Video heruntergeladen oder der Download "
@@ -2822,37 +2799,9 @@ msgstr ""
 "Anzeigen des Download-Status konfiguriert werden.\n"
 "\n"
 "Ein Rechtsklick erlaubt viele verschiedene Optionen, die davon abhängen, was "
-"in diesem Augenblick passiert. Wenn ihr Videoverzeichnis ungültig ist oder "
+"in diesem Augenblick passiert. Wenn Ihr Videoverzeichnis ungültig ist oder "
 "nicht beschrieben werden kann, können Sie nicht mit dem Download beginnen, "
 "bis dieser Fehler korrigiert wurde.\n"
 "\n"
 "Wenn keine Videos mehr in der Liste übrig sind, erlaubt ein Linksklick auf "
-"das Symbol eine URL einzugeben. Anderenfalls wird die URL-Liste angezeigt."
-
-#~ msgid "There is no subscription to any Gmail account."
-#~ msgstr "Es existiert keine Mitgliedschaft zu irgendeinem Gmail-Konto."
-
-#~ msgid ""
-#~ "\"always\" will notify you whenever the number of emails is not 0; "
-#~ "\"different\" will do so whenever the number of emails changes; \"superior"
-#~ "\" will notify you whenever it increases (default)."
-#~ msgstr ""
-#~ "\"immer\" wird Sie benachrichtigen, sobald die Anzahl der Emails nicht 0 "
-#~ "ist; \"unterschiedlich\" wird Sie benachrichtigen, wenn sich die Anzahl "
-#~ "der Emails ändert; \"höher\" wird Sie benachrichtigen, sobald die Anzahl "
-#~ "der Emails steigt (voreingestellt)."
-
-#~ msgid "On which condition?"
-#~ msgstr "Unter welcher Bedingung ?"
-
-#~ msgid "superior"
-#~ msgstr "höher"
-
-#~ msgid "always"
-#~ msgstr "immer"
-
-#~ msgid "different"
-#~ msgstr "unterschiedlich"
-
-#~ msgid "Webshots"
-#~ msgstr "Webshots"
+"das Symbol, eine URL einzugeben. Anderenfalls wird die URL-Liste angezeigt."

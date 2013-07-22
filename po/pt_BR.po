@@ -6,18 +6,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-03-21 06:24+0000\n"
-"Last-Translator: Fredson N Sousa <fnsousas@gmail.com>\n"
+"POT-Creation-Date: 2013-07-21 16:32+0000\n"
+"PO-Revision-Date: 2013-06-16 21:05+0000\n"
+"Last-Translator: Eduardo Mucelli Rezende Oliveira <edumucelli@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-22 05:02+0000\n"
-"X-Generator: Launchpad (build 16532)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -89,7 +91,7 @@ msgstr "Nome do ícone que aparecerá em seu rótulo no dock."
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Padrão"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
@@ -194,8 +196,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
-"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
+"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:35
@@ -219,8 +221,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
-"inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte "
+"direita/inferior da tela."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:39
@@ -648,27 +650,27 @@ msgstr "Atalho para mostrar as informações dos torrents:"
 
 #: ../Deluge/messages:95 ../Transmission/messages:95
 msgid "Show as quick-info:"
-msgstr ""
+msgstr "Mostrar como informação rápida:"
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Nenhum"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Velocidade de download"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
-msgstr ""
+msgstr "Porcentagem concluída"
 
 #: ../Deluge/messages:103 ../Transmission/messages:103
 msgid "Percentage + number of active torrents"
-msgstr ""
+msgstr "Porcentagem + número de torrents ativos"
 
 #: ../Deluge/messages:105 ../Transmission/messages:105
 msgid "Show the percentage done as a progress bar"
-msgstr ""
+msgstr "Mostrar a porcentagem como barra de progresso"
 
 #: ../Deluge/messages:108
 msgid ""
@@ -698,7 +700,7 @@ msgstr "Tempo entre verificações do sistema de arquivos:"
 
 #: ../DiskFree/messages:100
 msgid "View available file system's free space."
-msgstr ""
+msgstr "Ver o espaço livre disponível"
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
@@ -710,61 +712,63 @@ msgstr ""
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Por favor, digite seu nome de usuário do Gmail:"
 
 #: ../Gmail/Gmail:194
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Por favor, digite sua senha do Gmail:"
 
 #: ../Gmail/Gmail:302
 msgid "WARNING: there was an error reading XML content."
-msgstr ""
+msgstr "Atenção: houve um erro na leitura do conteúdo do XML."
 
 #: ../Gmail/Gmail:325
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
-msgstr ""
+msgstr "Alerta: mini-aplicativo Gmail falhou ao conectar-se no atom feed."
 
 #: ../Gmail/Gmail:340
 msgid "WARNING: Gmail atom feed is badly formed: "
-msgstr ""
+msgstr "Alerta: atom feed to Gmail está mal formado: "
 
 #: ../Gmail/Gmail:348
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
+"Alerta: mini-aplicativo Gmail está equipado apenas para a autenticação BASIC."
 
 #: ../Gmail/Gmail:361
 msgid "WARNING: Gmail username or password may be wrong."
-msgstr ""
+msgstr "Alerta: nome de usuário ou senha do Gmail podem estar erradas."
 
 #: ../Gmail/Gmail:462
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "Você tem %s novos e-mails"
 
 #: ../Gmail/Gmail:464
 msgid "You have 1 new email"
-msgstr ""
+msgstr "Você tem 1 novo e-mail"
 
 #: ../Gmail/Gmail:525
 msgid "Sorry, there was no input!"
-msgstr ""
+msgstr "Desculpe, nenhuma entrada!"
 
 #: ../Gmail/Gmail:534
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Adicionar ou modificar conta"
 
 #: ../Gmail/Gmail:535
 msgid "Use this to add or change your Gmail account details."
-msgstr ""
+msgstr "Use para adicionar ou modificar os detalhes da sua conta do Gmail."
 
 #: ../Gmail/Gmail:537
 msgid "Check inbox now"
-msgstr ""
+msgstr "Verificar a caixa de entrada agora"
 
 #: ../Gmail/Gmail:538
 msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
+"Verificar a caixa de entrada do Gmail agora se você não quiser esperar."
 
 #: ../Gmail/Gmail:539
 msgid "Write a mail"
@@ -824,7 +828,8 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr ""
+"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
@@ -875,6 +880,8 @@ msgstr "Informação rápida"
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
+"Este mini-aplicativo vai notificá-lo sobre novos e-mails em uma única conta "
+"do Gmail."
 
 #: ../Google/messages:92
 msgid ""
@@ -883,48 +890,55 @@ msgid ""
 "Each result will be shown as a sub-icon.\n"
 "Left-click to open the result in the default Web Browser."
 msgstr ""
+"Este mini-aplicativo provê uma interface com a pesquisa do Google.\n"
+"Clique com o botão esquerdo para abrir uma caixa de pesquisa.\n"
+"Cada resultado será mostrado como um sub ícone.\n"
+"Clique com o botão esquerdo sobre o resultado para abri-lo no navegador "
+"padrão."
 
 #: ../GTG/GTG:152
 msgid ""
 "Couldn't connect to GTG :-(\n"
 "Did you install it?"
 msgstr ""
+"Não foi possível conectar no GTG :-(\n"
+"Você o instalou?"
 
 #: ../GTG/GTG:166
 msgid "Couldn't launch "
-msgstr ""
+msgstr "Não foi possível lançar "
 
 #: ../GTG/GTG:171
 msgid "Connecting to gtg, please wait ..."
-msgstr ""
+msgstr "Conectando ao GTG, por favor espere ..."
 
 #: ../GTG/GTG:208
 msgid "Create a new task"
-msgstr ""
+msgstr "Criar uma nova tarefa"
 
 #: ../GTG/GTG:222 ../GTG/GTG:258
 msgid "Open category's task"
-msgstr ""
+msgstr "Abrir a tarefa da categoria"
 
 #: ../GTG/GTG:226 ../GTG/GTG:262
 msgid "Create post-it from this category"
-msgstr ""
+msgstr "Criar um post-it a partir desta categoria"
 
 #: ../GTG/GTG:305 ../GTG/GTG:307 ../GTG/GTG:309
 msgid "The task: "
-msgstr ""
+msgstr "A tarefa: "
 
 #: ../GTG/GTG:305
 msgid " is due today"
-msgstr ""
+msgstr " é para hoje"
 
 #: ../GTG/GTG:307
 msgid " is due NOW"
-msgstr ""
+msgstr " é para AGORA"
 
 #: ../GTG/GTG:309
 msgid " was due on "
-msgstr ""
+msgstr " foi para "
 
 #: ../GTG/messages:93 ../Xchat/messages:95
 msgid "Bubbles duration :"
@@ -980,14 +994,15 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Screensaver_inhibitor/messages:27 ../Translator/messages:33
 #: ../YoutubeDl/messages:25
 msgid "Desklet's position (x ; y) :"
-msgstr ""
+msgstr "Posição do Desklet (x ; y):"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Screensaver_inhibitor/messages:29 ../Translator/messages:41
@@ -1422,9 +1437,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
@@ -2160,12 +2175,9 @@ msgid ""
 msgstr "para conexões lentas, desabilitar resultará em busca mais rápida."
 
 #: ../WebSearch/messages:121
-#, fuzzy
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
-"Habilitar previsão com thumb para buscas no Youtube, Webshots, Flickr, "
-"ImageShack, Twitter, and Digg?"
 
 #: ../WebSearch/messages:124
 msgid ""
@@ -2207,14 +2219,12 @@ msgstr ""
 "Alterne de canal que você mandará a mensagem, clicando com o botão do meio."
 
 #: ../Xchat/Xchat:305
-#, fuzzy
 msgid "All channels"
-msgstr "Canais"
+msgstr ""
 
 #: ../Xchat/messages:121
-#, fuzzy
 msgid "Silent Mode"
-msgstr "Modo silencioso"
+msgstr ""
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
@@ -2415,7 +2425,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Não substituir (--não-substituir)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Usar o título do vídeo para nomear o arquivo baixado."
 
 #: ../YoutubeDl/messages:169
@@ -2546,27 +2557,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid ""
-#~ "\"always\" will notify you whenever the number of emails is not 0; "
-#~ "\"different\" will do so whenever the number of emails changes; \"superior"
-#~ "\" will notify you whenever it increases (default)."
-#~ msgstr ""
-#~ "\"sempre\" notificará você toda vez que o número de e-mails não for 0; "
-#~ "\"diferente\" fará sempre que o número de e-mails mudar; \"superior\" "
-#~ "fará sempre que o número de e-mails aumentar (padrão)."
-
-#~ msgid "On which condition?"
-#~ msgstr "Em que condição?"
-
-#~ msgid "superior"
-#~ msgstr "superior"
-
-#~ msgid "always"
-#~ msgstr "sempre"
-
-#~ msgid "different"
-#~ msgstr "diferente"
-
-#~ msgid "Webshots"
-#~ msgstr "Webshots"

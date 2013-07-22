@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-04-10 15:01+0000\n"
-"Last-Translator: Hélion du Mas des Bourboux <helion331990@gmail.com>\n"
+"POT-Creation-Date: 2013-07-21 16:32+0000\n"
+"PO-Revision-Date: 2013-07-21 21:03+0000\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Cairo-Dock <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-04-11 05:14+0000\n"
-"X-Generator: Launchpad (build 16550)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:42+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu n'est pas installé. Merci de l'installer avant de lancer cette "
 "applet."
@@ -430,7 +432,8 @@ msgstr "Transparence du fond :"
 #: ../Twitter/messages:69 ../WebSearch/messages:67
 #: ../WindowsKiller/messages:69 ../Xchat/messages:69
 msgid "in pixels. Use this to adjust the left position of drawings."
-msgstr "en pixels. Utilisez-le pour ajuster la position à gauche des dessins."
+msgstr ""
+"en pixels. Utilisez-le pour ajuster la position à gauche des dessins."
 
 #: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
 #: ../Deluge/messages:71 ../DiskFree/messages:71 ../Gmail/messages:77
@@ -470,7 +473,8 @@ msgstr "Décalage en haut :"
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr "en pixels. Utilisez-le pour ajuster la position à droite des dessins."
+msgstr ""
+"en pixels. Utilisez-le pour ajuster la position à droite des dessins."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../Deluge/messages:79 ../DiskFree/messages:79 ../Gmail/messages:85
@@ -658,7 +662,7 @@ msgstr "clic du milieu"
 
 #: ../Deluge/Deluge:360 ../Transmission/Transmission:483
 msgid "Quit"
-msgstr ""
+msgstr "Quitter"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -732,7 +736,7 @@ msgstr "Affichez l'espace disponible du système de fichiers"
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "Aucun objet"
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
 msgid "Please fill in your Gmail account."
@@ -806,7 +810,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:539
 msgid "Write a mail"
-msgstr ""
+msgstr "Écrire un e-mail"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -818,15 +822,15 @@ msgstr "Non"
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "Avec un arrière plan par défaut"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "Avec un arrière plan personnalisé"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
-msgstr ""
+msgstr "Couleur d'arrière plan à ajouter dans ce cas"
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
@@ -882,8 +886,8 @@ msgstr "Jouer un son ?"
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
-"Plusieurs fichiers sont disponibles dans ~/.config/cairo-dock/third-party/"
-"Gmail/snd/"
+"Plusieurs fichiers sont disponibles dans ~/.config/cairo-dock/third-"
+"party/Gmail/snd/"
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
@@ -1035,7 +1039,8 @@ msgstr "Dimension du desklet (largeur x hauteur) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "En fonction de votre gestionnaire de fenêtres, vous pouvez déplacer avec ALT "
 "+ clic gauche par exemple."
@@ -1251,7 +1256,8 @@ msgstr "Le numéro de port d'écoute pour le démon hddtemp (7634 par défaut)"
 
 #: ../HDDtemperature/messages:103
 msgid "Separator between fields used by hddtemp daemon ( | by default)"
-msgstr "Séparateur des champs utilisés par le démon hddtemp (« | » par défaut)"
+msgstr ""
+"Séparateur des champs utilisés par le démon hddtemp (« | » par défaut)"
 
 #: ../HDDtemperature/messages:106
 msgid ""
@@ -1397,7 +1403,8 @@ msgstr "Choisir un thème :"
 
 #: ../Pidgin/messages:99
 msgid "Display conversation messages in a bubble?"
-msgstr "Afficher les messages de la conversation dans une bulle de dialogue ?"
+msgstr ""
+"Afficher les messages de la conversation dans une bulle de dialogue ?"
 
 #: ../Pidgin/messages:101
 msgid "Display chat messages in a bubble?"
@@ -1513,15 +1520,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Cette applet offre des « Citations du jour » venant de plusieurs sources "
 "Internet telle que :\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com et Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com et Chucknorrisfacts.fr."
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Screensaver is currently disabled"
@@ -2027,11 +2034,11 @@ msgstr "Oh,désolé, vous n'avez pas de message personnel :-("
 
 #: ../Twitter/Twitter:199
 msgid "Followers"
-msgstr ""
+msgstr "Abonnés"
 
 #: ../Twitter/Twitter:199
 msgid "Friends"
-msgstr ""
+msgstr "Amis"
 
 #: ../Twitter/Twitter:199 ../Twitter/Twitter:353
 msgid "Tweets"
@@ -2091,9 +2098,9 @@ msgid ""
 "be shown, and go to the next dialog"
 msgstr ""
 "L'applet %s a besoin de vous pour accepter les autorisations. La page "
-"d'autorisation a été ouverte dans ​​votre navigateur. Une fois l'autorisation "
-"acceptée, copiez le code PIN qui y sera affiché et aller dans la boîte de "
-"dialogue suivante."
+"d'autorisation a été ouverte dans ​​votre navigateur. Une fois "
+"l'autorisation acceptée, copiez le code PIN qui y sera affiché et aller dans "
+"la boîte de dialogue suivante."
 
 #: ../Twitter/Twitter:287
 #, python-format
@@ -2334,11 +2341,11 @@ msgstr "Mode silencieux"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
-msgstr ""
+msgstr "Activer le mode silencieux au démarrage :"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
-msgstr ""
+msgstr "Activer le mode silencieux pour un canal spécifique au démarrage :"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2540,7 +2547,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2669,31 +2677,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "There is no subscription to any Gmail account."
-#~ msgstr "Il n'y a pas d'abonnement à un compte Gmail."
-
-#~ msgid ""
-#~ "\"always\" will notify you whenever the number of emails is not 0; "
-#~ "\"different\" will do so whenever the number of emails changes; \"superior"
-#~ "\" will notify you whenever it increases (default)."
-#~ msgstr ""
-#~ "« Toujours » vous notifiera à chaque vérification si vous possédez des "
-#~ "courriels non lus ; « Différent », à chaque fois que le nombre de "
-#~ "courriels change entre deux vérifications ; « Supérieur », à chaque fois "
-#~ "que ce nombre de messages non lus augmente (par défaut)."
-
-#~ msgid "On which condition?"
-#~ msgstr "À quelle condition ?"
-
-#~ msgid "superior"
-#~ msgstr "supérieur"
-
-#~ msgid "always"
-#~ msgstr "toujours"
-
-#~ msgid "different"
-#~ msgstr "différent"
-
-#~ msgid "Webshots"
-#~ msgstr "Webshots"

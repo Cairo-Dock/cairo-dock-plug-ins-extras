@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-core\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2013-07-21 16:32+0000\n"
 "PO-Revision-Date: 2013-02-19 10:40+0000\n"
 "Last-Translator: Ohadcn <Unknown>\n"
 "Language-Team: Hebrew <he@li.org>\n"
-"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-01 04:53+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:42+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
+"Language: he\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr "GnoMenu לא מותקן על המחשב שלך, נא התקן לפני הרצת יישומון זה"
 
 #: ../GnoMenu/GnoMenu:143
@@ -705,9 +707,8 @@ msgid "No Subject"
 msgstr ""
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
-#, fuzzy
 msgid "Please fill in your Gmail account."
-msgstr "שם משתמש Gmail:"
+msgstr ""
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
@@ -981,7 +982,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
 #: ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1418,9 +1420,9 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
@@ -2196,14 +2198,12 @@ msgid "Switch the channel you'll send message to with the middle-click."
 msgstr ""
 
 #: ../Xchat/Xchat:305
-#, fuzzy
 msgid "All channels"
-msgstr "ערוצים"
+msgstr ""
 
 #: ../Xchat/messages:121
-#, fuzzy
 msgid "Silent Mode"
-msgstr "מצב שקט"
+msgstr ""
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
@@ -2404,7 +2404,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2533,27 +2534,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid "There is no subscription to any Gmail account."
-#~ msgstr "לא רשום לחשבון Gmail"
-
-#~ msgid ""
-#~ "\"always\" will notify you whenever the number of emails is not 0; "
-#~ "\"different\" will do so whenever the number of emails changes; \"superior"
-#~ "\" will notify you whenever it increases (default)."
-#~ msgstr ""
-#~ "\"תמיד\" יתריע כשיש הודעות,\n"
-#~ "\"שינוי\" יתריע כשמספר ההודעות משתנה,\n"
-#~ "\"עלייה\" (ברירת מחדל) יתריע כשמספר ההודעות עולה."
-
-#~ msgid "On which condition?"
-#~ msgstr "באיזה מצב?"
-
-#~ msgid "superior"
-#~ msgstr "עלייה"
-
-#~ msgid "always"
-#~ msgstr "תמיד"
-
-#~ msgid "different"
-#~ msgstr "שינוי"
