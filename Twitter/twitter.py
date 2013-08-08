@@ -101,7 +101,7 @@ class Twitter(Network):
     def __init__(self, access_key, access_secret, callback):
       Twitter.API.__init__(self, access_key, access_secret)
 
-      self.user_stream_url = "https://userstream.twitter.com/2/user.json"
+      self.user_stream_url = "https://userstream.twitter.com/1.1/user.json"
       self.callback = callback                                                        # called as soon as a new entry on the stream appears
       thread = threading.Thread(target=self.tweet_streaming)                          # keep checking for new entries on the stream
       thread.start()                                                                  # run, forrest run
@@ -126,22 +126,25 @@ class Twitter(Network):
         if len(tweets) > 1:
           content = tweets[0]
           if "text" in content:
-            content = simplejson.loads(content)
-            logp("Received from Twitter Stream: %s" % content)
-            self.callback(content)                                      # callback == Twitter.on_receive_new_entry_into_stream_callback
+            try:
+              content = simplejson.loads(content)
+              logp("Received from Twitter Stream: %s" % content)
+              self.callback(content)                                    # callback == Twitter.on_receive_new_entry_into_stream_callback
+            except ValueError:                                          # in some strange circumstances the content may not be a valid json 
+              pass
           buffer = tweets[1]
    
   class TwitterAPI(API):
     def __init__(self, access_key, access_secret):
       Twitter.API.__init__(self, access_key, access_secret)
       
-      self.update_url               = 'https://api.twitter.com/1/statuses/update.json'
-      self.home_timeline_url        = 'https://api.twitter.com/1/statuses/home_timeline.json'
-      self.direct_messages_url      = 'https://api.twitter.com/1/direct_messages.json'
-      self.new_direct_messages_url  = 'https://api.twitter.com/1/direct_messages/new.json'
-      self.verify_credentials_url   = 'https://api.twitter.com/1/account/verify_credentials.json'
-      self.user_timeline_url        = 'https://api.twitter.com/1/statuses/user_timeline.json'
-      self.retweet_url_prefix       = 'https://api.twitter.com/1/statuses/retweet/'            # lacks the id of the tweet to be retweeted
+      self.update_url               = 'https://api.twitter.com/1.1/statuses/update.json'
+      self.home_timeline_url        = 'https://api.twitter.com/1.1/statuses/home_timeline.json'
+      self.direct_messages_url      = 'https://api.twitter.com/1.1/direct_messages.json'
+      self.new_direct_messages_url  = 'https://api.twitter.com/1.1/direct_messages/new.json'
+      self.verify_credentials_url   = 'https://api.twitter.com/1.1/account/verify_credentials.json'
+      self.user_timeline_url        = 'https://api.twitter.com/1.1/statuses/user_timeline.json'
+      self.retweet_url_prefix       = 'https://api.twitter.com/1.1/statuses/retweet/'            # lacks the id of the tweet to be retweeted
       
     def dispatch(self, url, mode, parameters={}):
       oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
