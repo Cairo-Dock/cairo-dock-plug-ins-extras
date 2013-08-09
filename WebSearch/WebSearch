@@ -16,7 +16,7 @@
 #    GNU General Public License for more details.
 
 # This applet provides an interface to some search engines such as
-# Google, Bing, Teoma, Yahoo!, Youtube, Webshots, Flickr, Wikipedia, ImageShack, and Twitter.
+# Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, and ImageShack.
 #  To choose the search engine you can
 #     (1) Right-click on the main icon -> WebSearch -> (Choose the engine)
 #     (2) Right-click -> Configure this applet -> Configuration -> Search engine
@@ -80,7 +80,7 @@ module WebSearch
     attr_accessor :engine, :engines, :query, :history,
                   :number_of_fetched_links, :number_of_displayed_links, :page_of_displayed_links,
                   :show_current_page, :show_description_instead_url, :show_thumbnail_preview,
-                  :scroll_engine_index
+                  :scroll_engine_index, :show_logo_result
 
     DialogActiveTime = 5                                                          # time in seconds that the dialog window will be active
 
@@ -106,6 +106,7 @@ module WebSearch
       self.show_current_page = conf.params['Configuration']['show current page'].to_b
       self.show_description_instead_url = conf.params['Configuration']['show description instead url'].to_b
       self.show_thumbnail_preview = conf.params['Configuration']['show thumbnail preview'].to_b
+      self.show_logo_result = conf.params['Configuration']['show logo result'].to_b
     end
   
     def start
@@ -162,7 +163,7 @@ module WebSearch
         item['label'] = engine
         item['menu'] = 1
         item['id'] = i
-        item['icon'] = File.expand_path("./images/data/#{engine}.png")
+        item['icon'] = engine.icon
         items.push item
       end
       items
@@ -344,6 +345,9 @@ module WebSearch
           sub_icon_list << link.description                                       # user prefer see description with the sub-icon
         else
           sub_icon_list << link.shortened_url                                     # user prefer see shortened url with the sub-icon
+        end
+        if not link.instance_of?(ThumbnailedLink) and self.show_logo_result
+          link.icon = File.expand_path("./images/data/#{self.engine.name}.png")
         end
         sub_icon_list << link.icon                                                # the icon
         sub_icon_list << link.id.to_s                                             # the sequential id

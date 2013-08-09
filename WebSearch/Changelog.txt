@@ -1,3 +1,4 @@
+1.4.8: (August/9/2013): List of results now shows the search engine's logo if is not a "thumbnailable" link icon.
 1.4.7: (June/15/2013): Fixed Flickr.
 1.4.6: (June/14/2013): Fixing Google and Bing search. Removed Webshots and Twitter. Webshots closed :( its doors and Twitter changed its search to something really hard to fetch.
 1.4.3: (January/31/2012): Fixing Youtube search. Fixing a problem when opening URLs.
