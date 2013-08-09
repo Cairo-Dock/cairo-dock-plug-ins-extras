@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 # This is a part of the external applets for Cairo-Dock
 # Copyright : (C) 2011 by Benjamin
@@ -49,7 +49,7 @@ class Menu(gtk.Menu):
         for mail in inbox:
             # check if mail has subject / title
             if mail['title'] == None or len(mail['title']) == 0:
-                mail['title'] = '<i>(No Subject)</i>'
+                mail['title'] = '<i>(' + _('No Subject') + ')</i>'
             # create markups
             string = '<b>'+mail['author']+':</b>\n'+mail['title']
             menu_item = gtk.ImageMenuItem()
