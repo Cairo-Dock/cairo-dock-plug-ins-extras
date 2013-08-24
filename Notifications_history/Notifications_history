@@ -1,0 +1,153 @@
+#!/usr/bin/python
+
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2013 by Fabounet
+# E-mail : fabounet03@gmail.com
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+#
+# specs from https://developer.gnome.org/notification-spec/
+
+####################
+### dependancies ###
+####################
+from __future__ import print_function  # must be on the first line
+import dbus
+from time import localtime, strftime
+from CDApplet import CDApplet, _
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		# define internal variables
+		self.count = 0
+		self.notifications = []
+		# call high-level init
+		CDApplet.__init__(self)
+	
+	##### private methods #####
+	
+	def _on_got_message(self, connection, message):
+		if message.get_member() != "Notify":  # for some reason some signals are not filtered (NameAcquired and some from the dock)
+			return
+		
+		# debug
+		print ("Got a message:")
+		i = 0
+		for arg in message.get_args_list():
+			print (" %d) %s" % (i, arg))
+			i = i + 1
+		#Arg[0] : notify-send
+		#Arg[1] : 0
+		#Arg[2] : geany.png
+		#Arg[3] : toto
+		#Arg[4] : abc abc
+		#Arg[5] : dbus.Array([], signature=dbus.Signature('s'))
+		#Arg[6] : dbus.Dictionary({dbus.String(u'urgency'): dbus.Byte(1, variant_level=1)}, signature=dbus.Signature('sv'))
+		#Arg[7] : 1000
+		
+		# make a new Notification
+		args = message.get_args_list()
+		
+		app_name = args[0]
+		if app_name in self.config['ignore']:
+			return dbus.lowlevel.HANDLER_RESULT_NOT_YET_HANDLED
+		
+		id = args[1]
+		if id != 0:  # if it replaces a previous notification, remove this one before
+			for n in self.notifications:
+				if n['id'] == id:
+					self.notifications.remove(n)
+					self.count -= 1
+		
+		notif = {'app_name':app_name,
+				'id':id,
+				'app_icon':args[2],
+				'summary':args[3],
+				'body':args[4],
+				'time':strftime("%X", localtime())}
+		
+		# append to history
+		self.notifications.append (notif)
+		self.count += 1
+		self.icon.SetQuickInfo(str(self.count))
+		
+		return dbus.lowlevel.HANDLER_RESULT_NOT_YET_HANDLED
+	
+	def _clear_history(self):
+		self.notifications = []
+		self.count = 0
+		self.icon.SetQuickInfo('')
+	
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['size'] = keyfile.getint('Configuration', 'size')
+		self.config['ignore'] = keyfile.get('Configuration', 'ignore').split(';')
+	
+	def begin(self):
+		bus = dbus.SessionBus()
+		bus.add_match_string ("type='method_call',path='/org/freedesktop/Notifications',member='Notify',eavesdrop='true'")
+		bus.add_message_filter (self._on_got_message)
+	
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		# build a message containing all the notifications
+		if len(self.notifications) == 0:
+			msg = _('No recent notifications')
+		else:
+			msg = ''
+			i = 0
+			size = self.config['size']
+			for n in self.notifications:
+				if i != 0:
+					msg += '\n'
+				msg += '<b>' + n['summary'] + '</b>'
+				msg += '\n' + n['body']
+				msg += '\n  <i>' + (_('from %s at %s') % (n['app_name'], n['time'])) + '</i>'
+				
+				i += 1
+				if i == size:
+					break
+		
+		# show it
+		dialog_attributes = {
+			"message" : msg,
+			"use-markup" : True,
+			"time-length" : 4+len(msg)/40 }
+		widget_attributes = {}
+		self.icon.PopupDialog (dialog_attributes, widget_attributes)
+	
+	def on_middle_click(self):
+		self._clear_history()
+	
+	def on_build_menu(self):
+		items = [ {
+				"label": _("Clear history") + " (" + _("middle-click") + ")",
+				"icon" : "gtk-clear",
+				"id"   : 1
+			} ]
+		self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if iNumEntry == 1:
+			self._clear_history()
+	
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()
