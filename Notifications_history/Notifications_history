@@ -42,12 +42,6 @@ class Applet(CDApplet):
 		if message.get_member() != "Notify":  # for some reason some signals are not filtered (NameAcquired and some from the dock)
 			return
 		
-		# debug
-		print ("Got a message:")
-		i = 0
-		for arg in message.get_args_list():
-			print (" %d) %s" % (i, arg))
-			i = i + 1
 		#Arg[0] : notify-send
 		#Arg[1] : 0
 		#Arg[2] : geany.png
@@ -59,10 +53,17 @@ class Applet(CDApplet):
 		
 		# make a new Notification
 		args = message.get_args_list()
+		# debug
+		print ("Got a message:")
+		i = 0
+		for arg in args:
+			if i != 5 and i != 6:
+				print (" %d) %s" % (i, str (arg)))
+			i = i + 1
 		
 		app_name = args[0]
-		if app_name in self.config['ignore']:
-			return dbus.lowlevel.HANDLER_RESULT_NOT_YET_HANDLED
+		if app_name in self.config['ignore'] or len(args[3]) < 2:
+			return dbus.lowlevel.HANDLER_RESULT_HANDLED
 		
 		id = args[1]
 		if id != 0:  # if it replaces a previous notification, remove this one before
@@ -83,7 +84,7 @@ class Applet(CDApplet):
 		self.count += 1
 		self.icon.SetQuickInfo(str(self.count))
 		
-		return dbus.lowlevel.HANDLER_RESULT_NOT_YET_HANDLED
+		return dbus.lowlevel.HANDLER_RESULT_HANDLED
 	
 	def _clear_history(self):
 		self.notifications = []
