@@ -6,20 +6,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-07-21 16:32+0000\n"
 "PO-Revision-Date: 2013-06-16 21:05+0000\n"
 "Last-Translator: Eduardo Mucelli Rezende Oliveira <edumucelli@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
 "X-Generator: Launchpad (build 16696)\n"
-"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -46,6 +44,7 @@ msgstr "Editar Menus"
 #: ../KTorrent/messages:3 ../Lancelot/messages:1 ../Lancelot/messages:3
 #: ../Liferea/messages:1 ../Liferea/messages:3 ../MintMenu/messages:1
 #: ../MintMenu/messages:3 ../Moon/messages:1 ../Moon/messages:3
+#: ../Notifications_history/messages:1 ../Notifications_history/messages:3
 #: ../Pidgin/messages:1 ../Pidgin/messages:3 ../Quote/messages:1
 #: ../Quote/messages:3 ../Screensaver_inhibitor/messages:1
 #: ../Screensaver_inhibitor/messages:3 ../Translator/messages:1
@@ -61,7 +60,8 @@ msgstr "Ícone"
 #: ../Deluge/messages:5 ../DiskFree/messages:5 ../Gmail/messages:5
 #: ../Google/messages:5 ../GTG/messages:5 ../HDDtemperature/messages:13
 #: ../KTorrent/messages:5 ../Lancelot/messages:5 ../Liferea/messages:5
-#: ../MintMenu/messages:5 ../Moon/messages:5 ../Pidgin/messages:5
+#: ../MintMenu/messages:5 ../Moon/messages:5
+#: ../Notifications_history/messages:5 ../Pidgin/messages:5
 #: ../Quote/messages:5 ../Screensaver_inhibitor/messages:5
 #: ../Translator/messages:5 ../Transmission/messages:5 ../Twitter/messages:5
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
@@ -73,7 +73,8 @@ msgstr "Nome do dock ao qual ele pertence:"
 #: ../Deluge/messages:7 ../DiskFree/messages:7 ../Gmail/messages:7
 #: ../Google/messages:7 ../GTG/messages:7 ../HDDtemperature/messages:7
 #: ../KTorrent/messages:7 ../Lancelot/messages:7 ../Liferea/messages:7
-#: ../MintMenu/messages:7 ../Moon/messages:7 ../Pidgin/messages:7
+#: ../MintMenu/messages:7 ../Moon/messages:7
+#: ../Notifications_history/messages:7 ../Pidgin/messages:7
 #: ../Quote/messages:9 ../Screensaver_inhibitor/messages:7
 #: ../Translator/messages:7 ../Transmission/messages:7 ../Twitter/messages:7
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
@@ -85,7 +86,8 @@ msgstr "Nome do ícone que aparecerá em seu rótulo no dock."
 #: ../Deluge/messages:9 ../DiskFree/messages:9 ../Gmail/messages:9
 #: ../Google/messages:9 ../GTG/messages:9 ../HDDtemperature/messages:9
 #: ../KTorrent/messages:9 ../Lancelot/messages:9 ../Liferea/messages:9
-#: ../MintMenu/messages:9 ../Moon/messages:9 ../Pidgin/messages:9
+#: ../MintMenu/messages:9 ../Moon/messages:9
+#: ../Notifications_history/messages:9 ../Pidgin/messages:9
 #: ../Quote/messages:11 ../Screensaver_inhibitor/messages:9
 #: ../Translator/messages:9 ../Transmission/messages:9 ../Twitter/messages:9
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
@@ -97,9 +99,10 @@ msgstr "Padrão"
 #: ../Deluge/messages:11 ../DiskFree/messages:11 ../Google/messages:11
 #: ../GTG/messages:11 ../KTorrent/messages:11 ../Lancelot/messages:11
 #: ../Liferea/messages:11 ../MintMenu/messages:11 ../Moon/messages:11
-#: ../Pidgin/messages:11 ../Quote/messages:13 ../Translator/messages:11
-#: ../Transmission/messages:11 ../Twitter/messages:11 ../WebSearch/messages:9
-#: ../WindowsKiller/messages:11 ../Xchat/messages:11
+#: ../Notifications_history/messages:11 ../Pidgin/messages:11
+#: ../Quote/messages:13 ../Translator/messages:11 ../Transmission/messages:11
+#: ../Twitter/messages:11 ../WebSearch/messages:9 ../WindowsKiller/messages:11
+#: ../Xchat/messages:11
 msgid "Display"
 msgstr "Vídeo"
 
@@ -107,7 +110,8 @@ msgstr "Vídeo"
 #: ../Deluge/messages:13 ../DiskFree/messages:13 ../Google/messages:13
 #: ../GTG/messages:13 ../HDDtemperature/messages:11 ../KTorrent/messages:13
 #: ../Lancelot/messages:13 ../Liferea/messages:13 ../MintMenu/messages:13
-#: ../Moon/messages:13 ../Pidgin/messages:13 ../Quote/messages:15
+#: ../Moon/messages:13 ../Notifications_history/messages:13
+#: ../Pidgin/messages:13 ../Quote/messages:15
 #: ../Screensaver_inhibitor/messages:11 ../Translator/messages:13
 #: ../Transmission/messages:13 ../Twitter/messages:13 ../WebSearch/messages:11
 #: ../WindowsKiller/messages:13 ../Xchat/messages:13 ../YoutubeDl/messages:11
@@ -118,7 +122,8 @@ msgstr "Nome do arquivo de Imagem :"
 #: ../Deluge/messages:15 ../DiskFree/messages:15 ../Gmail/messages:11
 #: ../Google/messages:15 ../GTG/messages:15 ../HDDtemperature/messages:3
 #: ../KTorrent/messages:15 ../Lancelot/messages:15 ../Liferea/messages:15
-#: ../MintMenu/messages:15 ../Moon/messages:15 ../Pidgin/messages:15
+#: ../MintMenu/messages:15 ../Moon/messages:15
+#: ../Notifications_history/messages:15 ../Pidgin/messages:15
 #: ../Quote/messages:17 ../Screensaver_inhibitor/messages:15
 #: ../Translator/messages:15 ../Transmission/messages:15
 #: ../Twitter/messages:15 ../WebSearch/messages:13
@@ -130,7 +135,8 @@ msgstr "Defina 0 para usar o tamanho padrão do mini-aplicativo."
 #: ../Deluge/messages:17 ../DiskFree/messages:17 ../Gmail/messages:13
 #: ../Google/messages:17 ../GTG/messages:17 ../HDDtemperature/messages:5
 #: ../KTorrent/messages:17 ../Lancelot/messages:17 ../Liferea/messages:17
-#: ../MintMenu/messages:17 ../Moon/messages:17 ../Pidgin/messages:17
+#: ../MintMenu/messages:17 ../Moon/messages:17
+#: ../Notifications_history/messages:17 ../Pidgin/messages:17
 #: ../Quote/messages:19 ../Screensaver_inhibitor/messages:17
 #: ../Translator/messages:17 ../Transmission/messages:17
 #: ../Twitter/messages:17 ../WebSearch/messages:15
@@ -142,7 +148,8 @@ msgstr "Ícone desejado para o mini-aplicativo"
 #: ../Deluge/messages:19 ../DiskFree/messages:19 ../Gmail/messages:25
 #: ../Google/messages:19 ../GTG/messages:19 ../HDDtemperature/messages:15
 #: ../KTorrent/messages:19 ../Lancelot/messages:19 ../Liferea/messages:19
-#: ../MintMenu/messages:19 ../Moon/messages:19 ../Pidgin/messages:19
+#: ../MintMenu/messages:19 ../Moon/messages:19
+#: ../Notifications_history/messages:19 ../Pidgin/messages:19
 #: ../Quote/messages:21 ../Screensaver_inhibitor/messages:19
 #: ../Translator/messages:19 ../Transmission/messages:19
 #: ../Twitter/messages:19 ../WebSearch/messages:17
@@ -196,8 +203,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
-"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
+"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../Deluge/messages:29 ../DiskFree/messages:29 ../Gmail/messages:35
@@ -221,8 +228,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte "
-"direita/inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
+"inferior da tela."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../Deluge/messages:33 ../DiskFree/messages:33 ../Gmail/messages:39
@@ -292,7 +299,8 @@ msgstr "Visibilidade :"
 #: ../Deluge/messages:45 ../DiskFree/messages:45 ../Gmail/messages:51
 #: ../Google/messages:45 ../GTG/messages:45 ../HDDtemperature/messages:31
 #: ../KTorrent/messages:45 ../Lancelot/messages:45 ../Liferea/messages:45
-#: ../MintMenu/messages:45 ../Moon/messages:33 ../Pidgin/messages:45
+#: ../MintMenu/messages:45 ../Moon/messages:33
+#: ../Notifications_history/messages:35 ../Pidgin/messages:45
 #: ../Quote/messages:47 ../Screensaver_inhibitor/messages:35
 #: ../Translator/messages:47 ../Transmission/messages:45
 #: ../Twitter/messages:45 ../WebSearch/messages:43
@@ -304,7 +312,8 @@ msgstr "Normal"
 #: ../Deluge/messages:47 ../DiskFree/messages:47 ../Gmail/messages:53
 #: ../Google/messages:47 ../GTG/messages:47 ../HDDtemperature/messages:33
 #: ../KTorrent/messages:47 ../Lancelot/messages:47 ../Liferea/messages:47
-#: ../MintMenu/messages:47 ../Moon/messages:35 ../Pidgin/messages:47
+#: ../MintMenu/messages:47 ../Moon/messages:35
+#: ../Notifications_history/messages:37 ../Pidgin/messages:47
 #: ../Quote/messages:49 ../Screensaver_inhibitor/messages:37
 #: ../Translator/messages:49 ../Transmission/messages:47
 #: ../Twitter/messages:47 ../WebSearch/messages:45
@@ -316,7 +325,8 @@ msgstr "Manter acima"
 #: ../Deluge/messages:49 ../DiskFree/messages:49 ../Gmail/messages:55
 #: ../Google/messages:49 ../GTG/messages:49 ../HDDtemperature/messages:35
 #: ../KTorrent/messages:49 ../Lancelot/messages:49 ../Liferea/messages:49
-#: ../MintMenu/messages:49 ../Moon/messages:37 ../Pidgin/messages:49
+#: ../MintMenu/messages:49 ../Moon/messages:37
+#: ../Notifications_history/messages:39 ../Pidgin/messages:49
 #: ../Quote/messages:51 ../Screensaver_inhibitor/messages:39
 #: ../Translator/messages:51 ../Transmission/messages:49
 #: ../Twitter/messages:49 ../WebSearch/messages:47
@@ -338,7 +348,8 @@ msgstr "No Wiget Layer"
 #: ../Deluge/messages:53 ../DiskFree/messages:53 ../Gmail/messages:59
 #: ../Google/messages:53 ../GTG/messages:53 ../HDDtemperature/messages:39
 #: ../KTorrent/messages:53 ../Lancelot/messages:53 ../Liferea/messages:53
-#: ../MintMenu/messages:53 ../Moon/messages:41 ../Pidgin/messages:53
+#: ../MintMenu/messages:53 ../Moon/messages:41
+#: ../Notifications_history/messages:43 ../Pidgin/messages:53
 #: ../Quote/messages:55 ../Screensaver_inhibitor/messages:43
 #: ../Translator/messages:55 ../Transmission/messages:53
 #: ../Twitter/messages:53 ../WebSearch/messages:51
@@ -360,7 +371,8 @@ msgstr "Deve ser visível em todas as Áreas de trabalho ?"
 #: ../Deluge/messages:57 ../DiskFree/messages:57 ../Gmail/messages:63
 #: ../Google/messages:57 ../GTG/messages:57 ../HDDtemperature/messages:51
 #: ../KTorrent/messages:57 ../Lancelot/messages:57 ../Liferea/messages:57
-#: ../MintMenu/messages:57 ../Moon/messages:53 ../Pidgin/messages:57
+#: ../MintMenu/messages:57 ../Moon/messages:53
+#: ../Notifications_history/messages:55 ../Pidgin/messages:57
 #: ../Quote/messages:59 ../Screensaver_inhibitor/messages:55
 #: ../Translator/messages:59 ../Transmission/messages:57
 #: ../Twitter/messages:57 ../WebSearch/messages:55
@@ -541,7 +553,8 @@ msgstr "Transparência da frente :"
 #: ../Deluge/messages:91 ../DiskFree/messages:91 ../Gmail/messages:97
 #: ../GTG/messages:91 ../HDDtemperature/messages:85 ../KTorrent/messages:91
 #: ../Lancelot/messages:91 ../Liferea/messages:91 ../MintMenu/messages:91
-#: ../Moon/messages:87 ../Pidgin/messages:91 ../Quote/messages:93
+#: ../Moon/messages:87 ../Notifications_history/messages:89
+#: ../Pidgin/messages:91 ../Quote/messages:93
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:93
 #: ../Transmission/messages:91 ../Twitter/messages:91 ../WebSearch/messages:89
 #: ../Xchat/messages:91 ../YoutubeDl/messages:87
@@ -601,6 +614,10 @@ msgid ""
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
 
+#: ../Calendar/messages:108
+msgid "Calendar"
+msgstr ""
+
 #: ../Cardapio/Cardapio:50
 msgid ""
 "Cardapio is not installed. Please install it before you run this applet."
@@ -634,6 +651,7 @@ msgid "Torrents info"
 msgstr "Informação dos torrents"
 
 #: ../Deluge/Deluge:355 ../Gmail/Gmail:536 ../KTorrent/KTorrent:335
+#: ../Notifications_history/Notifications_history:148
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Transmission/Transmission:478 ../YoutubeDl/YoutubeDl:302
 #: ../YoutubeDl/YoutubeDl:307
@@ -828,8 +846,7 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr ""
-"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
@@ -978,35 +995,34 @@ msgid ""
 msgstr ""
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
-#: ../Screensaver_inhibitor/messages:21 ../Translator/messages:27
-#: ../YoutubeDl/messages:19
+#: ../Notifications_history/messages:21 ../Screensaver_inhibitor/messages:21
+#: ../Translator/messages:27 ../YoutubeDl/messages:19
 msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
-#: ../Screensaver_inhibitor/messages:23 ../Translator/messages:29
-#: ../YoutubeDl/messages:21
+#: ../Notifications_history/messages:23 ../Screensaver_inhibitor/messages:23
+#: ../Translator/messages:29 ../YoutubeDl/messages:21
 msgid "Desklet's dimension (width x height) :"
 msgstr ""
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
-#: ../Screensaver_inhibitor/messages:25 ../Translator/messages:31
-#: ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+#: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
+#: ../Translator/messages:31 ../YoutubeDl/messages:23
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
-#: ../Screensaver_inhibitor/messages:27 ../Translator/messages:33
-#: ../YoutubeDl/messages:25
+#: ../Notifications_history/messages:27 ../Screensaver_inhibitor/messages:27
+#: ../Translator/messages:33 ../YoutubeDl/messages:25
 msgid "Desklet's position (x ; y) :"
 msgstr "Posição do Desklet (x ; y):"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
-#: ../Screensaver_inhibitor/messages:29 ../Translator/messages:41
-#: ../YoutubeDl/messages:27
+#: ../Notifications_history/messages:29 ../Screensaver_inhibitor/messages:29
+#: ../Translator/messages:41 ../YoutubeDl/messages:27
 msgid "Is detached from the dock ?"
 msgstr "Está separado do dock?"
 
@@ -1018,142 +1034,146 @@ msgid ""
 msgstr ""
 
 #: ../HDDtemperature/messages:29 ../Moon/messages:31
-#: ../Screensaver_inhibitor/messages:33 ../Translator/messages:45
-#: ../YoutubeDl/messages:31
+#: ../Notifications_history/messages:33 ../Screensaver_inhibitor/messages:33
+#: ../Translator/messages:45 ../YoutubeDl/messages:31
 msgid "Accessibility :"
 msgstr "Acessibilidade:"
 
 #: ../HDDtemperature/messages:37 ../Moon/messages:39
-#: ../Screensaver_inhibitor/messages:41 ../Translator/messages:53
-#: ../YoutubeDl/messages:39
+#: ../Notifications_history/messages:41 ../Screensaver_inhibitor/messages:41
+#: ../Translator/messages:53 ../YoutubeDl/messages:39
 msgid "On Widget Layer"
 msgstr "Na camada do Widget"
 
 #: ../HDDtemperature/messages:41 ../Moon/messages:43
-#: ../Screensaver_inhibitor/messages:45 ../Translator/messages:57
-#: ../YoutubeDl/messages:43
+#: ../Notifications_history/messages:45 ../Screensaver_inhibitor/messages:45
+#: ../Translator/messages:57 ../YoutubeDl/messages:43
 msgid "Should be visible on all desktops ?"
 msgstr "Deve ser visível em todas as áreas de trabalho?"
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
-#: ../Screensaver_inhibitor/messages:47 ../YoutubeDl/messages:45
+#: ../Notifications_history/messages:47 ../Screensaver_inhibitor/messages:47
+#: ../YoutubeDl/messages:45
 msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
 msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
-#: ../Screensaver_inhibitor/messages:49 ../YoutubeDl/messages:47
+#: ../Notifications_history/messages:49 ../Screensaver_inhibitor/messages:49
+#: ../YoutubeDl/messages:47
 msgid "Lock position ?"
 msgstr ""
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
-#: ../Screensaver_inhibitor/messages:51 ../YoutubeDl/messages:49
+#: ../Notifications_history/messages:51 ../Screensaver_inhibitor/messages:51
+#: ../YoutubeDl/messages:49
 msgid "in degrees."
 msgstr "em gráus."
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
-#: ../Screensaver_inhibitor/messages:53 ../YoutubeDl/messages:51
+#: ../Notifications_history/messages:53 ../Screensaver_inhibitor/messages:53
+#: ../YoutubeDl/messages:51
 msgid "Rotation :"
 msgstr "Rotação:"
 
 #: ../HDDtemperature/messages:53 ../Moon/messages:55
-#: ../Screensaver_inhibitor/messages:57 ../Translator/messages:61
-#: ../YoutubeDl/messages:55
+#: ../Notifications_history/messages:57 ../Screensaver_inhibitor/messages:57
+#: ../Translator/messages:61 ../YoutubeDl/messages:55
 msgid "Choose the 'personnal' one to define your own decorations below."
 msgstr ""
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
-#: ../Screensaver_inhibitor/messages:59 ../Translator/messages:63
-#: ../YoutubeDl/messages:57
+#: ../Notifications_history/messages:59 ../Screensaver_inhibitor/messages:59
+#: ../Translator/messages:63 ../YoutubeDl/messages:57
 msgid "Choose a decoration theme for this desklet :"
 msgstr ""
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
-#: ../Screensaver_inhibitor/messages:61 ../Translator/messages:65
-#: ../YoutubeDl/messages:59
+#: ../Notifications_history/messages:61 ../Screensaver_inhibitor/messages:61
+#: ../Translator/messages:65 ../YoutubeDl/messages:59
 msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
 msgstr ""
 
 #: ../HDDtemperature/messages:59 ../Moon/messages:61
-#: ../Screensaver_inhibitor/messages:63 ../Translator/messages:67
-#: ../YoutubeDl/messages:61
+#: ../Notifications_history/messages:63 ../Screensaver_inhibitor/messages:63
+#: ../Translator/messages:67 ../YoutubeDl/messages:61
 msgid "Background image :"
 msgstr "Imagem de fundo :"
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
-#: ../Screensaver_inhibitor/messages:65 ../Translator/messages:69
-#: ../YoutubeDl/messages:63
+#: ../Notifications_history/messages:65 ../Screensaver_inhibitor/messages:65
+#: ../Translator/messages:69 ../YoutubeDl/messages:63
 msgid "Background tansparency :"
 msgstr "Transparência de fundo:"
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
-#: ../Screensaver_inhibitor/messages:67 ../Translator/messages:71
-#: ../YoutubeDl/messages:65
+#: ../Notifications_history/messages:67 ../Screensaver_inhibitor/messages:67
+#: ../Translator/messages:71 ../YoutubeDl/messages:65
 msgid "in pixels. Use this to adjust the left position of the drawings."
 msgstr "em píxeis. Use isto para ajustar a posição esquerda dos desenhos."
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
-#: ../Screensaver_inhibitor/messages:69 ../Translator/messages:73
-#: ../YoutubeDl/messages:67
+#: ../Notifications_history/messages:69 ../Screensaver_inhibitor/messages:69
+#: ../Translator/messages:73 ../YoutubeDl/messages:67
 msgid "Left offset :"
 msgstr "Deslocamento à esquerda:"
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
-#: ../Screensaver_inhibitor/messages:71 ../Translator/messages:75
-#: ../YoutubeDl/messages:69
+#: ../Notifications_history/messages:71 ../Screensaver_inhibitor/messages:71
+#: ../Translator/messages:75 ../YoutubeDl/messages:69
 msgid "in pixels. Use this to adjust the top position of the drawings."
 msgstr "em píxeis. Use isto para ajustar a posição superior dos desenhos."
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
-#: ../Screensaver_inhibitor/messages:73 ../Translator/messages:77
-#: ../YoutubeDl/messages:71
+#: ../Notifications_history/messages:73 ../Screensaver_inhibitor/messages:73
+#: ../Translator/messages:77 ../YoutubeDl/messages:71
 msgid "Top offset :"
 msgstr "Deslocamento superior :"
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
-#: ../Screensaver_inhibitor/messages:75 ../Translator/messages:79
-#: ../YoutubeDl/messages:73
+#: ../Notifications_history/messages:75 ../Screensaver_inhibitor/messages:75
+#: ../Translator/messages:79 ../YoutubeDl/messages:73
 msgid "in pixels. Use this to adjust the right position of the drawings."
 msgstr "em píxeis. Use isto para ajustar a posição direita dos desenhos."
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
-#: ../Screensaver_inhibitor/messages:77 ../Translator/messages:81
-#: ../YoutubeDl/messages:75
+#: ../Notifications_history/messages:77 ../Screensaver_inhibitor/messages:77
+#: ../Translator/messages:81 ../YoutubeDl/messages:75
 msgid "Right offset :"
 msgstr "Deslocamento à direita :"
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
-#: ../Screensaver_inhibitor/messages:79 ../Translator/messages:83
-#: ../YoutubeDl/messages:77
+#: ../Notifications_history/messages:79 ../Screensaver_inhibitor/messages:79
+#: ../Translator/messages:83 ../YoutubeDl/messages:77
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
 msgstr "em píxeis. Use isto para ajustar a posição inferior dos desenhos."
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
-#: ../Screensaver_inhibitor/messages:81 ../Translator/messages:85
-#: ../YoutubeDl/messages:79
+#: ../Notifications_history/messages:81 ../Screensaver_inhibitor/messages:81
+#: ../Translator/messages:85 ../YoutubeDl/messages:79
 msgid "Bottom offset :"
 msgstr "Deslocamento inferior :"
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
-#: ../Screensaver_inhibitor/messages:83 ../Translator/messages:87
-#: ../YoutubeDl/messages:81
+#: ../Notifications_history/messages:83 ../Screensaver_inhibitor/messages:83
+#: ../Translator/messages:87 ../YoutubeDl/messages:81
 msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
 msgstr ""
 
 #: ../HDDtemperature/messages:81 ../Moon/messages:83
-#: ../Screensaver_inhibitor/messages:85 ../Translator/messages:89
-#: ../YoutubeDl/messages:83
+#: ../Notifications_history/messages:85 ../Screensaver_inhibitor/messages:85
+#: ../Translator/messages:89 ../YoutubeDl/messages:83
 msgid "Foreground image :"
 msgstr "Imagem frontal:"
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
-#: ../Screensaver_inhibitor/messages:87 ../Translator/messages:91
-#: ../YoutubeDl/messages:85
+#: ../Notifications_history/messages:87 ../Screensaver_inhibitor/messages:87
+#: ../Translator/messages:91 ../YoutubeDl/messages:85
 msgid "Foreground tansparency :"
 msgstr "Transparência frontal :"
 
@@ -1285,6 +1305,56 @@ msgstr "Sul"
 msgid ""
 "This applet displays the moon phases and its informations for the current "
 "day, or week from the Northern or Southern hemisphere"
+msgstr ""
+
+#: ../Moon/messages:102
+msgid "Moon"
+msgstr ""
+
+#: ../Notifications_history/Notifications_history:114
+msgid "No recent notifications"
+msgstr ""
+
+#: ../Notifications_history/Notifications_history:124
+#, python-format
+msgid "from %s at %s"
+msgstr ""
+
+#: ../Notifications_history/Notifications_history:148
+msgid "Clear history"
+msgstr ""
+
+#: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
+msgid ""
+"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
+"(class=Cairo-dock & type=Utility)"
+msgstr ""
+
+#: ../Notifications_history/messages:91
+msgid "History size"
+msgstr ""
+
+#: ../Notifications_history/messages:93
+msgid "Clear the history when clicking on the icon"
+msgstr ""
+
+#: ../Notifications_history/messages:95
+msgid "Separated by a semi-colon ';'"
+msgstr ""
+
+#: ../Notifications_history/messages:97
+msgid "Ignore notifications from:"
+msgstr ""
+
+#: ../Notifications_history/messages:100
+msgid ""
+"This applet provides an history of the last desktop notifications.\n"
+"Click on the icon to get a list of the last notifications.\n"
+" Middle-click to clear the history."
+msgstr ""
+
+#: ../Notifications_history/messages:102
+msgid "Notifications History"
 msgstr ""
 
 #: ../Pidgin/Pidgin:417
@@ -1437,9 +1507,13 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
+msgstr ""
+
+#: ../Quote/messages:124
+msgid "Quote"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
@@ -1466,12 +1540,6 @@ msgstr ""
 msgid "Image filename when the screensaver is inhibited:"
 msgstr ""
 
-#: ../Screensaver_inhibitor/messages:31
-msgid ""
-"for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
-"(class=Cairo-dock & type=Utility)"
-msgstr ""
-
 #: ../Screensaver_inhibitor/messages:91
 msgid "(in minutes). 0 to never stop automatically"
 msgstr ""
@@ -1489,6 +1557,10 @@ msgid ""
 "A small applet to <b>inhibit the screensaver</b>.\n"
 "This is especially useful when watching videos on Internet.\n"
 "<b>Click</b> on the icon to inhibit/deinhibit the screensaver."
+msgstr ""
+
+#: ../Screensaver_inhibitor/messages:100
+msgid "Screensaver Inhibitor"
 msgstr ""
 
 #: ../Translator/Translator:371
@@ -1826,6 +1898,11 @@ msgid ""
 "language, press Ctrl + Alt + R\n"
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
+
+#: ../Translator/messages:374
+#, fuzzy
+msgid "Translator"
+msgstr "Traduzir para:"
 
 #: ../Transmission/Transmission:245
 msgid "Transmission is not running, or is not responding to us."
@@ -2179,7 +2256,11 @@ msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
 
-#: ../WebSearch/messages:124
+#: ../WebSearch/messages:123
+msgid "Show search engine's logo as the icon on the results?"
+msgstr ""
+
+#: ../WebSearch/messages:126
 msgid ""
 "This applet provides an interface to some search engines such as\n"
 "Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, and ImageShack.\n"
@@ -2198,6 +2279,10 @@ msgid ""
 "Left-click on the main icon to show search stats"
 msgstr ""
 
+#: ../WebSearch/messages:128
+msgid "Web Search"
+msgstr ""
+
 #: ../WindowsKiller/messages:92
 msgid ""
 "WindowsKiller is able to kill problematic windows easily.\n"
@@ -2207,6 +2292,10 @@ msgid ""
 "Middle Click will give you some informations like the pid,\n"
 " the command to launch this application, the uptime and the class(es) of "
 "this window."
+msgstr ""
+
+#: ../WindowsKiller/messages:94
+msgid "Windows Killer"
 msgstr ""
 
 #: ../Xchat/Xchat:285
@@ -2425,8 +2514,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Não substituir (--não-substituir)?"
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr "Usar o título do vídeo para nomear o arquivo baixado."
 
 #: ../YoutubeDl/messages:169
