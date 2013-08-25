@@ -54,12 +54,12 @@ class Applet(CDApplet):
 		# make a new Notification
 		args = message.get_args_list()
 		# debug
-		print ("Got a message:")
-		i = 0
-		for arg in args:
-			if i != 5 and i != 6:
-				print (" %d) %s" % (i, str (arg)))
-			i = i + 1
+		#print ("Got a message:")
+		#i = 0
+		#for arg in args:
+		#	if i != 5 and i != 6:
+		#		print (" %d) %s" % (i, str (arg)))
+		#	i = i + 1
 		
 		app_name = args[0]
 		if app_name in self.config['ignore'] or len(args[3]) < 2:
