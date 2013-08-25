@@ -85,16 +85,20 @@ class Applet(CDApplet):
 		self.icon.SetQuickInfo(str(self.count))
 		
 		return dbus.lowlevel.HANDLER_RESULT_HANDLED
+
+	def _clear_counter(self):
+		self.count = 0
+		self.icon.SetQuickInfo('')
 	
 	def _clear_history(self):
 		self.notifications = []
-		self.count = 0
-		self.icon.SetQuickInfo('')
+		self._clear_counter()
 	
 	##### applet definition #####
 	
 	def get_config(self,keyfile):
 		self.config['size'] = keyfile.getint('Configuration', 'size')
+		self.config['clear'] = keyfile.getboolean('Configuration', 'clear')
 		self.config['ignore'] = keyfile.get('Configuration', 'ignore').split(';')
 	
 	def begin(self):
@@ -127,9 +131,14 @@ class Applet(CDApplet):
 		dialog_attributes = {
 			"message" : msg,
 			"use-markup" : True,
-			"time-length" : 4+len(msg)/40 }
+			"time-length" : 0 if self.config['clear'] else 4 + len(msg)/40 }
 		widget_attributes = {}
 		self.icon.PopupDialog (dialog_attributes, widget_attributes)
+
+		if self.config['clear']:
+			self._clear_history()
+		else:
+			self._clear_counter()
 	
 	def on_middle_click(self):
 		self._clear_history()
