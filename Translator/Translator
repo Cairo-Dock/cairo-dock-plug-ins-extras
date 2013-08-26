@@ -32,7 +32,6 @@
 #    Translated text will be shown as a dialog and be available in the clipboard, just press Ctrl+v to have it
 
 import os, webbrowser
-#from sgmllib import SGMLParser ## need to be ported to python 3...
 
 try:
 	import gtk
@@ -97,9 +96,9 @@ class Interface:                                                              # 
 	
 	def translate_it(self, source, destination):
 		if not strict:
-			parser = TranslatorParser(strict=False)                                                     # create the parser
+			parser = TranslatorParser(strict=False)  # 'strict=False' is required to avoid an EOF error while parsing
 		else:
-			parser = TranslatorParser()
+			parser = TranslatorParser()  # in python2, there is no 'strict' parameter
 		opener = AgentOpener()                                                          # opens the web connection with masked user-agent
 		url = "http://translate.google.com/?sl=%s&tl=%s&q=%s" % (source, destination, self.adjust(self.text_to_be_translated))
 		try:
@@ -352,17 +351,8 @@ class Applet(CDApplet):
 			self._switch_destination_language(selected_menu - self.destination_language_menu_id - 1)
 
 	def on_scroll(self, scroll_up):
-		max_index = len(self.languages) - 1
-		scroll_destination_language = self.config['dlang']
-		if scroll_up:
-			scroll_destination_language -= 1
-			if scroll_destination_language < 0:
-				scroll_destination_language = max_index							                  # roll to the end of the list
-		else:
-			scroll_destination_language += 1
-			if scroll_destination_language > max_index:
-				scroll_destination_language = 0								                        # roll to the beginning of the list
-		self._switch_destination_language (scroll_destination_language)
+		self.source, self.destination = self.destination, self.source
+		self.inform_current_destination_language()
 
 	def _build_menu_for_destination_languages(self):
 		sub_menu_icon = os.path.abspath("./data/to.png")
@@ -407,7 +397,7 @@ class Applet(CDApplet):
 		index = self.switch_languages_menu_id
 		tooltip = "%s to %s" % (self.destination.name, self.source.name)
 		return [{ 'type'   : CDApplet.MENU_ENTRY,                                 # normal entry
-			'label'  : _('Switch languages'),
+			'label'  : _('Switch languages')+' ('+_('scroll')+')',
 			'menu'   : CDApplet.MAIN_MENU_ID,                               # belongs to the main menu
 			'id'     : index,
 			'icon'   : menu_icon,
@@ -420,7 +410,7 @@ class Applet(CDApplet):
 		items += self._build_menu_for_switch_languages()
 		items.append({  'type'  : CDApplet.MENU_SEPARATOR, 'menu':0 })            # belongs to the main menu
 		items.append({  'type'  : CDApplet.MENU_ENTRY,                               
-					          'label' : _("Translate from clipboard (middle-click)"),
+					          'label' : _("Translate from clipboard")+' ('+_('middle-click')+')',
 					          'menu'  : CDApplet.MAIN_MENU_ID,                          # belongs to the main menu
 					          'id'    : self.clipboard_menu_id,
 					          'icon'  : 'stock_paste' })
