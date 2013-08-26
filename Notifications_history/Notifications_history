@@ -39,8 +39,9 @@ class Applet(CDApplet):
 	##### private methods #####
 	
 	def _on_got_message(self, connection, message):
-		if message.get_member() != "Notify":  # for some reason some signals are not filtered (NameAcquired and some from the dock)
-			return
+		# ensure we got a valid message
+		if not isinstance(message, dbus.lowlevel.MethodCallMessage) or message.get_member() != "Notify":  # for some reason some signals are not filtered (NameAcquired and some from the dock)
+			return dbus.lowlevel.HANDLER_RESULT_HANDLED
 		
 		#Arg[0] : notify-send
 		#Arg[1] : 0
@@ -51,27 +52,25 @@ class Applet(CDApplet):
 		#Arg[6] : dbus.Dictionary({dbus.String(u'urgency'): dbus.Byte(1, variant_level=1)}, signature=dbus.Signature('sv'))
 		#Arg[7] : 1000
 		
-		# make a new Notification
-		args = message.get_args_list()
-		# debug
-		#print ("Got a message:")
-		#i = 0
-		#for arg in args:
-		#	if i != 5 and i != 6:
-		#		print (" %d) %s" % (i, str (arg)))
-		#	i = i + 1
-		
+		# ignore if the sender is blacklisted
 		app_name = args[0]
-		if app_name in self.config['ignore'] or len(args[3]) < 2:
+		if app_name in self.config['ignore']:
 			return dbus.lowlevel.HANDLER_RESULT_HANDLED
 		
+		# ignore if the summary is empty (it's probably something we don't mind, like a notification that the volume has changed)
+		summary = args[3]
+		if len(summary)  < 2:
+			return dbus.lowlevel.HANDLER_RESULT_HANDLED
+		
+		# if it replaces a previous notification, remove this one before
 		id = args[1]
-		if id != 0:  # if it replaces a previous notification, remove this one before
+		if id != 0:
 			for n in self.notifications:
 				if n['id'] == id:
 					self.notifications.remove(n)
 					self.count -= 1
 		
+		# make a new Notification
 		notif = {'app_name':app_name,
 				'id':id,
 				'app_icon':args[2],
@@ -111,7 +110,7 @@ class Applet(CDApplet):
 	def on_click(self,iState):
 		# build a message containing all the notifications
 		if len(self.notifications) == 0:
-			msg = _('No recent notifications')
+			msg = _('No recent notification')
 		else:
 			msg = ''
 			i = 0
@@ -131,10 +130,11 @@ class Applet(CDApplet):
 		dialog_attributes = {
 			"message" : msg,
 			"use-markup" : True,
-			"time-length" : 0 if self.config['clear'] else 4 + len(msg)/40 }
+			"time-length" : 0 if self.config['clear'] else 4 + len(msg)/40 }  # if we're going to clear the history, show the dialog until the user closes it
 		widget_attributes = {}
 		self.icon.PopupDialog (dialog_attributes, widget_attributes)
-
+		
+		# set the unseen notifications to 0
 		if self.config['clear']:
 			self._clear_history()
 		else:
