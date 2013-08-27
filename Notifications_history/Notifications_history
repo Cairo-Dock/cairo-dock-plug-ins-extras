@@ -23,6 +23,7 @@
 from __future__ import print_function  # must be on the first line
 import dbus
 from time import localtime, strftime
+from os.path import abspath
 from CDApplet import CDApplet, _
 
 ####################
@@ -84,11 +85,18 @@ class Applet(CDApplet):
 		self.count += 1
 		self.icon.SetQuickInfo(str(self.count))
 		
+		# display a new icon if needed
+		if self.count == 1 and self.config['change_icon'] and len(self.config['new_icon']) > 0:
+			self.icon.SetIcon(self.config['new_icon'])
+		
 		return dbus.lowlevel.HANDLER_RESULT_HANDLED
 
 	def _clear_counter(self):
-		self.count = 0
-		self.icon.SetQuickInfo('')
+		if self.count > 0:
+			self.count = 0
+			self.icon.SetQuickInfo('')
+			if self.config['change_icon']: # revert icon
+				self.icon.SetIcon(abspath('./icon'))
 	
 	def _clear_history(self):
 		self.notifications = []
@@ -100,6 +108,8 @@ class Applet(CDApplet):
 		self.config['size'] = keyfile.getint('Configuration', 'size')
 		self.config['clear'] = keyfile.getboolean('Configuration', 'clear')
 		self.config['ignore'] = keyfile.get('Configuration', 'ignore').split(';')
+		self.config['change_icon'] = keyfile.getboolean('Configuration', 'change icon')
+		self.config['new_icon'] = keyfile.get('Configuration', 'new icon')
 	
 	def begin(self):
 		bus = dbus.SessionBus()
