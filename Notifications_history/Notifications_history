@@ -75,7 +75,7 @@ class Applet(CDApplet):
 		notif = {'app_name':app_name,
 				'id':id,
 				'app_icon':args[2],
-				'summary':args[3],
+				'summary':summary,
 				'body':args[4],
 				'time':strftime("%X", localtime())}
 		
@@ -120,7 +120,8 @@ class Applet(CDApplet):
 				if i != 0:
 					msg += '\n'
 				msg += '<b>' + n['summary'] + '</b>'
-				msg += '\n' + n['body']
+				if len(n['body']) > 0:
+					msg += '\n' + n['body']
 				msg += '\n  <i>' + (_('from %s at %s') % (n['app_name'], n['time'])) + '</i>'
 				
 				i += 1
