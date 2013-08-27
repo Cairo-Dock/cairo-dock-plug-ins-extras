@@ -43,6 +43,7 @@ class Applet(CDApplet):
 		if not isinstance(message, dbus.lowlevel.MethodCallMessage) or message.get_member() != "Notify":  # for some reason some signals are not filtered (NameAcquired and some from the dock)
 			return dbus.lowlevel.HANDLER_RESULT_HANDLED
 		
+		args = message.get_args_list()
 		#Arg[0] : notify-send
 		#Arg[1] : 0
 		#Arg[2] : geany.png
