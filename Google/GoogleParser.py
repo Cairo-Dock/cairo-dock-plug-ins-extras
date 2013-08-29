@@ -50,5 +50,5 @@ class GoogleParser(SGMLParser):
             self.current_description_piece += text                                  # concatena tudo que tiver dentro da tag
 
     def parse(self, page):
-        self.feed(page)                                                             # feed the parser with the page's html
+        self.feed(str(page))                                                             # feed the parser with the page's html
         self.close()
