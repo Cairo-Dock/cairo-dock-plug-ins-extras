@@ -254,7 +254,8 @@ class Gmail(CDApplet):
         self.account['count'] = count
 
         # update display
-        self.update_display()
+        if self.account['diff'] != 0:
+            self.update_display()
 
         # send notifications if there is new mail
         if self.account['count'] > 0:
@@ -412,6 +413,10 @@ class Gmail(CDApplet):
         """
             Warns the user if an error occured.
         """
+
+        # no need to update the icon
+        if self.flag == 'error':
+            return
 
         if self.config['info'] != 'quickinfo':
             # remove previous quickinfo if needed:
