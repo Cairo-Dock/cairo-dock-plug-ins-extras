@@ -59,8 +59,8 @@ if [ $? -eq 0 ]; then
 		'a{sv}a{sv}',
 		({'message': message, 'use-markup':True},{},)))"
 else
-	echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
-	call ShowDialog "string:\"ERROR: 'cal' isn't installed\"" "int32:5"
+	echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'ncal' isn't installed"
+	call ShowDialog "string:\"ERROR: 'ncal' isn't installed\"" "int32:5"
 fi
 exit
 }
@@ -90,8 +90,8 @@ if [ $1 -eq 1 ]; then
 			'a{sv}a{sv}',
 			({'message': message, 'use-markup':True},{},)))"
 	else
-		echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'cal' isn't installed"
-		call ShowDialog "string:\"ERROR: 'cal' isn't installed\"" "int32:5"
+		echo "$APP_NAME applet -> Script Name : $SCRIPT_NAME -> 'ncal' isn't installed"
+		call ShowDialog "string:\"ERROR: 'ncal' isn't installed\"" "int32:5"
 	fi
 
 else
