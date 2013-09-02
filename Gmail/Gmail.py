@@ -439,6 +439,7 @@ class Gmail(CDApplet):
             return
         # set error flag
         self.flag = 'error'
+        self.account['count'] = -99 # to be sure that the icon will be updated
         # show dialogue
         self.icon.ShowDialog(message, 4)
 
