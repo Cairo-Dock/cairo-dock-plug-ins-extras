@@ -41,5 +41,5 @@ class QdbParser(SGMLParser):
 #                    self.inside_nickname = False                                    # set it
 
     def parse(self, page):
-        self.feed(page)                                                             # feed the parser with the page's html
+        self.feed(str(page))                                                             # feed the parser with the page's html
         self.close()
