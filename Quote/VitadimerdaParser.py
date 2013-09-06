@@ -38,5 +38,5 @@ class VitadimerdaParser(SGMLParser):
       self.current_quote += text
 
   def parse(self, page):
-    self.feed(str(page).encode('utf8'))                                         # feed the parser with the page's html
+    self.feed(str(page))                                         # feed the parser with the page's html
     self.close() 
