@@ -31,7 +31,6 @@ except:
 	from gi.repository import GObject as gobject
 
 import subprocess
-import htmllib
 import re
 import dbus
 from CDApplet import CDApplet, _
