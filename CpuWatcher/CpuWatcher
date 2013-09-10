@@ -159,7 +159,7 @@ class Applet(CDApplet):
 
 
 	def getCurrentStats(self):
-		statFile = file("/proc/stat", "r")
+		statFile = open("/proc/stat", "r")
 		currentStats = []
 		tmp = statFile.readline()
 		currentStats.append(tmp.split(" ")[2:6])
