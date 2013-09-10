@@ -271,21 +271,20 @@ class Applet(CDApplet):
 					info += " <i>(" + _("Time remaining:") + " "
 					d=h=m=s=0
 					if t > 86400:
-						d = int(t) / 86400
-						h = int(t - d*86400) / 3600
-						if d > 0:
-							info += str(d) + " " + _("days")
-						if d > 0 or h > 0:
-							info += str(h)+_("h")
+						d = int(t / 86400) # at least 1 day
+						h = int((t - d*86400) / 3600)
+						info += str(d) + " " + _("days") + " "
+						if h > 0:
+							info += str(h) + _("h")
 					else:
-						h = int(t) / 3600
-						m = int(t - h*3600) / 60
+						h = int(t / 3600)
+						m = int((t - h*3600) / 60)
 						s = int(t - h*3600 - m*60)
 						if h > 0:
-							info += str(h)+_("h")
+							info += str(h) + _("h") + " "
 						if h > 0 or m > 0:
-							info += str(m)+_("min")
-						info += str(s)+_("sec")
+							info += str(m) + _("min") + " "
+						info += str(s) + _("sec")
 					info += ")</i>\n"
 				elif t < 0:
 					info += " <i>(" + _("Time remaining: Unknown") + ")</i>\n"
