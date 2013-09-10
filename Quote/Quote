@@ -107,7 +107,7 @@ class Interface:
     except IOError:
       log ("Problem to open %s" % (parser.url))
     else:
-      parser.parse(page.read())                                         # feed the parser with the page's content
+      parser.parse(str(page.read()))                                    # feed the parser with the page's content
       page.close()                                                      # close the page connection
             
       # Handle different kind of returns from the parser. It is necessary because some sources return quotes with extra

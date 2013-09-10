@@ -53,7 +53,7 @@ class Interface:
 		except IOError:
 			log("Problem to open %s" % (parser.url))
 		else:
-			parser.parse(page.read())											   	# feed the parser to get the specific content: translated text
+			parser.parse(str(page.read()))										   	# feed the parser to get the specific content: translated text
 			page.close()															# lets close the page connection
 			self.information = parser.information
 			self.moon_image = parser.moon_image
