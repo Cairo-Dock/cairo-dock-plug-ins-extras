@@ -83,7 +83,7 @@ class Applet(CDApplet):
 				self.icon.SetIcon(self.config['icon-inhib'])
 			else:
 				self.icon.SetIcon(self.cShareDataDir+"/icon-inhibit.svg")
-			self.icon.SetLabel(_("Screensaver is currently disabled"))
+			self.icon.SetLabel(_("Enable the screensaver"))
 		else:
 			if self.config['icon'] != "":
 				self.icon.SetIcon(self.config['icon'])
