@@ -29,15 +29,12 @@ import os
 from copy import deepcopy
 from CDApplet import CDApplet, _
 
-applet_name = os.path.basename(os.path.abspath("."))
-
 
 ####################
 ### Applet class ###
 ####################
 class Applet(CDApplet):
 	def __init__(self):
-		self.conf_file = os.path.expanduser("~/.config/cairo-dock/current_theme/plug-ins/"+applet_name+"/"+applet_name+".conf")  # path to the conf file of our applet.
 		self.__timerId = None
 		self.__strDisplayValue = '0.0'
 		self.__firstList = []
@@ -59,23 +56,12 @@ class Applet(CDApplet):
 		self.config['refresh'] 		= keyfile.getint('Configuration', 'refresh') # in milliseconds.
 		self.config['myLabel']	= keyfile.get('Icon', 'name')
 		self.setTimer() # I (re)start the timer each times the config has been retrieved
-		print(applet_name + " : Config retrieved + Timer started")
-
-
-	def begin(self):
-		"""
-		Note : This is launched after get_config()
-		"""
-		print(applet_name + " has been started.")
-
-
-	def reload(self):
-		print(applet_name + " reloaded.")
+		print(self.cAppletName + " : Config retrieved + Timer started")
 
 
 	def end(self):
 		self.removeTimer()
-		print(applet_name + " : Bye bye.")
+		print(self.cAppletName + " : Bye bye.")
 
 
 
@@ -102,17 +88,17 @@ class Applet(CDApplet):
 			lSubIcons = []
 			while i < (self.__iNbCores + 1):
 				lSubIcons.append('Core ' + str(i))
-				lSubIcons.append('~/.config/cairo-dock/third-party/'+applet_name+'/icon')
+				lSubIcons.append(self.cShareDataDir + '/icon')
 				lSubIcons.append('core' + str(i))
 				i += 1
 			self.sub_icons.AddSubIcons(lSubIcons)
 
 
 	def action_on_loop(self) :
-		if self.__bIsFirstStat:			
+		if self.__bIsFirstStat:
 			self.__firstList = self.getDeltaTime()
 		else:
-			cpuPct = []			
+			cpuPct = []
 			self.__secondList= self.getDeltaTime()
 			deltaTimes = deepcopy(self.__secondList)
 			
@@ -145,7 +131,6 @@ class Applet(CDApplet):
 				self.__bClearLabel = True
 				self.__iTotalAverageTime += 1
 				self.__fTotalAverageCpu += float(self.__strDisplayValue)
-				print(applet_name + ' Total time : ' + str(self.__iTotalAverageTime * self.config['refresh']/1000) + '  -  Average :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%')
 				self.icon.SetLabel(\
 				'Average Result :\n' + \
 				'Global Cpu :' + str('%.2f' %(self.__fTotalAverageCpu / self.__iTotalAverageTime)) + '%  (' + \
@@ -193,36 +178,26 @@ class Applet(CDApplet):
 
 	##### Callbacks #####
 
-	def on_click(self,iState):
-		print(applet_name + "  >>> left clic")
-
 
 	def on_middle_click(self):
 		if self.__bAverageMode:
-			print(applet_name + "  >>> middle clic > Stop average mode")
+			print(self.cAppletName + "  >>> middle clic > Stop average mode")
 			self.__bAverageMode = False
 			self.__iTotalAverageTime = 0
 			self.__fTotalAverageCpu = .0
 			# Swap the icons
-			self.icon.SetIcon("~/.config/cairo-dock/third-party/"+applet_name+"/icon")
+			self.icon.SetIcon(self.cShareDataDir + "/icon")
 		else:
-			print(applet_name + "  >>> middle clic > Start average mode")
+			print(self.cAppletName + "  >>> middle clic > Start average mode")
 			self.__bAverageMode = True
 			self.__iTotalAverageTime = 1
 			self.__fTotalAverageCpu = float(self.__strDisplayValue)
 			# Swap the icons
-			self.icon.SetIcon("~/.config/cairo-dock/third-party/"+applet_name+"/icon_Average.png")
-
-	
-	def on_scroll(self,bScrollUp):
-		if bScrollUp:
-			print(applet_name + " scroll up !")
-		else:
-			print(applet_name + " scroll down !")
+			self.icon.SetIcon(self.cShareDataDir + "/icon_Average.png")
 
 ############
 ### Main ###
 ############
 
-myApplet = Applet()
-myApplet.run()
+if __name__ == '__main__':
+	Applet().run()
