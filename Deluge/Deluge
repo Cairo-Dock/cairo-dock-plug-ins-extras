@@ -215,44 +215,45 @@ class Applet(CDApplet):
 		n = 0
 		for id, value in list(status.items()):
 			info += "<b>"+html_escape(value['name'])+"</b>:\n"
-			info += "  progress: "+format(value['progress'],".1f")+'%'
+			info += "  " + _("Progress:") + " <b>"+format(value['progress'],".1f")+'%</b>'
 			if value['paused']:
-				info += " <i>(paused)</i>\n"
+				info += " <i>(" + _("paused") + ")</i>\n"
 			else:  # active torrent
 				t = value['eta']
 				if t > 0:
-					info += " <i>(time remaining: "
+					info += " <i>(" + _("Time remaining:") + " "
 					d=h=m=s=0
 					if t > 86400:
-						d = int(t) / 86400
-						h = int(t - d*86400) / 3600
-						if d > 0:
-							info += str(d)+"days"
-						if d > 0 or h > 0:
-							info += str(h)+"h"
+						d = int(t / 86400) # at least 1 day
+						h = int((t - d*86400) / 3600)
+						info += str(d) + " " + _("days") + " "
+						if h > 0:
+							info += str(h) + _("h")
 					else:
-						h = int(t) / 3600
-						m = int(t - h*3600) / 60
+						h = int(t / 3600)
+						m = int((t - h*3600) / 60)
 						s = int(t - h*3600 - m*60)
 						if h > 0:
-							info += str(h)+"h"
+							info += str(h) + _("h") + " "
 						if h > 0 or m > 0:
-							info += str(m)+"mn"
-						info += str(s)+"s)"
-					info += "</i>\n"
+							info += str(m) + _("min") + " "
+						info += str(s) + _("sec")
+					info += ")</i>\n"
+				elif t < 0:
+					info += " <i>(" + _("Time remaining: Unknown") + ")</i>\n"
 				else:
-					info += " <i>(finished)</i>\n"
-				info += "  nb peers: "+str(value['num_peers'])+", nb seeds: "+str(value['num_seeds'])+"\n"
+					info += " <i>(" + _("Finished") + ")</i>\n"
+				info += "  " + _("Number of peers:") + " "+str(value['num_peers'])+", " + _("and seeds:") + " "+str(value['num_seeds'])+"\n"
 			
-			info += "  ratio: "+format(value['ratio'],".2f")+'\n'
+			info += "  " + _("Ratio:") + " "+format(value['ratio'],".2f")+'\n'
 			n += 1
 		if n == 0:
-			info += "<i>no torrent in the list</i>\n"
+			info += "<i>" + _("No torrent in the list") + "</i>\n"
 		
 		client.core.get_session_status(["total_payload_download","total_payload_upload"]).addCallback(self.on_got_total_amount,info)
 	
 	def on_got_total_amount(self,values,info):
-		info += "\n<b>total amount of data:</b>\n"
+		info += "\n<b>" + _("Total amount of data:") + "</b>\n"
 		
 		dl = values["total_payload_download"]
 		if dl < 100:
@@ -260,7 +261,7 @@ class Applet(CDApplet):
 		else:
 			form = ".1f"
 		dl,unit = format_bytes(dl)
-		info += " - received: "+format(dl,form)+unit+"\n"
+		info += " - " + _("Received:") + " "+format(dl,form)+unit+"\n"
 		
 		ul = values["total_payload_upload"]
 		if ul < 100:
@@ -268,7 +269,7 @@ class Applet(CDApplet):
 		else:
 			form = ".1f"
 		ul,unit = format_bytes(ul)
-		info += " - sent: "+format(ul,form)+unit
+		info += " - " + _("Sent:") + " "+format(ul,form)+unit
 		
 		dialog_attributes = {
 			"icon" : "deluge",

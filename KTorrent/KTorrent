@@ -218,7 +218,7 @@ class Applet(CDApplet):
 			size = stats['total_bytes']  # tor.totalSize()
 			dl = stats['bytes_downloaded']  # tor.bytesDownloaded()
 			percent = 100. * float(dl) / float(size)  # tor.filePercentage()
-			info += "  progress: "+format(percent,".1f")+'%'
+			info += "  " + _("Progress:") + " <b>"+format(percent,".1f")+'%</b>'
 			
 			state = stats['status']
 			print('state:',state)
@@ -234,32 +234,31 @@ class Applet(CDApplet):
 					else:
 						t = -1
 				if t > 0:
-					info += " <i>(time remaining: "
+					info += " <i>(" + _("Time remaining:") + " "
 					d=h=m=s=0
 					if t > 86400:
-						d = int(t) / 86400
-						h = int(t - d*86400) / 3600
-						if d > 0:
-							info += str(d)+"days"
-						if d > 0 or h > 0:
-							info += str(h)+"h"
+						d = int(t / 86400) # at least 1 day
+						h = int((t - d*86400) / 3600)
+						info += str(d) + " " + _("days") + " "
+						if h > 0:
+							info += str(h) + _("h")
 					else:
-						h = int(t) / 3600
-						m = int(t - h*3600) / 60
+						h = int(t / 3600)
+						m = int((t - h*3600) / 60)
 						s = int(t - h*3600 - m*60)
 						if h > 0:
-							info += str(h)+"h"
+							info += str(h) + _("h") + " "
 						if h > 0 or m > 0:
-							info += str(m)+"mn"
-						info += str(s)+"s"
+							info += str(m) + _("min") + " "
+						info += str(s) + _("sec")
 					info += ")</i>\n"
 				elif t < 0:
-					info += " <i>(time remaining: unknown)</i>\n"
+					info += " <i>(" + _("Time remaining: Unknown") + ")</i>\n"
 				else:
-					info += " <i>(finished)</i>\n"
+					info += " <i>(" + _("Finished") + ")</i>\n"
 			
 			print('num_peers:',stats['num_peers'])
-			info += "  nb peers: "+str(stats['leechers_connected_to'])+", nb seeds: "+str(stats['seeders_connected_to'])+"\n"
+			info += "  " + _("Number of peers:") + " "+str(stats['leechers_connected_to'])+", " + _("and seeds:") + " "+str(stats['seeders_connected_to'])+"\n"
 			
 			print('ratio:',tor.shareRatio())
 			ul = stats['bytes_uploaded']
@@ -268,12 +267,12 @@ class Applet(CDApplet):
 			else:
 				ratio = -1
 			if ratio >= 0:
-				info += "  ratio: "+format(ratio,".2f")+'\n'
+				info += "  " + _("Ratio:") + " "+format(ratio,".2f")+'\n'
 			
 			n += 1
 		
 		if n == 0:
-			info += "<i>no torrent in the list</i>\n"
+			info += "<i>" + _("No torrent in the list") + "</i>\n"
 		
 		# pop up dialog
 		dialog_attributes = {
