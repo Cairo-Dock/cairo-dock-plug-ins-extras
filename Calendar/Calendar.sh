@@ -48,14 +48,16 @@ fi
 on_click() {
 
 CAL="ncal" # with ncal, the layout of the calendar depends of the local environment
+CAL_PARAM="-hC"
 which $CAL > /dev/null
 if [ $? -ne 0 ]; then
 	CAL="cal"
+	CAL_PARAM="" # original 'cal' doesn't support -hC options
 	which $CAL > /dev/null
 fi
 if [ $? -eq 0 ]; then
 	#dbus-send --session --dest=$DBUS_NAME $DBUS_PATH $DBUS_INTERFACE.applet.ShowDialog  string:"`cal -h`" int32:$time_dialog_cal_today
-	MESSAGE="<tt>`$CAL -hC`</tt>"
+	MESSAGE="<tt>`$CAL $CAL_PARAM`</tt>"
 	python -c "from __future__ import print_function; import dbus; message=\"\"\"$MESSAGE\"\"\"; print (dbus.Bus().call_blocking(
 		\"$DBUS_NAME\",
 		\"$DBUS_PATH\",
@@ -85,13 +87,15 @@ if [ $1 -eq 1 ]; then
 	# Scroll UP
 
 	CAL="ncal"
+	CAL_PARAM="-h3C"
 	which $CAL > /dev/null
 	if [ $? -ne 0 ]; then
 		CAL="cal"
+		CAL_PARAM="-3"
 		which $CAL > /dev/null
 	fi
 	if [ $? -eq 0 ]; then
-		MESSAGE="<tt>`$CAL -h3C`</tt>"
+		MESSAGE="<tt>`$CAL $CAL_PARAM`</tt>"
 		python -c "from __future__ import print_function; import dbus; message=\"\"\"$MESSAGE\"\"\"; print (dbus.Bus().call_blocking(
 			\"$DBUS_NAME\",
 			\"$DBUS_PATH\",
