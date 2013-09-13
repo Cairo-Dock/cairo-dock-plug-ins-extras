@@ -324,10 +324,12 @@ class Applet(CDApplet):
 					info += " <i>(" + _("Time remaining: Unknown") + ")</i>\n"
 				else:
 					info += " <i>(" + _("Finished") + ")</i>\n"
+				info += "  " + _("Number of peers:") + " " + str(value['peersSendingToUs']) + ", " + _("and seeds:") + " " + str(value['webseedsSendingToUs'])+"\n"
 			else:
 				info += "\n"
-			
-			info += "  " + _("Number of peers:") + " "+str(value['peersSendingToUs'])+", " + _("and seeds:") + " "+str(value['webseedsSendingToUs'])+"\n"
+
+			if state != TR_STATUS_DOWNLOAD and value['peersConnected'] > 0:
+				info += "  " + _("Connected peers:") + " " + str(value['peersConnected']) + "\n"
 			ratio = value['uploadRatio']
 			if ratio >= 0:
 				info += "  " + _("Ratio:") + " "+format(ratio,".2f")+'\n'

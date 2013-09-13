@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-09-13 16:33+0200\n"
+"POT-Creation-Date: 2013-09-13 17:09+0200\n"
 "PO-Revision-Date: 2013-07-21 18:03+0000\n"
 "Last-Translator: Anthony Harrington <untaintableangel@ubuntu.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
@@ -720,59 +720,59 @@ msgid "Finished"
 msgstr "Finished"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:330
+#: ../Transmission/Transmission:327
 msgid "Number of peers:"
 msgstr "Number of peers:"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:330
+#: ../Transmission/Transmission:327
 msgid "and seeds:"
 msgstr "and seeds:"
 
 #: ../Deluge/Deluge:248 ../KTorrent/KTorrent:270
-#: ../Transmission/Transmission:333
+#: ../Transmission/Transmission:335
 msgid "Ratio:"
 msgstr "Ratio:"
 
 #: ../Deluge/Deluge:251 ../KTorrent/KTorrent:275
-#: ../Transmission/Transmission:337
+#: ../Transmission/Transmission:339
 msgid "No torrent in the list"
 msgstr "No torrent in the list"
 
-#: ../Deluge/Deluge:256 ../Transmission/Transmission:342
+#: ../Deluge/Deluge:256 ../Transmission/Transmission:344
 msgid "Total amount of data:"
 msgstr "Total amount of data:"
 
-#: ../Deluge/Deluge:264 ../Transmission/Transmission:351
+#: ../Deluge/Deluge:264 ../Transmission/Transmission:353
 msgid "Received:"
 msgstr "Received:"
 
-#: ../Deluge/Deluge:272 ../Transmission/Transmission:359
+#: ../Deluge/Deluge:272 ../Transmission/Transmission:361
 msgid "Sent:"
 msgstr "Sent:"
 
-#: ../Deluge/Deluge:346 ../Transmission/Transmission:501
+#: ../Deluge/Deluge:346 ../Transmission/Transmission:503
 msgid "Pause all torrents"
 msgstr "Pause all torrents"
 
-#: ../Deluge/Deluge:351 ../Transmission/Transmission:506
+#: ../Deluge/Deluge:351 ../Transmission/Transmission:508
 msgid "Resume all torrents"
 msgstr "Resume all torrents"
 
 #: ../Deluge/Deluge:356 ../KTorrent/KTorrent:334
-#: ../Transmission/Transmission:511
+#: ../Transmission/Transmission:513
 msgid "Torrents info"
 msgstr "Torrents info"
 
 #: ../Deluge/Deluge:356 ../Gmail/Gmail:542 ../KTorrent/KTorrent:334
 #: ../Notifications_history/Notifications_history:160
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
-#: ../Translator/Translator:413 ../Transmission/Transmission:511
+#: ../Translator/Translator:413 ../Transmission/Transmission:513
 #: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/YoutubeDl:307
 msgid "middle-click"
 msgstr "middle-click"
 
-#: ../Deluge/Deluge:361 ../Transmission/Transmission:516
+#: ../Deluge/Deluge:361 ../Transmission/Transmission:518
 msgid "Quit"
 msgstr "Quit"
 
@@ -2108,7 +2108,11 @@ msgstr "waiting for check"
 msgid "seeding"
 msgstr "seeding"
 
-#: ../Transmission/Transmission:448
+#: ../Transmission/Transmission:332
+msgid "Connected peers:"
+msgstr ""
+
+#: ../Transmission/Transmission:450
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr "You have to enable the Web client in the Transmisison's settings."
 

@@ -729,59 +729,59 @@ msgid "Finished"
 msgstr "Terminé"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:330
+#: ../Transmission/Transmission:327
 msgid "Number of peers:"
 msgstr "Nombre de pairs :"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:330
+#: ../Transmission/Transmission:327
 msgid "and seeds:"
 msgstr "et fournisseurs :"
 
 #: ../Deluge/Deluge:248 ../KTorrent/KTorrent:270
-#: ../Transmission/Transmission:333
+#: ../Transmission/Transmission:335
 msgid "Ratio:"
 msgstr "Ratio :"
 
 #: ../Deluge/Deluge:251 ../KTorrent/KTorrent:275
-#: ../Transmission/Transmission:337
+#: ../Transmission/Transmission:339
 msgid "No torrent in the list"
 msgstr "Aucun torrent dans la liste"
 
-#: ../Deluge/Deluge:256 ../Transmission/Transmission:342
+#: ../Deluge/Deluge:256 ../Transmission/Transmission:344
 msgid "Total amount of data:"
 msgstr "Taille total des données :"
 
-#: ../Deluge/Deluge:264 ../Transmission/Transmission:351
+#: ../Deluge/Deluge:264 ../Transmission/Transmission:353
 msgid "Received:"
 msgstr "Reçu :"
 
-#: ../Deluge/Deluge:272 ../Transmission/Transmission:359
+#: ../Deluge/Deluge:272 ../Transmission/Transmission:361
 msgid "Sent:"
 msgstr "Envoyé :"
 
-#: ../Deluge/Deluge:346 ../Transmission/Transmission:501
+#: ../Deluge/Deluge:346 ../Transmission/Transmission:503
 msgid "Pause all torrents"
 msgstr "Suspendre tous les torrents"
 
-#: ../Deluge/Deluge:351 ../Transmission/Transmission:506
+#: ../Deluge/Deluge:351 ../Transmission/Transmission:508
 msgid "Resume all torrents"
 msgstr "Relancer tous les torrents"
 
 #: ../Deluge/Deluge:356 ../KTorrent/KTorrent:334
-#: ../Transmission/Transmission:511
+#: ../Transmission/Transmission:513
 msgid "Torrents info"
 msgstr "Information des torrents"
 
 #: ../Deluge/Deluge:356 ../Gmail/Gmail:542 ../KTorrent/KTorrent:334
 #: ../Notifications_history/Notifications_history:160
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
-#: ../Translator/Translator:413 ../Transmission/Transmission:511
+#: ../Translator/Translator:413 ../Transmission/Transmission:513
 #: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/YoutubeDl:307
 msgid "middle-click"
 msgstr "clic du milieu"
 
-#: ../Deluge/Deluge:361 ../Transmission/Transmission:516
+#: ../Deluge/Deluge:361 ../Transmission/Transmission:518
 msgid "Quit"
 msgstr "Quitter"
 
@@ -2115,7 +2115,11 @@ msgstr "attente de vérification"
 msgid "seeding"
 msgstr "en partage"
 
-#: ../Transmission/Transmission:448
+#: ../Transmission/Transmission:332
+msgid "Connected peers:"
+msgstr "Pairs connectées :"
+
+#: ../Transmission/Transmission:450
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 "Vous devez activer l'interface client Web dans les paramètres de "
