@@ -197,7 +197,7 @@ class Gmail(CDApplet):
         # default request is to encrypt username and password
         else:
             # open, encode and write to subscription file
-            file = open(self.subpath, 'w')
+            file = open(self.subpath, 'wb')
             file.write(base64.b64encode(str(self.account['username']+ \
             '\n'+self.account['password']).encode('ascii')))
             file.close()
