@@ -677,104 +677,104 @@ msgid "Deluge is not running, or is not responding to us."
 msgstr "Deluge не запущений або не відповідає."
 
 #: ../Deluge/Deluge:218 ../KTorrent/KTorrent:221
-#: ../Transmission/Transmission:258
+#: ../Transmission/Transmission:307
 msgid "Progress:"
 msgstr "Поступ:"
 
-#: ../Deluge/Deluge:220 ../Transmission/Transmission:261
+#: ../Deluge/Deluge:220 ../Transmission/Transmission:310
 msgid "paused"
 msgstr "призупинено"
 
 #: ../Deluge/Deluge:224 ../KTorrent/KTorrent:237
-#: ../Transmission/Transmission:271
+#: ../Transmission/Transmission:320
 msgid "Time remaining:"
 msgstr "Залишилось часу:"
 
 #: ../Deluge/Deluge:229 ../KTorrent/KTorrent:242
-#: ../Transmission/Transmission:276
+#: ../Transmission/Transmission:129
 msgid "days"
 msgstr "днів"
 
 #: ../Deluge/Deluge:231 ../Deluge/Deluge:237 ../KTorrent/KTorrent:244
-#: ../KTorrent/KTorrent:250 ../Transmission/Transmission:278
-#: ../Transmission/Transmission:284
+#: ../KTorrent/KTorrent:250 ../Transmission/Transmission:131
+#: ../Transmission/Transmission:134 ../Transmission/Transmission:144
 msgid "h"
 msgstr "г"
 
 #: ../Deluge/Deluge:239 ../KTorrent/KTorrent:252
-#: ../Transmission/Transmission:286
+#: ../Transmission/Transmission:149
 msgid "min"
 msgstr "хв"
 
 #: ../Deluge/Deluge:240 ../KTorrent/KTorrent:253
-#: ../Transmission/Transmission:287
+#: ../Transmission/Transmission:153
 msgid "sec"
 msgstr "с"
 
 #: ../Deluge/Deluge:243 ../KTorrent/KTorrent:256
-#: ../Transmission/Transmission:290
+#: ../Transmission/Transmission:324
 msgid "Time remaining: Unknown"
 msgstr "Залишилося часу: Невідомо"
 
 #: ../Deluge/Deluge:245 ../KTorrent/KTorrent:258
-#: ../Transmission/Transmission:292
+#: ../Transmission/Transmission:326
 msgid "Finished"
 msgstr "Завершено"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:330
 msgid "Number of peers:"
 msgstr "Кількіть пірів:"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:330
 msgid "and seeds:"
 msgstr "і сідів:"
 
 #: ../Deluge/Deluge:248 ../KTorrent/KTorrent:270
-#: ../Transmission/Transmission:299
+#: ../Transmission/Transmission:333
 msgid "Ratio:"
 msgstr "Коефіцієнт:"
 
 #: ../Deluge/Deluge:251 ../KTorrent/KTorrent:275
-#: ../Transmission/Transmission:303
+#: ../Transmission/Transmission:337
 msgid "No torrent in the list"
 msgstr "Список торентів порожній"
 
-#: ../Deluge/Deluge:256 ../Transmission/Transmission:308
+#: ../Deluge/Deluge:256 ../Transmission/Transmission:342
 msgid "Total amount of data:"
 msgstr "Загальний об’єм даних:"
 
-#: ../Deluge/Deluge:264 ../Transmission/Transmission:317
+#: ../Deluge/Deluge:264 ../Transmission/Transmission:351
 msgid "Received:"
 msgstr "Отримано:"
 
-#: ../Deluge/Deluge:272 ../Transmission/Transmission:325
+#: ../Deluge/Deluge:272 ../Transmission/Transmission:359
 msgid "Sent:"
 msgstr "Надіслано:"
 
-#: ../Deluge/Deluge:346 ../Transmission/Transmission:467
+#: ../Deluge/Deluge:346 ../Transmission/Transmission:501
 msgid "Pause all torrents"
 msgstr "Призупинити всі торенти"
 
-#: ../Deluge/Deluge:351 ../Transmission/Transmission:472
+#: ../Deluge/Deluge:351 ../Transmission/Transmission:506
 msgid "Resume all torrents"
 msgstr "Поновити завантаження"
 
 #: ../Deluge/Deluge:356 ../KTorrent/KTorrent:334
-#: ../Transmission/Transmission:477
+#: ../Transmission/Transmission:511
 msgid "Torrents info"
 msgstr "Інформація про торент"
 
 #: ../Deluge/Deluge:356 ../Gmail/Gmail:542 ../KTorrent/KTorrent:334
 #: ../Notifications_history/Notifications_history:160
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
-#: ../Translator/Translator:413 ../Transmission/Transmission:477
+#: ../Translator/Translator:413 ../Transmission/Transmission:511
 #: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/YoutubeDl:307
 msgid "middle-click"
 msgstr "клацання середньою кнопкою"
 
-#: ../Deluge/Deluge:361 ../Transmission/Transmission:482
+#: ../Deluge/Deluge:361 ../Transmission/Transmission:516
 msgid "Quit"
 msgstr ""
 
@@ -802,7 +802,7 @@ msgstr "Відсотків виконано"
 msgid "Percentage + number of active torrents"
 msgstr "Відсотки + кількість активних торентів"
 
-#: ../Deluge/messages:105 ../Transmission/messages:105
+#: ../Deluge/messages:105 ../Transmission/messages:107
 msgid "Show the percentage done as a progress bar"
 msgstr "Показувати відсоток виконання на прогресбарі"
 
@@ -864,6 +864,10 @@ msgstr "Увага: Додаток Gmail не обладнаний аутент�
 #: ../Gmail/Gmail:362
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr "Увага: Ім’я чи пароль до Gmail можуть бути невірними."
+
+#: ../Gmail/Gmail:435
+msgid "Error!"
+msgstr ""
 
 #: ../Gmail/Gmail:468
 #, python-format
@@ -2086,34 +2090,43 @@ msgstr ""
 msgid "Translator"
 msgstr "Перекласти на:"
 
-#: ../Transmission/Transmission:245
+#: ../Transmission/Transmission:129
+#, fuzzy
+msgid "day"
+msgstr "днів"
+
+#: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission не запущено або не відповідає."
 
-#: ../Transmission/Transmission:252
+#: ../Transmission/Transmission:301
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
 "Не вдалося отримати дані з Transmission. Потрібна версія Transmission 1.9 "
 "або вище."
 
-#: ../Transmission/Transmission:263
+#: ../Transmission/Transmission:312
 msgid "checking"
 msgstr "перевірка"
 
-#: ../Transmission/Transmission:265
+#: ../Transmission/Transmission:314
 msgid "waiting for check"
 msgstr "очікування перевірки"
 
-#: ../Transmission/Transmission:267
+#: ../Transmission/Transmission:316
 msgid "seeding"
 msgstr "сідування"
 
-#: ../Transmission/Transmission:414
+#: ../Transmission/Transmission:448
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr "Необхідно включити веб клієнт а налаштуваннях Transmisison."
 
-#: ../Transmission/messages:108
+#: ../Transmission/messages:105
+msgid "Remaining time"
+msgstr ""
+
+#: ../Transmission/messages:110
 msgid ""
 "This applet allows you to <b>control Transmission</b> from the Dock.\n"
 "It can display the <b>download rate</b> on the icon.\n"

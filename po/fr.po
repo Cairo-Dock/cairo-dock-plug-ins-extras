@@ -684,104 +684,104 @@ msgid "Deluge is not running, or is not responding to us."
 msgstr "Deluge n'est pas démarré ou il ne nous répond pas."
 
 #: ../Deluge/Deluge:218 ../KTorrent/KTorrent:221
-#: ../Transmission/Transmission:258
+#: ../Transmission/Transmission:307
 msgid "Progress:"
 msgstr "Progression :"
 
-#: ../Deluge/Deluge:220 ../Transmission/Transmission:261
+#: ../Deluge/Deluge:220 ../Transmission/Transmission:310
 msgid "paused"
 msgstr "en pause"
 
 #: ../Deluge/Deluge:224 ../KTorrent/KTorrent:237
-#: ../Transmission/Transmission:271
+#: ../Transmission/Transmission:320
 msgid "Time remaining:"
 msgstr "Temps restant :"
 
 #: ../Deluge/Deluge:229 ../KTorrent/KTorrent:242
-#: ../Transmission/Transmission:276
+#: ../Transmission/Transmission:129
 msgid "days"
 msgstr "jours"
 
 #: ../Deluge/Deluge:231 ../Deluge/Deluge:237 ../KTorrent/KTorrent:244
-#: ../KTorrent/KTorrent:250 ../Transmission/Transmission:278
-#: ../Transmission/Transmission:284
+#: ../KTorrent/KTorrent:250 ../Transmission/Transmission:131
+#: ../Transmission/Transmission:134 ../Transmission/Transmission:144
 msgid "h"
 msgstr "h"
 
 #: ../Deluge/Deluge:239 ../KTorrent/KTorrent:252
-#: ../Transmission/Transmission:286
+#: ../Transmission/Transmission:149
 msgid "min"
 msgstr "min"
 
 #: ../Deluge/Deluge:240 ../KTorrent/KTorrent:253
-#: ../Transmission/Transmission:287
+#: ../Transmission/Transmission:153
 msgid "sec"
 msgstr "sec"
 
 #: ../Deluge/Deluge:243 ../KTorrent/KTorrent:256
-#: ../Transmission/Transmission:290
+#: ../Transmission/Transmission:324
 msgid "Time remaining: Unknown"
 msgstr "Temps restant : inconnu"
 
 #: ../Deluge/Deluge:245 ../KTorrent/KTorrent:258
-#: ../Transmission/Transmission:292
+#: ../Transmission/Transmission:326
 msgid "Finished"
 msgstr "Terminé"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:330
 msgid "Number of peers:"
 msgstr "Nombre de pairs :"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
-#: ../Transmission/Transmission:296
+#: ../Transmission/Transmission:330
 msgid "and seeds:"
 msgstr "et fournisseurs :"
 
 #: ../Deluge/Deluge:248 ../KTorrent/KTorrent:270
-#: ../Transmission/Transmission:299
+#: ../Transmission/Transmission:333
 msgid "Ratio:"
 msgstr "Ratio :"
 
 #: ../Deluge/Deluge:251 ../KTorrent/KTorrent:275
-#: ../Transmission/Transmission:303
+#: ../Transmission/Transmission:337
 msgid "No torrent in the list"
 msgstr "Aucun torrent dans la liste"
 
-#: ../Deluge/Deluge:256 ../Transmission/Transmission:308
+#: ../Deluge/Deluge:256 ../Transmission/Transmission:342
 msgid "Total amount of data:"
 msgstr "Taille total des données :"
 
-#: ../Deluge/Deluge:264 ../Transmission/Transmission:317
+#: ../Deluge/Deluge:264 ../Transmission/Transmission:351
 msgid "Received:"
 msgstr "Reçu :"
 
-#: ../Deluge/Deluge:272 ../Transmission/Transmission:325
+#: ../Deluge/Deluge:272 ../Transmission/Transmission:359
 msgid "Sent:"
 msgstr "Envoyé :"
 
-#: ../Deluge/Deluge:346 ../Transmission/Transmission:467
+#: ../Deluge/Deluge:346 ../Transmission/Transmission:501
 msgid "Pause all torrents"
 msgstr "Suspendre tous les torrents"
 
-#: ../Deluge/Deluge:351 ../Transmission/Transmission:472
+#: ../Deluge/Deluge:351 ../Transmission/Transmission:506
 msgid "Resume all torrents"
 msgstr "Relancer tous les torrents"
 
 #: ../Deluge/Deluge:356 ../KTorrent/KTorrent:334
-#: ../Transmission/Transmission:477
+#: ../Transmission/Transmission:511
 msgid "Torrents info"
 msgstr "Information des torrents"
 
 #: ../Deluge/Deluge:356 ../Gmail/Gmail:542 ../KTorrent/KTorrent:334
 #: ../Notifications_history/Notifications_history:160
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
-#: ../Translator/Translator:413 ../Transmission/Transmission:477
+#: ../Translator/Translator:413 ../Transmission/Transmission:511
 #: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/YoutubeDl:307
 msgid "middle-click"
 msgstr "clic du milieu"
 
-#: ../Deluge/Deluge:361 ../Transmission/Transmission:482
+#: ../Deluge/Deluge:361 ../Transmission/Transmission:516
 msgid "Quit"
 msgstr "Quitter"
 
@@ -809,7 +809,7 @@ msgstr "Pourcentage réalisé"
 msgid "Percentage + number of active torrents"
 msgstr "Pourcentage + Nombre de torrents actifs"
 
-#: ../Deluge/messages:105 ../Transmission/messages:105
+#: ../Deluge/messages:105 ../Transmission/messages:107
 msgid "Show the percentage done as a progress bar"
 msgstr "Afficher le pourcentage réalisé avec une barre de progression"
 
@@ -879,6 +879,10 @@ msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 "AVERTISSEMENT : le nom d'utilisateur ou le mot de passe Gmail sont peut-être "
 "erronés."
+
+#: ../Gmail/Gmail:435
+msgid "Error!"
+msgstr "Erreur !"
 
 #: ../Gmail/Gmail:468
 #, python-format
@@ -2084,36 +2088,44 @@ msgstr ""
 msgid "Translator"
 msgstr "Traducteur"
 
-#: ../Transmission/Transmission:245
+#: ../Transmission/Transmission:129
+msgid "day"
+msgstr "jour"
+
+#: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
 msgstr "Transmission n'est pas en fonctionnement ou il ne nous répond pas."
 
-#: ../Transmission/Transmission:252
+#: ../Transmission/Transmission:301
 msgid ""
 "Couldn't get data from Transmission. You need Transmission 1.9 or above."
 msgstr ""
 "Impossible de récupérer des données de Transmission. Vous devez avoir "
 "Transmission 1.9 ou plus récent."
 
-#: ../Transmission/Transmission:263
+#: ../Transmission/Transmission:312
 msgid "checking"
 msgstr "vérification en cours"
 
-#: ../Transmission/Transmission:265
+#: ../Transmission/Transmission:314
 msgid "waiting for check"
 msgstr "attente de vérification"
 
-#: ../Transmission/Transmission:267
+#: ../Transmission/Transmission:316
 msgid "seeding"
 msgstr "en partage"
 
-#: ../Transmission/Transmission:414
+#: ../Transmission/Transmission:448
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 "Vous devez activer l'interface client Web dans les paramètres de "
 "Transmission."
 
-#: ../Transmission/messages:108
+#: ../Transmission/messages:105
+msgid "Remaining time"
+msgstr "Temps restant"
+
+#: ../Transmission/messages:110
 msgid ""
 "This applet allows you to <b>control Transmission</b> from the Dock.\n"
 "It can display the <b>download rate</b> on the icon.\n"
