@@ -554,7 +554,7 @@ class Gmail(CDApplet):
         "icon" : "gtk-refresh",
         "menu" : CDApplet.MAIN_MENU_ID,
         "id" : 2,
-        "sensitive" : (len(self.account) > 0),
+        "sensitive" : (len(self.account) > 1), # at least 'count' => -99
         "tooltip" : message_check_tooltip},
         {"widget-type" : CDApplet.MENU_ENTRY,
         "label": message_new_mail,
@@ -581,7 +581,7 @@ class Gmail(CDApplet):
             Launches Gmail in default browser or application.
         """
         
-        if len(self.account) == 0:  # no account -> start subscription
+        if len(self.account) <= 1:  # no account -> start subscription
             self.add_subscription('username')
         else:
             if self.account['count'] < 1:  # no message -> check now
