@@ -56,6 +56,7 @@ INFO_NONE           = 0
 INFO_DL_SPEED       = 1
 INFO_PERCENT        = 2
 INFO_PERCENT_NUMBER = 3
+INFO_REMAINING_TIME = 4
 
 def format_bytes(x):
 	unit=''
@@ -117,7 +118,53 @@ class Applet(CDApplet):
 				print("*** iSessionID:",self.iSessionID)
 		except :
 			return
-	
+
+	def get_time_from_eta(self, t, bWithText):
+		info = ""
+		d=h=m=s=0
+		if t > 86400:
+			if bWithText: # 2 days 12h
+				d = int(t / 86400) # at least 1 day
+				h = int((t - d*86400) / 3600)
+				info += str(d) + " " + (_("days") if d > 1 else _("day")) + " "
+				if h > 0:
+					info += str(h) + _("h")
+			else: # 60h
+				h = int(d*86400 / 3600)
+				info += str(h) + _("h")
+		else:
+			# with text: 2h 12min 5sec
+			# without  : 2:12:05
+			h = int(t / 3600)
+			m = int((t - h*3600) / 60)
+			s = int(t - h*3600 - m*60)
+			if h > 0:
+				info += str(h)
+				if bWithText:
+					info += _("h") + " "
+				else:
+					info += ":"
+			if h > 0 or m > 0:
+				if bWithText:
+					info += str(m) + _("min") + " "
+				else:
+					info += format(m, "02") + ":"
+			if bWithText:
+				info += str(s) + _("sec")
+			else:
+				info += format(s, "02")
+
+		return info
+
+	def update_no_data(self):
+		print("no data from Transmission, it may have shut down.")
+		if self.iSidTryConnect == 0: # start trying to connect.
+			self.iSidTryConnect = timeout_add(2000,self.try_connect)
+		self.iSidGetData = 0  # and stop listening for sessions's data
+		self.icon.AddDataRenderer('', 0, '')
+		self.icon.SetQuickInfo('')
+		return False
+
 	def update_data(self):
 		# if connection closed, start trying
 		if self.iSessionID == 0: # if connection closed
@@ -134,13 +181,7 @@ class Applet(CDApplet):
 			
 			# if no result, start trying to reconnect.
 			if data == None or data['result'] != 'success':  # no data from transmission
-				print("no data from Transmission, it may have shut down.")
-				if self.iSidTryConnect == 0: # start trying to connect.
-					self.iSidTryConnect = timeout_add(2000,self.try_connect)
-				self.iSidGetData = 0  # and stop listening for sessions's data
-				self.icon.AddDataRenderer('', 0, '')
-				self.icon.SetQuickInfo('')
-				return False
+				return update_no_data()
 			
 			# display the new data
 			rate = data['arguments']['downloadSpeed']
@@ -158,7 +199,21 @@ class Applet(CDApplet):
 				form = ".0f"
 				
 			self.icon.SetQuickInfo(format(rate,form)+unit)
-			
+
+		elif self.config['quick-info'] == INFO_REMAINING_TIME:  # remaining time of the slowest active torrent
+			data = self._request ("torrent-get", {"fields": ["eta", "status"]})
+			if data == None or data['result'] != 'success':
+				return update_no_data()
+
+			maxTime = 0
+			for value in data['arguments']['torrents']:
+				if value['status'] == TR_STATUS_DOWNLOAD and value['eta'] > maxTime:  # active torrent and the slowest
+					maxTime = value['eta']
+			if maxTime > 0:
+				self.icon.SetQuickInfo(self.get_time_from_eta(maxTime, False))
+			else:
+				self.icon.SetQuickInfo('')
+
 		if self.config['quick-info'] == INFO_PERCENT or self.config['quick-info'] == INFO_PERCENT_NUMBER or self.config['progressbar']:  # display percent or percent+number of active torrents or progress as a progressbar
 			# get torrents data
 			data = self._request ("torrent-get", { "ids": "recently-active",
@@ -166,13 +221,7 @@ class Applet(CDApplet):
 			
 			# if no result, start trying to reconnect.
 			if data == None or data['result'] != 'success':  # no data from transmission
-				print("no data from Transmission, it may have shut down.")
-				if self.iSidTryConnect == 0: # start trying to connect.
-					self.iSidTryConnect = timeout_add(2000,self.try_connect)
-				self.iSidGetData = 0  # and stop listening for sessions's data
-				self.icon.AddDataRenderer('', 0, '')
-				self.icon.SetQuickInfo('')
-				return False
+				return update_no_data()
 				
 			percent = 0.
 			n = 0
@@ -269,22 +318,7 @@ class Applet(CDApplet):
 				t = value['eta']
 				if t > 0:
 					info += " <i>(" + _("Time remaining:") + " "
-					d=h=m=s=0
-					if t > 86400:
-						d = int(t / 86400) # at least 1 day
-						h = int((t - d*86400) / 3600)
-						info += str(d) + " " + _("days") + " "
-						if h > 0:
-							info += str(h) + _("h")
-					else:
-						h = int(t / 3600)
-						m = int((t - h*3600) / 60)
-						s = int(t - h*3600 - m*60)
-						if h > 0:
-							info += str(h) + _("h") + " "
-						if h > 0 or m > 0:
-							info += str(m) + _("min") + " "
-						info += str(s) + _("sec")
+					info += self.get_time_from_eta(t, True)
 					info += ")</i>\n"
 				elif t < 0:
 					info += " <i>(" + _("Time remaining: Unknown") + ")</i>\n"
