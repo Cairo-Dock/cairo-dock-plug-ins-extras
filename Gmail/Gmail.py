@@ -375,7 +375,7 @@ class Gmail(CDApplet):
         # if user does not want any counter on the icon
         if self.config['count'] == False:
             # clean up quick-info
-            self.icon.SetQuickInfo(format(''))
+            self.icon.SetQuickInfo('')
             # clean up icon
             self.icon.SetIcon(os.path.abspath('./icon'))
             return
@@ -386,13 +386,13 @@ class Gmail(CDApplet):
             self.icon.SetIcon(os.path.abspath('./icon'))
             if self.account['count'] == 0:
                 # reset quick-info
-                self.icon.SetQuickInfo(format(''))
+                self.icon.SetQuickInfo('')
             else:
-                self.icon.SetQuickInfo(format(self.account['count']))
+                self.icon.SetQuickInfo(str(self.account['count']))
 
         else:
             # reset quick-info (in case displayed before)
-            self.icon.SetQuickInfo(format(''))
+            self.icon.SetQuickInfo('')
             # check if emblem is necessary
             if self.account['count'] == 0:
                 # reset icon
@@ -420,7 +420,7 @@ class Gmail(CDApplet):
 
         if self.config['info'] != 'quickinfo':
             # remove previous quickinfo if needed:
-            self.icon.SetQuickInfo(format(''))
+            self.icon.SetQuickInfo('')
             # get size from config:
             size = self.config['info'].split()[0]
             # pass size to filename:
@@ -432,7 +432,7 @@ class Gmail(CDApplet):
             # reset icon in case needed
             self.icon.SetIcon(os.path.abspath('./icon'))
             # set quickinfo:
-            self.icon.SetQuickInfo(format('Error!'))
+            self.icon.SetQuickInfo(_('Error!'))
         # check if any error is already known
         # or if the user is changing subscription details
         if self.flag != None:
