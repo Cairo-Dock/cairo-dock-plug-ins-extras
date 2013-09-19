@@ -18,7 +18,7 @@
 # GNU General Public License for more details.
 # http://www.gnu.org/licenses/licenses.html#GPL
 
-
+ICON_DIR=$1
 date_TODAY=`date '+%Y%m%d'`
 # get current day and month
 MONTH=$(date +%b)
@@ -508,16 +508,16 @@ printf "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>
        id=\"path4048\"
        style=\"fill:none;fill-opacity:1;stroke:url(#radialGradient2482);stroke-width:3.86078405;stroke-linecap:round;marker-start:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />
   </g>
-</svg>" > icon
+</svg>" > "$ICON_DIR/icon"
 
-	dbus-send --session --dest=org.cairodock.CairoDock /org/cairodock/CairoDock org.cairodock.CairoDock.ReloadModule string:Calendar # new icon -> reload (only the icon is reload
-	echo "$date_TODAY" > .day
+	dbus-send --session --dest=org.cairodock.CairoDock /org/cairodock/CairoDock org.cairodock.CairoDock.SetIcon string:"$ICON_DIR/icon" string:"module=Calendar"
+	echo "$date_TODAY" > "$ICON_DIR/.day"
 }
 
-if test ! -e ".day"; then
+if test ! -e "$ICON_DIR/.day"; then
 	# this file doesn't exist
 	make_icon
-elif [ `cat .day` -lt $date_TODAY ];then
+elif [ `cat "$ICON_DIR/.day"` -lt $date_TODAY ];then
 	# this file exists and the date is older
 	make_icon
 fi

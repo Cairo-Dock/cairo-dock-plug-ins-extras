@@ -150,7 +150,8 @@ get_ALL_conf_params
 
 kill_other_processes
 
-bash update_calendar.sh "$icon_command" &
+icon_dir="${CONF_FILE:0:-14}"
+bash update_calendar.sh "$icon_command" "$icon_dir" &
 exit
 }
 

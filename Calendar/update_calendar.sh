@@ -19,13 +19,14 @@
 
 
 icon_command="$1"
+icon_dir="$2"
 
 if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon_script="; then
 	icon_command="icon.sh"
 fi
 
 ARG=120
-bash "$icon_command"
+bash "$icon_command" "$icon_dir"
 date_OLD=`date '+%Y%m%d'`
 
 while [ 1 ]; do
@@ -33,7 +34,7 @@ while [ 1 ]; do
 	date_NOW=`date '+%Y%m%d'`
 	if [ "$date_NOW" != "$date_OLD" ]; then
 		date_OLD=`date '+%Y%m%d'`
-		bash "$icon_command"
+		bash "$icon_command" "$icon_dir"
 	fi
 done
 
