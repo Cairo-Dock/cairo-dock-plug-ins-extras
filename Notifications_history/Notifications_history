@@ -96,7 +96,7 @@ class Applet(CDApplet):
 			self.count = 0
 			self.icon.SetQuickInfo('')
 			if self.config['change_icon']: # revert icon
-				self.icon.SetIcon(abspath('./icon'))
+				self.icon.SetIcon(self.config['icon'])
 	
 	def _clear_history(self):
 		self.notifications = []
@@ -110,6 +110,9 @@ class Applet(CDApplet):
 		self.config['ignore'] = keyfile.get('Configuration', 'ignore').split(';')
 		self.config['change_icon'] = keyfile.getboolean('Configuration', 'change icon')
 		self.config['new_icon'] = keyfile.get('Configuration', 'new icon')
+		self.config['icon'] = keyfile.get('Icon', 'icon')
+		if len (self.config['icon']) == 0:
+			self.config['icon'] = abspath('./icon')
 	
 	def begin(self):
 		bus = dbus.SessionBus()
