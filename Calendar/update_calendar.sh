@@ -26,7 +26,7 @@ if test "$icon_command" = "" -o "$icon_command" = " " -o "$icon_command" = "icon
 fi
 
 ARG=120
-bash "$icon_command" "$icon_dir"
+bash "$icon_command" "$icon_dir" 1
 date_OLD=`date '+%Y%m%d'`
 
 while [ 1 ]; do

@@ -19,6 +19,7 @@
 # http://www.gnu.org/licenses/licenses.html#GPL
 
 ICON_DIR=$1
+FORCE=$2
 date_TODAY=`date '+%Y%m%d'`
 # get current day and month
 MONTH=$(date +%b)
@@ -520,6 +521,8 @@ if test ! -e "$ICON_DIR/.day"; then
 elif [ `cat "$ICON_DIR/.day"` -lt $date_TODAY ];then
 	# this file exists and the date is older
 	make_icon
+elif [ "$FORCE" = "1" ]; then
+	dbus-send --session --dest=org.cairodock.CairoDock /org/cairodock/CairoDock org.cairodock.CairoDock.SetIcon string:"$ICON_DIR/icon" string:"module=Calendar"
 fi
 
 exit
