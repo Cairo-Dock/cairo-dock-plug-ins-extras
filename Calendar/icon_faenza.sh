@@ -537,7 +537,7 @@ elif [ `cat "$ICON_DIR/.day"` -lt $date_TODAY ];then
     # this file exists and the date is older 
     make_icon 
 elif [ "$FORCE" = "1" ]; then
-    dbus-send --session --dest=org.cairodock.CairoDock /org/cairodock/CairoDock org.cairodock.CairoDock.SetIcon string:"$ICON_DIR/icon" string:"module=Calendar"
+    make_icon
 fi 
 
 exit
