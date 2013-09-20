@@ -394,7 +394,10 @@ class Applet(CDApplet):
 		
 		bLocal = keyfile.getboolean('Configuration', 'local')
 		if bLocal:
-			settings = json.loads(open(os.path.expanduser("~/.config/transmission/settings.json")).read())
+			try:
+				settings = json.loads(open(os.path.expanduser("~/.config/transmission/settings.json")).read())
+			except: # e.g.: No such file
+				settings = None
 			if settings != None:
 				self.config['rpc-enabled'] 	= settings['rpc-enabled']
 				self.config['port'] 		= settings['rpc-port']
