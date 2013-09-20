@@ -90,43 +90,15 @@ class Gmail(CDApplet):
 
     def __init__(self):
 
-        self.account = {} # accounts to which user subscribed
+        self.account = {} # account to which the user subscribed
         self.config = {} # user configuration
-        self.flag = None # used to check current status (especially with dialogues)
+        self.flag = None # used to check current status (especially with dialogs)
         self.path = sys.argv[3][0:-10] # relative path to config file's folder
         self.subpath = self.path+'../../../.Gmail_subscription' # file containing Gmail account details
         self.svgpath = self.path+'emblem.svg' # SVG emblem file
         self.wav = os.path.abspath("./snd/pop.wav")
         self.rep = False # used not to run more than one loop
         CDApplet.__init__(self)
-
-    def get_config(self, keyfile):
-
-        """
-            Gets configuration from configuration file.
-        """
-
-        self.config['notify'] = keyfile.getboolean('Configuration', 'NOTIFY')
-        self.config['anim'] = keyfile.getboolean('Configuration', 'ANIM')
-        self.config['how'] = keyfile.get('Configuration', 'HOW')
-        self.config['dia'] = keyfile.getboolean('Configuration', 'DIA')
-        self.config['sound'] = keyfile.getboolean('Configuration', 'SOUND')
-        self.config['update'] = keyfile.getint('Configuration', 'UPDATE') * 60000
-        self.config['count'] = keyfile.getboolean('Configuration', 'COUNT')
-        self.config['info'] = keyfile.get('Configuration', 'INFO')
-        wav = keyfile.get('Configuration', 'WAV')
-        # set default sound
-        if len(wav) > 0:
-            self.wav = os.path.abspath(wav)
-        # set default animation
-        if len(self.config['how']) == 0:
-            self.config['how'] = 'default'
-
-        # in case user switched between emblem/quickinfo while count > 0
-        if self.account.get('count', 0) > 0:
-            self.update_display()
-        if self.flag == 'error':
-            self.error('')
 
     def check_subscription(self):
 
@@ -266,7 +238,7 @@ class Gmail(CDApplet):
     def get_inbox(self, xml_data):
 
         """
-            Counts the unreade messages from the XML inbox content.
+            Counts the unread messages from the XML inbox content.
         """
 
         inbox = []
@@ -481,7 +453,7 @@ class Gmail(CDApplet):
     def repeat(self):
 
         """
-           Timer for postman to check messages.
+           Timer to check for new messages.
            Will continue as long as check_messages returns True
         """
         if self.rep == True:
@@ -491,15 +463,46 @@ class Gmail(CDApplet):
         # start timer loop
         glib.timeout_add(self.config['update'], self.check_mail_loop)
 
+
+
     def begin(self):
 
         """
             First method ran by CairoDock when applet is launched.
         """
 
-        ###self.icon.SetLabel("Gmail")
         # the applet will not enter the loop until a subscription is found
         self.check_subscription()
+
+    def get_config(self, keyfile):
+
+        """
+            Gets configuration from configuration file.
+        """
+
+        self.config['notify'] = keyfile.getboolean('Configuration', 'NOTIFY')
+        self.config['anim'] = keyfile.getboolean('Configuration', 'ANIM')
+        self.config['how'] = keyfile.get('Configuration', 'HOW')
+        self.config['dia'] = keyfile.getboolean('Configuration', 'DIA')
+        self.config['sound'] = keyfile.getboolean('Configuration', 'SOUND')
+        self.config['update'] = keyfile.getint('Configuration', 'UPDATE') * 60000
+        self.config['count'] = keyfile.getboolean('Configuration', 'COUNT')
+        self.config['info'] = keyfile.get('Configuration', 'INFO')
+        wav = keyfile.get('Configuration', 'WAV')
+        # set default sound
+        if len(wav) > 0:
+            self.wav = os.path.abspath(wav)
+        # set default animation
+        if len(self.config['how']) == 0:
+            self.config['how'] = 'default'
+
+    def reload(self):
+        # in case user switched between emblem/quickinfo while count > 0
+        if self.account.get('count', 0) > 0:
+            self.update_display()
+        if self.flag == 'error':
+			self.flag = None
+            self.error('')
 
     def on_answer_dialog(self, key, content):
 
