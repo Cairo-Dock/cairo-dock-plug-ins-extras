@@ -39,13 +39,16 @@ else
 
 	tar czf "$FULLNAME".tar.gz "$FULLNAME"
 
+	curr_date=$(date -d "6 months" +%Y%m%d)
+
 	# python2
 	cd $FULLNAME
-	for i in *; do 
+	for i in `cat ../Applets-python2.list`; do 
 		if [ -x $i/$i ]; then
 			sed --follow-symlinks -i "1s/python/python2/"  $i/$i
 		fi
-		date +%Y%m%d > $i/last-modif
+		# avoid update
+		echo -n ${curr_date} > $i/last-modif
 	done
 	cd ..
 	tar czf "$FULLNAME"_python2.tar.gz "$FULLNAME"
