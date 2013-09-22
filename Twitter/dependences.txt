@@ -1,0 +1,2 @@
+python-oauth
+python-simplejson || python-json

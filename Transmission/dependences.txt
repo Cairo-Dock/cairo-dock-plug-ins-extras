@@ -1,2 +1,3 @@
 transmission
 python-gobject || python-gi
+python-simplejson || python-json
