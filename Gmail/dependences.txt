@@ -1,0 +1,3 @@
+python-gobject || python-gi
+python-gtk2 || python-gi
+python-libxml2 || python-lxml

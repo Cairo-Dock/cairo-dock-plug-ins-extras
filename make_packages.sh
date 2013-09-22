@@ -35,6 +35,9 @@ else
 
 		# add description
 		grep "^description *= *" "$f/auto-load.conf" | sed "s/.*= *//g" > "FTP/$f/readme"
+
+		# add dependences
+		test -f "$f/dependences.txt" && cp "$f/dependences.txt" "FTP/$f/dependences"
 	done;
 	
 	# build language tree

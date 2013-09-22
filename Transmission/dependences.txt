@@ -1,0 +1,2 @@
+transmission
+python-gobject || python-gi

@@ -1,0 +1,2 @@
+python-gtk2 || python-gi
+lancelot

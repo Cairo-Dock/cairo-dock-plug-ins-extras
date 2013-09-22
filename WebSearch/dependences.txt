@@ -1,0 +1,2 @@
+ruby-nokogiri
+ruby-dbus

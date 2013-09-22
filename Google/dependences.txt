@@ -1,0 +1,2 @@
+python-gobject || python-gi
+python-gtk2 || python-gi

@@ -1,0 +1,2 @@
+python-gtk || python-gi
+python-mate-desktop || python-gnome2-desktop
