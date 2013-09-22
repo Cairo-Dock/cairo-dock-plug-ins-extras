@@ -83,7 +83,10 @@ class TranslatorParser(HTMLParser):
 			self.translated_content += text                                          # ... grab the text!
 
 	def parse(self, page):
-		self.feed(str(page.decode('utf-8'))) # feed the parser with the page's html
+		if strict: # python 2
+			self.feed(page.decode('utf-8')) # feed the parser with the page's html
+		else:
+			self.feed(str(page)) ## workaround for python3
 		self.close()                                                              # cya soon!
 
 
