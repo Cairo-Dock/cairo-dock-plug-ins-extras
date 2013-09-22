@@ -16,14 +16,12 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #  GNU General Public License for more details.
 
-import os
-
 # All the emblems here were made using Inkscape and are based on a xlink pointing to the default icon.
 # See xlink:href="./icon"
 
 class Emblem:
-  def __init__(self):
-    self.emblem = os.path.abspath(os.path.join(os.getcwd(), './emblem.svg'))
+  def __init__(self, path):
+    self.emblem = path
     self.counter = 0
     self.size_small, self.size_medium, self.size_large = list(range(3))
     self.size = self.size_medium

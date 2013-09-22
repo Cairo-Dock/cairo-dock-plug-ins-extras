@@ -442,8 +442,6 @@ class Applet(CDApplet):
     self.responding_success, self.responding_tweet, self.responding_initial_informations,
     self.responding_sending_direct_message_reply, self.responding_retweet) = list(range(8))
     self.dialog_type = None
-    
-    self.emblem = emblem.Emblem()                                                             # emblem maker, see emblem.py
 
     self.direct_messages_menu_id  = 1000
     self.credentials_menu_id      = 2000
@@ -460,6 +458,9 @@ class Applet(CDApplet):
     self.message_stream = queue.Queue()
 
     CDApplet.__init__(self)                                                                             # call CDApplet interface init
+
+    path = self.cConfFile[0:-12] + "emblem.svg" # "Twitter.conf"
+    self.emblem = emblem.Emblem(path) # emblem maker, see emblem.py
 
   # Inherited methods from CDApplet
   def begin(self):
