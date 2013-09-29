@@ -501,7 +501,7 @@ class Gmail(CDApplet):
         if self.account.get('count', 0) > 0:
             self.update_display()
         if self.flag == 'error':
-			self.flag = None
+            self.flag = None
             self.error('')
 
     def on_answer_dialog(self, key, content):
