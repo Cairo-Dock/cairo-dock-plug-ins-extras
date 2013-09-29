@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2012-09-10 02:57+0000\n"
-"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-24 20:30+0000\n"
+"Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-25 05:33+0000\n"
+"X-Generator: Launchpad (build 16771)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr "GnoMenu не установлен. Установите, прежде чем использовать апплет."
 
 #: ../GnoMenu/GnoMenu:143
@@ -53,7 +55,7 @@ msgstr "Редактировать меню"
 #: ../WindowsKiller/messages:3 ../Xchat/messages:1 ../Xchat/messages:3
 #: ../YoutubeDl/messages:1
 msgid "Icon"
-msgstr "Значок"
+msgstr "Иконка"
 
 #: ../GnoMenu/messages:5 ../Calendar/messages:5 ../Cardapio/messages:5
 #: ../CpuWatcher/messages:5 ../Deluge/messages:5 ../Gmail/messages:5
@@ -92,7 +94,7 @@ msgstr "Имя значка, как оно будет отображено в п
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 #: ../YoutubeDl/messages:9
 msgid "Default"
-msgstr ""
+msgstr "По умолчанию"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../CpuWatcher/messages:11 ../Deluge/messages:11 ../Google/messages:11
@@ -619,7 +621,7 @@ msgstr ""
 
 #: ../Calendar/messages:108
 msgid "Calendar"
-msgstr ""
+msgstr "Календарь"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -635,9 +637,8 @@ msgid ""
 msgstr ""
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "в минутах"
+msgstr "в ms"
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
@@ -663,7 +664,7 @@ msgstr "Deluge не запущен или не отвечает."
 #: ../Deluge/Deluge:218 ../KTorrent/KTorrent:221
 #: ../Transmission/Transmission:307
 msgid "Progress:"
-msgstr ""
+msgstr "Прогресс:"
 
 #: ../Deluge/Deluge:220 ../Transmission/Transmission:310
 msgid "paused"
@@ -677,23 +678,23 @@ msgstr ""
 #: ../Deluge/Deluge:229 ../KTorrent/KTorrent:242
 #: ../Transmission/Transmission:129
 msgid "days"
-msgstr ""
+msgstr "дней"
 
 #: ../Deluge/Deluge:231 ../Deluge/Deluge:237 ../KTorrent/KTorrent:244
 #: ../KTorrent/KTorrent:250 ../Transmission/Transmission:131
 #: ../Transmission/Transmission:134 ../Transmission/Transmission:144
 msgid "h"
-msgstr ""
+msgstr "ч"
 
 #: ../Deluge/Deluge:239 ../KTorrent/KTorrent:252
 #: ../Transmission/Transmission:149
 msgid "min"
-msgstr ""
+msgstr "мин"
 
 #: ../Deluge/Deluge:240 ../KTorrent/KTorrent:253
 #: ../Transmission/Transmission:153
 msgid "sec"
-msgstr ""
+msgstr "сек"
 
 #: ../Deluge/Deluge:243 ../KTorrent/KTorrent:256
 #: ../Transmission/Transmission:324
@@ -760,7 +761,7 @@ msgstr "средний щелчок"
 
 #: ../Deluge/Deluge:361 ../Transmission/Transmission:518
 msgid "Quit"
-msgstr ""
+msgstr "Выйти"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -776,7 +777,7 @@ msgstr ""
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
-msgstr ""
+msgstr "Скорость загрузки"
 
 #: ../Deluge/messages:101 ../Transmission/messages:101
 msgid "Percentage done"
@@ -805,7 +806,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "Без темы"
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
 msgid "Please fill in your Gmail account."
@@ -847,11 +848,11 @@ msgstr ""
 #: ../Gmail/Gmail:468
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "Получено  %s новых писем"
 
 #: ../Gmail/Gmail:470
 msgid "You have 1 new email"
-msgstr ""
+msgstr "Получено 1 новое сообщение"
 
 #: ../Gmail/Gmail:531
 msgid "Sorry, there was no input!"
@@ -867,7 +868,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:543
 msgid "Check inbox now"
-msgstr ""
+msgstr "Проверить входящие"
 
 #: ../Gmail/Gmail:544
 msgid "Check Gmail inbox now if you can't wait."
@@ -875,7 +876,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:545
 msgid "Write a mail"
-msgstr ""
+msgstr "Написать письмо"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -1089,7 +1090,8 @@ msgstr "Размер десклета  (ширина х высота):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В зависимости от вашего ОМ, вы можете передвигать с помощью ALT + левый "
 "щелчок"
@@ -1423,9 +1425,8 @@ msgid "Ignore notifications from:"
 msgstr ""
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Показывать счётчик на значке?"
+msgstr ""
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
@@ -1593,9 +1594,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
@@ -1603,9 +1604,8 @@ msgid "Quote"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Отключить хранитель экрана"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1667,9 +1667,8 @@ msgid "scroll"
 msgstr ""
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Перевести из буфера обмена (средний щелчок)"
+msgstr ""
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -1992,9 +1991,8 @@ msgid ""
 msgstr ""
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "На язык:"
+msgstr ""
 
 #: ../Transmission/Transmission:129
 msgid "day"
@@ -2341,7 +2339,8 @@ msgstr "Каналы"
 
 #: ../Xchat/Xchat:289
 msgid "Switch the channel you'll send message to with the middle-click."
-msgstr "Средний щелчок, чтобы переключить канал в который посылаете сообщение."
+msgstr ""
+"Средний щелчок, чтобы переключить канал в который посылаете сообщение."
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
@@ -2550,7 +2549,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2679,21 +2679,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Отображать доступное место в Гигабайтах (отмечено) или Мегабайтах (не "
-#~ "отмечено):"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Интервал проверки файловых систем:"
-
-#~ msgid "Background image :"
-#~ msgstr "Фоновое изображение:"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Изображение переднего фона:"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Хранитель экрана сейчас отключен"

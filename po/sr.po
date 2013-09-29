@@ -3,18 +3,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: to\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-03-01 21:42+0000\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-20 15:35+0000\n"
 "Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
 "Language-Team: sr\n"
-"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-21 05:45+0000\n"
+"X-Generator: Launchpad (build 16765)\n"
+"Language: sr\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "ГномИзборник није уграђен. Молим, уградите га пре него покренете ово "
 "програмче."
@@ -625,7 +627,7 @@ msgstr ""
 
 #: ../Calendar/messages:108
 msgid "Calendar"
-msgstr ""
+msgstr "Календар"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -646,13 +648,12 @@ msgstr ""
 "уградити Кардапио."
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "у минутима"
+msgstr "у ms"
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
-msgstr ""
+msgstr "Време освежавања"
 
 #: ../CpuWatcher/messages:98
 msgid ""
@@ -662,10 +663,15 @@ msgid ""
 "You can obtain an average of the main core\n"
 "(in the label) with a middle click on the icon."
 msgstr ""
+"Ово програмче је надрзорник процесора\n"
+"Оно прати оптерећење процесора\n"
+"(свако јегро у свом подизборнику)\n"
+"Можете добити средње оптерећење главног језгра\n"
+"(у ознаци) средњим кликом миша на иконицу."
 
 #: ../CpuWatcher/messages:100
 msgid "CPU Watcher"
-msgstr ""
+msgstr "Надзорник процесора"
 
 #: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
@@ -771,7 +777,7 @@ msgstr "средњи клик"
 
 #: ../Deluge/Deluge:361 ../Transmission/Transmission:518
 msgid "Quit"
-msgstr ""
+msgstr "Напусти"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -826,11 +832,11 @@ msgstr ""
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "Нема предмета"
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
 msgid "Please fill in your Gmail account."
-msgstr ""
+msgstr "Попуните налог Г-поште"
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
@@ -866,7 +872,7 @@ msgstr "УПОЗОРЕЊЕ: можда је погрешно корисничк�
 
 #: ../Gmail/Gmail:435
 msgid "Error!"
-msgstr ""
+msgstr "Грешка!"
 
 #: ../Gmail/Gmail:468
 #, python-format
@@ -887,7 +893,8 @@ msgstr "Додај или измени претплату"
 
 #: ../Gmail/Gmail:541
 msgid "Use this to add or change your Gmail account details."
-msgstr "Користите ово за додавање или измену вашех појединости налога Г-поште."
+msgstr ""
+"Користите ово за додавање или измену вашех појединости налога Г-поште."
 
 #: ../Gmail/Gmail:543
 msgid "Check inbox now"
@@ -899,7 +906,7 @@ msgstr "Проверите пријемно сандуче сада ако не 
 
 #: ../Gmail/Gmail:545
 msgid "Write a mail"
-msgstr ""
+msgstr "Пишите поруку"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -911,15 +918,15 @@ msgstr "Не"
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "Са подразумеваном позадином"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "Са прилагођеном позадином"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
-msgstr ""
+msgstr "Позадинска боја која се додаје у овом случају"
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
@@ -1125,7 +1132,8 @@ msgstr "Величина справица површи (ширина х виси
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "У зависности од вашег управника прозора, можете бити у могућности да "
 "промените величину уз помоћ МЕЊА + средњи клик или МЕЊА + леви клик"
@@ -1444,21 +1452,20 @@ msgstr ""
 
 #: ../Moon/messages:102
 msgid "Moon"
-msgstr ""
+msgstr "Месец"
 
 #: ../Notifications_history/Notifications_history:124
-#, fuzzy
 msgid "No recent notification"
-msgstr "Обавештења"
+msgstr "Нема скорашњих обавештења"
 
 #: ../Notifications_history/Notifications_history:135
 #, python-format
 msgid "from %s at %s"
-msgstr ""
+msgstr "од %s до %s"
 
 #: ../Notifications_history/Notifications_history:160
 msgid "Clear history"
-msgstr ""
+msgstr "Обриши историју"
 
 #: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
 msgid ""
@@ -1474,29 +1481,27 @@ msgstr "Обавештења"
 
 #: ../Notifications_history/messages:93
 msgid "History size"
-msgstr ""
+msgstr "Величина историје"
 
 #: ../Notifications_history/messages:95
 msgid "Clear the history when clicking on the icon"
-msgstr ""
+msgstr "Обриши историју при клику на иконицу"
 
 #: ../Notifications_history/messages:97
 msgid "Separated by a semi-colon ';'"
-msgstr ""
+msgstr "Одвојено тачком и запетом „;“"
 
 #: ../Notifications_history/messages:99
-#, fuzzy
 msgid "Ignore notifications from:"
-msgstr "Обавештења"
+msgstr "Занемари обавештења од:"
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Прикажи бројач на икони?"
+msgstr "Приказуј још једну иконицу ако има нових обавештења"
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
-msgstr ""
+msgstr "Приказана је ако је примљено ново обавештење"
 
 #: ../Notifications_history/messages:110
 msgid ""
@@ -1504,11 +1509,13 @@ msgid ""
 "Click on the icon to get a list of the last notifications.\n"
 " Middle-click to clear the history."
 msgstr ""
+"Ово програмче омогућава праћење историје обавештења.\n"
+"Клик на икону за списак обавештења.\n"
+" Средњи клик за брисање историје."
 
 #: ../Notifications_history/messages:112
-#, fuzzy
 msgid "Notifications History"
-msgstr "Обавештења"
+msgstr "Историја обавештења"
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1667,24 +1674,23 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Ово програмче вам омогућава „навод дана“ са неких извора на интернету, као "
 "што су:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, и Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, и Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
-msgstr ""
+msgstr "Навод"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Онемогући чувара екрана"
+msgstr "Омогући чувара екрана"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1730,7 +1736,7 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:100
 msgid "Screensaver Inhibitor"
-msgstr ""
+msgstr "Онемогућавач чувара екрана"
 
 #: ../Translator/Translator:361
 msgid "To"
@@ -1746,12 +1752,11 @@ msgstr "Промени језике"
 
 #: ../Translator/Translator:400
 msgid "scroll"
-msgstr ""
+msgstr "премицање"
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Преведи из оставе исечака (middle-click)"
+msgstr "Преведи из оставе исечака"
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2082,19 +2087,17 @@ msgstr ""
 "Можете изабрати језике са којих и у које елите преводити кроз изборник, или "
 "у прозору поставки програмчета. Такође, и пречице се могу подешавати.\n"
 "Предодређено:\n"
-" - Ако желите превести нешто што читате на страном језику, притисните Ктрл"
-"+Мења+Р\n"
+" - Ако желите превести нешто што читате на страном језику, притисните "
+"Ктрл+Мења+Р\n"
 " - Ако пишете нешто на Вашем језику, притисните Ктрл+Мења+Њ"
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Преведи на језик:"
+msgstr "Преводилац"
 
 #: ../Transmission/Transmission:129
-#, fuzzy
 msgid "day"
-msgstr "дана"
+msgstr "дан"
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2121,7 +2124,7 @@ msgstr "сејем"
 
 #: ../Transmission/Transmission:332
 msgid "Connected peers:"
-msgstr ""
+msgstr "Повезани парњаци"
 
 #: ../Transmission/Transmission:450
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2129,7 +2132,7 @@ msgstr "Морате омогућити веб клијента у постав�
 
 #: ../Transmission/messages:105
 msgid "Remaining time"
-msgstr ""
+msgstr "Преостало време"
 
 #: ../Transmission/messages:110
 msgid ""
@@ -2287,7 +2290,8 @@ msgstr "Иденти.ка"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
-msgstr "Величина приказа ознаке која приказује број нових цвркутања и порука:"
+msgstr ""
+"Величина приказа ознаке која приказује број нових цвркутања и порука:"
 
 #: ../Twitter/messages:95
 msgid "Small"
@@ -2417,10 +2421,12 @@ msgstr "за слабије везе, онемогући ће дати знат�
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
+"Да ли омогућити преглед умањених сличица за претраге Youtube, Flickr, "
+"ImageShack и  Digg?"
 
 #: ../WebSearch/messages:123
 msgid "Show search engine's logo as the icon on the results?"
-msgstr ""
+msgstr "Да ли приказивати значку погона претраге као иконицу на излазу?"
 
 #: ../WebSearch/messages:126
 msgid ""
@@ -2440,10 +2446,27 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Ово програмче обезбеђује сучеље погонима претраге као што су\n"
+"Гугл, Бинг, Теома, Јаху!, Јутуба, Википедија, и Имиџшек.\n"
+"Можете одабрати погон претраге на следећи начин:\n"
+" (1) Десни клик на главну иконицу -> Веб претрага -> (Изаберите погон)\n"
+" (2) Десни клик -> Подесите ово програмче -> Поставке -> Погон претраге\n"
+" (3) Премицањем навише или наниже преко иконице  (применљиво само за прву "
+"претрагу)\n"
+"Можете претраживати на три начина\n"
+" (1) Среди клик на главну иконицу\n"
+" (1) Леви клик на главну иконицу (десни клик по одабиру новог погона "
+"претраге)\n"
+"Укуцајте ваш упит и потврдите. Сваки излаз ће бити приказан као подиконица.\n"
+"Леви клик отвара излазе претраге у подразумеваном Веб прегледнику\n"
+"Средњи клик на излазну подиконицу приказује њен опис\n"
+"Премицање навише добавља следеће излазе\n"
+"Премицање наниже добавља претходне излаз\n"
+"Леви клик на главну иконицу приказује статистику претраге"
 
 #: ../WebSearch/messages:128
 msgid "Web Search"
-msgstr ""
+msgstr "Претрага веба"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2464,7 +2487,7 @@ msgstr ""
 
 #: ../WindowsKiller/messages:94
 msgid "Windows Killer"
-msgstr ""
+msgstr "Убица прозора"
 
 #: ../Xchat/Xchat:285
 msgid "Channels"
@@ -2476,19 +2499,19 @@ msgstr "Промените канал на који ћете послати по
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
-msgstr ""
+msgstr "Сви канали"
 
 #: ../Xchat/messages:121
 msgid "Silent Mode"
-msgstr ""
+msgstr "Рад у позадини"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
-msgstr ""
+msgstr "Омогућити рад у позадини на покретању:"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
-msgstr ""
+msgstr "Омогући рад у позадини за одређени канал при покретању:"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2613,7 +2636,8 @@ msgstr ""
 
 #: ../YoutubeDl/messages:131
 msgid "Attempt to use desktop notifications instead of dock messages? :"
-msgstr "Да ли да покушам да користим обавештења окружења уместо порука дока? :"
+msgstr ""
+"Да ли да покушам да користим обавештења окружења уместо порука дока? :"
 
 #: ../YoutubeDl/messages:133
 msgid ""
@@ -2701,7 +2725,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Не преписуј (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 "Користи наслов видеа у имену датотеке који се користио за преузимање видеа"
 
@@ -2851,24 +2876,3 @@ msgstr ""
 "\n"
 "Ако нема видеа на списку, леви клик на икону дозвољава да унесете адресу. У "
 "супротном, списак адреса ће бити приказан."
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Преглед доступног простора система датотека као Гига (означено) или Мега "
-#~ "(без ознаке) :"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Време између две провере система датотекa :"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "Преглед доступног слободног простора система датотека."
-
-#~ msgid "Background image :"
-#~ msgstr "Слика за позадину :"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Слика за предњи план :"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Чувар екрана је тренутно онемогућен"

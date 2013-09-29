@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-03-26 12:17+0000\n"
-"Last-Translator: Wonderfulheart <Unknown>\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-18 21:24+0000\n"
+"Last-Translator: Pietro Quadalti <p.quadalti@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:42+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-19 04:44+0000\n"
+"X-Generator: Launchpad (build 16765)\n"
+"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -205,8 +207,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
-"+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
+"Alt+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../CpuWatcher/messages:29 ../Deluge/messages:29 ../Gmail/messages:35
@@ -644,7 +646,7 @@ msgstr ""
 
 #: ../Calendar/messages:108
 msgid "Calendar"
-msgstr ""
+msgstr "Calendario"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -666,9 +668,8 @@ msgstr ""
 "necessita dell'installazione di Cardapio."
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "in minuti"
+msgstr ""
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
@@ -791,7 +792,7 @@ msgstr "clic centrale"
 
 #: ../Deluge/Deluge:361 ../Transmission/Transmission:518
 msgid "Quit"
-msgstr ""
+msgstr "Esci"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -846,11 +847,11 @@ msgstr ""
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "Nessun Oggetto"
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
 msgid "Please fill in your Gmail account."
-msgstr ""
+msgstr "Per favore, compila nel tuo account Gmail."
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
@@ -887,7 +888,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:435
 msgid "Error!"
-msgstr ""
+msgstr "Errore."
 
 #: ../Gmail/Gmail:468
 #, python-format
@@ -922,7 +923,7 @@ msgstr "Se non puoi attendere, controlla la posta in arrivo di Gmail adesso."
 
 #: ../Gmail/Gmail:545
 msgid "Write a mail"
-msgstr ""
+msgstr "Scrivi una e-mail"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -934,15 +935,15 @@ msgstr "No"
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "Con sfondo predefinito"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "Con sfondo personalizzato"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
-msgstr ""
+msgstr "Colore dello sfondo da aggiungere in questo caso"
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
@@ -1008,7 +1009,8 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -1138,8 +1140,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
-"+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Notifications_history/messages:23 ../Screensaver_inhibitor/messages:23
@@ -1150,7 +1152,8 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1471,21 +1474,20 @@ msgstr ""
 
 #: ../Moon/messages:102
 msgid "Moon"
-msgstr ""
+msgstr "Luna"
 
 #: ../Notifications_history/Notifications_history:124
-#, fuzzy
 msgid "No recent notification"
-msgstr "Notifiche"
+msgstr "Nessuna notifica recente"
 
 #: ../Notifications_history/Notifications_history:135
 #, python-format
 msgid "from %s at %s"
-msgstr ""
+msgstr "da %s a %s"
 
 #: ../Notifications_history/Notifications_history:160
 msgid "Clear history"
-msgstr ""
+msgstr "Cancella la cronologia"
 
 #: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
 msgid ""
@@ -1501,29 +1503,27 @@ msgstr "Notifiche"
 
 #: ../Notifications_history/messages:93
 msgid "History size"
-msgstr ""
+msgstr "Dimensione della cronologia"
 
 #: ../Notifications_history/messages:95
 msgid "Clear the history when clicking on the icon"
-msgstr ""
+msgstr "Cancella la cronologia cliccando sull'icona"
 
 #: ../Notifications_history/messages:97
 msgid "Separated by a semi-colon ';'"
-msgstr ""
+msgstr "Separati da un punto e virgola ';'"
 
 #: ../Notifications_history/messages:99
-#, fuzzy
 msgid "Ignore notifications from:"
-msgstr "Notifiche"
+msgstr "Ignora le notifiche da:"
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Visualizzo un contatore sull'icona?"
+msgstr "Mostra un'icona diversa se ci sono nuove notifiche"
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
-msgstr ""
+msgstr "Mostrata quando è ricevuta una nuova notifica"
 
 #: ../Notifications_history/messages:110
 msgid ""
@@ -1531,11 +1531,13 @@ msgid ""
 "Click on the icon to get a list of the last notifications.\n"
 " Middle-click to clear the history."
 msgstr ""
+"Questa applet fornisce una cronologia delle ultime notifiche sul desktop.\n"
+"Clicca sull'icona per ottenere una lista delle ultime notifiche.\n"
+" Clic centrale per cancellare la cronologia."
 
 #: ../Notifications_history/messages:112
-#, fuzzy
 msgid "Notifications History"
-msgstr "Notifiche"
+msgstr "Notifiche della Cronologia"
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1696,24 +1698,23 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
 "fonti internet quali:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com e Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
-msgstr ""
+msgstr "Quota"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Disabilita il salvaschermo"
+msgstr "Abilita lo screen saver"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1759,7 +1760,7 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:100
 msgid "Screensaver Inhibitor"
-msgstr ""
+msgstr "Blocco del Salvaschermo"
 
 #: ../Translator/Translator:361
 msgid "To"
@@ -1775,12 +1776,11 @@ msgstr "Cambia linguaggio"
 
 #: ../Translator/Translator:400
 msgid "scroll"
-msgstr ""
+msgstr "scorrimento"
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Traduci dagli appunti (clic centrale)"
+msgstr ""
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2117,14 +2117,12 @@ msgstr ""
 " - Se stai scrivendo qualcosa nella tua madre lingua, premi Ctrl + Alt + W"
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Traduci in:"
+msgstr "Traduttore"
 
 #: ../Transmission/Transmission:129
-#, fuzzy
 msgid "day"
-msgstr "giorni"
+msgstr ""
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2455,10 +2453,12 @@ msgstr ""
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
+"Abilita le anteprime su miniatura per le ricerche su Youtube, Flickr, "
+"ImageShack, e Digg?"
 
 #: ../WebSearch/messages:123
 msgid "Show search engine's logo as the icon on the results?"
-msgstr ""
+msgstr "Mostra nei risultati il logo del motore di ricerca come un'icona?"
 
 #: ../WebSearch/messages:126
 msgid ""
@@ -2478,10 +2478,32 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Questa applet fornisce un'interfaccia per alcuni motori di ricerca come\n"
+"Google, Bing, Teoma, Yahoo!, YouTube, Flickr, Wikipedia e ImageShack.\n"
+"Per scegliere il motore di ricerca puoi\n"
+" (1) Fare clic destro sull'icona principale -> Ricerca Web -> (Scegli il "
+"motore)\n"
+" (2) Clic destro del mouse -> Configura questa applet -> Configurazione -> "
+"Motore di ricerca\n"
+" (3) Scorrere verso l'alto o verso il basso sopra l'icona (applicabile solo "
+"per la prima ricerca)\n"
+"Puoi cercare in tre modi\n"
+" (1) Clic centrale sull'icona principale\n"
+" (2) Clic sinistro del mouse sull'icona principale (clic destro dopo la "
+"scelta di un nuovo motore)\n"
+"Digita il quesito e convalida. Ogni risultato verrà mostrato come una sotto-"
+"icona.\n"
+"Clic sinistro per aprire il risultato nel browser Web predefinito\n"
+"Clic centrale sulla sotto-icona di un qualsiasi risultato per mostrare la "
+"sua descrizione\n"
+"Scorrere verso l'alto per rilevare i risultati successivi\n"
+"Scorrere verso il basso per rilevare i risultati precedenti\n"
+"Clic sinistro del mouse sull'icona principale per mostrare le statistiche di "
+"ricerca"
 
 #: ../WebSearch/messages:128
 msgid "Web Search"
-msgstr ""
+msgstr "Ricerca Web"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2504,7 +2526,7 @@ msgstr ""
 
 #: ../WindowsKiller/messages:94
 msgid "Windows Killer"
-msgstr ""
+msgstr "Windows Killer"
 
 #: ../Xchat/Xchat:285
 msgid "Channels"
@@ -2516,19 +2538,19 @@ msgstr "Cambia il canale al quale spedire messaggi con clic centrale."
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
-msgstr ""
+msgstr "Tutti i canali"
 
 #: ../Xchat/messages:121
 msgid "Silent Mode"
-msgstr ""
+msgstr "Modalità Silenziosa"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
-msgstr ""
+msgstr "Abilita la modalità silenziosa all'avvio:"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
-msgstr ""
+msgstr "Abilita la modalità silenziosa all'avvio per un canale specifico:"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2751,7 +2773,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Non sovrascrivere (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
 
 #: ../YoutubeDl/messages:169
@@ -2902,24 +2925,3 @@ msgstr ""
 "Se non ci sono video nella lista, cliccando con il tasto sinistro sull'icona "
 "ti permette di inserire una URL. Altrimenti sarà visualizzato l'elenco delle "
 "URL."
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Mostra lo spazio sul file system come Giga (selezionato)  o Mega "
-#~ "(deselezionato):"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Tempo trascorso tra due controlli sul file system:"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "Visualizza lo spazio libero disponibile nel file system."
-
-#~ msgid "Background image :"
-#~ msgstr "Immagine di sfondo:"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Immagine in primo piano:"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Il salvaschermo è attualmente disabilitato"

@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-03-30 14:13+0000\n"
-"Last-Translator: Milan Slovák <Unknown>\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-13 19:44+0000\n"
+"Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
-"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-14 05:37+0000\n"
+"X-Generator: Launchpad (build 16761)\n"
+"Language: sk\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu nie je nainštalované. Prosím nainštalujte ho pred spustením tohto "
 "apletu."
@@ -637,9 +639,8 @@ msgid ""
 msgstr ""
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "v minútach"
+msgstr ""
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
@@ -1093,7 +1094,8 @@ msgstr "Rozmer deskletu (šírka x výška):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "V závislosti od správcu okien môžete pohybovať pomocou ALT + ľavé klinutie"
 
@@ -1431,9 +1433,8 @@ msgid "Ignore notifications from:"
 msgstr ""
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Zobraziť odpočítavanie na ikone?"
+msgstr ""
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
@@ -1599,9 +1600,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
@@ -1609,9 +1610,8 @@ msgid "Quote"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Zakázať šetrič obrazovky"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1673,9 +1673,8 @@ msgid "scroll"
 msgstr ""
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Preložiť zo schránky (stredné klinutie)"
+msgstr ""
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -1998,9 +1997,8 @@ msgid ""
 msgstr ""
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Preložiť do :"
+msgstr ""
 
 #: ../Transmission/Transmission:129
 msgid "day"
@@ -2554,7 +2552,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2683,23 +2682,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Zobraziť dostupné miesto ako Giga (zaškrtnuté) alebo Mega (nezaškrtnuté):"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Čas medzi kontrolou dvoch systémových súborov:"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "Zobraziť voľné miesto v súborovom systéme."
-
-#~ msgid "Background image :"
-#~ msgstr "Obrázok pozadia :"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Obrázok popredia :"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Šetrič obrazovky je aktuálne zakázaný"

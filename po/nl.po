@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-05-20 16:26+0000\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-15 14:57+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:42+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-16 05:57+0000\n"
+"X-Generator: Launchpad (build 16761)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -639,7 +641,7 @@ msgstr ""
 
 #: ../Calendar/messages:108
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -661,13 +663,12 @@ msgstr ""
 "<u>Let op:</u> u dient Cardapio geïnstalleerd te hebben."
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "in minuten"
+msgstr "in ms"
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
-msgstr ""
+msgstr "Vernieuwingstijd :"
 
 #: ../CpuWatcher/messages:98
 msgid ""
@@ -677,10 +678,15 @@ msgid ""
 "You can obtain an average of the main core\n"
 "(in the label) with a middle click on the icon."
 msgstr ""
+"Dit het applet Processorbelasting.\n"
+"Hiermee kunt u het processorgebruik in de gaten houden\n"
+"(en elke kern heeft zijn eigen sub-menu!)\n"
+"U kunt een overzicht van de hoofdkern verkrijgen\n"
+"(in het label) door te middelklikken op het pictogram."
 
 #: ../CpuWatcher/messages:100
 msgid "CPU Watcher"
-msgstr ""
+msgstr "Processorbelasting"
 
 #: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
@@ -786,7 +792,7 @@ msgstr "middelklikken"
 
 #: ../Deluge/Deluge:361 ../Transmission/Transmission:518
 msgid "Quit"
-msgstr ""
+msgstr "Afsluiten"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -828,9 +834,9 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient <i>deluged</"
-"i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de communicatie "
-"tussen het dock en Deluge).\n"
+"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient "
+"<i>deluged</i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de "
+"communicatie tussen het dock en Deluge).\n"
 "Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
 "<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
 "(u kunt hier een sneltoets voor instellen).\n"
@@ -841,11 +847,11 @@ msgstr ""
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "Geen onderwerp"
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
 msgid "Please fill in your Gmail account."
-msgstr ""
+msgstr "Voer uw Gmail-account in."
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
@@ -883,7 +889,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:435
 msgid "Error!"
-msgstr ""
+msgstr "Fout!"
 
 #: ../Gmail/Gmail:468
 #, python-format
@@ -917,7 +923,7 @@ msgstr "Controleer Postvak IN nu, als u niet kunt wachten."
 
 #: ../Gmail/Gmail:545
 msgid "Write a mail"
-msgstr ""
+msgstr "E-mail opstellen"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -929,15 +935,15 @@ msgstr "Nee"
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "Met standaardachtergrond"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "Met aangepaste achtergrond"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
-msgstr ""
+msgstr "Achtergrondkleur om in dit geval toe te voegen"
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
@@ -973,7 +979,7 @@ msgstr "Animatie kiezen?"
 
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr "Moet het applet een dialoogvenster tonen met de waarschuwing?"
+msgstr "Moet het applet een dialoogvenster tonen bij de melding?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
@@ -981,7 +987,7 @@ msgstr "Dialoog tonen?"
 
 #: ../Gmail/messages:119
 msgid "Should the applet play a sound with the notification?"
-msgstr "Moet het applet een geluid afspelen bij de waarschuwing?"
+msgstr "Moet het applet een geluid afspelen bij de melding?"
 
 #: ../Gmail/messages:121
 msgid "Play a sound?"
@@ -1025,7 +1031,8 @@ msgstr "snel-info"
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
 msgstr ""
-"Dit applet zal u waarschuwen, bij nieuwe e-mails van één enkel Gmail-account."
+"Dit applet zal u een melding geven, bij nieuwe e-mails van één enkel Gmail-"
+"account."
 
 #: ../Google/messages:92
 msgid ""
@@ -1145,7 +1152,8 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1470,21 +1478,20 @@ msgstr ""
 
 #: ../Moon/messages:102
 msgid "Moon"
-msgstr ""
+msgstr "Maan"
 
 #: ../Notifications_history/Notifications_history:124
-#, fuzzy
 msgid "No recent notification"
-msgstr "Notificaties"
+msgstr "Geen recente melding"
 
 #: ../Notifications_history/Notifications_history:135
 #, python-format
 msgid "from %s at %s"
-msgstr ""
+msgstr "vanaf %s tot %s"
 
 #: ../Notifications_history/Notifications_history:160
 msgid "Clear history"
-msgstr ""
+msgstr "Geschiedenis wissen"
 
 #: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
 msgid ""
@@ -1496,33 +1503,31 @@ msgstr ""
 
 #: ../Notifications_history/messages:91 ../Twitter/messages:101
 msgid "Notifications"
-msgstr "Notificaties"
+msgstr "Meldingen"
 
 #: ../Notifications_history/messages:93
 msgid "History size"
-msgstr ""
+msgstr "Grootte van de geschiedenis"
 
 #: ../Notifications_history/messages:95
 msgid "Clear the history when clicking on the icon"
-msgstr ""
+msgstr "Wis de geschiedenis wanneer u op het pictogram klikt"
 
 #: ../Notifications_history/messages:97
 msgid "Separated by a semi-colon ';'"
-msgstr ""
+msgstr "Gescheiden door een puntkomma ';'"
 
 #: ../Notifications_history/messages:99
-#, fuzzy
 msgid "Ignore notifications from:"
-msgstr "Notificaties"
+msgstr "Meldingen negeren van:"
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Teller tonen op het pictogram?"
+msgstr "Toon ander pictogram wanneer er nieuwe meldingen zijn"
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
-msgstr ""
+msgstr "Getoond wanneer er een nieuwe melding is"
 
 #: ../Notifications_history/messages:110
 msgid ""
@@ -1530,11 +1535,13 @@ msgid ""
 "Click on the icon to get a list of the last notifications.\n"
 " Middle-click to clear the history."
 msgstr ""
+"Met dit applet kunt u de laatste systeemmeldingen zien.\n"
+"Klik op het pictogram om een lijst te krijgen met de laatste meldingen.\n"
+" Middelklik om de geschiedenis te wissen."
 
 #: ../Notifications_history/messages:112
-#, fuzzy
 msgid "Notifications History"
-msgstr "Notificaties"
+msgstr "Meldingsgeschiedenis"
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1641,7 +1648,7 @@ msgstr "Laat leeg om de naam van de huidige website te tonen."
 
 #: ../Quote/messages:95
 msgid "Quote source:"
-msgstr "Quote-bron:"
+msgstr "Citaat-bron:"
 
 #: ../Quote/messages:97
 msgid "Quotationspage.com"
@@ -1695,24 +1702,23 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dit applet laat u een \"Citaat van de dag\" zien, verkregen van sommige "
 "internetbronnen zoals:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, en Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, en Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
-msgstr ""
+msgstr "Citaat"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Schermbeveiliging uitschakelen"
+msgstr "Schermbeveiliging inschakelen"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1759,7 +1765,7 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:100
 msgid "Screensaver Inhibitor"
-msgstr ""
+msgstr "Schermbeveiliging blokkeren"
 
 #: ../Translator/Translator:361
 msgid "To"
@@ -1775,12 +1781,11 @@ msgstr "Taal wisselen"
 
 #: ../Translator/Translator:400
 msgid "scroll"
-msgstr ""
+msgstr "scrollen"
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Vertalen vanaf klembord (middelklik)"
+msgstr "Vertalen vanaf klembord"
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2118,14 +2123,12 @@ msgstr ""
 "+ W"
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Vertalen naar:"
+msgstr "Vertaler"
 
 #: ../Transmission/Transmission:129
-#, fuzzy
 msgid "day"
-msgstr "dagen"
+msgstr "dag"
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2152,7 +2155,7 @@ msgstr "seeden"
 
 #: ../Transmission/Transmission:332
 msgid "Connected peers:"
-msgstr ""
+msgstr "Verbonden peers:"
 
 #: ../Transmission/Transmission:450
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2161,7 +2164,7 @@ msgstr ""
 
 #: ../Transmission/messages:105
 msgid "Remaining time"
-msgstr ""
+msgstr "Resterende tijd"
 
 #: ../Transmission/messages:110
 msgid ""
@@ -2337,7 +2340,7 @@ msgstr "Waarschuwing geven, wanneer u een nieuwe tweet of bericht ontvangt?"
 
 #: ../Twitter/messages:105
 msgid "Should the applet play a sound as a notification?"
-msgstr "Moet het applet een geluid afspelen bij een waarschuwing?"
+msgstr "Moet het applet een geluid afspelen bij een melding?"
 
 #: ../Twitter/messages:107
 msgid "Play a sound"
@@ -2345,7 +2348,7 @@ msgstr "Een geluid afspelen"
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
-msgstr "Moet het applet een pictogramanimatie afspelen bij een waarschuwing?"
+msgstr "Moet het applet een pictogramanimatie afspelen bij een melding?"
 
 #: ../Twitter/messages:111
 msgid "Animate the icon"
@@ -2457,10 +2460,12 @@ msgstr ""
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
+"Voorbeeld van miniatuurafbeelding inschakelen voor Youtube-, Flickr-, "
+"ImageShack- en Digg-zoekopdrachten?"
 
 #: ../WebSearch/messages:123
 msgid "Show search engine's logo as the icon on the results?"
-msgstr ""
+msgstr "Logo zoekmachine's weergeven als pictogram op de resultaten?"
 
 #: ../WebSearch/messages:126
 msgid ""
@@ -2480,10 +2485,32 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Dit applet voorziet in een interface voor verschillende zoekmachines, "
+"zoals:\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia en ImageShack.\n"
+"Om een zoekmachine te selecteren:\n"
+" (1) Klikt u met rechts op het hoofdpictogram -> Web-zoekopdracht -> "
+"(Selecteer de zoekmachine)\n"
+" (2) Klikt u met rechts -> Dit applet configureren -> Configuratie -> "
+"Zoekmachine\n"
+" (3) Scrolt u op/neer op het pictogram (alleen mogelijk bij eerste "
+"zoekactie)\n"
+"U kunt op drie manieren zoeken:\n"
+" (1) Middelklik op het hoofdpictogram\n"
+" (2) Klik met links op het hoofdpictogram (meteen nadat u een nieuwe "
+"zoekmachine heeft geselecteerd)\n"
+"Typ uw zoekopdracht in en valideer. Elk resultaat zal getoond worden als een "
+"sub-pictogram.\n"
+"Klik met links om het resultaat in de standaardwebbrowser te openen\n"
+"Middelklik op het sub-pictogram van een resultaat om de omschrijving te "
+"tonen\n"
+"Scrol omhoog voor de volgende resultaten\n"
+"Scrol omlaag voor de vorige resultaten\n"
+"Klik met links op het hoofdpictogram om zoekstatus te tonen"
 
 #: ../WebSearch/messages:128
 msgid "Web Search"
-msgstr ""
+msgstr "Web-zoekopdracht"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2505,7 +2532,7 @@ msgstr ""
 
 #: ../WindowsKiller/messages:94
 msgid "Windows Killer"
-msgstr ""
+msgstr "WindowsKiller"
 
 #: ../Xchat/Xchat:285
 msgid "Channels"
@@ -2519,19 +2546,20 @@ msgstr ""
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
-msgstr ""
+msgstr "Alle kanalen"
 
 #: ../Xchat/messages:121
 msgid "Silent Mode"
-msgstr ""
+msgstr "Stille modus"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
-msgstr ""
+msgstr "Stille modus inschakelen bij het opstarten:"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
 msgstr ""
+"Stille modus inschakelen bij het opstarten: voor een specifiek kanaal:"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2616,7 +2644,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:111
 msgid "Notification selections"
-msgstr "Waarschuwingsselecties"
+msgstr "Meldingsselecties"
 
 #: ../YoutubeDl/messages:113
 msgid "Otherwise quietly start to the next download"
@@ -2648,7 +2676,8 @@ msgstr "Voeg anders in stilte de url aan de lijst toe"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr "Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
+msgstr ""
+"Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
@@ -2752,7 +2781,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Niet overschrijven (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 "Titel van de video die is gedownload, gebruiken in de bestandsnaam van de "
 "video"
@@ -2905,24 +2935,3 @@ msgstr ""
 "Indien er geen video's in de lijst staan, dan kunt u een url invoeren door "
 "met links te klikken op het pictogram . Anders zal de url-lijst getoond "
 "worden."
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Beschikbare bestandsruimte systeem tonen als Giga (ingeschakeld) of Mega "
-#~ "(uitgeschakeld) :"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Tijd tussen twee controles van het bestandssysteem :"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "Bekijk vrije ruimte systeembestand."
-
-#~ msgid "Background image :"
-#~ msgstr "Achtergrondafbeelding :"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Voorgrondafbeelding :"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Schermbeveiliging is momenteel uitgeschakeld"

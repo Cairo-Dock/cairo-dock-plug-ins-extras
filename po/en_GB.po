@@ -7,19 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-09-13 17:09+0200\n"
-"PO-Revision-Date: 2013-07-21 18:03+0000\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-13 19:17+0000\n"
 "Last-Translator: Anthony Harrington <untaintableangel@ubuntu.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-14 05:37+0000\n"
+"X-Generator: Launchpad (build 16761)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is not installed. Please install it before you run this applet."
 
@@ -588,7 +589,8 @@ msgstr "Applications"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
-msgstr "Command to launch your favourite calendar application (middle click):"
+msgstr ""
+"Command to launch your favourite calendar application (middle click):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
@@ -628,7 +630,7 @@ msgstr ""
 
 #: ../Calendar/messages:108
 msgid "Calendar"
-msgstr ""
+msgstr "Calendar"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -649,13 +651,12 @@ msgstr ""
 "Cardapio."
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "in minutes"
+msgstr "in ms"
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
-msgstr ""
+msgstr "Refresh time :"
 
 #: ../CpuWatcher/messages:98
 msgid ""
@@ -665,10 +666,15 @@ msgid ""
 "You can obtain an average of the main core\n"
 "(in the label) with a middle click on the icon."
 msgstr ""
+"This the CpuWatcher applet.\n"
+"It lets you keep an eye on your cpu load\n"
+"(and each core in submenu!)\n"
+"You can obtain an average of the main core\n"
+"(in the label) with a middle click on the icon."
 
 #: ../CpuWatcher/messages:100
 msgid "CPU Watcher"
-msgstr ""
+msgstr "CPU Watcher"
 
 #: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
@@ -866,7 +872,7 @@ msgstr "WARNING: Gmail username or password may be wrong."
 
 #: ../Gmail/Gmail:435
 msgid "Error!"
-msgstr ""
+msgstr "Error!"
 
 #: ../Gmail/Gmail:468
 #, python-format
@@ -1005,7 +1011,8 @@ msgstr "quickinfo"
 
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
-msgstr "This applet will notify you of new e-mails on a single Gmail account."
+msgstr ""
+"This applet will notify you of new e-mails on a single Gmail account."
 
 #: ../Google/messages:92
 msgid ""
@@ -1123,8 +1130,10 @@ msgstr "Desklet's dimension (width x height) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
-msgstr "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
+msgstr ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Notifications_history/messages:27 ../Screensaver_inhibitor/messages:27
@@ -1411,7 +1420,8 @@ msgstr "Show the moon for all the current week?"
 
 #: ../Moon/messages:91
 msgid "You are going to see the moon from the perspective of this hemisphere"
-msgstr "You are going to see the moon from the perspective of this hemisphere"
+msgstr ""
+"You are going to see the moon from the perspective of this hemisphere"
 
 #: ../Moon/messages:93
 msgid "Hemisphere:"
@@ -1435,21 +1445,20 @@ msgstr ""
 
 #: ../Moon/messages:102
 msgid "Moon"
-msgstr ""
+msgstr "Moon"
 
 #: ../Notifications_history/Notifications_history:124
-#, fuzzy
 msgid "No recent notification"
-msgstr "Notifications"
+msgstr "No recent notification"
 
 #: ../Notifications_history/Notifications_history:135
 #, python-format
 msgid "from %s at %s"
-msgstr ""
+msgstr "from %s at %s"
 
 #: ../Notifications_history/Notifications_history:160
 msgid "Clear history"
-msgstr ""
+msgstr "Clear history"
 
 #: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
 msgid ""
@@ -1465,29 +1474,27 @@ msgstr "Notifications"
 
 #: ../Notifications_history/messages:93
 msgid "History size"
-msgstr ""
+msgstr "History size"
 
 #: ../Notifications_history/messages:95
 msgid "Clear the history when clicking on the icon"
-msgstr ""
+msgstr "Clear the history when clicking on the icon"
 
 #: ../Notifications_history/messages:97
 msgid "Separated by a semi-colon ';'"
-msgstr ""
+msgstr "Separated by a semi-colon ';'"
 
 #: ../Notifications_history/messages:99
-#, fuzzy
 msgid "Ignore notifications from:"
-msgstr "Notifications"
+msgstr "Ignore notifications from:"
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Display a counter on the icon?"
+msgstr "Display another icon if there are new notifications"
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
-msgstr ""
+msgstr "Displayed when a new notification is received"
 
 #: ../Notifications_history/messages:110
 msgid ""
@@ -1495,11 +1502,13 @@ msgid ""
 "Click on the icon to get a list of the last notifications.\n"
 " Middle-click to clear the history."
 msgstr ""
+"This applet provides an history of the last desktop notifications.\n"
+"Click on the icon to get a list of the last notifications.\n"
+" Middle-click to clear the history."
 
 #: ../Notifications_history/messages:112
-#, fuzzy
 msgid "Notifications History"
-msgstr "Notifications"
+msgstr "Notifications History"
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1658,24 +1667,23 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
-msgstr ""
+msgstr "Quote"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Disable the screensaver"
+msgstr "Enable the screensaver"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1721,7 +1729,7 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:100
 msgid "Screensaver Inhibitor"
-msgstr ""
+msgstr "Screensaver Inhibitor"
 
 #: ../Translator/Translator:361
 msgid "To"
@@ -1737,12 +1745,11 @@ msgstr "Switch languages"
 
 #: ../Translator/Translator:400
 msgid "scroll"
-msgstr ""
+msgstr "scroll"
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Translate from clipboard (middle-click)"
+msgstr "Translate from clipboard"
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2077,14 +2084,12 @@ msgstr ""
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Translate to:"
+msgstr "Translator"
 
 #: ../Transmission/Transmission:129
-#, fuzzy
 msgid "day"
-msgstr "days"
+msgstr "day"
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2110,7 +2115,7 @@ msgstr "seeding"
 
 #: ../Transmission/Transmission:332
 msgid "Connected peers:"
-msgstr ""
+msgstr "Connected peers:"
 
 #: ../Transmission/Transmission:450
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2118,7 +2123,7 @@ msgstr "You have to enable the Web client in the Transmisison's settings."
 
 #: ../Transmission/messages:105
 msgid "Remaining time"
-msgstr ""
+msgstr "Remaining time"
 
 #: ../Transmission/messages:110
 msgid ""
@@ -2276,7 +2281,8 @@ msgstr "Identi.ca"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
-msgstr "Size of the emblem that shows the number of new tweets, and messages:"
+msgstr ""
+"Size of the emblem that shows the number of new tweets, and messages:"
 
 #: ../Twitter/messages:95
 msgid "Small"
@@ -2412,7 +2418,7 @@ msgstr ""
 
 #: ../WebSearch/messages:123
 msgid "Show search engine's logo as the icon on the results?"
-msgstr ""
+msgstr "Show search engine's logo as the icon on the results?"
 
 #: ../WebSearch/messages:126
 msgid ""
@@ -2450,7 +2456,7 @@ msgstr ""
 
 #: ../WebSearch/messages:128
 msgid "Web Search"
-msgstr ""
+msgstr "Web Search"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2472,7 +2478,7 @@ msgstr ""
 
 #: ../WindowsKiller/messages:94
 msgid "Windows Killer"
-msgstr ""
+msgstr "Windows Killer"
 
 #: ../Xchat/Xchat:285
 msgid "Channels"
@@ -2707,7 +2713,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "No overwrite (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Use the title of the video in the filename"
 
 #: ../YoutubeDl/messages:169
@@ -2855,24 +2862,3 @@ msgstr ""
 "\n"
 "If there are no videos in the list, left clicking on the icon allows you to "
 "enter a url. Otherwise, the url list will be displayed."
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "View available space on the filesystem as Giga (checked) or Mega "
-#~ "(unchecked) :"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Time between checking two filesystems :"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "View available free space on the filesystem."
-
-#~ msgid "Background image :"
-#~ msgstr "Background image :"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Foreground image :"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Screensaver is currently disabled"

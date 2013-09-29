@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-03-15 05:26+0000\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-26 19:58+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-27 06:02+0000\n"
+"X-Generator: Launchpad (build 16774)\n"
+"Language: uk\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu не встановлено. Встановіть до того, як використовувати додаток."
 
@@ -80,7 +82,7 @@ msgstr "Ім'я панелі, до якої він належить:"
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
 #: ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
-msgstr "Ім'я значка, як воно буде відображено в підписі на панелі:"
+msgstr "Ім'я іконки, як вона буде підписана на панелі:"
 
 #: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Cardapio/messages:9
 #: ../CpuWatcher/messages:9 ../Deluge/messages:9 ../Gmail/messages:9
@@ -389,7 +391,8 @@ msgstr "Оформлення"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr "Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
+msgstr ""
+"Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../CpuWatcher/messages:61 ../Deluge/messages:61 ../Gmail/messages:67
@@ -630,7 +633,7 @@ msgstr ""
 
 #: ../Calendar/messages:108
 msgid "Calendar"
-msgstr ""
+msgstr "Календар"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -651,13 +654,12 @@ msgstr ""
 "Cardapio."
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "в хвилинах"
+msgstr "в мс"
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
-msgstr ""
+msgstr "Частота оновлення :"
 
 #: ../CpuWatcher/messages:98
 msgid ""
@@ -667,10 +669,15 @@ msgid ""
 "You can obtain an average of the main core\n"
 "(in the label) with a middle click on the icon."
 msgstr ""
+"Це додаток CpuWatcher.\n"
+"Він дозволяє стежити за завантаженістю процесора\n"
+"(і окремо кожного ядра в підменю!)\n"
+"Ви можете отримати середнє значення\n"
+"(на мітці) клацнувши середньою кнопкою на іконці."
 
 #: ../CpuWatcher/messages:100
 msgid "CPU Watcher"
-msgstr ""
+msgstr "CPU Watcher"
 
 #: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
@@ -776,7 +783,7 @@ msgstr "клацання середньою кнопкою"
 
 #: ../Deluge/Deluge:361 ../Transmission/Transmission:518
 msgid "Quit"
-msgstr ""
+msgstr "Вийти"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -830,11 +837,11 @@ msgstr ""
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "Без теми"
 
 #: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
 msgid "Please fill in your Gmail account."
-msgstr ""
+msgstr "Заповніть будь-ласка ваш акаунт Gmail."
 
 #: ../Gmail/Gmail:186
 msgid "Please, enter your Gmail username:"
@@ -867,7 +874,7 @@ msgstr "Увага: Ім’я чи пароль до Gmail можуть бути
 
 #: ../Gmail/Gmail:435
 msgid "Error!"
-msgstr ""
+msgstr "Помилка!"
 
 #: ../Gmail/Gmail:468
 #, python-format
@@ -901,7 +908,7 @@ msgstr "Якщо терпцю немає, то можете перевірити
 
 #: ../Gmail/Gmail:545
 msgid "Write a mail"
-msgstr ""
+msgstr "Написати листа"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -913,15 +920,15 @@ msgstr "Ні"
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "З типовим фоном"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "З власним фоном"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
-msgstr ""
+msgstr "В цьому випадку вкажіть колір тла для додавання"
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
@@ -1125,7 +1132,8 @@ msgstr "Розмір десклету (ширина х висота)"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В залежності від вашого віконного менеджера, ви можете переміщувати його з "
 "допомогою ALT+ліве клацання"
@@ -1443,21 +1451,20 @@ msgstr ""
 
 #: ../Moon/messages:102
 msgid "Moon"
-msgstr ""
+msgstr "Місяць"
 
 #: ../Notifications_history/Notifications_history:124
-#, fuzzy
 msgid "No recent notification"
-msgstr "Сповіщення"
+msgstr "Немає сповіщень"
 
 #: ../Notifications_history/Notifications_history:135
 #, python-format
 msgid "from %s at %s"
-msgstr ""
+msgstr "від %s до %s"
 
 #: ../Notifications_history/Notifications_history:160
 msgid "Clear history"
-msgstr ""
+msgstr "Очистити історію"
 
 #: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
 msgid ""
@@ -1473,29 +1480,27 @@ msgstr "Сповіщення"
 
 #: ../Notifications_history/messages:93
 msgid "History size"
-msgstr ""
+msgstr "Розмір історії"
 
 #: ../Notifications_history/messages:95
 msgid "Clear the history when clicking on the icon"
-msgstr ""
+msgstr "Очищати історію при клацання на іконці"
 
 #: ../Notifications_history/messages:97
 msgid "Separated by a semi-colon ';'"
-msgstr ""
+msgstr "Розділяти крапкою з комою ';'"
 
 #: ../Notifications_history/messages:99
-#, fuzzy
 msgid "Ignore notifications from:"
-msgstr "Сповіщення"
+msgstr "Ігнорувати сповіщення від:"
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Показувати лічильник на значку?"
+msgstr "Змінювати іконку, якщо є нові сповіщення"
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
-msgstr ""
+msgstr "Відображається коли є нові сповіщення"
 
 #: ../Notifications_history/messages:110
 msgid ""
@@ -1503,11 +1508,13 @@ msgid ""
 "Click on the icon to get a list of the last notifications.\n"
 " Middle-click to clear the history."
 msgstr ""
+"Цей додаток веде історію останніх сповіщень стільниці.\n"
+"Клацніть на іконку, щоб переглянути список останніх сповіщень.\n"
+" Клацання середньою кнопкою очищає історію."
 
 #: ../Notifications_history/messages:112
-#, fuzzy
 msgid "Notifications History"
-msgstr "Сповіщення"
+msgstr "Історія сповіщень"
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1666,23 +1673,22 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Додаток \"Цитата дня\" вміє працювати з такими інтернет-ресурсами як:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
-msgstr ""
+msgstr "Цитата"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Вимкнути заставку"
+msgstr "Увімкнути заставку"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1728,7 +1734,7 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:100
 msgid "Screensaver Inhibitor"
-msgstr ""
+msgstr "Стримування заставки"
 
 #: ../Translator/Translator:361
 msgid "To"
@@ -1744,12 +1750,11 @@ msgstr "Змінити мову"
 
 #: ../Translator/Translator:400
 msgid "scroll"
-msgstr ""
+msgstr "прокручування"
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Перекласти з буферу обміну (середнє клацання)"
+msgstr "Перекласти з буферу"
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2086,14 +2091,12 @@ msgstr ""
 " - IЯкщо ви пишете щось на своїй рідній мові, натисніть Ctrl + Alt + W"
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Перекласти на:"
+msgstr "Перекладач"
 
 #: ../Transmission/Transmission:129
-#, fuzzy
 msgid "day"
-msgstr "днів"
+msgstr "день"
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2120,7 +2123,7 @@ msgstr "сідування"
 
 #: ../Transmission/Transmission:332
 msgid "Connected peers:"
-msgstr ""
+msgstr "Підключено пірів"
 
 #: ../Transmission/Transmission:450
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2128,7 +2131,7 @@ msgstr "Необхідно включити веб клієнт а налашт�
 
 #: ../Transmission/messages:105
 msgid "Remaining time"
-msgstr ""
+msgstr "Залишилося часу"
 
 #: ../Transmission/messages:110
 msgid ""
@@ -2416,10 +2419,12 @@ msgstr "при повільному з'єднанні, відключення м
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
+"Увімкнути мініатюри передперегляду при пошуку на Youtube, Flickr, "
+"ImageShack, і Digg?"
 
 #: ../WebSearch/messages:123
 msgid "Show search engine's logo as the icon on the results?"
-msgstr ""
+msgstr "Показати логотип пошукової системи як іконку на результатах?"
 
 #: ../WebSearch/messages:126
 msgid ""
@@ -2439,10 +2444,30 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Цей додаток надає інтерфейс для деяких пошукових систем, таких як\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia, і ImageShack.\n"
+"Для вибору пошукової системи\n"
+" (1) Клацніть  правою кнопкою по головній іконці-> ВебПошук -> (Вибір "
+"пошукової системи)\n"
+" (2) Клацніть правою кнопкою -> Налаштувати додаток-> Налаштування -> "
+"Пошукова система\n"
+" (3) Прокрутіть на іконці вгору чи вниз (тільки для першого пошуку)\n"
+"Шукати ви можете кількома способами\n"
+" (1) Клацнувши середньою кнопкою на головній іконці\n"
+" (2) Клацнувши  лівою кнопкою на головній іконці (одразу після вибору "
+"пошукової системи)\n"
+"Введіть свій запит і підтвердіть. кожен результат буде відображений суб-"
+"іконкою.\n"
+"Клацання лівою клавішею відкриє посилання у типовому браузері\n"
+"Клацання лівою клавішею по суб-іконці будь-якого результату покаже його "
+"опис\n"
+"Прокручування вгору видає наступні результати\n"
+"Прокручування вниз видає попередні результати\n"
+"Клацання лівою кнопкою по головній іконці показує статистику пошуку"
 
 #: ../WebSearch/messages:128
 msgid "Web Search"
-msgstr ""
+msgstr "Шукати в інтеренеті"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2463,7 +2488,7 @@ msgstr ""
 
 #: ../WindowsKiller/messages:94
 msgid "Windows Killer"
-msgstr ""
+msgstr "Windows Killer"
 
 #: ../Xchat/Xchat:285
 msgid "Channels"
@@ -2476,19 +2501,19 @@ msgstr ""
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
-msgstr ""
+msgstr "Всі канали"
 
 #: ../Xchat/messages:121
 msgid "Silent Mode"
-msgstr ""
+msgstr "Тихий режим"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
-msgstr ""
+msgstr "Увімкнути тихий режим при запуску:"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
-msgstr ""
+msgstr "Увімкнути тихий режим при запуску для обраних каналів:"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2705,7 +2730,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Не перезаписувати (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Використовувати назву відео в імені файлу, при  завантаженні відео"
 
 #: ../YoutubeDl/messages:169
@@ -2854,24 +2880,3 @@ msgstr ""
 "\n"
 "Якщо у списку немає відео то ліве клацання на іконці дозволяє ввести "
 "посилання. В іншому випадку буде відображатися список посилань."
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Показувати вільне місце в Гігабайтах (відмічено) чи в Мегабайтах (не "
-#~ "відмічено) :"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Інтервал між перевірками файлових систем :"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "Переглянути вільний простір файлової системи."
-
-#~ msgid "Background image :"
-#~ msgstr "Зображення тла :"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Зображення переднього плану:"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Заставка зараз вимкнена"

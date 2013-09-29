@@ -8,18 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-06-18 16:29+0000\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-13 19:53+0000\n"
 "Last-Translator: Tim Schulz <timschulz1998@yahoo.de>\n"
 "Language-Team: German <de@li.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:42+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-14 05:36+0000\n"
+"X-Generator: Launchpad (build 16761)\n"
+"Language: de\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu ist nicht installiert. Bitte installieren Sie es, bevor Sie dieses "
 "Applet ausführen."
@@ -601,7 +603,8 @@ msgstr "Anwendungen"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
-msgstr "Befehl, um Ihre bevorzugte Kalenderanwendung zu starten (Mittelklick):"
+msgstr ""
+"Befehl, um Ihre bevorzugte Kalenderanwendung zu starten (Mittelklick):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
@@ -667,9 +670,8 @@ msgstr ""
 "Cardapio dafür installieren."
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "in Minuten"
+msgstr ""
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
@@ -1155,7 +1157,8 @@ msgstr "Abmessungen des Desklets (Breite x Höhe) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Anhängig von ihrem Fenstermanager können Sie es mit ALT + Linksklick bewegen."
 
@@ -1395,8 +1398,8 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu steuern.</"
-"b>\n"
+"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu "
+"steuern.</b>\n"
 "Es kann die <b>Download-Rate</b> auf dem Symbol abbilden.\n"
 "Ein <b>Mittelklick</b> auf das Symbol gibt ihnen Informationen über die "
 "derzeitigen Torrents (Sie können dieser Aktion einen Kurzbefehl zuweisen).\n"
@@ -1494,9 +1497,8 @@ msgid "Moon"
 msgstr ""
 
 #: ../Notifications_history/Notifications_history:124
-#, fuzzy
 msgid "No recent notification"
-msgstr "Benachrichtigungen"
+msgstr ""
 
 #: ../Notifications_history/Notifications_history:135
 #, python-format
@@ -1532,14 +1534,12 @@ msgid "Separated by a semi-colon ';'"
 msgstr ""
 
 #: ../Notifications_history/messages:99
-#, fuzzy
 msgid "Ignore notifications from:"
-msgstr "Benachrichtigungen"
+msgstr ""
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Einen Zähler auf dem Symbol anzeigen?"
+msgstr ""
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
@@ -1553,9 +1553,8 @@ msgid ""
 msgstr ""
 
 #: ../Notifications_history/messages:112
-#, fuzzy
 msgid "Notifications History"
-msgstr "Benachrichtigungen"
+msgstr ""
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1717,24 +1716,23 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dieses Applet stellt eine \"Zitat des Tages\" Funktion aus einigen "
 "Internetquellen bereit, wie z.B. :\n"
-"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
 msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
-#, fuzzy
 msgid "Enable the screensaver"
-msgstr "Den Bildschirmschoner deaktivieren"
+msgstr ""
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1800,9 +1798,8 @@ msgid "scroll"
 msgstr ""
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Aus der Zwischenablage übersetzen (Mittelklick)"
+msgstr ""
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2140,14 +2137,12 @@ msgstr ""
 "W"
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Übersetzen in :"
+msgstr ""
 
 #: ../Transmission/Transmission:129
-#, fuzzy
 msgid "day"
-msgstr "Tage"
+msgstr ""
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2783,7 +2778,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Nicht überschreiben (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 "Den Titel des Videos im Dateinamen benutzen, der zum Download des Videos "
 "verwendet wurde."
@@ -2876,7 +2872,8 @@ msgstr ""
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr "Bitte benutzen Sie den Anmeldename und Passwort Autorisierungsprozess."
+msgstr ""
+"Bitte benutzen Sie den Anmeldename und Passwort Autorisierungsprozess."
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
@@ -2938,24 +2935,3 @@ msgstr ""
 "\n"
 "Wenn keine Videos mehr in der Liste übrig sind, erlaubt ein Linksklick auf "
 "das Symbol, eine URL einzugeben. Anderenfalls wird die URL-Liste angezeigt."
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr ""
-#~ "Den zur Verfügung stehenden Festplattenplatz des Dateisystems als Giga "
-#~ "(gewählt) oder Mega (nicht gewählt) darstellen:"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Zeit zwischen den Dateisystemüberprüfungen:"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "Anzeigen des freien Speichers auf den verfügbaren Dateisystemen."
-
-#~ msgid "Background image :"
-#~ msgstr "Hintergrundbild :"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Vordergrundbild :"
-
-#~ msgid "Screensaver is currently disabled"
-#~ msgstr "Bildschirmschoner ist zurzeit deaktiviert"

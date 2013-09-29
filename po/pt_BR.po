@@ -6,18 +6,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0-alpha\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-06-16 21:05+0000\n"
+"POT-Creation-Date: 2013-09-13 15:21+0000\n"
+"PO-Revision-Date: 2013-09-13 19:46+0000\n"
 "Last-Translator: Eduardo Mucelli Rezende Oliveira <edumucelli@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-07-22 05:43+0000\n"
-"X-Generator: Launchpad (build 16696)\n"
+"X-Launchpad-Export-Date: 2013-09-14 05:37+0000\n"
+"X-Generator: Launchpad (build 16761)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu não está instalado. Por favor instale-o antes de rodar este mini-"
 "aplicativo."
@@ -204,8 +206,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com ALT"
-"+Clique do botão do meio, ou ALT+clique do botão esquerdo."
+"Dependendo do seu Administrador de Janelas, você pode redimensioná-lo com "
+"ALT+Clique do botão do meio, ou ALT+clique do botão esquerdo."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../CpuWatcher/messages:29 ../Deluge/messages:29 ../Gmail/messages:35
@@ -229,8 +231,8 @@ msgid ""
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
 "Dependendo do seu Gerenciador de Janelas, você pode movê-lo com Alt + Clique "
-"com botão esquerdo. Valores negativos são contados a partir da parte direita/"
-"inferior da tela."
+"com botão esquerdo. Valores negativos são contados a partir da parte "
+"direita/inferior da tela."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../CpuWatcher/messages:33 ../Deluge/messages:33 ../Gmail/messages:39
@@ -641,9 +643,8 @@ msgid ""
 msgstr ""
 
 #: ../CpuWatcher/messages:93
-#, fuzzy
 msgid "in ms"
-msgstr "em minutos"
+msgstr ""
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
@@ -939,7 +940,8 @@ msgstr "Escolha animação?"
 
 #: ../Gmail/messages:115
 msgid "Should the applet display a dialogue box with the notification?"
-msgstr "O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
+msgstr ""
+"O mini-aplicativo deve mostrar uma caixa de diálogo com a notificação?"
 
 #: ../Gmail/messages:117
 msgid "Show dialogue?"
@@ -1104,7 +1106,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1432,9 +1435,8 @@ msgid "Ignore notifications from:"
 msgstr ""
 
 #: ../Notifications_history/messages:103
-#, fuzzy
 msgid "Display another icon if there are new notifications"
-msgstr "Mostrar um contador no ícone?"
+msgstr ""
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
@@ -1601,9 +1603,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
@@ -1674,9 +1676,8 @@ msgid "scroll"
 msgstr ""
 
 #: ../Translator/Translator:413
-#, fuzzy
 msgid "Translate from clipboard"
-msgstr "Traduzir da área de transferência (clique com o botão do meio)"
+msgstr ""
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -1999,9 +2000,8 @@ msgid ""
 msgstr ""
 
 #: ../Translator/messages:374
-#, fuzzy
 msgid "Translator"
-msgstr "Traduzir para:"
+msgstr ""
 
 #: ../Transmission/Transmission:129
 msgid "day"
@@ -2557,7 +2557,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Não substituir (--não-substituir)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Usar o título do vídeo para nomear o arquivo baixado."
 
 #: ../YoutubeDl/messages:169
@@ -2688,19 +2689,3 @@ msgid ""
 "If there are no videos in the list left clicking on the icon allows you to "
 "enter a url. Otherwise the url list will be displayed."
 msgstr ""
-
-#~ msgid ""
-#~ "View available file system's space as Giga (checked) or Mega (unchecked) :"
-#~ msgstr "Veja espaço disponível como Giga (marcado) ou Mega (desmarcado):"
-
-#~ msgid "Time between two file system's checking :"
-#~ msgstr "Tempo entre verificações do sistema de arquivos:"
-
-#~ msgid "View available file system's free space."
-#~ msgstr "Ver o espaço livre disponível"
-
-#~ msgid "Background image :"
-#~ msgstr "Imagem de fundo :"
-
-#~ msgid "Foreground image :"
-#~ msgstr "Imagem frontal:"
