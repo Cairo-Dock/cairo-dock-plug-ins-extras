@@ -7,22 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-09-13 15:21+0000\n"
 "PO-Revision-Date: 2012-04-12 03:03+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Cairo-Dock\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-09-14 05:37+0000\n"
 "X-Generator: Launchpad (build 16761)\n"
 "X-Poedit-Country: SWEDEN\n"
-"Language: sv\n"
 "X-Poedit-Language: Swedish\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 
 #: ../GnoMenu/GnoMenu:143
@@ -85,11 +83,11 @@ msgstr "Docka som appleten tillhör:"
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Ikonens etikett:"
 
-#: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Cardapio/messages:9
-#: ../CpuWatcher/messages:9 ../Deluge/messages:9 ../Gmail/messages:9
-#: ../Google/messages:9 ../GTG/messages:9 ../HDDtemperature/messages:9
-#: ../KTorrent/messages:9 ../Lancelot/messages:9 ../Liferea/messages:9
-#: ../MintMenu/messages:9 ../Moon/messages:9
+#: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Calendar/messages:103
+#: ../Cardapio/messages:9 ../CpuWatcher/messages:9 ../Deluge/messages:9
+#: ../Gmail/messages:9 ../Google/messages:9 ../GTG/messages:9
+#: ../HDDtemperature/messages:9 ../KTorrent/messages:9 ../Lancelot/messages:9
+#: ../Liferea/messages:9 ../MintMenu/messages:9 ../Moon/messages:9
 #: ../Notifications_history/messages:9 ../Pidgin/messages:9
 #: ../Quote/messages:11 ../Screensaver_inhibitor/messages:9
 #: ../Translator/messages:9 ../Transmission/messages:9 ../Twitter/messages:9
@@ -589,16 +587,28 @@ msgid "Behaviour"
 msgstr "Beteende"
 
 #: ../Calendar/messages:101
+msgid "Theme"
+msgstr ""
+
+#: ../Calendar/messages:105
+msgid "Faenza"
+msgstr ""
+
+#: ../Calendar/messages:107
+msgid "Custom"
+msgstr ""
+
+#: ../Calendar/messages:109
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
 
-#: ../Calendar/messages:103
+#: ../Calendar/messages:111
 msgid "Icon custom script:"
 msgstr ""
 
-#: ../Calendar/messages:106
+#: ../Calendar/messages:114
 msgid ""
 "This applet will display the current date.\n"
 "Left Click displays the calendar\n"
@@ -608,7 +618,7 @@ msgid ""
 "Dropping a file on the icon launches the calendar application and import it."
 msgstr ""
 
-#: ../Calendar/messages:108
+#: ../Calendar/messages:116
 msgid "Calendar"
 msgstr ""
 
@@ -727,28 +737,28 @@ msgstr ""
 msgid "Sent:"
 msgstr ""
 
-#: ../Deluge/Deluge:346 ../Transmission/Transmission:503
+#: ../Deluge/Deluge:346 ../Transmission/Transmission:506
 msgid "Pause all torrents"
 msgstr ""
 
-#: ../Deluge/Deluge:351 ../Transmission/Transmission:508
+#: ../Deluge/Deluge:351 ../Transmission/Transmission:511
 msgid "Resume all torrents"
 msgstr ""
 
 #: ../Deluge/Deluge:356 ../KTorrent/KTorrent:334
-#: ../Transmission/Transmission:513
+#: ../Transmission/Transmission:516
 msgid "Torrents info"
 msgstr ""
 
-#: ../Deluge/Deluge:356 ../Gmail/Gmail:542 ../KTorrent/KTorrent:334
-#: ../Notifications_history/Notifications_history:160
+#: ../Deluge/Deluge:356 ../Gmail/Gmail:545 ../KTorrent/KTorrent:334
+#: ../Notifications_history/Notifications_history:163
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
-#: ../Translator/Translator:413 ../Transmission/Transmission:513
-#: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/YoutubeDl:307
+#: ../Translator/Translator:416 ../Transmission/Transmission:516
+#: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/YoutubeDl:304
 msgid "middle-click"
 msgstr ""
 
-#: ../Deluge/Deluge:361 ../Transmission/Transmission:518
+#: ../Deluge/Deluge:361 ../Transmission/Transmission:521
 msgid "Quit"
 msgstr ""
 
@@ -797,73 +807,73 @@ msgstr ""
 msgid "No Subject"
 msgstr ""
 
-#: ../Gmail/Gmail:147 ../Gmail/Gmail:153 ../Gmail/Gmail:162
+#: ../Gmail/Gmail:119 ../Gmail/Gmail:125 ../Gmail/Gmail:134
 msgid "Please fill in your Gmail account."
 msgstr ""
 
-#: ../Gmail/Gmail:186
+#: ../Gmail/Gmail:158
 msgid "Please, enter your Gmail username:"
 msgstr ""
 
-#: ../Gmail/Gmail:194
+#: ../Gmail/Gmail:166
 msgid "Please, enter your Gmail password:"
 msgstr ""
 
-#: ../Gmail/Gmail:303
+#: ../Gmail/Gmail:275
 msgid "WARNING: there was an error reading XML content."
 msgstr ""
 
-#: ../Gmail/Gmail:326
+#: ../Gmail/Gmail:298
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 
-#: ../Gmail/Gmail:341
+#: ../Gmail/Gmail:313
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr ""
 
-#: ../Gmail/Gmail:349
+#: ../Gmail/Gmail:321
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 
-#: ../Gmail/Gmail:362
+#: ../Gmail/Gmail:334
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 
-#: ../Gmail/Gmail:435
+#: ../Gmail/Gmail:407
 msgid "Error!"
 msgstr ""
 
-#: ../Gmail/Gmail:468
+#: ../Gmail/Gmail:440
 #, python-format
 msgid "You have %s new emails"
 msgstr ""
 
-#: ../Gmail/Gmail:470
+#: ../Gmail/Gmail:442
 msgid "You have 1 new email"
 msgstr ""
 
-#: ../Gmail/Gmail:531
+#: ../Gmail/Gmail:534
 msgid "Sorry, there was no input!"
 msgstr ""
 
-#: ../Gmail/Gmail:540
+#: ../Gmail/Gmail:543
 msgid "Add or change subscription"
 msgstr ""
 
-#: ../Gmail/Gmail:541
+#: ../Gmail/Gmail:544
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 
-#: ../Gmail/Gmail:543
+#: ../Gmail/Gmail:546
 msgid "Check inbox now"
 msgstr ""
 
-#: ../Gmail/Gmail:544
+#: ../Gmail/Gmail:547
 msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
-#: ../Gmail/Gmail:545
+#: ../Gmail/Gmail:548
 msgid "Write a mail"
 msgstr ""
 
@@ -1076,8 +1086,7 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1331,6 +1340,34 @@ msgid ""
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
 
+#: ../Moon/Moon:80
+msgid "Monday"
+msgstr ""
+
+#: ../Moon/Moon:80
+msgid "Tuesday"
+msgstr ""
+
+#: ../Moon/Moon:80
+msgid "Wednesday"
+msgstr ""
+
+#: ../Moon/Moon:80
+msgid "Thursday"
+msgstr ""
+
+#: ../Moon/Moon:80
+msgid "Friday"
+msgstr ""
+
+#: ../Moon/Moon:80
+msgid "Saturday"
+msgstr ""
+
+#: ../Moon/Moon:80
+msgid "Sunday"
+msgstr ""
+
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
 msgstr ""
@@ -1361,16 +1398,16 @@ msgstr ""
 msgid "Moon"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:124
+#: ../Notifications_history/Notifications_history:127
 msgid "No recent notification"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:135
+#: ../Notifications_history/Notifications_history:138
 #, python-format
 msgid "from %s at %s"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:160
+#: ../Notifications_history/Notifications_history:163
 msgid "Clear history"
 msgstr ""
 
@@ -1568,9 +1605,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
@@ -1624,23 +1661,23 @@ msgstr ""
 msgid "Screensaver Inhibitor"
 msgstr ""
 
-#: ../Translator/Translator:361
+#: ../Translator/Translator:364
 msgid "To"
 msgstr ""
 
-#: ../Translator/Translator:380
+#: ../Translator/Translator:383
 msgid "From"
 msgstr ""
 
-#: ../Translator/Translator:400
+#: ../Translator/Translator:403
 msgid "Switch languages"
 msgstr ""
 
-#: ../Translator/Translator:400
+#: ../Translator/Translator:403
 msgid "scroll"
 msgstr ""
 
-#: ../Translator/Translator:413
+#: ../Translator/Translator:416
 msgid "Translate from clipboard"
 msgstr ""
 
@@ -1997,7 +2034,7 @@ msgstr ""
 msgid "Connected peers:"
 msgstr ""
 
-#: ../Transmission/Transmission:450
+#: ../Transmission/Transmission:453
 msgid "You have to enable the Web client in the Transmisison's settings."
 msgstr ""
 
@@ -2338,15 +2375,15 @@ msgid ""
 "icon."
 msgstr ""
 
-#: ../YoutubeDl/YoutubeDl:302 ../YoutubeDl/messages:99
+#: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/messages:99
 msgid "Open Video Folder"
 msgstr ""
 
-#: ../YoutubeDl/YoutubeDl:307
+#: ../YoutubeDl/YoutubeDl:304
 msgid "Show Download Status"
 msgstr ""
 
-#: ../YoutubeDl/YoutubeDl:315
+#: ../YoutubeDl/YoutubeDl:312
 msgid "Send abort signal to the downloader. There may be a delay"
 msgstr ""
 
@@ -2518,8 +2555,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169

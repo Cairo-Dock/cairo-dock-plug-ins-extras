@@ -16,7 +16,7 @@ class MoonCalendarParser(SGMLParser):
         self.stop_parsing = False                                                   # identifies the end of the useful data
 
     def start_img(self, attrs):
-        self.moon_image = (dict(attrs)["src"]).split('/')[-1]                       # /image/moon06b.gif => moon06b.gif
+        self.moon_image = (dict(attrs)["src"]).split('/')[-1][:-4]                  # /image/moon06b.gif => moon06b
 
     def start_td(self, attrs):
         for name, value in attrs:

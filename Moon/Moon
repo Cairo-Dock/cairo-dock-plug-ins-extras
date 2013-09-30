@@ -77,35 +77,45 @@ class Applet(CDApplet):
 		self.sub_icons.RemoveSubIcon("any")
 
 	def name_of_the_day(self, day):
-		days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+		days = [_('Monday'), _('Tuesday'), _('Wednesday'), _('Thursday'), _('Friday'), _('Saturday'), _('Sunday')]
 		return days[datetime.date.weekday(day)]
 
 	def img_local_path(self, image):
-		return os.path.abspath("./data/%s" % image)
+		for ext in ['gif', 'svg', 'png', 'jpg', 'jpeg']:
+			img_file = os.path.abspath("./data/%s.%s" % (image, ext))
+			if os.path.exists (img_file):
+				return img_file
+		return os.path.abspath("./data/%s.gif" % image)
+
+	def get_info_image_today (self, today):
+		ye, mo, da = today.timetuple()[:3]
+		interface = Interface(ye, mo, da)
+		image, information = interface.fetch()
+		return image, self.clean(information)
 
 	def get_moon_from_web(self):
 		self.inform_start_of_waiting_process()
 
 		self.clean_week_icons()
-		# TODO: Remove code duplication
+		today = datetime.date.today()
 		if self.show_week_moon:														# week information
-			today = datetime.date.today()
 			tomorrow = datetime.timedelta(days=1)
 			last_day = datetime.date.today() + datetime.timedelta(days=6)
 			week = []																# ['namesubicon1','imagesubicon1','idsubicon1', 'namesubicon2' ...]
 			self.week_information = []
 			id = 0
 			while today <= last_day:
-				ye, mo, da = today.timetuple()[:3]
-				interface = Interface(ye, mo, da)
-				image, information = interface.fetch()
+				image, information = self.get_info_image_today(today)
+				if id == 0:
+					self.icon.SetIcon(self.img_local_path(image)) # main icon
+
 				# The website provides images from the Northern perspective, but since
 				# a) The images differs horizontally by "a", or "b" in its names;
 				# b) The moon differs horizontally between hemispheres;
 				# It is just a question of replace "a" (North) by "b" (South)
 				if self.hemisphere == self.south:
 					image = image.replace('a','b')
-				self.week_information.append(self.clean(information))
+				self.week_information.append(information)
 				week.append(self.name_of_the_day(today))
 				week.append(self.img_local_path(image))
 				week.append(str(id))												# id is a sequential from today (0) until end of the week (6)
@@ -114,11 +124,7 @@ class Applet(CDApplet):
 			# log(week)
 			self.sub_icons.AddSubIcons(week)
 		else:																		# todays information
-			ye, mo, da = datetime.date.today().timetuple()[:3]
-			interface = Interface(ye, mo, da)
-			image, information = interface.fetch()
-			self.information = self.clean(information)
-			# os.popen("wget -N -q http://www.briancasey.org/artifacts/astro/image/%s -O %s" % (image, os.path.abspath("./data/%s" % (image))))
+			image, self.information = self.get_info_image_today(today)
 			self.icon.SetIcon(self.img_local_path(image))
 
 		self.inform_end_of_waiting_process()

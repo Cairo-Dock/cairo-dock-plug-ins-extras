@@ -7,5 +7,8 @@
 
 from __future__ import print_function
 
+DEBUG = False
+
 def log (string):
-    print("[+] Moon: %s" % string)
+    if DEBUG:
+        print("[+] Moon: %s" % string)
