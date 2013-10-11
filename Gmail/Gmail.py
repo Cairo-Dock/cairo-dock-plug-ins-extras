@@ -50,6 +50,8 @@ class Menu(gtk.Menu):
             # check if mail has subject / title
             if mail['title'] == None or len(mail['title']) == 0:
                 mail['title'] = '<i>(' + _('No Subject') + ')</i>'
+            elif len(mail['title']) > 80:
+                mail['title'] = mail['title'][:77] + '...'
             # create markups
             string = '<b>'+mail['author']+':</b>\n'+mail['title']
             menu_item = gtk.ImageMenuItem()
