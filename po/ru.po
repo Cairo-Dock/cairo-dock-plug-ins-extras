@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-09-24 20:30+0000\n"
+"POT-Creation-Date: 2013-09-30 08:27+0000\n"
+"PO-Revision-Date: 2013-10-27 21:21+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-25 05:33+0000\n"
-"X-Generator: Launchpad (build 16771)\n"
+"X-Launchpad-Export-Date: 2013-10-28 05:26+0000\n"
+"X-Generator: Launchpad (build 16810)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr "GnoMenu не установлен. Установите, прежде чем использовать апплет."
 
 #: ../GnoMenu/GnoMenu:143
@@ -597,15 +599,15 @@ msgstr "Поведение"
 
 #: ../Calendar/messages:101
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: ../Calendar/messages:105
 msgid "Faenza"
-msgstr ""
+msgstr "Faenza"
 
 #: ../Calendar/messages:107
 msgid "Custom"
-msgstr ""
+msgstr "Пользовательский"
 
 #: ../Calendar/messages:109
 msgid ""
@@ -678,12 +680,12 @@ msgstr "Прогресс:"
 
 #: ../Deluge/Deluge:220 ../Transmission/Transmission:310
 msgid "paused"
-msgstr ""
+msgstr "приостановлено"
 
 #: ../Deluge/Deluge:224 ../KTorrent/KTorrent:237
 #: ../Transmission/Transmission:320
 msgid "Time remaining:"
-msgstr ""
+msgstr "Осталось:"
 
 #: ../Deluge/Deluge:229 ../KTorrent/KTorrent:242
 #: ../Transmission/Transmission:129
@@ -709,27 +711,27 @@ msgstr "сек"
 #: ../Deluge/Deluge:243 ../KTorrent/KTorrent:256
 #: ../Transmission/Transmission:324
 msgid "Time remaining: Unknown"
-msgstr ""
+msgstr "Осталось времени: неизвестно"
 
 #: ../Deluge/Deluge:245 ../KTorrent/KTorrent:258
 #: ../Transmission/Transmission:326
 msgid "Finished"
-msgstr ""
+msgstr "Завершена"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
 #: ../Transmission/Transmission:327
 msgid "Number of peers:"
-msgstr ""
+msgstr "Количество пиров:"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
 #: ../Transmission/Transmission:327
 msgid "and seeds:"
-msgstr ""
+msgstr "и сидов:"
 
 #: ../Deluge/Deluge:248 ../KTorrent/KTorrent:270
 #: ../Transmission/Transmission:335
 msgid "Ratio:"
-msgstr ""
+msgstr "Рейтинг:"
 
 #: ../Deluge/Deluge:251 ../KTorrent/KTorrent:275
 #: ../Transmission/Transmission:339
@@ -742,11 +744,11 @@ msgstr ""
 
 #: ../Deluge/Deluge:264 ../Transmission/Transmission:353
 msgid "Received:"
-msgstr ""
+msgstr "Получено:"
 
 #: ../Deluge/Deluge:272 ../Transmission/Transmission:361
 msgid "Sent:"
-msgstr ""
+msgstr "Отправлено:"
 
 #: ../Deluge/Deluge:346 ../Transmission/Transmission:506
 msgid "Pause all torrents"
@@ -820,15 +822,15 @@ msgstr "Без темы"
 
 #: ../Gmail/Gmail:119 ../Gmail/Gmail:125 ../Gmail/Gmail:134
 msgid "Please fill in your Gmail account."
-msgstr ""
+msgstr "Заполните свою учетную запись Gmail."
 
 #: ../Gmail/Gmail:158
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Введите свое имя пользователя Gmail:"
 
 #: ../Gmail/Gmail:166
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Введите свой пароль пользователя Gmail:"
 
 #: ../Gmail/Gmail:275
 msgid "WARNING: there was an error reading XML content."
@@ -853,7 +855,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:407
 msgid "Error!"
-msgstr ""
+msgstr "Ошибка!"
 
 #: ../Gmail/Gmail:440
 #, python-format
@@ -1018,7 +1020,7 @@ msgstr ""
 
 #: ../GTG/GTG:208
 msgid "Create a new task"
-msgstr ""
+msgstr "Создать новую задачу"
 
 #: ../GTG/GTG:222 ../GTG/GTG:258
 msgid "Open category's task"
@@ -1100,7 +1102,8 @@ msgstr "Размер десклета  (ширина х высота):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В зависимости от вашего ОМ, вы можете передвигать с помощью ALT + левый "
 "щелчок"
@@ -1364,31 +1367,31 @@ msgstr ""
 
 #: ../Moon/Moon:80
 msgid "Monday"
-msgstr ""
+msgstr "Понедельник"
 
 #: ../Moon/Moon:80
 msgid "Tuesday"
-msgstr ""
+msgstr "Вторник"
 
 #: ../Moon/Moon:80
 msgid "Wednesday"
-msgstr ""
+msgstr "Среда"
 
 #: ../Moon/Moon:80
 msgid "Thursday"
-msgstr ""
+msgstr "Четверг"
 
 #: ../Moon/Moon:80
 msgid "Friday"
-msgstr ""
+msgstr "Пятница"
 
 #: ../Moon/Moon:80
 msgid "Saturday"
-msgstr ""
+msgstr "Суббота"
 
 #: ../Moon/Moon:80
 msgid "Sunday"
-msgstr ""
+msgstr "Воскресенье"
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
@@ -1418,7 +1421,7 @@ msgstr ""
 
 #: ../Moon/messages:102
 msgid "Moon"
-msgstr ""
+msgstr "Луна"
 
 #: ../Notifications_history/Notifications_history:127
 msgid "No recent notification"
@@ -1431,7 +1434,7 @@ msgstr ""
 
 #: ../Notifications_history/Notifications_history:163
 msgid "Clear history"
-msgstr ""
+msgstr "Очистить историю"
 
 #: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
 msgid ""
@@ -1443,11 +1446,11 @@ msgstr ""
 
 #: ../Notifications_history/messages:91 ../Twitter/messages:101
 msgid "Notifications"
-msgstr ""
+msgstr "Уведомления"
 
 #: ../Notifications_history/messages:93
 msgid "History size"
-msgstr ""
+msgstr "Размер истории"
 
 #: ../Notifications_history/messages:95
 msgid "Clear the history when clicking on the icon"
@@ -1478,7 +1481,7 @@ msgstr ""
 
 #: ../Notifications_history/messages:112
 msgid "Notifications History"
-msgstr ""
+msgstr "история уведомлений"
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1609,36 +1612,36 @@ msgstr "Vidademerda.com.br"
 
 #: ../Quote/messages:111
 msgid "Viedemerde.fr"
-msgstr ""
+msgstr "Viedemerde.fr"
 
 #: ../Quote/messages:113
 msgid "Fmylife.com"
-msgstr ""
+msgstr "Fmylife.com"
 
 #: ../Quote/messages:115
 msgid "Vitadimerda.it"
-msgstr ""
+msgstr "Vitadimerda.it"
 
 #: ../Quote/messages:117
 msgid "100blagues.com"
-msgstr ""
+msgstr "100blagues.com"
 
 #: ../Quote/messages:119
 msgid "Chucknorrisfacts.fr"
-msgstr ""
+msgstr "Chucknorrisfacts.fr"
 
 #: ../Quote/messages:122
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
 msgid "Quote"
-msgstr ""
+msgstr "Цитата"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Enable the screensaver"
@@ -1701,7 +1704,7 @@ msgstr "Поменять языки"
 
 #: ../Translator/Translator:403
 msgid "scroll"
-msgstr ""
+msgstr "прокрутка"
 
 #: ../Translator/Translator:416
 msgid "Translate from clipboard"
@@ -2029,11 +2032,11 @@ msgstr ""
 
 #: ../Translator/messages:374
 msgid "Translator"
-msgstr ""
+msgstr "Перевод"
 
 #: ../Transmission/Transmission:129
 msgid "day"
-msgstr ""
+msgstr "день"
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2048,7 +2051,7 @@ msgstr ""
 
 #: ../Transmission/Transmission:312
 msgid "checking"
-msgstr ""
+msgstr "проверка"
 
 #: ../Transmission/Transmission:314
 msgid "waiting for check"
@@ -2060,7 +2063,7 @@ msgstr ""
 
 #: ../Transmission/Transmission:332
 msgid "Connected peers:"
-msgstr ""
+msgstr "Подключено пиров:"
 
 #: ../Transmission/Transmission:453
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2068,7 +2071,7 @@ msgstr "Необходимо включить Web клиент в настрой
 
 #: ../Transmission/messages:105
 msgid "Remaining time"
-msgstr ""
+msgstr "Оставшееся время"
 
 #: ../Transmission/messages:110
 msgid ""
@@ -2091,15 +2094,15 @@ msgstr ""
 
 #: ../Twitter/Twitter:199
 msgid "Followers"
-msgstr ""
+msgstr "Подписчики"
 
 #: ../Twitter/Twitter:199
 msgid "Friends"
-msgstr ""
+msgstr "Друзья"
 
 #: ../Twitter/Twitter:199 ../Twitter/Twitter:353
 msgid "Tweets"
-msgstr ""
+msgstr "Твиты"
 
 #: ../Twitter/Twitter:220
 #, python-format
@@ -2194,7 +2197,7 @@ msgstr ""
 
 #: ../Twitter/Twitter:387
 msgid "Add account"
-msgstr ""
+msgstr "Добавить учётную запись"
 
 #: ../Twitter/Twitter:395
 msgid "Twitter"
@@ -2202,7 +2205,7 @@ msgstr "Twitter"
 
 #: ../Twitter/Twitter:405
 msgid "Identi.ca"
-msgstr ""
+msgstr "Identi.ca"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
@@ -2353,7 +2356,7 @@ msgstr ""
 
 #: ../WebSearch/messages:128
 msgid "Web Search"
-msgstr ""
+msgstr "Поиск в Интернете"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2376,7 +2379,8 @@ msgstr "Каналы"
 
 #: ../Xchat/Xchat:289
 msgid "Switch the channel you'll send message to with the middle-click."
-msgstr "Средний щелчок, чтобы переключить канал в который посылаете сообщение."
+msgstr ""
+"Средний щелчок, чтобы переключить канал в который посылаете сообщение."
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
@@ -2384,7 +2388,7 @@ msgstr ""
 
 #: ../Xchat/messages:121
 msgid "Silent Mode"
-msgstr ""
+msgstr "Тихий режим"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
@@ -2554,7 +2558,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:151
 msgid "Download Options"
-msgstr ""
+msgstr "Параметры загрузки"
 
 #: ../YoutubeDl/messages:153
 msgid "Set the download options that will be used for the youtubedl backend"
@@ -2585,7 +2589,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169
@@ -2618,39 +2623,39 @@ msgstr ""
 
 #: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
 msgid "H264 - MP4 at 480p"
-msgstr ""
+msgstr "H264 - MP4 в 480p"
 
 #: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
 msgid "H264 - MP4 at 720p"
-msgstr ""
+msgstr "H264 - MP4 в 720p"
 
 #: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
 msgid "H264 - MP4 at 1080p"
-msgstr ""
+msgstr "H264 - MP4 в 1080p"
 
 #: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
 msgid "H264 - FLV at 360p"
-msgstr ""
+msgstr "H264 - FLV в 360p"
 
 #: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
 msgid "H264 - FLV at 480p"
-msgstr ""
+msgstr "H264 - FLV в 480p"
 
 #: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
 msgid "H263 - FLV at 240p"
-msgstr ""
+msgstr "H263 - FLV в 240p"
 
 #: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
 msgid "Webm at 480p"
-msgstr ""
+msgstr "Webm в 480p"
 
 #: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
 msgid "Webm at 720p"
-msgstr ""
+msgstr "Webm в 720p"
 
 #: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
 msgid "3GP video"
-msgstr ""
+msgstr "Видео в 3GP"
 
 #: ../YoutubeDl/messages:201
 msgid "Limit the maximum quality of the videos to download."
@@ -2676,7 +2681,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
-msgstr ""
+msgstr "Имя пользователя/Пароль"
 
 #: ../YoutubeDl/messages:231
 msgid "Specify the youtube account username UserName."
@@ -2684,7 +2689,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:233
 msgid "Username:"
-msgstr ""
+msgstr "Имя пользователя:"
 
 #: ../YoutubeDl/messages:235
 msgid "Like the username, specifies the account password."
@@ -2692,7 +2697,7 @@ msgstr ""
 
 #: ../YoutubeDl/messages:237
 msgid "Password:"
-msgstr ""
+msgstr "Пароль:"
 
 #: ../YoutubeDl/messages:240
 msgid ""

@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-09-18 21:24+0000\n"
-"Last-Translator: Pietro Quadalti <p.quadalti@gmail.com>\n"
+"POT-Creation-Date: 2013-09-30 08:27+0000\n"
+"PO-Revision-Date: 2013-10-20 01:50+0000\n"
+"Last-Translator: Wonderfulheart <Unknown>\n"
 "Language-Team: Italian <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-19 04:44+0000\n"
-"X-Generator: Launchpad (build 16765)\n"
+"X-Launchpad-Export-Date: 2013-10-21 04:42+0000\n"
+"X-Generator: Launchpad (build 16807)\n"
+"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -34,7 +36,7 @@ msgstr "A proposito di"
 #: ../GnoMenu/GnoMenu:149 ../Cardapio/Cardapio:115 ../Lancelot/Lancelot:123
 #: ../MintMenu/MintMenu:165
 msgid "Edit Menus"
-msgstr "Modifica i Menu"
+msgstr "Modifica i menù"
 
 #: ../GnoMenu/messages:1 ../GnoMenu/messages:3 ../Calendar/messages:1
 #: ../Calendar/messages:3 ../Cardapio/messages:1 ../Cardapio/messages:3
@@ -81,7 +83,7 @@ msgstr "Nome della dock alla quale appartiene:"
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
 #: ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
-msgstr "Nome dell'icona come apparirà sulla didascalia nella dock:"
+msgstr "Nome dell'icona che apparirà sulla didascalia nella dock:"
 
 #: ../GnoMenu/messages:9 ../Calendar/messages:9 ../Calendar/messages:103
 #: ../Cardapio/messages:9 ../CpuWatcher/messages:9 ../Deluge/messages:9
@@ -205,8 +207,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
-"+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
+"Alt+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../CpuWatcher/messages:29 ../Deluge/messages:29 ../Gmail/messages:35
@@ -415,7 +417,7 @@ msgid ""
 "Image to be displayed below drawings, e.g. a frame. Leave empty for no image."
 msgstr ""
 "È un'immagine che viene mostrata sotto i disegni, ad esempio una cornice. "
-"Lasciare vuoto per non utilizzarla."
+"Lascia vuoto per non utilizzarla."
 
 #: ../GnoMenu/messages:65 ../Calendar/messages:65 ../Cardapio/messages:65
 #: ../CpuWatcher/messages:65 ../Deluge/messages:65 ../Gmail/messages:71
@@ -540,7 +542,7 @@ msgid ""
 "no image."
 msgstr ""
 "È un'immagine che viene mostrata sopra i disegni, ad esempio un riflesso. "
-"Lasciare vuoto per non utilizzarla."
+"Lascia vuoto per non utilizzarla."
 
 #: ../GnoMenu/messages:87 ../Calendar/messages:87 ../Cardapio/messages:87
 #: ../CpuWatcher/messages:87 ../Deluge/messages:87 ../Gmail/messages:93
@@ -580,7 +582,7 @@ msgstr "Configurazione"
 #: ../GnoMenu/messages:93 ../Cardapio/messages:93 ../Lancelot/messages:93
 #: ../MintMenu/messages:93
 msgid "Shortkey to pop up the menu:"
-msgstr "Scorciatoia per mostrare il menu:"
+msgstr "Scorciatoia per mostrare il menù:"
 
 #: ../GnoMenu/messages:96
 msgid ""
@@ -589,8 +591,8 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install GnoMenu."
 msgstr ""
-"Quest'applet ti permette di avere il <b>Menu GnoMenu</b> nella tua dock.\n"
-"Clic sull'icona per avere il menu a comparsa.\n"
+"Quest'applet ti permette di avere il <b>Menù GnoMenu</b> nella tua dock.\n"
+"Clic sull'icona per avere il menù a comparsa.\n"
 "Clic destro del mouse ti consente di accedere alle preferenze della "
 "finestra.\n"
 "<u>Nota:</u> necessita dell'installazione di GnoMenu."
@@ -615,23 +617,23 @@ msgstr "Comportamento"
 
 #: ../Calendar/messages:101
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../Calendar/messages:105
 msgid "Faenza"
-msgstr ""
+msgstr "Faenza"
 
 #: ../Calendar/messages:107
 msgid "Custom"
-msgstr ""
+msgstr "Personalizzato"
 
 #: ../Calendar/messages:109
 msgid ""
 "The path to a script to generate an icon. Leave it empty to use the default "
 "one."
 msgstr ""
-"Il percorso dello script per generare un'icona. Lasciare vuoto per "
-"utilizzare quello predefinito."
+"Il percorso dello script per generare un'icona. Lascia vuoto per utilizzare "
+"quello predefinito."
 
 #: ../Calendar/messages:111
 msgid "Icon custom script:"
@@ -672,18 +674,18 @@ msgid ""
 "Right-click lets you edit the menus.<u>Note:</u> you need to install "
 "Cardapio."
 msgstr ""
-"Quest'applet ti permette di avere il <b>Menu Cardapio</b> nella tua dock.\n"
-"Clic sull'icona per avere il menu a comparsa.\n"
-"Clic destro del mouse ti consente di modificare i menu. <u>Nota:</u> "
+"Quest'applet ti permette di avere il <b>Menù Cardapio</b> nella tua dock.\n"
+"Clic sull'icona per avere il menù a comparsa.\n"
+"Clic destro del mouse ti consente di modificare i menù. <u>Nota:</u> "
 "necessita dell'installazione di Cardapio."
 
 #: ../CpuWatcher/messages:93
 msgid "in ms"
-msgstr ""
+msgstr "in ms"
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
-msgstr ""
+msgstr "Tempo di aggiornamento:"
 
 #: ../CpuWatcher/messages:98
 msgid ""
@@ -693,10 +695,15 @@ msgid ""
 "You can obtain an average of the main core\n"
 "(in the label) with a middle click on the icon."
 msgstr ""
+"Questa è l'applet CpuWatcher.\n"
+"Ti permette di tenere d'occhio il carico della cpu\n"
+"(e di ciascun core nel sottomenù!)\n"
+"Puoi ottenere una media del core principale\n"
+"(nell'etichetta) con un clic del tasto centrale sull'icona."
 
 #: ../CpuWatcher/messages:100
 msgid "CPU Watcher"
-msgstr ""
+msgstr "CPU Watcher"
 
 #: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
@@ -1019,7 +1026,8 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -1149,8 +1157,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
-"+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Notifications_history/messages:23 ../Screensaver_inhibitor/messages:23
@@ -1161,7 +1169,8 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1410,8 +1419,8 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install Lancelot."
 msgstr ""
-"Quest'applet ti permette di avere il <b>Menu Lancelot</b> nella tua dock.\n"
-"Clic sull'icona per avere il menu a comparsa.\n"
+"Quest'applet ti permette di avere il <b>Menù Lancelot</b> nella tua dock.\n"
+"Clic sull'icona per avere il menù a comparsa.\n"
 "Clic destro del mouse ti consente di accedere alle preferenze della "
 "finestra.\n"
 "<u>Nota:</u> necessita dell'installazione di Lancelot."
@@ -1446,39 +1455,39 @@ msgid ""
 "Right-click lets you access to the preferences window.\n"
 "<u>Note:</u> you need to install MintMenu."
 msgstr ""
-"Quest'applet ti permette di avere il <b>Menu Mint</b> nella tua dock.\n"
-"Clic sull'icona per avere il menu a comparsa.\n"
+"Quest'applet ti permette di avere il <b>Menù Mint</b> nella tua dock.\n"
+"Clic sull'icona per avere il menù a comparsa.\n"
 "Clic destro del mouse ti consente di accedere alle preferenze della "
 "finestra.\n"
 "<u>Nota:</u> necessita dell'installazione di MintMenu."
 
 #: ../Moon/Moon:80
 msgid "Monday"
-msgstr ""
+msgstr "Lunedì"
 
 #: ../Moon/Moon:80
 msgid "Tuesday"
-msgstr ""
+msgstr "Martedì"
 
 #: ../Moon/Moon:80
 msgid "Wednesday"
-msgstr ""
+msgstr "Mercoledì"
 
 #: ../Moon/Moon:80
 msgid "Thursday"
-msgstr ""
+msgstr "Giovedì"
 
 #: ../Moon/Moon:80
 msgid "Friday"
-msgstr ""
+msgstr "Venerdì"
 
 #: ../Moon/Moon:80
 msgid "Saturday"
-msgstr ""
+msgstr "Sabato"
 
 #: ../Moon/Moon:80
 msgid "Sunday"
-msgstr ""
+msgstr "Domenica"
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
@@ -1665,9 +1674,9 @@ msgid ""
 "The icon will also control the window of Pidgin like a normal application "
 "icon."
 msgstr ""
-"Questa applet integra Pidgin nella tua dock.\n"
+"Quest'applet integra Pidgin nella tua dock.\n"
 "Puoi visualizzare i nuovi messaggi,\n"
-"selezionare una conversazione dal menu facendo clic destro del mouse,\n"
+"selezionare una conversazione dal menù facendo clic destro del mouse,\n"
 "scrivere un messaggio facendo clic centrale del mouse,\n"
 "e visualizzare lo storico dei messaggi scorrendo con la rotellina del mouse "
 "sull'icona.\n"
@@ -1676,7 +1685,7 @@ msgstr ""
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
-msgstr "Lasciare vuoto per mostrare il nome del sito attuale."
+msgstr "Lascia vuoto per mostrare il nome del sito attuale."
 
 #: ../Quote/messages:95
 msgid "Quote source:"
@@ -1734,15 +1743,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
 "fonti internet quali:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com e Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -1816,7 +1825,7 @@ msgstr "scorrimento"
 
 #: ../Translator/Translator:416
 msgid "Translate from clipboard"
-msgstr ""
+msgstr "Traduzione dalla clipboard"
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2137,14 +2146,14 @@ msgid ""
 "language, press Ctrl + Alt + R\n"
 " - If you are writing something in your native language, press Ctrl + Alt + W"
 msgstr ""
-"Questa applet traduce singole parole, frasi complete o pagine web.\n"
+"Quest'applet traduce singole parole, frasi complete o pagine web.\n"
 "Per usarla, clicca sull'icona o premi la scorciatoia, dopodiché scrivi il "
 "tuo testo e premi Invio. Il testo tradotto sarà mostrato in una finestra a "
 "comparsa e sarà disponibile negli appunti (clipboard) premendo Ctrl+v per "
-"ricopiarlo.\n"
+"copiarlo.\n"
 "Puoi anche rilasciare del testo sull'icona o tradurre il contenuto della "
 "clipboard attuale (clic centrale).\n"
-"Puoi selezionare le lingue in cui vuoi tradurre attraverso il menu o dalla "
+"Puoi selezionare le lingue in cui vuoi tradurre attraverso il menù o dalla "
 "finestra di configurazione dell'applet. Possono essere configurate anche "
 "delle scorciatoie.\n"
 "Predefinite:\n"
@@ -2158,7 +2167,7 @@ msgstr "Traduttore"
 
 #: ../Transmission/Transmission:129
 msgid "day"
-msgstr ""
+msgstr "giorno"
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2185,7 +2194,7 @@ msgstr "seeding"
 
 #: ../Transmission/Transmission:332
 msgid "Connected peers:"
-msgstr ""
+msgstr "Peer collegati:"
 
 #: ../Transmission/Transmission:453
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2193,7 +2202,7 @@ msgstr "Devi attivare il client Web nelle impostazioni di Transmission."
 
 #: ../Transmission/messages:105
 msgid "Remaining time"
-msgstr ""
+msgstr "Tempo rimanente"
 
 #: ../Transmission/messages:110
 msgid ""
@@ -2598,9 +2607,9 @@ msgid ""
 "The icon will also control the window of xchat like a normal application "
 "icon."
 msgstr ""
-"Questa applet integra Xchat e Xchat-gnome nella tua dock.\n"
+"Quest'applet integra Xchat e Xchat-gnome nella tua dock.\n"
 "È possibile visualizzare i nuovi messaggi,\n"
-"puoi selezionare un canale dal menu con il clic destro del mouse,\n"
+"puoi selezionare un canale dal menù con il clic destro del mouse,\n"
 "scrivere un messaggio con il clic centrale del mouse\n"
 "e visualizzare la cronologia dei messaggi scorrendo sull'icona.\n"
 "Dall'icona sarà inoltre possibile controllare la finestra di xchat come "
@@ -2809,7 +2818,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Non sovrascrivere (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
 
 #: ../YoutubeDl/messages:169

@@ -8,18 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-09-13 19:53+0000\n"
-"Last-Translator: Tim Schulz <timschulz1998@yahoo.de>\n"
+"POT-Creation-Date: 2013-09-30 08:27+0000\n"
+"PO-Revision-Date: 2013-10-28 21:11+0000\n"
+"Last-Translator: Tobias B. <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-14 05:36+0000\n"
-"X-Generator: Launchpad (build 16761)\n"
+"X-Launchpad-Export-Date: 2013-10-29 05:00+0000\n"
+"X-Generator: Launchpad (build 16818)\n"
+"Language: de\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu ist nicht installiert. Bitte installieren Sie es, bevor Sie dieses "
 "Applet ausführen."
@@ -601,7 +603,8 @@ msgstr "Anwendungen"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
-msgstr "Befehl, um Ihre bevorzugte Kalenderanwendung zu starten (Mittelklick):"
+msgstr ""
+"Befehl, um Ihre bevorzugte Kalenderanwendung zu starten (Mittelklick):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
@@ -615,15 +618,15 @@ msgstr "Verhalten"
 
 #: ../Calendar/messages:101
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: ../Calendar/messages:105
 msgid "Faenza"
-msgstr ""
+msgstr "Faenza"
 
 #: ../Calendar/messages:107
 msgid "Custom"
-msgstr ""
+msgstr "Benutzerdefiniert"
 
 #: ../Calendar/messages:109
 msgid ""
@@ -656,7 +659,7 @@ msgstr ""
 
 #: ../Calendar/messages:116
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -680,11 +683,11 @@ msgstr ""
 
 #: ../CpuWatcher/messages:93
 msgid "in ms"
-msgstr ""
+msgstr "In Millisekunden"
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
-msgstr ""
+msgstr "Zeit für Refresh :"
 
 #: ../CpuWatcher/messages:98
 msgid ""
@@ -694,10 +697,15 @@ msgid ""
 "You can obtain an average of the main core\n"
 "(in the label) with a middle click on the icon."
 msgstr ""
+"Das ist das CpuWatcher-Applet.\n"
+"Es lässt Sie ein Auge auf die CPU-Last haben\n"
+"(gilt auch für jeden Kern im Untermenü !)\n"
+"Mit einem Mittelklick auf das Symbol\n"
+"können Sie sich einen Mittelwert anzeigen lassen."
 
 #: ../CpuWatcher/messages:100
 msgid "CPU Watcher"
-msgstr ""
+msgstr "CPU Watcher"
 
 #: ../Deluge/Deluge:211
 msgid "Deluge is not running, or is not responding to us."
@@ -803,7 +811,7 @@ msgstr "Mittelklick"
 
 #: ../Deluge/Deluge:361 ../Transmission/Transmission:521
 msgid "Quit"
-msgstr ""
+msgstr "Beenden"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -859,11 +867,11 @@ msgstr ""
 
 #: ../Gmail/Gmail:52
 msgid "No Subject"
-msgstr ""
+msgstr "Kein Betreff"
 
 #: ../Gmail/Gmail:119 ../Gmail/Gmail:125 ../Gmail/Gmail:134
 msgid "Please fill in your Gmail account."
-msgstr ""
+msgstr "Bitte tragen Sie ihre Gmail-Kontodaten ein."
 
 #: ../Gmail/Gmail:158
 msgid "Please, enter your Gmail username:"
@@ -900,7 +908,7 @@ msgstr "WARNUNG : Gmail-Benutzername oder Passwort eventuell falsch."
 
 #: ../Gmail/Gmail:407
 msgid "Error!"
-msgstr ""
+msgstr "Fehler !"
 
 #: ../Gmail/Gmail:440
 #, python-format
@@ -936,7 +944,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:548
 msgid "Write a mail"
-msgstr ""
+msgstr "Eine Email schreiben"
 
 #: ../Gmail/messages:15 ../YoutubeDl/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -948,15 +956,15 @@ msgstr "Keine"
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "Mit Standardhintergrund"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "Mit benutzerdefiniertem Hintergrund"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
-msgstr ""
+msgstr "Hintergrundfarbe, die in diesem Fall hinzugefügt werden soll"
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
@@ -1166,7 +1174,8 @@ msgstr "Abmessungen des Desklets (Breite x Höhe) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Anhängig von ihrem Fenstermanager können Sie es mit ALT + Linksklick bewegen."
 
@@ -1406,8 +1415,8 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu steuern.</"
-"b>\n"
+"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu "
+"steuern.</b>\n"
 "Es kann die <b>Download-Rate</b> auf dem Symbol abbilden.\n"
 "Ein <b>Mittelklick</b> auf das Symbol gibt ihnen Informationen über die "
 "derzeitigen Torrents (Sie können dieser Aktion einen Kurzbefehl zuweisen).\n"
@@ -1473,31 +1482,31 @@ msgstr ""
 
 #: ../Moon/Moon:80
 msgid "Monday"
-msgstr ""
+msgstr "Montag"
 
 #: ../Moon/Moon:80
 msgid "Tuesday"
-msgstr ""
+msgstr "Dienstag"
 
 #: ../Moon/Moon:80
 msgid "Wednesday"
-msgstr ""
+msgstr "Mittwoch"
 
 #: ../Moon/Moon:80
 msgid "Thursday"
-msgstr ""
+msgstr "Donnerstag"
 
 #: ../Moon/Moon:80
 msgid "Friday"
-msgstr ""
+msgstr "Freitag"
 
 #: ../Moon/Moon:80
 msgid "Saturday"
-msgstr ""
+msgstr "Samstag"
 
 #: ../Moon/Moon:80
 msgid "Sunday"
-msgstr ""
+msgstr "Sonntag"
 
 #: ../Moon/messages:89
 msgid "Show the moon for all the current week?"
@@ -1530,20 +1539,20 @@ msgstr ""
 
 #: ../Moon/messages:102
 msgid "Moon"
-msgstr ""
+msgstr "Mond"
 
 #: ../Notifications_history/Notifications_history:127
 msgid "No recent notification"
-msgstr ""
+msgstr "keine letzte Meldung"
 
 #: ../Notifications_history/Notifications_history:138
 #, python-format
 msgid "from %s at %s"
-msgstr ""
+msgstr "von %s bei %s"
 
 #: ../Notifications_history/Notifications_history:163
 msgid "Clear history"
-msgstr ""
+msgstr "Verlauf löschen"
 
 #: ../Notifications_history/messages:31 ../Screensaver_inhibitor/messages:31
 msgid ""
@@ -1559,27 +1568,27 @@ msgstr "Benachrichtigungen"
 
 #: ../Notifications_history/messages:93
 msgid "History size"
-msgstr ""
+msgstr "Verlaufsgröße"
 
 #: ../Notifications_history/messages:95
 msgid "Clear the history when clicking on the icon"
-msgstr ""
+msgstr "Den Verlauf löschen, wenn auf das Symbol geklickt wird"
 
 #: ../Notifications_history/messages:97
 msgid "Separated by a semi-colon ';'"
-msgstr ""
+msgstr "Durch ein Semikolon ';' getrennt"
 
 #: ../Notifications_history/messages:99
 msgid "Ignore notifications from:"
-msgstr ""
+msgstr "Ignoriere Meldungen von :"
 
 #: ../Notifications_history/messages:103
 msgid "Display another icon if there are new notifications"
-msgstr ""
+msgstr "Ein anderes Symbol bei neuen Meldungen zeigen"
 
 #: ../Notifications_history/messages:105
 msgid "Displayed when a new notification is received"
-msgstr ""
+msgstr "Anzeigen, wenn neue Meldung empfangen wurde"
 
 #: ../Notifications_history/messages:110
 msgid ""
@@ -1587,10 +1596,14 @@ msgid ""
 "Click on the icon to get a list of the last notifications.\n"
 " Middle-click to clear the history."
 msgstr ""
+"Diese Applet stellt eine Historie der eltzten Desktopmeldungen bereit.\n"
+"Klicken Sie auf das Symbol, um eine Liste der letzten Meldungen zu "
+"erhalten.\n"
+"Mittelklick, um die Historie zu löschen."
 
 #: ../Notifications_history/messages:112
 msgid "Notifications History"
-msgstr ""
+msgstr "Meldungs-Historie"
 
 #: ../Pidgin/Pidgin:416
 msgid "Conversations"
@@ -1752,23 +1765,23 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dieses Applet stellt eine \"Zitat des Tages\" Funktion aus einigen "
 "Internetquellen bereit, wie z.B. :\n"
-"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
-msgstr ""
+msgstr "Zitat"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Enable the screensaver"
-msgstr ""
+msgstr "Den Bildschirmschoner einschalten"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -1815,7 +1828,7 @@ msgstr ""
 
 #: ../Screensaver_inhibitor/messages:100
 msgid "Screensaver Inhibitor"
-msgstr ""
+msgstr "Bildschirmschoner-Hemmer"
 
 #: ../Translator/Translator:364
 msgid "To"
@@ -1831,11 +1844,11 @@ msgstr "Sprache wechseln"
 
 #: ../Translator/Translator:403
 msgid "scroll"
-msgstr ""
+msgstr "scrollen"
 
 #: ../Translator/Translator:416
 msgid "Translate from clipboard"
-msgstr ""
+msgstr "Aus der Zwsichenablage übersetzen"
 
 #: ../Translator/messages:95
 msgid "Languages"
@@ -2174,11 +2187,11 @@ msgstr ""
 
 #: ../Translator/messages:374
 msgid "Translator"
-msgstr ""
+msgstr "Übersetzer"
 
 #: ../Transmission/Transmission:129
 msgid "day"
-msgstr ""
+msgstr "Tag"
 
 #: ../Transmission/Transmission:294
 msgid "Transmission is not running, or is not responding to us."
@@ -2205,7 +2218,7 @@ msgstr "Seeden"
 
 #: ../Transmission/Transmission:332
 msgid "Connected peers:"
-msgstr ""
+msgstr "Verbundene Peers :"
 
 #: ../Transmission/Transmission:453
 msgid "You have to enable the Web client in the Transmisison's settings."
@@ -2214,7 +2227,7 @@ msgstr ""
 
 #: ../Transmission/messages:105
 msgid "Remaining time"
-msgstr ""
+msgstr "Verbleibende Zeit"
 
 #: ../Transmission/messages:110
 msgid ""
@@ -2515,10 +2528,12 @@ msgstr ""
 msgid ""
 "Enable thumbnail preview for Youtube, Flickr, ImageShack, and Digg searches ?"
 msgstr ""
+"Eine Thumbnail-Vorschau für Youtube-, Flickr-, ImageShack- und Digg-Suchen "
+"einschalten ?"
 
 #: ../WebSearch/messages:123
 msgid "Show search engine's logo as the icon on the results?"
-msgstr ""
+msgstr "Das Symbol der Suchmaschine in den Ergebnissen anzeigen ?"
 
 #: ../WebSearch/messages:126
 msgid ""
@@ -2538,10 +2553,31 @@ msgid ""
 "Scroll down to fetch the previous results\n"
 "Left-click on the main icon to show search stats"
 msgstr ""
+"Dieses Applet stellt eine Schnittstelle für einige Suchmaschinen wie\n"
+"Google, Bing, Teoma, Yahoo!, Youtube, Flickr, Wikipedia und ImageShack "
+"bereit.\n"
+"Um die Suchmaschine auszuwählen, können Sie :\n"
+"1. Auf das Hauptsymbol rechtsklicken ->WebSearch -> (Suchamschine "
+"auswählen)\n"
+"2. Rechtsklick -> Dieses Applet konfigurieren -> Konfiguration -> "
+"Suchmaschine\n"
+"3. Über dem Symbol hoch- oder runterscrollen (Nur bei der ersten Suche)\n"
+"Sie können auf drei Arten suchen :\n"
+"1. Mittelklick auf das Hauptsymbol\n"
+"2. Linksklick auf das Hauptsymbol (direkt nach der Auswahl der "
+"Suchmaschine)\n"
+"Den Suchbegriff eingeben und bestätigen. Jedes Ergebnis wird als Untersymbol "
+"angezeigt.\n"
+"Linksklick für die Darstellung des Ergebnisses im Standardbrowser.\n"
+"Mittelklick auf das Untersymbol jedes Ergebnisses, um seine Beschreibung "
+"anzuzeigen\n"
+"Hochscrollen, um die nächsten Ergebnisse anzuzeigen\n"
+"Runterscrollen, um die vorherigen Ergebnisse anzuzeigen\n"
+"Linksklick auf das Hauptsymbol, um die Suchstatistiken anzuzeigen"
 
 #: ../WebSearch/messages:128
 msgid "Web Search"
-msgstr ""
+msgstr "Websuche"
 
 #: ../WindowsKiller/messages:92
 msgid ""
@@ -2563,7 +2599,7 @@ msgstr ""
 
 #: ../WindowsKiller/messages:94
 msgid "Windows Killer"
-msgstr ""
+msgstr "Windows Killer"
 
 #: ../Xchat/Xchat:285
 msgid "Channels"
@@ -2576,19 +2612,20 @@ msgstr ""
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
-msgstr ""
+msgstr "Alle Känale"
 
 #: ../Xchat/messages:121
 msgid "Silent Mode"
-msgstr ""
+msgstr "Stiller Modus"
 
 #: ../Xchat/messages:125
 msgid "Enable the silent mode at startup:"
-msgstr ""
+msgstr "Den stillen Modus beim Starten einschalten :"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
 msgstr ""
+"Den stillen Modus für einen bestimmten Kanal beim Starten einschalten :"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2772,7 +2809,7 @@ msgid ""
 "(currently in the users home directory)."
 msgstr ""
 "Der Pfad zum Speichern der URL-Liste. Leer lassen, um den voreingestellten "
-"zu verwenden (im Augenblick das Home-Verzeichnis des Benutzers)."
+"zu verwenden (aktuell im persönlichen Ordner des Benutzers)."
 
 #: ../YoutubeDl/messages:149
 msgid "Save URL List to this directory:"
@@ -2814,7 +2851,8 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Nicht überschreiben (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
+msgid ""
+"Use the title of the video in the file name used to download the video"
 msgstr ""
 "Den Titel des Videos im Dateinamen benutzen, der zum Download des Videos "
 "verwendet wurde."
@@ -2907,7 +2945,8 @@ msgstr ""
 
 #: ../YoutubeDl/messages:227
 msgid "Use the Username and Passwrod authentication process."
-msgstr "Bitte benutzen Sie den Anmeldename und Passwort Autorisierungsprozess."
+msgstr ""
+"Bitte benutzen Sie den Anmeldename und Passwort Autorisierungsprozess."
 
 #: ../YoutubeDl/messages:229
 msgid "Username/Password"
