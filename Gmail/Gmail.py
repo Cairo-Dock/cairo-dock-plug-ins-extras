@@ -40,6 +40,19 @@ import webbrowser
 
 import SVGmaker # home-made module to edit SVG counter emblem
 
+# https://wiki.python.org/moin/EscapingHtml
+html_escape_table = {
+    "&": "&amp;",
+    '"': "&quot;",
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;",
+}
+
+def html_escape(text):
+    """Produce entities within text."""
+    return "".join(html_escape_table.get(c,c) for c in text)
+
 class Menu(gtk.Menu):
 
     def __init__(self, inbox):
@@ -53,7 +66,8 @@ class Menu(gtk.Menu):
             elif len(mail['title']) > 80:
                 mail['title'] = mail['title'][:77] + '...'
             # create markups
-            string = '<b>'+mail['author']+':</b>\n'+mail['title']
+            string = '<b>' + html_escape(mail['author']) + ':</b>\n' + html_escape(mail['title'])
+            
             menu_item = gtk.ImageMenuItem()
             # the true label is set after with set_markup()
             menu_item.set_label('')
