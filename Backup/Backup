@@ -1,0 +1,529 @@
+#!/usr/bin/perl
+
+
+#This program is a part of an applet for Cairo-Dock ( http://www.glx-dock.org/ )
+# it use to create backup of files/folder
+# be sure all is copy before to delete original file
+#
+#Copyright (C) 2014  ours_en_pluche
+#
+# contact : sebastien ( ! ) delbarre ( at ) gmail ( ! ) com
+#
+#This program is free software: you can redistribute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# version 0.01
+
+### liste des uses
+use strict;
+use warnings;
+# permet d obtenir le nom et le chemin du fichier
+use File::Basename;
+# permet de copier des fichiers ou de creer des dossiers
+use File::Copy;
+# permet de faire du md5
+use Digest::MD5;
+# permet de gerer DBus
+use Net::DBus;
+# permet de faire un  while ( 1 ) avec DBus
+use Net::DBus::Reactor;
+
+# on recupere le nom de l executable
+my $applet = $0;
+# on retire ./ devant ( celui du chmod +x )
+$applet =~ s/^\.\///;
+# la verbose permet d'afficher du texte dans un terminal d execution de CD, c'est activé via le clic droit sur l'applet
+# error prendra la valeur 1 si mkdir ou copy ont des soucis et permettra de logger
+my ($verbose,$error) = (0,0);
+# varibles :
+# setup = fichier de conf
+# list = liste des fichiers a save
+# file_db/error/log = fichier de reglage et de sauvegarde
+my (%setup,@list,$file_db,$file_error,$file_log);
+
+# ecriture  dans le terminal du demarrage de l'applet
+print "[".$applet."] Lancement de l\'applet\n";
+
+# on cree une session de DBus
+my $bus=Net::DBus->session();
+# on se connecte a CD
+my $service=$bus->get_service("org.cairodock.CairoDock");
+# on obtient le service de l'applet
+my $object=$service->get_object("/org/cairodock/CairoDock/".$applet, "org.cairodock.CairoDock.applet");
+
+# can get conf
+sub get_conf {
+	# open file setup
+	open(FIC,$ENV{HOME}."/.config/cairo-dock/current_theme/plug-ins/".$applet."/".$applet.".conf");
+	# we read all file
+	while (<FIC>) {
+		# on recupere ici le chemin du dossier de sauvegarde
+		if ( $_ =~ /^dir\spath_save=(.*)$/ ) {
+			$setup{"dir_save"} = $1;
+		} elsif ( $_ =~ /^timelength=(.*)$/ ) {
+			$setup{"duration"} = $1;
+		}
+	}
+	#on ferme le fichier
+	close(FIC);
+	# on definit les 3 fichiers declarés au debut
+	$file_db = $setup{"dir_save"}."/Cairo-Dock_Applet_Backup_list.txt";
+	$file_error = $setup{"dir_save"}."/Cairo-Dock_Applet_Backup_error.txt";
+	$file_log = $setup{"dir_save"}."/Cairo-Dock_Applet_Backup_log.txt";
+}
+
+### cette routine permet d obtenir la liste des fichiers, elle sera mise a jour a chaque lancement d'une sauvegarde
+### ou d une demande du nombre d'entrees
+sub get_list {
+	# si le fichier de base de données n existe pas, on le cree
+	if ( ! -e $file_db ) { 
+		`touch $file_db`;
+	}
+	# on vient lire ici le fichier de DB qu'on stocke dans @list
+	open(FIC,$file_db);
+	@list = <FIC>;
+	close(FIC);
+}
+
+### recuperation du md5 d un fichier
+sub get_md5 {
+	### le nom du fichier
+	my $tmp = shift;
+	### on cree un md5 vide
+	my $ctx = Digest::MD5->new;
+	### on nomme le fichier et on l'ouvre
+	my $data;
+	open($data,$tmp);
+	### on lit en mode binaire le fichier, necessaire pour md5
+	binmode($data);
+	# on lit le fichier jusqu'au bout
+	while(<$data>) {
+		# on ajoute chaque ligne au md5
+		$ctx->add($_);
+	}
+	# on ferme le fichier
+	close($data);
+	# on retourne le md5 en hexa
+	return $ctx->hexdigest;
+}
+
+### on affiche ici via DBus, un message sur l'applet
+sub show_dialog {
+	my $message = shift;
+	$object->ShowDialog($message,$setup{"duration"});
+}
+
+# compte le nombre d'entree dans le fichier de save. 1entree != 1 fichier car 1 entrée peut etre un dossier contenant plusieurs fichiers
+sub how_much {
+	&get_conf;
+	&get_list;
+	my $count = @list;
+	&show_dialog("Le Backup contient ".$count." entrees");
+}
+
+# cacule la date du dernier backup, pour ce faire, 
+sub last_backup {
+	&get_conf;
+	### on ouvre le fichier de log
+	open(FIC,$file_log);
+	my @tmp = <FIC>;
+	close(FIC);
+	# on stocke la derniere ligne dans la variable et on nettoie
+	my $last_update = $tmp[-1];
+	$last_update =~ s/(.*)\/(.*)\/(.*)\s-.*/$1\/$2/;
+	# on affiche le resultat
+	$object->SetQuickInfo($last_update);
+}
+
+# log des erreurs, on met la variable a 1 pour qu'elle soit affichée
+# les erreurs peuvent etre soit en copy soit en mkdir
+sub log_error {
+	my $tmp = shift;
+	$error = 1;
+	# on envoie vers le fichier de log des erreurs
+	&logg($tmp,$file_error);
+}
+
+# on log les nouveaux fichiers ou les fichiers mise a jour
+sub log_file {
+	my $tmp = shift;
+	&logg($tmp,$file_log);
+}
+
+# on ecris dans les fichiers soient d erreur, soit d historique
+sub logg {
+	# on recupere le texte et le fichier dans lequel il faut ecrire
+	my ($tmp,$file) = @_;
+	# le temps
+	my ($sec,$min,$hour,$day,$mon,$year,undef,undef,undef) = localtime(time);
+	$year += 1900;
+	$mon += 1;
+	# si le fichier n existe pas, on le cree
+	if ( ! -e $file ) { `touch $file`; }
+	# on ecrit
+	my $text = $day."/".$mon."/".$year." - ".$hour.":".$min.":".$sec." : ".$tmp;
+	`echo $text >> $file`;
+}
+
+### creation des sous dossiers.
+sub mksubdir {
+	# on recupere le nom du dossier
+	my $repertoire = shift;
+	my $old = $setup{"dir_save"}."/";
+	### on foreach le nom du fichier de maniere a verifier que l'arborescence complete existe
+	### par exemple : /media/moi/save
+	### on va verifier si /media existe si oui, suivant, si non, on le cree
+	### ensuite, on va passer a /media/moi
+	### et ainsi de suite
+	foreach my $tmp2 ( split(/\//,$repertoire) ) {
+		### si le fichier dans lequel on va copier n existe pas
+		if ( ! -d $old.$tmp2 ) {
+			### on le copie dans une nouvelle variable
+			my $tmp3 = $old.$tmp2;
+			### on remplaces les espaces par un "\ " ( soucis lié a bash )
+			$tmp3 =~ s/\s/\\ /g;
+			### on remplace les doubles antislash qui peuvent etre crees par la commande precedente
+			# et du au foreach par un simple espace avec un antislash
+			$tmp3 =~ s/\\\s\\\s/\\ /g;
+			### on cree le dossier
+			mkdir($tmp3) or &log_error("mkdir : ".$tmp2." : ".$!);
+			### on stockes la nouvelle variable, de maniere a pouvoir continuer a suivre les sous dossiers
+			$old = $old."/".$tmp2."/";
+			### on vire les double / pouvant s etre crees
+			$old =~ s/\/\//\//g;
+		} else {
+			### si la variable n est pas vide, permet de se proteger d'un "/"
+			if ( $tmp2 ne "" ) {
+				# on rajoute le chemin suivant
+				$old = $old.$tmp2."/";
+				### on vire les double // pouvant s etre crée
+				$old =~ s/\/\//\//g;
+			}
+		}
+	}
+	### on renvoit le nom du dossier ainsi crée
+	return $old;
+}
+
+# la copie de fichier et la verification de mise a jour
+sub copy_file {
+	# on recupere le nom du fichier
+	my $tmp = shift;
+	# si le fichier n existe pas ou n est pas mis a jour
+	my $dontexist = 1;
+	# si le fichier n est pas a mettre a jour, ou a ne rien faire, il est a cree, ce sera utilise pour le fichier de log
+	my $type = "creation";
+	# si le fichier existe
+	if ( -e $setup{"dir_save"}.$tmp ) {
+		# on obtient le md5 de l'actuel et de celui du dossier de save
+		my $digest1 = &get_md5($tmp);
+		my $digest2 = &get_md5($setup{"dir_save"}.$tmp);
+		# s ils sont identique, on met a 0 et donc, on ne le copiera pas
+		# sinon, c est une mise a jour du fichier qui aura lieu
+		if ( $digest1 eq $digest2 ) { $dontexist = 0; } else { $type = "mise a jour"; }
+	}
+	# si le fichier n existe pas ou n est pas a jour
+	if ( $dontexist ) {
+		# on separe le nom du fichier et son extension de son chemin
+		my ($repertoire,$nom_fichier) = $tmp =~ /(.+[\/\\])([^\/\\]+)$/;
+		# on cree le repertoire ou on ne fera rien s il existe
+		my $old = &mksubdir($repertoire);
+		# on recree le nom du fichier en fonction du resultat obtenu par le mksubdir
+		my $tmp_out = $old.$nom_fichier;
+		# on remplace les espaces par des "\ " pour eviter les soucis avec bash
+		$tmp =~ s/\s/\\ /g;
+		$tmp_out =~ s/\s/\\ /g;
+		### on remplace les doubles antislash qui peuvent etre crees par la commande precedente
+		# et du au foreach par un simple espace avec un antislash
+		$tmp =~ s/\\\s\\\s/\\ /g;
+		$tmp_out =~ s/\\\s\\\s/\\ /g;
+		# on log
+		&log_file($type." de ".$tmp);
+		# on copie ou on ecrit dans le fichier des erreurs et on l affichera a la fin de la sauvegarde
+		copy($tmp,$tmp_out) or &log_error("copy : ".$tmp." : ".$!);
+	}
+}
+
+#quand on clic gauche sur l icone, on cree une sauvegarde
+# mais pour eviter les clics intempestifs, on demande a l utilisateur
+# s il veut vraiment sauvegarder
+sub on_answer_dialog {
+	if ( $verbose ) { print "[".$applet."] on_answer_dialog\n"; }
+	my $arg = shift;
+	if ( $arg == 0 ) {
+		# 0 = appui sur Ok
+		# 1 = appui sur Cancel
+		&make_update;
+	}
+}
+
+### on construit le menu
+### rien de special ici, voir http://glx-dock.org/ww_page.php?p=Documentation&lang=es#22-AddMenuItems
+### pour plus d infos sur la creation du menu
+sub on_build_menu {
+	if ( $verbose ) { print "[".$applet."] on_build_menu\n"; }
+	my %menu_cd = (
+		"type" => 4,
+		"label" => "Verbose",
+		"icon" => $ENV{"HOME"}."/.config/cairo-dock/third-party/Backup/icon",
+		"id" => 1,
+		"menu" => -1,
+		"tooltip" => "activate or desactivate verbose in terminal",
+		"state" => 0
+	);
+	my %menu_applet = (
+		"type" => 1,
+		"label" => "Commande",
+		"icon" => $ENV{"HOME"}."/.config/cairo-dock/third-party/Backup/icon",
+		"id" => 2,
+		"menu" => 0
+	);
+	my %menu_executer = (
+		"type" => 0,
+		"label" => "Sauvegarder",
+		"icon" => $ENV{"HOME"}."/.config/cairo-dock/third-party/Backup/icon",
+		"id" => 3,
+		"menu" => 2,
+		"tooltip" => "Effectue une sauvegarde"
+	);
+	my %menu_last = (
+		"type" => 0,
+		"label" => "Derniere Sauvegarde",
+		"icon" => $ENV{"HOME"}."/.config/cairo-dock/third-party/Backup/icon",
+		"id" => 4,
+		"menu" => 2,
+		"tooltip" => "Date de la derniere sauvegarde"
+	);
+	my %menu_nombre_entree = (
+		"type" => 0,
+		"label" => "Nombre d element",
+		"icon" => $ENV{"HOME"}."/.config/cairo-dock/third-party/Backup/icon",
+		"id" => 5,
+		"menu" => 2,
+		"tooltip" => "Nombre d element a sauvegarder"
+	);
+	# ne pas oublier les \, on fait appel a la ref des variables et non aux variables
+	#array(0x0000) par exemple
+	my @menu = (\%menu_cd,\%menu_applet,\%menu_executer,\%menu_last,\%menu_nombre_entree);
+	$object->AddMenuItems(\@menu);
+}
+
+### on fait la mise a jour
+sub make_update {
+	# on recupere la conf
+	&get_conf;
+	# on affiche le debut du save
+	&show_dialog("Debut de la sauvegarde");
+	# on log le debut du save
+	&log_file("Debut de la sauvegarde");
+	# on demande l attention sur l icone
+	$object->DemandsAttention(1,"");
+	# on obtient la liste des fichiers
+	&get_list;
+	# si le dossier contenu dans la conf n existe pas, on s arrete la et on affiche l erreur
+	if ( ! -d $setup{"dir_save"} ) {
+		&show_dialog("il est impossible de faire une sauvegarde\nle dossier de destination n existe pas.");
+	} else {
+		# on foreach la liste des elements a sauvegarder
+		foreach my $tmp (@list) {
+			# on vire le caractere de fin de ligne
+			$tmp =~ s/\n//g;
+			# si c est un dossier
+			if ( -d $tmp ) {
+				# on met dans old le dossier de destination
+				my $old = $setup{"dir_save"}."/";
+				# on obtient la liste complete de l arborescence
+				my $long_list = `find $tmp`;
+				# on la split de maniere a traiter 1 par 1 tous les fichiers
+				foreach my $tmp2 (split(/\n/,$long_list)) {
+					# si c est un dossier
+					if ( -d $tmp2 ) {
+						# on va aller verifier que l arborescence existe
+						my $old = &mksubdir($tmp2);
+					# sinon
+					} else {
+						 # on copie les fichiers ou verifie qu ils sont a jour
+						&copy_file($tmp2);
+					}
+				}
+			# sinon
+			} else {
+				# on copie les fichiers ou verifie qu'ils sont a jour
+				&copy_file($tmp);
+			}
+		}
+		# on affiche un dialogue pour la fin de la sauvegarde
+		&show_dialog("Fin de la sauvegarde");
+		# on ecrit dans le fichier de log la fin de la sauvegarde
+		&log_file("Fin de la sauvegarde");
+		# s il y a des erreurs, 
+		if ( $error ) {
+			# on affiche le dialogue et on log dans le fichier que des erreurs ont été trouvées
+			&show_dialog("Des erreurs ont ete trouves\n( voir le fichier erreur dans votre dossier de sauvegarde )");
+			&log_file("Des erreurs ont ete trouves\n( voir le fichier erreur dans votre dossier de sauvegarde )");
+			# on remet a 0 les erreurs, en attendant le prochaine update
+			$error = 0;
+		}
+	}
+	#on desactive la demande d attention
+	$object->DemandsAttention(0,"");
+}
+
+# event de clic gauche
+sub on_click {
+	if ( $verbose ) { print "[".$applet."] on_click\n"; }
+	# en cas de clic et pour eviter de faire une sauvegarde en cas de clic intempestif,
+	# on demande a l utilisateur s il veut vraiment effectuer une sauvegarde
+	# s il repond positivement, alors on la fait
+	# PopupDialog necessite d envoyer 2 variables, mais comme la deuxieme est pour
+	# les text-entry, list, scale et que ce n'est pas notre cas, on la laisse vide
+	my %dialog = (
+		"message" => "Voulez vous effectuer une sauvegarde ?",
+		"buttons"=> "ok;cancel"
+	);
+	my %widget = (
+	
+	);
+	# ne pas oublier les "\" car on fait appel aux refs des variables et non a elles memes
+	$object->PopupDialog(\%dialog,\%widget);
+}
+
+# si on depose un fichier directement sur l icone
+sub on_drop_data {
+	my $arg = shift;
+	if ( $verbose ) { print "[".$applet."] on_drop_data\n"; }
+	# si c est bien un fichier ou dossier ( car on peut aussi deplacer du texte ou une url )
+	if ( $arg =~ /^file:\/\/\/.*/ ) {
+		# on prend le fichier de conf
+		&get_conf;
+		my $arg1 = $arg;
+		### permet de travailler sur les noms en unicode, evite les soucis lors des copy ou mkdir
+		$arg1 =~ s/%([0-9a-f]{2})/pack('C',hex($1))/segi;
+		# on retire le file:\\\ present au debut lors d un drop
+		$arg1 =~ s/^file\:\/\///g;
+		# si le dossier existe
+		# permet aussi d eviter lors d un drop d'un texte commencant par file:\\\
+		if ( (-d $arg1 ) ||  ( -e $arg1 ) ) {
+			# variable qui passera a 1 en cas de doublon
+			my $doublon = 0;
+			# on prend la liste
+			&get_list;
+			# on la foreach
+			foreach my $tmp (@list) {
+				# on vire le caractere de fin de ligne
+				$tmp =~ s/\n//g;
+				# si le fichier existe deja alors on met la variable a 1
+				if ( $tmp eq $arg1 ) { $doublon = 1; }
+			}
+			# si le fichier est deja present dans la liste :
+			if ( $doublon ) {
+				if ( $verbose ) { print "[".$applet."] doublon\n"; }
+				# on affiche le texte
+				&show_dialog("Ce fichier est deja present\n".$arg1);
+			#sinon
+			} else {
+				if ( $verbose ) { print "[".$applet."] ajout de ".$arg1."\n"; }
+				# on affiche le texte d ajout
+				&show_dialog("ajout de\n".$arg1);
+				# on l ajoute
+				`echo $arg1 >> $file_db`;
+			}
+		# sinon
+		} else {
+			if ( $verbose ) { print "[".$applet."] unknown format\n"; }
+			# on affiche le texte comme quoi le format n est pas reconnu
+			&show_dialog("format non reconnu\n".$arg1);
+		}
+	# sinon 
+	} else {
+		if ( $verbose ) { print "[".$applet."] not a dir or a file\n"; }
+		# on affiche que ce n est pas prise en charge
+		&show_dialog("format de fichier/dossier non reconnu\n".$arg);
+	}
+}
+
+# si le menu a été crée et une entrée choisie
+sub on_menu_select {
+	if ( $verbose ) { print "[".$applet."] on_menu_select\n"; }
+	my $arg = shift;
+	# on active la verbose qui permet d ecrire dans le terminal ou est lancé Cairo-Dock
+	if ( $arg == 0 ) {
+		if ( $verbose ) {
+			$verbose = 0;
+		} else {
+			$verbose = 1;
+		}
+	# on active la commande de sauvegarde
+	# comme sur le on clic, on demande confirmation
+	} elsif ( $arg == 2 ) {
+		my %dialog = (
+			"message" => "Voulez vous effectuer une sauvegarde ?",
+			"buttons"=> "ok;cancel"
+		);
+		my %widget = (
+		
+		);
+		$object->PopupDialog(\%dialog,\%widget);
+	# on affiche sur l icone la date de la derniere sauvegarde
+	} elsif ( $arg == 3 ) {
+		&last_backup;
+	# on affiche en dialogue combien d element sont mis dans le fichier de sauvegarde
+	} elsif ( $arg == 4 ) {
+		&how_much;
+	}
+}
+
+# en cas d appui milieu de la souris
+# on affiche combien d element sont mis dans le fichier de sauvegarde
+sub on_middle_click {
+	if ( $verbose ) { print "[".$applet."] on_middle_click\n"; }
+	&how_much;
+}
+
+# en cas de demande de recharger le module
+#pas vraiment utile, car je charge le fichier de conf a chaque fois qu'une fonction l exige et non au chargement de l'applet
+sub on_reload_module {
+	if ( $verbose ) { print "[".$applet."] on_reload_module\n"; }
+	# on prend le fichier de conf
+	&get_conf;
+}
+
+# si on scroll la souris sur l icone, on affiche sur l icone la date du dernier backup
+sub on_scroll {
+	if ( $verbose ) { print "[".$applet."] on_scroll\n"; }
+	&last_backup;
+}
+
+# en cas de fermeture de Cairo-Dock, cela permet d arreter l'applet
+sub on_stop_module {
+	print "[".$applet."] on_stop_module\n";
+	exit;
+}
+
+# evenement captés par DBus et leurs routines respectives
+$object->connect_to_signal("on_answer_dialog", \&on_answer_dialog);
+$object->connect_to_signal("on_build_menu", \&on_build_menu);
+$object->connect_to_signal("on_click", \&on_click);
+$object->connect_to_signal("on_drop_data", \&on_drop_data);
+$object->connect_to_signal("on_menu_select", \&on_menu_select);
+$object->connect_to_signal("on_middle_click", \&on_middle_click);
+$object->connect_to_signal("on_reload_module", \&on_reload_module);
+$object->connect_to_signal("on_scroll", \&on_scroll);
+$object->connect_to_signal("on_stop_module", \&on_stop_module);
+
+# boucle infinie permettant de continuer a scruter DBus, jusqu'a reception
+# de l event on_stop
+my $reactor=Net::DBus::Reactor->main();
+$reactor->run();
+
+exit 1;
