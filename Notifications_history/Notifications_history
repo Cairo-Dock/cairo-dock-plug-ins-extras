@@ -26,6 +26,19 @@ from time import localtime, strftime
 from os.path import abspath
 from CDApplet import CDApplet, _
 
+# https://wiki.python.org/moin/EscapingHtml
+html_escape_table = {
+    "&": "&amp;",
+    '"': "&quot;",
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;",
+}
+
+def html_escape(text):
+    """Produce entities within text."""
+    return "".join(html_escape_table.get(c,c) for c in text)
+
 ####################
 ### Applet class ###
 ####################
@@ -132,10 +145,10 @@ class Applet(CDApplet):
 			for n in self.notifications:
 				if i != 0:
 					msg += '\n'
-				msg += '<b>' + n['summary'] + '</b>'
+				msg += '<b>' + html_escape(n['summary']) + '</b>'
 				if len(n['body']) > 0:
-					msg += '\n' + n['body']
-				msg += '\n  <i>' + (_('from %s at %s') % (n['app_name'], n['time'])) + '</i>'
+					msg += '\n' + html_escape(n['body'])
+				msg += '\n  <i>' + (_('from %s at %s') % (html_escape(n['app_name']), n['time'])) + '</i>'
 				
 				i += 1
 				if i == size:
