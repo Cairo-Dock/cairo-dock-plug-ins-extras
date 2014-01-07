@@ -60,14 +60,17 @@ class Menu(gtk.Menu):
 
         # get all mail from inbox
         for mail in inbox:
+            # create label menu with markups
+            string = '<b>' + html_escape(mail['author']) + ':</b>\n'
+
             # check if mail has subject / title
             if mail['title'] == None or len(mail['title']) == 0:
-                mail['title'] = '<i>(' + _('No Subject') + ')</i>'
+                string += '<i>(' + _('No Subject') + ')</i>'
             elif len(mail['title']) > 80:
-                mail['title'] = mail['title'][:77] + '...'
-            # create markups
-            string = '<b>' + html_escape(mail['author']) + ':</b>\n' + html_escape(mail['title'])
-            
+                string += html_escape(mail['title'][:77]) + '...'
+            else:
+                string += html_escape(mail['title'])
+
             menu_item = gtk.ImageMenuItem()
             # the true label is set after with set_markup()
             menu_item.set_label('')
