@@ -7,22 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-09-30 08:27+0000\n"
 "PO-Revision-Date: 2013-04-06 09:21+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-10-01 05:23+0000\n"
 "X-Generator: Launchpad (build 16774)\n"
-"Language: es\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu no está instalado. Instálelo antes de ejecutar esta miniaplicación."
 
@@ -404,8 +402,7 @@ msgstr ""
 #: ../Twitter/messages:61 ../WebSearch/messages:59
 #: ../WindowsKiller/messages:61 ../Xchat/messages:61
 msgid "Choose a decoration theme for this desklet:"
-msgstr ""
-"Seleccione un tema de decoración para este complemento del escritorio:"
+msgstr "Seleccione un tema de decoración para este complemento del escritorio:"
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
 #: ../CpuWatcher/messages:63 ../Deluge/messages:63 ../Gmail/messages:69
@@ -472,8 +469,7 @@ msgstr "Desplazamiento izquierdo:"
 #: ../Twitter/messages:73 ../WebSearch/messages:71
 #: ../WindowsKiller/messages:73 ../Xchat/messages:73
 msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición superior de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición superior de los dibujos."
 
 #: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
 #: ../CpuWatcher/messages:75 ../Deluge/messages:75 ../Gmail/messages:81
@@ -493,8 +489,7 @@ msgstr "Desplazamiento superior:"
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../CpuWatcher/messages:79 ../Deluge/messages:79 ../Gmail/messages:85
@@ -514,8 +509,7 @@ msgstr "Desplazamiento derecho:"
 #: ../Twitter/messages:81 ../WebSearch/messages:79
 #: ../WindowsKiller/messages:81 ../Xchat/messages:81
 msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr ""
-"en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
+msgstr "en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
 
 #: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
 #: ../CpuWatcher/messages:83 ../Deluge/messages:83 ../Gmail/messages:89
@@ -770,8 +764,8 @@ msgstr "Reanudar todos los torrents"
 msgid "Torrents info"
 msgstr "Información de torrents"
 
-#: ../Deluge/Deluge:356 ../Gmail/Gmail:545 ../KTorrent/KTorrent:334
-#: ../Notifications_history/Notifications_history:163
+#: ../Deluge/Deluge:356 ../Gmail/Gmail:564 ../KTorrent/KTorrent:334
+#: ../Notifications_history/Notifications_history:176
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Translator/Translator:416 ../Transmission/Transmission:516
 #: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/YoutubeDl:304
@@ -823,77 +817,77 @@ msgid ""
 "downloading it immediately."
 msgstr ""
 
-#: ../Gmail/Gmail:52
+#: ../Gmail/Gmail:68
 msgid "No Subject"
 msgstr ""
 
-#: ../Gmail/Gmail:119 ../Gmail/Gmail:125 ../Gmail/Gmail:134
+#: ../Gmail/Gmail:138 ../Gmail/Gmail:144 ../Gmail/Gmail:153
 msgid "Please fill in your Gmail account."
 msgstr ""
 
-#: ../Gmail/Gmail:158
+#: ../Gmail/Gmail:177
 msgid "Please, enter your Gmail username:"
 msgstr "Introduzca su nombre de usuario de Gmail:"
 
-#: ../Gmail/Gmail:166
+#: ../Gmail/Gmail:185
 msgid "Please, enter your Gmail password:"
 msgstr "Introduzca su contraseña de Gmail:"
 
-#: ../Gmail/Gmail:275
+#: ../Gmail/Gmail:294
 msgid "WARNING: there was an error reading XML content."
 msgstr "AVISO: hubo un error al leer el contenido XML."
 
-#: ../Gmail/Gmail:298
+#: ../Gmail/Gmail:317
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 
-#: ../Gmail/Gmail:313
+#: ../Gmail/Gmail:332
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr ""
 
-#: ../Gmail/Gmail:321
+#: ../Gmail/Gmail:340
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 
-#: ../Gmail/Gmail:334
+#: ../Gmail/Gmail:353
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 
-#: ../Gmail/Gmail:407
+#: ../Gmail/Gmail:426
 msgid "Error!"
 msgstr ""
 
-#: ../Gmail/Gmail:440
+#: ../Gmail/Gmail:459
 #, python-format
 msgid "You have %s new emails"
 msgstr "Tiene %s mensajes nuevos"
 
-#: ../Gmail/Gmail:442
+#: ../Gmail/Gmail:461
 msgid "You have 1 new email"
 msgstr "Tiene un mensaje nuevo"
 
-#: ../Gmail/Gmail:534
+#: ../Gmail/Gmail:553
 msgid "Sorry, there was no input!"
 msgstr ""
 
-#: ../Gmail/Gmail:543
+#: ../Gmail/Gmail:562
 msgid "Add or change subscription"
 msgstr "Añadir o cambiar suscripción"
 
-#: ../Gmail/Gmail:544
+#: ../Gmail/Gmail:563
 msgid "Use this to add or change your Gmail account details."
 msgstr "Use esto para añadir o cambiar sus detalles de cuenta de Gmail."
 
-#: ../Gmail/Gmail:546
+#: ../Gmail/Gmail:565
 msgid "Check inbox now"
 msgstr ""
 
-#: ../Gmail/Gmail:547
+#: ../Gmail/Gmail:566
 msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
-#: ../Gmail/Gmail:548
+#: ../Gmail/Gmail:567
 msgid "Write a mail"
 msgstr ""
 
@@ -1106,8 +1100,7 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1419,16 +1412,16 @@ msgstr ""
 msgid "Moon"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:127
+#: ../Notifications_history/Notifications_history:140
 msgid "No recent notification"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:138
+#: ../Notifications_history/Notifications_history:151
 #, python-format
 msgid "from %s at %s"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:163
+#: ../Notifications_history/Notifications_history:176
 msgid "Clear history"
 msgstr ""
 
@@ -1626,9 +1619,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
@@ -2576,8 +2569,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr ""
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr ""
 
 #: ../YoutubeDl/messages:169

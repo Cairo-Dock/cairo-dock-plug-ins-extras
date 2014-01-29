@@ -7,20 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-09-30 08:27+0000\n"
 "PO-Revision-Date: 2013-10-20 01:50+0000\n"
 "Last-Translator: Wonderfulheart <Unknown>\n"
 "Language-Team: Italian <LL@li.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-10-21 04:42+0000\n"
 "X-Generator: Launchpad (build 16807)\n"
-"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -207,8 +205,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
-"Alt+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
+"+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../CpuWatcher/messages:29 ../Deluge/messages:29 ../Gmail/messages:35
@@ -799,8 +797,8 @@ msgstr "Riavvia tutti i torrent"
 msgid "Torrents info"
 msgstr "Informazioni sui torrent"
 
-#: ../Deluge/Deluge:356 ../Gmail/Gmail:545 ../KTorrent/KTorrent:334
-#: ../Notifications_history/Notifications_history:163
+#: ../Deluge/Deluge:356 ../Gmail/Gmail:564 ../KTorrent/KTorrent:334
+#: ../Notifications_history/Notifications_history:176
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Translator/Translator:416 ../Transmission/Transmission:516
 #: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/YoutubeDl:304
@@ -862,83 +860,83 @@ msgstr ""
 "<b>Rilasciare un file torrent</b> sull'icona per aggiungerlo alla lista di "
 "scaricamento ed iniziare immediatamente il download."
 
-#: ../Gmail/Gmail:52
+#: ../Gmail/Gmail:68
 msgid "No Subject"
 msgstr "Nessun Oggetto"
 
-#: ../Gmail/Gmail:119 ../Gmail/Gmail:125 ../Gmail/Gmail:134
+#: ../Gmail/Gmail:138 ../Gmail/Gmail:144 ../Gmail/Gmail:153
 msgid "Please fill in your Gmail account."
 msgstr "Per favore, compila nel tuo account Gmail."
 
-#: ../Gmail/Gmail:158
+#: ../Gmail/Gmail:177
 msgid "Please, enter your Gmail username:"
 msgstr "Per favore, inserisci il tuo nome utente Gmail:"
 
-#: ../Gmail/Gmail:166
+#: ../Gmail/Gmail:185
 msgid "Please, enter your Gmail password:"
 msgstr "Per favore, inserisci la tua password Gmail:"
 
-#: ../Gmail/Gmail:275
+#: ../Gmail/Gmail:294
 msgid "WARNING: there was an error reading XML content."
 msgstr "ATTENZIONE: c'è stato un errore di lettura del contenuto XML."
 
-#: ../Gmail/Gmail:298
+#: ../Gmail/Gmail:317
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 "ATTENZIONE: l'applet Gmail non è riuscita a connettersi al feed Gmail atom."
 
-#: ../Gmail/Gmail:313
+#: ../Gmail/Gmail:332
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr "ATTENZIONE: il feed Gmail atom è mal formato: "
 
-#: ../Gmail/Gmail:321
+#: ../Gmail/Gmail:340
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 "ATTENZIONE: l'Applet Gmail non è fornita di autenticazione diversa da quella "
 "di BASE."
 
-#: ../Gmail/Gmail:334
+#: ../Gmail/Gmail:353
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 "ATTENZIONE: il nome utente o la password Gmail potrebbero essere errate."
 
-#: ../Gmail/Gmail:407
+#: ../Gmail/Gmail:426
 msgid "Error!"
 msgstr "Errore."
 
-#: ../Gmail/Gmail:440
+#: ../Gmail/Gmail:459
 #, python-format
 msgid "You have %s new emails"
 msgstr "Hai %s nuove email"
 
-#: ../Gmail/Gmail:442
+#: ../Gmail/Gmail:461
 msgid "You have 1 new email"
 msgstr "Hai una nuova email"
 
-#: ../Gmail/Gmail:534
+#: ../Gmail/Gmail:553
 msgid "Sorry, there was no input!"
 msgstr "Spiacente, non c'è stato nessun input!"
 
-#: ../Gmail/Gmail:543
+#: ../Gmail/Gmail:562
 msgid "Add or change subscription"
 msgstr "Aggiungere o modificare la registrazione"
 
-#: ../Gmail/Gmail:544
+#: ../Gmail/Gmail:563
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 "Utilizzare questa opzione per aggiungere o modificare i dettagli "
 "dell'account Gmail."
 
-#: ../Gmail/Gmail:546
+#: ../Gmail/Gmail:565
 msgid "Check inbox now"
 msgstr "Controlla la posta in arrivo adesso"
 
-#: ../Gmail/Gmail:547
+#: ../Gmail/Gmail:566
 msgid "Check Gmail inbox now if you can't wait."
 msgstr "Se non puoi attendere, controlla la posta in arrivo di Gmail adesso."
 
-#: ../Gmail/Gmail:548
+#: ../Gmail/Gmail:567
 msgid "Write a mail"
 msgstr "Scrivi una e-mail"
 
@@ -1026,8 +1024,7 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr ""
-"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -1157,8 +1154,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
-"ALT+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
+"+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Notifications_history/messages:23 ../Screensaver_inhibitor/messages:23
@@ -1169,8 +1166,7 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1521,16 +1517,16 @@ msgstr ""
 msgid "Moon"
 msgstr "Luna"
 
-#: ../Notifications_history/Notifications_history:127
+#: ../Notifications_history/Notifications_history:140
 msgid "No recent notification"
 msgstr "Nessuna notifica recente"
 
-#: ../Notifications_history/Notifications_history:138
+#: ../Notifications_history/Notifications_history:151
 #, python-format
 msgid "from %s at %s"
 msgstr "da %s a %s"
 
-#: ../Notifications_history/Notifications_history:163
+#: ../Notifications_history/Notifications_history:176
 msgid "Clear history"
 msgstr "Cancella la cronologia"
 
@@ -1743,15 +1739,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
 "fonti internet quali:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com e Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2818,8 +2814,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Non sovrascrivere (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
 
 #: ../YoutubeDl/messages:169

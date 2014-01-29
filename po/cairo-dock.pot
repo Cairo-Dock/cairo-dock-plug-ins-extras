@@ -728,8 +728,8 @@ msgstr ""
 msgid "Torrents info"
 msgstr ""
 
-#: ../Deluge/Deluge:356 ../Gmail/Gmail:545 ../KTorrent/KTorrent:334
-#: ../Notifications_history/Notifications_history:163
+#: ../Deluge/Deluge:356 ../Gmail/Gmail:564 ../KTorrent/KTorrent:334
+#: ../Notifications_history/Notifications_history:176
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Translator/Translator:416 ../Transmission/Transmission:516
 #: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/YoutubeDl:304
@@ -777,76 +777,76 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start downloading it immediately."
 msgstr ""
 
-#: ../Gmail/Gmail:52
+#: ../Gmail/Gmail:68
 msgid "No Subject"
 msgstr ""
 
-#: ../Gmail/Gmail:119 ../Gmail/Gmail:125 ../Gmail/Gmail:134
+#: ../Gmail/Gmail:138 ../Gmail/Gmail:144 ../Gmail/Gmail:153
 msgid "Please fill in your Gmail account."
 msgstr ""
 
-#: ../Gmail/Gmail:158
+#: ../Gmail/Gmail:177
 msgid "Please, enter your Gmail username:"
 msgstr ""
 
-#: ../Gmail/Gmail:166
+#: ../Gmail/Gmail:185
 msgid "Please, enter your Gmail password:"
 msgstr ""
 
-#: ../Gmail/Gmail:275
+#: ../Gmail/Gmail:294
 msgid "WARNING: there was an error reading XML content."
 msgstr ""
 
-#: ../Gmail/Gmail:298
+#: ../Gmail/Gmail:317
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 
-#: ../Gmail/Gmail:313
+#: ../Gmail/Gmail:332
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr ""
 
-#: ../Gmail/Gmail:321
+#: ../Gmail/Gmail:340
 msgid "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 
-#: ../Gmail/Gmail:334
+#: ../Gmail/Gmail:353
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 
-#: ../Gmail/Gmail:407
+#: ../Gmail/Gmail:426
 msgid "Error!"
 msgstr ""
 
-#: ../Gmail/Gmail:440
+#: ../Gmail/Gmail:459
 #, python-format
 msgid "You have %s new emails"
 msgstr ""
 
-#: ../Gmail/Gmail:442
+#: ../Gmail/Gmail:461
 msgid "You have 1 new email"
 msgstr ""
 
-#: ../Gmail/Gmail:534
+#: ../Gmail/Gmail:553
 msgid "Sorry, there was no input!"
 msgstr ""
 
-#: ../Gmail/Gmail:543
+#: ../Gmail/Gmail:562
 msgid "Add or change subscription"
 msgstr ""
 
-#: ../Gmail/Gmail:544
+#: ../Gmail/Gmail:563
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 
-#: ../Gmail/Gmail:546
+#: ../Gmail/Gmail:565
 msgid "Check inbox now"
 msgstr ""
 
-#: ../Gmail/Gmail:547
+#: ../Gmail/Gmail:566
 msgid "Check Gmail inbox now if you can't wait."
 msgstr ""
 
-#: ../Gmail/Gmail:548
+#: ../Gmail/Gmail:567
 msgid "Write a mail"
 msgstr ""
 
@@ -1354,16 +1354,16 @@ msgstr ""
 msgid "Moon"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:127
+#: ../Notifications_history/Notifications_history:140
 msgid "No recent notification"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:138
+#: ../Notifications_history/Notifications_history:151
 #, python-format
 msgid "from %s at %s"
 msgstr ""
 
-#: ../Notifications_history/Notifications_history:163
+#: ../Notifications_history/Notifications_history:176
 msgid "Clear history"
 msgstr ""
 

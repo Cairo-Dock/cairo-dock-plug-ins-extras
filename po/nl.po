@@ -7,20 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2013-09-30 08:27+0000\n"
 "PO-Revision-Date: 2013-09-30 10:09+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-10-01 05:22+0000\n"
 "X-Generator: Launchpad (build 16774)\n"
-"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -794,8 +792,8 @@ msgstr "Alle torrents hervatten"
 msgid "Torrents info"
 msgstr "Torrent-info"
 
-#: ../Deluge/Deluge:356 ../Gmail/Gmail:545 ../KTorrent/KTorrent:334
-#: ../Notifications_history/Notifications_history:163
+#: ../Deluge/Deluge:356 ../Gmail/Gmail:564 ../KTorrent/KTorrent:334
+#: ../Notifications_history/Notifications_history:176
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Translator/Translator:416 ../Transmission/Transmission:516
 #: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/YoutubeDl:304
@@ -846,9 +844,9 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient "
-"<i>deluged</i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de "
-"communicatie tussen het dock en Deluge).\n"
+"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient <i>deluged</"
+"i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de communicatie "
+"tussen het dock en Deluge).\n"
 "Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
 "<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
 "(u kunt hier een sneltoets voor instellen).\n"
@@ -857,83 +855,83 @@ msgstr ""
 "<b>Laat een torrent-bestand vallen</b> op het pictogram om het aan de lijst "
 "toe te voegen en het downloaden direct te starten."
 
-#: ../Gmail/Gmail:52
+#: ../Gmail/Gmail:68
 msgid "No Subject"
 msgstr "Geen onderwerp"
 
-#: ../Gmail/Gmail:119 ../Gmail/Gmail:125 ../Gmail/Gmail:134
+#: ../Gmail/Gmail:138 ../Gmail/Gmail:144 ../Gmail/Gmail:153
 msgid "Please fill in your Gmail account."
 msgstr "Voer uw Gmail-account in."
 
-#: ../Gmail/Gmail:158
+#: ../Gmail/Gmail:177
 msgid "Please, enter your Gmail username:"
 msgstr "Voer a.u.b. uw Gmail-gebruikersnaam in:"
 
-#: ../Gmail/Gmail:166
+#: ../Gmail/Gmail:185
 msgid "Please, enter your Gmail password:"
 msgstr "Voer a.u.b. uw Gmail-wachtwoord in:"
 
-#: ../Gmail/Gmail:275
+#: ../Gmail/Gmail:294
 msgid "WARNING: there was an error reading XML content."
 msgstr ""
 "WAARSCHUWING: er is een fout opgetreden bij het lezen van de XML-content."
 
-#: ../Gmail/Gmail:298
+#: ../Gmail/Gmail:317
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
 msgstr ""
 "WAARSCHUWING: Gmail-applet kon geen verbinding maken met Gmail-atomfeed."
 
-#: ../Gmail/Gmail:313
+#: ../Gmail/Gmail:332
 msgid "WARNING: Gmail atom feed is badly formed: "
 msgstr "WAARSCHUWING: Gmail-atomfeed is onjuist opgebouwd: "
 
-#: ../Gmail/Gmail:321
+#: ../Gmail/Gmail:340
 msgid ""
 "WARNING: Gmail Applet is not equipped for authentication other than BASIC."
 msgstr ""
 "WAARSCHUWING: Gmail-applet heeft alleen mogelijkheden voor "
 "basisauthenticatie."
 
-#: ../Gmail/Gmail:334
+#: ../Gmail/Gmail:353
 msgid "WARNING: Gmail username or password may be wrong."
 msgstr ""
 "WAARSCHUWIING: Gmail-gebruikersnaam of -wachtwoord zijn mogelijk onjuist."
 
-#: ../Gmail/Gmail:407
+#: ../Gmail/Gmail:426
 msgid "Error!"
 msgstr "Fout!"
 
-#: ../Gmail/Gmail:440
+#: ../Gmail/Gmail:459
 #, python-format
 msgid "You have %s new emails"
 msgstr "U heeft %s nieuwe e-mails"
 
-#: ../Gmail/Gmail:442
+#: ../Gmail/Gmail:461
 msgid "You have 1 new email"
 msgstr "U heeft 1 nieuwe e-mail"
 
-#: ../Gmail/Gmail:534
+#: ../Gmail/Gmail:553
 msgid "Sorry, there was no input!"
 msgstr "Sorry, er was geen invoer!"
 
-#: ../Gmail/Gmail:543
+#: ../Gmail/Gmail:562
 msgid "Add or change subscription"
 msgstr "Abonnement toevoegen of wijzigen"
 
-#: ../Gmail/Gmail:544
+#: ../Gmail/Gmail:563
 msgid "Use this to add or change your Gmail account details."
 msgstr ""
 "Gebruik dit om uw Gmail-accountdetails te wijzigen of iets toe te voegen."
 
-#: ../Gmail/Gmail:546
+#: ../Gmail/Gmail:565
 msgid "Check inbox now"
 msgstr "Postvak IN nu controleren"
 
-#: ../Gmail/Gmail:547
+#: ../Gmail/Gmail:566
 msgid "Check Gmail inbox now if you can't wait."
 msgstr "Controleer Postvak IN nu, als u niet kunt wachten."
 
-#: ../Gmail/Gmail:548
+#: ../Gmail/Gmail:567
 msgid "Write a mail"
 msgstr "E-mail opstellen"
 
@@ -1164,8 +1162,7 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31 ../YoutubeDl/messages:23
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1520,16 +1517,16 @@ msgstr ""
 msgid "Moon"
 msgstr "Maan"
 
-#: ../Notifications_history/Notifications_history:127
+#: ../Notifications_history/Notifications_history:140
 msgid "No recent notification"
 msgstr "Geen recente melding"
 
-#: ../Notifications_history/Notifications_history:138
+#: ../Notifications_history/Notifications_history:151
 #, python-format
 msgid "from %s at %s"
 msgstr "vanaf %s tot %s"
 
-#: ../Notifications_history/Notifications_history:163
+#: ../Notifications_history/Notifications_history:176
 msgid "Clear history"
 msgstr "Geschiedenis wissen"
 
@@ -1742,15 +1739,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dit applet laat u een \"Citaat van de dag\" zien, verkregen van sommige "
 "internetbronnen zoals:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, en Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, en Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2598,8 +2595,7 @@ msgstr "Stille modus inschakelen bij het opstarten:"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
-msgstr ""
-"Stille modus inschakelen bij het opstarten: voor een specifiek kanaal:"
+msgstr "Stille modus inschakelen bij het opstarten: voor een specifiek kanaal:"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2716,8 +2712,7 @@ msgstr "Voeg anders in stilte de url aan de lijst toe"
 
 #: ../YoutubeDl/messages:127
 msgid "Show a pop-up message when adding url to queue list? :"
-msgstr ""
-"Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
+msgstr "Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
 
 #: ../YoutubeDl/messages:129
 msgid ""
@@ -2821,8 +2816,7 @@ msgid "No overwrite (--no-overwrites)?"
 msgstr "Niet overschrijven (--no-overwrites)?"
 
 #: ../YoutubeDl/messages:167
-msgid ""
-"Use the title of the video in the file name used to download the video"
+msgid "Use the title of the video in the file name used to download the video"
 msgstr ""
 "Titel van de video die is gedownload, gebruiken in de bestandsnaam van de "
 "video"
