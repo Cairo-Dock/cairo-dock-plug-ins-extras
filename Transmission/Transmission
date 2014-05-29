@@ -181,7 +181,7 @@ class Applet(CDApplet):
 			
 			# if no result, start trying to reconnect.
 			if data == None or data['result'] != 'success':  # no data from transmission
-				return update_no_data()
+				return self.update_no_data()
 			
 			# display the new data
 			rate = data['arguments']['downloadSpeed']
@@ -203,7 +203,7 @@ class Applet(CDApplet):
 		elif self.config['quick-info'] == INFO_REMAINING_TIME:  # remaining time of the slowest active torrent
 			data = self._request ("torrent-get", {"fields": ["eta", "status"]})
 			if data == None or data['result'] != 'success':
-				return update_no_data()
+				return self.update_no_data()
 
 			maxTime = 0
 			for value in data['arguments']['torrents']:
@@ -221,7 +221,7 @@ class Applet(CDApplet):
 			
 			# if no result, start trying to reconnect.
 			if data == None or data['result'] != 'success':  # no data from transmission
-				return update_no_data()
+				return self.update_no_data()
 				
 			percent = 0.
 			n = 0
