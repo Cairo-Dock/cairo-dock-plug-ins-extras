@@ -104,18 +104,23 @@ class Applet(CDApplet):
   def show_user_timeline(self):
     self.inform_start_of_waiting_process()
     
-    timeline = self.twitter.api.user_timeline()
-    if len(timeline) > 0:
-      ut_menu = menu.Menu(self.icon)                                                        # callback not set since there is no action when clicking ...
-      for status in timeline:                                                               # ... on the menu generated from this list
-        text = status['text']
-        sender = status['user']['name']
-        uid = status['id_str']
-        ut_menu.add(Tweet(text, sender, uid, self.twitter.name))
-      ut_menu.pop_up()
-    else:
-      message = _("Oh, dear, your timeline is empty :-(")
-      dialog = {'use-markup':True}
+    try:
+      timeline = self.twitter.api.user_timeline()
+      if len(timeline) > 0:
+        ut_menu = menu.Menu(self.icon)                                                        # callback not set since there is no action when clicking ...
+        for status in timeline:                                                               # ... on the menu generated from this list
+          text = status['text']
+          sender = status['user']['name']
+          uid = status['id_str']
+          ut_menu.add(Tweet(text, sender, uid, self.twitter.name))
+        ut_menu.pop_up()
+      else:
+        message = _("Oh, dear, your timeline is empty :-(")
+        dialog = {}
+        self.show_popup_message(message, dialog)
+    except:
+      message = _("Connection problem")
+      dialog = {'time-length': 4}
       self.show_popup_message(message, dialog)
 
     self.inform_end_of_waiting_process()
@@ -141,7 +146,10 @@ class Applet(CDApplet):
     home_timeline_menu = menu.Menu(self.icon, self.on_tweet_list_menu_clicked)
     
     for network in self.networks:
-      timeline = network.api.home_timeline()
+      try:
+        timeline = network.api.home_timeline()
+      except:
+        continue
       if len(timeline) > 0:
         for status in timeline:
           text = status['text']
@@ -172,17 +180,22 @@ class Applet(CDApplet):
   def show_direct_messages(self):
     self.inform_start_of_waiting_process()
 
-    messages = self.twitter.api.direct_messages()
-    if len(messages) > 0:
-      dm_menu = menu.Menu(self.icon, self.on_direct_messages_list_menu_clicked)
-      for status in messages:
-        text = status['text']
-        sender = status['sender']['screen_name']
-        dm_menu.add(DirectMessage(text, sender, self.twitter.name))
-      dm_menu.pop_up()
-    else:
-      dialog = {'use-markup':True}
-      message = _("Oh, dear, you do not have direct messages :-(")
+    try:
+      messages = self.twitter.api.direct_messages()
+      if len(messages) > 0:
+        dm_menu = menu.Menu(self.icon, self.on_direct_messages_list_menu_clicked)
+        for status in messages:
+          text = status['text']
+          sender = status['sender']['screen_name']
+          dm_menu.add(DirectMessage(text, sender, self.twitter.name))
+        dm_menu.pop_up()
+      else:
+        dialog = {'use-markup':True}
+        message = _("Oh, dear, you do not have direct messages :-(")
+        self.show_popup_message(message, dialog)
+    except:
+      message = _('Connection problem')
+      dialog = {'time-length': 4}
       self.show_popup_message(message, dialog)
 
     self.inform_end_of_waiting_process()
@@ -195,9 +208,14 @@ class Applet(CDApplet):
 
   def show_credentials(self):
     self.inform_start_of_waiting_process()
-    credentials = self.twitter.api.verify_credentials()
-    message = "%s [<b>%s</b>]\n%s: %s\n%s: %s\n%s: %s\n" % (credentials['name'], credentials['screen_name'], _('Followers'), credentials['followers_count'], _('Friends'), credentials['friends_count'], _('Tweets'), credentials['statuses_count'])
-    dialog = {'use-markup':True}
+    try:
+      credentials = self.twitter.api.verify_credentials()
+      dialog = {'use-markup':True}
+      message = "%s [<b>%s</b>]\n%s: %s\n%s: %s\n%s: %s\n" % (credentials['name'], credentials['screen_name'], _('Followers'), credentials['followers_count'], _('Friends'), credentials['friends_count'], _('Tweets'), credentials['statuses_count'])
+    except:
+      message = _('Connection problem')
+      dialog = {'time-length': 4}
+      
     self.inform_end_of_waiting_process()
     self.show_popup_message(message, dialog)
 
@@ -554,6 +572,7 @@ class Applet(CDApplet):
     elif selected_menu == self.add_twitter_account_menu_id:
       self.new_network = self.twitter
       self.show_initial_informations()
+      
 
 if __name__ == '__main__':
   Applet().run()

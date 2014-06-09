@@ -16,6 +16,7 @@ except:  # python 2
   urllib_error = urllib2
   urllib_parse = urllib
 from util import logp, logm
+from time import sleep
 
 # HTTP GET
 def get(url, tries = 0):
@@ -25,8 +26,9 @@ def get(url, tries = 0):
       request = urllib_request.Request(url)
       response = urllib_request.urlopen(request)
       return response.read()
-    except urllib_error.HTTPError:
+    except:  # urllib_error.HTTPError or urllib_error.URLError
       tries += 1
+      sleep(.33)
       if tries > 3:
         raise
 
@@ -39,8 +41,9 @@ def post(url, params, header, tries = 0):
       request = urllib_request.Request(url, data, headers=header)
       response = urllib_request.urlopen(request)
       return response.read()
-    except urllib_error.HTTPError:
+    except:  # urllib_error.HTTPError or urllib_error.URLError
       tries += 1
+      sleep(.33)
       if tries > 3:
         raise
         

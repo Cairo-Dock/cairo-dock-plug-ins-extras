@@ -113,8 +113,11 @@ class Twitter(Network):
       oauth_request.sign_request(self.signature_method, self.consumer, self.access_token)
 
       url = oauth_request.to_url()
-      req = urllib_request.urlopen(url)
-     
+      try:
+        req = urllib_request.urlopen(url)
+      except urllib_error.URLError:
+        return  # we should give the information back to the applet...
+      
       buffer = ''
       while True:
         chunk = req.read(1)                                             # read character per character from the connection ...
