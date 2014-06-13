@@ -49,7 +49,6 @@ msgstr "Уреди изборнике"
 #: ../Transmission/messages:3 ../Twitter/messages:1 ../Twitter/messages:3
 #: ../WebSearch/messages:1 ../WindowsKiller/messages:1
 #: ../WindowsKiller/messages:3 ../Xchat/messages:1 ../Xchat/messages:3
-#: ../YoutubeDl/messages:1
 msgid "Icon"
 msgstr "Икона"
 
@@ -62,7 +61,6 @@ msgstr "Икона"
 #: ../Quote/messages:5 ../Screensaver_inhibitor/messages:5
 #: ../Translator/messages:5 ../Transmission/messages:5 ../Twitter/messages:5
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
-#: ../YoutubeDl/messages:13
 msgid "Name of the dock it belongs to:"
 msgstr "Назив дока ком припада:"
 
@@ -75,7 +73,6 @@ msgstr "Назив дока ком припада:"
 #: ../Quote/messages:9 ../Screensaver_inhibitor/messages:7
 #: ../Translator/messages:7 ../Transmission/messages:7 ../Twitter/messages:7
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
-#: ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Назив иконе који ће се јављати као натпис у доку:"
 
@@ -88,7 +85,6 @@ msgstr "Назив иконе који ће се јављати као натп�
 #: ../Quote/messages:11 ../Screensaver_inhibitor/messages:9
 #: ../Translator/messages:9 ../Transmission/messages:9 ../Twitter/messages:9
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
-#: ../YoutubeDl/messages:9
 msgid "Default"
 msgstr "Подразумевано"
 
@@ -112,7 +108,7 @@ msgstr "Приказ"
 #: ../Quote/messages:15 ../Screensaver_inhibitor/messages:11
 #: ../Translator/messages:13 ../Transmission/messages:13
 #: ../Twitter/messages:13 ../WebSearch/messages:11
-#: ../WindowsKiller/messages:13 ../Xchat/messages:13 ../YoutubeDl/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
 msgid "Image filename:"
 msgstr "Назив слике:"
 
@@ -138,7 +134,7 @@ msgstr "Поставите 0 да би користили подразумева
 #: ../Quote/messages:19 ../Screensaver_inhibitor/messages:17
 #: ../Translator/messages:17 ../Transmission/messages:17
 #: ../Twitter/messages:17 ../WebSearch/messages:15
-#: ../WindowsKiller/messages:17 ../Xchat/messages:17 ../YoutubeDl/messages:5
+#: ../WindowsKiller/messages:17 ../Xchat/messages:17
 msgid "Desired icon size for this applet"
 msgstr "Жељена величина иконе овог програмчета"
 
@@ -151,7 +147,7 @@ msgstr "Жељена величина иконе овог програмчета
 #: ../Quote/messages:21 ../Screensaver_inhibitor/messages:19
 #: ../Translator/messages:19 ../Transmission/messages:19
 #: ../Twitter/messages:19 ../WebSearch/messages:17
-#: ../WindowsKiller/messages:19 ../Xchat/messages:19 ../YoutubeDl/messages:17
+#: ../WindowsKiller/messages:19 ../Xchat/messages:19
 msgid "Desklet"
 msgstr "Справица радне површи"
 
@@ -301,7 +297,7 @@ msgstr "Видљивост:"
 #: ../Quote/messages:47 ../Screensaver_inhibitor/messages:35
 #: ../Translator/messages:47 ../Transmission/messages:45
 #: ../Twitter/messages:45 ../WebSearch/messages:43
-#: ../WindowsKiller/messages:45 ../Xchat/messages:45 ../YoutubeDl/messages:33
+#: ../WindowsKiller/messages:45 ../Xchat/messages:45
 msgid "Normal"
 msgstr "уобичајенa"
 
@@ -314,7 +310,7 @@ msgstr "уобичајенa"
 #: ../Quote/messages:49 ../Screensaver_inhibitor/messages:37
 #: ../Translator/messages:49 ../Transmission/messages:47
 #: ../Twitter/messages:47 ../WebSearch/messages:45
-#: ../WindowsKiller/messages:47 ../Xchat/messages:47 ../YoutubeDl/messages:35
+#: ../WindowsKiller/messages:47 ../Xchat/messages:47
 msgid "Keep above"
 msgstr "задржавај изнад"
 
@@ -327,7 +323,7 @@ msgstr "задржавај изнад"
 #: ../Quote/messages:51 ../Screensaver_inhibitor/messages:39
 #: ../Translator/messages:51 ../Transmission/messages:49
 #: ../Twitter/messages:49 ../WebSearch/messages:47
-#: ../WindowsKiller/messages:49 ../Xchat/messages:49 ../YoutubeDl/messages:37
+#: ../WindowsKiller/messages:49 ../Xchat/messages:49
 msgid "Keep below"
 msgstr "задржавај испод"
 
@@ -350,7 +346,7 @@ msgstr "држи на слоју справица"
 #: ../Quote/messages:55 ../Screensaver_inhibitor/messages:43
 #: ../Translator/messages:55 ../Transmission/messages:53
 #: ../Twitter/messages:53 ../WebSearch/messages:51
-#: ../WindowsKiller/messages:53 ../Xchat/messages:53 ../YoutubeDl/messages:41
+#: ../WindowsKiller/messages:53 ../Xchat/messages:53
 msgid "Reserve space"
 msgstr "чувај простор"
 
@@ -373,7 +369,7 @@ msgstr "Видљиво на свим радним просторима?"
 #: ../Pidgin/messages:57 ../Quote/messages:59
 #: ../Screensaver_inhibitor/messages:55 ../Translator/messages:59
 #: ../Transmission/messages:57 ../Twitter/messages:57 ../WebSearch/messages:55
-#: ../WindowsKiller/messages:57 ../Xchat/messages:57 ../YoutubeDl/messages:53
+#: ../WindowsKiller/messages:57 ../Xchat/messages:57
 msgid "Decorations"
 msgstr "Украшавања"
 
@@ -419,7 +415,7 @@ msgstr ""
 #: ../Quote/messages:67 ../Screensaver_inhibitor/messages:63
 #: ../Translator/messages:67 ../Transmission/messages:65
 #: ../Twitter/messages:65 ../WebSearch/messages:63
-#: ../WindowsKiller/messages:65 ../Xchat/messages:65 ../YoutubeDl/messages:61
+#: ../WindowsKiller/messages:65 ../Xchat/messages:65
 msgid "Background image:"
 msgstr "Слика позадине:"
 
@@ -536,7 +532,7 @@ msgstr ""
 #: ../Quote/messages:89 ../Screensaver_inhibitor/messages:85
 #: ../Translator/messages:89 ../Transmission/messages:87
 #: ../Twitter/messages:87 ../WebSearch/messages:85
-#: ../WindowsKiller/messages:87 ../Xchat/messages:87 ../YoutubeDl/messages:83
+#: ../WindowsKiller/messages:87 ../Xchat/messages:87
 msgid "Foreground image:"
 msgstr "Слика предњег плана:"
 
@@ -558,7 +554,7 @@ msgstr "Провидност предњег плана:"
 #: ../Pidgin/messages:91 ../Quote/messages:93
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:93
 #: ../Transmission/messages:91 ../Twitter/messages:91 ../WebSearch/messages:89
-#: ../Xchat/messages:91 ../YoutubeDl/messages:87
+#: ../Xchat/messages:91
 msgid "Configuration"
 msgstr "Поставке"
 
@@ -781,7 +777,6 @@ msgstr "Подаци о торенту"
 #: ../Notifications_history/Notifications_history:176
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Translator/Translator:416 ../Transmission/Transmission:516
-#: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/YoutubeDl:304
 msgid "middle-click"
 msgstr "средњи клик"
 
@@ -917,7 +912,7 @@ msgstr "Проверите пријемно сандуче сада ако не 
 msgid "Write a mail"
 msgstr "Пишите поруку"
 
-#: ../Gmail/messages:15 ../YoutubeDl/messages:15
+#: ../Gmail/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
 msgstr "Увек прикажи икону, чак и кад је док скривен?"
 
@@ -1123,7 +1118,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Notifications_history/messages:21 ../Screensaver_inhibitor/messages:21
-#: ../Translator/messages:27 ../YoutubeDl/messages:19
+#: ../Translator/messages:27
 msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
@@ -1134,13 +1129,13 @@ msgstr ""
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Notifications_history/messages:23 ../Screensaver_inhibitor/messages:23
-#: ../Translator/messages:29 ../YoutubeDl/messages:21
+#: ../Translator/messages:29
 msgid "Desklet's dimension (width x height) :"
 msgstr "Величина справица површи (ширина х висина) :"
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
-#: ../Translator/messages:31 ../YoutubeDl/messages:23
+#: ../Translator/messages:31
 msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "У зависности од вашег управника прозора, можете бити у могућности да "
@@ -1148,18 +1143,17 @@ msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Notifications_history/messages:27 ../Screensaver_inhibitor/messages:27
-#: ../Translator/messages:33 ../YoutubeDl/messages:25
+#: ../Translator/messages:33
 msgid "Desklet's position (x ; y) :"
 msgstr "Положај справица површи (x, y) :"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Notifications_history/messages:29 ../Screensaver_inhibitor/messages:29
-#: ../Translator/messages:41 ../YoutubeDl/messages:27
+#: ../Translator/messages:41
 msgid "Is detached from the dock ?"
 msgstr "Је одвојена од дока ?"
 
 #: ../HDDtemperature/messages:27 ../Translator/messages:43
-#: ../YoutubeDl/messages:29
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=utility)"
@@ -1169,25 +1163,24 @@ msgstr ""
 
 #: ../HDDtemperature/messages:29 ../Moon/messages:31
 #: ../Notifications_history/messages:33 ../Screensaver_inhibitor/messages:33
-#: ../Translator/messages:45 ../YoutubeDl/messages:31
+#: ../Translator/messages:45
 msgid "Accessibility :"
 msgstr "Приступачност :"
 
 #: ../HDDtemperature/messages:37 ../Moon/messages:39
 #: ../Notifications_history/messages:41 ../Screensaver_inhibitor/messages:41
-#: ../Translator/messages:53 ../YoutubeDl/messages:39
+#: ../Translator/messages:53
 msgid "On Widget Layer"
 msgstr "На слоју справица"
 
 #: ../HDDtemperature/messages:41 ../Moon/messages:43
 #: ../Notifications_history/messages:45 ../Screensaver_inhibitor/messages:45
-#: ../Translator/messages:57 ../YoutubeDl/messages:43
+#: ../Translator/messages:57
 msgid "Should be visible on all desktops ?"
 msgstr "Треба бити видљива на свим радним просторима ?"
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Notifications_history/messages:47 ../Screensaver_inhibitor/messages:47
-#: ../YoutubeDl/messages:45
 msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
@@ -1197,37 +1190,34 @@ msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Notifications_history/messages:49 ../Screensaver_inhibitor/messages:49
-#: ../YoutubeDl/messages:47
 msgid "Lock position ?"
 msgstr "Закључати положај ?"
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Notifications_history/messages:51 ../Screensaver_inhibitor/messages:51
-#: ../YoutubeDl/messages:49
 msgid "in degrees."
 msgstr "у степенима."
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Notifications_history/messages:53 ../Screensaver_inhibitor/messages:53
-#: ../YoutubeDl/messages:51
 msgid "Rotation :"
 msgstr "Обртање :"
 
 #: ../HDDtemperature/messages:53 ../Moon/messages:55
 #: ../Notifications_history/messages:57 ../Screensaver_inhibitor/messages:57
-#: ../Translator/messages:61 ../YoutubeDl/messages:55
+#: ../Translator/messages:61
 msgid "Choose the 'personnal' one to define your own decorations below."
 msgstr "Одаберите „Прилагођена украшавања“ за опис ваших украшавања испод."
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Notifications_history/messages:59 ../Screensaver_inhibitor/messages:59
-#: ../Translator/messages:63 ../YoutubeDl/messages:57
+#: ../Translator/messages:63
 msgid "Choose a decoration theme for this desklet :"
 msgstr "Одаберите тему украшавања за ову справицу површи :"
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
 #: ../Notifications_history/messages:61 ../Screensaver_inhibitor/messages:61
-#: ../Translator/messages:65 ../YoutubeDl/messages:59
+#: ../Translator/messages:65
 msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
@@ -1237,61 +1227,61 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Notifications_history/messages:65 ../Screensaver_inhibitor/messages:65
-#: ../Translator/messages:69 ../YoutubeDl/messages:63
+#: ../Translator/messages:69
 msgid "Background tansparency :"
 msgstr "Провидност позадине :"
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Notifications_history/messages:67 ../Screensaver_inhibitor/messages:67
-#: ../Translator/messages:71 ../YoutubeDl/messages:65
+#: ../Translator/messages:71
 msgid "in pixels. Use this to adjust the left position of the drawings."
 msgstr "у тачкама. Користите ово да подесите леви положај цртежа."
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Notifications_history/messages:69 ../Screensaver_inhibitor/messages:69
-#: ../Translator/messages:73 ../YoutubeDl/messages:67
+#: ../Translator/messages:73
 msgid "Left offset :"
 msgstr "Лево одстојање :"
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Notifications_history/messages:71 ../Screensaver_inhibitor/messages:71
-#: ../Translator/messages:75 ../YoutubeDl/messages:69
+#: ../Translator/messages:75
 msgid "in pixels. Use this to adjust the top position of the drawings."
 msgstr "у тачкама. Користите ово да подесите горњи положај цртежа."
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Notifications_history/messages:73 ../Screensaver_inhibitor/messages:73
-#: ../Translator/messages:77 ../YoutubeDl/messages:71
+#: ../Translator/messages:77
 msgid "Top offset :"
 msgstr "Горње одстојање :"
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Notifications_history/messages:75 ../Screensaver_inhibitor/messages:75
-#: ../Translator/messages:79 ../YoutubeDl/messages:73
+#: ../Translator/messages:79
 msgid "in pixels. Use this to adjust the right position of the drawings."
 msgstr "у тачкама. Користите ово да подесите десни положај цртежа."
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Notifications_history/messages:77 ../Screensaver_inhibitor/messages:77
-#: ../Translator/messages:81 ../YoutubeDl/messages:75
+#: ../Translator/messages:81
 msgid "Right offset :"
 msgstr "Десно одстојање :"
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Notifications_history/messages:79 ../Screensaver_inhibitor/messages:79
-#: ../Translator/messages:83 ../YoutubeDl/messages:77
+#: ../Translator/messages:83
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
 msgstr "у тачкама. Користите ово да подесите доњи положај цртежа."
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Notifications_history/messages:81 ../Screensaver_inhibitor/messages:81
-#: ../Translator/messages:85 ../YoutubeDl/messages:79
+#: ../Translator/messages:85
 msgid "Bottom offset :"
 msgstr "Доње одстојање :"
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Notifications_history/messages:83 ../Screensaver_inhibitor/messages:83
-#: ../Translator/messages:87 ../YoutubeDl/messages:81
+#: ../Translator/messages:87
 msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
@@ -1301,7 +1291,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Notifications_history/messages:87 ../Screensaver_inhibitor/messages:87
-#: ../Translator/messages:91 ../YoutubeDl/messages:85
+#: ../Translator/messages:91
 msgid "Foreground tansparency :"
 msgstr "Провидност предњег плана :"
 
@@ -2189,37 +2179,41 @@ msgstr ""
 "<b>Спустите датотеку торента</b> на икону за његово додавање на списак и "
 "почните са преузимањем одмах."
 
-#: ../Twitter/Twitter:117
+#: ../Twitter/Twitter:118
 msgid "Oh, dear, your timeline is empty :-("
 msgstr "О, срце, ваша временска линија је празна :-("
 
-#: ../Twitter/Twitter:185
+#: ../Twitter/Twitter:122 ../Twitter/Twitter:197 ../Twitter/Twitter:216
+msgid "Connection problem"
+msgstr ""
+
+#: ../Twitter/Twitter:194
 msgid "Oh, dear, you do not have direct messages :-("
 msgstr "О, срце, немате непосредних порука :-("
 
-#: ../Twitter/Twitter:199
+#: ../Twitter/Twitter:214
 msgid "Followers"
 msgstr "Пратиоци"
 
-#: ../Twitter/Twitter:199
+#: ../Twitter/Twitter:214
 msgid "Friends"
 msgstr "Пријатељи"
 
-#: ../Twitter/Twitter:199 ../Twitter/Twitter:353
+#: ../Twitter/Twitter:214 ../Twitter/Twitter:371
 msgid "Tweets"
 msgstr "Цвркутања"
 
-#: ../Twitter/Twitter:220
+#: ../Twitter/Twitter:238
 #, python-format
 msgid "%s, send a tweet"
 msgstr "%s, пошаљи цвркутање"
 
-#: ../Twitter/Twitter:222
+#: ../Twitter/Twitter:240
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
 msgstr "Ваш цвркут има више од %d знакова, молим, скратите га"
 
-#: ../Twitter/Twitter:235
+#: ../Twitter/Twitter:253
 #, python-format
 msgid ""
 "Problem to send this tweet on %s, I think you already tried to send the same "
@@ -2228,12 +2222,12 @@ msgstr ""
 "Потешкоћа са слањем цвркута на %s, мислим да сте већ покушали да пошаљете "
 "исти пре пар минута"
 
-#: ../Twitter/Twitter:239
+#: ../Twitter/Twitter:257
 #, python-format
 msgid "%s, retweet?"
 msgstr "%s, одцвркутати?"
 
-#: ../Twitter/Twitter:253
+#: ../Twitter/Twitter:271
 msgid ""
 "This applet supports Twitter, and Identi.ca.\n"
 "Right-click -> Add account -> Twitter.\n"
@@ -2243,7 +2237,7 @@ msgstr ""
 "Десни клик -> Додај налог -> Twitter.\n"
 "Десни клик -> Додај налог -> Identi.ca."
 
-#: ../Twitter/Twitter:258
+#: ../Twitter/Twitter:276
 #, python-format
 msgid ""
 "The applet needs your nickname, and an authorization\n"
@@ -2252,12 +2246,12 @@ msgstr ""
 "Програмче захтева ваш надимак и овлашћење\n"
 "да прихватате да се повеже на Ваш %s налог"
 
-#: ../Twitter/Twitter:267
+#: ../Twitter/Twitter:285
 #, python-format
 msgid "What is your %s nickname?"
 msgstr "Који је Ваш %s надимак?"
 
-#: ../Twitter/Twitter:284
+#: ../Twitter/Twitter:302
 #, python-format
 msgid ""
 "%s applet needs you to give the authorization. Authorization page was opened "
@@ -2268,7 +2262,7 @@ msgstr ""
 "Вашем прегледнику. Кад се пријавите, умножите ЛИБ број који ће бити "
 "приказан, и идите на следеће прозорче"
 
-#: ../Twitter/Twitter:287
+#: ../Twitter/Twitter:305
 #, python-format
 msgid ""
 "%s applet needs you to give the authorization. Copy the address bellow and "
@@ -2278,49 +2272,49 @@ msgstr ""
 "Програмче %s захтева да му дате овлашћења. Страница пријаве је отворена у "
 "Вашем прегледнику. Кад се пријавите, множите ЛИБ број који ће бити приказан"
 
-#: ../Twitter/Twitter:297
+#: ../Twitter/Twitter:315
 msgid "Enter the PIN number shown on the authorization page"
 msgstr "Унесите ЛИБ приказан на страници пријаве"
 
-#: ../Twitter/Twitter:309
+#: ../Twitter/Twitter:327
 msgid "Successfully connected with Twitter"
 msgstr "Успешно сам повезан на Twitter"
 
-#: ../Twitter/Twitter:312
+#: ../Twitter/Twitter:330
 msgid "Successfully connected with Identi.ca"
 msgstr "Успешно сам повезан на Identi.ca"
 
-#: ../Twitter/Twitter:329
+#: ../Twitter/Twitter:347
 msgid "Direct messages"
 msgstr "Непосредне поруке"
 
-#: ../Twitter/Twitter:331
+#: ../Twitter/Twitter:349
 #, python-format
 msgid "New direct messages (%d)"
 msgstr "Нова непосредна порука (%d)"
 
-#: ../Twitter/Twitter:344
+#: ../Twitter/Twitter:362
 msgid "Info"
 msgstr "Порука"
 
-#: ../Twitter/Twitter:355
+#: ../Twitter/Twitter:373
 #, python-format
 msgid "New tweets (%d)"
 msgstr "Нови цвркут (%d)"
 
-#: ../Twitter/Twitter:369
+#: ../Twitter/Twitter:387
 msgid "My tweets"
 msgstr "Моја цвркутања"
 
-#: ../Twitter/Twitter:387
+#: ../Twitter/Twitter:405
 msgid "Add account"
 msgstr "Додај налог"
 
-#: ../Twitter/Twitter:395
+#: ../Twitter/Twitter:413
 msgid "Twitter"
 msgstr "Твитер"
 
-#: ../Twitter/Twitter:405
+#: ../Twitter/Twitter:423
 msgid "Identi.ca"
 msgstr "Иденти.ка"
 
@@ -2565,347 +2559,280 @@ msgstr ""
 "и приказује историју порука премицањем на икони\n"
 "Икона ће такођ управљати прозором Иксчета као обичном иконом програма."
 
-#: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/messages:99
-msgid "Open Video Folder"
-msgstr "Отвори видео фасциклу"
-
-#: ../YoutubeDl/YoutubeDl:304
-msgid "Show Download Status"
-msgstr "_Прикажи преузимања"
-
-#: ../YoutubeDl/YoutubeDl:312
-msgid "Send abort signal to the downloader. There may be a delay"
-msgstr "Пошаљи знак отказивања преузимачу. Може доћи до одлагања"
-
-#: ../YoutubeDl/messages:3
-msgid "Set to 0 to use the default applet size"
-msgstr "Поставите 0 да би користили подразумевану величину програмчета"
-
-#: ../YoutubeDl/messages:89
-msgid "Otherwise use right click and enable downloads"
-msgstr "У супротном, користите десни клик и омогућите преузимања"
-
-#: ../YoutubeDl/messages:91
-msgid "Start downloading videos imediately? :"
-msgstr "Да почнем одмах са преузимањем видеа? :"
-
-#: ../YoutubeDl/messages:93
-msgid "in secondds"
-msgstr "у секундама"
-
-#: ../YoutubeDl/messages:95
-msgid "Time between updates:"
-msgstr "Врме између два освежавања:"
-
-#: ../YoutubeDl/messages:97
-msgid "Action on middle click:"
-msgstr "Радња на средњи клик:"
-
-#: ../YoutubeDl/messages:101
-msgid "Show Status"
-msgstr "Прикажи _стање"
-
-#: ../YoutubeDl/messages:103
-msgid "Otherwise just use middle click to monitor status"
-msgstr "У супротном само употребите средњи клик за праћење стања"
-
-#: ../YoutubeDl/messages:105
-msgid "Show download progress on icon? :"
-msgstr "Прикажи напредак преузимања на икони :"
-
-#: ../YoutubeDl/messages:107
-msgid ""
-"Otherwise just show the plugin name and use middle click to monitor status"
-msgstr ""
-"У супротном, само прикажи назив прикључка и користи средњи клик за праћење "
-"стања"
-
-#: ../YoutubeDl/messages:109
-msgid "Show download status in icon label when hovering over icon? :"
-msgstr ""
-"Приказати стање преузимања на натпису иконе при надношењу преко иконе? :"
-
-#: ../YoutubeDl/messages:111
-msgid "Notification selections"
-msgstr "Одабир обавештавања"
-
-#: ../YoutubeDl/messages:113
-msgid "Otherwise quietly start to the next download"
-msgstr "У супротном, тихо крени на следеће прузимање"
-
-#: ../YoutubeDl/messages:115
-msgid "Show a pop-up message when starting downloads? :"
-msgstr "Приказуј икачућу поруку при покретању преузимања? :"
-
-#: ../YoutubeDl/messages:117
-msgid "Otherwise quietly move finish the download"
-msgstr "У супротном, тихо крени на следеће прузимање"
-
-#: ../YoutubeDl/messages:119
-msgid "Show a pop-up message when download is complete? :"
-msgstr "Прикажи искачућу поруку кад је преузимање завршено? :"
-
-#: ../YoutubeDl/messages:121
-msgid "Otherwise quietly abort the download"
-msgstr "У супротном тихо напусти преузимање"
-
-#: ../YoutubeDl/messages:123
-msgid "Show a pop-up message when download is aborted? :"
-msgstr "Прикажи искачуће прозорче кад се преузимање обустави? :"
-
-#: ../YoutubeDl/messages:125
-msgid "Otherwise just quietly add the url to the list"
-msgstr "У супротном, само тихо додај адресу списку"
-
-#: ../YoutubeDl/messages:127
-msgid "Show a pop-up message when adding url to queue list? :"
-msgstr "Прикажи искачућу поруку при додавању адресе на списак заказаног? :"
-
-#: ../YoutubeDl/messages:129
-msgid ""
-"if pynotify is installed a system notification message will appear, "
-"otherwise the standard dock dialogue messages will be used."
-msgstr ""
-"ако је pynotify уграђен, порука обавештења система ће се појавити, у "
-"супротном ће обични прозори порука дока бити коришћени."
-
-#: ../YoutubeDl/messages:131
-msgid "Attempt to use desktop notifications instead of dock messages? :"
-msgstr "Да ли да покушам да користим обавештења окружења уместо порука дока? :"
-
-#: ../YoutubeDl/messages:133
-msgid ""
-"This is usefull if you have long lists of urls to view when you left click "
-"on the icon. Otherwise the standard dialogue message is fine."
-msgstr ""
-"Ово је корисно ако имате дуг списак адреса за преглед кад кликнете левим "
-"кликом на икону. У супротном обично прозорче поруке је у реду."
-
-#: ../YoutubeDl/messages:135
-msgid "Use list view when URL list exceeds specified number?:"
-msgstr "Користи преглед списка за адресе кад списак пређе одређени број?:"
-
-#: ../YoutubeDl/messages:137
-msgid ""
-"When the number of URLS exceed this number switch to list view instead of a "
-"regular dialogue"
-msgstr ""
-"Кад број адреса пређе овај број пређи на преглед списка уместо на обичан "
-"прозор"
-
-#: ../YoutubeDl/messages:139
-msgid "Use list view when number of URLs exceed:"
-msgstr "Користи преглед списка кад број адреса пређе:"
-
-#: ../YoutubeDl/messages:141
-msgid "Directory Setup"
-msgstr "Поставке фасцикле"
-
-#: ../YoutubeDl/messages:143
-msgid ""
-"The path to save the videos to. Leave it empty to use the default one "
-"(currently in the users Videos directory)."
-msgstr ""
-"Путања за чување видеа. Оставите празно ако желите да користите "
-"подразумевану (тренутно у корисничкој фасцикли видеа)."
-
-#: ../YoutubeDl/messages:145
-msgid "Save videos to this directory:"
-msgstr "Сачувај видео у овој фасцикли:"
-
-#: ../YoutubeDl/messages:147
-msgid ""
-"The path to save the URL list to. Leave it empty to use the default one "
-"(currently in the users home directory)."
-msgstr ""
-"Путања за чување списка адреса. Оставите празно за коришћење подразумеване "
-"(тренутно у личној фасцикли корисника)."
-
-#: ../YoutubeDl/messages:149
-msgid "Save URL List to this directory:"
-msgstr "Сачувај адресе у овој фасцикли:"
-
-#: ../YoutubeDl/messages:151
-msgid "Download Options"
-msgstr "Могућности преузимања"
-
-#: ../YoutubeDl/messages:153
-msgid "Set the download options that will be used for the youtubedl backend"
-msgstr ""
-"Подеси могућности преузимања које ће бити коришћене за youtubedl позадинца"
-
-#: ../YoutubeDl/messages:155
-msgid "Resume partially downloaded files"
-msgstr "Настави преузимање делимично преузетих датотека"
-
-#: ../YoutubeDl/messages:157
-msgid "Resume download (--continue)?"
-msgstr "Настави преузимање (--continue)?"
-
-#: ../YoutubeDl/messages:159
-msgid "Ignore errors during download and continue processing."
-msgstr "Занемари грешке приликом преузимања, и настави обраду."
-
-#: ../YoutubeDl/messages:161
-msgid "Ignore errors (--ignore-errors)?"
-msgstr "Занемари грешке (--ignore-errors)?"
-
-#: ../YoutubeDl/messages:163
-msgid "If file exists fo not attempt to over write the file."
-msgstr "Ако датотека постоји, не покушавај да је препишеш."
-
-#: ../YoutubeDl/messages:165
-msgid "No overwrite (--no-overwrites)?"
-msgstr "Не преписуј (--no-overwrites)?"
-
-#: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
-msgstr ""
-"Користи наслов видеа у имену датотеке који се користио за преузимање видеа"
-
-#: ../YoutubeDl/messages:169
-msgid "Use title (--title)?"
-msgstr "Користи наслов (--title)?"
-
-#: ../YoutubeDl/messages:171
-msgid "Which download format to use:"
-msgstr "Који облик преузимања користити:"
-
-#: ../YoutubeDl/messages:173
-msgid "Specify the video format"
-msgstr "Изаберите видео облик"
-
-#: ../YoutubeDl/messages:175
-msgid "Limit the maximum quality"
-msgstr "Ограничи  квалитет"
-
-#: ../YoutubeDl/messages:177
-msgid "Download default format"
-msgstr "Преузми у предодређеном облику"
-
-#: ../YoutubeDl/messages:179
-msgid "Specify the video format (quality) in which to download the video."
-msgstr "Одредите облик видеа (квалитет) у који ће се видео преузимати."
-
-#: ../YoutubeDl/messages:181
-msgid "Video format (--format):"
-msgstr "Облик видеа (--format):"
-
-#: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
-msgid "H264 - MP4 at 480p"
-msgstr "H264 - MP4 на 480p"
-
-#: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
-msgid "H264 - MP4 at 720p"
-msgstr "H264 - MP4 на 720p"
-
-#: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
-msgid "H264 - MP4 at 1080p"
-msgstr "H264 - MP4 на 1080p"
-
-#: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
-msgid "H264 - FLV at 360p"
-msgstr "H264 - FLV на 360p"
-
-#: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
-msgid "H264 - FLV at 480p"
-msgstr "H264 - FLV на 480p"
-
-#: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
-msgid "H263 - FLV at 240p"
-msgstr "H263 - FLV на 240p"
-
-#: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
-msgid "Webm at 480p"
-msgstr "Вебм на 480p"
-
-#: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
-msgid "Webm at 720p"
-msgstr "Вебм на 720p"
-
-#: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
-msgid "3GP video"
-msgstr "3ГП видео"
-
-#: ../YoutubeDl/messages:201
-msgid "Limit the maximum quality of the videos to download."
-msgstr "Ограничите највећи квалитет видеа за преузимање."
-
-#: ../YoutubeDl/messages:203
-msgid "Maximum quality (--max-quality):"
-msgstr "Највећи квалитет (--max-quality):"
-
-#: ../YoutubeDl/messages:223
-msgid "Download the default format."
-msgstr "Преузми у предодређеном облику."
-
-#: ../YoutubeDl/messages:225
-msgid ""
-"Some videos require an account to be downloaded, mostly because they're "
-"flagged as mature content."
-msgstr ""
-"За преузимање неких видео клипова је потребан налог, углавном зато што су "
-"означена као садржај за одрасле."
-
-#: ../YoutubeDl/messages:227
-msgid "Use the Username and Passwrod authentication process."
-msgstr "Користите поступак пријаве корисничким именом и лозинком."
-
-#: ../YoutubeDl/messages:229
-msgid "Username/Password"
-msgstr "Корисничко име/лозинка"
-
-#: ../YoutubeDl/messages:231
-msgid "Specify the youtube account username UserName."
-msgstr "Одредите корисничко име налога на Јутуби."
-
-#: ../YoutubeDl/messages:233
-msgid "Username:"
-msgstr "Корисничко име:"
-
-#: ../YoutubeDl/messages:235
-msgid "Like the username, specifies the account password."
-msgstr "Уз корисничко име, одређује лозинку налога."
-
-#: ../YoutubeDl/messages:237
-msgid "Password:"
-msgstr "Лозинка:"
-
-#: ../YoutubeDl/messages:240
-msgid ""
-"This applet allows a user to drag Youtube links from the Youtube website and "
-"drop them on the icon to download. The backend downloader is based on "
-"youtube-dl.py.\n"
-"\n"
-"Only one video will be downloaded at a time and each url will be added to a "
-"list. When the video is downloaded or aborted the url will be removed from "
-"the list. The list can be saved to a file and loaded again for future use.\n"
-"\n"
-"The middle mouse button can be configured to open the video folder or to "
-"show download status.\n"
-"\n"
-"Right clicking allows various options depending on what is happening at that "
-"time. If your video foler is not valid or not writeable then you can't "
-"download until it is corrected.\n"
-"\n"
-"If there are no videos in the list left clicking on the icon allows you to "
-"enter a url. Otherwise the url list will be displayed."
-msgstr ""
-"Ово програмче вам омогућује да превлачите Јутуба везе са веб призора Јутуба "
-"и да их спуштате на икону за преузимање. Позадинац преузимања је заснован на "
-"youtube-dl.py.\n"
-"\n"
-"Само по један видео ће бити преузиман и свака адреса ће бити додавана на "
-"списак. Кад с видео преузме, или откаже се  преузимање, адреса ће бити "
-"уклоњена са списка. Списак може бити сачуван у датотеку и поново учитан за "
-"за каснију употребу.\n"
-"\n"
-"Средње дугме миша може бити подешено да отвара фасциклу видеа, или да "
-"приказује стање преузимања.\n"
-"\n"
-"Десни клик даје бројне могућности у зависности од тога шта се тренутно "
-"дешава. Ако ваша фасцикла видеа није исправна или није уписива, онда не "
-"можете преузимати док се т не исправи.\n"
-"\n"
-"Ако нема видеа на списку, леви клик на икону дозвољава да унесете адресу. У "
-"супротном, списак адреса ће бити приказан."
+#~ msgid "Open Video Folder"
+#~ msgstr "Отвори видео фасциклу"
+
+#~ msgid "Show Download Status"
+#~ msgstr "_Прикажи преузимања"
+
+#~ msgid "Send abort signal to the downloader. There may be a delay"
+#~ msgstr "Пошаљи знак отказивања преузимачу. Може доћи до одлагања"
+
+#~ msgid "Set to 0 to use the default applet size"
+#~ msgstr "Поставите 0 да би користили подразумевану величину програмчета"
+
+#~ msgid "Otherwise use right click and enable downloads"
+#~ msgstr "У супротном, користите десни клик и омогућите преузимања"
+
+#~ msgid "Start downloading videos imediately? :"
+#~ msgstr "Да почнем одмах са преузимањем видеа? :"
+
+#~ msgid "in secondds"
+#~ msgstr "у секундама"
+
+#~ msgid "Time between updates:"
+#~ msgstr "Врме између два освежавања:"
+
+#~ msgid "Action on middle click:"
+#~ msgstr "Радња на средњи клик:"
+
+#~ msgid "Show Status"
+#~ msgstr "Прикажи _стање"
+
+#~ msgid "Otherwise just use middle click to monitor status"
+#~ msgstr "У супротном само употребите средњи клик за праћење стања"
+
+#~ msgid "Show download progress on icon? :"
+#~ msgstr "Прикажи напредак преузимања на икони :"
+
+#~ msgid ""
+#~ "Otherwise just show the plugin name and use middle click to monitor status"
+#~ msgstr ""
+#~ "У супротном, само прикажи назив прикључка и користи средњи клик за "
+#~ "праћење стања"
+
+#~ msgid "Show download status in icon label when hovering over icon? :"
+#~ msgstr ""
+#~ "Приказати стање преузимања на натпису иконе при надношењу преко иконе? :"
+
+#~ msgid "Notification selections"
+#~ msgstr "Одабир обавештавања"
+
+#~ msgid "Otherwise quietly start to the next download"
+#~ msgstr "У супротном, тихо крени на следеће прузимање"
+
+#~ msgid "Show a pop-up message when starting downloads? :"
+#~ msgstr "Приказуј икачућу поруку при покретању преузимања? :"
+
+#~ msgid "Otherwise quietly move finish the download"
+#~ msgstr "У супротном, тихо крени на следеће прузимање"
+
+#~ msgid "Show a pop-up message when download is complete? :"
+#~ msgstr "Прикажи искачућу поруку кад је преузимање завршено? :"
+
+#~ msgid "Otherwise quietly abort the download"
+#~ msgstr "У супротном тихо напусти преузимање"
+
+#~ msgid "Show a pop-up message when download is aborted? :"
+#~ msgstr "Прикажи искачуће прозорче кад се преузимање обустави? :"
+
+#~ msgid "Otherwise just quietly add the url to the list"
+#~ msgstr "У супротном, само тихо додај адресу списку"
+
+#~ msgid "Show a pop-up message when adding url to queue list? :"
+#~ msgstr "Прикажи искачућу поруку при додавању адресе на списак заказаног? :"
+
+#~ msgid ""
+#~ "if pynotify is installed a system notification message will appear, "
+#~ "otherwise the standard dock dialogue messages will be used."
+#~ msgstr ""
+#~ "ако је pynotify уграђен, порука обавештења система ће се појавити, у "
+#~ "супротном ће обични прозори порука дока бити коришћени."
+
+#~ msgid "Attempt to use desktop notifications instead of dock messages? :"
+#~ msgstr ""
+#~ "Да ли да покушам да користим обавештења окружења уместо порука дока? :"
+
+#~ msgid ""
+#~ "This is usefull if you have long lists of urls to view when you left "
+#~ "click on the icon. Otherwise the standard dialogue message is fine."
+#~ msgstr ""
+#~ "Ово је корисно ако имате дуг списак адреса за преглед кад кликнете левим "
+#~ "кликом на икону. У супротном обично прозорче поруке је у реду."
+
+#~ msgid "Use list view when URL list exceeds specified number?:"
+#~ msgstr "Користи преглед списка за адресе кад списак пређе одређени број?:"
+
+#~ msgid ""
+#~ "When the number of URLS exceed this number switch to list view instead of "
+#~ "a regular dialogue"
+#~ msgstr ""
+#~ "Кад број адреса пређе овај број пређи на преглед списка уместо на обичан "
+#~ "прозор"
+
+#~ msgid "Use list view when number of URLs exceed:"
+#~ msgstr "Користи преглед списка кад број адреса пређе:"
+
+#~ msgid "Directory Setup"
+#~ msgstr "Поставке фасцикле"
+
+#~ msgid ""
+#~ "The path to save the videos to. Leave it empty to use the default one "
+#~ "(currently in the users Videos directory)."
+#~ msgstr ""
+#~ "Путања за чување видеа. Оставите празно ако желите да користите "
+#~ "подразумевану (тренутно у корисничкој фасцикли видеа)."
+
+#~ msgid "Save videos to this directory:"
+#~ msgstr "Сачувај видео у овој фасцикли:"
+
+#~ msgid ""
+#~ "The path to save the URL list to. Leave it empty to use the default one "
+#~ "(currently in the users home directory)."
+#~ msgstr ""
+#~ "Путања за чување списка адреса. Оставите празно за коришћење "
+#~ "подразумеване (тренутно у личној фасцикли корисника)."
+
+#~ msgid "Save URL List to this directory:"
+#~ msgstr "Сачувај адресе у овој фасцикли:"
+
+#~ msgid "Download Options"
+#~ msgstr "Могућности преузимања"
+
+#~ msgid "Set the download options that will be used for the youtubedl backend"
+#~ msgstr ""
+#~ "Подеси могућности преузимања које ће бити коришћене за youtubedl позадинца"
+
+#~ msgid "Resume partially downloaded files"
+#~ msgstr "Настави преузимање делимично преузетих датотека"
+
+#~ msgid "Resume download (--continue)?"
+#~ msgstr "Настави преузимање (--continue)?"
+
+#~ msgid "Ignore errors during download and continue processing."
+#~ msgstr "Занемари грешке приликом преузимања, и настави обраду."
+
+#~ msgid "Ignore errors (--ignore-errors)?"
+#~ msgstr "Занемари грешке (--ignore-errors)?"
+
+#~ msgid "If file exists fo not attempt to over write the file."
+#~ msgstr "Ако датотека постоји, не покушавај да је препишеш."
+
+#~ msgid "No overwrite (--no-overwrites)?"
+#~ msgstr "Не преписуј (--no-overwrites)?"
+
+#~ msgid ""
+#~ "Use the title of the video in the file name used to download the video"
+#~ msgstr ""
+#~ "Користи наслов видеа у имену датотеке који се користио за преузимање видеа"
+
+#~ msgid "Use title (--title)?"
+#~ msgstr "Користи наслов (--title)?"
+
+#~ msgid "Which download format to use:"
+#~ msgstr "Који облик преузимања користити:"
+
+#~ msgid "Specify the video format"
+#~ msgstr "Изаберите видео облик"
+
+#~ msgid "Limit the maximum quality"
+#~ msgstr "Ограничи  квалитет"
+
+#~ msgid "Download default format"
+#~ msgstr "Преузми у предодређеном облику"
+
+#~ msgid "Specify the video format (quality) in which to download the video."
+#~ msgstr "Одредите облик видеа (квалитет) у који ће се видео преузимати."
+
+#~ msgid "Video format (--format):"
+#~ msgstr "Облик видеа (--format):"
+
+#~ msgid "H264 - MP4 at 480p"
+#~ msgstr "H264 - MP4 на 480p"
+
+#~ msgid "H264 - MP4 at 720p"
+#~ msgstr "H264 - MP4 на 720p"
+
+#~ msgid "H264 - MP4 at 1080p"
+#~ msgstr "H264 - MP4 на 1080p"
+
+#~ msgid "H264 - FLV at 360p"
+#~ msgstr "H264 - FLV на 360p"
+
+#~ msgid "H264 - FLV at 480p"
+#~ msgstr "H264 - FLV на 480p"
+
+#~ msgid "H263 - FLV at 240p"
+#~ msgstr "H263 - FLV на 240p"
+
+#~ msgid "Webm at 480p"
+#~ msgstr "Вебм на 480p"
+
+#~ msgid "Webm at 720p"
+#~ msgstr "Вебм на 720p"
+
+#~ msgid "3GP video"
+#~ msgstr "3ГП видео"
+
+#~ msgid "Limit the maximum quality of the videos to download."
+#~ msgstr "Ограничите највећи квалитет видеа за преузимање."
+
+#~ msgid "Maximum quality (--max-quality):"
+#~ msgstr "Највећи квалитет (--max-quality):"
+
+#~ msgid "Download the default format."
+#~ msgstr "Преузми у предодређеном облику."
+
+#~ msgid ""
+#~ "Some videos require an account to be downloaded, mostly because they're "
+#~ "flagged as mature content."
+#~ msgstr ""
+#~ "За преузимање неких видео клипова је потребан налог, углавном зато што су "
+#~ "означена као садржај за одрасле."
+
+#~ msgid "Use the Username and Passwrod authentication process."
+#~ msgstr "Користите поступак пријаве корисничким именом и лозинком."
+
+#~ msgid "Username/Password"
+#~ msgstr "Корисничко име/лозинка"
+
+#~ msgid "Specify the youtube account username UserName."
+#~ msgstr "Одредите корисничко име налога на Јутуби."
+
+#~ msgid "Username:"
+#~ msgstr "Корисничко име:"
+
+#~ msgid "Like the username, specifies the account password."
+#~ msgstr "Уз корисничко име, одређује лозинку налога."
+
+#~ msgid "Password:"
+#~ msgstr "Лозинка:"
+
+#~ msgid ""
+#~ "This applet allows a user to drag Youtube links from the Youtube website "
+#~ "and drop them on the icon to download. The backend downloader is based on "
+#~ "youtube-dl.py.\n"
+#~ "\n"
+#~ "Only one video will be downloaded at a time and each url will be added to "
+#~ "a list. When the video is downloaded or aborted the url will be removed "
+#~ "from the list. The list can be saved to a file and loaded again for "
+#~ "future use.\n"
+#~ "\n"
+#~ "The middle mouse button can be configured to open the video folder or to "
+#~ "show download status.\n"
+#~ "\n"
+#~ "Right clicking allows various options depending on what is happening at "
+#~ "that time. If your video foler is not valid or not writeable then you "
+#~ "can't download until it is corrected.\n"
+#~ "\n"
+#~ "If there are no videos in the list left clicking on the icon allows you "
+#~ "to enter a url. Otherwise the url list will be displayed."
+#~ msgstr ""
+#~ "Ово програмче вам омогућује да превлачите Јутуба везе са веб призора "
+#~ "Јутуба и да их спуштате на икону за преузимање. Позадинац преузимања је "
+#~ "заснован на youtube-dl.py.\n"
+#~ "\n"
+#~ "Само по један видео ће бити преузиман и свака адреса ће бити додавана на "
+#~ "списак. Кад с видео преузме, или откаже се  преузимање, адреса ће бити "
+#~ "уклоњена са списка. Списак може бити сачуван у датотеку и поново учитан "
+#~ "за за каснију употребу.\n"
+#~ "\n"
+#~ "Средње дугме миша може бити подешено да отвара фасциклу видеа, или да "
+#~ "приказује стање преузимања.\n"
+#~ "\n"
+#~ "Десни клик даје бројне могућности у зависности од тога шта се тренутно "
+#~ "дешава. Ако ваша фасцикла видеа није исправна или није уписива, онда не "
+#~ "можете преузимати док се т не исправи.\n"
+#~ "\n"
+#~ "Ако нема видеа на списку, леви клик на икону дозвољава да унесете адресу. "
+#~ "У супротном, списак адреса ће бити приказан."

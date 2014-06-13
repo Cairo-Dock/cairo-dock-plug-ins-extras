@@ -53,7 +53,6 @@ msgstr "Modifica i menù"
 #: ../Transmission/messages:3 ../Twitter/messages:1 ../Twitter/messages:3
 #: ../WebSearch/messages:1 ../WindowsKiller/messages:1
 #: ../WindowsKiller/messages:3 ../Xchat/messages:1 ../Xchat/messages:3
-#: ../YoutubeDl/messages:1
 msgid "Icon"
 msgstr "Icona"
 
@@ -66,7 +65,6 @@ msgstr "Icona"
 #: ../Quote/messages:5 ../Screensaver_inhibitor/messages:5
 #: ../Translator/messages:5 ../Transmission/messages:5 ../Twitter/messages:5
 #: ../WebSearch/messages:3 ../WindowsKiller/messages:5 ../Xchat/messages:5
-#: ../YoutubeDl/messages:13
 msgid "Name of the dock it belongs to:"
 msgstr "Nome della dock alla quale appartiene:"
 
@@ -79,7 +77,6 @@ msgstr "Nome della dock alla quale appartiene:"
 #: ../Quote/messages:9 ../Screensaver_inhibitor/messages:7
 #: ../Translator/messages:7 ../Transmission/messages:7 ../Twitter/messages:7
 #: ../WebSearch/messages:5 ../WindowsKiller/messages:7 ../Xchat/messages:7
-#: ../YoutubeDl/messages:7
 msgid "Name of the icon as it will appear in its caption in the dock:"
 msgstr "Nome dell'icona che apparirà sulla didascalia nella dock:"
 
@@ -92,7 +89,6 @@ msgstr "Nome dell'icona che apparirà sulla didascalia nella dock:"
 #: ../Quote/messages:11 ../Screensaver_inhibitor/messages:9
 #: ../Translator/messages:9 ../Transmission/messages:9 ../Twitter/messages:9
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
-#: ../YoutubeDl/messages:9
 msgid "Default"
 msgstr "Predefinito"
 
@@ -116,7 +112,7 @@ msgstr "Mostra"
 #: ../Quote/messages:15 ../Screensaver_inhibitor/messages:11
 #: ../Translator/messages:13 ../Transmission/messages:13
 #: ../Twitter/messages:13 ../WebSearch/messages:11
-#: ../WindowsKiller/messages:13 ../Xchat/messages:13 ../YoutubeDl/messages:11
+#: ../WindowsKiller/messages:13 ../Xchat/messages:13
 msgid "Image filename:"
 msgstr "Percorso dell'immagine:"
 
@@ -142,7 +138,7 @@ msgstr "Imposta a 0 per usare la dimensione predefinita dell'applet"
 #: ../Quote/messages:19 ../Screensaver_inhibitor/messages:17
 #: ../Translator/messages:17 ../Transmission/messages:17
 #: ../Twitter/messages:17 ../WebSearch/messages:15
-#: ../WindowsKiller/messages:17 ../Xchat/messages:17 ../YoutubeDl/messages:5
+#: ../WindowsKiller/messages:17 ../Xchat/messages:17
 msgid "Desired icon size for this applet"
 msgstr "Dimensione dell'icona desiderata per questa applet"
 
@@ -155,7 +151,7 @@ msgstr "Dimensione dell'icona desiderata per questa applet"
 #: ../Quote/messages:21 ../Screensaver_inhibitor/messages:19
 #: ../Translator/messages:19 ../Transmission/messages:19
 #: ../Twitter/messages:19 ../WebSearch/messages:17
-#: ../WindowsKiller/messages:19 ../Xchat/messages:19 ../YoutubeDl/messages:17
+#: ../WindowsKiller/messages:19 ../Xchat/messages:19
 msgid "Desklet"
 msgstr "Desklet"
 
@@ -306,7 +302,7 @@ msgstr "Visibilità:"
 #: ../Quote/messages:47 ../Screensaver_inhibitor/messages:35
 #: ../Translator/messages:47 ../Transmission/messages:45
 #: ../Twitter/messages:45 ../WebSearch/messages:43
-#: ../WindowsKiller/messages:45 ../Xchat/messages:45 ../YoutubeDl/messages:33
+#: ../WindowsKiller/messages:45 ../Xchat/messages:45
 msgid "Normal"
 msgstr "Normale"
 
@@ -319,7 +315,7 @@ msgstr "Normale"
 #: ../Quote/messages:49 ../Screensaver_inhibitor/messages:37
 #: ../Translator/messages:49 ../Transmission/messages:47
 #: ../Twitter/messages:47 ../WebSearch/messages:45
-#: ../WindowsKiller/messages:47 ../Xchat/messages:47 ../YoutubeDl/messages:35
+#: ../WindowsKiller/messages:47 ../Xchat/messages:47
 msgid "Keep above"
 msgstr "Tieni al di sopra"
 
@@ -332,7 +328,7 @@ msgstr "Tieni al di sopra"
 #: ../Quote/messages:51 ../Screensaver_inhibitor/messages:39
 #: ../Translator/messages:51 ../Transmission/messages:49
 #: ../Twitter/messages:49 ../WebSearch/messages:47
-#: ../WindowsKiller/messages:49 ../Xchat/messages:49 ../YoutubeDl/messages:37
+#: ../WindowsKiller/messages:49 ../Xchat/messages:49
 msgid "Keep below"
 msgstr "Tieni al di sotto"
 
@@ -355,7 +351,7 @@ msgstr "Nel Livello Widget"
 #: ../Quote/messages:55 ../Screensaver_inhibitor/messages:43
 #: ../Translator/messages:55 ../Transmission/messages:53
 #: ../Twitter/messages:53 ../WebSearch/messages:51
-#: ../WindowsKiller/messages:53 ../Xchat/messages:53 ../YoutubeDl/messages:41
+#: ../WindowsKiller/messages:53 ../Xchat/messages:53
 msgid "Reserve space"
 msgstr "Riserva lo spazio"
 
@@ -378,7 +374,7 @@ msgstr "Dovrebbe essere visibile in ogni scrivania?"
 #: ../Pidgin/messages:57 ../Quote/messages:59
 #: ../Screensaver_inhibitor/messages:55 ../Translator/messages:59
 #: ../Transmission/messages:57 ../Twitter/messages:57 ../WebSearch/messages:55
-#: ../WindowsKiller/messages:57 ../Xchat/messages:57 ../YoutubeDl/messages:53
+#: ../WindowsKiller/messages:57 ../Xchat/messages:57
 msgid "Decorations"
 msgstr "Decorazioni"
 
@@ -426,7 +422,7 @@ msgstr ""
 #: ../Quote/messages:67 ../Screensaver_inhibitor/messages:63
 #: ../Translator/messages:67 ../Transmission/messages:65
 #: ../Twitter/messages:65 ../WebSearch/messages:63
-#: ../WindowsKiller/messages:65 ../Xchat/messages:65 ../YoutubeDl/messages:61
+#: ../WindowsKiller/messages:65 ../Xchat/messages:65
 msgid "Background image:"
 msgstr "Immagine di sfondo:"
 
@@ -551,7 +547,7 @@ msgstr ""
 #: ../Quote/messages:89 ../Screensaver_inhibitor/messages:85
 #: ../Translator/messages:89 ../Transmission/messages:87
 #: ../Twitter/messages:87 ../WebSearch/messages:85
-#: ../WindowsKiller/messages:87 ../Xchat/messages:87 ../YoutubeDl/messages:83
+#: ../WindowsKiller/messages:87 ../Xchat/messages:87
 msgid "Foreground image:"
 msgstr "Immagine di primo piano:"
 
@@ -573,7 +569,7 @@ msgstr "Trasparenza della superficie:"
 #: ../Pidgin/messages:91 ../Quote/messages:93
 #: ../Screensaver_inhibitor/messages:89 ../Translator/messages:93
 #: ../Transmission/messages:91 ../Twitter/messages:91 ../WebSearch/messages:89
-#: ../Xchat/messages:91 ../YoutubeDl/messages:87
+#: ../Xchat/messages:91
 msgid "Configuration"
 msgstr "Configurazione"
 
@@ -801,7 +797,6 @@ msgstr "Informazioni sui torrent"
 #: ../Notifications_history/Notifications_history:176
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:213
 #: ../Translator/Translator:416 ../Transmission/Transmission:516
-#: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/YoutubeDl:304
 msgid "middle-click"
 msgstr "clic centrale"
 
@@ -940,7 +935,7 @@ msgstr "Se non puoi attendere, controlla la posta in arrivo di Gmail adesso."
 msgid "Write a mail"
 msgstr "Scrivi una e-mail"
 
-#: ../Gmail/messages:15 ../YoutubeDl/messages:15
+#: ../Gmail/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
 msgstr "Mostra sempre l'icona, anche quando la dock è nascosta?"
 
@@ -1149,7 +1144,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Notifications_history/messages:21 ../Screensaver_inhibitor/messages:21
-#: ../Translator/messages:27 ../YoutubeDl/messages:19
+#: ../Translator/messages:27
 msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
@@ -1159,31 +1154,30 @@ msgstr ""
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Notifications_history/messages:23 ../Screensaver_inhibitor/messages:23
-#: ../Translator/messages:29 ../YoutubeDl/messages:21
+#: ../Translator/messages:29
 msgid "Desklet's dimension (width x height) :"
 msgstr "Dimensione della desklet (larghezza x altezza):"
 
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
-#: ../Translator/messages:31 ../YoutubeDl/messages:23
+#: ../Translator/messages:31
 msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Notifications_history/messages:27 ../Screensaver_inhibitor/messages:27
-#: ../Translator/messages:33 ../YoutubeDl/messages:25
+#: ../Translator/messages:33
 msgid "Desklet's position (x ; y) :"
 msgstr "Posizione della desklet (x ; y):"
 
 #: ../HDDtemperature/messages:25 ../Moon/messages:29
 #: ../Notifications_history/messages:29 ../Screensaver_inhibitor/messages:29
-#: ../Translator/messages:41 ../YoutubeDl/messages:27
+#: ../Translator/messages:41
 msgid "Is detached from the dock ?"
 msgstr "È staccato dalla dock?"
 
 #: ../HDDtemperature/messages:27 ../Translator/messages:43
-#: ../YoutubeDl/messages:29
 msgid ""
 "for CompizFusion's \"widget layer\", set behaviour in Compiz to: "
 "(class=Cairo-dock & type=utility)"
@@ -1193,25 +1187,24 @@ msgstr ""
 
 #: ../HDDtemperature/messages:29 ../Moon/messages:31
 #: ../Notifications_history/messages:33 ../Screensaver_inhibitor/messages:33
-#: ../Translator/messages:45 ../YoutubeDl/messages:31
+#: ../Translator/messages:45
 msgid "Accessibility :"
 msgstr "Accessibilità:"
 
 #: ../HDDtemperature/messages:37 ../Moon/messages:39
 #: ../Notifications_history/messages:41 ../Screensaver_inhibitor/messages:41
-#: ../Translator/messages:53 ../YoutubeDl/messages:39
+#: ../Translator/messages:53
 msgid "On Widget Layer"
 msgstr "A Livello Widget"
 
 #: ../HDDtemperature/messages:41 ../Moon/messages:43
 #: ../Notifications_history/messages:45 ../Screensaver_inhibitor/messages:45
-#: ../Translator/messages:57 ../YoutubeDl/messages:43
+#: ../Translator/messages:57
 msgid "Should be visible on all desktops ?"
 msgstr "Dovrebbe essere visibile su ogni Scrivania?"
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Notifications_history/messages:47 ../Screensaver_inhibitor/messages:47
-#: ../YoutubeDl/messages:45
 msgid ""
 "If locked, the desklet can't be moved by simply dragging it with the left "
 "mouse button. Of course you can still move it with ALT + left_click."
@@ -1222,37 +1215,34 @@ msgstr ""
 
 #: ../HDDtemperature/messages:45 ../Moon/messages:47
 #: ../Notifications_history/messages:49 ../Screensaver_inhibitor/messages:49
-#: ../YoutubeDl/messages:47
 msgid "Lock position ?"
 msgstr "Blocco la posizione?"
 
 #: ../HDDtemperature/messages:47 ../Moon/messages:49
 #: ../Notifications_history/messages:51 ../Screensaver_inhibitor/messages:51
-#: ../YoutubeDl/messages:49
 msgid "in degrees."
 msgstr "in gradi."
 
 #: ../HDDtemperature/messages:49 ../Moon/messages:51
 #: ../Notifications_history/messages:53 ../Screensaver_inhibitor/messages:53
-#: ../YoutubeDl/messages:51
 msgid "Rotation :"
 msgstr "Rotazione:"
 
 #: ../HDDtemperature/messages:53 ../Moon/messages:55
 #: ../Notifications_history/messages:57 ../Screensaver_inhibitor/messages:57
-#: ../Translator/messages:61 ../YoutubeDl/messages:55
+#: ../Translator/messages:61
 msgid "Choose the 'personnal' one to define your own decorations below."
 msgstr "Scegline uno 'personale' per definire le proprie decorazioni."
 
 #: ../HDDtemperature/messages:55 ../Moon/messages:57
 #: ../Notifications_history/messages:59 ../Screensaver_inhibitor/messages:59
-#: ../Translator/messages:63 ../YoutubeDl/messages:57
+#: ../Translator/messages:63
 msgid "Choose a decoration theme for this desklet :"
 msgstr "Scegli un tema decorativo per questa desklet:"
 
 #: ../HDDtemperature/messages:57 ../Moon/messages:59
 #: ../Notifications_history/messages:61 ../Screensaver_inhibitor/messages:61
-#: ../Translator/messages:65 ../YoutubeDl/messages:59
+#: ../Translator/messages:65
 msgid ""
 "It's an image that will be displayed below the drawings, like a frame for "
 "exemple. Let empty to not use any."
@@ -1262,61 +1252,61 @@ msgstr ""
 
 #: ../HDDtemperature/messages:61 ../Moon/messages:63
 #: ../Notifications_history/messages:65 ../Screensaver_inhibitor/messages:65
-#: ../Translator/messages:69 ../YoutubeDl/messages:63
+#: ../Translator/messages:69
 msgid "Background tansparency :"
 msgstr "Trasparenza dello sfondo:"
 
 #: ../HDDtemperature/messages:63 ../Moon/messages:65
 #: ../Notifications_history/messages:67 ../Screensaver_inhibitor/messages:67
-#: ../Translator/messages:71 ../YoutubeDl/messages:65
+#: ../Translator/messages:71
 msgid "in pixels. Use this to adjust the left position of the drawings."
 msgstr "in pixel. Consente di regolare la posizione di sinistra dei disegni."
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Notifications_history/messages:69 ../Screensaver_inhibitor/messages:69
-#: ../Translator/messages:73 ../YoutubeDl/messages:67
+#: ../Translator/messages:73
 msgid "Left offset :"
 msgstr "Compensazione a sinistra:"
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Notifications_history/messages:71 ../Screensaver_inhibitor/messages:71
-#: ../Translator/messages:75 ../YoutubeDl/messages:69
+#: ../Translator/messages:75
 msgid "in pixels. Use this to adjust the top position of the drawings."
 msgstr "in pixel. Consente di regolare la posizione superiore dei disegni."
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Notifications_history/messages:73 ../Screensaver_inhibitor/messages:73
-#: ../Translator/messages:77 ../YoutubeDl/messages:71
+#: ../Translator/messages:77
 msgid "Top offset :"
 msgstr "Compensazione superiore:"
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Notifications_history/messages:75 ../Screensaver_inhibitor/messages:75
-#: ../Translator/messages:79 ../YoutubeDl/messages:73
+#: ../Translator/messages:79
 msgid "in pixels. Use this to adjust the right position of the drawings."
 msgstr "in pixel. Consente di regolare la posizione di destra dei disegni."
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Notifications_history/messages:77 ../Screensaver_inhibitor/messages:77
-#: ../Translator/messages:81 ../YoutubeDl/messages:75
+#: ../Translator/messages:81
 msgid "Right offset :"
 msgstr "Compensazione a destra:"
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Notifications_history/messages:79 ../Screensaver_inhibitor/messages:79
-#: ../Translator/messages:83 ../YoutubeDl/messages:77
+#: ../Translator/messages:83
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
 msgstr "in pixel. Consente di regolare la posizione inferiore dei disegni."
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Notifications_history/messages:81 ../Screensaver_inhibitor/messages:81
-#: ../Translator/messages:85 ../YoutubeDl/messages:79
+#: ../Translator/messages:85
 msgid "Bottom offset :"
 msgstr "Compensazione inferiore:"
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Notifications_history/messages:83 ../Screensaver_inhibitor/messages:83
-#: ../Translator/messages:87 ../YoutubeDl/messages:81
+#: ../Translator/messages:87
 msgid ""
 "It's an image that will be displayed above the drawings, like a reflect for "
 "exemple. Let empty to not use any."
@@ -1326,7 +1316,7 @@ msgstr ""
 
 #: ../HDDtemperature/messages:83 ../Moon/messages:85
 #: ../Notifications_history/messages:87 ../Screensaver_inhibitor/messages:87
-#: ../Translator/messages:91 ../YoutubeDl/messages:85
+#: ../Translator/messages:91
 msgid "Foreground tansparency :"
 msgstr "Trasparenza del primo piano:"
 
@@ -2219,37 +2209,41 @@ msgstr ""
 "<b>Rilascia un file torrent</b> sull'icona per aggiungerlo alla lista di "
 "scaricamento e iniziare immediatamente il suo download."
 
-#: ../Twitter/Twitter:117
+#: ../Twitter/Twitter:118
 msgid "Oh, dear, your timeline is empty :-("
 msgstr "Oh, caro/a, la timeline è vuota :-("
 
-#: ../Twitter/Twitter:185
+#: ../Twitter/Twitter:122 ../Twitter/Twitter:197 ../Twitter/Twitter:216
+msgid "Connection problem"
+msgstr ""
+
+#: ../Twitter/Twitter:194
 msgid "Oh, dear, you do not have direct messages :-("
 msgstr "Oh, caro/a, non hai messaggi diretti :-("
 
-#: ../Twitter/Twitter:199
+#: ../Twitter/Twitter:214
 msgid "Followers"
 msgstr "Seguaci"
 
-#: ../Twitter/Twitter:199
+#: ../Twitter/Twitter:214
 msgid "Friends"
 msgstr "Amici"
 
-#: ../Twitter/Twitter:199 ../Twitter/Twitter:353
+#: ../Twitter/Twitter:214 ../Twitter/Twitter:371
 msgid "Tweets"
 msgstr "Tweet"
 
-#: ../Twitter/Twitter:220
+#: ../Twitter/Twitter:238
 #, python-format
 msgid "%s, send a tweet"
 msgstr "%s, invia un tweet"
 
-#: ../Twitter/Twitter:222
+#: ../Twitter/Twitter:240
 #, python-format
 msgid "Your tweet has more than %d characters, please make it shorter"
 msgstr "Il tuo tweet supera i %d caratteri, per favore sii più breve"
 
-#: ../Twitter/Twitter:235
+#: ../Twitter/Twitter:253
 #, python-format
 msgid ""
 "Problem to send this tweet on %s, I think you already tried to send the same "
@@ -2258,12 +2252,12 @@ msgstr ""
 "Problema nell'invio di questo tweet su %s, penso che hai già provato ad "
 "inviarne uno uguale pochi minuti fa"
 
-#: ../Twitter/Twitter:239
+#: ../Twitter/Twitter:257
 #, python-format
 msgid "%s, retweet?"
 msgstr "%s, retweet?"
 
-#: ../Twitter/Twitter:253
+#: ../Twitter/Twitter:271
 msgid ""
 "This applet supports Twitter, and Identi.ca.\n"
 "Right-click -> Add account -> Twitter.\n"
@@ -2273,7 +2267,7 @@ msgstr ""
 "Clic destro -> Aggiungi account -> Twitter.\n"
 "Clic destro -> Aggiungi account -> Identi.ca."
 
-#: ../Twitter/Twitter:258
+#: ../Twitter/Twitter:276
 #, python-format
 msgid ""
 "The applet needs your nickname, and an authorization\n"
@@ -2282,12 +2276,12 @@ msgstr ""
 "L'applet ha bisogno del tuo nickname, e di una autorizzazione\n"
 "di consenso alla connesione al tuo account %s"
 
-#: ../Twitter/Twitter:267
+#: ../Twitter/Twitter:285
 #, python-format
 msgid "What is your %s nickname?"
 msgstr "Qual'è il tuo nickname %s ?"
 
-#: ../Twitter/Twitter:284
+#: ../Twitter/Twitter:302
 #, python-format
 msgid ""
 "%s applet needs you to give the authorization. Authorization page was opened "
@@ -2298,7 +2292,7 @@ msgstr ""
 "autorizzazione è stata aperta sul tuo browser. Autorizzala quanto prima, "
 "copia il numero PIN che verrà mostrato e vai al successivo dialogo"
 
-#: ../Twitter/Twitter:287
+#: ../Twitter/Twitter:305
 #, python-format
 msgid ""
 "%s applet needs you to give the authorization. Copy the address bellow and "
@@ -2309,49 +2303,49 @@ msgstr ""
 "sotto e accedi con il tuo browser. Copia il numero PIN che verrà mostrato e "
 "autorizzala al più presto"
 
-#: ../Twitter/Twitter:297
+#: ../Twitter/Twitter:315
 msgid "Enter the PIN number shown on the authorization page"
 msgstr "Inserisci il numero PIN mostrato nella pagina di autorizzazione"
 
-#: ../Twitter/Twitter:309
+#: ../Twitter/Twitter:327
 msgid "Successfully connected with Twitter"
 msgstr "Collegamento a Twitter avvenuto con successo"
 
-#: ../Twitter/Twitter:312
+#: ../Twitter/Twitter:330
 msgid "Successfully connected with Identi.ca"
 msgstr "Connesso con successo ad Identi.ca"
 
-#: ../Twitter/Twitter:329
+#: ../Twitter/Twitter:347
 msgid "Direct messages"
 msgstr "Messaggi diretti"
 
-#: ../Twitter/Twitter:331
+#: ../Twitter/Twitter:349
 #, python-format
 msgid "New direct messages (%d)"
 msgstr "Nuovo messaggio diretto (%d)"
 
-#: ../Twitter/Twitter:344
+#: ../Twitter/Twitter:362
 msgid "Info"
 msgstr "Info"
 
-#: ../Twitter/Twitter:355
+#: ../Twitter/Twitter:373
 #, python-format
 msgid "New tweets (%d)"
 msgstr "Nuovi tweet (%d)"
 
-#: ../Twitter/Twitter:369
+#: ../Twitter/Twitter:387
 msgid "My tweets"
 msgstr "I miei tweet"
 
-#: ../Twitter/Twitter:387
+#: ../Twitter/Twitter:405
 msgid "Add account"
 msgstr "Aggiungi un account"
 
-#: ../Twitter/Twitter:395
+#: ../Twitter/Twitter:413
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../Twitter/Twitter:405
+#: ../Twitter/Twitter:423
 msgid "Identi.ca"
 msgstr "Identi.ca"
 
@@ -2611,357 +2605,291 @@ msgstr ""
 "Dall'icona sarà inoltre possibile controllare la finestra di xchat come "
 "un'icona di una normale applicazione."
 
-#: ../YoutubeDl/YoutubeDl:299 ../YoutubeDl/messages:99
-msgid "Open Video Folder"
-msgstr "Apri la Cartella Video"
-
-#: ../YoutubeDl/YoutubeDl:304
-msgid "Show Download Status"
-msgstr "Mostra lo Stato del Download"
-
-#: ../YoutubeDl/YoutubeDl:312
-msgid "Send abort signal to the downloader. There may be a delay"
-msgstr ""
-"Invia un segnale di interruzione al downloader. Potrebbe esserci un ritardo."
-
-#: ../YoutubeDl/messages:3
-msgid "Set to 0 to use the default applet size"
-msgstr "Imposta a 0 per usare la dimensione predefinita dell'applet"
-
-#: ../YoutubeDl/messages:89
-msgid "Otherwise use right click and enable downloads"
-msgstr "Altrimenti utilizza il tasto destro del mouse e attiva i download"
-
-#: ../YoutubeDl/messages:91
-msgid "Start downloading videos imediately? :"
-msgstr "Iniziare a scaricare i video immediatamente? :"
-
-#: ../YoutubeDl/messages:93
-msgid "in secondds"
-msgstr "in secondi"
-
-#: ../YoutubeDl/messages:95
-msgid "Time between updates:"
-msgstr "Intervallo fra gli aggiornamenti:"
-
-#: ../YoutubeDl/messages:97
-msgid "Action on middle click:"
-msgstr "Azione al clic centrale del mouse:"
-
-#: ../YoutubeDl/messages:101
-msgid "Show Status"
-msgstr "Mostra lo stato"
-
-#: ../YoutubeDl/messages:103
-msgid "Otherwise just use middle click to monitor status"
-msgstr ""
-"Altrimenti basta usare il tasto centrale del mouse per monitorare lo stato"
-
-#: ../YoutubeDl/messages:105
-msgid "Show download progress on icon? :"
-msgstr "Mostro l'avanzamento del download sull'icona?:"
-
-#: ../YoutubeDl/messages:107
-msgid ""
-"Otherwise just show the plugin name and use middle click to monitor status"
-msgstr ""
-"Altrimenti mostra solo il nome del plugin e usa il tasto centrale del mouse "
-"per monitorare lo stato"
-
-#: ../YoutubeDl/messages:109
-msgid "Show download status in icon label when hovering over icon? :"
-msgstr ""
-"Mostro lo stato del download nell'etichetta dell'icona quando si sorvola su "
-"di essa?:"
-
-#: ../YoutubeDl/messages:111
-msgid "Notification selections"
-msgstr "Notifica delle selezioni"
-
-#: ../YoutubeDl/messages:113
-msgid "Otherwise quietly start to the next download"
-msgstr "Altrimenti iniziare tranquillamente al prossimo download"
-
-#: ../YoutubeDl/messages:115
-msgid "Show a pop-up message when starting downloads? :"
-msgstr "Mostro un messaggio a comparsa all'avvio dei download?:"
-
-#: ../YoutubeDl/messages:117
-msgid "Otherwise quietly move finish the download"
-msgstr "Altrimenti spostare tranquillamente il download alla fine"
-
-#: ../YoutubeDl/messages:119
-msgid "Show a pop-up message when download is complete? :"
-msgstr "Mostro un messaggio a comparsa quando il download è completo?:"
-
-#: ../YoutubeDl/messages:121
-msgid "Otherwise quietly abort the download"
-msgstr "Altrimenti semplicemente interrompi il download"
-
-#: ../YoutubeDl/messages:123
-msgid "Show a pop-up message when download is aborted? :"
-msgstr "Mostro un messaggio a comparsa quando il download viene interrotto?:"
-
-#: ../YoutubeDl/messages:125
-msgid "Otherwise just quietly add the url to the list"
-msgstr "Altrimenti semplicemente aggiungi solo l'URL alla lista"
-
-#: ../YoutubeDl/messages:127
-msgid "Show a pop-up message when adding url to queue list? :"
-msgstr ""
-"Mostro un messaggio a comparsa quando si aggiunge un URL alla coda della "
-"lista?:"
-
-#: ../YoutubeDl/messages:129
-msgid ""
-"if pynotify is installed a system notification message will appear, "
-"otherwise the standard dock dialogue messages will be used."
-msgstr ""
-"Se è installato pynotify apparirà un messaggio di notifica di sistema, "
-"altrimenti saranno utilizzati i messaggi di dialogo standard della dock."
-
-#: ../YoutubeDl/messages:131
-msgid "Attempt to use desktop notifications instead of dock messages? :"
-msgstr ""
-"Provo ad usare le notifiche del desktop invece dei messaggi della dock?:"
-
-#: ../YoutubeDl/messages:133
-msgid ""
-"This is usefull if you have long lists of urls to view when you left click "
-"on the icon. Otherwise the standard dialogue message is fine."
-msgstr ""
-"Questo è utile se hai lunghe liste di URL da visualizzare facendo clic "
-"sinistro sull'icona. Altrimenti è meglio il messaggio di dialogo standard."
-
-#: ../YoutubeDl/messages:135
-msgid "Use list view when URL list exceeds specified number?:"
-msgstr ""
-"Usare la vista ad elenco quando una lista di URL eccede il numero "
-"specificato?:"
-
-#: ../YoutubeDl/messages:137
-msgid ""
-"When the number of URLS exceed this number switch to list view instead of a "
-"regular dialogue"
-msgstr ""
-"Quando il numero delle URL eccede questo numero commuta alla vista ad elenco "
-"piuttosto che al dialogo regolare"
-
-#: ../YoutubeDl/messages:139
-msgid "Use list view when number of URLs exceed:"
-msgstr "Usa la vista ad elenco quando il numero delle URL eccede:"
-
-#: ../YoutubeDl/messages:141
-msgid "Directory Setup"
-msgstr "Impostazione Directory"
-
-#: ../YoutubeDl/messages:143
-msgid ""
-"The path to save the videos to. Leave it empty to use the default one "
-"(currently in the users Videos directory)."
-msgstr ""
-"Il percorso in cui salvare il video. Lascia vuoto per usare quello "
-"predefinito (attualmente nella directory Video degli utenti)."
-
-#: ../YoutubeDl/messages:145
-msgid "Save videos to this directory:"
-msgstr "Salva i video in questa directory:"
-
-#: ../YoutubeDl/messages:147
-msgid ""
-"The path to save the URL list to. Leave it empty to use the default one "
-"(currently in the users home directory)."
-msgstr ""
-"Il percorso dove salvare l'elenco delle URL. Lascia vuoto per utilizzare "
-"quello predefinito (attualmente nella directory Home degli utenti)."
-
-#: ../YoutubeDl/messages:149
-msgid "Save URL List to this directory:"
-msgstr "Salva l'elenco delle URL in questa directory:"
-
-#: ../YoutubeDl/messages:151
-msgid "Download Options"
-msgstr "Opzioni di Download"
-
-#: ../YoutubeDl/messages:153
-msgid "Set the download options that will be used for the youtubedl backend"
-msgstr ""
-"Imposta le opzioni di download che saranno utilizzate per il backend "
-"youtubedl"
-
-#: ../YoutubeDl/messages:155
-msgid "Resume partially downloaded files"
-msgstr "Riprendi il download dei file parzialmente scaricati"
-
-#: ../YoutubeDl/messages:157
-msgid "Resume download (--continue)?"
-msgstr "Riprendo il download (--continue)?"
-
-#: ../YoutubeDl/messages:159
-msgid "Ignore errors during download and continue processing."
-msgstr "Ignora gli errori durante il download e continua l'elaborazione."
-
-#: ../YoutubeDl/messages:161
-msgid "Ignore errors (--ignore-errors)?"
-msgstr "Ignoro gli errori (--ignore-errors)?"
-
-#: ../YoutubeDl/messages:163
-msgid "If file exists fo not attempt to over write the file."
-msgstr "Se il file esiste non provare a sovrascriverlo."
-
-#: ../YoutubeDl/messages:165
-msgid "No overwrite (--no-overwrites)?"
-msgstr "Non sovrascrivere (--no-overwrites)?"
-
-#: ../YoutubeDl/messages:167
-msgid "Use the title of the video in the file name used to download the video"
-msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
-
-#: ../YoutubeDl/messages:169
-msgid "Use title (--title)?"
-msgstr "Uso il titolo (--title)?"
-
-#: ../YoutubeDl/messages:171
-msgid "Which download format to use:"
-msgstr "Formato per il download da utilizzare:"
-
-#: ../YoutubeDl/messages:173
-msgid "Specify the video format"
-msgstr "Specifica il formato del video"
-
-#: ../YoutubeDl/messages:175
-msgid "Limit the maximum quality"
-msgstr "Limita la qualità massima"
-
-#: ../YoutubeDl/messages:177
-msgid "Download default format"
-msgstr "Formato predefinito per il download"
-
-#: ../YoutubeDl/messages:179
-msgid "Specify the video format (quality) in which to download the video."
-msgstr "Specifica il formato nel quale scaricare il video (qualità)."
-
-#: ../YoutubeDl/messages:181
-msgid "Video format (--format):"
-msgstr "Formato del video (--format):"
-
-#: ../YoutubeDl/messages:183 ../YoutubeDl/messages:205
-msgid "H264 - MP4 at 480p"
-msgstr "H264 - MP4 a 480p"
-
-#: ../YoutubeDl/messages:185 ../YoutubeDl/messages:207
-msgid "H264 - MP4 at 720p"
-msgstr "H264 - MP4 a 720p"
-
-#: ../YoutubeDl/messages:187 ../YoutubeDl/messages:209
-msgid "H264 - MP4 at 1080p"
-msgstr "H264 - MP4 a 1080p"
-
-#: ../YoutubeDl/messages:189 ../YoutubeDl/messages:211
-msgid "H264 - FLV at 360p"
-msgstr "H264 - FLV a 360p"
-
-#: ../YoutubeDl/messages:191 ../YoutubeDl/messages:213
-msgid "H264 - FLV at 480p"
-msgstr "H264 - FLV a 480p"
-
-#: ../YoutubeDl/messages:193 ../YoutubeDl/messages:215
-msgid "H263 - FLV at 240p"
-msgstr "H263 - FLV a 240p"
-
-#: ../YoutubeDl/messages:195 ../YoutubeDl/messages:217
-msgid "Webm at 480p"
-msgstr "Webm a 480p"
-
-#: ../YoutubeDl/messages:197 ../YoutubeDl/messages:219
-msgid "Webm at 720p"
-msgstr "Webm a 720p"
-
-#: ../YoutubeDl/messages:199 ../YoutubeDl/messages:221
-msgid "3GP video"
-msgstr "Video 3GP"
-
-#: ../YoutubeDl/messages:201
-msgid "Limit the maximum quality of the videos to download."
-msgstr "Limite della qualità massima dei video da scaricare."
-
-#: ../YoutubeDl/messages:203
-msgid "Maximum quality (--max-quality):"
-msgstr "Qualità massima (--max-quality):"
-
-#: ../YoutubeDl/messages:223
-msgid "Download the default format."
-msgstr "Scarica nel formato predefinito."
-
-#: ../YoutubeDl/messages:225
-msgid ""
-"Some videos require an account to be downloaded, mostly because they're "
-"flagged as mature content."
-msgstr ""
-"Alcuni video richiedono un account per essere scaricati, soprattutto perché "
-"sono contrassegnati come contenuti per adulti."
-
-#: ../YoutubeDl/messages:227
-msgid "Use the Username and Passwrod authentication process."
-msgstr ""
-"Utilizza il processo di autenticazione del Nome Utente e della Password."
-
-#: ../YoutubeDl/messages:229
-msgid "Username/Password"
-msgstr "Nome Utente/Password"
-
-#: ../YoutubeDl/messages:231
-msgid "Specify the youtube account username UserName."
-msgstr "Specificare il nome utente di youtube."
-
-#: ../YoutubeDl/messages:233
-msgid "Username:"
-msgstr "Nome Utente:"
-
-#: ../YoutubeDl/messages:235
-msgid "Like the username, specifies the account password."
-msgstr "Come il Nome Utente, specifica la password dell'account."
-
-#: ../YoutubeDl/messages:237
-msgid "Password:"
-msgstr "Password:"
-
-#: ../YoutubeDl/messages:240
-msgid ""
-"This applet allows a user to drag Youtube links from the Youtube website and "
-"drop them on the icon to download. The backend downloader is based on "
-"youtube-dl.py.\n"
-"\n"
-"Only one video will be downloaded at a time and each url will be added to a "
-"list. When the video is downloaded or aborted the url will be removed from "
-"the list. The list can be saved to a file and loaded again for future use.\n"
-"\n"
-"The middle mouse button can be configured to open the video folder or to "
-"show download status.\n"
-"\n"
-"Right clicking allows various options depending on what is happening at that "
-"time. If your video foler is not valid or not writeable then you can't "
-"download until it is corrected.\n"
-"\n"
-"If there are no videos in the list left clicking on the icon allows you to "
-"enter a url. Otherwise the url list will be displayed."
-msgstr ""
-"Questa applet consente all'utente di trascinare i link Youtube dal sito "
-"Youtube e rilasciarli sull'icona per scaricare. Il backend di scaricamento è "
-"basato su youtube-dl.py.\n"
-"\n"
-"Verrà scaricato un solo video alla volta e ciascun URL verrà aggiunto alla "
-"lista. Quando il video viene scaricato o interrotto l'URL verrà rimosso "
-"dalla lista. La lista può essere salvata in un file e caricata nuovamente "
-"per un uso futuro.\n"
-"\n"
-"Il pulsante centrale del mouse può essere configurato per aprire la cartella "
-"video o per mostrare lo stato del download.\n"
-"\n"
-"Clic destro consente varie opzioni a seconda di ciò che sta accadendo in "
-"quel momento. Se la tua cartella video non è valida o non è scrivibile non "
-"potrai scaricare fino a quando non verrà corretta.\n"
-"\n"
-"Se non ci sono video nella lista, cliccando con il tasto sinistro sull'icona "
-"ti permette di inserire una URL. Altrimenti sarà visualizzato l'elenco delle "
-"URL."
+#~ msgid "Open Video Folder"
+#~ msgstr "Apri la Cartella Video"
+
+#~ msgid "Show Download Status"
+#~ msgstr "Mostra lo Stato del Download"
+
+#~ msgid "Send abort signal to the downloader. There may be a delay"
+#~ msgstr ""
+#~ "Invia un segnale di interruzione al downloader. Potrebbe esserci un "
+#~ "ritardo."
+
+#~ msgid "Set to 0 to use the default applet size"
+#~ msgstr "Imposta a 0 per usare la dimensione predefinita dell'applet"
+
+#~ msgid "Otherwise use right click and enable downloads"
+#~ msgstr "Altrimenti utilizza il tasto destro del mouse e attiva i download"
+
+#~ msgid "Start downloading videos imediately? :"
+#~ msgstr "Iniziare a scaricare i video immediatamente? :"
+
+#~ msgid "in secondds"
+#~ msgstr "in secondi"
+
+#~ msgid "Time between updates:"
+#~ msgstr "Intervallo fra gli aggiornamenti:"
+
+#~ msgid "Action on middle click:"
+#~ msgstr "Azione al clic centrale del mouse:"
+
+#~ msgid "Show Status"
+#~ msgstr "Mostra lo stato"
+
+#~ msgid "Otherwise just use middle click to monitor status"
+#~ msgstr ""
+#~ "Altrimenti basta usare il tasto centrale del mouse per monitorare lo stato"
+
+#~ msgid "Show download progress on icon? :"
+#~ msgstr "Mostro l'avanzamento del download sull'icona?:"
+
+#~ msgid ""
+#~ "Otherwise just show the plugin name and use middle click to monitor status"
+#~ msgstr ""
+#~ "Altrimenti mostra solo il nome del plugin e usa il tasto centrale del "
+#~ "mouse per monitorare lo stato"
+
+#~ msgid "Show download status in icon label when hovering over icon? :"
+#~ msgstr ""
+#~ "Mostro lo stato del download nell'etichetta dell'icona quando si sorvola "
+#~ "su di essa?:"
+
+#~ msgid "Notification selections"
+#~ msgstr "Notifica delle selezioni"
+
+#~ msgid "Otherwise quietly start to the next download"
+#~ msgstr "Altrimenti iniziare tranquillamente al prossimo download"
+
+#~ msgid "Show a pop-up message when starting downloads? :"
+#~ msgstr "Mostro un messaggio a comparsa all'avvio dei download?:"
+
+#~ msgid "Otherwise quietly move finish the download"
+#~ msgstr "Altrimenti spostare tranquillamente il download alla fine"
+
+#~ msgid "Show a pop-up message when download is complete? :"
+#~ msgstr "Mostro un messaggio a comparsa quando il download è completo?:"
+
+#~ msgid "Otherwise quietly abort the download"
+#~ msgstr "Altrimenti semplicemente interrompi il download"
+
+#~ msgid "Show a pop-up message when download is aborted? :"
+#~ msgstr ""
+#~ "Mostro un messaggio a comparsa quando il download viene interrotto?:"
+
+#~ msgid "Otherwise just quietly add the url to the list"
+#~ msgstr "Altrimenti semplicemente aggiungi solo l'URL alla lista"
+
+#~ msgid "Show a pop-up message when adding url to queue list? :"
+#~ msgstr ""
+#~ "Mostro un messaggio a comparsa quando si aggiunge un URL alla coda della "
+#~ "lista?:"
+
+#~ msgid ""
+#~ "if pynotify is installed a system notification message will appear, "
+#~ "otherwise the standard dock dialogue messages will be used."
+#~ msgstr ""
+#~ "Se è installato pynotify apparirà un messaggio di notifica di sistema, "
+#~ "altrimenti saranno utilizzati i messaggi di dialogo standard della dock."
+
+#~ msgid "Attempt to use desktop notifications instead of dock messages? :"
+#~ msgstr ""
+#~ "Provo ad usare le notifiche del desktop invece dei messaggi della dock?:"
+
+#~ msgid ""
+#~ "This is usefull if you have long lists of urls to view when you left "
+#~ "click on the icon. Otherwise the standard dialogue message is fine."
+#~ msgstr ""
+#~ "Questo è utile se hai lunghe liste di URL da visualizzare facendo clic "
+#~ "sinistro sull'icona. Altrimenti è meglio il messaggio di dialogo standard."
+
+#~ msgid "Use list view when URL list exceeds specified number?:"
+#~ msgstr ""
+#~ "Usare la vista ad elenco quando una lista di URL eccede il numero "
+#~ "specificato?:"
+
+#~ msgid ""
+#~ "When the number of URLS exceed this number switch to list view instead of "
+#~ "a regular dialogue"
+#~ msgstr ""
+#~ "Quando il numero delle URL eccede questo numero commuta alla vista ad "
+#~ "elenco piuttosto che al dialogo regolare"
+
+#~ msgid "Use list view when number of URLs exceed:"
+#~ msgstr "Usa la vista ad elenco quando il numero delle URL eccede:"
+
+#~ msgid "Directory Setup"
+#~ msgstr "Impostazione Directory"
+
+#~ msgid ""
+#~ "The path to save the videos to. Leave it empty to use the default one "
+#~ "(currently in the users Videos directory)."
+#~ msgstr ""
+#~ "Il percorso in cui salvare il video. Lascia vuoto per usare quello "
+#~ "predefinito (attualmente nella directory Video degli utenti)."
+
+#~ msgid "Save videos to this directory:"
+#~ msgstr "Salva i video in questa directory:"
+
+#~ msgid ""
+#~ "The path to save the URL list to. Leave it empty to use the default one "
+#~ "(currently in the users home directory)."
+#~ msgstr ""
+#~ "Il percorso dove salvare l'elenco delle URL. Lascia vuoto per utilizzare "
+#~ "quello predefinito (attualmente nella directory Home degli utenti)."
+
+#~ msgid "Save URL List to this directory:"
+#~ msgstr "Salva l'elenco delle URL in questa directory:"
+
+#~ msgid "Download Options"
+#~ msgstr "Opzioni di Download"
+
+#~ msgid "Set the download options that will be used for the youtubedl backend"
+#~ msgstr ""
+#~ "Imposta le opzioni di download che saranno utilizzate per il backend "
+#~ "youtubedl"
+
+#~ msgid "Resume partially downloaded files"
+#~ msgstr "Riprendi il download dei file parzialmente scaricati"
+
+#~ msgid "Resume download (--continue)?"
+#~ msgstr "Riprendo il download (--continue)?"
+
+#~ msgid "Ignore errors during download and continue processing."
+#~ msgstr "Ignora gli errori durante il download e continua l'elaborazione."
+
+#~ msgid "Ignore errors (--ignore-errors)?"
+#~ msgstr "Ignoro gli errori (--ignore-errors)?"
+
+#~ msgid "If file exists fo not attempt to over write the file."
+#~ msgstr "Se il file esiste non provare a sovrascriverlo."
+
+#~ msgid "No overwrite (--no-overwrites)?"
+#~ msgstr "Non sovrascrivere (--no-overwrites)?"
+
+#~ msgid ""
+#~ "Use the title of the video in the file name used to download the video"
+#~ msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
+
+#~ msgid "Use title (--title)?"
+#~ msgstr "Uso il titolo (--title)?"
+
+#~ msgid "Which download format to use:"
+#~ msgstr "Formato per il download da utilizzare:"
+
+#~ msgid "Specify the video format"
+#~ msgstr "Specifica il formato del video"
+
+#~ msgid "Limit the maximum quality"
+#~ msgstr "Limita la qualità massima"
+
+#~ msgid "Download default format"
+#~ msgstr "Formato predefinito per il download"
+
+#~ msgid "Specify the video format (quality) in which to download the video."
+#~ msgstr "Specifica il formato nel quale scaricare il video (qualità)."
+
+#~ msgid "Video format (--format):"
+#~ msgstr "Formato del video (--format):"
+
+#~ msgid "H264 - MP4 at 480p"
+#~ msgstr "H264 - MP4 a 480p"
+
+#~ msgid "H264 - MP4 at 720p"
+#~ msgstr "H264 - MP4 a 720p"
+
+#~ msgid "H264 - MP4 at 1080p"
+#~ msgstr "H264 - MP4 a 1080p"
+
+#~ msgid "H264 - FLV at 360p"
+#~ msgstr "H264 - FLV a 360p"
+
+#~ msgid "H264 - FLV at 480p"
+#~ msgstr "H264 - FLV a 480p"
+
+#~ msgid "H263 - FLV at 240p"
+#~ msgstr "H263 - FLV a 240p"
+
+#~ msgid "Webm at 480p"
+#~ msgstr "Webm a 480p"
+
+#~ msgid "Webm at 720p"
+#~ msgstr "Webm a 720p"
+
+#~ msgid "3GP video"
+#~ msgstr "Video 3GP"
+
+#~ msgid "Limit the maximum quality of the videos to download."
+#~ msgstr "Limite della qualità massima dei video da scaricare."
+
+#~ msgid "Maximum quality (--max-quality):"
+#~ msgstr "Qualità massima (--max-quality):"
+
+#~ msgid "Download the default format."
+#~ msgstr "Scarica nel formato predefinito."
+
+#~ msgid ""
+#~ "Some videos require an account to be downloaded, mostly because they're "
+#~ "flagged as mature content."
+#~ msgstr ""
+#~ "Alcuni video richiedono un account per essere scaricati, soprattutto "
+#~ "perché sono contrassegnati come contenuti per adulti."
+
+#~ msgid "Use the Username and Passwrod authentication process."
+#~ msgstr ""
+#~ "Utilizza il processo di autenticazione del Nome Utente e della Password."
+
+#~ msgid "Username/Password"
+#~ msgstr "Nome Utente/Password"
+
+#~ msgid "Specify the youtube account username UserName."
+#~ msgstr "Specificare il nome utente di youtube."
+
+#~ msgid "Username:"
+#~ msgstr "Nome Utente:"
+
+#~ msgid "Like the username, specifies the account password."
+#~ msgstr "Come il Nome Utente, specifica la password dell'account."
+
+#~ msgid "Password:"
+#~ msgstr "Password:"
+
+#~ msgid ""
+#~ "This applet allows a user to drag Youtube links from the Youtube website "
+#~ "and drop them on the icon to download. The backend downloader is based on "
+#~ "youtube-dl.py.\n"
+#~ "\n"
+#~ "Only one video will be downloaded at a time and each url will be added to "
+#~ "a list. When the video is downloaded or aborted the url will be removed "
+#~ "from the list. The list can be saved to a file and loaded again for "
+#~ "future use.\n"
+#~ "\n"
+#~ "The middle mouse button can be configured to open the video folder or to "
+#~ "show download status.\n"
+#~ "\n"
+#~ "Right clicking allows various options depending on what is happening at "
+#~ "that time. If your video foler is not valid or not writeable then you "
+#~ "can't download until it is corrected.\n"
+#~ "\n"
+#~ "If there are no videos in the list left clicking on the icon allows you "
+#~ "to enter a url. Otherwise the url list will be displayed."
+#~ msgstr ""
+#~ "Questa applet consente all'utente di trascinare i link Youtube dal sito "
+#~ "Youtube e rilasciarli sull'icona per scaricare. Il backend di "
+#~ "scaricamento è basato su youtube-dl.py.\n"
+#~ "\n"
+#~ "Verrà scaricato un solo video alla volta e ciascun URL verrà aggiunto "
+#~ "alla lista. Quando il video viene scaricato o interrotto l'URL verrà "
+#~ "rimosso dalla lista. La lista può essere salvata in un file e caricata "
+#~ "nuovamente per un uso futuro.\n"
+#~ "\n"
+#~ "Il pulsante centrale del mouse può essere configurato per aprire la "
+#~ "cartella video o per mostrare lo stato del download.\n"
+#~ "\n"
+#~ "Clic destro consente varie opzioni a seconda di ciò che sta accadendo in "
+#~ "quel momento. Se la tua cartella video non è valida o non è scrivibile "
+#~ "non potrai scaricare fino a quando non verrà corretta.\n"
+#~ "\n"
+#~ "Se non ci sono video nella lista, cliccando con il tasto sinistro "
+#~ "sull'icona ti permette di inserire una URL. Altrimenti sarà visualizzato "
+#~ "l'elenco delle URL."
