@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-10-27 21:21+0000\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
+"PO-Revision-Date: 2013-12-08 22:24+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-10-28 05:26+0000\n"
-"X-Generator: Launchpad (build 16810)\n"
+"X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr "GnoMenu не установлен. Установите, прежде чем использовать апплет."
 
 #: ../GnoMenu/GnoMenu:143
@@ -865,7 +867,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:562
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Добавить или изменить подписку"
 
 #: ../Gmail/Gmail:563
 msgid "Use this to add or change your Gmail account details."
@@ -893,11 +895,11 @@ msgstr ""
 
 #: ../Gmail/messages:19
 msgid "With default background"
-msgstr ""
+msgstr "С фоном по умолчанию"
 
 #: ../Gmail/messages:21
 msgid "With custom background"
-msgstr ""
+msgstr "С собственым фоном"
 
 #: ../Gmail/messages:23
 msgid "Background color to add in this case"
@@ -1095,7 +1097,8 @@ msgstr "Размер десклета  (ширина х высота):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В зависимости от вашего ОМ, вы можете передвигать с помощью ALT + левый "
 "щелчок"
@@ -1523,7 +1526,7 @@ msgstr ""
 
 #: ../Pidgin/messages:115 ../Xchat/messages:107
 msgid "Simple animation"
-msgstr ""
+msgstr "Простая анимация"
 
 #: ../Pidgin/messages:117 ../Xchat/messages:109
 msgid "Demands attention"
@@ -1621,9 +1624,9 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
@@ -1632,7 +1635,7 @@ msgstr "Цитата"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:86
 msgid "Enable the screensaver"
-msgstr ""
+msgstr "Включить хранитель екрана"
 
 #: ../Screensaver_inhibitor/Screensaver_inhibitor:92
 msgid "Disable the screensaver"
@@ -2370,7 +2373,8 @@ msgstr "Каналы"
 
 #: ../Xchat/Xchat:289
 msgid "Switch the channel you'll send message to with the middle-click."
-msgstr "Средний щелчок, чтобы переключить канал в который посылаете сообщение."
+msgstr ""
+"Средний щелчок, чтобы переключить канал в который посылаете сообщение."
 
 #: ../Xchat/Xchat:305
 msgid "All channels"
@@ -2398,42 +2402,3 @@ msgid ""
 "The icon will also control the window of xchat like a normal application "
 "icon."
 msgstr ""
-
-#~ msgid "Download Options"
-#~ msgstr "Параметры загрузки"
-
-#~ msgid "H264 - MP4 at 480p"
-#~ msgstr "H264 - MP4 в 480p"
-
-#~ msgid "H264 - MP4 at 720p"
-#~ msgstr "H264 - MP4 в 720p"
-
-#~ msgid "H264 - MP4 at 1080p"
-#~ msgstr "H264 - MP4 в 1080p"
-
-#~ msgid "H264 - FLV at 360p"
-#~ msgstr "H264 - FLV в 360p"
-
-#~ msgid "H264 - FLV at 480p"
-#~ msgstr "H264 - FLV в 480p"
-
-#~ msgid "H263 - FLV at 240p"
-#~ msgstr "H263 - FLV в 240p"
-
-#~ msgid "Webm at 480p"
-#~ msgstr "Webm в 480p"
-
-#~ msgid "Webm at 720p"
-#~ msgstr "Webm в 720p"
-
-#~ msgid "3GP video"
-#~ msgstr "Видео в 3GP"
-
-#~ msgid "Username/Password"
-#~ msgstr "Имя пользователя/Пароль"
-
-#~ msgid "Username:"
-#~ msgstr "Имя пользователя:"
-
-#~ msgid "Password:"
-#~ msgstr "Пароль:"

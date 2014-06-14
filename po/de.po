@@ -8,18 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-10-28 21:11+0000\n"
-"Last-Translator: Tobias B. <Unknown>\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
+"PO-Revision-Date: 2014-05-23 12:32+0000\n"
+"Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-10-29 05:00+0000\n"
-"X-Generator: Launchpad (build 16818)\n"
+"X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
+"Language: de\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu ist nicht installiert. Bitte installieren Sie es, bevor Sie dieses "
 "Applet ausführen."
@@ -226,9 +228,9 @@ msgid ""
 "Depending on your WindowManager, you may be able to move this with ALT + "
 "left-click.. Negative values are counted from the right/bottom of the screen"
 msgstr ""
-"Abhängig von Ihrem Fenstermanager ist es Ihnen möglich, es mit mithilfe von "
-"ALT+Linksklick zu bewegen. Negativwerte werden von der rechten unteren Ecke "
-"aus gezählt."
+"Abhängig von ihrer Fensterverwaltung ist es ihnen möglich, es mit mithilfe "
+"von ALT+Linksklick zu bewegen … Negativwerte werden von der rechten, unteren "
+"Ecke aus gezählt."
 
 #: ../GnoMenu/messages:33 ../Calendar/messages:33 ../Cardapio/messages:33
 #: ../CpuWatcher/messages:33 ../Deluge/messages:33 ../Gmail/messages:39
@@ -364,7 +366,7 @@ msgstr "Platz reservieren"
 #: ../Twitter/messages:55 ../WebSearch/messages:53
 #: ../WindowsKiller/messages:55 ../Xchat/messages:55
 msgid "Should be visible on all desktops?"
-msgstr "Soll es auf allen Arbeitsflächen sichtbar sein?"
+msgstr "Soll es auf allen Schreibtischen sichtbar sein?"
 
 #: ../GnoMenu/messages:57 ../Calendar/messages:57 ../Cardapio/messages:57
 #: ../CpuWatcher/messages:57 ../Deluge/messages:57 ../Gmail/messages:63
@@ -597,7 +599,8 @@ msgstr "Anwendungen"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
-msgstr "Befehl, um Ihre bevorzugte Kalenderanwendung zu starten (Mittelklick):"
+msgstr ""
+"Befehl, um Ihre bevorzugte Kalenderanwendung zu starten (Mittelklick):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
@@ -692,7 +695,7 @@ msgid ""
 msgstr ""
 "Das ist das CpuWatcher-Applet.\n"
 "Es lässt Sie ein Auge auf die CPU-Last haben\n"
-"(gilt auch für jeden Kern im Untermenü !)\n"
+"(gilt auch für jeden Kern im Untermenü!)\n"
 "Mit einem Mittelklick auf das Symbol\n"
 "können Sie sich einen Mittelwert anzeigen lassen."
 
@@ -976,7 +979,7 @@ msgstr "Warnungen anzeigen?"
 
 #: ../Gmail/messages:107
 msgid "Should an animation be applied to the icon?"
-msgstr "Soll eine Animation dem Symbol zugewiesen werden ?"
+msgstr "Soll eine Animation dem Symbol zugewiesen werden?"
 
 #: ../Gmail/messages:109
 msgid "Show animation?"
@@ -1000,11 +1003,11 @@ msgstr "Dialog anzeigen?"
 
 #: ../Gmail/messages:119
 msgid "Should the applet play a sound with the notification?"
-msgstr "Soll das Applet ein Geräusch mit der Nachricht abspielen ?"
+msgstr "Soll das Applet einen Klang mit der Nachricht abspielen?"
 
 #: ../Gmail/messages:121
 msgid "Play a sound?"
-msgstr "Ein Geräusch abspielen ?"
+msgstr "Einen Klang abspielen?"
 
 #: ../Gmail/messages:123
 msgid ""
@@ -1015,7 +1018,7 @@ msgstr ""
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
-msgstr "Pfad zur Audio-Datei:"
+msgstr "Pfad zur Klangdatei:"
 
 #: ../Gmail/messages:127
 msgid "Display a counter on the icon?"
@@ -1024,7 +1027,8 @@ msgstr "Einen Zähler auf dem Symbol anzeigen?"
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
 msgstr ""
-"Möchten Sie ein Emblem oder einen Schnellinfo-Aufkleber anzeigen lassen?"
+"Möchten Sie, dass ein Emblem oder eine Schnellinfobeschriftung angezeigt "
+"wird?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -1074,7 +1078,7 @@ msgstr "Konnte  nicht starten. "
 
 #: ../GTG/GTG:171
 msgid "Connecting to gtg, please wait ..."
-msgstr "Verbinde zu GTG, bitte warten ..."
+msgstr "Zu GTG wird verbunden, bitte warten …"
 
 #: ../GTG/GTG:208
 msgid "Create a new task"
@@ -1142,10 +1146,10 @@ msgid ""
 msgstr ""
 "Dieses Applet integriert GTG in ihr Dock.\n"
 "Es kann Aufgaben anzeigen.\n"
-"Lesen Sie mit einem Mittelklick neue Aufgaben an, legen Sie neue Klebezettel "
-"aus einer Aufgabenkategorie an.\n"
-"Das Symbol steuert das Fenster von GTG genauso wie ein normales Applikations-"
-"Symbol."
+"Mit einem Mittelklick neue Aufgaben erstellen, neue Klebezettel aus einer "
+"Aufgabenkategorie erstellen.\n"
+"Das Symbol steuert das Fenster von GTG genauso wie ein normales "
+"Anwendungssymbol."
 
 #: ../HDDtemperature/messages:17 ../Moon/messages:21
 #: ../Notifications_history/messages:21 ../Screensaver_inhibitor/messages:21
@@ -1166,7 +1170,8 @@ msgstr "Abmessungen des Desklets (Breite x Höhe) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Anhängig von ihrem Fenstermanager können Sie es mit ALT + Linksklick bewegen."
 
@@ -1206,7 +1211,7 @@ msgstr "Auf Wigdet-Schicht"
 #: ../Notifications_history/messages:45 ../Screensaver_inhibitor/messages:45
 #: ../Translator/messages:57
 msgid "Should be visible on all desktops ?"
-msgstr "Soll es auf allen Desktops sichtbar sein ?"
+msgstr "Soll es auf allen Schreibtischen sichtbar sein?"
 
 #: ../HDDtemperature/messages:43 ../Moon/messages:45
 #: ../Notifications_history/messages:47 ../Screensaver_inhibitor/messages:47
@@ -1401,8 +1406,8 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu steuern.</"
-"b>\n"
+"Dieses Applet erlaubt ihnen, <b>KTorrent</b> vom Dock aus <b>zu "
+"steuern.</b>\n"
 "Es kann die <b>Download-Rate</b> auf dem Symbol abbilden.\n"
 "Ein <b>Mittelklick</b> auf das Symbol gibt ihnen Informationen über die "
 "derzeitigen Torrents (Sie können dieser Aktion einen Kurzbefehl zuweisen).\n"
@@ -1582,7 +1587,7 @@ msgid ""
 "Click on the icon to get a list of the last notifications.\n"
 " Middle-click to clear the history."
 msgstr ""
-"Diese Applet stellt eine Historie der eltzten Desktopmeldungen bereit.\n"
+"Diese Applet stellt einen Verlauf der letzten Schreibtischmeldungen bereit.\n"
 "Klicken Sie auf das Symbol, um eine Liste der letzten Meldungen zu "
 "erhalten.\n"
 "Mittelklick, um die Historie zu löschen."
@@ -1687,9 +1692,9 @@ msgstr ""
 "Es kann neue Nachrichten anzeigen,\n"
 "Sie können eine Unterhaltung aus dem Menü mit einem Rechtsklick aufrufen,\n"
 "eine Nachricht mit einem Mittelklick schreiben,\n"
-"und die Nachrichten-Historie durch scrollen auf dem Symbol anzeigen lassen.\n"
-"Das Symbol wird, genauso wie ein normales Applikationssymbol, das Fenster "
-"von Pidgin steuern."
+"und den Nachrichtenverlauf durch rollen auf dem Symbol anzeigen lassen.\n"
+"Das Symbol wird, genauso wie ein normales Anwendungssymbol, das Fenster von "
+"Pidgin steuern."
 
 #: ../Quote/messages:7
 msgid "Let empty to display the current site's name."
@@ -1751,15 +1756,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dieses Applet stellt eine \"Zitat des Tages\" Funktion aus einigen "
 "Internetquellen bereit, wie z.B. :\n"
-"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+"Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2192,7 +2197,7 @@ msgstr ""
 
 #: ../Transmission/Transmission:312
 msgid "checking"
-msgstr "Überprüfe ..."
+msgstr "Überprüfung läuft …"
 
 #: ../Transmission/Transmission:314
 msgid "waiting for check"
@@ -2396,11 +2401,11 @@ msgstr ""
 
 #: ../Twitter/messages:105
 msgid "Should the applet play a sound as a notification?"
-msgstr "Soll das Applet ein Geräusch als Benachrichtigung abspielen ?"
+msgstr "Soll das Applet einen Klang als Benachrichtigung abspielen?"
 
 #: ../Twitter/messages:107
 msgid "Play a sound"
-msgstr "Geräusch wiedergeben"
+msgstr "Einen Klang abspielen"
 
 #: ../Twitter/messages:109
 msgid "Should the applet animate the icon as a notification?"
@@ -2498,7 +2503,7 @@ msgstr "Maximale Anzahl gezeigter Ergebnisse :"
 
 #: ../WebSearch/messages:115
 msgid "Show the current page as the icon label ?"
-msgstr "Die derzeitige Seite als Symbolaufkleber zeigen ?"
+msgstr "Die derzeitige Seite als Symbolbeschriftung anzeigen?"
 
 #: ../WebSearch/messages:117
 msgid ""
@@ -2583,9 +2588,9 @@ msgstr ""
 "Linksklick auf das Symbol und einfach das Fenster auswählen, das den Ärger "
 "verursacht, um es zu schließen.\n"
 " (Hierbei das Dock auswählen, um den Vorgang abzubrechen)\n"
-" Ein Mittelklick wird ihnen ein paar Informationen wie die pid,\n"
-"das Kommando zum Starten der Applikation, die uptime und die Klasse(n) "
-"dieses Fensters geben."
+" Ein Mittelklick wird Ihnen ein paar Informationen wie die pid,\n"
+"das Kommando zum Starten der Anwendung, die uptime und die Klasse(n) dieses "
+"Fensters angeben."
 
 #: ../WindowsKiller/messages:94
 msgid "Windows Killer"
@@ -2634,302 +2639,3 @@ msgstr ""
 "und die Nachrichten-Historie durch scrollen auf dem Symbol anzeigen lassen.\n"
 "Das Symbol steuert, wie bei einer normalen Anwendung auch, das Fenster von "
 "Xchat."
-
-#~ msgid "Open Video Folder"
-#~ msgstr "Video-Verzeichnis öffnen"
-
-#~ msgid "Show Download Status"
-#~ msgstr "Download-Status anzeigen"
-
-#~ msgid "Send abort signal to the downloader. There may be a delay"
-#~ msgstr ""
-#~ "Abbruchssignal zum Downloader senden. Es wird wahrscheinlich ein "
-#~ "Verzögerung geben."
-
-#~ msgid "Set to 0 to use the default applet size"
-#~ msgstr "Auf 0   setzen, um die voreingestellte Applet-Größe zu verwenden"
-
-#~ msgid "Otherwise use right click and enable downloads"
-#~ msgstr "Anderenfalls Rechtklick benutzen, um Downloads einzuschalten"
-
-#~ msgid "Start downloading videos imediately? :"
-#~ msgstr "Herunterladen der Videos sofort starten ?"
-
-#~ msgid "in secondds"
-#~ msgstr "in Sekunden"
-
-#~ msgid "Time between updates:"
-#~ msgstr "Zeit zwischen Aktualisierungen :"
-
-#~ msgid "Action on middle click:"
-#~ msgstr "Aktion bei Mittelklick :"
-
-#~ msgid "Show Status"
-#~ msgstr "Status anzeigen"
-
-#~ msgid "Otherwise just use middle click to monitor status"
-#~ msgstr ""
-#~ "Anderenfalls einfach den Mittelklick ausführen, um den Status zu "
-#~ "überwachen"
-
-#~ msgid "Show download progress on icon? :"
-#~ msgstr "Download-Fortschritt im Symbol anzeigen ?"
-
-#~ msgid ""
-#~ "Otherwise just show the plugin name and use middle click to monitor status"
-#~ msgstr ""
-#~ "Anderenfalls einfach den Plugin-Namen anzeigen und Mittelklick benutzen, "
-#~ "um den Status zu überwachen."
-
-#~ msgid "Show download status in icon label when hovering over icon? :"
-#~ msgstr "Den Download-Status im Symbolaufkleber bei Mausberührung zeigen ?"
-
-#~ msgid "Notification selections"
-#~ msgstr "Benachrichtigungs-Auswahlen"
-
-#~ msgid "Otherwise quietly start to the next download"
-#~ msgstr "Anderenfalls still zum nächsten Download übergehen"
-
-#~ msgid "Show a pop-up message when starting downloads? :"
-#~ msgstr "Eine Popup-Nachricht bei Downloadbeginn zeigen ?"
-
-#~ msgid "Otherwise quietly move finish the download"
-#~ msgstr "Anderenfalls still zum Beenden des Downloads übergehen"
-
-#~ msgid "Show a pop-up message when download is complete? :"
-#~ msgstr "Eine Popup-Nachricht bei Fertigstellung des Downloads zeigen ?"
-
-#~ msgid "Otherwise quietly abort the download"
-#~ msgstr "Anderenfalls still den Download abbrechen."
-
-#~ msgid "Show a pop-up message when download is aborted? :"
-#~ msgstr "Eine Popup-Nachricht bei Download-Abbruch zeigen ?"
-
-#~ msgid "Otherwise just quietly add the url to the list"
-#~ msgstr "Anderenfalls still die URL zur Liste hinzufügen"
-
-#~ msgid "Show a pop-up message when adding url to queue list? :"
-#~ msgstr ""
-#~ "Eine Popup-Nachricht beim Hinzufügen einer URL zur abzuarbeitenden Liste "
-#~ "zeigen ?"
-
-#~ msgid ""
-#~ "if pynotify is installed a system notification message will appear, "
-#~ "otherwise the standard dock dialogue messages will be used."
-#~ msgstr ""
-#~ "Wenn pynotify installiert ist, wird eine Systembenachrichtigung "
-#~ "erscheinen, sonst werden die Standard-Dock-Dialognachrichten benutzt."
-
-#~ msgid "Attempt to use desktop notifications instead of dock messages? :"
-#~ msgstr ""
-#~ "Versuchen, die Desktop-Benachrichtigungen anstatt der Docknachrichten zu "
-#~ "benutzen ?"
-
-#~ msgid ""
-#~ "This is usefull if you have long lists of urls to view when you left "
-#~ "click on the icon. Otherwise the standard dialogue message is fine."
-#~ msgstr ""
-#~ "Dies ist nützlich, wenn Sie bei einem Linksklick auf das Symbol lange URL-"
-#~ "Listen betrachten müssen. Sonst werden die Standard-Dialognachrichten "
-#~ "völlig ausreichend sein."
-
-#~ msgid "Use list view when URL list exceeds specified number?:"
-#~ msgstr ""
-#~ "Die Listenansicht benutzen, wenn die URL-Liste die vorher festgelegte "
-#~ "Anzahl an URLs übersteigt ?"
-
-#~ msgid ""
-#~ "When the number of URLS exceed this number switch to list view instead of "
-#~ "a regular dialogue"
-#~ msgstr ""
-#~ "Wenn die Anzahl der URLs diesen Betrag übersteigen, zur Listenansicht "
-#~ "anstatt zu regulären Dialog wechseln"
-
-#~ msgid "Use list view when number of URLs exceed:"
-#~ msgstr ""
-#~ "Listenansicht benutzen, wenn die Anzahl der URLs diesen Wert übersteigt :"
-
-#~ msgid "Directory Setup"
-#~ msgstr "Verzeichnis-Setup"
-
-#~ msgid ""
-#~ "The path to save the videos to. Leave it empty to use the default one "
-#~ "(currently in the users Videos directory)."
-#~ msgstr ""
-#~ "Der Pfad zum Speichern der Videos. Leer lassen, um den voreingestellten "
-#~ "zu verwenden (im Augenblick das Video-Verzeichnis des Benutzers)."
-
-#~ msgid "Save videos to this directory:"
-#~ msgstr "Videos in diesem Verzeichnis speichern :"
-
-#~ msgid ""
-#~ "The path to save the URL list to. Leave it empty to use the default one "
-#~ "(currently in the users home directory)."
-#~ msgstr ""
-#~ "Der Pfad zum Speichern der URL-Liste. Leer lassen, um den "
-#~ "voreingestellten zu verwenden (aktuell im persönlichen Ordner des "
-#~ "Benutzers)."
-
-#~ msgid "Save URL List to this directory:"
-#~ msgstr "Die URL-Liste in diesem Verzeichnis speichern :"
-
-#~ msgid "Download Options"
-#~ msgstr "Download-Optionen"
-
-#~ msgid "Set the download options that will be used for the youtubedl backend"
-#~ msgstr ""
-#~ "Die Download-Optionen, die für das youtubedl-Backend verwendet werden, "
-#~ "festlegen"
-
-#~ msgid "Resume partially downloaded files"
-#~ msgstr "Herunterladen teilweise heruntergeladener Dateien wieder aufnehmen"
-
-#~ msgid "Resume download (--continue)?"
-#~ msgstr "Download fortsetzen ( --continue) ?"
-
-#~ msgid "Ignore errors during download and continue processing."
-#~ msgstr "Fehler während des Downloads ignorieren und Verarbeitung fortsetzen"
-
-#~ msgid "Ignore errors (--ignore-errors)?"
-#~ msgstr "Fehler ignorieren (--ignore-errors)?"
-
-#~ msgid "If file exists fo not attempt to over write the file."
-#~ msgstr ""
-#~ "Wenn Datei exisitert, keinen Versuch unternehmen, die Datei zu "
-#~ "überschreiben."
-
-#~ msgid "No overwrite (--no-overwrites)?"
-#~ msgstr "Nicht überschreiben (--no-overwrites)?"
-
-#~ msgid ""
-#~ "Use the title of the video in the file name used to download the video"
-#~ msgstr ""
-#~ "Den Titel des Videos im Dateinamen benutzen, der zum Download des Videos "
-#~ "verwendet wurde."
-
-#~ msgid "Use title (--title)?"
-#~ msgstr "Titel benutzen ( --title) ?"
-
-#~ msgid "Which download format to use:"
-#~ msgstr "Downloadformat, das benutzt werden soll :"
-
-#~ msgid "Specify the video format"
-#~ msgstr "Das Videoformat angeben"
-
-#~ msgid "Limit the maximum quality"
-#~ msgstr "Die Maximalqualität begrenzen"
-
-#~ msgid "Download default format"
-#~ msgstr "Voreingestelltes Downloadformat herunterladen"
-
-#~ msgid "Specify the video format (quality) in which to download the video."
-#~ msgstr ""
-#~ "Legen Sie das Videoformat (Qualität) fest, in dem das Video "
-#~ "heruntergeladen werden soll."
-
-#~ msgid "Video format (--format):"
-#~ msgstr "Videoformat (--format) :"
-
-#~ msgid "H264 - MP4 at 480p"
-#~ msgstr "H264 - MP4 bei 480p"
-
-#~ msgid "H264 - MP4 at 720p"
-#~ msgstr "H264 - MP4 bei 720p"
-
-#~ msgid "H264 - MP4 at 1080p"
-#~ msgstr "H264 - MP4 bei 1080p"
-
-#~ msgid "H264 - FLV at 360p"
-#~ msgstr "H264 - FLV bei 360p"
-
-#~ msgid "H264 - FLV at 480p"
-#~ msgstr "H264 - FLV bei 480p"
-
-#~ msgid "H263 - FLV at 240p"
-#~ msgstr "H263 - FLV bei 240p"
-
-#~ msgid "Webm at 480p"
-#~ msgstr "Webm bei 480p"
-
-#~ msgid "Webm at 720p"
-#~ msgstr "Webm bei 720p"
-
-#~ msgid "3GP video"
-#~ msgstr "3GP Video"
-
-#~ msgid "Limit the maximum quality of the videos to download."
-#~ msgstr "Begrenzen Sie die Maximalqualität der herunterzuladenden Videos."
-
-#~ msgid "Maximum quality (--max-quality):"
-#~ msgstr "Maximalqualität (--max-quality) :"
-
-#~ msgid "Download the default format."
-#~ msgstr "Das voreingestellte Format herunterladen."
-
-#~ msgid ""
-#~ "Some videos require an account to be downloaded, mostly because they're "
-#~ "flagged as mature content."
-#~ msgstr ""
-#~ "Manche Videos setzen ein Konto voraus, um sie herunterzuladen, da die "
-#~ "meisten von ihnen FSK18-Freigaben besitzen."
-
-#~ msgid "Use the Username and Passwrod authentication process."
-#~ msgstr ""
-#~ "Bitte benutzen Sie den Anmeldename und Passwort Autorisierungsprozess."
-
-#~ msgid "Username/Password"
-#~ msgstr "Benutzername / Passwort"
-
-#~ msgid "Specify the youtube account username UserName."
-#~ msgstr "Geben Sie bitte den YouTube-Kontonamen an."
-
-#~ msgid "Username:"
-#~ msgstr "Benutzername :"
-
-#~ msgid "Like the username, specifies the account password."
-#~ msgstr "Wie der Benutzername legt dies das Kontopasswort fest."
-
-#~ msgid "Password:"
-#~ msgstr "Passwort:"
-
-#~ msgid ""
-#~ "This applet allows a user to drag Youtube links from the Youtube website "
-#~ "and drop them on the icon to download. The backend downloader is based on "
-#~ "youtube-dl.py.\n"
-#~ "\n"
-#~ "Only one video will be downloaded at a time and each url will be added to "
-#~ "a list. When the video is downloaded or aborted the url will be removed "
-#~ "from the list. The list can be saved to a file and loaded again for "
-#~ "future use.\n"
-#~ "\n"
-#~ "The middle mouse button can be configured to open the video folder or to "
-#~ "show download status.\n"
-#~ "\n"
-#~ "Right clicking allows various options depending on what is happening at "
-#~ "that time. If your video foler is not valid or not writeable then you "
-#~ "can't download until it is corrected.\n"
-#~ "\n"
-#~ "If there are no videos in the list left clicking on the icon allows you "
-#~ "to enter a url. Otherwise the url list will be displayed."
-#~ msgstr ""
-#~ "Dieses Applet erlaubt einem Benutzer, YouTube-Links von der YouTube-"
-#~ "Webseite herunter zu ziehen und sie auf dem Symbol zum Download fallen zu "
-#~ "lassen. Der Backend-Downloader basiert auf der Datei youtube-dl.py.\n"
-#~ "\n"
-#~ "Es wird jedes Mal nur ein Video heruntergeladen und jede URL wird zu "
-#~ "einer Liste hinzugefügt. Wenn das Video heruntergeladen oder der Download "
-#~ "abgebrochen wurde, wird die URL aus der Liste entfernt. Diese Liste kann "
-#~ "in einer Datei gespeichert und für die zukünftige Benutzung erneut "
-#~ "geladen werden.\n"
-#~ "\n"
-#~ "Der mittlere Mausknopf kann zum Öffnen des Videoverzeichnisses oder zum "
-#~ "Anzeigen des Download-Status konfiguriert werden.\n"
-#~ "\n"
-#~ "Ein Rechtsklick erlaubt viele verschiedene Optionen, die davon abhängen, "
-#~ "was in diesem Augenblick passiert. Wenn Ihr Videoverzeichnis ungültig ist "
-#~ "oder nicht beschrieben werden kann, können Sie nicht mit dem Download "
-#~ "beginnen, bis dieser Fehler korrigiert wurde.\n"
-#~ "\n"
-#~ "Wenn keine Videos mehr in der Liste übrig sind, erlaubt ein Linksklick "
-#~ "auf das Symbol, eine URL einzugeben. Anderenfalls wird die URL-Liste "
-#~ "angezeigt."

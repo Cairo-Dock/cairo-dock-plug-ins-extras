@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
 "PO-Revision-Date: 2013-10-20 01:50+0000\n"
 "Last-Translator: Wonderfulheart <Unknown>\n"
 "Language-Team: Italian <LL@li.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-10-21 04:42+0000\n"
-"X-Generator: Launchpad (build 16807)\n"
+"X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
+"Language: it\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu non è installato. Per cortesia, installalo prima di avviare questa "
 "applet."
@@ -201,8 +203,8 @@ msgid ""
 "Depending on your WindowManager, you may be able to resize this with ALT + "
 "middle-click or ALT + left-click."
 msgstr ""
-"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con Alt"
-"+clic centrale o Alt+clic sinistro, ad esempio."
+"In base al Gestore delle Finestre utilizzato puoi ridimensionarla con "
+"Alt+clic centrale o Alt+clic sinistro, ad esempio."
 
 #: ../GnoMenu/messages:29 ../Calendar/messages:29 ../Cardapio/messages:29
 #: ../CpuWatcher/messages:29 ../Deluge/messages:29 ../Gmail/messages:35
@@ -1019,7 +1021,8 @@ msgstr "Visualizzo un contatore sull'icona?"
 
 #: ../Gmail/messages:129
 msgid "Do you want an emblem or a quick-info label to be displayed?"
-msgstr "Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
+msgstr ""
+"Vuoi che siano visualizzati un emblema o un'etichetta d'informazione?"
 
 #: ../Gmail/messages:131
 msgid "How?"
@@ -1149,8 +1152,8 @@ msgid ""
 "Depending on your WindowManager, you can resize it with ALT + middle_click "
 "or ALT + left_click for exemple."
 msgstr ""
-"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con ALT"
-"+clic centrale del mouse o ALT+clic sinistro."
+"In funzione del tuo Window Manager, per esempio puoi ridimensionarlo con "
+"ALT+clic centrale del mouse o ALT+clic sinistro."
 
 #: ../HDDtemperature/messages:19 ../Moon/messages:23
 #: ../Notifications_history/messages:23 ../Screensaver_inhibitor/messages:23
@@ -1161,7 +1164,8 @@ msgstr "Dimensione della desklet (larghezza x altezza):"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "In funzione del tuo Window Manager, puoi spostarlo con ALT+clic sinistro"
 
@@ -1729,15 +1733,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Questa applet fornisce una \"Citazione del giorno\" ricavandola da alcune "
 "fonti internet quali:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com e Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com e Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2604,292 +2608,3 @@ msgstr ""
 "e visualizzare la cronologia dei messaggi scorrendo sull'icona.\n"
 "Dall'icona sarà inoltre possibile controllare la finestra di xchat come "
 "un'icona di una normale applicazione."
-
-#~ msgid "Open Video Folder"
-#~ msgstr "Apri la Cartella Video"
-
-#~ msgid "Show Download Status"
-#~ msgstr "Mostra lo Stato del Download"
-
-#~ msgid "Send abort signal to the downloader. There may be a delay"
-#~ msgstr ""
-#~ "Invia un segnale di interruzione al downloader. Potrebbe esserci un "
-#~ "ritardo."
-
-#~ msgid "Set to 0 to use the default applet size"
-#~ msgstr "Imposta a 0 per usare la dimensione predefinita dell'applet"
-
-#~ msgid "Otherwise use right click and enable downloads"
-#~ msgstr "Altrimenti utilizza il tasto destro del mouse e attiva i download"
-
-#~ msgid "Start downloading videos imediately? :"
-#~ msgstr "Iniziare a scaricare i video immediatamente? :"
-
-#~ msgid "in secondds"
-#~ msgstr "in secondi"
-
-#~ msgid "Time between updates:"
-#~ msgstr "Intervallo fra gli aggiornamenti:"
-
-#~ msgid "Action on middle click:"
-#~ msgstr "Azione al clic centrale del mouse:"
-
-#~ msgid "Show Status"
-#~ msgstr "Mostra lo stato"
-
-#~ msgid "Otherwise just use middle click to monitor status"
-#~ msgstr ""
-#~ "Altrimenti basta usare il tasto centrale del mouse per monitorare lo stato"
-
-#~ msgid "Show download progress on icon? :"
-#~ msgstr "Mostro l'avanzamento del download sull'icona?:"
-
-#~ msgid ""
-#~ "Otherwise just show the plugin name and use middle click to monitor status"
-#~ msgstr ""
-#~ "Altrimenti mostra solo il nome del plugin e usa il tasto centrale del "
-#~ "mouse per monitorare lo stato"
-
-#~ msgid "Show download status in icon label when hovering over icon? :"
-#~ msgstr ""
-#~ "Mostro lo stato del download nell'etichetta dell'icona quando si sorvola "
-#~ "su di essa?:"
-
-#~ msgid "Notification selections"
-#~ msgstr "Notifica delle selezioni"
-
-#~ msgid "Otherwise quietly start to the next download"
-#~ msgstr "Altrimenti iniziare tranquillamente al prossimo download"
-
-#~ msgid "Show a pop-up message when starting downloads? :"
-#~ msgstr "Mostro un messaggio a comparsa all'avvio dei download?:"
-
-#~ msgid "Otherwise quietly move finish the download"
-#~ msgstr "Altrimenti spostare tranquillamente il download alla fine"
-
-#~ msgid "Show a pop-up message when download is complete? :"
-#~ msgstr "Mostro un messaggio a comparsa quando il download è completo?:"
-
-#~ msgid "Otherwise quietly abort the download"
-#~ msgstr "Altrimenti semplicemente interrompi il download"
-
-#~ msgid "Show a pop-up message when download is aborted? :"
-#~ msgstr ""
-#~ "Mostro un messaggio a comparsa quando il download viene interrotto?:"
-
-#~ msgid "Otherwise just quietly add the url to the list"
-#~ msgstr "Altrimenti semplicemente aggiungi solo l'URL alla lista"
-
-#~ msgid "Show a pop-up message when adding url to queue list? :"
-#~ msgstr ""
-#~ "Mostro un messaggio a comparsa quando si aggiunge un URL alla coda della "
-#~ "lista?:"
-
-#~ msgid ""
-#~ "if pynotify is installed a system notification message will appear, "
-#~ "otherwise the standard dock dialogue messages will be used."
-#~ msgstr ""
-#~ "Se è installato pynotify apparirà un messaggio di notifica di sistema, "
-#~ "altrimenti saranno utilizzati i messaggi di dialogo standard della dock."
-
-#~ msgid "Attempt to use desktop notifications instead of dock messages? :"
-#~ msgstr ""
-#~ "Provo ad usare le notifiche del desktop invece dei messaggi della dock?:"
-
-#~ msgid ""
-#~ "This is usefull if you have long lists of urls to view when you left "
-#~ "click on the icon. Otherwise the standard dialogue message is fine."
-#~ msgstr ""
-#~ "Questo è utile se hai lunghe liste di URL da visualizzare facendo clic "
-#~ "sinistro sull'icona. Altrimenti è meglio il messaggio di dialogo standard."
-
-#~ msgid "Use list view when URL list exceeds specified number?:"
-#~ msgstr ""
-#~ "Usare la vista ad elenco quando una lista di URL eccede il numero "
-#~ "specificato?:"
-
-#~ msgid ""
-#~ "When the number of URLS exceed this number switch to list view instead of "
-#~ "a regular dialogue"
-#~ msgstr ""
-#~ "Quando il numero delle URL eccede questo numero commuta alla vista ad "
-#~ "elenco piuttosto che al dialogo regolare"
-
-#~ msgid "Use list view when number of URLs exceed:"
-#~ msgstr "Usa la vista ad elenco quando il numero delle URL eccede:"
-
-#~ msgid "Directory Setup"
-#~ msgstr "Impostazione Directory"
-
-#~ msgid ""
-#~ "The path to save the videos to. Leave it empty to use the default one "
-#~ "(currently in the users Videos directory)."
-#~ msgstr ""
-#~ "Il percorso in cui salvare il video. Lascia vuoto per usare quello "
-#~ "predefinito (attualmente nella directory Video degli utenti)."
-
-#~ msgid "Save videos to this directory:"
-#~ msgstr "Salva i video in questa directory:"
-
-#~ msgid ""
-#~ "The path to save the URL list to. Leave it empty to use the default one "
-#~ "(currently in the users home directory)."
-#~ msgstr ""
-#~ "Il percorso dove salvare l'elenco delle URL. Lascia vuoto per utilizzare "
-#~ "quello predefinito (attualmente nella directory Home degli utenti)."
-
-#~ msgid "Save URL List to this directory:"
-#~ msgstr "Salva l'elenco delle URL in questa directory:"
-
-#~ msgid "Download Options"
-#~ msgstr "Opzioni di Download"
-
-#~ msgid "Set the download options that will be used for the youtubedl backend"
-#~ msgstr ""
-#~ "Imposta le opzioni di download che saranno utilizzate per il backend "
-#~ "youtubedl"
-
-#~ msgid "Resume partially downloaded files"
-#~ msgstr "Riprendi il download dei file parzialmente scaricati"
-
-#~ msgid "Resume download (--continue)?"
-#~ msgstr "Riprendo il download (--continue)?"
-
-#~ msgid "Ignore errors during download and continue processing."
-#~ msgstr "Ignora gli errori durante il download e continua l'elaborazione."
-
-#~ msgid "Ignore errors (--ignore-errors)?"
-#~ msgstr "Ignoro gli errori (--ignore-errors)?"
-
-#~ msgid "If file exists fo not attempt to over write the file."
-#~ msgstr "Se il file esiste non provare a sovrascriverlo."
-
-#~ msgid "No overwrite (--no-overwrites)?"
-#~ msgstr "Non sovrascrivere (--no-overwrites)?"
-
-#~ msgid ""
-#~ "Use the title of the video in the file name used to download the video"
-#~ msgstr "Usa il titolo del video nel nome del file usato per scaricarlo"
-
-#~ msgid "Use title (--title)?"
-#~ msgstr "Uso il titolo (--title)?"
-
-#~ msgid "Which download format to use:"
-#~ msgstr "Formato per il download da utilizzare:"
-
-#~ msgid "Specify the video format"
-#~ msgstr "Specifica il formato del video"
-
-#~ msgid "Limit the maximum quality"
-#~ msgstr "Limita la qualità massima"
-
-#~ msgid "Download default format"
-#~ msgstr "Formato predefinito per il download"
-
-#~ msgid "Specify the video format (quality) in which to download the video."
-#~ msgstr "Specifica il formato nel quale scaricare il video (qualità)."
-
-#~ msgid "Video format (--format):"
-#~ msgstr "Formato del video (--format):"
-
-#~ msgid "H264 - MP4 at 480p"
-#~ msgstr "H264 - MP4 a 480p"
-
-#~ msgid "H264 - MP4 at 720p"
-#~ msgstr "H264 - MP4 a 720p"
-
-#~ msgid "H264 - MP4 at 1080p"
-#~ msgstr "H264 - MP4 a 1080p"
-
-#~ msgid "H264 - FLV at 360p"
-#~ msgstr "H264 - FLV a 360p"
-
-#~ msgid "H264 - FLV at 480p"
-#~ msgstr "H264 - FLV a 480p"
-
-#~ msgid "H263 - FLV at 240p"
-#~ msgstr "H263 - FLV a 240p"
-
-#~ msgid "Webm at 480p"
-#~ msgstr "Webm a 480p"
-
-#~ msgid "Webm at 720p"
-#~ msgstr "Webm a 720p"
-
-#~ msgid "3GP video"
-#~ msgstr "Video 3GP"
-
-#~ msgid "Limit the maximum quality of the videos to download."
-#~ msgstr "Limite della qualità massima dei video da scaricare."
-
-#~ msgid "Maximum quality (--max-quality):"
-#~ msgstr "Qualità massima (--max-quality):"
-
-#~ msgid "Download the default format."
-#~ msgstr "Scarica nel formato predefinito."
-
-#~ msgid ""
-#~ "Some videos require an account to be downloaded, mostly because they're "
-#~ "flagged as mature content."
-#~ msgstr ""
-#~ "Alcuni video richiedono un account per essere scaricati, soprattutto "
-#~ "perché sono contrassegnati come contenuti per adulti."
-
-#~ msgid "Use the Username and Passwrod authentication process."
-#~ msgstr ""
-#~ "Utilizza il processo di autenticazione del Nome Utente e della Password."
-
-#~ msgid "Username/Password"
-#~ msgstr "Nome Utente/Password"
-
-#~ msgid "Specify the youtube account username UserName."
-#~ msgstr "Specificare il nome utente di youtube."
-
-#~ msgid "Username:"
-#~ msgstr "Nome Utente:"
-
-#~ msgid "Like the username, specifies the account password."
-#~ msgstr "Come il Nome Utente, specifica la password dell'account."
-
-#~ msgid "Password:"
-#~ msgstr "Password:"
-
-#~ msgid ""
-#~ "This applet allows a user to drag Youtube links from the Youtube website "
-#~ "and drop them on the icon to download. The backend downloader is based on "
-#~ "youtube-dl.py.\n"
-#~ "\n"
-#~ "Only one video will be downloaded at a time and each url will be added to "
-#~ "a list. When the video is downloaded or aborted the url will be removed "
-#~ "from the list. The list can be saved to a file and loaded again for "
-#~ "future use.\n"
-#~ "\n"
-#~ "The middle mouse button can be configured to open the video folder or to "
-#~ "show download status.\n"
-#~ "\n"
-#~ "Right clicking allows various options depending on what is happening at "
-#~ "that time. If your video foler is not valid or not writeable then you "
-#~ "can't download until it is corrected.\n"
-#~ "\n"
-#~ "If there are no videos in the list left clicking on the icon allows you "
-#~ "to enter a url. Otherwise the url list will be displayed."
-#~ msgstr ""
-#~ "Questa applet consente all'utente di trascinare i link Youtube dal sito "
-#~ "Youtube e rilasciarli sull'icona per scaricare. Il backend di "
-#~ "scaricamento è basato su youtube-dl.py.\n"
-#~ "\n"
-#~ "Verrà scaricato un solo video alla volta e ciascun URL verrà aggiunto "
-#~ "alla lista. Quando il video viene scaricato o interrotto l'URL verrà "
-#~ "rimosso dalla lista. La lista può essere salvata in un file e caricata "
-#~ "nuovamente per un uso futuro.\n"
-#~ "\n"
-#~ "Il pulsante centrale del mouse può essere configurato per aprire la "
-#~ "cartella video o per mostrare lo stato del download.\n"
-#~ "\n"
-#~ "Clic destro consente varie opzioni a seconda di ciò che sta accadendo in "
-#~ "quel momento. Se la tua cartella video non è valida o non è scrivibile "
-#~ "non potrai scaricare fino a quando non verrà corretta.\n"
-#~ "\n"
-#~ "Se non ci sono video nella lista, cliccando con il tasto sinistro "
-#~ "sull'icona ti permette di inserire una URL. Altrimenti sarà visualizzato "
-#~ "l'elenco delle URL."

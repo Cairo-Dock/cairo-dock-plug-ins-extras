@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-09-30 10:09+0000\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
+"PO-Revision-Date: 2014-06-13 16:59+0000\n"
 "Last-Translator: rob <linuxned@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-10-01 05:22+0000\n"
-"X-Generator: Launchpad (build 16774)\n"
+"X-Launchpad-Export-Date: 2014-06-14 05:54+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is niet geïnstalleerd. Installeer het voordat u dit applet gaat "
 "gebruiken."
@@ -839,9 +841,9 @@ msgid ""
 "<b>Drop a torrent file</b> on the icon to add it to the list and start "
 "downloading it immediately."
 msgstr ""
-"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient <i>deluged</"
-"i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de communicatie "
-"tussen het dock en Deluge).\n"
+"Dit applet laat u <b>Deluge</b> beheren vanuit het dock (U dient "
+"<i>deluged</i> geïnstalleerd te hebben, dit is de gebruikte daemon voor de "
+"communicatie tussen het dock en Deluge).\n"
 "Het kan de <b>downloadsnelheid </b> weergeven op het pictogram.\n"
 "<b>Middlelklik</b> op het pictogram voor informatie over de huidige torrents "
 "(u kunt hier een sneltoets voor instellen).\n"
@@ -1157,7 +1159,8 @@ msgstr "Desklet's grootte (breedte x hoogte) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "Afhankelijk van uw vensterbeheerder, kunt u het verplaatsen met ALT + "
 "linkermuis_klik"
@@ -1729,15 +1732,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Dit applet laat u een \"Citaat van de dag\" zien, verkregen van sommige "
 "internetbronnen zoals:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, en Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, en Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2218,7 +2221,7 @@ msgstr "Oeps, uw tijdlijn is leeg :-("
 
 #: ../Twitter/Twitter:122 ../Twitter/Twitter:197 ../Twitter/Twitter:216
 msgid "Connection problem"
-msgstr ""
+msgstr "Verbindingsprobleem"
 
 #: ../Twitter/Twitter:194
 msgid "Oh, dear, you do not have direct messages :-("
@@ -2589,7 +2592,8 @@ msgstr "Stille modus inschakelen bij het opstarten:"
 
 #: ../Xchat/messages:129
 msgid "Enable the silent mode for a specific channel at startup:"
-msgstr "Stille modus inschakelen bij het opstarten: voor een specifiek kanaal:"
+msgstr ""
+"Stille modus inschakelen bij het opstarten: voor een specifiek kanaal:"
 
 #: ../Xchat/messages:132
 msgid ""
@@ -2608,292 +2612,3 @@ msgstr ""
 "de berichtgeschiedenis tonen door te scrollen op het pictogram\n"
 "Het pictogram kan het Xchat-venster beheren zoals een normale "
 "toepassingspictogram."
-
-#~ msgid "Open Video Folder"
-#~ msgstr "Videomap openen"
-
-#~ msgid "Show Download Status"
-#~ msgstr "Downloadstatus tonen"
-
-#~ msgid "Send abort signal to the downloader. There may be a delay"
-#~ msgstr ""
-#~ "Verstuur sgnaal om download af te breken. Mogelijk treedt er een "
-#~ "vertraging op"
-
-#~ msgid "Set to 0 to use the default applet size"
-#~ msgstr "Instellen op 0 om standaardappletgrootte te gebruiken"
-
-#~ msgid "Otherwise use right click and enable downloads"
-#~ msgstr "Gebruik anders een rechterklik en schakel downloads in"
-
-#~ msgid "Start downloading videos imediately? :"
-#~ msgstr "Downloaden video's direct starten? :"
-
-#~ msgid "in secondds"
-#~ msgstr "in seconden"
-
-#~ msgid "Time between updates:"
-#~ msgstr "Tijd tussen updates:"
-
-#~ msgid "Action on middle click:"
-#~ msgstr "Actie bij middelklik:"
-
-#~ msgid "Show Status"
-#~ msgstr "Status tonen"
-
-#~ msgid "Otherwise just use middle click to monitor status"
-#~ msgstr "Gebruik anders een middelklik om de status te bekijken"
-
-#~ msgid "Show download progress on icon? :"
-#~ msgstr "Voortgang download op pictogram tonen? :"
-
-#~ msgid ""
-#~ "Otherwise just show the plugin name and use middle click to monitor status"
-#~ msgstr ""
-#~ "Toon anders alleen de plug-innaam en gebruik een middelklik om de status "
-#~ "te bekijken"
-
-#~ msgid "Show download status in icon label when hovering over icon? :"
-#~ msgstr ""
-#~ "Downloadstatus tonen in pictogramlabel wanneer muis over het pictogram "
-#~ "heen beweegt? :"
-
-#~ msgid "Notification selections"
-#~ msgstr "Meldingsselecties"
-
-#~ msgid "Otherwise quietly start to the next download"
-#~ msgstr "Start anders in stilte de volgende download"
-
-#~ msgid "Show a pop-up message when starting downloads? :"
-#~ msgstr "Pop-upbericht tonen bij starten van downloads? :"
-
-#~ msgid "Otherwise quietly move finish the download"
-#~ msgstr "Verplaats anders in stilte de voltooide download"
-
-#~ msgid "Show a pop-up message when download is complete? :"
-#~ msgstr "Pop-upbericht tonen wanneer download is voltooid? :"
-
-#~ msgid "Otherwise quietly abort the download"
-#~ msgstr "Breek anders in stilte de download af"
-
-#~ msgid "Show a pop-up message when download is aborted? :"
-#~ msgstr "Pop-upbericht tonen wanneer download wordt afgebroken? :"
-
-#~ msgid "Otherwise just quietly add the url to the list"
-#~ msgstr "Voeg anders in stilte de url aan de lijst toe"
-
-#~ msgid "Show a pop-up message when adding url to queue list? :"
-#~ msgstr ""
-#~ "Pop-upbericht tonen wanneer url toegevoegd wordt aan wachtrijlijst? :"
-
-#~ msgid ""
-#~ "if pynotify is installed a system notification message will appear, "
-#~ "otherwise the standard dock dialogue messages will be used."
-#~ msgstr ""
-#~ "Als pynotify is geïnstalleerd zal er een systeemmelding getoond worden, "
-#~ "anders zullen de standaard dock-berichten gebruikt worden."
-
-#~ msgid "Attempt to use desktop notifications instead of dock messages? :"
-#~ msgstr "Systeemmeldingen gebruiken in plaats van dock-berichten? :"
-
-#~ msgid ""
-#~ "This is usefull if you have long lists of urls to view when you left "
-#~ "click on the icon. Otherwise the standard dialogue message is fine."
-#~ msgstr ""
-#~ "Dit is handig wanneer u een lange lijst url's moet bekijken, nadat u met "
-#~ "links op het pictogram heeft geklikt. Anders is het standaardbericht goed."
-
-#~ msgid "Use list view when URL list exceeds specified number?:"
-#~ msgstr ""
-#~ "Lijstweergave gebruiken wanneer URL-lijst boven een bepaald getal "
-#~ "uitkomt?:"
-
-#~ msgid ""
-#~ "When the number of URLS exceed this number switch to list view instead of "
-#~ "a regular dialogue"
-#~ msgstr ""
-#~ "Wanneer URL-lijst boven dit getal uitkomt, schakelen dan over naar "
-#~ "lijstweergave"
-
-#~ msgid "Use list view when number of URLs exceed:"
-#~ msgstr "Lijstweergave gebruiken wanneer URL-lijst boven dit getal uitkomt:"
-
-#~ msgid "Directory Setup"
-#~ msgstr "Locatie instellen"
-
-#~ msgid ""
-#~ "The path to save the videos to. Leave it empty to use the default one "
-#~ "(currently in the users Videos directory)."
-#~ msgstr ""
-#~ "Het pad naar de locatie waar de video's opgeslagen moeten worden. Laat "
-#~ "leeg om de standaardwaarde te gebruiken (momenteel is dit in de videomap "
-#~ "van de gebruiker)."
-
-#~ msgid "Save videos to this directory:"
-#~ msgstr "Video's opslaan in deze map:"
-
-#~ msgid ""
-#~ "The path to save the URL list to. Leave it empty to use the default one "
-#~ "(currently in the users home directory)."
-#~ msgstr ""
-#~ "Het pad naar de locatie waar de URL-lijst opgeslagen moet worden. Laat "
-#~ "leeg om de standaardwaarde te gebruiken (momenteel is dit in de "
-#~ "Persoonlijke map van de gebruiker)."
-
-#~ msgid "Save URL List to this directory:"
-#~ msgstr "URL-lijst opslaan in deze map:"
-
-#~ msgid "Download Options"
-#~ msgstr "Downloadopties"
-
-#~ msgid "Set the download options that will be used for the youtubedl backend"
-#~ msgstr ""
-#~ "Downloadopties instellen die gebruikt zullen gaan worden voor het "
-#~ "youtubedl-backend"
-
-#~ msgid "Resume partially downloaded files"
-#~ msgstr "Deels gedownloade bestanden hervatten"
-
-#~ msgid "Resume download (--continue)?"
-#~ msgstr "Download hervatten (--continue)?"
-
-#~ msgid "Ignore errors during download and continue processing."
-#~ msgstr "Negeer fouten tijdens de download en ga door."
-
-#~ msgid "Ignore errors (--ignore-errors)?"
-#~ msgstr "Fouten negeren (--ignore-errors)?"
-
-#~ msgid "If file exists fo not attempt to over write the file."
-#~ msgstr "Indien bestand reeds bestaat, dan bestand niet overschrijven."
-
-#~ msgid "No overwrite (--no-overwrites)?"
-#~ msgstr "Niet overschrijven (--no-overwrites)?"
-
-#~ msgid ""
-#~ "Use the title of the video in the file name used to download the video"
-#~ msgstr ""
-#~ "Titel van de video die is gedownload, gebruiken in de bestandsnaam van de "
-#~ "video"
-
-#~ msgid "Use title (--title)?"
-#~ msgstr "Titel gebruiken (--title)?"
-
-#~ msgid "Which download format to use:"
-#~ msgstr "Welk downloadformaat wilt u gebruiken:"
-
-#~ msgid "Specify the video format"
-#~ msgstr "Specificeer het videoformaat"
-
-#~ msgid "Limit the maximum quality"
-#~ msgstr "Limiteer de maximum kwaliteit"
-
-#~ msgid "Download default format"
-#~ msgstr "Download standaardformaat"
-
-#~ msgid "Specify the video format (quality) in which to download the video."
-#~ msgstr ""
-#~ "Specificeer het videoformaat (kwaliteit) waarin de video gedownload moet "
-#~ "worden."
-
-#~ msgid "Video format (--format):"
-#~ msgstr "Videoformaat (--format):"
-
-#~ msgid "H264 - MP4 at 480p"
-#~ msgstr "H264 - MP4 bij 480p"
-
-#~ msgid "H264 - MP4 at 720p"
-#~ msgstr "H264 - MP4 bij 720p"
-
-#~ msgid "H264 - MP4 at 1080p"
-#~ msgstr "H264 - MP4 bij 1080p"
-
-#~ msgid "H264 - FLV at 360p"
-#~ msgstr "H264 - FLV bij 360p"
-
-#~ msgid "H264 - FLV at 480p"
-#~ msgstr "H264 - FLV bij 480p"
-
-#~ msgid "H263 - FLV at 240p"
-#~ msgstr "H263 - FLV bij 240p"
-
-#~ msgid "Webm at 480p"
-#~ msgstr "Webm bij 480p"
-
-#~ msgid "Webm at 720p"
-#~ msgstr "Webm bij 720p"
-
-#~ msgid "3GP video"
-#~ msgstr "3GP-video"
-
-#~ msgid "Limit the maximum quality of the videos to download."
-#~ msgstr "Limiteer de maximum kwaliteit van de te downloaden video's."
-
-#~ msgid "Maximum quality (--max-quality):"
-#~ msgstr "Maximum kwaliteit (--max-quality):"
-
-#~ msgid "Download the default format."
-#~ msgstr "Download het standaardformaat."
-
-#~ msgid ""
-#~ "Some videos require an account to be downloaded, mostly because they're "
-#~ "flagged as mature content."
-#~ msgstr ""
-#~ "Voor sommige video's  heeft u een account om die te kunnen downloaden, "
-#~ "omdat de video's dan gelabeld zijn voor volwassenen."
-
-#~ msgid "Use the Username and Passwrod authentication process."
-#~ msgstr "Authenticatie gebruikersnaam en wachtwoord gebruiken"
-
-#~ msgid "Username/Password"
-#~ msgstr "Gebruikersnaam/wachtwoord"
-
-#~ msgid "Specify the youtube account username UserName."
-#~ msgstr "Geef gebruikersnaam voor youtube-account aan."
-
-#~ msgid "Username:"
-#~ msgstr "Gebruikersnaam:"
-
-#~ msgid "Like the username, specifies the account password."
-#~ msgstr "Geef wachtwoord voor youtube-account aan."
-
-#~ msgid "Password:"
-#~ msgstr "Wachtwoord:"
-
-#~ msgid ""
-#~ "This applet allows a user to drag Youtube links from the Youtube website "
-#~ "and drop them on the icon to download. The backend downloader is based on "
-#~ "youtube-dl.py.\n"
-#~ "\n"
-#~ "Only one video will be downloaded at a time and each url will be added to "
-#~ "a list. When the video is downloaded or aborted the url will be removed "
-#~ "from the list. The list can be saved to a file and loaded again for "
-#~ "future use.\n"
-#~ "\n"
-#~ "The middle mouse button can be configured to open the video folder or to "
-#~ "show download status.\n"
-#~ "\n"
-#~ "Right clicking allows various options depending on what is happening at "
-#~ "that time. If your video foler is not valid or not writeable then you "
-#~ "can't download until it is corrected.\n"
-#~ "\n"
-#~ "If there are no videos in the list left clicking on the icon allows you "
-#~ "to enter a url. Otherwise the url list will be displayed."
-#~ msgstr ""
-#~ "Met dit applet kunt u Youtube-links van de Youtube-website verslepen naar "
-#~ "het pictogram om deze links te downloaden. Het downloaden is gebaseerd op "
-#~ "youtube-dl.py.\n"
-#~ "\n"
-#~ "Er wordt één video per keer gedownload en elke url zal toegevoegd worden "
-#~ "aan een lijst. Wanneer de video is gedownload of de download wordt "
-#~ "afgebroken, dan zal de url uit de lijst verwijderd worden. De lijst kan "
-#~ "opgeslagen worden in een bestand voor toekomstig gebruik.\n"
-#~ "De middelste muisknop kan ingesteld worden om de videomap te openen of de "
-#~ "downloadstatus te tonen.\n"
-#~ "\n"
-#~ "Met een rechtermuisklik ziet u verschillende opties afhankelijk van wat "
-#~ "er op dat moment gebeurt. Indien uw videomap niet geldig of beschrijfbaar "
-#~ "is, kunt u niets downloaden totdat dit is gecorrigeerd.\n"
-#~ "\n"
-#~ "Indien er geen video's in de lijst staan, dan kunt u een url invoeren "
-#~ "door met links te klikken op het pictogram . Anders zal de url-lijst "
-#~ "getoond worden."

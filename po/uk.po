@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
 "PO-Revision-Date: 2013-10-05 05:25+0000\n"
 "Last-Translator: ma$terok <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-10-06 05:06+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
+"Language: uk\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu не встановлено. Встановіть до того, як використовувати додаток."
 
@@ -385,7 +387,8 @@ msgstr "Оформлення"
 #: ../Twitter/messages:59 ../WebSearch/messages:57
 #: ../WindowsKiller/messages:59 ../Xchat/messages:59
 msgid "Choose 'Custom decorations' to define your own decorations below."
-msgstr "Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
+msgstr ""
+"Виберіть нижче 'Власне оформлення', щоб налаштувати власне оформлення."
 
 #: ../GnoMenu/messages:61 ../Calendar/messages:61 ../Cardapio/messages:61
 #: ../CpuWatcher/messages:61 ../Deluge/messages:61 ../Gmail/messages:67
@@ -1136,7 +1139,8 @@ msgstr "Розмір десклету (ширина х висота)"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "В залежності від вашого віконного менеджера, ви можете переміщувати його з "
 "допомогою ALT+ліве клацання"
@@ -1699,14 +1703,14 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Додаток \"Цитата дня\" вміє працювати з такими інтернет-ресурсами як:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2561,286 +2565,3 @@ msgstr ""
 "писати повідомлення по середньому клацанню,\n"
 "і показувати історію повідомлень з допомогою прокручування на іконці\n"
 "Іконка буде керувати вікном xchat як звичайною іконкою програми."
-
-#~ msgid "Open Video Folder"
-#~ msgstr "Відкрити папку з відео"
-
-#~ msgid "Show Download Status"
-#~ msgstr "Показати статус завантаження"
-
-#~ msgid "Send abort signal to the downloader. There may be a delay"
-#~ msgstr "Надіслати завантажувачу сигнал припинити. Там можлива затримка"
-
-#~ msgid "Set to 0 to use the default applet size"
-#~ msgstr "Встановіть 0 , щоб використовувати типовий розмір додатку"
-
-#~ msgid "Otherwise use right click and enable downloads"
-#~ msgstr ""
-#~ "В іншому випадку скористайтесь правим клацанням і ввімкніть завантаження"
-
-#~ msgid "Start downloading videos imediately? :"
-#~ msgstr "Відразу розпочати завантаження відео?:"
-
-#~ msgid "in secondds"
-#~ msgstr "в секундах"
-
-#~ msgid "Time between updates:"
-#~ msgstr "Час між оновленнями:"
-
-#~ msgid "Action on middle click:"
-#~ msgstr "Дія на середне клацання:"
-
-#~ msgid "Show Status"
-#~ msgstr "Показати статус"
-
-#~ msgid "Otherwise just use middle click to monitor status"
-#~ msgstr ""
-#~ "В іншому випадку скористайтесь середнім клацанням, щоб контролювати стан"
-
-#~ msgid "Show download progress on icon? :"
-#~ msgstr "Показувати стан завантаження на іконці?"
-
-#~ msgid ""
-#~ "Otherwise just show the plugin name and use middle click to monitor status"
-#~ msgstr ""
-#~ "В іншому випадку просто покажіть ім'я плагіну і використовуючи середнє "
-#~ "клацання контролюйте стан"
-
-#~ msgid "Show download status in icon label when hovering over icon? :"
-#~ msgstr ""
-#~ "Показувати статус завантаження у підписі при наведенні курсора на іконку?:"
-
-#~ msgid "Notification selections"
-#~ msgstr "Вибір сповіщень"
-
-#~ msgid "Otherwise quietly start to the next download"
-#~ msgstr "В іншому випадку спокійно розпочинати наступне завантаження"
-
-#~ msgid "Show a pop-up message when starting downloads? :"
-#~ msgstr "Показувати спливаюче повідомлення при початку завантаження?:"
-
-#~ msgid "Otherwise quietly move finish the download"
-#~ msgstr "В іншому випадку спокійно пересуватися до закінчення завантаження"
-
-#~ msgid "Show a pop-up message when download is complete? :"
-#~ msgstr "Показувати спливаюче повідомлення при завершенні завантаження?:"
-
-#~ msgid "Otherwise quietly abort the download"
-#~ msgstr "В іншому випадку спокійно перервати завантаження"
-
-#~ msgid "Show a pop-up message when download is aborted? :"
-#~ msgstr "Показувати спливаюче повідомлення коли завантаження перерване?:"
-
-#~ msgid "Otherwise just quietly add the url to the list"
-#~ msgstr "В іншому випадку спокійно додавати посилання до списку"
-
-#~ msgid "Show a pop-up message when adding url to queue list? :"
-#~ msgstr "Показувати спливаюче повідомлення при додаванні посилання у чергу?:"
-
-#~ msgid ""
-#~ "if pynotify is installed a system notification message will appear, "
-#~ "otherwise the standard dock dialogue messages will be used."
-#~ msgstr ""
-#~ "якщо pynotify встановлений то з'являться  системні сповіщення, в іншому "
-#~ "випадку будуть використовуватися типові сповіщення панелі.."
-
-#~ msgid "Attempt to use desktop notifications instead of dock messages? :"
-#~ msgstr ""
-#~ "Спробувати використовувати сповіщення стільниці замість сповіщень панелі?:"
-
-#~ msgid ""
-#~ "This is usefull if you have long lists of urls to view when you left "
-#~ "click on the icon. Otherwise the standard dialogue message is fine."
-#~ msgstr ""
-#~ "Це корисно коли ви маєте довгий список адрес для перегляду коли ви "
-#~ "клацаєте лівою клавішею. В іншому випадку підійде типовий діалог "
-#~ "повідомлення."
-
-#~ msgid "Use list view when URL list exceeds specified number?:"
-#~ msgstr ""
-#~ "Використовувати список, якщо перелік посилань перевищує вказану "
-#~ "кількість?:"
-
-#~ msgid ""
-#~ "When the number of URLS exceed this number switch to list view instead of "
-#~ "a regular dialogue"
-#~ msgstr ""
-#~ "Коли кількість посилань перевищує вказане число, перемикати в режим "
-#~ "списку замість регулярного діалогу"
-
-#~ msgid "Use list view when number of URLs exceed:"
-#~ msgstr "Використовувати список, коли кількість посилань перевищує:"
-
-#~ msgid "Directory Setup"
-#~ msgstr "Каталог встановлення"
-
-#~ msgid ""
-#~ "The path to save the videos to. Leave it empty to use the default one "
-#~ "(currently in the users Videos directory)."
-#~ msgstr ""
-#~ "Шлях для збереження відео. Залиште порожнім, щоб використовувати типовий "
-#~ "(в даний час це тека Відео в каталозі користувача)."
-
-#~ msgid "Save videos to this directory:"
-#~ msgstr "Зберегти відео до цієї теки:"
-
-#~ msgid ""
-#~ "The path to save the URL list to. Leave it empty to use the default one "
-#~ "(currently in the users home directory)."
-#~ msgstr ""
-#~ "Шлях для збереження списку посилань. Залиште порожнім, щоб "
-#~ "використовувати типовий (на даний час це домашня тека користувача)"
-
-#~ msgid "Save URL List to this directory:"
-#~ msgstr "Зберегти список посилань до цієї теки:"
-
-#~ msgid "Download Options"
-#~ msgstr "Параметри завантаження"
-
-#~ msgid "Set the download options that will be used for the youtubedl backend"
-#~ msgstr ""
-#~ "Встановити параметри завантаження, які буде використовувати бекенд "
-#~ "youtubedl"
-
-#~ msgid "Resume partially downloaded files"
-#~ msgstr "Відновлення частково завантажених файлів"
-
-#~ msgid "Resume download (--continue)?"
-#~ msgstr "Відновити завантаження (--continue)?"
-
-#~ msgid "Ignore errors during download and continue processing."
-#~ msgstr "Ігнорувати помилки під час завантаження і продовжувати обробку"
-
-#~ msgid "Ignore errors (--ignore-errors)?"
-#~ msgstr "Ігнорувати помилки (--ignore-errors)?"
-
-#~ msgid "If file exists fo not attempt to over write the file."
-#~ msgstr "Якщо файл існує, не намагайтеся замінити файл."
-
-#~ msgid "No overwrite (--no-overwrites)?"
-#~ msgstr "Не перезаписувати (--no-overwrites)?"
-
-#~ msgid ""
-#~ "Use the title of the video in the file name used to download the video"
-#~ msgstr "Використовувати назву відео в імені файлу, при  завантаженні відео"
-
-#~ msgid "Use title (--title)?"
-#~ msgstr "Використовувати назву (--title)?"
-
-#~ msgid "Which download format to use:"
-#~ msgstr "Який формат використовувати при завантаженні:"
-
-#~ msgid "Specify the video format"
-#~ msgstr "Вкажіть формат відео"
-
-#~ msgid "Limit the maximum quality"
-#~ msgstr "Обмеження максимальної якості"
-
-#~ msgid "Download default format"
-#~ msgstr "Завантажувати типовий формат"
-
-#~ msgid "Specify the video format (quality) in which to download the video."
-#~ msgstr "Вкажіть формат відео (якість) для завантаження відео."
-
-#~ msgid "Video format (--format):"
-#~ msgstr "Формат відео (--format):"
-
-#~ msgid "H264 - MP4 at 480p"
-#~ msgstr "H264 - MP4 в 480p"
-
-#~ msgid "H264 - MP4 at 720p"
-#~ msgstr "H264 - MP4 в 720p"
-
-#~ msgid "H264 - MP4 at 1080p"
-#~ msgstr "H264 - MP4 в 1080p"
-
-#~ msgid "H264 - FLV at 360p"
-#~ msgstr "H264 - FLV в 360p"
-
-#~ msgid "H264 - FLV at 480p"
-#~ msgstr "H264 - FLV в 480p"
-
-#~ msgid "H263 - FLV at 240p"
-#~ msgstr "H263 - FLV в 240p"
-
-#~ msgid "Webm at 480p"
-#~ msgstr "Webm в 480p"
-
-#~ msgid "Webm at 720p"
-#~ msgstr "Webm в 720p"
-
-#~ msgid "3GP video"
-#~ msgstr "3GP відео"
-
-#~ msgid "Limit the maximum quality of the videos to download."
-#~ msgstr "Обмежити максимальну якість відео для скачування."
-
-#~ msgid "Maximum quality (--max-quality):"
-#~ msgstr "Максимальна якість (--max-quality):"
-
-#~ msgid "Download the default format."
-#~ msgstr "Типовий формат для завантаження."
-
-#~ msgid ""
-#~ "Some videos require an account to be downloaded, mostly because they're "
-#~ "flagged as mature content."
-#~ msgstr ""
-#~ "Деякі відео потребують для завантаження обліковий запис, в основному "
-#~ "тому, що вони позначені як відео для дорослих."
-
-#~ msgid "Use the Username and Passwrod authentication process."
-#~ msgstr "Використовуйте ім'я користувача і пароль в процесі аутентифікації."
-
-#~ msgid "Username/Password"
-#~ msgstr "Ім'я користувача/Пароль"
-
-#~ msgid "Specify the youtube account username UserName."
-#~ msgstr "Вкажіть ім'я користувача облікового запису YouTube."
-
-#~ msgid "Username:"
-#~ msgstr "Ім'я користувача:"
-
-#~ msgid "Like the username, specifies the account password."
-#~ msgstr "Вказується ім’я користувача як і пароль облікового запису."
-
-#~ msgid "Password:"
-#~ msgstr "Пароль:"
-
-#~ msgid ""
-#~ "This applet allows a user to drag Youtube links from the Youtube website "
-#~ "and drop them on the icon to download. The backend downloader is based on "
-#~ "youtube-dl.py.\n"
-#~ "\n"
-#~ "Only one video will be downloaded at a time and each url will be added to "
-#~ "a list. When the video is downloaded or aborted the url will be removed "
-#~ "from the list. The list can be saved to a file and loaded again for "
-#~ "future use.\n"
-#~ "\n"
-#~ "The middle mouse button can be configured to open the video folder or to "
-#~ "show download status.\n"
-#~ "\n"
-#~ "Right clicking allows various options depending on what is happening at "
-#~ "that time. If your video foler is not valid or not writeable then you "
-#~ "can't download until it is corrected.\n"
-#~ "\n"
-#~ "If there are no videos in the list left clicking on the icon allows you "
-#~ "to enter a url. Otherwise the url list will be displayed."
-#~ msgstr ""
-#~ "Цей додаток дозволяє користувачеві перетягнути посилання на відео з сайту "
-#~ "Youtube і кинути його на іконку для завантаження . Бекенд завантажувача "
-#~ "базується на youtube-dl.py.\n"
-#~ "\n"
-#~ "Одночасно може завантажуватися лише одне відео і наступні посилання "
-#~ "будуть додаватися до списку. Завершені і перервані завантаження будуть "
-#~ "видалятися зі списку. Цей список може бути збережений у файл і "
-#~ "завантажений знову для подальшого використання.\n"
-#~ "\n"
-#~ "Середню клавішу миші можна налаштувати для відкривання відео чи теки з "
-#~ "відео, або ж для відображення статусу завантаження.\n"
-#~ "\n"
-#~ "Праве клацання передбачає різні дії в залежності від обставин. Якщо папки "
-#~ "для завантаження відео не існує або вона не доступна для запису, то ви не "
-#~ "зможете почати завантаження поки не виправите це.\n"
-#~ "\n"
-#~ "Якщо у списку немає відео то ліве клацання на іконці дозволяє ввести "
-#~ "посилання. В іншому випадку буде відображатися список посилань."
