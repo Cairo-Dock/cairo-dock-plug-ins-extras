@@ -8,21 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-core\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2014-06-13 11:33+0000\n"
 "PO-Revision-Date: 2013-11-27 10:55+0000\n"
 "Last-Translator: Litty <Unknown>\n"
 "Language-Team: Korean <ko@li.org>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
 "X-Generator: Launchpad (build 17045)\n"
-"Language: ko\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid ""
-"GnoMenu is not installed. Please install it before you run this applet."
-msgstr "GnoMenu가 설치되지 않았습니다. 이 애플릿을 실행하시기 전에 먼저 설치하세요."
+msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgstr ""
+"GnoMenu가 설치되지 않았습니다. 이 애플릿을 실행하시기 전에 먼저 설치하세요."
 
 #: ../GnoMenu/GnoMenu:143
 msgid "GnoMenu's settings"
@@ -176,7 +175,9 @@ msgstr ""
 msgid ""
 "If locked, the desklet cannot be moved by simply dragging it with the left "
 "mouse button. It can still be moved with ALT + left-click."
-msgstr "잠그면 마우스 왼쪽 버튼으로 끌어 desklet을 옮길 수 없습니다. ALT + 마우스 왼쪽 클릭으로 옳길 수는 있습니다."
+msgstr ""
+"잠그면 마우스 왼쪽 버튼으로 끌어 desklet을 옮길 수 없습니다. ALT + 마우스 왼"
+"쪽 클릭으로 옳길 수는 있습니다."
 
 #: ../GnoMenu/messages:25 ../Calendar/messages:25 ../Cardapio/messages:25
 #: ../CpuWatcher/messages:25 ../Deluge/messages:25 ../Gmail/messages:31
@@ -1078,8 +1079,7 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid ""
-"Depending on your WindowManager, you can move it with ALT + left_click"
+msgid "Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1593,9 +1593,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
-"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
-"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
+"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
+"100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
