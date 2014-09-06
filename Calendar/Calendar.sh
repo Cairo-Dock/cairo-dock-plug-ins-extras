@@ -59,7 +59,7 @@ CAL_PARAM="-hC"
 which $CAL > /dev/null
 if [ $? -ne 0 ]; then
 	CAL="cal"
-	CAL_PARAM="" # original 'cal' doesn't support -hC options
+	CAL_PARAM="| cat -v | sed -e 's/_^H//g'" # original 'cal' doesn't support -hC options
 	which $CAL > /dev/null
 fi
 if [ $? -eq 0 ]; then
@@ -98,7 +98,7 @@ if [ $1 -eq 1 ]; then
 	which $CAL > /dev/null
 	if [ $? -ne 0 ]; then
 		CAL="cal"
-		CAL_PARAM="-3"
+		CAL_PARAM="-3 | cat -v | sed -e 's/_^H//g'"
 		which $CAL > /dev/null
 	fi
 	if [ $? -eq 0 ]; then
