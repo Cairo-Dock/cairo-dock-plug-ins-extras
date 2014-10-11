@@ -382,7 +382,10 @@ class Applet(CDApplet):
 				return
 			if self.iCurrentGuiConv == 0:
 				convs = self.purple.PurpleGetConversations()
-				self.iCurrentGuiConv = convs[0]
+				if len(convs) == 0:
+					self.icon.ActOnAppli("show")
+				else:
+					self.iCurrentGuiConv = convs[0]
 			if self.iCurrentGuiConv != 0:
 				print("present conv "+str(self.iCurrentGuiConv))
 				self.icon.ActOnAppli("show") # we have to do that due to a bug in Pidgin (http://developer.pidgin.im/ticket/12534)
