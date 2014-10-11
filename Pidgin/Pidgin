@@ -452,6 +452,11 @@ class Applet(CDApplet):
 			"id"   : 3,
 			"state": self.bSilentMode,
 			"tooltip" : _("Switch the applet to silent mode (no pop-up on new message).")})
+		items.append({"type" : 0, 
+			"label":_("Buddy List"), 
+			"menu" : 0, 
+			"id"   : 4, 
+			"tooltip" : _("Open the main window of Pidgin.")})
 		
 		self.icon.AddMenuItems(items)
 		
@@ -483,6 +488,8 @@ class Applet(CDApplet):
 			self.purple.PurpleConversationPresent(self.iCurrentConv)
 		elif iNumEntry == 3:
 			self.bSilentMode = not self.bSilentMode
+		elif iNumEntry == 4:
+			subprocess.Popen("pidgin")
 		
 	def on_scroll(self,bScrollUp):
 		# print ">>> scroll !"
