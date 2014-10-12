@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
 "PO-Revision-Date: 2014-06-13 22:07+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Cairo-Dock <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
 "X-Generator: Launchpad (build 17045)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu n'est pas installé. Merci de l'installer avant de lancer cette "
 "applet."
@@ -444,7 +446,8 @@ msgstr "Transparence du fond :"
 #: ../Twitter/messages:69 ../WebSearch/messages:67
 #: ../WindowsKiller/messages:69 ../Xchat/messages:69
 msgid "in pixels. Use this to adjust the left position of drawings."
-msgstr "en pixels. Utilisez-le pour ajuster la position à gauche des dessins."
+msgstr ""
+"en pixels. Utilisez-le pour ajuster la position à gauche des dessins."
 
 #: ../GnoMenu/messages:71 ../Calendar/messages:71 ../Cardapio/messages:71
 #: ../CpuWatcher/messages:71 ../Deluge/messages:71 ../Gmail/messages:77
@@ -484,7 +487,8 @@ msgstr "Décalage en haut :"
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr "en pixels. Utilisez-le pour ajuster la position à droite des dessins."
+msgstr ""
+"en pixels. Utilisez-le pour ajuster la position à droite des dessins."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../CpuWatcher/messages:79 ../Deluge/messages:79 ../Gmail/messages:85
@@ -1000,8 +1004,8 @@ msgstr "Jouer un son ?"
 msgid ""
 "Several files are available in ~/.config/cairo-dock/third-party/Gmail/snd/"
 msgstr ""
-"Plusieurs fichiers sont disponibles dans ~/.config/cairo-dock/third-party/"
-"Gmail/snd/"
+"Plusieurs fichiers sont disponibles dans ~/.config/cairo-dock/third-"
+"party/Gmail/snd/"
 
 #: ../Gmail/messages:125
 msgid "Path to sound file:"
@@ -1157,7 +1161,8 @@ msgstr "Dimension du desklet (largeur x hauteur) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 "En fonction de votre gestionnaire de fenêtres, vous pouvez déplacer avec ALT "
 "+ clic gauche par exemple."
@@ -1360,7 +1365,8 @@ msgstr "Le numéro de port d'écoute pour le démon hddtemp (7634 par défaut)"
 
 #: ../HDDtemperature/messages:103
 msgid "Separator between fields used by hddtemp daemon ( | by default)"
-msgstr "Séparateur des champs utilisés par le démon hddtemp (« | » par défaut)"
+msgstr ""
+"Séparateur des champs utilisés par le démon hddtemp (« | » par défaut)"
 
 #: ../HDDtemperature/messages:106
 msgid ""
@@ -1610,7 +1616,8 @@ msgstr "Choisir un thème :"
 
 #: ../Pidgin/messages:99
 msgid "Display conversation messages in a bubble?"
-msgstr "Afficher les messages de la conversation dans une bulle de dialogue ?"
+msgstr ""
+"Afficher les messages de la conversation dans une bulle de dialogue ?"
 
 #: ../Pidgin/messages:101
 msgid "Display chat messages in a bubble?"
@@ -1733,15 +1740,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "Cette applet offre des « Citations du jour » venant de plusieurs sources "
 "Internet telle que :\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com et Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com et Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2296,9 +2303,9 @@ msgid ""
 "be shown, and go to the next dialog"
 msgstr ""
 "L'applet %s a besoin de vous pour accepter les autorisations. La page "
-"d'autorisation a été ouverte dans ​​votre navigateur. Une fois l'autorisation "
-"acceptée, copiez le code PIN qui y sera affiché et aller dans la boîte de "
-"dialogue suivante."
+"d'autorisation a été ouverte dans ​​votre navigateur. Une fois "
+"l'autorisation acceptée, copiez le code PIN qui y sera affiché et aller dans "
+"la boîte de dialogue suivante."
 
 #: ../Twitter/Twitter:305
 #, python-format

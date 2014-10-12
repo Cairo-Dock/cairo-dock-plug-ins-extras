@@ -7,19 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2014-08-18 01:12+0200\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
 "PO-Revision-Date: 2013-10-02 02:54+0000\n"
 "Last-Translator: Anthony Harrington <untaintableangel@ubuntu.com>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-06-14 05:56+0000\n"
 "X-Generator: Launchpad (build 17045)\n"
+"Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu is not installed. Please install it before you run this applet."
 
@@ -584,7 +585,8 @@ msgstr "Applications"
 
 #: ../Calendar/messages:95
 msgid "Command to launch your favourite calendar application (middle click):"
-msgstr "Command to launch your favourite calendar application (middle click):"
+msgstr ""
+"Command to launch your favourite calendar application (middle click):"
 
 #: ../Calendar/messages:97
 msgid "Command to execute on dropping a file onto the calendar-icon:"
@@ -1016,7 +1018,8 @@ msgstr "quickinfo"
 
 #: ../Gmail/messages:140
 msgid "This applet will notify you of new emails on a single Gmail account."
-msgstr "This applet will notify you of new e-mails on a single Gmail account."
+msgstr ""
+"This applet will notify you of new e-mails on a single Gmail account."
 
 #: ../Google/messages:92
 msgid ""
@@ -1134,8 +1137,10 @@ msgstr "Desklet's dimension (width x height) :"
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
-msgstr "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
+msgstr ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
 #: ../Notifications_history/messages:27 ../Screensaver_inhibitor/messages:27
@@ -1445,7 +1450,8 @@ msgstr "Show the moon for all the current week?"
 
 #: ../Moon/messages:91
 msgid "You are going to see the moon from the perspective of this hemisphere"
-msgstr "You are going to see the moon from the perspective of this hemisphere"
+msgstr ""
+"You are going to see the moon from the perspective of this hemisphere"
 
 #: ../Moon/messages:93
 msgid "Hemisphere:"
@@ -1691,15 +1697,15 @@ msgstr "Chucknorrisfacts.fr"
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 
 #: ../Quote/messages:124
 msgid "Quote"
@@ -2309,7 +2315,8 @@ msgstr "Identi.ca"
 
 #: ../Twitter/messages:93
 msgid "Size of the emblem that shows the number of new tweets, and messages:"
-msgstr "Size of the emblem that shows the number of new tweets, and messages:"
+msgstr ""
+"Size of the emblem that shows the number of new tweets, and messages:"
 
 #: ../Twitter/messages:95
 msgid "Small"

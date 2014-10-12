@@ -7,20 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"PO-Revision-Date: 2013-04-06 09:21+0000\n"
-"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
+"POT-Creation-Date: 2014-06-13 11:33+0000\n"
+"PO-Revision-Date: 2014-09-05 15:34+0000\n"
+"Last-Translator: elBlauet <Unknown>\n"
 "Language-Team: Spanish <es@li.org>\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
-"X-Generator: Launchpad (build 17045)\n"
+"X-Launchpad-Export-Date: 2014-09-06 07:09+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
+"Language: es\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../GnoMenu/GnoMenu:105
-msgid "GnoMenu is not installed. Please install it before you run this applet."
+msgid ""
+"GnoMenu is not installed. Please install it before you run this applet."
 msgstr ""
 "GnoMenu no está instalado. Instálelo antes de ejecutar esta miniaplicación."
 
@@ -398,7 +400,8 @@ msgstr ""
 #: ../Twitter/messages:61 ../WebSearch/messages:59
 #: ../WindowsKiller/messages:61 ../Xchat/messages:61
 msgid "Choose a decoration theme for this desklet:"
-msgstr "Seleccione un tema de decoración para este complemento del escritorio:"
+msgstr ""
+"Seleccione un tema de decoración para este complemento del escritorio:"
 
 #: ../GnoMenu/messages:63 ../Calendar/messages:63 ../Cardapio/messages:63
 #: ../CpuWatcher/messages:63 ../Deluge/messages:63 ../Gmail/messages:69
@@ -465,7 +468,8 @@ msgstr "Desplazamiento izquierdo:"
 #: ../Twitter/messages:73 ../WebSearch/messages:71
 #: ../WindowsKiller/messages:73 ../Xchat/messages:73
 msgid "in pixels. Use this to adjust the top position of drawings."
-msgstr "en Píxeles. Use esto para ajustar la posición superior de los dibujos."
+msgstr ""
+"en Píxeles. Use esto para ajustar la posición superior de los dibujos."
 
 #: ../GnoMenu/messages:75 ../Calendar/messages:75 ../Cardapio/messages:75
 #: ../CpuWatcher/messages:75 ../Deluge/messages:75 ../Gmail/messages:81
@@ -485,7 +489,8 @@ msgstr "Desplazamiento superior:"
 #: ../Twitter/messages:77 ../WebSearch/messages:75
 #: ../WindowsKiller/messages:77 ../Xchat/messages:77
 msgid "in pixels. Use this to adjust the right position of drawings."
-msgstr "en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
+msgstr ""
+"en Píxeles. Use esto para ajustar la posición derecha de los dibujos."
 
 #: ../GnoMenu/messages:79 ../Calendar/messages:79 ../Cardapio/messages:79
 #: ../CpuWatcher/messages:79 ../Deluge/messages:79 ../Gmail/messages:85
@@ -505,7 +510,8 @@ msgstr "Desplazamiento derecho:"
 #: ../Twitter/messages:81 ../WebSearch/messages:79
 #: ../WindowsKiller/messages:81 ../Xchat/messages:81
 msgid "in pixels. Use this to adjust the bottom position of drawings."
-msgstr "en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
+msgstr ""
+"en Píxeles. Use esto para ajustar la posición inferior de los dibujos."
 
 #: ../GnoMenu/messages:83 ../Calendar/messages:83 ../Cardapio/messages:83
 #: ../CpuWatcher/messages:83 ../Deluge/messages:83 ../Gmail/messages:89
@@ -597,7 +603,7 @@ msgstr "Comportamiento"
 
 #: ../Calendar/messages:101
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../Calendar/messages:105
 msgid "Faenza"
@@ -605,7 +611,7 @@ msgstr ""
 
 #: ../Calendar/messages:107
 msgid "Custom"
-msgstr ""
+msgstr "Personalizado"
 
 #: ../Calendar/messages:109
 msgid ""
@@ -629,7 +635,7 @@ msgstr ""
 
 #: ../Calendar/messages:116
 msgid "Calendar"
-msgstr ""
+msgstr "Calendario"
 
 #: ../Cardapio/Cardapio:50
 msgid ""
@@ -673,37 +679,37 @@ msgstr "Deluge no está en ejecución, o no responde."
 #: ../Deluge/Deluge:218 ../KTorrent/KTorrent:221
 #: ../Transmission/Transmission:307
 msgid "Progress:"
-msgstr ""
+msgstr "Progreso:"
 
 #: ../Deluge/Deluge:220 ../Transmission/Transmission:310
 msgid "paused"
-msgstr ""
+msgstr "pausado"
 
 #: ../Deluge/Deluge:224 ../KTorrent/KTorrent:237
 #: ../Transmission/Transmission:320
 msgid "Time remaining:"
-msgstr ""
+msgstr "Tiempo restante:"
 
 #: ../Deluge/Deluge:229 ../KTorrent/KTorrent:242
 #: ../Transmission/Transmission:129
 msgid "days"
-msgstr ""
+msgstr "días"
 
 #: ../Deluge/Deluge:231 ../Deluge/Deluge:237 ../KTorrent/KTorrent:244
 #: ../KTorrent/KTorrent:250 ../Transmission/Transmission:131
 #: ../Transmission/Transmission:134 ../Transmission/Transmission:144
 msgid "h"
-msgstr ""
+msgstr "h"
 
 #: ../Deluge/Deluge:239 ../KTorrent/KTorrent:252
 #: ../Transmission/Transmission:149
 msgid "min"
-msgstr ""
+msgstr "mín"
 
 #: ../Deluge/Deluge:240 ../KTorrent/KTorrent:253
 #: ../Transmission/Transmission:153
 msgid "sec"
-msgstr ""
+msgstr "seg"
 
 #: ../Deluge/Deluge:243 ../KTorrent/KTorrent:256
 #: ../Transmission/Transmission:324
@@ -713,7 +719,7 @@ msgstr ""
 #: ../Deluge/Deluge:245 ../KTorrent/KTorrent:258
 #: ../Transmission/Transmission:326
 msgid "Finished"
-msgstr ""
+msgstr "Terminado"
 
 #: ../Deluge/Deluge:246 ../KTorrent/KTorrent:261
 #: ../Transmission/Transmission:327
@@ -728,7 +734,7 @@ msgstr ""
 #: ../Deluge/Deluge:248 ../KTorrent/KTorrent:270
 #: ../Transmission/Transmission:335
 msgid "Ratio:"
-msgstr ""
+msgstr "Porcentaje:"
 
 #: ../Deluge/Deluge:251 ../KTorrent/KTorrent:275
 #: ../Transmission/Transmission:339
@@ -741,11 +747,11 @@ msgstr ""
 
 #: ../Deluge/Deluge:264 ../Transmission/Transmission:353
 msgid "Received:"
-msgstr ""
+msgstr "Recibido:"
 
 #: ../Deluge/Deluge:272 ../Transmission/Transmission:361
 msgid "Sent:"
-msgstr ""
+msgstr "Enviado:"
 
 #: ../Deluge/Deluge:346 ../Transmission/Transmission:506
 msgid "Pause all torrents"
@@ -769,7 +775,7 @@ msgstr "clic central"
 
 #: ../Deluge/Deluge:361 ../Transmission/Transmission:521
 msgid "Quit"
-msgstr ""
+msgstr "Salir"
 
 #: ../Deluge/messages:93 ../KTorrent/messages:93 ../Transmission/messages:93
 msgid "Shortkey to pop up the torrents info:"
@@ -781,7 +787,7 @@ msgstr ""
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Ninguno"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
@@ -814,7 +820,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:68
 msgid "No Subject"
-msgstr ""
+msgstr "Sin asunto"
 
 #: ../Gmail/Gmail:138 ../Gmail/Gmail:144 ../Gmail/Gmail:153
 msgid "Please fill in your Gmail account."
@@ -851,7 +857,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:426
 msgid "Error!"
-msgstr ""
+msgstr "¡Error!"
 
 #: ../Gmail/Gmail:459
 #, python-format
@@ -892,7 +898,7 @@ msgstr "Mostrar siempre el icono, ¿incluso cuando el dock está escondido?"
 
 #: ../Gmail/messages:17 ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: ../Gmail/messages:19
 msgid "With default background"
@@ -1015,7 +1021,7 @@ msgstr ""
 
 #: ../GTG/GTG:208
 msgid "Create a new task"
-msgstr ""
+msgstr "Crea una tarea nueva"
 
 #: ../GTG/GTG:222 ../GTG/GTG:258
 msgid "Open category's task"
@@ -1095,7 +1101,8 @@ msgstr ""
 #: ../HDDtemperature/messages:21 ../Moon/messages:25
 #: ../Notifications_history/messages:25 ../Screensaver_inhibitor/messages:25
 #: ../Translator/messages:31
-msgid "Depending on your WindowManager, you can move it with ALT + left_click"
+msgid ""
+"Depending on your WindowManager, you can move it with ALT + left_click"
 msgstr ""
 
 #: ../HDDtemperature/messages:23 ../Moon/messages:27
@@ -1186,49 +1193,49 @@ msgstr ""
 #: ../Notifications_history/messages:67 ../Screensaver_inhibitor/messages:67
 #: ../Translator/messages:71
 msgid "in pixels. Use this to adjust the left position of the drawings."
-msgstr ""
+msgstr "En pixeles. Usar para ajustar la posición izquierda de los objetos."
 
 #: ../HDDtemperature/messages:65 ../Moon/messages:67
 #: ../Notifications_history/messages:69 ../Screensaver_inhibitor/messages:69
 #: ../Translator/messages:73
 msgid "Left offset :"
-msgstr ""
+msgstr "Desplazamiento izquierdo:"
 
 #: ../HDDtemperature/messages:67 ../Moon/messages:69
 #: ../Notifications_history/messages:71 ../Screensaver_inhibitor/messages:71
 #: ../Translator/messages:75
 msgid "in pixels. Use this to adjust the top position of the drawings."
-msgstr ""
+msgstr "En pixeles. Usar para ajustar la posición superior de los objetos."
 
 #: ../HDDtemperature/messages:69 ../Moon/messages:71
 #: ../Notifications_history/messages:73 ../Screensaver_inhibitor/messages:73
 #: ../Translator/messages:77
 msgid "Top offset :"
-msgstr ""
+msgstr "Desplazamiento superior:"
 
 #: ../HDDtemperature/messages:71 ../Moon/messages:73
 #: ../Notifications_history/messages:75 ../Screensaver_inhibitor/messages:75
 #: ../Translator/messages:79
 msgid "in pixels. Use this to adjust the right position of the drawings."
-msgstr ""
+msgstr "En pixeles. Usar para ajustar la posición derecha de los objetos."
 
 #: ../HDDtemperature/messages:73 ../Moon/messages:75
 #: ../Notifications_history/messages:77 ../Screensaver_inhibitor/messages:77
 #: ../Translator/messages:81
 msgid "Right offset :"
-msgstr ""
+msgstr "Desplazamiento derecho:"
 
 #: ../HDDtemperature/messages:75 ../Moon/messages:77
 #: ../Notifications_history/messages:79 ../Screensaver_inhibitor/messages:79
 #: ../Translator/messages:83
 msgid "in pixels. Use this to adjust the bottom position of the drawings."
-msgstr ""
+msgstr "En pixeles. Usar para ajustar la posición inferior de los objetos."
 
 #: ../HDDtemperature/messages:77 ../Moon/messages:79
 #: ../Notifications_history/messages:81 ../Screensaver_inhibitor/messages:81
 #: ../Translator/messages:85
 msgid "Bottom offset :"
-msgstr ""
+msgstr "Desplazamiento inferior:"
 
 #: ../HDDtemperature/messages:79 ../Moon/messages:81
 #: ../Notifications_history/messages:83 ../Screensaver_inhibitor/messages:83
@@ -1242,7 +1249,7 @@ msgstr ""
 #: ../Notifications_history/messages:87 ../Screensaver_inhibitor/messages:87
 #: ../Translator/messages:91
 msgid "Foreground tansparency :"
-msgstr ""
+msgstr "Transparencia del primer plano:"
 
 #: ../HDDtemperature/messages:87
 msgid "One or more device drive path to monitor:"
@@ -1609,9 +1616,9 @@ msgstr ""
 msgid ""
 "This applet provides a \"Quote of the day\" feature from some internet "
 "sources such as:\n"
-" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, Jokes2go."
-"com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, Vitadimerda.it, "
-"100blagues.com, and Chucknorrisfacts.fr."
+" Quotationspage.com, Bash.org, Xkcdb.com, Qdb.us, Danstonchat.com, "
+"Jokes2go.com, Vidademerda.com.br, Viedemerde.fr, Fmylife.com, "
+"Vitadimerda.it, 100blagues.com, and Chucknorrisfacts.fr."
 msgstr ""
 
 #: ../Quote/messages:124
