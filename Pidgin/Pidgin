@@ -118,12 +118,19 @@ class Applet(CDApplet):
 		convs = self.purple.PurpleGetConversations()  # PurpleGetIms, PurpleGetChats
 		for conv in convs:
 			if conv != exception:
+				count = False
 				try:
+					# unseen-count is no longer available.
+					# it possible to add a Pidgin plugin to have GetUnseen method:
+					# https://github.com/themylogin/theDesktopUtils/tree/master/PurpleConversationGetUnseen
 					count = self.purple.PurpleConversationGetData(conv, "unseen-count")
-					if count and count > 0:
-						n += count
 				except:
-					pass
+					try:
+						count = self.purple.PurpleConversationGetUnseen(conv)
+					except:
+						pass
+				if count and count > 0:
+					n += count
 		return n
 	
 	def set_nb_unread_msg(self,n):
