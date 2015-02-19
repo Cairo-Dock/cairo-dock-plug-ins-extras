@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
-"POT-Creation-Date: 2014-06-13 11:33+0000\n"
-"PO-Revision-Date: 2014-03-05 19:13+0000\n"
+"POT-Creation-Date: 2014-10-19 00:23+0000\n"
+"PO-Revision-Date: 2014-11-16 12:56+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-06-14 05:55+0000\n"
-"X-Generator: Launchpad (build 17045)\n"
+"X-Launchpad-Export-Date: 2014-11-17 05:40+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 "Language: pl\n"
 
 #: ../GnoMenu/GnoMenu:105
@@ -92,7 +92,7 @@ msgstr "Nazwa ikony, jaka pojawi się w jej podpisie w doku:"
 #: ../Translator/messages:9 ../Transmission/messages:9 ../Twitter/messages:9
 #: ../WebSearch/messages:7 ../WindowsKiller/messages:9 ../Xchat/messages:9
 msgid "Default"
-msgstr ""
+msgstr "Domyślnie"
 
 #: ../GnoMenu/messages:11 ../Calendar/messages:11 ../Cardapio/messages:11
 #: ../CpuWatcher/messages:11 ../Deluge/messages:11 ../Google/messages:11
@@ -648,11 +648,11 @@ msgstr ""
 
 #: ../CpuWatcher/messages:93
 msgid "in ms"
-msgstr ""
+msgstr "w ms."
 
 #: ../CpuWatcher/messages:95
 msgid "Refresh time :"
-msgstr ""
+msgstr "Czas odświeżania:"
 
 #: ../CpuWatcher/messages:98
 msgid ""
@@ -750,7 +750,7 @@ msgstr "Wysłano:"
 
 #: ../Deluge/Deluge:346 ../Transmission/Transmission:506
 msgid "Pause all torrents"
-msgstr ""
+msgstr "Wstrzymaj wszystkie torrenty"
 
 #: ../Deluge/Deluge:351 ../Transmission/Transmission:511
 msgid "Resume all torrents"
@@ -782,7 +782,7 @@ msgstr ""
 
 #: ../Deluge/messages:97 ../Transmission/messages:97
 msgid "None"
-msgstr ""
+msgstr "Brak"
 
 #: ../Deluge/messages:99 ../Transmission/messages:99
 msgid "Download speed"
@@ -823,15 +823,15 @@ msgstr ""
 
 #: ../Gmail/Gmail:177
 msgid "Please, enter your Gmail username:"
-msgstr ""
+msgstr "Proszę podać swoją nazwę użytkownika Gmail:"
 
 #: ../Gmail/Gmail:185
 msgid "Please, enter your Gmail password:"
-msgstr ""
+msgstr "Proszę podać swoje hasło Gmail:"
 
 #: ../Gmail/Gmail:294
 msgid "WARNING: there was an error reading XML content."
-msgstr ""
+msgstr "UWAGA: wystąpił błąd podczas wczytywania zawartości XML."
 
 #: ../Gmail/Gmail:317
 msgid "WARNING: Gmail applet failed to connect to Gmail atom feed."
@@ -852,16 +852,16 @@ msgstr ""
 
 #: ../Gmail/Gmail:426
 msgid "Error!"
-msgstr ""
+msgstr "Błąd!"
 
 #: ../Gmail/Gmail:459
 #, python-format
 msgid "You have %s new emails"
-msgstr ""
+msgstr "Masz %s nowych wiadomości"
 
 #: ../Gmail/Gmail:461
 msgid "You have 1 new email"
-msgstr ""
+msgstr "Masz 1 nową wiadomość"
 
 #: ../Gmail/Gmail:553
 msgid "Sorry, there was no input!"
@@ -869,15 +869,15 @@ msgstr ""
 
 #: ../Gmail/Gmail:562
 msgid "Add or change subscription"
-msgstr ""
+msgstr "Dodaj lub zmień subskrypcję"
 
 #: ../Gmail/Gmail:563
 msgid "Use this to add or change your Gmail account details."
-msgstr ""
+msgstr "Użyj tego, by dodać lub zmienić szczegóły swojego konta Gmail."
 
 #: ../Gmail/Gmail:565
 msgid "Check inbox now"
-msgstr ""
+msgstr "Sprawdź teraz skrzynkę odbiorczą"
 
 #: ../Gmail/Gmail:566
 msgid "Check Gmail inbox now if you can't wait."
@@ -885,7 +885,7 @@ msgstr ""
 
 #: ../Gmail/Gmail:567
 msgid "Write a mail"
-msgstr ""
+msgstr "Napisz e-maila"
 
 #: ../Gmail/messages:15
 msgid "Always display the icon, even when the dock is hidden?"
@@ -893,7 +893,7 @@ msgstr ""
 
 #: ../Gmail/messages:17 ../Pidgin/messages:113 ../Xchat/messages:105
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: ../Gmail/messages:19
 msgid "With default background"
@@ -909,7 +909,7 @@ msgstr ""
 
 #: ../Gmail/messages:99
 msgid "(in minutes)"
-msgstr ""
+msgstr "(w minutach)"
 
 #: ../Gmail/messages:101
 msgid "Delay between refreshes:"
@@ -917,11 +917,11 @@ msgstr ""
 
 #: ../Gmail/messages:103
 msgid "Alerts"
-msgstr ""
+msgstr "Powiadomienia"
 
 #: ../Gmail/messages:105
 msgid "Show alerts?"
-msgstr ""
+msgstr "Pokazywać powiadomienia?"
 
 #: ../Gmail/messages:107
 msgid "Should an animation be applied to the icon?"
@@ -929,7 +929,7 @@ msgstr ""
 
 #: ../Gmail/messages:109
 msgid "Show animation?"
-msgstr ""
+msgstr "Pokazywać animacje?"
 
 #: ../Gmail/messages:111
 msgid "Which animation should the apply to the icon?"
@@ -974,15 +974,15 @@ msgstr ""
 
 #: ../Gmail/messages:131
 msgid "How?"
-msgstr ""
+msgstr "Jak?"
 
 #: ../Gmail/messages:133
 msgid "small emblem"
-msgstr ""
+msgstr "mały symbol"
 
 #: ../Gmail/messages:135
 msgid "large emblem"
-msgstr ""
+msgstr "duży symbol"
 
 #: ../Gmail/messages:137
 msgid "quickinfo"
@@ -1016,7 +1016,7 @@ msgstr ""
 
 #: ../GTG/GTG:208
 msgid "Create a new task"
-msgstr ""
+msgstr "Utwórz nowe zadanie"
 
 #: ../GTG/GTG:222 ../GTG/GTG:258
 msgid "Open category's task"
@@ -1028,7 +1028,7 @@ msgstr ""
 
 #: ../GTG/GTG:305 ../GTG/GTG:307 ../GTG/GTG:309
 msgid "The task: "
-msgstr ""
+msgstr "Zadanie: "
 
 #: ../GTG/GTG:305
 msgid " is due today"
