@@ -41,6 +41,8 @@ class Applet(CDApplet):
     self.set_status_online_key = 1
     self.set_status_offline_key = 2
     self.refresh_key = 3
+    
+    self.shown_disconnected_alert = False
 
     self.dialog_active_time = 30                                                    # time in seconds that the dialog window will be active
     CDApplet.__init__(self)                                                         # call high-level init
@@ -54,7 +56,9 @@ class Applet(CDApplet):
       except dbus.DBusException:
         # Something more elaborated could be done here, e.g., use gobject.idle_add and using,
         # as callback, a method that would keep checking if Lirefea is open. Opted for the simpler approach
-        self.icon.PopupDialog({'message':'Impossible connect to Liferea, check if it is running. Retrying ...', 'time-length':self.dialog_active_time},{})
+        if not self.shown_disconnected_alert:
+          self.icon.PopupDialog({'message':'Impossible connect to Liferea, check if it is running. Retrying ...', 'time-length':self.dialog_active_time},{})
+          self.shown_disconnected_alert = True
         sleep(1)
     return self.liferea
 
