@@ -43,12 +43,12 @@ try:  # python3
 	from configparser import RawConfigParser
 	from urllib.request import FancyURLopener
 	from html.parser import HTMLParser
-	strict=False
+	strict = False
 except:  # python 2
 	from ConfigParser import RawConfigParser
 	from urllib import FancyURLopener
 	from HTMLParser import HTMLParser
-	strict=True
+	strict = True
 
 from util import log
 
@@ -88,7 +88,6 @@ class TranslatorParser(HTMLParser):
 		else:
 			self.feed(str(page)) ## workaround for python3
 		self.close()                                                              # cya soon!
-
 
 class Interface:                                                              # TODO: Create an interface to support Bing Translator
 	""" Create a interface between the Applet and Parser
@@ -148,14 +147,14 @@ class Applet(CDApplet):
 		# call high-level init
 		CDApplet.__init__(self)
 	
-	##### private methods #####
+	# Private methods
 	
 	# read the list of languages from .languages file
 	def read_languages_file(self):
-		"""Read the languages file formated as Name<space>Abbreviation, e.g, Portuguese pt"""
+		"""Read the languages file formated as Name,Abbreviation, e.g, Portuguese,pt"""
 		f = open('.languages', "rb")
 		for line in f:
-			splited = line.split()                                      # split the line by space token
+			splited = line.strip().split(',')                             # split the line by comma token
 			name, abbrv = splited[0], splited[1]
 			self.languages.append(Language(name, abbrv))                  # e.g, Language("English", "en")
 
@@ -225,7 +224,7 @@ class Applet(CDApplet):
 			
 			dialog_attributes = {
 				'use-markup' : True,
-				'buttons'    : 'gtk-clear;gtk-refresh;gtk-cancel',
+				'buttons'    : 'edit-clear;go-previous;cancel',
 				'time-length': self.config['dialog time'] + len(translated) / 20 }
 			if self.config['dialog editable']:
 				dialog_attributes['message'] = "Translated from <b>%s</b> to <b>%s</b>:" % (self.source.name, self.destination.name)

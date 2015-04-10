@@ -1,3 +1,4 @@
+0.2.9:(April/10/2015): Updating the list of languages supported by the Google Translator, and some minor changes.
 0.2.1:(November/3/2011): Updating the list of languages supported by the Google Translator.
 0.2.0:(February/17/2011): Using CDApplet interface. Improving, and fixing the dictionary, added some unknown word types when fetching dictionary. Not always one word means that dictionary will be returned.
 0.1.8:(January/17/2011): Dropping text, or URL is allowed in the plugin.
