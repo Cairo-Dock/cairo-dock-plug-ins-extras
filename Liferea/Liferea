@@ -47,19 +47,21 @@ class Applet(CDApplet):
     self.dialog_active_time = 30                                                    # time in seconds that the dialog window will be active
     CDApplet.__init__(self)                                                         # call high-level init
 
+  def liferea_owner_changed(self, owner):
+    if owner == '':
+      self.liferea = None
+    else:
+      self.connect_to_liferea()
+
   def connect_to_liferea(self):
-    while not self.liferea:
-      try:
-        bus = dbus.SessionBus()
-        liferea_object = bus.get_object('org.gnome.feed.Reader', '/org/gnome/feed/Reader')
-        self.liferea = dbus.Interface(liferea_object, dbus_interface='org.gnome.feed.Reader')
-      except dbus.DBusException:
-        # Something more elaborated could be done here, e.g., use gobject.idle_add and using,
-        # as callback, a method that would keep checking if Lirefea is open. Opted for the simpler approach
-        if not self.shown_disconnected_alert:
-          self.icon.PopupDialog({'message':'Impossible connect to Liferea, check if it is running. Retrying ...', 'time-length':self.dialog_active_time},{})
-          self.shown_disconnected_alert = True
-        sleep(1)
+    try:
+      bus = dbus.SessionBus()
+      liferea_object = bus.get_object('org.gnome.feed.Reader', '/org/gnome/feed/Reader')
+      self.liferea = dbus.Interface(liferea_object, dbus_interface='org.gnome.feed.Reader')
+      self.refresh_liferea_status()
+    except dbus.DBusException:
+      bus.watch_name_owner('org.gnome.feed.Reader', self.liferea_owner_changed)       # check if Liferea is running: http://stackoverflow.com/a/4685307/914874
+      self.icon.PopupDialog({'message':'Impossible connect to Liferea, check if it is running.', 'time-length':self.dialog_active_time},{})
     return self.liferea
 
   def get_number_of_unread_msgs(self):
@@ -85,11 +87,13 @@ class Applet(CDApplet):
     self.icon.SetIcon(os.path.abspath("./data/online.png"))
 
   def subscribe(self, url):
-    self.liferea.Subscribe(url)
+    if self.liferea:
+      self.liferea.Subscribe(url)
   
   def refresh(self):
-    self.liferea.Refresh()
-    self.refresh_liferea_status()
+    if self.liferea:
+      self.liferea.Refresh()
+      self.refresh_liferea_status()
     
   def switch_window_focus(self):
     if not self.icon.Get("has_focus"):                                          # liferea running, but its window has not the focus
@@ -143,8 +147,7 @@ class Applet(CDApplet):
 
   def begin(self):
     self.bind_to_liferea_window()
-    if self.connect_to_liferea():
-      self.refresh_liferea_status()
+    self.connect_to_liferea()
 
   def get_config(self, keyfile):
     self.config_info = keyfile.getint('Configuration', 'icon_info')                 # get the source of quotations
@@ -157,6 +160,8 @@ class Applet(CDApplet):
   def on_click(self, param):
     if self.liferea:
       self.switch_window_focus()
+    else:
+      self.connect_to_liferea()
 
   # Probably the user read something when he focus Liferea, therefore,
   # it is useful to check again and refresh the number of unread, and new items
