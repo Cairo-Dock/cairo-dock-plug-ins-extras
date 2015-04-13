@@ -7,40 +7,38 @@ from sgmllib import SGMLParser
 
 class DanstonchatParser(SGMLParser):
 
-	def reset(self):                              
-		SGMLParser.reset(self)
-		self.name = "Danstonchat.com"
-		self.url = "http://danstonchat.com/random.html"
-		self.quote = []
-		self.inside_div_element = False                                             # indica se o parser esta dentro de <span></span> tag
-		self.inside_p_element = False
-		self.current_quote = ""
+  def reset(self):                              
+    SGMLParser.reset(self)
+    self.name = "Danstonchat.com"
+    self.url = "http://danstonchat.com/random.html"
+    self.quote = []
+    self.inside_p_element = False                                            # indicates that the parser is currently processing the content inside <p></p> tag
+    self.inside_p_a_element = False
+    self.current_quote = ""
 
-	def start_div(self, attrs):
-		for name, value in attrs:
-			if name == "class" and value == "item item1":                         # <span class="qt">...</span>
-				self.inside_div_element = True
+  def start_p(self, attrs):
+    for name, value in attrs:
+	    if name == "class" and value == "item-content":
+		    self.inside_p_element = True
 	
-	def start_p(self, attrs):
-		if self.inside_div_element:
-			for name, value in attrs:
-				if name == "class" and value == "item-content":
-					self.inside_p_element = True
-	
-	def end_p(self):
-		self.inside_p_element = False
-		
-	def end_div(self):
-		self.inside_div_element = False
-		self.quote.append(self.current_quote)                                       # adiciona o conteudo completo da tag
-		self.current_quote = ""                                                     # reinicia o armazenador do conteudo
+  def end_p(self):
+    self.inside_p_a_element = False
+    self.inside_p_element = False
 
-	def handle_data(self, text):
-		if self.inside_div_element and self.inside_p_element:                                                 # estamos dentro de <span>...</span>
-			text = text.replace('<', '[')                                           # se a string contem '<nome>', gera o erro na hora do ShowDialog
-			text = text.replace('>', ']')                                           # pango_layout_set_markup_with_accel: Unknown tag 'nome'
-			self.current_quote += text                                              # concatena tudo que tiver dentro da tag
+  def start_a(self, attrs):
+    if self.inside_p_element:
+      self.inside_p_a_element = True
+  
+  def end_a(self):
+    if self.inside_p_a_element:
+      self.quote.append(self.current_quote)                                   # append the whole content found inside <p><a>...</a></p>,
+      self.current_quote = ""                                                 # clear it for the next quote,
+      self.inside_p_a_element = False 
 
-	def parse(self, page):
-		self.feed(str(page))                                                             # feed the parser with the page's html
-		self.close() 
+  def handle_data(self, text):
+    if self.inside_p_a_element:                                               # we are inside the <p><a>...</a></p> tag
+      self.current_quote += text                                              # concatenas everything inside the tag tag
+
+  def parse(self, page):
+    self.feed(str(page))                                                      # feed the parser with the page's html
+    self.close()
