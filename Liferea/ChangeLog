@@ -1,1 +1,2 @@
+0.0.6:(April/10/2015): Improved the connection with Liferea, polling if the program is not open to get instantly connected as soon as the user opens it. Added refresh method.
 0.0.1:(April/13/2011): Liferea applet was created with the possibility to show the number of unread, or new messages, subscribe feeds, and set the status between online, and offline.

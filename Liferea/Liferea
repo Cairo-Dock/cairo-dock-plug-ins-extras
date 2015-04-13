@@ -24,137 +24,173 @@
 # Left-click controls the Liferea window and it seems like a Launcher
 
 import dbus, os, subprocess
+from time import sleep
 from util import log
 from CDApplet import CDApplet, _
 
 class Applet(CDApplet):
 
-    def __init__(self):
-        
-        self.liferea = None
-        self.number_of_unread_msgs = 0
-        self.number_of_new_msgs = 0
-        self.show_number_of_unread_msgs = 0
-        self.show_number_of_new_msgs = 1
+  def __init__(self):
+      
+    self.liferea = None
+    self.number_of_unread_msgs = 0
+    self.number_of_new_msgs = 0
+    self.show_number_of_unread_msgs = 0
+    self.show_number_of_new_msgs = 1
 
-        self.set_status_online_key = 1
-        self.set_status_offline_key = 2
-
-        self.dialog_active_time = 30                                                    # time in seconds that the dialog window will be active
-        CDApplet.__init__(self)                                                         # call high-level init
-
-    def connect_to_liferea(self):
-        try:
-            bus = dbus.SessionBus()
-            liferea_object = bus.get_object('org.gnome.feed.Reader', '/org/gnome/feed/Reader')
-            self.liferea = dbus.Interface(liferea_object, dbus_interface='org.gnome.feed.Reader')
-        except dbus.DBusException:
-            # Something more elaborated could be done here, e.g., use gobject.idle_add and using,
-            # as callback, a method that would keep checking if Lirefea is open. Opted for the simpler approach
-            self.icon.PopupDialog({'message':'Impossible connect to Liferea, check if it is running', 'time-length':self.dialog_active_time},{})
-        return self.liferea
-
-    def get_number_of_unread_msgs(self):
-        self.number_of_unread_msgs = self.liferea.GetUnreadItems()
-
-    def get_number_of_new_msgs(self):
-        self.number_of_new_msgs = self.liferea.GetNewItems()
-
-    def set_offline(self):
-        self.liferea.SetOnline(False)
-        self.set_offline_icon()
-
-    def set_offline_icon(self):
-        self.icon.SetIcon(os.path.abspath("./data/offline.png"))
-
-    def set_online(self):
-        self.liferea.SetOnline(True)
-        self.set_online_icon()
-
-    def set_online_icon(self):
-        self.icon.SetIcon(os.path.abspath("./data/online.png"))
-
-    def subscribe(self, url):
-        self.liferea.Subscribe(url) 
-
-    def switch_window_focus(self):
-        if not self.icon.Get("has_focus"):                                          # liferea running, but its window has not the focus
-            try:                                                                    
-                self.icon.ActOnAppli("show")                                           # bring the window to the foreground
-            except:                                                                 # if liferea is in the notification area, its window is actually closed, so we must re-open it
-                subprocess.Popen("liferea")                                         # ... so it is necessary to recall the application
-        else:
-            self.icon.ActOnAppli("minimize")                                              # take the window to the background
-
-    def show_icon_information(self):
-        if self.config_info == self.show_number_of_unread_msgs:
-            self.icon.SetQuickInfo(str(self.number_of_unread_msgs))
-        elif self.config_info == self.show_number_of_new_msgs:
-            self.icon.SetQuickInfo(str(self.number_of_new_msgs))
+    self.set_status_online_key = 1
+    self.set_status_offline_key = 2
+    self.refresh_key = 3
     
-    def bind_to_liferea_window(self):
-        self.icon.ControlAppli("liferea")
+    self.shown_disconnected_alert = False
 
-    def build_status_menu(self):
-        status_menu = []
-        index = 1
-        for status in ["Online", "Offline"]:
-            status_menu.append({
-                'type'  : CDApplet.MENU_ENTRY,
-                'label' : status,
-                'menu'  : CDApplet.MAIN_MENU_ID,
-                'id'    : index,
-                'icon'  : os.path.abspath("./data/%s.png") % status.lower()})
-            index += 1
-        self.icon.AddMenuItems(status_menu)
+    self.dialog_active_time = 30                                                    # time in seconds that the dialog window will be active
+    CDApplet.__init__(self)                                                         # call high-level init
 
-    # CDApplet
+  def liferea_owner_changed(self, owner):
+    if owner == '':
+      self.liferea = None
+    else:
+      self.connect_to_liferea()
 
-    def begin(self):
-        self.bind_to_liferea_window()
-        if self.connect_to_liferea():
-            self.get_number_of_unread_msgs()
-            self.get_number_of_new_msgs()
-            self.show_icon_information()
+  def connect_to_liferea(self):
+    try:
+      bus = dbus.SessionBus()
+      liferea_object = bus.get_object('org.gnome.feed.Reader', '/org/gnome/feed/Reader')
+      self.liferea = dbus.Interface(liferea_object, dbus_interface='org.gnome.feed.Reader')
+      self.refresh_liferea_status()
+    except dbus.DBusException:
+      bus.watch_name_owner('org.gnome.feed.Reader', self.liferea_owner_changed)       # check if Liferea is running: http://stackoverflow.com/a/4685307/914874
+      self.icon.PopupDialog({'message':'Impossible connect to Liferea, check if it is running.', 'time-length':self.dialog_active_time},{})
+    return self.liferea
 
-    def get_config(self, keyfile):
-        self.config_info = keyfile.getint('Configuration', 'icon_info')                 # get the source of quotations
+  def get_number_of_unread_msgs(self):
+    self.number_of_unread_msgs = self.liferea.GetUnreadItems()
 
-    def reload(self):
-        self.show_icon_information()
+  def get_number_of_new_msgs(self):
+    self.number_of_new_msgs = self.liferea.GetNewItems()
 
-    # Callbacks
+  def set_offline(self):
+    if self.liferea:
+      self.liferea.SetOnline(False)
+      self.set_offline_icon()
 
-    def on_click(self, param):
-        if self.liferea:
-            self.switch_window_focus()
+  def set_offline_icon(self):
+    self.icon.SetIcon(os.path.abspath("./data/offline.png"))
 
-    # Probably the user read something when he focus Liferea, therefore,
-    # it is useful to check again and refresh the number of unread, and new items
-    # I will avoid polling to keep checking this variables
-    def on_change_focus(self, has_focus):
-        self.get_number_of_unread_msgs()
-        self.get_number_of_new_msgs()
-        self.show_icon_information()
+  def set_online(self):
+    if self.liferea:
+      self.liferea.SetOnline(True)
+      self.set_online_icon()
 
-    def on_drop_data(self, text):
-        self.subscribe(text)
+  def set_online_icon(self):
+    self.icon.SetIcon(os.path.abspath("./data/online.png"))
 
-    def on_middle_click(self):
-        self.icon.PopupDialog ({'message':'Enter the feed URL', 'buttons':'ok;cancel'}, {'widget-type':'text-entry'})
+  def subscribe(self, url):
+    if self.liferea:
+      self.liferea.Subscribe(url)
+  
+  def refresh(self):
+    if self.liferea:
+      self.liferea.Refresh()
+      self.refresh_liferea_status()
+    
+  def switch_window_focus(self):
+    if not self.icon.Get("has_focus"):                                          # liferea running, but its window has not the focus
+      try:                                                                    
+        self.icon.ActOnAppli("show")                                           # bring the window to the foreground
+      except:                                                                 # if liferea is in the notification area, its window is actually closed, so we must re-open it
+        subprocess.Popen("liferea")                                         # ... so it is necessary to recall the application
+    else:
+      self.icon.ActOnAppli("minimize")                                              # take the window to the background
 
-    def on_answer_dialog(self, key, content):
-        if (key == 0 or key == -1) and content:                                         # Ok or Enter
-            self.subscribe(content)
+  def show_icon_information(self):
+    if self.config_info == self.show_number_of_unread_msgs:
+      self.icon.SetQuickInfo(str(self.number_of_unread_msgs))
+    elif self.config_info == self.show_number_of_new_msgs:
+      self.icon.SetQuickInfo(str(self.number_of_new_msgs))
+  
+  def bind_to_liferea_window(self):
+    self.icon.ControlAppli("liferea")
 
-    def on_build_menu(self):
-        self.build_status_menu()
+  def build_status_menu(self):
+    status_menu = []
+    indexes = [self.set_status_online_key, self.set_status_offline_key]
+    statuses = ["Online", "Offline"]
+    for index, status in zip(indexes, statuses):
+      status_menu.append({
+        'type'  : CDApplet.MENU_ENTRY,
+        'label' : _(status),
+        'menu'  : CDApplet.MAIN_MENU_ID,
+        'id'    : index,
+        'icon'  : os.path.abspath("./data/%s.png") % status.lower()})
+    self.icon.AddMenuItems(status_menu)
 
-    def on_menu_select(self, selected_menu):
-        if selected_menu == self.set_status_online_key:
-            self.set_online()
-        elif selected_menu == self.set_status_offline_key:
-            self.set_offline()
+  def build_refresh_menu(self):
+    refresh_menu = []
+    index = self.refresh_key
+    label = _("Refresh")
+    refresh_menu.append({
+      'type'  : CDApplet.MENU_ENTRY,
+      'label' : label,
+      'menu'  : CDApplet.MAIN_MENU_ID,
+      'id'    : index,
+      'icon'  : os.path.abspath("./data/%s.png") % label.lower()})
+    self.icon.AddMenuItems(refresh_menu)
+
+  def refresh_liferea_status(self):
+    self.get_number_of_unread_msgs()
+    self.get_number_of_new_msgs()
+    self.show_icon_information()
+
+  # CDApplet
+
+  def begin(self):
+    self.bind_to_liferea_window()
+    self.connect_to_liferea()
+
+  def get_config(self, keyfile):
+    self.config_info = keyfile.getint('Configuration', 'icon_info')                 # get the source of quotations
+
+  def reload(self):
+    self.show_icon_information()
+
+  # Callbacks
+
+  def on_click(self, param):
+    if self.liferea:
+      self.switch_window_focus()
+    else:
+      self.connect_to_liferea()
+
+  # Probably the user read something when he focus Liferea, therefore,
+  # it is useful to check again and refresh the number of unread, and new items
+  # I will avoid polling to keep checking this variables
+  def on_change_focus(self, has_focus):
+    self.refresh_liferea_status()
+
+  def on_drop_data(self, text):
+    self.subscribe(text)
+
+  def on_middle_click(self):
+    self.icon.PopupDialog ({'message':'Enter the feed URL', 'buttons':'ok;cancel'}, {'widget-type':'text-entry'})
+
+  def on_answer_dialog(self, key, content):
+    if (key == 0 or key == -1) and content:                                         # Ok or Enter
+      self.subscribe(content)
+
+  def on_build_menu(self):
+    if self.liferea:
+      self.build_status_menu()
+      self.build_refresh_menu()
+
+  def on_menu_select(self, selected_menu):
+    if selected_menu == self.set_status_online_key:
+      self.set_online()
+    elif selected_menu == self.set_status_offline_key:
+      self.set_offline()
+    else:
+      self.refresh()
     
 if __name__ == '__main__':
-    Applet().run()
+  Applet().run()
