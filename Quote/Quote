@@ -53,15 +53,15 @@ from XkcdbParser import XkcdbParser                                     # Xkcdb.
 from QuotationspageParser import QuotationspageParser                   # Quotationspage.com
 from DanstonchatParser import DanstonchatParser                         # Danstonchat.fr
 from JokestogoParser import JokestogoParser                             # Jokes2go.com
-from VidademerdaParser import VidademerdaParser                         # Vidademerda.com.br
+# from VidademerdaParser import VidademerdaParser                         # Vidademerda.com.br
 from ViedemerdeParser import ViedemerdeParser                           # Viedemerde.fr
 from FmylifeParser import FmylifeParser                                 # Fmylife.com
 from VitadimerdaParser import VitadimerdaParser                         # VitadimerdaParser.it
 from HundredblaguesParser import HundredblaguesParser                   # HundredblaguesParser.com
 from ChucknorrisfactsfrParser import ChucknorrisfactsfrParser           # Chucknorrisfacts.fr
 
-# quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, vidademerda = 6, viedemerde = 7, fmylife = 8, vitadimerda = 9, hundredblagues = 10, chucknorrisfactsfr = 11
-quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, vidademerda, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr = list(range(12))  
+# quotationspage = 0, bash = 1, xkcdb = 2, qdb = 3, danstonchat = 4, jokestogo = 5, viedemerde = 6, fmylife = 7, vitadimerda = 8, hundredblagues = 9, chucknorrisfactsfr = 10
+quotationspage, bash, xkcdb, qdb, danstonchat, jokestogo, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr = list(range(11))  
 
 class AgentOpener(FancyURLopener):
   """Masked user-agent otherwise the access would be forbidden"""
@@ -87,8 +87,8 @@ class Interface:
       parser = DanstonchatParser()                                      # DanstonchatParser.py
     elif self.source == jokestogo:
       parser = JokestogoParser()                                        # JokestogoParser.py
-    elif self.source == vidademerda:                                    
-      parser = VidademerdaParser()                                      # VidademerdaParser.py
+#    elif self.source == vidademerda:                                    
+#      parser = VidademerdaParser()                                      # VidademerdaParser.py
     elif self.source == viedemerde:
       parser = ViedemerdeParser()                                       # ViedemerdeParser.py
     elif self.source == fmylife:                                                               
@@ -117,9 +117,9 @@ class Interface:
         self.quote = parser.quote
         self.author = parser.author
       elif self.source in [bash, xkcdb, qdb, danstonchat, viedemerde, fmylife, vitadimerda, hundredblagues, chucknorrisfactsfr]:
-        self.quote = [_f for _f in parser.quote if _f]                         # remove the '' from the array
+        self.quote = [_f for _f in parser.quote if _f]                  # remove the '' from the array
       elif self.source == jokestogo:                                    # jokestogo
-        self.quote = list(filter(self.linebreak, parser.quote))               # remove linebreak from the array
+        self.quote = list(filter(self.linebreak, parser.quote))         # remove linebreak from the array
       else:                                                             # vidademerda
         self.quote = [''.join(parser.quote)]
         self.author = parser.author
@@ -138,8 +138,7 @@ class Applet(CDApplet):
     self.copy_current_quote_key = 0
     self.go_next_quote_key = 1
     self.source = quotationspage
-    self.names = ["Quotationspage.com","Bash.org","Xkcdb.com","Qdb.us","Danstonchat.com","Jokes2go.com",
-                    "Vidademerda.com.br","Viedemerde.fr","Fmylife.com", "Vitadimerda.it", "100blagues.com", "Chucknorrisfacts.fr"]
+    self.names = ["Quotationspage.com", "Bash.org", "Xkcdb.com", "Qdb.us", "Danstonchat.com", "Jokes2go.com", "Viedemerde.fr", "Fmylife.com", "Vitadimerda.it", "100blagues.com", "Chucknorrisfacts.fr"]
     
     CDApplet.__init__(self)                                             # call high-level init
   
