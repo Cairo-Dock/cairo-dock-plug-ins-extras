@@ -46,7 +46,22 @@ def post(url, params, header, tries = 0):
       sleep(.33)
       if tries > 3:
         raise
-        
+
+# TODO: Make this one work in order to remove the python-requests dependence
+#def post_identica(url, headers, tries = 0, **kwargs):
+#  while True:
+#    try:
+#      logp("POST: Trying to connect to %s" % url)
+#      data = urllib_parse.urlencode(kwargs)
+#      request = urllib_request.Request(url, data)
+#      response = urllib_request.urlopen(request)
+#      return response.read()
+#    except:  # urllib_error.HTTPError or urllib_error.URLError
+#      tries += 1
+#      sleep(.33)
+#      if tries > 3:
+#        raise
+
 #def stream(url):
 #  req = urllib2.urlopen(url)
 #  buffer = ''

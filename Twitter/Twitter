@@ -299,10 +299,10 @@ class Applet(CDApplet):
     dialog = {'buttons':'next'}
     try:
       webbrowser.open(authorization_url)
-      message = _("%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog") % camelcase(self.new_network.name)
+      message = _("%s applet needs you to give the authorization. Authorization page was opened on your browser. As soon as you authorize it, copy the PIN number that will be shown, and go to the next dialog. For Identi.ca, PIN is the Verifier") % camelcase(self.new_network.name)
       self.show_popup_message(message, dialog)
     except webbrowser.Error:    
-      message = _("%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize") % camelcase(self.new_network.name)
+      message = _("%s applet needs you to give the authorization. Copy the address bellow and access it with your browser. Copy the PIN number that will be shown as soon as you authorize. For Identi.ca, PIN is the Verifier") % camelcase(self.new_network.name)
       widget = {'widget-type':'text-entry', 'initial-value':authorization_url}
       self.show_popup_message(message, dialog, widget)
     self.dialog_type = self.responding_authorization
