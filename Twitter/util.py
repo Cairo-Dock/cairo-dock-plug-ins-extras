@@ -37,6 +37,7 @@ def camelcase(string):
   return string[0].capitalize() + string[1:]
 
 # Read the user's consumer key and secret necessary for the requests
+# File .keys.cfg is located in the current directory
 def read_consumer_key_and_secret(network="twitter"):
   try:
     config = ConfigParser.ConfigParser()

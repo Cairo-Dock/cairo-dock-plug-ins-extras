@@ -20,12 +20,16 @@ try:
   from urllib.error import HTTPError
 except:
   from urllib2 import HTTPError
+
 import simplejson
 
 from network import Network
 from user import User
 from http import post, get
 from util import *
+
+from requests import post as identica_post
+#from http import post_identica
 
 class Identica(Network):
   def __init__(self):
@@ -38,7 +42,7 @@ class Identica(Network):
     if self.user.exists():
       logp("User '%s' found for Identi.ca" % self.user.screen_name)
       logp("Getting Identi.ca API")
-      self.api = self.IdenticaAPI(self.user.access_key, self.user.access_secret)
+      self.api = self.IdenticaAPI(self.user.access_key, self.user.access_secret, self.user.screen_name)
       return True
     else:
       logm("A problem has occurred while getting access to Identi.ca API")
@@ -46,9 +50,9 @@ class Identica(Network):
     
   class Oauth:
     def __init__(self):
-      self.request_token_url  = 'https://identi.ca/api/oauth/request_token'
-      self.access_token_url   = 'https://identi.ca/api/oauth/access_token'
-      self.authorize_url      = 'https://identi.ca/api/oauth/authorize'
+      self.request_token_url  = 'https://identi.ca/oauth/request_token'
+      self.access_token_url = 'https://identi.ca/oauth/access_token'
+      self.authorize_url = 'https://identi.ca/oauth/authorize'
 
       consumer_key, consumer_secret = read_consumer_key_and_secret("identica")
       self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
@@ -56,47 +60,39 @@ class Identica(Network):
       
     def get_authorization_url(self):
       self.request_token = self.get_unauthorized_request_token()
-      oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
-                                                                 token = self.request_token,
-                                                                 http_url = self.authorize_url)
+      oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, token = self.request_token, http_url = self.authorize_url)
       oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
       return oauth_request.to_url()
 
     def get_unauthorized_request_token(self):
-      oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_method="POST", callback="oob", parameters={"source": "Cairo-Dock"}, http_url = self.request_token_url)
+      oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer, http_url = self.request_token_url, callback="oob")
       oauth_request.sign_request(self.signature_method, self.consumer, None)
       url = oauth_request.to_url()
-      header = oauth_request.to_header()
-      response = post(url, "", header)
+      response = get(url)
       token = oauth.OAuthToken.from_string(response)
       return token
       
     # Exchange request token for access token
-    def get_access_token_and_secret(self, pin):
+    def get_access_token_and_secret(self, verifier):
       oauth_request = oauth.OAuthRequest.from_consumer_and_token(oauth_consumer=self.consumer, 
-            token = self.request_token,  
-            http_method="POST",
-            callback="oob",
-            verifier = pin,
-            parameters={"oauth_verifier": str(pin), "source": "Cairo-Dock"},
-            http_url=self.access_token_url)
-
+                                                                 token = self.request_token,
+                                                                 callback="oob",
+                                                                 verifier = str(verifier),
+                                                                 http_url = self.access_token_url)
       oauth_request.sign_request(self.signature_method, self.consumer, self.request_token)
       url = oauth_request.to_url()
-      header = oauth_request.to_header()
-      response = post(url, "", header)
+      response = get(url)
       access_token = oauth.OAuthToken.from_string(response)
       return access_token.key, access_token.secret
       
   class IdenticaAPI():
-    def __init__(self, access_key, access_secret):
+    def __init__(self, access_key, access_secret, user_screen_name):
       self.signature_method = oauth.OAuthSignatureMethod_HMAC_SHA1()
       consumer_key, consumer_secret = read_consumer_key_and_secret("identica")
       self.consumer = oauth.OAuthConsumer(consumer_key, consumer_secret)
       self.access_token = oauth.OAuthToken(access_key, access_secret)
       
-      self.update_url         = 'http://identi.ca/api/statuses/update.json'
-      self.home_timeline_url  = 'http://identi.ca/api/statuses/home_timeline.json'
+      self.feed_url = "https://identi.ca/api/user/%s/feed" % user_screen_name
 
     def dispatch(self, url, mode, parameters={}):
       oauth_request = oauth.OAuthRequest.from_consumer_and_token(self.consumer,
@@ -110,14 +106,19 @@ class Identica(Network):
         response = get(url) 
         return simplejson.loads(response)
       elif mode == "POST":
-        header = oauth_request.to_header()
-        post(url, parameters, header)  
+        request = {
+          "headers": {"Content-Type": "application/json"},
+          "timeout": 30
+        }
+        request.update({"data": simplejson.dumps(parameters)})
+        # logp("Identi.ca request %s" % request)
+        # return post_identica(url, **request)
+        identica_post(oauth_request.to_url(), **request)
 
-    # If an user tries to post the same tweet twice on a short period of time,
-    # twitter is not going to allow, and a error 401 is thrown.
     def tweet(self, message):                                                           # popularly "send a tweet"
       try:
-        self.dispatch(self.update_url, "POST", {'status':message})
+        note = {"verb": "post", "object": {"content": message, "objectType": "note"}}
+        self.dispatch(self.feed_url, "POST", note)
       except HTTPError as err: # urllib2
         if err.code == 401:
           return False
@@ -125,4 +126,5 @@ class Identica(Network):
         return True
       
     def home_timeline(self):
-      return self.dispatch(self.home_timeline_url, "GET")
+      return "Not implemented"
+      # return self.dispatch(self.home_timeline_url, "GET")

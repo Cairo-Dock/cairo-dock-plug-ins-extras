@@ -25,7 +25,7 @@ class User:
     self.access_key = access_key
     self.access_secret = access_secret
     self.network = network
-    self.user_file = os.path.abspath(os.path.join(os.getcwd(),'..','..','.%s_users' % self.network))      # ~/.config/cairo-dock/.twitter_users
+    self.user_file = os.path.abspath(os.path.join(os.getcwd(),'..','..','.%s_users' % self.network))      # ~/.config/cairo-dock/.twitter_users or ~/.config/cairo-dock/.identica_users
   
   # TODO: Implement it as a config file using screen_name as section index
   def read(self):
