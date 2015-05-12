@@ -1,3 +1,4 @@
+0.4.7 (May/12/2015): Removing python-requests dependence introduced on the previous version.
 0.4.6 (April/24/2015): As Identi.ca changed to Pump.io platform, the Oauth code needed to be rewrote.
 0.4.4 (August/7/2013): Converted twitter API to the version 1.1.
 0.4.1 (May/20/2012): Added home timeline on Identi.ca.

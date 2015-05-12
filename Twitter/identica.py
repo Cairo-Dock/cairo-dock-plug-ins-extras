@@ -21,15 +21,12 @@ try:
 except:
   from urllib2 import HTTPError
 
-import simplejson
+from simplejson import loads, dumps
 
 from network import Network
 from user import User
-from http import post, get
+from http import post_to_identica, get
 from util import *
-
-from requests import post as identica_post
-#from http import post_identica
 
 class Identica(Network):
   def __init__(self):
@@ -104,16 +101,10 @@ class Identica(Network):
       if mode == "GET":
         url = oauth_request.to_url()
         response = get(url) 
-        return simplejson.loads(response)
+        return loads(response)
       elif mode == "POST":
-        request = {
-          "headers": {"Content-Type": "application/json"},
-          "timeout": 30
-        }
-        request.update({"data": simplejson.dumps(parameters)})
-        # logp("Identi.ca request %s" % request)
-        # return post_identica(url, **request)
-        identica_post(oauth_request.to_url(), **request)
+        headers = {'Content-Type': 'application/json'}
+        post_to_identica(oauth_request.to_url(), dumps(parameters), headers)
 
     def tweet(self, message):                                                           # popularly "send a tweet"
       try:
