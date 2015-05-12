@@ -32,7 +32,7 @@ def get(url, tries = 0):
       if tries > 3:
         raise
 
-# HTTP POST
+# HTTP POST for Twitter
 def post(url, params, header, tries = 0):
   while True:
     try:
@@ -47,20 +47,19 @@ def post(url, params, header, tries = 0):
       if tries > 3:
         raise
 
-# TODO: Make this one work in order to remove the python-requests dependence
-#def post_identica(url, headers, tries = 0, **kwargs):
-#  while True:
-#    try:
-#      logp("POST: Trying to connect to %s" % url)
-#      data = urllib_parse.urlencode(kwargs)
-#      request = urllib_request.Request(url, data)
-#      response = urllib_request.urlopen(request)
-#      return response.read()
-#    except:  # urllib_error.HTTPError or urllib_error.URLError
-#      tries += 1
-#      sleep(.33)
-#      if tries > 3:
-#        raise
+# HTTP POST for Identi.ca
+def post_to_identica(url, data, header, tries = 0):
+  while True:
+    try:
+      logp("POST to Identi.ca: Trying to connect to %s" % url)
+      request = urllib_request.Request(url, data, headers=header)
+      response = urllib_request.urlopen(request)
+      return response.read()
+    except:  # urllib_error.HTTPError or urllib_error.URLError
+      tries += 1
+      sleep(.33)
+      if tries > 3:
+        raise
 
 #def stream(url):
 #  req = urllib2.urlopen(url)
