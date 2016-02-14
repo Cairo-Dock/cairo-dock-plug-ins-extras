@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: cairo-dock-plug-ins\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
 "POT-Creation-Date: 2014-10-19 00:23+0000\n"
-"PO-Revision-Date: 2014-11-16 12:56+0000\n"
+"PO-Revision-Date: 2015-12-23 19:15+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-17 05:40+0000\n"
-"X-Generator: Launchpad (build 17241)\n"
+"X-Launchpad-Export-Date: 2015-12-24 05:14+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 "Language: pl\n"
 
 #: ../GnoMenu/GnoMenu:105
@@ -103,7 +103,7 @@ msgstr "Domyślnie"
 #: ../Twitter/messages:11 ../WebSearch/messages:9 ../WindowsKiller/messages:11
 #: ../Xchat/messages:11
 msgid "Display"
-msgstr ""
+msgstr "Ekran"
 
 #: ../GnoMenu/messages:13 ../Calendar/messages:13 ../Cardapio/messages:13
 #: ../CpuWatcher/messages:13 ../Deluge/messages:13 ../Google/messages:13
@@ -474,7 +474,7 @@ msgstr "W pikselach. Użyj tego ay dostosować górną pozycję rysunku."
 #: ../Twitter/messages:75 ../WebSearch/messages:73
 #: ../WindowsKiller/messages:75 ../Xchat/messages:75
 msgid "Top offset:"
-msgstr ""
+msgstr "Przesunięcie na górę:"
 
 #: ../GnoMenu/messages:77 ../Calendar/messages:77 ../Cardapio/messages:77
 #: ../CpuWatcher/messages:77 ../Deluge/messages:77 ../Gmail/messages:83

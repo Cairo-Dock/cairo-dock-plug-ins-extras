@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 1.0.0\n"
 "Report-Msgid-Bugs-To: fabounet@glx-dock.org\n"
 "POT-Creation-Date: 2014-10-19 00:23+0000\n"
-"PO-Revision-Date: 2014-06-13 22:07+0000\n"
+"PO-Revision-Date: 2015-10-18 11:37+0000\n"
 "Last-Translator: Matthieu Baerts <matttbe@gmail.com>\n"
 "Language-Team: Cairo-Dock <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-19 06:38+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2015-10-19 05:15+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 "Language: \n"
 
 #: ../GnoMenu/GnoMenu:105
@@ -1834,7 +1834,7 @@ msgstr "Traduire de :"
 
 #: ../Translator/messages:99 ../Translator/messages:229
 msgid "Afrikaans"
-msgstr "Africains"
+msgstr "Afrikaans"
 
 #: ../Translator/messages:101 ../Translator/messages:231
 msgid "Albanian"
@@ -1906,7 +1906,7 @@ msgstr "Estonien"
 
 #: ../Translator/messages:135 ../Translator/messages:265
 msgid "Filipino"
-msgstr "Philippin"
+msgstr "Filipino"
 
 #: ../Translator/messages:137 ../Translator/messages:267
 msgid "Finnish"
@@ -1934,7 +1934,7 @@ msgstr "Grec"
 
 #: ../Translator/messages:149 ../Translator/messages:279
 msgid "Gujarati"
-msgstr "Goudjarati"
+msgstr "Gujarati"
 
 #: ../Translator/messages:151 ../Translator/messages:281
 msgid "Haitian"
@@ -1942,11 +1942,11 @@ msgstr "Haïtien"
 
 #: ../Translator/messages:153 ../Translator/messages:283
 msgid "Hebrew"
-msgstr "Hébreux"
+msgstr "Hébreu"
 
 #: ../Translator/messages:155 ../Translator/messages:285
 msgid "Hindi"
-msgstr "Hindou"
+msgstr "Hindi"
 
 #: ../Translator/messages:157 ../Translator/messages:287
 msgid "Hungarian"
@@ -1990,7 +1990,7 @@ msgstr "Letton"
 
 #: ../Translator/messages:177 ../Translator/messages:307
 msgid "Lithuanian"
-msgstr "Lithuanien"
+msgstr "Lituanien"
 
 #: ../Translator/messages:179 ../Translator/messages:309
 msgid "Macedonian"
@@ -2010,7 +2010,7 @@ msgstr "Norvégien"
 
 #: ../Translator/messages:187 ../Translator/messages:317
 msgid "Persian"
-msgstr "Persique"
+msgstr "Persan"
 
 #: ../Translator/messages:189 ../Translator/messages:319
 msgid "Polish"
@@ -2046,7 +2046,7 @@ msgstr "Espagnol"
 
 #: ../Translator/messages:205 ../Translator/messages:335
 msgid "Swahili"
-msgstr "Souahéli"
+msgstr "Swahili"
 
 #: ../Translator/messages:207 ../Translator/messages:337
 msgid "Swedish"
@@ -2062,7 +2062,7 @@ msgstr "Télougou"
 
 #: ../Translator/messages:213 ../Translator/messages:343
 msgid "Thai"
-msgstr "Thaïlandais"
+msgstr "Thaï"
 
 #: ../Translator/messages:215 ../Translator/messages:345
 msgid "Turkish"
@@ -2446,7 +2446,7 @@ msgstr "Bing"
 
 #: ../WebSearch/messages:97
 msgid "Yahoo!"
-msgstr "Yahoo !"
+msgstr "Yahoo!"
 
 #: ../WebSearch/messages:99
 msgid "Teoma"
