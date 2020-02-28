@@ -1,0 +1,238 @@
+#!/usr/bin/python
+
+# This is a part of the external applets for Cairo-Dock
+# Copyright : (C) 2017 by Fabounet
+# E-mail : fabounet@glx-dock.org
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+#
+
+####################
+### dependancies ###
+####################
+from __future__ import print_function  # must be on the first line
+from CDApplet import CDApplet, _
+
+import os
+import subprocess
+import Downloader
+
+try:
+	import gtk
+except:
+	from gi.repository import Gtk
+	from gi.repository import Gdk
+
+try:
+	import glib
+except:
+	from gi.repository import GLib as glib
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		# define internal variables
+		self.videos_directory = ""
+		self.dl_list = {}
+		self.next_id = 0
+		self.current_id = 0
+		self.up_to_date = False
+		# call high-level init
+		CDApplet.__init__(self)
+		glib.timeout_add_seconds (86400, self._check_updates)  # once a day
+	
+	##### private methods #####
+	
+	def download_url(self, url):
+		print("download_url(" + url + ")")
+		# ensure youtube-dl is present and up-to-date
+		if not self.up_to_date:
+			self.icon.Animate('busy',99)
+			if not os.path.exists (self.cShareDataDir+"/youtube-dl"):
+				self.icon.SetLabel(_("installing youtube-dl..."))
+				self.icon.Animate('busy',99)
+				subprocess.call(['wget','https://yt-dl.org/downloads/latest/youtube-dl', '-O', self.cShareDataDir+"/youtube-dl"], shell=False)
+				subprocess.call(['chmod', '+x', self.cShareDataDir+"/youtube-dl"], shell=False)
+				self.up_to_date = True
+				#wget https://yt-dl.org/downloads/latest/youtube-dl.sig -O youtube-dl.sig
+				#gpg --verify youtube-dl.sig /usr/local/bin/youtube-dl
+				#rm youtube-dl.sig
+			else:
+				self.icon.SetLabel(_("updating youtube-dl..."))
+				self._check_updates()
+				self.up_to_date = True  # next updates are scheduled once a day
+		
+		# go to video folder
+		if not (self.videos_directory == os.path.abspath('.')):
+			os.chdir(self.videos_directory)
+		
+		# append a new Downloader to the list of Downloaders
+		self.next_id = self.next_id + 1
+		dl = Downloader.Downloader(url, self.next_id, self, self.dl_list)
+		self.dl_list[self.next_id] = dl
+		self.current_id = self.next_id
+		
+		# start dl
+		dl.init()
+		dl.start()
+	
+	def get_from_clipboard(self):
+		try:
+			clipboard = gtk.clipboard_get(gtk.gdk.SELECTION_PRIMARY)  #mouse selection
+			if not clipboard:
+				clipboard = gtk.clipboard_get()  # ctrl+c selection
+		except:
+			clipboard = Gtk.Clipboard.get(Gdk.SELECTION_PRIMARY)  #mouse selection
+			if not clipboard:
+				clipboard = Gtk.Clipboard.get()  # ctrl+c selection
+		return clipboard.wait_for_text()
+	
+	def _check_updates(self):
+		subprocess.call([self.cShareDataDir+"/youtube-dl", '-U'], shell=False)
+		
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['videos_directory'] = keyfile.get('Configuration', 'videos_directory')
+		self.config['original_name'] 	= keyfile.get('Icon', 'name')
+		self.config['option_naming'] 	= keyfile.get('Configuration', 'option_naming')
+		self.config['option_download'] 	= keyfile.get('Configuration', 'option_download')
+		
+		self.videos_directory = self.config['videos_directory']
+		if not self.videos_directory:
+			p = subprocess.Popen(["xdg-user-dir","VIDEOS"],stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=False)
+			directoryName, errors = p.communicate()
+			directoryName=directoryName.rstrip()
+			self.videos_directory = os.path.abspath(directoryName)
+		print("videos_directory: " + self.videos_directory)
+		
+		if not self.config['option_naming']:
+			self.config['option_naming'] = "%(title)s.%(ext)s"
+		
+		if not self.config['option_download']:
+			self.config['option_download'] = "--ignore-config --no-color -f best"
+		
+	def end(self):
+		print("*** end of VideoDownloader")
+		# terminate any remaining threads...
+		
+	def begin(self):
+		print("*** begin")
+		
+	def reload(self):
+		print("*** reload")
+		
+	##### callbacks #####
+	
+	def on_click(self,iState):
+		subprocess.call(['xdg-open',self.videos_directory], shell=False)
+	
+	def on_middle_click(self):
+		url = self.get_from_clipboard()
+		self.download_url(url)
+	
+	def on_build_menu(self):
+		items = [ {
+					"label": _("Open videos folder (left-click)"),
+					"icon" : "gtk-open",
+					"menu" : CDApplet.MAIN_MENU_ID,
+					"id"   : 1
+				}, {
+					"label": _("Download from clipboard (middle-click)"),
+					"icon" : "gtk-paste",
+					"menu" : CDApplet.MAIN_MENU_ID,
+					"id"   : 2
+				} ]
+		if len(self.dl_list) != 0:  # append a separator before the list of videos
+			items.append({"label": _("Clear list"),
+				"icon" : "gtk-clear",
+				"menu" : CDApplet.MAIN_MENU_ID,
+				"id"   : 3 })
+			items.append({ "type" : CDApplet.MENU_SEPARATOR, "menu" : CDApplet.MAIN_MENU_ID })
+		# append each downloaded videos
+		nb = 0
+		for id, dl in self.dl_list.iteritems():
+			progress = dl.progress
+			if int(progress) == 1:  # download is finished, open the video
+				items.append({
+					"label": dl.title,
+					"icon" : "gtk-media-play-ltr",
+					"menu" : CDApplet.MAIN_MENU_ID,
+					"id"   : 10 + id
+					})
+			else:  # download is either in progress, or stopped
+				if not dl.process:  # stopped
+					print("no process")
+					items.append({
+						"label": dl.title + " (" + str(int(progress*100.)) + "%)",
+						"icon" : "gtk-refresh",
+						"menu" : CDApplet.MAIN_MENU_ID,
+						"id"   : 10 + id
+						})
+				else:   # in progress
+					print("process is running")
+					items.append({
+						"label": dl.title + " (" + str(int(progress*100.)) + "%)",
+						"icon" : "gtk-cancel",
+						"menu" : CDApplet.MAIN_MENU_ID,
+						"id"   : 10 + id
+						})
+			if nb > 10:
+				break
+			nb = nb + 1
+		self.icon.AddMenuItems(items)
+		
+	def on_menu_select(self,iNumEntry):
+		if iNumEntry == 1:
+			subprocess.call(['xdg-open',self.videos_directory], shell=False)
+		elif iNumEntry == 2:
+			url = self.get_from_clipboard()
+			self.download_url(url)
+		elif iNumEntry == 3:
+			for id, dl in self.dl_list.items():  # don't use an iterator since we'll modify the dict in place
+				if not dl.process:  # either finished or cancelled
+					del self.dl_list[id]
+		else:
+			id = iNumEntry - 10
+			if id in self.dl_list:  # better safe than sorry
+				dl = self.dl_list[id]
+				if int(dl.progress) == 1:  # download is finished, open the video
+					subprocess.call(['xdg-open',self.videos_directory + '/' + dl.filename], shell=False)
+				else:  # download is either in progress, or stopped
+					if not dl.process:  # stopped
+						self.current_id = id
+						dl.set_label()
+						dl.restart()
+					else:   # in progress
+						dl.cancel()
+	
+	def on_scroll(self,bScrollUp):
+		print("*** scroll !")
+	
+	def on_drop_data(self,cReceivedData):
+		print("*** received",cReceivedData)
+		self.download_url(cReceivedData)
+	
+	def on_answer_dialog(self,button, answer):
+		print("*** answer dialog :",button, answer)
+	
+	def on_shortkey(self,key):
+		print("*** shortkey :",key)
+	
+	
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()
