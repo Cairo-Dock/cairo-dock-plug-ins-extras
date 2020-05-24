@@ -1,0 +1,223 @@
+#!/usr/bin/env python3
+
+# This is a part of the third-party applets for Cairo-Dock
+#
+# Copyright : (C) 2020 by Fabounet
+# E-mail : fabounet03@gmail.com
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# http://www.gnu.org/licenses/licenses.html#GPL
+
+####################
+### dependancies ###
+####################
+
+import sys
+import os.path
+import subprocess
+
+from gi.repository import GLib as glib
+from gi.repository import GObject as gobject
+
+import dbus
+import gettext
+from CDApplet import CDApplet, _
+
+# Virtual base class
+class BrightnessManager:
+	def __init__(self, display):
+		self.display = display
+		self.brightness = 0
+		self.valid = False
+	def up(self):
+		pass
+	def down(self):
+		pass
+
+# implementation of BrightnessManager for GnomeSettingsDaemon
+class GSD(BrightnessManager):
+	def __init__(self, display):
+		BrightnessManager.__init__(self, display)
+		self.bus_name = 'org.gnome.SettingsDaemon.Power'
+		self.object_path = '/org/gnome/SettingsDaemon/Power'
+		self.iface_name = 'org.gnome.SettingsDaemon.Power.Screen'
+		self.iface_name_props = 'org.freedesktop.DBus.Properties'
+		self.iface = None
+		self.iface_props = None
+		
+		# connect to the PowerManager
+		self.bus = dbus.SessionBus()
+		self.bus.watch_name_owner(self.bus_name, self.on_name_owner_changed)
+		
+	def _brightness_changed(self, interface, changed, invalidated, path):
+		if 'Brightness' in changed:
+			self.brightness = changed['Brightness']
+			self.display(self.brightness)
+		
+	def on_name_owner_changed(self,connection_name):
+		#print("on_name_owner_changed:",connection_name)
+		if len(connection_name) == 0:
+			self.valid = False
+			self.iface = None
+			self.iface_props = None
+		else:
+			#print(">> connecting to PM...")
+			# get the remote objects on the bus
+			bus_object = self.bus.get_object(connection_name, self.object_path)
+			self.iface = dbus.Interface(bus_object, self.iface_name)
+			self.iface_props = dbus.Interface(bus_object, self.iface_name_props)
+			self.valid = True
+			
+			# listen for brightness changes
+			self.bus.add_signal_receiver(self._brightness_changed, dbus_interface='org.freedesktop.DBus.Properties', signal_name = 'PropertiesChanged', bus_name=self.bus_name, path=self.object_path, path_keyword = 'path')
+			
+			# get the current value and display it
+			self.brightness = self.iface_props.Get('org.gnome.SettingsDaemon.Power.Screen', 'Brightness')
+			#print(">> current brightness:", self.brightness)
+			self.display(self.brightness)
+	
+	def up(self):
+		if self.iface is None:
+			return
+		self.iface.StepUp()
+
+	def down(self):
+		if self.iface is None:
+			return
+		self.iface.StepDown()
+
+# implementation of BrightnessManager for KDE (not tested!)
+class KDE(BrightnessManager):
+	def __init__(self, display):
+		BrightnessManager.__init__(self, display)
+		self.bus_name = 'org.kde.Solid.PowerManagement'
+		self.object_path = '/org/gnome/SettingsDaemon/Power'
+		self.iface_name = 'org.kde.Solid.PowerManagement.Actions.BrightnessControl'
+
+		# connect to the PowerManager
+		self.bus = dbus.SessionBus()
+		self.bus.watch_name_owner(self.bus_name, self.on_name_owner_changed)	
+	
+	def _brightness_changed(self, new_value):
+		self.brightness = new_value
+		self.display(self.brightness)
+		
+	def on_name_owner_changed(self,connection_name):
+		#print("on_name_owner_changed:",connection_name)
+		if len(connection_name) == 0:
+			self.valid = False
+			self.iface = None
+		else:
+			print(">> connecting to PM...")
+			# get the remote object on the bus
+			bus_object = self.bus.get_object(connection_name, self.object_path)
+			self.iface = dbus.Interface(bus_object, self.iface_name)
+			self.valid = True
+			
+			# listen for brightness changes
+			self.bus.add_signal_receiver(self._brightness_changed, dbus_interface=self.iface_name, signal_name = 'brightnessChanged', bus_name=self.bus_name, path=self.object_path)
+			
+			# get the current value and display it
+			self.brightness = self.iface.brightness()
+			print(">> current brightness:", self.brightness)
+			self.display(self.brightness)
+	
+	def up(self):
+		if not self.iface:
+			return
+		self.brightness = self.iface.brightness()
+		if self.brightness < 100:
+			self.iface.setBrightness(self.brightness+5)
+
+	def down(self):
+		if not self.iface:
+			return
+		self.brightness = self.iface.brightness()
+		if self.brightness > 0:
+			self.iface.StepDown(self.brightness-5)
+	
+
+####################
+### Applet class ###
+####################
+class Applet(CDApplet):
+	def __init__(self):
+		self.mgrs = []  # the available managers
+		CDApplet.__init__(self)
+	
+	### Private Methods ###
+	
+	def _get_valid_mgr(self):
+		for m in self.mgrs:
+			if m.valid:
+				return m
+		return None
+
+	# display method
+	def _display(self, value):
+		self.icon.SetLabel('Brightness: ' + str(value) + '%')
+		if self.config['progressbar']:
+			self.icon.RenderValues([float(value)/100.])
+		if self.config['quick-info']:
+			self.icon.SetQuickInfo(str(value)+'%')
+
+	##### applet definition #####
+	
+	def get_config(self,keyfile):
+		self.config['quick-info'] 	= keyfile.getboolean('Configuration', 'quick-info')
+		self.config['progressbar'] 	= keyfile.getboolean('Configuration', 'progressbar')
+	
+	def begin(self):
+		# load the managers
+		self.mgrs.append(GSD(self._display))
+		self.mgrs.append(KDE(self._display))
+		# initiate the icon display
+		self.icon.SetLabel('Brightness: '+'?')
+		if self.config['progressbar']:
+			self.icon.AddDataRenderer('progressbar', 1, '')
+	
+	def end(self):
+		# nothing to do really
+		pass
+	
+	def reload(self):
+		# set or remove the progress bar and quick-info
+		if self.config['progressbar']:
+			self.icon.AddDataRenderer('progressbar', 1, '')
+		else:
+			self.icon.AddDataRenderer('', 0, '')
+		
+		if not self.config['quick-info']:
+			self.icon.SetQuickInfo('')
+		
+		# redraw the icon
+		mgr = self._get_valid_mgr()
+		if mgr:
+			self._display(mgr.brightness)
+		
+		
+	##### callbacks #####
+	
+	def on_scroll(self,bDirectionUp):
+		mgr = self._get_valid_mgr()
+		if not mgr:
+			return
+		if bDirectionUp:
+			mgr.up()
+		else:
+			mgr.down()
+		
+
+############
+### main ###
+############
+if __name__ == '__main__':
+	Applet().run()
