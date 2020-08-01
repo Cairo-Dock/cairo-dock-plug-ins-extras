@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 # This is a part of the external applets for Cairo-Dock
 # Copyright : (C) 2017 by Fabounet
 # E-mail : fabounet@glx-dock.org
@@ -68,12 +66,13 @@ class Downloader():
 			stderr=subprocess.PIPE,
 			shell=False)
 		title_name, errors = p.communicate()
-		title_name=title_name.rstrip()
+		title_name = title_name.decode('utf-8').rstrip()
 		title_name_s = title_name.split("\n")
+		print(title_name_s)
 		if len(title_name_s) < 2:
 			# failed, do something ...
 			print ("couldn't retrieve info")
-			pass
+			return
 		self.title = title_name_s[0]
 		self.filename = title_name_s[1]
 		print ("downloading %s into %s" % (self.title, self.filename))
@@ -118,6 +117,9 @@ class Downloader():
 		# read the output of the downloader to get the progress
 		expr = re.compile(".* ([0-9\.,]*)% .*")
 		for line in iter(p.stdout.readline,''):
+			line = line.decode('utf-8')
+			if not line:
+				break
 			result = re.sub(expr, "\\1", line)  # extract the percentage
 			if result != line:  # skip any other line
 				self.progress = float(result)/100.
@@ -138,7 +140,7 @@ class Downloader():
 		if id == self.applet.current_id:
 			# look for a running download
 			new_current_id = 0
-			for key, value in self.dl_list.iteritems():
+			for key, value in self.dl_list.items():
 				if value.process:  # this is a running download
 					new_current_id = max(new_current_id, value.id)
 			# make it the current one
